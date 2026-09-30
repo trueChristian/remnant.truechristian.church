@@ -8,6 +8,7 @@ Built from the authoritative [Berean Voice archive](https://github.com/trueChris
 - Complete interfaces in English and all 20 configured translation languages, including localized categories and issue dates
 - First-class magazine issues, faithful article text and imagery, useful empty translation pages, and persistent locale/theme choices
 - Per-language full-text search in a Web Worker, with Unicode matching, body snippets, category/issue filters and shareable pagination
+- Site-only Scripture popovers with cached multilingual detection and editable false-positive overrides
 - Stable UUID-based Markdown downloads with copy fallback, original issue citation, per-language RSS, sitemaps and canonical alias routes
 - Static HTML and ordinary links for discovery and reading; JavaScript enhances preferences, search and archive rotation
 
@@ -15,16 +16,16 @@ English publishes independently. Only compatible completed translations appear; 
 
 ## Stack
 
-The generator and source adapter use **Python 3.11+ standard library only**. Client code is small, dependency-free ES modules and CSS. The only npm development dependency is pinned Playwright for repeatable browser/visual QA. There is no framework runtime, application server or database.
+The generator and source adapter use **Python 3.11+ standard library**. Scripture detection uses the pinned OpenBible parser with Node 20+ at build time. Client code is small ES modules and CSS, with self-hosted GetBible loader components for on-demand Scripture popovers. Pinned Playwright supplies repeatable browser/visual QA. There is no framework runtime, application server or database.
 
 ## Build and check
 
 ```sh
+npm ci
 python3 scripts/prepare_sources.py
 python3 scripts/build.py
 python3 scripts/check_site.py dist
 npm test
-npm ci
 npx playwright install --with-deps chromium
 npm run test:browser
 npm run serve
@@ -34,6 +35,7 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 
 ## Editing and extending
 
+- [Cached Scripture references, Bible choices and false-positive overrides](docs/scripture-references.md)
 - [Source adapters, route persistence and Markdown](docs/source-adapter.md)
 - [Complete dictionaries and truthful date formatting](docs/localization.md)
 - [Visual identity, accessibility and performance](docs/design-and-quality.md)
