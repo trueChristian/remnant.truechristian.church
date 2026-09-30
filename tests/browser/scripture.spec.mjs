@@ -20,8 +20,8 @@ async function fixture(page, {body=defaultBody, dir='ltr', theme='light', ui={}}
     if (!file.startsWith(assets + path.sep) || !fs.existsSync(file)) return route.abort();
     await route.fulfill({path:file,contentType:file.endsWith('.css')?'text/css':'text/javascript'});
   });
-  await page.route('**/__scripture-fixture', route => route.fulfill({contentType:'text/html',body:`<!doctype html>
-  <html lang="en" dir="${dir}" data-theme="${theme}"><head><meta name="viewport" content="width=device-width,initial-scale=1">
+  await page.route('**/__scripture-fixture', route => route.fulfill({contentType:'text/html; charset=utf-8',body:`<!doctype html>
+  <html lang="en" dir="${dir}" data-theme="${theme}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/assets/scripture-popovers.css">
   <style>body{margin:24px;font-family:Arial,sans-serif}main{max-width:650px;font-size:20px;line-height:1.8}</style>
   <script type="module" src="/assets/scripture-popovers.js"></script></head><body>
@@ -34,8 +34,10 @@ async function mockApi(page, handler) {
   await page.route('https://query.getbible.net/v2/**', async route => {
     const parts = new URL(route.request().url()).pathname.split('/');
     const version = decodeURIComponent(parts[2]), ref = decodeURIComponent(parts[3]);
-    if (handler) return handler(route, ref, version);
-    await route.fulfill({json:response(ref,version)});
+    // The provider is cross-origin. Mock its public CORS contract explicitly.
+    const fulfill = options => route.fulfill({...options,headers:{'access-control-allow-origin':'*',...options.headers}});
+    if (handler) return handler({fulfill,abort:(...args)=>route.abort(...args)}, ref, version);
+    await fulfill({json:response(ref,version)});
   });
 }
 async function sourceMarkup(page, selector = '#original') {
@@ -58,6 +60,7 @@ test('GetBible is on demand, hoverable, escaped, linked and source-faithful', as
   await page.locator('[data-scripture-id="john"]').hover();
   const popup=page.getByRole('dialog'); await expect(popup).toBeVisible();
   await expect(popup).toContainText('<img src=x onerror="window.pwned=1"> & literal text');
+  expect(calls).toEqual(['43 3:16']);
   await expect(popup.locator('img,script')).toHaveCount(0);
   await expect(popup.getByRole('link')).toHaveAttribute('href','https://getbible.life/kjv/John/3/16');
   await popup.hover(); await page.waitForTimeout(250); await expect(popup).toBeVisible();
@@ -70,6 +73,7 @@ test('keyboard opens and dismisses, restores focus, and permits forward/back nav
   const trigger=page.locator('[data-scripture-id="john"]');
   await trigger.focus(); await page.keyboard.press('Enter');
   const popup=page.getByRole('dialog'); await expect(popup.getByRole('button',{name:'Close'})).toBeFocused();
+  await expect(popup).toContainText('For God so loved the world.');
   await expect(popup.getByRole('link')).toBeVisible();
   await page.keyboard.press('Tab'); await expect(popup.getByRole('link')).toBeFocused();
   await page.keyboard.press('Escape'); await expect(popup).toBeHidden(); await expect(trigger).toBeFocused();

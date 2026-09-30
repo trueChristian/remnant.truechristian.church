@@ -11,7 +11,9 @@ export class Api {
    */
   constructor(apiEndpoint = 'https://query.getbible.net/v2/', { fetchImpl = globalThis.fetch, timeoutMs = 12000 } = {}) {
     this.apiEndpoint = apiEndpoint;
-    this.fetchImpl = fetchImpl;
+    // Window.fetch requires its native Window receiver in browsers. Keeping it
+    // as an unbound Api method causes an Illegal invocation before any request.
+    this.fetchImpl = fetchImpl.bind(globalThis);
     this.timeoutMs = timeoutMs;
   }
 
