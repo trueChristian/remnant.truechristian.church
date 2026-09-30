@@ -83,7 +83,9 @@ into `data/scripture-overrides.json`, for example:
 }
 ```
 
-Use the actual values from the record, not the example above. Commit that edit
+Use the actual values from the record, not the example above. For a quotation
+that occurs exactly once in the article, an anchor containing only `quote` is
+also sufficient; surrounding context disambiguates repeated mentions. Commit that edit
 and trigger the usual website build. It re-renders without rerunning detection.
 A source edit re-anchors a suppression only at a unique exact quote/context match.
 Suppression also covers an overlapping match expanded by a newer detector. If the
