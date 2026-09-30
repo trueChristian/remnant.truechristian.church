@@ -18,6 +18,7 @@ from xml.etree import ElementTree as ET
 from content import load_content, ordered_issues
 from routes import initialize_routes
 from markdown import generate_markdown
+from scripture import Scripture
 from i18n import load_locales, validate_locales, format_issue_date
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,7 +60,9 @@ def source_pages(article):
     return str(pages['start']) + (f"–{pages['end']}" if pages.get('end') and pages['end'] != pages['start'] else '')
 
 class Site:
-    def __init__(self, model, locales, routes, theme, output, covers):
+    def __init__(self, model, locales, routes, theme, output, covers, scripture=None):
+        self.scripture = scripture
+        self.scripture_ui = json.loads((ROOT/"data/scripture-ui.json").read_text()) if scripture else {}
         self.model, self.locales, self.routes = model, locales, routes
         self.theme, self.output, self.covers = theme, output, covers
         self.issues = ordered_issues(model)
@@ -139,6 +142,10 @@ class Site:
         appearance = ''.join(f'<option value="{mode}">{t(mode)}</option>' for mode in ['system','light','dark'])
         client_keys = ('copied','copy_fallback','copy_error','play','pause','search_error','results_count','no_results','searching','search_hint','prev','next','search')
         config = {'locale': tag, 'ui': {key:locale['ui'][key] for key in client_keys}, 'searchIndex': f'/{tag}/search-index.json', **(extra_config or {})}
+        scripture_assets = ''
+        if article and self.scripture:
+            config['scriptureUi'] = self.scripture_ui[tag]
+            scripture_assets = '<link rel="stylesheet" href="/assets/scripture-popovers.css"><script type="module" src="/assets/scripture-popovers.js"></script>'
         script_font = {'ar':'Noto+Sans+Arabic','ur':'Noto+Sans+Arabic','he':'Noto+Sans+Hebrew','hi':'Noto+Sans+Devanagari','bn':'Noto+Sans+Bengali','zh-Hans':'Noto+Sans+SC','ko':'Noto+Sans+KR'}.get(tag)
         fonts = 'family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600' + (f'&family={script_font}:wght@400;500;600' if script_font else '') + '&display=swap'
         doc_title = f'{title} · {BRAND}' if title != BRAND else BRAND
@@ -161,7 +168,7 @@ class Site:
 <script src="/assets/preferences.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?{esc(fonts)}">
 <link rel="stylesheet" href="/assets/theme.css"><link rel="stylesheet" href="/assets/site.css">
-<script defer src="/assets/theme.js"></script><script type="module" src="/assets/site.js"></script>{structured}
+<script defer src="/assets/theme.js"></script><script type="module" src="/assets/site.js"></script>{scripture_assets}{structured}
 </head><body id="top">
 <a class="skip-link" href="#main">{t('skip_content')}</a>
 <header class="tcc-site-header tm-header" data-tcc-global-header><div class="tcc-header__container tcc-container">
@@ -319,7 +326,8 @@ class Site:
             if image.get('credit') and image['credit'] not in article['html']:
                 credit_items.append(f'<li>{esc(image.get("alt") or image.get("public_path"))} · {esc(image["credit"])}</li>')
         credit_html = '<ul class="image-credits">' + ''.join(credit_items) + '</ul>' if credit_items else ''
-        body = f'''<div class="tcc-container article-shell">{self.breadcrumb(tag,[(self.category(tag,category)['name'],self.category_url(tag,category)),(title,None)])}<header class="article-heading"><p class="eyebrow"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)['name'])}</a></p><h1>{esc(title)}</h1>{subtitle}<div class="article-byline"><span>{esc(byline)}</span><span>{esc(self.ui(tag,'minutes',count=minutes))}</span></div><a class="article-issue" href="{esc(self.issue_url(tag,issue['id']))}"><span class="mini-book" aria-hidden="true">R</span><span><small>{esc(self.ui(tag,'original_issue'))}</small>{esc(issue['publication'])} · {esc(self.issue_identity(tag,issue))}</span><span aria-hidden="true">↗</span></a></header><div class="reading-layout"><aside class="reading-rail"><p class="eyebrow">{esc(self.ui(tag,'magazine'))}</p><a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue_date(issue,self.locales[tag]))}</a><p>{esc(self.ui(tag,'source_pages'))} {esc(pages)}</p><a href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a></aside><div class="reading-main"><div class="prose">{article['html']}</div>{credit_html}<section class="article-citation"><h2>{esc(self.ui(tag,'citation'))}</h2><p>{esc(title)}. {esc(byline)}. <a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue['publication'])}, {esc(self.issue_identity(tag,issue))}</a>{('. '+esc(self.ui(tag,'source_pages'))+' '+esc(pages) if pages else '')}.</p><p>{esc(issue.get('publisher',''))}</p></section><section class="reader-tools"><a class="button button--quiet" href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a><button class="button enhanced-only" type="button" data-copy-markdown="{esc(article['markdown_url'])}">{esc(self.ui(tag,'copy_markdown'))}</button><p role="status" id="copy-status"></p><div id="markdown-fallback" hidden><label for="markdown-text">{esc(self.ui(tag,'copy_fallback'))}</label><textarea id="markdown-text" readonly rows="12"></textarea></div></section></div></div></div>'''
+        display_html = self.scripture.render(tag,article) if self.scripture else article['html']
+        body = f'''<div class="tcc-container article-shell">{self.breadcrumb(tag,[(self.category(tag,category)['name'],self.category_url(tag,category)),(title,None)])}<header class="article-heading"><p class="eyebrow"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)['name'])}</a></p><h1>{esc(title)}</h1>{subtitle}<div class="article-byline"><span>{esc(byline)}</span><span>{esc(self.ui(tag,'minutes',count=minutes))}</span></div><a class="article-issue" href="{esc(self.issue_url(tag,issue['id']))}"><span class="mini-book" aria-hidden="true">R</span><span><small>{esc(self.ui(tag,'original_issue'))}</small>{esc(issue['publication'])} · {esc(self.issue_identity(tag,issue))}</span><span aria-hidden="true">↗</span></a></header><div class="reading-layout"><aside class="reading-rail"><p class="eyebrow">{esc(self.ui(tag,'magazine'))}</p><a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue_date(issue,self.locales[tag]))}</a><p>{esc(self.ui(tag,'source_pages'))} {esc(pages)}</p><a href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a></aside><div class="reading-main"><div class="prose">{display_html}</div>{credit_html}<section class="article-citation"><h2>{esc(self.ui(tag,'citation'))}</h2><p>{esc(title)}. {esc(byline)}. <a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue['publication'])}, {esc(self.issue_identity(tag,issue))}</a>{('. '+esc(self.ui(tag,'source_pages'))+' '+esc(pages) if pages else '')}.</p><p>{esc(issue.get('publisher',''))}</p></section><section class="reader-tools"><a class="button button--quiet" href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a><button class="button enhanced-only" type="button" data-copy-markdown="{esc(article['markdown_url'])}">{esc(self.ui(tag,'copy_markdown'))}</button><p role="status" id="copy-status"></p><div id="markdown-fallback" hidden><label for="markdown-text">{esc(self.ui(tag,'copy_fallback'))}</label><textarea id="markdown-text" readonly rows="12"></textarea></div></section></div></div></div>'''
         related = [a for a in self.articles[tag] if a['issue_id']==article['issue_id'] and a['id']!=article['id']][:3]
         if related:
             body += f'<section class="tcc-container page-section">{self.section_heading(tag,"related_articles",self.issue_url(tag,issue["id"]),"read_issue")}<div class="article-grid">'+''.join(self.card(tag,a) for a in related)+'</div></section>'
@@ -438,9 +446,12 @@ def main():
     if (ROOT/'public/covers').is_dir():
         shutil.copytree(ROOT/'public/covers',args.output/'covers')
     covers = json.loads((ROOT/'data/covers.json').read_text())
-    site = Site(model,locales,routes,args.theme,args.output,covers)
+    scripture = Scripture()
+    scripture.prepare(model['articles'])
+    site = Site(model,locales,routes,args.theme,args.output,covers,scripture=scripture)
     site.build()
-    report = {'site_revision':git_revision(ROOT),'theme_revision':git_revision(args.theme),'source':{key:model.get(key) for key in ['source_revision','translation_revision','translation_status','translation_omissions']},'warnings':model.get('warnings',[]),'article_counts':{tag:len(articles) for tag,articles in site.articles.items()},'issues':len(site.issues),'categories':len(site.categories),'search':site.search_sizes,'html_pages':len(site.html_sizes),'largest_html':sorted(site.html_sizes,key=lambda x:x[1],reverse=True)[:10],'route_additions':len(routes.get('pending',[]))}
+    scripture.save(args.output)
+    report = {'site_revision':git_revision(ROOT),'theme_revision':git_revision(args.theme),'source':{key:model.get(key) for key in ['source_revision','translation_revision','translation_status','translation_omissions']},'warnings':model.get('warnings',[]),'scripture':scripture.report,'article_counts':{tag:len(articles) for tag,articles in site.articles.items()},'issues':len(site.issues),'categories':len(site.categories),'search':site.search_sizes,'html_pages':len(site.html_sizes),'largest_html':sorted(site.html_sizes,key=lambda x:x[1],reverse=True)[:10],'route_additions':len(routes.get('pending',[]))}
     (ROOT/'.build').mkdir(exist_ok=True)
     (ROOT/'.build/site-build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({key:report[key] for key in ['article_counts','issues','categories','html_pages','warnings']},ensure_ascii=False,indent=2))

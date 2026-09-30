@@ -252,7 +252,7 @@ class SiteChecker:
             if not file.is_file():
                 continue
             self.files.add(relative)
-            if file.name in PRIVATE_NAMES or file.name.startswith('.env.') or any(part in {'.git', '.github', '__pycache__', '.build', 'runtime', 'campaigns'} for part in file.relative_to(self.output).parts):
+            if (file.name in PRIVATE_NAMES and relative != 'scripture/manifest.json') or file.name.startswith('.env.') or any(part in {'.git', '.github', '__pycache__', '.build', 'runtime', 'campaigns'} for part in file.relative_to(self.output).parts):
                 self.error('Private build/source file published: ' + relative)
             if file.suffix in {'.py', '.pyc', '.log', '.yml', '.yaml', '.sqlite', '.sqlite3', '.db', '.pem', '.key'}:
                 self.error('Unexpected implementation/runtime file published: ' + relative)
@@ -297,6 +297,9 @@ class SiteChecker:
                         allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status'}
                         if not isinstance(value, dict) or set(value) - allowed:
                             self.error('deployment.json contains more than the public publication identity')
+                    elif relative == 'scripture/manifest.json':
+                        from scripture import load_manifest
+                        load_manifest(file)
                     elif relative != 'routes.json':
                         self.error('Unexpected public JSON file: ' + relative)
                 except (ValueError, TypeError):
@@ -527,7 +530,8 @@ class SiteChecker:
                 if not page:
                     continue
                 article_file = self.output / article['url'].lstrip('/') / 'index.html'
-                if article['html'] not in article_file.read_text(encoding='utf-8'):
+                from scripture import strip_markers
+                if article['html'] not in strip_markers(article_file.read_text(encoding='utf-8')):
                     self.error(f'{article["url"]}: original exported HTML/notice was changed')
                 if page.h1 != normalized_text(article.get('title') or locale['ui']['untitled_article']):
                     self.error(f'{article["url"]}: article title differs from published locale text')

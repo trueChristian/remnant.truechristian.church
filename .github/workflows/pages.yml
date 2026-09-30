@@ -45,6 +45,8 @@ jobs:
         run: |
           python3 -c 'import sys; assert sys.version_info >= (3, 11), sys.version'
           node -e 'if (Number(process.versions.node.split(".")[0]) < 20) process.exit(1)'
+      - name: Install pinned build and browser tooling
+        run: npm ci
       - name: Run offline regression suites
         run: |
           set -euo pipefail
@@ -54,14 +56,17 @@ jobs:
         run: python3 scripts/prepare_sources.py
       - name: Run full source-backed regressions
         run: python3 -m unittest discover -s tests -v
+      - name: Reuse the durable published Scripture scan ledger
+        run: python3 scripts/scripture.py --fetch-published
       - name: Build the complete static site
         run: |
           python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --output dist
       - name: Validate generated links and public-output contract
         run: python3 scripts/check_site.py dist
+      - name: Probe live GetBible availability separately from mocked tests
+        run: node scripts/check_scripture_provider.mjs
       - name: Install browser test tooling
         run: |
-          npm ci
           npx playwright install --with-deps chromium
       - name: Verify browser interactions and capture desktop, mobile, RTL, and print
         run: npm run test:browser
@@ -97,7 +102,7 @@ jobs:
           with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
               summary.write('## Remnant build\n\n')
               summary.write('Build result: ' + os.environ['BUILD_STATUS'] + '\n\n')
-              for path in ('.build/source-report.json', '.build/deployment-plan.json'):
+              for path in ('.build/source-report.json', '.build/deployment-plan.json', '.build/scripture-report.json', '.build/scripture-provider-report.json'):
                   if Path(path).is_file():
                       summary.write('### ' + Path(path).name + '\n\n```json\n')
                       summary.write(json.dumps(json.loads(Path(path).read_text()), indent=2) + '\n```\n\n')
@@ -128,6 +133,8 @@ jobs:
             .build/source-report.json
             .build/deployment-plan.json
             .build/site-build-report.json
+            .build/scripture-report.json
+            .build/scripture-provider-report.json
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 14
