@@ -203,7 +203,7 @@ class ScriptureTests(unittest.TestCase):
     def test_full_published_corpus_reuses_cache_without_detection(self):
         from content import load_content
         model=load_content(ROOT/'.build/english',ROOT/'.build/translations',language_registry=ROOT/'.build/languages.json')
-        first=Scripture(ledger=ROOT/'data/scripture-ledger.json',cache=self.root/'absent.json',overrides=self.overrides)
+        first=Scripture(ledger=ROOT/'data/scripture-ledger',cache=self.root/'absent.json',overrides=self.overrides)
         first.prepare(model['articles'])
         save_manifest(self.root/'cache.json',first.records)
         second=self.scanner()

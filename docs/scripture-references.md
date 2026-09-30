@@ -32,7 +32,7 @@ source spans before use.
 
 ## Durable tracking files
 
-- `data/scripture-ledger.json`: Git-tracked reviewed initial full backfill
+- `data/scripture-ledger/`: Git-tracked reviewed initial full backfill, split into 16 readable UUID-prefix JSON files
 - `data/scripture-overrides.json`: Git-tracked editorial suppressions and inclusions;
   this is the file to edit to remove a false positive
 - `data/scripture-translations.json`: Git-tracked reviewed static Bible choices,
@@ -59,7 +59,7 @@ the verified current published manifest as `.build/scripture-manifest.json`.
 ## Remove or correct a false positive
 
 Find the article UUID in its Markdown download URL, then inspect its record in
-`data/scripture-ledger.json` or the current manifest. Keep detection records
+`data/scripture-ledger/` or the current manifest. Keep detection records
 immutable; deleting one would cause a new scan. Copy the marker's ID and anchor
 into `data/scripture-overrides.json`, for example:
 
