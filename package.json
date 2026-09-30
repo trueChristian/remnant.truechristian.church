@@ -12,6 +12,7 @@
     "test:browser": "playwright test"
   },
   "devDependencies": {
-    "@playwright/test": "1.63.0"
+    "@playwright/test": "1.63.0",
+    "bible-passage-reference-parser": "4.0.0"
   }
 }
