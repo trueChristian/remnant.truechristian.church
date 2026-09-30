@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "nl",
+    "native_name": "Nederlands",
+    "dir": "ltr",
+    "code": "nld"
+  },
+  "ui": {
+    "home": "Home",
+    "articles": "Artikelen",
+    "categories": "Categorieën",
+    "issues": "Nummers",
+    "search": "Zoeken",
+    "language": "Taal",
+    "menu": "Menu",
+    "close": "Sluiten",
+    "theme": "Weergave",
+    "system": "Systeem",
+    "light": "Licht",
+    "dark": "Donker",
+    "kicker": "Een tijdschrift voor een trouw christelijk leven",
+    "intro": "Ontdek de Schrift, christelijk discipelschap en het dagelijks geloof in de bladzijden van The Heartbeat of the Remnant.",
+    "latest_articles": "Nieuwste artikelen",
+    "latest_issue": "Nieuwste nummer",
+    "featured_archive": "Uit het archief",
+    "browse_archive": "Ontdek het archief",
+    "browse_categories": "Blader door categorieën",
+    "read_article": "Lees artikel",
+    "read_issue": "Lees nummer",
+    "all_articles": "Alle artikelen",
+    "all_issues": "Alle nummers",
+    "article_count": "Artikelen: {count}",
+    "issue_count": "Nummers: {count}",
+    "topic": "Onderwerp",
+    "no_articles_title": "Vertalingen zijn onderweg",
+    "coming_soon": "Hier zijn nog geen artikelen in deze taal beschikbaar. Ontdek het Engelse archief of kies een andere beschikbare taal.",
+    "read_english": "Lees in het Engels",
+    "available_languages": "Beschikbare talen",
+    "missing_translation": "Dit artikel is nog niet beschikbaar in deze taal. Kies een beschikbare vertaling of lees het gezaghebbende Engelse origineel.",
+    "search_placeholder": "Zoek artikelen, onderwerpen en nummers",
+    "search_hint": "Doorzoek de volledige tekst van artikelen die in deze taal beschikbaar zijn.",
+    "searching": "Zoeken…",
+    "results_count": "Resultaten: {count}",
+    "no_results": "Geen passende artikelen. Probeer een ander woord of wijzig de filters.",
+    "search_error": "De zoekfunctie kon niet worden geladen. Probeer het opnieuw.",
+    "clear": "Wissen",
+    "all_categories": "Alle categorieën",
+    "all_issue_filter": "Alle nummers",
+    "citation": "Tijdschriftverwijzing",
+    "original_issue": "Oorspronkelijk nummer",
+    "source_pages": "Oorspronkelijke pagina’s",
+    "author": "Auteur",
+    "reading_time": "Leestijd",
+    "minutes": "{count} min",
+    "download_markdown": "Markdown downloaden",
+    "copy_markdown": "Markdown kopiëren",
+    "copied": "Gekopieerd",
+    "copy_fallback": "Selecteer en kopieer de onderstaande Markdown-tekst.",
+    "prev": "Vorige",
+    "next": "Volgende",
+    "pause": "Pauzeren",
+    "play": "Afspelen",
+    "breadcrumbs": "U bent hier",
+    "back": "Terug",
+    "to_top": "Naar boven",
+    "skip_content": "Ga naar de inhoud",
+    "subscribe_rss": "Abonneren via RSS",
+    "about_archive": "Over dit archief",
+    "archive_intro": "Lees het tijdschriftarchief, met artikelen gegroepeerd op hun oorspronkelijke nummers.",
+    "category_intro": "Ontdek christelijk onderwijs en overdenkingen per onderwerp. Alle categorieën blijven toegankelijk terwijl vertalingen worden toegevoegd.",
+    "issue_intro": "Blader door de tijdschriftnummers en lees de artikelen in de oorspronkelijke volgorde.",
+    "magazine": "Tijdschrift",
+    "issue": "Nummer",
+    "volume": "Deel",
+    "number": "Nummer",
+    "untitled_article": "Artikel zonder titel",
+    "undated_issue": "Datum niet vermeld",
+    "no_issues_title": "Nog geen nummers beschikbaar",
+    "not_found_title": "Pagina niet gevonden",
+    "not_found_body": "Deze pagina is niet gevonden. Blader door het archief of zoek een artikel.",
+    "return_home": "Naar de homepagina",
+    "language_notice": "U bekijkt het archief in deze taal.",
+    "english_authoritative": "Het Engelse origineel is de gezaghebbende versie.",
+    "cover_placeholder": "Uit het tijdschriftarchief",
+    "source_pdf": "Oorspronkelijke PDF",
+    "related_articles": "Verwante artikelen",
+    "filters": "Filters",
+    "apply_filters": "Filters toepassen",
+    "publication_date": "Publicatiedatum",
+    "translation_status": "Vertaalstatus",
+    "main_navigation": "Hoofdnavigatie",
+    "footer_navigation": "Kerklinks",
+    "social_links": "Sociale netwerken",
+    "copy_error": "Automatisch kopiëren is niet beschikbaar. Kopieer de onderstaande tekst.",
+    "special_edition": "Speciale uitgave"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Zegenhoekje",
+      "description": "Korte overdenkingen over dankbaarheid, bemoediging en de zegeningen van een wandel met God.",
+      "slug": "zegenhoekje"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Boekbesprekingen",
+      "description": "Besprekingen van boeken in het licht van de Schrift en trouw christelijk discipelschap.",
+      "slug": "boekbesprekingen"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Karakter",
+      "description": "Onderwijs over integriteit, nederigheid en de groei van een karakter dat op Christus lijkt in het dagelijks leven.",
+      "slug": "karakter"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Kinderen",
+      "description": "Verhalen en Bijbellessen die kinderen aanmoedigen God te leren kennen en Jezus te volgen.",
+      "slug": "kinderen"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Christelijk leven",
+      "description": "Praktische overdenkingen over het volgen van Jezus in dagelijkse keuzes, werk en relaties.",
+      "slug": "christelijk-leven"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Kerk",
+      "description": "Overdenkingen over de kerk als lichaam van Christus, haar roeping, gemeenschap en getuigenis.",
+      "slug": "kerk"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Kerkelijke zaken",
+      "description": "Artikelen over het gemeenteleven, gedeelde verantwoordelijkheden en vragen waarmee de kerk te maken krijgt.",
+      "slug": "kerkelijke-zaken"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Misleiding",
+      "description": "Waarschuwingen voor geestelijke leugens en misleidende leer, getoetst aan de Schrift.",
+      "slug": "misleiding"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Onderscheidingsvermogen",
+      "description": "Bijbelse aanwijzingen om leerstellingen te toetsen, invloeden af te wegen en de waarheid te herkennen.",
+      "slug": "onderscheidingsvermogen"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Redactioneel",
+      "description": "Redactionele beschouwingen over zorgen, overtuigingen en vragen uit het tijdschrift.",
+      "slug": "redactioneel"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Gezin",
+      "description": "Onderwijs over liefde, trouw en het samenleven binnen het christelijke gezin.",
+      "slug": "gezin"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Gezinsgeschiedenissen",
+      "description": "Verhalen over het huiselijke en gezinsleven die ervaringen en lessen van eerdere generaties bewaren.",
+      "slug": "gezinsgeschiedenissen"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Oordeel",
+      "description": "Overdenkingen over Gods oordeel, menselijke verantwoordelijkheid, bekering en de roep tot gerechtigheid.",
+      "slug": "oordeel"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martelaarschap",
+      "description": "Verhalen van gelovigen die leden of hun leven gaven voor hun geloof in Jezus Christus.",
+      "slug": "martelaarschap"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medisch",
+      "description": "Archiefartikelen over gezondheid, medische vraagstukken en hun ethische en geestelijke kanten.",
+      "slug": "medisch"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Zending",
+      "description": "Verhalen en overdenkingen over het delen van het evangelie, het dienen van anderen en christelijke zending.",
+      "slug": "zending"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Artikelen over ingetogenheid",
+      "description": "Onderwijs over ingetogenheid, kleding en een innerlijke houding die God eert.",
+      "slug": "artikelen-over-ingetogenheid"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Weerloosheid",
+      "description": "Overdenkingen over Jezus’ onderwijs over het liefhebben van vijanden, het afzien van vergelding en het stichten van vrede.",
+      "slug": "weerloosheid"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Opvoeding",
+      "description": "Bijbelse raad over het begeleiden van kinderen, het onderwijzen van geloof en de verantwoordelijkheden van ouders.",
+      "slug": "opvoeding"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Poëzie",
+      "description": "Gedichten en verzen die aanbidding, geloof, verlangen en de ervaring van het christelijke leven uitdrukken.",
+      "slug": "poëzie"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Opwekking",
+      "description": "Oproepen tot bekering, hernieuwde toewijding en een dieper leven van gehoorzaamheid aan God.",
+      "slug": "opwekking"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Scherpende woorden",
+      "description": "Korte, indringende overdenkingen die zelfgenoegzaamheid doorbreken en trouwe gehoorzaamheid aanmoedigen.",
+      "slug": "scherpende-woorden"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Geestelijke oefening",
+      "description": "Praktisch onderwijs over gebed, de Schrift, zelfdiscipline en groei in het geloof.",
+      "slug": "geestelijke-oefening"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Getuigenis",
+      "description": "Persoonlijke verhalen over Gods genade, bekering en geloof dat in het dagelijks leven zichtbaar wordt.",
+      "slug": "getuigenis"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Vrouw",
+      "description": "Overdenkingen over het geloof, de dienst, de relaties en de verantwoordelijkheden van vrouwen in het christelijke leven.",
+      "slug": "vrouw"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Jeugd",
+      "description": "Bemoediging en Bijbelse raad voor jongeren die voor keuzes over geloof en leven staan.",
+      "slug": "jeugd"
+    }
+  },
+  "seasons": {
+    "Summer": "Zomer",
+    "Spring": "Lente",
+    "Winter": "Winter",
+    "Autumn": "Herfst",
+    "Fall": "Herfst"
+  },
+  "months": {
+    "1": "januari",
+    "2": "februari",
+    "3": "maart",
+    "4": "april",
+    "5": "mei",
+    "6": "juni",
+    "7": "juli",
+    "8": "augustus",
+    "9": "september",
+    "10": "oktober",
+    "11": "november",
+    "12": "december"
+  },
+  "chrome": {
+    "Home": "Home",
+    "The Holy Scriptures": "De Heilige Schrift",
+    "Text": "Tekst",
+    "Sermons": "Preken",
+    "Videos": "Video’s",
+    "The Godly Home": "Het godvruchtige gezin",
+    "Articles": "Artikelen",
+    "Daily": "Dagelijks",
+    "Daily Light": "Dagelijks licht",
+    "Services": "Diensten",
+    "Join us": "Doe mee",
+    "Church Info": "Over de kerk",
+    "History": "Geschiedenis",
+    "Brotherhood": "Broederschap",
+    "Blog": "Blog",
+    "Testimonies": "Getuigenissen",
+    "Confession of Faith": "Geloofsbelijdenis",
+    "Storehouse": "Voorraadkamer",
+    "Privacy Policy": "Privacybeleid",
+    "Copyright": "Auteursrecht",
+    "Projects": "Projecten",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Bruidskist",
+    "Why Bible": "Waarom de Bijbel",
+    "we fear God": "wij vrezen God",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Zending in Namibië",
+    "Welcome": "Welkom",
+    "Follow Jesus": "Jezus volgen",
+    "Live Services": "Live diensten",
+    "Locations": "Locaties",
+    "Events": "Evenementen",
+    "Revival": "Opwekking",
+    "Telegram": "Telegram",
+    "Contact Us": "Neem contact op",
+    "Social Outreach": "Sociale netwerken",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Auteursrecht © trueChristian.Church",
+    "free distribution only": "uitsluitend gratis verspreiding",
+    "Mission": "Zending",
+    "We Fear God": "Wij vrezen God",
+    "Why we believe the Bible": "Waarom wij de Bijbel geloven"
+  }
+}

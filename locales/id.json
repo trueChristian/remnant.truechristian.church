@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "id",
+    "native_name": "Bahasa Indonesia",
+    "dir": "ltr",
+    "code": "ind"
+  },
+  "ui": {
+    "home": "Beranda",
+    "articles": "Artikel",
+    "categories": "Kategori",
+    "issues": "Edisi",
+    "search": "Cari",
+    "language": "Bahasa",
+    "menu": "Menu",
+    "close": "Tutup",
+    "theme": "Tampilan",
+    "system": "Sistem",
+    "light": "Terang",
+    "dark": "Gelap",
+    "kicker": "Majalah tentang kehidupan Kristen yang setia",
+    "intro": "Dalami Kitab Suci, pemuridan Kristen, dan iman dalam kehidupan sehari-hari melalui halaman-halaman The Heartbeat of the Remnant.",
+    "latest_articles": "Artikel terbaru",
+    "latest_issue": "Edisi terbaru",
+    "featured_archive": "Dari arsip",
+    "browse_archive": "Jelajahi arsip",
+    "browse_categories": "Jelajahi kategori",
+    "read_article": "Baca artikel",
+    "read_issue": "Baca edisi",
+    "all_articles": "Semua artikel",
+    "all_issues": "Semua edisi",
+    "article_count": "Artikel: {count}",
+    "issue_count": "Edisi: {count}",
+    "topic": "Topik",
+    "no_articles_title": "Terjemahan sedang disiapkan",
+    "coming_soon": "Belum ada artikel dalam bahasa ini di sini. Jelajahi arsip bahasa Inggris atau pilih bahasa lain yang tersedia.",
+    "read_english": "Baca dalam bahasa Inggris",
+    "available_languages": "Bahasa yang tersedia",
+    "missing_translation": "Artikel ini belum tersedia dalam bahasa ini. Pilih terjemahan yang tersedia atau baca naskah asli bahasa Inggris yang menjadi acuan utama.",
+    "search_placeholder": "Cari artikel, topik, dan edisi",
+    "search_hint": "Cari dalam teks lengkap artikel yang tersedia dalam bahasa ini.",
+    "searching": "Mencari…",
+    "results_count": "Hasil: {count}",
+    "no_results": "Tidak ada artikel yang cocok. Coba kata lain atau ubah filter.",
+    "search_error": "Pencarian tidak dapat dimuat. Silakan coba lagi.",
+    "clear": "Bersihkan",
+    "all_categories": "Semua kategori",
+    "all_issue_filter": "Semua edisi",
+    "citation": "Referensi majalah",
+    "original_issue": "Edisi asal",
+    "source_pages": "Halaman sumber",
+    "author": "Penulis",
+    "reading_time": "Waktu baca",
+    "minutes": "{count} menit",
+    "download_markdown": "Unduh Markdown",
+    "copy_markdown": "Salin Markdown",
+    "copied": "Tersalin",
+    "copy_fallback": "Pilih dan salin teks Markdown di bawah ini.",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "pause": "Jeda",
+    "play": "Putar",
+    "breadcrumbs": "Anda di sini",
+    "back": "Kembali",
+    "to_top": "Kembali ke atas",
+    "skip_content": "Langsung ke konten",
+    "subscribe_rss": "Berlangganan melalui RSS",
+    "about_archive": "Tentang arsip ini",
+    "archive_intro": "Baca arsip majalah, dengan artikel yang dikelompokkan menurut edisi asalnya.",
+    "category_intro": "Jelajahi ajaran dan renungan Kristen berdasarkan topik. Semua kategori tetap tersedia seiring penambahan terjemahan.",
+    "issue_intro": "Jelajahi edisi majalah dan baca artikel-artikelnya sesuai urutan aslinya.",
+    "magazine": "Majalah",
+    "issue": "Edisi",
+    "volume": "Volume",
+    "number": "Nomor",
+    "untitled_article": "Artikel tanpa judul",
+    "undated_issue": "Tanggal tidak tercatat",
+    "no_issues_title": "Belum ada edisi yang tersedia",
+    "not_found_title": "Halaman tidak ditemukan",
+    "not_found_body": "Halaman ini tidak dapat ditemukan. Jelajahi arsip atau cari artikel.",
+    "return_home": "Kembali ke beranda",
+    "language_notice": "Anda sedang menjelajahi arsip dalam bahasa ini.",
+    "english_authoritative": "Naskah asli bahasa Inggris menjadi acuan utama.",
+    "cover_placeholder": "Dari arsip majalah",
+    "source_pdf": "PDF asli",
+    "related_articles": "Artikel terkait",
+    "filters": "Filter",
+    "apply_filters": "Terapkan filter",
+    "publication_date": "Tanggal terbit",
+    "translation_status": "Status terjemahan",
+    "main_navigation": "Navigasi utama",
+    "footer_navigation": "Tautan gereja",
+    "social_links": "Tautan media sosial",
+    "copy_error": "Penyalinan otomatis tidak tersedia. Salin teks di bawah ini.",
+    "special_edition": "Edisi khusus"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Sudut berkat",
+      "description": "Renungan singkat tentang rasa syukur, penguatan, dan berkat dari hidup berjalan bersama Allah.",
+      "slug": "sudut-berkat"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Ulasan buku",
+      "description": "Ulasan buku yang ditelaah dalam terang Kitab Suci dan pemuridan Kristen yang setia.",
+      "slug": "ulasan-buku"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Karakter",
+      "description": "Pengajaran tentang integritas, kerendahan hati, dan pertumbuhan karakter yang menyerupai Kristus dalam kehidupan sehari-hari.",
+      "slug": "karakter"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Anak-anak",
+      "description": "Kisah dan pelajaran Alkitab yang mendorong anak-anak untuk mengenal Allah dan mengikuti Yesus.",
+      "slug": "anak-anak"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Kehidupan Kristen",
+      "description": "Renungan praktis tentang mengikuti Yesus dalam pilihan sehari-hari, pekerjaan, dan hubungan dengan sesama.",
+      "slug": "kehidupan-kristen"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Gereja",
+      "description": "Renungan tentang gereja sebagai tubuh Kristus, panggilannya, persekutuan, dan kesaksiannya.",
+      "slug": "gereja"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Urusan gereja",
+      "description": "Artikel tentang kehidupan jemaat, tanggung jawab bersama, dan persoalan yang dihadapi gereja.",
+      "slug": "urusan-gereja"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Penyesatan",
+      "description": "Peringatan tentang kebohongan rohani dan ajaran yang menyesatkan, ditelaah dalam terang Kitab Suci.",
+      "slug": "penyesatan"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Pembedaan rohani",
+      "description": "Panduan Alkitab untuk menguji ajaran, menimbang pengaruh, dan mengenali kebenaran.",
+      "slug": "pembedaan-rohani"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Tajuk redaksi",
+      "description": "Pandangan redaksi yang memperkenalkan perhatian, keyakinan, dan pertanyaan yang diangkat majalah ini.",
+      "slug": "tajuk-redaksi"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Keluarga",
+      "description": "Pengajaran tentang kasih, kesetiaan, dan kehidupan bersama dalam keluarga Kristen.",
+      "slug": "keluarga"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Kisah rumah tangga",
+      "description": "Kisah kehidupan rumah tangga dan keluarga yang melestarikan pengalaman serta pelajaran dari generasi terdahulu.",
+      "slug": "kisah-rumah-tangga"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Penghakiman",
+      "description": "Renungan tentang penghakiman Allah, pertanggungjawaban manusia, pertobatan, dan panggilan untuk hidup benar.",
+      "slug": "penghakiman"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Kemartiran",
+      "description": "Kisah orang-orang percaya yang menderita atau menyerahkan nyawa karena iman mereka kepada Yesus Kristus.",
+      "slug": "kemartiran"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medis",
+      "description": "Artikel dari arsip tentang kesehatan, persoalan medis, serta dimensi etis dan rohaninya.",
+      "slug": "medis"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Misi",
+      "description": "Kisah dan renungan tentang memberitakan Injil, melayani sesama, dan menjalankan misi Kristen.",
+      "slug": "misi"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Artikel tentang kesopanan",
+      "description": "Pengajaran tentang kesopanan, pakaian, dan sikap batin yang memuliakan Allah.",
+      "slug": "artikel-tentang-kesopanan"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Tidak melawan dengan kekerasan",
+      "description": "Renungan tentang ajaran Yesus mengenai mengasihi musuh, menolak pembalasan, dan mengusahakan perdamaian.",
+      "slug": "tidak-melawan-dengan-kekerasan"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Pengasuhan anak",
+      "description": "Nasihat Alkitab tentang mengasuh anak, mengajarkan iman, dan tanggung jawab orang tua.",
+      "slug": "pengasuhan-anak"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Puisi",
+      "description": "Puisi dan syair yang mengungkapkan penyembahan, iman, kerinduan, serta pengalaman hidup Kristen.",
+      "slug": "puisi"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Kebangunan rohani",
+      "description": "Seruan untuk bertobat, memperbarui pengabdian, dan menjalani hidup yang semakin taat kepada Allah.",
+      "slug": "kebangunan-rohani"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Kata-kata yang menggugah",
+      "description": "Renungan singkat dan mendalam yang menantang sikap berpuas diri serta mendorong ketaatan yang setia.",
+      "slug": "kata-kata-yang-menggugah"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Latihan rohani",
+      "description": "Pengajaran praktis tentang doa, Kitab Suci, disiplin diri, dan pertumbuhan dalam kehidupan iman.",
+      "slug": "latihan-rohani"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Kesaksian",
+      "description": "Kisah pribadi tentang anugerah Allah, pertobatan, dan iman yang nyata dalam kehidupan sehari-hari.",
+      "slug": "kesaksian"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Perempuan",
+      "description": "Renungan tentang iman, pelayanan, hubungan, dan tanggung jawab perempuan dalam kehidupan Kristen.",
+      "slug": "perempuan"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Kaum muda",
+      "description": "Penguatan dan panduan Alkitab bagi kaum muda yang menghadapi pilihan tentang iman dan kehidupan.",
+      "slug": "kaum-muda"
+    }
+  },
+  "seasons": {
+    "Summer": "Musim panas",
+    "Spring": "Musim semi",
+    "Winter": "Musim dingin",
+    "Autumn": "Musim gugur",
+    "Fall": "Musim gugur"
+  },
+  "months": {
+    "1": "Januari",
+    "2": "Februari",
+    "3": "Maret",
+    "4": "April",
+    "5": "Mei",
+    "6": "Juni",
+    "7": "Juli",
+    "8": "Agustus",
+    "9": "September",
+    "10": "Oktober",
+    "11": "November",
+    "12": "Desember"
+  },
+  "chrome": {
+    "Home": "Beranda",
+    "The Holy Scriptures": "Kitab Suci",
+    "Text": "Teks",
+    "Sermons": "Khotbah",
+    "Videos": "Video",
+    "The Godly Home": "Rumah tangga yang saleh",
+    "Articles": "Artikel",
+    "Daily": "Harian",
+    "Daily Light": "Terang harian",
+    "Services": "Ibadah",
+    "Join us": "Bergabunglah bersama kami",
+    "Church Info": "Informasi gereja",
+    "History": "Sejarah",
+    "Brotherhood": "Persaudaraan",
+    "Blog": "Blog",
+    "Testimonies": "Kesaksian",
+    "Confession of Faith": "Pengakuan iman",
+    "Storehouse": "Gudang rohani",
+    "Privacy Policy": "Kebijakan privasi",
+    "Copyright": "Hak cipta",
+    "Projects": "Proyek",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Peti perlengkapan pengantin",
+    "Why Bible": "Mengapa Alkitab",
+    "we fear God": "kami takut akan Allah",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Misi di Namibia",
+    "Welcome": "Selamat datang",
+    "Follow Jesus": "Ikuti Yesus",
+    "Live Services": "Siaran langsung ibadah",
+    "Locations": "Lokasi",
+    "Events": "Acara",
+    "Revival": "Kebangunan rohani",
+    "Telegram": "Telegram",
+    "Contact Us": "Hubungi kami",
+    "Social Outreach": "Pelayanan sosial",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Hak cipta © trueChristian.Church",
+    "free distribution only": "hanya untuk dibagikan secara gratis",
+    "Mission": "Misi",
+    "We Fear God": "Kami takut akan Allah",
+    "Why we believe the Bible": "Mengapa kami mempercayai Alkitab"
+  }
+}

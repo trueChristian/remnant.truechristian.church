@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "de",
+    "native_name": "Deutsch",
+    "dir": "ltr",
+    "code": "deu"
+  },
+  "ui": {
+    "home": "Startseite",
+    "articles": "Artikel",
+    "categories": "Kategorien",
+    "issues": "Ausgaben",
+    "search": "Suche",
+    "language": "Sprache",
+    "menu": "Menü",
+    "close": "Schließen",
+    "theme": "Darstellung",
+    "system": "System",
+    "light": "Hell",
+    "dark": "Dunkel",
+    "kicker": "Eine Zeitschrift für ein treues Leben als Christ",
+    "intro": "Entdecken Sie die Heilige Schrift, christliche Nachfolge und gelebten Glauben in The Heartbeat of the Remnant.",
+    "latest_articles": "Neueste Artikel",
+    "latest_issue": "Neueste Ausgabe",
+    "featured_archive": "Aus dem Archiv",
+    "browse_archive": "Archiv entdecken",
+    "browse_categories": "Kategorien durchsuchen",
+    "read_article": "Artikel lesen",
+    "read_issue": "Ausgabe lesen",
+    "all_articles": "Alle Artikel",
+    "all_issues": "Alle Ausgaben",
+    "article_count": "Artikel: {count}",
+    "issue_count": "Ausgaben: {count}",
+    "topic": "Thema",
+    "no_articles_title": "Übersetzungen folgen",
+    "coming_soon": "Hier sind noch keine Artikel in dieser Sprache verfügbar. Entdecken Sie das englische Archiv oder wählen Sie eine andere verfügbare Sprache.",
+    "read_english": "Auf Englisch lesen",
+    "available_languages": "Verfügbare Sprachen",
+    "missing_translation": "Dieser Artikel ist in dieser Sprache noch nicht verfügbar. Wählen Sie eine vorhandene Übersetzung oder lesen Sie das maßgebliche englische Original.",
+    "search_placeholder": "Artikel, Themen und Ausgaben suchen",
+    "search_hint": "Durchsuchen Sie den vollständigen Text der in dieser Sprache verfügbaren Artikel.",
+    "searching": "Suche läuft…",
+    "results_count": "Ergebnisse: {count}",
+    "no_results": "Keine passenden Artikel. Versuchen Sie ein anderes Wort oder ändern Sie die Filter.",
+    "search_error": "Die Suche konnte nicht geladen werden. Bitte versuchen Sie es erneut.",
+    "clear": "Löschen",
+    "all_categories": "Alle Kategorien",
+    "all_issue_filter": "Alle Ausgaben",
+    "citation": "Quellenangabe zur Zeitschrift",
+    "original_issue": "Ursprüngliche Ausgabe",
+    "source_pages": "Originalseiten",
+    "author": "Autor",
+    "reading_time": "Lesezeit",
+    "minutes": "{count} Min.",
+    "download_markdown": "Markdown herunterladen",
+    "copy_markdown": "Markdown kopieren",
+    "copied": "Kopiert",
+    "copy_fallback": "Markieren und kopieren Sie den folgenden Markdown-Text.",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "pause": "Pause",
+    "play": "Starten",
+    "breadcrumbs": "Sie sind hier",
+    "back": "Zurück",
+    "to_top": "Nach oben",
+    "skip_content": "Zum Inhalt springen",
+    "subscribe_rss": "RSS abonnieren",
+    "about_archive": "Über dieses Archiv",
+    "archive_intro": "Lesen Sie das Zeitschriftenarchiv, dessen Artikel nach ihren ursprünglichen Ausgaben geordnet sind.",
+    "category_intro": "Entdecken Sie christliche Lehre und Betrachtungen nach Themen. Alle Kategorien bleiben zugänglich, während Übersetzungen hinzukommen.",
+    "issue_intro": "Durchstöbern Sie die Zeitschriftenausgaben und lesen Sie die Artikel in ihrer ursprünglichen Reihenfolge.",
+    "magazine": "Zeitschrift",
+    "issue": "Ausgabe",
+    "volume": "Band",
+    "number": "Nummer",
+    "untitled_article": "Artikel ohne Titel",
+    "undated_issue": "Datum nicht angegeben",
+    "no_issues_title": "Noch keine Ausgaben verfügbar",
+    "not_found_title": "Seite nicht gefunden",
+    "not_found_body": "Diese Seite wurde nicht gefunden. Durchstöbern Sie das Archiv oder suchen Sie nach einem Artikel.",
+    "return_home": "Zur Startseite",
+    "language_notice": "Sie lesen das Archiv in dieser Sprache.",
+    "english_authoritative": "Maßgeblich ist das englische Original.",
+    "cover_placeholder": "Aus dem Zeitschriftenarchiv",
+    "source_pdf": "Original-PDF",
+    "related_articles": "Verwandte Artikel",
+    "filters": "Filter",
+    "apply_filters": "Filter anwenden",
+    "publication_date": "Veröffentlichungsdatum",
+    "translation_status": "Übersetzungsstatus",
+    "main_navigation": "Hauptnavigation",
+    "footer_navigation": "Links zur Gemeinde",
+    "social_links": "Soziale Netzwerke",
+    "copy_error": "Automatisches Kopieren ist nicht verfügbar. Kopieren Sie den folgenden Text.",
+    "special_edition": "Sonderausgabe"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Segensecke",
+      "description": "Kurze Betrachtungen über Dankbarkeit, Ermutigung und den Segen eines Lebens mit Gott.",
+      "slug": "segensecke"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Buchbesprechungen",
+      "description": "Besprechungen von Büchern im Licht der Heiligen Schrift und treuer christlicher Nachfolge.",
+      "slug": "buchbesprechungen"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Charakter",
+      "description": "Lehre über Aufrichtigkeit, Demut und das Wachsen eines christusähnlichen Charakters im Alltag.",
+      "slug": "charakter"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Kinder",
+      "description": "Geschichten und biblische Lektionen, die Kinder ermutigen, Gott kennenzulernen und Jesus nachzufolgen.",
+      "slug": "kinder"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Christliches Leben",
+      "description": "Praktische Betrachtungen über die Nachfolge Jesu bei alltäglichen Entscheidungen, in der Arbeit und in Beziehungen.",
+      "slug": "christliches-leben"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Gemeinde",
+      "description": "Betrachtungen über die Gemeinde als Leib Christi, ihre Berufung, Gemeinschaft und ihr Zeugnis.",
+      "slug": "gemeinde"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Gemeindefragen",
+      "description": "Artikel über das Gemeindeleben, gemeinsame Verantwortung und Fragen, vor denen die Gemeinde steht.",
+      "slug": "gemeindefragen"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Täuschung",
+      "description": "Warnungen vor geistlicher Unwahrheit und irreführenden Lehren, geprüft im Licht der Heiligen Schrift.",
+      "slug": "täuschung"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Unterscheidungsvermögen",
+      "description": "Biblische Orientierung zum Prüfen von Lehren, Abwägen von Einflüssen und Erkennen der Wahrheit.",
+      "slug": "unterscheidungsvermögen"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Leitartikel",
+      "description": "Redaktionelle Betrachtungen zu Anliegen, Überzeugungen und Fragen der Zeitschrift.",
+      "slug": "leitartikel"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Familie",
+      "description": "Lehre über Liebe, Treue und das Zusammenleben in der christlichen Familie.",
+      "slug": "familie"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Familiengeschichten",
+      "description": "Berichte aus dem häuslichen und familiären Leben, die Erfahrungen und Lehren früherer Generationen bewahren.",
+      "slug": "familiengeschichten"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Gericht",
+      "description": "Betrachtungen über Gottes Gericht, menschliche Verantwortung, Umkehr und den Ruf zur Gerechtigkeit.",
+      "slug": "gericht"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martyrium",
+      "description": "Berichte von Gläubigen, die für ihren Glauben an Jesus Christus litten oder ihr Leben hingaben.",
+      "slug": "martyrium"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medizin",
+      "description": "Archivartikel über Gesundheit, medizinische Fragen sowie deren ethische und geistliche Aspekte.",
+      "slug": "medizin"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Mission",
+      "description": "Berichte und Betrachtungen über die Verkündigung des Evangeliums, den Dienst am Nächsten und christliche Mission.",
+      "slug": "mission"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Sittsamkeit",
+      "description": "Lehre über Sittsamkeit, Kleidung und eine innere Haltung, die Gott ehrt.",
+      "slug": "sittsamkeit"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Gewaltlosigkeit",
+      "description": "Betrachtungen über Jesu Lehre, die Feinde zu lieben, auf Vergeltung zu verzichten und Frieden zu stiften.",
+      "slug": "gewaltlosigkeit"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Kindererziehung",
+      "description": "Biblischer Rat zur Begleitung von Kindern, zur Vermittlung des Glaubens und zur Verantwortung der Eltern.",
+      "slug": "kindererziehung"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Gedichte",
+      "description": "Gedichte und Verse über Anbetung, Glauben, Sehnsucht und die Erfahrungen des christlichen Lebens.",
+      "slug": "gedichte"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Erweckung",
+      "description": "Aufrufe zur Umkehr, zu erneuerter Hingabe und zu einem tieferen Leben im Gehorsam gegenüber Gott.",
+      "slug": "erweckung"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Worte, die schärfen",
+      "description": "Kurze, eindringliche Betrachtungen, die Selbstzufriedenheit hinterfragen und zu treuem Gehorsam ermutigen.",
+      "slug": "worte-die-schärfen"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Geistliche Übung",
+      "description": "Praktische Lehre über Gebet, die Heilige Schrift, Selbstdisziplin und Wachstum im Glauben.",
+      "slug": "geistliche-übung"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Zeugnis",
+      "description": "Persönliche Berichte über Gottes Gnade, Bekehrung und gelebten Glauben im Alltag.",
+      "slug": "zeugnis"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Frauen",
+      "description": "Betrachtungen über Glauben, Dienst, Beziehungen und Verantwortung von Frauen im christlichen Leben.",
+      "slug": "frauen"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Jugend",
+      "description": "Ermutigung und biblische Orientierung für junge Menschen bei Entscheidungen über Glauben und Leben.",
+      "slug": "jugend"
+    }
+  },
+  "seasons": {
+    "Summer": "Sommer",
+    "Spring": "Frühling",
+    "Winter": "Winter",
+    "Autumn": "Herbst",
+    "Fall": "Herbst"
+  },
+  "months": {
+    "1": "Januar",
+    "2": "Februar",
+    "3": "März",
+    "4": "April",
+    "5": "Mai",
+    "6": "Juni",
+    "7": "Juli",
+    "8": "August",
+    "9": "September",
+    "10": "Oktober",
+    "11": "November",
+    "12": "Dezember"
+  },
+  "chrome": {
+    "Home": "Startseite",
+    "The Holy Scriptures": "Die Heilige Schrift",
+    "Text": "Text",
+    "Sermons": "Predigten",
+    "Videos": "Videos",
+    "The Godly Home": "Das gottesfürchtige Zuhause",
+    "Articles": "Artikel",
+    "Daily": "Täglich",
+    "Daily Light": "Tägliches Licht",
+    "Services": "Gottesdienste",
+    "Join us": "Seien Sie dabei",
+    "Church Info": "Über die Gemeinde",
+    "History": "Geschichte",
+    "Brotherhood": "Bruderschaft",
+    "Blog": "Blog",
+    "Testimonies": "Zeugnisse",
+    "Confession of Faith": "Glaubensbekenntnis",
+    "Storehouse": "Vorratshaus",
+    "Privacy Policy": "Datenschutzerklärung",
+    "Copyright": "Urheberrecht",
+    "Projects": "Projekte",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Aussteuertruhe",
+    "Why Bible": "Warum die Bibel",
+    "we fear God": "wir fürchten Gott",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Mission in Namibia",
+    "Welcome": "Willkommen",
+    "Follow Jesus": "Jesus nachfolgen",
+    "Live Services": "Live-Gottesdienste",
+    "Locations": "Standorte",
+    "Events": "Veranstaltungen",
+    "Revival": "Erweckung",
+    "Telegram": "Telegram",
+    "Contact Us": "Kontakt",
+    "Social Outreach": "Soziale Netzwerke",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Urheberrecht © trueChristian.Church",
+    "free distribution only": "nur kostenlose Weitergabe",
+    "Mission": "Mission",
+    "We Fear God": "Wir fürchten Gott",
+    "Why we believe the Bible": "Warum wir der Bibel glauben"
+  }
+}

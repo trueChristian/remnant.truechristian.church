@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "sw",
+    "native_name": "Kiswahili",
+    "dir": "ltr",
+    "code": "swa"
+  },
+  "ui": {
+    "home": "Mwanzo",
+    "articles": "Makala",
+    "categories": "Makundi",
+    "issues": "Matoleo",
+    "search": "Tafuta",
+    "language": "Lugha",
+    "menu": "Menyu",
+    "close": "Funga",
+    "theme": "Mwonekano",
+    "system": "Mfumo",
+    "light": "Angavu",
+    "dark": "Giza",
+    "kicker": "Jarida la kuishi maisha ya Kikristo kwa uaminifu",
+    "intro": "Chunguza Maandiko, uanafunzi wa Kikristo na imani ya kila siku katika kurasa za The Heartbeat of the Remnant.",
+    "latest_articles": "Makala mpya",
+    "latest_issue": "Toleo jipya",
+    "featured_archive": "Kutoka kwenye kumbukumbu",
+    "browse_archive": "Chunguza kumbukumbu",
+    "browse_categories": "Vinjari makundi",
+    "read_article": "Soma makala",
+    "read_issue": "Soma toleo",
+    "all_articles": "Makala zote",
+    "all_issues": "Matoleo yote",
+    "article_count": "Makala: {count}",
+    "issue_count": "Matoleo: {count}",
+    "topic": "Mada",
+    "no_articles_title": "Tafsiri zinakuja",
+    "coming_soon": "Bado hakuna makala hapa katika lugha hii. Chunguza kumbukumbu za Kiingereza au chagua lugha nyingine inayopatikana.",
+    "read_english": "Soma kwa Kiingereza",
+    "available_languages": "Lugha zinazopatikana",
+    "missing_translation": "Makala hii bado haipatikani katika lugha hii. Chagua tafsiri inayopatikana au soma maandishi asilia ya Kiingereza yenye mamlaka.",
+    "search_placeholder": "Tafuta makala, mada na matoleo",
+    "search_hint": "Tafuta katika maandishi yote ya makala zinazopatikana katika lugha hii.",
+    "searching": "Inatafuta…",
+    "results_count": "Matokeo: {count}",
+    "no_results": "Hakuna makala zinazolingana. Jaribu neno lingine au badilisha vichujio.",
+    "search_error": "Utafutaji haukuweza kupakiwa. Tafadhali jaribu tena.",
+    "clear": "Futa",
+    "all_categories": "Makundi yote",
+    "all_issue_filter": "Matoleo yote",
+    "citation": "Rejeo la jarida",
+    "original_issue": "Toleo la asili",
+    "source_pages": "Kurasa za asili",
+    "author": "Mwandishi",
+    "reading_time": "Muda wa kusoma",
+    "minutes": "Dakika: {count}",
+    "download_markdown": "Pakua Markdown",
+    "copy_markdown": "Nakili Markdown",
+    "copied": "Imenakiliwa",
+    "copy_fallback": "Chagua na unakili maandishi ya Markdown hapa chini.",
+    "prev": "Iliyotangulia",
+    "next": "Inayofuata",
+    "pause": "Sitisha",
+    "play": "Cheza",
+    "breadcrumbs": "Uko hapa",
+    "back": "Rudi",
+    "to_top": "Rudi juu",
+    "skip_content": "Ruka hadi maudhui",
+    "subscribe_rss": "Jisajili kupitia RSS",
+    "about_archive": "Kuhusu kumbukumbu hizi",
+    "archive_intro": "Soma kumbukumbu za jarida, huku makala zikiwa zimepangwa kwa matoleo yake ya asili.",
+    "category_intro": "Chunguza mafundisho na tafakari za Kikristo kwa mada. Makundi yote yanaendelea kupatikana kadiri tafsiri zinavyoongezwa.",
+    "issue_intro": "Vinjari matoleo ya jarida na usome makala zake kwa mpangilio wa asili.",
+    "magazine": "Jarida",
+    "issue": "Toleo",
+    "volume": "Juzuu",
+    "number": "Nambari",
+    "untitled_article": "Makala isiyo na kichwa",
+    "undated_issue": "Tarehe haijaandikwa",
+    "no_issues_title": "Bado hakuna matoleo yanayopatikana",
+    "not_found_title": "Ukurasa haujapatikana",
+    "not_found_body": "Ukurasa huu haujapatikana. Vinjari kumbukumbu au tafuta makala.",
+    "return_home": "Rudi mwanzo",
+    "language_notice": "Unavinjari kumbukumbu katika lugha hii.",
+    "english_authoritative": "Maandishi asilia ya Kiingereza ndiyo yenye mamlaka.",
+    "cover_placeholder": "Kutoka kwenye kumbukumbu za jarida",
+    "source_pdf": "PDF ya asili",
+    "related_articles": "Makala zinazohusiana",
+    "filters": "Vichujio",
+    "apply_filters": "Tumia vichujio",
+    "publication_date": "Tarehe ya kuchapishwa",
+    "translation_status": "Hali ya tafsiri",
+    "main_navigation": "Urambazaji mkuu",
+    "footer_navigation": "Viungo vya kanisa",
+    "social_links": "Viungo vya mitandao ya kijamii",
+    "copy_error": "Kunakili kiotomatiki hakupatikani. Nakili maandishi hapa chini.",
+    "special_edition": "Toleo maalumu"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Kona ya baraka",
+      "description": "Tafakari fupi kuhusu shukrani, faraja na baraka za kutembea pamoja na Mungu.",
+      "slug": "kona-ya-baraka"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Mapitio ya vitabu",
+      "description": "Mapitio ya vitabu vinavyotathminiwa kwa mwanga wa Maandiko na uanafunzi mwaminifu wa Kikristo.",
+      "slug": "mapitio-ya-vitabu"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Tabia",
+      "description": "Mafundisho kuhusu uadilifu, unyenyekevu na kukua katika tabia inayofanana na ya Kristo kila siku.",
+      "slug": "tabia"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Watoto",
+      "description": "Hadithi na masomo ya Biblia yanayowahimiza watoto kumjua Mungu na kumfuata Yesu.",
+      "slug": "watoto"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Maisha ya Kikristo",
+      "description": "Tafakari za vitendo kuhusu kumfuata Yesu katika maamuzi, kazi na mahusiano ya kila siku.",
+      "slug": "maisha-ya-kikristo"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Kanisa",
+      "description": "Tafakari kuhusu kanisa kama mwili wa Kristo, wito wake, ushirika na ushuhuda wake.",
+      "slug": "kanisa"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Masuala ya kanisa",
+      "description": "Makala kuhusu maisha ya kusanyiko, majukumu ya pamoja na masuala yanayolikabili kanisa.",
+      "slug": "masuala-ya-kanisa"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Udanganyifu",
+      "description": "Maonyo kuhusu uongo wa kiroho na mafundisho ya kupotosha, yanayochunguzwa kwa mwanga wa Maandiko.",
+      "slug": "udanganyifu"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Utambuzi wa kiroho",
+      "description": "Mwongozo wa Biblia wa kupima mafundisho, kutathmini ushawishi na kutambua ukweli.",
+      "slug": "utambuzi-wa-kiroho"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Tahariri",
+      "description": "Maoni ya wahariri yanayowasilisha masuala, misimamo ya imani na maswali ya jarida.",
+      "slug": "tahariri"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Familia",
+      "description": "Mafundisho kuhusu upendo, uaminifu na kuishi pamoja katika familia ya Kikristo.",
+      "slug": "familia"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Historia za nyumbani",
+      "description": "Simulizi za maisha ya nyumbani na familia zinazohifadhi uzoefu na mafunzo ya vizazi vilivyotangulia.",
+      "slug": "historia-za-nyumbani"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Hukumu",
+      "description": "Tafakari kuhusu hukumu ya Mungu, uwajibikaji wa binadamu, toba na wito wa kutenda haki.",
+      "slug": "hukumu"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Kufia imani",
+      "description": "Simulizi za waumini walioteseka au kutoa maisha yao kwa ajili ya imani yao katika Yesu Kristo.",
+      "slug": "kufia-imani"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Afya na tiba",
+      "description": "Makala za kumbukumbu kuhusu afya, masuala ya tiba na vipengele vyake vya kimaadili na kiroho.",
+      "slug": "afya-na-tiba"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Umisheni",
+      "description": "Simulizi na tafakari kuhusu kushiriki injili, kuwatumikia wengine na utume wa Kikristo.",
+      "slug": "umisheni"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Makala kuhusu staha",
+      "description": "Mafundisho kuhusu staha, mavazi na moyo unaomheshimu Mungu.",
+      "slug": "makala-kuhusu-staha"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Kutolipiza kisasi",
+      "description": "Tafakari kuhusu mafundisho ya Yesu juu ya kuwapenda maadui, kukataa kulipiza kisasi na kuleta amani.",
+      "slug": "kutolipiza-kisasi"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Malezi",
+      "description": "Ushauri wa Biblia kuhusu kulea watoto, kufundisha imani na majukumu ya wazazi.",
+      "slug": "malezi"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Ushairi",
+      "description": "Mashairi na beti zinazoeleza ibada, imani, shauku na uzoefu wa maisha ya Kikristo.",
+      "slug": "ushairi"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Uamsho",
+      "description": "Miito ya kutubu, kujitoa upya kwa Mungu na kuishi kwa utii wa kina zaidi kwake.",
+      "slug": "uamsho"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Maneno makali ya kutafakari",
+      "description": "Tafakari fupi zinazochunguza moyo, kupinga kuridhika kupita kiasi na kuhimiza utii mwaminifu.",
+      "slug": "maneno-makali-ya-kutafakari"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Mazoezi ya kiroho",
+      "description": "Mafundisho ya vitendo kuhusu maombi, Maandiko, nidhamu binafsi na kukua katika imani.",
+      "slug": "mazoezi-ya-kiroho"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Ushuhuda",
+      "description": "Simulizi binafsi za neema ya Mungu, kuongoka na imani inayotenda kazi katika maisha ya kila siku.",
+      "slug": "ushuhuda"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Wanawake",
+      "description": "Tafakari kuhusu imani, huduma, mahusiano na majukumu ya wanawake katika maisha ya Kikristo.",
+      "slug": "wanawake"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Vijana",
+      "description": "Faraja na mwongozo wa Biblia kwa vijana wanaokabiliwa na maamuzi kuhusu imani na maisha.",
+      "slug": "vijana"
+    }
+  },
+  "seasons": {
+    "Summer": "Majira ya kiangazi",
+    "Spring": "Majira ya kuchipua",
+    "Winter": "Majira ya baridi",
+    "Autumn": "Majira ya kupukutika kwa majani",
+    "Fall": "Majira ya kupukutika kwa majani"
+  },
+  "months": {
+    "1": "Januari",
+    "2": "Februari",
+    "3": "Machi",
+    "4": "Aprili",
+    "5": "Mei",
+    "6": "Juni",
+    "7": "Julai",
+    "8": "Agosti",
+    "9": "Septemba",
+    "10": "Oktoba",
+    "11": "Novemba",
+    "12": "Desemba"
+  },
+  "chrome": {
+    "Home": "Mwanzo",
+    "The Holy Scriptures": "Maandiko Matakatifu",
+    "Text": "Maandishi",
+    "Sermons": "Mahubiri",
+    "Videos": "Video",
+    "The Godly Home": "Nyumba inayomcha Mungu",
+    "Articles": "Makala",
+    "Daily": "Kila siku",
+    "Daily Light": "Nuru ya kila siku",
+    "Services": "Ibada",
+    "Join us": "Jiunge nasi",
+    "Church Info": "Habari za kanisa",
+    "History": "Historia",
+    "Brotherhood": "Undugu",
+    "Blog": "Blogu",
+    "Testimonies": "Ushuhuda",
+    "Confession of Faith": "Ungamo la imani",
+    "Storehouse": "Ghala la nyenzo",
+    "Privacy Policy": "Sera ya faragha",
+    "Copyright": "Hakimiliki",
+    "Projects": "Miradi",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Sanduku la mahitaji ya bibi arusi",
+    "Why Bible": "Kwa nini Biblia",
+    "we fear God": "tunamcha Mungu",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Umisheni nchini Namibia",
+    "Welcome": "Karibu",
+    "Follow Jesus": "Mfuate Yesu",
+    "Live Services": "Ibada za moja kwa moja",
+    "Locations": "Maeneo",
+    "Events": "Matukio",
+    "Revival": "Uamsho",
+    "Telegram": "Telegram",
+    "Contact Us": "Wasiliana nasi",
+    "Social Outreach": "Mitandao ya kijamii",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Hakimiliki © trueChristian.Church",
+    "free distribution only": "usambazaji wa bure pekee",
+    "Mission": "Umisheni",
+    "We Fear God": "Tunamcha Mungu",
+    "Why we believe the Bible": "Kwa nini tunaiamini Biblia"
+  }
+}

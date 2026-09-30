@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "en",
+    "native_name": "English",
+    "dir": "ltr",
+    "code": "eng"
+  },
+  "ui": {
+    "home": "Home",
+    "articles": "Articles",
+    "categories": "Categories",
+    "issues": "Issues",
+    "search": "Search",
+    "language": "Language",
+    "menu": "Menu",
+    "close": "Close",
+    "theme": "Appearance",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark",
+    "kicker": "A journal of faithful Christian living",
+    "intro": "Explore Scripture, Christian discipleship, and everyday faith through the pages of The Heartbeat of the Remnant.",
+    "latest_articles": "Latest articles",
+    "latest_issue": "Latest issue",
+    "featured_archive": "From the archive",
+    "browse_archive": "Explore the archive",
+    "browse_categories": "Browse categories",
+    "read_article": "Read article",
+    "read_issue": "Read issue",
+    "all_articles": "All articles",
+    "all_issues": "All issues",
+    "article_count": "Articles: {count}",
+    "issue_count": "Issues: {count}",
+    "topic": "Topic",
+    "no_articles_title": "Translations are on the way",
+    "coming_soon": "No articles are available in this language here yet. Explore the English archive or choose another available language.",
+    "read_english": "Read in English",
+    "available_languages": "Available languages",
+    "missing_translation": "This article is not yet available in this language. Choose an available translation or read the authoritative English original.",
+    "search_placeholder": "Search articles, topics, and issues",
+    "search_hint": "Search the full text of articles available in this language.",
+    "searching": "Searching…",
+    "results_count": "Results: {count}",
+    "no_results": "No matching articles. Try another word or change the filters.",
+    "search_error": "Search could not be loaded. Please try again.",
+    "clear": "Clear",
+    "all_categories": "All categories",
+    "all_issue_filter": "All issues",
+    "citation": "Magazine citation",
+    "original_issue": "Original issue",
+    "source_pages": "Source pages",
+    "author": "Author",
+    "reading_time": "Reading time",
+    "minutes": "{count} min",
+    "download_markdown": "Download Markdown",
+    "copy_markdown": "Copy Markdown",
+    "copied": "Copied",
+    "copy_fallback": "Select and copy the Markdown text below.",
+    "prev": "Previous",
+    "next": "Next",
+    "pause": "Pause",
+    "play": "Play",
+    "breadcrumbs": "You are here",
+    "back": "Back",
+    "to_top": "Back to top",
+    "skip_content": "Skip to content",
+    "subscribe_rss": "Subscribe via RSS",
+    "about_archive": "About this archive",
+    "archive_intro": "Read the magazine archive, with articles grouped by their original issues.",
+    "category_intro": "Explore Christian teaching and reflections by subject. Every category remains available as translations are added.",
+    "issue_intro": "Browse magazine issues and read their articles in the original order.",
+    "magazine": "Magazine",
+    "issue": "Issue",
+    "volume": "Volume",
+    "number": "Number",
+    "untitled_article": "Untitled article",
+    "undated_issue": "Date not recorded",
+    "no_issues_title": "No issues available yet",
+    "not_found_title": "Page not found",
+    "not_found_body": "This page could not be found. Browse the archive or search for an article.",
+    "return_home": "Return home",
+    "language_notice": "You are browsing the archive in this language.",
+    "english_authoritative": "The English original is authoritative.",
+    "cover_placeholder": "From the magazine archive",
+    "source_pdf": "Original PDF",
+    "related_articles": "Related articles",
+    "filters": "Filters",
+    "apply_filters": "Apply filters",
+    "publication_date": "Publication date",
+    "translation_status": "Translation status",
+    "main_navigation": "Main navigation",
+    "footer_navigation": "Church links",
+    "social_links": "Social links",
+    "copy_error": "Automatic copying is unavailable. Copy the text below.",
+    "special_edition": "Special edition"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Blessing corner",
+      "description": "Short reflections on gratitude, encouragement, and the blessings of walking with God.",
+      "slug": "blessing-corner"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Book reviews",
+      "description": "Reviews of books considered in the light of Scripture and faithful Christian discipleship.",
+      "slug": "book-reviews"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Character",
+      "description": "Teaching on integrity, humility, and the growth of Christlike character in daily life.",
+      "slug": "character"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Children",
+      "description": "Stories and biblical lessons that encourage children to know God and follow Jesus.",
+      "slug": "children"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Christian Living",
+      "description": "Practical reflections on following Jesus in everyday choices, work, and relationships.",
+      "slug": "christian-living"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Church",
+      "description": "Reflections on the church as the body of Christ, its calling, fellowship, and witness.",
+      "slug": "church"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Church Matters",
+      "description": "Articles addressing congregational life, shared responsibilities, and questions facing the church.",
+      "slug": "church-matters"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Deception",
+      "description": "Warnings about spiritual falsehood and misleading teachings, examined in the light of Scripture.",
+      "slug": "deception"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Discernment",
+      "description": "Biblical guidance for testing teachings, weighing influences, and recognizing what is true.",
+      "slug": "discernment"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Editorial",
+      "description": "Editorial perspectives introducing concerns, convictions, and questions from the magazine.",
+      "slug": "editorial"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Family",
+      "description": "Teaching on love, faithfulness, and life together within the Christian family.",
+      "slug": "family"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Home histories",
+      "description": "Accounts of home and family life that preserve experiences and lessons from earlier generations.",
+      "slug": "home-histories"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Judgment",
+      "description": "Reflections on God’s judgment, human accountability, repentance, and the call to righteousness.",
+      "slug": "judgment"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martyrdom",
+      "description": "Accounts of believers who suffered or gave their lives for their faith in Jesus Christ.",
+      "slug": "martyrdom"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medical",
+      "description": "Articles from the archive on health, medical questions, and their ethical and spiritual dimensions.",
+      "slug": "medical"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Missions",
+      "description": "Accounts and reflections on sharing the gospel, serving others, and Christian mission.",
+      "slug": "missions"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Modesty Articles",
+      "description": "Teaching on modesty, clothing, and an inward spirit that honors God.",
+      "slug": "modesty-articles"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Non-resistance",
+      "description": "Reflections on Jesus’ teaching about loving enemies, refusing retaliation, and making peace.",
+      "slug": "non-resistance"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Parenting",
+      "description": "Biblical counsel on nurturing children, teaching faith, and the responsibilities of parents.",
+      "slug": "parenting"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Poetry",
+      "description": "Poems and verse expressing worship, faith, longing, and the experience of Christian life.",
+      "slug": "poetry"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Revival",
+      "description": "Calls to repentance, renewed devotion, and a deeper life of obedience to God.",
+      "slug": "revival"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Sharpened words",
+      "description": "Concise, searching reflections that challenge complacency and encourage faithful obedience.",
+      "slug": "sharpened-words"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Spiritual exercise",
+      "description": "Practical teaching on prayer, Scripture, self-discipline, and growth in the life of faith.",
+      "slug": "spiritual-exercise"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Testimony",
+      "description": "Personal accounts of God’s grace, conversion, and faith at work in daily life.",
+      "slug": "testimony"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Woman",
+      "description": "Reflections on women’s faith, service, relationships, and responsibilities in Christian life.",
+      "slug": "woman"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Youth",
+      "description": "Encouragement and biblical guidance for young people facing choices about faith and life.",
+      "slug": "youth"
+    }
+  },
+  "seasons": {
+    "Summer": "Summer",
+    "Spring": "Spring",
+    "Winter": "Winter",
+    "Autumn": "Autumn",
+    "Fall": "Fall"
+  },
+  "months": {
+    "1": "January",
+    "2": "February",
+    "3": "March",
+    "4": "April",
+    "5": "May",
+    "6": "June",
+    "7": "July",
+    "8": "August",
+    "9": "September",
+    "10": "October",
+    "11": "November",
+    "12": "December"
+  },
+  "chrome": {
+    "Home": "Home",
+    "The Holy Scriptures": "The Holy Scriptures",
+    "Text": "Text",
+    "Sermons": "Sermons",
+    "Videos": "Videos",
+    "The Godly Home": "The Godly Home",
+    "Articles": "Articles",
+    "Daily": "Daily",
+    "Daily Light": "Daily Light",
+    "Services": "Services",
+    "Join us": "Join us",
+    "Church Info": "Church Info",
+    "History": "History",
+    "Brotherhood": "Brotherhood",
+    "Blog": "Blog",
+    "Testimonies": "Testimonies",
+    "Confession of Faith": "Confession of Faith",
+    "Storehouse": "Storehouse",
+    "Privacy Policy": "Privacy Policy",
+    "Copyright": "Copyright",
+    "Projects": "Projects",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Trousseau Chest",
+    "Why Bible": "Why Bible",
+    "we fear God": "we fear God",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Mission (Namibia)",
+    "Welcome": "Welcome",
+    "Follow Jesus": "Follow Jesus",
+    "Live Services": "Live Services",
+    "Locations": "Locations",
+    "Events": "Events",
+    "Revival": "Revival",
+    "Telegram": "Telegram",
+    "Contact Us": "Contact Us",
+    "Social Outreach": "Social Outreach",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Copyright © trueChristian.Church",
+    "free distribution only": "free distribution only",
+    "Mission": "Mission",
+    "We Fear God": "We Fear God",
+    "Why we believe the Bible": "Why we believe the Bible"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "af",
+    "native_name": "Afrikaans",
+    "dir": "ltr",
+    "code": "afr"
+  },
+  "ui": {
+    "home": "Tuis",
+    "articles": "Artikels",
+    "categories": "Kategorieë",
+    "issues": "Uitgawes",
+    "search": "Soek",
+    "language": "Taal",
+    "menu": "Kieslys",
+    "close": "Sluit",
+    "theme": "Voorkoms",
+    "system": "Stelsel",
+    "light": "Lig",
+    "dark": "Donker",
+    "kicker": "’n Tydskrif vir ’n getroue Christelike lewe",
+    "intro": "Verken die Skrif, Christelike dissipelskap en alledaagse geloof deur die bladsye van The Heartbeat of the Remnant.",
+    "latest_articles": "Jongste artikels",
+    "latest_issue": "Jongste uitgawe",
+    "featured_archive": "Uit die argief",
+    "browse_archive": "Verken die argief",
+    "browse_categories": "Blaai deur kategorieë",
+    "read_article": "Lees artikel",
+    "read_issue": "Lees uitgawe",
+    "all_articles": "Alle artikels",
+    "all_issues": "Alle uitgawes",
+    "article_count": "Artikels: {count}",
+    "issue_count": "Uitgawes: {count}",
+    "topic": "Onderwerp",
+    "no_articles_title": "Vertalings is op pad",
+    "coming_soon": "Hier is nog geen artikels in hierdie taal beskikbaar nie. Verken die Engelse argief of kies ’n ander beskikbare taal.",
+    "read_english": "Lees in Engels",
+    "available_languages": "Beskikbare tale",
+    "missing_translation": "Hierdie artikel is nog nie in hierdie taal beskikbaar nie. Kies ’n beskikbare vertaling of lees die gesaghebbende Engelse oorspronklike.",
+    "search_placeholder": "Soek artikels, onderwerpe en uitgawes",
+    "search_hint": "Deursoek die volledige teks van artikels wat in hierdie taal beskikbaar is.",
+    "searching": "Besig om te soek…",
+    "results_count": "Resultate: {count}",
+    "no_results": "Geen passende artikels nie. Probeer ’n ander woord of verander die filters.",
+    "search_error": "Die soekfunksie kon nie gelaai word nie. Probeer asseblief weer.",
+    "clear": "Maak skoon",
+    "all_categories": "Alle kategorieë",
+    "all_issue_filter": "Alle uitgawes",
+    "citation": "Tydskrifverwysing",
+    "original_issue": "Oorspronklike uitgawe",
+    "source_pages": "Oorspronklike bladsye",
+    "author": "Skrywer",
+    "reading_time": "Leestyd",
+    "minutes": "{count} min",
+    "download_markdown": "Laai Markdown af",
+    "copy_markdown": "Kopieer Markdown",
+    "copied": "Gekopieer",
+    "copy_fallback": "Kies en kopieer die Markdown-teks hieronder.",
+    "prev": "Vorige",
+    "next": "Volgende",
+    "pause": "Pouseer",
+    "play": "Speel",
+    "breadcrumbs": "Jy is hier",
+    "back": "Terug",
+    "to_top": "Terug na bo",
+    "skip_content": "Slaan oor na inhoud",
+    "subscribe_rss": "Teken via RSS in",
+    "about_archive": "Oor hierdie argief",
+    "archive_intro": "Lees die tydskrifargief, met artikels volgens hul oorspronklike uitgawes gegroepeer.",
+    "category_intro": "Verken Christelike lering en oordenkings volgens onderwerp. Alle kategorieë bly beskikbaar terwyl vertalings bygevoeg word.",
+    "issue_intro": "Blaai deur tydskrifuitgawes en lees die artikels in hul oorspronklike volgorde.",
+    "magazine": "Tydskrif",
+    "issue": "Uitgawe",
+    "volume": "Deel",
+    "number": "Nommer",
+    "untitled_article": "Artikel sonder titel",
+    "undated_issue": "Datum nie aangeteken nie",
+    "no_issues_title": "Nog geen uitgawes beskikbaar nie",
+    "not_found_title": "Bladsy nie gevind nie",
+    "not_found_body": "Hierdie bladsy kon nie gevind word nie. Blaai deur die argief of soek ’n artikel.",
+    "return_home": "Terug na tuisblad",
+    "language_notice": "Jy lees die argief in hierdie taal.",
+    "english_authoritative": "Die Engelse oorspronklike is gesaghebbend.",
+    "cover_placeholder": "Uit die tydskrifargief",
+    "source_pdf": "Oorspronklike PDF",
+    "related_articles": "Verwante artikels",
+    "filters": "Filters",
+    "apply_filters": "Pas filters toe",
+    "publication_date": "Publikasiedatum",
+    "translation_status": "Vertaalstatus",
+    "main_navigation": "Hoofnavigasie",
+    "footer_navigation": "Gemeenteskakels",
+    "social_links": "Sosiale skakels",
+    "copy_error": "Outomatiese kopiëring is nie beskikbaar nie. Kopieer die teks hieronder.",
+    "special_edition": "Spesiale uitgawe"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Seënhoekie",
+      "description": "Kort oordenkings oor dankbaarheid, bemoediging en die seëninge van ’n wandel met God.",
+      "slug": "seënhoekie"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Boekresensies",
+      "description": "Resensies van boeke wat in die lig van die Skrif en getroue Christelike dissipelskap beoordeel word.",
+      "slug": "boekresensies"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Karakter",
+      "description": "Lering oor opregtheid, nederigheid en die groei van ’n Christusgelyke karakter in die daaglikse lewe.",
+      "slug": "karakter"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Kinders",
+      "description": "Verhale en Bybellesse wat kinders aanmoedig om God te leer ken en Jesus te volg.",
+      "slug": "kinders"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Christelike lewe",
+      "description": "Praktiese oordenkings oor die navolging van Jesus in alledaagse keuses, werk en verhoudings.",
+      "slug": "christelike-lewe"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Kerk",
+      "description": "Oordenkings oor die kerk as die liggaam van Christus, haar roeping, gemeenskap en getuienis.",
+      "slug": "kerk"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Kerksake",
+      "description": "Artikels oor gemeentelewe, gedeelde verantwoordelikhede en vrae waarmee die kerk te doen kry.",
+      "slug": "kerksake"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Misleiding",
+      "description": "Waarskuwings teen geestelike valsheid en misleidende leringe, getoets aan die Skrif.",
+      "slug": "misleiding"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Onderskeidingsvermoë",
+      "description": "Bybelse leiding om leringe te toets, invloede op te weeg en die waarheid te herken.",
+      "slug": "onderskeidingsvermoë"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Redaksioneel",
+      "description": "Redaksionele beskouings oor die tydskrif se bekommernisse, oortuigings en vrae.",
+      "slug": "redaksioneel"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Gesin",
+      "description": "Lering oor liefde, getrouheid en saamleef binne die Christelike gesin.",
+      "slug": "gesin"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Gesinsgeskiedenisse",
+      "description": "Verhale oor huis- en gesinslewe wat ervarings en lesse van vroeëre geslagte bewaar.",
+      "slug": "gesinsgeskiedenisse"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Oordeel",
+      "description": "Oordenkings oor God se oordeel, menslike aanspreeklikheid, bekering en die oproep tot geregtigheid.",
+      "slug": "oordeel"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martelaarskap",
+      "description": "Verhale van gelowiges wat vir hul geloof in Jesus Christus gely of hul lewe gegee het.",
+      "slug": "martelaarskap"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medies",
+      "description": "Argiefartikels oor gesondheid, mediese vrae en die etiese en geestelike aspekte daarvan.",
+      "slug": "medies"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Sending",
+      "description": "Verhale en oordenkings oor die verkondiging van die evangelie, diens aan ander en Christelike sending.",
+      "slug": "sending"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Artikels oor sedigheid",
+      "description": "Lering oor sedigheid, kleredrag en ’n innerlike gesindheid wat God eer.",
+      "slug": "artikels-oor-sedigheid"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Weerloosheid",
+      "description": "Oordenkings oor Jesus se lering om vyande lief te hê, vergelding af te wys en vrede te maak.",
+      "slug": "weerloosheid"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Ouerskap",
+      "description": "Bybelse raad oor die grootmaak van kinders, geloofsonderrig en die verantwoordelikhede van ouers.",
+      "slug": "ouerskap"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Poësie",
+      "description": "Gedigte en verse wat aanbidding, geloof, verlange en die ervaring van die Christelike lewe verwoord.",
+      "slug": "poësie"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Herlewing",
+      "description": "Oproepe tot bekering, hernieude toewyding en ’n dieper lewe van gehoorsaamheid aan God.",
+      "slug": "herlewing"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Skerp woorde",
+      "description": "Kort, deurdringende oordenkings wat selftevredenheid uitdaag en getroue gehoorsaamheid aanmoedig.",
+      "slug": "skerp-woorde"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Geestelike oefening",
+      "description": "Praktiese lering oor gebed, die Skrif, selfdissipline en groei in die geloof.",
+      "slug": "geestelike-oefening"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Getuienis",
+      "description": "Persoonlike verhale van God se genade, bekering en geloof wat in die daaglikse lewe werk.",
+      "slug": "getuienis"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Vrou",
+      "description": "Oordenkings oor vroue se geloof, diens, verhoudings en verantwoordelikhede in die Christelike lewe.",
+      "slug": "vrou"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Jeug",
+      "description": "Bemoediging en Bybelse leiding vir jongmense wat voor keuses oor geloof en die lewe staan.",
+      "slug": "jeug"
+    }
+  },
+  "seasons": {
+    "Summer": "Somer",
+    "Spring": "Lente",
+    "Winter": "Winter",
+    "Autumn": "Herfs",
+    "Fall": "Herfs"
+  },
+  "months": {
+    "1": "Januarie",
+    "2": "Februarie",
+    "3": "Maart",
+    "4": "April",
+    "5": "Mei",
+    "6": "Junie",
+    "7": "Julie",
+    "8": "Augustus",
+    "9": "September",
+    "10": "Oktober",
+    "11": "November",
+    "12": "Desember"
+  },
+  "chrome": {
+    "Home": "Tuis",
+    "The Holy Scriptures": "Die Heilige Skrif",
+    "Text": "Teks",
+    "Sermons": "Preke",
+    "Videos": "Video’s",
+    "The Godly Home": "Die godvrugtige huis",
+    "Articles": "Artikels",
+    "Daily": "Daagliks",
+    "Daily Light": "Daaglikse lig",
+    "Services": "Eredienste",
+    "Join us": "Sluit by ons aan",
+    "Church Info": "Kerkinligting",
+    "History": "Geskiedenis",
+    "Brotherhood": "Broederskap",
+    "Blog": "Blog",
+    "Testimonies": "Getuienisse",
+    "Confession of Faith": "Geloofsbelydenis",
+    "Storehouse": "Voorraadkamer",
+    "Privacy Policy": "Privaatheidsbeleid",
+    "Copyright": "Kopiereg",
+    "Projects": "Projekte",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Bruidskis",
+    "Why Bible": "Waarom die Bybel",
+    "we fear God": "ons vrees God",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Sending in Namibië",
+    "Welcome": "Welkom",
+    "Follow Jesus": "Volg Jesus",
+    "Live Services": "Regstreekse eredienste",
+    "Locations": "Plekke",
+    "Events": "Geleenthede",
+    "Revival": "Herlewing",
+    "Telegram": "Telegram",
+    "Contact Us": "Kontak ons",
+    "Social Outreach": "Sosiale uitreik",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Kopiereg © trueChristian.Church",
+    "free distribution only": "slegs gratis verspreiding",
+    "Mission": "Sending",
+    "We Fear God": "Ons vrees God",
+    "Why we believe the Bible": "Waarom ons die Bybel glo"
+  }
+}

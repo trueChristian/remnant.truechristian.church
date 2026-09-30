@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "es",
+    "native_name": "Español",
+    "dir": "ltr",
+    "code": "spa"
+  },
+  "ui": {
+    "home": "Inicio",
+    "articles": "Artículos",
+    "categories": "Categorías",
+    "issues": "Números",
+    "search": "Buscar",
+    "language": "Idioma",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "theme": "Apariencia",
+    "system": "Sistema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "kicker": "Una revista para vivir fielmente la fe cristiana",
+    "intro": "Explore las Escrituras, el discipulado cristiano y la fe cotidiana en las páginas de The Heartbeat of the Remnant.",
+    "latest_articles": "Artículos recientes",
+    "latest_issue": "Último número",
+    "featured_archive": "Del archivo",
+    "browse_archive": "Explorar el archivo",
+    "browse_categories": "Explorar categorías",
+    "read_article": "Leer artículo",
+    "read_issue": "Leer número",
+    "all_articles": "Todos los artículos",
+    "all_issues": "Todos los números",
+    "article_count": "Artículos: {count}",
+    "issue_count": "Números: {count}",
+    "topic": "Tema",
+    "no_articles_title": "Las traducciones están en camino",
+    "coming_soon": "Todavía no hay artículos disponibles aquí en este idioma. Explore el archivo en inglés o elija otro idioma disponible.",
+    "read_english": "Leer en inglés",
+    "available_languages": "Idiomas disponibles",
+    "missing_translation": "Este artículo todavía no está disponible en este idioma. Elija una traducción disponible o lea el original en inglés, que es la versión autorizada.",
+    "search_placeholder": "Buscar artículos, temas y números",
+    "search_hint": "Busque en el texto completo de los artículos disponibles en este idioma.",
+    "searching": "Buscando…",
+    "results_count": "Resultados: {count}",
+    "no_results": "No hay artículos que coincidan. Pruebe otra palabra o cambie los filtros.",
+    "search_error": "No se pudo cargar la búsqueda. Inténtelo de nuevo.",
+    "clear": "Borrar",
+    "all_categories": "Todas las categorías",
+    "all_issue_filter": "Todos los números",
+    "citation": "Referencia de la revista",
+    "original_issue": "Número original",
+    "source_pages": "Páginas de origen",
+    "author": "Autor",
+    "reading_time": "Tiempo de lectura",
+    "minutes": "{count} min",
+    "download_markdown": "Descargar Markdown",
+    "copy_markdown": "Copiar Markdown",
+    "copied": "Copiado",
+    "copy_fallback": "Seleccione y copie el texto Markdown que aparece a continuación.",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "pause": "Pausar",
+    "play": "Reproducir",
+    "breadcrumbs": "Está aquí",
+    "back": "Volver",
+    "to_top": "Volver arriba",
+    "skip_content": "Saltar al contenido",
+    "subscribe_rss": "Suscribirse por RSS",
+    "about_archive": "Acerca de este archivo",
+    "archive_intro": "Lea el archivo de la revista, con los artículos agrupados según sus números originales.",
+    "category_intro": "Explore enseñanzas y reflexiones cristianas por tema. Todas las categorías permanecen accesibles a medida que se añaden traducciones.",
+    "issue_intro": "Explore los números de la revista y lea sus artículos en el orden original.",
+    "magazine": "Revista",
+    "issue": "Número",
+    "volume": "Volumen",
+    "number": "Número",
+    "untitled_article": "Artículo sin título",
+    "undated_issue": "Fecha no registrada",
+    "no_issues_title": "Todavía no hay números disponibles",
+    "not_found_title": "Página no encontrada",
+    "not_found_body": "No se encontró esta página. Explore el archivo o busque un artículo.",
+    "return_home": "Volver al inicio",
+    "language_notice": "Está consultando el archivo en este idioma.",
+    "english_authoritative": "El original en inglés es la versión autorizada.",
+    "cover_placeholder": "Del archivo de la revista",
+    "source_pdf": "PDF original",
+    "related_articles": "Artículos relacionados",
+    "filters": "Filtros",
+    "apply_filters": "Aplicar filtros",
+    "publication_date": "Fecha de publicación",
+    "translation_status": "Estado de la traducción",
+    "main_navigation": "Navegación principal",
+    "footer_navigation": "Enlaces de la iglesia",
+    "social_links": "Redes sociales",
+    "copy_error": "La copia automática no está disponible. Copie el texto que aparece a continuación.",
+    "special_edition": "Edición especial"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Rincón de bendiciones",
+      "description": "Breves reflexiones sobre la gratitud, el ánimo y las bendiciones de caminar con Dios.",
+      "slug": "rincón-de-bendiciones"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Reseñas de libros",
+      "description": "Reseñas de libros examinados a la luz de las Escrituras y del discipulado cristiano fiel.",
+      "slug": "reseñas-de-libros"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Carácter",
+      "description": "Enseñanzas sobre la integridad, la humildad y el desarrollo de un carácter semejante al de Cristo en la vida diaria.",
+      "slug": "carácter"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Niños",
+      "description": "Relatos y lecciones bíblicas que animan a los niños a conocer a Dios y seguir a Jesús.",
+      "slug": "niños"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Vida cristiana",
+      "description": "Reflexiones prácticas sobre cómo seguir a Jesús en las decisiones, el trabajo y las relaciones cotidianas.",
+      "slug": "vida-cristiana"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Iglesia",
+      "description": "Reflexiones sobre la iglesia como cuerpo de Cristo, su llamado, comunión y testimonio.",
+      "slug": "iglesia"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Asuntos de la iglesia",
+      "description": "Artículos sobre la vida congregacional, las responsabilidades compartidas y las cuestiones que enfrenta la iglesia.",
+      "slug": "asuntos-de-la-iglesia"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Engaño",
+      "description": "Advertencias sobre la falsedad espiritual y las enseñanzas engañosas, examinadas a la luz de las Escrituras.",
+      "slug": "engaño"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Discernimiento",
+      "description": "Orientación bíblica para examinar enseñanzas, evaluar influencias y reconocer la verdad.",
+      "slug": "discernimiento"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Editorial",
+      "description": "Perspectivas editoriales que presentan inquietudes, convicciones y preguntas de la revista.",
+      "slug": "editorial"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Familia",
+      "description": "Enseñanzas sobre el amor, la fidelidad y la convivencia en la familia cristiana.",
+      "slug": "familia"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Historias del hogar",
+      "description": "Relatos de la vida familiar que conservan experiencias y lecciones de generaciones anteriores.",
+      "slug": "historias-del-hogar"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Juicio",
+      "description": "Reflexiones sobre el juicio de Dios, la responsabilidad humana, el arrepentimiento y el llamado a la justicia.",
+      "slug": "juicio"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martirio",
+      "description": "Relatos de creyentes que sufrieron o dieron su vida por su fe en Jesucristo.",
+      "slug": "martirio"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medicina",
+      "description": "Artículos del archivo sobre la salud, las cuestiones médicas y sus dimensiones éticas y espirituales.",
+      "slug": "medicina"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Misiones",
+      "description": "Relatos y reflexiones sobre compartir el evangelio, servir a otros y la misión cristiana.",
+      "slug": "misiones"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Artículos sobre el recato",
+      "description": "Enseñanzas sobre el recato, la vestimenta y una disposición interior que honra a Dios.",
+      "slug": "artículos-sobre-el-recato"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "No resistencia",
+      "description": "Reflexiones sobre la enseñanza de Jesús acerca de amar a los enemigos, renunciar a las represalias y procurar la paz.",
+      "slug": "no-resistencia"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Crianza de los hijos",
+      "description": "Consejos bíblicos sobre el cuidado de los hijos, la enseñanza de la fe y las responsabilidades de los padres.",
+      "slug": "crianza-de-los-hijos"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Poesía",
+      "description": "Poemas y versos que expresan adoración, fe, anhelo y la experiencia de la vida cristiana.",
+      "slug": "poesía"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Avivamiento",
+      "description": "Llamados al arrepentimiento, a una devoción renovada y a una vida de mayor obediencia a Dios.",
+      "slug": "avivamiento"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Palabras incisivas",
+      "description": "Reflexiones breves y penetrantes que cuestionan la complacencia y alientan la obediencia fiel.",
+      "slug": "palabras-incisivas"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Ejercicio espiritual",
+      "description": "Enseñanzas prácticas sobre la oración, las Escrituras, la disciplina personal y el crecimiento en la fe.",
+      "slug": "ejercicio-espiritual"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Testimonio",
+      "description": "Relatos personales de la gracia de Dios, la conversión y la fe puesta en práctica cada día.",
+      "slug": "testimonio"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Mujer",
+      "description": "Reflexiones sobre la fe, el servicio, las relaciones y las responsabilidades de las mujeres en la vida cristiana.",
+      "slug": "mujer"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Jóvenes",
+      "description": "Ánimo y orientación bíblica para jóvenes que afrontan decisiones sobre la fe y la vida.",
+      "slug": "jóvenes"
+    }
+  },
+  "seasons": {
+    "Summer": "Verano",
+    "Spring": "Primavera",
+    "Winter": "Invierno",
+    "Autumn": "Otoño",
+    "Fall": "Otoño"
+  },
+  "months": {
+    "1": "enero",
+    "2": "febrero",
+    "3": "marzo",
+    "4": "abril",
+    "5": "mayo",
+    "6": "junio",
+    "7": "julio",
+    "8": "agosto",
+    "9": "septiembre",
+    "10": "octubre",
+    "11": "noviembre",
+    "12": "diciembre"
+  },
+  "chrome": {
+    "Home": "Inicio",
+    "The Holy Scriptures": "Las Sagradas Escrituras",
+    "Text": "Texto",
+    "Sermons": "Sermones",
+    "Videos": "Vídeos",
+    "The Godly Home": "El hogar piadoso",
+    "Articles": "Artículos",
+    "Daily": "Cada día",
+    "Daily Light": "Luz diaria",
+    "Services": "Cultos",
+    "Join us": "Únase a nosotros",
+    "Church Info": "Información de la iglesia",
+    "History": "Historia",
+    "Brotherhood": "Hermandad",
+    "Blog": "Blog",
+    "Testimonies": "Testimonios",
+    "Confession of Faith": "Confesión de fe",
+    "Storehouse": "Almacén de recursos",
+    "Privacy Policy": "Política de privacidad",
+    "Copyright": "Derechos de autor",
+    "Projects": "Proyectos",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Cofre del ajuar",
+    "Why Bible": "Por qué la Biblia",
+    "we fear God": "tememos a Dios",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Misión en Namibia",
+    "Welcome": "Bienvenidos",
+    "Follow Jesus": "Seguir a Jesús",
+    "Live Services": "Cultos en directo",
+    "Locations": "Lugares de reunión",
+    "Events": "Eventos",
+    "Revival": "Avivamiento",
+    "Telegram": "Telegram",
+    "Contact Us": "Contáctenos",
+    "Social Outreach": "Presencia en redes",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Derechos de autor © trueChristian.Church",
+    "free distribution only": "solo distribución gratuita",
+    "Mission": "Misión",
+    "We Fear God": "Tememos a Dios",
+    "Why we believe the Bible": "Por qué creemos en la Biblia"
+  }
+}

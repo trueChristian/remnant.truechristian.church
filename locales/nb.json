@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "nb",
+    "native_name": "Norsk bokmål",
+    "dir": "ltr",
+    "code": "nob"
+  },
+  "ui": {
+    "home": "Hjem",
+    "articles": "Artikler",
+    "categories": "Kategorier",
+    "issues": "Utgaver",
+    "search": "Søk",
+    "language": "Språk",
+    "menu": "Meny",
+    "close": "Lukk",
+    "theme": "Utseende",
+    "system": "System",
+    "light": "Lyst",
+    "dark": "Mørkt",
+    "kicker": "Et tidsskrift for et trofast kristent liv",
+    "intro": "Utforsk Bibelen, kristent disippelliv og hverdagens tro gjennom sidene i The Heartbeat of the Remnant.",
+    "latest_articles": "Nyeste artikler",
+    "latest_issue": "Nyeste utgave",
+    "featured_archive": "Fra arkivet",
+    "browse_archive": "Utforsk arkivet",
+    "browse_categories": "Bla i kategorier",
+    "read_article": "Les artikkelen",
+    "read_issue": "Les utgaven",
+    "all_articles": "Alle artikler",
+    "all_issues": "Alle utgaver",
+    "article_count": "Artikler: {count}",
+    "issue_count": "Utgaver: {count}",
+    "topic": "Emne",
+    "no_articles_title": "Oversettelser er på vei",
+    "coming_soon": "Her finnes det ennå ingen artikler på dette språket. Utforsk det engelske arkivet eller velg et annet tilgjengelig språk.",
+    "read_english": "Les på engelsk",
+    "available_languages": "Tilgjengelige språk",
+    "missing_translation": "Denne artikkelen finnes ennå ikke på dette språket. Velg en tilgjengelig oversettelse eller les den engelske originalen, som er den autoritative versjonen.",
+    "search_placeholder": "Søk etter artikler, emner og utgaver",
+    "search_hint": "Søk i hele teksten til artikler som finnes på dette språket.",
+    "searching": "Søker…",
+    "results_count": "Resultater: {count}",
+    "no_results": "Ingen treff. Prøv et annet ord eller endre filtrene.",
+    "search_error": "Søket kunne ikke lastes. Prøv igjen.",
+    "clear": "Tøm",
+    "all_categories": "Alle kategorier",
+    "all_issue_filter": "Alle utgaver",
+    "citation": "Tidsskriftreferanse",
+    "original_issue": "Opprinnelig utgave",
+    "source_pages": "Originalsider",
+    "author": "Forfatter",
+    "reading_time": "Lesetid",
+    "minutes": "{count} min",
+    "download_markdown": "Last ned Markdown",
+    "copy_markdown": "Kopier Markdown",
+    "copied": "Kopiert",
+    "copy_fallback": "Merk og kopier Markdown-teksten nedenfor.",
+    "prev": "Forrige",
+    "next": "Neste",
+    "pause": "Pause",
+    "play": "Spill av",
+    "breadcrumbs": "Du er her",
+    "back": "Tilbake",
+    "to_top": "Til toppen",
+    "skip_content": "Hopp til innholdet",
+    "subscribe_rss": "Abonner via RSS",
+    "about_archive": "Om arkivet",
+    "archive_intro": "Les tidsskriftarkivet, med artiklene samlet under sine opprinnelige utgaver.",
+    "category_intro": "Utforsk kristen undervisning og refleksjoner etter emne. Alle kategorier er tilgjengelige etter hvert som oversettelser legges til.",
+    "issue_intro": "Bla gjennom tidsskriftutgaver og les artiklene i opprinnelig rekkefølge.",
+    "magazine": "Tidsskrift",
+    "issue": "Utgave",
+    "volume": "Bind",
+    "number": "Nummer",
+    "untitled_article": "Artikkel uten tittel",
+    "undated_issue": "Dato ikke oppgitt",
+    "no_issues_title": "Ingen utgaver tilgjengelige ennå",
+    "not_found_title": "Fant ikke siden",
+    "not_found_body": "Denne siden ble ikke funnet. Bla i arkivet eller søk etter en artikkel.",
+    "return_home": "Til forsiden",
+    "language_notice": "Du leser arkivet på dette språket.",
+    "english_authoritative": "Den engelske originalen er den autoritative versjonen.",
+    "cover_placeholder": "Fra tidsskriftarkivet",
+    "source_pdf": "Original PDF",
+    "related_articles": "Relaterte artikler",
+    "filters": "Filtre",
+    "apply_filters": "Bruk filtre",
+    "publication_date": "Publiseringsdato",
+    "translation_status": "Oversettelsesstatus",
+    "main_navigation": "Hovedmeny",
+    "footer_navigation": "Kirkens lenker",
+    "social_links": "Sosiale lenker",
+    "copy_error": "Automatisk kopiering er ikke tilgjengelig. Kopier teksten nedenfor.",
+    "special_edition": "Spesialutgave"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Velsignelseshjørnet",
+      "description": "Korte refleksjoner om takknemlighet, oppmuntring og velsignelsene ved å vandre med Gud.",
+      "slug": "velsignelseshjørnet"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Bokanmeldelser",
+      "description": "Anmeldelser av bøker vurdert i lys av Bibelen og et trofast kristent disippelliv.",
+      "slug": "bokanmeldelser"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Karakter",
+      "description": "Undervisning om redelighet, ydmykhet og utviklingen av en kristuslik karakter i hverdagen.",
+      "slug": "karakter"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Barn",
+      "description": "Fortellinger og bibelsk lærdom som oppmuntrer barn til å kjenne Gud og følge Jesus.",
+      "slug": "barn"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Kristent liv",
+      "description": "Praktiske refleksjoner om å følge Jesus i hverdagens valg, arbeid og relasjoner.",
+      "slug": "kristent-liv"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Kirken",
+      "description": "Refleksjoner om kirken som Kristi kropp, dens kall, fellesskap og vitnesbyrd.",
+      "slug": "kirken"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Menighetsspørsmål",
+      "description": "Artikler om menighetsliv, felles ansvar og spørsmål kirken står overfor.",
+      "slug": "menighetsspørsmål"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Villfarelse",
+      "description": "Advarsler mot åndelig usannhet og villedende lære, prøvd i lys av Bibelen.",
+      "slug": "villfarelse"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Åndelig dømmekraft",
+      "description": "Bibelsk veiledning for å prøve lære, vurdere påvirkninger og gjenkjenne det som er sant.",
+      "slug": "åndelig-dømmekraft"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Lederartikkel",
+      "description": "Redaksjonelle perspektiver på tidsskriftets anliggender, overbevisninger og spørsmål.",
+      "slug": "lederartikkel"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Familie",
+      "description": "Undervisning om kjærlighet, troskap og livet sammen i den kristne familien.",
+      "slug": "familie"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Fortellinger fra hjemmene",
+      "description": "Fortellinger om hjem og familie som bevarer erfaringer og lærdom fra tidligere generasjoner.",
+      "slug": "fortellinger-fra-hjemmene"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Dom",
+      "description": "Refleksjoner om Guds dom, menneskets ansvar, omvendelse og kallet til rettferdighet.",
+      "slug": "dom"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martyrium",
+      "description": "Fortellinger om troende som led eller ga livet for sin tro på Jesus Kristus.",
+      "slug": "martyrium"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medisin",
+      "description": "Arkivartikler om helse, medisinske spørsmål og deres etiske og åndelige sider.",
+      "slug": "medisin"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Misjon",
+      "description": "Fortellinger og refleksjoner om å dele evangeliet, tjene andre og drive kristen misjon.",
+      "slug": "misjon"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Sømmelighet",
+      "description": "Undervisning om sømmelighet, påkledning og en indre holdning som ærer Gud.",
+      "slug": "sømmelighet"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Ikkevold",
+      "description": "Refleksjoner om Jesu lære om å elske fiender, avstå fra gjengjeldelse og skape fred.",
+      "slug": "ikkevold"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Foreldreskap",
+      "description": "Bibelske råd om å oppdra barn, formidle troen og ivareta foreldrenes ansvar.",
+      "slug": "foreldreskap"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Poesi",
+      "description": "Dikt og vers som uttrykker tilbedelse, tro, lengsel og erfaringer fra kristenlivet.",
+      "slug": "poesi"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Vekkelse",
+      "description": "Kall til omvendelse, fornyet hengivenhet og et dypere liv i lydighet mot Gud.",
+      "slug": "vekkelse"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Skarpe ord",
+      "description": "Korte, ransakende refleksjoner som utfordrer selvtilfredshet og oppmuntrer til trofast lydighet.",
+      "slug": "skarpe-ord"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Åndelig øvelse",
+      "description": "Praktisk undervisning om bønn, Bibelen, selvdisiplin og vekst i troen.",
+      "slug": "åndelig-øvelse"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Vitnesbyrd",
+      "description": "Personlige fortellinger om Guds nåde, omvendelse og tro som virker i hverdagen.",
+      "slug": "vitnesbyrd"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Kvinner",
+      "description": "Refleksjoner om kvinners tro, tjeneste, relasjoner og ansvar i kristenlivet.",
+      "slug": "kvinner"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Ungdom",
+      "description": "Oppmuntring og bibelsk veiledning for unge som står overfor valg om tro og liv.",
+      "slug": "ungdom"
+    }
+  },
+  "seasons": {
+    "Summer": "Sommer",
+    "Spring": "Vår",
+    "Winter": "Vinter",
+    "Autumn": "Høst",
+    "Fall": "Høst"
+  },
+  "months": {
+    "1": "januar",
+    "2": "februar",
+    "3": "mars",
+    "4": "april",
+    "5": "mai",
+    "6": "juni",
+    "7": "juli",
+    "8": "august",
+    "9": "september",
+    "10": "oktober",
+    "11": "november",
+    "12": "desember"
+  },
+  "chrome": {
+    "Home": "Hjem",
+    "The Holy Scriptures": "Den hellige skrift",
+    "Text": "Tekst",
+    "Sermons": "Prekener",
+    "Videos": "Videoer",
+    "The Godly Home": "Det gudfryktige hjemmet",
+    "Articles": "Artikler",
+    "Daily": "Daglig",
+    "Daily Light": "Daglig lys",
+    "Services": "Gudstjenester",
+    "Join us": "Bli med",
+    "Church Info": "Om kirken",
+    "History": "Historie",
+    "Brotherhood": "Broderfellesskap",
+    "Blog": "Blogg",
+    "Testimonies": "Vitnesbyrd",
+    "Confession of Faith": "Trosbekjennelse",
+    "Storehouse": "Forrådskammer",
+    "Privacy Policy": "Personvern",
+    "Copyright": "Opphavsrett",
+    "Projects": "Prosjekter",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Brudekisten",
+    "Why Bible": "Hvorfor Bibelen",
+    "we fear God": "vi frykter Gud",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Misjon i Namibia",
+    "Welcome": "Velkommen",
+    "Follow Jesus": "Følg Jesus",
+    "Live Services": "Direktesendte gudstjenester",
+    "Locations": "Steder",
+    "Events": "Arrangementer",
+    "Revival": "Vekkelse",
+    "Telegram": "Telegram",
+    "Contact Us": "Kontakt oss",
+    "Social Outreach": "Sosiale nettverk",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Opphavsrett © trueChristian.Church",
+    "free distribution only": "kun gratis distribusjon",
+    "Mission": "Misjon",
+    "We Fear God": "Vi frykter Gud",
+    "Why we believe the Bible": "Hvorfor vi tror på Bibelen"
+  }
+}
