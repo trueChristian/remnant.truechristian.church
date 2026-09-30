@@ -90,7 +90,7 @@ approved destination-scoped credential. Export validation remains mandatory.
 
 Ordinary `GITHUB_TOKEN` is repository-scoped and cannot perform this cross-repo
 request. Source workflows require separate, approved secure configuration. See
-[the unapplied source hook patches](../integrations/README.md). Those are separate
+[the disabled source hook draft PRs and patch snapshots](../integrations/README.md). Those are separate
 source PRs; this website PR alone does not enable source-driven publication.
 
 The build job has only `contents: read`. The separate deploy job has only

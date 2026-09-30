@@ -392,3 +392,6 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
   .tcc-site-header .tcc-header__navigation { height: 100dvh; }
   [dir="rtl"] .tcc-header__navigation { inset: 0 0 0 auto; }
 }
+@media (max-width: 959px) {
+  .tcc-site-header .tcc-header__scrim { width: 100vw; height: 100dvh; }
+}

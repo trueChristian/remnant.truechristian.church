@@ -29,15 +29,15 @@ The scripted browser suite exercises desktop and 360px mobile widths for every l
 
 ## Measured initial budgets
 
-On the initial selected export (634 English / 5 Afrikaans):
+On the initial selected export (646 English / 5 Afrikaans; English revision `6af08032b5e2a92ff0671605fb89dffa06780892`):
 
-- Largest generated HTML page: approximately 71 KB uncompressed; target <100 KB for current pages
-- English full-text index: 6,426,407 bytes JSON; 2,382,295 bytes deterministic gzip; target ≤3 MB compressed at this corpus size
+- Largest generated HTML page: approximately 68 KB uncompressed; target <100 KB for current pages
+- English full-text index: 6,544,253 bytes JSON; 2,426,430 bytes deterministic gzip; target ≤3 MB compressed at this corpus size
 - Empty-language indexes: two-byte JSON arrays
 - Current homepage primary source image: 95,367 bytes, with an explicit image box; below-fold images are lazy-loaded
 - All source images are shared across locales. Original image bytes are retained rather than multiplied by language
 
-The compressed index is fetched only for the current search locale, on first nonempty query/filter, and decompressed in a Web Worker where supported. Plain JSON remains a compatibility fallback. No homepage downloads the search corpus. Rendering is paginated to 40 results. Query compute target is under 100 ms desktop and 250 ms under a 4× CPU slowdown; transport latency and cold-load time depend on the reader's connection. CI/browser performance evidence must be measured before claiming these targets passed.
+The compressed index is fetched only for the current search locale, on first nonempty query/filter, and decompressed in a Web Worker where supported. Plain JSON remains a compatibility fallback. No homepage downloads the search corpus. Rendering is paginated to 40 results. Query compute target is under 100 ms desktop and 250 ms under a 4× CPU slowdown; transport latency and cold-load time depend on the reader's connection. The first CI browser measurement on the 646-article corpus recorded a worst query of 7 ms at normal CPU speed and 21.2 ms at 4× CPU slowdown (10 representative queries). These are warm compute measurements, not cold-network load promises.
 
 Issue chronology uses structured year plus seasonal/month ordering and original order for ties. Sorting ordinals are not publication dates. RSS omits `pubDate` when the source only gives a season, month range or year; feeds never create a fictional day.
 
