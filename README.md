@@ -55,9 +55,11 @@ Optional future physical covers are configured in `data/covers.json`, keyed by i
 
 Place owner-approved files in `public/covers/` and supply alt text in every locale. Missing covers use explicitly typographic archive identities. No cover photography or issue facts are invented.
 
-## Publication is deliberately disabled initially
+## Publication through GitHub Pages Actions
 
-The draft implementation does not merge, deploy or change DNS. After review, the owner must separately approve source hook PRs, securely configure destination-scoped dispatch credentials, enable Pages Actions, configure the actual custom domain and HTTPS, and enable `PAGES_DEPLOY_ENABLED`. A `CNAME` file alone does not configure a GitHub Pages Actions domain.
+Pull requests build, test, and upload review artifacts only. Once GitHub Pages is configured to use Actions, successful trusted `main` builds publish changed output through the `github-pages` environment and its protection rules. No extra repository variable is required. Website pushes and manual recovery runs work independently of cross-repository notification credentials.
+
+Automatic source notifications additionally require approved, destination-scoped dispatch credentials and enabled source hooks. Configure the actual Pages custom domain and HTTPS in the repository settings; a `CNAME` file alone does not configure a GitHub Pages Actions domain. See [operations](docs/operations.md) for setup, deduplication, and recovery.
 
 ## Rights and provenance
 
