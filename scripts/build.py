@@ -137,7 +137,8 @@ class Site:
         languages = ''.join(f'<option value="{esc(paths[code])}" data-locale="{esc(code)}" lang="{esc(code)}" dir="{esc(info["meta"]["dir"])}"{(" selected" if code == tag else "")}>{esc(info["meta"]["native_name"])}</option>' for code, info in self.locales.items())
         nojs_languages = ' · '.join(f'<a href="{esc(paths[code])}" lang="{esc(code)}">{esc(info["meta"]["native_name"])}</a>' for code, info in self.locales.items())
         appearance = ''.join(f'<option value="{mode}">{t(mode)}</option>' for mode in ['system','light','dark'])
-        config = {'locale': tag, 'ui': locale['ui'], 'searchIndex': f'/{tag}/search-index.json', **(extra_config or {})}
+        client_keys = ('copied','copy_fallback','copy_error','play','pause','search_error','results_count','no_results','searching','search_hint','prev','next','search')
+        config = {'locale': tag, 'ui': {key:locale['ui'][key] for key in client_keys}, 'searchIndex': f'/{tag}/search-index.json', **(extra_config or {})}
         script_font = {'ar':'Noto+Sans+Arabic','ur':'Noto+Sans+Arabic','he':'Noto+Sans+Hebrew','hi':'Noto+Sans+Devanagari','bn':'Noto+Sans+Bengali','zh-Hans':'Noto+Sans+SC','ko':'Noto+Sans+KR'}.get(tag)
         fonts = 'family=Montserrat:wght@400;500;600&family=Raleway:wght@400;500;600' + (f'&family={script_font}:wght@400;500;600' if script_font else '') + '&display=swap'
         doc_title = f'{title} · {BRAND}' if title != BRAND else BRAND
