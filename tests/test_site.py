@@ -143,6 +143,42 @@ class GeneratedSiteTests(unittest.TestCase):
         self.assertEqual(issue.contents, [article['url'] for article in reversed(self.model['articles']['en'])])
         self.assertEqual(checker.pages[self.routes['issues']['en'][J]].contents, [])
 
+    def test_winter_2024_leads_home_archive_search_and_feed(self):
+        # Permanent identities from the current publisher catalogue, intentionally
+        # added after the older Summer/2023 fixture records to catch array ordering.
+        winter = {'id': '81196f7a-e1f3-5653-ba8e-1ca6a2824470',
+                  'slug': 'heartbeat-remnant-2024-winter',
+                  'publication': 'The Heartbeat of the Remnant',
+                  'date': {'year': 2024, 'season': 'Winter', 'precision': 'season'}}
+        autumn = {'id': '6e434782-fad8-50a6-84db-a97babd8c346',
+                  'slug': 'heartbeat-remnant-2024-autumn',
+                  'publication': 'The Heartbeat of the Remnant',
+                  'date': {'year': 2024, 'season': 'Autumn', 'precision': 'season'}}
+        self.model['issues'].extend([winter, autumn])
+        for article, issue in zip(self.model['articles']['en'][1:], [autumn, winter]):
+            article.update(issue_id=issue['id'], issue=copy.deepcopy(issue))
+        self.routes = initialize_routes(self.model, self.locales,
+                                        self.root / 'seasonal-routes.json', update=True)
+        Site(self.model, self.locales, self.routes, self.theme, self.output, {}).build()
+        expected = [winter['id'], autumn['id'], I, J]
+        for tag in self.locales:
+            home = self.page_path(f'/{tag}/').read_text()
+            card = home.split('<aside class="latest-issue">', 1)[1].split('</aside>', 1)[0]
+            self.assertIn(f'href="{self.routes["issues"][tag][winter["id"]]}"', card)
+            self.assertNotIn(self.routes['issues'][tag][autumn['id']], card)
+            archive = PageParser(f'/{tag}/issues/', self.page_path(f'/{tag}/issues/').read_text()).page
+            self.assertEqual(archive.issue_links,
+                             [self.routes['issues'][tag][issue_id] for issue_id in expected])
+        index = json.loads((self.output / 'en/search-index.json').read_text())
+        self.assertEqual([article['issue_id'] for article in index], expected[:3])
+        feed = ET.parse(self.output / 'en/feed.xml')
+        self.assertEqual([item.findtext('source') for item in feed.findall('channel/item')], [
+            'The Heartbeat of the Remnant · Winter 2024',
+            'The Heartbeat of the Remnant · Autumn 2024',
+            'The Heartbeat of the Remnant · Summer 2024',
+        ])
+        self.assertEqual(feed.findall('.//pubDate'), [])
+
     def test_uuid_compatibility_redirect_and_markdown_are_stable(self):
         checker = self.check()
         article = self.model['articles']['en'][0]

@@ -125,6 +125,51 @@ class ContentTests(unittest.TestCase):
         self.assertEqual([i['id'] for i in ordered_issues(model)], ['autumn', 'tie', 'summer', 'old'])
         self.assertEqual(model, original)
 
+    def test_seasonal_archive_follows_publisher_year_end_winter_order(self):
+        # The publisher lists Winter, Autumn/Fall, Summer, Spring, newest first:
+        # https://bereanvoice.com/ministries/
+        issues = [
+            {'id': f'{year}-{season}', 'issue_number': number,
+             'date': {'year': year, 'season': season, 'precision': 'season'}}
+            for year in (2022, 2024, 2023)
+            for season, number in [('Summer', 2), ('Spring', 1), ('Winter', 4),
+                                   ('Fall' if year == 2022 else 'Autumn', 3)]
+        ]
+        model = {'issues': issues}
+        original = copy.deepcopy(model)
+        expected = [
+            f'{year}-{season}' for year in (2024, 2023, 2022)
+            for season in ('Winter', 'Fall' if year == 2022 else 'Autumn', 'Summer', 'Spring')
+        ]
+        self.assertEqual([issue['id'] for issue in ordered_issues(model)], expected)
+        self.assertEqual(model, original)
+
+    def test_issue_chronology_preserves_month_ranges_years_and_catalogue_ties(self):
+        model = {'issues': [
+            {'id': 'unknown', 'date': {'year': 2013, 'precision': 'year'}},
+            {'id': 'january', 'date': {'year': 2013, 'month': 1}},
+            {'id': 'november-december', 'date': {'year': 2013, 'months': [11, 12]}},
+            {'id': 'december', 'date': {'year': 2013, 'month': 12}},
+            {'id': 'july-august', 'date': {'year': 2013, 'months': [7, 8]}},
+            {'id': 'newer-year', 'date': {'year': 2014, 'precision': 'year'}},
+            {'id': 'older-winter', 'date': {'year': 2012, 'season': 'WINTER'}},
+            {'id': 'unknown-tie', 'date': {'year': 2013, 'precision': 'year'}},
+        ]}
+        original = copy.deepcopy(model)
+        self.assertEqual([issue['id'] for issue in ordered_issues(model)], [
+            'newer-year', 'november-december', 'december', 'july-august',
+            'january', 'unknown', 'unknown-tie', 'older-winter',
+        ])
+        self.assertEqual(model, original)
+
+    def test_season_aliases_and_winter_ties_preserve_catalogue_order(self):
+        model = {'issues': [
+            {'id': season, 'date': {'year': 2024, 'season': season}}
+            for season in ('Fall', 'winter', 'Autumn', 'WINTER', 'Spring')
+        ]}
+        self.assertEqual([issue['id'] for issue in ordered_issues(model)],
+                         ['winter', 'WINTER', 'Fall', 'Autumn', 'Spring'])
+
     def test_exporter_fails_english_but_degrades_missing_translations(self):
         en_out, tr_out = self.root / 'out-en', self.root / 'out-tr'
         def fake_run(command, cwd):

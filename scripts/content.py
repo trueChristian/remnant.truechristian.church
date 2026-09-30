@@ -205,11 +205,13 @@ def _normalize(source: dict, html: str, locale: str, root: Path, translation: di
 def ordered_issues(model: dict) -> list[dict]:
     """Newest bibliographic year/period first, catalogue order for ties.
 
+    The publisher's annual sequence is Spring, Summer, Autumn/Fall, Winter:
+    https://bereanvoice.com/ministries/. Winter closes its labelled year.
     Season ordinals are sorting keys, NOT asserted publication dates. A year-only
     issue has unknown within-year order and follows finer-grained issues. Date
     objects and their precision are never altered and no date is synthesized.
     """
-    seasons = {"winter": 1, "spring": 4, "summer": 7, "fall": 10, "autumn": 10}
+    seasons = {"spring": 4, "summer": 7, "fall": 10, "autumn": 10, "winter": 12}
     def key(item):
         index, issue = item
         date = issue.get("date", {})
