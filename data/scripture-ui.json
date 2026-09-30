@@ -1,0 +1,149 @@
+{
+  "en": {
+    "loading": "Loading passage…",
+    "error": "This passage could not be loaded.",
+    "readBible": "Read in the Bible",
+    "close": "Close",
+    "unavailable": "This Bible translation is unavailable."
+  },
+  "af": {
+    "loading": "Skrifgedeelte laai…",
+    "error": "Hierdie skrifgedeelte kon nie gelaai word nie.",
+    "readBible": "Lees in die Bybel",
+    "close": "Sluit",
+    "unavailable": "Hierdie Bybelvertaling is nie beskikbaar nie."
+  },
+  "ar": {
+    "loading": "جارٍ تحميل النص…",
+    "error": "تعذّر تحميل هذا النص.",
+    "readBible": "اقرأ في الكتاب المقدس",
+    "close": "إغلاق",
+    "unavailable": "هذه الترجمة غير متاحة."
+  },
+  "bn": {
+    "loading": "শাস্ত্রাংশ লোড হচ্ছে…",
+    "error": "এই শাস্ত্রাংশ লোড করা যায়নি।",
+    "readBible": "বাইবেলে পড়ুন",
+    "close": "বন্ধ করুন",
+    "unavailable": "এই বাইবেল অনুবাদটি উপলব্ধ নয়।"
+  },
+  "de": {
+    "loading": "Bibelstelle wird geladen…",
+    "error": "Diese Bibelstelle konnte nicht geladen werden.",
+    "readBible": "In der Bibel lesen",
+    "close": "Schließen",
+    "unavailable": "Diese Bibelübersetzung ist nicht verfügbar."
+  },
+  "el": {
+    "loading": "Φόρτωση περικοπής…",
+    "error": "Δεν ήταν δυνατή η φόρτωση της περικοπής.",
+    "readBible": "Διαβάστε στη Βίβλο",
+    "close": "Κλείσιμο",
+    "unavailable": "Αυτή η μετάφραση της Βίβλου δεν είναι διαθέσιμη."
+  },
+  "es": {
+    "loading": "Cargando pasaje…",
+    "error": "No se pudo cargar este pasaje.",
+    "readBible": "Leer en la Biblia",
+    "close": "Cerrar",
+    "unavailable": "Esta traducción de la Biblia no está disponible."
+  },
+  "fr": {
+    "loading": "Chargement du passage…",
+    "error": "Ce passage n’a pas pu être chargé.",
+    "readBible": "Lire dans la Bible",
+    "close": "Fermer",
+    "unavailable": "Cette traduction de la Bible n’est pas disponible."
+  },
+  "he": {
+    "loading": "טוען את הקטע…",
+    "error": "לא ניתן לטעון את הקטע.",
+    "readBible": "קריאה בכתבי הקודש",
+    "close": "סגירה",
+    "unavailable": "תרגום זה אינו זמין."
+  },
+  "hi": {
+    "loading": "अंश लोड हो रहा है…",
+    "error": "यह अंश लोड नहीं हो सका।",
+    "readBible": "बाइबल में पढ़ें",
+    "close": "बंद करें",
+    "unavailable": "यह बाइबल अनुवाद उपलब्ध नहीं है।"
+  },
+  "id": {
+    "loading": "Memuat ayat…",
+    "error": "Ayat ini tidak dapat dimuat.",
+    "readBible": "Baca di Alkitab",
+    "close": "Tutup",
+    "unavailable": "Terjemahan Alkitab ini tidak tersedia."
+  },
+  "it": {
+    "loading": "Caricamento del passo…",
+    "error": "Impossibile caricare questo passo.",
+    "readBible": "Leggi nella Bibbia",
+    "close": "Chiudi",
+    "unavailable": "Questa traduzione della Bibbia non è disponibile."
+  },
+  "ko": {
+    "loading": "본문을 불러오는 중…",
+    "error": "이 본문을 불러올 수 없습니다.",
+    "readBible": "성경에서 읽기",
+    "close": "닫기",
+    "unavailable": "이 성경 번역본을 사용할 수 없습니다."
+  },
+  "nb": {
+    "loading": "Laster bibelsted…",
+    "error": "Dette bibelstedet kunne ikke lastes.",
+    "readBible": "Les i Bibelen",
+    "close": "Lukk",
+    "unavailable": "Denne bibeloversettelsen er ikke tilgjengelig."
+  },
+  "nl": {
+    "loading": "Bijbelgedeelte laden…",
+    "error": "Dit Bijbelgedeelte kon niet worden geladen.",
+    "readBible": "Lees in de Bijbel",
+    "close": "Sluiten",
+    "unavailable": "Deze Bijbelvertaling is niet beschikbaar."
+  },
+  "pt": {
+    "loading": "Carregando passagem…",
+    "error": "Não foi possível carregar esta passagem.",
+    "readBible": "Ler na Bíblia",
+    "close": "Fechar",
+    "unavailable": "Esta tradução da Bíblia não está disponível."
+  },
+  "ru": {
+    "loading": "Загрузка отрывка…",
+    "error": "Не удалось загрузить этот отрывок.",
+    "readBible": "Читать в Библии",
+    "close": "Закрыть",
+    "unavailable": "Этот перевод Библии недоступен."
+  },
+  "sv": {
+    "loading": "Läser in bibelställe…",
+    "error": "Det gick inte att läsa in detta bibelställe.",
+    "readBible": "Läs i Bibeln",
+    "close": "Stäng",
+    "unavailable": "Denna bibelöversättning är inte tillgänglig."
+  },
+  "sw": {
+    "loading": "Inapakia kifungu…",
+    "error": "Kifungu hiki hakikuweza kupakiwa.",
+    "readBible": "Soma katika Biblia",
+    "close": "Funga",
+    "unavailable": "Tafsiri hii ya Biblia haipatikani."
+  },
+  "ur": {
+    "loading": "عبارت لوڈ ہو رہی ہے…",
+    "error": "یہ عبارت لوڈ نہیں ہو سکی۔",
+    "readBible": "بائبل میں پڑھیں",
+    "close": "بند کریں",
+    "unavailable": "بائبل کا یہ ترجمہ دستیاب نہیں ہے۔"
+  },
+  "zh-Hans": {
+    "loading": "正在载入经文…",
+    "error": "无法载入这段经文。",
+    "readBible": "在圣经中阅读",
+    "close": "关闭",
+    "unavailable": "此圣经译本暂不可用。"
+  }
+}
