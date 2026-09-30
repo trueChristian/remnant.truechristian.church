@@ -6,7 +6,7 @@ import tempfile
 import unittest
 from unittest.mock import patch
 
-from scripts.content import ContentError, FragmentText, excerpt, load_content, ordered_issues
+from scripts.content import ContentError, FragmentText, excerpt, load_content, load_language_registry, ordered_issues
 from scripts.export_sources import ExportError, export_sources
 
 A = '00000000-0000-4000-8000-000000000001'
@@ -157,6 +157,80 @@ class ContentTests(unittest.TestCase):
         self.assertEqual(report['translation_status'], 'failed')
         self.assertFalse(tr_out.exists())
         self.assertTrue(Path(report['translation_quarantine']).is_dir())
+
+    def test_full_language_registry_exposes_empty_languages_without_guidance(self):
+        registry = {
+            'afr': {'name': 'Afrikaans', 'native_name': 'Afrikaans', 'tag': 'af', 'dir': 'ltr', 'aliases': [], 'guidance': 'Translation-only guidance'},
+            'jpn': {'name': 'Japanese', 'native_name': '日本語', 'tag': 'ja', 'dir': 'ltr', 'aliases': []},
+        }
+        path = self.root / 'languages.json'
+        write_json(path, registry)
+        fixture(self.tr, translated=True)
+        model = load_content(self.en, self.tr, language_registry=path)
+        self.assertEqual({language['tag'] for language in model['languages'].values()}, {'af', 'ja'})
+        self.assertNotIn('ja', model['articles'])
+        self.assertNotIn('guidance', model['languages']['afr'])
+        self.assertEqual(model['translation_status'], 'ready')
+
+    def test_missing_language_registry_is_explicit_not_an_assumed_fixed_inventory(self):
+        model = load_content(self.en)
+        self.assertIsNone(model['languages'])
+        self.assertTrue(any('language additions cannot be checked' in warning for warning in model['warnings']))
+        with self.assertRaises(ContentError):
+            load_content(self.en, language_registry=self.root / 'missing-registry.json')
+
+    def test_invalid_and_duplicate_language_registry_is_rejected(self):
+        entry = {'name': 'Afrikaans', 'native_name': 'Afrikaans', 'tag': 'af', 'dir': 'ltr'}
+        with self.assertRaisesRegex(ContentError, 'Duplicate configured language tag'):
+            load_language_registry({'afr': entry, 'zzz': entry})
+        entry['dir'] = 'invalid'
+        with self.assertRaisesRegex(ContentError, 'direction'):
+            load_language_registry({'afr': entry})
+
+    def test_translation_language_must_match_selected_registry(self):
+        fixture(self.tr, translated=True)
+        registry = {'afr': {'name': 'Afrikaans', 'native_name': 'Afrikaans', 'tag': 'af', 'dir': 'rtl'}}
+        model = load_content(self.en, self.tr, language_registry=registry)
+        self.assertEqual(model['translation_status'], 'failed')
+        self.assertNotIn('af', model['articles'])
+
+    def test_newly_configured_empty_language_reaches_locale_validation(self):
+        from scripts.i18n import load_locales, validate_locales
+        locales = load_locales(Path(__file__).resolve().parents[1] / 'locales')
+        registry = {data['meta']['code']: {'name': data['meta']['native_name'], 'native_name': data['meta']['native_name'], 'tag': tag, 'dir': data['meta']['dir']} for tag, data in locales.items() if tag != 'en'}
+        registry['jpn'] = {'name': 'Japanese', 'native_name': '日本語', 'tag': 'ja', 'dir': 'ltr'}
+        model = load_content(self.en, language_registry=registry)
+        self.assertNotIn('ja', model['articles'])
+        with self.assertRaisesRegex(ValueError, 'Upstream language inventory changed'):
+            validate_locales(locales, registry=model['languages'])
+
+    def test_exported_html_line_endings_are_not_reserialized(self):
+        path = self.en / f'content/articles/{A}.html'
+        original = path.read_bytes().replace(b'<p>', b'\r\n<p>').replace(b'</article>', b'\r\n</article>')
+        path.write_bytes(original)
+        manifest = json.loads((self.en / 'manifest.json').read_text())
+        manifest['files'] = inventory(self.en)
+        write_json(self.en / 'manifest.json', manifest)
+        self.assertEqual(load_content(self.en)['articles']['en'][0]['html'].encode(), original)
+
+    def test_fragment_rejects_document_elements_and_active_urls(self):
+        for tag in ['base', 'meta', 'link', 'html', 'head', 'body', 'script', 'iframe']:
+            with self.subTest(tag=tag), self.assertRaises(ContentError):
+                FragmentText(f'<article data-article-id="{A}"><{tag}></{tag}></article>')
+        for url in ['javascript:alert(1)', 'vbscript:msgbox(1)', 'data:text/html,active', 'jav&#x61;script:alert(1)', 'java&#x0a;script:alert(1)', 'file:///private', '//external.test/script']:
+            for attribute, tag in [('href', 'a'), ('src', 'img'), ('xlink:href', 'a')]:
+                with self.subTest(url=url, attribute=attribute), self.assertRaises(ContentError):
+                    FragmentText(f'<article data-article-id="{A}"><{tag} {attribute}="{url}"></{tag}></article>')
+        for attribute in ['style="color:red"', 'srcdoc="active"', 'srcset="/external.png 2x"', 'onclick="active()"']:
+            with self.subTest(attribute=attribute), self.assertRaises(ContentError):
+                FragmentText(f'<article data-article-id="{A}"><p {attribute}>Text</p></article>')
+
+    def test_fragment_allows_passive_links_and_shared_images(self):
+        for url in ['https://example.test/', 'http://example.test/', 'mailto:author@example.test', 'tel:+123456', '#source-note', f'/en/articles/{A}/']:
+            parsed = FragmentText(f'<article data-article-id="{A}"><a href="{url}">Printed link</a></article>')
+            self.assertEqual(parsed.text, 'Printed link')
+        image = FragmentText(f'<article data-article-id="{A}"><img src="/images/articles/{A}-1.jpg" alt="Source image"></article>')
+        self.assertEqual(image.images[0]['alt'], 'Source image')
 
     def test_output_symlink_is_rejected(self):
         real = self.root / 'real-output'

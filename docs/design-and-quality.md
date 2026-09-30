@@ -1,0 +1,48 @@
+# Design and quality contract
+
+## Shared brand, magazine-specific reading layout
+
+The upstream theme is pinned to `3bd0c28956610506f83e3ecd3af6ea775ac7cb45`.
+Its CSS, header behavior, original logo/favicon/skyline assets and complete adjacent footer bands are consumed at build time. The satellite menu changes only the entries after Home, as allowed by the theme. Owner-requested localization changes visible labels while preserving footer destinations, group sequence and external-link behavior.
+
+The original logo retains its white mount, natural 288×77 ratio and unchanged pixels. The white header and light directory footer remain recognizable in dark mode; editorial paper, text, separators and controls adapt to the selected theme. The copyright footer remains the original charcoal band. This is a deliberate magazine adaptation, not a claim that the upstream theme provided dark mode.
+
+The original inactive navigation gray (`#b4b5ba`) is below AA for small text. An explicit local override uses `#62666c` on white. Cyan remains the brand accent; small text uses darker `#006773` on light paper and `#63e2eb` on dark paper. Montserrat and Raleway retain the documented display/body roles. Google Fonts are optional enhancement; local fallback stacks include the relevant Noto script families. Pages remain readable if font requests fail. Only the current locale's additional script font is requested.
+
+Magazine cards, reading layouts, issue placeholders and controls are new site-owned components. They are not presented as extracted YOOtheme styling. Typographic issue identities use real catalogue dates, never fabricated front covers. Photographs on cards come from the linked source article; original article images, captions and credits remain intact in reading and Markdown views.
+
+## Progressive enhancement and accessibility
+
+- Every reading, category and issue route has its own static HTML file
+- All 21 languages and all categories remain visible with honest localized empty states
+- Language choices map article/group UUIDs, not guessed translated slugs
+- Explicit locale routes always prevail; only `/` uses saved preference, browser locale, then English
+- Theme initialization executes before styles and tolerates denied browser storage
+- Original theme mobile-menu focus, Escape, close control, inert state and scroll behavior are retained
+- Archive rotation is initially paused, has Previous/Next/Play/Pause, pauses on focus or backgrounding, and disables autoplay for reduced motion
+- Print removes navigation controls but retains article text, attribution and required AI notices
+- Markdown remains a direct download even if copying fails; the copy fallback is a selectable read-only textarea
+- Search results are real links, text highlights use DOM text nodes, and asynchronous request IDs prevent stale result replacement
+- Search pagination and filters persist in the URL; Back/Forward restores query state
+
+The scripted browser suite exercises desktop and 360px mobile widths for every locale, English/Afrikaans/French, RTL, system/explicit themes, storage failure, missing translations, source-notice links, no-JavaScript discovery, reduced motion, print, and search history. Screenshots are captured as CI review artifacts for visual inspection, not silently treated as passing pixel comparisons.
+
+## Measured initial budgets
+
+On the initial selected export (634 English / 5 Afrikaans):
+
+- Largest generated HTML page: approximately 71 KB uncompressed; target <100 KB for current pages
+- English full-text index: 6,426,407 bytes JSON; 2,382,295 bytes deterministic gzip; target ≤3 MB compressed at this corpus size
+- Empty-language indexes: two-byte JSON arrays
+- Current homepage primary source image: 95,367 bytes, with an explicit image box; below-fold images are lazy-loaded
+- All source images are shared across locales. Original image bytes are retained rather than multiplied by language
+
+The compressed index is fetched only for the current search locale, on first nonempty query/filter, and decompressed in a Web Worker where supported. Plain JSON remains a compatibility fallback. No homepage downloads the search corpus. Rendering is paginated to 40 results. Query compute target is under 100 ms desktop and 250 ms under a 4× CPU slowdown; transport latency and cold-load time depend on the reader's connection. CI/browser performance evidence must be measured before claiming these targets passed.
+
+Issue chronology uses structured year plus seasonal/month ordering and original order for ties. Sorting ordinals are not publication dates. RSS omits `pubDate` when the source only gives a season, month range or year; feeds never create a fictional day.
+
+Detailed revisions, translation omission diagnostics and budgets live in non-public `.build/site-build-report.json`. The public artifact contains only display content/assets and a bounded deployment identity used for safe deduplication.
+
+## Review boundaries
+
+Automated schema/script checks do not establish professional native-language proofreading. Dictionaries are complete initial translations; wording can be reviewed without changing article publication eligibility. Local test limitations, CI status and screenshot findings are recorded in the draft PR rather than claiming unrun checks passed.

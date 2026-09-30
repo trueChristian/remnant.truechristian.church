@@ -50,8 +50,29 @@ not consume an output explicitly marked `translation_output_usable: false`.
 ```python
 from pathlib import Path
 from scripts.content import load_content, ordered_issues
-model = load_content(Path('.build/english'), Path('.build/translations'))
+model = load_content(Path('.build/english'), Path('.build/translations'),
+                     language_registry=Path('.build/languages.json'))
 ```
+
+The supported translation export does **not** contain the full configured-language
+registry. Source preparation captures `config/languages.json` separately from the
+same selected clean translation checkout (including languages with no articles).
+Pass that snapshot as `language_registry=Path(...)` or a registry dictionary.
+`model['languages']` exposes only folder codes, language tags, names, directions
+and aliases; translation guidance is not copied into the public content model.
+The generator must call `validate_locales(locales, registry=model['languages'],
+categories=model['categories'])`. A newly configured language without its complete
+interface then produces an explicit validation failure instead of silently
+continuing with the previous inventory.
+
+When translation source acquisition is unavailable, pass `None`; the model emits
+an explicit warning that upstream language additions could not be checked, and
+valid English can publish with the website's known complete interfaces. An
+explicitly supplied missing/malformed registry raises `ContentError`. Available
+translation tags, folder codes and text directions must agree with the selected
+registry. The `english_export` Path is internal build context only; generated
+reports and public output must use explicit field allowlists, never serialize the
+whole model.
 
 `model['articles']` maps URL BCP-47 language tags to available articles. All
 catalogue categories/issues/topics/series retain their source UUIDs and metadata.
