@@ -13,12 +13,14 @@ import argparse
 from collections import Counter
 from dataclasses import dataclass, field
 from email.utils import parsedate_to_datetime
+import gzip
 import hashlib
 from html.parser import HTMLParser
 import json
 from pathlib import Path
 import re
 import sys
+import zlib
 from urllib.parse import unquote, urljoin, urlsplit
 from xml.etree import ElementTree as ET
 
@@ -254,6 +256,9 @@ class SiteChecker:
                 self.error('Private build/source file published: ' + relative)
             if file.suffix in {'.py', '.pyc', '.log', '.yml', '.yaml', '.sqlite', '.sqlite3', '.db', '.pem', '.key'}:
                 self.error('Unexpected implementation/runtime file published: ' + relative)
+            if file.suffix == '.gz':
+                self.check_compressed_index(file, relative)
+                continue
             if file.suffix not in {'.html', '.json', '.md', '.xml', '.css', '.js', '.txt'}:
                 continue
             try:
@@ -281,6 +286,8 @@ class SiteChecker:
                         self.error(f'{relative}: private JSON field {key}')
                     if relative.endswith('/search-index.json'):
                         self.search[relative.split('/')[0]] = value
+                        if not file.with_suffix('.json.gz').is_file():
+                            self.error('Missing compressed search index: ' + relative + '.gz')
                     elif relative == 'deployment.json':
                         revisions = value.get('revisions', {}) if isinstance(value, dict) else {}
                         if not isinstance(revisions, dict) or set(revisions) != {'site', 'english', 'translations', 'theme'} or any(
@@ -305,6 +312,36 @@ class SiteChecker:
                 for value in re.findall(r'\]\(<([^>]+)>|<(https?://[^>]+)>', source):
                     self.reference(value[0] or value[1], '/' + relative)
         return self
+
+    def check_compressed_index(self, file, relative):
+        """Require the optimized payload to be the same already-audited JSON.
+
+        Bound decompression by the uncompressed neighbor's actual byte length,
+        rather than trusting a gzip size field or allocating an arbitrary bomb.
+        The plain JSON is separately checked for UTF-8, structure, private keys,
+        secrets, and exact exported-article parity by the ordinary scan.
+        """
+        if len(Path(relative).parts) != 2 or file.name != 'search-index.json.gz':
+            self.error('Unexpected compressed public file: ' + relative)
+            return
+        neighbor = file.with_suffix('')
+        if neighbor.is_symlink() or not neighbor.is_file():
+            self.error('Compressed search index has no safe JSON neighbor: ' + relative)
+            return
+        expected = neighbor.read_bytes()
+        try:
+            with file.open('rb') as stream:
+                header = stream.read(10)
+            if len(header) < 10 or header[:3] != b'\x1f\x8b\x08':
+                raise OSError('not a gzip stream')
+            if header[3] != 0 or header[4:8] != b'\0' * 4:
+                self.error('Search gzip header is not deterministic (mtime/flags): ' + relative)
+            with gzip.open(file, 'rb') as stream:
+                actual = stream.read(len(expected) + 1)
+            if actual != expected:
+                self.error('Compressed search index differs from neighboring JSON: ' + relative)
+        except (OSError, EOFError, ValueError, zlib.error) as error:
+            self.error('Invalid compressed search index: ' + relative + ': ' + str(error))
 
     def check_links(self):
         for (path, fragment), source in self.references.items():

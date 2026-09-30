@@ -5,6 +5,7 @@ fixtures exercise real generator HTML/Markdown/RSS and mutation-test the checker
 without downloading source repositories or building 15,000 pages per unit test.
 """
 import copy
+import gzip
 import json
 from pathlib import Path
 import sys
@@ -211,6 +212,33 @@ class GeneratedSiteTests(unittest.TestCase):
         self.assertTrue(any('Private build/source file' in e for e in errors))
         self.assertTrue(any('private JSON field source_metadata' in e for e in errors))
         self.assertTrue(any('Credential-like value' in e for e in errors))
+
+    def test_compressed_search_index_matches_audited_json_exactly(self):
+        for tag in self.locales:
+            plain = self.output / tag / 'search-index.json'
+            compressed = self.output / tag / 'search-index.json.gz'
+            self.assertEqual(gzip.decompress(compressed.read_bytes()), plain.read_bytes())
+            self.assertEqual(compressed.read_bytes()[4:8], b'\0' * 4)
+        self.assertEqual(self.check().errors, [])
+
+    def test_detects_stale_or_private_content_only_in_compressed_search(self):
+        compressed = self.output / 'fr/search-index.json.gz'
+        compressed.write_bytes(gzip.compress(b'[{"source_metadata":"private"}]', mtime=0))
+        self.assertTrue(any('Compressed search index differs from neighboring JSON' in e for e in self.check().errors))
+
+    def test_detects_invalid_missing_or_nondeterministic_compressed_search(self):
+        (self.output / 'fr/search-index.json.gz').write_bytes(b'not gzip')
+        (self.output / 'af/search-index.json.gz').unlink()
+        english = self.output / 'en/search-index.json'
+        english.with_suffix('.json.gz').write_bytes(gzip.compress(english.read_bytes(), mtime=1234))
+        errors = self.check().errors
+        self.assertTrue(any('Invalid compressed search index: fr/' in e for e in errors))
+        self.assertTrue(any('Missing compressed search index: af/' in e for e in errors))
+        self.assertTrue(any('Search gzip header is not deterministic' in e for e in errors))
+
+    def test_compressed_search_cannot_hide_without_a_plain_json_neighbor(self):
+        (self.output / 'fr/search-index.json').unlink()
+        self.assertTrue(any('Compressed search index has no safe JSON neighbor' in e for e in self.check().errors))
 
     def test_safe_public_deployment_identity_is_allowed(self):
         write(self.output / 'deployment.json', json.dumps({'schema': 1, 'display_fingerprint': 'a'*64,
