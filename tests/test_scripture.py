@@ -199,6 +199,19 @@ class ScriptureTests(unittest.TestCase):
         self.assertEqual(result,item['html'])
         self.assertEqual(len(scanner.report['review_required']),1)
 
+    @unittest.skipUnless((ROOT/'.build/english/catalogue.json').is_file(), 'source exports unavailable')
+    def test_full_published_corpus_reuses_cache_without_detection(self):
+        from content import load_content
+        model=load_content(ROOT/'.build/english',ROOT/'.build/translations',language_registry=ROOT/'.build/languages.json')
+        first=Scripture(ledger=ROOT/'data/scripture-ledger.json',cache=self.root/'absent.json',overrides=self.overrides)
+        first.prepare(model['articles'])
+        save_manifest(self.root/'cache.json',first.records)
+        second=self.scanner()
+        with patch('scripture.subprocess.run',side_effect=AssertionError('unchanged corpus rescanned')):
+            second.prepare(model['articles'])
+        self.assertEqual(second.report['scanned'],0)
+        self.assertEqual(second.report['reused'],sum(len(items) for items in model['articles'].values()))
+
     def test_static_map_all_locales_no_unapproved_fallback(self):
         mapping=json.loads((ROOT/'data/scripture-translations.json').read_text())
         ui=json.loads((ROOT/'data/scripture-ui.json').read_text())
