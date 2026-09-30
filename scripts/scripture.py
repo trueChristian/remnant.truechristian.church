@@ -161,6 +161,11 @@ def valid_record(key, record):
 
 
 def load_manifest(path):
+    if path.is_dir():
+        combined = {}
+        for shard in sorted(path.glob('[0-9a-f].json')):
+            combined.update(load_manifest(shard))
+        return combined
     if not path.is_file():
         return {}
     if path.stat().st_size > MAX_MANIFEST:
@@ -185,7 +190,7 @@ class Scripture:
     def __init__(self, *, ledger=None, cache=None, overrides=None, translations=None):
         self.version = detector_version()
         self.records = {}
-        for path in (ledger or ROOT/'data/scripture-ledger.json', cache or ROOT/'.build/scripture-manifest.json'):
+        for path in (ledger or ROOT/'data/scripture-ledger', cache or ROOT/'.build/scripture-manifest.json'):
             try:
                 self.records.update(load_manifest(Path(path)))
             except (ValueError, json.JSONDecodeError) as error:

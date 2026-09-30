@@ -1,0 +1,5490 @@
+{
+  "schema_version": 1,
+  "integrity": "82ebb509df804173ccc5061ce9ed7ae0fca37d687ec71feccdb1a964873ebaed",
+  "records": {
+    "103f9dba-5fc8-4384-9161-226f96d1ff5a:en:a7c2194437151289f565ed925949280febb174c10553609c41a5c3c6e16c6322:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "103f9dba-5fc8-4384-9161-226f96d1ff5a",
+      "locale": "en",
+      "content_hash": "a7c2194437151289f565ed925949280febb174c10553609c41a5c3c6e16c6322",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4f4eefa2a9ac7a949c9622a7",
+          "quote": "1 Co. 12:31",
+          "before": "I show unto you a more excellent way.” (",
+          "after": ") What is this way? It is the way of per",
+          "spans": [
+            [
+              285,
+              296
+            ]
+          ],
+          "osis": "1Cor.12.31",
+          "queries": [
+            "46 12:31"
+          ]
+        }
+      ],
+      "record_hash": "17b95d2f5935d57ef481fee8469cea24697c7351c2a2e7d67d00584e8be17ec9"
+    },
+    "10933457-b503-48e1-9346-49ff54d1b6fe:en:e5199480a52be3cfd6c6ccbac6d58df2a0e37d19d1d62c364d65a653e1f544a6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "10933457-b503-48e1-9346-49ff54d1b6fe",
+      "locale": "en",
+      "content_hash": "e5199480a52be3cfd6c6ccbac6d58df2a0e37d19d1d62c364d65a653e1f544a6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1b9c0e7584c1e7b7ece63383",
+          "quote": "2 Timothy 1:7",
+          "before": "er, and of love, and of a sound mind.” (",
+          "after": ")",
+          "spans": [
+            [
+              1419,
+              1432
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "06722c4d5db732300dd44b00",
+          "quote": "Job 15:21, 22",
+          "before": "s, and he is waited for of the sword.” (",
+          "after": ") It is fear that stands to attack and q",
+          "spans": [
+            [
+              2059,
+              2072
+            ]
+          ],
+          "osis": "Job.15.21-Job.15.22",
+          "queries": [
+            "18 15:21-22"
+          ]
+        },
+        {
+          "id": "834f1006aa11f5df5a643929",
+          "quote": "2 Corinthians 7:5",
+          "before": "ut were fightings, within were fears.” (",
+          "after": ")",
+          "spans": [
+            [
+              3296,
+              3313
+            ]
+          ],
+          "osis": "2Cor.7.5",
+          "queries": [
+            "47 7:5"
+          ]
+        },
+        {
+          "id": "56eafa24ab4fb5f6bd3e416a",
+          "quote": "Philippians 4:6 7",
+          "before": "earts and minds through Christ Jesus.” (",
+          "after": ") Herein is the keeping of our hearts an",
+          "spans": [
+            [
+              4354,
+              4371
+            ]
+          ],
+          "osis": "Phil.4.6-Phil.4.7",
+          "queries": [
+            "50 4:6-7"
+          ]
+        },
+        {
+          "id": "e4209885556842297d496794",
+          "quote": "Job 23:1-6",
+          "before": " No; but he would put strength in me.” (",
+          "after": ")",
+          "spans": [
+            [
+              6215,
+              6225
+            ]
+          ],
+          "osis": "Job.23.1-Job.23.6",
+          "queries": [
+            "18 23:1-6"
+          ]
+        },
+        {
+          "id": "5f223be1c33af2e6179dcac5",
+          "quote": "Psalm 142:2",
+          "before": " him; I shewed before him my trouble.” (",
+          "after": ")",
+          "spans": [
+            [
+              6326,
+              6337
+            ]
+          ],
+          "osis": "Ps.142.2",
+          "queries": [
+            "19 142:2"
+          ]
+        },
+        {
+          "id": "b782e12beff2b53404d381d0",
+          "quote": "1 Samuel 1:16",
+          "before": "int and grief have I spoken hitherto.” (",
+          "after": ")",
+          "spans": [
+            [
+              6438,
+              6451
+            ]
+          ],
+          "osis": "1Sam.1.16",
+          "queries": [
+            "9 1:16"
+          ]
+        },
+        {
+          "id": "50ece073f9bad8e195270271",
+          "quote": "Lamentations 3:15",
+          "before": "(",
+          "after": ")",
+          "spans": [
+            [
+              6556,
+              6573
+            ]
+          ],
+          "osis": "Lam.3.15",
+          "queries": [
+            "25 3:15"
+          ]
+        },
+        {
+          "id": "af10ce548c8f21b8a4b70a70",
+          "quote": "Ruth 1:20",
+          "before": "hty hath dealt very bitterly with me.” (",
+          "after": ")",
+          "spans": [
+            [
+              6663,
+              6672
+            ]
+          ],
+          "osis": "Ruth.1.20",
+          "queries": [
+            "8 1:20"
+          ]
+        },
+        {
+          "id": "5f1b010faaa55d4215204ca5",
+          "quote": "Isaiah 38:12",
+          "before": "to night wilt thou make an end of me.” (",
+          "after": ")",
+          "spans": [
+            [
+              6793,
+              6805
+            ]
+          ],
+          "osis": "Isa.38.12",
+          "queries": [
+            "23 38:12"
+          ]
+        },
+        {
+          "id": "6c39d87b063a49121fea0a62",
+          "quote": "Matthew 27:46",
+          "before": "d, my God, why hast thou forsaken me?” (",
+          "after": ")",
+          "spans": [
+            [
+              6874,
+              6887
+            ]
+          ],
+          "osis": "Matt.27.46",
+          "queries": [
+            "40 27:46"
+          ]
+        },
+        {
+          "id": "02e1d27a9932dd7e0ffe8f63",
+          "quote": "1 John 4:18",
+          "before": " feareth is not made perfect in love.” (",
+          "after": ")",
+          "spans": [
+            [
+              7513,
+              7524
+            ]
+          ],
+          "osis": "1John.4.18",
+          "queries": [
+            "62 4:18"
+          ]
+        },
+        {
+          "id": "a0f76d8e6b1410ea6395270e",
+          "quote": "Psalm 119:165",
+          "before": "y law: and nothing shall offend them.” (",
+          "after": ") A sparkling young child who is at peac",
+          "spans": [
+            [
+              7684,
+              7697
+            ]
+          ],
+          "osis": "Ps.119.165",
+          "queries": [
+            "19 119:165"
+          ]
+        },
+        {
+          "id": "89b927f92f9960a7948d3db4",
+          "quote": "1 John 4:19, 20",
+          "before": "an he love God whom he hath not seen?” (",
+          "after": ") The soul who is affected by this love ",
+          "spans": [
+            [
+              8645,
+              8660
+            ]
+          ],
+          "osis": "1John.4.19-1John.4.20",
+          "queries": [
+            "62 4:19-20"
+          ]
+        },
+        {
+          "id": "fae786f251ac8c2abbe155fe",
+          "quote": "Isaiah 8:12, 13",
+          "before": "your fear, and let him be your dread.” (",
+          "after": ")",
+          "spans": [
+            [
+              11081,
+              11096
+            ]
+          ],
+          "osis": "Isa.8.12-Isa.8.13",
+          "queries": [
+            "23 8:12-13"
+          ]
+        },
+        {
+          "id": "23a2e148b8086ba75af1f86d",
+          "quote": "1 Peter 1:13",
+          "before": "ou at the revelation of Jesus Christ;” (",
+          "after": ")",
+          "spans": [
+            [
+              11527,
+              11539
+            ]
+          ],
+          "osis": "1Pet.1.13",
+          "queries": [
+            "60 1:13"
+          ]
+        },
+        {
+          "id": "a4481f2e22a01ecb05decab8",
+          "quote": "Philippians 4:7, 8",
+          "before": "— ",
+          "after": "",
+          "spans": [
+            [
+              12181,
+              12199
+            ]
+          ],
+          "osis": "Phil.4.7-Phil.4.8",
+          "queries": [
+            "50 4:7-8"
+          ]
+        }
+      ],
+      "record_hash": "abf2c23a705dca02902e1fac9ba85596a90a7093a9161589023e30eb4aa1261b"
+    },
+    "10ab493e-ad51-47fe-8199-0f8ebd0eef4e:en:dbf2170f114261f7c40e8681fbb716d9bb4e1d2cd8da50a9898597e3bc0e27d4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "10ab493e-ad51-47fe-8199-0f8ebd0eef4e",
+      "locale": "en",
+      "content_hash": "dbf2170f114261f7c40e8681fbb716d9bb4e1d2cd8da50a9898597e3bc0e27d4",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "6787f3fbb4c2042b48edf718",
+          "quote": "Luke 17",
+          "before": "erally agree that our Lord’s message in ",
+          "after": " concerning His return, and the parable ",
+          "spans": [
+            [
+              1059,
+              1066
+            ]
+          ],
+          "osis": "Luke.17.1-Luke.17.37",
+          "queries": [
+            "42 17:1-37"
+          ]
+        },
+        {
+          "id": "6ed0263088a01a5c4a32e1b0",
+          "quote": "Luke 18",
+          "before": "the parable of the importunate widow in ",
+          "after": ", are one discourse. Woven together, the",
+          "spans": [
+            [
+              1134,
+              1141
+            ]
+          ],
+          "osis": "Luke.18.1-Luke.18.43",
+          "queries": [
+            "42 18:1-43"
+          ]
+        },
+        {
+          "id": "a502593d69233a230253de15",
+          "quote": "Isa. 56:10",
+          "before": "become “dumb dogs [that] cannot bark.” (",
+          "after": ")",
+          "spans": [
+            [
+              3432,
+              3442
+            ]
+          ],
+          "osis": "Isa.56.10",
+          "queries": [
+            "23 56:10"
+          ]
+        }
+      ],
+      "record_hash": "684dd427ea02a989ae5d8fb328a46c4980b8d4b35577a760c9a9c9be47e5facd"
+    },
+    "10d20eec-3e71-404f-9f8d-8068b010381e:en:f625c761b2307afe54497aa6a3f31899b7a6461d125881b01eeb29503d5e00ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "10d20eec-3e71-404f-9f8d-8068b010381e",
+      "locale": "en",
+      "content_hash": "f625c761b2307afe54497aa6a3f31899b7a6461d125881b01eeb29503d5e00ef",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7665b0ba50f9368bf3ca8f6e",
+          "quote": "Song of Solomon 8:6",
+          "before": "Jealousy is as cruel as the grave. (see ",
+          "after": "). Envy [is] the rottenness of the bones",
+          "spans": [
+            [
+              2549,
+              2568
+            ]
+          ],
+          "osis": "Song.8.6",
+          "queries": [
+            "22 8:6"
+          ]
+        },
+        {
+          "id": "0304ec0192a498bc777fbb7c",
+          "quote": "Proverbs 14:30",
+          "before": " Envy [is] the rottenness of the bones –",
+          "after": ". And, Wrath is cruel, and anger is outr",
+          "spans": [
+            [
+              2614,
+              2628
+            ]
+          ],
+          "osis": "Prov.14.30",
+          "queries": [
+            "20 14:30"
+          ]
+        },
+        {
+          "id": "83ebf20a3b9585bce84f50e6",
+          "quote": "Proverbs 27:4",
+          "before": " but who is able to stand before envy? –",
+          "after": ". Jealousy is extremely subtle. It can b",
+          "spans": [
+            [
+              2724,
+              2737
+            ]
+          ],
+          "osis": "Prov.27.4",
+          "queries": [
+            "20 27:4"
+          ]
+        },
+        {
+          "id": "a7b227b1369f49b8d25c0f47",
+          "quote": "2 Corinthians 10:12",
+          "before": "mselves among themselves, are not wise –",
+          "after": ". Happiness will not come to women who n",
+          "spans": [
+            [
+              6172,
+              6191
+            ]
+          ],
+          "osis": "2Cor.10.12",
+          "queries": [
+            "47 10:12"
+          ]
+        },
+        {
+          "id": "9fb01c36b4fe11079b49af84",
+          "quote": "Ephesians 2:8-10",
+          "before": "e ordained that we should walk in them –",
+          "after": ".",
+          "spans": [
+            [
+              6855,
+              6871
+            ]
+          ],
+          "osis": "Eph.2.8-Eph.2.10",
+          "queries": [
+            "49 2:8-10"
+          ]
+        },
+        {
+          "id": "a02339c30d062df8f3809758",
+          "quote": "1 John 2:9-11",
+          "before": "se that darkness hath blinded his eyes –",
+          "after": ".",
+          "spans": [
+            [
+              7665,
+              7678
+            ]
+          ],
+          "osis": "1John.2.9-1John.2.11",
+          "queries": [
+            "62 2:9-11"
+          ]
+        },
+        {
+          "id": "4df255637eab0a0f2b46f0aa",
+          "quote": "Philippians 4:8",
+          "before": "e be any praise, think on these things –",
+          "after": ".",
+          "spans": [
+            [
+              8231,
+              8246
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "9cab45aa7e5f5e02e5ed5876cae8c4407b280c074a440bf58a02c02d2c44d685"
+    },
+    "1140eb64-3891-46b1-9b3f-df09e2c02405:en:a0f9ac21787fbff0554b109ff0ca766b4709ecc8803766aa804af9047cb87b6a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1140eb64-3891-46b1-9b3f-df09e2c02405",
+      "locale": "en",
+      "content_hash": "a0f9ac21787fbff0554b109ff0ca766b4709ecc8803766aa804af9047cb87b6a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d06c3b6d00eb222f51f2da4a",
+          "quote": "Deuteronomy 18:10-12",
+          "before": "raft would be one of those things. (see ",
+          "after": " and Galatians 5:19-21) Having said this",
+          "spans": [
+            [
+              2820,
+              2840
+            ]
+          ],
+          "osis": "Deut.18.10-Deut.18.12",
+          "queries": [
+            "5 18:10-12"
+          ]
+        },
+        {
+          "id": "de11752676033b159c063fae",
+          "quote": "Galatians 5:19-21",
+          "before": "e things. (see Deuteronomy 18:10-12 and ",
+          "after": ") Having said this, I have a concern tha",
+          "spans": [
+            [
+              2845,
+              2862
+            ]
+          ],
+          "osis": "Gal.5.19-Gal.5.21",
+          "queries": [
+            "48 5:19-21"
+          ]
+        },
+        {
+          "id": "4d638d129f86a57acd1b945c",
+          "quote": "Acts 17:26",
+          "before": "God made of one blood all nations” (see ",
+          "after": "). Cultural and racial pride produces pr",
+          "spans": [
+            [
+              3736,
+              3746
+            ]
+          ],
+          "osis": "Acts.17.26",
+          "queries": [
+            "44 17:26"
+          ]
+        },
+        {
+          "id": "ef965e13d33f4ea259e23e29",
+          "quote": "Psalm1:1",
+          "before": "or sitteth in the seat of the scornful –",
+          "after": ".",
+          "spans": [
+            [
+              8340,
+              8348
+            ]
+          ],
+          "osis": "Ps.1.1",
+          "queries": [
+            "19 1:1"
+          ]
+        },
+        {
+          "id": "95b8a4d9a94ac54915ad010a",
+          "quote": "Genesis 2:8",
+          "before": "here he put the man whom he had formed –",
+          "after": ".",
+          "spans": [
+            [
+              11866,
+              11877
+            ]
+          ],
+          "osis": "Gen.2.8",
+          "queries": [
+            "1 2:8"
+          ]
+        },
+        {
+          "id": "78316ccfaa79785b945a630e",
+          "quote": "Genesis 1:29",
+          "before": "ding seed; to you it shall be for meat –",
+          "after": "",
+          "spans": [
+            [
+              12169,
+              12181
+            ]
+          ],
+          "osis": "Gen.1.29",
+          "queries": [
+            "1 1:29"
+          ]
+        },
+        {
+          "id": "e5bedc2abdcc0b16e98b422f",
+          "quote": "Genesis 1:31",
+          "before": "ad made, and, behold, it was very good. ",
+          "after": ". There is no record of any plant life b",
+          "spans": [
+            [
+              13082,
+              13094
+            ]
+          ],
+          "osis": "Gen.1.31",
+          "queries": [
+            "1 1:31"
+          ]
+        },
+        {
+          "id": "5d6a86e6b418667ff8195070",
+          "quote": "Isaiah 38:21",
+          "before": "linked to false religion or witchcraft? ",
+          "after": " says that Isaiah had told Hezekiah, to ",
+          "spans": [
+            [
+              15554,
+              15566
+            ]
+          ],
+          "osis": "Isa.38.21",
+          "queries": [
+            "23 38:21"
+          ]
+        },
+        {
+          "id": "3ac6ac0a30468b11118f7536",
+          "quote": "Revelation 22:1-3",
+          "before": "at John gives us in the last chapter of ",
+          "after": " And he shewed me a pure river of water ",
+          "spans": [
+            [
+              21384,
+              21401
+            ]
+          ],
+          "osis": "Rev.22.1-Rev.22.3",
+          "queries": [
+            "66 22:1-3"
+          ]
+        }
+      ],
+      "record_hash": "ee72ca7e792001879d884ea7eea2ee7231d1b2bac3b9ece88158dbe14b7faa97"
+    },
+    "116e8bc9-5f99-4595-a021-d1445e165fbd:en:6cd9631178fc036b5a7d5da5acf054c240d4dbfef6218774781b6f8c9a7f7422:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "116e8bc9-5f99-4595-a021-d1445e165fbd",
+      "locale": "en",
+      "content_hash": "6cd9631178fc036b5a7d5da5acf054c240d4dbfef6218774781b6f8c9a7f7422",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "07ac165c385df3dc855f881742ca897c57b77abab67ac976ed918d5774012ba9"
+    },
+    "11b11932-7978-4944-8e7e-16e48c9aef1a:en:0af93df6d124ea01cd1c47a107797fc2b1b889f9d9a822204c632b2493e01ecc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "11b11932-7978-4944-8e7e-16e48c9aef1a",
+      "locale": "en",
+      "content_hash": "0af93df6d124ea01cd1c47a107797fc2b1b889f9d9a822204c632b2493e01ecc",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "719d252f2c4c07742636360081d3c0d18c06a719b70979090a71de6be5cdcf53"
+    },
+    "12b8818b-ec0b-4b20-83a2-17fc74f174b0:en:a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12b8818b-ec0b-4b20-83a2-17fc74f174b0",
+      "locale": "en",
+      "content_hash": "a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ef82a27ab1362b2f3f6ecb33",
+          "quote": "1 Cor. 7:11",
+          "before": "rried or be reconciled to her husband” (",
+          "after": "). As we will read, the early Church did",
+          "spans": [
+            [
+              4221,
+              4232
+            ]
+          ],
+          "osis": "1Cor.7.11",
+          "queries": [
+            "46 7:11"
+          ]
+        },
+        {
+          "id": "faeb65e8ac5a0a8d71ae90d1",
+          "quote": "1 Cor. 7:11",
+          "before": "ture repentance. He even quoted Paul in ",
+          "after": " as support.",
+          "spans": [
+            [
+              6551,
+              6562
+            ]
+          ],
+          "osis": "1Cor.7.11",
+          "queries": [
+            "46 7:11"
+          ]
+        },
+        {
+          "id": "48fc012f707fa25a8f2169b1",
+          "quote": "Matt. 19",
+          "before": " warnings, as well as His teaching from ",
+          "after": " concerning the “eunuchs for the Kingdom",
+          "spans": [
+            [
+              7059,
+              7067
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "6cc61a619cf0584d6bc396c4",
+          "quote": "Matt. 19:9",
+          "before": "chs for the Kingdom of Heaven, found in ",
+          "after": ", Clement defends the passage. He says t",
+          "spans": [
+            [
+              10260,
+              10270
+            ]
+          ],
+          "osis": "Matt.19.9",
+          "queries": [
+            "40 19:9"
+          ]
+        },
+        {
+          "id": "6252ee5265f333ed417aa446",
+          "quote": "Matthew 14",
+          "before": "mits adultery with her (Commentaries on ",
+          "after": ").",
+          "spans": [
+            [
+              11556,
+              11566
+            ]
+          ],
+          "osis": "Matt.14.1-Matt.14.36",
+          "queries": [
+            "40 14:1-36"
+          ]
+        },
+        {
+          "id": "5ee0cae6fe1495b8dc4b8e37",
+          "quote": "Ps. 11:3",
+          "before": "destroyed, what can the righteous do?” (",
+          "after": ")",
+          "spans": [
+            [
+              17022,
+              17030
+            ]
+          ],
+          "osis": "Ps.11.3",
+          "queries": [
+            "19 11:3"
+          ]
+        }
+      ],
+      "record_hash": "8d663fc314d64139a84693c21b002bb80303a3594614f787fab9ae34634a295c"
+    },
+    "12d86a61-53ee-4013-90f1-0c5810c611ba:en:56371e3ca06baf7ffe98ef499f9043e390f553442e1ee669464c64074351e882:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12d86a61-53ee-4013-90f1-0c5810c611ba",
+      "locale": "en",
+      "content_hash": "56371e3ca06baf7ffe98ef499f9043e390f553442e1ee669464c64074351e882",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4af66af288b4dcc1d95bf7a7",
+          "quote": "Matthew 24",
+          "before": "esus had warned would come to pass (see ",
+          "after": "), before he was crucified. The last Zea",
+          "spans": [
+            [
+              5134,
+              5144
+            ]
+          ],
+          "osis": "Matt.24.1-Matt.24.51",
+          "queries": [
+            "40 24:1-51"
+          ]
+        },
+        {
+          "id": "5cb8166bc62e20e8595749c3",
+          "quote": "Luke 2:1-6",
+          "before": "sion to the Roman census and taxation. -",
+          "after": "",
+          "spans": [
+            [
+              6522,
+              6532
+            ]
+          ],
+          "osis": "Luke.2.1-Luke.2.6",
+          "queries": [
+            "42 2:1-6"
+          ]
+        },
+        {
+          "id": "f2fcb3f9ae5aadf2a03483a2",
+          "quote": "Matthew 5:5",
+          "before": "Jesus said: “Blessed are the meek”. -",
+          "after": "",
+          "spans": [
+            [
+              6592,
+              6603
+            ]
+          ],
+          "osis": "Matt.5.5",
+          "queries": [
+            "40 5:5"
+          ]
+        },
+        {
+          "id": "cab27c6ed2fe0107c144b799",
+          "quote": "Matthew 5:9",
+          "before": "s said: “Blessed are the peacemakers”. -",
+          "after": "",
+          "spans": [
+            [
+              6670,
+              6681
+            ]
+          ],
+          "osis": "Matt.5.9",
+          "queries": [
+            "40 5:9"
+          ]
+        },
+        {
+          "id": "17213ff4ed9b2253c3d729e4",
+          "quote": "Matthew 5:10-12",
+          "before": "them who accept persecution patiently. -",
+          "after": "",
+          "spans": [
+            [
+              6755,
+              6770
+            ]
+          ],
+          "osis": "Matt.5.10-Matt.5.12",
+          "queries": [
+            "40 5:10-12"
+          ]
+        },
+        {
+          "id": "272bb93b1801bc7cfccd9d82",
+          "quote": "Matthew 5:41",
+          "before": "to volunteer to take it a second mile! -",
+          "after": "",
+          "spans": [
+            [
+              6966,
+              6978
+            ]
+          ],
+          "osis": "Matt.5.41",
+          "queries": [
+            "40 5:41"
+          ]
+        },
+        {
+          "id": "8d1648b47bc128910a9bcbad",
+          "quote": "Matthew 5:43-48",
+          "before": "spitefully use you and persecute you.” -",
+          "after": "\n      ",
+          "spans": [
+            [
+              7150,
+              7165
+            ]
+          ],
+          "osis": "Matt.5.43-Matt.5.48",
+          "queries": [
+            "40 5:43-48"
+          ]
+        },
+        {
+          "id": "2d55195de02fb98237013abb",
+          "quote": "Matthew 5:45",
+          "before": " for being called the children of God! -",
+          "after": "",
+          "spans": [
+            [
+              7309,
+              7321
+            ]
+          ],
+          "osis": "Matt.5.45",
+          "queries": [
+            "40 5:45"
+          ]
+        },
+        {
+          "id": "a475999df04a6f26a0a039f4",
+          "quote": "Matthew 6:19-21",
+          "before": " truly valuable are not on this earth. -",
+          "after": "",
+          "spans": [
+            [
+              7431,
+              7446
+            ]
+          ],
+          "osis": "Matt.6.19-Matt.6.21",
+          "queries": [
+            "40 6:19-21"
+          ]
+        },
+        {
+          "id": "eccf65d05bdd5b9e2afa7acb",
+          "quote": "Matthew 7:12",
+          "before": "s as you would have them do unto you.” -",
+          "after": "",
+          "spans": [
+            [
+              7601,
+              7613
+            ]
+          ],
+          "osis": "Matt.7.12",
+          "queries": [
+            "40 7:12"
+          ]
+        },
+        {
+          "id": "b6279999848100504bfb3af3",
+          "quote": "Matthew 7:21",
+          "before": "will of my Father which is in Heaven.” -",
+          "after": "",
+          "spans": [
+            [
+              7886,
+              7898
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "bbd7c03a17151577097cadc3",
+          "quote": "Matthew 8:5-13",
+          "before": "contrasted it with the Jews’ unbelief. -",
+          "after": "",
+          "spans": [
+            [
+              8010,
+              8024
+            ]
+          ],
+          "osis": "Matt.8.5-Matt.8.13",
+          "queries": [
+            "40 8:5-13"
+          ]
+        },
+        {
+          "id": "68c859e902bd41b1e85fecf5",
+          "quote": "Matthew 10:22-28",
+          "before": "aught to flee, not resist persecution. -",
+          "after": "",
+          "spans": [
+            [
+              8119,
+              8135
+            ]
+          ],
+          "osis": "Matt.10.22-Matt.10.28",
+          "queries": [
+            "40 10:22-28"
+          ]
+        },
+        {
+          "id": "095eff17968eed18f7fd2368",
+          "quote": "Matthew 10:37-39",
+          "before": " cross” of submission and forbearance. -",
+          "after": "",
+          "spans": [
+            [
+              8259,
+              8275
+            ]
+          ],
+          "osis": "Matt.10.37-Matt.10.39",
+          "queries": [
+            "40 10:37-39"
+          ]
+        },
+        {
+          "id": "7891e697ba0b4a56f71a36ae",
+          "quote": "Matthew 16:21-28",
+          "before": "is crucifixion: “Get behind me Satan.” -",
+          "after": "",
+          "spans": [
+            [
+              8454,
+              8470
+            ]
+          ],
+          "osis": "Matt.16.21-Matt.16.28",
+          "queries": [
+            "40 16:21-28"
+          ]
+        },
+        {
+          "id": "3f6a9f807f2ad0e6ab1b2a8b",
+          "quote": "Matthew 17:24-27",
+          "before": "go pay tax for both Peter and Himself. -",
+          "after": "",
+          "spans": [
+            [
+              8556,
+              8572
+            ]
+          ],
+          "osis": "Matt.17.24-Matt.17.27",
+          "queries": [
+            "40 17:24-27"
+          ]
+        },
+        {
+          "id": "6f5bfc13cd3d015e64a202a8",
+          "quote": "Matthew 26:51-54",
+          "before": " using the sword to resist His arrest. -",
+          "after": "",
+          "spans": [
+            [
+              8656,
+              8672
+            ]
+          ],
+          "osis": "Matt.26.51-Matt.26.54",
+          "queries": [
+            "40 26:51-54"
+          ]
+        },
+        {
+          "id": "68a4001e6e1f87c9e51d0aa2",
+          "quote": "Matthew 20:25-28",
+          "before": "ike the world’s kingdom in operations. -",
+          "after": "",
+          "spans": [
+            [
+              8799,
+              8815
+            ]
+          ],
+          "osis": "Matt.20.25-Matt.20.28",
+          "queries": [
+            "40 20:25-28"
+          ]
+        },
+        {
+          "id": "d921c40b667d833216575647",
+          "quote": "Matthew 22:17-22",
+          "before": "hat which is Caesar’s”—Pay your taxes! -",
+          "after": "",
+          "spans": [
+            [
+              8946,
+              8962
+            ]
+          ],
+          "osis": "Matt.22.17-Matt.22.22",
+          "queries": [
+            "40 22:17-22"
+          ]
+        },
+        {
+          "id": "d0e0ab9ea92401295b5a0a4a",
+          "quote": "John 18:36",
+          "before": " but now is my kingdom not from hence. -",
+          "after": "",
+          "spans": [
+            [
+              9457,
+              9467
+            ]
+          ],
+          "osis": "John.18.36",
+          "queries": [
+            "43 18:36"
+          ]
+        },
+        {
+          "id": "3ff7a7eb43f3206820665e26",
+          "quote": "Matthew 28:18-20",
+          "before": "ome Christians under the New Covenant. -",
+          "after": "",
+          "spans": [
+            [
+              10006,
+              10022
+            ]
+          ],
+          "osis": "Matt.28.18-Matt.28.20",
+          "queries": [
+            "40 28:18-20"
+          ]
+        },
+        {
+          "id": "9ce24ef795d82b1ace13f3db",
+          "quote": "1 Samuel 15:23",
+          "before": "bbornness is as iniquity and idolatry… -",
+          "after": ", and no witch is right with God!",
+          "spans": [
+            [
+              11359,
+              11373
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "8b0bf377b22250a945aaacf8",
+          "quote": "John 3:3",
+          "before": "ain, he cannot see the kingdom of God. -",
+          "after": ". Have you ever seen yourself as hopeles",
+          "spans": [
+            [
+              11703,
+              11711
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "ed6e774ae1f1ecbc0e794ed5",
+          "quote": "1 Peter 2:13-17",
+          "before": "rotherhood. Fear God. Honour the king. -",
+          "after": "",
+          "spans": [
+            [
+              12402,
+              12417
+            ]
+          ],
+          "osis": "1Pet.2.13-1Pet.2.17",
+          "queries": [
+            "60 2:13-17"
+          ]
+        },
+        {
+          "id": "5649efe0d2f77c3f691e2a1a",
+          "quote": "Romans 13:1-14",
+          "before": "lly every man being his own lord). -see ",
+          "after": ". Be ready to make godly appeals to the ",
+          "spans": [
+            [
+              12877,
+              12891
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "43ad32f78cc7b8a514d79106",
+          "quote": "1 Peter 3: 8-18",
+          "before": "ulfill the will of God the Father. -see ",
+          "after": " May God bless each one with true freedo",
+          "spans": [
+            [
+              13126,
+              13141
+            ]
+          ],
+          "osis": "1Pet.3.8-1Pet.3.18",
+          "queries": [
+            "60 3:8-18"
+          ]
+        },
+        {
+          "id": "1c40d3531c5a0bf90d766ace",
+          "quote": "Hebrews 11:13",
+          "before": "ims in this world—another kingdom! -see ",
+          "after": "; 1 Peter 2:11.",
+          "spans": [
+            [
+              13285,
+              13298
+            ]
+          ],
+          "osis": "Heb.11.13",
+          "queries": [
+            "58 11:13"
+          ]
+        },
+        {
+          "id": "98a01e247050813c43b12d43",
+          "quote": "1 Peter 2:11",
+          "before": "ld—another kingdom! -see Hebrews 11:13; ",
+          "after": ".",
+          "spans": [
+            [
+              13300,
+              13312
+            ]
+          ],
+          "osis": "1Pet.2.11",
+          "queries": [
+            "60 2:11"
+          ]
+        }
+      ],
+      "record_hash": "1ad298a3d21193cfc325ccf838d6d714344d85a5e979a2632e02c2bca6316e3a"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:en:9f5c46c9cd535a987e1dc21e68287059dc905713a8b854d700eb835e0d524e66:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "en",
+      "content_hash": "9f5c46c9cd535a987e1dc21e68287059dc905713a8b854d700eb835e0d524e66",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "72c28734d2f3aeee74af2dcfcb95f3378e2d72e9cecd099554489fd0d179cb12"
+    },
+    "15508027-55ab-4499-9ac9-a0d786da0463:en:a93acfcf8ab02a887e87a17a93b1c7dd686542a05a6395ffa0c154c916fe1298:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "15508027-55ab-4499-9ac9-a0d786da0463",
+      "locale": "en",
+      "content_hash": "a93acfcf8ab02a887e87a17a93b1c7dd686542a05a6395ffa0c154c916fe1298",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "03185744554b6e934958205d",
+          "quote": "Exodus 25:8",
+          "before": "",
+          "after": " And let them make me a sanctuary; that ",
+          "spans": [
+            [
+              91,
+              102
+            ]
+          ],
+          "osis": "Exod.25.8",
+          "queries": [
+            "2 25:8"
+          ]
+        },
+        {
+          "id": "68596353abf38edf72e6783d",
+          "quote": "Ro. 8:31",
+          "before": "ty that, in this pursuit, He is for us! ",
+          "after": "",
+          "spans": [
+            [
+              839,
+              847
+            ]
+          ],
+          "osis": "Rom.8.31",
+          "queries": [
+            "45 8:31"
+          ]
+        },
+        {
+          "id": "0c196e1f46c4d212bc492834",
+          "quote": "Ge. 1:26-27",
+          "before": "s own image and after His own likeness. ",
+          "after": ", Ge. 2:7-9, Ge. 2:15-18 He carefully an",
+          "spans": [
+            [
+              1093,
+              1104
+            ]
+          ],
+          "osis": "Gen.1.26-Gen.1.27",
+          "queries": [
+            "1 1:26-27"
+          ]
+        },
+        {
+          "id": "42184f60b659061255641d43",
+          "quote": "Ge. 2:7-9",
+          "before": "nd after His own likeness. Ge. 1:26-27, ",
+          "after": ", Ge. 2:15-18 He carefully and tenderly ",
+          "spans": [
+            [
+              1106,
+              1115
+            ]
+          ],
+          "osis": "Gen.2.7-Gen.2.9",
+          "queries": [
+            "1 2:7-9"
+          ]
+        },
+        {
+          "id": "fbcee8c6ac9c6ab0d425fbb2",
+          "quote": "Ge. 2:15-18",
+          "before": "s own likeness. Ge. 1:26-27, Ge. 2:7-9, ",
+          "after": " He carefully and tenderly formed the bo",
+          "spans": [
+            [
+              1117,
+              1128
+            ]
+          ],
+          "osis": "Gen.2.15-Gen.2.18",
+          "queries": [
+            "1 2:15-18"
+          ]
+        },
+        {
+          "id": "99a21187a176dc7d9f53d983",
+          "quote": "Ge. 17:7-8",
+          "before": "art cry of God throughout both the Law (",
+          "after": ", Ex. 25:8, Ex. 29:45-46, Le. 26:11-12, ",
+          "spans": [
+            [
+              2189,
+              2199
+            ]
+          ],
+          "osis": "Gen.17.7-Gen.17.8",
+          "queries": [
+            "1 17:7-8"
+          ]
+        },
+        {
+          "id": "033c5bfb6f33819e6e707875",
+          "quote": "Ex. 25:8",
+          "before": "od throughout both the Law (Ge. 17:7-8, ",
+          "after": ", Ex. 29:45-46, Le. 26:11-12, Nu. 35:34)",
+          "spans": [
+            [
+              2201,
+              2209
+            ]
+          ],
+          "osis": "Exod.25.8",
+          "queries": [
+            "2 25:8"
+          ]
+        },
+        {
+          "id": "9f39f9d30fdf5b67c6382349",
+          "quote": "Ex. 29:45-46",
+          "before": "out both the Law (Ge. 17:7-8, Ex. 25:8, ",
+          "after": ", Le. 26:11-12, Nu. 35:34) and the Proph",
+          "spans": [
+            [
+              2211,
+              2223
+            ]
+          ],
+          "osis": "Exod.29.45-Exod.29.46",
+          "queries": [
+            "2 29:45-46"
+          ]
+        },
+        {
+          "id": "b112b66dae40253385d870db",
+          "quote": "Le. 26:11-12",
+          "before": "aw (Ge. 17:7-8, Ex. 25:8, Ex. 29:45-46, ",
+          "after": ", Nu. 35:34) and the Prophets (Je. 31:1,",
+          "spans": [
+            [
+              2225,
+              2237
+            ]
+          ],
+          "osis": "Lev.26.11-Lev.26.12",
+          "queries": [
+            "3 26:11-12"
+          ]
+        },
+        {
+          "id": "1e5d9f9888046641c88c44fc",
+          "quote": "Nu. 35:34",
+          "before": ", Ex. 25:8, Ex. 29:45-46, Le. 26:11-12, ",
+          "after": ") and the Prophets (Je. 31:1, Je. 31:33,",
+          "spans": [
+            [
+              2239,
+              2248
+            ]
+          ],
+          "osis": "Num.35.34",
+          "queries": [
+            "4 35:34"
+          ]
+        },
+        {
+          "id": "5b9fff8e0cd0dffb518b0e15",
+          "quote": "Je. 31:1",
+          "before": " 26:11-12, Nu. 35:34) and the Prophets (",
+          "after": ", Je. 31:33, Je. 24:7, Je. 30:22, Je. 32",
+          "spans": [
+            [
+              2268,
+              2276
+            ]
+          ],
+          "osis": "Jer.31.1",
+          "queries": [
+            "24 31:1"
+          ]
+        },
+        {
+          "id": "1aa02fe2aa7f7a043ecf300d",
+          "quote": "Je. 31:33",
+          "before": " Nu. 35:34) and the Prophets (Je. 31:1, ",
+          "after": ", Je. 24:7, Je. 30:22, Je. 32:38; Ez. 11",
+          "spans": [
+            [
+              2278,
+              2287
+            ]
+          ],
+          "osis": "Jer.31.33",
+          "queries": [
+            "24 31:33"
+          ]
+        },
+        {
+          "id": "daf3e729ceac81c4995e40b1",
+          "quote": "Je. 24:7",
+          "before": " and the Prophets (Je. 31:1, Je. 31:33, ",
+          "after": ", Je. 30:22, Je. 32:38; Ez. 11:19-20, Ez",
+          "spans": [
+            [
+              2289,
+              2297
+            ]
+          ],
+          "osis": "Jer.24.7",
+          "queries": [
+            "24 24:7"
+          ]
+        },
+        {
+          "id": "3c479acadc47a86a0b5b47ca",
+          "quote": "Je. 30:22",
+          "before": "rophets (Je. 31:1, Je. 31:33, Je. 24:7, ",
+          "after": ", Je. 32:38; Ez. 11:19-20, Ez. 36:28, Ez",
+          "spans": [
+            [
+              2299,
+              2308
+            ]
+          ],
+          "osis": "Jer.30.22",
+          "queries": [
+            "24 30:22"
+          ]
+        },
+        {
+          "id": "3423de7b79ffade2d030c036",
+          "quote": "Je. 32:38",
+          "before": ". 31:1, Je. 31:33, Je. 24:7, Je. 30:22, ",
+          "after": "; Ez. 11:19-20, Ez. 36:28, Ez. 37:27; Ze",
+          "spans": [
+            [
+              2310,
+              2319
+            ]
+          ],
+          "osis": "Jer.32.38",
+          "queries": [
+            "24 32:38"
+          ]
+        },
+        {
+          "id": "356eec80851af6cd55af79a9",
+          "quote": "Ez. 11:19-20",
+          "before": " 31:33, Je. 24:7, Je. 30:22, Je. 32:38; ",
+          "after": ", Ez. 36:28, Ez. 37:27; Ze. 13:9)! This ",
+          "spans": [
+            [
+              2321,
+              2333
+            ]
+          ],
+          "osis": "Ezek.11.19-Ezek.11.20",
+          "queries": [
+            "26 11:19-20"
+          ]
+        },
+        {
+          "id": "94acc0870ab6733219675774",
+          "quote": "Je. 31:31-33",
+          "before": " be my people and I will be their God.” ",
+          "after": ", Ez. 11:19-20, Zc. 2:10-11 This heart c",
+          "spans": [
+            [
+              2514,
+              2526
+            ]
+          ],
+          "osis": "Jer.31.31-Jer.31.33",
+          "queries": [
+            "24 31:31-33"
+          ]
+        },
+        {
+          "id": "fc0f2b19307cb5ab3b3deec5",
+          "quote": "Ez. 11:19-20",
+          "before": "and I will be their God.” Je. 31:31-33, ",
+          "after": ", Zc. 2:10-11 This heart cry of God can ",
+          "spans": [
+            [
+              2528,
+              2540
+            ]
+          ],
+          "osis": "Ezek.11.19-Ezek.11.20",
+          "queries": [
+            "26 11:19-20"
+          ]
+        },
+        {
+          "id": "e4546718351fc53f4375a6f2",
+          "quote": "Zc. 2:10-11",
+          "before": "their God.” Je. 31:31-33, Ez. 11:19-20, ",
+          "after": " This heart cry of God can be clearly he",
+          "spans": [
+            [
+              2542,
+              2553
+            ]
+          ],
+          "osis": "Zech.2.10-Zech.2.11",
+          "queries": [
+            "38 2:10-11"
+          ]
+        },
+        {
+          "id": "68720167ca637d40d2cd4be3",
+          "quote": "Is. 7:14",
+          "before": "Messiah as “Immanuel” or “God with us” (",
+          "after": ", Is. 8:8, Mt. 1:23), and as “the Word (",
+          "spans": [
+            [
+              2666,
+              2674
+            ]
+          ],
+          "osis": "Isa.7.14",
+          "queries": [
+            "23 7:14"
+          ]
+        },
+        {
+          "id": "7175e501461174beb6b06447",
+          "quote": "Is. 8:8",
+          "before": " “Immanuel” or “God with us” (Is. 7:14, ",
+          "after": ", Mt. 1:23), and as “the Word (who was G",
+          "spans": [
+            [
+              2676,
+              2683
+            ]
+          ],
+          "osis": "Isa.8.8",
+          "queries": [
+            "23 8:8"
+          ]
+        },
+        {
+          "id": "aae08610754688958f850f3a",
+          "quote": "Mt. 1:23",
+          "before": "l” or “God with us” (Is. 7:14, Is. 8:8, ",
+          "after": "), and as “the Word (who was God) became",
+          "spans": [
+            [
+              2685,
+              2693
+            ]
+          ],
+          "osis": "Matt.1.23",
+          "queries": [
+            "40 1:23"
+          ]
+        },
+        {
+          "id": "ff8b08afbf690582f22c029b",
+          "quote": "Jo. 14:16-18",
+          "before": "hroughout the Gospels and the Epistles! ",
+          "after": ", Jn. 14:23, 2 Co. 6:16-18, Ro. 8:9, Ro.",
+          "spans": [
+            [
+              2912,
+              2924
+            ]
+          ],
+          "osis": "John.14.16-John.14.18",
+          "queries": [
+            "43 14:16-18"
+          ]
+        },
+        {
+          "id": "291e0ea49328a774c5237625",
+          "quote": "Jn. 14:23",
+          "before": "Gospels and the Epistles! Jo. 14:16-18, ",
+          "after": ", 2 Co. 6:16-18, Ro. 8:9, Ro. 8:11, Ep. ",
+          "spans": [
+            [
+              2926,
+              2935
+            ]
+          ],
+          "osis": "John.14.23",
+          "queries": [
+            "43 14:23"
+          ]
+        },
+        {
+          "id": "70784b900a4e082681a2bee3",
+          "quote": "2 Co. 6:16-18",
+          "before": " the Epistles! Jo. 14:16-18, Jn. 14:23, ",
+          "after": ", Ro. 8:9, Ro. 8:11, Ep. 3:17-19, Ep. 4:",
+          "spans": [
+            [
+              2937,
+              2950
+            ]
+          ],
+          "osis": "2Cor.6.16-2Cor.6.18",
+          "queries": [
+            "47 6:16-18"
+          ]
+        },
+        {
+          "id": "27edbdcd7ac02fd6683ecf1c",
+          "quote": "Ro. 8:9",
+          "before": "Jo. 14:16-18, Jn. 14:23, 2 Co. 6:16-18, ",
+          "after": ", Ro. 8:11, Ep. 3:17-19, Ep. 4:4-6, 2 Ti",
+          "spans": [
+            [
+              2952,
+              2959
+            ]
+          ],
+          "osis": "Rom.8.9",
+          "queries": [
+            "45 8:9"
+          ]
+        },
+        {
+          "id": "33a111f2b0e596f1b3418a67",
+          "quote": "Ro. 8:11",
+          "before": "-18, Jn. 14:23, 2 Co. 6:16-18, Ro. 8:9, ",
+          "after": ", Ep. 3:17-19, Ep. 4:4-6, 2 Ti. 1:14, He",
+          "spans": [
+            [
+              2961,
+              2969
+            ]
+          ],
+          "osis": "Rom.8.11",
+          "queries": [
+            "45 8:11"
+          ]
+        },
+        {
+          "id": "a8c63ac3c9aa29e4d81f3c78",
+          "quote": "Ep. 3:17-19",
+          "before": "4:23, 2 Co. 6:16-18, Ro. 8:9, Ro. 8:11, ",
+          "after": ", Ep. 4:4-6, 2 Ti. 1:14, He. 8:10, 1 Jn.",
+          "spans": [
+            [
+              2971,
+              2982
+            ]
+          ],
+          "osis": "Eph.3.17-Eph.3.19",
+          "queries": [
+            "49 3:17-19"
+          ]
+        },
+        {
+          "id": "4afacc25c0acc822ec2d2eb9",
+          "quote": "Ep. 4:4-6",
+          "before": ":16-18, Ro. 8:9, Ro. 8:11, Ep. 3:17-19, ",
+          "after": ", 2 Ti. 1:14, He. 8:10, 1 Jn. 1:3, 1 Jn.",
+          "spans": [
+            [
+              2984,
+              2993
+            ]
+          ],
+          "osis": "Eph.4.4-Eph.4.6",
+          "queries": [
+            "49 4:4-6"
+          ]
+        },
+        {
+          "id": "b70285fd529d2ab1029dfd8f",
+          "quote": "2 Ti. 1:14",
+          "before": " 8:9, Ro. 8:11, Ep. 3:17-19, Ep. 4:4-6, ",
+          "after": ", He. 8:10, 1 Jn. 1:3, 1 Jn. 4:12-15 And",
+          "spans": [
+            [
+              2995,
+              3005
+            ]
+          ],
+          "osis": "2Tim.1.14",
+          "queries": [
+            "55 1:14"
+          ]
+        },
+        {
+          "id": "6e6a839f336ee70dd439f44b",
+          "quote": "1 Jn. 1:3",
+          "before": "17-19, Ep. 4:4-6, 2 Ti. 1:14, He. 8:10, ",
+          "after": ", 1 Jn. 4:12-15 And then in the closing ",
+          "spans": [
+            [
+              3017,
+              3026
+            ]
+          ],
+          "osis": "1John.1.3",
+          "queries": [
+            "62 1:3"
+          ]
+        },
+        {
+          "id": "abd43baefef5a5210e8028ac",
+          "quote": "1 Jn. 4:12-15",
+          "before": "4:4-6, 2 Ti. 1:14, He. 8:10, 1 Jn. 1:3, ",
+          "after": " And then in the closing chapters of the",
+          "spans": [
+            [
+              3028,
+              3041
+            ]
+          ],
+          "osis": "1John.4.12-1John.4.15",
+          "queries": [
+            "62 4:12-15"
+          ]
+        },
+        {
+          "id": "6fdcabeaa7b5d91f5ce027b7",
+          "quote": "Re. 21:3",
+          "before": "f will be with them and be their God!’” ",
+          "after": " This is the will of God and the kingdom",
+          "spans": [
+            [
+              3402,
+              3410
+            ]
+          ],
+          "osis": "Rev.21.3",
+          "queries": [
+            "66 21:3"
+          ]
+        },
+        {
+          "id": "d7d6fa4a4dfd125ff2e8c929",
+          "quote": "Mt. 6:10",
+          "before": "eaven! This is what we are to pray for (",
+          "after": "), as this is the unrelenting longing an",
+          "spans": [
+            [
+              3536,
+              3544
+            ]
+          ],
+          "osis": "Matt.6.10",
+          "queries": [
+            "40 6:10"
+          ]
+        },
+        {
+          "id": "390cd8bacb98bcdfaf3ac3f0",
+          "quote": "Co. 1:18",
+          "before": "oken union and communion with her Head. ",
+          "after": " The glory of the bride is the presence ",
+          "spans": [
+            [
+              3851,
+              3859
+            ]
+          ],
+          "osis": "Col.1.18",
+          "queries": [
+            "51 1:18"
+          ]
+        },
+        {
+          "id": "1ca1514030bf6ce16d53570f",
+          "quote": "Jn. 3:29",
+          "before": "ride is the presence of her bridegroom. ",
+          "after": ", Is. 61:10, Is. 62:5. The evident and o",
+          "spans": [
+            [
+              3918,
+              3926
+            ]
+          ],
+          "osis": "John.3.29",
+          "queries": [
+            "43 3:29"
+          ]
+        },
+        {
+          "id": "64f9f0d596757a065c068faa",
+          "quote": "Is. 61:10",
+          "before": "e presence of her bridegroom. Jn. 3:29, ",
+          "after": ", Is. 62:5. The evident and outflowing p",
+          "spans": [
+            [
+              3928,
+              3937
+            ]
+          ],
+          "osis": "Isa.61.10",
+          "queries": [
+            "23 61:10"
+          ]
+        },
+        {
+          "id": "9fdb34494e7cd98fbd493de0",
+          "quote": "Is. 62:5",
+          "before": "of her bridegroom. Jn. 3:29, Is. 61:10, ",
+          "after": ". The evident and outflowing presence of",
+          "spans": [
+            [
+              3939,
+              3947
+            ]
+          ],
+          "osis": "Isa.62.5",
+          "queries": [
+            "23 62:5"
+          ]
+        },
+        {
+          "id": "35c8ec5ef2b3f2270555430b",
+          "quote": "Jn. 7:38",
+          "before": " the authenticating mark of a believer (",
+          "after": ", Jn. 14:12), and the preeminent presenc",
+          "spans": [
+            [
+              4034,
+              4042
+            ]
+          ],
+          "osis": "John.7.38",
+          "queries": [
+            "43 7:38"
+          ]
+        },
+        {
+          "id": "97a1ffac6a52bba982c3186b",
+          "quote": "Jn. 14:12",
+          "before": "nticating mark of a believer (Jn. 7:38, ",
+          "after": "), and the preeminent presence of Jesus ",
+          "spans": [
+            [
+              4044,
+              4053
+            ]
+          ],
+          "osis": "John.14.12",
+          "queries": [
+            "43 14:12"
+          ]
+        },
+        {
+          "id": "6a82c86320df054b64d8a956",
+          "quote": "Co. 1:18",
+          "before": " reality of His church, His “ekklesia” (",
+          "after": "), of which He is the Architect and Buil",
+          "spans": [
+            [
+              4148,
+              4156
+            ]
+          ],
+          "osis": "Col.1.18",
+          "queries": [
+            "51 1:18"
+          ]
+        },
+        {
+          "id": "75ffe84645c322b3dcc77a2e",
+          "quote": "Mt. 16:18",
+          "before": " which He is the Architect and Builder! ",
+          "after": "",
+          "spans": [
+            [
+              4201,
+              4210
+            ]
+          ],
+          "osis": "Matt.16.18",
+          "queries": [
+            "40 16:18"
+          ]
+        },
+        {
+          "id": "df87267f890f549085165bab",
+          "quote": "Ep. 2:18-22",
+          "before": "n habitation of God through the Spirit. ",
+          "after": "",
+          "spans": [
+            [
+              4837,
+              4848
+            ]
+          ],
+          "osis": "Eph.2.18-Eph.2.22",
+          "queries": [
+            "49 2:18-22"
+          ]
+        },
+        {
+          "id": "b4332309a5bd1725afeb9960",
+          "quote": "Is. 9:6",
+          "before": " throne room of the Everlasting Father (",
+          "after": "), and that we are members of His househ",
+          "spans": [
+            [
+              5083,
+              5090
+            ]
+          ],
+          "osis": "Isa.9.6",
+          "queries": [
+            "23 9:6"
+          ]
+        },
+        {
+          "id": "cb51a4897c3c77a7af5139d2",
+          "quote": "Ep. 3:19",
+          "before": "e filled with all the fullness of God!” ",
+          "after": "",
+          "spans": [
+            [
+              5365,
+              5373
+            ]
+          ],
+          "osis": "Eph.3.19",
+          "queries": [
+            "49 3:19"
+          ]
+        },
+        {
+          "id": "30fd944cd1e1c5390e3e0fca",
+          "quote": "Ro. 12:2",
+          "before": "His good, acceptable, and perfect will (",
+          "after": "), and this is His high calling for us! ",
+          "spans": [
+            [
+              5780,
+              5788
+            ]
+          ],
+          "osis": "Rom.12.2",
+          "queries": [
+            "45 12:2"
+          ]
+        },
+        {
+          "id": "a36cdd93915641fefc9f733a",
+          "quote": "Ac. 2:2-4",
+          "before": "estimony of the disciples at Pentecost (",
+          "after": ", Ac. 2:11-12) and throughout the book o",
+          "spans": [
+            [
+              6387,
+              6396
+            ]
+          ],
+          "osis": "Acts.2.2-Acts.2.4",
+          "queries": [
+            "44 2:2-4"
+          ]
+        },
+        {
+          "id": "e2ed66712b3eeb8f456cb54d",
+          "quote": "Ac. 2:11-12",
+          "before": " the disciples at Pentecost (Ac. 2:2-4, ",
+          "after": ") and throughout the book of Acts. Ac. 5",
+          "spans": [
+            [
+              6398,
+              6409
+            ]
+          ],
+          "osis": "Acts.2.11-Acts.2.12",
+          "queries": [
+            "44 2:11-12"
+          ]
+        },
+        {
+          "id": "7a03bb3e00675b00874eddab",
+          "quote": "Ac. 5:12",
+          "before": "11-12) and throughout the book of Acts. ",
+          "after": ", Ac. 14:3 This is the reality which is ",
+          "spans": [
+            [
+              6444,
+              6452
+            ]
+          ],
+          "osis": "Acts.5.12",
+          "queries": [
+            "44 5:12"
+          ]
+        },
+        {
+          "id": "efd251e81b80c56add4d2d98",
+          "quote": "Ac. 14:3",
+          "before": " throughout the book of Acts. Ac. 5:12, ",
+          "after": " This is the reality which is declared t",
+          "spans": [
+            [
+              6454,
+              6462
+            ]
+          ],
+          "osis": "Acts.14.3",
+          "queries": [
+            "44 14:3"
+          ]
+        },
+        {
+          "id": "92303147af84c6a384d575c2",
+          "quote": "Mk. 16:17-20",
+          "before": " declared throughout the New Testament. ",
+          "after": ", 1 Co. 2:4, He. 2:4 And this is the sam",
+          "spans": [
+            [
+              6531,
+              6543
+            ]
+          ],
+          "osis": "Mark.16.17-Mark.16.20",
+          "queries": [
+            "41 16:17-20"
+          ]
+        },
+        {
+          "id": "d264808f8538fc1559e66c25",
+          "quote": "1 Co. 2:4",
+          "before": "ughout the New Testament. Mk. 16:17-20, ",
+          "after": ", He. 2:4 And this is the same reality w",
+          "spans": [
+            [
+              6545,
+              6554
+            ]
+          ],
+          "osis": "1Cor.2.4",
+          "queries": [
+            "46 2:4"
+          ]
+        },
+        {
+          "id": "91ef037c904b95918d82260e",
+          "quote": "2 Ti. 3:5",
+          "before": "r worse, an outward form with no power (",
+          "after": "), a mere caricature of what we are call",
+          "spans": [
+            [
+              6869,
+              6878
+            ]
+          ],
+          "osis": "2Tim.3.5",
+          "queries": [
+            "55 3:5"
+          ]
+        },
+        {
+          "id": "63a265b4585501a2286cc81c",
+          "quote": "Jn. 10:10",
+          "before": " He came to give abundant eternal life (",
+          "after": ", Jn. 10:28, Jn. 17:2), and to dwell in ",
+          "spans": [
+            [
+              7151,
+              7160
+            ]
+          ],
+          "osis": "John.10.10",
+          "queries": [
+            "43 10:10"
+          ]
+        },
+        {
+          "id": "2737a901c19e20796baf6cb2",
+          "quote": "Jn. 10:28",
+          "before": " give abundant eternal life (Jn. 10:10, ",
+          "after": ", Jn. 17:2), and to dwell in the midst o",
+          "spans": [
+            [
+              7162,
+              7171
+            ]
+          ],
+          "osis": "John.10.28",
+          "queries": [
+            "43 10:28"
+          ]
+        },
+        {
+          "id": "60b0da337e4b694f605d5934",
+          "quote": "Jn. 17:2",
+          "before": "ant eternal life (Jn. 10:10, Jn. 10:28, ",
+          "after": "), and to dwell in the midst of His peop",
+          "spans": [
+            [
+              7173,
+              7181
+            ]
+          ],
+          "osis": "John.17.2",
+          "queries": [
+            "43 17:2"
+          ]
+        },
+        {
+          "id": "128ace990782654edaa09fcc",
+          "quote": "Mt. 7:22-23",
+          "before": "ng and walking with Him and He with us. ",
+          "after": " This alone is the difference between de",
+          "spans": [
+            [
+              7537,
+              7548
+            ]
+          ],
+          "osis": "Matt.7.22-Matt.7.23",
+          "queries": [
+            "40 7:22-23"
+          ]
+        },
+        {
+          "id": "c848e556946b18d50015d30f",
+          "quote": "1 Co. 15:34",
+          "before": " of God: I speak [this] to your shame!” ",
+          "after": " We must be determined to have the real,",
+          "spans": [
+            [
+              7805,
+              7816
+            ]
+          ],
+          "osis": "1Cor.15.34",
+          "queries": [
+            "46 15:34"
+          ]
+        },
+        {
+          "id": "05ecceff8b4741a15d8cb807",
+          "quote": "Jo. 14:10-12",
+          "before": "ing that we are in Him and He is in us. ",
+          "after": " He desires that our lives and deeds wil",
+          "spans": [
+            [
+              8304,
+              8316
+            ]
+          ],
+          "osis": "John.14.10-John.14.12",
+          "queries": [
+            "43 14:10-12"
+          ]
+        },
+        {
+          "id": "7832d8f786b2dbf2acd2aa7c",
+          "quote": "1 Co. 2:4",
+          "before": "tion of the Spirit of God and of power! ",
+          "after": " God’s desire for the New Covenant assem",
+          "spans": [
+            [
+              8546,
+              8555
+            ]
+          ],
+          "osis": "1Cor.2.4",
+          "queries": [
+            "46 2:4"
+          ]
+        },
+        {
+          "id": "3b4ee5e379d3cf03aa8775cb",
+          "quote": "1 Co. 14:24-25",
+          "before": " and report that God is truly among us! ",
+          "after": "",
+          "spans": [
+            [
+              8777,
+              8791
+            ]
+          ],
+          "osis": "1Cor.14.24-1Cor.14.25",
+          "queries": [
+            "46 14:24-25"
+          ]
+        },
+        {
+          "id": "d48b36fb6c28528cda5aa7ed",
+          "quote": "Pr. 27:6",
+          "before": "as faithful are the wounds of a friend. ",
+          "after": " Though He wounds, He will heal! Ho. 6:1",
+          "spans": [
+            [
+              9000,
+              9008
+            ]
+          ],
+          "osis": "Prov.27.6",
+          "queries": [
+            "20 27:6"
+          ]
+        },
+        {
+          "id": "5077368c62d2e6004c70db48",
+          "quote": "Ho. 6:1",
+          "before": "r. 27:6 Though He wounds, He will heal! ",
+          "after": " These are the very words and conviction",
+          "spans": [
+            [
+              9041,
+              9048
+            ]
+          ],
+          "osis": "Hos.6.1",
+          "queries": [
+            "28 6:1"
+          ]
+        },
+        {
+          "id": "56338ec478b137f1adff63a7",
+          "quote": "1 Ki. 22:13",
+          "before": "nd convictions which have driven kings (",
+          "after": ") and prophets (Is. 6:3-5) into the pres",
+          "spans": [
+            [
+              9115,
+              9126
+            ]
+          ],
+          "osis": "1Kgs.22.13",
+          "queries": [
+            "11 22:13"
+          ]
+        },
+        {
+          "id": "b76c4ab330d39a36f4d9e427",
+          "quote": "Is. 6:3-5",
+          "before": "riven kings (1 Ki. 22:13) and prophets (",
+          "after": ") into the presence and fullness of God.",
+          "spans": [
+            [
+              9142,
+              9151
+            ]
+          ],
+          "osis": "Isa.6.3-Isa.6.5",
+          "queries": [
+            "23 6:3-5"
+          ]
+        },
+        {
+          "id": "db2bd909a1d2dd7cdbcadb7c",
+          "quote": "2 Ch. 7:14",
+          "before": "nd forgive our sins, and heal our land! ",
+          "after": " The weeping will only last for a night,",
+          "spans": [
+            [
+              10348,
+              10358
+            ]
+          ],
+          "osis": "2Chr.7.14",
+          "queries": [
+            "14 7:14"
+          ]
+        },
+        {
+          "id": "0bd20e3c437c757056ab2eaa",
+          "quote": "Mt. 5:4",
+          "before": ", but those who weep will be comforted (",
+          "after": "), and the fullness of His joy will come",
+          "spans": [
+            [
+              10437,
+              10444
+            ]
+          ],
+          "osis": "Matt.5.4",
+          "queries": [
+            "40 5:4"
+          ]
+        },
+        {
+          "id": "c7b462a4c96e159595773d32",
+          "quote": "Ps. 30:5",
+          "before": "ss of His joy will come in the morning (",
+          "after": "), and His morning will surely come, and",
+          "spans": [
+            [
+              10501,
+              10509
+            ]
+          ],
+          "osis": "Ps.30.5",
+          "queries": [
+            "19 30:5"
+          ]
+        },
+        {
+          "id": "8da8805e1f01d450fb62160c",
+          "quote": "Mt. 6:33",
+          "before": "l these things shall be added unto you. ",
+          "after": "",
+          "spans": [
+            [
+              10903,
+              10911
+            ]
+          ],
+          "osis": "Matt.6.33",
+          "queries": [
+            "40 6:33"
+          ]
+        },
+        {
+          "id": "d13ebaab167aa1e925b8e86d",
+          "quote": "Lu. 11:9-10,13",
+          "before": "e the Holy Spirit to them that ask him? ",
+          "after": "",
+          "spans": [
+            [
+              11307,
+              11321
+            ]
+          ],
+          "osis": "Luke.11.9-Luke.11.10,Luke.11.13",
+          "queries": [
+            "42 11:9-10",
+            "42 11:13"
+          ]
+        },
+        {
+          "id": "32aa6003c0041bcb7f37e068",
+          "quote": "Lu. 12:32",
+          "before": " good pleasure to give you the kingdom. ",
+          "after": "",
+          "spans": [
+            [
+              11420,
+              11429
+            ]
+          ],
+          "osis": "Luke.12.32",
+          "queries": [
+            "42 12:32"
+          ]
+        }
+      ],
+      "record_hash": "b7a303c6d911eb0eb096d35c89e06486295ce1fdba41c2a2619041576cacf24a"
+    },
+    "15543f73-d6cc-49f1-bd36-cf6693c2cfc2:en:d5ede7cff3eafe151bb3eb675617d3de24d6f98b044f8c2fd6c1d31d4330abc2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "15543f73-d6cc-49f1-bd36-cf6693c2cfc2",
+      "locale": "en",
+      "content_hash": "d5ede7cff3eafe151bb3eb675617d3de24d6f98b044f8c2fd6c1d31d4330abc2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "7df1ffa91126058087f6f95c3da91923611a2079638c75cebb3c8f6103efae62"
+    },
+    "15567d7e-1146-48d9-9b34-a0f770ca06fc:en:fbc1bc0b7d6049a6986648e2256b197ada8e0a59af108a2518b57538bf6fd687:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "15567d7e-1146-48d9-9b34-a0f770ca06fc",
+      "locale": "en",
+      "content_hash": "fbc1bc0b7d6049a6986648e2256b197ada8e0a59af108a2518b57538bf6fd687",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "29bbb5896544e2bd2b959806",
+          "quote": "Psalm 110:3",
+          "before": "Thou hast the dew of thy youth. ",
+          "after": "",
+          "spans": [
+            [
+              107,
+              118
+            ]
+          ],
+          "osis": "Ps.110.3",
+          "queries": [
+            "19 110:3"
+          ]
+        },
+        {
+          "id": "0b0682d94be0a09080960526",
+          "quote": "Genesis 34:1",
+          "before": "t out to see the daughters of the land –",
+          "after": ". There, she was exposed to the heathen ",
+          "spans": [
+            [
+              613,
+              625
+            ]
+          ],
+          "osis": "Gen.34.1",
+          "queries": [
+            "1 34:1"
+          ]
+        },
+        {
+          "id": "5e38a26bb69a5ab996c7c59d",
+          "quote": "2 Timothy 2:22",
+          "before": " young are exhorted to flee them. (–see ",
+          "after": ") Solomon looked through his window case",
+          "spans": [
+            [
+              1074,
+              1088
+            ]
+          ],
+          "osis": "2Tim.2.22",
+          "queries": [
+            "55 2:22"
+          ]
+        },
+        {
+          "id": "fa5ebe35e9cc8d7279ba22f1",
+          "quote": "Proverbs 7:6-7",
+          "before": "ths, a young man void of understanding -",
+          "after": ". The young man was in heartfelt pursuit",
+          "spans": [
+            [
+              1237,
+              1251
+            ]
+          ],
+          "osis": "Prov.7.6-Prov.7.7",
+          "queries": [
+            "20 7:6-7"
+          ]
+        },
+        {
+          "id": "31b018dcc24171e21974fd2e",
+          "quote": "Proverbs 7:23",
+          "before": "nd knoweth not that it is for his life –",
+          "after": ". We could examine the vices from the yo",
+          "spans": [
+            [
+              1449,
+              1462
+            ]
+          ],
+          "osis": "Prov.7.23",
+          "queries": [
+            "20 7:23"
+          ]
+        },
+        {
+          "id": "5fd8e7d0d61bce8ec78a4938",
+          "quote": "1 Timothy 4:12",
+          "before": "harity, in spirit, in faith, in purity –",
+          "after": ". In fact, God generally chooses the you",
+          "spans": [
+            [
+              1867,
+              1881
+            ]
+          ],
+          "osis": "1Tim.4.12",
+          "queries": [
+            "54 4:12"
+          ]
+        },
+        {
+          "id": "5273f4196eafcedaf4588991",
+          "quote": "Genesis 45:5",
+          "before": "at the age of 17 to preserve life (–see ",
+          "after": "). Miriam, at the age of twelve, stood p",
+          "spans": [
+            [
+              2066,
+              2078
+            ]
+          ],
+          "osis": "Gen.45.5",
+          "queries": [
+            "1 45:5"
+          ]
+        },
+        {
+          "id": "ff1e29d6f94f37c2b656aa9f",
+          "quote": "1 Samuel 17:28",
+          "before": "e, and the naughtiness of thine heart… –",
+          "after": ". He was rejected by Saul: …Thou art not",
+          "spans": [
+            [
+              2409,
+              2423
+            ]
+          ],
+          "osis": "1Sam.17.28",
+          "queries": [
+            "9 17:28"
+          ]
+        },
+        {
+          "id": "633952369a0ad7127ea8e5c8",
+          "quote": "1 Samuel 17:33",
+          "before": "ht with him: for thou art but a youth… –",
+          "after": ". He was scorned by Goliath: …Am I a dog",
+          "spans": [
+            [
+              2554,
+              2568
+            ]
+          ],
+          "osis": "1Sam.17.33",
+          "queries": [
+            "9 17:33"
+          ]
+        },
+        {
+          "id": "c793d890c9cc2542b0459de0",
+          "quote": "1 Samuel 17:43",
+          "before": "g, that thou comest to me with staves… –",
+          "after": ". But their contempt was all for naught ",
+          "spans": [
+            [
+              2656,
+              2670
+            ]
+          ],
+          "osis": "1Sam.17.43",
+          "queries": [
+            "9 17:43"
+          ]
+        },
+        {
+          "id": "134f3bd921f47dec0d788c53",
+          "quote": "Psalm 110",
+          "before": "",
+          "after": " is perhaps the most referred-to scriptu",
+          "spans": [
+            [
+              3262,
+              3271
+            ]
+          ],
+          "osis": "Ps.110.1-Ps.110.7",
+          "queries": [
+            "19 110:1-7"
+          ]
+        },
+        {
+          "id": "31ce929373e7810c78b7ea00",
+          "quote": "Revelation 1:14",
+          "before": "... white like wool, as white as snow… –",
+          "after": ", yet, here He is depicted as eternally ",
+          "spans": [
+            [
+              3555,
+              3570
+            ]
+          ],
+          "osis": "Rev.1.14",
+          "queries": [
+            "66 1:14"
+          ]
+        },
+        {
+          "id": "6bb6d98e7ec27fa40bd4090b",
+          "quote": "Psalm 110:1",
+          "before": " He sits at the right hand of God (–see ",
+          "after": "). No weariness of age can enter there, ",
+          "spans": [
+            [
+              3664,
+              3675
+            ]
+          ],
+          "osis": "Ps.110.1",
+          "queries": [
+            "19 110:1"
+          ]
+        },
+        {
+          "id": "d6f8a7c151228b46d3fa14a7",
+          "quote": "Psalm 110:3",
+          "before": "natural beauty of the morning dew (–see ",
+          "after": "). The thought of dew calls us back from",
+          "spans": [
+            [
+              4032,
+              4043
+            ]
+          ],
+          "osis": "Ps.110.3",
+          "queries": [
+            "19 110:3"
+          ]
+        },
+        {
+          "id": "f828b438ebb5204ade1c76a8",
+          "quote": "Revelation 1:14",
+          "before": "... white like wool, as white as snow… –",
+          "after": ", yet Solomon declares …his locks are bu",
+          "spans": [
+            [
+              6170,
+              6185
+            ]
+          ],
+          "osis": "Rev.1.14",
+          "queries": [
+            "66 1:14"
+          ]
+        },
+        {
+          "id": "032c6c7007d673a2925135db",
+          "quote": "Song of Solomon 5:11",
+          "before": " locks are bushy, and black as a raven –",
+          "after": ". While age may steal our strength and h",
+          "spans": [
+            [
+              6261,
+              6281
+            ]
+          ],
+          "osis": "Song.5.11",
+          "queries": [
+            "22 5:11"
+          ]
+        },
+        {
+          "id": "3c2ab45d0fe510d1ca60341f",
+          "quote": "Isaiah 59:1",
+          "before": "er his ear heavy, that it cannot hear: –",
+          "after": ". He has secured the dew of youth and in",
+          "spans": [
+            [
+              6439,
+              6450
+            ]
+          ],
+          "osis": "Isa.59.1",
+          "queries": [
+            "23 59:1"
+          ]
+        },
+        {
+          "id": "e9cc3af0df47427aad30e4f5",
+          "quote": "John 6:27",
+          "before": " which endureth unto everlasting life… –",
+          "after": ", and He finished His earthly task in 33",
+          "spans": [
+            [
+              7555,
+              7564
+            ]
+          ],
+          "osis": "John.6.27",
+          "queries": [
+            "43 6:27"
+          ]
+        },
+        {
+          "id": "ce83cabe3d4bbd37c7773c77",
+          "quote": "Hebrews 10:12-13",
+          "before": "ill his enemies be made his footstool. –",
+          "after": ".",
+          "spans": [
+            [
+              8000,
+              8016
+            ]
+          ],
+          "osis": "Heb.10.12-Heb.10.13",
+          "queries": [
+            "58 10:12-13"
+          ]
+        },
+        {
+          "id": "f597056c548a1514b1aef484",
+          "quote": "Romans 5:3-4",
+          "before": "ence, experience; and experience, hope –",
+          "after": ". At times, we wonder if this scripture ",
+          "spans": [
+            [
+              8477,
+              8489
+            ]
+          ],
+          "osis": "Rom.5.3-Rom.5.4",
+          "queries": [
+            "45 5:3-4"
+          ]
+        },
+        {
+          "id": "cce7780f602bf296eaebd4c9",
+          "quote": "John 5:6",
+          "before": "t asked him, …Wilt thou be made whole? –",
+          "after": ". Upon the wake of his new day, a new re",
+          "spans": [
+            [
+              9950,
+              9958
+            ]
+          ],
+          "osis": "John.5.6",
+          "queries": [
+            "43 5:6"
+          ]
+        },
+        {
+          "id": "44aace5510d65311e9fbf954",
+          "quote": "John 5:14",
+          "before": "ore, lest a worse thing come unto thee –",
+          "after": ". What could be worse than being a cripp",
+          "spans": [
+            [
+              10108,
+              10117
+            ]
+          ],
+          "osis": "John.5.14",
+          "queries": [
+            "43 5:14"
+          ]
+        },
+        {
+          "id": "182b310581a81549933af89e",
+          "quote": "John 21:18",
+          "before": " carry thee whither thou wouldest not. –",
+          "after": ". When we are young, we can overcome in ",
+          "spans": [
+            [
+              11080,
+              11090
+            ]
+          ],
+          "osis": "John.21.18",
+          "queries": [
+            "43 21:18"
+          ]
+        },
+        {
+          "id": "24f0740ea7d3c6f1915cd15e",
+          "quote": "1 John 2:14",
+          "before": ", and ye have overcome the wicked one. –",
+          "after": ". The world entices us to selfish living",
+          "spans": [
+            [
+              11400,
+              11411
+            ]
+          ],
+          "osis": "1John.2.14",
+          "queries": [
+            "62 2:14"
+          ]
+        },
+        {
+          "id": "fd02dbd5c646e116e921c4f9",
+          "quote": "1 John 2:16-17",
+          "before": "oeth the will of God abideth for ever. –",
+          "after": ". Overcoming evil with good is the Bibli",
+          "spans": [
+            [
+              12029,
+              12043
+            ]
+          ],
+          "osis": "1John.2.16-1John.2.17",
+          "queries": [
+            "62 2:16-17"
+          ]
+        },
+        {
+          "id": "883b627ceb88fc2ff24742af",
+          "quote": "Lamentations 3:27-29",
+          "before": " the dust; if so be there may be hope. –",
+          "after": ". We are created to work in God’s vineya",
+          "spans": [
+            [
+              12532,
+              12552
+            ]
+          ],
+          "osis": "Lam.3.27-Lam.3.29",
+          "queries": [
+            "25 3:27-29"
+          ]
+        },
+        {
+          "id": "4bc31dc4226b0d4e273387e3",
+          "quote": "Romans 8:24",
+          "before": ": but hope that is seen is not hope... –",
+          "after": ". How often we can relate to Job in his ",
+          "spans": [
+            [
+              12790,
+              12801
+            ]
+          ],
+          "osis": "Rom.8.24",
+          "queries": [
+            "45 8:24"
+          ]
+        },
+        {
+          "id": "c54f3e675a686790e9eda2a0",
+          "quote": "Ephesians 5:27",
+          "before": "g spot, or wrinkle, or any such thing… –",
+          "after": ". Blessed is the venerable saint who arr",
+          "spans": [
+            [
+              13773,
+              13787
+            ]
+          ],
+          "osis": "Eph.5.27",
+          "queries": [
+            "49 5:27"
+          ]
+        }
+      ],
+      "record_hash": "37f095393fcc16332f850de2eff67e15066f5a11cd32669db6f37fb8f9f9372d"
+    },
+    "15e2b47b-d51f-47fd-a695-a2bb06f56970:en:6cb247f4aff98e7d2eab1545421bd7848c549784fe75363a910b0f88aa1de55b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "15e2b47b-d51f-47fd-a695-a2bb06f56970",
+      "locale": "en",
+      "content_hash": "6cb247f4aff98e7d2eab1545421bd7848c549784fe75363a910b0f88aa1de55b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b3bf95d0c4d2699a86876700a9315eb7c5725cb73285f3527b77d2cb58627995"
+    },
+    "15eb6aa3-dc7d-431d-9142-4fdd7033d395:en:8f04f6c95da513f928151afbc3b25aeb205f5620de9ddb01a18d9819e3e4e29c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "15eb6aa3-dc7d-431d-9142-4fdd7033d395",
+      "locale": "en",
+      "content_hash": "8f04f6c95da513f928151afbc3b25aeb205f5620de9ddb01a18d9819e3e4e29c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8f6ad4e7f83d3f837228af13",
+          "quote": "Acts 10:38",
+          "before": " God anointed Him with the Holy Spirit (",
+          "after": ") in recognition of His offices as proph",
+          "spans": [
+            [
+              5902,
+              5912
+            ]
+          ],
+          "osis": "Acts.10.38",
+          "queries": [
+            "44 10:38"
+          ]
+        },
+        {
+          "id": "823cec81a4dcc9f56d9baf98",
+          "quote": "Deuteronomy 18:15",
+          "before": "nted Prophet that Moses talked about in ",
+          "after": ".",
+          "spans": [
+            [
+              7590,
+              7607
+            ]
+          ],
+          "osis": "Deut.18.15",
+          "queries": [
+            "5 18:15"
+          ]
+        },
+        {
+          "id": "4bcd147436b2758a96c6ecfc",
+          "quote": "Leviticus 16:30",
+          "before": "ves the sin out of the sanctuary as per ",
+          "after": "—then God can be at peace with man. But ",
+          "spans": [
+            [
+              8119,
+              8134
+            ]
+          ],
+          "osis": "Lev.16.30",
+          "queries": [
+            "3 16:30"
+          ]
+        }
+      ],
+      "record_hash": "e98645ba56381af750f42518cde5e4aea2ba904aa5e7c0d041fdc9d2c5aa83dc"
+    },
+    "16200f43-1163-4e2b-94a5-730b2aaf30a5:en:ffd1b5b93a6faa0f13e7890f8c5d51078508a905ebbbc61aef0c6c19ca8c1b44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "16200f43-1163-4e2b-94a5-730b2aaf30a5",
+      "locale": "en",
+      "content_hash": "ffd1b5b93a6faa0f13e7890f8c5d51078508a905ebbbc61aef0c6c19ca8c1b44",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b4f5436441b5d75a1a5a0d495ea872ade8fe43970d320642ee4781135bf7f6b0"
+    },
+    "16b51668-067e-45fe-b0dd-4357620150eb:en:59357c3e85fc0a01de1ed9d4ba66ac1d9edeb1413659ce4641acbb76b320013f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "16b51668-067e-45fe-b0dd-4357620150eb",
+      "locale": "en",
+      "content_hash": "59357c3e85fc0a01de1ed9d4ba66ac1d9edeb1413659ce4641acbb76b320013f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "91d80b37c8b50ba7db5badfbcdb36b7d08026321527714c8e6fe686973518b30"
+    },
+    "175280ea-7e5f-4be2-bbce-b500c0fd93cb:en:e5e44fc967fc183dc193596c51fc12ae30f6b57969a215f777ea55ab31c0ecf9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "175280ea-7e5f-4be2-bbce-b500c0fd93cb",
+      "locale": "en",
+      "content_hash": "e5e44fc967fc183dc193596c51fc12ae30f6b57969a215f777ea55ab31c0ecf9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "fcad768ece5885fc3df5fdb77c736edc0b7da9cde30a2c922936403dd83df281"
+    },
+    "177fb1e6-bf90-48ef-ad9f-aa8508917fbd:en:42a7e814868697b490f120c2eac286694c0b1e25275237debe1affa00aee64b4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "177fb1e6-bf90-48ef-ad9f-aa8508917fbd",
+      "locale": "en",
+      "content_hash": "42a7e814868697b490f120c2eac286694c0b1e25275237debe1affa00aee64b4",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "1330b6e756d773c2f890628182d690d4974a2efc6a667df487d37665e409ecf2"
+    },
+    "1944e033-c8f0-4f00-beda-b42bfc3e8bd5:en:3f3758a7e4128008acf6fa7294de4ef0ded57aac293fef1464c89ced6d990b23:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1944e033-c8f0-4f00-beda-b42bfc3e8bd5",
+      "locale": "en",
+      "content_hash": "3f3758a7e4128008acf6fa7294de4ef0ded57aac293fef1464c89ced6d990b23",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ac606278fea429711c8f1b4bce7066a09f63fe9bf2fab6189f4dbc21147262e2"
+    },
+    "1a7d847f-2d8f-4b0e-be52-1d9eca925865:en:16cb86e32ffd8cf7d4dc0a22df7b19fde0354c32621c4967af0ec897b116c7b1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1a7d847f-2d8f-4b0e-be52-1d9eca925865",
+      "locale": "en",
+      "content_hash": "16cb86e32ffd8cf7d4dc0a22df7b19fde0354c32621c4967af0ec897b116c7b1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4dae69a6ad3656cc73a32e1d",
+          "quote": "Acts 2:3",
+          "before": "ongues of fire rested on each believer (",
+          "after": "), the word fire has been used in a sign",
+          "spans": [
+            [
+              3112,
+              3120
+            ]
+          ],
+          "osis": "Acts.2.3",
+          "queries": [
+            "44 2:3"
+          ]
+        },
+        {
+          "id": "717e76205938c6e8093a48f0",
+          "quote": "Prov. 14:14",
+          "before": " who is filled again with his own ways (",
+          "after": ".) What can be said of individuals must ",
+          "spans": [
+            [
+              3758,
+              3769
+            ]
+          ],
+          "osis": "Prov.14.14",
+          "queries": [
+            "20 14:14"
+          ]
+        },
+        {
+          "id": "cdeebbb421143250b62f0284",
+          "quote": "Ex. 33:17-23",
+          "before": "ed all His goodness to pass before him (",
+          "after": ".) The remarkable effect on Moses was se",
+          "spans": [
+            [
+              4368,
+              4380
+            ]
+          ],
+          "osis": "Exod.33.17-Exod.33.23",
+          "queries": [
+            "2 33:17-23"
+          ]
+        },
+        {
+          "id": "90da93decc7a35fec3bbff3e",
+          "quote": "Isa. 64:1",
+          "before": "d to rend the heavens and to come down (",
+          "after": ".) Our current scene is readily depicted",
+          "spans": [
+            [
+              5668,
+              5677
+            ]
+          ],
+          "osis": "Isa.64.1",
+          "queries": [
+            "23 64:1"
+          ]
+        },
+        {
+          "id": "b01d72ea0c1ccd42ef3fb8b0",
+          "quote": "Acts 2:1-47",
+          "before": "ouring of the Holy Spirit at Pentecost (",
+          "after": ".) Is it any wonder faithful believers t",
+          "spans": [
+            [
+              6527,
+              6538
+            ]
+          ],
+          "osis": "Acts.2.1-Acts.2.47",
+          "queries": [
+            "44 2:1-47"
+          ]
+        },
+        {
+          "id": "efca060dda12afdf9149952d",
+          "quote": "II Tim. 3:1-5",
+          "before": "liness but denying the power thereof.” (",
+          "after": ") A season of revival is a time when pow",
+          "spans": [
+            [
+              6905,
+              6918
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.5",
+          "queries": [
+            "55 3:1-5"
+          ]
+        },
+        {
+          "id": "936be32c15b92af190fbe15d",
+          "quote": "Amos 4:7",
+          "before": "Himself speaks of withholding the rain (",
+          "after": ") and sending the drought to a stiff-nec",
+          "spans": [
+            [
+              8040,
+              8048
+            ]
+          ],
+          "osis": "Amos.4.7",
+          "queries": [
+            "30 4:7"
+          ]
+        },
+        {
+          "id": "d05d589da66bebe1a62343cd",
+          "quote": "Hag. 1:11",
+          "before": "d people who have turned away from Him (",
+          "after": ".) Thus, expressions suggesting rain are",
+          "spans": [
+            [
+              8130,
+              8139
+            ]
+          ],
+          "osis": "Hag.1.11",
+          "queries": [
+            "37 1:11"
+          ]
+        },
+        {
+          "id": "bf217cdbb9b4ae0dadc0c896",
+          "quote": "Joel 2:23",
+          "before": "ful is Joel’s term, “The Latter Rain.” (",
+          "after": ") Having passed through the most wretche",
+          "spans": [
+            [
+              8470,
+              8479
+            ]
+          ],
+          "osis": "Joel.2.23",
+          "queries": [
+            "29 2:23"
+          ]
+        },
+        {
+          "id": "aba3173aa5121c346a79936f",
+          "quote": "Acts 3:19",
+          "before": "eshing from the Presence of the Lord.” (",
+          "after": ".) Many a weary worker longs for such a ",
+          "spans": [
+            [
+              9536,
+              9545
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "b7f72943f005018140b024bb",
+          "quote": "Ps. 73:28",
+          "before": "son. The “nearness of God is our good” (",
+          "after": ") and the prospect of His drawing close ",
+          "spans": [
+            [
+              9676,
+              9685
+            ]
+          ],
+          "osis": "Ps.73.28",
+          "queries": [
+            "19 73:28"
+          ]
+        },
+        {
+          "id": "e6ad3e3bed08024fdc759c66",
+          "quote": "Ps. 80:3",
+          "before": " face to shine; and we will be saved.” (",
+          "after": ")",
+          "spans": [
+            [
+              12168,
+              12176
+            ]
+          ],
+          "osis": "Ps.80.3",
+          "queries": [
+            "19 80:3"
+          ]
+        }
+      ],
+      "record_hash": "b7828fbf334f9b40f74c050611e2ce51ad91dfba9173b440ebd22088a0c820db"
+    },
+    "1b371612-06aa-4d84-8c43-2a2adcfd473a:en:07e8869716526dc775069eb0ea8ab64733599db0c1cea9b293e8c05d10c9dc93:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1b371612-06aa-4d84-8c43-2a2adcfd473a",
+      "locale": "en",
+      "content_hash": "07e8869716526dc775069eb0ea8ab64733599db0c1cea9b293e8c05d10c9dc93",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "45972e4ac1582aff2671d5d1",
+          "quote": "Psalm 18:1",
+          "before": "I will love thee, O Lord, my strength. –",
+          "after": "",
+          "spans": [
+            [
+              1295,
+              1305
+            ]
+          ],
+          "osis": "Ps.18.1",
+          "queries": [
+            "19 18:1"
+          ]
+        },
+        {
+          "id": "a209b1ea8647d45e7c5a3998",
+          "quote": "Psalm 77:12",
+          "before": "f all thy work and talk of thy doings. –",
+          "after": "",
+          "spans": [
+            [
+              2332,
+              2343
+            ]
+          ],
+          "osis": "Ps.77.12",
+          "queries": [
+            "19 77:12"
+          ]
+        },
+        {
+          "id": "6bbb4c60863c9fd07e1a8b54",
+          "quote": "2 Corinthians 10:12",
+          "before": "mselves among themselves, are not wise –",
+          "after": ".",
+          "spans": [
+            [
+              3727,
+              3746
+            ]
+          ],
+          "osis": "2Cor.10.12",
+          "queries": [
+            "47 10:12"
+          ]
+        },
+        {
+          "id": "dd1d182c5c3f2b63d0c68b34",
+          "quote": "Psalm 56:3",
+          "before": "time I am afraid, I will trust in thee –",
+          "after": ".",
+          "spans": [
+            [
+              4366,
+              4376
+            ]
+          ],
+          "osis": "Ps.56.3",
+          "queries": [
+            "19 56:3"
+          ]
+        },
+        {
+          "id": "25a33d77838f93bbbc357a8d",
+          "quote": "Philippians 4:11",
+          "before": "er state I am, therewith to be content –",
+          "after": ".",
+          "spans": [
+            [
+              5070,
+              5086
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "215769ae7ca91e0efbf33311",
+          "quote": "1 Timothy 6:8",
+          "before": "nd raiment let us be therewith content –",
+          "after": ".",
+          "spans": [
+            [
+              5164,
+              5177
+            ]
+          ],
+          "osis": "1Tim.6.8",
+          "queries": [
+            "54 6:8"
+          ]
+        },
+        {
+          "id": "4304d3409fe8cc30c76c9cdb",
+          "quote": "Colossians 4:6",
+          "before": " know how ye ought to answer every man –",
+          "after": ".",
+          "spans": [
+            [
+              5812,
+              5826
+            ]
+          ],
+          "osis": "Col.4.6",
+          "queries": [
+            "51 4:6"
+          ]
+        },
+        {
+          "id": "27101eb1190a6065594efaeb",
+          "quote": "Ephesians 4:29",
+          "before": "it may minister grace unto the hearers –",
+          "after": ".",
+          "spans": [
+            [
+              5995,
+              6009
+            ]
+          ],
+          "osis": "Eph.4.29",
+          "queries": [
+            "49 4:29"
+          ]
+        },
+        {
+          "id": "5d871bd1ae8c385c60f27592",
+          "quote": "2 Corinthians 9:8",
+          "before": "things, may abound to every good work: –",
+          "after": ".",
+          "spans": [
+            [
+              9707,
+              9724
+            ]
+          ],
+          "osis": "2Cor.9.8",
+          "queries": [
+            "47 9:8"
+          ]
+        }
+      ],
+      "record_hash": "4cc9773f12d71005a84bde771ab78f6ed3818b4ae3fc3f275f5e2e8d2a923f93"
+    },
+    "1b59b086-09fb-46c6-98f1-e926f80f17ac:en:fd090d44cecf535321bac925b758f4cdc773f9e6ccddc98f08694e23ec70eed3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1b59b086-09fb-46c6-98f1-e926f80f17ac",
+      "locale": "en",
+      "content_hash": "fd090d44cecf535321bac925b758f4cdc773f9e6ccddc98f08694e23ec70eed3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f43c9c8d1866e5e94f764334",
+          "quote": "Acts 21",
+          "before": "ce for children. However, like Paul, in ",
+          "after": ", God had sent us; how could we not go?",
+          "spans": [
+            [
+              700,
+              707
+            ]
+          ],
+          "osis": "Acts.21.1-Acts.21.40",
+          "queries": [
+            "44 21:1-40"
+          ]
+        },
+        {
+          "id": "6bbb42ae980178b381ab12d0",
+          "quote": "Matthew 13:44",
+          "before": "ll that he hath, and buyeth that field –",
+          "after": ". If he wanted the treasure, as all peop",
+          "spans": [
+            [
+              4084,
+              4097
+            ]
+          ],
+          "osis": "Matt.13.44",
+          "queries": [
+            "40 13:44"
+          ]
+        }
+      ],
+      "record_hash": "9b7e84cf478bbab60d939e196cad0fb688baba7502f9ca3453146395f117dc03"
+    },
+    "1bae0eee-b104-4df8-b428-cf4822ed67a9:en:3e523379084d323f2b40b553551838f1b6d1c3ea4fcf5c4abf87f4c2f5afff55:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1bae0eee-b104-4df8-b428-cf4822ed67a9",
+      "locale": "en",
+      "content_hash": "3e523379084d323f2b40b553551838f1b6d1c3ea4fcf5c4abf87f4c2f5afff55",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "730a8f19cfdbf149c2f695af",
+          "quote": "2 Sam 23:17",
+          "before": "that went in jeopardy of their lives?” (",
+          "after": ")",
+          "spans": [
+            [
+              1044,
+              1055
+            ]
+          ],
+          "osis": "2Sam.23.17",
+          "queries": [
+            "10 23:17"
+          ]
+        },
+        {
+          "id": "fe589d82569a64fd81e35ac0",
+          "quote": "Rom. 8:36",
+          "before": " accounted as sheep for the slaughter” (",
+          "after": "), and “Behold, I send you forth as lamb",
+          "spans": [
+            [
+              2769,
+              2778
+            ]
+          ],
+          "osis": "Rom.8.36",
+          "queries": [
+            "45 8:36"
+          ]
+        },
+        {
+          "id": "c13e37b4dc6c76308715cf2a",
+          "quote": "Luke 10:3",
+          "before": " send you forth as lambs among wolves” (",
+          "after": "), do not promise a worldly advantage. C",
+          "spans": [
+            [
+              2844,
+              2853
+            ]
+          ],
+          "osis": "Luke.10.3",
+          "queries": [
+            "42 10:3"
+          ]
+        },
+        {
+          "id": "7745c354abcb96e563b2ec3b",
+          "quote": "I Cor. 1:18",
+          "before": "he world. Paul proclaimed this truth in ",
+          "after": ", “The preaching of the cross is to them",
+          "spans": [
+            [
+              3003,
+              3014
+            ]
+          ],
+          "osis": "1Cor.1.18",
+          "queries": [
+            "46 1:18"
+          ]
+        },
+        {
+          "id": "a7f1d8b4eb0848cf62e57fcd",
+          "quote": "1 John 4:10-11",
+          "before": " us, we ought also to love one another”(",
+          "after": "). God ordained that the ultimate living",
+          "spans": [
+            [
+              3642,
+              3656
+            ]
+          ],
+          "osis": "1John.4.10-1John.4.11",
+          "queries": [
+            "62 4:10-11"
+          ]
+        },
+        {
+          "id": "71ebd727c06fe04a4d58a962",
+          "quote": "John 13:34-35",
+          "before": "iples, if ye have love one to another” (",
+          "after": ").",
+          "spans": [
+            [
+              4018,
+              4031
+            ]
+          ],
+          "osis": "John.13.34-John.13.35",
+          "queries": [
+            "43 13:34-35"
+          ]
+        },
+        {
+          "id": "6cceed937375dce720bd5b07",
+          "quote": "Acts 1:15",
+          "before": "one accord in prayer and supplication” (",
+          "after": "). God was faithful and poured out his S",
+          "spans": [
+            [
+              4256,
+              4265
+            ]
+          ],
+          "osis": "Acts.1.15",
+          "queries": [
+            "44 1:15"
+          ]
+        },
+        {
+          "id": "173981ecf3117ff14b83f7c7",
+          "quote": "Acts 2:46",
+          "before": " with gladness and singleness of heart”(",
+          "after": "). This church was powerful, directed, u",
+          "spans": [
+            [
+              4587,
+              4596
+            ]
+          ],
+          "osis": "Acts.2.46",
+          "queries": [
+            "44 2:46"
+          ]
+        },
+        {
+          "id": "4a0478ba2ef5fb9537baf9b7",
+          "quote": "Acts 17:6",
+          "before": "ctually “turned the world upside down” (",
+          "after": ").",
+          "spans": [
+            [
+              4742,
+              4751
+            ]
+          ],
+          "osis": "Acts.17.6",
+          "queries": [
+            "44 17:6"
+          ]
+        },
+        {
+          "id": "056e68cf410d6c2cedd04002",
+          "quote": "John 17:23",
+          "before": "world may know that thou hast sent me” (",
+          "after": "). Tainted by Catholic ecumenism, modern",
+          "spans": [
+            [
+              5105,
+              5115
+            ]
+          ],
+          "osis": "John.17.23",
+          "queries": [
+            "43 17:23"
+          ]
+        },
+        {
+          "id": "cf83c6772cb0ad08f1ab60cc",
+          "quote": "Jeremiah 32:38-39",
+          "before": "hanging gathering called the Church. In ",
+          "after": " God says the following concerning those",
+          "spans": [
+            [
+              5454,
+              5471
+            ]
+          ],
+          "osis": "Jer.32.38-Jer.32.39",
+          "queries": [
+            "24 32:38-39"
+          ]
+        },
+        {
+          "id": "21deba5d1c671697f052a0ef",
+          "quote": "Philippians 1:27",
+          "before": " together for the faith of the gospel” (",
+          "after": ").",
+          "spans": [
+            [
+              6112,
+              6128
+            ]
+          ],
+          "osis": "Phil.1.27",
+          "queries": [
+            "50 1:27"
+          ]
+        },
+        {
+          "id": "fae74cfac1f2b517203477dc",
+          "quote": "Philippians 2:2",
+          "before": "ove, being of one accord, of one mind” (",
+          "after": ").",
+          "spans": [
+            [
+              6247,
+              6262
+            ]
+          ],
+          "osis": "Phil.2.2",
+          "queries": [
+            "50 2:2"
+          ]
+        },
+        {
+          "id": "7dbf684ea32481df041efada",
+          "quote": "Colossians 3:11, 14-15",
+          "before": " which also ye are called in one body” (",
+          "after": ").",
+          "spans": [
+            [
+              6551,
+              6573
+            ]
+          ],
+          "osis": "Col.3.11,Col.3.14-Col.3.15",
+          "queries": [
+            "51 3:11",
+            "51 3:14-15"
+          ]
+        },
+        {
+          "id": "4c9c58a99fb37c266e421e10",
+          "quote": "1 Peter 3:8-9",
+          "before": "is, that ye should inherit a blessing” (",
+          "after": ").",
+          "spans": [
+            [
+              6850,
+              6863
+            ]
+          ],
+          "osis": "1Pet.3.8-1Pet.3.9",
+          "queries": [
+            "60 3:8-9"
+          ]
+        },
+        {
+          "id": "806c108b70ff40bd3e935367",
+          "quote": "Roman 15:1-3",
+          "before": " For even Christ pleased not himself…” (",
+          "after": ").",
+          "spans": [
+            [
+              8940,
+              8952
+            ]
+          ],
+          "osis": "Rom.15.1-Rom.15.3",
+          "queries": [
+            "45 15:1-3"
+          ]
+        },
+        {
+          "id": "d0630b27859d25b18eda5b03",
+          "quote": "Romans 1:14",
+          "before": "e a debtor”. Paul uses the same word in ",
+          "after": ", “I am debtor both to the Greeks and to",
+          "spans": [
+            [
+              9113,
+              9124
+            ]
+          ],
+          "osis": "Rom.1.14",
+          "queries": [
+            "45 1:14"
+          ]
+        },
+        {
+          "id": "4c2f8fa4448b2c4fc4041905",
+          "quote": "Romans 15",
+          "before": "barbarians.” So in other words, here in ",
+          "after": ", it is saying that our debt is “to bear",
+          "spans": [
+            [
+              9218,
+              9227
+            ]
+          ],
+          "osis": "Rom.15.1-Rom.15.33",
+          "queries": [
+            "45 15:1-33"
+          ]
+        },
+        {
+          "id": "905b7bc90511d86f0632f3bf",
+          "quote": "John 17",
+          "before": "uested in the prayer of Jesus, found in ",
+          "after": ", was concerning theological issues. How",
+          "spans": [
+            [
+              10857,
+              10864
+            ]
+          ],
+          "osis": "John.17.1-John.17.26",
+          "queries": [
+            "43 17:1-26"
+          ]
+        },
+        {
+          "id": "8bfd207f82a52b9092e3b3e1",
+          "quote": "Col 2:16-22",
+          "before": "the commandments and doctrines of men” (",
+          "after": ")? On the other hand, when rebuking the ",
+          "spans": [
+            [
+              13490,
+              13501
+            ]
+          ],
+          "osis": "Col.2.16-Col.2.22",
+          "queries": [
+            "51 2:16-22"
+          ]
+        },
+        {
+          "id": "7b38adac88c432dca28b27bc",
+          "quote": "I Cor 1:10",
+          "before": "he same mind and in the same judgment” (",
+          "after": "). What’s most notable about this verse ",
+          "spans": [
+            [
+              13933,
+              13943
+            ]
+          ],
+          "osis": "1Cor.1.10",
+          "queries": [
+            "46 1:10"
+          ]
+        },
+        {
+          "id": "85b50cc6c04d9a81a325e600",
+          "quote": "15th Chapter of Acts",
+          "before": "The ",
+          "after": " provides an interesting glimpse at the ",
+          "spans": [
+            [
+              19457,
+              19477
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "d414455c555f1052642b73d0",
+          "quote": "Lev. 17 and 18",
+          "before": "n the four sojourner/holiness laws form ",
+          "after": ", “Wherefore my sentence is, that we tro",
+          "spans": [
+            [
+              20827,
+              20841
+            ]
+          ],
+          "osis": "Lev.17.1-Lev.18.30",
+          "queries": [
+            "3 17:1-16",
+            "3 18:1-30"
+          ]
+        },
+        {
+          "id": "e5f8f537ac7c5f2cd1615d24",
+          "quote": "Acts 15:19",
+          "before": "from things strangled, and from blood” (",
+          "after": ").",
+          "spans": [
+            [
+              21093,
+              21103
+            ]
+          ],
+          "osis": "Acts.15.19",
+          "queries": [
+            "44 15:19"
+          ]
+        },
+        {
+          "id": "5a7838f3dcc2f336e9f0f633",
+          "quote": "Acts Chapter 15",
+          "before": "ocates of Christian license often quote ",
+          "after": " as a justification that all outward res",
+          "spans": [
+            [
+              21156,
+              21171
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "f6f61907cc286725d0c3cb25",
+          "quote": "Revelation Chapter 2",
+          "before": "In ",
+          "after": " Jesus is mentioned, walking amidst the ",
+          "spans": [
+            [
+              23360,
+              23380
+            ]
+          ],
+          "osis": "Rev.2.1-Rev.2.29",
+          "queries": [
+            "66 2:1-29"
+          ]
+        },
+        {
+          "id": "b089128eae12933a4f31f683",
+          "quote": "Rev. 2:5",
+          "before": " out of his place, except thou repent” (",
+          "after": ").",
+          "spans": [
+            [
+              25029,
+              25037
+            ]
+          ],
+          "osis": "Rev.2.5",
+          "queries": [
+            "66 2:5"
+          ]
+        },
+        {
+          "id": "e0a61382de9ceb78c1b7898a",
+          "quote": "Acts Chapter 15",
+          "before": "What if I don’t agree?” Did everyone in ",
+          "after": " just suddenly come to complete agreemen",
+          "spans": [
+            [
+              25877,
+              25892
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "3d28e7e5baeda5c69436391d",
+          "quote": "Gal 5:6",
+          "before": "sion; but faith which worketh by love” (",
+          "after": "). But even though he knew this, and kne",
+          "spans": [
+            [
+              27640,
+              27647
+            ]
+          ],
+          "osis": "Gal.5.6",
+          "queries": [
+            "48 5:6"
+          ]
+        },
+        {
+          "id": "7cacc65760a2519a55ddfb53",
+          "quote": "Acts 16:1-3",
+          "before": " knew all that his father was a Greek. (",
+          "after": ")",
+          "spans": [
+            [
+              28184,
+              28195
+            ]
+          ],
+          "osis": "Acts.16.1-Acts.16.3",
+          "queries": [
+            "44 16:1-3"
+          ]
+        },
+        {
+          "id": "95c924fba54eeb17f2066d06",
+          "quote": "Psalm 133",
+          "before": " the blessing, even life for evermore” (",
+          "after": ").",
+          "spans": [
+            [
+              30670,
+              30679
+            ]
+          ],
+          "osis": "Ps.133.1-Ps.133.3",
+          "queries": [
+            "19 133:1-3"
+          ]
+        }
+      ],
+      "record_hash": "f99b50223c832a3d3bc27268869fe8fa2f6c0a3cc5051788b200e2f40f406017"
+    },
+    "1bb83eea-79df-42fa-8919-99c206444ab4:en:e2444e2f39235482578ed71bf4e9714cfccb11dedb15315ae9ab2388eeb2e7c5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1bb83eea-79df-42fa-8919-99c206444ab4",
+      "locale": "en",
+      "content_hash": "e2444e2f39235482578ed71bf4e9714cfccb11dedb15315ae9ab2388eeb2e7c5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "87c022f07c4b050e4c7160063b36388f8026df00fbf14759c905481e600ae0d4"
+    },
+    "1bd826f1-263f-4891-aa7a-62c7a7ca70ca:en:ad5d213384d67b99abf030c1419a6c38fce92f8616bd1879698c74a2017f14a5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1bd826f1-263f-4891-aa7a-62c7a7ca70ca",
+      "locale": "en",
+      "content_hash": "ad5d213384d67b99abf030c1419a6c38fce92f8616bd1879698c74a2017f14a5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "37c8b6964b7c474cc380b70f",
+          "quote": "Philippians 3:18 - 19",
+          "before": "n their shame, who mind earthly things –",
+          "after": "",
+          "spans": [
+            [
+              313,
+              334
+            ]
+          ],
+          "osis": "Phil.3.18-Phil.3.19",
+          "queries": [
+            "50 3:18-19"
+          ]
+        },
+        {
+          "id": "9aeda9e07485d5379993d361",
+          "quote": "1 Corinthians 6:12",
+          "before": " not be brought under the power of any –",
+          "after": ". The picture presented is that of being",
+          "spans": [
+            [
+              1075,
+              1093
+            ]
+          ],
+          "osis": "1Cor.6.12",
+          "queries": [
+            "46 6:12"
+          ]
+        },
+        {
+          "id": "869bf5f09c2b581d121c1ca4",
+          "quote": "Luke 12:19",
+          "before": "ke his …ease, eat, drink, and be merry –",
+          "after": ", will doubtlessly soon need to buy bigg",
+          "spans": [
+            [
+              1778,
+              1788
+            ]
+          ],
+          "osis": "Luke.12.19",
+          "queries": [
+            "42 12:19"
+          ]
+        },
+        {
+          "id": "b3d75911400670ad7f3bdddc",
+          "quote": "2 Timothy 3:2-4",
+          "before": "s of pleasures more than lovers of God –",
+          "after": ". Food and wine are pleasurable, but the",
+          "spans": [
+            [
+              3263,
+              3278
+            ]
+          ],
+          "osis": "2Tim.3.2-2Tim.3.4",
+          "queries": [
+            "55 3:2-4"
+          ]
+        },
+        {
+          "id": "2facb472d6ee3e43c0850e2c",
+          "quote": "Proverbs 23:20-21",
+          "before": "and the glutton shall come to poverty… –",
+          "after": ".",
+          "spans": [
+            [
+              3510,
+              3527
+            ]
+          ],
+          "osis": "Prov.23.20-Prov.23.21",
+          "queries": [
+            "20 23:20-21"
+          ]
+        },
+        {
+          "id": "5f48f90ad39661f0be375311",
+          "quote": "Deuteronomy 21:18-21",
+          "before": "u; and all Israel shall hear, and fear –",
+          "after": ". Fortunately, since Christ, we have ste",
+          "spans": [
+            [
+              4179,
+              4199
+            ]
+          ],
+          "osis": "Deut.21.18-Deut.21.21",
+          "queries": [
+            "5 21:18-21"
+          ]
+        },
+        {
+          "id": "28a34234053ecdabb8a285c8",
+          "quote": "Romans 16:18",
+          "before": "ord Jesus Christ, but their own belly… –",
+          "after": ". It is a matter of servanthood. Food is",
+          "spans": [
+            [
+              4526,
+              4538
+            ]
+          ],
+          "osis": "Rom.16.18",
+          "queries": [
+            "45 16:18"
+          ]
+        },
+        {
+          "id": "6d1bbdc47b105028b13f0d32",
+          "quote": "1 Corinthians 6:19-20",
+          "before": "ple of the Holy Ghost which is in you… –",
+          "after": ".",
+          "spans": [
+            [
+              4765,
+              4786
+            ]
+          ],
+          "osis": "1Cor.6.19-1Cor.6.20",
+          "queries": [
+            "46 6:19-20"
+          ]
+        },
+        {
+          "id": "6af7dbe565bf6afd9588434d",
+          "quote": "Hebrews 13:9",
+          "before": "stablished with grace; not with meats… –",
+          "after": ".",
+          "spans": [
+            [
+              5464,
+              5476
+            ]
+          ],
+          "osis": "Heb.13.9",
+          "queries": [
+            "58 13:9"
+          ]
+        },
+        {
+          "id": "812ae73de30b3de16dc07da6",
+          "quote": "Hebrews 12:2",
+          "before": " was set before him endured the cross… –",
+          "after": ".",
+          "spans": [
+            [
+              9032,
+              9044
+            ]
+          ],
+          "osis": "Heb.12.2",
+          "queries": [
+            "58 12:2"
+          ]
+        },
+        {
+          "id": "620bce8cb30b4950650616db",
+          "quote": "Psalm 34:8",
+          "before": "…taste and see that the Lord is good… –",
+          "after": "",
+          "spans": [
+            [
+              9365,
+              9375
+            ]
+          ],
+          "osis": "Ps.34.8",
+          "queries": [
+            "19 34:8"
+          ]
+        },
+        {
+          "id": "1dc07540f72f4cb8e0b21c51",
+          "quote": "1Pet 2:2",
+          "before": "…desire the sincere milk of the word… ",
+          "after": "",
+          "spans": [
+            [
+              9427,
+              9435
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "2a8c9d7e2b40a1ec709049cf",
+          "quote": "John 6:35",
+          "before": "hat believeth on me shall never thirst –",
+          "after": "",
+          "spans": [
+            [
+              9592,
+              9601
+            ]
+          ],
+          "osis": "John.6.35",
+          "queries": [
+            "43 6:35"
+          ]
+        },
+        {
+          "id": "027eb86a542a2eeb66df5af6",
+          "quote": "Isaiah 55:1-2",
+          "before": "et your soul delight itself in fatness –",
+          "after": "",
+          "spans": [
+            [
+              10019,
+              10032
+            ]
+          ],
+          "osis": "Isa.55.1-Isa.55.2",
+          "queries": [
+            "23 55:1-2"
+          ]
+        },
+        {
+          "id": "af819d5032d563bb7115778e",
+          "quote": "Rom 14:17",
+          "before": ", and peace, and joy in the Holy Ghost –",
+          "after": "",
+          "spans": [
+            [
+              10335,
+              10344
+            ]
+          ],
+          "osis": "Rom.14.17",
+          "queries": [
+            "45 14:17"
+          ]
+        },
+        {
+          "id": "a874981fff5b19b72185c6c5",
+          "quote": "John 4:34",
+          "before": " to do the will of him that sent me... –",
+          "after": ". For many, the thought of curtailing th",
+          "spans": [
+            [
+              10443,
+              10452
+            ]
+          ],
+          "osis": "John.4.34",
+          "queries": [
+            "43 4:34"
+          ]
+        },
+        {
+          "id": "0772d0e597506e46bd1d5f6f",
+          "quote": "Philippians 4:13",
+          "before": " through Christ which strengtheneth me –",
+          "after": "",
+          "spans": [
+            [
+              10714,
+              10730
+            ]
+          ],
+          "osis": "Phil.4.13",
+          "queries": [
+            "50 4:13"
+          ]
+        },
+        {
+          "id": "8a8c4d852552522ce712e80f",
+          "quote": "John 8:32",
+          "before": "uth, and the truth shall make you free –",
+          "after": ". There is no more liberating antidote f",
+          "spans": [
+            [
+              11207,
+              11216
+            ]
+          ],
+          "osis": "John.8.32",
+          "queries": [
+            "43 8:32"
+          ]
+        },
+        {
+          "id": "95e62c32b9d36d88bca0c2c0",
+          "quote": "Matt 4:4",
+          "before": "hat proceedeth out of the mouth of God –",
+          "after": ". The reason we fall victim to temptatio",
+          "spans": [
+            [
+              12740,
+              12748
+            ]
+          ],
+          "osis": "Matt.4.4",
+          "queries": [
+            "40 4:4"
+          ]
+        },
+        {
+          "id": "a5b1ce82b1e2fa92a5b06a25",
+          "quote": "Matthew 5:28",
+          "before": "adultery with her already in his heart –",
+          "after": "",
+          "spans": [
+            [
+              13544,
+              13556
+            ]
+          ],
+          "osis": "Matt.5.28",
+          "queries": [
+            "40 5:28"
+          ]
+        },
+        {
+          "id": "7f5b5d8a4070ab61e6c1a1de",
+          "quote": "Proverbs 23:33",
+          "before": "hine heart shall utter perverse things –",
+          "after": "",
+          "spans": [
+            [
+              13663,
+              13677
+            ]
+          ],
+          "osis": "Prov.23.33",
+          "queries": [
+            "20 23:33"
+          ]
+        },
+        {
+          "id": "84f63721e418807264f46f6d",
+          "quote": "Proverbs 23:31",
+          "before": " the cup, when it moveth itself aright –",
+          "after": " Those who allow their imagination to fo",
+          "spans": [
+            [
+              13981,
+              13995
+            ]
+          ],
+          "osis": "Prov.23.31",
+          "queries": [
+            "20 23:31"
+          ]
+        },
+        {
+          "id": "249c5c2c7c21d6207bd385fa",
+          "quote": "Genesis 25:30-32",
+          "before": "aint…Behold, I am at the point to die… —",
+          "after": ". We must recognize that this is the dec",
+          "spans": [
+            [
+              14788,
+              14804
+            ]
+          ],
+          "osis": "Gen.25.30-Gen.25.32",
+          "queries": [
+            "1 25:30-32"
+          ]
+        },
+        {
+          "id": "5e5fce1581753adfaf969082",
+          "quote": "1 Corinthians 6:19-20",
+          "before": "y, and in your spirit, which are God's –",
+          "after": ". “Will eating this really satisfy my cr",
+          "spans": [
+            [
+              15064,
+              15085
+            ]
+          ],
+          "osis": "1Cor.6.19-1Cor.6.20",
+          "queries": [
+            "46 6:19-20"
+          ]
+        },
+        {
+          "id": "c938e2fac49f6aeb231f106f",
+          "quote": "Romans 8:13",
+          "before": "it do mortify the deeds of the body... –",
+          "after": "",
+          "spans": [
+            [
+              15778,
+              15789
+            ]
+          ],
+          "osis": "Rom.8.13",
+          "queries": [
+            "45 8:13"
+          ]
+        },
+        {
+          "id": "804db0619744f9c6d5ac492a",
+          "quote": "Romans 13:14",
+          "before": "the flesh, to fulfil the lusts thereof –",
+          "after": ". Recognizing our gluttony is only half ",
+          "spans": [
+            [
+              15935,
+              15947
+            ]
+          ],
+          "osis": "Rom.13.14",
+          "queries": [
+            "45 13:14"
+          ]
+        },
+        {
+          "id": "ac59ebf166c6047974e165f6",
+          "quote": "1 Corinthians 9:27",
+          "before": "others, I myself should be a cast-away –",
+          "after": ". Moreover, with the giant lying dead at",
+          "spans": [
+            [
+              16968,
+              16986
+            ]
+          ],
+          "osis": "1Cor.9.27",
+          "queries": [
+            "46 9:27"
+          ]
+        },
+        {
+          "id": "33c5038e52182e7874e1bee5",
+          "quote": "Matthew 25:23",
+          "before": "s: enter thou into the joy of thy lord –",
+          "after": " Rest assured, those who secure God's pr",
+          "spans": [
+            [
+              17287,
+              17300
+            ]
+          ],
+          "osis": "Matt.25.23",
+          "queries": [
+            "40 25:23"
+          ]
+        }
+      ],
+      "record_hash": "53d23ef3b72d450b2902c181e9e70859809e9a5cce78197147e37a54f14ed1be"
+    },
+    "1bdf0b87-af5f-4c9b-99a2-004277f7718d:en:e90b39eb01146ed8ea41b00865c541a5ef59c7c205f451a929667b607ca1a14c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1bdf0b87-af5f-4c9b-99a2-004277f7718d",
+      "locale": "en",
+      "content_hash": "e90b39eb01146ed8ea41b00865c541a5ef59c7c205f451a929667b607ca1a14c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "431db040353db6e946d77890",
+          "quote": "Acts 24:25",
+          "before": "onvenient season, I will call for thee –",
+          "after": ". Then towards the end of Paul’s oration",
+          "spans": [
+            [
+              837,
+              847
+            ]
+          ],
+          "osis": "Acts.24.25",
+          "queries": [
+            "44 24:25"
+          ]
+        },
+        {
+          "id": "f2007164c211c7f3a8aa74c9",
+          "quote": "Acts 26:24",
+          "before": "self; much learning doth make thee mad –",
+          "after": ".",
+          "spans": [
+            [
+              994,
+              1004
+            ]
+          ],
+          "osis": "Acts.26.24",
+          "queries": [
+            "44 26:24"
+          ]
+        },
+        {
+          "id": "1e565bda69154a9fb1c435f9",
+          "quote": "John 1:1-3",
+          "before": "ation, but it was also He who began it (",
+          "after": "). Paul says For the invisible things of",
+          "spans": [
+            [
+              2868,
+              2878
+            ]
+          ],
+          "osis": "John.1.1-John.1.3",
+          "queries": [
+            "43 1:1-3"
+          ]
+        },
+        {
+          "id": "d65f82f8bd803ff92b9bdf75",
+          "quote": "Romans 1:20",
+          "before": "dhead; so that they are without excuse –",
+          "after": ". ",
+          "spans": [
+            [
+              3091,
+              3102
+            ]
+          ],
+          "osis": "Rom.1.20",
+          "queries": [
+            "45 1:20"
+          ]
+        },
+        {
+          "id": "4d1f9d28d442734ca552a532",
+          "quote": "Jeremiah 31:35-36",
+          "before": "from being a nation before me for ever –",
+          "after": ".",
+          "spans": [
+            [
+              4704,
+              4721
+            ]
+          ],
+          "osis": "Jer.31.35-Jer.31.36",
+          "queries": [
+            "24 31:35-36"
+          ]
+        },
+        {
+          "id": "139aec97d10b6d9bebb18d81",
+          "quote": "2 Peter 3:4",
+          "before": "ere from the beginning of the creation –",
+          "after": ". ",
+          "spans": [
+            [
+              5057,
+              5068
+            ]
+          ],
+          "osis": "2Pet.3.4",
+          "queries": [
+            "61 3:4"
+          ]
+        },
+        {
+          "id": "784ef4a4900724ae46e61704",
+          "quote": "Isaiah 55:8-9",
+          "before": "ys, and my thoughts than your thoughts –",
+          "after": ".",
+          "spans": [
+            [
+              5737,
+              5750
+            ]
+          ],
+          "osis": "Isa.55.8-Isa.55.9",
+          "queries": [
+            "23 55:8-9"
+          ]
+        },
+        {
+          "id": "ccf7a1100d1358b3f285faae",
+          "quote": "Psalm 14:1",
+          "before": "th said in his heart, There is no God… –",
+          "after": ". By this definition, many scientists ar",
+          "spans": [
+            [
+              6571,
+              6581
+            ]
+          ],
+          "osis": "Ps.14.1",
+          "queries": [
+            "19 14:1"
+          ]
+        },
+        {
+          "id": "33c38d3f5a4a3e1e9658f654",
+          "quote": "Psalm 8:3-4",
+          "before": "he son of man, that thou visitest him? –",
+          "after": ". When we think about the world around u",
+          "spans": [
+            [
+              7355,
+              7366
+            ]
+          ],
+          "osis": "Ps.8.3-Ps.8.4",
+          "queries": [
+            "19 8:3-4"
+          ]
+        },
+        {
+          "id": "c06c941863fbec6518ee07c3",
+          "quote": "Acts 17:28",
+          "before": "e live, and move, and have our being… – ",
+          "after": ", and nothing that science can discern w",
+          "spans": [
+            [
+              7588,
+              7598
+            ]
+          ],
+          "osis": "Acts.17.28",
+          "queries": [
+            "44 17:28"
+          ]
+        },
+        {
+          "id": "87545870347af065e5a11e79",
+          "quote": "2 Timothy 3:7",
+          "before": " to come to the knowledge of the truth –",
+          "after": ". On the other hand, if we begin with a ",
+          "spans": [
+            [
+              16224,
+              16237
+            ]
+          ],
+          "osis": "2Tim.3.7",
+          "queries": [
+            "55 3:7"
+          ]
+        }
+      ],
+      "record_hash": "9849893615e213948a515cd1319406356b5a095cd701db5c912ea50c30ec181b"
+    },
+    "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:en:cb454709b43c920f54450d1d1216938b14114e2bf64cc2849127de8b07c528fc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
+      "locale": "en",
+      "content_hash": "cb454709b43c920f54450d1d1216938b14114e2bf64cc2849127de8b07c528fc",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8c9dd7f6ef0f1bce54b85861",
+          "quote": "Ephesians 5:33",
+          "before": "ife see that she reverence her husband –",
+          "after": ".",
+          "spans": [
+            [
+              1569,
+              1583
+            ]
+          ],
+          "osis": "Eph.5.33",
+          "queries": [
+            "49 5:33"
+          ]
+        },
+        {
+          "id": "dcb18718cbb252283de6bb98",
+          "quote": "1 Peter 3:1",
+          "before": "be in subjection to your own husbands… –",
+          "after": ".",
+          "spans": [
+            [
+              1684,
+              1695
+            ]
+          ],
+          "osis": "1Pet.3.1",
+          "queries": [
+            "60 3:1"
+          ]
+        },
+        {
+          "id": "b784cbd1470964cb298c239d",
+          "quote": "1 Peter 3:6",
+          "before": "ling him lord: whose daughters ye are… –",
+          "after": ".",
+          "spans": [
+            [
+              1825,
+              1836
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "1bff77403d9b8cae59566026",
+          "quote": "Ephesians 5:22",
+          "before": "to your own husbands, as unto the Lord –",
+          "after": ".",
+          "spans": [
+            [
+              1944,
+              1958
+            ]
+          ],
+          "osis": "Eph.5.22",
+          "queries": [
+            "49 5:22"
+          ]
+        },
+        {
+          "id": "37e6dc482dd767a1d9adf273",
+          "quote": "1 Corinthians 11:3",
+          "before": "the man; and the head of Christ is God –",
+          "after": ".",
+          "spans": [
+            [
+              2133,
+              2151
+            ]
+          ],
+          "osis": "1Cor.11.3",
+          "queries": [
+            "46 11:3"
+          ]
+        },
+        {
+          "id": "4f7b5c1051be4d3f02a9e1b9",
+          "quote": "1 Timothy 2:11-14",
+          "before": "eing deceived was in the transgression –",
+          "after": ".",
+          "spans": [
+            [
+              2457,
+              2474
+            ]
+          ],
+          "osis": "1Tim.2.11-1Tim.2.14",
+          "queries": [
+            "54 2:11-14"
+          ]
+        },
+        {
+          "id": "2a702a40606bf5ee957136f6",
+          "quote": "Ephesians 5:24",
+          "before": "] to their own husbands in every thing –",
+          "after": ".",
+          "spans": [
+            [
+              2631,
+              2645
+            ]
+          ],
+          "osis": "Eph.5.24",
+          "queries": [
+            "49 5:24"
+          ]
+        },
+        {
+          "id": "d388175e8fa72a08fad7d374",
+          "quote": "1 Corinthians 14:34",
+          "before": "under obedience, as also saith the law –",
+          "after": ".",
+          "spans": [
+            [
+              2844,
+              2863
+            ]
+          ],
+          "osis": "1Cor.14.34",
+          "queries": [
+            "46 14:34"
+          ]
+        },
+        {
+          "id": "c652cc3cbb5bc7342aa914bc",
+          "quote": "Titus 2:3-5",
+          "before": "that the word of God be not blasphemed –",
+          "after": ".",
+          "spans": [
+            [
+              6187,
+              6198
+            ]
+          ],
+          "osis": "Titus.2.3-Titus.2.5",
+          "queries": [
+            "56 2:3-5"
+          ]
+        },
+        {
+          "id": "8ff7f6f30332b95563085e0b",
+          "quote": "Genesis 2:18",
+          "before": "e, appropriate, complementary] for him –",
+          "after": ".",
+          "spans": [
+            [
+              6887,
+              6899
+            ]
+          ],
+          "osis": "Gen.2.18",
+          "queries": [
+            "1 2:18"
+          ]
+        },
+        {
+          "id": "6b5f46b0d6a443c2f4574b23",
+          "quote": "Titus 2:4",
+          "before": "their husbands, to love their children –",
+          "after": ". The word “love,” in to love their husb",
+          "spans": [
+            [
+              7017,
+              7026
+            ]
+          ],
+          "osis": "Titus.2.4",
+          "queries": [
+            "56 2:4"
+          ]
+        },
+        {
+          "id": "5fd147f4c95e2861ecb1cf8c",
+          "quote": "1 Peter 3:1-2 & 3:6-7",
+          "before": "ife; that your prayers be not hindered –",
+          "after": ".",
+          "spans": [
+            [
+              9123,
+              9148
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2,1Pet.3.6-1Pet.3.7",
+          "queries": [
+            "60 3:1-2",
+            "60 3:6-7"
+          ]
+        }
+      ],
+      "record_hash": "aabb6938b149de3c9d03c554708d21f011b5f2a79e008cb776d0fea82a5d5d42"
+    },
+    "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e:en:2c3822a8bfb71c689353ecbac6e8658a15a937ae5a2d5a9104221c1d62b335f8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e",
+      "locale": "en",
+      "content_hash": "2c3822a8bfb71c689353ecbac6e8658a15a937ae5a2d5a9104221c1d62b335f8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "f8145a0e1a2123be2f4599bce940054133ae7b2d5259eb032c54631cdd15a398"
+    },
+    "1c75dce8-1781-427f-8099-01596d53c2a4:en:a58843b21d7c0b99c66e9d6da2c4793cafa762b880e1739931280ab8938c6df5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c75dce8-1781-427f-8099-01596d53c2a4",
+      "locale": "en",
+      "content_hash": "a58843b21d7c0b99c66e9d6da2c4793cafa762b880e1739931280ab8938c6df5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "896994e80cebdc4860a0424e",
+          "quote": "Job 6:5",
+          "before": "ss? Or loweth the ox over his fodder?” (",
+          "after": "). When they are happy and content, they",
+          "spans": [
+            [
+              1739,
+              1746
+            ]
+          ],
+          "osis": "Job.6.5",
+          "queries": [
+            "18 6:5"
+          ]
+        },
+        {
+          "id": "e81f10e2c4d7b7237648338d",
+          "quote": "James 5:13",
+          "before": "s. “Is any merry? Let him sing psalms” (",
+          "after": "). The birds do this incessantly and it ",
+          "spans": [
+            [
+              2778,
+              2788
+            ]
+          ],
+          "osis": "Jas.5.13",
+          "queries": [
+            "59 5:13"
+          ]
+        },
+        {
+          "id": "8ca1125e42b0a4997a3525a0",
+          "quote": "Ps 40:3",
+          "before": "in my mouth, even praise unto our God” (",
+          "after": "). On 22 occasions, the Scriptures reite",
+          "spans": [
+            [
+              3816,
+              3823
+            ]
+          ],
+          "osis": "Ps.40.3",
+          "queries": [
+            "19 40:3"
+          ]
+        },
+        {
+          "id": "9ad6d53cf626daeb9018fee1",
+          "quote": "Eph 5:19",
+          "before": "king melody in your heart to the Lord” (",
+          "after": "). The advent of Christ was marked by th",
+          "spans": [
+            [
+              4832,
+              4840
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "9c1a49ef203e881d798d207d",
+          "quote": "John 4",
+          "before": " name must deliver the same tidings. In ",
+          "after": ", we happen upon the scene at Jacob’s we",
+          "spans": [
+            [
+              5004,
+              5010
+            ]
+          ],
+          "osis": "John.4.1-John.4.54",
+          "queries": [
+            "43 4:1-54"
+          ]
+        },
+        {
+          "id": "cbca44d19df05f013fdb2c37",
+          "quote": "John 4:14",
+          "before": "er springing up into everlasting life” (",
+          "after": ").",
+          "spans": [
+            [
+              5576,
+              5585
+            ]
+          ],
+          "osis": "John.4.14",
+          "queries": [
+            "43 4:14"
+          ]
+        },
+        {
+          "id": "93e32c3b2b6f000184d7fd18",
+          "quote": "John 7:38",
+          "before": "s probably speaking of the Spirit as in ",
+          "after": ", surely this may be just as applicable ",
+          "spans": [
+            [
+              5793,
+              5802
+            ]
+          ],
+          "osis": "John.7.38",
+          "queries": [
+            "43 7:38"
+          ]
+        },
+        {
+          "id": "efa0a8ecd0dbc3f89d18389d",
+          "quote": "Rev 18:2",
+          "before": "age of every unclean and hateful bird” (",
+          "after": "). These abundant creatures are the fall",
+          "spans": [
+            [
+              6677,
+              6685
+            ]
+          ],
+          "osis": "Rev.18.2",
+          "queries": [
+            "66 18:2"
+          ]
+        },
+        {
+          "id": "6b5048fd2183ea9bb068d6fe",
+          "quote": "Ps 22:9",
+          "before": "e when I was upon my mother’s breasts” (",
+          "after": "). No doubt that the singing mother can ",
+          "spans": [
+            [
+              8004,
+              8011
+            ]
+          ],
+          "osis": "Ps.22.9",
+          "queries": [
+            "19 22:9"
+          ]
+        },
+        {
+          "id": "452888cf08bd675c9aa7cdef",
+          "quote": "Gen 26:15",
+          "before": "ilistines “had filled them with earth” (",
+          "after": "). So run the spiritually neglected home",
+          "spans": [
+            [
+              8416,
+              8425
+            ]
+          ],
+          "osis": "Gen.26.15",
+          "queries": [
+            "1 26:15"
+          ]
+        },
+        {
+          "id": "05b3dcbd9b5d05737d244588",
+          "quote": "Ps 137:2-4",
+          "before": "ng the LORD’S song in a strange land?” (",
+          "after": "). God’s people had been instructed by J",
+          "spans": [
+            [
+              9331,
+              9341
+            ]
+          ],
+          "osis": "Ps.137.2-Ps.137.4",
+          "queries": [
+            "19 137:2-4"
+          ]
+        },
+        {
+          "id": "3b2c24a322b123fb9a181650",
+          "quote": "Jer. 29:5-7",
+          "before": "the peace thereof shall ye have peace” (",
+          "after": "). But they could see no worth in it. Wi",
+          "spans": [
+            [
+              9608,
+              9619
+            ]
+          ],
+          "osis": "Jer.29.5-Jer.29.7",
+          "queries": [
+            "24 29:5-7"
+          ]
+        },
+        {
+          "id": "0f5a95231a8d091255317c31",
+          "quote": "Col 3:16, 23",
+          "before": "ily, as to the Lord, and not unto men” (",
+          "after": ").",
+          "spans": [
+            [
+              10970,
+              10982
+            ]
+          ],
+          "osis": "Col.3.16,Col.3.23",
+          "queries": [
+            "51 3:16",
+            "51 3:23"
+          ]
+        }
+      ],
+      "record_hash": "fbda5d810136c8b6c48fe0ef88961ef83e85b02e9b0ebc91209c69b276dccd77"
+    },
+    "1c762697-04ff-47f7-8967-4654972dbbe7:en:db0bb0e39b58ffb3a514ca0e5b139199e1e5370cd43e0a7a95274f17cfc2c7de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c762697-04ff-47f7-8967-4654972dbbe7",
+      "locale": "en",
+      "content_hash": "db0bb0e39b58ffb3a514ca0e5b139199e1e5370cd43e0a7a95274f17cfc2c7de",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9f438976da7fcde0bd3a89ec",
+          "quote": "1 Pe. 4:18",
+          "before": "all the ungodly and the sinner appear?” ",
+          "after": " If their thoughts, words, and works mus",
+          "spans": [
+            [
+              437,
+              447
+            ]
+          ],
+          "osis": "1Pet.4.18",
+          "queries": [
+            "60 4:18"
+          ]
+        },
+        {
+          "id": "dfa7b57944d90f96b0d5cf2d",
+          "quote": "Mt. 7:23",
+          "before": "u workers of iniquity; I know you not.” ",
+          "after": " As if He had said, Depart from me, you ",
+          "spans": [
+            [
+              913,
+              921
+            ]
+          ],
+          "osis": "Matt.7.23",
+          "queries": [
+            "40 7:23"
+          ]
+        },
+        {
+          "id": "3823f073fd03e1b536add9cf",
+          "quote": "Mt. 25:34",
+          "before": "ying, “Come, you blessed of my Father” (",
+          "after": "); those, who through patient continuanc",
+          "spans": [
+            [
+              1616,
+              1625
+            ]
+          ],
+          "osis": "Matt.25.34",
+          "queries": [
+            "40 25:34"
+          ]
+        },
+        {
+          "id": "ed48ea36d9e7ead4db735f73",
+          "quote": "Ga. 6:7",
+          "before": "ived, such as you sow, shall you reap.” ",
+          "after": " He is not your savior while you reject ",
+          "spans": [
+            [
+              2609,
+              2616
+            ]
+          ],
+          "osis": "Gal.6.7",
+          "queries": [
+            "48 6:7"
+          ]
+        }
+      ],
+      "record_hash": "cf7dbd073a33dc930ea8454701ebcbb80bf63485dfbe38c7507458be8f0c05cd"
+    },
+    "1caf6642-2283-4363-b3b6-33e40c39f945:en:9cbb4cf6a659167b7171ba76a660ea9c9bf4aee584def7373c3243eda89b2338:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1caf6642-2283-4363-b3b6-33e40c39f945",
+      "locale": "en",
+      "content_hash": "9cbb4cf6a659167b7171ba76a660ea9c9bf4aee584def7373c3243eda89b2338",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "f1001ea389cb22a2be24cba754739a0990b6205645257bb0f0083f74d8d33ba2"
+    },
+    "1cfeb61b-6e76-4758-b426-eb273653e70f:en:0d689affd82f747d5b63b65ba0997a1d56a5ca212ce7c1c3dfcac44a6f031c0d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1cfeb61b-6e76-4758-b426-eb273653e70f",
+      "locale": "en",
+      "content_hash": "0d689affd82f747d5b63b65ba0997a1d56a5ca212ce7c1c3dfcac44a6f031c0d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "8c8321763abf72cc8e133f20e1c4027fe39e55bc5644478030ed0bef01c9cef9"
+    },
+    "1d58d8bb-729e-4936-a3b4-653b3bb89012:en:cbc2c46bfe9b51b83b8ed9eb379025518f92f523bd74cc26e5df96d1552d864f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1d58d8bb-729e-4936-a3b4-653b3bb89012",
+      "locale": "en",
+      "content_hash": "cbc2c46bfe9b51b83b8ed9eb379025518f92f523bd74cc26e5df96d1552d864f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7f76269d96d0603f4a0ed755",
+          "quote": "Luke 12:50",
+          "before": "\n  ",
+          "after": "",
+          "spans": [
+            [
+              322,
+              332
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "508f283212a561b29b31c451",
+          "quote": "Lu. 12:50",
+          "before": " I straitened till it be accomplished!” ",
+          "after": "",
+          "spans": [
+            [
+              927,
+              936
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "b92a9cb9de8e1706ff7dbabb",
+          "quote": "1 John 5:8",
+          "before": "m of blood.” This latter term came from ",
+          "after": ", which tells us, “And there are three t",
+          "spans": [
+            [
+              1136,
+              1146
+            ]
+          ],
+          "osis": "1John.5.8",
+          "queries": [
+            "62 5:8"
+          ]
+        },
+        {
+          "id": "b1d8d61d3919681045c59565",
+          "quote": "2 Corinthians 11:4",
+          "before": "Apostle Paul called “another gospel” in ",
+          "after": " and Galatians 1:16. In his letter to th",
+          "spans": [
+            [
+              1628,
+              1646
+            ]
+          ],
+          "osis": "2Cor.11.4",
+          "queries": [
+            "47 11:4"
+          ]
+        },
+        {
+          "id": "445f13a6b0d95bfa60cc5f1a",
+          "quote": "Galatians 1:16",
+          "before": "other gospel” in 2 Corinthians 11:4 and ",
+          "after": ". In his letter to the Corinthians, Paul",
+          "spans": [
+            [
+              1651,
+              1665
+            ]
+          ],
+          "osis": "Gal.1.16",
+          "queries": [
+            "48 1:16"
+          ]
+        },
+        {
+          "id": "0f30f7b72bd6e4b424ae308e",
+          "quote": "Mt 10:38",
+          "before": "lloweth after me, is not worthy of me.” ",
+          "after": "",
+          "spans": [
+            [
+              2210,
+              2218
+            ]
+          ],
+          "osis": "Matt.10.38",
+          "queries": [
+            "40 10:38"
+          ]
+        },
+        {
+          "id": "b72972cd8600a2b826a7c6d3",
+          "quote": "Ecclesiastes 3:18",
+          "before": "d will basically act like an animal, as ",
+          "after": " tells us: “I said in mine heart concern",
+          "spans": [
+            [
+              5498,
+              5515
+            ]
+          ],
+          "osis": "Eccl.3.18",
+          "queries": [
+            "21 3:18"
+          ]
+        },
+        {
+          "id": "da0634fe2fdf92c020dfbd15",
+          "quote": "Luke 6:32-34",
+          "before": "Jesus told his disciples in ",
+          "after": " that “if ye love them which love you, w",
+          "spans": [
+            [
+              10070,
+              10082
+            ]
+          ],
+          "osis": "Luke.6.32-Luke.6.34",
+          "queries": [
+            "42 6:32-34"
+          ]
+        },
+        {
+          "id": "b6af0d15fc022f15b463c502",
+          "quote": "Matthew 5:20",
+          "before": "oly character. He told His disciples in ",
+          "after": ", “That except your righteousness shall ",
+          "spans": [
+            [
+              10859,
+              10871
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "fe30e8d2f2808e193584d37b",
+          "quote": "Romans 12:21",
+          "before": "t.” The Apostle Paul put it this way in ",
+          "after": ": “Overcome evil with good.”",
+          "spans": [
+            [
+              12645,
+              12657
+            ]
+          ],
+          "osis": "Rom.12.21",
+          "queries": [
+            "45 12:21"
+          ]
+        },
+        {
+          "id": "751cf4607d3f8070a23e8dbf",
+          "quote": "Hebrews 2:10",
+          "before": "e the “author of eternal salvation.” In ",
+          "after": ", it is written “For it became him [was ",
+          "spans": [
+            [
+              14942,
+              14954
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "b4893834f2a3c535724fa2a1",
+          "quote": "Is. 53:10",
+          "before": ". “It pleased the Lord to bruise him,” (",
+          "after": ") because the Father knew the Son would ",
+          "spans": [
+            [
+              16060,
+              16069
+            ]
+          ],
+          "osis": "Isa.53.10",
+          "queries": [
+            "23 53:10"
+          ]
+        },
+        {
+          "id": "d79270aa9ee0e82d01b65ad2",
+          "quote": "1 Peter 3:14",
+          "before": "f that letter now, notice one phrase in ",
+          "after": ": “But and if ye suffer for righteousnes",
+          "spans": [
+            [
+              18007,
+              18019
+            ]
+          ],
+          "osis": "1Pet.3.14",
+          "queries": [
+            "60 3:14"
+          ]
+        },
+        {
+          "id": "76a89026930993adba29727e",
+          "quote": "Jn 13:32",
+          "before": "lf, and shall straightway glorify him.” ",
+          "after": "",
+          "spans": [
+            [
+              21066,
+              21074
+            ]
+          ],
+          "osis": "John.13.32",
+          "queries": [
+            "43 13:32"
+          ]
+        },
+        {
+          "id": "e47f742cea6150093f3b766e",
+          "quote": "Pr. 16:32",
+          "before": "his spirit than he that taketh a city … ",
+          "after": "] In return, God glorified the Son. It i",
+          "spans": [
+            [
+              21681,
+              21690
+            ]
+          ],
+          "osis": "Prov.16.32",
+          "queries": [
+            "20 16:32"
+          ]
+        },
+        {
+          "id": "b19b43ea85d70f0967a206f1",
+          "quote": "Lu. 23:47",
+          "before": "g, Certainly this was a righteous man.” ",
+          "after": "",
+          "spans": [
+            [
+              21875,
+              21884
+            ]
+          ],
+          "osis": "Luke.23.47",
+          "queries": [
+            "42 23:47"
+          ]
+        },
+        {
+          "id": "d81b42760879d1940c9b9289",
+          "quote": "1 Pe. 4:1",
+          "before": "red in the flesh hath ceased from sin.” ",
+          "after": "",
+          "spans": [
+            [
+              23755,
+              23764
+            ]
+          ],
+          "osis": "1Pet.4.1",
+          "queries": [
+            "60 4:1"
+          ]
+        },
+        {
+          "id": "732629ab94a847edc65305d5",
+          "quote": "Re. 2:10",
+          "before": " and I will give thee a crown of life!” ",
+          "after": "",
+          "spans": [
+            [
+              29247,
+              29255
+            ]
+          ],
+          "osis": "Rev.2.10",
+          "queries": [
+            "66 2:10"
+          ]
+        }
+      ],
+      "record_hash": "cb1a57013c3c9f567d4aeb783ea193a3b46aacf8506452422bb8569cf032b02a"
+    },
+    "1d59cd59-7b38-4c1e-84bd-30f9e66de33a:en:a845f6a5f1399d24c366b86574020c9ff29fa58dd8346593bb373dfe5206b2e5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1d59cd59-7b38-4c1e-84bd-30f9e66de33a",
+      "locale": "en",
+      "content_hash": "a845f6a5f1399d24c366b86574020c9ff29fa58dd8346593bb373dfe5206b2e5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "55615a67ea219236cdbe68e7043515b95475d6a2a1f0dedf87336b0ca9fabec4"
+    },
+    "1da906dc-7485-4e88-adfb-dc70df21e888:en:8d0114e27bee5f5efb84730a6d2ac0c280ae07a9b79542380967c97541067ea4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1da906dc-7485-4e88-adfb-dc70df21e888",
+      "locale": "en",
+      "content_hash": "8d0114e27bee5f5efb84730a6d2ac0c280ae07a9b79542380967c97541067ea4",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "25e5a158adb75b0f1638723b",
+          "quote": "Psalm 95:1",
+          "before": " noise unto the rock of our salvation” (",
+          "after": ").",
+          "spans": [
+            [
+              3394,
+              3404
+            ]
+          ],
+          "osis": "Ps.95.1",
+          "queries": [
+            "19 95:1"
+          ]
+        }
+      ],
+      "record_hash": "6ee04c0f3202443496494a75df5144df872d8511bd63c911cb035ce867d0f5b8"
+    },
+    "1ec0f654-0dd1-48f3-9a68-3b15189e6704:en:d117e65531df81bf8a6b256d86216ecca665a74d4f91be62e465e82bbe477877:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1ec0f654-0dd1-48f3-9a68-3b15189e6704",
+      "locale": "en",
+      "content_hash": "d117e65531df81bf8a6b256d86216ecca665a74d4f91be62e465e82bbe477877",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a559977043335c46236faebffdf03990ff38050050781cea3c8992166507fa65"
+    },
+    "1fb11dd9-8813-4447-a91c-f33005907b91:en:5e1de82574d0bf5219fa06f85594e6d871412c9f332a311c172fb7e9633e854b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1fb11dd9-8813-4447-a91c-f33005907b91",
+      "locale": "en",
+      "content_hash": "5e1de82574d0bf5219fa06f85594e6d871412c9f332a311c172fb7e9633e854b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1182c64b628ce58785a78959",
+          "quote": "1 Co. 14:34",
+          "before": " women keeping silence in the churches (",
+          "after": "), not to teach a man (1 Ti. 2:12) being",
+          "spans": [
+            [
+              3202,
+              3213
+            ]
+          ],
+          "osis": "1Cor.14.34",
+          "queries": [
+            "46 14:34"
+          ]
+        },
+        {
+          "id": "e7e362c514ba67be6b2ef3b3",
+          "quote": "1 Ti. 2:12",
+          "before": "ches (1 Co. 14:34), not to teach a man (",
+          "after": ") being keepers at home (Ti. 2:5), and n",
+          "spans": [
+            [
+              3236,
+              3246
+            ]
+          ],
+          "osis": "1Tim.2.12",
+          "queries": [
+            "54 2:12"
+          ]
+        },
+        {
+          "id": "6c1beb61e11e8e49a4fdd3b0",
+          "quote": "Ti. 2:5",
+          "before": "man (1 Ti. 2:12) being keepers at home (",
+          "after": "), and not being called to be bishops or",
+          "spans": [
+            [
+              3271,
+              3278
+            ]
+          ],
+          "osis": "Titus.2.5",
+          "queries": [
+            "56 2:5"
+          ]
+        },
+        {
+          "id": "19344695d1324f385d4ea045",
+          "quote": "1 Ti. 3:2,12",
+          "before": " being called to be bishops or deacons (",
+          "after": "), it was just Paul’s Greek culture comi",
+          "spans": [
+            [
+              3328,
+              3340
+            ]
+          ],
+          "osis": "1Tim.3.2,1Tim.3.12",
+          "queries": [
+            "54 3:2",
+            "54 3:12"
+          ]
+        },
+        {
+          "id": "69a03e3285028cf02260da0a",
+          "quote": "Galatians 3:28",
+          "before": "ou have decided that when Paul wrote in ",
+          "after": " “there is neither Jew nor Greek, there ",
+          "spans": [
+            [
+              3523,
+              3537
+            ]
+          ],
+          "osis": "Gal.3.28",
+          "queries": [
+            "48 3:28"
+          ]
+        },
+        {
+          "id": "ccc9787c408198c94c5b04d0",
+          "quote": "1 Co. 11:3",
+          "before": " of “the head of the woman is the man.” ",
+          "after": "",
+          "spans": [
+            [
+              4261,
+              4271
+            ]
+          ],
+          "osis": "1Cor.11.3",
+          "queries": [
+            "46 11:3"
+          ]
+        },
+        {
+          "id": "fe2db8a01b7b8ede432d36c8",
+          "quote": "Mt. 28:19-20",
+          "before": "hings whatsoever I have commanded you.” ",
+          "after": " Did Jesus never make practical, “outwar",
+          "spans": [
+            [
+              17353,
+              17365
+            ]
+          ],
+          "osis": "Matt.28.19-Matt.28.20",
+          "queries": [
+            "40 28:19-20"
+          ]
+        },
+        {
+          "id": "73b0e1d59d1b9f5d37d46b27",
+          "quote": "Jn 14:21-24",
+          "before": " do not obey Jesus, we do not love Him. ",
+          "after": " By lifting up Anabaptism as an example ",
+          "spans": [
+            [
+              21034,
+              21045
+            ]
+          ],
+          "osis": "John.14.21-John.14.24",
+          "queries": [
+            "43 14:21-24"
+          ]
+        }
+      ],
+      "record_hash": "3a9d53c9c4f4f727f3c3aa81e49456eff5916be50675686817cb50d65311d627"
+    }
+  }
+}
