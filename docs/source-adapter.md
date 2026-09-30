@@ -107,13 +107,16 @@ revision to match current English HEAD: compatible articles correctly retain
 older per-publication provenance. The supported exporter is the authority for
 translation-key compatibility.
 
-`ordered_issues(model)` sorts by structured year, then month-range endpoint or
-bibliographic seasonal order (Winter, Spring, Summer, Autumn/Fall), preserving
-catalogue order for equal/unknown periods. Year-only entries follow entries with
-known periods in the same year. These are ordering keys, not publication dates.
-The source date objects are unchanged. This handles the current catalogue's
-Autumn 2024 entry, which appears later in the source array than older issues.
-Article lists follow that issue order, then their source sequence and UUID.
+`ordered_issues(model)` sorts newest first by structured year, then month-range
+endpoint, month, or the publisher's annual seasonal sequence (Spring, Summer,
+Autumn/Fall, Winter). The [publisher's archive](https://bereanvoice.com/ministries/)
+places Winter at the end of its labelled year, so Winter 2024 precedes Autumn
+2024 in newest-first displays. This convention applies to every seasonal year,
+independently of catalogue array order. Equal/unknown periods preserve catalogue
+order; year-only entries follow entries with known periods in the same year.
+These are ordering keys, not publication dates, and source date objects are
+unchanged. Article lists follow that issue order, then their source sequence and
+UUID.
 
 ## Route API and persistence
 
