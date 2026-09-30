@@ -1,15 +1,20 @@
 # Build, publication, and recovery
 
-## Safe starting state
+## Publication boundary
 
-This implementation prepares GitHub Pages publication but **does not authorize or
-perform a merge, deployment, credential setup, domain change, or Pages settings
-change**. Pull requests only build, test, and upload review artifacts. Production
-publication requires the owner to approve setup and set the website repository
-variable `PAGES_DEPLOY_ENABLED` to the exact string `true`. Keep that variable
-absent/false during implementation review. Protect the `github-pages` environment
-and restrict deployment branches to `main`; use required reviewers for first
-publication.
+Pull requests only build, test, and upload review artifacts. After the owner has
+configured GitHub Pages to use Actions, successful trusted `main` builds package
+and publish changed output through the `github-pages` environment. There is no
+additional repository-variable opt-in. A merged workflow change takes effect on
+the resulting `main` push; opening a PR never deploys it.
+Protect the `github-pages` environment and restrict deployment branches to `main`;
+required reviewers, when configured, still control publication.
+
+Both packaging and deployment require this website repository, `refs/heads/main`,
+a non-PR event, and a changed deployment plan. Only the same trusted context
+compares the generated publication with live metadata. The event validator also
+rejects unsupported events before sources are acquired. These checks do not
+create or modify Pages settings, credentials, environment protections, or DNS.
 
 `dist/` is the only public artifact. Raw checkouts, manifests, translation runtime
 state, prompts, recovery records, and local logs are never copied wholesale into
@@ -90,8 +95,9 @@ approved destination-scoped credential. Export validation remains mandatory.
 
 Ordinary `GITHUB_TOKEN` is repository-scoped and cannot perform this cross-repo
 request. Source workflows require separate, approved secure configuration. See
-[the disabled source hook draft PRs and patch snapshots](../integrations/README.md). Those are separate
-source PRs; this website PR alone does not enable source-driven publication.
+[the source hook integration instructions and patch snapshots](../integrations/README.md).
+Merging the source hooks alone does not configure their credentials or enable
+notifications. Website pushes and manual runs do not require those credentials.
 
 The build job has only `contents: read`. The separate deploy job has only
 `pages: write` and `id-token: write`, deploys the already-produced Pages artifact,
@@ -182,14 +188,34 @@ work, or change credentials as an automatic response to a build failure.
    overwriting records. Verify domain ownership as appropriate
 5. Wait for DNS/certificate readiness and enable Enforce HTTPS. Review
    `github-pages` protections and restrict it to `main`
-6. Only after owner authorization, enable `PAGES_DEPLOY_ENABLED=true` and run the
-   workflow on `main`. Approve the environment if required. Verify the exact
+6. Review and merge the publication workflow changes. The resulting push to
+   `main` builds and publishes changed output automatically. For recovery, run
+   the same workflow on `main`; no extra enable variable is required. Approve the
+   environment if required. Verify the exact
    deployed SHAs in `deployment.json`, successful Pages job, real custom-domain
    HTTPS, root language selection, English/compatible translations, Markdown,
    feeds, and direct deep-link loads
 7. Enable `REMNANT_NOTIFICATIONS_ENABLED=true` in approved source repositories;
    perform a harmless authorized source-publication test and verify the receiver
    run. Keep article publication automatic after that setup
+
+### Post-merge rollout correction (2026-09-30)
+
+The website implementation and source-hook PRs have been merged. The owner
+reports that Pages uses Actions and that the domain and DNS have been configured.
+The successful `main` build [36767716855](https://github.com/trueChristian/remnant.truechristian.church/actions/runs/36767716855)
+at `4333afcb` skipped Pages packaging and deployment because the original
+`PAGES_DEPLOY_ENABLED` variable gate was unset. This correction removes that
+redundant gate while retaining the publication boundary above. Existing values
+of that retired variable no longer control publication; use GitHub
+Actions/Pages and environment protections as the operational controls.
+
+A successful deployment job and live custom-domain `deployment.json` still need
+to be verified after the correction is merged. Cross-repository notification
+credentials and source enablement remain a separate setup/verification task.
+No settings, secrets, domain records, or environment protections are changed by
+this correction. The original implementation-time limitations below are
+historical, not a diagnosis of the current DNS configuration.
 
 ### Verification limits at implementation time (2026-09-30)
 
@@ -210,4 +236,4 @@ coalescing, degraded build, and recovery behavior.
 - [Custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 - [Custom-domain configuration](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 - [Workflow concurrency](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency)
-- Pinned official actions: [checkout](https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1), [upload-artifact](https://github.com/actions/upload-artifact/commit/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a), [upload-pages-artifact](https://github.com/actions/upload-pages-artifact/commit/7b1f4a764d45c48632c6b24a0339c27f5614fb0b), [deploy-pages](https://github.com/actions/deploy-pages/commit/d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e), [source-hook cache](https://github.com/actions/cache/commit/caa296126883cff596d87d8935842f9db880ef25)
+- Pinned official actions: [checkout](https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1), [upload-artifact](https://github.com/actions/upload-artifact/commit/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a), [upload-pages-artifact](https://github.com/actions/upload-pages-artifact/commit/fc324d3547104276b827a68afc52ff2a11cc49c9), [deploy-pages](https://github.com/actions/deploy-pages/commit/368f82528645a54fb793d4d04e342629a3f51346), [source-hook cache](https://github.com/actions/cache/commit/caa296126883cff596d87d8935842f9db880ef25)

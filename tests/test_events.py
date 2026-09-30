@@ -1,10 +1,13 @@
 """Offline security and current-main coalescing contract checks."""
 import copy
 import json
+import os
 from pathlib import Path
 import re
+import subprocess
 import sys
 import tempfile
+import textwrap
 import unittest
 from unittest.mock import patch
 
@@ -156,7 +159,11 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertNotIn('pages: write', build)
         self.assertIn('pages: write', deploy)
         self.assertIn('id-token: write', deploy)
-        self.assertIn("vars.PAGES_DEPLOY_ENABLED == 'true'", deploy)
+        self.assertNotIn("PAGES_DEPLOY_ENABLED", text)
+        self.assertNotIn("id-token: write", build)
+        self.assertNotIn("actions/checkout@", deploy)
+        self.assertNotIn("contents: write", text)
+        self.assertIn("needs: build", deploy)
         self.assertIn("github.event_name != 'pull_request'", deploy)
         self.assertIn('name: github-pages', deploy)
         self.assertIn("|| 'main'", build)
@@ -165,6 +172,68 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertNotIn('client_payload.', text)
         for ref in re.findall(r'uses: (\S+)', text):
             self.assertRegex(ref, r'^[\w/-]+@[0-9a-f]{40}$')
+
+    @staticmethod
+    def workflow_gates():
+        text = (Path(__file__).resolve().parents[1] / '.github/workflows/pages.yml').read_text()
+        package = re.search(r'- name: Package[^\n]+\n        if: >-\n(.*?)\n        uses:', text, re.S)
+        deploy = re.search(r'\n  deploy:\n    needs: build\n    if: >-\n(.*?)\n    runs-on:', text, re.S)
+        compare = re.search(r'COMPARE_LIVE: \$\{\{ (.*?) \}\}', text)
+        return {'package': package.group(1), 'deploy': deploy.group(1), 'compare': compare.group(1)}
+
+    def evaluate_gate(self, expression, context):
+        # Evaluate only the workflow's restricted conjunction of literal comparisons.
+        # Fail if a new expression shape is introduced rather than silently ignoring it.
+        result = True
+        for clause in expression.split('&&'):
+            match = re.fullmatch(r"([a-zA-Z_.]+) (==|!=) '([^']*)'", clause.strip())
+            self.assertIsNotNone(match, clause)
+            key, operator, expected = match.groups()
+            self.assertIn(key, context)
+            equal = context[key] == expected
+            result = result and (equal if operator == '==' else not equal)
+        return result
+
+    def test_pages_actions_rollout_needs_no_repository_variable(self):
+        gates = self.workflow_gates()
+        base = {'github.repository': SITE_REPOSITORY, 'github.ref': 'refs/heads/main',
+                'github.event_name': 'push', 'steps.plan.outputs.changed': 'true',
+                'needs.build.outputs.changed': 'true'}
+        for event in ('push', 'workflow_dispatch', 'repository_dispatch'):
+            context = {**base, 'github.event_name': event}
+            for name, gate in gates.items():
+                with self.subTest(event=event, gate=name):
+                    self.assertTrue(self.evaluate_gate(gate, context))
+        for overrides in ({'github.repository': 'attacker/website'},
+                          {'github.ref': 'refs/heads/feature'},
+                          {'github.event_name': 'pull_request'},
+                          {'github.event_name': 'pull_request', 'github.ref': 'refs/pull/3/merge'}):
+            for name, gate in gates.items():
+                with self.subTest(overrides=overrides, gate=name):
+                    self.assertFalse(self.evaluate_gate(gate, {**base, **overrides}))
+        for changed in ('false', ''):
+            context = {**base, 'steps.plan.outputs.changed': changed,
+                       'needs.build.outputs.changed': changed}
+            self.assertFalse(self.evaluate_gate(gates['package'], context))
+            self.assertFalse(self.evaluate_gate(gates['deploy'], context))
+            self.assertTrue(self.evaluate_gate(gates['compare'], context))
+
+    def test_build_summary_does_not_claim_pages_is_disabled_without_a_variable(self):
+        text = (Path(__file__).resolve().parents[1] / '.github/workflows/pages.yml').read_text()
+        script = textwrap.dedent(text.split("python3 - <<'PY'\n", 1)[1].split('\n          PY', 1)[0])
+        for event, production, expected in (
+                ('push', 'true', 'Trusted main: changed output is published'),
+                ('pull_request', 'false', 'output is review-only; no production deployment.'),
+                ('workflow_dispatch', 'false', 'Review-only build:')):
+            with self.subTest(event=event), tempfile.TemporaryDirectory() as directory:
+                summary = Path(directory) / 'summary.md'
+                env = {**os.environ, 'GITHUB_STEP_SUMMARY': str(summary),
+                       'GITHUB_EVENT_NAME': event, 'BUILD_STATUS': 'success',
+                       'PRODUCTION_BUILD': production}
+                env.pop('PAGES_DEPLOY_ENABLED', None)
+                subprocess.run([sys.executable, '-c', script], cwd=directory, env=env, check=True)
+                self.assertIn(expected, summary.read_text())
+                self.assertNotIn('Deployment is disabled', summary.read_text())
 
     def test_source_hooks_are_explicit_after_validation_and_use_success_state(self):
         directory = Path(__file__).resolve().parents[1] / 'integrations'
