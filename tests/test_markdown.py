@@ -4,6 +4,7 @@ import re
 import unittest
 
 from scripts.markdown import Tree, generate_markdown, html_to_markdown
+from scripts.content import load_content
 
 
 class MarkdownTests(unittest.TestCase):
@@ -49,11 +50,32 @@ class MarkdownTests(unittest.TestCase):
         self.assertNotIn('Issue number:', result)
         self.assertNotIn('2024-07-01', result)
         self.assertNotIn('https://example.test/issue.pdf', result)
+        qualified = generate_markdown(article, 'https://example.test/en/article/', 'The Heartbeat of the Remnant, Summer 2024')
+        self.assertEqual(qualified.count('The Heartbeat of the Remnant'), 1)
 
     def test_missing_title_fallback_never_mutates_source(self):
         article = {'title': None, 'locale': 'en', 'html': '<article><p>Body</p></article>', 'images': []}
         self.assertTrue(generate_markdown(article, 'https://example.test/', '2007').startswith('# [Untitled article]'))
         self.assertIsNone(article['title'])
+
+    def test_null_byline(self):
+        article = {'title': 'Title', 'locale': 'en', 'byline': None, 'html': '<article><p>Body</p></article>', 'images': []}
+        self.assertIn('Body', generate_markdown(article, 'https://example.test/', '2007'))
+
+    def test_all_available_articles_generate_complete_reader_markdown(self):
+        english = Path('.build/english')
+        if not english.exists():
+            self.skipTest('Optional real-export verification; fixture tests always run')
+        model = load_content(english, Path('.build/translations'))
+        for locale, articles in model['articles'].items():
+            for article in articles:
+                with self.subTest(locale=locale, article=article['id']):
+                    result = generate_markdown(article, f"https://remnant.truechristian.church/{locale}/articles/{article['id']}/", article['issue']['date']['label'])
+                    self.assertTrue(result.startswith('# '))
+                    self.assertIn(article['issue']['publication'], result)
+                    if article['ai_notice_required']:
+                        notice = re.search(r'<aside\b[^>]*data-translation-notice="ai".*?</aside>', article['html'], re.S).group(0)
+                        self.assertIn(notice, result)
 
     def test_all_available_archive_fragments_convert(self):
         root = Path('.build/english/content/articles')

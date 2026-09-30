@@ -144,5 +144,28 @@ class ContentTests(unittest.TestCase):
                 export_sources(self.en, None, self.root / 'fresh', tr_out)
 
 
+    def test_partial_translation_output_is_quarantined(self):
+        en_out, tr_out = self.root / 'partial-en', self.root / 'partial-tr'
+        def fake_run(command, cwd):
+            if 'tools/archive.py' in command:
+                write_json(en_out / 'manifest.json', {'source_revision': SHA, 'counts': {'articles': 1}})
+                return {}
+            write_json(tr_out / 'index.json', {'untrusted_partial': True})
+            raise ExportError('interrupted foreign exporter')
+        with patch('scripts.export_sources._run', side_effect=fake_run):
+            report = export_sources(self.en, self.tr, en_out, tr_out)
+        self.assertEqual(report['translation_status'], 'failed')
+        self.assertFalse(tr_out.exists())
+        self.assertTrue(Path(report['translation_quarantine']).is_dir())
+
+    def test_output_symlink_is_rejected(self):
+        real = self.root / 'real-output'
+        real.mkdir()
+        link = self.root / 'linked-output'
+        link.symlink_to(real, target_is_directory=True)
+        with self.assertRaisesRegex(ExportError, 'absent or empty'):
+            export_sources(self.en, None, link, self.root / 'new-output')
+
+
 if __name__ == '__main__':
     unittest.main()

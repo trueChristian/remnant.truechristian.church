@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "ko",
+    "native_name": "한국어",
+    "dir": "ltr",
+    "code": "kor"
+  },
+  "ui": {
+    "home": "홈",
+    "articles": "글",
+    "categories": "분류",
+    "issues": "발행호",
+    "search": "검색",
+    "language": "언어",
+    "menu": "메뉴",
+    "close": "닫기",
+    "theme": "화면 설정",
+    "system": "시스템 설정",
+    "light": "밝은 화면",
+    "dark": "어두운 화면",
+    "kicker": "신실한 그리스도인의 삶을 위한 잡지",
+    "intro": "『The Heartbeat of the Remnant』를 통해 성경, 그리스도의 제자로 사는 삶, 일상 속 믿음을 살펴보세요.",
+    "latest_articles": "최신 글",
+    "latest_issue": "최신호",
+    "featured_archive": "지난 글 모아보기",
+    "browse_archive": "자료실 둘러보기",
+    "browse_categories": "분류별로 보기",
+    "read_article": "글 읽기",
+    "read_issue": "이 호 읽기",
+    "all_articles": "모든 글",
+    "all_issues": "모든 발행호",
+    "article_count": "글 수: {count}",
+    "issue_count": "발행호 수: {count}",
+    "topic": "주제",
+    "no_articles_title": "번역을 준비하고 있습니다",
+    "coming_soon": "아직 이 언어로 된 글이 없습니다. 영어 자료실을 둘러보거나 이용 가능한 다른 언어를 선택해 주세요.",
+    "read_english": "영어로 읽기",
+    "available_languages": "이용 가능한 언어",
+    "missing_translation": "이 글은 아직 이 언어로 번역되지 않았습니다. 이용 가능한 번역을 선택하거나 권위 있는 기준인 영어 원문을 읽어 주세요.",
+    "search_placeholder": "글, 주제, 발행호 검색",
+    "search_hint": "이 언어로 제공되는 글의 전체 본문을 검색합니다.",
+    "searching": "검색 중…",
+    "results_count": "검색 결과: {count}",
+    "no_results": "일치하는 글이 없습니다. 다른 단어를 입력하거나 필터를 변경해 보세요.",
+    "search_error": "검색 기능을 불러올 수 없습니다. 다시 시도해 주세요.",
+    "clear": "지우기",
+    "all_categories": "모든 분류",
+    "all_issue_filter": "모든 발행호",
+    "citation": "잡지 출처",
+    "original_issue": "원문 발행호",
+    "source_pages": "원문 쪽수",
+    "author": "글쓴이",
+    "reading_time": "읽는 시간",
+    "minutes": "{count}분",
+    "download_markdown": "Markdown 다운로드",
+    "copy_markdown": "Markdown 복사",
+    "copied": "복사됨",
+    "copy_fallback": "아래 Markdown 텍스트를 선택하여 복사해 주세요.",
+    "prev": "이전",
+    "next": "다음",
+    "pause": "일시 정지",
+    "play": "재생",
+    "breadcrumbs": "현재 위치",
+    "back": "뒤로",
+    "to_top": "맨 위로",
+    "skip_content": "본문으로 건너뛰기",
+    "subscribe_rss": "RSS로 구독하기",
+    "about_archive": "자료실 안내",
+    "archive_intro": "원래 발행호별로 정리된 글을 통해 잡지 자료실을 살펴보세요.",
+    "category_intro": "주제별로 기독교의 가르침과 묵상을 살펴보세요. 번역이 추가되는 동안에도 모든 분류를 이용하실 수 있습니다.",
+    "issue_intro": "각 발행호를 둘러보고 원래 실린 순서대로 글을 읽어 보세요.",
+    "magazine": "잡지",
+    "issue": "호",
+    "volume": "권",
+    "number": "호수",
+    "untitled_article": "제목 없는 글",
+    "undated_issue": "날짜 기록 없음",
+    "no_issues_title": "아직 제공되는 발행호가 없습니다",
+    "not_found_title": "페이지를 찾을 수 없습니다",
+    "not_found_body": "이 페이지를 찾을 수 없습니다. 자료실을 둘러보거나 글을 검색해 주세요.",
+    "return_home": "홈으로 돌아가기",
+    "language_notice": "현재 이 언어로 자료실을 보고 계십니다.",
+    "english_authoritative": "영어 원문이 권위 있는 기준입니다.",
+    "cover_placeholder": "잡지 자료실에서",
+    "source_pdf": "원본 PDF",
+    "related_articles": "관련 글",
+    "filters": "필터",
+    "apply_filters": "필터 적용",
+    "publication_date": "발행일",
+    "translation_status": "번역 상태",
+    "main_navigation": "주 메뉴",
+    "footer_navigation": "교회 관련 링크",
+    "social_links": "소셜 미디어 링크",
+    "copy_error": "자동 복사를 사용할 수 없습니다. 아래 텍스트를 복사해 주세요.",
+    "special_edition": "특별호"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "축복의 자리",
+      "description": "감사와 격려, 하나님과 동행하며 누리는 복에 관한 짧은 묵상입니다.",
+      "slug": "축복의-자리"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "서평",
+      "description": "성경과 그리스도의 신실한 제자로 사는 삶에 비추어 책을 살펴보는 서평입니다.",
+      "slug": "서평"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "성품",
+      "description": "정직과 겸손, 일상에서 그리스도를 닮은 성품으로 자라가는 삶에 관한 가르침입니다.",
+      "slug": "성품"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "어린이",
+      "description": "어린이들이 하나님을 알고 예수님을 따르도록 돕는 이야기와 성경의 교훈입니다.",
+      "slug": "어린이"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "그리스도인의 삶",
+      "description": "일상의 선택과 일, 인간관계 속에서 예수님을 따르는 삶에 관한 실제적인 묵상입니다.",
+      "slug": "그리스도인의-삶"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "교회",
+      "description": "그리스도의 몸인 교회와 그 부르심, 교제, 증언에 관한 묵상입니다.",
+      "slug": "교회"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "교회 이야기",
+      "description": "교회 공동체의 생활과 함께 감당할 책임, 교회가 마주한 문제를 다루는 글입니다.",
+      "slug": "교회-이야기"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "미혹",
+      "description": "성경에 비추어 영적인 거짓과 잘못 이끄는 가르침을 살펴보며 경계하는 글입니다.",
+      "slug": "미혹"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "분별",
+      "description": "가르침을 시험하고 여러 영향을 신중히 살피며 진리를 분별하기 위한 성경적 안내입니다.",
+      "slug": "분별"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "편집자의 글",
+      "description": "잡지가 다루는 관심사와 신념, 질문을 소개하는 편집자의 견해입니다.",
+      "slug": "편집자의-글"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "가족",
+      "description": "그리스도인 가정의 사랑과 신실함, 함께 살아가는 삶에 관한 가르침입니다.",
+      "slug": "가족"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "가정의 발자취",
+      "description": "이전 세대의 경험과 교훈을 보존하는 가정과 가족생활의 기록입니다.",
+      "slug": "가정의-발자취"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "심판",
+      "description": "하나님의 심판과 인간의 책임, 회개, 의로운 삶으로의 부르심에 관한 묵상입니다.",
+      "slug": "심판"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "순교",
+      "description": "예수 그리스도를 믿는 믿음 때문에 고난을 받거나 목숨을 바친 성도들의 기록입니다.",
+      "slug": "순교"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "의료",
+      "description": "건강과 의료 문제, 그 윤리적·영적 측면을 다루는 잡지 자료실의 글입니다.",
+      "slug": "의료"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "선교",
+      "description": "복음 전파와 이웃 섬김, 그리스도인의 선교에 관한 기록과 묵상입니다.",
+      "slug": "선교"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "단정함에 관한 글",
+      "description": "단정함과 옷차림, 하나님을 공경하는 내면의 자세에 관한 가르침입니다.",
+      "slug": "단정함에-관한-글"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "비폭력",
+      "description": "원수를 사랑하고 보복하지 않으며 평화를 이루라는 예수님의 가르침에 관한 묵상입니다.",
+      "slug": "비폭력"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "자녀 양육",
+      "description": "자녀를 돌보고 믿음을 가르치는 일과 부모의 책임에 관한 성경적 조언입니다.",
+      "slug": "자녀-양육"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "시",
+      "description": "예배와 믿음, 간절한 바람, 그리스도인의 삶에서 겪는 경험을 표현한 시입니다.",
+      "slug": "시"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "부흥",
+      "description": "회개와 새로워진 헌신, 하나님께 더 깊이 순종하는 삶으로 부르는 글입니다.",
+      "slug": "부흥"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "마음을 깨우는 말",
+      "description": "안일함을 돌아보게 하고 신실한 순종을 격려하는 짧고 날카로운 묵상입니다.",
+      "slug": "마음을-깨우는-말"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "영적 훈련",
+      "description": "기도와 성경, 절제, 믿음의 삶에서 성장하는 일에 관한 실제적인 가르침입니다.",
+      "slug": "영적-훈련"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "간증",
+      "description": "하나님의 은혜와 회심, 일상에서 역사하는 믿음에 관한 개인의 이야기입니다.",
+      "slug": "간증"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "여성",
+      "description": "그리스도인의 삶에서 여성이 지닌 믿음과 섬김, 관계와 책임에 관한 묵상입니다.",
+      "slug": "여성"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "청년",
+      "description": "믿음과 삶의 선택을 앞둔 청년들을 위한 격려와 성경적 안내입니다.",
+      "slug": "청년"
+    }
+  },
+  "seasons": {
+    "Summer": "여름",
+    "Spring": "봄",
+    "Winter": "겨울",
+    "Autumn": "가을",
+    "Fall": "가을"
+  },
+  "months": {
+    "1": "1월",
+    "2": "2월",
+    "3": "3월",
+    "4": "4월",
+    "5": "5월",
+    "6": "6월",
+    "7": "7월",
+    "8": "8월",
+    "9": "9월",
+    "10": "10월",
+    "11": "11월",
+    "12": "12월"
+  },
+  "chrome": {
+    "Home": "홈",
+    "The Holy Scriptures": "성경",
+    "Text": "본문",
+    "Sermons": "설교",
+    "Videos": "동영상",
+    "The Godly Home": "경건한 가정",
+    "Articles": "글",
+    "Daily": "날마다",
+    "Daily Light": "매일의 빛",
+    "Services": "예배",
+    "Join us": "함께해 주세요",
+    "Church Info": "교회 안내",
+    "History": "역사",
+    "Brotherhood": "형제 공동체",
+    "Blog": "블로그",
+    "Testimonies": "간증",
+    "Confession of Faith": "신앙 고백",
+    "Storehouse": "보물 창고",
+    "Privacy Policy": "개인정보 처리방침",
+    "Copyright": "저작권",
+    "Projects": "프로젝트",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "혼수함",
+    "Why Bible": "왜 성경인가",
+    "we fear God": "우리는 하나님을 경외합니다",
+    "Amana": "Amana",
+    "Mission (Namibia)": "선교 (나미비아)",
+    "Welcome": "환영합니다",
+    "Follow Jesus": "예수님을 따르세요",
+    "Live Services": "실시간 예배",
+    "Locations": "모임 장소",
+    "Events": "행사",
+    "Revival": "부흥",
+    "Telegram": "Telegram",
+    "Contact Us": "문의하기",
+    "Social Outreach": "지역사회 섬김",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "저작권 © trueChristian.Church",
+    "free distribution only": "무료 배포만 허용",
+    "Mission": "선교",
+    "We Fear God": "우리는 하나님을 경외합니다",
+    "Why we believe the Bible": "우리가 성경을 믿는 이유"
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "zh-Hans",
+    "native_name": "简体中文",
+    "dir": "ltr",
+    "code": "cmn"
+  },
+  "ui": {
+    "home": "首页",
+    "articles": "文章",
+    "categories": "分类",
+    "issues": "各期杂志",
+    "search": "搜索",
+    "language": "语言",
+    "menu": "菜单",
+    "close": "关闭",
+    "theme": "外观",
+    "system": "跟随系统",
+    "light": "浅色",
+    "dark": "深色",
+    "kicker": "忠心践行基督信仰的期刊",
+    "intro": "通过《The Heartbeat of the Remnant》，探索圣经、基督徒的门徒生活与日常信仰。",
+    "latest_articles": "最新文章",
+    "latest_issue": "最新一期",
+    "featured_archive": "往期精选",
+    "browse_archive": "探索往期内容",
+    "browse_categories": "浏览分类",
+    "read_article": "阅读文章",
+    "read_issue": "阅读本期",
+    "all_articles": "全部文章",
+    "all_issues": "全部期刊",
+    "article_count": "文章数：{count}",
+    "issue_count": "期刊数：{count}",
+    "topic": "主题",
+    "no_articles_title": "译文即将上线",
+    "coming_soon": "这里暂时还没有此语言的文章。您可以浏览英文存档，或选择其他可用语言。",
+    "read_english": "阅读英文版",
+    "available_languages": "可用语言",
+    "missing_translation": "本文尚无此语言的译文。请选择已有的译文，或阅读作为权威版本的英文原文。",
+    "search_placeholder": "搜索文章、主题和期刊",
+    "search_hint": "搜索此语言文章的全文。",
+    "searching": "搜索中…",
+    "results_count": "搜索结果：{count}",
+    "no_results": "没有符合条件的文章。请尝试其他词语或更改筛选条件。",
+    "search_error": "无法加载搜索功能，请重试。",
+    "clear": "清除",
+    "all_categories": "全部分类",
+    "all_issue_filter": "全部期刊",
+    "citation": "杂志出处",
+    "original_issue": "原刊期次",
+    "source_pages": "原刊页码",
+    "author": "作者",
+    "reading_time": "阅读时长",
+    "minutes": "{count} 分钟",
+    "download_markdown": "下载 Markdown",
+    "copy_markdown": "复制 Markdown",
+    "copied": "已复制",
+    "copy_fallback": "请选择并复制下方的 Markdown 文本。",
+    "prev": "上一项",
+    "next": "下一项",
+    "pause": "暂停",
+    "play": "播放",
+    "breadcrumbs": "当前位置",
+    "back": "返回",
+    "to_top": "返回顶部",
+    "skip_content": "跳至正文",
+    "subscribe_rss": "通过 RSS 订阅",
+    "about_archive": "关于本存档",
+    "archive_intro": "阅读杂志存档，各篇文章按其原刊期次归类。",
+    "category_intro": "按主题探索基督教教导与信仰思考。随着译文不断增加，所有分类都将保持开放。",
+    "issue_intro": "浏览各期杂志，并按原刊顺序阅读文章。",
+    "magazine": "杂志",
+    "issue": "期",
+    "volume": "卷",
+    "number": "期号",
+    "untitled_article": "无标题文章",
+    "undated_issue": "未记录日期",
+    "no_issues_title": "暂无可用期刊",
+    "not_found_title": "找不到页面",
+    "not_found_body": "找不到此页面。请浏览存档或搜索文章。",
+    "return_home": "返回首页",
+    "language_notice": "您正在以此语言浏览存档。",
+    "english_authoritative": "英文原文为权威版本。",
+    "cover_placeholder": "选自杂志存档",
+    "source_pdf": "原版 PDF",
+    "related_articles": "相关文章",
+    "filters": "筛选条件",
+    "apply_filters": "应用筛选",
+    "publication_date": "发布日期",
+    "translation_status": "翻译状态",
+    "main_navigation": "主导航",
+    "footer_navigation": "教会链接",
+    "social_links": "社交媒体链接",
+    "copy_error": "无法自动复制。请复制下方文本。",
+    "special_edition": "特刊"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "蒙福园地",
+      "description": "关于感恩、鼓励，以及与神同行所蒙祝福的简短默想。",
+      "slug": "蒙福园地"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "书评",
+      "description": "以圣经和忠心跟随基督的门徒生活为准则，评介各类书籍。",
+      "slug": "书评"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "品格",
+      "description": "关于正直、谦卑，以及在日常生活中培养基督品格的教导。",
+      "slug": "品格"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "儿童",
+      "description": "通过故事和圣经课程，鼓励儿童认识神、跟随耶稣。",
+      "slug": "儿童"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "基督徒生活",
+      "description": "关于如何在日常抉择、工作和人际关系中跟随耶稣的实际思考。",
+      "slug": "基督徒生活"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "教会",
+      "description": "思考教会作为基督身体的意义，以及教会的呼召、团契和见证。",
+      "slug": "教会"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "教会事务",
+      "description": "探讨会众生活、共同责任，以及教会所面对问题的文章。",
+      "slug": "教会事务"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "迷惑",
+      "description": "依据圣经审视属灵谎言和误导性教导，提醒信徒警醒。",
+      "slug": "迷惑"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "分辨",
+      "description": "依据圣经，指引信徒检验教导、衡量各种影响，并辨明真理。",
+      "slug": "分辨"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "编者的话",
+      "description": "从编辑的视角介绍本刊所关注的议题、信念与问题。",
+      "slug": "编者的话"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "家庭",
+      "description": "关于基督徒家庭中爱、忠诚与共同生活的教导。",
+      "slug": "家庭"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "家园往事",
+      "description": "记述家庭生活，保存前辈的经历与经验教训。",
+      "slug": "家园往事"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "审判",
+      "description": "思考神的审判、人的责任、悔改，以及行义的呼召。",
+      "slug": "审判"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "殉道",
+      "description": "记述因信靠耶稣基督而受苦或献出生命的信徒。",
+      "slug": "殉道"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "医疗",
+      "description": "存档中有关健康、医疗问题，以及其中伦理和属灵层面的文章。",
+      "slug": "医疗"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "宣教",
+      "description": "关于传扬福音、服侍他人和基督教宣教的记述与思考。",
+      "slug": "宣教"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "端庄之道",
+      "description": "关于端庄、衣着，以及以内心敬神的教导。",
+      "slug": "端庄之道"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "不以暴力抵抗",
+      "description": "思考耶稣关于爱仇敌、不报复与缔造和平的教导。",
+      "slug": "不以暴力抵抗"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "养育子女",
+      "description": "依据圣经，探讨养育孩子、传授信仰和父母的责任。",
+      "slug": "养育子女"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "诗歌",
+      "description": "以诗歌表达敬拜、信仰、渴望，以及基督徒生活的经历。",
+      "slug": "诗歌"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "复兴",
+      "description": "呼吁悔改、重燃献身之心，并更深地活出顺服神的生命。",
+      "slug": "复兴"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "警醒之言",
+      "description": "简洁而发人深省的默想，挑战自满，鼓励忠心顺服。",
+      "slug": "警醒之言"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "属灵操练",
+      "description": "关于祷告、圣经、自律和信仰生命成长的实际教导。",
+      "slug": "属灵操练"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "见证",
+      "description": "个人记述神的恩典、归信经历，以及信仰在日常生活中的作为。",
+      "slug": "见证"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "姊妹",
+      "description": "思考女性在基督徒生活中的信仰、服侍、人际关系与责任。",
+      "slug": "姊妹"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "青年",
+      "description": "为在信仰与人生中面对抉择的年轻人提供鼓励和圣经指引。",
+      "slug": "青年"
+    }
+  },
+  "seasons": {
+    "Summer": "夏季",
+    "Spring": "春季",
+    "Winter": "冬季",
+    "Autumn": "秋季",
+    "Fall": "秋季"
+  },
+  "months": {
+    "1": "一月",
+    "2": "二月",
+    "3": "三月",
+    "4": "四月",
+    "5": "五月",
+    "6": "六月",
+    "7": "七月",
+    "8": "八月",
+    "9": "九月",
+    "10": "十月",
+    "11": "十一月",
+    "12": "十二月"
+  },
+  "chrome": {
+    "Home": "首页",
+    "The Holy Scriptures": "圣经",
+    "Text": "经文",
+    "Sermons": "讲道",
+    "Videos": "视频",
+    "The Godly Home": "敬虔之家",
+    "Articles": "文章",
+    "Daily": "每日",
+    "Daily Light": "每日灵光",
+    "Services": "聚会",
+    "Join us": "加入我们",
+    "Church Info": "教会信息",
+    "History": "历史",
+    "Brotherhood": "弟兄团契",
+    "Blog": "博客",
+    "Testimonies": "见证",
+    "Confession of Faith": "信仰告白",
+    "Storehouse": "宝库",
+    "Privacy Policy": "隐私政策",
+    "Copyright": "版权",
+    "Projects": "项目",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "嫁妆箱",
+    "Why Bible": "为何信圣经",
+    "we fear God": "我们敬畏神",
+    "Amana": "Amana",
+    "Mission (Namibia)": "宣教（纳米比亚）",
+    "Welcome": "欢迎",
+    "Follow Jesus": "跟随耶稣",
+    "Live Services": "聚会直播",
+    "Locations": "地点",
+    "Events": "活动",
+    "Revival": "复兴",
+    "Telegram": "Telegram",
+    "Contact Us": "联系我们",
+    "Social Outreach": "社会关怀",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "版权所有 © trueChristian.Church",
+    "free distribution only": "仅供免费分发",
+    "Mission": "宣教",
+    "We Fear God": "我们敬畏神",
+    "Why we believe the Bible": "我们为何相信圣经"
+  }
+}

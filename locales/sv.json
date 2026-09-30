@@ -1,0 +1,296 @@
+{
+  "meta": {
+    "tag": "sv",
+    "native_name": "Svenska",
+    "dir": "ltr",
+    "code": "swe"
+  },
+  "ui": {
+    "home": "Hem",
+    "articles": "Artiklar",
+    "categories": "Kategorier",
+    "issues": "Nummer",
+    "search": "Sök",
+    "language": "Språk",
+    "menu": "Meny",
+    "close": "Stäng",
+    "theme": "Utseende",
+    "system": "System",
+    "light": "Ljust",
+    "dark": "Mörkt",
+    "kicker": "En tidskrift för ett troget kristet liv",
+    "intro": "Utforska Bibeln, kristet lärjungaskap och vardagens tro genom sidorna i The Heartbeat of the Remnant.",
+    "latest_articles": "Senaste artiklarna",
+    "latest_issue": "Senaste numret",
+    "featured_archive": "Ur arkivet",
+    "browse_archive": "Utforska arkivet",
+    "browse_categories": "Bläddra bland kategorier",
+    "read_article": "Läs artikeln",
+    "read_issue": "Läs numret",
+    "all_articles": "Alla artiklar",
+    "all_issues": "Alla nummer",
+    "article_count": "Artiklar: {count}",
+    "issue_count": "Nummer: {count}",
+    "topic": "Ämne",
+    "no_articles_title": "Översättningar är på väg",
+    "coming_soon": "Här finns ännu inga artiklar på detta språk. Utforska det engelska arkivet eller välj ett annat tillgängligt språk.",
+    "read_english": "Läs på engelska",
+    "available_languages": "Tillgängliga språk",
+    "missing_translation": "Den här artikeln finns ännu inte på detta språk. Välj en tillgänglig översättning eller läs det engelska originalet, som är den auktoritativa versionen.",
+    "search_placeholder": "Sök artiklar, ämnen och nummer",
+    "search_hint": "Sök i hela texten i artiklar som finns på detta språk.",
+    "searching": "Söker…",
+    "results_count": "Resultat: {count}",
+    "no_results": "Inga matchande artiklar. Prova ett annat ord eller ändra filtren.",
+    "search_error": "Sökningen kunde inte laddas. Försök igen.",
+    "clear": "Rensa",
+    "all_categories": "Alla kategorier",
+    "all_issue_filter": "Alla nummer",
+    "citation": "Tidskriftsreferens",
+    "original_issue": "Ursprungligt nummer",
+    "source_pages": "Originalsidor",
+    "author": "Författare",
+    "reading_time": "Lästid",
+    "minutes": "{count} min",
+    "download_markdown": "Ladda ner Markdown",
+    "copy_markdown": "Kopiera Markdown",
+    "copied": "Kopierat",
+    "copy_fallback": "Markera och kopiera Markdown-texten nedan.",
+    "prev": "Föregående",
+    "next": "Nästa",
+    "pause": "Pausa",
+    "play": "Spela upp",
+    "breadcrumbs": "Du är här",
+    "back": "Tillbaka",
+    "to_top": "Till toppen",
+    "skip_content": "Hoppa till innehållet",
+    "subscribe_rss": "Prenumerera via RSS",
+    "about_archive": "Om arkivet",
+    "archive_intro": "Läs tidskriftsarkivet, med artiklarna grupperade efter sina ursprungliga nummer.",
+    "category_intro": "Utforska kristen undervisning och reflektioner efter ämne. Alla kategorier förblir tillgängliga när översättningar läggs till.",
+    "issue_intro": "Bläddra bland tidskriftens nummer och läs artiklarna i den ursprungliga ordningen.",
+    "magazine": "Tidskrift",
+    "issue": "Nummer",
+    "volume": "Volym",
+    "number": "Nummer",
+    "untitled_article": "Artikel utan titel",
+    "undated_issue": "Datum saknas",
+    "no_issues_title": "Inga nummer tillgängliga ännu",
+    "not_found_title": "Sidan hittades inte",
+    "not_found_body": "Den här sidan hittades inte. Bläddra i arkivet eller sök efter en artikel.",
+    "return_home": "Till startsidan",
+    "language_notice": "Du läser arkivet på detta språk.",
+    "english_authoritative": "Det engelska originalet är den auktoritativa versionen.",
+    "cover_placeholder": "Ur tidskriftsarkivet",
+    "source_pdf": "Original-PDF",
+    "related_articles": "Relaterade artiklar",
+    "filters": "Filter",
+    "apply_filters": "Använd filter",
+    "publication_date": "Publiceringsdatum",
+    "translation_status": "Översättningsstatus",
+    "main_navigation": "Huvudmeny",
+    "footer_navigation": "Kyrkans länkar",
+    "social_links": "Sociala länkar",
+    "copy_error": "Automatisk kopiering är inte tillgänglig. Kopiera texten nedan.",
+    "special_edition": "Specialnummer"
+  },
+  "categories": {
+    "1c75ca28-4f99-5339-b594-085359f81d18": {
+      "name": "Välsignelsehörnan",
+      "description": "Korta reflektioner om tacksamhet, uppmuntran och välsignelserna i att vandra med Gud.",
+      "slug": "välsignelsehörnan"
+    },
+    "69c79b4c-4584-59d0-8d07-a27005d6f940": {
+      "name": "Bokrecensioner",
+      "description": "Recensioner av böcker som granskas i ljuset av Bibeln och ett troget kristet lärjungaskap.",
+      "slug": "bokrecensioner"
+    },
+    "64bf1f79-9265-5370-8de2-47084d62cece": {
+      "name": "Karaktär",
+      "description": "Undervisning om ärlighet, ödmjukhet och hur en kristuslik karaktär växer fram i vardagen.",
+      "slug": "karaktär"
+    },
+    "78d8ed5b-bad4-58ae-ae10-a49f738e29d8": {
+      "name": "Barn",
+      "description": "Berättelser och bibliska lärdomar som uppmuntrar barn att lära känna Gud och följa Jesus.",
+      "slug": "barn"
+    },
+    "88107a5a-274e-53cd-a586-ff44f4ed67cc": {
+      "name": "Kristet liv",
+      "description": "Praktiska reflektioner om att följa Jesus i vardagens val, arbete och relationer.",
+      "slug": "kristet-liv"
+    },
+    "8d7646c9-072b-51ea-a1ef-cff3f7f50285": {
+      "name": "Kyrkan",
+      "description": "Reflektioner om kyrkan som Kristi kropp, dess kallelse, gemenskap och vittnesbörd.",
+      "slug": "kyrkan"
+    },
+    "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61": {
+      "name": "Församlingsfrågor",
+      "description": "Artiklar om församlingsliv, gemensamt ansvar och frågor som kyrkan står inför.",
+      "slug": "församlingsfrågor"
+    },
+    "729ef2d2-cb45-545b-b9a8-555cc7a423df": {
+      "name": "Vilseledning",
+      "description": "Varningar för andlig lögn och vilseledande läror, prövade i Bibelns ljus.",
+      "slug": "vilseledning"
+    },
+    "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408": {
+      "name": "Urskiljning",
+      "description": "Biblisk vägledning för att pröva läror, bedöma inflytanden och känna igen det som är sant.",
+      "slug": "urskiljning"
+    },
+    "9e94ac9c-a808-540e-9c71-be0d8731d5a1": {
+      "name": "Ledare",
+      "description": "Redaktionella perspektiv på tidskriftens angelägenheter, övertygelser och frågor.",
+      "slug": "ledare"
+    },
+    "2929e2be-19ce-58e2-97aa-0ab40108e60a": {
+      "name": "Familj",
+      "description": "Undervisning om kärlek, trohet och livet tillsammans i den kristna familjen.",
+      "slug": "familj"
+    },
+    "9514e8ea-e431-5806-a5f3-0953a922c074": {
+      "name": "Berättelser från hemmen",
+      "description": "Berättelser om hem- och familjeliv som bevarar erfarenheter och lärdomar från tidigare generationer.",
+      "slug": "berättelser-från-hemmen"
+    },
+    "94dddad2-cc75-5292-86c4-8f450af98ad4": {
+      "name": "Dom",
+      "description": "Reflektioner om Guds dom, människans ansvar, omvändelse och kallelsen till rättfärdighet.",
+      "slug": "dom"
+    },
+    "59e78031-c269-52d1-9b00-08dba0398cb4": {
+      "name": "Martyrskap",
+      "description": "Berättelser om troende som led eller gav sina liv för sin tro på Jesus Kristus.",
+      "slug": "martyrskap"
+    },
+    "44a970cf-d23c-5e24-a196-0b08595d01ba": {
+      "name": "Medicin",
+      "description": "Arkivartiklar om hälsa, medicinska frågor och deras etiska och andliga dimensioner.",
+      "slug": "medicin"
+    },
+    "11f3b229-ad6c-5d69-b529-82d977f8d000": {
+      "name": "Mission",
+      "description": "Berättelser och reflektioner om att dela evangeliet, tjäna andra och bedriva kristen mission.",
+      "slug": "mission"
+    },
+    "976a7e08-e662-50b6-a13d-c787f72c7666": {
+      "name": "Anständighet",
+      "description": "Undervisning om anständighet, klädsel och en inre hållning som ärar Gud.",
+      "slug": "anständighet"
+    },
+    "0648d4df-242a-5815-8d22-08b555d1b542": {
+      "name": "Ickevåld",
+      "description": "Reflektioner om Jesu undervisning om att älska sina fiender, avstå från hämnd och skapa fred.",
+      "slug": "ickevåld"
+    },
+    "ef4f5581-8e5a-5cf6-933e-ac68e8b55839": {
+      "name": "Föräldraskap",
+      "description": "Bibliska råd om att fostra barn, förmedla tron och ta ansvar som förälder.",
+      "slug": "föräldraskap"
+    },
+    "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1": {
+      "name": "Poesi",
+      "description": "Dikter och verser som uttrycker tillbedjan, tro, längtan och erfarenheter från det kristna livet.",
+      "slug": "poesi"
+    },
+    "dda0cbb3-457a-5412-a60f-abb389b827e0": {
+      "name": "Väckelse",
+      "description": "Kallelser till omvändelse, förnyad hängivenhet och ett djupare liv i lydnad för Gud.",
+      "slug": "väckelse"
+    },
+    "400977eb-3421-51cc-992f-b947d2cda0f4": {
+      "name": "Skarpa ord",
+      "description": "Korta, rannsakande reflektioner som utmanar självbelåtenhet och uppmuntrar trogen lydnad.",
+      "slug": "skarpa-ord"
+    },
+    "1706ffa6-a4d1-5e68-af38-d56888d6a2a2": {
+      "name": "Andlig övning",
+      "description": "Praktisk undervisning om bön, Bibeln, självdisciplin och tillväxt i tron.",
+      "slug": "andlig-övning"
+    },
+    "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9": {
+      "name": "Vittnesbörd",
+      "description": "Personliga berättelser om Guds nåd, omvändelse och tro som får verka i vardagen.",
+      "slug": "vittnesbörd"
+    },
+    "917c7782-d876-59a2-9959-e33a50d14cca": {
+      "name": "Kvinnor",
+      "description": "Reflektioner om kvinnors tro, tjänst, relationer och ansvar i det kristna livet.",
+      "slug": "kvinnor"
+    },
+    "85b345ae-ce23-56a2-9249-2cfa79293657": {
+      "name": "Ungdom",
+      "description": "Uppmuntran och biblisk vägledning för unga som står inför val om tro och liv.",
+      "slug": "ungdom"
+    }
+  },
+  "seasons": {
+    "Summer": "Sommar",
+    "Spring": "Vår",
+    "Winter": "Vinter",
+    "Autumn": "Höst",
+    "Fall": "Höst"
+  },
+  "months": {
+    "1": "januari",
+    "2": "februari",
+    "3": "mars",
+    "4": "april",
+    "5": "maj",
+    "6": "juni",
+    "7": "juli",
+    "8": "augusti",
+    "9": "september",
+    "10": "oktober",
+    "11": "november",
+    "12": "december"
+  },
+  "chrome": {
+    "Home": "Hem",
+    "The Holy Scriptures": "Den heliga Skrift",
+    "Text": "Text",
+    "Sermons": "Predikningar",
+    "Videos": "Videor",
+    "The Godly Home": "Det gudfruktiga hemmet",
+    "Articles": "Artiklar",
+    "Daily": "Dagligen",
+    "Daily Light": "Dagligt ljus",
+    "Services": "Gudstjänster",
+    "Join us": "Välkommen med",
+    "Church Info": "Om kyrkan",
+    "History": "Historia",
+    "Brotherhood": "Brödragemenskap",
+    "Blog": "Blogg",
+    "Testimonies": "Vittnesbörd",
+    "Confession of Faith": "Trosbekännelse",
+    "Storehouse": "Förrådskammare",
+    "Privacy Policy": "Integritetspolicy",
+    "Copyright": "Upphovsrätt",
+    "Projects": "Projekt",
+    "GETBIBLE": "GETBIBLE",
+    "Loudvoice": "Loudvoice",
+    "SHE Cares": "SHE Cares",
+    "Trousseau Chest": "Brudkistan",
+    "Why Bible": "Varför Bibeln",
+    "we fear God": "vi fruktar Gud",
+    "Amana": "Amana",
+    "Mission (Namibia)": "Mission i Namibia",
+    "Welcome": "Välkommen",
+    "Follow Jesus": "Följ Jesus",
+    "Live Services": "Direktsända gudstjänster",
+    "Locations": "Platser",
+    "Events": "Evenemang",
+    "Revival": "Väckelse",
+    "Telegram": "Telegram",
+    "Contact Us": "Kontakta oss",
+    "Social Outreach": "Sociala nätverk",
+    "GitHub": "GitHub",
+    "Copyright © trueChristian.Church": "Upphovsrätt © trueChristian.Church",
+    "free distribution only": "endast gratis spridning",
+    "Mission": "Mission",
+    "We Fear God": "Vi fruktar Gud",
+    "Why we believe the Bible": "Varför vi tror på Bibeln"
+  }
+}

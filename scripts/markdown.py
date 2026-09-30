@@ -184,12 +184,13 @@ def generate_markdown(article: dict, canonical_url: str, issue_label: str) -> st
     if article.get("section"):
         lines.extend([escape_text(article["section"]), ""])
     lines.append(f"{escape_text(labels['language'])}: {escape_text(article['locale'])}  ")
-    byline = article.get("byline", {}).get("raw")
+    byline_metadata = article.get("byline") or {}
+    byline = byline_metadata if isinstance(byline_metadata, str) else byline_metadata.get("raw")
     if byline:
         lines.append(f"{escape_text(labels['byline'])}: " + "  \n".join(escape_text(part) for part in byline.splitlines()) + "  ")
     issue = article.get("issue", {})
-    citation = issue.get("publication", "")
-    citation = (citation + ", " if citation else "") + issue_label
+    publication = issue.get("publication", "")
+    citation = issue_label if publication and issue_label.startswith(publication) else ((publication + ", " if publication else "") + issue_label)
     if issue.get("issue_number") is not None:
         citation += f", {labels['issue_number']} {issue['issue_number']}"
     lines.append(f"{escape_text(labels['issue'])}: {escape_text(citation)}  ")
