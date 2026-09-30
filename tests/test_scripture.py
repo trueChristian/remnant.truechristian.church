@@ -193,6 +193,12 @@ class ScriptureTests(unittest.TestCase):
         scanner,item,result=self.scan('<p>Jean 3,16 et Romains 8:1.</p>','fr')
         self.assertEqual([m['queries'] for m in scanner.current[('fr',AID)]['markers']],[['43 3:16'],['45 8:1']])
 
+    def test_later_include_does_not_undo_unresolved_suppression(self):
+        self.rules([{'action':'suppress','anchor':{'quote':'missing'}}, {'action':'include','anchor':{'quote':'John 3:16'},'queries':['43 3:16']}])
+        scanner,item,result=self.scan('<p>John 3:16</p>')
+        self.assertEqual(result,item['html'])
+        self.assertEqual(len(scanner.report['review_required']),1)
+
     def test_static_map_all_locales_no_unapproved_fallback(self):
         mapping=json.loads((ROOT/'data/scripture-translations.json').read_text())
         ui=json.loads((ROOT/'data/scripture-ui.json').read_text())
