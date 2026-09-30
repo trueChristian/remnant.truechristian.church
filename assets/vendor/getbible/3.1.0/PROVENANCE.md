@@ -6,7 +6,8 @@ Vendored from https://github.com/getbible/loader at tag **3.1.0**, commit
 Upstream files: `src/js/core/{Api,Memory,Reference,Scripture}.js`.
 `Reference.js` and `Scripture.js` retain the upstream implementation. `Api.js`
 retains the real GetBible query URL and request/cache pipeline, with injectable
-fetch, a 12-second abort timeout, omitted credentials and no referrer. `Memory.js`
+fetch bound to its native global receiver, a 12-second abort timeout, omitted
+credentials and no referrer. `Memory.js`
 retains the upstream cache interface, key convention and 30-day TTL, with safe
 storage failure handling, corrupt/future entry rejection, a bounded in-memory
 fallback, and explicit invalidation for invalid API responses.

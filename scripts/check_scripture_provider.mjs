@@ -3,7 +3,14 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { ScriptureClient } from '../assets/scripture-popovers.js';
 const report = {checked_at:new Date().toISOString(), endpoint:'https://query.getbible.net/v2/kjv/43%203%3A16', query:'43 3:16', translation:'kjv', available:false};
 try {
-  const scripture = await new ScriptureClient({timeoutMs:15000}).get(report.query,report.translation);
+  const origin = 'https://remnant.truechristian.church';
+  const fetchWithCorsCheck = async (url,options) => {
+    const response = await fetch(url,{...options,headers:{Origin:origin}});
+    report.cors_allow_origin = response.headers.get('access-control-allow-origin');
+    if (response.ok && !['*',origin].includes(report.cors_allow_origin)) throw new Error('Provider response does not permit the website origin');
+    return response;
+  };
+  const scripture = await new ScriptureClient({timeoutMs:15000,fetchImpl:fetchWithCorsCheck}).get(report.query,report.translation);
   const references = [];
   scripture.forEachReference(reference => references.push({book:reference.bookNumber, chapter:reference.chapter, verses:reference.verses.map(verse=>verse.verse)}));
   report.available = true;

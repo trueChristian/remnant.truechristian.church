@@ -82,6 +82,16 @@ test('blocked storage does not prevent retrieval or page-local caching', async (
   let calls=0; const client = new ScriptureClient({fetchImpl:async()=>{calls++; return {ok:true,json:async()=>good()};}});
   await client.get('43 3:16','kjv'); await client.get('43 3:16','kjv'); assert.equal(calls,1);
 });
+test('injected native-style fetch retains its required global receiver', async () => {
+  let called = false;
+  const client = new ScriptureClient({ fetchImpl: async function () {
+    assert.equal(this, globalThis, 'Browser fetch must not receive the Api instance as this');
+    called = true;
+    return {ok:true,json:async()=>good()};
+  } });
+  await client.get('43 3:16','kjv');
+  assert.equal(called,true);
+});
 test('corrupt, expired and future-dated persisted cache records are misses', async () => {
   for (const value of ['{', JSON.stringify({timestamp:0,data:good()}), JSON.stringify({timestamp:Date.now()+86400000,data:good()})]) {
     Memory.clearMemory(); storage.set('getBible-kjv-43 3:16',value);
