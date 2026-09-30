@@ -115,7 +115,14 @@ test('mobile header opens, traps focus, closes with Escape, and reopens', async 
   await page.locator('.tcc-header__toggle').click();
   await expect(page.locator('.tcc-header__navigation')).toBeVisible();
   await expect(page.locator('.tcc-header__toggle')).toHaveAttribute('aria-expanded','true');
-  await noOverflow(page); await capture(page,'mobile-navigation');
+  await noOverflow(page);
+  await page.locator('.tcc-header__menu a').last().focus();
+  await page.keyboard.press('Tab');
+  await expect(page.locator('.tcc-header__close')).toBeFocused();
+  await page.keyboard.press('Shift+Tab');
+  await expect(page.locator('.tcc-header__menu a').last()).toBeFocused();
+  expect(await page.locator('.tcc-header__scrim').evaluate(element=>element.getBoundingClientRect().height)).toBeGreaterThanOrEqual(844);
+  await capture(page,'mobile-navigation');
   await page.keyboard.press('Escape');
   await expect(page.locator('.tcc-header__toggle')).toHaveAttribute('aria-expanded','false');
   await expect(page.locator('.tcc-header__toggle')).toBeFocused();
@@ -134,6 +141,7 @@ for (const locale of locales) {
     await expect(page.locator('.category-tile')).toHaveCount(catalogue.categories.length);
     if (locale.meta.tag==='ar') await capture(page,'arabic-mobile');
     if (locale.meta.tag==='zh-Hans') await capture(page,'chinese-mobile');
+    await page.setViewportSize({width:320,height:700}); await noOverflow(page);
   });
 }
 

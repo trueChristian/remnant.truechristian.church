@@ -169,11 +169,13 @@ class WorkflowContractTests(unittest.TestCase):
     def test_source_hooks_are_explicit_after_validation_and_use_success_state(self):
         directory = Path(__file__).resolve().parents[1] / 'integrations'
         translation = (directory / 'berean-translation.patch').read_text()
+        translation = translation[translation.index('diff --git a/.github/workflows/ai-worker.yml'):].split('\ndiff --git ', 1)[0]
         english = (directory / 'berean-voice.patch').read_text()
         self.assertIn('Validate the resulting runtime records', translation)
         self.assertIn('Notify Remnant from the durable publishing path', translation)
         self.assertIn('REMNANT_DISPATCH_TOKEN', translation)
-        self.assertIn('python3 -m berean_translation export', translation)
+        self.assertIn('.venv/bin/python -m berean_translation export', translation)
+        self.assertIn("inputs.operation == 'collect'", translation)
         self.assertIn("steps.remnant_notify.outputs.sent == 'true'", translation)
         self.assertIn('refs/heads/main', english)
         self.assertIn('REMNANT_NOTIFICATIONS_ENABLED', english)

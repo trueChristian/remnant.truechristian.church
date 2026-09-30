@@ -1,13 +1,18 @@
-# Source publication hooks (unapplied patches)
+# Source publication hooks
 
-These patches belong in **separate draft PRs in their source repositories**. They
-have not been applied, pushed, enabled, or deployed by the website build. Review
-and merge the website receiver first. No change to article text or translation
-policy is included.
+The source changes are published as **disabled-by-default draft PRs**:
+
+- [Berean Voice PR #65](https://github.com/trueChristian/berean-voice/pull/65), head `506d582de34c3919ca7d4bffcc19c33a8170a46e`, [passing Archive contract CI](https://github.com/trueChristian/berean-voice/actions/runs/36763359495)
+- [Berean Translation PR #2](https://github.com/trueChristian/berean-translation/pull/2), head `1d984dde26fdb5d9bab96c4fde68382a08fa5028`, [passing tests](https://github.com/trueChristian/berean-translation/actions/runs/36763433518)
+
+Neither PR is merged or activated. These patch snapshots include the same code,
+tests and documentation for review and recovery. The website receiver must be
+reviewed and separately authorized for publication before source notifications
+are enabled. No article text or translation-publication policy is changed.
 
 | Patch | Inspected source base | Changed workflow |
 | --- | --- | --- |
-| `berean-voice.patch` | `d1fb7fd6d35662758b805963097454c29952f13f` | `.github/workflows/archive-contract.yml` |
+| `berean-voice.patch` | `6af08032b5e2a92ff0671605fb89dffa06780892` | `.github/workflows/archive-contract.yml` |
 | `berean-translation.patch` | `d3e8b2c1868caae97c1f0058bd574c5c6ce55630` | `.github/workflows/ai-worker.yml` |
 
 Check that each patch still applies to current `main`; rebase and rerun the
@@ -29,7 +34,7 @@ when the versioned event or fingerprint contract changes.
 
 The English hook runs only after successful archive validation, tests, and
 exports on trusted `main`. The translation hook is inserted **directly into the
-collector after its publishing command and runtime validation**, so an automated
+collector after its publishing command and runtime validation, for collect operations only**, so an automated
 `GITHUB_TOKEN` commit does not need to trigger a second push workflow. A new fresh
 export is required, followed by a clean HEAD/current remote-main check before any
 notification. The same path covers committed human review, notice removal,
