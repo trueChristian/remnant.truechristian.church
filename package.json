@@ -1,0 +1,17 @@
+{
+  "name": "remnant-archive",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static multilingual Remnant magazine archive",
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "test": "python3 -m unittest discover -s tests && node --test tests/*.test.mjs",
+    "check": "npm test && python3 scripts/check_site.py dist",
+    "serve": "python3 -m http.server 8080 --directory dist",
+    "test:browser": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

@@ -13,6 +13,7 @@ from pathlib import Path
 import re
 from typing import Any
 import uuid
+from urllib.parse import urlsplit
 
 
 class ContentError(ValueError):
@@ -92,8 +93,16 @@ class FragmentText(HTMLParser):
 
     def handle_starttag(self, tag, attrs):
         attributes = dict(attrs)
-        _require(tag not in {"script", "iframe", "object", "embed", "style", "form", "input", "button"}, f"Unsafe exported HTML element: {tag}")
-        _require(not any(key.startswith("on") for key in attributes), "Active HTML attribute in export")
+        _require(tag not in {"script", "iframe", "object", "embed", "style", "form", "input", "button", "base", "meta", "link", "html", "head", "body"}, f"Unsafe exported HTML element: {tag}")
+        _require(not any(key.startswith("on") or key in {"style", "srcdoc", "srcset"} for key in attributes), "Active HTML attribute in export")
+        for key in ("href", "xlink:href"):
+            if key in attributes:
+                target = attributes[key] or ""
+                scheme = urlsplit(target).scheme.lower()
+                _require(scheme in {"http", "https", "mailto", "tel"} or (not scheme and (target.startswith("#") or (target.startswith("/") and not target.startswith("//")))), f"Unsafe exported HTML link: {target}")
+        if "src" in attributes:
+            target = attributes["src"] or ""
+            _require(tag == "img" and not urlsplit(target).scheme and target.startswith("/images/articles/"), f"Unsafe exported image source: {target}")
         if tag == "article":
             self.article_ids.append(attributes.get("data-article-id"))
         if tag == "aside" and attributes.get("data-translation-notice") == "ai":
@@ -210,7 +219,34 @@ def ordered_issues(model: dict) -> list[dict]:
     return [issue for _, issue in sorted(enumerate(model["issues"]), key=key)]
 
 
-def load_content(english_export: Path, translation_export: Path | None = None, *, strict_translations: bool = False) -> dict:
+def load_language_registry(registry: Path | dict) -> dict:
+    """Validate selected source configuration and expose only public labels.
+
+    The supported translation display export deliberately does not contain the
+    full configured-language inventory. Supply its separately captured registry,
+    including languages with zero published articles, from the same fixed source
+    checkout. No translation guidance/prompts are exposed in this model.
+    """
+    raw = _read_json(Path(registry)) if not isinstance(registry, dict) else copy.deepcopy(registry)
+    _require(isinstance(raw, dict) and bool(raw), "Language registry must be a nonempty object")
+    result, tags = {}, set()
+    for code, value in raw.items():
+        _require(isinstance(code, str) and bool(re.fullmatch(r"[a-z]{3}", code)), f"Invalid language folder code: {code}")
+        _require(isinstance(value, dict), f"Invalid language registry entry: {code}")
+        tag = value.get("tag", "")
+        _require(isinstance(tag, str) and bool(re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", tag)) and tag != "en", f"Invalid translation language tag: {tag}")
+        _require(tag.casefold() not in tags, f"Duplicate configured language tag: {tag}")
+        tags.add(tag.casefold())
+        _require(value.get("dir") in {"ltr", "rtl"}, f"Invalid language direction: {code}")
+        _require(all(isinstance(value.get(key), str) and value[key].strip() for key in ("name", "native_name")), f"Missing language display names: {code}")
+        aliases = value.get("aliases", [])
+        _require(isinstance(aliases, list) and all(isinstance(alias, str) and alias for alias in aliases), f"Invalid language aliases: {code}")
+        result[code] = {key: copy.deepcopy(value[key]) for key in ("name", "native_name", "tag", "dir")}
+        result[code]["aliases"] = copy.deepcopy(aliases)
+    return result
+
+
+def load_content(english_export: Path, translation_export: Path | None = None, *, strict_translations: bool = False, language_registry: Path | dict | None = None) -> dict:
     root = Path(english_export)
     manifest = _verify_bundle(root, "2.0")
     index = _read_json(root / "index.json")
@@ -224,7 +260,10 @@ def load_content(english_export: Path, translation_export: Path | None = None, *
         _require(len(groups[kind]) == len(model[kind]), f"Duplicate {kind} identity")
     model.update(articles={"en": []}, warnings=[], translation_status="unavailable", english_export=root,
                  source_revision=manifest["source_revision"], translation_revision=None,
-                 source_repository=manifest.get("source_repository"), translation_omissions=[])
+                 source_repository=manifest.get("source_repository"), translation_omissions=[],
+                 languages=load_language_registry(language_registry) if language_registry is not None else None)
+    if model["languages"] is None:
+        model["warnings"].append("Configured-language registry unavailable: source language additions cannot be checked; known website locales remain available.")
     english_by_id = {}
     for item in index["articles"]:
         identity = _identity(item["id"])
@@ -236,7 +275,7 @@ def load_content(english_export: Path, translation_export: Path | None = None, *
         if item.get("series"):
             _require(item["series"]["id"] in groups["series"], "Unknown article series")
         _require(isinstance(item["sequence"], int), "Invalid article sequence")
-        article = _normalize(item, _file(root, item["html"]["repository_path"]).read_text(encoding="utf-8"), "en", root)
+        article = _normalize(item, _file(root, item["html"]["repository_path"]).read_bytes().decode("utf-8"), "en", root)
         article["issue"] = copy.deepcopy(groups["issues"][item["issue_id"]])
         article["source_revision"] = manifest["source_revision"]
         english_by_id[identity] = article
@@ -273,6 +312,9 @@ def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[di
         identity = _identity(item["id"])
         locale = item["language_tag"]
         _require(bool(re.fullmatch(r"[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*", locale)) and locale != "en", "Invalid translation locale")
+        if model.get("languages") is not None:
+            configured = model["languages"].get(item.get("language"))
+            _require(configured is not None and configured["tag"] == locale and configured["dir"] == item.get("direction"), "Exported translation language disagrees with selected source registry")
         _require((locale, identity) not in seen, "Duplicate translation")
         seen.add((locale, identity))
         _require(identity in english_by_id, "Translation refers to a removed English article")
@@ -282,7 +324,7 @@ def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[di
         sidecar = _read_json(_file(root, item["metadata"]))
         _require(set(sidecar) == {"title", "subtitle", "section"}, "Unexpected translated metadata")
         _require(all(sidecar[k] == item[k] for k in sidecar), "Translated sidecar/index mismatch")
-        html = _file(root, item["html"]).read_text(encoding="utf-8")
+        html = _file(root, item["html"]).read_bytes().decode("utf-8")
         _require(hashlib.sha256(html.encode()).hexdigest() == item["html_sha256"], "Translated HTML fingerprint mismatch")
         article = _normalize(source, html, locale, root, item)
         article["issue"] = copy.deepcopy(english_by_id[identity]["issue"])

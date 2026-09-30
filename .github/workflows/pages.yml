@@ -1,0 +1,162 @@
+name: Build and publish Remnant
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: Republish even when the live display fingerprint matches (recovery only)
+        type: boolean
+        default: false
+  repository_dispatch:
+    types: [remnant-content-updated]
+
+permissions:
+  contents: read
+
+# Serialize the entire production workflow, including any environment approval.
+# GitHub may replace pending runs; every admitted run reads current main again.
+# Never cancel an in-flight production deployment or deploy an old event SHA.
+concurrency:
+  group: remnant-${{ github.event_name == 'pull_request' && github.ref || 'production' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.plan.outputs.changed }}
+    steps:
+      - name: Check out review merge or trusted current main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.sha || 'main' }}
+          persist-credentials: false
+      - name: Validate bounded event metadata
+        run: python3 scripts/validate_event.py
+      - name: Verify installed runtimes
+        run: |
+          python3 -c 'import sys; assert sys.version_info >= (3, 11), sys.version'
+          node -e 'if (Number(process.versions.node.split(".")[0]) < 20) process.exit(1)'
+      - name: Run offline regression suites
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -v
+          node --test tests/*.test.mjs
+      - name: Resolve sources once and validate clean display exports
+        run: python3 scripts/prepare_sources.py
+      - name: Run full source-backed regressions
+        run: python3 -m unittest discover -s tests -v
+      - name: Build the complete static site
+        run: |
+          python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --output dist
+      - name: Validate generated links and public-output contract
+        run: python3 scripts/check_site.py dist
+      - name: Install browser test tooling
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Verify browser interactions and capture desktop, mobile, RTL, and print
+        run: npm run test:browser
+      - name: Retain browser review evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: remnant-browser-review-${{ github.run_id }}
+          path: .test-output/
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Compare actual display output with the live publication
+        id: plan
+        env:
+          COMPARE_LIVE: ${{ github.event_name != 'pull_request' && vars.PAGES_DEPLOY_ENABLED == 'true' }}
+          FORCE_REBUILD: ${{ github.event_name == 'workflow_dispatch' && inputs.force_rebuild }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [[ "$COMPARE_LIVE" == true ]]; then args+=(--compare-live); fi
+          if [[ "$FORCE_REBUILD" == true ]]; then args+=(--force); fi
+          python3 scripts/dispatch.py plan "${args[@]}"
+      - name: Explain build and translation health
+        if: always()
+        env:
+          BUILD_STATUS: ${{ job.status }}
+          DEPLOY_ENABLED: ${{ vars.PAGES_DEPLOY_ENABLED }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## Remnant build\n\n')
+              summary.write('Build result: ' + os.environ['BUILD_STATUS'] + '\n\n')
+              for path in ('.build/source-report.json', '.build/deployment-plan.json'):
+                  if Path(path).is_file():
+                      summary.write('### ' + Path(path).name + '\n\n```json\n')
+                      summary.write(json.dumps(json.loads(Path(path).read_text()), indent=2) + '\n```\n\n')
+              if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
+                  summary.write('Pull-request validation: output is review-only; no production deployment.\n')
+              elif os.environ.get('DEPLOY_ENABLED') != 'true':
+                  summary.write('Deployment is disabled. Owner approval and PAGES_DEPLOY_ENABLED=true are required.\n')
+              if os.environ['BUILD_STATUS'] != 'success':
+                  summary.write('Build failed; the last good site remains. Review the failed step, then rerun on main.\n')
+          PY
+      - name: Retain display output for review
+        if: success()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: remnant-preview-${{ github.run_id }}
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7
+      - name: Retain bounded build evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: remnant-build-evidence-${{ github.run_id }}
+          path: |
+            .build/event-report.json
+            .build/source-report.json
+            .build/deployment-plan.json
+            .build/site-build-report.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Package the approved production candidate
+        if: >-
+          github.repository == 'trueChristian/remnant.truechristian.church' &&
+          github.ref == 'refs/heads/main' &&
+          github.event_name != 'pull_request' &&
+          vars.PAGES_DEPLOY_ENABLED == 'true' &&
+          steps.plan.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: dist/
+
+  deploy:
+    needs: build
+    if: >-
+      github.repository == 'trueChristian/remnant.truechristian.church' &&
+      github.ref == 'refs/heads/main' &&
+      github.event_name != 'pull_request' &&
+      vars.PAGES_DEPLOY_ENABLED == 'true' &&
+      needs.build.outputs.changed == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the validated artifact
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
