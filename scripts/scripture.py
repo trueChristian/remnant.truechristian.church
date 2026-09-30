@@ -243,7 +243,10 @@ class Scripture:
             record = self.current[(locale,article['id'])]
         markers = [dict(marker) for marker in record['markers']]
         rules = self.overrides['articles'].get(locale+':'+article['id'], [])
+        if not isinstance(rules,list) or any(not isinstance(rule,dict) for rule in rules):
+            raise ValueError('Scripture article overrides must be a list of rules')
         runs = None
+        withheld = False
         for rule in rules:
             if rule.get('action') not in {'suppress','include'} or not isinstance(rule.get('anchor'),dict):
                 raise ValueError('Each Scripture override needs action and an anchor')
@@ -266,6 +269,7 @@ class Scripture:
                 elif len(locations) != 1:
                     # Fail closed: an unresolved editorial rejection cannot return.
                     markers = []
+                    withheld = True
                     self.report['review_required'].append({'locale':locale,'article_id':article['id'],'marker_id':rule.get('marker_id'),'reason':'suppression anchor missing or ambiguous; article enrichment withheld'})
             elif spans:
                 queries = rule.get('queries',[])
@@ -279,6 +283,8 @@ class Scripture:
                 markers = [m for m in markers if m['id'] not in ids] + [replacement]
             else:
                 self.report['review_required'].append({'locale':locale,'article_id':article['id'],'reason':'include anchor missing or ambiguous'})
+        if withheld:
+            markers = []
         translation = self.translations.get(locale,{}).get('abbreviation')
         if not translation:
             self.report['unavailable'] += len(markers)
