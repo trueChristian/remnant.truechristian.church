@@ -95,3 +95,13 @@ than guessing a path. Add a reviewed record after observing the official link
 and comparing the downloaded PDF hash with that issue's source hash. Existing
 mapped issues fail closed if their source PDF changes until the mapping is
 reviewed again.
+
+## Narrow article figures
+
+Article-only progressive enhancement measures loaded natural image dimensions
+and actual reading-column width. Portrait or naturally narrow single-image
+figures alternate logical start/end sides, preserve captions as a unit and leave
+a minimum readable text gutter. Wide/multi-image illustrations, narrow columns,
+mobile screens and print stay stacked. Adjacent figures clear one another;
+headings and major block elements clear floats. Resize, cached, delayed and broken
+image states are covered without rewriting source content or reordering nodes.

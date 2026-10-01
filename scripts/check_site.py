@@ -505,6 +505,8 @@ class SiteChecker:
         return page
 
     def check_content(self, model, locales, routes):
+        from publisher import issue_pdf_links, PUBLISHER_URL
+        publisher_pdfs = issue_pdf_links(model['issues'])
         """Compare output against the validated exports, never hard-coded counts."""
         from content import ordered_issues
         issues = ordered_issues(model)
@@ -545,6 +547,11 @@ class SiteChecker:
                 path = routes['issues'][tag][issue['id']]
                 page = self.require_page(path, 'issue')
                 expected = [a for a in articles if a['issue_id'] == issue['id']]
+                if page and PUBLISHER_URL not in page.references:
+                    self.error(f'{path}: original publisher link missing')
+                pdf_url = publisher_pdfs.get(issue['id'])
+                if page and pdf_url and pdf_url not in page.references:
+                    self.error(f'{path}: original issue PDF link missing/wrong')
                 if page and normalized_text(locale['ui']['article_count'].format(count=len(expected))) not in page.main_text:
                     self.error(f'{path}: issue article count disagrees with exports')
                 if page and (page.contents != [a['url'] for a in expected] or page.sequences != [str(a['sequence']) for a in expected]):

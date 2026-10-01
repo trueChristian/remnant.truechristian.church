@@ -144,6 +144,7 @@ class Site:
         appearance = ''.join(f'<option value="{mode}">{t(mode)}</option>' for mode in ['system','light','dark'])
         client_keys = ('copied','copy_fallback','copy_error','play','pause','search_error','results_count','no_results','searching','search_hint','prev','next','search')
         config = {'locale': tag, 'ui': {key:locale['ui'][key] for key in client_keys}, 'searchIndex': f'/{tag}/search-index.json', **(extra_config or {})}
+        article_assets = '<link rel="stylesheet" href="/assets/article-figures.css"><script type="module" src="/assets/article-figures.js"></script>' if article else ''
         scripture_assets = ''
         if article and self.scripture:
             config['scriptureUi'] = self.scripture_ui[tag]
@@ -170,7 +171,7 @@ class Site:
 <script src="/assets/preferences.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?{esc(fonts)}">
 <link rel="stylesheet" href="/assets/theme.css"><link rel="stylesheet" href="/assets/site.css">
-<script defer src="/assets/theme.js"></script><script type="module" src="/assets/site.js"></script>{scripture_assets}{structured}
+<script defer src="/assets/theme.js"></script><script type="module" src="/assets/site.js"></script>{article_assets}{scripture_assets}{structured}
 </head><body id="top">
 <a class="skip-link" href="#main">{t('skip_content')}</a>
 <header class="tcc-site-header tm-header" data-tcc-global-header><div class="tcc-header__container tcc-container">

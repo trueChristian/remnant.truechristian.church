@@ -1,8 +1,18 @@
 import { test, expect } from '@playwright/test';
+import fs from 'node:fs';
 import { HOME_SLOT_MS, selectHome } from '../../assets/home-selection.js';
 
 const NOW = Date.parse('2026-10-01T12:35:00Z');
 const homeDataPattern = /\/home-data\.[^/]+\.json(?:\.gz)?$/;
+const routes = JSON.parse(fs.readFileSync('dist/routes.json', 'utf8'));
+const articlesByLocale = new Map();
+function articleMetadata(locale) {
+  if (!articlesByLocale.has(locale)) {
+    articlesByLocale.set(locale, JSON.parse(fs.readFileSync(`dist/${locale}/search-index.json`, 'utf8')));
+  }
+  return articlesByLocale.get(locale);
+}
+const issuePath = (locale, id) => `/${locale}/issues/${routes.issues[locale][id].slug}/`;
 
 async function readHomeData(page) {
   const config = JSON.parse(await page.locator('#page-config').textContent());
@@ -41,9 +51,13 @@ async function expectSelection(page, data, now) {
     const feature = data.features.find(row => row.id === selected.featureId);
     await expect(page.locator('[data-home-feature]')).toHaveAttribute('data-feature-id', feature.id);
     await expect(page.locator('.featured-issue')).toHaveAttribute('data-issue-id', feature.id);
-    await expect(page.locator('.featured-issue .text-link')).toHaveAttribute('href', `/${data.locale}/issues/${feature.id}/`);
+    await expect(page.locator('.featured-issue .text-link')).toHaveAttribute('href', issuePath(data.locale, feature.id));
     if (feature.articleId) {
-      await expect(page.locator('.home-lead__article article h2 a')).toHaveAttribute('href', `/${data.locale}/articles/${feature.articleId}/`);
+      const article = articleMetadata(data.locale).find(row => row.id === feature.articleId);
+      expect(article, `Missing metadata for editor ${feature.articleId}`).toBeTruthy();
+      expect(article.issue_id).toBe(feature.id);
+      await expect(page.locator('.home-lead__article article h2 a')).toHaveAttribute('href', article.url);
+      await expect(page.locator('.home-lead__article article h2 a')).toHaveText(article.title);
       await expect(page.locator('.home-lead__article .empty-state')).toHaveCount(0);
     } else {
       await expect(page.locator('.home-lead__article article')).toHaveCount(0);
@@ -51,6 +65,13 @@ async function expectSelection(page, data, now) {
     }
   }
   await expect.poll(() => archiveIds(page)).toEqual(selected.archiveIds);
+  for (const id of selected.archiveIds) {
+    const article = articleMetadata(data.locale).find(row => row.id === id);
+    expect(article, `Missing metadata for archive article ${id}`).toBeTruthy();
+    const title = page.locator(`[data-home-article-id="${id}"] h3 a`);
+    await expect(title).toHaveAttribute('href', article.url);
+    await expect(title).toHaveText(article.title);
+  }
   await expect(page.locator('[data-home-categories]')).toHaveAttribute('data-selection', selected.categoryIds.join(','));
   await expect(page.locator('[data-home-categories] .category-tile')).toHaveCount(selected.categoryIds.length);
   return selected;
@@ -107,6 +128,7 @@ test('same-slot reloads preserve the chosen issue, editorial, archive, categorie
     expect(await snapshot(page)).toEqual(first);
   }
   expect(first.latestLinks).toHaveLength(6);
+  expect(first.latestLinks).toEqual(articleMetadata('en').slice(0, 6).map(article => article.url));
 });
 
 test('the UTC boundary timer rotates all islands, keeps editorial paired, and preserves latest six', async ({ page }) => {
@@ -225,8 +247,9 @@ test('failed preview fetch preserves a useful static homepage with working issue
   await expect(page.locator('[data-home-latest] .article-card')).toHaveCount(6);
   await expect(page.locator('[data-home-categories] .category-tile')).toHaveCount(8);
   const issueId = await page.locator('.featured-issue').getAttribute('data-issue-id');
+  const issueUrl = new URL(issuePath('en', issueId), page.url()).href;
   await page.locator('.featured-issue .text-link').click();
-  await expect(page).toHaveURL(new RegExp(`/en/issues/${issueId}/$`));
+  await expect(page).toHaveURL(issueUrl);
   await expect(page.locator('.issue-contents > li')).not.toHaveCount(0);
   expect(errors).toEqual([]);
 });
