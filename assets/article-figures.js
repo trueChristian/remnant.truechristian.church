@@ -19,6 +19,22 @@ export function figureLayout({ naturalWidth, naturalHeight, containerWidth, font
   return { width, gap, side: index % 2 === 0 ? 'start' : 'end' };
 }
 
+/** Only a figure's opening heading run belongs beside it; later sections still clear. */
+export function figureFlowHeadings(figure) {
+  const headings = [];
+  let next = figure.nextElementSibling;
+  while (next && /^H[1-6]$/.test(next.tagName)) {
+    if (next.hidden || !next.textContent.trim()) return null;
+    headings.push(next);
+    next = next.nextElementSibling;
+  }
+  // Without adjacent readable prose there is no useful wrap. Quotes, tables,
+  // callouts, another figure, and section boundaries keep their stacked layout.
+  if (!next || next.hidden || !/^(P|UL|OL)$/.test(next.tagName) ||
+    !next.textContent.trim()) return null;
+  return headings;
+}
+
 export function initArticleFigures(document) {
   if (controllers.has(document)) return controllers.get(document);
   const window = document.defaultView;
@@ -40,9 +56,11 @@ export function initArticleFigures(document) {
       // clear: both keeps the images apart. Preserve stacked source groups instead.
       if (figure.previousElementSibling?.tagName === 'FIGURE' ||
         figure.nextElementSibling?.tagName === 'FIGURE') return;
+      const headings = figureFlowHeadings(figure);
+      if (!headings) return;
       if (parent !== article) parent.classList.add('article-figure-section');
       containers.add(parent);
-      records.push({ figure, image: images[0], parent, index });
+      records.push({ figure, image: images[0], parent, index, headings });
     });
   }
   if (!records.length) return null;
@@ -58,12 +76,15 @@ export function initArticleFigures(document) {
         fontSize: parseFloat(style.fontSize),
       }];
     }));
-    for (const { figure, image, parent, index } of records) {
+    for (const { figure, image, parent, index, headings } of records) {
       const layout = image.complete ? figureLayout({
         ...measurements.get(parent), naturalWidth: image.naturalWidth,
         naturalHeight: image.naturalHeight, wideScreen: media.matches, index,
       }) : null;
       figure.classList.toggle('article-figure--wrap', Boolean(layout));
+      for (const heading of headings) {
+        heading.classList.toggle('article-figure-heading', Boolean(layout));
+      }
       for (const side of ['start', 'end']) {
         figure.classList.toggle(`article-figure--${side}`, layout?.side === side);
       }

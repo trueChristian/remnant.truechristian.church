@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
 const courtship = '/en/youth/a-christ-centered-courtship-964b2776-41fa-496b-bbda-e3193f780d76/';
+const courtshipSeries = '/en/christian-living/a-christ-centered-courtship-series/';
 const svg = (width, height) => `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="#56866c"/></svg>`;
 const image = (width = 240, height = 400) => `data:image/svg+xml,${encodeURIComponent(svg(width, height))}`;
 const paragraph = '<p>' + 'Readable article prose stays beside this photograph, with enough room for a comfortable line of text. '.repeat(8) + '</p>';
@@ -87,11 +88,89 @@ test('mobile stacks, desktop restores, and narrow desktop columns stay readable'
   await expect(figures.first()).toHaveClass(/article-figure--start/);
 });
 
+test('Courtship Series opening heading and list flow beside the portrait', async ({ page }) => {
+  await page.goto(courtshipSeries);
+  const figures = page.locator('.prose article > figure');
+  const portrait = figures.first();
+  await portrait.scrollIntoViewIfNeeded();
+  await expect(portrait).toHaveClass(/article-figure--start/);
+  const heading = portrait.locator('xpath=following-sibling::*[1]');
+  await expect(heading).toHaveText('Young men');
+  await expect(heading).toHaveClass(/article-figure-heading/);
+  const box = await rect(portrait);
+  for (const content of [heading, portrait.locator('xpath=following-sibling::p[1]'),
+    portrait.locator('xpath=following-sibling::ol[1]')]) {
+    const text = await firstTextRect(content);
+    expect(text.top).toBeLessThan(box.bottom);
+    expect(text.left).toBeGreaterThanOrEqual(box.right + 20);
+  }
+  await expect(figures.nth(1)).not.toHaveClass(/article-figure--wrap/);
+  await expect(page.getByRole('heading', { name: 'Young women', exact: true })).not.toHaveClass(/article-figure-heading/);
+  await noOverflow(page);
+  fs.mkdirSync('.test-output/screenshots', { recursive: true });
+  await page.screenshot({ path: '.test-output/screenshots/courtship-series-heading-desktop.png' });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(portrait).not.toHaveClass(/article-figure--wrap/);
+  await expect(heading).not.toHaveClass(/article-figure-heading/);
+  expect((await rect(heading)).top).toBeGreaterThanOrEqual((await rect(portrait)).bottom);
+  await portrait.scrollIntoViewIfNeeded();
+  await noOverflow(page);
+  await page.screenshot({ path: '.test-output/screenshots/courtship-series-heading-mobile.png' });
+});
+
+test('opening heading runs respect captions, later boundaries, RTL, resize and print', async ({ page }) => {
+  for (const dir of ['ltr', 'rtl']) {
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    await fixture(page, figure('portrait', 240, 700, 'Caption remains attached to the original image') +
+      '<h2 id="lead">A deliberately long section heading with readable wrapping</h2><h3 id="sub">Its opening subheading</h3>' +
+      '<p id="body">The first paragraph flows alongside the illustration.</p><h2 id="later">A later section</h2>' + paragraph, { dir });
+    const portrait = page.locator('#portrait');
+    const headings = page.locator('#lead, #sub');
+    await expect(portrait).toHaveClass(/article-figure--wrap/);
+    for (const heading of await headings.all()) await expect(heading).toHaveClass(/article-figure-heading/);
+    const box = await rect(portrait);
+    for (const content of [page.locator('#lead'), page.locator('#sub'), page.locator('#body')]) {
+      const text = await firstTextRect(content);
+      expect(text.top).toBeLessThan(box.bottom);
+      if (dir === 'ltr') expect(text.left).toBeGreaterThanOrEqual(box.right + 20);
+      else expect(text.right).toBeLessThanOrEqual(box.left - 20);
+    }
+    await expect(page.locator('#later')).not.toHaveClass(/article-figure-heading/);
+    expect((await rect(page.locator('#later'))).top).toBeGreaterThanOrEqual(box.bottom);
+    expect((await rect(page.locator('#portrait figcaption'))).bottom).toBeLessThanOrEqual(box.bottom + 1);
+    for (const width of ['500px', '']) {
+      await page.locator('.prose').evaluate((element, value) => { element.style.width = value; }, width);
+      for (const heading of await headings.all()) {
+        if (width) await expect(heading).not.toHaveClass(/article-figure-heading/);
+        else await expect(heading).toHaveClass(/article-figure-heading/);
+      }
+    }
+    await page.emulateMedia({ media: 'print' });
+    expect(await portrait.evaluate(element => getComputedStyle(element).float)).toBe('none');
+    expect(await page.locator('#lead').evaluate(element => getComputedStyle(element).clear)).toBe('both');
+    expect((await rect(page.locator('#lead'))).top).toBeGreaterThanOrEqual((await rect(portrait)).bottom);
+    await page.emulateMedia({ media: 'screen' });
+    await noOverflow(page);
+  }
+});
+
+test('figures without adjacent prose do not leave empty floating columns', async ({ page }) => {
+  for (const barrier of ['', '<h2>An orphan heading</h2>', '<h2>Before a table</h2><table><tr><td>Cell</td></tr></table>',
+    '<h2>Before a quotation</h2><blockquote>Quotation</blockquote>', '<p><img src="' + image() + '" alt="Image-only paragraph"></p>']) {
+    await fixture(page, figure('portrait') + barrier);
+    await expect(page.locator('article')).toHaveClass(/article-figures/);
+    await expect(page.locator('#portrait')).not.toHaveClass(/article-figure--wrap/);
+    await expect(page.locator('.article-figure-heading')).toHaveCount(0);
+    expect(await page.locator('#portrait').evaluate(element => getComputedStyle(element).float)).toBe('none');
+    await noOverflow(page);
+  }
+});
+
 test('wide and multi-image figures stack; captions, headings, and article boundaries clear floats', async ({ page }) => {
   await fixture(page, figure('portrait', 240, 400, 'Original caption kept with its photograph') + paragraph +
     '<h2 id="section">A fresh section</h2>' + figure('wide', 1000, 500) + paragraph +
     '<figure id="pair"><img src="' + image() + '" alt="One"><img src="' + image() + '" alt="Two"><figcaption>A paired composition</figcaption></figure>' +
-    '<p>A final illustrated section.</p>' + figure('last', 240, 500, 'The final caption'));
+    '<p>A final illustrated section.</p>' + figure('last', 240, 500, 'The final caption') + '<p>Brief closing text.</p>');
   await expect(page.locator('#portrait')).toHaveClass(/article-figure--wrap/);
   await expect(page.locator('#wide')).not.toHaveClass(/article-figure--wrap/);
   await expect(page.locator('#pair')).not.toHaveClass(/article-figure--wrap/);
@@ -156,16 +235,21 @@ test('late and broken images are safe and do not change previously assigned side
   });
   await page.route('**/broken-portrait.svg', route => route.abort());
   try {
-    await fixture(page, '<figure id="late"><img src="/late-portrait.svg" alt="Delayed photograph"></figure>' + paragraph +
-      figure('ready') + paragraph + '<figure id="broken"><img src="/broken-portrait.svg" alt="Unavailable photograph"></figure>');
+    await fixture(page, '<figure id="late"><img src="/late-portrait.svg" alt="Delayed photograph"></figure><h2 id="late-heading">Delayed section</h2>' + paragraph +
+      figure('ready') + '<h2 id="ready-heading">Ready section</h2>' + paragraph +
+      '<figure id="broken"><img src="/broken-portrait.svg" alt="Unavailable photograph"></figure><h2 id="broken-heading">Unavailable section</h2>' + paragraph);
     await expect(page.locator('#ready')).toHaveClass(/article-figure--end/);
     await expect(page.locator('#late')).not.toHaveClass(/article-figure--wrap/);
+    await expect(page.locator('#late-heading')).not.toHaveClass(/article-figure-heading/);
     release();
     await expect(page.locator('#late')).toHaveClass(/article-figure--start/);
+    await expect(page.locator('#late-heading')).toHaveClass(/article-figure-heading/);
     await expect(page.locator('#ready')).toHaveClass(/article-figure--end/);
     await expect(page.locator('#broken')).not.toHaveClass(/article-figure--wrap/);
+    await expect(page.locator('#broken-heading')).not.toHaveClass(/article-figure-heading/);
     await page.locator('#ready img').evaluate(img => { img.src = '/broken-portrait.svg'; });
     await expect(page.locator('#ready')).not.toHaveClass(/article-figure--wrap/);
+    await expect(page.locator('#ready-heading')).not.toHaveClass(/article-figure-heading/);
   } finally { release(); }
 });
 

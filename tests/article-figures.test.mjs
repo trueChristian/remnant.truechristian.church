@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { figureLayout } from '../assets/article-figures.js';
+import { figureLayout, figureFlowHeadings } from '../assets/article-figures.js';
 
 const layout = (options = {}) => figureLayout({ naturalWidth: 422, naturalHeight: 679,
   containerWidth: 750, fontSize: 18, wideScreen: true, index: 0, ...options });
@@ -43,5 +43,32 @@ test('missing, broken, and invalid image dimensions never produce a float', () =
   for (const field of ['naturalWidth', 'naturalHeight', 'containerWidth', 'fontSize']) {
     for (const value of [0, -1, NaN, Infinity, undefined]) assert.deepEqual(layout({ [field]: value }),
       field === 'fontSize' && value === undefined ? layout() : null);
+  }
+});
+
+const siblings = (...nodes) => nodes.reduceRight((nextElementSibling, node) => ({
+  tagName: typeof node === 'string' ? node : node.tagName,
+  textContent: 'Readable content', ...(typeof node === 'object' ? node : {}), nextElementSibling,
+}), null);
+
+test('only contiguous opening headings with adjacent prose qualify for figure flow', () => {
+  const figure = siblings('FIGURE', 'H2', 'H3', 'P', 'H2', 'P');
+  assert.deepEqual(figureFlowHeadings(figure), [figure.nextElementSibling, figure.nextElementSibling.nextElementSibling]);
+  for (const prose of ['P', 'OL', 'UL']) {
+    assert.deepEqual(figureFlowHeadings(siblings('FIGURE', prose)), []);
+    assert.equal(figureFlowHeadings(siblings('FIGURE', 'H2', prose)).length, 1);
+  }
+});
+
+test('orphan figures and headings before barriers remain stacked', () => {
+  assert.equal(figureFlowHeadings(siblings('FIGURE')), null);
+  assert.equal(figureFlowHeadings(siblings('FIGURE', 'H2')), null);
+  for (const barrier of ['FIGURE', 'BLOCKQUOTE', 'ASIDE', 'TABLE', 'HR', 'SECTION',
+    { tagName: 'P', textContent: '  ' }, { tagName: 'P', hidden: true }]) {
+    assert.equal(figureFlowHeadings(siblings('FIGURE', barrier, 'P')), null);
+    assert.equal(figureFlowHeadings(siblings('FIGURE', 'H2', barrier, 'P')), null);
+  }
+  for (const heading of [{ tagName: 'H2', hidden: true }, { tagName: 'H3', textContent: '' }]) {
+    assert.equal(figureFlowHeadings(siblings('FIGURE', heading, 'P')), null);
   }
 });

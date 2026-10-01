@@ -21,6 +21,7 @@ Magazine cards, reading layouts, issue placeholders and controls are new site-ow
 - Original theme mobile-menu focus, Escape, close control, inert state and scroll behavior are retained
 - Shared ten-minute homepage selections show all three archive cards together, offer Pause/Resume updates, preserve focused content until blur, and catch up after backgrounding; see [selection semantics](homepage-selection.md)
 - Print removes navigation controls but retains article text, attribution and required AI notices
+- Narrow article figures wrap only beside adjacent readable prose on sufficiently wide screens. Their immediately following opening headings may share that space; later headings and structural blocks still clear the entire figure and caption. Orphan figures, consecutive images, mobile/narrow columns and print stay stacked. Source order and text are unchanged, and logical sides mirror in RTL
 - Markdown remains a direct download even if copying fails; the copy fallback is a selectable read-only textarea
 - Search results are real links, text highlights use DOM text nodes, and asynchronous request IDs prevent stale result replacement
 - Search pagination and filters persist in the URL; Back/Forward restores query state
