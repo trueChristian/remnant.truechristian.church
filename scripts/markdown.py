@@ -101,7 +101,7 @@ def html_to_markdown(source: str, canonical_url: str = "") -> str:
         # authoritative-English compatibility URL, model and localized wording.
         if attrs.get("data-translation-notice") == "ai":
             return "\n\n" + raw_html(node) + "\n\n"
-        if tag in {"table", "dl", "pre", "u", "sup", "sub", "mark", "cite", "kbd", "samp", "del", "ins", "abbr", "ruby"} or "id" in attrs or (tag == "ol" and attrs.get("type")):
+        if tag in {"table", "dl", "pre", "u", "sup", "sub", "mark", "cite", "kbd", "samp", "del", "ins", "abbr", "ruby"} or "id" in attrs or (tag == "ol" and (attrs.get("type") or "reversed" in attrs)):
             raw = raw_html(node)
             return "\n\n" + raw + "\n\n" if tag in {"table", "dl", "pre", "ol"} or tag.startswith("h") else raw
         if tag == "img":

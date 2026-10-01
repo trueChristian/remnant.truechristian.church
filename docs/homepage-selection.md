@@ -48,14 +48,15 @@ pairs another issue's article. No hero claims to be the latest issue/article.
   only real content. A locale with fewer than three eligible articles displays
   only the available unique articles; empty pools remain useful empty states
 
-The verified October 1, 2026 export has 722 English articles, 54 editorial pairs,
-663 eligible English archive articles, four Afrikaans articles (one editorial,
-three archive articles), and no compatible published articles in the other
-locales. The English archive's minimum interval is 221 slots: 36h50m between
-starts, or 36h40m absent. Hero pairs cycle every nine hours. The absence interval describes the unpaused schedule; pausing or retaining
-keyboard focus intentionally keeps an old selection visible until reading ends.
-These counts are
-observations of that export, not hard-coded publication limits.
+At English source revision `997cdfb6c46758c1f8beee24153722747c0cd5a7`,
+the verified inventory has 749 articles, 54 editorial pairs and 690 eligible
+archive articles. The archive's minimum interval is 230 slots: 38h20m between
+starts, or 38h10m absent. Hero pairs cycle every nine hours. Available translated
+pools depend on the current compatible export and are never filled with stale
+or untranslated articles. The absence interval describes the unpaused schedule;
+pausing or retaining keyboard focus intentionally keeps an old selection visible
+until reading ends. These counts are observations of that source revision, not
+hard-coded publication limits.
 
 ## Accessibility, payloads and fallbacks
 
@@ -82,7 +83,7 @@ mirror the directional icon.
 
 `data/issue-pdfs.json` maps issue UUIDs to original Berean Voice URLs. Each record
 preserves the exact observed official archive href, label, source metadata,
-source SHA-256 and verification evidence. All 63 mapped files were fetched from
+source SHA-256 and verification evidence. All 65 mapped files were fetched from
 the official publisher and their PDF headers and SHA-256 values matched the
 converted source catalogue. Seven local filenames include browser download
 suffixes, which are deliberately **not** used to derive URLs.
