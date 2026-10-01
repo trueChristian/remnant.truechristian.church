@@ -69,7 +69,7 @@ def fixture(root, *, translated=True, count=3, missing_title=False):
             file = location / relative
             file.parent.mkdir(parents=True, exist_ok=True)
             file.write_bytes(b'unchanged fixture asset')
-    for name in ('preferences.js', 'theme.css', 'site.css', 'theme.js', 'site.js'):
+    for name in ('preferences.js', 'theme.css', 'site.css', 'theme.js', 'site.js', 'article-figures.css', 'article-figures.js'):
         write(output / 'assets' / name, '')
     site = Site(model, locales, routes, theme, output, {})
     site.build()

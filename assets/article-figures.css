@@ -1,0 +1,35 @@
+/* Progressive article-only enhancement. No script, narrow screens, and print stay stacked. */
+.prose .article-figures,
+.prose .article-figure-section { display: flow-root; }
+
+/* Never put text between opposing photographs or carry a float into a new section. */
+.prose .article-figures figure,
+.prose .article-figures :is(h1,h2,h3,h4,h5,h6,hr,table,aside,blockquote) { clear: both; }
+.prose .article-figures :is(ul,ol) { display: flow-root; }
+
+@media screen and (min-width: 48rem) {
+  .prose .article-figures figure.article-figure--wrap {
+    width: var(--article-figure-width);
+    max-width: 38%;
+    margin-block: .35em 1.4em;
+    break-inside: avoid;
+  }
+  .prose .article-figures figure.article-figure--start {
+    float: inline-start;
+    margin-inline: 0 var(--article-figure-gap);
+  }
+  .prose .article-figures figure.article-figure--end {
+    float: inline-end;
+    margin-inline: var(--article-figure-gap) 0;
+  }
+  .prose .article-figure--wrap img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  .prose .article-figure--wrap figcaption { overflow-wrap: anywhere; }
+}
+
+@media print {
+  .prose .article-figures figure { break-inside: avoid; }
+}

@@ -36,6 +36,7 @@ const noOverflow = async page => {
 test('desktop magazine home, issue and article layouts', async ({ page }) => {
   await page.goto('/en/');
   await expect(page.locator('.masthead h1')).toContainText('Remnant');
+  await expect(page.locator('html')).toHaveAttribute('data-home-slot', /.+/);
   const latestDate = await page.locator('.featured-issue__foot h2').textContent();
   await noOverflow(page); await capture(page, 'home-desktop');
   await page.locator('.featured-issue .text-link').click();
