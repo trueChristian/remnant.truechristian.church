@@ -92,7 +92,9 @@
     "footer_navigation": "कलीसिया के लिंक",
     "social_links": "सोशल मीडिया लिंक",
     "copy_error": "स्वचालित कॉपी उपलब्ध नहीं है। नीचे दिया गया पाठ कॉपी करें।",
-    "special_edition": "विशेष अंक"
+    "special_edition": "विशेष अंक",
+    "publisher": "प्रकाशक",
+    "download": "डाउनलोड"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

@@ -62,35 +62,8 @@ copyButton?.addEventListener('click', async () => {
   finally { copyButton.disabled = false; }
 });
 
-const rotator = document.querySelector('[data-archive-rotator]');
-if (rotator) {
-  const slides = [...rotator.querySelectorAll('[data-slide]')];
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-  let current = 0, playing = false, timer;
-  const count = rotator.querySelector('[data-slide-count]');
-  const toggle = rotator.querySelector('[data-slide-play]');
-  const show = next => {
-    current = (next + slides.length) % slides.length;
-    slides.forEach((slide, index) => { slide.hidden = index !== current; });
-    count.textContent = `${current + 1} / ${slides.length}`;
-  };
-  const stop = () => {
-    playing = false; clearInterval(timer);
-    toggle.textContent = ui.play; toggle.setAttribute('aria-pressed', 'false');
-  };
-  const play = () => {
-    if (reduce.matches) return;
-    playing = true; timer = setInterval(() => show(current + 1), 8000);
-    toggle.textContent = ui.pause; toggle.setAttribute('aria-pressed', 'true');
-  };
-  rotator.querySelector('[data-slide-prev]').addEventListener('click', () => { stop(); show(current - 1); });
-  rotator.querySelector('[data-slide-next]').addEventListener('click', () => { stop(); show(current + 1); });
-  toggle.addEventListener('click', () => playing ? stop() : play());
-  rotator.addEventListener('focusin', event => { if (event.target !== toggle) stop(); });
-  document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
-  reduce.addEventListener('change', () => { if (reduce.matches) stop(); toggle.disabled = reduce.matches; });
-  toggle.disabled = reduce.matches;
-  show(0);
+if (config.homeData) {
+  import('./home.js').then(({ enhanceHome }) => enhanceHome(config.homeData)).catch(() => {});
 }
 
 function markedText(container, text, query) {

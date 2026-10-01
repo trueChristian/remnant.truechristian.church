@@ -89,7 +89,7 @@ button:disabled { cursor: default; opacity: .55; }
 .article-card--lead .article-card__body > p { max-width: 640px; font-size: 14px; }
 .article-image-placeholder { height: 100%; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); }
 .article-image-placeholder > span { font: 120px var(--tcc-font-display); color: var(--line); }
-.latest-issue { border-inline-start: 1px solid var(--line); padding-inline-start: 36px; }
+.featured-issue { border-inline-start: 1px solid var(--line); padding-inline-start: 36px; }
 .issue-cover-link { display: block; padding: 15px 20px 24px; background: var(--surface); }
 .issue-cover { position: relative; display: flex; flex-direction: column; aspect-ratio: .72; min-height: 230px; background: #d8f3f2; color: #124144; border-inline-start: 6px solid #a8dcd9; padding: 25px 23px 20px; box-shadow: 8px 10px 0 rgb(0 0 0 / 4%); }
 .issue-cover__eyebrow { font: 8px/1.5 var(--tcc-font-display); letter-spacing: .12em; }
@@ -99,8 +99,8 @@ button:disabled { cursor: default; opacity: .55; }
 .issue-cover__date { font-size: 12px; padding-top: 8px; }
 .issue-cover__bottom { margin-top: 28px; padding-top: 10px; border-top: 1px solid #8bbfbd; font: 8px/1.5 var(--tcc-font-display); letter-spacing: .08em; }
 .issue-cover__image { width: 100%; height: auto; }
-.latest-issue__foot { padding-top: 23px; }
-.latest-issue__foot h2 { font-size: 22px; letter-spacing: -.025em; margin-bottom: 9px; }
+.featured-issue__foot { padding-top: 23px; }
+.featured-issue__foot h2 { font-size: 22px; letter-spacing: -.025em; margin-bottom: 9px; }
 .text-link { font-family: var(--tcc-font-display); font-size: 11px; font-weight: 500; display: inline-flex; gap: 22px; align-items: center; }
 .text-link > span { font-size: 20px; }
 .page-section { padding-block: 52px 70px; }
@@ -230,7 +230,7 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
 @media (min-width: 1500px) { .masthead h1 { font-size: 158px; } }
 @media (max-width: 1100px) {
   .home-lead { gap: 28px; }
-  .latest-issue { padding-inline-start: 25px; }
+  .featured-issue { padding-inline-start: 25px; }
   .issue-cover { padding: 20px 18px; }
   .article-grid { gap: 35px 24px; }
   .category-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
@@ -277,18 +277,18 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
   .article-card--lead .article-card__image { aspect-ratio: 1.42; }
   .article-card h2 { font-size: 29px; }
   .article-card--lead .article-card__body > p { font-size: 13px; }
-  .latest-issue { border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; margin-top: 36px; padding-top: 25px; display: grid; grid-template-columns: 148px 1fr; gap: 15px 24px; align-items: center; }
-  .latest-issue .section-kicker { grid-column: 1/-1; margin: 0; }
+  .featured-issue { border-inline-start: 0; border-top: 1px solid var(--line); padding-inline-start: 0; margin-top: 36px; padding-top: 25px; display: grid; grid-template-columns: 148px 1fr; gap: 15px 24px; align-items: center; }
+  .featured-issue .section-kicker { grid-column: 1/-1; margin: 0; }
   .issue-cover-link { padding: 9px 12px 15px; }
-  .latest-issue .issue-cover { min-height: 166px; padding: 13px 10px; border-inline-start-width: 4px; }
-  .latest-issue .issue-cover__eyebrow { font-size: 5px; }
-  .latest-issue .issue-cover__name { font-size: 16px; }
-  .latest-issue .issue-cover__year { font-size: 39px; }
-  .latest-issue .issue-cover__date { font-size: 8px; }
-  .latest-issue .issue-cover__bottom { font-size: 5px; margin-top: 16px; }
-  .latest-issue .issue-cover__rule { margin-top: 10px; }
-  .latest-issue__foot { padding-top: 0; }
-  .latest-issue__foot h2 { font-size: 23px; }
+  .featured-issue .issue-cover { min-height: 166px; padding: 13px 10px; border-inline-start-width: 4px; }
+  .featured-issue .issue-cover__eyebrow { font-size: 5px; }
+  .featured-issue .issue-cover__name { font-size: 16px; }
+  .featured-issue .issue-cover__year { font-size: 39px; }
+  .featured-issue .issue-cover__date { font-size: 8px; }
+  .featured-issue .issue-cover__bottom { font-size: 5px; margin-top: 16px; }
+  .featured-issue .issue-cover__rule { margin-top: 10px; }
+  .featured-issue__foot { padding-top: 0; }
+  .featured-issue__foot h2 { font-size: 23px; }
   .text-link { font-size: 10px; gap: 10px; }
   .section-heading { align-items: flex-start; gap: 15px; }
   .section-heading h2 { font-size: 23px; }
@@ -395,3 +395,12 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
 @media (max-width: 959px) {
   .tcc-site-header .tcc-header__scrim { width: 100vw; height: 100dvh; }
 }
+
+/* The archive is a readable group of three, not an autoplay carousel. */
+[data-home-archive] > div { min-width: 0; }
+.issue-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; }
+.issue-actions a { text-underline-offset: .2em; }
+
+/* Code-native arrows avoid platform emoji presentation on mobile. */
+.nav-icon { display: inline-block; width: 1em; height: 1em; flex: none; vertical-align: -.12em; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+[dir="rtl"] .nav-icon { transform: scaleX(-1); }

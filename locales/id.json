@@ -92,7 +92,9 @@
     "footer_navigation": "Tautan gereja",
     "social_links": "Tautan media sosial",
     "copy_error": "Penyalinan otomatis tidak tersedia. Salin teks di bawah ini.",
-    "special_edition": "Edisi khusus"
+    "special_edition": "Edisi khusus",
+    "publisher": "Penerbit",
+    "download": "Unduh"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
