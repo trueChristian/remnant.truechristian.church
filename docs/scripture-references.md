@@ -146,7 +146,11 @@ outside interaction and its close button dismiss it. Requests are deduplicated,
 API text is inserted as text, stale asynchronous results cannot replace a newer
 selection, and unavailable/corrupt browser storage is optional. Network failures
 leave the original article intact and offer the GetBible reader link. The
-approved reader base is `https://getbible.life/`.
+approved reader base is `https://trueChristian.church/scriptures/`. Every generated
+reference includes `data-bible-url` with that exact value. The adapter uses the
+Loader's translation/book/chapter/verse route beneath it; on API failure, the link
+opens that reader's home page. The original reference labels the popup once;
+separate passages retain their individual headings.
 
 ## Verification
 

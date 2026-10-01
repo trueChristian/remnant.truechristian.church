@@ -48,6 +48,7 @@ class ScriptureTests(unittest.TestCase):
         self.assertIn('data-reference="43 3:16-18"',result)
         self.assertIn('data-reference="1 1:1"',result)
         self.assertGreater(result.count('data-reference="43 3:16-18"'),1)
+        self.assertEqual(result.count('data-bible-url="https://trueChristian.church/scriptures/"'),result.count('class="scripture-reference"'))
         self.assertNotIn('tabindex=',result)
         self.assertIn('&amp;', result)
         self.assertEqual(scanner.report['rendered'],2)
@@ -64,6 +65,7 @@ class ScriptureTests(unittest.TestCase):
                 output=scanner.render(tag,values[0])
                 self.assertEqual(strip_markers(output),values[0]['html'])
                 self.assertEqual('scripture-reference' in output,tag not in {'bn','hi','id','sw','ur'})
+                self.assertEqual(output.count('data-bible-url="https://trueChristian.church/scriptures/"'),output.count('class="scripture-reference"'))
 
     def test_numbered_books_chapter_only_and_cross_chapter(self):
         scanner,item,result=self.scan('<p>1 Corinthians 13:4–7; John 3:36–4:2; Psalm 23.</p>')

@@ -3,9 +3,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const assets = path.resolve('assets');
-const defaultBody = `Before <span class="scripture-reference" data-reference="43 3:16" data-scripture-id="john" data-translation="kjv">John 3:16</span> after.
-<p>Another <span class="scripture-reference" data-reference="45 8:1" data-scripture-id="romans" data-translation="kjv">Romans 8:1</span>.</p>
-<p><em><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="split" data-translation="kjv">John</span></em><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="split" data-translation="kjv"> 3:16</span> across emphasis.</p>`;
+const defaultBody = `Before <span class="scripture-reference" data-reference="43 3:16" data-scripture-id="john" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/">John 3:16</span> after.
+<p>Another <span class="scripture-reference" data-reference="45 8:1" data-scripture-id="romans" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/">Romans 8:1</span>.</p>
+<p><em><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="split" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/">John</span></em><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="split" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/"> 3:16</span> across emphasis.</p>`;
 const response = (reference = '43 3:16', abbreviation='kjv', text='For God so loved the world.', overrides={}) => {
   const [book, tail] = reference.split(' '), [chapter, verse] = tail.split(':');
   const bookName = {'21':'Ecclesiastes','43':'John','45':'Romans'}[book];
@@ -62,7 +62,7 @@ test('GetBible is on demand, hoverable, escaped, linked and source-faithful', as
   await expect(popup).toContainText('<img src=x onerror="window.pwned=1"> & literal text');
   expect(calls).toEqual(['43 3:16']);
   await expect(popup.locator('img,script')).toHaveCount(0);
-  await expect(popup.getByRole('link')).toHaveAttribute('href','https://getbible.life/kjv/John/3/16');
+  await expect(popup.getByRole('link')).toHaveAttribute('href','https://trueChristian.church/scriptures/kjv/John/3/16');
   await popup.hover(); await page.waitForTimeout(250); await expect(popup).toBeVisible();
   expect(await sourceMarkup(page)).toBe(original);
   expect(await page.evaluate(()=>window.pwned)).toBeUndefined(); expect(errors).toEqual([]);
@@ -89,9 +89,9 @@ test('a single passage has one accessible reference title while split passages r
   await mockApi(page,async(route,ref,version)=>route.fulfill({json:response(ref,version,
     ref==='21 12:12'?ecclesiastes:'For God so loved the world.')}));
   await fixture(page,{body:`
-    <p><span class="scripture-reference" data-reference="21 12:12" data-scripture-id="single" data-translation="kjv">Ecclesiastes 12:12</span></p>
-    <p><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="abbreviated" data-translation="kjv">Jn 3:16</span></p>
-    <p><span class="scripture-reference" data-reference="43 3:16;43 4:1" data-scripture-id="multiple" data-translation="kjv">John 3:16; 4:1</span></p>`});
+    <p><span class="scripture-reference" data-reference="21 12:12" data-scripture-id="single" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/">Ecclesiastes 12:12</span></p>
+    <p><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="abbreviated" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/">Jn 3:16</span></p>
+    <p><span class="scripture-reference" data-reference="43 3:16;43 4:1" data-scripture-id="multiple" data-translation="kjv" data-bible-url="https://trueChristian.church/scriptures/">John 3:16; 4:1</span></p>`});
   const popup=page.getByRole('dialog');
   for (const [id,label] of [['single','Ecclesiastes 12:12'],['abbreviated','Jn 3:16']]) {
     await page.locator(`[data-scripture-id="${id}"]`).click();
@@ -150,7 +150,7 @@ test('network failure preserves article and retry works with all browser storage
   await fixture(page);const text=await page.locator('#original').textContent();
   const trigger=page.locator('[data-scripture-id="john"]'); await trigger.click();
   await expect(page.getByRole('dialog')).toContainText('could not be loaded');
-  await expect(page.getByRole('dialog').getByRole('link',{name:'Read in the Bible'})).toHaveAttribute('href','https://getbible.life/');
+  await expect(page.getByRole('dialog').getByRole('link',{name:'Read in the Bible'})).toHaveAttribute('href','https://trueChristian.church/scriptures/');
   expect(await page.locator('#original').textContent()).toBe(text);
   await page.keyboard.press('Escape'); await trigger.click();
   await expect(page.getByRole('dialog')).toContainText('For God');
@@ -198,11 +198,12 @@ test('generated article loads real assets, preserves prose and displays desktop/
   await page.goto(selected.article.url);
   const trigger=page.locator(`[data-scripture-id="${selected.marker.id}"]`).first();
   await expect(trigger).toHaveAttribute('data-scripture-ready','true');
+  await expect(trigger).toHaveAttribute('data-bible-url','https://trueChristian.church/scriptures/');
   const original=await sourceMarkup(page,'.prose');
   await trigger.click();
   const popup=page.getByRole('dialog');
   await expect(popup).toContainText('For God so loved the world.');
-  await expect(popup.getByRole('link')).toHaveAttribute('href','https://getbible.life/kjv/John/3/16');
+  await expect(popup.getByRole('link')).toHaveAttribute('href','https://trueChristian.church/scriptures/kjv/John/3/16');
   expect(await sourceMarkup(page,'.prose')).toBe(original);
   await capture(page,'scripture-generated-article-desktop');
   await page.keyboard.press('Escape');
