@@ -94,7 +94,9 @@
     "copy_error": "النسخ التلقائي غير متاح. انسخ النص أدناه.",
     "special_edition": "عدد خاص",
     "publisher": "الناشر",
-    "download": "تنزيل"
+    "download": "تنزيل",
+    "pause_updates": "إيقاف التحديثات مؤقتًا",
+    "resume_updates": "استئناف التحديثات"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

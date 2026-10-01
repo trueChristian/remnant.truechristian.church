@@ -94,7 +94,9 @@
     "copy_error": "העתקה אוטומטית אינה זמינה. העתיקו את הטקסט שלהלן.",
     "special_edition": "גיליון מיוחד",
     "publisher": "מוציא לאור",
-    "download": "הורדה"
+    "download": "הורדה",
+    "pause_updates": "השהיית עדכונים",
+    "resume_updates": "המשך עדכונים"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

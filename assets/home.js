@@ -15,7 +15,7 @@ async function loadData(url) {
   return response.json();
 }
 
-export async function enhanceHome(url) {
+export async function enhanceHome(url, ui = {}) {
   // Keep the static HTML intact on network/decompression/schema failure.
   const data = await loadData(url);
   if (data.schema !== 1 || data.locale !== document.documentElement.lang ||
@@ -23,9 +23,20 @@ export async function enhanceHome(url) {
   const feature = document.querySelector('[data-home-feature]');
   const archive = document.querySelector('[data-home-archive]');
   const categories = document.querySelector('[data-home-categories]');
+  const controls = document.querySelector('[data-home-controls]');
+  const pauseButton = document.querySelector('[data-home-pause]');
+  const labels = {
+    pause: typeof ui.pause === 'string' && ui.pause ? ui.pause : 'Pause updates',
+    resume: typeof ui.resume === 'string' && ui.resume ? ui.resume : 'Resume updates',
+  };
   const byId = key => new Map(data[key].map(row => [row.id, row]));
   const featureRows = byId('features'), articleRows = byId('articles'), categoryRows = byId('categories');
-  let timer;
+  let timer, focusTimer;
+  let paused = false;
+  const clearTimers = () => {
+    clearTimeout(timer);
+    clearTimeout(focusTimer);
+  };
   const replace = (element, key, markup) => {
     if (!element || element.dataset.selection === key) return;
     // Never remove the reader's keyboard focus. This island catches up on blur.
@@ -34,7 +45,8 @@ export async function enhanceHome(url) {
     element.dataset.selection = key;
   };
   const update = () => {
-    clearTimeout(timer);
+    clearTimers();
+    if (paused) return;
     if (!document.hidden) {
       const selection = selectHome(data, Date.now());
       const selectedFeature = featureRows.get(selection.featureId);
@@ -50,9 +62,25 @@ export async function enhanceHome(url) {
     // Recompute the shared clock slot after suspended tabs/sleep; no drifting interval.
     timer = setTimeout(update, HOME_SLOT_MS - (Date.now() % HOME_SLOT_MS) + 20);
   };
+  pauseButton?.addEventListener('click', () => {
+    paused = !paused;
+    pauseButton.setAttribute('aria-pressed', String(paused));
+    pauseButton.textContent = paused ? labels.resume : labels.pause;
+    // Resume rejoins the current shared slot; pausing never alters its schedule.
+    update();
+  });
   document.addEventListener('visibilitychange', update);
   window.addEventListener('pageshow', update);
-  document.addEventListener('focusout', () => setTimeout(update, 0));
-  window.addEventListener('pagehide', () => clearTimeout(timer));
+  document.addEventListener('focusout', () => {
+    clearTimeout(focusTimer);
+    if (!paused) focusTimer = setTimeout(update, 0);
+  });
+  window.addEventListener('pagehide', clearTimers);
   update();
+  // No inactive control is exposed when data loading or initialization fails.
+  if (controls && pauseButton) {
+    pauseButton.setAttribute('aria-pressed', 'false');
+    pauseButton.textContent = labels.pause;
+    controls.hidden = false;
+  }
 }

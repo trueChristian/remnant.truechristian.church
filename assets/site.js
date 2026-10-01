@@ -63,7 +63,7 @@ copyButton?.addEventListener('click', async () => {
 });
 
 if (config.homeData) {
-  import('./home.js').then(({ enhanceHome }) => enhanceHome(config.homeData)).catch(() => {});
+  import('./home.js').then(({ enhanceHome }) => enhanceHome(config.homeData, config.homeUi)).catch(() => {});
 }
 
 function markedText(container, text, query) {

@@ -94,7 +94,9 @@
     "copy_error": "خودکار نقل دستیاب نہیں۔ نیچے دیا گیا متن نقل کریں۔",
     "special_edition": "خصوصی شمارہ",
     "publisher": "ناشر",
-    "download": "ڈاؤن لوڈ"
+    "download": "ڈاؤن لوڈ",
+    "pause_updates": "اپ ڈیٹس روکیں",
+    "resume_updates": "اپ ڈیٹس دوبارہ شروع کریں"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

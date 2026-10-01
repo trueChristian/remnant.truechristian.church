@@ -52,7 +52,9 @@ The verified October 1, 2026 export has 722 English articles, 54 editorial pairs
 663 eligible English archive articles, four Afrikaans articles (one editorial,
 three archive articles), and no compatible published articles in the other
 locales. The English archive's minimum interval is 221 slots: 36h50m between
-starts, or 36h40m absent. Hero pairs cycle every nine hours. These counts are
+starts, or 36h40m absent. Hero pairs cycle every nine hours. The absence interval describes the unpaused schedule; pausing or retaining
+keyboard focus intentionally keeps an old selection visible until reading ends.
+These counts are
 observations of that export, not hard-coded publication limits.
 
 ## Accessibility, payloads and fallbacks
@@ -63,7 +65,9 @@ with a plain JSON fallback. The independent output checker audits the schema,
 digest, gzip parity, active-HTML exclusion and all preview links/images.
 
 Visible tabs update at the shared boundary without animation or live-region
-announcements. A section containing keyboard focus waits until focus leaves;
+announcements. A localized Pause updates button stops automatic changes while
+reading; Resume updates rejoins the current shared slot without storing visitor
+history or changing the global schedule. A section containing keyboard focus waits until focus leaves;
 other sections update normally. Returning from a hidden tab, restored page or
 sleep recomputes the current slot. Static HTML remains navigable with JavaScript
 disabled or if preview loading fails; that fallback intentionally does not claim
@@ -102,6 +106,6 @@ Article-only progressive enhancement measures loaded natural image dimensions
 and actual reading-column width. Portrait or naturally narrow single-image
 figures alternate logical start/end sides, preserve captions as a unit and leave
 a minimum readable text gutter. Wide/multi-image illustrations, narrow columns,
-mobile screens and print stay stacked. Adjacent figures clear one another;
+mobile screens and print stay stacked. Consecutive figure groups remain stacked;
 headings and major block elements clear floats. Resize, cached, delayed and broken
 image states are covered without rewriting source content or reordering nodes.

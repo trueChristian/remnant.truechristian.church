@@ -91,7 +91,7 @@ test('wide and multi-image figures stack; captions, headings, and article bounda
   await fixture(page, figure('portrait', 240, 400, 'Original caption kept with its photograph') + paragraph +
     '<h2 id="section">A fresh section</h2>' + figure('wide', 1000, 500) + paragraph +
     '<figure id="pair"><img src="' + image() + '" alt="One"><img src="' + image() + '" alt="Two"><figcaption>A paired composition</figcaption></figure>' +
-    figure('last', 240, 500, 'The final caption'));
+    '<p>A final illustrated section.</p>' + figure('last', 240, 500, 'The final caption'));
   await expect(page.locator('#portrait')).toHaveClass(/article-figure--wrap/);
   await expect(page.locator('#wide')).not.toHaveClass(/article-figure--wrap/);
   await expect(page.locator('#pair')).not.toHaveClass(/article-figure--wrap/);
@@ -108,18 +108,41 @@ test('wide and multi-image figures stack; captions, headings, and article bounda
   await noOverflow(page);
 });
 
-test('adjacent floats never leave a cramped strip between images; RTL mirrors logical sides', async ({ page }) => {
+test('adjacent figures stay stacked; separated wraps mirror logical sides in RTL', async ({ page }) => {
   for (const dir of ['ltr', 'rtl']) {
     await fixture(page, figure('one') + figure('two') + paragraph, { dir });
+    await expect(page.locator('article')).toHaveClass(/article-figures/);
+    for (const id of ['one', 'two']) {
+      await expect(page.locator(`#${id}`)).not.toHaveClass(/article-figure--wrap/);
+      expect(await page.locator(`#${id}`).evaluate(element => getComputedStyle(element).float)).toBe('none');
+    }
+    expect((await rect(page.locator('#two'))).top).toBeGreaterThanOrEqual((await rect(page.locator('#one'))).bottom);
+    expect((await firstTextRect(page.locator('article > p'))).top).toBeGreaterThanOrEqual((await rect(page.locator('#two'))).bottom);
+    await noOverflow(page);
+
+    await fixture(page, figure('one') + paragraph + figure('two') + paragraph, { dir });
     await expect(page.locator('#one')).toHaveClass(/article-figure--start/);
     await expect(page.locator('#two')).toHaveClass(/article-figure--end/);
-    const one = await rect(page.locator('#one'));
-    const two = await rect(page.locator('#two'));
-    expect(two.top).toBeGreaterThanOrEqual(one.bottom);
-    const text = await firstTextRect(page.locator('article > p'));
-    expect(text.top).toBeLessThan(two.bottom);
-    if (dir === 'ltr') { expect(one.left).toBeLessThan(two.left); expect(text.right).toBeLessThan(two.left); }
-    else { expect(one.left).toBeGreaterThan(two.left); expect(text.left).toBeGreaterThan(two.right); }
+    const boxes = [await rect(page.locator('#one')), await rect(page.locator('#two'))];
+    expect(boxes[1].top).toBeGreaterThanOrEqual(boxes[0].bottom);
+    if (dir === 'ltr') expect(boxes[0].left).toBeLessThan(boxes[1].left);
+    else expect(boxes[0].left).toBeGreaterThan(boxes[1].left);
+    const lines = await page.locator('article').evaluate(article => [...article.querySelectorAll('p')].flatMap(p => {
+      const range = document.createRange(); range.selectNodeContents(p);
+      return [...range.getClientRects()].map(({ top, right, bottom, left }) => ({ top, right, bottom, left }));
+    }));
+    for (const [index, box] of boxes.entries()) {
+      const overlapping = lines.filter(line => line.bottom > box.top + 1 && line.top < box.bottom - 1);
+      expect(overlapping.length).toBeGreaterThan(0);
+      const onLeft = (index === 0) === (dir === 'ltr');
+      for (const line of overlapping) {
+        if (onLeft) expect(line.left).toBeGreaterThanOrEqual(box.right + 20);
+        else expect(line.right).toBeLessThanOrEqual(box.left - 20);
+      }
+      const column = await rect(page.locator('article'));
+      // Available measure, rather than short final-line text, must stay comfortably readable.
+      expect(onLeft ? column.right - box.right - 27 : box.left - column.left - 27).toBeGreaterThanOrEqual(18 * 18);
+    }
     await noOverflow(page);
   }
 });

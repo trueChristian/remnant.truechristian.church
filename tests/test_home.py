@@ -75,3 +75,24 @@ class HomePayloadTests(unittest.TestCase):
         first, _ = self.render('en')
         second, _ = self.render('en')
         self.assertEqual(first, second)
+
+    def test_preview_checker_rejects_malformed_selection_identities(self):
+        from check_site import SiteChecker
+        import copy
+        import hashlib
+        _, valid = self.render('en')
+        for change in ('latestIds', 'articleId', 'issueId'):
+            value = copy.deepcopy(valid)
+            if change == 'latestIds':
+                value['latestIds'] = 'not-an-array'
+            elif change == 'articleId':
+                value['features'][0]['articleId'] = 123
+            else:
+                value['articles'][0]['issueId'] = 123
+            source = json.dumps(value,ensure_ascii=False,separators=(',',':'))
+            name = f"home-data.{hashlib.sha256(source.encode()).hexdigest()[:16]}.json"
+            file = self.output / 'en' / name
+            file.with_suffix('.json.gz').touch()
+            checker = SiteChecker(self.output)
+            checker.check_home_data(file,'en/'+name,value,source)
+            self.assertTrue(any('Invalid homepage' in error for error in checker.errors), change)

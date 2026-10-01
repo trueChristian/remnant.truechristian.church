@@ -94,7 +94,9 @@
     "copy_error": "Automatisches Kopieren ist nicht verfügbar. Kopieren Sie den folgenden Text.",
     "special_edition": "Sonderausgabe",
     "publisher": "Verlag",
-    "download": "Herunterladen"
+    "download": "Herunterladen",
+    "pause_updates": "Aktualisierungen pausieren",
+    "resume_updates": "Aktualisierungen fortsetzen"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

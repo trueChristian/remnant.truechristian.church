@@ -94,7 +94,9 @@
     "copy_error": "Kunakili kiotomatiki hakupatikani. Nakili maandishi hapa chini.",
     "special_edition": "Toleo maalumu",
     "publisher": "Mchapishaji",
-    "download": "Pakua"
+    "download": "Pakua",
+    "pause_updates": "Sitisha masasisho",
+    "resume_updates": "Endelea na masasisho"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

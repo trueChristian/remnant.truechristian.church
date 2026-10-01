@@ -36,6 +36,10 @@ export function initArticleFigures(document) {
         parent.closest('aside, blockquote, li, table, figure'))) return;
       const images = figure.querySelectorAll('img');
       if (images.length !== 1) return;
+      // Consecutive floats can squeeze one line between their margin boxes even when
+      // clear: both keeps the images apart. Preserve stacked source groups instead.
+      if (figure.previousElementSibling?.tagName === 'FIGURE' ||
+        figure.nextElementSibling?.tagName === 'FIGURE') return;
       if (parent !== article) parent.classList.add('article-figure-section');
       containers.add(parent);
       records.push({ figure, image: images[0], parent, index });
