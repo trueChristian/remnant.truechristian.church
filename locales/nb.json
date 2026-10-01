@@ -94,7 +94,9 @@
     "copy_error": "Automatisk kopiering er ikke tilgjengelig. Kopier teksten nedenfor.",
     "special_edition": "Spesialutgave",
     "publisher": "Utgiver",
-    "download": "Last ned"
+    "download": "Last ned",
+    "pause_updates": "Sett oppdateringer på pause",
+    "resume_updates": "Gjenoppta oppdateringer"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

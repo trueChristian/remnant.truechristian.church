@@ -226,6 +226,56 @@ test('restored and backgrounded pages catch up to the current slot after long sl
   expect(await latestLinks(page)).toEqual(latest);
 });
 
+test('pause preserves all content through time and lifecycle changes; resume rejoins the shared slot', async ({ page }) => {
+  const data = await openHome(page);
+  const labels = JSON.parse(await page.locator('#page-config').textContent()).homeUi;
+  const controls = page.locator('[data-home-controls]');
+  const button = page.locator('[data-home-pause]');
+  const initial = await snapshot(page);
+  await expect(controls).toBeVisible();
+  await expect(button).toHaveText(labels.pause);
+  await expect(button).toHaveAttribute('aria-pressed', 'false');
+  await button.click();
+  await expect(button).toHaveText(labels.resume);
+  await expect(button).toHaveAttribute('aria-pressed', 'true');
+  await expect(button).toBeFocused();
+
+  const later = NOW + 47 * HOME_SLOT_MS;
+  await page.clock.setFixedTime(later);
+  await page.evaluate(() => {
+    window.dispatchEvent(new Event('pagehide'));
+    window.dispatchEvent(new Event('pageshow'));
+    document.dispatchEvent(new Event('visibilitychange'));
+  });
+  await page.locator('#home-q').focus();
+  await expect(page.locator('html')).toHaveAttribute('data-home-slot', String(Math.floor(NOW / HOME_SLOT_MS)));
+  expect(await snapshot(page)).toEqual(initial);
+
+  await button.click();
+  await expect(button).toHaveText(labels.pause);
+  await expect(button).toHaveAttribute('aria-pressed', 'false');
+  await expect(button).toBeFocused();
+  await expectSelection(page, data, later);
+  expect(await latestLinks(page)).toEqual(initial.latestLinks);
+});
+
+test('pause cancels the boundary timer until explicitly resumed', async ({ page }) => {
+  const boundary = Date.parse('2026-10-02T00:00:00Z');
+  await page.clock.install({ time: boundary - 60_000 });
+  await page.goto('/en/');
+  const data = await readHomeData(page);
+  await expectSelection(page, data, boundary - 60_000);
+  await page.locator('[data-home-pause]').click();
+  const initial = await snapshot(page);
+  await page.clock.pauseAt(boundary - 1_000);
+  await page.clock.runFor(HOME_SLOT_MS * 3 + 1_021);
+  expect(await snapshot(page)).toEqual(initial);
+  await expect(page.locator('html')).toHaveAttribute('data-home-slot', String(Math.floor((boundary - 60_000) / HOME_SLOT_MS)));
+  await page.clock.resume();
+  await page.locator('[data-home-pause]').click();
+  await expectSelection(page, data, boundary + HOME_SLOT_MS * 3 + 21);
+});
+
 test('compressed-data failure falls back to the plain digest JSON', async ({ page }) => {
   const requests = [];
   page.on('request', request => { if (homeDataPattern.test(request.url())) requests.push(request.url()); });
@@ -242,6 +292,7 @@ test('failed preview fetch preserves a useful static homepage with working issue
   await page.goto('/en/');
   await page.waitForLoadState('networkidle');
   await expect(page.locator('html')).not.toHaveAttribute('data-home-slot', /.+/);
+  await expect(page.locator('[data-home-controls]')).toBeHidden();
   await expect(page.locator('.home-lead__article article')).toBeVisible();
   await expect(page.locator('[data-home-archive] .article-card')).toHaveCount(3);
   await expect(page.locator('[data-home-latest] .article-card')).toHaveCount(6);
@@ -264,6 +315,7 @@ test('homepage browsing remains useful with JavaScript disabled', async ({ brows
     await expect(page.locator('[data-home-latest] .article-card')).toHaveCount(6);
     await expect(page.locator('[data-home-categories] .category-tile')).toHaveCount(8);
     await expect(page.locator('noscript .nojs-languages')).toBeVisible();
+    await expect(page.locator('[data-home-controls]')).toBeHidden();
     const firstArticle = page.locator('[data-home-archive] h3 a').first();
     const destination = await firstArticle.getAttribute('href');
     await firstArticle.click();
@@ -286,6 +338,8 @@ for (const locale of [
     await page.setViewportSize({ width: 320, height: 740 });
     const data = await openHome(page, locale.tag);
     await expect(page.locator('html')).toHaveAttribute('dir', locale.dir);
+    const labels = JSON.parse(await page.locator('#page-config').textContent()).homeUi;
+    await expect(page.locator('[data-home-pause]')).toHaveText(labels.pause);
     const expectedCount = Math.min(3, data.articles.length);
     await expect(page.locator('[data-home-archive] .article-card')).toHaveCount(expectedCount);
     for (const card of await page.locator('[data-home-archive] .article-card').all()) await expect(card).toBeVisible();
@@ -303,6 +357,28 @@ for (const locale of [
     if (!data.articles.length) {
       await expect(page.locator('[data-home-latest]')).toHaveCount(0);
       await expect(page.locator('.home-lead__article .empty-state')).toBeVisible();
+    }
+  });
+}
+
+for (const locale of ['en', 'id', 'sv', 'ar']) {
+  test(`every available issue date fits the narrow featured sidebar: ${locale}`, async ({ page }) => {
+    const data = await openHome(page, locale);
+    await page.locator('[data-home-pause]').click();
+    for (const width of [320, 390]) {
+      await page.setViewportSize({ width, height: 844 });
+      const overflow = await page.evaluate(features => {
+        const target = document.querySelector('[data-home-feature]');
+        const problems = [];
+        for (const feature of features) {
+          target.innerHTML = feature.html;
+          const foot = target.querySelector('.featured-issue__foot');
+          const box = foot.getBoundingClientRect();
+          if (box.left < -1 || box.right > innerWidth + 1 || foot.scrollWidth > foot.clientWidth + 1) problems.push(feature.id);
+        }
+        return problems;
+      }, data.features);
+      expect(overflow, `${locale} at ${width}px`).toEqual([]);
     }
   });
 }

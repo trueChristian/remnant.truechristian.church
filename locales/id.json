@@ -94,7 +94,9 @@
     "copy_error": "Penyalinan otomatis tidak tersedia. Salin teks di bawah ini.",
     "special_edition": "Edisi khusus",
     "publisher": "Penerbit",
-    "download": "Unduh"
+    "download": "Unduh",
+    "pause_updates": "Jeda pembaruan",
+    "resume_updates": "Lanjutkan pembaruan"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

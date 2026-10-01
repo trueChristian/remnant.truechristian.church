@@ -94,7 +94,9 @@
     "copy_error": "Automatisch kopiëren is niet beschikbaar. Kopieer de onderstaande tekst.",
     "special_edition": "Speciale uitgave",
     "publisher": "Uitgever",
-    "download": "Downloaden"
+    "download": "Downloaden",
+    "pause_updates": "Updates pauzeren",
+    "resume_updates": "Updates hervatten"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

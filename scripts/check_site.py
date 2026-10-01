@@ -210,6 +210,7 @@ class SiteChecker:
         self.errors = []
         self.references = {}
         self.search = {}
+        self.home_data = {}
 
     def error(self, message):
         self.errors.append(message)
@@ -325,6 +326,11 @@ class SiteChecker:
         if not isinstance(value, dict) or set(value) != expected_keys or value['schema'] != 1 or value['locale'] != relative.split('/')[0]:
             self.error('Invalid homepage preview schema: ' + relative)
             return
+        self.home_data['/' + relative] = value
+        is_uuid = lambda item: isinstance(item, str) and bool(re.fullmatch(r'[a-f0-9-]{36}', item))
+        latest = value['latestIds']
+        if not isinstance(latest, list) or not all(is_uuid(item) for item in latest) or len(set(latest)) != len(latest):
+            self.error('Invalid homepage latest exclusions: ' + relative)
         digest = hashlib.sha256(source.encode()).hexdigest()[:16]
         if file.name != f'home-data.{digest}.json':
             self.error('Homepage preview digest mismatch: ' + relative)
@@ -340,9 +346,14 @@ class SiteChecker:
                 if not isinstance(row, dict) or set(row) != fields or not isinstance(row.get('html'), str):
                     self.error('Invalid homepage preview row: ' + relative)
                     continue
-                if not re.fullmatch(r'[a-f0-9-]{36}', row['id']) or row['id'] in seen:
+                if not is_uuid(row['id']) or row['id'] in seen:
                     self.error('Invalid/duplicate homepage identity: ' + relative)
-                seen.add(row['id'])
+                if isinstance(row['id'], str):
+                    seen.add(row['id'])
+                if key == 'features' and row['articleId'] is not None and not is_uuid(row['articleId']):
+                    self.error('Invalid homepage editorial identity: ' + relative)
+                if key == 'articles' and not is_uuid(row['issueId']):
+                    self.error('Invalid homepage article issue identity: ' + relative)
                 if re.search(r'<(?:script|iframe|object|embed)\b|\son[a-z]+\s*=', row['html'], re.I):
                     self.error('Active HTML in homepage preview: ' + relative)
                 preview = PageParser('/' + relative, row['html']).page
@@ -521,6 +532,23 @@ class SiteChecker:
             articles = sorted(model['articles'].get(tag, []), key=lambda a: (rank[a['issue_id']], a.get('sequence', 0)))
             article_map = {a['id']: a for a in articles}
             home = self.require_page(f'/{tag}/', 'locale home')
+            preview = self.home_data.get((home.config or {}).get('homeData')) if home else None
+            if home and not preview:
+                self.error(f'/{tag}/: missing homepage preview inventory')
+            if preview:
+                for feature in preview['features']:
+                    if feature.get('articleId') is not None:
+                        editorial = article_map.get(feature['articleId'])
+                        if not editorial or editorial['issue_id'] != feature['id'] or editorial['url'] not in PageParser('/', feature['html']).page.references:
+                            self.error(f'/{tag}/: homepage editorial/issue pairing mismatch')
+                feature_ids = {row.get('articleId') for row in preview['features'] if isinstance(row.get('articleId'), str)}
+                latest_ids = preview['latestIds'] if isinstance(preview['latestIds'], list) else []
+                for card in preview['articles']:
+                    original = article_map.get(card['id'])
+                    if not original or original['issue_id'] != card['issueId'] or original['url'] not in PageParser('/', card['html']).page.references:
+                        self.error(f'/{tag}/: homepage archive article/locale mismatch')
+                    if card['id'] in feature_ids or card['id'] in latest_ids:
+                        self.error(f'/{tag}/: homepage archive exclusion mismatch')
             category_index = self.require_page(f'/{tag}/categories/', 'category index')
             issue_index = self.require_page(f'/{tag}/issues/', 'issue index')
             self.require_page(f'/{tag}/search/', 'search')

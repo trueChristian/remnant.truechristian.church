@@ -404,3 +404,14 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
 /* Code-native arrows avoid platform emoji presentation on mobile. */
 .nav-icon { display: inline-block; width: 1em; height: 1em; flex: none; vertical-align: -.12em; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 [dir="rtl"] .nav-icon { transform: scaleX(-1); }
+
+.home-update-control { display: flex; justify-content: flex-end; }
+.home-update-control button { min-height: 44px; font-size: 12px; }
+
+/* Historical month ranges need real wrapping space in the narrow issue sidebar. */
+.featured-issue__foot { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 639px) {
+  .featured-issue { grid-template-columns: minmax(0,148px) minmax(0,1fr); }
+}
+/* Editorial portraits should keep their full image instead of cropping faces. */
+.home-lead__article .article-card__image img { object-fit: contain; }

@@ -94,7 +94,9 @@
     "copy_error": "자동 복사를 사용할 수 없습니다. 아래 텍스트를 복사해 주세요.",
     "special_edition": "특별호",
     "publisher": "발행처",
-    "download": "다운로드"
+    "download": "다운로드",
+    "pause_updates": "업데이트 일시 중지",
+    "resume_updates": "업데이트 다시 시작"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

@@ -19,7 +19,7 @@ Magazine cards, reading layouts, issue placeholders and controls are new site-ow
 - Explicit locale routes always prevail; only `/` uses saved preference, browser locale, then English
 - Theme initialization executes before styles and tolerates denied browser storage
 - Original theme mobile-menu focus, Escape, close control, inert state and scroll behavior are retained
-- Shared ten-minute homepage selections show all three archive cards together, preserve focused content until blur, and catch up after backgrounding; see [selection semantics](homepage-selection.md)
+- Shared ten-minute homepage selections show all three archive cards together, offer Pause/Resume updates, preserve focused content until blur, and catch up after backgrounding; see [selection semantics](homepage-selection.md)
 - Print removes navigation controls but retains article text, attribution and required AI notices
 - Markdown remains a direct download even if copying fails; the copy fallback is a selectable read-only textarea
 - Search results are real links, text highlights use DOM text nodes, and asynchronous request IDs prevent stale result replacement

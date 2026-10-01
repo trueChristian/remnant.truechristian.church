@@ -94,7 +94,9 @@
     "copy_error": "无法自动复制。请复制下方文本。",
     "special_edition": "特刊",
     "publisher": "出版方",
-    "download": "下载"
+    "download": "下载",
+    "pause_updates": "暂停更新",
+    "resume_updates": "恢复更新"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

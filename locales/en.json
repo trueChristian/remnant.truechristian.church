@@ -94,7 +94,9 @@
     "copy_error": "Automatic copying is unavailable. Copy the text below.",
     "special_edition": "Special edition",
     "publisher": "Publisher",
-    "download": "Download"
+    "download": "Download",
+    "pause_updates": "Pause updates",
+    "resume_updates": "Resume updates"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

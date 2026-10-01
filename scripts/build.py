@@ -290,7 +290,7 @@ class Site:
         # computed by the browser from shared UTC slots, never from build time.
         stable = lambda rows: sorted(rows, key=lambda row: hashlib.sha256((tag + row['id']).encode()).hexdigest())
         feature = stable(features)[0] if features else None
-        body = intro
+        body = intro + f'<div class="home-update-control tcc-container" data-home-controls hidden><button type="button" class="text-button" data-home-pause aria-pressed="false">{t("pause_updates")}</button></div>'
         if feature:
             body += f'<section class="home-lead tcc-container" data-home-feature data-feature-id="{esc(feature["id"])}">{feature["html"]}</section>'
         elif not articles:
@@ -306,7 +306,7 @@ class Site:
         data_url = f'/{tag}/home-data.{digest}.json'
         self.write(data_url,value)
         (self.output / data_url.lstrip('/') ).with_suffix('.json.gz').write_bytes(gzip.compress(value.encode(),mtime=0))
-        self.page(tag,f'/{tag}/',BRAND,body,paths=self.localized_paths('home'),current='home',extra_config={'homeData':data_url})
+        self.page(tag,f'/{tag}/',BRAND,body,paths=self.localized_paths('home'),current='home',extra_config={'homeData':data_url, 'homeUi':{'pause':self.ui(tag,'pause_updates'),'resume':self.ui(tag,'resume_updates')}})
 
     def category_card(self, tag, category):
         data = self.category(tag,category['id'])
@@ -513,7 +513,7 @@ def main():
     site = Site(model,locales,routes,args.theme,args.output,covers,scripture=scripture)
     site.build()
     scripture.save(args.output)
-    report = {'site_revision':git_revision(ROOT),'theme_revision':git_revision(args.theme),'source':{key:model.get(key) for key in ['source_revision','translation_revision','translation_status','translation_omissions']},'warnings':model.get('warnings',[]),'scripture':scripture.report,'article_counts':{tag:len(articles) for tag,articles in site.articles.items()},'issues':len(site.issues),'categories':len(site.categories),'search':site.search_sizes,'html_pages':len(site.html_sizes),'largest_html':sorted(site.html_sizes,key=lambda x:x[1],reverse=True)[:10],'route_additions':len(routes.get('pending',[]))}
+    report = {'site_revision':git_revision(ROOT),'theme_revision':git_revision(args.theme),'source':{key:model.get(key) for key in ['source_revision','translation_revision','translation_status','translation_omissions']},'warnings':model.get('warnings',[]),'scripture':scripture.report,'article_counts':{tag:len(articles) for tag,articles in site.articles.items()},'issues':len(site.issues),'publisher_pdfs':{'linked':len(site.issue_pdfs),'unmapped':[issue['id'] for issue in site.issues if issue['id'] not in site.issue_pdfs]},'categories':len(site.categories),'search':site.search_sizes,'html_pages':len(site.html_sizes),'largest_html':sorted(site.html_sizes,key=lambda x:x[1],reverse=True)[:10],'route_additions':len(routes.get('pending',[]))}
     (ROOT/'.build').mkdir(exist_ok=True)
     (ROOT/'.build/site-build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({key:report[key] for key in ['article_counts','issues','categories','html_pages','warnings']},ensure_ascii=False,indent=2))
