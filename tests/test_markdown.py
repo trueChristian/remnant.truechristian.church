@@ -27,6 +27,15 @@ class MarkdownTests(unittest.TestCase):
         self.assertIn('   - Nested', result)
         self.assertIn('4. Two', result)
 
+    def test_reversed_lists_keep_exact_countdown_semantics(self):
+        # Plain Markdown renderers renumber lists upwards even with descending
+        # source markers, so preserve the original semantic HTML verbatim.
+        for opening in ['<ol reversed>', '<ol reversed="" start="5">', '<ol reversed="reversed" start="3">']:
+            fragment = opening + '<li>First</li><li>Second</li></ol>'
+            result = html_to_markdown('<article><p>Before</p>' + fragment + '<p>After</p></article>')
+            self.assertIn(fragment, result)
+            self.assertNotIn('1. First', result)
+
     def test_images_captions_and_absolute_url(self):
         result = html_to_markdown('<article><figure><img src="/images/p.jpg" alt="Exact image"><figcaption>An exact caption.</figcaption></figure></article>', 'https://example.test/en/faith/title/')
         self.assertIn('![Exact image](<https://example.test/images/p.jpg>)', result)
