@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "verifiedAt": "2026-10-01T09:53:41Z",
+  "verifiedAt": "2026-10-01T10:21:27Z",
   "sourceRepository": "https://github.com/trueChristian/berean-voice",
-  "sourceCommit": "997cdfb6c46758c1f8beee24153722747c0cd5a7",
+  "sourceCommit": "eaf9a7704b7aa3a2fe4f8f997c53a8f4177b2b02",
   "publisherUrl": "https://bereanvoice.com/ministries/",
   "coverage": {
-    "convertedIssues": 65,
-    "convertedArticles": 749,
-    "matchedPublisherLinks": 65,
-    "successfulPdfDownloads": 65,
-    "sourceSha256Matches": 65,
+    "convertedIssues": 66,
+    "convertedArticles": 762,
+    "matchedPublisherLinks": 66,
+    "successfulPdfDownloads": 66,
+    "sourceSha256Matches": 66,
     "filenameSuffixDifferences": 7,
     "unresolved": 0
   },
-  "method": "Each PDF URL was read directly from the live official publisher archive DOM, then downloaded through that exact archive link. All 65 downloaded files have PDF headers and SHA-256 digests equal to their corresponding catalogue source digest. No PDF filenames or URL upload-date directories were guessed. Issue title/date are the converted source catalogue's reviewed metadata; exact publisher link labels are preserved.",
+  "method": "Each PDF URL was read directly from the live official publisher archive DOM, then downloaded through that exact archive link. All 66 downloaded files have PDF headers and SHA-256 digests equal to their corresponding catalogue source digest. No PDF filenames or URL upload-date directories were guessed. Issue title/date are the converted source catalogue's reviewed metadata; exact publisher link labels are preserved.",
   "issues": [
     {
       "issueId": "2dce7480-4f69-5b6c-85bd-1c4741ac6a49",
@@ -2209,6 +2209,41 @@
           "https://bereanvoice.com/ministries/",
           "https://github.com/trueChristian/berean-voice/blob/997cdfb6c46758c1f8beee24153722747c0cd5a7/catalogue.json",
           "https://github.com/trueChristian/berean-voice/blob/997cdfb6c46758c1f8beee24153722747c0cd5a7/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "334634f2-e3de-4f67-a9b9-57217f161635",
+      "sourceId": "heartbeat-remnant-2005-07",
+      "slug": "heartbeat-remnant-2005-07",
+      "title": "The Heartbeat of The Remnant — July / August 2005",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "July / August 2005",
+        "year": 2005,
+        "months": [
+          7,
+          8
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2005-07-08-remnant.pdf",
+      "sourceSha256": "c365d3d247fa1545ffce351b4eb9ef505c4e80327a78fe22bd95beb94975ca62",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2005-07-08-remnant.pdf",
+      "publisherLinkLabel": "2005-07-08-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/eaf9a7704b7aa3a2fe4f8f997c53a8f4177b2b02/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/eaf9a7704b7aa3a2fe4f8f997c53a8f4177b2b02/index.json"
         ]
       }
     }

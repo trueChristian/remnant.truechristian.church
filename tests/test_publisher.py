@@ -21,10 +21,10 @@ class PublisherPdfTests(unittest.TestCase):
 
     def test_all_reviewed_issues_have_verified_unique_external_pdf_links(self):
         links = issue_pdf_links(self.issues)
-        self.assertEqual(len(links), 65)
-        self.assertEqual(len(set(links.values())), 65)
+        self.assertEqual(len(links), 66)
+        self.assertEqual(len(set(links.values())), 66)
         self.assertEqual(self.data['coverage']['unresolved'], 0)
-        self.assertEqual(self.data['coverage']['sourceSha256Matches'], 65)
+        self.assertEqual(self.data['coverage']['sourceSha256Matches'], 66)
         self.assertTrue(all(url.startswith('https://bereanvoice.com/wp-content/uploads/') for url in links.values()))
 
     def test_download_suffixes_are_not_guessed_from_local_names(self):
