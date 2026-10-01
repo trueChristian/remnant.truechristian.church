@@ -8,7 +8,7 @@ const defaultBody = `Before <span class="scripture-reference" data-reference="43
 <p><em><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="split" data-translation="kjv">John</span></em><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="split" data-translation="kjv"> 3:16</span> across emphasis.</p>`;
 const response = (reference = '43 3:16', abbreviation='kjv', text='For God so loved the world.', overrides={}) => {
   const [book, tail] = reference.split(' '), [chapter, verse] = tail.split(':');
-  const bookName = book === '43' ? 'John' : 'Romans';
+  const bookName = {'21':'Ecclesiastes','43':'John','45':'Romans'}[book];
   return { chapter: { abbreviation, translation: 'King James Version', lang:'en', language:'English',
     direction:'LTR', encoding:'UTF-8', book_nr:Number(book), book_name:bookName, chapter:Number(chapter),
     name:`${bookName} ${chapter}`, ref:reference, verses:[{chapter:Number(chapter),verse:Number(verse),text}], ...overrides } };
@@ -82,6 +82,34 @@ test('keyboard opens and dismisses, restores focus, and permits forward/back nav
   await page.keyboard.press('ArrowDown'); await expect(popup).toBeVisible();
   await expect(popup.getByRole('link')).toBeVisible(); await page.keyboard.press('Tab'); await page.keyboard.press('Tab');
   await expect(page.locator('[data-scripture-id="romans"]')).toBeFocused();
+});
+
+test('a single passage has one accessible reference title while split passages retain section labels', async ({page}) => {
+  const ecclesiastes='And further, by these, my son, be admonished: of making many books there is no end; and much study is a weariness of the flesh.';
+  await mockApi(page,async(route,ref,version)=>route.fulfill({json:response(ref,version,
+    ref==='21 12:12'?ecclesiastes:'For God so loved the world.')}));
+  await fixture(page,{body:`
+    <p><span class="scripture-reference" data-reference="21 12:12" data-scripture-id="single" data-translation="kjv">Ecclesiastes 12:12</span></p>
+    <p><span class="scripture-reference" data-reference="43 3:16" data-scripture-id="abbreviated" data-translation="kjv">Jn 3:16</span></p>
+    <p><span class="scripture-reference" data-reference="43 3:16;43 4:1" data-scripture-id="multiple" data-translation="kjv">John 3:16; 4:1</span></p>`});
+  const popup=page.getByRole('dialog');
+  for (const [id,label] of [['single','Ecclesiastes 12:12'],['abbreviated','Jn 3:16']]) {
+    await page.locator(`[data-scripture-id="${id}"]`).click();
+    await expect(popup).toContainText(id==='single'?ecclesiastes:'For God so loved the world.');
+    await expect(popup).toHaveAccessibleName(label);
+    await expect(popup.getByRole('heading')).toHaveCount(1);
+    await expect(popup.getByRole('heading',{level:2})).toHaveText(label);
+    await expect(popup.locator('.scripture-popover__reference')).toHaveCount(0);
+    await expect(popup.getByRole('link',{name:'Read in the Bible'})).toBeVisible();
+    if (id==='single') await capture(page,'scripture-single-reference-label');
+    await page.keyboard.press('Escape');
+    await expect(page.locator(`[data-scripture-id="${id}"]`)).toBeFocused();
+  }
+  await page.locator('[data-scripture-id="multiple"]').click();
+  await expect(popup.locator('.scripture-popover__verse')).toHaveCount(2);
+  await expect(popup).toHaveAccessibleName('John 3:16; 4:1');
+  await expect(popup.getByRole('heading',{level:3})).toHaveText(['John 3:16','John 4:1']);
+  await expect(popup.getByRole('link')).toHaveCount(2);
 });
 
 test('split emphasis shares one interaction and cache without changing source elements', async ({page}) => {

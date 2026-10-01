@@ -181,7 +181,9 @@ export function initScripturePopovers(document, options = {}) {
         const block = element(document, 'section', 'scripture-popover__passage');
         block.dir = reference.textDirection === 'RTL' ? 'rtl' : 'ltr';
         if (/^[a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,8})*$/.test(reference.languageCode)) block.lang = reference.languageCode;
-        block.append(element(document, 'h3', 'scripture-popover__reference', reference.reference));
+        // Like Loader's show-local-reference option, the dialog title already
+        // labels a single passage. Only split selections need section labels.
+        if (refs.length > 1) block.append(element(document, 'h3', 'scripture-popover__reference', reference.reference));
         block.append(element(document, 'p', 'scripture-popover__translation', reference.translation));
         for (const verse of reference.verses) {
           const paragraph = element(document, 'p', 'scripture-popover__verse');
