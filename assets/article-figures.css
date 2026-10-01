@@ -2,12 +2,18 @@
 .prose .article-figures,
 .prose .article-figure-section { display: flow-root; }
 
-/* Never put text between opposing photographs or carry a float into a new section. */
+/* Later sections always clear; the figure's own opening heading is enhanced below. */
 .prose .article-figures figure,
 .prose .article-figures :is(h1,h2,h3,h4,h5,h6,hr,table,aside,blockquote) { clear: both; }
 .prose .article-figures :is(ul,ol) { display: flow-root; }
 
 @media screen and (min-width: 48rem) {
+  .prose .article-figures .article-figure-heading {
+    clear: none;
+    display: flow-root;
+    overflow-wrap: anywhere;
+  }
+  .prose .article-figure--wrap + .article-figure-heading { margin-block-start: 0; }
   .prose .article-figures figure.article-figure--wrap {
     width: var(--article-figure-width);
     max-width: 38%;
