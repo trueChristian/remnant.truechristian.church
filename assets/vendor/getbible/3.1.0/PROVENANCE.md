@@ -21,5 +21,8 @@ with `textContent`/text nodes; upstream HTML formats are deliberately not used.
 
 The interactive presentation is a non-modal accessible popover with hover,
 focus, keyboard and touch support. Its reader destination is fixed to
-getbible.life, with a homepage link available if the API fails. No CDN script or live version
+`https://trueChristian.church/scriptures/`, read from the generated `data-bible-url`
+attribute, with a reader homepage link available if the API fails. The authored
+reference is the single-passage title; split passages retain section labels.
+No CDN script or live version
 lookup is required. No modification was made to the upstream repository.

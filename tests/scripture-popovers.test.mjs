@@ -38,17 +38,22 @@ test('real upstream Scripture and Reference classes preserve API text as data', 
   scripture.forEachReference(ref => {
     assert.equal(ref.reference, 'John 3:16'); assert.equal(ref.verseReference, '16');
     assert.equal(ref.verses[0].text, '<img src=x onerror=alert(1)>');
-    assert.equal(bibleReaderUrl(ref), 'https://getbible.life/kjv/John/3/16');
-    assert.equal(bibleReaderUrl(ref, 'javascript:alert(1)'), 'https://getbible.life/kjv/John/3/16');
-    assert.equal(bibleReaderUrl(ref, 'https://unapproved-reader.example/'), 'https://getbible.life/kjv/John/3/16');
+    assert.equal(bibleReaderUrl(ref), 'https://trueChristian.church/scriptures/kjv/John/3/16');
+    assert.equal(bibleReaderUrl(ref, 'https://trueChristian.church/scriptures/'), 'https://trueChristian.church/scriptures/kjv/John/3/16');
+    assert.equal(bibleReaderUrl(ref, 'javascript:alert(1)'), 'https://trueChristian.church/scriptures/kjv/John/3/16');
+    assert.equal(bibleReaderUrl(ref, 'https://unapproved-reader.example/'), 'https://trueChristian.church/scriptures/kjv/John/3/16');
   });
 });
 test('reader path metadata is encoded and never changes the reader origin', () => {
   const value = good(); value.kjv_43_3.book_name = '//attacker.test/<script>';
   validateScripture(value,'43 3:16','kjv').forEachReference(ref => {
     const url = bibleReaderUrl(ref);
-    assert.equal(new URL(url).origin, 'https://getbible.life'); assert.ok(url.includes('%2F%2Fattacker.test%2F%3Cscript%3E'));
+    assert.equal(new URL(url).origin, 'https://truechristian.church'); assert.ok(url.includes('%2F%2Fattacker.test%2F%3Cscript%3E'));
   });
+});
+test('custom reader keeps the Loader translation/book/chapter/verse route including ranges and Unicode', () => {
+  assert.equal(bibleReaderUrl({abbreviation:'aov',bookName:'1 Korintiërs',chapter:13,verseReference:'4-7,13'}),
+    'https://trueChristian.church/scriptures/aov/1%20Korinti%C3%ABrs/13/4-7%2C13');
 });
 test('response coordinates, translation and completeness are checked', () => {
   for (const mutate of [
