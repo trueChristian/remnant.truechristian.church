@@ -92,7 +92,9 @@
     "footer_navigation": "روابط الكنيسة",
     "social_links": "روابط التواصل الاجتماعي",
     "copy_error": "النسخ التلقائي غير متاح. انسخ النص أدناه.",
-    "special_edition": "عدد خاص"
+    "special_edition": "عدد خاص",
+    "publisher": "الناشر",
+    "download": "تنزيل"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

@@ -143,7 +143,7 @@ class GeneratedSiteTests(unittest.TestCase):
         self.assertEqual(issue.contents, [article['url'] for article in reversed(self.model['articles']['en'])])
         self.assertEqual(checker.pages[self.routes['issues']['en'][J]].contents, [])
 
-    def test_winter_2024_leads_home_archive_search_and_feed(self):
+    def test_winter_2024_leads_latest_archive_search_and_feed(self):
         # Permanent identities from the current publisher catalogue, intentionally
         # added after the older Summer/2023 fixture records to catch array ordering.
         winter = {'id': '81196f7a-e1f3-5653-ba8e-1ca6a2824470',
@@ -154,6 +154,9 @@ class GeneratedSiteTests(unittest.TestCase):
                   'slug': 'heartbeat-remnant-2024-autumn',
                   'publication': 'The Heartbeat of the Remnant',
                   'date': {'year': 2024, 'season': 'Autumn', 'precision': 'season'}}
+        reviewed = {r['issueId']: r for r in json.loads((ROOT / 'data/issue-pdfs.json').read_text())['issues']}
+        for issue in (winter, autumn):
+            issue['source'] = {'sha256': reviewed[issue['id']]['sourceSha256']}
         self.model['issues'].extend([winter, autumn])
         for article, issue in zip(self.model['articles']['en'][1:], [autumn, winter]):
             article.update(issue_id=issue['id'], issue=copy.deepcopy(issue))
@@ -163,9 +166,10 @@ class GeneratedSiteTests(unittest.TestCase):
         expected = [winter['id'], autumn['id'], I, J]
         for tag in self.locales:
             home = self.page_path(f'/{tag}/').read_text()
-            card = home.split('<aside class="latest-issue">', 1)[1].split('</aside>', 1)[0]
-            self.assertIn(f'href="{self.routes["issues"][tag][winter["id"]]}"', card)
-            self.assertNotIn(self.routes['issues'][tag][autumn['id']], card)
+            if tag == 'en':
+                latest = home.split('data-home-latest', 1)[1].split('</section>', 1)[0]
+                self.assertLess(latest.index('Winter 2024'), latest.index('Autumn 2024'))
+            self.assertNotIn('latest-issue', home)
             archive = PageParser(f'/{tag}/issues/', self.page_path(f'/{tag}/issues/').read_text()).page
             self.assertEqual(archive.issue_links,
                              [self.routes['issues'][tag][issue_id] for issue_id in expected])

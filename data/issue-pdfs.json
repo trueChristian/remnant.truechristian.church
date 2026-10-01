@@ -1,0 +1,2147 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-01T09:07:25Z",
+  "sourceRepository": "https://github.com/trueChristian/berean-voice",
+  "sourceCommit": "56cc7ac30a3298d016a7abfd63012d4bb775f2c6",
+  "publisherUrl": "https://bereanvoice.com/ministries/",
+  "coverage": {
+    "convertedIssues": 63,
+    "convertedArticles": 722,
+    "matchedPublisherLinks": 63,
+    "successfulPdfDownloads": 63,
+    "sourceSha256Matches": 63,
+    "filenameSuffixDifferences": 7,
+    "unresolved": 0
+  },
+  "method": "Each PDF URL was read directly from the live official publisher archive DOM, then downloaded through that exact archive link. All 63 downloaded files have PDF headers and SHA-256 digests equal to their corresponding catalogue source digest. No PDF filenames or URL upload-date directories were guessed. Issue title/date are the converted source catalogue's reviewed metadata; exact publisher link labels are preserved.",
+  "issues": [
+    {
+      "issueId": "2dce7480-4f69-5b6c-85bd-1c4741ac6a49",
+      "sourceId": "heartbeat-remnant-2024-summer",
+      "slug": "heartbeat-remnant-2024-summer",
+      "title": "The Heartbeat of the Remnant — Summer 2024",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2024",
+        "year": 2024,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 10,
+      "sourceFilename": "Summer-2024-Remnant_web.pdf",
+      "sourceSha256": "172b6289de34be408f25b2e061e98cf1890ba5a7a0717e30f382042800636fa9",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2025/03/Summer-2024-Remnant_web.pdf",
+      "publisherLinkLabel": "Summer 2024 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "b907e28f-f764-5c23-95cd-7103ee3a0784",
+      "sourceId": "heartbeat-remnant-2024-spring",
+      "slug": "heartbeat-remnant-2024-spring",
+      "title": "The Heartbeat of the Remnant — Spring 2024",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Spring 2024",
+        "year": 2024,
+        "season": "Spring",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Spring-2024-Remnant_for-the-web.pdf",
+      "sourceSha256": "fed1e502ad7e3f12d5addff5e90929a04fd8cc8d21a068f58b1e8850511e6262",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2024/06/Spring-2024-Remnant_for-the-web.pdf",
+      "publisherLinkLabel": "Spring-2024-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "81196f7a-e1f3-5653-ba8e-1ca6a2824470",
+      "sourceId": "heartbeat-remnant-2024-winter",
+      "slug": "heartbeat-remnant-2024-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2024",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2024",
+        "year": 2024,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Winter-2024-Remnant_web_250324_133620.pdf",
+      "sourceSha256": "7ba3c81d1f1e4ebf464cbef0cace5865e76cbc0221e228e105063baf5ab42c06",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2025/03/Winter-2024-Remnant_web_250324_133620.pdf",
+      "publisherLinkLabel": "Winter 2024 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "82d196b3-f114-552a-93ea-c19fe8493a1c",
+      "sourceId": "heartbeat-remnant-2023-summer",
+      "slug": "heartbeat-remnant-2023-summer",
+      "title": "The Heartbeat of the Remnant — Summer 2023",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2023",
+        "year": 2023,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 13,
+      "sourceFilename": "Summer-2023-Remnant-web.pdf",
+      "sourceSha256": "1efd92045267734f7081200ad0852f1f632d9a7a66d1ec8af4dec1e8341151ba",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2023/10/Summer-2023-Remnant-web.pdf",
+      "publisherLinkLabel": "Summer 2023 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "1a7070c9-fd4f-546b-a220-f267ddb8cf5f",
+      "sourceId": "heartbeat-remnant-2023-spring",
+      "slug": "heartbeat-remnant-2023-spring",
+      "title": "The Heartbeat of the Remnant — Spring 2023",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Spring 2023",
+        "year": 2023,
+        "season": "Spring",
+        "precision": "season"
+      },
+      "articleCount": 10,
+      "sourceFilename": "Spring-2023-Remnant-web.pdf",
+      "sourceSha256": "87911e60ee0c43da15c308ac2097faeb9695cba6b82efc90b85b0786e7476490",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2023/04/Spring-2023-Remnant-web.pdf",
+      "publisherLinkLabel": "Spring-2023-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "88b65b14-fda8-5b6b-bfa2-9830cabf064d",
+      "sourceId": "heartbeat-remnant-2023-winter",
+      "slug": "heartbeat-remnant-2023-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2023",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2023",
+        "year": 2023,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Winter-2023-Remnant_for-web(2).pdf",
+      "sourceSha256": "16a8ac3d7bf3eac040c928a2de1483a61aa383b874618a23171e922f80897c3d",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2024/02/Winter-2023-Remnant_for-web.pdf",
+      "publisherLinkLabel": "Winter-2023-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "4e40b8a1-8100-5940-8668-c73d5e3ad0fe",
+      "sourceId": "heartbeat-remnant-2022-winter",
+      "slug": "heartbeat-remnant-2022-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2022",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2022",
+        "year": 2022,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 10,
+      "sourceFilename": "Winter-2022-Remnant-web.pdf",
+      "sourceSha256": "97f43cb9a16c3cae0f24c45225a1a910a72f46cce9da0039c2e75defff49fa30",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2023/04/Winter-2022-Remnant-web.pdf",
+      "publisherLinkLabel": "Winter-2022-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "377baa09-4d0f-5fa0-a5b2-d1e98807db01",
+      "sourceId": "heartbeat-remnant-2022-fall",
+      "slug": "heartbeat-remnant-2022-fall",
+      "title": "The Heartbeat of the Remnant — Fall 2022",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Fall 2022",
+        "year": 2022,
+        "season": "Fall",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Fall-2022-Remnant.pdf",
+      "sourceSha256": "18ac7a3905b08618432ceabf15551d3cc066acd0f7b0aeab0491e538e195d29d",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2022/10/Fall-2022-Remnant.pdf",
+      "publisherLinkLabel": "Fall-2022-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "0fc3e612-5622-5b7c-987c-9dca3404fcb5",
+      "sourceId": "heartbeat-remnant-2022-summer",
+      "slug": "heartbeat-remnant-2022-summer",
+      "title": "The Heartbeat of The Remnant — Summer 2022",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2022",
+        "year": 2022,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 9,
+      "sourceFilename": "Summer-2022-Remnant.pdf",
+      "sourceSha256": "c25487cd1a6d4745fa8e693e6a10e2a82c350d2a93f5252a8d99612ba7dc4963",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2022/10/Summer-2022-Remnant.pdf",
+      "publisherLinkLabel": "Summer-2022-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "04047b99-190c-5c0c-a347-0d069cfee669",
+      "sourceId": "heartbeat-remnant-2022-spring",
+      "slug": "heartbeat-remnant-2022-spring",
+      "title": "The Heartbeat of the Remnant — Spring 2022",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Spring 2022",
+        "year": 2022,
+        "season": "Spring",
+        "precision": "season"
+      },
+      "articleCount": 9,
+      "sourceFilename": "WEB-Spring-2022-Remnant.pdf",
+      "sourceSha256": "48b1eb18afed0c20444ccd4a3a9415e1ec23b3209029cd913f061a7d7503666e",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2022/10/WEB-Spring-2022-Remnant.pdf",
+      "publisherLinkLabel": "Spring 2022 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "4e575f26-fabd-5104-ba0d-d54ca032653b",
+      "sourceId": "heartbeat-remnant-2021-summer",
+      "slug": "heartbeat-remnant-2021-summer",
+      "title": "The Heartbeat of The Remnant — Summer 2021",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2021",
+        "year": 2021,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Summer-2021-Remnant.pdf",
+      "sourceSha256": "97e0c68a6e0d537d0ff06a98b93e2ef062547b19f3bad15364e4fc03bd1c9795",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/09/Summer-2021-Remnant.pdf",
+      "publisherLinkLabel": "Summer-2021-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "1933c1f0-be1f-561a-b470-79a5ced64c04",
+      "sourceId": "heartbeat-remnant-2021-spring",
+      "slug": "heartbeat-remnant-2021-spring",
+      "title": "The Heartbeat of The Remnant — Spring 2021",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Spring 2021",
+        "year": 2021,
+        "season": "Spring",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Spring-2021-Remnant.pdf",
+      "sourceSha256": "bb48eaa45f391cf189172171dd037d29320e83352cde497a9955b02aa62f6d58",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/06/Spring-2021-Remnant.pdf",
+      "publisherLinkLabel": "Spring 2021 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "97401181-3324-50eb-b430-0a1ac413541e",
+      "sourceId": "heartbeat-remnant-2021-winter",
+      "slug": "heartbeat-remnant-2021-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2021",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2021",
+        "year": 2021,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Winter-2021-Remnant(3).pdf",
+      "sourceSha256": "742242adf69238a5457f4a6b8322c8caa2699ce5f234e21b91f06a874d48685a",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2022/02/Winter-2021-Remnant.pdf",
+      "publisherLinkLabel": "Winter-2021-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "6e9cf4e6-6ef1-561b-bb76-7115af85e763",
+      "sourceId": "heartbeat-remnant-2020-summer",
+      "slug": "heartbeat-remnant-2020-summer",
+      "title": "The Heartbeat of The Remnant — Summer 2020",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2020",
+        "year": 2020,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 10,
+      "sourceFilename": "Summer-2020-Remnant.pdf",
+      "sourceSha256": "2176c5b7b797fbd464ba44f046a19a675a8c3858d878ba591bf7ab2b16e9816f",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/Summer-2020-Remnant.pdf",
+      "publisherLinkLabel": "Summer 2020 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "ce5b62a6-87cb-57ad-8488-aacc67d06b00",
+      "sourceId": "heartbeat-remnant-2020-spring",
+      "slug": "heartbeat-remnant-2020-spring",
+      "title": "The Heartbeat of The Remnant — Spring 2020",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Spring 2020",
+        "year": 2020,
+        "season": "Spring",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Spring-2020-Remnant.pdf",
+      "sourceSha256": "08bb6b50051cf0920b0e8684d048590d9a28eac87e27132be2912760d98a2b1d",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/Spring-2020-Remnant.pdf",
+      "publisherLinkLabel": "Spring 2020 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "da792693-72ef-5710-88dc-6b10ec428ba6",
+      "sourceId": "heartbeat-remnant-2020-winter",
+      "slug": "heartbeat-remnant-2020-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2020",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2020",
+        "year": 2020,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 13,
+      "sourceFilename": "Winter-2020-Remnant-1.pdf",
+      "sourceSha256": "9c2f76537f6f9229dd69b387ac1fe7d33ee196ece885930d096427f57fff65fd",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/Winter-2020-Remnant-1.pdf",
+      "publisherLinkLabel": "Winter 2020 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "749fd67f-e1cb-556f-b9a4-ab27a8dd2b36",
+      "sourceId": "heartbeat-remnant-2019-summer",
+      "slug": "heartbeat-remnant-2019-summer",
+      "title": "The Heartbeat of The Remnant — Summer 2019",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2019",
+        "year": 2019,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Summer-2019-Remnant.pdf",
+      "sourceSha256": "40f30ae0b14061a90f12f32ae582737a17af1bb2843dc253f906b073cd89a3d1",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2019/12/Summer-2019-Remnant.pdf",
+      "publisherLinkLabel": "Summer 2019 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "7024063a-5783-5744-8055-7b12fee04019",
+      "sourceId": "heartbeat-remnant-2019-spring",
+      "slug": "heartbeat-remnant-2019-spring",
+      "title": "The Heartbeat of The Remnant — Spring 2019",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Spring 2019",
+        "year": 2019,
+        "season": "Spring",
+        "precision": "season"
+      },
+      "articleCount": 10,
+      "sourceFilename": "Spring-2019-Remnant.pdf",
+      "sourceSha256": "d50aa404cfbaf82495c420f572f0d09610fc9f27a0fd953b2e5bb66a22ade223",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2019/12/Spring-2019-Remnant.pdf",
+      "publisherLinkLabel": "Spring 2019 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "ac238571-c56c-5d66-983d-7f37969bbf1a",
+      "sourceId": "heartbeat-remnant-2019-winter",
+      "slug": "heartbeat-remnant-2019-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2019",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2019",
+        "year": 2019,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Winter-2019-Remnant.pdf",
+      "sourceSha256": "f9ed6e174b1572fbb18f8941595a818ea40bbfc223a98d35c09a950c4fb142c1",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2020/03/Winter-2019-Remnant.pdf",
+      "publisherLinkLabel": "Winter 2019 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "2fedbc37-858d-5f5f-b18f-b865ac648429",
+      "sourceId": "heartbeat-remnant-2018-winter",
+      "slug": "heartbeat-remnant-2018-winter",
+      "title": "The Heartbeat of the Remnant — Winter 2018",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Winter 2018",
+        "year": 2018,
+        "season": "Winter",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Winter-2018-Remnant.pdf",
+      "sourceSha256": "d6dd177ee1efff650f57a9e9cca241b1a4455788839115ea8a3193d3516a5835",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2019/12/Winter-2018-Remnant.pdf",
+      "publisherLinkLabel": "Winter 2018 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "934674be-3d92-5ead-975d-588238f753ab",
+      "sourceId": "heartbeat-remnant-2018-summer",
+      "slug": "heartbeat-remnant-2018-summer",
+      "title": "The Heartbeat of the Remnant — Summer 2018",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Summer 2018",
+        "year": 2018,
+        "season": "Summer",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Summer-2018-Remnant(1).pdf",
+      "sourceSha256": "3336d1ca9d1ceb6a8966cfc7ea5e7204064fbd7435cd6f1da32184d86c0fdbe6",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2019/12/Summer-2018-Remnant.pdf",
+      "publisherLinkLabel": "Summer 2018 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "f1d8ec0b-e63c-5164-8d41-9d57b6c96f07",
+      "sourceId": "heartbeat-remnant-2021-fall",
+      "slug": "heartbeat-remnant-2021-fall",
+      "title": "The Heartbeat of the Remnant — Fall 2021",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Fall 2021",
+        "year": 2021,
+        "season": "Fall",
+        "precision": "season"
+      },
+      "articleCount": 12,
+      "sourceFilename": "Fall-2021-Remnant(1).pdf",
+      "sourceSha256": "18d881748f2d1b0156ffcbdbda3c8ae51f998d5169454d8cc099f1536d5186fc",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2022/01/Fall-2021-Remnant.pdf",
+      "publisherLinkLabel": "Fall-2021-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "1d33b847-4514-5cad-bb2b-b62194674900",
+      "sourceId": "heartbeat-remnant-2020-fall",
+      "slug": "heartbeat-remnant-2020-fall",
+      "title": "The Heartbeat of The Remnant — Fall 2020",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Fall 2020",
+        "year": 2020,
+        "season": "Fall",
+        "precision": "season"
+      },
+      "articleCount": 11,
+      "sourceFilename": "Fall-2020-Remnant.pdf",
+      "sourceSha256": "9bf8fc8482cdc2a065df20d4e68d8fe2a3445ce6fbd1480028de45fbeb694b6b",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/Fall-2020-Remnant.pdf",
+      "publisherLinkLabel": "Fall 2020 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "bb87ee48-40aa-574c-b7a8-9898b928b451",
+      "sourceId": "heartbeat-remnant-2019-fall",
+      "slug": "heartbeat-remnant-2019-fall",
+      "title": "The Heartbeat of The Remnant — Fall 2019",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Fall 2019",
+        "year": 2019,
+        "season": "Fall",
+        "precision": "season"
+      },
+      "articleCount": 14,
+      "sourceFilename": "Fall-2019-Remnant.pdf",
+      "sourceSha256": "a88970bd88ac86171e550ef9166e31bdf2008da4ddcf692498e86691df4c2455",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2019/12/Fall-2019-Remnant.pdf",
+      "publisherLinkLabel": "Fall 2019 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "788c32b7-cf6d-5b87-a325-a8acfd2f6fc5",
+      "sourceId": "heartbeat-remnant-2018-fall",
+      "slug": "heartbeat-remnant-2018-fall",
+      "title": "The Heartbeat of The Remnant — Fall 2018",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Fall 2018",
+        "year": 2018,
+        "season": "Fall",
+        "precision": "season"
+      },
+      "articleCount": 8,
+      "sourceFilename": "Fall-2018-Remnant.pdf",
+      "sourceSha256": "f661b0321e0207b2b3ce6079c27da2084f9da31e293bdeb28433923629e66e7d",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2019/12/Fall-2018-Remnant.pdf",
+      "publisherLinkLabel": "Fall 2018 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "6e434782-fad8-50a6-84db-a97babd8c346",
+      "sourceId": "heartbeat-remnant-2024-autumn",
+      "slug": "heartbeat-remnant-2024-autumn",
+      "title": "The Heartbeat of the Remnant — Autumn 2024",
+      "publication": "The Heartbeat of the Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Autumn 2024",
+        "year": 2024,
+        "season": "Autumn",
+        "precision": "season"
+      },
+      "articleCount": 14,
+      "sourceFilename": "Autumn-2024-Remnant_web.pdf",
+      "sourceSha256": "9643798ee5296461bd83d238cae6dddda63e1b94d921318452cb3ade434023d6",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2025/03/Autumn-2024-Remnant_web.pdf",
+      "publisherLinkLabel": "Autumn 2024 Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "5b37aca8-4c81-5079-80f9-33af1c139beb",
+      "sourceId": "heartbeat-remnant-2023-autumn",
+      "slug": "heartbeat-remnant-2023-autumn",
+      "title": "The Heartbeat of The Remnant — Autumn 2023",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "The Berean Voice",
+      "date": {
+        "label": "Autumn 2023",
+        "year": 2023,
+        "season": "Autumn",
+        "precision": "season"
+      },
+      "articleCount": 10,
+      "sourceFilename": "Autumn-2023-Remnant_for-the-web.pdf",
+      "sourceSha256": "ea6b66dcf47d7b473871d121962165ab881e361e55c8337d2989546f48291ac9",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2024/02/Autumn-2023-Remnant_for-the-web.pdf",
+      "publisherLinkLabel": "Autumn-2023-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "4ece4257-ac97-59c4-9a46-5ee9d7fb95d1",
+      "sourceId": "heartbeat-remnant-2013-07",
+      "slug": "heartbeat-remnant-2013-07",
+      "title": "The Heartbeat of The Remnant — July/August 2013",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "July/August 2013",
+        "year": 2013,
+        "months": [
+          7,
+          8
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 11,
+      "sourceFilename": "2013-07-Remnant.pdf",
+      "sourceSha256": "4c2967f369895d637908657ef6a15a8fc1e185198873f061982047092638544c",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2013-07-Remnant.pdf",
+      "publisherLinkLabel": "2013-07-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "41c5b6cc-f63c-5044-a15f-dd5847aa3f25",
+      "sourceId": "heartbeat-remnant-2013-05",
+      "slug": "heartbeat-remnant-2013-05",
+      "title": "The Heartbeat of The Remnant — May/June 2013",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "May/June 2013",
+        "year": 2013,
+        "months": [
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 9,
+      "sourceFilename": "2013-05-Remnant.pdf",
+      "sourceSha256": "e8ee2ab2434a8a7f234e2c9bac61fef7af1cd812b3f2b180aa737e2c72ca61aa",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2013-05-Remnant.pdf",
+      "publisherLinkLabel": "2013-05-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "05538f8e-6560-5f96-b313-890e87c05daf",
+      "sourceId": "heartbeat-remnant-2013-03",
+      "slug": "heartbeat-remnant-2013-03",
+      "title": "The Heartbeat of The Remnant — March/April 2013",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "March/April 2013",
+        "year": 2013,
+        "months": [
+          3,
+          4
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 10,
+      "sourceFilename": "2013-03-Remnant(1).pdf",
+      "sourceSha256": "e47fdef73473cc1e53c7e02bb8469a90c570ae2bd962b2f8429fe36e4bca8283",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2013-03-Remnant.pdf",
+      "publisherLinkLabel": "2013-03-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "c2a74b77-fa78-5891-9aa5-a22f70c4515d",
+      "sourceId": "heartbeat-remnant-2013-01",
+      "slug": "heartbeat-remnant-2013-01",
+      "title": "The Heartbeat of The Remnant — January/February 2013",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "January/February 2013",
+        "year": 2013,
+        "months": [
+          1,
+          2
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 9,
+      "sourceFilename": "2013-01-Remnant.pdf",
+      "sourceSha256": "d2dc5893aa7b5de5c11051ab1d9d2d8b7e368d594ca03e9018c3d7b43d62f2cd",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2013-01-Remnant.pdf",
+      "publisherLinkLabel": "2013-01-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "e4a7fc78-9aac-5bb1-9566-12c2a6c03eff",
+      "sourceId": "heartbeat-remnant-2012-11",
+      "slug": "heartbeat-remnant-2012-11",
+      "title": "The Heartbeat of The Remnant — November/December 2012",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "November/December 2012",
+        "year": 2012,
+        "months": [
+          11,
+          12
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 10,
+      "sourceFilename": "2012-11-Remnant.pdf",
+      "sourceSha256": "532fcf90587bea768203a639f2bf8fc0f9af06de8fa2d10bb4942a3187dd15d4",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2012-11-Remnant.pdf",
+      "publisherLinkLabel": "2012-11-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "f40a2f4d-ea49-5427-b4ba-01b7c15c11ad",
+      "sourceId": "heartbeat-remnant-2012-09",
+      "slug": "heartbeat-remnant-2012-09",
+      "title": "The Heartbeat of The Remnant — September/October 2012",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "September/October 2012",
+        "year": 2012,
+        "months": [
+          9,
+          10
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 7,
+      "sourceFilename": "2012-09-Remnant.pdf",
+      "sourceSha256": "6a46f509cbcade25f43f09ba7afadb3b7a93b8fcffd81cc90c973898e03e84a7",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2012-09-Remnant.pdf",
+      "publisherLinkLabel": "2012-09-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "d86ce698-0b1e-5aa3-9c30-9e3c831aea57",
+      "sourceId": "heartbeat-remnant-2012-07",
+      "slug": "heartbeat-remnant-2012-07",
+      "title": "The Heartbeat of The Remnant — July/August 2012",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "July/August 2012",
+        "year": 2012,
+        "months": [
+          7,
+          8
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 14,
+      "sourceFilename": "2012-07-Remnant.pdf",
+      "sourceSha256": "fb59b0f2accb77f010ef0e9d1b4c11269bbf27183bdbe0d062427a4590f17a27",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2012-07-Remnant.pdf",
+      "publisherLinkLabel": "2012-07-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "b549b07a-0dd3-55bb-9bc8-d417154f192a",
+      "sourceId": "heartbeat-remnant-2012-05",
+      "slug": "heartbeat-remnant-2012-05",
+      "title": "The Heartbeat of The Remnant — May/June 2012",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "May/June 2012",
+        "year": 2012,
+        "months": [
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2012-05-Remnant.pdf",
+      "sourceSha256": "095d69d11eac9f9e50405721ca8dbc964b3d2dad6e43066599c5b480379ef7dd",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2012-05-Remnant.pdf",
+      "publisherLinkLabel": "2012-05-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "5ba8507d-53a4-5863-9900-c3f62898ad44",
+      "sourceId": "heartbeat-remnant-2012-03",
+      "slug": "heartbeat-remnant-2012-03",
+      "title": "The Heartbeat of The Remnant — March/April 2012",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "March/April 2012",
+        "year": 2012,
+        "months": [
+          3,
+          4
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2012-03-Remnant.pdf",
+      "sourceSha256": "bfad31d3d703a8a0cd945d8ae5a64379e60c3124701eedd48693d05197ffb1a9",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2012-03-Remnant.pdf",
+      "publisherLinkLabel": "2012-03-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "25053b3d-e79b-5257-adf4-b75dc86fc7c8",
+      "sourceId": "heartbeat-remnant-2012-01",
+      "slug": "heartbeat-remnant-2012-01",
+      "title": "The Heartbeat of The Remnant — January/February 2012",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "January/February 2012",
+        "year": 2012,
+        "months": [
+          1,
+          2
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 6,
+      "sourceFilename": "2012-01-Remnant.pdf",
+      "sourceSha256": "3f1b99f25fc464e019be3187ca3a7721aadfc68e0134fe042b35fc9b1cae63c2",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/02/2012-01-Remnant.pdf",
+      "publisherLinkLabel": "2012-01-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "52c67fc6-2d91-51a3-ae55-c8134ad2ed53",
+      "sourceId": "heartbeat-remnant-2011-11",
+      "slug": "heartbeat-remnant-2011-11",
+      "title": "The Heartbeat of The Remnant — November/December 2011",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "November/December 2011",
+        "year": 2011,
+        "months": [
+          11,
+          12
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2011-11-Remnant.pdf",
+      "sourceSha256": "df53876f73e8c74abbf9c64d0ee135f9e8c49f0d100dd6501fe1f9920299b454",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2011-11-Remnant.pdf",
+      "publisherLinkLabel": "2011-11-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "7b66dc2b-492e-5b1f-8104-be30583e6f80",
+      "sourceId": "heartbeat-remnant-2011-09",
+      "slug": "heartbeat-remnant-2011-09",
+      "title": "The Heartbeat of The Remnant — September/October 2011",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Ephrata Christian Fellowship",
+      "date": {
+        "label": "September/October 2011",
+        "year": 2011,
+        "months": [
+          9,
+          10
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 11,
+      "sourceFilename": "2011-09-Remnant.pdf",
+      "sourceSha256": "6eec928accac52d25ee4d16d63c115381a3b29a0003d81557fc6dc4116408caa",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2011-09-Remnant.pdf",
+      "publisherLinkLabel": "2011-09-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "94907374-d678-5e74-bed3-a8ce2ba93730",
+      "sourceId": "heartbeat-remnant-2011-07",
+      "slug": "heartbeat-remnant-2011-07",
+      "title": "The Heartbeat of The Remnant — July/August 2011",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "July/August 2011",
+        "year": 2011,
+        "months": [
+          7,
+          8
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 10,
+      "sourceFilename": "2011-07-Remnant.pdf",
+      "sourceSha256": "fc8977974762265f99a203f2c28289fbc737b7ae2ee32017bdbc61af13e831a2",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2011-07-Remnant.pdf",
+      "publisherLinkLabel": "2011-07-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "04a01f9c-a7aa-5c96-91a0-e3fdca6d3612",
+      "sourceId": "heartbeat-remnant-2011-05",
+      "slug": "heartbeat-remnant-2011-05",
+      "title": "The Heartbeat of The Remnant — May/June 2011",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "May/June 2011",
+        "year": 2011,
+        "months": [
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 14,
+      "sourceFilename": "2011-05-Remnant.pdf",
+      "sourceSha256": "2ee571d66a422b7c018b1e9ad84e51bfe3908e48be0be3feaa8c8fad3e2f9888",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2011-05-Remnant.pdf",
+      "publisherLinkLabel": "2011-05-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "163bdfd6-5586-4f17-9423-c824e92ab992",
+      "sourceId": "heartbeat-remnant-2011-03",
+      "slug": "heartbeat-remnant-2011-03",
+      "title": "The Heartbeat of The Remnant — March/April 2011",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "March/April 2011",
+        "year": 2011,
+        "months": [
+          3,
+          4
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 17,
+      "sourceFilename": "2011-03-Remnant.pdf",
+      "sourceSha256": "1e793d57958c8076c523a2ecdf2c98bd6cc67ba2620e6af15bd273240b71c89e",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2011-03-Remnant.pdf",
+      "publisherLinkLabel": "2011-03-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "741bac3b-c01c-483d-8837-db76602fbe4f",
+      "sourceId": "heartbeat-remnant-2011-01",
+      "slug": "heartbeat-remnant-2011-01",
+      "title": "The Heartbeat of The Remnant — January/February 2011",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "January/February 2011",
+        "year": 2011,
+        "months": [
+          1,
+          2
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2011-01-Remnant.pdf",
+      "sourceSha256": "0bffb714a595b5dfa1fccbfff812b5cb1473efe1f0348aa819c76dbf2784a6ae",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2011-01-Remnant.pdf",
+      "publisherLinkLabel": "2011-01-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "366e9292-c1d1-4599-a047-8f440f0b65c0",
+      "sourceId": "heartbeat-remnant-2010-11",
+      "slug": "heartbeat-remnant-2010-11",
+      "title": "The Heartbeat of The Remnant — November/December 2010",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "November/December 2010",
+        "year": 2010,
+        "months": [
+          11,
+          12
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2010-11-Remnant-2.pdf",
+      "sourceSha256": "8d574e10a5933836aad6623121005ae8d94d00e71909f2c5294181667694cd71",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2010-11-Remnant-2.pdf",
+      "publisherLinkLabel": "2010-11-Remnant-2",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "14962b7b-2d94-5b43-a4c6-bbb78f074d1a",
+      "sourceId": "heartbeat-remnant-2007-special-edition",
+      "slug": "heartbeat-remnant-2007-special-edition",
+      "title": "The Heartbeat of The Remnant — 2007 Special Edition",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "2007 Special Edition",
+        "year": 2007,
+        "precision": "year"
+      },
+      "articleCount": 14,
+      "sourceFilename": "2007-Special-Edition.pdf",
+      "sourceSha256": "9dd2cc6c658eaf8a65512ec89477467f646c459edfd01697024524272a9191b9",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2007-Special-Edition.pdf",
+      "publisherLinkLabel": "2007-Special-Edition",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "e93ed6b9-d721-4065-80db-4c8d22a5cbbd",
+      "sourceId": "heartbeat-remnant-2010-09",
+      "slug": "heartbeat-remnant-2010-09",
+      "title": "The Heartbeat of The Remnant — September/October 2010",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "September/October 2010",
+        "year": 2010,
+        "months": [
+          9,
+          10
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2010-09-Remnant.pdf",
+      "sourceSha256": "efe69e6938a33737718572e01b6e7425d288da241c7b57e60735e951f543d5fd",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2010-09-Remnant.pdf",
+      "publisherLinkLabel": "2010-09-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "e0397047-e2ff-4ec0-bacc-8c286b979f15",
+      "sourceId": "heartbeat-remnant-2010-07",
+      "slug": "heartbeat-remnant-2010-07",
+      "title": "The Heartbeat of The Remnant — July/August 2010",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "July/August 2010",
+        "year": 2010,
+        "months": [
+          7,
+          8
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2010-07-Remnant.pdf",
+      "sourceSha256": "41368ed5c741023de75bf897aedb6051c5e54d76fc4eee6e7f4a7476e2c2ed3d",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2010-07-Remnant.pdf",
+      "publisherLinkLabel": "2010-07-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "b1525b50-95a6-40db-acf5-74b5a0e682fa",
+      "sourceId": "heartbeat-remnant-2010-05",
+      "slug": "heartbeat-remnant-2010-05",
+      "title": "The Heartbeat of The Remnant — May/June 2010",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "May/June 2010",
+        "year": 2010,
+        "months": [
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 9,
+      "sourceFilename": "2010-05-Remnant.pdf",
+      "sourceSha256": "04988321539cb8d1d69dcd1b7d7ae8f67bc1530e460712ac7227bd5ac22884e1",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2010-05-Remnant.pdf",
+      "publisherLinkLabel": "2010-05-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "445343a4-be17-4610-a1af-e3e197cb048d",
+      "sourceId": "heartbeat-remnant-2009-10",
+      "slug": "heartbeat-remnant-2009-10",
+      "title": "The Heartbeat of The Remnant — October/November/December 2009",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "October/November/December 2009",
+        "year": 2009,
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 15,
+      "sourceFilename": "2009-4Q-Remnant.pdf",
+      "sourceSha256": "8fd62440b746bf235388869764b611c4a12d66fbeb1d2d273414f82608242e94",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2009-4Q-Remnant.pdf",
+      "publisherLinkLabel": "2009-4Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "7427bc1a-c95b-4939-8616-74f3fc00d881",
+      "sourceId": "heartbeat-remnant-2009-07",
+      "slug": "heartbeat-remnant-2009-07",
+      "title": "The Heartbeat of The Remnant — July/August/September 2009",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Ministries",
+      "date": {
+        "label": "July/August/September 2009",
+        "year": 2009,
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 11,
+      "sourceFilename": "2009-3Q-Remnant.pdf",
+      "sourceSha256": "0bd8e707aeaab8b0e2c1f8634241d15c4aeef31c0b9d2f5138ed31c081aa792f",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2009-3Q-Remnant.pdf",
+      "publisherLinkLabel": "2009-3Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "80908504-b3e7-43ef-9dde-1ac6cf22a040",
+      "sourceId": "heartbeat-remnant-2009-04",
+      "slug": "heartbeat-remnant-2009-04",
+      "title": "The Heartbeat of The Remnant — April/May/June 2009",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "April/May/June 2009",
+        "year": 2009,
+        "months": [
+          4,
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 14,
+      "sourceFilename": "2009-2Q-Remnant.pdf",
+      "sourceSha256": "e18122c969a9ebe87068ced66fa48b0a673429d1ba1a4b80e79ff87caba180c3",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2009-2Q-Remnant.pdf",
+      "publisherLinkLabel": "2009-2Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "623177b3-f944-481e-a029-64fb487e70b6",
+      "sourceId": "heartbeat-remnant-2009-01",
+      "slug": "heartbeat-remnant-2009-01",
+      "title": "The Heartbeat of The Remnant — January/February/March 2009",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "January/February/March 2009",
+        "year": 2009,
+        "months": [
+          1,
+          2,
+          3
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 10,
+      "sourceFilename": "2009-1Q-Remnant.pdf",
+      "sourceSha256": "066d01f2b075825b8354a3efa0ea460c6368fe52ce8d0279fa08655acc8783ae",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2009-1Q-Remnant.pdf",
+      "publisherLinkLabel": "2009-1Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "82d9c013-5a75-453c-9193-1270033b393d",
+      "sourceId": "heartbeat-remnant-2008-07",
+      "slug": "heartbeat-remnant-2008-07",
+      "title": "The Heartbeat of The Remnant — July/August/September 2008",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "July/August/September 2008",
+        "year": 2008,
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2008-3Q-Remnant.pdf",
+      "sourceSha256": "2bb9583ad5dc8fc7d9f09e0733e1ca00d807dcb4b47db917622104ff8a7cb1e5",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2008-3Q-Remnant.pdf",
+      "publisherLinkLabel": "2008-3Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "ef088180-22ec-4bbe-a4d2-36bf1e2b5cdd",
+      "sourceId": "heartbeat-remnant-2008-special-edition",
+      "slug": "heartbeat-remnant-2008-special-edition",
+      "title": "The Heartbeat of The Remnant — Special Edition 2008",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "Special Edition 2008",
+        "year": 2008,
+        "precision": "year"
+      },
+      "articleCount": 9,
+      "sourceFilename": "2008-SE-Remnant(1).pdf",
+      "sourceSha256": "b8fd4a8c9e5069d7a7868632e4f5e72921ab5535863495bf75768d97ce3870b0",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2008-SE-Remnant.pdf",
+      "publisherLinkLabel": "2008-SE-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "fc10b0ef-1255-413c-8283-f5d6f83232b5",
+      "sourceId": "heartbeat-remnant-2008-04",
+      "slug": "heartbeat-remnant-2008-04",
+      "title": "The Heartbeat of The Remnant — April/May/June 2008",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "April/May/June 2008",
+        "year": 2008,
+        "months": [
+          4,
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 10,
+      "sourceFilename": "2008-2Q-Remnant.pdf",
+      "sourceSha256": "e418c66a829770c1fd55512a9785f1450155474c3995bf6b9dde47cb7283dc47",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2008-2Q-Remnant.pdf",
+      "publisherLinkLabel": "2008-2Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "be47161b-1ae5-4222-a7e3-09b140f57c22",
+      "sourceId": "heartbeat-remnant-2008-01",
+      "slug": "heartbeat-remnant-2008-01",
+      "title": "The Heartbeat of The Remnant — January/February/March 2008",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "January/February/March 2008",
+        "year": 2008,
+        "months": [
+          1,
+          2,
+          3
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2008-1Q-Remnant.pdf",
+      "sourceSha256": "cabc0bc3946f2af687cb91b92acc0fc105c300d6451eaba680b8816a58a27d85",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2008-1Q-Remnant.pdf",
+      "publisherLinkLabel": "2008-1Q-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "c9a9c184-9c75-4029-a839-f6082d61542d",
+      "sourceId": "heartbeat-remnant-2007-07",
+      "slug": "heartbeat-remnant-2007-07",
+      "title": "The Heartbeat of The Remnant — July/August/September 2007",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "July/August/September 2007",
+        "year": 2007,
+        "months": [
+          7,
+          8,
+          9
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2007-07-09-remnant.pdf",
+      "sourceSha256": "0d725da2123dc4a0dba37b2e496da80e6e32630c70dc7055463e061f051eeca9",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2007-07-09-remnant.pdf",
+      "publisherLinkLabel": "2007-07-09-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "80483f58-63d9-4e25-ac7a-6dffabdec46a",
+      "sourceId": "heartbeat-remnant-2007-04",
+      "slug": "heartbeat-remnant-2007-04",
+      "title": "The Heartbeat of The Remnant — April/May/June 2007",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "April/May/June 2007",
+        "year": 2007,
+        "months": [
+          4,
+          5,
+          6
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2007-04-06-remnant.pdf",
+      "sourceSha256": "838b458e1883134b4a99503a63acb2d0b2bb29d8eb092939483c506ca89ce939",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2007-04-06-remnant.pdf",
+      "publisherLinkLabel": "2007-04-06-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "e782e138-2ae7-4159-adcb-8df536c52447",
+      "sourceId": "heartbeat-remnant-2007-01",
+      "slug": "heartbeat-remnant-2007-01",
+      "title": "The Heartbeat of The Remnant — January/February/March 2007",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "January/February/March 2007",
+        "year": 2007,
+        "months": [
+          1,
+          2,
+          3
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2007-01-03-remnant.pdf",
+      "sourceSha256": "75533c2b65a3f87368bcb6890bdd85ef9cac5724c0ff90459c4748093441574b",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2007-01-03-remnant.pdf",
+      "publisherLinkLabel": "2007-01-03-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "6a9666b3-39d0-45d8-ad23-bd030566986e",
+      "sourceId": "heartbeat-remnant-2006-10",
+      "slug": "heartbeat-remnant-2006-10",
+      "title": "The Heartbeat of The Remnant — October/November/December 2006",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "October/November/December 2006",
+        "year": 2006,
+        "months": [
+          10,
+          11,
+          12
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2006-10-12-Remnant.pdf",
+      "sourceSha256": "bb0dcd036d8946145809c3853c3632f807ba6f0b24ad12da387ae85623e21e26",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2006-10-12-Remnant.pdf",
+      "publisherLinkLabel": "2006-10-12-Remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "8a34209c-181e-45e2-be87-cf0643e863b8",
+      "sourceId": "heartbeat-remnant-2006-07",
+      "slug": "heartbeat-remnant-2006-07",
+      "title": "The Heartbeat of The Remnant — July / August 2006",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "July / August 2006",
+        "year": 2006,
+        "months": [
+          7,
+          8
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2006-07-08-remnant(1).pdf",
+      "sourceSha256": "d2a24bdafc5ee6eb73a9284f6cb2903359b113606d9ef5b8ed474d4e60528e81",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2006-07-08-remnant.pdf",
+      "publisherLinkLabel": "2006-07-08-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": true,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "5506718d-515a-46be-9107-b916f8f90710",
+      "sourceId": "heartbeat-remnant-2006-03",
+      "slug": "heartbeat-remnant-2006-03",
+      "title": "The Heartbeat of The Remnant — March / April 2006",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "March / April 2006",
+        "year": 2006,
+        "months": [
+          3,
+          4
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 13,
+      "sourceFilename": "2006-03-04-remnant.pdf",
+      "sourceSha256": "b5d604e0f898545bcd7d2ee98684173546daba5bcb075a5bccec423b3e739e35",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2006-03-04-remnant.pdf",
+      "publisherLinkLabel": "2006-03-04-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    },
+    {
+      "issueId": "0d097077-9f48-4ce1-8074-252258d59d01",
+      "sourceId": "heartbeat-remnant-2006-01",
+      "slug": "heartbeat-remnant-2006-01",
+      "title": "The Heartbeat of The Remnant — January / February 2006",
+      "publication": "The Heartbeat of The Remnant",
+      "publisher": "Charity Christian Fellowship",
+      "date": {
+        "label": "January / February 2006",
+        "year": 2006,
+        "months": [
+          1,
+          2
+        ],
+        "precision": "month_range"
+      },
+      "articleCount": 12,
+      "sourceFilename": "2006-01-02-remnant.pdf",
+      "sourceSha256": "98f049dcd9ecf63a95c6e0fe1a1cb3ef04c5fc70819b46d7478cf2b880c6198e",
+      "publisherUrl": "https://bereanvoice.com/ministries/",
+      "pdfUrl": "https://bereanvoice.com/wp-content/uploads/2021/05/2006-01-02-remnant.pdf",
+      "publisherLinkLabel": "2006-01-02-remnant",
+      "verification": {
+        "publisherLinkObserved": true,
+        "downloadSucceeded": true,
+        "pdfHeaderVerified": true,
+        "sha256MatchesSource": true,
+        "localFilenameHasDownloadSuffix": false,
+        "evidenceUrls": [
+          "https://bereanvoice.com/ministries/",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/catalogue.json",
+          "https://github.com/trueChristian/berean-voice/blob/56cc7ac30a3298d016a7abfd63012d4bb775f2c6/index.json"
+        ]
+      }
+    }
+  ],
+  "unresolved": []
+}

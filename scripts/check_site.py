@@ -277,6 +277,8 @@ class SiteChecker:
                 for problem in page.errors:
                     self.error(f'{route}: {problem}')
                 if page.config is not None:
+                    if page.config.get('homeData'):
+                        self.reference(page.config['homeData'], route)
                     for key in private_json_keys(page.config):
                         self.error(f'{route}: private JSON field {key}')
             elif file.suffix == '.json':
@@ -288,6 +290,8 @@ class SiteChecker:
                         self.search[relative.split('/')[0]] = value
                         if not file.with_suffix('.json.gz').is_file():
                             self.error('Missing compressed search index: ' + relative + '.gz')
+                    elif re.fullmatch(r'[^/]+/home-data\.[a-f0-9]{16}\.json', relative):
+                        self.check_home_data(file, relative, value, source)
                     elif relative == 'deployment.json':
                         revisions = value.get('revisions', {}) if isinstance(value, dict) else {}
                         if not isinstance(revisions, dict) or set(revisions) != {'site', 'english', 'translations', 'theme'} or any(
@@ -316,6 +320,37 @@ class SiteChecker:
                     self.reference(value[0] or value[1], '/' + relative)
         return self
 
+    def check_home_data(self, file, relative, value, source):
+        expected_keys = {'schema', 'locale', 'features', 'articles', 'categories', 'latestIds'}
+        if not isinstance(value, dict) or set(value) != expected_keys or value['schema'] != 1 or value['locale'] != relative.split('/')[0]:
+            self.error('Invalid homepage preview schema: ' + relative)
+            return
+        digest = hashlib.sha256(source.encode()).hexdigest()[:16]
+        if file.name != f'home-data.{digest}.json':
+            self.error('Homepage preview digest mismatch: ' + relative)
+        if not file.with_suffix('.json.gz').is_file():
+            self.error('Missing compressed homepage previews: ' + relative)
+        for key, fields in [('features', {'id', 'articleId', 'html'}), ('articles', {'id', 'issueId', 'html'}), ('categories', {'id', 'html'})]:
+            rows = value[key]
+            if not isinstance(rows, list):
+                self.error('Invalid homepage preview pool: ' + relative)
+                continue
+            seen = set()
+            for row in rows:
+                if not isinstance(row, dict) or set(row) != fields or not isinstance(row.get('html'), str):
+                    self.error('Invalid homepage preview row: ' + relative)
+                    continue
+                if not re.fullmatch(r'[a-f0-9-]{36}', row['id']) or row['id'] in seen:
+                    self.error('Invalid/duplicate homepage identity: ' + relative)
+                seen.add(row['id'])
+                if re.search(r'<(?:script|iframe|object|embed)\b|\son[a-z]+\s*=', row['html'], re.I):
+                    self.error('Active HTML in homepage preview: ' + relative)
+                preview = PageParser('/' + relative, row['html']).page
+                for reference in preview.references:
+                    self.reference(reference, '/' + relative)
+                for problem in preview.errors:
+                    self.error(f'{relative}: {problem}')
+
     def check_compressed_index(self, file, relative):
         """Require the optimized payload to be the same already-audited JSON.
 
@@ -324,7 +359,7 @@ class SiteChecker:
         The plain JSON is separately checked for UTF-8, structure, private keys,
         secrets, and exact exported-article parity by the ordinary scan.
         """
-        if len(Path(relative).parts) != 2 or file.name != 'search-index.json.gz':
+        if len(Path(relative).parts) != 2 or not (file.name == 'search-index.json.gz' or re.fullmatch(r'home-data\.[a-f0-9]{16}\.json\.gz', file.name)):
             self.error('Unexpected compressed public file: ' + relative)
             return
         neighbor = file.with_suffix('')

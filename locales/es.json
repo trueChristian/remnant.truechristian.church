@@ -92,7 +92,9 @@
     "footer_navigation": "Enlaces de la iglesia",
     "social_links": "Redes sociales",
     "copy_error": "La copia automática no está disponible. Copie el texto que aparece a continuación.",
-    "special_edition": "Edición especial"
+    "special_edition": "Edición especial",
+    "publisher": "Editorial",
+    "download": "Descargar"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

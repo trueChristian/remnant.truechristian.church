@@ -36,9 +36,9 @@ const noOverflow = async page => {
 test('desktop magazine home, issue and article layouts', async ({ page }) => {
   await page.goto('/en/');
   await expect(page.locator('.masthead h1')).toContainText('Remnant');
-  const latestDate = await page.locator('.latest-issue__foot h2').textContent();
+  const latestDate = await page.locator('.featured-issue__foot h2').textContent();
   await noOverflow(page); await capture(page, 'home-desktop');
-  await page.locator('.latest-issue .text-link').click();
+  await page.locator('.featured-issue .text-link').click();
   await expect(page.locator('.issue-heading h1')).toHaveText(latestDate);
   await expect(page.locator('.issue-contents > li')).not.toHaveCount(0);
   await capture(page, 'issue-desktop');
@@ -192,14 +192,11 @@ test('Markdown fallback preserves selectable text when clipboard unavailable', a
   expect(value).toContain(`/${locale}/issues/`);
 });
 
-test('reduced motion disables autoplay but keeps manual archive navigation', async ({ page }) => {
-  await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/en/');
-  await expect(page.locator('[data-slide-play]')).toBeDisabled();
-  await expect(page.locator('[data-slide-count]')).toHaveText('1 / 3');
-  await page.locator('[data-slide-next]').click();
-  await expect(page.locator('[data-slide-count]')).toHaveText('2 / 3');
-  await page.locator('[data-slide-prev]').click();
-  await expect(page.locator('[data-slide-count]')).toHaveText('1 / 3');
+test('reduced motion keeps all three archive cards readable without autoplay', async ({ page }) => {
+  await page.emulateMedia({reducedMotion:'reduce'}); await page.goto('/en/');
+  await expect(page.locator('[data-home-archive] .article-card')).toHaveCount(3);
+  for (const card of await page.locator('[data-home-archive] .article-card').all()) await expect(card).toBeVisible();
+  await expect(page.locator('[data-slide-play]')).toHaveCount(0);
 });
 
 test('static browsing remains useful with JavaScript disabled', async ({ browser }) => {

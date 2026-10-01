@@ -92,7 +92,9 @@
     "footer_navigation": "Kirkens lenker",
     "social_links": "Sosiale lenker",
     "copy_error": "Automatisk kopiering er ikke tilgjengelig. Kopier teksten nedenfor.",
-    "special_edition": "Spesialutgave"
+    "special_edition": "Spesialutgave",
+    "publisher": "Utgiver",
+    "download": "Last ned"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

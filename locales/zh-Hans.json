@@ -92,7 +92,9 @@
     "footer_navigation": "教会链接",
     "social_links": "社交媒体链接",
     "copy_error": "无法自动复制。请复制下方文本。",
-    "special_edition": "特刊"
+    "special_edition": "特刊",
+    "publisher": "出版方",
+    "download": "下载"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

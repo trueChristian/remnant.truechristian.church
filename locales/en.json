@@ -92,7 +92,9 @@
     "footer_navigation": "Church links",
     "social_links": "Social links",
     "copy_error": "Automatic copying is unavailable. Copy the text below.",
-    "special_edition": "Special edition"
+    "special_edition": "Special edition",
+    "publisher": "Publisher",
+    "download": "Download"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

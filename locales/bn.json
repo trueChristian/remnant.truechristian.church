@@ -92,7 +92,9 @@
     "footer_navigation": "মণ্ডলীর লিংক",
     "social_links": "সামাজিক মাধ্যমের লিংক",
     "copy_error": "স্বয়ংক্রিয়ভাবে কপি করা যাচ্ছে না। নিচের পাঠ কপি করুন।",
-    "special_edition": "বিশেষ সংখ্যা"
+    "special_edition": "বিশেষ সংখ্যা",
+    "publisher": "প্রকাশক",
+    "download": "ডাউনলোড"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

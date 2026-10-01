@@ -35,6 +35,7 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 
 ## Editing and extending
 
+- [Shared homepage rotation and verified publisher PDFs](docs/homepage-selection.md)
 - [Cached Scripture references, Bible choices and false-positive overrides](docs/scripture-references.md)
 - [Source adapters, route persistence and Markdown](docs/source-adapter.md)
 - [Complete dictionaries and truthful date formatting](docs/localization.md)
