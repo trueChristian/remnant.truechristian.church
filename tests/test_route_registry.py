@@ -100,6 +100,45 @@ class RegistryMergeTests(unittest.TestCase):
             next_build = initialize_routes(model, ['en'], snapshot)
             self.assertEqual(next_build['articles']['en'][A], first['articles']['en'][A])
 
+    def test_stale_committed_placeholder_cannot_revert_a_published_translation(self):
+        from scripts.routes import initialize_routes
+        with tempfile.TemporaryDirectory() as temp:
+            source, snapshot = Path(temp) / 'source.json', Path(temp) / 'snapshot.json'
+            model = {'articles': {'en': [{'id': A, 'title': 'First title', 'categories': {'primary': C}}]},
+                     'categories': [{'id': C, 'slug': 'faith'}], 'issues': []}
+            config = {'en': {}, 'af': {'categories': {C: {'slug': 'geloof'}}}}
+            committed = initialize_routes(copy.deepcopy(model), config, source, update=True)['registry']
+            placeholder = committed['articles']['af'][A]
+            self.assertTrue(placeholder['placeholder'])
+            placeholder_path = route_registry.route_path('articles', 'af', placeholder)
+            model['articles']['af'] = [{'id': A, 'title': 'Eerste titel', 'categories': {'primary': C}}]
+            first = initialize_routes(copy.deepcopy(model), config, source)
+            self.assertEqual(first['articles']['af'][A], '/af/geloof/eerste-titel/')
+            self.assertNotIn('placeholder', first['registry']['articles']['af'][A])
+            route_registry.prepare_registry(source, snapshot, published=first['registry'])
+            model['articles']['af'][0]['title'] = 'Nuwe reggestelde titel'
+            next_build = initialize_routes(copy.deepcopy(model), config, snapshot)
+            self.assertEqual(next_build['articles']['af'][A], first['articles']['af'][A])
+            self.assertNotIn('placeholder', next_build['registry']['articles']['af'][A])
+            self.assertEqual(next_build['redirects'][placeholder_path], first['articles']['af'][A])
+            # Further successful builds must keep the same promoted identity.
+            route_registry.prepare_registry(source, snapshot, published=next_build['registry'])
+            model['articles']['af'][0]['title'] = 'Nog een titel'
+            final = initialize_routes(model, config, snapshot)
+            self.assertEqual(final['articles']['af'][A], first['articles']['af'][A])
+
+    def test_explicit_editorial_alias_still_overrides_a_published_placeholder_promotion(self):
+        from scripts.routes import set_article_alias
+        committed, published = registry('english-placeholder', locale='af'), registry('published-translation', locale='af')
+        committed['articles']['af'][A].update(placeholder=True, category_slug='articles')
+        set_article_alias(committed, 'af', A, 'reviewed-translation', category_slug='geloof')
+        self.assertNotIn('placeholder', committed['articles']['af'][A])
+        result = route_registry.merge_registries(committed, published)['articles']['af'][A]
+        self.assertEqual(result['alias'], 'reviewed-translation')
+        self.assertEqual(result['category_slug'], 'geloof')
+        self.assertIn('/af/faith/published-translation/', result['history'])
+        self.assertIn('/af/articles/english-placeholder/', result['history'])
+
 
 class PublishedRegistryTests(unittest.TestCase):
     def test_fetches_only_the_fixed_published_route_registry(self):

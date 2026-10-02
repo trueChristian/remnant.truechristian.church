@@ -181,9 +181,10 @@ def _legacy_entry(kind: str, entry: dict) -> bool:
 def merge_registries(committed: dict, published: dict | None) -> dict:
     """Freeze published additions, apply editorial changes, and retain history.
 
-    A readable published migration takes precedence over a stale committed UUID
-    fallback. Otherwise the committed record is authoritative. Removed records
-    remain reserved so a temporarily unpublished URL cannot be reassigned.
+    Published migrations take precedence over stale committed UUID fallbacks or
+    missing-translation placeholders. Otherwise the committed record owns
+    editorial changes. Removed records remain reserved so a temporarily
+    unpublished URL cannot be reassigned.
     """
     validate_registry(committed)
     if published is None:
@@ -198,7 +199,9 @@ def merge_registries(committed: dict, published: dict | None) -> dict:
                 if previous is None:
                     target[identity] = copy.deepcopy(source)
                     continue
-                keep_published = _legacy_entry(kind, source) and not _legacy_entry(kind, previous)
+                keep_published = (_legacy_entry(kind, source) and not _legacy_entry(kind, previous)) or (
+                    kind == 'articles' and source.get('placeholder') is True
+                    and previous.get('placeholder') is not True)
                 chosen = copy.deepcopy(previous if keep_published else source)
                 current = route_path(kind, locale, chosen)
                 histories = set(source.get('history', [])) | set(previous.get('history', []))
