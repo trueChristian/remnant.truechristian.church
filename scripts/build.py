@@ -236,7 +236,8 @@ class Site:
         def link(author):
             return f'<a class="author-link" href="{esc(self.author_url(tag,author["id"]))}"><bdi>{esc(author["name"])}</bdi></a>'
         for match in pattern.finditer(raw):
-            pieces.extend([esc(raw[end:match.start()]), link(names[match.group()])])
+            credit = esc(match.group()) if match.group() in seen else link(names[match.group()])
+            pieces.extend([esc(raw[end:match.start()]), credit])
             seen.add(match.group())
             end = match.end()
         pieces.append(esc(raw[end:]))
