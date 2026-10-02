@@ -70,6 +70,16 @@ class Page:
     sequences: list = field(default_factory=list)
     category_links: list = field(default_factory=list)
     issue_links: list = field(default_factory=list)
+    navigation_links: list = field(default_factory=list)
+    author_directory: bool = False
+    author_profile: bool = False
+    author_cards: list = field(default_factory=list)
+    author_article_links: list = field(default_factory=list)
+    author_byline_links: list = field(default_factory=list)
+    author_empty_links: list = field(default_factory=list)
+    author_counts_text: str = ''
+    author_details_text: str = ''
+    main_images: int = 0
     downloads: set = field(default_factory=set)
     notices: int = 0
     config: dict | None = None
@@ -88,13 +98,18 @@ class PageParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.page = Page(route)
         self.stack = []
-        self.parts = {'title': [], 'h1': [], 'main': [], 'sequence': [], 'config': []}
+        self.parts = {'title': [], 'h1': [], 'main': [], 'sequence': [], 'config': [],
+                      'author-counts': [], 'author-details': []}
+        self.author_card = None
+        self.anchor = None
         self.feed(source)
         self.close()
         p = self.page
         p.title = normalized_text(''.join(self.parts['title']))
         p.h1 = normalized_text(''.join(self.parts['h1']))
         p.main_text = normalized_text(' '.join(self.parts['main']))
+        p.author_counts_text = normalized_text(' '.join(self.parts['author-counts']))
+        p.author_details_text = normalized_text(' '.join(self.parts['author-details']))
         if self.parts['config']:
             try:
                 p.config = json.loads(''.join(self.parts['config']))
@@ -141,12 +156,31 @@ class PageParser(HTMLParser):
                     p.references.add(sys.intern(entry.strip().split()[0]))
         if tag == 'img' and 'alt' not in a:
             p.errors.append('image has no alt attribute: ' + a.get('src', ''))
+        if tag == 'img' and self.within('main'):
+            p.main_images += 1
+        p.author_directory |= 'authors-page' in classes
+        p.author_profile |= 'author-profile' in classes
+        if tag == 'article' and 'author-card' in classes:
+            self.author_card = {'name': '', 'url': '', 'text': []}
         if a.get('data-article-id'):
             p.article_ids.append(a['data-article-id'])
         if a.get('data-translation-notice') == 'ai':
             p.notices += 1
         if tag == 'a':
             href = a.get('href', '')
+            purposes = set()
+            if self.within('tcc-primary-navigation'):
+                purposes.add('navigation')
+            if 'author-name' in classes and self.within('author-card'):
+                purposes.add('author-name')
+            if 'author-link' in classes and self.within('article-byline'):
+                purposes.add('author-byline')
+            if self.within('author-profile') and self.within('empty-state'):
+                purposes.add('author-empty')
+            if purposes:
+                self.anchor = {'href': href, 'purposes': purposes, 'text': []}
+            if self.within('author-articles') and self.within('h2'):
+                p.author_article_links.append(href)
             if self.within('issue-contents') and self.within('h2'):
                 p.contents.append(href)
             if 'category-card' in classes or 'category-tile' in classes:
@@ -183,6 +217,22 @@ class PageParser(HTMLParser):
             self.handle_endtag(tag)
 
     def handle_endtag(self, tag):
+        if tag == 'a' and self.anchor is not None:
+            anchor = self.anchor
+            text = normalized_text(''.join(anchor['text']))
+            if 'navigation' in anchor['purposes']:
+                self.page.navigation_links.append((anchor['href'], text))
+            if 'author-byline' in anchor['purposes']:
+                self.page.author_byline_links.append((text, anchor['href']))
+            if 'author-empty' in anchor['purposes']:
+                self.page.author_empty_links.append((text, anchor['href']))
+            if 'author-name' in anchor['purposes'] and self.author_card is not None:
+                self.author_card.update(name=text, url=anchor['href'])
+            self.anchor = None
+        if tag == 'article' and self.stack and 'author-card' in self.stack[-1][1] and self.author_card is not None:
+            self.author_card['text'] = normalized_text(' '.join(self.author_card['text']))
+            self.page.author_cards.append(self.author_card)
+            self.author_card = None
         if tag == 'span' and self.stack and 'contents-number' in self.stack[-1][1]:
             self.page.sequences.append(normalized_text(''.join(self.parts['sequence'])))
             self.parts['sequence'] = []
@@ -192,6 +242,13 @@ class PageParser(HTMLParser):
                 break
 
     def handle_data(self, data):
+        if self.anchor is not None:
+            self.anchor['text'].append(data)
+        if self.author_card is not None:
+            self.author_card['text'].append(data)
+        for key in ('author-counts', 'author-details'):
+            if self.within(key):
+                self.parts[key].append(data)
         for key in ('title', 'h1'):
             if self.within(key):
                 self.parts[key].append(data)
@@ -562,6 +619,9 @@ class SiteChecker:
                 self.error(f'{route}: page configuration locale mismatch')
             if p.selected != [p.lang]:
                 self.error(f'{route}: current dropdown locale mismatch')
+            author_navigation = f'/{expected_tag}/authors/'
+            if not any(href == author_navigation for href, _ in p.navigation_links):
+                self.error(f'{route}: shared navigation is missing the Authors directory')
             if locales:
                 if p.lang not in locales:
                     self.error(f'{route}: unconfigured locale')
@@ -569,6 +629,8 @@ class SiteChecker:
                     self.error(f'{route}: direction disagrees with locale')
                 if set(p.languages) != set(locales):
                     self.error(f'{route}: incomplete language dropdown')
+                if p.lang in locales and (author_navigation, normalized_text(locales[p.lang]['ui']['authors'])) not in p.navigation_links:
+                    self.error(f'{route}: Authors navigation label is not localized')
             for tag, url in p.alternates.items():
                 resolved = self.local_reference(url, route)
                 target = self.pages.get(resolved[0]) if resolved else None
@@ -639,8 +701,8 @@ class SiteChecker:
 
     def check_routes(self, routes):
         """Audit every generated prefix/history redirect in linear time."""
-        for kind in ('categories', 'issues', 'articles'):
-            for tag, records in routes[kind].items():
+        for kind in ('categories', 'issues', 'articles', 'authors'):
+            for tag, records in routes.get(kind, {}).items():
                 for identity, route in records.items():
                     page = self.require_page(route, f'canonical {kind}')
                     if page and page.redirect:
@@ -655,6 +717,119 @@ class SiteChecker:
             if page and (self.local_reference(page.redirect or '', source) != (destination, '')
                          or page.canonical != [self.origin + destination] or not page.noindex):
                 self.error(f'{source}: registered redirect does not directly identify canonical destination {destination}')
+
+    def check_authors(self, model, locales, routes):
+        """Check author discovery against English credits and localized articles.
+
+        Counts describe distinct original articles and actual locale availability.
+        This checks rendered inventories and links, independently of the template
+        methods, so a valid-looking route cannot hide omitted or duplicated work.
+        """
+        from authors import build_author_index
+        from build import PAGE_SIZE
+        from content import ordered_issues
+
+        authors = build_author_index(model)
+        rank = {issue['id']: index for index, issue in enumerate(ordered_issues(model))}
+        author_routes = routes.get('authors', {})
+        expected_pages = set()
+        names_by_article = {}
+        for author in authors:
+            for identity in author['article_ids']:
+                names_by_article.setdefault(identity, []).append(author['name'])
+
+        def require_count(text, label, count, route):
+            expected = normalized_text(label.format(count=count))
+            # A substring such as "Articles: 2" must not accept "Articles: 27".
+            suffix = r'(?!\d)' if expected[-1:].isdigit() else ''
+            if not re.search(re.escape(expected) + suffix, text):
+                self.error(f'{route}: author article/directory count disagrees with source or locale availability')
+
+        for tag, locale in locales.items():
+            ui = locale['ui']
+            articles = sorted(model['articles'].get(tag, []), key=lambda article: (rank[article['issue_id']], article.get('sequence', 0)))
+            available_by_author = {author['name']: [] for author in authors}
+            for article in articles:
+                for name in names_by_article.get(article['id'], []):
+                    available_by_author[name].append(article)
+            directory_path = f'/{tag}/authors/'
+            expected_pages.add(directory_path)
+            directory = self.require_page(directory_path, 'Authors directory')
+            registered = author_routes.get(tag, {})
+            expected_names = [author['name'] for author in authors]
+            if set(registered) != set(expected_names):
+                self.error(f'{directory_path}: registered author identities differ from the English source')
+            if directory:
+                if not directory.author_directory or directory.h1 != normalized_text(ui['authors']):
+                    self.error(f'{directory_path}: Authors directory heading or page marker is missing')
+                expected_cards = [(normalized_text(name), registered.get(name)) for name in expected_names]
+                actual_cards = [(card['name'], card['url']) for card in directory.author_cards]
+                if actual_cards != expected_cards:
+                    self.error(f'{directory_path}: author directory inventory/order differs from the English source')
+                require_count(directory.main_text, ui['author_count'], len(authors), directory_path)
+                if normalized_text(ui['authors_intro']) not in directory.main_text:
+                    self.error(f'{directory_path}: localized Authors introduction is missing')
+                if not authors and normalized_text(ui['no_authors']) not in directory.main_text:
+                    self.error(f'{directory_path}: empty Authors directory lacks its localized notice')
+                equivalents = {language: f'/{language}/authors/' for language in locales}
+                if directory.languages != equivalents or directory.alternates != {language: self.origin + path for language, path in equivalents.items()} or directory.noindex:
+                    self.error(f'{directory_path}: Authors directory language navigation or hreflang differs')
+            cards = {card['url']: card for card in directory.author_cards} if directory else {}
+            for author in authors:
+                name = author['name']
+                path = registered.get(name)
+                if path is None:
+                    continue
+                identities = set(author['article_ids'])
+                available = available_by_author[name]
+                card = cards.get(path)
+                if card:
+                    require_count(card['text'], ui['author_total_articles'], len(identities), directory_path)
+                    require_count(card['text'], ui['author_available_articles'], len(available), directory_path)
+                equivalents = {language: author_routes.get(language, {}).get(name) for language in locales}
+                total_pages = max(1, (len(available) + PAGE_SIZE - 1) // PAGE_SIZE)
+                for number in range(1, total_pages + 1):
+                    page_path = path if number == 1 else path + f'page/{number}/'
+                    expected_pages.add(page_path)
+                    page = self.require_page(page_path, 'author profile')
+                    if page is None:
+                        continue
+                    if not page.author_profile or page.h1 != normalized_text(name):
+                        self.error(f'{page_path}: author profile heading does not preserve the source name')
+                    if page.canonical != [self.origin + page_path] or page.redirect:
+                        self.error(f'{page_path}: author profile canonical is not its registered route')
+                    if page.languages != equivalents:
+                        self.error(f'{page_path}: author language selector changes identity')
+                    expected_alternates = {language: self.origin + target for language, target in equivalents.items() if target} if number == 1 else {}
+                    if page.noindex != (number > 1) or page.alternates != expected_alternates:
+                        self.error(f'{page_path}: author pagination indexing or hreflang is incorrect')
+                    require_count(page.author_counts_text, ui['author_total_articles'], len(identities), page_path)
+                    require_count(page.author_counts_text, ui['author_available_articles'], len(available), page_path)
+                    expected_links = [article['url'] for article in available[(number - 1) * PAGE_SIZE:number * PAGE_SIZE]]
+                    if page.author_article_links != expected_links:
+                        self.error(f'{page_path}: author article inventory/order or canonical category links differ')
+                    if author['details']:
+                        if normalized_text(ui['author_recorded_details']) not in page.author_details_text:
+                            self.error(f'{page_path}: author details lack their historical-publication label')
+                        for key, values in author['details'].items():
+                            if normalized_text(ui['author_' + key]) not in page.author_details_text or any(normalized_text(str(value)) not in page.author_details_text for value in values):
+                                self.error(f'{page_path}: recorded author detail {key} is missing or relabeled')
+                    if not available and (normalized_text(ui['author_no_articles']) not in page.main_text or page.author_empty_links != [(normalized_text(ui['author_read_english']), author_routes.get('en', {}).get(name))]):
+                        self.error(f'{page_path}: empty author profile lacks a localized notice or English author shortcut')
+
+            for article in articles:
+                page = self.pages.get(article['url'])
+                if page is None:
+                    continue
+                expected = Counter((normalized_text(name), registered.get(name)) for name in names_by_article.get(article['id'], []))
+                if Counter(page.author_byline_links) != expected:
+                    self.error(f'{article["url"]}: author byline links do not match the original named contributors')
+
+        for path, page in self.pages.items():
+            if page.redirect:
+                continue
+            if (page.author_directory or page.author_profile or any(path.startswith(f'/{tag}/authors/') for tag in locales)) and path not in expected_pages:
+                self.error(f'{path}: unexpected author directory/profile or pagination page')
 
     def check_content(self, model, locales, routes):
         from publisher import issue_pdf_links, PUBLISHER_URL
@@ -855,6 +1030,7 @@ class SiteChecker:
         self.check_sitemap()
         if model is not None:
             self.check_content(model, locales, routes)
+            self.check_authors(model, locales, routes)
         if routes is not None:
             self.check_routes(routes)
         if theme is not None:
