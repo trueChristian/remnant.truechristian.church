@@ -31,7 +31,7 @@ test('structured contributor names are searchable and carry only public links th
  const author={name:'Dean Taylor',url:'/af/authors/dean-taylor/',role:'Editor'};
  const hit=search(prepare([{...records[0],author:'~Bro. Dean',authors:[author]}]),'Dean Taylor').results[0];
  assert.equal(hit.author,'~Bro. Dean');
- assert.deepEqual(hit.authors,[{name:author.name,url:author.url}]);
+ assert.deepEqual(hit.authors,[{name:author.name,url:author.url,aliases:[]}]);
  assert.deepEqual(search(records,'grace').results[0].authors,[]);
 });
 test('byline links preserve repeated names, punctuation and every original character',()=>{
@@ -59,4 +59,19 @@ test('raw-only attributions remain plain and unsafe link destinations are ignore
  assert.equal(parts.map(part=>part.text).join(''),raw);
  assert.equal(parts.filter(part=>part.url).length,1);
  assert.ok(parts.every(part=>Object.keys(part).every(key=>['text','url'].includes(key))));
+});
+
+test('reviewed name variants share one author link while preserving the complete printed credit',()=>{
+ const author={name:'Dean Taylor',url:'/af/authors/dean-taylor/',aliases:['Bro. Dean','Brother Dean','Dean Taylor']};
+ const raw='By Bro. Dean; Brother Dean, also known as Dean Taylor';
+ const parts=bylineParts(raw,[author],'Skrywer');
+ assert.equal(parts.map(part=>part.text).join(''),raw);
+ assert.deepEqual(parts.filter(part=>part.url),[{text:'Bro. Dean',url:author.url}]);
+ assert.deepEqual(bylineParts('Editorial',[author],'Skrywer').filter(part=>part.url),[{text:author.name,url:author.url}]);
+ const prepared=prepare([{...records[0],author:'Dean Taylor',authors:[author]}]);
+ for(const query of ['Dean Taylor','Brother Dean','Bro. Dean']) {
+  const hit=search(prepared,query).results[0];
+  assert.deepEqual(hit.authors,[author]);
+  assert.equal(hit.url,records[0].url);
+ }
 });

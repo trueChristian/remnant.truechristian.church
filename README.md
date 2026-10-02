@@ -39,7 +39,7 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 
 - [Shared homepage rotation and verified publisher PDFs](docs/homepage-selection.md)
 - [Cached Scripture references, Bible choices and false-positive overrides](docs/scripture-references.md)
-- [Author directories, source spelling and multilingual article lists](docs/authors.md)
+- [Author directories, reviewed name aliases and multilingual article lists](docs/authors.md)
 - [Source adapters, route persistence and Markdown](docs/source-adapter.md)
 - [Complete dictionaries and truthful date formatting](docs/localization.md)
 - [Visual identity, accessibility and performance](docs/design-and-quality.md)
@@ -73,4 +73,3 @@ The website checks source revisions hourly (best effort, at minute 17). Unchange
 The repository's existing GPL-3.0 license covers website code as applicable; it does **not** relicense magazine articles, photographs, trademarks, or upstream theme assets. Article permissions and attribution remain governed by the source archive's publisher records. Source-excluded articles remain excluded.
 
 The theme currently supplies no software license. This implementation references its pinned repository at build time rather than silently assigning it this site's GPL license. The owner should confirm intended code/asset redistribution terms before production publication. Logo, favicon and skyline bytes are preserved unchanged. No proprietary YOOtheme stylesheet is copied.
-

@@ -1,11 +1,11 @@
-"""Author navigation must retain exact identities and durable readable paths."""
+"""Reviewed author merges must retain durable readable paths and redirects."""
 import copy
 import json
 from pathlib import Path
 import tempfile
 import unittest
 
-from scripts.route_registry import RegistryError, merge_registries, prepare_registry, validate_registry
+from scripts.route_registry import RegistryError, merge_registries, migrate_author_registry, prepare_registry, validate_registry
 from scripts.routes import RouteError, UUID_PATTERN, author_url, initialize_routes
 
 A = '00000000-0000-4000-8000-000000000001'
@@ -217,6 +217,130 @@ class DurableAuthorRegistryTests(unittest.TestCase):
                       {'authors': {'en': []}}):
             with self.subTest(extra=extra), self.assertRaises(RegistryError):
                 validate_registry({**empty_registry(), **extra})
+
+
+class MergedAuthorRoutesTests(unittest.TestCase):
+    aliases = {'A.W. Tozer': 'A. W. Tozer', 'A W Tozer': 'A. W. Tozer',
+               'Unknown': 'Anonymous', 'anonymous': 'Anonymous',
+               'Brother Dean': 'Dean Taylor',
+               'George Bronk II': 'George R. Bronk II'}
+
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.path = Path(self.temp.name) / 'routes.json'
+
+    def save(self, registry):
+        self.path.write_text(json.dumps(registry), encoding='utf-8')
+
+    def before_merge(self, names, locales=('en', 'af')):
+        return initialize_routes(model(names), locales, self.path, author_aliases={})
+
+    def after_merge(self, names, locales=('en', 'af')):
+        return initialize_routes(model(names), locales, self.path, author_aliases=self.aliases)
+
+    def test_existing_canonical_wins_and_every_old_path_redirects_in_all_locales(self):
+        names = ['A.W. Tozer', 'A W Tozer', 'A. W. Tozer', 'Unknown', 'Anonymous']
+        before = self.before_merge(names)
+        before['registry']['authors']['af']['A.W. Tozer']['history'] = ['/af/authors/tozer-previous/']
+        self.save(before['registry'])
+        after = self.after_merge(names, ('en', 'af', 'ar'))
+        for locale in ('en', 'af', 'ar'):
+            self.assertEqual(set(after['authors'][locale]), {'A. W. Tozer', 'Anonymous'})
+            for source_locale in ('en', 'af'):
+                for name in names:
+                    old = before['authors'][source_locale][name].replace(f'/{source_locale}/', f'/{locale}/', 1)
+                    canonical = self.aliases.get(name, name)
+                    new = after['authors'][locale][canonical]
+                    if old != new:
+                        self.assertEqual(after['redirects'][old], new)
+                    self.assertEqual(author_url(after, locale, name), new)
+            self.assertEqual(after['redirects'][f'/{locale}/authors/tozer-previous/'],
+                             after['authors'][locale]['A. W. Tozer'])
+        for locale in ('en', 'af'):
+            self.assertEqual(after['authors'][locale]['A. W. Tozer'], before['authors'][locale]['A. W. Tozer'])
+            self.assertEqual(after['articles'][locale], before['articles'][locale])
+            self.assertEqual(after['registry']['articles'][locale], before['registry']['articles'][locale])
+        self.assertEqual(after['cross_locale_aliases']['/authors/tozer-previous/'],
+                         {'kind': 'authors', 'id': 'A. W. Tozer'})
+        validate_registry(after['registry'])
+
+    def test_canonical_without_an_existing_record_keeps_deterministic_member_route(self):
+        before = self.before_merge(['A.W. Tozer', 'A W Tozer'])
+        self.save(before['registry'])
+        first = self.after_merge(['A.W. Tozer', 'A W Tozer'])
+        second = self.after_merge(['A W Tozer', 'A.W. Tozer'])
+        self.assertEqual(first['registry'], second['registry'])
+        for locale in ('en', 'af'):
+            self.assertEqual(first['authors'][locale]['A. W. Tozer'], before['authors'][locale]['A W Tozer'])
+            self.assertEqual(first['redirects'][before['authors'][locale]['A.W. Tozer']],
+                             first['authors'][locale]['A. W. Tozer'])
+
+    def test_repeated_builds_keep_canonical_history_and_never_recreate_alias_identities(self):
+        names = ['Dean Taylor', 'Brother Dean']
+        before = self.before_merge(names)
+        self.save(before['registry'])
+        first = self.after_merge(names)
+        self.save(first['registry'])
+        # The canonical spelling can disappear from content without changing
+        # the published identity or URL of its remaining recorded spelling.
+        second = self.after_merge(['Brother Dean'])
+        self.assertEqual(first['authors'], second['authors'])
+        self.assertEqual(first['registry'], second['registry'])
+        self.assertEqual(second['redirects']['/en/authors/brother-dean/'], '/en/authors/dean-taylor/')
+
+    def test_retired_merged_addresses_remain_reserved_and_unrelated_names_stay_distinct(self):
+        before = self.before_merge(['Dean Taylor', 'Brother Dean', 'George Bronk II',
+                                    'George R. Bronk II', 'George R. Bronk Sr.'])
+        self.save(before['registry'])
+        after = self.after_merge(['BROTHER DEAN', 'George Bronk II', 'George R. Bronk Sr.'])
+        self.assertEqual(set(after['authors']['en']),
+                         {'BROTHER DEAN', 'George R. Bronk II', 'George R. Bronk Sr.'})
+        self.assertEqual(after['authors']['en']['BROTHER DEAN'], '/en/authors/brother-dean-2/')
+        self.assertNotIn('/en/authors/brother-dean/', after['redirects'])
+        self.assertEqual(after['registry']['authors']['en']['Dean Taylor']['history'], ['/en/authors/brother-dean/'])
+        self.assertEqual(after['redirects']['/en/authors/george-bronk-ii/'], '/en/authors/george-r-bronk-ii/')
+        self.assertEqual(after['authors']['en']['George R. Bronk Sr.'], '/en/authors/george-r-bronk-sr/')
+
+    def test_migration_is_copy_only_and_rejects_conflicting_or_malformed_old_records(self):
+        before = self.before_merge(['A.W. Tozer', 'A. W. Tozer'])['registry']
+        snapshot = copy.deepcopy(before)
+        migrated = migrate_author_registry(before, self.aliases)
+        self.assertEqual(before, snapshot)
+        self.assertEqual(set(migrated['authors']['en']), {'A. W. Tozer'})
+        for corruption in ({'slug': 'a-w-tozer'}, {'slug': 'page'},
+                           {'slug': 'safe', 'history': ['/en/authors/name/page/2/']}):
+            bad = copy.deepcopy(before)
+            bad['authors']['en']['A.W. Tozer'] = corruption
+            with self.subTest(corruption=corruption), self.assertRaises(RegistryError):
+                migrate_author_registry(bad, self.aliases)
+
+    def test_stale_committed_aliases_do_not_revert_published_canonical_route(self):
+        old = self.before_merge(['A.W. Tozer'])['registry']
+        published = self.before_merge(['A. W. Tozer', 'A.W. Tozer'])['registry']
+        published = migrate_author_registry(published, self.aliases)
+        for locale in ('en', 'af'):
+            published['authors'][locale]['A. W. Tozer'].update(
+                slug='tozer-author', history=[f'/{locale}/authors/a-w-tozer/', f'/{locale}/authors/a-w-tozer-2/'])
+        merged = merge_registries(old, published, author_aliases=self.aliases)
+        for locale in ('en', 'af'):
+            self.assertEqual(set(merged['authors'][locale]), {'A. W. Tozer'})
+            self.assertEqual(merged['authors'][locale]['A. W. Tozer']['slug'], 'tozer-author')
+            self.assertEqual(merged['authors'][locale]['A. W. Tozer']['history'],
+                             [f'/{locale}/authors/a-w-tozer-2/', f'/{locale}/authors/a-w-tozer/'])
+        self.assertEqual(merge_registries(old, merged, author_aliases=self.aliases), merged)
+        self.assertEqual(merge_registries(merged, old, author_aliases=self.aliases), merged)
+
+    def test_committed_canonical_edit_merges_published_old_identities_without_collisions(self):
+        old = self.before_merge(['A.W. Tozer', 'A. W. Tozer'])['registry']
+        committed = copy.deepcopy(old)
+        for locale in ('en', 'af'):
+            committed['authors'][locale] = {'A. W. Tozer': {'slug': 'tozer-reviewed', 'history': []}}
+        merged = merge_registries(committed, old, author_aliases=self.aliases)
+        for locale in ('en', 'af'):
+            self.assertEqual(merged['authors'][locale]['A. W. Tozer'], {
+                'slug': 'tozer-reviewed',
+                'history': [f'/{locale}/authors/a-w-tozer-2/', f'/{locale}/authors/a-w-tozer/']})
 
 
 if __name__ == '__main__':
