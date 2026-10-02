@@ -322,8 +322,27 @@ test('homepage browsing remains useful with JavaScript disabled', async ({ brows
     await expect(page).toHaveURL(new RegExp(`${destination}$`));
     await expect(page.locator('.prose article')).toBeVisible();
     await page.goto('/ar/');
-    await expect(page.locator('.home-lead__article .empty-state')).toBeVisible();
     await expect(page.locator('.featured-issue')).toBeVisible();
+    // Translations arrive independently. Validate the static selected issue's
+    // actual publication data instead of assuming Arabic is permanently empty.
+    const data = await readHomeData(page);
+    const featureId = await page.locator('.featured-issue').getAttribute('data-issue-id');
+    const feature = data.features.find(row => row.id === featureId);
+    expect(feature, `Missing static featured issue ${featureId}`).toBeTruthy();
+    if (feature.articleId) {
+      const article = articleMetadata('ar').find(row => row.id === feature.articleId);
+      expect(article, `Missing Arabic editor ${feature.articleId}`).toBeTruthy();
+      expect(article.issue_id).toBe(featureId);
+      await expect(page.locator('.home-lead__article article h2 a')).toHaveAttribute('href', article.url);
+      await expect(page.locator('.home-lead__article article h2 a')).toHaveText(article.title);
+      await expect(page.locator('.home-lead__article .empty-state')).toHaveCount(0);
+      await page.locator('.home-lead__article article h2 a').click();
+      await expect(page).toHaveURL(new RegExp(`${article.url}$`));
+      await expect(page.locator('.prose article')).toBeVisible();
+    } else {
+      await expect(page.locator('.home-lead__article article')).toHaveCount(0);
+      await expect(page.locator('.home-lead__article .empty-state')).toBeVisible();
+    }
   } finally {
     await context.close();
   }
