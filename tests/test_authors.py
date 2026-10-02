@@ -1,7 +1,10 @@
 import copy
+import json
+from pathlib import Path
+import tempfile
 import unittest
 
-from scripts.authors import AuthorError, build_author_index
+from scripts.authors import AuthorError, build_author_index, canonical_author_name, load_author_aliases
 
 
 def article(identity, *authors, raw=None):
@@ -9,10 +12,10 @@ def article(identity, *authors, raw=None):
 
 
 class AuthorIndexTests(unittest.TestCase):
-    def test_exact_recorded_names_remain_distinct_and_sorted(self):
+    def test_unlisted_names_remain_distinct_and_sorted(self):
         names = ["Joel Hostetler", "Joel A. Hostetler", "joel Hostetler", "Joel A Hostetler", " Joel Hostetler "]
         model = {"articles": {"en": [article(str(number), {"name": name}) for number, name in enumerate(names)]}}
-        result = build_author_index(model)
+        result = build_author_index(model, aliases={})
         self.assertEqual([item["name"] for item in result], sorted(names, key=lambda value: (value.casefold(), value)))
         self.assertEqual(len(result), len(names))
         self.assertTrue(all(item["id"] == item["name"] for item in result))
@@ -37,7 +40,8 @@ class AuthorIndexTests(unittest.TestCase):
         }}
         original = copy.deepcopy(model)
         self.assertEqual(build_author_index(model), [
-            {"id": "Recorded Author", "name": "Recorded Author", "article_ids": ["source"], "details": {}},
+            {"id": "Recorded Author", "name": "Recorded Author", "source_names": ["Recorded Author"],
+             "article_ids": ["source"], "details": {}},
         ])
         self.assertEqual(model, original)
 
@@ -50,13 +54,48 @@ class AuthorIndexTests(unittest.TestCase):
         ]}}
         self.assertEqual(build_author_index(model), [])
 
-    def test_recorded_anonymous_names_are_not_unified_or_inferred(self):
+    def test_recorded_anonymous_names_are_explicitly_unified(self):
         model = {"articles": {"en": [
             article("one", {"name": "Unknown"}),
             article("two", {"name": "Author unknown"}),
             article("three", {"name": "Anonymous"}),
         ]}}
-        self.assertEqual([item["name"] for item in build_author_index(model)], ["Anonymous", "Author unknown", "Unknown"])
+        self.assertEqual(build_author_index(model), [{
+            "id": "Anonymous", "name": "Anonymous", "source_names": ["Unknown", "Author unknown", "Anonymous"],
+            "article_ids": ["one", "two", "three"], "details": {},
+        }])
+
+    def test_aliases_union_articles_and_details_without_changing_recorded_names(self):
+        model = {"articles": {"en": [
+            article("shared", {"name": "Curvin L Wenger", "location": "Town", "role": "Words"},
+                    {"name": "Curvin Wenger", "location": "Town", "role": "Music"}),
+            article("later", {"name": "Curvin L. Wenger", "location": "County", "role": "Words"}),
+            article("shared", {"name": "Curvin Wenger", "age": 50}),
+        ]}}
+        original = copy.deepcopy(model)
+        self.assertEqual(build_author_index(model), [{
+            "id": "Curvin L. Wenger", "name": "Curvin L. Wenger",
+            "source_names": ["Curvin L Wenger", "Curvin Wenger", "Curvin L. Wenger"],
+            "article_ids": ["shared", "later"],
+            "details": {"location": ["Town", "County"], "role": ["Words", "Music"], "age": [50]},
+        }])
+        self.assertEqual(model, original)
+
+    def test_confirmed_names_group_but_generations_and_unreviewed_variants_stay_distinct(self):
+        names = ["George Brunk II", "George R. Brunk II", "George R. Brunk, Sr.",
+                 "George R Brunk II", "Brother Dean", "Dean Taylor", "Bro. Denny", "Denny Kenaston"]
+        model = {"articles": {"en": [article(str(number), {"name": name}) for number, name in enumerate(names)]}}
+        result = {item["name"]: item for item in build_author_index(model)}
+        self.assertEqual(result["George R. Brunk II"]["article_ids"], ["0", "1"])
+        self.assertEqual(result["George R. Brunk, Sr."]["article_ids"], ["2"])
+        self.assertEqual(result["George R Brunk II"]["article_ids"], ["3"])
+        self.assertEqual(result["Dean Taylor"]["article_ids"], ["4", "5"])
+        self.assertEqual(result["Denny Kenaston"]["article_ids"], ["6", "7"])
+
+    def test_custom_aliases_override_defaults_and_need_no_self_entries(self):
+        model = {"articles": {"en": [article("one", {"name": "Unknown"}, {"name": "A. Writer"})]}}
+        result = build_author_index(model, aliases={"A. Writer": "A Writer"})
+        self.assertEqual([item["name"] for item in result], ["A Writer", "Unknown"])
 
     def test_historical_details_are_allowlisted_unique_and_preserve_types(self):
         model = {"articles": {"en": [
@@ -96,6 +135,83 @@ class AuthorIndexTests(unittest.TestCase):
                       {"articles": {"en": [{}]}}, {"articles": {"en": [{"id": "bad", "source_metadata": []}]}}):
             with self.subTest(model=model), self.assertRaises(AuthorError):
                 build_author_index(model)
+
+
+class AuthorAliasConfigurationTests(unittest.TestCase):
+    def load_text(self, content):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "aliases.json"
+            path.write_text(content, encoding="utf-8")
+            return load_author_aliases(path)
+
+    def test_groups_load_as_flat_mapping_including_canonical_names(self):
+        self.assertEqual(self.load_text(json.dumps({"version": 1, "authors": {
+            "A Writer": ["A. Writer", "Writer, A"], "Another Writer": [],
+        }})), {"A Writer": "A Writer", "A. Writer": "A Writer", "Writer, A": "A Writer",
+               "Another Writer": "Another Writer"})
+
+    def test_reviewed_default_groups_cover_reported_spellings(self):
+        aliases = load_author_aliases()
+        expected = {
+            "A.W. Tozer": "A. W. Tozer", "Bro. Dean": "Dean Taylor", "Brother Dean": "Dean Taylor",
+            "Bro. Denny": "Denny Kenaston", "Brother Denny": "Denny Kenaston",
+            "Charles Finney": "Charles G. Finney", "Curvin L Wenger": "Curvin L. Wenger",
+            "C. L. Wenger": "Curvin L. Wenger", "John Waldron": "Vincent “John” Waldron, MD",
+            "E. M Bounds": "E. M. Bounds", "F. B. Myer": "F. B. Meyer",
+            "George Brunk II": "George R. Brunk II", "George Muller": "George Müller",
+            "Joel Hostetler": "Joel A. Hostetler", "Vincent \"John\" Waldron": "Vincent “John” Waldron, MD",
+            "Robert Murray M’cheyne": "Robert Murray M’Cheyne",
+            "Wolf Miggiani M.D.": "Wolf Miggiani MD",
+        }
+        for recorded, canonical in expected.items():
+            with self.subTest(recorded=recorded):
+                self.assertEqual(canonical_author_name(recorded, aliases), canonical)
+                self.assertEqual(aliases[canonical], canonical)
+        for recorded in ("Anon.", "Anonymous", "anonymous godly woman", "Author Unknown", "Author unknown",
+                         "(Author unknown)", "An Anonymous Firstfruit", "Unknown", "Unknown author", "unknown Ghanian"):
+            with self.subTest(recorded=recorded):
+                self.assertEqual(canonical_author_name(recorded), "Anonymous")
+        self.assertEqual(canonical_author_name("A W Tozer", aliases), "A W Tozer")
+
+    def test_duplicate_json_keys_are_rejected_at_every_level(self):
+        for content in ('{"version":1,"version":1,"authors":{}}',
+                        '{"version":1,"authors":{"A":[],"A":["B"]}}'):
+            with self.subTest(content=content), self.assertRaisesRegex(AuthorError, "Duplicate key"):
+                self.load_text(content)
+
+    def test_collisions_self_aliases_and_chains_are_rejected(self):
+        for groups in ({"A": ["A"]}, {"A": ["B", "B"]}, {"A": ["C"], "B": ["C"]},
+                       {"A": ["B"], "B": ["C"]}, {"A": ["B"], "B": ["A"]}):
+            with self.subTest(groups=groups), self.assertRaisesRegex(AuthorError, "Duplicate or conflicting"):
+                self.load_text(json.dumps({"version": 1, "authors": groups}))
+
+    def test_malformed_names_and_configuration_are_rejected(self):
+        invalid = [None, [], {}, {"version": 2, "authors": {}}, {"version": True, "authors": {}},
+                   {"version": 1, "authors": []}, {"version": 1, "authors": {}, "extra": {}},
+                   {"version": 1, "authors": {"A": "B"}}]
+        for name in ("", " ", " A", "A ", "A\nB", "A\x7fB", "A\u200bB", "A\ue000B", "A\ud800B", "A" * 1025):
+            invalid.extend(({"version": 1, "authors": {name: []}}, {"version": 1, "authors": {"A": [name]}}))
+        for name in (None, 1, False, []):
+            invalid.append({"version": 1, "authors": {"A": [name]}})
+        for data in invalid:
+            with self.subTest(data=data), self.assertRaises(AuthorError):
+                self.load_text(json.dumps(data))
+        self.assertEqual(self.load_text(json.dumps({"version": 1, "authors": {"A" * 1024: []}})),
+                         {"A" * 1024: "A" * 1024})
+
+    def test_missing_file_and_invalid_json_raise_author_errors(self):
+        with tempfile.TemporaryDirectory() as temporary, self.assertRaisesRegex(AuthorError, "Cannot read author aliases"):
+            load_author_aliases(Path(temporary) / "missing.json")
+        with self.assertRaisesRegex(AuthorError, "Cannot read author aliases"):
+            self.load_text("{")
+
+    def test_custom_flat_mappings_reject_chains_cycles_and_invalid_names(self):
+        model = {"articles": {"en": []}}
+        for aliases in ([], {"A": "B", "B": "C"}, {"A": "B", "B": "A"}, {"A": ""}, {"": "A"}, {"A": None}):
+            with self.subTest(aliases=aliases), self.assertRaises(AuthorError):
+                build_author_index(model, aliases=aliases)
+            with self.subTest(aliases=aliases), self.assertRaises(AuthorError):
+                canonical_author_name("A", aliases=aliases)
 
 
 if __name__ == "__main__":
