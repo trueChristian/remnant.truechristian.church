@@ -16,9 +16,11 @@ from urllib.parse import unquote
 import uuid
 
 if __package__:
-    from .authors import build_author_index
+    from .authors import build_author_index, canonical_author_name, load_author_aliases
+    from .route_registry import RegistryError, migrate_author_registry
 else:
-    from authors import build_author_index
+    from authors import build_author_index, canonical_author_name, load_author_aliases
+    from route_registry import RegistryError, migrate_author_registry
 
 RESERVED = {"articles", "issues", "categories", "authors", "topics", "series", "search", "assets", "images", "feeds", "rss", "feed", "sitemap", "404", "index", "api", "downloads", "routes"}
 UUID_PATTERN = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.IGNORECASE)
@@ -136,7 +138,7 @@ def set_article_alias(registry: dict, locale: str, identity: str, alias: str, ca
     entry.pop("placeholder", None)
 
 
-def initialize_routes(model: dict, locales, registry_path: Path, update: bool = False) -> dict:
+def initialize_routes(model: dict, locales, registry_path: Path, update: bool = False, *, author_aliases: dict | None = None) -> dict:
     """Resolve readable frozen routes and language-prefix redirects by UUID.
 
     Ordinary builds return a complete candidate registry without editing the
@@ -161,14 +163,19 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
             raise RouteError("Unsupported route registry version")
     else:
         registry = {"version": 1, "categories": {}, "issues": {}, "articles": {}}
-    registry = copy.deepcopy(registry)
+    author_aliases = load_author_aliases() if author_aliases is None else author_aliases
+    try:
+        registry = migrate_author_registry(registry, author_aliases)
+    except RegistryError as error:
+        raise RouteError(str(error)) from error
     result = {"categories": {}, "issues": {}, "articles": {}, "authors": {}, "redirects": {}, "registry": registry, "pending": []}
+    result["author_aliases"] = author_aliases
     occupied: dict[str, tuple[str, str, str]] = {}
     aliases: dict[str, tuple[str, str]] = {}
     alias_spellings: dict[str, set[str]] = {}
     legacy_sources: dict[str, tuple[str, str, str]] = {}
     result["legacy_aliases"] = {}
-    authors = {author["id"]: author for author in build_author_index(model)}
+    authors = {author["id"]: author for author in build_author_index(model, aliases=author_aliases)}
     for identity in authors:
         _author_name(identity)
     articles = {tag: {item["id"]: item for item in model["articles"].get(tag, [])} for tag in tags}
@@ -267,8 +274,8 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
                     reserve(checked, owner)
                     remember(checked, kind, identity)
 
-    # Author names are exact source identities, shared by all language views.
-    # Frozen aliases and histories reserve retired names before new allocation.
+    # Reviewed canonical author identities are shared by all language views.
+    # Merged aliases and histories reserve retired names before new allocation.
     for tag in tags:
         records = registry["authors"][tag]
         for identity in sorted(authors, key=lambda name: (name.casefold(), name)):
@@ -442,4 +449,4 @@ def issue_url(routes: dict, locale: str, identity: str) -> str:
 
 
 def author_url(routes: dict, locale: str, name: str) -> str:
-    return routes["authors"][locale][name]
+    return routes["authors"][locale][canonical_author_name(name, routes.get("author_aliases", {}))]
