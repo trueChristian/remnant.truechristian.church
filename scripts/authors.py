@@ -1,10 +1,14 @@
-"""Derive public author navigation from the authoritative English bylines.
+"""Derive public author navigation from English bylines and reviewed aliases.
 
-An exact recorded name is the website identity. This module does not reconcile
-spelling, punctuation, capitalization, initials, or historical name variants.
-It never edits source bylines or interprets a raw attribution as a person.
+Only names explicitly listed in the maintained alias file share an identity.
+Unlisted names remain distinct; source bylines are never edited and raw
+attributions are never interpreted as people.
 """
 from __future__ import annotations
+
+import json
+from pathlib import Path
+import unicodedata
 
 
 class AuthorError(ValueError):
@@ -15,15 +19,85 @@ DETAIL_FIELDS = (
     "location", "role", "birth_year", "death_year", "life_dates", "age", "credentials",
 )
 INTEGER_FIELDS = {"birth_year", "death_year", "age"}
+DEFAULT_AUTHOR_ALIASES = Path(__file__).resolve().parents[1] / "data" / "author-aliases.json"
 
 
-def build_author_index(model: dict) -> list[dict]:
-    """Return exact-name authors, their distinct articles, and recorded details.
+def _validate_alias_name(name: object) -> str:
+    if (not isinstance(name, str) or not name or len(name) > 1024 or name != name.strip()
+            or any(unicodedata.category(character).startswith("C") for character in name)):
+        raise AuthorError(f"Invalid author alias name: {name!r}")
+    return name
 
-    Each record contains ``id`` and ``name`` (the unchanged recorded name),
-    ``article_ids`` in English model order, and ``details`` mapping allowlisted
-    fields to unique recorded values. Details are historical article metadata;
-    their presence does not assert a current location, position, or age.
+
+def _unique_object(pairs: list[tuple[str, object]]) -> dict:
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise AuthorError(f"Duplicate key in author aliases: {key!r}")
+        result[key] = value
+    return result
+
+
+def _validated_aliases(aliases: dict[str, str]) -> dict[str, str]:
+    """Validate a flat, one-step mapping without modifying the caller's map."""
+    if not isinstance(aliases, dict):
+        raise AuthorError("Author aliases must be a recorded-name to canonical-name mapping")
+    for recorded, canonical in aliases.items():
+        _validate_alias_name(recorded)
+        _validate_alias_name(canonical)
+        if aliases.get(canonical, canonical) != canonical:
+            raise AuthorError(f"Author alias chains or cycles are not allowed: {recorded!r} -> {canonical!r}")
+    return aliases
+
+
+def load_author_aliases(path: str | Path = DEFAULT_AUTHOR_ALIASES) -> dict[str, str]:
+    """Load reviewed names as a flat mapping, including canonical self entries.
+
+    The versioned JSON contains ``authors: {canonical: [exact aliases]}``.
+    Duplicate JSON keys, repeated aliases, cross-group collisions and aliases
+    that are another group's canonical name fail the build. This makes future
+    editorial additions reviewable without introducing fuzzy name matching.
+    """
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"), object_pairs_hook=_unique_object)
+    except (OSError, UnicodeError, json.JSONDecodeError) as error:
+        raise AuthorError(f"Cannot read author aliases from {path}: {error}") from error
+    if not isinstance(data, dict) or set(data) != {"version", "authors"}:
+        raise AuthorError("Author aliases must contain only version and authors")
+    if type(data["version"]) is not int or data["version"] != 1:
+        raise AuthorError("Unsupported author aliases version; expected 1")
+    groups = data["authors"]
+    if not isinstance(groups, dict):
+        raise AuthorError("Author aliases authors must be an object")
+    aliases = {_validate_alias_name(name): name for name in groups}
+    for canonical, recorded_names in groups.items():
+        if not isinstance(recorded_names, list):
+            raise AuthorError(f"Author aliases for {canonical!r} must be a list")
+        for recorded in recorded_names:
+            _validate_alias_name(recorded)
+            if recorded in aliases:
+                raise AuthorError(f"Duplicate or conflicting author alias: {recorded!r}")
+            aliases[recorded] = canonical
+    return aliases
+
+
+def canonical_author_name(name: str, aliases: dict[str, str] | None = None) -> str:
+    """Resolve one exact recorded name; an unlisted name stays unchanged."""
+    if not isinstance(name, str) or not name.strip():
+        raise AuthorError("Author name must be nonempty text")
+    resolved = load_author_aliases() if aliases is None else _validated_aliases(aliases)
+    return resolved.get(name, name)
+
+
+def build_author_index(model: dict, aliases: dict[str, str] | None = None) -> list[dict]:
+    """Return canonical authors, their distinct articles, and recorded details.
+
+    Each record contains canonical ``id`` and ``name``, observed ``source_names``
+    preserving exact English spellings, ``article_ids`` in English model order,
+    and ``details`` mapping allowlisted fields to unique recorded values across
+    aliases. Details are historical article metadata; their presence does not
+    assert a current location, position, or age. Passing an empty aliases map
+    explicitly disables grouping, which is useful when auditing source names.
 
     Only English source metadata establishes membership. Translations neither
     add authors nor increase counts. The caller filters article IDs for each
@@ -36,6 +110,7 @@ def build_author_index(model: dict) -> list[dict]:
     articles = model["articles"].get("en")
     if not isinstance(articles, list):
         raise AuthorError("Author index requires an English article list")
+    aliases = load_author_aliases() if aliases is None else _validated_aliases(aliases)
 
     authors: dict[str, dict] = {}
     membership: dict[str, set[str]] = {}
@@ -64,10 +139,13 @@ def build_author_index(model: dict) -> list[dict]:
             name = person.get("name")
             if not isinstance(name, str) or not name.strip():
                 raise AuthorError(f"Invalid author name in {context}: expected nonempty text")
-            author = authors.setdefault(name, {
-                "id": name, "name": name, "article_ids": [], "details": {},
+            canonical = aliases.get(name, name)
+            author = authors.setdefault(canonical, {
+                "id": canonical, "name": canonical, "source_names": [], "article_ids": [], "details": {},
             })
-            included = membership.setdefault(name, set())
+            if name not in author["source_names"]:
+                author["source_names"].append(name)
+            included = membership.setdefault(canonical, set())
             if identity not in included:
                 author["article_ids"].append(identity)
                 included.add(identity)
