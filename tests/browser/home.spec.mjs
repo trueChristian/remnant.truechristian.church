@@ -336,8 +336,9 @@ test('homepage browsing remains useful with JavaScript disabled', async ({ brows
       await expect(page.locator('.home-lead__article article h2 a')).toHaveAttribute('href', article.url);
       await expect(page.locator('.home-lead__article article h2 a')).toHaveText(article.title);
       await expect(page.locator('.home-lead__article .empty-state')).toHaveCount(0);
+      const articleUrl = new URL(article.url, page.url()).href;
       await page.locator('.home-lead__article article h2 a').click();
-      await expect(page).toHaveURL(new RegExp(`${article.url}$`));
+      await expect(page).toHaveURL(articleUrl);
       await expect(page.locator('.prose article')).toBeVisible();
     } else {
       await expect(page.locator('.home-lead__article article')).toHaveCount(0);
