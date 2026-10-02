@@ -453,9 +453,28 @@ class Site:
             return
         self.write(path,f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{BRAND}</title><link rel="canonical" href="{ORIGIN}{esc(destination)}"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url={esc(destination)}"></head><body><a href="{esc(destination)}">{BRAND} →</a></body></html>')
 
+    def category_pagination_redirects(self):
+        """Retain category identity when a visitor changes a paginated prefix."""
+        for category in self.categories:
+            identity = category['id']
+            pages = {tag: max(1,math.ceil(sum(identity in article_categories(article) for article in self.articles[tag])/PAGE_SIZE)) for tag in self.locales}
+            tails = set()
+            for tag in self.locales:
+                entry = self.routes['registry']['categories'][tag][identity]
+                for path in [self.category_url(tag,identity), *entry.get('history',[])]:
+                    tail = path.split('/',2)[2]
+                    if not re.search(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}',tail,re.I):
+                        tails.add(tail)
+            for number in range(2,max(pages.values())+1):
+                for tag in self.locales:
+                    base = self.category_url(tag,identity)
+                    destination = f'{base}page/{number}/' if number <= pages[tag] else base
+                    for tail in tails:
+                        self.redirect(f'/{tag}/{tail}page/{number}/',destination)
+
     def not_found(self,tag, *, root=False):
         body = f'<section class="tcc-container page-section"><header class="page-heading"><p class="eyebrow">404</p><h1>{esc(self.ui(tag,"not_found_title"))}</h1><p>{esc(self.ui(tag,"not_found_body"))}</p><a class="button" href="/{tag}/">{esc(self.ui(tag,"return_home"))} <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></header></section>'
-        self.page(tag,'/404.html' if root else f'/{tag}/404/',self.ui(tag,'not_found_title'),body,indexed=False,paths=self.localized_paths('404',suffix='404/'),extra_config={'notFound':root,'locales':list(self.locales)})
+        self.page(tag,'/404.html' if root else f'/{tag}/404/',self.ui(tag,'not_found_title'),body,indexed=False,paths=self.localized_paths('404',suffix='404/'),extra_config={'notFound':root,'locales':list(self.locales),'legacyRouteIndex':'/legacy-route-index.json'})
 
     def build(self):
         for tag in self.locales:
@@ -471,9 +490,12 @@ class Site:
                     self.missing_article(tag,article)
         for path,destination in self.routes['redirects'].items():
             self.redirect(path,destination)
+        self.category_pagination_redirects()
         for tag in self.locales:
             for article in self.articles[tag]:
                 self.redirect(article['compatibility_url'],article['url'])
+        legacy_index = {'aliases': self.routes.get('legacy_aliases', {}), 'targets': {kind: self.routes[kind] for kind in ('articles', 'categories', 'issues')}}
+        self.write('/legacy-route-index.json',json.dumps(legacy_index,ensure_ascii=False,separators=(',',':'))+'\n')
         self.not_found('en',root=True)
         root_body = '<section class="tcc-container page-section"><header class="page-heading"><h1>'+BRAND+'</h1><p>'+esc(self.ui('en','intro'))+'</p></header><div class="language-grid">'+''.join(f'<a class="button button--quiet" href="/{tag}/" lang="{esc(tag)}" dir="{esc(data["meta"]["dir"])}">{esc(data["meta"]["native_name"])}</a>' for tag,data in self.locales.items())+'</div></section>'
         self.page('en','/',BRAND,root_body,indexed=False,extra_config={'rootRedirect':True,'locales':list(self.locales)})

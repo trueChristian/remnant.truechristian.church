@@ -138,6 +138,8 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
     occupied: dict[str, tuple[str, str, str]] = {}
     aliases: dict[str, tuple[str, str]] = {}
     alias_spellings: dict[str, set[str]] = {}
+    legacy_sources: dict[str, tuple[str, str, str]] = {}
+    result["legacy_aliases"] = {}
     articles = {tag: {item["id"]: item for item in model["articles"].get(tag, [])} for tag in tags}
     for tag in tags:
         if len(articles[tag]) != len(model["articles"].get(tag, [])):
@@ -166,6 +168,14 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
             raise RouteError(f"Ambiguous language-prefix alias: {tail} ({aliases[key]} and {owner})")
         aliases[key] = owner
         alias_spellings.setdefault(key, set()).add(tail)
+        if UUID_PATTERN.search(tail):
+            # UUID paths remain migration inputs, never public canonical URLs.
+            # Own-locale static redirects keep existing bookmarks working. A
+            # compact exact lookup supports prefix changes on these old inputs
+            # without multiplying every historical UUID route by every locale.
+            tag = unquote(path).split("/", 2)[1]
+            legacy_sources[path] = (kind, tag, identity)
+            result["legacy_aliases"][tail] = {"kind": kind, "id": identity}
 
     def redirect(old, new, owner):
         if old == new:
@@ -266,6 +276,14 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
             if category_slug == previous_category or UUID_PATTERN.search(category_slug):
                 category_slug = registry["categories"][tag][category_id]["slug"]
             promote = bool(entry and entry.get("placeholder") and source is not None)
+            missing_placeholder = source is None and english is not None and (entry is None or entry.get("placeholder"))
+            if missing_placeholder:
+                # Availability pages are noindex and are not category content.
+                # Sharing their English tail avoids one localized-category
+                # redirect permutation for every still-missing translation.
+                category_slug = "articles"
+            elif promote:
+                category_slug = registry["categories"][tag][category_id]["slug"]
             migrate = bool(entry and (was_fallback or UUID_PATTERN.search(entry["alias"]) or UUID_PATTERN.search(entry["category_slug"])))
             if entry is None or promote or migrate:
                 if source is not None:
@@ -323,12 +341,18 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
     # any source locale prefix resolves to the same identity in the target locale
     # and updates both localized category and article aliases in one step.
     for key, (kind, identity) in aliases.items():
+        if UUID_PATTERN.search(key):
+            continue
         for tag in tags:
             destination = result[kind][tag].get(identity)
             if destination is None:  # Retired identities reserve aliases only.
                 continue
             for tail in sorted(alias_spellings[key]):
                 redirect(f"/{tag}{tail}", destination, (kind, tag, identity))
+    for path, (kind, tag, identity) in legacy_sources.items():
+        destination = result[kind][tag].get(identity)
+        if destination is not None:
+            redirect(path, destination, (kind, tag, identity))
     result["cross_locale_aliases"] = {key: {"kind": owner[0], "id": owner[1]} for key, owner in aliases.items()}
     if update:
         registry_path.parent.mkdir(parents=True, exist_ok=True)

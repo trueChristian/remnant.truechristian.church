@@ -71,7 +71,8 @@ class RoutesTests(unittest.TestCase):
         self.assertEqual(routes['articles']['af'][A], '/af/geloof/die-getroue-lewe/')
         self.assertFalse(routes['registry']['articles']['af'][A]['fallback'])
         self.assertEqual(routes['redirects'][f'/af/geloof/article-{A}/'], routes['articles']['af'][A])
-        self.assertEqual(routes['redirects'][f'/de/geloof/article-{A}/'], routes['articles']['de'][A])
+        self.assertNotIn(f'/de/geloof/article-{A}/', routes['redirects'])
+        self.assertEqual(routes['legacy_aliases'][f'/geloof/article-{A}/'], {'kind': 'articles', 'id': A})
         self.assert_no_uuid_canonicals(routes)
         # Save the returned deployment registry to make the aliases permanent.
         self.save(routes['registry'])
@@ -96,13 +97,15 @@ class RoutesTests(unittest.TestCase):
         self.translate('af', 'Die getroue lewe')
         config = {'af': self.config['af'], 'de': self.config['de'], 'en': {}}
         routes = initialize_routes(self.model, config, self.path)
-        self.assertEqual(routes['articles']['de'][A], '/de/glaube/a-faithful-life/')
+        self.assertEqual(routes['articles']['de'][A], '/de/articles/a-faithful-life/')
         self.assertEqual(routes['redirects']['/de/geloof/die-getroue-lewe/'], routes['articles']['de'][A])
 
     def test_missing_translation_has_readable_availability_path_and_is_promoted(self):
         routes = initialize_routes(self.model, self.config, self.path, update=True)
         missing = routes['articles']['af'][A]
-        self.assertEqual(missing, '/af/geloof/a-faithful-life/')
+        self.assertEqual(missing, '/af/articles/a-faithful-life/')
+        self.assertEqual(routes['articles']['de'][A], '/de/articles/a-faithful-life/')
+        self.assertEqual(routes['registry']['articles']['af'][A]['category_id'], C)
         self.assertTrue(routes['registry']['articles']['af'][A]['placeholder'])
         self.assertNotIn('af', self.model['articles'])
         self.assertEqual(routes['redirects']['/af/faith/a-faithful-life/'], missing)
@@ -112,6 +115,36 @@ class RoutesTests(unittest.TestCase):
         self.assertNotIn('placeholder', ready['registry']['articles']['af'][A])
         self.assertEqual(ready['redirects'][missing], ready['articles']['af'][A])
         self.assertEqual(ready['redirects']['/de/geloof/die-getroue-lewe/'], ready['articles']['de'][A])
+
+    def test_existing_category_placeholder_moves_to_shared_tail_with_history(self):
+        routes = initialize_routes(self.model, self.config, self.path)
+        record = routes['registry']['articles']['af'][A]
+        record['category_slug'] = 'geloof'
+        old = '/af/geloof/' + record['alias'] + '/'
+        self.save(routes['registry'])
+        migrated = initialize_routes(self.model, self.config, self.path, update=True)
+        self.assertEqual(migrated['articles']['af'][A], '/af/articles/a-faithful-life/')
+        self.assertIn(old, migrated['registry']['articles']['af'][A]['history'])
+        self.assertEqual(migrated['redirects'][old], migrated['articles']['af'][A])
+        self.translate('af', 'Die getroue lewe')
+        published = initialize_routes(self.model, self.config, self.path)
+        self.assertEqual(published['articles']['af'][A], '/af/geloof/die-getroue-lewe/')
+        self.assertEqual(published['redirects'][old], published['articles']['af'][A])
+        self.assertEqual(published['redirects']['/af/articles/a-faithful-life/'], published['articles']['af'][A])
+
+    def test_legacy_paths_are_static_only_in_source_locales_but_all_have_lookup_metadata(self):
+        self.translate('af', 'Die getroue lewe')
+        routes = initialize_routes(self.model, self.config, self.path)
+        legacy = f'/geloof/article-{A}/'
+        self.assertEqual(routes['redirects']['/af' + legacy], routes['articles']['af'][A])
+        self.assertNotIn('/de' + legacy, routes['redirects'])
+        self.assertEqual(routes['legacy_aliases'][legacy], {'kind': 'articles', 'id': A})
+        self.assertEqual(routes['cross_locale_aliases'][legacy], {'kind': 'articles', 'id': A})
+        # The old UUID-only route actually existed in every locale, so each has
+        # its own direct static redirect without needing the runtime fallback.
+        for tag in self.config:
+            self.assertEqual(routes['redirects'][f'/{tag}/articles/{A}/'], routes['articles'][tag][A])
+        self.assertEqual(routes['redirects']['/de/geloof/die-getroue-lewe/'], routes['articles']['de'][A])
 
     def test_localized_categories_are_frozen_by_identity(self):
         config = {'en': {}, 'zh-Hans': {'categories': {C: {'slug': '信仰'}}}}
@@ -189,7 +222,9 @@ class RoutesTests(unittest.TestCase):
         self.assertEqual(migrated['articles']['en'][A], canonical)
         for slug in ('faith', 'prayer'):
             self.assertEqual(migrated['redirects'][f'/en/{slug}/article-{A}/'], canonical)
-            self.assertEqual(migrated['redirects'][f'/af/{slug}/article-{A}/'], migrated['articles']['af'][A])
+            self.assertNotIn(f'/af/{slug}/article-{A}/', migrated['redirects'])
+            self.assertEqual(migrated['legacy_aliases'][f'/{slug}/article-{A}/'], {'kind': 'articles', 'id': A})
+            self.assertEqual(migrated['cross_locale_aliases'][f'/{slug}/article-{A}/'], {'kind': 'articles', 'id': A})
         self.assertEqual(migrated['redirects'][f'/en/articles/{A}/'], canonical)
         self.assert_no_uuid_canonicals(migrated)
 
@@ -204,7 +239,10 @@ class RoutesTests(unittest.TestCase):
         self.assertEqual(migrated['categories']['en'][C], '/en/faith/')
         self.assertEqual(migrated['articles']['en'][A], '/en/faith/a-faithful-life/')
         self.assertEqual(migrated['redirects'][old], migrated['articles']['en'][A])
-        self.assertEqual(migrated['redirects'][old.replace('/en/', '/af/', 1)], migrated['articles']['af'][A])
+        self.assertNotIn(old.replace('/en/', '/af/', 1), migrated['redirects'])
+        self.assertEqual(migrated['legacy_aliases']['/' + old.split('/', 2)[2]], {'kind': 'articles', 'id': A})
+        self.assertEqual(migrated['redirects'][f'/en/faith-{C}/'], '/en/faith/')
+        self.assertEqual(migrated['legacy_aliases'][f'/faith-{C}/'], {'kind': 'categories', 'id': C})
         self.assert_no_uuid_canonicals(migrated)
 
     def test_explicit_alias_and_category_migration_preserve_cross_language_history(self):

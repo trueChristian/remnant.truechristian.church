@@ -21,6 +21,7 @@ import json
 from pathlib import Path
 import re
 import sys
+import unicodedata
 import zlib
 from urllib.parse import unquote, urljoin, urlsplit
 from xml.etree import ElementTree as ET
@@ -223,6 +224,7 @@ class SiteChecker:
         self.references = {}
         self.search = {}
         self.home_data = {}
+        self.legacy_routes = None
 
     def error(self, message):
         self.errors.append(message)
@@ -292,6 +294,8 @@ class SiteChecker:
                 if page.config is not None:
                     if page.config.get('homeData'):
                         self.reference(page.config['homeData'], route)
+                    if page.config.get('legacyRouteIndex'):
+                        self.reference(page.config['legacyRouteIndex'], route)
                     for key in private_json_keys(page.config):
                         self.error(f'{route}: private JSON field {key}')
             elif file.suffix == '.json':
@@ -317,6 +321,8 @@ class SiteChecker:
                     elif relative == 'scripture/manifest.json':
                         from scripture import load_manifest
                         load_manifest(file)
+                    elif relative == 'legacy-route-index.json':
+                        self.check_legacy_schema(value)
                     elif relative != 'routes.json':
                         self.error('Unexpected public JSON file: ' + relative)
                 except (ValueError, TypeError):
@@ -334,6 +340,92 @@ class SiteChecker:
                 for value in re.findall(r'\]\(<([^>]+)>|<(https?://[^>]+)>', source):
                     self.reference(value[0] or value[1], '/' + relative)
         return self
+
+    def check_legacy_schema(self, value):
+        """Audit only public identities and local paths in the recovery index."""
+        kinds = {'articles', 'categories', 'issues'}
+        if (not isinstance(value, dict) or set(value) != {'aliases', 'targets'}
+                or not isinstance(value['aliases'], dict) or not isinstance(value['targets'], dict)
+                or set(value['targets']) != kinds):
+            self.error('Invalid legacy route index schema')
+            return
+        self.legacy_routes = value
+
+        def safe_path(path):
+            if (not isinstance(path, str) or not path.startswith('/') or path.startswith('//')
+                    or not path.endswith('/') or len(path) > 4096):
+                return None
+            try:
+                decoded = unicodedata.normalize('NFC', unquote(path, errors='strict'))
+            except UnicodeError:
+                return None
+            if decoded.count('/') != path.count('/') or any(char in decoded for char in '\\?#%'):
+                return None
+            parts = decoded[1:-1].split('/')
+            if any(not part or any(unicodedata.category(char)[0] not in 'LNM' and char != '-'
+                                   for char in part) for part in parts):
+                return None
+            return decoded, parts
+
+        seen = {}
+        for tail, owner in value['aliases'].items():
+            path = safe_path(tail)
+            if (not path or not UUID_IN_URL.search(path[0]) or len(path[1]) not in {1, 2}
+                    or not isinstance(owner, dict) or set(owner) != {'kind', 'id'}
+                    or owner['kind'] not in kinds or not isinstance(owner['id'], str)
+                    or not UUID_IN_URL.fullmatch(owner['id'])):
+                self.error('Invalid legacy route alias/identity: ' + str(tail))
+                continue
+            key = path[0].casefold()
+            if key in seen and seen[key] != owner:
+                self.error('Ambiguous legacy route alias: ' + tail)
+            seen[key] = owner
+        for kind, locales in value['targets'].items():
+            if not isinstance(locales, dict):
+                self.error('Invalid legacy route target locale map: ' + kind)
+                continue
+            for tag, records in locales.items():
+                if (not re.fullmatch(r'[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*', tag)
+                        or not isinstance(records, dict)):
+                    self.error('Invalid legacy route target locale: ' + str(tag))
+                    continue
+                for identity, target in records.items():
+                    path = safe_path(target)
+                    expected_segments = 2 if kind == 'categories' else 3
+                    if (not UUID_IN_URL.fullmatch(identity) or not path
+                            or path[1][0] != tag or len(path[1]) != expected_segments
+                            or UUID_IN_URL.search(path[0])
+                            or (kind == 'issues' and path[1][1] != 'issues')):
+                        self.error('Invalid or UUID-bearing legacy route canonical target: ' + str(target))
+                        continue
+                    self.reference(target, '/legacy-route-index.json')
+
+    def check_legacy_routes(self, routes=None):
+        value = self.legacy_routes
+        if value is None:
+            self.error('Missing or invalid legacy-route-index.json')
+            return
+        root_404 = self.require_page('/404.html', 'root 404')
+        if root_404 and (root_404.config or {}).get('legacyRouteIndex') != '/legacy-route-index.json':
+            self.error('/404.html: legacy route recovery index is missing from page configuration')
+        for locales in value['targets'].values():
+            if not isinstance(locales, dict):
+                continue
+            for records in locales.values():
+                if not isinstance(records, dict):
+                    continue
+                for target in records.values():
+                    if not isinstance(target, str):
+                        continue
+                    resolved = self.local_reference(target)
+                    page = self.pages.get(resolved[0]) if resolved else None
+                    if not page or page.redirect:
+                        self.error('Legacy route index target is missing or redirects: ' + target)
+        if routes is not None:
+            expected = {'aliases': routes.get('legacy_aliases', {}),
+                        'targets': {kind: routes[kind] for kind in ('articles', 'categories', 'issues')}}
+            if value != expected:
+                self.error('Legacy route index differs from the registered aliases or canonical identities')
 
     def check_home_data(self, file, relative, value, source):
         expected_keys = {'schema', 'locale', 'features', 'articles', 'categories', 'latestIds'}
@@ -758,6 +850,7 @@ class SiteChecker:
 
     def run(self, *, model=None, locales=None, routes=None, theme=None):
         self.scan()
+        self.check_legacy_routes(routes)
         self.check_pages(locales)
         self.check_sitemap()
         if model is not None:

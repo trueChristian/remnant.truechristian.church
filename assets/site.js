@@ -15,7 +15,22 @@ if (config.rootRedirect) {
 if (config.notFound) {
   const pathLocale = location.pathname.split('/')[1];
   const locale = config.locales.includes(pathLocale) ? pathLocale : preferredLocale(null, navigator.languages || [navigator.language], config.locales);
-  location.replace(`/${locale}/404/`);
+  const unavailable = () => location.replace(`/${locale}/404/`);
+  if (config.legacyRouteIndex && /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/iu.test(location.pathname)) {
+    (async () => {
+      try {
+        const [{ resolveLanguageRoute }, response] = await Promise.all([
+          import('./language-routes.js'), fetch(config.legacyRouteIndex, { signal: AbortSignal.timeout(5000) })
+        ]);
+        if (!response.ok) throw new Error('Legacy routing unavailable');
+        const destination = resolveLanguageRoute(location.pathname, await response.json());
+        if (destination) { location.replace(destination); return; }
+      } catch { /* Unknown legacy routes use the ordinary localized 404. */ }
+      unavailable();
+    })();
+  } else {
+    unavailable();
+  }
 }
 
 const themeSelect = document.querySelector('[data-theme-select]');

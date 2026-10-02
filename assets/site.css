@@ -257,10 +257,10 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
   .issue-heading { gap: 40px; grid-template-columns: 210px 1fr; }
 }
 @media (max-width: 639px) {
-  .reader-bar__inner { gap: 10px; }
-  .reader-brand { font-size: 10px; gap: 7px; }
+  .reader-bar__inner { flex-wrap: wrap; gap: 8px 10px; padding-block: 10px; }
+  .reader-brand { font-size: 10px; gap: 7px; flex-shrink: 0; }
   .reader-brand > span:last-child { display: none; }
-  .reader-settings { gap: 2px; }
+  .reader-settings { flex-wrap: wrap; justify-content: flex-end; max-width: 100%; margin-inline-start: auto; gap: 2px; }
   .select-control select { font-size: 11px; min-width: 66px; max-width: 119px; }
   .masthead { padding-top: 26px; }
   .masthead__top { align-items: flex-start; gap: 15px; }

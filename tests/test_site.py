@@ -95,7 +95,8 @@ class GeneratedSiteTests(unittest.TestCase):
         return checker
 
     def page_path(self, route):
-        return self.output / route.lstrip('/') / 'index.html'
+        path = self.output / route.lstrip('/')
+        return path / 'index.html' if route.endswith('/') else path
 
     def mutate(self, route, old, new):
         path = self.page_path(route)
@@ -247,6 +248,59 @@ class GeneratedSiteTests(unittest.TestCase):
             self.assertFalse(page.article_ids)
             self.assertFalse(checker.pages[destination].redirect)
         self.assertEqual(CounterArticleIds(checker), {'en': 3, 'af': 1})
+
+    def test_legacy_recovery_index_contains_only_known_aliases_and_direct_readable_targets(self):
+        checker = self.check()
+        expected = {'aliases': self.routes['legacy_aliases'],
+                    'targets': {kind: self.routes[kind] for kind in ('articles', 'categories', 'issues')}}
+        self.assertEqual(checker.legacy_routes, expected)
+        self.assertEqual(checker.pages['/404.html'].config['legacyRouteIndex'], '/legacy-route-index.json')
+        for kind, locales in checker.legacy_routes['targets'].items():
+            for tag, identities in locales.items():
+                for identity, path in identities.items():
+                    self.assertNotIn(identity, path)
+                    self.assertEqual(path.split('/')[1], tag)
+                    self.assertFalse(checker.pages[path].redirect)
+        missing = self.routes['articles']['fr'][uuid_for(1)]
+        self.assertTrue(checker.pages[missing].noindex)
+        self.assertEqual(checker.legacy_routes['targets']['articles']['fr'][uuid_for(1)], missing)
+
+    def test_detects_unknown_or_uuid_bearing_legacy_index_canonical_targets(self):
+        file = self.output / 'legacy-route-index.json'
+        original = json.loads(file.read_text())
+        for target, expected in [('/af/not-in-the-archive/unknown/', 'target is missing or redirects'),
+                                 (f'/af/articles/{uuid_for(1)}/', 'UUID-bearing legacy route canonical target')]:
+            with self.subTest(target=target):
+                value = copy.deepcopy(original)
+                value['targets']['articles']['af'][uuid_for(1)] = target
+                write(file, json.dumps(value))
+                self.assertTrue(any(expected in error for error in self.check().errors))
+
+    def test_detects_legacy_index_owner_changed_to_another_valid_article(self):
+        file = self.output / 'legacy-route-index.json'
+        value = json.loads(file.read_text())
+        value['aliases'][f'/articles/{uuid_for(1)}/']['id'] = uuid_for(2)
+        write(file, json.dumps(value))
+        self.assertTrue(any('differs from the registered aliases or canonical identities' in error
+                            for error in self.check().errors))
+
+    def test_detects_extra_schema_fields_or_nonlegacy_aliases_in_recovery_index(self):
+        file = self.output / 'legacy-route-index.json'
+        original = json.loads(file.read_text())
+        value = copy.deepcopy(original)
+        value['unexpected'] = 'extra public state'
+        write(file, json.dumps(value))
+        self.assertTrue(any('Invalid legacy route index schema' in error for error in self.check().errors))
+        value = copy.deepcopy(original)
+        value['aliases']['/guessed-title/'] = {'kind': 'articles', 'id': uuid_for(1)}
+        write(file, json.dumps(value))
+        self.assertTrue(any('Invalid legacy route alias/identity' in error for error in self.check().errors))
+
+    def test_detects_missing_or_broken_root_404_recovery_index(self):
+        self.mutate('/404.html', '/legacy-route-index.json', '/unknown-route-index.json')
+        self.assertTrue(any('legacy route recovery index is missing' in error for error in self.check().errors))
+        (self.output / 'legacy-route-index.json').unlink()
+        self.assertTrue(any('Missing or invalid legacy-route-index.json' in error for error in self.check().errors))
 
     def test_swapped_prefix_without_translation_lands_on_readable_noindex_notice(self):
         checker = self.check()

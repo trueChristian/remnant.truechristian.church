@@ -139,21 +139,34 @@ compatibility redirect endpoints, and the renderer updates English notice links
 to the readable English canonical.
 
 `routes['articles'][locale]` also covers English identities whose translation is
-unavailable. Their readable availability pages are noindex, show no translated
-article content, and link to English and available translations. A placeholder
-alias is promoted to the translated title when that translation publishes;
-the former address is retained in history. `article_url`, `category_url` and
-`issue_url` are lookup helpers.
+unavailable. Their availability pages use
+`/<locale>/articles/<frozen-English-alias>/`: one shared readable tail avoids
+allocating a distinct localized category/title combination for every missing
+translation. These pages are noindex, contain no translated article body, and
+link to English and available translations. When the translation publishes, it
+receives a localized category/title canonical and the former availability
+address is retained as a redirect. `article_url`, `category_url` and `issue_url`
+are lookup helpers.
 
-`routes['redirects']` maps all known compatibility paths directly to final
-canonical paths. Changing only the locale prefix of any known article,
-category, or historical path resolves the same internal identity and redirects
-to its selected-language canonical. This includes both category and article
-segments in an article address. Normal navigation, language selectors, search,
-RSS, and sitemaps link directly to canonical paths. Canonical article pages have
-self-referencing canonical metadata and reciprocal `hreflang` links only to
-available translations. Redirects and missing translations are excluded from
-these indexed alternatives.
+`routes['redirects']` maps readable prefix/history aliases and original-locale
+legacy UUID paths directly to final canonical paths. Changing only the locale
+prefix of a readable article, category, or historical path resolves the same
+internal identity and redirects to its selected-language canonical without
+JavaScript. This includes both category and article segments in an article
+address. Legacy UUID histories with a manually changed prefix use the root
+404 page and `legacy-route-index.json` for exact known-alias recovery; this
+special case requires JavaScript and replaces the browser URL with the readable
+canonical. It does not guess unknown aliases or generate every legacy UUID
+history under every language prefix.
+
+Category pagination keeps the same category identity after a prefix change. It
+opens the corresponding localized page when that page exists; otherwise it
+opens the category's localized first page.
+
+Normal navigation, language selectors, search, RSS, and sitemaps link directly
+to canonical paths. Canonical article pages have self-referencing canonical
+metadata and reciprocal `hreflang` links only to available translations.
+Redirects and missing translations are excluded from indexed alternatives.
 
 `data/routes.json` is the committed website-owned editorial registry, not an
 export from either content repository. Before generating output,
@@ -194,7 +207,9 @@ set_article_alias(registry, 'af', article_uuid, 'approved-new-alias')
 ```
 
 Every previous path remains in `history`; legacy UUID fallback paths remain
-recognized for compatibility. Retired aliases cannot be reassigned to another
+recognized for compatibility in their original locale, with changed-prefix
+legacy permutations recovered through the JavaScript lookup described above.
+Retired aliases cannot be reassigned to another
 identity. Registry entries do not republish removed content. Reserved namespaces,
 conflicting histories, and cross-language aliases that identify different objects
 fail validation before publishing. GitHub Pages redirects are zero-delay HTML

@@ -12,6 +12,18 @@ const articlePath = tag => {
 const prefix = (path, tag) => path.replace(/^\/[^/]+\//u, `/${tag}/`);
 const uuid = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/iu;
 
+test('a changed language prefix on a legacy UUID address resolves to a readable alias', async ({ page }) => {
+  const legacy = JSON.parse(fs.readFileSync('dist/legacy-route-index.json', 'utf8'));
+  const tail = Object.entries(legacy.aliases).find(([path, owner]) => owner.kind === 'articles' && owner.id === identity && uuid.test(path))[0];
+  const requested = `/de${tail}`;
+  await page.route(new URL(requested, 'http://127.0.0.1:8080').href, route => route.fulfill({
+    status: 404, contentType: 'text/html', body: fs.readFileSync('dist/404.html', 'utf8')
+  }));
+  await page.goto(requested);
+  await expect(page).toHaveURL(new URL(articlePath('de'), page.url()).href);
+  expect(page.url()).not.toMatch(uuid);
+});
+
 test('manual article language changes redirect to one localized canonical page', async ({ page }) => {
   for (const tag of ['af', 'de', 'nl']) {
     const expected = articlePath(tag);
@@ -44,6 +56,15 @@ test('manual category language changes redirect to localized category aliases', 
     await expect(page.locator('link[rel=canonical]')).toHaveAttribute('href', `https://remnant.truechristian.church${expected}`);
     await expect(page.locator('html')).toHaveAttribute('lang', tag);
   }
+});
+
+test('a paginated category prefix change keeps its localized category', async ({ page }) => {
+  const categoryId = Object.keys(registry.categories.en).find(id => indexes.en.filter(record => record.category_ids.includes(id)).length > 24);
+  expect(categoryId).toBeTruthy();
+  const count = indexes.af.filter(record => record.category_ids.includes(categoryId)).length;
+  const base = `/af/${registry.categories.af[categoryId].slug}/`;
+  await page.goto(`/af/${registry.categories.en[categoryId].slug}/page/2/`);
+  await expect(page).toHaveURL(new URL(count > 24 ? `${base}page/2/` : base, page.url()).href);
 });
 
 test('article and category prefix redirects work with JavaScript disabled', async ({ browser }) => {

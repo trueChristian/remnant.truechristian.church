@@ -6,13 +6,14 @@ Each article and category keeps its stable identity independently of its languag
 
 - An article UUID has exactly one canonical article page for each available translation. Its title, content, category path, and article alias use the selected language.
 - Categories use localized canonical paths and stable category identities. Changing only a category URL's language prefix resolves the same category and redirects to its canonical path in the selected language.
-- Replacing only the language prefix on any known locale's canonical or historical article path resolves the article UUID and redirects directly to the requested locale's canonical URL. The localized category segments in an article path participate in this resolution.
+- Category pagination preserves the requested page number when that localized page exists; otherwise it opens the same category's localized first page.
+- Replacing only the language prefix on any known readable canonical or historical article path resolves the article identity and redirects directly to the requested locale's canonical URL without JavaScript. The localized category segments in an article path participate in this resolution.
 - Site navigation, search results, language selectors, feeds, and sitemaps link to localized canonical URLs rather than compatibility aliases.
 - Missing translations display an explicit availability page with an English link and a noindex directive. English article content is never duplicated under another language prefix.
-- Existing localized paths, historical paths, and legacy article UUID addresses remain recognized as compatibility redirect endpoints. UUID-bearing addresses never remain canonical URLs or appear in navigation, search results, feeds, or sitemaps.
+- Existing localized paths and histories remain compatibility aliases. Original-language legacy UUID addresses remain static redirect endpoints. Changed-prefix legacy UUID history permutations use exact known-alias recovery from the root 404 page and require JavaScript. UUID-bearing addresses never remain canonical reading URLs or appear in navigation, search results, feeds, or sitemaps.
 - New articles and translations automatically receive readable aliases derived from their localized titles. Duplicate aliases use `title`, `title-2`, `title-3`, and so on. No UUID or issue/sequence context is appended. Existing canonical aliases containing UUIDs migrate to readable aliases. UUIDs identify content internally; generated canonical article, category, Markdown, and search-filter URLs contain no UUIDs.
 - Saved aliases and the established article category path remain stable after later title corrections, category renaming, or category moves. An intentional migration preserves the previous paths as history redirects.
-- Missing translations receive readable planned aliases and noindex availability pages. When the translation publishes, its localized title supplies the canonical alias and the former availability address becomes a redirect.
+- Missing translations use noindex availability pages at `/<locale>/articles/<frozen-English-alias>/`. Sharing one readable tail avoids generating distinct localized category/title permutations for every unavailable language. When the translation publishes, its localized category/title supplies the canonical URL and the former availability address becomes a redirect.
 - Alias allocation and cross-language resolution are deterministic and collision-safe. A path must never silently resolve to a different article or category.
 - Every available translation has a self-referencing canonical URL and reciprocal hreflang links only to actual available translations. Redirect and missing-translation pages are excluded from indexed article alternatives.
 - Tests cover runtime redirects, canonical routing, category and article language switching, Unicode aliases, missing translations, existing histories, frozen paths, and alias collisions.
@@ -38,12 +39,21 @@ HTML and reader Markdown; AI notice text and attribution are preserved.
 
 ## Static-host redirect behavior
 
-GitHub Pages compatibility addresses contain a zero-delay HTML refresh,
-destination canonical metadata, and `noindex,follow`. They contain no duplicate
-article body and target the final canonical page directly. These are HTML
-responses rather than HTTP 301/308 redirects; server-status redirects require
-additional hosting support. Legacy UUID addresses are accepted only to repair
-existing links and never appear in canonical navigation or reader URLs.
+Readable prefix/history aliases and original-language legacy UUID addresses
+contain a zero-delay HTML refresh, destination canonical metadata, and
+`noindex,follow`. They contain no duplicate article body, target the final
+canonical page directly, and work without JavaScript. These are HTML responses
+rather than HTTP 301/308 redirects; server-status redirects require additional
+hosting support.
+
+Manually changing the prefix of a legacy UUID-bearing history URL may reach the
+root 404 page. That page uses `legacy-route-index.json` to match an exact known
+alias and replace the browser URL with the readable canonical in the requested
+language. This niche recovery requires JavaScript. Unknown paths remain errors;
+there is no guessed alias fallback. Keeping this recovery index compact avoids
+generating every legacy UUID history under every language prefix. Legacy UUID
+addresses are accepted only to repair existing links and never appear in
+canonical navigation or reader URLs.
 
 ## Verification
 

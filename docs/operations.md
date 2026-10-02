@@ -91,18 +91,35 @@ offline review with `--published`.
 Articles and categories retain localized canonical aliases. Manually replacing a
 known URL's language prefix redirects directly to the same object's canonical
 alias in that language, including historical paths and article category segments.
-Missing translations have readable noindex availability pages; their eventual
-localized alias retains the previous address as a redirect. Duplicate titles use
-numeric suffixes, while saved aliases remain frozen. See the
+Missing translations share readable availability tails at
+`/<locale>/articles/<frozen-English-alias>/`, with noindex metadata and no copied
+English article body. When a translation publishes, its localized category/title
+canonical retains the former availability address as a redirect. Sharing these
+tails avoids a separate category/title combination for every unavailable
+language. Duplicate titles use numeric suffixes, while saved aliases remain frozen. See the
 [routing contract](multilingual-routing-plan.md) for migrations and validation.
 
-GitHub Pages has no application redirect handler. Compatibility URLs serve a
-zero-delay HTML refresh, a canonical link to the destination, and `noindex,follow`.
-They contain no duplicate article body and lead directly to the final canonical.
-They are HTML responses, not HTTP 301/308 redirects; server-status redirects would
-require a hosting layer that supports them. All generated navigation, feeds,
-sitemaps, reader Markdown, and search-filter URLs use readable canonical aliases;
-legacy UUID URLs are compatibility endpoints only.
+Category pagination redirects to the same localized page number when available,
+or that category's localized first page when the selected language has fewer
+pages.
+
+GitHub Pages has no application redirect handler. Readable prefix/history aliases
+and original-language legacy UUID links serve a zero-delay HTML refresh, a
+canonical link to the destination, and `noindex,follow`. They contain no duplicate
+article body, lead directly to the final canonical, and work without JavaScript.
+These are HTML responses, not HTTP 301/308 redirects; server-status redirects
+would require a hosting layer that supports them.
+
+The only JavaScript-dependent compatibility case is manually changing the
+language prefix of a legacy UUID-bearing history URL that has no static file in
+that language. The root 404 page reads the compact `legacy-route-index.json`,
+matches an exact known alias, and replaces the browser address with the readable
+canonical in the requested locale. Unknown paths remain errors. This avoids
+publishing every legacy UUID history under every language prefix. Normal
+readable article/category prefix changes remain static and work without
+JavaScript. All generated navigation, feeds, sitemaps, reader Markdown, and
+search-filter URLs use readable canonical aliases; legacy UUID URLs are
+compatibility endpoints only.
 
 ## Local build and CI
 
