@@ -9,10 +9,10 @@ Built from the authoritative [Berean Voice archive](https://github.com/trueChris
 - First-class magazine issues, faithful article text and imagery, useful empty translation pages, and persistent locale/theme choices
 - Per-language full-text search in a Web Worker, with Unicode matching, body snippets, category/issue filters and shareable pagination
 - Site-only Scripture popovers with cached multilingual detection and editable false-positive overrides
-- Stable UUID-based Markdown downloads with copy fallback, original issue citation, per-language RSS, sitemaps and canonical alias routes
+- Stable localized article and category aliases, matching Markdown downloads with copy fallback, original issue citation, per-language RSS, sitemaps and canonical URLs
 - Static HTML and ordinary links for discovery and reading; JavaScript enhances preferences, search and archive rotation
 
-English publishes independently. Only compatible completed translations appear; their exact existing AI notice is preserved. Human review removes that notice but does not gate publication. No build starts a paid translation campaign.
+English publishes independently. Only compatible completed translations appear; existing AI notice text is preserved, with its English link updated to the readable canonical URL. Human review removes that notice but does not gate publication. No build starts a paid translation campaign.
 
 ## Stack
 
@@ -23,8 +23,9 @@ The generator and source adapter use **Python 3.11+ standard library**. Scriptur
 ```sh
 npm ci
 python3 scripts/prepare_sources.py
-python3 scripts/build.py
-python3 scripts/check_site.py dist
+python3 scripts/route_registry.py
+python3 scripts/build.py --registry .build/routes.json
+python3 scripts/check_site.py dist --registry .build/routes.json
 npm test
 npx playwright install --with-deps chromium
 npm run test:browser
@@ -42,7 +43,9 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 - [Visual identity, accessibility and performance](docs/design-and-quality.md)
 - [Build workflows, publication and recovery](docs/operations.md)
 
-Aliases are owned by `data/routes.json`, keyed by permanent UUID. Existing paths do not change with corrected titles or category moves. New publications have deterministic UUID-safe routes until a reviewed alias update; old category paths redirect. See the routing guide before editing aliases.
+Articles and categories have one canonical alias per language, keyed internally by permanent UUID. Changing only the language prefix of a known article or category URL redirects to that object's localized canonical URL. Duplicate aliases use numeric suffixes such as `title-2` and `title-3`; UUIDs never appear in canonical article, category, Markdown, or search-filter URLs. Existing UUID addresses remain redirect endpoints for old links.
+
+`data/routes.json` owns reviewed alias changes. Each build merges it with the last successfully published `routes.json`, preserving automatically assigned aliases after title corrections and category moves. Missing translations have readable, noindex availability pages instead of copied English content. GitHub Pages serves compatibility addresses as zero-delay HTML refresh pages with canonical/noindex metadata, rather than HTTP 301 responses. See the [routing guide](docs/multilingual-routing-plan.md) before editing aliases.
 
 Optional future physical covers are configured in `data/covers.json`, keyed by issue UUID:
 

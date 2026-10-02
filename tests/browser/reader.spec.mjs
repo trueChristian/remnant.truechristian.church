@@ -11,7 +11,10 @@ const afCandidate = indexes.af.find(record => translationExport.some(item => ite
 const id = (afCandidate || indexes.en[0]).id;
 const noticeRequired = translationExport.some(item => item.id === id && item.language_tag === 'af' && item.ai_notice_required);
 const missingLocale = locales.map(locale => locale.meta.tag).find(tag => !indexes[tag].some(record => record.id === id));
-const article = locale => indexes[locale].find(record => record.id === id)?.url || `/${locale}/articles/${id}/`;
+const article = locale => {
+  const entry = registry.articles[locale][id];
+  return `/${locale}/${entry.category_slug}/${entry.alias}/`;
+};
 const capture = async (page, name) => {
   fs.mkdirSync('.test-output/screenshots', { recursive: true });
   await page.evaluate(async()=>{
@@ -76,7 +79,7 @@ test('French browser default and unavailable browser storage remain usable', asy
 test('missing article translation explains availability and returns to original', async ({ page }) => {
   test.skip(!missingLocale, 'Every configured language has this article');
   await page.goto(article('en'));
-  await page.locator('[data-language-select]').selectOption(`/${missingLocale}/articles/${id}/`);
+  await page.locator('[data-language-select]').selectOption(article(missingLocale));
   await expect(page.locator('html')).toHaveAttribute('lang', missingLocale);
   await expect(page.locator('.empty-state')).toBeVisible();
   await expect(page.locator('meta[name=robots]')).toHaveAttribute('content','noindex,follow');
@@ -92,7 +95,7 @@ test('locale switching follows real article IDs and keeps the AI notice', async 
   if (noticeRequired) await expect(page.locator('.prose aside')).toContainText('OpenAI');
   else await expect(page.locator('.prose aside[data-translation-notice]')).toHaveCount(0);
   await capture(page, 'afrikaans-article');
-  if (noticeRequired) await page.locator(`.prose aside a[href="/en/articles/${id}/"]`).click();
+  if (noticeRequired) await page.locator(`.prose aside a[href="${article('en')}"]`).click();
   else await page.locator('[data-language-select]').selectOption(article('en'));
   await expect(page).toHaveURL(new RegExp(article('en')+'$'));
 });
@@ -175,7 +178,7 @@ test('search filters, zero results, pagination, and keyboard navigation', async 
   await expect(page.locator('.empty-message')).toBeVisible();
   await page.getByRole('button',{name:'Clear',exact:true}).click();
   await expect(page.locator('#search-q')).toHaveValue('');
-  await page.locator('select[name=category]').selectOption('11f3b229-ad6c-5d69-b529-82d977f8d000');
+  await page.locator('select[name=category]').selectOption(registry.categories.en['11f3b229-ad6c-5d69-b529-82d977f8d000'].slug);
   await expect(page.locator('.search-result')).not.toHaveCount(0);
   await expect(page.locator('.search-result .eyebrow').first()).not.toBeEmpty();
 });

@@ -80,9 +80,10 @@ The UI, not the content adapter, is responsible for offering every configured
 locale and empty categories. Articles retain the full exported English metadata
 under `source_metadata`; ordinary fields remain directly accessible. `html_source`
 retains the original HTML path metadata; `html` is the complete display fragment.
-`html` is never parsed and reserialized, so the exact translation notice remains
-unchanged. `translation` contains only the already-public exported translation
-metadata, not processing state.
+`html` is never parsed and reserialized. The renderer preserves translation
+notice text and changes only a known English UUID-link `href` to its readable
+canonical URL. The source model keeps the original fragment. `translation`
+contains only already-public exported translation metadata, not processing state.
 
 The normalized article includes:
 
@@ -122,42 +123,66 @@ UUID.
 
 ```python
 from scripts.routes import initialize_routes
-routes = initialize_routes(model, locales, Path('data/routes.json'))
+routes = initialize_routes(model, locales, Path('.build/routes.json'))
 ```
 
 `locales` may be a mapping of language tags to locale dictionaries or an iterable
 of tags. A locale dictionary's `categories[uuid]['slug']` is used only when that
 category first enters the registry. Article/category/issue maps use
-`routes[kind][locale][uuid]`; `routes['redirects']` maps old paths to canonical
-paths. `article_url`, `category_url` and `issue_url` are lookup helpers.
-Published article dictionaries receive `url`, `compatibility_url` and
-`markdown_url`. Markdown routes always use `/<locale>/articles/<uuid>.md`.
-The existing English-notice URL `/<locale>/articles/<uuid>/` redirects to the
-canonical article path.
+`routes[kind][locale][uuid]`; UUIDs identify content internally. Every available
+translation receives one localized canonical article URL, with localized
+category and title aliases. Published dictionaries receive `url`,
+`compatibility_url` and `markdown_url`; Markdown uses `url.rstrip('/') + '.md'`.
+UUIDs never appear in canonical article, category, Markdown, or generated
+search-filter URLs. Existing `/<locale>/articles/<uuid>/` addresses remain
+compatibility redirect endpoints, and the renderer updates English notice links
+to the readable English canonical.
 
-`data/routes.json` is the committed website-owned identity registry, not an
-export from either content repository. Every initially published article has a
-persisted localized title alias. Group paths and the canonical article's original
-primary-category path are frozen by UUID: title corrections, category renaming,
-and grouping moves cannot silently change shared URLs. Current category pages
-and breadcrumbs may reflect an updated editorial grouping while its established
-article address stays stable. A deliberate category-path migration uses the same
-explicit history mechanism as an alias change.
+`routes['articles'][locale]` also covers English identities whose translation is
+unavailable. Their readable availability pages are noindex, show no translated
+article content, and link to English and available translations. A placeholder
+alias is promoted to the translated title when that translation publishes;
+the former address is retained in history. `article_url`, `category_url` and
+`issue_url` are lookup helpers.
 
-New English publications must not wait for a registry-maintenance commit. In a
-normal read-only build, an unknown article uses `article-<full-uuid>` as its alias,
-which is independent of its mutable title. Redirects from that fallback under
-**every known category** preserve links through category moves even before its
-record is synchronized. The build returns the candidate registry as
-`routes['registry']` and lists additions in `routes['pending']`; publish the safe
-registry map as a synchronization artifact. A later reviewed maintenance change
-can import that map into `data/routes.json` and explicitly select a readable
-alias. No automatic repository write or credential is required for publication.
+`routes['redirects']` maps all known compatibility paths directly to final
+canonical paths. Changing only the locale prefix of any known article,
+category, or historical path resolves the same internal identity and redirects
+to its selected-language canonical. This includes both category and article
+segments in an article address. Normal navigation, language selectors, search,
+RSS, and sitemaps link directly to canonical paths. Canonical article pages have
+self-referencing canonical metadata and reciprocal `hreflang` links only to
+available translations. Redirects and missing translations are excluded from
+these indexed alternatives.
 
-To bootstrap new readable aliases in a development checkout, pass `update=True`.
-This writes the registry atomically. It never replaces existing aliases. Review
-and commit the resulting file. If a UUID fallback has already published, import
-its published registry record first so all fallback redirects survive promotion.
+`data/routes.json` is the committed website-owned editorial registry, not an
+export from either content repository. Before generating output,
+`scripts/route_registry.py` merges it with the last successfully published
+`routes.json` into `.build/routes.json`. Published additions and histories are
+retained. Reviewed committed changes take precedence, except a stale committed
+UUID fallback cannot replace a migrated readable published alias.
+
+New publications receive readable title aliases automatically. Duplicate aliases
+use `title`, `title-2`, `title-3`, and so on; no UUID or issue context is appended.
+Allocation is deterministic, Unicode scripts remain readable, and retired aliases
+stay reserved. The candidate registry is exposed as `routes['registry']`, with
+additions in `routes['pending']`, and written to the generated `routes.json`.
+Only successful site publication makes it the next durable baseline. No repository
+write or credential is required for ordinary publication.
+
+Saved aliases and original primary-category paths remain frozen after title
+corrections, category renaming, or grouping moves. Current breadcrumbs may reflect
+updated editorial grouping while established article URLs stay stable. An
+intentional alias or category-path change must retain previous paths in history.
+Legacy UUID canonical aliases migrate to readable aliases and retain their former
+addresses as redirects.
+
+For a reviewed maintenance update, start with the merged registry and pass
+`update=True` to save route additions atomically, or use the build's
+`--update-routes` with an explicit registry path. Review the resulting registry
+before copying it into `data/routes.json` and committing it. Ordinary builds leave
+their input registry unchanged. For online/offline preparation and failure
+handling, see [operations](operations.md).
 
 For an intentional migration:
 
@@ -168,12 +193,12 @@ set_article_alias(registry, 'af', article_uuid, 'approved-new-alias')
 # Write the registry, rebuild, review collision tests, then commit it.
 ```
 
-Every previous path remains in `history`; the helper also adds every possible
-UUID fallback route when promoting a fallback record. Retired article aliases
-remain reserved and cannot be reassigned to another UUID. Removed articles are
-not republished by the existence of a registry entry. New slug collisions use the
-full UUID, Unicode scripts remain readable, and reserved namespaces or conflicting
-manual histories fail validation before publishing.
+Every previous path remains in `history`; legacy UUID fallback paths remain
+recognized for compatibility. Retired aliases cannot be reassigned to another
+identity. Registry entries do not republish removed content. Reserved namespaces,
+conflicting histories, and cross-language aliases that identify different objects
+fail validation before publishing. GitHub Pages redirects are zero-delay HTML
+refresh pages with canonical/noindex metadata, not HTTP 301 responses.
 
 ## Markdown fidelity
 
@@ -192,9 +217,11 @@ license or public PDF URL. No runtime state or audit records enter the document.
 
 Tables, underlining, superscripts, definition lists, typed lists and other
 structures without a lossless portable Markdown equivalent remain valid embedded
-semantic HTML. The AI notice remains its exact HTML, including the authoritative
-English UUID link; no relabeling, translation, removal or generated paraphrase is
-performed. Readers should use a CommonMark renderer that permits semantic HTML.
+semantic HTML. The AI notice keeps its exact text and markup except the English
+UUID-link `href`, which the site renderer replaces with the authoritative readable
+English URL before generating reader Markdown. No notice relabeling, translation,
+removal, or paraphrase is performed. Readers should use a CommonMark renderer that
+permits semantic HTML.
 
 ## Verification
 
@@ -202,6 +229,8 @@ performed. Readers should use a CommonMark renderer that permits semantic HTML.
 python3 -m unittest discover -s tests -p 'test_content.py' -v
 python3 -m unittest discover -s tests -p 'test_routes.py' -v
 python3 -m unittest discover -s tests -p 'test_markdown.py' -v
+python3 -m unittest discover -s tests -p 'test_site.py' -v
+python3 -m unittest discover -s tests -p 'test_route_registry.py' -v
 ```
 
 Fixtures exercise failed/absent translations, revision and checksum mismatches,
