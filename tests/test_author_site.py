@@ -185,6 +185,19 @@ class AuthorSiteTests(unittest.TestCase):
             self.assertIn(expected_html, source)
             self.assertEqual(page.page.canonical, [ORIGIN + article['url']])
 
+    def test_repeated_printed_name_stays_intact_with_one_link_per_contributor(self):
+        raw = f'{PRIMARY}, 2005; arranged by {PRIMARY}'
+        for tag in ('en', 'af'):
+            article = next(item for item in self.model['articles'][tag] if item['id'] == uuid_for(1))
+            article['byline']['raw'] = raw
+            article['source_metadata']['byline']['raw'] = raw
+        Site(self.model, self.locales, self.routes, self.theme, self.output, {}).build()
+        for tag in ('en', 'af'):
+            page = self.parse(self.routes['articles'][tag][uuid_for(1)]).page
+            self.assertIn(raw, page.main_text)
+            self.assertEqual(page.author_byline_links, [(PRIMARY, self.routes['authors'][tag][PRIMARY])])
+        self.assertEqual(self.check().errors, [])
+
     def test_second_page_has_no_false_language_equivalents_and_switches_to_author_base(self):
         self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(self.root / 'pagination', count=29)
         base = self.routes['authors']['en'][PRIMARY]
