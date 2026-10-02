@@ -1,5 +1,6 @@
 """Mutation tests for author inventories, canonical links, and locale navigation."""
 import gzip
+import copy
 import json
 import re
 import tempfile
@@ -9,6 +10,8 @@ from pathlib import Path
 from tests.test_author_site import author_site_fixture, PRIMARY, COAUTHOR, VARIANT
 from tests.test_site import uuid_for
 from check_site import SiteChecker
+from build import Site
+from routes import initialize_routes
 
 
 class AuthorCheckerTests(unittest.TestCase):
@@ -37,8 +40,98 @@ class AuthorCheckerTests(unittest.TestCase):
         errors = self.errors()
         self.assertTrue(any(expected in error for error in errors), errors)
 
+    def merge_variants(self):
+        """Migrate previously separate profiles and a doubly credited article."""
+        self.old_variant_routes = {tag: records[VARIANT] for tag, records in self.routes['authors'].items()}
+        for tag in ('en', 'af'):
+            article = self.model['articles'][tag][0]
+            article['byline']['authors'].append({'name': VARIANT, 'location': 'Hilltown'})
+            article['byline']['raw'] = f'Written by {PRIMARY} & {VARIANT} — as printed'
+            article['source_metadata']['byline'] = copy.deepcopy(article['byline'])
+        self.routes = initialize_routes(self.model, self.locales,
+                                        self.root / 'authors-route-source.json', update=True,
+                                        author_aliases={PRIMARY: PRIMARY, VARIANT: PRIMARY})
+        Site(self.model, self.locales, self.routes, self.theme, self.output, {}).build()
+
     def test_valid_author_output_passes(self):
         self.assertEqual(self.errors(), [])
+
+    def test_merged_inventory_counts_article_union_and_accepts_printed_alias_links(self):
+        self.merge_variants()
+        self.assertEqual(self.errors(), [])
+        checker = SiteChecker(self.output)
+        checker.run(model=self.model, locales=self.locales, routes=self.routes, theme=self.theme)
+        directory = checker.pages['/en/authors/']
+        self.assertEqual([card['name'] for card in directory.author_cards], [COAUTHOR, PRIMARY])
+        profile = checker.pages[self.routes['authors']['en'][PRIMARY]]
+        self.assertIn(self.locales['en']['ui']['author_total_articles'].format(count=4), profile.author_counts_text)
+        self.assertEqual(profile.author_article_links, [self.routes['articles']['en'][uuid_for(index)]
+                                                       for index in (4, 3, 2, 1)])
+        variant_article = checker.pages[self.routes['articles']['en'][uuid_for(3)]]
+        self.assertEqual(variant_article.author_byline_links,
+                         [(VARIANT, self.routes['authors']['en'][PRIMARY])])
+        doubly_credited = checker.pages[self.routes['articles']['en'][uuid_for(1)]]
+        self.assertEqual(doubly_credited.author_byline_links,
+                         [(PRIMARY, self.routes['authors']['en'][PRIMARY])])
+        self.assertIn(f'Written by {PRIMARY} & {VARIANT} — as printed', doubly_credited.main_text)
+        for tag, old in self.old_variant_routes.items():
+            self.assertEqual(checker.pages[old].redirect, self.routes['authors'][tag][PRIMARY])
+
+    def test_detects_alias_credit_counted_as_an_additional_article(self):
+        self.merge_variants()
+        route = self.routes['authors']['en'][PRIMARY]
+        self.mutate(route, '<span>' + self.locales['en']['ui']['author_total_articles'].format(count=4) + '</span>',
+                    '<span>' + self.locales['en']['ui']['author_total_articles'].format(count=5) + '</span>')
+        self.assert_error('count disagrees with source or locale availability')
+
+    def test_detects_duplicate_article_in_merged_profile(self):
+        self.merge_variants()
+        route = self.routes['authors']['en'][PRIMARY]
+        original = self.routes['articles']['en'][uuid_for(3)]
+        duplicate = self.routes['articles']['en'][uuid_for(1)]
+        self.mutate(route, f'<h2><a href="{original}">', f'<h2><a href="{duplicate}">')
+        self.assert_error('author article inventory/order or canonical category links differ')
+
+    def test_detects_alias_link_pointing_to_other_canonical_author(self):
+        self.merge_variants()
+        article = self.routes['articles']['en'][uuid_for(3)]
+        self.mutate(article, f'class="author-link" href="{self.routes["authors"]["en"][PRIMARY]}"',
+                    f'class="author-link" href="{self.routes["authors"]["en"][COAUTHOR]}"')
+        self.assert_error('author byline links do not match the original named contributors')
+
+    def test_detects_duplicate_canonical_link_for_two_printed_aliases(self):
+        self.merge_variants()
+        article = self.routes['articles']['en'][uuid_for(3)]
+        path = self.page_path(article)
+        original = path.read_text(encoding='utf-8')
+        credit = re.search(r'<a class="author-link"[^>]*>.*?</a>', original).group(0)
+        path.write_text(original.replace(credit, credit + credit, 1), encoding='utf-8')
+        self.assert_error('author byline links do not match the original named contributors')
+
+    def test_detects_missing_search_aliases_and_duplicate_canonical_contributors(self):
+        self.merge_variants()
+        path = self.output / 'en/search-index.json'
+        original = json.loads(path.read_text(encoding='utf-8'))
+        for mutation in ('missing alias', 'duplicate contributor'):
+            with self.subTest(mutation=mutation):
+                records = copy.deepcopy(original)
+                record = next(row for row in records if row['id'] == uuid_for(1))
+                self.assertEqual(len(record['authors']), 1)
+                self.assertEqual(set(record['authors'][0]['aliases']), {PRIMARY, VARIANT})
+                if mutation == 'missing alias':
+                    record['authors'][0]['aliases'] = [PRIMARY]
+                else:
+                    record['authors'].append(copy.deepcopy(record['authors'][0]))
+                payload = json.dumps(records, ensure_ascii=False).encode('utf-8')
+                path.write_bytes(payload)
+                path.with_suffix('.json.gz').write_bytes(gzip.compress(payload, mtime=0))
+                self.assert_error('search author links differ from original contributors or canonical author routes')
+
+    def test_detects_retired_alias_redirecting_to_another_author(self):
+        self.merge_variants()
+        old = self.old_variant_routes['af']
+        self.mutate(old, self.routes['authors']['af'][PRIMARY], self.routes['authors']['af'][COAUTHOR])
+        self.assert_error('registered redirect does not directly identify canonical destination')
 
     def test_detects_missing_directory_card_even_when_profile_remains(self):
         route = '/en/authors/'

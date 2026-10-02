@@ -9,11 +9,19 @@ const locales = Object.fromEntries(fs.readdirSync('locales').filter(file => file
 }));
 const indexes = Object.fromEntries(Object.keys(locales).map(tag => [tag,
   JSON.parse(fs.readFileSync(`dist/${tag}/search-index.json`, 'utf8'))]));
+const curated = JSON.parse(fs.readFileSync('data/author-aliases.json', 'utf8')).authors;
+const canonicalNames = new Map(Object.entries(curated).flatMap(([name, aliases]) =>
+  [name, ...aliases].map(alias => [alias, name])));
+const canonicalName = name => canonicalNames.get(name) || name;
 const authors = new Map();
+const sourceNames = new Map();
 for (const article of source) {
   for (const author of article.byline?.authors || []) {
-    if (!authors.has(author.name)) authors.set(author.name, new Set());
-    authors.get(author.name).add(article.id);
+    const name = canonicalName(author.name);
+    if (!authors.has(name)) authors.set(name, new Set());
+    if (!sourceNames.has(name)) sourceNames.set(name, new Set());
+    authors.get(name).add(article.id);
+    sourceNames.get(name).add(author.name);
   }
 }
 const authorPath = (tag, name) => `/${tag}/authors/${registry.authors[tag][name].slug}/`;
@@ -21,12 +29,12 @@ const articlesFor = (tag, name) => indexes[tag].filter(article => authors.get(na
 const primary = [...authors.keys()].sort((a, b) => authors.get(b).size - authors.get(a).size)[0];
 const translatedTag = Object.keys(locales).find(tag => tag !== 'en' && articlesFor(tag, primary).length);
 const emptyTag = Object.keys(locales).find(tag => tag !== 'en' && !articlesFor(tag, primary).length);
-const shared = source.find(article => new Set((article.byline?.authors || []).map(author => author.name)).size > 1);
+const shared = source.find(article => new Set((article.byline?.authors || []).map(author => canonicalName(author.name))).size > 1);
 const uuid = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/iu;
 const text = (tag, key, count) => locales[tag].ui[key].replace('{count}', String(count));
 const headingLinks = page => page.locator('.author-articles h2 a');
 
-test('Authors directory exposes every exact source name with honest source counts', async ({ page }) => {
+test('Authors directory exposes each canonical author with distinct source article counts', async ({ page }) => {
   await page.goto('/en/authors/', { waitUntil: 'domcontentloaded' });
   await expect(page.locator('.authors-page h1')).toHaveText(locales.en.ui.authors);
   await expect(page.locator('.author-card')).toHaveCount(authors.size);
@@ -56,13 +64,13 @@ test('directory and author articles open the existing category canonical reader'
   await expect(page).toHaveURL(new URL(expected[0].url, page.url()).href);
   await expect(page.locator('.prose article')).toHaveAttribute('data-article-id', expected[0].id);
   await expect(page.locator('link[rel=canonical]')).toHaveAttribute('href', `https://remnant.truechristian.church${expected[0].url}`);
-  await page.locator('.article-byline').getByRole('link', { name: primary, exact: true }).click();
+  await page.locator(`.article-byline a[href="${authorPath('en', primary)}"]`).click();
   await expect(page).toHaveURL(new URL(authorPath('en', primary), page.url()).href);
 });
 
 test('one coauthored article is reachable under every credited name without duplicate readers', async ({ page }) => {
   expect(shared, 'The source fixture must exercise a real shared credit').toBeTruthy();
-  const names = [...new Set(shared.byline.authors.map(author => author.name))];
+  const names = [...new Set(shared.byline.authors.map(author => canonicalName(author.name)))];
   const canonical = indexes.en.find(article => article.id === shared.id).url;
   for (const name of names) {
     const position = articlesFor('en', name).findIndex(article => article.id === shared.id);
@@ -74,7 +82,58 @@ test('one coauthored article is reachable under every credited name without dupl
   }
   await page.goto(canonical, { waitUntil: 'domcontentloaded' });
   for (const name of names) {
-    await expect(page.locator('.article-byline').getByRole('link', { name, exact: true })).toHaveAttribute('href', authorPath('en', name));
+    const credit = page.locator(`.article-byline a[href="${authorPath('en', name)}"]`);
+    await expect(credit).toHaveCount(1);
+    expect([name, ...sourceNames.get(name)]).toContain(await credit.textContent());
+  }
+});
+
+test('reviewed aliases share one profile with the union of articles and preserved printed credits', async ({ page }) => {
+  const merged = [...sourceNames].filter(([, names]) => names.size > 1);
+  test.skip(!merged.length, 'This source fixture has no reviewed spelling variants');
+  await page.goto('/en/authors/', { waitUntil: 'domcontentloaded' });
+  for (const [name, variants] of merged) {
+    const card = page.locator('.author-card').filter({ has: page.getByRole('heading', { name, exact: true }) });
+    await expect(card).toHaveCount(1);
+    await expect(card).toContainText(text('en', 'author_total_articles', authors.get(name).size));
+    for (const variant of variants) {
+      if (variant !== name) await expect(page.locator('.author-card h2').getByText(variant, { exact: true })).toHaveCount(0);
+    }
+  }
+  const aliasedArticle = source.find(article => article.byline?.authors?.some(author =>
+    canonicalName(author.name) !== author.name && article.byline.raw?.includes(author.name)));
+  expect(aliasedArticle, 'A printed variant must exercise linking to its canonical identity').toBeTruthy();
+  const person = aliasedArticle.byline.authors.find(author =>
+    canonicalName(author.name) !== author.name && aliasedArticle.byline.raw?.includes(author.name));
+  const name = canonicalName(person.name);
+  const articleURL = indexes.en.find(article => article.id === aliasedArticle.id).url;
+  await page.goto(articleURL, { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.article-byline')).toContainText(aliasedArticle.byline.raw);
+  const credit = page.locator(`.article-byline a[href="${authorPath('en', name)}"]`);
+  await expect(credit).toHaveCount(1);
+  expect([name, ...sourceNames.get(name)]).toContain(await credit.textContent());
+  await credit.click();
+  await expect(page.locator('.author-profile h1')).toHaveText(name);
+  const actual = [];
+  for (let number = 1; number <= Math.ceil(articlesFor('en', name).length / 24); number += 1) {
+    if (number > 1) await page.locator('.author-profile a[rel=next]').click();
+    actual.push(...await headingLinks(page).evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))));
+  }
+  expect(actual).toEqual(articlesFor('en', name).map(article => article.url));
+  expect(new Set(actual).size).toBe(actual.length);
+});
+
+test('retired author aliases redirect to the same canonical identity in every language', async ({ page }) => {
+  const candidate = [...sourceNames].find(([name, names]) => names.size > 1
+    && registry.authors.en[name].history.length > 0);
+  test.skip(!candidate, 'No previously published reviewed alias is present in this fixture');
+  const [name] = candidate;
+  const old = registry.authors.en[name].history[0];
+  for (const tag of Object.keys(locales)) {
+    await page.goto(old.replace(/^\/en\//u, `/${tag}/`), { waitUntil: 'domcontentloaded' });
+    await expect(page).toHaveURL(new URL(authorPath(tag, name), page.url()).href);
+    await expect(page.locator('.author-profile h1')).toHaveText(name);
+    await expect(page.locator('link[rel=canonical]')).toHaveAttribute('href', `https://remnant.truechristian.church${authorPath(tag, name)}`);
   }
 });
 
@@ -160,17 +219,18 @@ for (const worker of [true, false]) {
     for (const tag of ['en', ...(translatedTag ? [translatedTag] : [])]) {
       await page.goto(`/${tag}/search/?q=${encodeURIComponent(primary)}`, { waitUntil: 'domcontentloaded' });
       await expect(page.locator('.search-result').first()).toBeVisible();
-      const first = page.locator('.search-result').first();
+      const first = page.locator('.search-result').filter({ has: page.locator(`small a[href="${authorPath(tag, primary)}"]`) }).first();
+      await expect(first).toBeVisible();
       const articleURL = await first.locator('h2 a').getAttribute('href');
       const record = indexes[tag].find(article => article.url === articleURL);
       const original = source.find(article => article.id === record.id);
-      const names = [...new Set(original.byline.authors.map(author => author.name))];
+      const names = [...new Set(original.byline.authors.map(author => canonicalName(author.name)))];
       const credits = await first.locator('small .author-link').evaluateAll(nodes => nodes.map(node => ({ name: node.textContent, url: node.getAttribute('href') })));
-      expect(new Set(credits.map(credit => credit.name))).toEqual(new Set(names));
+      expect(new Set(credits.map(credit => credit.url))).toEqual(new Set(names.map(name => authorPath(tag, name))));
       expect(credits).toHaveLength(names.length);
-      for (const credit of credits) expect(credit.url).toBe(authorPath(tag, credit.name));
+      for (const credit of credits) expect(credit.url).toBe(authorPath(tag, canonicalName(credit.name)));
       expect(await first.locator('small').textContent()).toContain(record.author);
-      await first.locator('small').getByRole('link', { name: primary, exact: true }).click();
+      await first.locator(`small a[href="${authorPath(tag, primary)}"]`).click();
       await expect(page).toHaveURL(new URL(authorPath(tag, primary), page.url()).href);
       await expect(page.locator('.author-profile h1')).toHaveText(primary);
     }

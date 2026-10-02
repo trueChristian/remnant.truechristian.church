@@ -203,11 +203,11 @@ class AuthorSiteTests(unittest.TestCase):
         for tag in ('en', 'af'):
             records = {record['id']: record for record in json.loads((self.output / tag / 'search-index.json').read_text())}
             shared = records[uuid_for(2)]
-            self.assertEqual(shared['authors'], [{'name': name, 'url': self.routes['authors'][tag][name]}
+            self.assertEqual(shared['authors'], [{'name': name, 'url': self.routes['authors'][tag][name], 'aliases': [name]}
                                                   for name in (COAUTHOR, PRIMARY)])
             self.assertEqual(shared['author'], 'Written by Zoe Writer & Anne Writer — as printed')
             self.assertEqual(self.parse(f'/{tag}/search/').page.config['authorLabel'], self.locales[tag]['ui']['author'])
-        self.assertEqual(records[uuid_for(1)]['authors'], [{'name': PRIMARY, 'url': self.routes['authors']['af'][PRIMARY]}])
+        self.assertEqual(records[uuid_for(1)]['authors'], [{'name': PRIMARY, 'url': self.routes['authors']['af'][PRIMARY], 'aliases': [PRIMARY]}])
         english = json.loads((self.output / 'en/search-index.json').read_text())
         raw_only = next(record for record in english if record['id'] == uuid_for(5))
         self.assertEqual(raw_only['author'], 'from Herald of His Coming')
@@ -227,6 +227,44 @@ class AuthorSiteTests(unittest.TestCase):
         self.assertEqual(second.page.canonical, [ORIGIN + base + 'page/2/'])
         self.assertEqual(second.page.languages, {tag: self.routes['authors'][tag][PRIMARY] for tag in self.locales})
         self.assertIn(base, second.page.references)
+
+    def test_reviewed_aliases_merge_profiles_without_changing_printed_credits_or_article_urls(self):
+        root = self.root / 'merged'
+        self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(root, count=29)
+        previous = copy.deepcopy(self.routes)
+        raw = f'By {VARIANT}; also credited as {PRIMARY}'
+        for tag in ('en', 'af'):
+            article = next(item for item in self.model['articles'][tag] if item['id'] == uuid_for(1))
+            article['byline']['raw'] = raw
+            article['byline']['authors'].append({'name': VARIANT})
+            article['source_metadata']['byline'] = copy.deepcopy(article['byline'])
+        self.routes = initialize_routes(self.model, self.locales, root / 'authors-route-source.json',
+                                        author_aliases={PRIMARY: PRIMARY, VARIANT: PRIMARY})
+        site = Site(self.model, self.locales, self.routes, self.theme, self.output, {})
+        site.build()
+        self.assertEqual(self.routes['articles'], previous['articles'])
+        self.assertEqual(set(self.routes['authors']['en']), {PRIMARY, COAUTHOR})
+        self.assertEqual(len(site.author_map[PRIMARY]['article_ids']), 28)
+        base = self.routes['authors']['en'][PRIMARY]
+        works = self.parse(base).article_links + self.parse(base + 'page/2/').article_links
+        self.assertEqual(len(works), 28)
+        self.assertEqual(len(set(works)), 28)
+        for tag in ('en', 'af', 'fr'):
+            canonical = self.routes['authors'][tag][PRIMARY]
+            old = previous['authors'][tag][VARIANT]
+            self.assertEqual(self.parse(old).page.redirect, canonical)
+            destination = canonical + 'page/2/' if tag == 'en' else canonical
+            self.assertEqual(self.parse(old + 'page/2/').page.redirect, destination)
+        for tag in ('en', 'af'):
+            page = self.parse(self.routes['articles'][tag][uuid_for(1)]).page
+            self.assertIn(raw, page.main_text)
+            self.assertEqual(page.author_byline_links, [(VARIANT, self.routes['authors'][tag][PRIMARY])])
+            records = json.loads((self.output / tag / 'search-index.json').read_text())
+            record = next(item for item in records if item['id'] == uuid_for(1))
+            self.assertEqual(len(record['authors']), 1)
+            self.assertEqual(record['authors'][0]['name'], PRIMARY)
+            self.assertEqual(set(record['authors'][0]['aliases']), {PRIMARY, VARIANT})
+        self.assertEqual(self.check().errors, [])
 
     def test_manual_paginated_language_prefix_returns_to_matching_author(self):
         self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(self.root / 'prefix', count=29)
