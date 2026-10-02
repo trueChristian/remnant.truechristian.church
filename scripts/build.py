@@ -76,7 +76,7 @@ class Site:
         self.rank = {issue['id']: index for index, issue in enumerate(self.issues)}
         self.articles = {tag: sorted(model['articles'].get(tag, []), key=lambda a: (self.rank[a['issue_id']], a.get('sequence', 0))) for tag in locales}
         self.article_map = {tag: {a['id']: a for a in articles} for tag, articles in self.articles.items()}
-        self.authors = build_author_index(model)
+        self.authors = build_author_index(model, aliases=routes.get('author_aliases'))
         self.author_map = {author['id']: author for author in self.authors}
         self.article_authors = defaultdict(list)
         for author in self.authors:
@@ -230,18 +230,20 @@ class Site:
         authors = self.article_authors[article['id']]
         if not authors:
             return esc(raw)
-        names = {author['name']: author for author in authors}
+        names = {name: author for author in authors
+                 for name in [author['name'], *author['source_names']]}
         pattern = re.compile(r'(?<!\w)(' + '|'.join(re.escape(name) for name in sorted(names, key=len, reverse=True)) + r')(?!\w)')
         pieces, seen, end = [], set(), 0
-        def link(author):
-            return f'<a class="author-link" href="{esc(self.author_url(tag,author["id"]))}"><bdi>{esc(author["name"])}</bdi></a>'
+        def link(author, text=None):
+            return f'<a class="author-link" href="{esc(self.author_url(tag,author["id"]))}"><bdi>{esc(author["name"] if text is None else text)}</bdi></a>'
         for match in pattern.finditer(raw):
-            credit = esc(match.group()) if match.group() in seen else link(names[match.group()])
+            author = names[match.group()]
+            credit = esc(match.group()) if author['id'] in seen else link(author, match.group())
             pieces.extend([esc(raw[end:match.start()]), credit])
-            seen.add(match.group())
+            seen.add(author['id'])
             end = match.end()
         pieces.append(esc(raw[end:]))
-        remaining = [link(author) for author in authors if author['name'] not in seen]
+        remaining = [link(author) for author in authors if author['id'] not in seen]
         if remaining:
             pieces.append(f' <span class="byline-authors">({esc(self.ui(tag,"author"))}: '+', '.join(remaining)+')</span>')
         return ''.join(pieces)
@@ -540,7 +542,8 @@ class Site:
             category_ids = article_categories(article)
             topics = [self.topic_map.get(topic,{}).get('name','') if isinstance(topic,str) else topic.get('name','') for topic in article.get('topics',[])]
             issue = self.issue_map[article['issue_id']]
-            authors = [{'name':author['name'],'url':self.author_url(tag,author['id'])} for author in self.article_authors[article['id']]]
+            authors = [{'name':author['name'],'url':self.author_url(tag,author['id']),
+                        'aliases':author['source_names']} for author in self.article_authors[article['id']]]
             records.append({'id':article['id'],'title':self.title(tag,article),'url':article['url'],'body':article['text'],'categories':[self.category(tag,c)['name'] for c in category_ids if c],'category_ids':category_ids,'topics':topics,'issue':' · '.join([issue['publication'],self.issue_identity(tag,issue),issue.get('publisher','')]),'issue_id':issue['id'],'author':author_of(article),'authors':authors})
         value = json.dumps(records,ensure_ascii=False,separators=(',',':'))
         self.write(f'/{tag}/search-index.json',value)

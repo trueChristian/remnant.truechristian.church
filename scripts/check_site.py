@@ -729,11 +729,12 @@ class SiteChecker:
         from build import PAGE_SIZE
         from content import ordered_issues
 
-        authors = build_author_index(model)
+        authors = build_author_index(model, aliases=routes.get('author_aliases'))
         rank = {issue['id']: index for index, issue in enumerate(ordered_issues(model))}
         author_routes = routes.get('authors', {})
         expected_pages = set()
         names_by_article = {}
+        authors_by_name = {author['name']: author for author in authors}
         for author in authors:
             for identity in author['article_ids']:
                 names_by_article.setdefault(identity, []).append(author['name'])
@@ -795,7 +796,7 @@ class SiteChecker:
                     if page is None:
                         continue
                     if not page.author_profile or page.h1 != normalized_text(name):
-                        self.error(f'{page_path}: author profile heading does not preserve the source name')
+                        self.error(f'{page_path}: author profile heading does not match the canonical author name')
                     if page.canonical != [self.origin + page_path] or page.redirect:
                         self.error(f'{page_path}: author profile canonical is not its registered route')
                     if page.languages != equivalents:
@@ -821,13 +822,24 @@ class SiteChecker:
                 page = self.pages.get(article['url'])
                 if page is None:
                     continue
-                expected = Counter((normalized_text(name), registered.get(name)) for name in names_by_article.get(article['id'], []))
-                if Counter(page.author_byline_links) != expected:
+                expected_names = names_by_article.get(article['id'], [])
+                expected = Counter(registered.get(name) for name in expected_names)
+                valid_text = {
+                    registered.get(name): {normalized_text(value) for value in
+                                           [name, *authors_by_name[name]['source_names']]}
+                    for name in expected_names
+                }
+                # Printed credits retain their source spelling. Identity is the
+                # canonical URL, and each contributor must be linked only once.
+                if (Counter(url for _, url in page.author_byline_links) != expected
+                        or any(text not in valid_text.get(url, set())
+                               for text, url in page.author_byline_links)):
                     self.error(f'{article["url"]}: author byline links do not match the original named contributors')
             search_records = self.search.get(tag)
             if isinstance(search_records, list):
                 for record in search_records:
-                    expected = [{'name': name, 'url': registered.get(name)}
+                    expected = [{'name': name, 'url': registered.get(name),
+                                 'aliases': authors_by_name[name]['source_names']}
                                 for name in names_by_article.get(record.get('id'), [])]
                     if record.get('authors') != expected:
                         self.error(f'{tag}: search author links differ from original contributors or canonical author routes for {record.get("id")}')

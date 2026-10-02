@@ -19,6 +19,11 @@ import urllib.request
 from urllib.parse import unquote
 import uuid
 
+if __package__:
+    from .authors import canonical_author_name, load_author_aliases
+else:
+    from authors import canonical_author_name, load_author_aliases
+
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTION_REGISTRY = 'https://remnant.truechristian.church/routes.json'
 MAX_REGISTRY = 32 * 1024 * 1024
@@ -199,7 +204,48 @@ def _legacy_entry(kind: str, entry: dict) -> bool:
     return bool(entry.get('fallback')) or any(UUID_IN_SLUG.search(entry[field]) for field in fields)
 
 
-def merge_registries(committed: dict, published: dict | None) -> dict:
+def migrate_author_registry(registry: dict, aliases: dict | None = None) -> dict:
+    """Fold reviewed author identities together without releasing any old URL.
+
+    A canonical name keeps its own existing route. If only an old spelling has
+    been published, its deterministic existing route becomes the canonical
+    route. Every other member's route and history becomes redirect history.
+    Retired authors are migrated too, so future publications cannot revive a
+    merged identity or allocate one of its historical addresses to someone else.
+    """
+    aliases = load_author_aliases() if aliases is None else aliases
+    candidate = copy.deepcopy(registry)
+    if 'authors' not in candidate:
+        return candidate
+    # Validate the original author records before folding them: a malformed
+    # retired record must not disappear merely because its identity is merged.
+    author_only = {'version': 1, 'categories': {}, 'issues': {}, 'articles': {},
+                   'authors': candidate['authors']}
+    validate_registry(author_only)
+    for locale, records in candidate['authors'].items():
+        groups = {}
+        for identity, entry in records.items():
+            canonical = canonical_author_name(identity, aliases)
+            _author_identity(canonical)
+            groups.setdefault(canonical, {})[identity] = entry
+        migrated = {}
+        for canonical, members in groups.items():
+            preferred = canonical if canonical in members else min(
+                members, key=lambda name: (name.casefold(), name))
+            chosen = copy.deepcopy(members[preferred])
+            current = route_path('authors', locale, chosen)
+            histories = set()
+            for entry in members.values():
+                histories.update(entry.get('history', []))
+                histories.add(route_path('authors', locale, entry))
+            chosen['history'] = sorted(histories - {current})
+            migrated[canonical] = chosen
+        candidate['authors'][locale] = migrated
+    validate_registry({**author_only, 'authors': candidate['authors']})
+    return candidate
+
+
+def merge_registries(committed: dict, published: dict | None, *, author_aliases: dict | None = None) -> dict:
     """Freeze published additions, apply editorial changes, and retain history.
 
     Published migrations take precedence over stale committed UUID fallbacks or
@@ -207,11 +253,15 @@ def merge_registries(committed: dict, published: dict | None) -> dict:
     editorial changes. Removed records remain reserved so a temporarily
     unpublished URL cannot be reassigned.
     """
+    aliases = load_author_aliases() if author_aliases is None else author_aliases
     validate_registry(committed)
+    committed_author_names = {locale: set(records)
+                              for locale, records in committed.get('authors', {}).items()}
+    committed = migrate_author_registry(committed, aliases)
     if published is None:
-        return copy.deepcopy(committed)
+        return committed
     validate_registry(published)
-    merged = copy.deepcopy(published)
+    merged = migrate_author_registry(published, aliases)
     for kind in (*KINDS, *OPTIONAL_KINDS):
         if kind not in committed:
             continue
@@ -224,7 +274,8 @@ def merge_registries(committed: dict, published: dict | None) -> dict:
                     continue
                 keep_published = (_legacy_entry(kind, source) and not _legacy_entry(kind, previous)) or (
                     kind == 'articles' and source.get('placeholder') is True
-                    and previous.get('placeholder') is not True)
+                    and previous.get('placeholder') is not True) or (
+                    kind == 'authors' and identity not in committed_author_names.get(locale, set()))
                 chosen = copy.deepcopy(previous if keep_published else source)
                 current = route_path(kind, locale, chosen)
                 histories = set(source.get('history', [])) | set(previous.get('history', []))

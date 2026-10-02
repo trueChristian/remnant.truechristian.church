@@ -8,7 +8,7 @@ export function tokenize(query) {
 export function prepare(records) {
   return records.map((record, order) => ({ ...record, order,
     normalizedTitle: normalize(record.title),
-    normalizedMeta: normalize([...(record.categories || []), ...(record.topics || []), record.issue, record.author, ...(record.authors || []).map(author => author.name)].join(' ')),
+    normalizedMeta: normalize([...(record.categories || []), ...(record.topics || []), record.issue, record.author, ...(record.authors || []).flatMap(author => [author.name, ...(author.aliases || [])])].join(' ')),
     normalizedBody: normalize(record.body)
   }));
 }
@@ -35,20 +35,23 @@ export function search(records, query, filters = {}, offset = 0) {
     const snippet = `${start ? '…' : ''}${record.body.slice(start, start + 240)}${start + 240 < record.body.length ? '…' : ''}`;
     hits.push({ id: record.id, title: record.title, url: record.url, issue: record.issue,
       categories: record.categories, author: record.author,
-      authors: (record.authors || []).map(({ name, url }) => ({ name, url })), snippet, score, order: record.order });
+      authors: (record.authors || []).map(({ name, url, aliases = [] }) => ({ name, url, aliases })), snippet, score, order: record.order });
   }
   hits.sort((a, b) => b.score - a.score || a.order - b.order);
   return { total: hits.length, offset, hasMore: offset + 40 < hits.length, results: hits.slice(offset, offset + 40) };
 }
 export function bylineParts(raw, authors = [], label = '') {
-  // Return text/link segments, never HTML. Exact names retain publication wording;
-  // repeated mentions link once and unprinted structured credits follow the byline.
+  // Return text/link segments, never HTML. Reviewed aliases retain printed wording;
+  // each canonical author links once, even when several aliases appear in a credit.
   raw = typeof raw === 'string' ? raw : '';
-  const names = new Map();
+  const names = new Map(), people = new Map();
   for (const author of authors) {
     if (typeof author?.name === 'string' && author.name.trim() && typeof author.url === 'string'
         && /^\/[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*\/authors\/[\p{L}\p{N}\p{M}-]+\/$/u.test(author.url)) {
-      names.set(author.name, author.url);
+      people.set(author.url, author.name);
+      for (const name of [author.name, ...(Array.isArray(author.aliases) ? author.aliases : [])]) {
+        if (typeof name === 'string' && name.trim()) names.set(name, author.url);
+      }
     }
   }
   if (!names.size) return [{ text: raw }];
@@ -58,16 +61,17 @@ export function bylineParts(raw, authors = [], label = '') {
   let end = 0;
   for (const match of raw.matchAll(pattern)) {
     parts.push({ text: raw.slice(end, match.index) });
-    parts.push(seen.has(match[0]) ? { text: match[0] } : { text: match[0], url: names.get(match[0]) });
-    seen.add(match[0]); end = match.index + match[0].length;
+    const url = names.get(match[0]);
+    parts.push(seen.has(url) ? { text: match[0] } : { text: match[0], url });
+    seen.add(url); end = match.index + match[0].length;
   }
   parts.push({ text: raw.slice(end) });
-  const remaining = [...names.keys()].filter(name => !seen.has(name));
+  const remaining = [...people.entries()].filter(([url]) => !seen.has(url));
   if (remaining.length) {
     parts.push({ text: ` (${label ? `${label}: ` : ''}` });
-    remaining.forEach((name, index) => {
+    remaining.forEach(([url, name], index) => {
       if (index) parts.push({ text: ', ' });
-      parts.push({ text: name, url: names.get(name) });
+      parts.push({ text: name, url });
     });
     parts.push({ text: ')' });
   }
