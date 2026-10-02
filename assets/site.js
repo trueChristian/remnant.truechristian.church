@@ -147,7 +147,7 @@ if (searchForm) {
     const id = ++sequence;
     if (!params.size) { status.textContent = ui.search_hint; results.replaceChildren(); return; }
     status.textContent = ui.searching;
-    const message = { id, offset: resultPage * 40, url: config.searchIndex, query: query.value, filters: { category: category.value, issue: issue.value } };
+    const message = { id, offset: resultPage * 40, url: config.searchIndex, query: query.value, filters: { category: config.categoryFilters?.[category.value] || category.value, issue: config.issueFilters?.[issue.value] || issue.value } };
     if ('Worker' in window) {
       try {
         if (!worker) {
@@ -169,9 +169,12 @@ if (searchForm) {
   };
   const fromURL = () => {
     const params = new URLSearchParams(location.search);
-    query.value = params.get('q') || ''; category.value = params.get('category') || ''; issue.value = params.get('issue') || '';
+    const readableFilter = (value, mapping) => Object.hasOwn(mapping || {}, value) ? value : Object.keys(mapping || {}).find(slug => mapping[slug] === value) || value;
+    query.value = params.get('q') || '';
+    category.value = readableFilter(params.get('category') || '', config.categoryFilters);
+    issue.value = readableFilter(params.get('issue') || '', config.issueFilters);
     resultPage = Math.max(0, (parseInt(params.get('page'), 10) || 1) - 1);
-    run(undefined, true);
+    run('replaceState', true);
   };
   query.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => run('pushState'), 220); });
   category.addEventListener('change', () => run('pushState'));

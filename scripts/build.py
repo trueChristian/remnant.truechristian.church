@@ -102,10 +102,17 @@ class Site:
 
     def localized_paths(self, kind, uuid=None, suffix=''):
         if kind == 'article':
-            return {tag: self.article_map[tag][uuid]['url'] if uuid in self.article_map[tag] else f'/{tag}/articles/{uuid}/' for tag in self.locales}
+            return {tag: self.routes['articles'][tag][uuid] for tag in self.locales}
         if kind in ('category', 'issue'):
             return {tag: self.routes[kind + ('ies' if kind == 'category' else 's')][tag][uuid] for tag in self.locales} if kind == 'issue' else {tag: self.category_url(tag, uuid) for tag in self.locales}
         return {tag: f'/{tag}/{suffix}' for tag in self.locales}
+
+    def canonical_article_links(self, fragment):
+        """Keep exported notice text intact while linking to readable originals."""
+        def replacement(match):
+            path = self.routes['articles']['en'].get(match.group('identity'))
+            return f'href={match.group("quote")}{esc(path)}{match.group("quote")}' if path else match.group(0)
+        return re.sub(r'''href=(?P<quote>["'])/en/articles/(?P<identity>[0-9a-f-]{36})/(?P=quote)''', replacement, fragment)
 
     def write(self, route, content):
         if route in self.written:
@@ -388,7 +395,7 @@ class Site:
             if image.get('credit') and image['credit'] not in article['html']:
                 credit_items.append(f'<li>{esc(image.get("alt") or image.get("public_path"))} · {esc(image["credit"])}</li>')
         credit_html = '<ul class="image-credits">' + ''.join(credit_items) + '</ul>' if credit_items else ''
-        display_html = self.scripture.render(tag,article) if self.scripture else article['html']
+        display_html = self.canonical_article_links(self.scripture.render(tag,article) if self.scripture else article['html'])
         body = f'''<div class="tcc-container article-shell">{self.breadcrumb(tag,[(self.category(tag,category)['name'],self.category_url(tag,category)),(title,None)])}<header class="article-heading"><p class="eyebrow"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)['name'])}</a></p><h1>{esc(title)}</h1>{subtitle}<div class="article-byline"><span>{esc(byline)}</span><span>{esc(self.ui(tag,'minutes',count=minutes))}</span></div><a class="article-issue" href="{esc(self.issue_url(tag,issue['id']))}"><span class="mini-book" aria-hidden="true">R</span><span><small>{esc(self.ui(tag,'original_issue'))}</small>{esc(issue['publication'])} · {esc(self.issue_identity(tag,issue))}</span><span aria-hidden="true"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></header><div class="reading-layout"><aside class="reading-rail"><p class="eyebrow">{esc(self.ui(tag,'magazine'))}</p><a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue_date(issue,self.locales[tag]))}</a><p>{esc(self.ui(tag,'source_pages'))} {esc(pages)}</p><a href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a></aside><div class="reading-main"><div class="prose">{display_html}</div>{credit_html}<section class="article-citation"><h2>{esc(self.ui(tag,'citation'))}</h2><p>{esc(title)}. {esc(byline)}. <a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue['publication'])}, {esc(self.issue_identity(tag,issue))}</a>{('. '+esc(self.ui(tag,'source_pages'))+' '+esc(pages) if pages else '')}.</p><p>{esc(issue.get('publisher',''))}</p></section><section class="reader-tools"><a class="button button--quiet" href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a><button class="button enhanced-only" type="button" data-copy-markdown="{esc(article['markdown_url'])}">{esc(self.ui(tag,'copy_markdown'))}</button><p role="status" id="copy-status"></p><div id="markdown-fallback" hidden><label for="markdown-text">{esc(self.ui(tag,'copy_fallback'))}</label><textarea id="markdown-text" readonly rows="12"></textarea></div></section></div></div></div>'''
         related = [a for a in self.articles[tag] if a['issue_id']==article['issue_id'] and a['id']!=article['id']][:3]
         if related:
@@ -396,23 +403,26 @@ class Site:
         self.page(tag,article['url'],title,body,description=article.get('excerpt',''),paths=self.localized_paths('article',article['id']),article=article)
         article['issue_url'] = ORIGIN+self.issue_url(tag,issue['id'])
         article['markdown_labels'] = {key:self.ui(tag,value) for key,value in {'language':'language','byline':'author','issue':'original_issue','pages':'source_pages','canonical':'read_article','source':'source_pdf','credits':'citation','untitled':'untitled_article','issue_number':'number'}.items()}
-        markdown = generate_markdown(article, ORIGIN+article['url'], f"{issue['publication']}, {issue_date(issue,self.locales[tag])}")
+        markdown_article = {**article, 'html': self.canonical_article_links(article['html'])}
+        markdown = generate_markdown(markdown_article, ORIGIN+article['url'], f"{issue['publication']}, {issue_date(issue,self.locales[tag])}")
         self.write(article['markdown_url'],markdown)
 
     def missing_article(self,tag,article):
         title = self.ui(tag,'no_articles_title')
         body = f'<section class="tcc-container page-section"><header class="page-heading"><p class="eyebrow">{esc(self.ui(tag,"available_languages"))}</p><h1>{esc(title)}</h1><p lang="en">{esc(article.get("title") or self.ui("en","untitled_article"))}</p></header>{self.empty(tag,article["url"],missing=True,article=article)}</section>'
-        self.page(tag,f'/{tag}/articles/{article["id"]}/',title,body,indexed=False,paths=self.localized_paths('article',article['id']))
+        self.page(tag,self.routes['articles'][tag][article['id']],title,body,indexed=False,paths=self.localized_paths('article',article['id']))
 
     def search_page(self,tag):
         t = lambda key: esc(self.ui(tag,key))
-        categories = ''.join(f'<option value="{esc(c["id"])}">{esc(self.category(tag,c["id"])["name"])}</option>' for c in self.categories)
-        issues = ''.join(f'<option value="{esc(i["id"])}">{esc(issue_date(i,self.locales[tag]))}</option>' for i in self.issues)
+        category_filters = {self.category_url(tag,c['id']).strip('/').split('/')[-1]: c['id'] for c in self.categories}
+        issue_filters = {self.issue_url(tag,i['id']).strip('/').split('/')[-1]: i['id'] for i in self.issues}
+        categories = ''.join(f'<option value="{esc(slug)}">{esc(self.category(tag,identity)["name"])}</option>' for slug, identity in category_filters.items())
+        issues = ''.join(f'<option value="{esc(slug)}">{esc(issue_date(self.issue_map[identity],self.locales[tag]))}</option>' for slug, identity in issue_filters.items())
         body = f'''<section class="tcc-container page-section search-page"><header class="page-heading"><p class="eyebrow">{t('browse_archive')}</p><h1>{t('search')}</h1><p>{t('search_hint')}</p></header><form data-search-form action="/{tag}/search/" role="search"><div class="search-input"><label class="sr-only" for="search-q">{t('search')}</label><input type="search" id="search-q" name="q" placeholder="{t('search_placeholder')}" autocomplete="off"><button type="submit" class="button">{t('search')} <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></button></div><div class="search-filters"><label>{t('categories')}<select name="category"><option value="">{t('all_categories')}</option>{categories}</select></label><label>{t('issues')}<select name="issue"><option value="">{t('all_issue_filter')}</option>{issues}</select></label><button type="reset" class="text-button">{t('clear')}</button></div></form><p id="search-status" role="status" aria-live="polite">{t('search_hint')}</p><div id="search-results"></div><noscript><p><a href="/{tag}/articles/">{t('all_articles')}</a> · <a href="/{tag}/categories/">{t('browse_categories')}</a> · <a href="/{tag}/issues/">{t('all_issues')}</a></p></noscript>'''
         if not self.articles[tag]:
             body += self.empty(tag,'/en/search/')
         body += '</section>'
-        self.page(tag,f'/{tag}/search/',self.ui(tag,'search'),body,paths=self.localized_paths('search',suffix='search/'),current='search')
+        self.page(tag,f'/{tag}/search/',self.ui(tag,'search'),body,paths=self.localized_paths('search',suffix='search/'),current='search',extra_config={'categoryFilters': category_filters, 'issueFilters': issue_filters})
         records = []
         for article in self.articles[tag]:
             category_ids = article_categories(article)

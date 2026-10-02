@@ -85,11 +85,13 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Reuse the durable published Scripture scan ledger
         run: python3 scripts/scripture.py --fetch-published
+      - name: Reuse durable published route aliases
+        run: python3 scripts/route_registry.py
       - name: Build the complete static site
         run: |
-          python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --output dist
+          python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --registry .build/routes.json --output dist
       - name: Validate generated links and public-output contract
-        run: python3 scripts/check_site.py dist
+        run: python3 scripts/check_site.py dist --registry .build/routes.json
       - name: Probe live GetBible availability separately from mocked tests
         run: node scripts/check_scripture_provider.mjs
       - name: Install browser test tooling
