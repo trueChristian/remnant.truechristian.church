@@ -1,8 +1,13 @@
 import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
-const courtship = '/en/youth/a-christ-centered-courtship-964b2776-41fa-496b-bbda-e3193f780d76/';
-const courtshipSeries = '/en/christian-living/a-christ-centered-courtship-series/';
+const registry = JSON.parse(fs.readFileSync('dist/routes.json', 'utf8'));
+const articlePath = identity => {
+  const entry = registry.articles.en[identity];
+  return `/en/${entry.category_slug}/${entry.alias}/`;
+};
+const courtship = articlePath('964b2776-41fa-496b-bbda-e3193f780d76');
+const courtshipSeries = articlePath('5a87c21f-cce9-4033-8a43-5458311bc7f0');
 const svg = (width, height) => `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="#56866c"/></svg>`;
 const image = (width = 240, height = 400) => `data:image/svg+xml,${encodeURIComponent(svg(width, height))}`;
 const paragraph = '<p>' + 'Readable article prose stays beside this photograph, with enough room for a comfortable line of text. '.repeat(8) + '</p>';
