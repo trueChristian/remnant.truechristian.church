@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, tokenize, prepare, search, preferredLocale } from '../assets/search-core.js';
+import { normalize, tokenize, prepare, search, preferredLocale, bylineParts } from '../assets/search-core.js';
 const records=prepare([
  {id:'one',title:'Grace in everyday life',body:'A patient servant learns compassion, prayer and gratitude.',categories:['Christian Living'],category_ids:['living'],topics:['Discipleship'],issue:'Autumn 2024',issue_id:'2024',author:'Edward Martin',url:'/en/living/grace/'},
  {id:'two',title:'A café in Évora',body:'We sang in the café. Grace made us welcome.',categories:['Missions'],category_ids:['missions'],topics:['Portugal'],issue:'Spring 2023',issue_id:'2023',author:'A Writer',url:'/en/missions/cafe/'},
@@ -26,3 +26,37 @@ test('returned records exclude full bodies and prepared internals',()=>{const hi
 
 test('Indic vowel signs remain meaningful',()=>{assert.notEqual(normalize('दिन'),normalize('दन'));assert.notEqual(normalize('দিন'),normalize('দন'))});
 test('all matching results can be paginated',()=>{const many=prepare(Array.from({length:90},(_,i)=>({...records[0],id:String(i)})));const next=search(many,'grace',{},40);assert.equal(next.total,90);assert.equal(next.results.length,40);assert.equal(next.offset,40);assert.equal(next.hasMore,true);assert.equal(search(many,'grace',{},80).results.length,10)});
+
+test('structured contributor names are searchable and carry only public links through worker results',()=>{
+ const author={name:'Dean Taylor',url:'/af/authors/dean-taylor/',role:'Editor'};
+ const hit=search(prepare([{...records[0],author:'~Bro. Dean',authors:[author]}]),'Dean Taylor').results[0];
+ assert.equal(hit.author,'~Bro. Dean');
+ assert.deepEqual(hit.authors,[{name:author.name,url:author.url}]);
+ assert.deepEqual(search(records,'grace').results[0].authors,[]);
+});
+test('byline links preserve repeated names, punctuation and every original character',()=>{
+ const raw='By J. C. Ryle & C++ Writer; J. C. Ryle again.';
+ const parts=bylineParts(raw,[{name:'J. C. Ryle',url:'/en/authors/j-c-ryle/'},{name:'C++ Writer',url:'/en/authors/c-writer/'}],'Author');
+ assert.equal(parts.map(part=>part.text).join(''),raw);
+ assert.deepEqual(parts.filter(part=>part.url).map(part=>part.text),['J. C. Ryle','C++ Writer']);
+});
+test('unprinted or boundary-mismatched credits follow unchanged text with localized label',()=>{
+ const parts=bylineParts('By Annette and 李明',[{name:'Ann',url:'/af/authors/ann/'},{name:'李',url:'/af/authors/李/'}],'Skrywer');
+ assert.equal(parts.map(part=>part.text).join(''),'By Annette and 李明 (Skrywer: Ann, 李)');
+ assert.deepEqual(parts.filter(part=>part.url).map(part=>part.text),['Ann','李']);
+});
+test('longer overlapping names are credited without linking a substring as another person',()=>{
+ const parts=bylineParts('John Smith',[{name:'John',url:'/en/authors/john/'},{name:'John Smith',url:'/en/authors/john-smith/'}],'Author');
+ assert.equal(parts.map(part=>part.text).join(''),'John Smith (Author: John)');
+ assert.deepEqual(parts.filter(part=>part.url).map(part=>part.text),['John Smith','John']);
+});
+test('raw-only attributions remain plain and unsafe link destinations are ignored',()=>{
+ const raw='<img src=x onerror=alert(1)> Publisher';
+ for(const authors of [[],[{name:'Publisher',url:'javascript:alert(1)'}],[{name:'Publisher',url:'//external.test/authors/x/'}]]){
+  assert.deepEqual(bylineParts(raw,authors,'Author'),[{text:raw}]);
+ }
+ const parts=bylineParts(raw,[{name:'Publisher',url:'/en/authors/publisher/'}],'Author');
+ assert.equal(parts.map(part=>part.text).join(''),raw);
+ assert.equal(parts.filter(part=>part.url).length,1);
+ assert.ok(parts.every(part=>Object.keys(part).every(key=>['text','url'].includes(key))));
+});

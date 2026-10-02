@@ -1,4 +1,4 @@
-import { preferredLocale, normalize, prepare, search } from './search-core.js';
+import { preferredLocale, normalize, prepare, search, bylineParts } from './search-core.js';
 const config = JSON.parse(document.querySelector('#page-config')?.textContent || '{}');
 const ui = config.ui || {};
 const safeStore = (key, value) => { try { localStorage.setItem(key, value); } catch {} };
@@ -135,7 +135,14 @@ if (searchForm) {
       const title = document.createElement('h2'), link = document.createElement('a'); link.href = record.url;
       markedText(link, record.title, query.value); title.append(link);
       const snippet = document.createElement('p'); markedText(snippet, record.snippet, query.value);
-      const foot = document.createElement('small'); foot.textContent = [record.author, record.issue].filter(Boolean).join(' · ');
+      const foot = document.createElement('small');
+      for (const part of bylineParts(record.author, record.authors, config.authorLabel)) {
+        if (!part.url) { foot.append(document.createTextNode(part.text)); continue; }
+        const author = document.createElement('a'), name = document.createElement('bdi');
+        author.className = 'author-link'; author.href = part.url; name.textContent = part.text;
+        author.append(name); foot.append(author);
+      }
+      if (record.issue) foot.append(document.createTextNode(`${foot.textContent ? ' · ' : ''}${record.issue}`));
       item.append(meta, title, snippet, foot); results.append(item);
     });
     if (data.offset > 0 || data.hasMore) {

@@ -534,13 +534,14 @@ class Site:
         if not self.articles[tag]:
             body += self.empty(tag,'/en/search/')
         body += '</section>'
-        self.page(tag,f'/{tag}/search/',self.ui(tag,'search'),body,paths=self.localized_paths('search',suffix='search/'),current='search',extra_config={'categoryFilters': category_filters, 'issueFilters': issue_filters})
+        self.page(tag,f'/{tag}/search/',self.ui(tag,'search'),body,paths=self.localized_paths('search',suffix='search/'),current='search',extra_config={'categoryFilters': category_filters, 'issueFilters': issue_filters, 'authorLabel': self.ui(tag,'author')})
         records = []
         for article in self.articles[tag]:
             category_ids = article_categories(article)
             topics = [self.topic_map.get(topic,{}).get('name','') if isinstance(topic,str) else topic.get('name','') for topic in article.get('topics',[])]
             issue = self.issue_map[article['issue_id']]
-            records.append({'id':article['id'],'title':self.title(tag,article),'url':article['url'],'body':article['text'],'categories':[self.category(tag,c)['name'] for c in category_ids if c],'category_ids':category_ids,'topics':topics,'issue':' · '.join([issue['publication'],self.issue_identity(tag,issue),issue.get('publisher','')]),'issue_id':issue['id'],'author':author_of(article)})
+            authors = [{'name':author['name'],'url':self.author_url(tag,author['id'])} for author in self.article_authors[article['id']]]
+            records.append({'id':article['id'],'title':self.title(tag,article),'url':article['url'],'body':article['text'],'categories':[self.category(tag,c)['name'] for c in category_ids if c],'category_ids':category_ids,'topics':topics,'issue':' · '.join([issue['publication'],self.issue_identity(tag,issue),issue.get('publisher','')]),'issue_id':issue['id'],'author':author_of(article),'authors':authors})
         value = json.dumps(records,ensure_ascii=False,separators=(',',':'))
         self.write(f'/{tag}/search-index.json',value)
         (self.output/tag/'search-index.json.gz').write_bytes(gzip.compress(value.encode(),mtime=0))

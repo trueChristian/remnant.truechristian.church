@@ -151,3 +151,28 @@ test('Authors browsing and canonical reader links work without JavaScript', asyn
     await context.close();
   }
 });
+
+for (const worker of [true, false]) {
+  test(`search credits link each original contributor using ${worker ? 'the worker' : 'the browser fallback'}`, async ({ page }) => {
+    if (!worker) await page.addInitScript(() => {
+      window.Worker = class { constructor() { throw new Error('Exercise the ordinary search fallback'); } };
+    });
+    for (const tag of ['en', ...(translatedTag ? [translatedTag] : [])]) {
+      await page.goto(`/${tag}/search/?q=${encodeURIComponent(primary)}`, { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('.search-result').first()).toBeVisible();
+      const first = page.locator('.search-result').first();
+      const articleURL = await first.locator('h2 a').getAttribute('href');
+      const record = indexes[tag].find(article => article.url === articleURL);
+      const original = source.find(article => article.id === record.id);
+      const names = [...new Set(original.byline.authors.map(author => author.name))];
+      const credits = await first.locator('small .author-link').evaluateAll(nodes => nodes.map(node => ({ name: node.textContent, url: node.getAttribute('href') })));
+      expect(new Set(credits.map(credit => credit.name))).toEqual(new Set(names));
+      expect(credits).toHaveLength(names.length);
+      for (const credit of credits) expect(credit.url).toBe(authorPath(tag, credit.name));
+      expect(await first.locator('small').textContent()).toContain(record.author);
+      await first.locator('small').getByRole('link', { name: primary, exact: true }).click();
+      await expect(page).toHaveURL(new URL(authorPath(tag, primary), page.url()).href);
+      await expect(page.locator('.author-profile h1')).toHaveText(primary);
+    }
+  });
+}

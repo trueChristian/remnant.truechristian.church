@@ -49,8 +49,8 @@ the selected language. A profile lists only actual publications in that language
 using the archive's issue chronology and original article sequence. An empty
 language view explains the absence and links to the same author in English.
 
-The shared desktop/mobile menu, profile breadcrumbs, reader bylines and language
-selector link to author pages. Recorded names within bylines become links without
+The shared desktop/mobile menu, profile breadcrumbs, reader bylines, search
+results and language selector link to author pages. Recorded names within bylines become links without
 rewriting the printed credit; structured credits absent from the raw string get
 separate labeled links. Article HTML and downloadable source attribution remain
 unchanged.
@@ -69,5 +69,5 @@ stable route allocation, retired aliases, translated availability, canonical
 article links, pagination, and corrupted-output detection. The independent site
 checker compares generated author pages with the validated source export.
 Browser tests exercise directory-to-author-to-reader navigation, byline return
-links, language switching, coauthors, narrow LTR/RTL layouts and no-JavaScript
-browsing. The standard PR workflow runs these with the complete source archive.
+links, search-result author links, language switching, coauthors, narrow LTR/RTL
+layouts and no-JavaScript browsing. The standard PR workflow runs these with the complete source archive.

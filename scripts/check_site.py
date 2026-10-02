@@ -824,6 +824,16 @@ class SiteChecker:
                 expected = Counter((normalized_text(name), registered.get(name)) for name in names_by_article.get(article['id'], []))
                 if Counter(page.author_byline_links) != expected:
                     self.error(f'{article["url"]}: author byline links do not match the original named contributors')
+            search_records = self.search.get(tag)
+            if isinstance(search_records, list):
+                for record in search_records:
+                    expected = [{'name': name, 'url': registered.get(name)}
+                                for name in names_by_article.get(record.get('id'), [])]
+                    if record.get('authors') != expected:
+                        self.error(f'{tag}: search author links differ from original contributors or canonical author routes for {record.get("id")}')
+                    for author in record.get('authors', []) if isinstance(record.get('authors'), list) else []:
+                        if isinstance(author, dict) and isinstance(author.get('url'), str):
+                            self.reference(author['url'], f'/{tag}/search-index.json')
 
         for path, page in self.pages.items():
             if page.redirect:
