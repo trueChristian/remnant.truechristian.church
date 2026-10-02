@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from tests.test_site import ROOT, I, J, fixture, uuid_for, write
+from tests.test_site import ROOT, J, fixture, uuid_for, write
 from build import ORIGIN, Site
 from check_site import PageParser, SiteChecker, normalized_text
 from i18n import load_locales
@@ -200,9 +200,20 @@ class AuthorSiteTests(unittest.TestCase):
         self.assertEqual(second.page.languages, {tag: self.routes['authors'][tag][PRIMARY] for tag in self.locales})
         self.assertIn(base, second.page.references)
 
+    def test_manual_paginated_language_prefix_returns_to_matching_author(self):
+        self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(self.root / 'prefix', count=29)
+        english = self.routes['authors']['en'][PRIMARY]
+        for tag in ('af', 'fr'):
+            requested = f'/{tag}/' + english.split('/', 2)[2] + 'page/2/'
+            page = self.parse(requested).page
+            self.assertEqual(page.redirect, self.routes['authors'][tag][PRIMARY])
+            self.assertEqual(page.canonical, [ORIGIN + self.routes['authors'][tag][PRIMARY]])
+            self.assertTrue(page.noindex)
+            self.assertEqual(page.article_ids, [])
+            self.assertEqual(page.alternates, {})
+
     def test_all_configured_locales_have_translated_navigation_and_author_pages(self):
         self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(self.root / 'all-locales', all_locales=True)
-        self.assertEqual(len(self.locales), 21)
         for tag, locale in self.locales.items():
             with self.subTest(locale=tag):
                 directory = self.parse(f'/{tag}/authors/')

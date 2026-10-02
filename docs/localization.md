@@ -10,7 +10,7 @@ translation service or paid translation campaign runs during a build.
 Each of the 21 current dictionaries supplies:
 
 - `meta`: exact `tag`, `native_name`, `dir`, and upstream folder `code`
-- `ui`: 87 navigation, homepage, archive, search, article, accessibility, empty-state,
+- `ui`: 107 navigation, homepage, archive, search, article, accessibility, empty-state,
   download/copy, and issue-presentation labels and messages
 - `categories`: every canonical category UUID, with `name`, a substantive
   category-specific `description`, and a persisted `slug`
@@ -53,7 +53,12 @@ localized display labels; theme source files remain unchanged.
 Counts use `{count}` with count-independent wording where needed. This avoids
 incorrect singular/plural assumptions in languages with more complex number
 rules. `minutes` is a compact reading-time label rather than a pluralized sentence.
-All placeholder names must match English exactly. New placeholders must be
+All placeholder names must match English exactly. Author directories and profiles use the same complete locale dictionaries. Their
+counts distinguish total original articles from current-language publications.
+Historical metadata labels are translated; recorded names and values remain
+source text. See [author browsing](authors.md).
+
+New placeholders must be
 simple named identifiers, with no attribute access or formatting expressions.
 
 No English fallback is injected into an otherwise localized page. Empty locales
@@ -135,3 +140,4 @@ Layout quality remains a browser concern: test long translated navigation labels
 mobile menus, RTL direction and mixed-direction metadata, keyboard focus, CJK and
 Indic font coverage, and light/dark modes. Dictionary validation does not claim
 pixel-level layout or font coverage testing.
+

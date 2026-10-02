@@ -6,6 +6,7 @@ Built from the authoritative [Berean Voice archive](https://github.com/trueChris
 ## Reading experience
 
 - Complete interfaces in English and all 20 configured translation languages, including localized categories and issue dates
+- Author directories and profiles in every language, with recorded details, article counts and canonical reader links
 - First-class magazine issues, faithful article text and imagery, useful empty translation pages, and persistent locale/theme choices
 - Per-language full-text search in a Web Worker, with Unicode matching, body snippets, category/issue filters and shareable pagination
 - Site-only Scripture popovers with cached multilingual detection and editable false-positive overrides
@@ -38,6 +39,7 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 
 - [Shared homepage rotation and verified publisher PDFs](docs/homepage-selection.md)
 - [Cached Scripture references, Bible choices and false-positive overrides](docs/scripture-references.md)
+- [Author directories, source spelling and multilingual article lists](docs/authors.md)
 - [Source adapters, route persistence and Markdown](docs/source-adapter.md)
 - [Complete dictionaries and truthful date formatting](docs/localization.md)
 - [Visual identity, accessibility and performance](docs/design-and-quality.md)
@@ -71,3 +73,4 @@ The website checks source revisions hourly (best effort, at minute 17). Unchange
 The repository's existing GPL-3.0 license covers website code as applicable; it does **not** relicense magazine articles, photographs, trademarks, or upstream theme assets. Article permissions and attribution remain governed by the source archive's publisher records. Source-excluded articles remain excluded.
 
 The theme currently supplies no software license. This implementation references its pinned repository at build time rather than silently assigning it this site's GPL license. The owner should confirm intended code/asset redistribution terms before production publication. Logo, favicon and skyline bytes are preserved unchanged. No proprietary YOOtheme stylesheet is copied.
+

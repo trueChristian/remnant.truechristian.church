@@ -235,7 +235,7 @@ mark { color: var(--ink); background: #c4e9e7; padding-inline: 2px; }
   .article-grid { gap: 35px 24px; }
   .category-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
   .issue-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
-  .tcc-header__menu > li > a { padding-inline: 10px; letter-spacing: 1px; }
+  .tcc-site-header .tcc-header__menu > li > a { padding-inline: 10px; letter-spacing: 1px; }
 }
 @media (max-width: 959px) {
   .masthead { padding-top: 28px; }
