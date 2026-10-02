@@ -2,7 +2,7 @@
 """Reuse aliases from the last successful publication before generating routes.
 
 The checked-in registry owns editorial changes. The live registry additionally
-owns aliases assigned to newly published articles, categories, and issues. It is
+owns aliases assigned to newly published articles, categories, issues, and authors. It is
 published with the site, so a failed candidate cannot become the next baseline.
 Network failures must stop preparation rather than accidentally regenerate URLs.
 """
@@ -23,6 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PRODUCTION_REGISTRY = 'https://remnant.truechristian.church/routes.json'
 MAX_REGISTRY = 32 * 1024 * 1024
 KINDS = ('categories', 'issues', 'articles')
+OPTIONAL_KINDS = ('authors',)
 LOCALE = re.compile(r'[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*\Z')
 UUID_IN_SLUG = re.compile(r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}', re.I)
 
@@ -59,6 +60,12 @@ def _slug(value: str) -> None:
         raise RegistryError(f'Unsafe route slug: {value!r}')
 
 
+def _author_identity(value: str) -> None:
+    if (not isinstance(value, str) or not value.strip() or len(value) > 1024
+            or any(unicodedata.category(char)[0] == 'C' for char in value)):
+        raise RegistryError(f'Invalid author name: {value!r}')
+
+
 def _history(value: str, locale: str) -> None:
     if (not isinstance(value, str) or len(value) > 4096 or not value.startswith(f'/{locale}/')
             or not value.endswith('/') or re.search(r'%(?![0-9a-fA-F]{2})', value)):
@@ -82,18 +89,19 @@ def _history(value: str, locale: str) -> None:
 def route_path(kind: str, locale: str, entry: dict) -> str:
     if kind == 'articles':
         return f"/{locale}/{entry['category_slug']}/{entry['alias']}/"
-    prefix = 'issues/' if kind == 'issues' else ''
+    prefix = kind + '/' if kind in ('issues', 'authors') else ''
     return f"/{locale}/{prefix}{entry['slug']}/"
 
 
 def validate_registry(registry: dict) -> dict:
     """Validate the complete registry, including retired route reservations."""
     if (not isinstance(registry, dict) or type(registry.get('version')) is not int
-            or registry['version'] != 1 or set(registry) != {'version', *KINDS}):
+            or registry['version'] != 1 or not {'version', *KINDS} <= set(registry)
+            or set(registry) - {'version', *KINDS, *OPTIONAL_KINDS}):
         raise RegistryError('Unsupported or incomplete route registry schema')
     occupied = {}
-    for kind in KINDS:
-        locales = registry[kind]
+    for kind in (*KINDS, *OPTIONAL_KINDS):
+        locales = registry.get(kind, {})
         if not isinstance(locales, dict):
             raise RegistryError(f'Route {kind} must be a locale map')
         for locale, records in locales.items():
@@ -102,7 +110,10 @@ def validate_registry(registry: dict) -> dict:
             if not isinstance(records, dict):
                 raise RegistryError(f'Route {kind}/{locale} must be an identity map')
             for identity, entry in records.items():
-                _identity(identity)
+                if kind == 'authors':
+                    _author_identity(identity)
+                else:
+                    _identity(identity)
                 if not isinstance(entry, dict):
                     raise RegistryError('Route records must be objects')
                 if kind == 'articles':
@@ -114,11 +125,21 @@ def validate_registry(registry: dict) -> dict:
                             raise RegistryError(f'Article {flag} must be a boolean')
                 else:
                     _slug(entry.get('slug'))
+                if kind == 'authors':
+                    if set(entry) - {'slug', 'history'}:
+                        raise RegistryError('Author route records must contain a slug and optional history')
+                    if entry['slug'].casefold() == 'page' or UUID_IN_SLUG.search(entry['slug']):
+                        raise RegistryError(f'Invalid canonical author slug: {entry["slug"]!r}')
                 history = entry.get('history', [])
                 if not isinstance(history, list) or len(history) > 10000:
                     raise RegistryError('Route history must be a bounded list')
                 for old in history:
                     _history(old, locale)
+                    if kind == 'authors':
+                        parts = unquote(old).strip('/').split('/')
+                        if (len(parts) != 3 or parts[1] != 'authors'
+                                or parts[-1].casefold() == 'page'):
+                            raise RegistryError(f'Unsafe author history: {old!r}')
                 owner = (kind, locale, identity)
                 for path in [route_path(kind, locale, entry), *history]:
                     key = unicodedata.normalize('NFC', unquote(path)).casefold()
@@ -191,9 +212,11 @@ def merge_registries(committed: dict, published: dict | None) -> dict:
         return copy.deepcopy(committed)
     validate_registry(published)
     merged = copy.deepcopy(published)
-    for kind in KINDS:
+    for kind in (*KINDS, *OPTIONAL_KINDS):
+        if kind not in committed:
+            continue
         for locale, records in committed[kind].items():
-            target = merged[kind].setdefault(locale, {})
+            target = merged.setdefault(kind, {}).setdefault(locale, {})
             for identity, source in records.items():
                 previous = target.get(identity)
                 if previous is None:
@@ -221,7 +244,8 @@ def prepare_registry(committed: Path, output: Path, *, published: dict | None) -
     temporary.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     temporary.replace(output)
     return {'baseline': 'published' if published is not None else 'first-publication',
-            'counts': {kind: sum(len(records) for records in merged[kind].values()) for kind in KINDS}}
+            'counts': {kind: sum(len(records) for records in merged[kind].values())
+                       for kind in (*KINDS, *OPTIONAL_KINDS) if kind in merged}}
 
 
 def main() -> None:

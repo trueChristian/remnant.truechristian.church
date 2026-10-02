@@ -15,7 +15,12 @@ import unicodedata
 from urllib.parse import unquote
 import uuid
 
-RESERVED = {"articles", "issues", "categories", "topics", "series", "search", "assets", "images", "feeds", "rss", "feed", "sitemap", "404", "index", "api", "downloads", "routes"}
+if __package__:
+    from .authors import build_author_index
+else:
+    from authors import build_author_index
+
+RESERVED = {"articles", "issues", "categories", "authors", "topics", "series", "search", "assets", "images", "feeds", "rss", "feed", "sitemap", "404", "index", "api", "downloads", "routes"}
 UUID_PATTERN = re.compile(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", re.IGNORECASE)
 
 
@@ -63,7 +68,30 @@ def _path(locale: str, record: dict) -> str:
 
 
 def _group_path(kind: str, locale: str, slug: str) -> str:
-    return f"/{locale}/" + ("issues/" if kind == "issues" else "") + _slug(slug) + "/"
+    return f"/{locale}/" + (kind + "/" if kind in {"issues", "authors"} else "") + _slug(slug) + "/"
+
+
+def _author_name(value: str) -> str:
+    """Keep exact source spelling while rejecting malformed registry identities."""
+    if (not isinstance(value, str) or not value.strip() or len(value) > 1024
+            or any(unicodedata.category(char)[0] == "C" for char in value)):
+        raise RouteError(f"Invalid author name: {value!r}")
+    return value
+
+
+def _author_history(path: str, locale: str) -> str:
+    _history(path, locale)
+    try:
+        decoded = unquote(path, errors="strict")
+    except UnicodeError as error:
+        raise RouteError(f"Unsafe author history: {path!r}") from error
+    parts = decoded.strip("/").split("/")
+    if (len(path) > 4096 or re.search(r"%(?![0-9a-fA-F]{2})", path)
+            or decoded.count("/") != path.count("/") or len(parts) != 3
+            or parts[:2] != [locale, "authors"] or parts[-1].casefold() == "page"):
+        raise RouteError(f"Unsafe author history: {path!r}")
+    _slug(parts[-1])
+    return path
 
 
 def _history(path: str, locale: str) -> str:
@@ -134,12 +162,15 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
     else:
         registry = {"version": 1, "categories": {}, "issues": {}, "articles": {}}
     registry = copy.deepcopy(registry)
-    result = {"categories": {}, "issues": {}, "articles": {}, "redirects": {}, "registry": registry, "pending": []}
+    result = {"categories": {}, "issues": {}, "articles": {}, "authors": {}, "redirects": {}, "registry": registry, "pending": []}
     occupied: dict[str, tuple[str, str, str]] = {}
     aliases: dict[str, tuple[str, str]] = {}
     alias_spellings: dict[str, set[str]] = {}
     legacy_sources: dict[str, tuple[str, str, str]] = {}
     result["legacy_aliases"] = {}
+    authors = {author["id"]: author for author in build_author_index(model)}
+    for identity in authors:
+        _author_name(identity)
     articles = {tag: {item["id"]: item for item in model["articles"].get(tag, [])} for tag in tags}
     for tag in tags:
         if len(articles[tag]) != len(model["articles"].get(tag, [])):
@@ -149,8 +180,12 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
         orphaned = set(articles[tag]) - set(articles["en"])
         if orphaned:
             raise RouteError(f"Translated articles have no English identity in {tag}: {sorted(orphaned)}")
-        for kind in ("categories", "issues", "articles"):
+        for kind in ("categories", "issues", "articles", "authors"):
+            if not isinstance(registry.setdefault(kind, {}), dict):
+                raise RouteError(f"Route {kind} must be a locale map")
             registry.setdefault(kind, {}).setdefault(tag, {})
+            if not isinstance(registry[kind][tag], dict):
+                raise RouteError(f"Route {kind}/{tag} must be an identity map")
             result[kind][tag] = {}
 
     def reserve(path, owner):
@@ -168,7 +203,7 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
             raise RouteError(f"Ambiguous language-prefix alias: {tail} ({aliases[key]} and {owner})")
         aliases[key] = owner
         alias_spellings.setdefault(key, set()).add(tail)
-        if UUID_PATTERN.search(tail):
+        if kind != "authors" and UUID_PATTERN.search(tail):
             # UUID paths remain migration inputs, never public canonical URLs.
             # Own-locale static redirects keep existing bookmarks working. A
             # compact exact lookup supports prefix changes on these old inputs
@@ -209,16 +244,48 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
         reserve(f"/{tag}/", ("reserved", tag, "home"))
         for reserved in RESERVED:
             reserve(f"/{tag}/{reserved}/", ("reserved", tag, reserved))
-        for kind in ("categories", "issues", "articles"):
+        reserve(f"/{tag}/authors/page/", ("reserved", tag, "authors-page"))
+        for kind in ("categories", "issues", "articles", "authors"):
             for identity, entry in registry[kind][tag].items():
-                _uuid(identity)
+                if kind == "authors":
+                    _author_name(identity)
+                    if not isinstance(entry, dict) or set(entry) - {"slug", "history"}:
+                        raise RouteError("Author route records must contain a slug and optional history")
+                    _slug(entry.get("slug"))
+                    if entry["slug"].casefold() == "page" or UUID_PATTERN.search(entry["slug"]):
+                        raise RouteError(f"Invalid canonical author slug: {entry['slug']!r}")
+                    if not isinstance(entry.get("history", []), list) or len(entry.get("history", [])) > 10000:
+                        raise RouteError("Author route history must be a bounded list")
+                else:
+                    _uuid(identity)
                 owner = (kind, tag, identity)
                 path = _path(tag, entry) if kind == "articles" else _group_path(kind, tag, entry["slug"])
                 reserve(path, owner)
                 remember(path, kind, identity)
                 for old in entry.get("history", []):
-                    reserve(_history(old, tag), owner)
-                    remember(_history(old, tag), kind, identity)
+                    checked = _author_history(old, tag) if kind == "authors" else _history(old, tag)
+                    reserve(checked, owner)
+                    remember(checked, kind, identity)
+
+    # Author names are exact source identities, shared by all language views.
+    # Frozen aliases and histories reserve retired names before new allocation.
+    for tag in tags:
+        records = registry["authors"][tag]
+        for identity in sorted(authors, key=lambda name: (name.casefold(), name)):
+            entry = records.get(identity)
+            owner = ("authors", tag, identity)
+            if entry is None:
+                english = registry["authors"]["en"].get(identity, {})
+                base = english.get("slug") or _readable(identity, "author")
+                if base == "page":
+                    base = "author-page"
+                slug = allocate(base, lambda value: _group_path("authors", tag, value), owner)
+                records[identity] = entry = {"slug": slug, "history": []}
+                mark_pending("authors", tag, identity)
+            path = _group_path("authors", tag, entry["slug"])
+            reserve(path, owner)
+            result["authors"][tag][identity] = path
+            remember(path, "authors", identity)
 
     for tag in tags:
         for kind in ("categories", "issues"):
@@ -341,7 +408,7 @@ def initialize_routes(model: dict, locales, registry_path: Path, update: bool = 
     # any source locale prefix resolves to the same identity in the target locale
     # and updates both localized category and article aliases in one step.
     for key, (kind, identity) in aliases.items():
-        if UUID_PATTERN.search(key):
+        if kind != "authors" and UUID_PATTERN.search(key):
             continue
         for tag in tags:
             destination = result[kind][tag].get(identity)
@@ -372,3 +439,7 @@ def category_url(routes: dict, locale: str, identity: str) -> str:
 
 def issue_url(routes: dict, locale: str, identity: str) -> str:
     return routes["issues"][locale][identity]
+
+
+def author_url(routes: dict, locale: str, name: str) -> str:
+    return routes["authors"][locale][name]
