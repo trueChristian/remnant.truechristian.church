@@ -16,10 +16,12 @@ from email.utils import parsedate_to_datetime
 import gzip
 import hashlib
 from html.parser import HTMLParser
+from html import escape
 import json
 from pathlib import Path
 import re
 import sys
+import unicodedata
 import zlib
 from urllib.parse import unquote, urljoin, urlsplit
 from xml.etree import ElementTree as ET
@@ -34,6 +36,7 @@ PRIVATE_KEYS = {'source_metadata', 'source_translation_key', 'translation_key', 
 PRIVATE_NAMES = {'build-report.json', 'source-report.json', 'manifest.json', 'catalogue.json',
                  'navigation.json', 'campaign.json', 'state.json', '.env', 'credentials.json'}
 SECRET = re.compile(r'(?:-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|\bgh[pousr]_[A-Za-z0-9]{30,}\b|\bgithub_pat_[A-Za-z0-9_]{30,}\b|\bsk-[A-Za-z0-9_-]{32,}\b)')
+UUID_IN_URL = re.compile(r'[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}', re.I)
 
 
 def normalized_text(text):
@@ -54,6 +57,7 @@ class Page:
     canonical: list = field(default_factory=list)
     alternates: dict = field(default_factory=dict)
     references: set = field(default_factory=set)
+    links: set = field(default_factory=set)
     ids: set = field(default_factory=set)
     duplicate_ids: set = field(default_factory=set)
     noindex: bool = False
@@ -70,6 +74,7 @@ class Page:
     notices: int = 0
     config: dict | None = None
     languages: dict = field(default_factory=dict)
+    search_filters: dict = field(default_factory=dict)
     selected: list = field(default_factory=list)
     copy_markdown: str | None = None
     chrome: set = field(default_factory=set)
@@ -127,6 +132,8 @@ class PageParser(HTMLParser):
         for key in ('href', 'src', 'poster', 'action', 'data-copy-markdown'):
             if a.get(key):
                 p.references.add(sys.intern(a[key]))
+                if key in {'href', 'action', 'data-copy-markdown'}:
+                    p.links.add(sys.intern(a[key]))
         if a.get('srcset'):
             # Generated asset srcsets use URL + optional width/density descriptors.
             for entry in a['srcset'].split(','):
@@ -154,8 +161,14 @@ class PageParser(HTMLParser):
             p.languages[a['data-locale']] = a.get('value', '')
             if a.get('value'):
                 p.references.add(sys.intern(a['value']))
+                p.links.add(sys.intern(a['value']))
             if 'selected' in a:
                 p.selected.append(a['data-locale'])
+        elif tag == 'option' and a.get('value'):
+            for parent_tag, _, attributes in reversed(self.stack):
+                if parent_tag == 'select' and attributes.get('name') in {'category', 'issue'}:
+                    p.search_filters.setdefault(attributes['name'], []).append(a['value'])
+                    break
         if a.get('data-copy-markdown'):
             p.copy_markdown = a['data-copy-markdown']
         for key in ('data-tcc-global-header', 'data-tcc-directory-footer', 'data-tcc-copyright-footer'):
@@ -211,6 +224,7 @@ class SiteChecker:
         self.references = {}
         self.search = {}
         self.home_data = {}
+        self.legacy_routes = None
 
     def error(self, message):
         self.errors.append(message)
@@ -280,6 +294,8 @@ class SiteChecker:
                 if page.config is not None:
                     if page.config.get('homeData'):
                         self.reference(page.config['homeData'], route)
+                    if page.config.get('legacyRouteIndex'):
+                        self.reference(page.config['legacyRouteIndex'], route)
                     for key in private_json_keys(page.config):
                         self.error(f'{route}: private JSON field {key}')
             elif file.suffix == '.json':
@@ -305,6 +321,8 @@ class SiteChecker:
                     elif relative == 'scripture/manifest.json':
                         from scripture import load_manifest
                         load_manifest(file)
+                    elif relative == 'legacy-route-index.json':
+                        self.check_legacy_schema(value)
                     elif relative != 'routes.json':
                         self.error('Unexpected public JSON file: ' + relative)
                 except (ValueError, TypeError):
@@ -315,11 +333,99 @@ class SiteChecker:
             elif file.suffix == '.md':
                 # The Markdown contract deliberately keeps exact semantic HTML
                 # and AI notices; their local URLs must resolve as well.
-                for reference in PageParser('/' + relative, source).page.references:
+                markdown_page = PageParser('/' + relative, source).page
+                self.check_readable_links(markdown_page)
+                for reference in markdown_page.references:
                     self.reference(reference, '/' + relative)
                 for value in re.findall(r'\]\(<([^>]+)>|<(https?://[^>]+)>', source):
                     self.reference(value[0] or value[1], '/' + relative)
         return self
+
+    def check_legacy_schema(self, value):
+        """Audit only public identities and local paths in the recovery index."""
+        kinds = {'articles', 'categories', 'issues'}
+        if (not isinstance(value, dict) or set(value) != {'aliases', 'targets'}
+                or not isinstance(value['aliases'], dict) or not isinstance(value['targets'], dict)
+                or set(value['targets']) != kinds):
+            self.error('Invalid legacy route index schema')
+            return
+        self.legacy_routes = value
+
+        def safe_path(path):
+            if (not isinstance(path, str) or not path.startswith('/') or path.startswith('//')
+                    or not path.endswith('/') or len(path) > 4096):
+                return None
+            try:
+                decoded = unicodedata.normalize('NFC', unquote(path, errors='strict'))
+            except UnicodeError:
+                return None
+            if decoded.count('/') != path.count('/') or any(char in decoded for char in '\\?#%'):
+                return None
+            parts = decoded[1:-1].split('/')
+            if any(not part or any(unicodedata.category(char)[0] not in 'LNM' and char != '-'
+                                   for char in part) for part in parts):
+                return None
+            return decoded, parts
+
+        seen = {}
+        for tail, owner in value['aliases'].items():
+            path = safe_path(tail)
+            if (not path or not UUID_IN_URL.search(path[0]) or len(path[1]) not in {1, 2}
+                    or not isinstance(owner, dict) or set(owner) != {'kind', 'id'}
+                    or owner['kind'] not in kinds or not isinstance(owner['id'], str)
+                    or not UUID_IN_URL.fullmatch(owner['id'])):
+                self.error('Invalid legacy route alias/identity: ' + str(tail))
+                continue
+            key = path[0].casefold()
+            if key in seen and seen[key] != owner:
+                self.error('Ambiguous legacy route alias: ' + tail)
+            seen[key] = owner
+        for kind, locales in value['targets'].items():
+            if not isinstance(locales, dict):
+                self.error('Invalid legacy route target locale map: ' + kind)
+                continue
+            for tag, records in locales.items():
+                if (not re.fullmatch(r'[a-z]{2,3}(?:-[A-Za-z0-9]{2,8})*', tag)
+                        or not isinstance(records, dict)):
+                    self.error('Invalid legacy route target locale: ' + str(tag))
+                    continue
+                for identity, target in records.items():
+                    path = safe_path(target)
+                    expected_segments = 2 if kind == 'categories' else 3
+                    if (not UUID_IN_URL.fullmatch(identity) or not path
+                            or path[1][0] != tag or len(path[1]) != expected_segments
+                            or UUID_IN_URL.search(path[0])
+                            or (kind == 'issues' and path[1][1] != 'issues')):
+                        self.error('Invalid or UUID-bearing legacy route canonical target: ' + str(target))
+                        continue
+                    self.reference(target, '/legacy-route-index.json')
+
+    def check_legacy_routes(self, routes=None):
+        value = self.legacy_routes
+        if value is None:
+            self.error('Missing or invalid legacy-route-index.json')
+            return
+        root_404 = self.require_page('/404.html', 'root 404')
+        if root_404 and (root_404.config or {}).get('legacyRouteIndex') != '/legacy-route-index.json':
+            self.error('/404.html: legacy route recovery index is missing from page configuration')
+        for locales in value['targets'].values():
+            if not isinstance(locales, dict):
+                continue
+            for records in locales.values():
+                if not isinstance(records, dict):
+                    continue
+                for target in records.values():
+                    if not isinstance(target, str):
+                        continue
+                    resolved = self.local_reference(target)
+                    page = self.pages.get(resolved[0]) if resolved else None
+                    if not page or page.redirect:
+                        self.error('Legacy route index target is missing or redirects: ' + target)
+        if routes is not None:
+            expected = {'aliases': routes.get('legacy_aliases', {}),
+                        'targets': {kind: routes[kind] for kind in ('articles', 'categories', 'issues')}}
+            if value != expected:
+                self.error('Legacy route index differs from the registered aliases or canonical identities')
 
     def check_home_data(self, file, relative, value, source):
         expected_keys = {'schema', 'locale', 'features', 'articles', 'categories', 'latestIds'}
@@ -359,6 +465,7 @@ class SiteChecker:
                 preview = PageParser('/' + relative, row['html']).page
                 for reference in preview.references:
                     self.reference(reference, '/' + relative)
+                self.check_readable_links(preview)
                 for problem in preview.errors:
                     self.error(f'{relative}: {problem}')
 
@@ -405,6 +512,13 @@ class SiteChecker:
                 if identity and page and identity not in page.ids:
                     self.error(f'{source}: missing anchor {path}#{fragment}')
 
+    def check_readable_links(self, page):
+        """Internal identities must not leak into reader-facing navigation."""
+        for reference in page.links:
+            resolved = self.local_reference(reference, page.route)
+            if resolved and UUID_IN_URL.search(resolved[0]):
+                self.error(f'{page.route}: UUID in reader-facing URL {reference}')
+
     def check_pages(self, locales=None):
         chrome = {'data-tcc-global-header', 'data-tcc-directory-footer', 'data-tcc-copyright-footer'}
         for route, p in self.pages.items():
@@ -428,7 +542,15 @@ class SiteChecker:
                     self.error(f'{route}: redirect is indexable')
                 if self.local_reference(p.redirect, route) != canonical:
                     self.error(f'{route}: redirect and canonical differ')
+                target = self.pages.get(canonical[0]) if canonical else None
+                if target and (target.redirect or target.route == route):
+                    self.error(f'{route}: redirect chain or cycle instead of a direct canonical destination')
+                if canonical and UUID_IN_URL.search(canonical[0]):
+                    self.error(f'{route}: redirect destination contains a UUID')
                 continue
+            if UUID_IN_URL.search(route):
+                self.error(f'{route}: UUID in canonical page URL')
+            self.check_readable_links(p)
             expected_tag = route.split('/')[1] if route not in {'/', '/404.html'} else 'en'
             if p.lang != expected_tag:
                 self.error(f'{route}: lang={p.lang!r}, expected {expected_tag!r}')
@@ -515,6 +637,25 @@ class SiteChecker:
             self.error(f'Missing {label} page: {route}')
         return page
 
+    def check_routes(self, routes):
+        """Audit every generated prefix/history redirect in linear time."""
+        for kind in ('categories', 'issues', 'articles'):
+            for tag, records in routes[kind].items():
+                for identity, route in records.items():
+                    page = self.require_page(route, f'canonical {kind}')
+                    if page and page.redirect:
+                        self.error(f'{route}: canonical {kind} route is a redirect')
+                    if page:
+                        expected = {language: localized[identity] for language, localized in routes[kind].items()
+                                    if identity in localized}
+                        if page.languages != expected:
+                            self.error(f'{route}: language selector changes the {kind} identity or uses a noncanonical alias')
+        for source, destination in routes['redirects'].items():
+            page = self.require_page(source, 'registered redirect')
+            if page and (self.local_reference(page.redirect or '', source) != (destination, '')
+                         or page.canonical != [self.origin + destination] or not page.noindex):
+                self.error(f'{source}: registered redirect does not directly identify canonical destination {destination}')
+
     def check_content(self, model, locales, routes):
         from publisher import issue_pdf_links, PUBLISHER_URL
         publisher_pdfs = issue_pdf_links(model['issues'])
@@ -528,6 +669,11 @@ class SiteChecker:
         if actual_articles != expected_articles:
             self.error(f'Published article inventory mismatch: {sum((expected_articles-actual_articles).values())} missing, {sum((actual_articles-expected_articles).values())} extra/duplicated')
         english = {article['id']: article for article in model['articles']['en']}
+        available_articles = {tag: {article['id']: article for article in model['articles'].get(tag, [])}
+                              for tag in locales}
+        equivalents = {aid: {tag: self.origin + records[aid]['url']
+                             for tag, records in available_articles.items() if aid in records}
+                       for aid in english}
         for tag, locale in locales.items():
             articles = sorted(model['articles'].get(tag, []), key=lambda a: (rank[a['issue_id']], a.get('sequence', 0)))
             article_map = {a['id']: a for a in articles}
@@ -551,7 +697,14 @@ class SiteChecker:
                         self.error(f'/{tag}/: homepage archive exclusion mismatch')
             category_index = self.require_page(f'/{tag}/categories/', 'category index')
             issue_index = self.require_page(f'/{tag}/issues/', 'issue index')
-            self.require_page(f'/{tag}/search/', 'search')
+            search_page = self.require_page(f'/{tag}/search/', 'search')
+            if search_page:
+                expected_filters = {'category': [routes['categories'][tag][item['id']].rstrip('/').rsplit('/', 1)[-1]
+                                                 for item in model['categories']],
+                                    'issue': [routes['issues'][tag][item['id']].rstrip('/').rsplit('/', 1)[-1]
+                                              for item in issues]}
+                if search_page.search_filters != expected_filters:
+                    self.error(f'/{tag}/search/: search filters must use the canonical readable category and issue aliases')
             self.require_page(f'/{tag}/404/', 'localized 404')
             if home and (normalized_text(locale['ui']['article_count'].format(count=len(articles))) not in home.main_text or normalized_text(locale['ui']['issue_count'].format(count=len(issues))) not in home.main_text):
                 self.error(f'/{tag}/: homepage archive counts disagree with exports')
@@ -601,7 +754,16 @@ class SiteChecker:
                     continue
                 article_file = self.output / article['url'].lstrip('/') / 'index.html'
                 from scripture import strip_markers
-                if article['html'] not in strip_markers(article_file.read_text(encoding='utf-8')):
+                # The sole permitted source-HTML change replaces legacy English
+                # UUID links with their saved readable canonicals. Keep this
+                # expectation independent of the generator implementation.
+                def canonical_source_link(match):
+                    identity = match.group(2)
+                    if identity not in english:
+                        return match.group(0)
+                    return 'href=' + match.group(1) + escape(english[identity]['url'], quote=True) + match.group(1)
+                expected_html = re.sub(r'href=([\'\"])/en/articles/([a-f0-9-]{36})/\1', canonical_source_link, article['html'])
+                if expected_html not in strip_markers(article_file.read_text(encoding='utf-8')):
                     self.error(f'{article["url"]}: original exported HTML/notice was changed')
                 if page.h1 != normalized_text(article.get('title') or locale['ui']['untitled_article']):
                     self.error(f'{article["url"]}: article title differs from published locale text')
@@ -611,6 +773,8 @@ class SiteChecker:
                 if issue_url not in page.references:
                     self.error(f'{article["url"]}: missing original issue backlink')
                 markdown_url = article['markdown_url']
+                if markdown_url != article['url'].rstrip('/') + '.md' or UUID_IN_URL.search(markdown_url):
+                    self.error(f'{article["url"]}: Markdown URL must use the canonical readable article alias')
                 if markdown_url not in page.downloads or page.copy_markdown != markdown_url or not {'markdown-fallback', 'markdown-text'} <= page.ids:
                     self.error(f'{article["url"]}: missing visible Markdown download/copy/fallback controls')
                 markdown_path = self.output / markdown_url.lstrip('/')
@@ -622,7 +786,7 @@ class SiteChecker:
                         self.error(f'{markdown_url}: canonical or issue backlink missing')
                     if PageParser(markdown_url, markdown).page.notices != int(bool(article.get('ai_notice_required'))):
                         self.error(f'{markdown_url}: AI notice parity mismatch')
-                expected_equivalents = {language: self.origin + available[article['id']]['url'] for language in locales if article['id'] in (available := {a['id']: a for a in model['articles'].get(language, [])})}
+                expected_equivalents = equivalents[article['id']]
                 if page.alternates != expected_equivalents:
                     self.error(f'{article["url"]}: article hreflang includes an unavailable translation')
                 compatibility = self.require_page(article['compatibility_url'], 'UUID compatibility')
@@ -631,12 +795,15 @@ class SiteChecker:
             for aid, source in english.items():
                 if aid in article_map:
                     continue
-                path = f'/{tag}/articles/{aid}/'
+                path = routes['articles'][tag][aid]
                 page = self.require_page(path, 'missing translation')
                 if page and (not page.noindex or page.alternates or page.article_ids or normalized_text(locale['ui']['missing_translation']) not in page.main_text or source['url'] not in page.references):
                     self.error(f'{path}: missing translation must explain absence, stay noindex, and link authoritative English')
                 if page and page.h1 != normalized_text(locale['ui']['no_articles_title']):
                     self.error(f'{path}: untranslated English title presented as the locale article heading')
+                legacy = self.require_page(f'/{tag}/articles/{aid}/', 'legacy missing-translation redirect')
+                if legacy and self.local_reference(legacy.redirect or '', legacy.route) != (path, ''):
+                    self.error(f'{legacy.route}: legacy missing-translation URL does not redirect to readable availability page')
             self.check_rss(tag, articles, issue_map, routes['issues'][tag], locale['ui']['untitled_article'])
 
     def check_rss(self, tag, articles, issues, issue_routes, untitled):
@@ -683,10 +850,13 @@ class SiteChecker:
 
     def run(self, *, model=None, locales=None, routes=None, theme=None):
         self.scan()
+        self.check_legacy_routes(routes)
         self.check_pages(locales)
         self.check_sitemap()
         if model is not None:
             self.check_content(model, locales, routes)
+        if routes is not None:
+            self.check_routes(routes)
         if theme is not None:
             self.check_brand(theme)
         self.check_links()

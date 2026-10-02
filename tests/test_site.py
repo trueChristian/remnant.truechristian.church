@@ -8,6 +8,7 @@ import copy
 import gzip
 import json
 from pathlib import Path
+import re
 import sys
 import tempfile
 import unittest
@@ -18,7 +19,7 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from build import Site, ORIGIN
 from check_site import SiteChecker, PageParser, private_json_keys
 from i18n import load_locales
-from routes import initialize_routes
+from routes import initialize_routes, set_article_alias
 
 I = '00000000-0000-4000-8000-000000000001'
 J = '00000000-0000-4000-8000-000000000002'
@@ -33,7 +34,8 @@ def write(path, value):
     path.write_text(value, encoding='utf-8')
 
 
-def fixture(root, *, translated=True, count=3, missing_title=False):
+def fixture(root, *, translated=True, count=3, missing_title=False,
+            duplicate_titles=False, translated_count=1, translated_title='Afrikaanse opskrif'):
     locales = {tag: value for tag, value in load_locales(ROOT / 'locales').items() if tag in {'en', 'af', 'fr'}}
     category_ids = list(locales['en']['categories'])[:2]
     categories = [{'id': cid, 'slug': locales['en']['categories'][cid]['slug'], 'name': locales['en']['categories'][cid]['name']} for cid in category_ids]
@@ -45,7 +47,7 @@ def fixture(root, *, translated=True, count=3, missing_title=False):
     for n in range(count):
         aid = uuid_for(n + 1)
         article = {'id': aid, 'issue_id': I, 'issue': copy.deepcopy(issues[0]), 'sequence': count-n,
-                   'title': None if missing_title and n == 0 else f'English source {n+1}', 'subtitle': None,
+                   'title': None if missing_title and n == 0 else ('English source' if duplicate_titles else f'English source {n+1}'), 'subtitle': None,
                    'section': '', 'byline': {'raw': 'Original Author'}, 'source_pages': {'start': 3, 'end': 5},
                    'categories': {'primary': category_ids[0], 'additional': []}, 'topics': [], 'images': [],
                    'locale': 'en', 'language': 'en', 'direction': 'ltr', 'ai_notice_required': False,
@@ -55,11 +57,13 @@ def fixture(root, *, translated=True, count=3, missing_title=False):
         articles.append(article)
     model = {'issues': issues, 'categories': categories, 'topics': [], 'series': [], 'articles': {'en': articles}}
     if translated:
-        af = copy.deepcopy(articles[0])
-        af.update(title=None if missing_title else 'Afrikaanse opskrif', locale='af', language='af', human_reviewed=False, ai_notice_required=True,
-                  text='Getroue woorde met betekenis.', excerpt='Getroue woorde met betekenis.')
-        af['html'] = f'<article data-article-id="{af["id"]}"><p>Getroue woorde met <em>betekenis</em>.</p></article><aside data-translation-notice="ai"><p>KI-vertaling. <a href="/en/articles/{af["id"]}/">English</a></p></aside>'
-        model['articles']['af'] = [af]
+        model['articles']['af'] = []
+        for source in articles[:translated_count]:
+            af = copy.deepcopy(source)
+            af.update(title=None if missing_title else translated_title, locale='af', language='af', human_reviewed=False, ai_notice_required=True,
+                      text='Getroue woorde met betekenis.', excerpt='Getroue woorde met betekenis.')
+            af['html'] = f'<article data-article-id="{af["id"]}"><p>Getroue woorde met <em>betekenis</em>.</p></article><aside data-translation-notice="ai"><p>KI-vertaling. <a href="/en/articles/{af["id"]}/">English</a></p></aside>'
+            model['articles']['af'].append(af)
     routes = initialize_routes(model, locales, root / 'routes-source.json', update=True)
     theme, output = root / 'theme', root / 'dist'
     footer = '<div data-tcc-directory-footer><a href="https://truechristian.church/history">History</a></div><footer data-tcc-copyright-footer><a href="https://truechristian.church/copyright">Copyright</a></footer>'
@@ -91,7 +95,8 @@ class GeneratedSiteTests(unittest.TestCase):
         return checker
 
     def page_path(self, route):
-        return self.output / route.lstrip('/') / 'index.html'
+        path = self.output / route.lstrip('/')
+        return path / 'index.html' if route.endswith('/') else path
 
     def mutate(self, route, old, new):
         path = self.page_path(route)
@@ -116,7 +121,7 @@ class GeneratedSiteTests(unittest.TestCase):
     def test_missing_language_is_noindex_and_links_available_languages(self):
         checker = self.check()
         aid = uuid_for(1)
-        page = checker.pages[f'/fr/articles/{aid}/']
+        page = checker.pages[self.routes['articles']['fr'][aid]]
         self.assertTrue(page.noindex)
         self.assertFalse(page.alternates)
         self.assertFalse(page.article_ids)
@@ -183,16 +188,213 @@ class GeneratedSiteTests(unittest.TestCase):
         ])
         self.assertEqual(feed.findall('.//pubDate'), [])
 
-    def test_uuid_compatibility_redirect_and_markdown_are_stable(self):
+    def test_legacy_uuid_redirects_to_readable_article_and_markdown_uses_same_alias(self):
         checker = self.check()
         article = self.model['articles']['en'][0]
         page = checker.pages[article['compatibility_url']]
         self.assertEqual(page.redirect, article['url'])
         self.assertTrue(page.noindex)
-        self.assertEqual(article['markdown_url'], f'/en/articles/{article["id"]}.md')
+        self.assertEqual(article['markdown_url'], article['url'].rstrip('/') + '.md')
+        self.assertNotIn(article['id'], article['markdown_url'])
         markdown = (self.output / article['markdown_url'].lstrip('/')).read_text()
         self.assertIn(ORIGIN + self.routes['issues']['en'][I], markdown)
         self.assertIn('Original Author', markdown)
+
+    def test_article_language_prefix_change_redirects_to_translated_category_and_alias(self):
+        checker = self.check()
+        identity = uuid_for(1)
+        source = self.routes['articles']['en'][identity]
+        destination = self.routes['articles']['af'][identity]
+        changed = '/af/' + source.split('/', 2)[2]
+        self.assertNotEqual(source.split('/', 2)[2], destination.split('/', 2)[2])
+        redirect = checker.pages[changed]
+        self.assertEqual(redirect.redirect, destination)
+        self.assertEqual(redirect.canonical, [ORIGIN + destination])
+        self.assertTrue(redirect.noindex)
+        self.assertEqual(redirect.article_ids, [])
+        canonical = checker.pages[destination]
+        self.assertEqual(canonical.article_ids, [identity])
+        self.assertFalse(canonical.redirect)
+        self.assertFalse(canonical.noindex)
+        self.assertEqual(canonical.languages, {tag: self.routes['articles'][tag][identity] for tag in self.locales})
+
+    def test_category_prefix_changes_resolve_directly_to_same_localized_category(self):
+        checker = self.check()
+        for category in self.model['categories']:
+            identity = category['id']
+            for source_locale in self.locales:
+                source = self.routes['categories'][source_locale][identity]
+                for target_locale in self.locales:
+                    requested = f'/{target_locale}/' + source.split('/', 2)[2]
+                    destination = self.routes['categories'][target_locale][identity]
+                    page = checker.pages[requested]
+                    self.assertEqual(page.canonical, [ORIGIN + destination])
+                    if requested != destination:
+                        self.assertEqual(page.redirect, destination)
+                        self.assertTrue(page.noindex)
+                    else:
+                        self.assertFalse(page.redirect)
+                    self.assertFalse(checker.pages[destination].redirect)
+
+    def test_every_language_and_history_redirect_is_direct_and_has_no_article_body(self):
+        checker = self.check()
+        self.assertTrue(self.routes['redirects'])
+        for source, destination in self.routes['redirects'].items():
+            page = checker.pages[source]
+            self.assertEqual(page.redirect, destination)
+            self.assertEqual(page.canonical, [ORIGIN + destination])
+            self.assertTrue(page.noindex)
+            self.assertFalse(page.alternates)
+            self.assertFalse(page.article_ids)
+            self.assertFalse(checker.pages[destination].redirect)
+        self.assertEqual(CounterArticleIds(checker), {'en': 3, 'af': 1})
+
+    def test_legacy_recovery_index_contains_only_known_aliases_and_direct_readable_targets(self):
+        checker = self.check()
+        expected = {'aliases': self.routes['legacy_aliases'],
+                    'targets': {kind: self.routes[kind] for kind in ('articles', 'categories', 'issues')}}
+        self.assertEqual(checker.legacy_routes, expected)
+        self.assertEqual(checker.pages['/404.html'].config['legacyRouteIndex'], '/legacy-route-index.json')
+        for kind, locales in checker.legacy_routes['targets'].items():
+            for tag, identities in locales.items():
+                for identity, path in identities.items():
+                    self.assertNotIn(identity, path)
+                    self.assertEqual(path.split('/')[1], tag)
+                    self.assertFalse(checker.pages[path].redirect)
+        missing = self.routes['articles']['fr'][uuid_for(1)]
+        self.assertTrue(checker.pages[missing].noindex)
+        self.assertEqual(checker.legacy_routes['targets']['articles']['fr'][uuid_for(1)], missing)
+
+    def test_detects_unknown_or_uuid_bearing_legacy_index_canonical_targets(self):
+        file = self.output / 'legacy-route-index.json'
+        original = json.loads(file.read_text())
+        for target, expected in [('/af/not-in-the-archive/unknown/', 'target is missing or redirects'),
+                                 (f'/af/articles/{uuid_for(1)}/', 'UUID-bearing legacy route canonical target')]:
+            with self.subTest(target=target):
+                value = copy.deepcopy(original)
+                value['targets']['articles']['af'][uuid_for(1)] = target
+                write(file, json.dumps(value))
+                self.assertTrue(any(expected in error for error in self.check().errors))
+
+    def test_detects_legacy_index_owner_changed_to_another_valid_article(self):
+        file = self.output / 'legacy-route-index.json'
+        value = json.loads(file.read_text())
+        value['aliases'][f'/articles/{uuid_for(1)}/']['id'] = uuid_for(2)
+        write(file, json.dumps(value))
+        self.assertTrue(any('differs from the registered aliases or canonical identities' in error
+                            for error in self.check().errors))
+
+    def test_detects_extra_schema_fields_or_nonlegacy_aliases_in_recovery_index(self):
+        file = self.output / 'legacy-route-index.json'
+        original = json.loads(file.read_text())
+        value = copy.deepcopy(original)
+        value['unexpected'] = 'extra public state'
+        write(file, json.dumps(value))
+        self.assertTrue(any('Invalid legacy route index schema' in error for error in self.check().errors))
+        value = copy.deepcopy(original)
+        value['aliases']['/guessed-title/'] = {'kind': 'articles', 'id': uuid_for(1)}
+        write(file, json.dumps(value))
+        self.assertTrue(any('Invalid legacy route alias/identity' in error for error in self.check().errors))
+
+    def test_detects_missing_or_broken_root_404_recovery_index(self):
+        self.mutate('/404.html', '/legacy-route-index.json', '/unknown-route-index.json')
+        self.assertTrue(any('legacy route recovery index is missing' in error for error in self.check().errors))
+        (self.output / 'legacy-route-index.json').unlink()
+        self.assertTrue(any('Missing or invalid legacy-route-index.json' in error for error in self.check().errors))
+
+    def test_swapped_prefix_without_translation_lands_on_readable_noindex_notice(self):
+        checker = self.check()
+        aid = uuid_for(1)
+        source = self.routes['articles']['af'][aid]
+        requested = '/fr/' + source.split('/', 2)[2]
+        destination = self.routes['articles']['fr'][aid]
+        self.assertEqual(checker.pages[requested].redirect, destination)
+        notice = checker.pages[destination]
+        self.assertTrue(notice.noindex)
+        self.assertFalse(notice.article_ids)
+        self.assertFalse(notice.alternates)
+        self.assertFalse(notice.redirect)
+        self.assertNotIn(aid, destination)
+        self.assertIn(self.routes['articles']['en'][aid], notice.references)
+
+    def test_canonical_navigation_markdown_and_notice_links_do_not_expose_uuids(self):
+        checker = self.check()
+        uuid_pattern = re.compile(r'[a-f0-9]{8}-(?:[a-f0-9]{4}-){3}[a-f0-9]{12}', re.I)
+        for page in checker.pages.values():
+            if page.redirect:
+                continue
+            self.assertIsNone(uuid_pattern.search(page.route), page.route)
+            for reference in page.links:
+                local = checker.local_reference(reference, page.route)
+                if local:
+                    self.assertIsNone(uuid_pattern.search(local[0]), reference)
+        translated = self.model['articles']['af'][0]
+        self.assertIn(f'/en/articles/{translated["id"]}/', translated['html'])
+        for path in (self.page_path(translated['url']), self.output / translated['markdown_url'].lstrip('/')):
+            self.assertNotIn(f'/en/articles/{translated["id"]}/', path.read_text())
+            self.assertIn(self.routes['articles']['en'][translated['id']], path.read_text())
+
+    def test_alias_migration_preserves_history_under_every_language_prefix(self):
+        article = self.model['articles']['af'][0]
+        previous = article['url']
+        registry = self.routes['registry']
+        set_article_alias(registry, 'af', article['id'], 'hersiene-opskrif')
+        write(self.root / 'routes-source.json', json.dumps(registry))
+        self.routes = initialize_routes(self.model, self.locales, self.root / 'routes-source.json', update=True)
+        Site(self.model, self.locales, self.routes, self.theme, self.output, {}).build()
+        checker = self.check()
+        self.assertEqual(checker.errors, [])
+        for tag in self.locales:
+            old = f'/{tag}/' + previous.split('/', 2)[2]
+            self.assertEqual(checker.pages[old].redirect, self.routes['articles'][tag][article['id']])
+        self.assertEqual(CounterArticleIds(checker), {'en': 3, 'af': 1})
+
+    def test_detects_removed_prefix_redirect_and_redirect_to_another_article(self):
+        aid = uuid_for(1)
+        source = '/af/' + self.routes['articles']['en'][aid].split('/', 2)[2]
+        destination = self.routes['articles']['af'][aid]
+        self.mutate(source, f'content="0;url={destination}"',
+                    f'content="0;url={self.routes["articles"]["af"][uuid_for(2)]}"')
+        errors = self.check().errors
+        self.assertTrue(any('registered redirect does not directly identify canonical destination' in e for e in errors))
+        self.page_path(source).unlink()
+        self.assertTrue(any('Missing registered redirect page' in e for e in self.check().errors))
+
+    def test_detects_redirect_chains_and_cycles(self):
+        destination = self.routes['articles']['af'][uuid_for(1)]
+        source = '/af/' + self.routes['articles']['en'][uuid_for(1)].split('/', 2)[2]
+        compatibility = self.model['articles']['af'][0]['compatibility_url']
+        self.mutate(source, f'content="0;url={destination}"', f'content="0;url={compatibility}"')
+        self.mutate(source, f'href="{ORIGIN + destination}"', f'href="{ORIGIN + compatibility}"')
+        self.assertTrue(any('redirect chain or cycle' in e for e in self.check().errors))
+        self.mutate(compatibility, f'content="0;url={destination}"', f'content="0;url={source}"')
+        self.mutate(compatibility, f'href="{ORIGIN + destination}"', f'href="{ORIGIN + source}"')
+        self.assertTrue(any('redirect chain or cycle' in e for e in self.check().errors))
+
+    def test_detects_readable_but_wrong_language_selector_identity(self):
+        article = self.model['articles']['en'][0]
+        destination = self.routes['articles']['fr'][article['id']]
+        wrong = self.routes['articles']['fr'][uuid_for(2)]
+        self.mutate(article['url'], f'value="{destination}" data-locale="fr"',
+                    f'value="{wrong}" data-locale="fr"')
+        self.assertTrue(any('language selector changes the articles identity' in e for e in self.check().errors))
+
+    def test_detects_legacy_uuid_links_even_when_redirect_target_exists(self):
+        article = self.model['articles']['en'][0]
+        self.mutate(article['url'], '</main>', f'<a href="{article["compatibility_url"]}">old alias</a></main>')
+        self.assertTrue(any('UUID in reader-facing URL' in e for e in self.check().errors))
+
+    def test_detects_duplicate_article_body_published_at_redirect_address(self):
+        article = self.model['articles']['af'][0]
+        alternate = '/af/' + self.routes['articles']['en'][article['id']].split('/', 2)[2]
+        self.page_path(alternate).write_text(self.page_path(article['url']).read_text())
+        self.assertTrue(any('Published article inventory mismatch' in e for e in self.check().errors))
+
+    def test_detects_uuid_values_in_search_filter_urls(self):
+        identity = self.model['categories'][0]['id']
+        slug = self.routes['categories']['en'][identity].rstrip('/').rsplit('/', 1)[-1]
+        self.mutate('/en/search/', f'<option value="{slug}">', f'<option value="{identity}">')
+        self.assertTrue(any('search filters must use the canonical readable' in e for e in self.check().errors))
 
     def test_detects_broken_images_and_unicode_encoded_local_links(self):
         route = '/fr/'
@@ -296,7 +498,7 @@ class GeneratedSiteTests(unittest.TestCase):
         self.assertTrue(any('footer destinations/order changed' in e for e in self.check().errors))
 
     def test_detects_missing_english_notice_target_and_improper_indexing(self):
-        route = f'/fr/articles/{uuid_for(1)}/'
+        route = self.routes['articles']['fr'][uuid_for(1)]
         self.mutate(route, '<meta name="robots" content="noindex,follow">', '')
         self.assertTrue(any('missing translation must explain absence' in e for e in self.check().errors))
 
@@ -329,7 +531,36 @@ class BuildModeTests(unittest.TestCase):
             self.assertEqual(checker.search['af'], [])
             self.assertEqual(checker.search['fr'], [])
             self.assertEqual(list((output / 'af/articles').glob('*.md')), [])
-            self.assertTrue(checker.pages[f'/af/articles/{uuid_for(1)}/'].noindex)
+            self.assertTrue(checker.pages[routes['articles']['af'][uuid_for(1)]].noindex)
+            self.assertEqual(checker.pages[f'/af/articles/{uuid_for(1)}/'].redirect,
+                             routes['articles']['af'][uuid_for(1)])
+
+    def test_unicode_localized_aliases_and_encoded_prefix_redirects_resolve(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            model, locales, routes, theme, output = fixture(Path(temporary), translated_title='Genade en seën')
+            checker = SiteChecker(output)
+            self.assertEqual(checker.run(model=model, locales=locales, routes=routes, theme=theme), [])
+            article = model['articles']['af'][0]
+            self.assertTrue(article['url'].endswith('/genade-en-seën/'))
+            encoded = article['url'].replace('ë', '%C3%AB')
+            self.assertEqual(checker.local_reference(encoded)[0], article['url'])
+            self.assertIsNotNone(checker.target_file(checker.local_reference(encoded)[0]))
+            changed = '/en/' + article['url'].split('/', 2)[2]
+            self.assertEqual(checker.pages[changed].redirect, routes['articles']['en'][article['id']])
+
+    def test_duplicate_titles_use_readable_numeric_suffixes_and_preserve_article_identity(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            model, locales, routes, theme, output = fixture(Path(temporary), duplicate_titles=True, translated_count=2)
+            checker = SiteChecker(output)
+            self.assertEqual(checker.run(model=model, locales=locales, routes=routes, theme=theme), [])
+            english = [article['url'].rstrip('/').rsplit('/', 1)[-1] for article in model['articles']['en']]
+            afrikaans = [article['url'].rstrip('/').rsplit('/', 1)[-1] for article in model['articles']['af']]
+            self.assertEqual(english, ['english-source', 'english-source-2', 'english-source-3'])
+            self.assertEqual(afrikaans, ['afrikaanse-opskrif', 'afrikaanse-opskrif-2'])
+            self.assertEqual(CounterArticleIds(checker), {'en': 3, 'af': 2})
+            for article in model['articles']['af']:
+                requested = '/af/' + routes['articles']['en'][article['id']].split('/', 2)[2]
+                self.assertEqual(checker.pages[requested].redirect, article['url'])
 
     def test_paginated_listings_never_claim_first_page_hreflang_equivalence(self):
         with tempfile.TemporaryDirectory() as temporary:

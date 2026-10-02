@@ -68,7 +68,58 @@ to main; any configured required reviewer still controls deployment.
 `dist/` is the only public artifact. Raw checkouts, runtime state, prompts, budgets,
 recovery records, and logs are never copied wholesale into it. Detailed build
 provenance and omission diagnostics stay in `.build/` and review evidence artifacts.
-Only the bounded public deployment identity is packaged with the site.
+Public deployment identity and the route registry are packaged with the site;
+internal source/runtime records remain private.
+
+## Durable route aliases
+
+Every build runs `scripts/route_registry.py` before generation. It retrieves the
+previously published `https://remnant.truechristian.church/routes.json`, validates
+it, and merges it with reviewed `data/routes.json` into `.build/routes.json`.
+Both generation and source-backed checking use that same merged file. Automatically
+assigned localized aliases survive later title corrections and category moves,
+even when they have not yet been copied into the committed registry.
+
+The generated candidate registry is published with the site. A failed build or
+deployment cannot advance this baseline. Only HTTP 404 permits a first-publication
+build using the committed registry alone. Network errors, other HTTP failures,
+redirects, invalid schemas, and collisions stop route preparation; silently
+discarding the published baseline could change existing URLs. Restore access to
+the valid published registry and retry, or use a captured valid registry for an
+offline review with `--published`.
+
+Articles and categories retain localized canonical aliases. Manually replacing a
+known URL's language prefix redirects directly to the same object's canonical
+alias in that language, including historical paths and article category segments.
+Missing translations share readable availability tails at
+`/<locale>/articles/<frozen-English-alias>/`, with noindex metadata and no copied
+English article body. When a translation publishes, its localized category/title
+canonical retains the former availability address as a redirect. Sharing these
+tails avoids a separate category/title combination for every unavailable
+language. Duplicate titles use numeric suffixes, while saved aliases remain frozen. See the
+[routing contract](multilingual-routing-plan.md) for migrations and validation.
+
+Category pagination redirects to the same localized page number when available,
+or that category's localized first page when the selected language has fewer
+pages.
+
+GitHub Pages has no application redirect handler. Readable prefix/history aliases
+and original-language legacy UUID links serve a zero-delay HTML refresh, a
+canonical link to the destination, and `noindex,follow`. They contain no duplicate
+article body, lead directly to the final canonical, and work without JavaScript.
+These are HTML responses, not HTTP 301/308 redirects; server-status redirects
+would require a hosting layer that supports them.
+
+The only JavaScript-dependent compatibility case is manually changing the
+language prefix of a legacy UUID-bearing history URL that has no static file in
+that language. The root 404 page reads the compact `legacy-route-index.json`,
+matches an exact known alias, and replaces the browser address with the readable
+canonical in the requested locale. Unknown paths remain errors. This avoids
+publishing every legacy UUID history under every language prefix. Normal
+readable article/category prefix changes remain static and work without
+JavaScript. All generated navigation, feeds, sitemaps, reader Markdown, and
+search-filter URLs use readable canonical aliases; legacy UUID URLs are
+compatibility endpoints only.
 
 ## Local build and CI
 
@@ -81,8 +132,9 @@ npm ci
 python3 -m unittest discover -s tests -v
 node --test tests/*.test.mjs
 python3 scripts/prepare_sources.py
-python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --output dist
-python3 scripts/check_site.py dist
+python3 scripts/route_registry.py
+python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --registry .build/routes.json --output dist
+python3 scripts/check_site.py dist --registry .build/routes.json
 npx playwright install --with-deps chromium
 npm run test:browser
 python3 scripts/deployment.py
@@ -91,16 +143,27 @@ python3 scripts/deployment.py
 Preparation requires fresh destinations. For a repeat build, use a new
 `--build-root` or explicitly remove only disposable generated output. It never
 silently cleans a working source checkout. Offline/local source overrides select
-committed source HEADs and create isolated detached checkouts:
+committed source HEADs and create isolated detached checkouts. For an offline
+review of a published site, capture its `routes.json` while online and make that
+file available as `.build/published-routes.json` before running:
 
 ```sh
 python3 scripts/prepare_sources.py --build-root .build-local \
   --english-checkout ../remnant-english \
   --translations-checkout ../remnant-translations \
   --theme-checkout ../remnant-theme
-python3 scripts/build.py --english .build-local/english --translations .build-local/translations --theme .build-local/theme --languages .build-local/languages.json --output dist
+python3 scripts/route_registry.py --published .build/published-routes.json \
+  --output .build-local/routes.json --report .build-local/route-registry-report.json
+python3 scripts/build.py --english .build-local/english --translations .build-local/translations --theme .build-local/theme --languages .build-local/languages.json --registry .build-local/routes.json --output dist
+python3 scripts/check_site.py dist --english .build-local/english --translations .build-local/translations --theme .build-local/theme --registry .build-local/routes.json
 python3 scripts/deployment.py --source-report .build-local/source-report.json
 ```
+
+`--published` reads a validated local snapshot instead of accessing the network.
+Use a captured publication registry to preserve live aliases; `data/routes.json`
+alone can omit automatically published additions. For an isolated initial-build
+fixture, it can explicitly serve as the local baseline, but it is not a substitute
+for the published registry when preparing a replacement deployment.
 
 The lightweight check can be inspected with `python3 scripts/poll_sources.py`.
 This reads public remote refs and live metadata but does not build, deploy, modify
