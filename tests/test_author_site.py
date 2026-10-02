@@ -1,5 +1,6 @@
 """Exercise complete author pages against independent English source records."""
 import copy
+import json
 import re
 import tempfile
 import unittest
@@ -197,6 +198,20 @@ class AuthorSiteTests(unittest.TestCase):
             self.assertIn(raw, page.main_text)
             self.assertEqual(page.author_byline_links, [(PRIMARY, self.routes['authors'][tag][PRIMARY])])
         self.assertEqual(self.check().errors, [])
+
+    def test_search_index_keeps_raw_credits_and_only_same_language_contributor_links(self):
+        for tag in ('en', 'af'):
+            records = {record['id']: record for record in json.loads((self.output / tag / 'search-index.json').read_text())}
+            shared = records[uuid_for(2)]
+            self.assertEqual(shared['authors'], [{'name': name, 'url': self.routes['authors'][tag][name]}
+                                                  for name in (COAUTHOR, PRIMARY)])
+            self.assertEqual(shared['author'], 'Written by Zoe Writer & Anne Writer — as printed')
+            self.assertEqual(self.parse(f'/{tag}/search/').page.config['authorLabel'], self.locales[tag]['ui']['author'])
+        self.assertEqual(records[uuid_for(1)]['authors'], [{'name': PRIMARY, 'url': self.routes['authors']['af'][PRIMARY]}])
+        english = json.loads((self.output / 'en/search-index.json').read_text())
+        raw_only = next(record for record in english if record['id'] == uuid_for(5))
+        self.assertEqual(raw_only['author'], 'from Herald of His Coming')
+        self.assertEqual(raw_only['authors'], [])
 
     def test_second_page_has_no_false_language_equivalents_and_switches_to_author_base(self):
         self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(self.root / 'pagination', count=29)

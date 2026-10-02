@@ -1,4 +1,6 @@
 """Mutation tests for author inventories, canonical links, and locale navigation."""
+import gzip
+import json
 import re
 import tempfile
 import unittest
@@ -106,6 +108,32 @@ class AuthorCheckerTests(unittest.TestCase):
         self.mutate(article, f'class="author-link" href="{self.routes["authors"]["en"][PRIMARY]}"',
                     f'class="author-link" href="{self.routes["authors"]["en"][VARIANT]}"')
         self.assert_error('author byline links do not match the original named contributors')
+
+    def test_detects_search_links_to_another_author_or_language(self):
+        path = self.output / 'af/search-index.json'
+        original = json.loads(path.read_text(encoding='utf-8'))
+        for wrong in (self.routes['authors']['af'][VARIANT], self.routes['authors']['en'][PRIMARY]):
+            with self.subTest(destination=wrong):
+                records = json.loads(json.dumps(original))
+                record = next(row for row in records if row['id'] == uuid_for(1))
+                record['authors'][0]['url'] = wrong
+                payload = json.dumps(records, ensure_ascii=False).encode('utf-8')
+                path.write_bytes(payload)
+                path.with_suffix('.json.gz').write_bytes(gzip.compress(payload, mtime=0))
+                self.assert_error('search author links differ from original contributors or canonical author routes')
+
+    def test_detects_missing_search_contributor_and_fabricated_raw_credit_author(self):
+        path = self.output / 'en/search-index.json'
+        original = json.loads(path.read_text(encoding='utf-8'))
+        for identity, authors in ((uuid_for(2), []),
+                                  (uuid_for(5), [{'name': PRIMARY, 'url': self.routes['authors']['en'][PRIMARY]}])):
+            with self.subTest(article=identity):
+                records = json.loads(json.dumps(original))
+                next(row for row in records if row['id'] == identity)['authors'] = authors
+                payload = json.dumps(records, ensure_ascii=False).encode('utf-8')
+                path.write_bytes(payload)
+                path.with_suffix('.json.gz').write_bytes(gzip.compress(payload, mtime=0))
+                self.assert_error('search author links differ from original contributors or canonical author routes')
 
     def test_detects_wrong_paginated_article_and_author_language_identity(self):
         self.model, self.locales, self.routes, self.theme, self.output = author_site_fixture(self.root / 'pagination', count=29)
