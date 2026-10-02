@@ -96,7 +96,23 @@
     "publisher": "Uitgever",
     "download": "Downloaden",
     "pause_updates": "Updates pauzeren",
-    "resume_updates": "Updates hervatten"
+    "resume_updates": "Updates hervatten",
+    "authors": "Auteurs",
+    "authors_intro": "Ontdek de auteurs van wie het werk in het archief is opgenomen en bekijk hun artikelen.",
+    "author_count": "Auteurs: {count}",
+    "author_total_articles": "Oorspronkelijke artikelen in totaal: {count}",
+    "author_available_articles": "Artikelen in deze taal: {count}",
+    "author_recorded_details": "Gegevens zoals vermeld in de oorspronkelijke publicaties",
+    "author_location": "Plaats",
+    "author_role": "Rol van de bijdrager",
+    "author_credentials": "Kwalificaties",
+    "author_life_dates": "Geboorte- en overlijdensdatum",
+    "author_birth_year": "Geboortejaar",
+    "author_death_year": "Overlijdensjaar",
+    "author_age": "Leeftijd zoals vermeld",
+    "author_no_articles": "Er zijn nog geen artikelen van deze auteur beschikbaar in deze taal.",
+    "author_read_english": "Lees de artikelen van deze auteur in het Engels",
+    "no_authors": "Er zijn nog geen auteurs met een geregistreerde naam beschikbaar."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Waarom wij de Bijbel geloven"
   }
 }
+

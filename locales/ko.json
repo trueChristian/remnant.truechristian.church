@@ -96,7 +96,23 @@
     "publisher": "발행처",
     "download": "다운로드",
     "pause_updates": "업데이트 일시 중지",
-    "resume_updates": "업데이트 다시 시작"
+    "resume_updates": "업데이트 다시 시작",
+    "authors": "저자",
+    "authors_intro": "자료실에 글을 남긴 저자들을 만나고 각 저자의 글을 살펴보세요.",
+    "author_count": "저자 수: {count}",
+    "author_total_articles": "전체 원문 글 수: {count}",
+    "author_available_articles": "이 언어로 제공되는 글 수: {count}",
+    "author_recorded_details": "원래 간행물에 기록된 정보",
+    "author_location": "지역",
+    "author_role": "기여 역할",
+    "author_credentials": "자격",
+    "author_life_dates": "출생일 및 사망일",
+    "author_birth_year": "출생 연도",
+    "author_death_year": "사망 연도",
+    "author_age": "기록된 당시 나이",
+    "author_no_articles": "이 저자의 글은 아직 이 언어로 제공되지 않습니다.",
+    "author_read_english": "이 저자의 글을 영어로 읽기",
+    "no_authors": "아직 이름이 기록된 저자가 없습니다."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "우리가 성경을 믿는 이유"
   }
 }
+

@@ -96,7 +96,23 @@
     "publisher": "Uitgewer",
     "download": "Laai af",
     "pause_updates": "Onderbreek opdaterings",
-    "resume_updates": "Hervat opdaterings"
+    "resume_updates": "Hervat opdaterings",
+    "authors": "Skrywers",
+    "authors_intro": "Blaai deur die skrywers wie se werk in die argief verskyn en verken hul artikels.",
+    "author_count": "Skrywers: {count}",
+    "author_total_articles": "Oorspronklike artikels in totaal: {count}",
+    "author_available_articles": "Artikels in hierdie taal: {count}",
+    "author_recorded_details": "Besonderhede soos in die oorspronklike publikasies aangeteken",
+    "author_location": "Plek",
+    "author_role": "Rol van bydraer",
+    "author_credentials": "Kwalifikasies",
+    "author_life_dates": "Lewensdatums",
+    "author_birth_year": "Geboortejaar",
+    "author_death_year": "Sterfjaar",
+    "author_age": "Ouderdom soos aangeteken",
+    "author_no_articles": "Geen van hierdie skrywer se artikels is nog in hierdie taal beskikbaar nie.",
+    "author_read_english": "Lees hierdie skrywer se artikels in Engels",
+    "no_authors": "Daar is nog geen skrywers met aangetekende name beskikbaar nie."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Waarom ons die Bybel glo"
   }
 }
+

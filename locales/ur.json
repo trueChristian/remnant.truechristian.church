@@ -96,7 +96,23 @@
     "publisher": "ناشر",
     "download": "ڈاؤن لوڈ",
     "pause_updates": "اپ ڈیٹس روکیں",
-    "resume_updates": "اپ ڈیٹس دوبارہ شروع کریں"
+    "resume_updates": "اپ ڈیٹس دوبارہ شروع کریں",
+    "authors": "مصنفین",
+    "authors_intro": "محفوظ شدہ مجموعے میں شامل تحریروں کے مصنفین کے بارے میں جانیں اور ان کے مضامین پڑھیں۔",
+    "author_count": "مصنفین کی تعداد: {count}",
+    "author_total_articles": "اصل مضامین کی کل تعداد: {count}",
+    "author_available_articles": "اس زبان میں مضامین: {count}",
+    "author_recorded_details": "اصل اشاعتوں میں درج تفصیلات",
+    "author_location": "مقام",
+    "author_role": "تخلیق میں کردار",
+    "author_credentials": "قابلیت",
+    "author_life_dates": "تاریخ پیدائش اور وفات",
+    "author_birth_year": "سن پیدائش",
+    "author_death_year": "سن وفات",
+    "author_age": "درج شدہ عمر",
+    "author_no_articles": "اس مصنف کا کوئی مضمون ابھی اس زبان میں دستیاب نہیں ہے۔",
+    "author_read_english": "اس مصنف کے مضامین انگریزی میں پڑھیں",
+    "no_authors": "ابھی کسی مصنف کا نام درج نہیں ہے۔"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "ہم بائبل پر ایمان کیوں رکھتے ہیں"
   }
 }
+

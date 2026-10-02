@@ -96,7 +96,23 @@
     "publisher": "الناشر",
     "download": "تنزيل",
     "pause_updates": "إيقاف التحديثات مؤقتًا",
-    "resume_updates": "استئناف التحديثات"
+    "resume_updates": "استئناف التحديثات",
+    "authors": "المؤلفون",
+    "authors_intro": "تصفّح أسماء الكتّاب الذين تظهر أعمالهم في الأرشيف واستكشف مقالاتهم.",
+    "author_count": "عدد المؤلفين: {count}",
+    "author_total_articles": "إجمالي المقالات الأصلية: {count}",
+    "author_available_articles": "المقالات بهذه اللغة: {count}",
+    "author_recorded_details": "تفاصيل كما وردت في المنشورات الأصلية",
+    "author_location": "الموقع",
+    "author_role": "دور المساهم",
+    "author_credentials": "المؤهلات",
+    "author_life_dates": "تاريخا الميلاد والوفاة",
+    "author_birth_year": "سنة الميلاد",
+    "author_death_year": "سنة الوفاة",
+    "author_age": "العمر كما ورد في المصدر",
+    "author_no_articles": "لا تتوفر أي مقالات لهذا المؤلف بهذه اللغة حتى الآن.",
+    "author_read_english": "اقرأ مقالات هذا المؤلف بالإنجليزية",
+    "no_authors": "لا يتوفر حتى الآن مؤلفون مسجّلون بأسمائهم."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "لماذا نؤمن بالكتاب المقدس"
   }
 }
+
