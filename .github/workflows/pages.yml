@@ -5,13 +5,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-    inputs:
-      force_rebuild:
-        description: Republish even when the live display fingerprint matches (recovery only)
-        type: boolean
-        default: false
-  repository_dispatch:
-    types: [remnant-content-updated]
+  schedule:
+    # Best effort: GitHub may delay scheduled runs. Unchanged pins skip the build.
+    - cron: '17 * * * *'
 
 permissions:
   contents: read
@@ -28,16 +24,45 @@ defaults:
     shell: bash
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 5
     outputs:
-      changed: ${{ steps.plan.outputs.changed }}
+      build: ${{ steps.poll.outputs.build }}
+      site_revision: ${{ steps.poll.outputs.site_revision }}
+      selection: ${{ steps.poll.outputs.selection }}
     steps:
       - name: Check out review merge or trusted current main
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event_name == 'pull_request' && github.sha || 'main' }}
+          persist-credentials: false
+      - name: Validate the website event
+        run: python3 scripts/validate_event.py
+      - name: Compare current source pins with the last successful deployment
+        id: poll
+        env:
+          REVIEW_BUILD: ${{ github.event_name == 'pull_request' }}
+          FORCE_REBUILD: ${{ github.event_name == 'workflow_dispatch' }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [[ "$REVIEW_BUILD" == true ]]; then args+=(--review); fi
+          if [[ "$FORCE_REBUILD" == true ]]; then args+=(--force); fi
+          python3 scripts/poll_sources.py "${args[@]}"
+
+  build:
+    needs: check
+    if: needs.check.outputs.build == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    outputs:
+      changed: ${{ steps.plan.outputs.changed }}
+    steps:
+      - name: Check out the exact website revision selected by preflight
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.check.outputs.site_revision }}
           persist-credentials: false
       - name: Validate bounded event metadata
         run: python3 scripts/validate_event.py
@@ -52,8 +77,10 @@ jobs:
           set -euo pipefail
           python3 -m unittest discover -s tests -v
           node --test tests/*.test.mjs
-      - name: Resolve sources once and validate clean display exports
-        run: python3 scripts/prepare_sources.py
+      - name: Export exactly the source revisions selected by preflight
+        env:
+          SOURCE_SELECTION: ${{ needs.check.outputs.selection }}
+        run: python3 scripts/prepare_sources.py --selection "$SOURCE_SELECTION"
       - name: Run full source-backed regressions
         run: python3 -m unittest discover -s tests -v
       - name: Reuse the durable published Scripture scan ledger
@@ -83,13 +110,13 @@ jobs:
         id: plan
         env:
           COMPARE_LIVE: ${{ github.repository == 'trueChristian/remnant.truechristian.church' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
-          FORCE_REBUILD: ${{ github.event_name == 'workflow_dispatch' && inputs.force_rebuild }}
+          FORCE_REBUILD: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           set -euo pipefail
           args=()
           if [[ "$COMPARE_LIVE" == true ]]; then args+=(--compare-live); fi
           if [[ "$FORCE_REBUILD" == true ]]; then args+=(--force); fi
-          python3 scripts/dispatch.py plan "${args[@]}"
+          python3 scripts/deployment.py "${args[@]}"
       - name: Explain build and translation health
         if: always()
         env:

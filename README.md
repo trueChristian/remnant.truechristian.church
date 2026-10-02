@@ -41,7 +41,6 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 - [Complete dictionaries and truthful date formatting](docs/localization.md)
 - [Visual identity, accessibility and performance](docs/design-and-quality.md)
 - [Build workflows, publication and recovery](docs/operations.md)
-- [Source-publisher hook patches](integrations/README.md)
 
 Aliases are owned by `data/routes.json`, keyed by permanent UUID. Existing paths do not change with corrected titles or category moves. New publications have deterministic UUID-safe routes until a reviewed alias update; old category paths redirect. See the routing guide before editing aliases.
 
@@ -60,9 +59,9 @@ Place owner-approved files in `public/covers/` and supply alt text in every loca
 
 ## Publication through GitHub Pages Actions
 
-Pull requests build, test, and upload review artifacts only. Once GitHub Pages is configured to use Actions, successful trusted `main` builds publish changed output through the `github-pages` environment and its protection rules. No extra repository variable is required. Website pushes and manual recovery runs work independently of cross-repository notification credentials.
+Pull requests build, test, and upload review artifacts only. Once GitHub Pages is configured to use Actions, successful trusted `main` builds publish changed output through the `github-pages` environment and its protection rules. No extra repository variable is required. Website pushes remain automatic; manual Actions “Run workflow” on main always rebuilds and deploys, even when revisions match.
 
-Automatic source notifications additionally require approved, destination-scoped dispatch credentials and enabled source hooks. Configure the actual Pages custom domain and HTTPS in the repository settings; a `CNAME` file alone does not configure a GitHub Pages Actions domain. See [operations](docs/operations.md) for setup, deduplication, and recovery.
+The website checks source revisions hourly (best effort, at minute 17). Unchanged successfully deployed pins skip the build; changes trigger a fixed-revision build and deployment. The live deployment manifest advances only with a successful Pages publication. No source notification hooks, dispatch tokens, or extra activation variables are required. Configure the actual Pages custom domain and HTTPS in the repository settings; a `CNAME` file alone does not configure a GitHub Pages Actions domain. See [operations](docs/operations.md) for setup, deduplication, and recovery.
 
 ## Rights and provenance
 
