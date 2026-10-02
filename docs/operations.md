@@ -1,46 +1,97 @@
 # Build, publication, and recovery
 
+## Website-owned hourly publication
+
+`Build and publish Remnant` runs a lightweight source check hourly, at minute 17
+(`17 * * * *`). GitHub schedules are best effort and can start late. The website
+reads the current English and translation `main` revisions and compares them,
+its own selected revision, and the reviewed theme pin with the live
+[`deployment.json`](https://remnant.truechristian.church/deployment.json).
+If those pins match a healthy successful publication, the check exits: no source
+clones, package installation, site generation, browser suite, or deployment runs.
+
+The source repositories only own their normal validation, content, and translation
+processing. Website notifications, cross-repository dispatch tokens, extra
+activation variables, and source-side notification caches are no longer required.
+This change does not delete or modify existing configured secrets or settings.
+Bot-generated translation commits are discovered by the next poll without relying
+on a second push workflow.
+
+Website `main` pushes remain automatic. For immediate recovery or a deliberate
+rebuild, open **Actions → Build and publish Remnant → Run workflow**, choose
+`main`, and run it. A manual run **always builds and deploys**, even when all pins
+and display bytes match. Pull requests always build and test for review only.
+Opening a PR never deploys it; owner merge is separate.
+
+## Last-successful-deployment baseline
+
+The live `deployment.json` is the only persisted comparison baseline. It includes
+exact site/English/translation/theme revisions, a display fingerprint, and
+translation health. There is no last-seen source marker or Actions cache that
+could incorrectly acknowledge a failed build.
+
+A candidate metadata file is generated inside `dist/` and packaged with the site.
+It only becomes the next baseline when GitHub Pages successfully publishes that
+artifact. A failed build, failed Pages deployment, or pending environment approval
+does not update the live baseline. The next hourly check retries still-unpublished
+pins. Missing, malformed, oversized, redirected, or unreachable live metadata
+conservatively requests a build; the bounded metadata request sends no credentials
+and permits no redirects. A stale CDN response can cause a harmless repeated build.
+
+The preflight selects immutable full commit SHAs once. The build checks out that
+exact website revision and passes the same source selection to preparation;
+it never silently resolves newer source heads partway through the build. A later
+source change is picked up by the next check. The theme stays pinned to
+`3bd0c28956610506f83e3ecd3af6ea775ac7cb45` until a reviewed website change updates it.
+
+The entire production workflow, from preflight through Pages completion, shares
+one concurrency group and never cancels an in-flight deployment. PR groups remain
+separate and cancelable. GitHub may replace a pending run; every admitted production
+run starts by reading current website `main`. Use this same workflow for manual
+recovery rather than creating another competing deployment path. Do not force-reset
+source main to a historical commit; use a reviewed new revert commit instead.
+
 ## Publication boundary
 
-Pull requests only build, test, and upload review artifacts. After the owner has
-configured GitHub Pages to use Actions, successful trusted `main` builds package
-and publish changed output through the `github-pages` environment. There is no
-additional repository-variable opt-in. A merged workflow change takes effect on
-the resulting `main` push; opening a PR never deploys it.
-Protect the `github-pages` environment and restrict deployment branches to `main`;
-required reviewers, when configured, still control publication.
+GitHub Pages must use Actions. Packaging and deployment require this website
+repository, `refs/heads/main`, a non-PR event, successful build checks, and a changed
+or manually forced deployment plan. The event validator accepts only main pushes,
+hourly schedules, manual runs on main, and review-only pull requests. Unsupported
+notification events are rejected. There is no extra repository-variable opt-in.
 
-Both packaging and deployment require this website repository, `refs/heads/main`,
-a non-PR event, and a changed deployment plan. Only the same trusted context
-compares the generated publication with live metadata. The event validator also
-rejects unsupported events before sources are acquired. These checks do not
-create or modify Pages settings, credentials, environment protections, or DNS.
+The check/build jobs have only `contents: read`. The deploy job has only
+`pages: write` and `id-token: write`, runs in `github-pages`, and deploys the validated
+artifact without checking out or executing source scripts. Every action is pinned
+to a full commit SHA. Keep environment protections and restrict production branches
+to main; any configured required reviewer still controls deployment.
 
-`dist/` is the only public artifact. Raw checkouts, manifests, translation runtime
-state, prompts, recovery records, and local logs are never copied wholesale into
-it. `dist/deployment.json` contains only a display fingerprint, exact revision tuple, and translation health for conservative deduplication. Detailed provenance, omission diagnostics and budgets are kept in `.build/site-build-report.json` and the separate evidence artifact, outside the published site.
+`dist/` is the only public artifact. Raw checkouts, runtime state, prompts, budgets,
+recovery records, and logs are never copied wholesale into it. Detailed build
+provenance and omission diagnostics stay in `.build/` and review evidence artifacts.
+Only the bounded public deployment identity is packaged with the site.
 
 ## Local build and CI
 
-Requirements: Python 3.11+, Git, and Node 20+ for the offline JavaScript tests and Playwright browser QA. The static generator itself uses Python's standard library. No database,
-server, paid API, or translation campaign is involved.
+Use Python 3.11+, Git, and Node 20+. The generator uses Python's standard library;
+Node tooling and Playwright provide parsing and browser QA. No paid API or
+translation campaign is started by a website build.
 
 ```sh
+npm ci
 python3 -m unittest discover -s tests -v
 node --test tests/*.test.mjs
 python3 scripts/prepare_sources.py
 python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --output dist
 python3 scripts/check_site.py dist
-npm ci
 npx playwright install --with-deps chromium
 npm run test:browser
-python3 scripts/dispatch.py plan
+python3 scripts/deployment.py
 ```
 
-Preparation uses fresh destinations. For a repeat build, choose an unused
-`--build-root` or remove only your disposable prior `.build/` outputs. It does not
-silently replace or clean a working source checkout. Use clean local clones when
-network access is unavailable:
+Preparation requires fresh destinations. For a repeat build, use a new
+`--build-root` or explicitly remove only disposable generated output. It never
+silently cleans a working source checkout. Offline/local source overrides select
+committed source HEADs and create isolated detached checkouts:
 
 ```sh
 python3 scripts/prepare_sources.py --build-root .build-local \
@@ -48,192 +99,58 @@ python3 scripts/prepare_sources.py --build-root .build-local \
   --translations-checkout ../remnant-translations \
   --theme-checkout ../remnant-theme
 python3 scripts/build.py --english .build-local/english --translations .build-local/translations --theme .build-local/theme --languages .build-local/languages.json --output dist
-python3 scripts/dispatch.py plan --source-report .build-local/source-report.json
+python3 scripts/deployment.py --source-report .build-local/source-report.json
 ```
 
-Local overrides select each local source's committed HEAD (never uncommitted
-working files), then create isolated detached checkouts. The theme is always
-pinned to `3bd0c28956610506f83e3ecd3af6ea775ac7cb45`; changing it requires a reviewed
-website update. In CI, English and translation `main` are resolved once each,
-then fetched and exported at those exact SHAs. No event payload controls a URL,
-shell command, file path, branch, or executable checkout. Site pushes, manual
-runs on `main`, and notifications all check out current website `main`, so delayed
-runs coalesce newer changes instead of rebuilding an old event commit. PRs use
-their merge revision with read-only permissions and no deployment credentials.
+The lightweight check can be inspected with `python3 scripts/poll_sources.py`.
+This reads public remote refs and live metadata but does not build, deploy, modify
+source repositories, or advance any deployed state. Its JSON report explains whether
+a build is needed. CI's selected revisions are passed through validated job outputs,
+never through user-controlled URLs or executable ref expressions.
 
-The supported English and translation exporters validate the contract again.
-Translations use the **same selected English checkout**. The selected translation
-checkout’s complete `config/languages.json` is snapshotted privately as
-`.build/languages.json` before article export. Thus configured zero-article
-languages and registry drift are validated even when article export fails. The
-raw registry is never copied into the public site. If translation acquisition is
-unavailable, this snapshot remains absent and the build reports that limitation. An invalid English
-archive or broken required theme stops the build, preserving the last good site.
-Translation fetch/export failure is explicit in the summary and produces a fresh
-English-only build, never stale translations. Normal incompatibility omits only
-incompatible translations. When translation acquisition fails before a revision
-can be selected, the report honestly records an unavailable/null revision.
+## Translation compatibility and failures
 
-## Event contract and credential boundary
+The English and translation exporters validate their contracts again. Translations
+use the exact same selected English checkout. The selected translation language
+registry is privately snapshotted before article export, so configured zero-article
+locales and registry drift remain checkable. Raw language registry data is not
+copied wholesale into public output.
 
-Event type: `remnant-content-updated`. Exact `client_payload` schema:
+Invalid English or a broken required theme stops the build and retains the last
+good site. Translation acquisition/export failure permits a fresh English-only
+publication, never stale or failed-quality translations. It is reported explicitly,
+including an honest null revision when no translation revision was obtainable.
+A degraded translation status requests another build at the next poll even if
+source revisions have not changed, allowing transient export/acquisition recovery.
+Normal incompatibility omits only incompatible translations. No build changes the
+source publication policy or starts paid translation work.
 
-```json
-{
-  "schema": 1,
-  "repository": "trueChristian/berean-translation",
-  "revision": "0123456789abcdef0123456789abcdef01234567",
-  "display_fingerprint": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
-}
-```
+## Recovery and rollout verification
 
-The other allowed sender repository is `trueChristian/berean-voice`. Unknown
-fields, source names, event types, and malformed revisions/fingerprints fail
-closed. Payloads are audit hints, not proof of content validity and never a ref
-selection mechanism. Authentication is supplied by GitHub's dispatch API and the
-approved destination-scoped credential. Export validation remains mandatory.
+- **Unchanged healthy sources:** only the lightweight check runs; build/deploy jobs skip
+- **English invalid:** fix the source through its normal reviewed workflow; the next hourly check retries, or run the website workflow manually
+- **Translation unavailable/export failed:** inspect diagnostics; the next poll retries at the same pins, or force an immediate manual run
+- **Build or Pages failed:** the live baseline remains unchanged; inspect the failed job/environment/domain configuration, fix it, and use Run workflow on main if immediate retry is needed
+- **Missing live metadata/bootstrap:** a conservative full build/deploy creates the first baseline
+- **Manual unchanged rebuild:** Run workflow on main always republishes; no additional force checkbox is needed
 
-Ordinary `GITHUB_TOKEN` is repository-scoped and cannot perform this cross-repo
-request. Source workflows require separate, approved secure configuration. See
-[the source hook integration instructions and patch snapshots](../integrations/README.md).
-Merging the source hooks alone does not configure their credentials or enable
-notifications. Website pushes and manual runs do not require those credentials.
-
-The build job has only `contents: read`. The separate deploy job has only
-`pages: write` and `id-token: write`, deploys the already-produced Pages artifact,
-and runs in `github-pages`. It does not execute source scripts or check out PR
-code with deployment privileges. All action references are fixed commit SHAs.
-
-## Deduplication and publication ordering
-
-There are two independent layers:
-
-1. Source hooks fingerprint validated public exports, excluding generated
-   manifests and revision-only JSON fields. The translation registry’s display
-   fields are included even for zero-article locales; private guidance is ignored.
-   A durable accepted-notification
-   marker lives in branch-scoped Actions cache. Internal campaign checkpoints do
-   not repeatedly dispatch unchanged content. Missing cache is safe: it causes
-   one redundant notification. The translation collector dispatches explicitly
-   after durable publication and validation, including bot commits, rather than
-   relying on a `push` workflow that `GITHUB_TOKEN` commits normally do not start.
-2. The website fingerprints actual generated display files. Only
-   `build-report.json` and `deployment.json` are excluded because they record
-   build provenance. A matching fingerprint, exact four-repository revision
-   tuple, and translation health at the fixed live
-   `https://remnant.truechristian.church/deployment.json` skip the deployment.
-   Missing, invalid, oversized, redirected, or unreachable metadata causes a safe
-   fresh deployment candidate instead of incorrectly suppressing publication.
-   The metadata request sends no credentials and permits no redirects.
-
-The **entire production workflow**, from source selection through Pages
-completion, shares one concurrency group and is never canceled mid-deploy. PRs
-have separate cancelable groups. GitHub can replace an older pending run, but each
-admitted run resolves current main anew. Thus a queued old notification cannot
-publish its old payload snapshot over a newer completed publication. No global
-ordering is inferred from timestamps or source-event SHAs. Use the same workflow
-for manual recovery; do not add a second independent production deployment job.
-A delayed CDN marker normally causes a redundant safe deploy. Requiring the
-revision tuple as well as the digest prevents a historical marker from suppressing
-a normal content-revert commit. This assumes protected source history: do not
-force-reset main to a historical commit; use a new reviewed revert commit instead.
-
-Source display-only deduplication leaves the public provenance marker at the last
-actual deployment when only upstream bookkeeping changes and no event is sent.
-An explicitly triggered website build conservatively republishes if its exact
-revision tuple has changed, even when the display digest matches.
-
-## Failure and recovery
-
-- **English invalid:** repair the source in its normal reviewed workflow. The
-  existing publication remains. The next successful source hook, website push,
-  or manual website run retries validation
-- **Translations unavailable/invalid export:** publish valid English with no
-  stale translation output. Inspect translation diagnostics. Once repaired,
-  manually run the website workflow on `main` if no new source notification is
-  expected; restored translation pages yield a changed display fingerprint
-- **Dispatch HTTP rejection, timeout, or missing credential:** no successful
-  fingerprint marker advances. Check the narrowly scoped owner-managed token,
-  receiver workflow presence on main, and source job error. Rerun the failed
-  trusted source workflow. A timeout may have delivered an event, but duplicates
-  are safe. The collector's next successful run also retries unsent display
-  changes. No token/response body is written to recovery evidence
-- **Dispatch accepted but website build fails:** notification acceptance is not
-  deployment success. Inspect the website Actions run and repair the failure,
-  then manually rerun on `main`; source cache need not be erased
-- **Pages failure:** the workflow reports failure and retains review evidence.
-  Inspect the Pages job/environment/domain setup. Rerun the website workflow on
-  `main`; select `force_rebuild` when deliberately republishing byte-identical
-  output or recovering a site whose live fingerprint is already present
-- **Duplicate/old notification:** validate it, build current selected sources,
-  then skip an unchanged live display. No source payload is replayed
+Merge the website polling PR and the two source cleanup PRs through normal owner
+review. Confirm a successful Pages job, then inspect live deployment revisions and
+content. Confirm an unchanged subsequent scheduled check skips build/deploy. Confirm
+future source changes are picked up without source credentials or notifications.
+Offline tests and green PR CI do not establish this live end-to-end proof.
 
 Do not delete translations, rewrite source history, force-push, regenerate paid
-work, or change credentials as an automatic response to a build failure.
-
-## Owner-authorized first publication checklist
-
-1. Resolve the shared theme's currently unspecified software/asset licensing with
-   the owner. The website GPL file does not relicense third-party articles or
-   brand assets
-2. Review and merge the website implementation; separately review the English
-   and translation hook PRs. Configure approved source dispatch access securely
-3. Inspect Settings → Pages for the website repository. Select GitHub Actions as
-   the build/deployment source. Configure the actual custom-domain field as
-   `remnant.truechristian.church`; a `CNAME` file alone does not configure an
-   Actions deployment
-4. Verify current authoritative DNS before changing it. For a subdomain, the
-   Pages documentation describes a CNAME targeting the appropriate account Pages
-   hostname; confirm the account and existing records instead of guessing or
-   overwriting records. Verify domain ownership as appropriate
-5. Wait for DNS/certificate readiness and enable Enforce HTTPS. Review
-   `github-pages` protections and restrict it to `main`
-6. Review and merge the publication workflow changes. The resulting push to
-   `main` builds and publishes changed output automatically. For recovery, run
-   the same workflow on `main`; no extra enable variable is required. Approve the
-   environment if required. Verify the exact
-   deployed SHAs in `deployment.json`, successful Pages job, real custom-domain
-   HTTPS, root language selection, English/compatible translations, Markdown,
-   feeds, and direct deep-link loads
-7. Enable `REMNANT_NOTIFICATIONS_ENABLED=true` in approved source repositories;
-   perform a harmless authorized source-publication test and verify the receiver
-   run. Keep article publication automatic after that setup
-
-### Post-merge rollout correction (2026-09-30)
-
-The website implementation and source-hook PRs have been merged. The owner
-reports that Pages uses Actions and that the domain and DNS have been configured.
-The successful `main` build [36767716855](https://github.com/trueChristian/remnant.truechristian.church/actions/runs/36767716855)
-at `4333afcb` skipped Pages packaging and deployment because the original
-`PAGES_DEPLOY_ENABLED` variable gate was unset. This correction removes that
-redundant gate while retaining the publication boundary above. Existing values
-of that retired variable no longer control publication; use GitHub
-Actions/Pages and environment protections as the operational controls.
-
-A successful deployment job and live custom-domain `deployment.json` still need
-to be verified after the correction is merged. Cross-repository notification
-credentials and source enablement remain a separate setup/verification task.
-No settings, secrets, domain records, or environment protections are changed by
-this correction. The original implementation-time limitations below are
-historical, not a diagnosis of the current DNS configuration.
-
-### Verification limits at implementation time (2026-09-30)
-
-A read-only request to the public custom-domain URL from the implementation
-environment returned a proxy 502, and its system hostname lookup returned no
-answer. This does **not** prove a DNS error or establish current site availability.
-The available repository connector did not expose Pages settings. No domain,
-DNS, certificate, Pages setting, secret, token, repository variable, or environment
-protection was created or changed. Live end-to-end dispatch and Pages deployment
-remain owner-authorized setup/verification tasks. Offline mock tests cover the
-event, bot path, deduplication, failed delivery, unchanged marker, old-event
-coalescing, degraded build, and recovery behavior.
+work, or change credentials automatically in response to a build failure. These
+changes do not alter Pages settings, secrets, custom domain, DNS, or protection rules.
+The owner has already reported Pages/Actions and domain setup; verify their actual
+state before diagnosing a settings issue. The theme's unspecified software/asset
+license remains an owner clarification; this website's GPL license does not
+relicense third-party magazine articles or theme assets.
 
 ## Official references
 
-- [GITHUB_TOKEN behavior](https://docs.github.com/en/actions/concepts/security/github_token)
-- [Repository dispatch API and required permission](https://docs.github.com/en/rest/repos/repos#create-a-repository-dispatch-event)
+- [Scheduled workflows and limitations](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 - [Custom Pages workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 - [Custom-domain configuration](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 - [Workflow concurrency](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency)
-- Pinned official actions: [checkout](https://github.com/actions/checkout/commit/3d3c42e5aac5ba805825da76410c181273ba90b1), [upload-artifact](https://github.com/actions/upload-artifact/commit/043fb46d1a93c77aae656e7c1c64a875d1fc6a0a), [upload-pages-artifact](https://github.com/actions/upload-pages-artifact/commit/fc324d3547104276b827a68afc52ff2a11cc49c9), [deploy-pages](https://github.com/actions/deploy-pages/commit/368f82528645a54fb793d4d04e342629a3f51346), [source-hook cache](https://github.com/actions/cache/commit/caa296126883cff596d87d8935842f9db880ef25)

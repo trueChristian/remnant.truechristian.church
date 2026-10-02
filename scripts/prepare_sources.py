@@ -67,10 +67,17 @@ def snapshot_languages(checkout: Path, destination: Path) -> None:
     destination.write_bytes(raw)
 
 
-def prepare(root: Path, local_sources: dict[str, Path] | None = None) -> dict:
+def prepare(root: Path, local_sources: dict[str, Path] | None = None,
+            selection: dict | None = None) -> dict:
     from export_sources import export_sources
 
     local_sources = local_sources or {}
+    site_revision = git('rev-parse', 'HEAD')
+    if selection is not None:
+        from poll_sources import validate_selection
+        selection = validate_selection(selection, site_revision=site_revision)
+        if local_sources:
+            raise ValueError('Polled revisions cannot be combined with local source overrides')
     root = root.resolve()
     root.mkdir(parents=True, exist_ok=True)
     if (root / 'languages.json').exists() or (root / 'languages.json').is_symlink():
@@ -79,16 +86,17 @@ def prepare(root: Path, local_sources: dict[str, Path] | None = None) -> dict:
     for name, repository in REPOSITORIES.items():
         local = local_sources.get(name)
         try:
-            revision = THEME_REVISION if name == 'theme' else (
-                git('rev-parse', 'HEAD', cwd=local) if local else resolve_main(repository))
-            if not SHA.fullmatch(revision):
+            revision = selection[name] if selection is not None else (
+                THEME_REVISION if name == 'theme' else (
+                    git('rev-parse', 'HEAD', cwd=local) if local else resolve_main(repository)))
+            if not isinstance(revision, str) or not SHA.fullmatch(revision):
                 raise ValueError('Invalid source revision')
             selected[name] = {'repository': repository, 'revision': revision, 'acquisition': 'selected'}
         except (OSError, ValueError, subprocess.SubprocessError):
             if name != 'translations':
                 raise
             selected[name] = {'repository': repository, 'revision': None, 'acquisition': 'unavailable'}
-    # All revisions are selected before any export. A notification cannot choose a ref.
+    # All revisions are selected before any export; a preflight selection is never re-resolved.
     for name, source in selected.items():
         destination = root / ('theme' if name == 'theme' else f'checkouts/{name}')
         if source['revision'] is None:
@@ -103,7 +111,7 @@ def prepare(root: Path, local_sources: dict[str, Path] | None = None) -> dict:
             # Leave the failed clone isolated. Never export partial checkout bytes.
             if destination.exists():
                 destination.rename(destination.with_name('translations-incomplete'))
-    report = {'schema': 1, 'sources': selected, 'site_revision': git('rev-parse', 'HEAD'), 'export': None}
+    report = {'schema': 1, 'sources': selected, 'site_revision': site_revision, 'export': None}
     report_path = root / 'source-report.json'
     report['language_registry'] = {'status': 'unavailable', 'revision': None}
     report_path.write_text(json.dumps(report, indent=2) + '\n')
@@ -134,9 +142,11 @@ def main() -> None:
     parser.add_argument('--build-root', type=Path, default=Path('.build'))
     for name in REPOSITORIES:
         parser.add_argument(f'--{name}-checkout', type=Path)
+    parser.add_argument('--selection', help='Validated JSON revision selection from the lightweight poll')
     args = parser.parse_args()
     sources = {name: getattr(args, f'{name}_checkout') for name in REPOSITORIES if getattr(args, f'{name}_checkout')}
-    print(json.dumps(prepare(args.build_root, sources), indent=2))
+    print(json.dumps(prepare(args.build_root, sources,
+                             json.loads(args.selection) if args.selection else None), indent=2))
 
 
 if __name__ == '__main__':
