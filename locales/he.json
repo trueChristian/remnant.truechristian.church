@@ -96,7 +96,23 @@
     "publisher": "מוציא לאור",
     "download": "הורדה",
     "pause_updates": "השהיית עדכונים",
-    "resume_updates": "המשך עדכונים"
+    "resume_updates": "המשך עדכונים",
+    "authors": "מחברים",
+    "authors_intro": "עיינו ברשימת המחברים שיצירותיהם מופיעות בארכיון וגלו את מאמריהם.",
+    "author_count": "מספר המחברים: {count}",
+    "author_total_articles": "סך המאמרים המקוריים: {count}",
+    "author_available_articles": "מאמרים בשפה זו: {count}",
+    "author_recorded_details": "פרטים כפי שנרשמו בפרסומים המקוריים",
+    "author_location": "מקום",
+    "author_role": "תפקיד ביצירה",
+    "author_credentials": "הכשרה",
+    "author_life_dates": "תאריכי לידה ופטירה",
+    "author_birth_year": "שנת לידה",
+    "author_death_year": "שנת פטירה",
+    "author_age": "גיל כפי שנרשם במקור",
+    "author_no_articles": "אין עדיין מאמרים של מחבר זה בשפה זו.",
+    "author_read_english": "קריאת מאמריו של מחבר זה באנגלית",
+    "no_authors": "אין עדיין מחברים בעלי שם מתועד."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "מדוע אנו מאמינים בכתבי הקודש"
   }
 }
+

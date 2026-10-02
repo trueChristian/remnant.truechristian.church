@@ -96,7 +96,23 @@
     "publisher": "প্রকাশক",
     "download": "ডাউনলোড",
     "pause_updates": "আপডেট বিরতি দিন",
-    "resume_updates": "আপডেট আবার চালু করুন"
+    "resume_updates": "আপডেট আবার চালু করুন",
+    "authors": "লেখকগণ",
+    "authors_intro": "আর্কাইভে যাঁদের লেখা রয়েছে, সেই লেখকদের পরিচয় ও প্রবন্ধ দেখুন।",
+    "author_count": "লেখকের সংখ্যা: {count}",
+    "author_total_articles": "মোট মূল প্রবন্ধ: {count}",
+    "author_available_articles": "এই ভাষায় প্রবন্ধ: {count}",
+    "author_recorded_details": "মূল প্রকাশনায় নথিভুক্ত বিবরণ",
+    "author_location": "অবস্থান",
+    "author_role": "অবদানকারীর ভূমিকা",
+    "author_credentials": "যোগ্যতা",
+    "author_life_dates": "জন্ম ও মৃত্যুর তারিখ",
+    "author_birth_year": "জন্মসাল",
+    "author_death_year": "মৃত্যুসাল",
+    "author_age": "নথিভুক্ত বয়স",
+    "author_no_articles": "এই লেখকের কোনো প্রবন্ধ এখনো এই ভাষায় পাওয়া যাচ্ছে না।",
+    "author_read_english": "এই লেখকের প্রবন্ধ ইংরেজিতে পড়ুন",
+    "no_authors": "এখনো নামসহ কোনো লেখকের তথ্য পাওয়া যাচ্ছে না।"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "আমরা কেন বাইবেলে বিশ্বাস করি"
   }
 }
+

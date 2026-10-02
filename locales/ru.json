@@ -96,7 +96,23 @@
     "publisher": "Издатель",
     "download": "Скачать",
     "pause_updates": "Приостановить обновления",
-    "resume_updates": "Возобновить обновления"
+    "resume_updates": "Возобновить обновления",
+    "authors": "Авторы",
+    "authors_intro": "Познакомьтесь с авторами, чьи работы представлены в архиве, и прочитайте их статьи.",
+    "author_count": "Авторов: {count}",
+    "author_total_articles": "Всего оригинальных статей: {count}",
+    "author_available_articles": "Статей на этом языке: {count}",
+    "author_recorded_details": "Сведения из оригинальных публикаций",
+    "author_location": "Место",
+    "author_role": "Роль участника",
+    "author_credentials": "Квалификация",
+    "author_life_dates": "Даты рождения и смерти",
+    "author_birth_year": "Год рождения",
+    "author_death_year": "Год смерти",
+    "author_age": "Возраст, указанный в источнике",
+    "author_no_articles": "Статьи этого автора пока недоступны на этом языке.",
+    "author_read_english": "Читать статьи этого автора на английском",
+    "no_authors": "Авторов с указанными именами пока нет."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Почему мы верим Библии"
   }
 }
+

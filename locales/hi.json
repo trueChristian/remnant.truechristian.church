@@ -96,7 +96,23 @@
     "publisher": "प्रकाशक",
     "download": "डाउनलोड",
     "pause_updates": "अपडेट रोकें",
-    "resume_updates": "अपडेट फिर शुरू करें"
+    "resume_updates": "अपडेट फिर शुरू करें",
+    "authors": "लेखक",
+    "authors_intro": "संग्रह में जिन लेखकों की रचनाएँ हैं, उनके बारे में जानें और उनके लेख पढ़ें।",
+    "author_count": "लेखकों की संख्या: {count}",
+    "author_total_articles": "कुल मूल लेख: {count}",
+    "author_available_articles": "इस भाषा में लेख: {count}",
+    "author_recorded_details": "मूल प्रकाशनों में दर्ज विवरण",
+    "author_location": "स्थान",
+    "author_role": "योगदानकर्ता की भूमिका",
+    "author_credentials": "योग्यताएँ",
+    "author_life_dates": "जन्म और मृत्यु की तिथियाँ",
+    "author_birth_year": "जन्म वर्ष",
+    "author_death_year": "मृत्यु वर्ष",
+    "author_age": "दर्ज की गई आयु",
+    "author_no_articles": "इस लेखक का कोई भी लेख अभी इस भाषा में उपलब्ध नहीं है।",
+    "author_read_english": "इस लेखक के लेख अंग्रेज़ी में पढ़ें",
+    "no_authors": "अभी किसी भी लेखक का नाम दर्ज नहीं है।"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "हम बाइबल पर विश्वास क्यों करते हैं"
   }
 }
+

@@ -96,7 +96,23 @@
     "publisher": "Penerbit",
     "download": "Unduh",
     "pause_updates": "Jeda pembaruan",
-    "resume_updates": "Lanjutkan pembaruan"
+    "resume_updates": "Lanjutkan pembaruan",
+    "authors": "Penulis",
+    "authors_intro": "Telusuri para penulis yang karyanya ada dalam arsip dan jelajahi artikel mereka.",
+    "author_count": "Penulis: {count}",
+    "author_total_articles": "Total artikel asli: {count}",
+    "author_available_articles": "Artikel dalam bahasa ini: {count}",
+    "author_recorded_details": "Keterangan yang tercatat dalam publikasi asli",
+    "author_location": "Lokasi",
+    "author_role": "Peran kontributor",
+    "author_credentials": "Kualifikasi",
+    "author_life_dates": "Tanggal lahir dan wafat",
+    "author_birth_year": "Tahun lahir",
+    "author_death_year": "Tahun wafat",
+    "author_age": "Usia yang tercatat",
+    "author_no_articles": "Belum ada artikel penulis ini yang tersedia dalam bahasa ini.",
+    "author_read_english": "Baca artikel penulis ini dalam bahasa Inggris",
+    "no_authors": "Belum ada penulis dengan nama yang tercatat."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Mengapa kami mempercayai Alkitab"
   }
 }
+

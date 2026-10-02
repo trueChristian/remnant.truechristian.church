@@ -96,7 +96,23 @@
     "publisher": "Editorial",
     "download": "Descargar",
     "pause_updates": "Pausar actualizaciones",
-    "resume_updates": "Reanudar actualizaciones"
+    "resume_updates": "Reanudar actualizaciones",
+    "authors": "Autores",
+    "authors_intro": "Descubre a los autores cuyas obras aparecen en el archivo y explora sus artículos.",
+    "author_count": "Autores: {count}",
+    "author_total_articles": "Artículos originales en total: {count}",
+    "author_available_articles": "Artículos en este idioma: {count}",
+    "author_recorded_details": "Datos recogidos en las publicaciones originales",
+    "author_location": "Lugar",
+    "author_role": "Tipo de contribución",
+    "author_credentials": "Cualificaciones",
+    "author_life_dates": "Fechas de nacimiento y fallecimiento",
+    "author_birth_year": "Año de nacimiento",
+    "author_death_year": "Año de fallecimiento",
+    "author_age": "Edad registrada",
+    "author_no_articles": "Todavía no hay artículos de este autor disponibles en este idioma.",
+    "author_read_english": "Leer los artículos de este autor en inglés",
+    "no_authors": "Todavía no hay autores con nombre registrado disponibles."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Por qué creemos en la Biblia"
   }
 }
+

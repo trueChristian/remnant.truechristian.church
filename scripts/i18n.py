@@ -40,7 +40,11 @@ SCRIPT_RANGES = {
     "el": ((0x0370, 0x03FF), (0x1F00, 0x1FFF)),
 }
 BRANDS = ("GETBIBLE", "Loudvoice", "SHE Cares", "Amana", "Telegram", "GitHub")
-RESERVED_SLUGS = {"articles", "categories", "issues", "search", "assets", "markdown", "missing", "404", "feed.xml", "index.html"}
+AUTHOR_UI_KEYS = frozenset('''authors authors_intro author_count author_total_articles author_available_articles author_recorded_details author_location author_role author_credentials author_life_dates author_birth_year author_death_year author_age author_no_articles author_read_english no_authors'''.split())
+UI_KEYS |= AUTHOR_UI_KEYS
+COUNT_UI_KEYS = frozenset({"article_count", "issue_count", "results_count", "minutes",
+                           "author_count", "author_total_articles", "author_available_articles"})
+RESERVED_SLUGS = {"articles", "authors", "categories", "issues", "search", "assets", "markdown", "missing", "404", "feed.xml", "index.html"}
 
 
 def _unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
@@ -169,7 +173,7 @@ def validate_locales(locales: Mapping[str, Any], registry: Mapping[str, Any] | N
                         if _placeholders(value) != _placeholders(original):
                             errors.append(f"{tag}.{section}.{key}: placeholders differ from English")
                         if section == "ui":
-                            required_fields = {"count"} if key in {"article_count", "issue_count", "results_count", "minutes"} else set()
+                            required_fields = {"count"} if key in COUNT_UI_KEYS else set()
                             if _placeholders(value) != required_fields:
                                 errors.append(f"{tag}.{section}.{key}: unexpected or missing required placeholders")
                     except ValueError as exc:
@@ -203,7 +207,8 @@ def validate_locales(locales: Mapping[str, Any], registry: Mapping[str, Any] | N
                 errors.append(f"{tag}.categories.{cid}: expected script missing")
         if len(descriptions) != len(set(descriptions)):
             errors.append(f"{tag}: duplicate category descriptions")
-        for key in ("intro", "coming_soon", "missing_translation", "archive_intro", "category_intro", "issue_intro"):
+        for key in ("intro", "coming_soon", "missing_translation", "archive_intro", "category_intro", "issue_intro",
+                    "authors_intro", "author_recorded_details", "author_no_articles", "author_read_english", "no_authors"):
             text = locale.get("ui", {}).get(key, "")
             if tag != "en" and text == english.get("ui", {}).get(key):
                 errors.append(f"{tag}.ui.{key}: untranslated English fallback")

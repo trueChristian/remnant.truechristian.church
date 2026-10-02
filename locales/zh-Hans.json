@@ -96,7 +96,23 @@
     "publisher": "出版方",
     "download": "下载",
     "pause_updates": "暂停更新",
-    "resume_updates": "恢复更新"
+    "resume_updates": "恢复更新",
+    "authors": "作者",
+    "authors_intro": "浏览作品收录于本档案的作者，并阅读他们的文章。",
+    "author_count": "作者人数：{count}",
+    "author_total_articles": "原文总篇数：{count}",
+    "author_available_articles": "此语言的文章篇数：{count}",
+    "author_recorded_details": "原始出版物中记载的资料",
+    "author_location": "地点",
+    "author_role": "创作角色",
+    "author_credentials": "资历",
+    "author_life_dates": "出生及逝世日期",
+    "author_birth_year": "出生年份",
+    "author_death_year": "逝世年份",
+    "author_age": "原文记载的年龄",
+    "author_no_articles": "这位作者的文章尚无此语言版本。",
+    "author_read_english": "阅读这位作者的英文文章",
+    "no_authors": "目前尚无有署名的作者。"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "我们为何相信圣经"
   }
 }
+

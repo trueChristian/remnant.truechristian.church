@@ -96,7 +96,23 @@
     "publisher": "Utgiver",
     "download": "Last ned",
     "pause_updates": "Sett oppdateringer på pause",
-    "resume_updates": "Gjenoppta oppdateringer"
+    "resume_updates": "Gjenoppta oppdateringer",
+    "authors": "Forfattere",
+    "authors_intro": "Bla gjennom forfatterne som er representert i arkivet, og utforsk artiklene deres.",
+    "author_count": "Forfattere: {count}",
+    "author_total_articles": "Originalartikler totalt: {count}",
+    "author_available_articles": "Artikler på dette språket: {count}",
+    "author_recorded_details": "Opplysninger fra originalpublikasjonene",
+    "author_location": "Sted",
+    "author_role": "Bidragsyterens rolle",
+    "author_credentials": "Kvalifikasjoner",
+    "author_life_dates": "Fødsels- og dødsdato",
+    "author_birth_year": "Fødselsår",
+    "author_death_year": "Dødsår",
+    "author_age": "Alder som oppgitt i kilden",
+    "author_no_articles": "Ingen av denne forfatterens artikler er tilgjengelige på dette språket ennå.",
+    "author_read_english": "Les denne forfatterens artikler på engelsk",
+    "no_authors": "Ingen navngitte forfattere er tilgjengelige ennå."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Hvorfor vi tror på Bibelen"
   }
 }
+

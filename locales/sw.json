@@ -96,7 +96,23 @@
     "publisher": "Mchapishaji",
     "download": "Pakua",
     "pause_updates": "Sitisha masasisho",
-    "resume_updates": "Endelea na masasisho"
+    "resume_updates": "Endelea na masasisho",
+    "authors": "Waandishi",
+    "authors_intro": "Tazama waandishi ambao kazi zao zimo katika hifadhi na usome makala zao.",
+    "author_count": "Waandishi: {count}",
+    "author_total_articles": "Jumla ya makala asili: {count}",
+    "author_available_articles": "Makala katika lugha hii: {count}",
+    "author_recorded_details": "Maelezo yaliyoandikwa katika machapisho ya awali",
+    "author_location": "Mahali",
+    "author_role": "Jukumu la mchangiaji",
+    "author_credentials": "Sifa za kitaaluma",
+    "author_life_dates": "Tarehe za kuzaliwa na kufariki",
+    "author_birth_year": "Mwaka wa kuzaliwa",
+    "author_death_year": "Mwaka wa kufariki",
+    "author_age": "Umri kama ulivyoandikwa",
+    "author_no_articles": "Bado hakuna makala za mwandishi huyu zinazopatikana katika lugha hii.",
+    "author_read_english": "Soma makala za mwandishi huyu kwa Kiingereza",
+    "no_authors": "Bado hakuna waandishi wenye majina yaliyorekodiwa."
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -298,3 +314,4 @@
     "Why we believe the Bible": "Kwa nini tunaiamini Biblia"
   }
 }
+
