@@ -219,18 +219,36 @@ for (const tag of ['en', 'af', 'ar', 'he', 'zh-Hans']) {
   });
 }
 
-test('Authors browsing and canonical reader links work without JavaScript', async ({ browser }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
-  try {
-    const page = await context.newPage();
-    await page.goto('/en/authors/', { waitUntil: 'domcontentloaded' });
-    await page.locator('.author-card').getByRole('link', { name: primary, exact: true }).click();
-    await expect(page.locator('.author-profile h1')).toHaveText(primary);
-    await headingLinks(page).first().click();
-    await expect(page).toHaveURL(new URL(articlesFor('en', primary)[0].url, page.url()).href);
-    await expect(page.locator('.prose article')).toHaveAttribute('data-article-id', articlesFor('en', primary)[0].id);
-  } finally {
-    await context.close();
+test.describe('Authors without JavaScript', () => {
+  // Let the runner retain the original failure and own context teardown.
+  test.use({ javaScriptEnabled: false });
+
+  for (const width of [1440, 390]) {
+    test(`Authors browsing and canonical reader links work without JavaScript at ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: 1000 });
+      const clickVisibleLink = async link => {
+        // The pinned browser cannot run Playwright's in-page retry timer with
+        // JS disabled. Settle font layout, scroll explicitly, then require a
+        // real visible click without entering fallback smooth-scroll retries.
+        await page.waitForLoadState('load');
+        await expect.poll(() => page.evaluate(() => document.fonts.status)).toBe('loaded');
+        await link.scrollIntoViewIfNeeded();
+        await expect(link).toBeInViewport();
+        await link.click({ scroll: 'none' });
+      };
+      await page.goto('/en/authors/', { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('html')).not.toHaveClass(/\benhanced\b/u);
+      await clickVisibleLink(page.locator('.author-card').getByRole('link', { name: primary, exact: true }));
+      await expect(page).toHaveURL(new URL(authorPath('en', primary), page.url()).href);
+      await expect(page.locator('.author-profile h1')).toHaveText(primary);
+      await clickVisibleLink(headingLinks(page).first());
+      await expect(page).toHaveURL(new URL(articlesFor('en', primary)[0].url, page.url()).href);
+      await expect(page.locator('.prose article')).toHaveAttribute('data-article-id', articlesFor('en', primary)[0].id);
+      await page.goBack({ waitUntil: 'domcontentloaded' });
+      await expect(page.locator('.author-profile h1')).toHaveText(primary);
+      await page.goBack({ waitUntil: 'domcontentloaded' });
+      await expect(page.locator('.authors-page h1')).toHaveText(locales.en.ui.authors);
+    });
   }
 });
 

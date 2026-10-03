@@ -99,6 +99,9 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Verify browser interactions and capture desktop, mobile, RTL, and print
         run: npm run test:browser
+      - name: Repeat no-JavaScript author navigation on review builds
+        if: github.event_name == 'pull_request'
+        run: npx playwright test tests/browser/authors.spec.mjs --grep 'Authors without JavaScript' --repeat-each=5 --reporter=list --output=.test-output/nojs-repeat-results
       - name: Retain browser review evidence
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

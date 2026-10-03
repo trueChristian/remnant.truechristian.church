@@ -28,6 +28,18 @@ Magazine cards, reading layouts, issue placeholders and controls are new site-ow
 
 The scripted browser suite exercises desktop and 360px mobile widths for every locale, English/Afrikaans/French, RTL, system/explicit themes, storage failure, missing translations, source-notice links, no-JavaScript discovery, reduced motion, print, and search history. Screenshots are captured as CI review artifacts for visual inspection, not silently treated as passing pixel comparisons.
 
+No-JavaScript author navigation uses runner-managed contexts and retains normal
+motion at desktop and mobile widths. It waits for font layout with runner-side
+polling, explicitly scrolls each link into view, and requires a real visible
+click. This avoids a pinned Playwright/Chromium retry limitation: in
+[run 37149826916](https://github.com/trueChristian/remnant.truechristian.church/actions/runs/37149826916),
+font layout instability led to fallback smooth scrolling, an offscreen hit-test,
+and a 20ms in-page retry timer that never fired with JavaScript disabled. Manual
+context cleanup then obscured that primary failure. The fix keeps normal
+actionability checks, the original timeout, native navigation, and Back history.
+PR checks repeat both viewport scenarios five times with fresh test contexts;
+their separate output directory preserves the complete browser review report.
+
 ## Measured initial budgets
 
 On the initial selected export (646 English / 5 Afrikaans; English revision `6af08032b5e2a92ff0671605fb89dffa06780892`):
