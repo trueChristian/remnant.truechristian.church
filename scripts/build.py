@@ -180,9 +180,11 @@ class Site:
         if article:
             issue = self.issue_map[article['issue_id']]
             data = {'@context':'https://schema.org','@type':'Article','headline':title,'inLanguage':tag,'url':ORIGIN+route,'isPartOf':{'@type':'PublicationIssue','name':f"{issue['publication']} · {issue_date(issue,locale)}",'url':ORIGIN+self.issue_url(tag,issue['id'])}}
+            recorded_byline = article.get('source_metadata', article).get('byline')
             if self.article_authors[article['id']]:
                 data['author'] = [{'@type':'Person', 'name':author['name'], 'url':ORIGIN+self.author_url(tag,author['id'])} for author in self.article_authors[article['id']]]
-            elif author_of(article):
+            elif author_of(article) and not (isinstance(recorded_byline, dict) and recorded_byline.get('authors')):
+                # A role-only structured credit does not identify a Person.
                 data['author'] = {'@type':'Person','name':author_of(article)}
             structured = f'<script type="application/ld+json">{json_script(data)}</script>'
         return f'''<!doctype html>
