@@ -186,6 +186,42 @@ class AuthorSiteTests(unittest.TestCase):
             self.assertIn(expected_html, source)
             self.assertEqual(page.page.canonical, [ORIGIN + article['url']])
 
+    def test_role_only_source_credit_preserves_publication_without_an_author_identity(self):
+        recorded = json.loads((ROOT / 'tests/fixtures/role-only-bylines.json').read_text())[0]
+        original_routes = copy.deepcopy(self.routes)
+        source = self.model['articles']['en'][0]
+        for tag in ('en', 'af'):
+            article = self.model['articles'][tag][0]
+            article['byline'] = copy.deepcopy(recorded['byline'])
+            article['source_metadata'] = {'byline': copy.deepcopy(recorded['byline'])}
+        self.routes = initialize_routes(self.model, self.locales, self.root / 'authors-route-source.json', update=True)
+        self.assertEqual(self.routes['articles'], original_routes['articles'])
+        self.assertEqual(self.routes['authors'], original_routes['authors'])
+        site = Site(self.model, self.locales, self.routes, self.theme, self.output, {})
+        site.build()
+        self.assertEqual(site.article_authors[source['id']], [])
+        self.assertEqual(self.check().errors, [])
+        for tag in ('en', 'af'):
+            article = self.model['articles'][tag][0]
+            page = self.parse(article['url'])
+            self.assertIn(recorded['byline']['raw'], page.page.main_text)
+            self.assertEqual(page.page.article_ids, [article['id']])
+            self.assertEqual(page.page.canonical, [ORIGIN + original_routes['articles'][tag][article['id']]])
+            html = (self.output / article['url'].lstrip('/') / 'index.html').read_text()
+            byline = re.search(r'<div class="article-byline">(.*?)</div>', html, re.S)[1]
+            self.assertNotIn('author-link', byline)
+            self.assertIn(article['html'].replace('/en/articles/' + article['id'] + '/', source['url']), html)
+            structured = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)[1])
+            self.assertNotIn('author', structured)
+            markdown = (self.output / article['markdown_url'].lstrip('/')).read_text()
+            self.assertIn(recorded['byline']['raw'].replace('-', r'\-'), markdown)
+            search = json.loads((self.output / tag / 'search-index.json').read_text())
+            result = next(item for item in search if item['id'] == article['id'])
+            self.assertEqual(result['author'], recorded['byline']['raw'])
+            self.assertEqual(result['authors'], [])
+            self.assertEqual(result['url'], article['url'])
+        self.assertIn('/images/articles/fixture.jpg', self.parse(source['url']).page.references)
+
     def test_repeated_printed_name_stays_intact_with_one_link_per_contributor(self):
         raw = f'{PRIMARY}, 2005; arranged by {PRIMARY}'
         for tag in ('en', 'af'):

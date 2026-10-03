@@ -65,6 +65,24 @@ class AuthorIndexTests(unittest.TestCase):
             "article_ids": ["one", "two", "three"], "details": {},
         }])
 
+    def test_source_role_only_credits_do_not_invent_named_or_anonymous_authors(self):
+        records = json.loads((Path(__file__).parent / 'fixtures/role-only-bylines.json').read_text())
+        model = {"articles": {"en": records}}
+        original = copy.deepcopy(model)
+        self.assertEqual(build_author_index(model), [])
+        self.assertEqual(model, original)
+
+    def test_missing_and_null_names_keep_other_credited_authors_and_details_separate(self):
+        model = {"articles": {"en": [article("mixed", {}, {"role": "Editor"},
+                 {"name": None, "role": "The Editor", "location": "Unassigned town"},
+                 {"name": "A Writer", "role": "Words"})]}}
+        original = copy.deepcopy(model)
+        self.assertEqual(build_author_index(model), [{
+            "id": "A Writer", "name": "A Writer", "source_names": ["A Writer"],
+            "article_ids": ["mixed"], "details": {"role": ["Words"]},
+        }])
+        self.assertEqual(model, original)
+
     def test_aliases_union_articles_and_details_without_changing_recorded_names(self):
         model = {"articles": {"en": [
             article("shared", {"name": "Curvin L Wenger", "location": "Town", "role": "Words"},
@@ -120,15 +138,16 @@ class AuthorIndexTests(unittest.TestCase):
 
     def test_malformed_structured_bylines_fail_with_article_context(self):
         invalid_bylines = [False, 5, [], {"authors": None}, {"authors": {}}, {"authors": ["A Writer"]},
-                           {"authors": [{}]}, {"authors": [{"name": None}]}, {"authors": [{"name": " \t"}]}]
+                           *({"authors": [{"name": name}]} for name in ("", " \t", False, 42, [], {}))]
         for byline in invalid_bylines:
             with self.subTest(byline=byline), self.assertRaisesRegex(AuthorError, "article broken"):
                 build_author_index({"articles": {"en": [{"id": "broken", "byline": byline}]}})
 
     def test_malformed_detail_values_are_never_coerced(self):
         for field, value in (("location", ["Town"]), ("role", 42), ("birth_year", "1900"), ("age", True), ("death_year", 1980.5)):
-            with self.subTest(field=field, value=value), self.assertRaisesRegex(AuthorError, f"Invalid author {field}.*article broken"):
-                build_author_index({"articles": {"en": [article("broken", {"name": "A Writer", field: value})]}})
+            for name in ("A Writer", None):
+                with self.subTest(field=field, value=value, name=name), self.assertRaisesRegex(AuthorError, f"Invalid author {field}.*article broken"):
+                    build_author_index({"articles": {"en": [article("broken", {"name": name, field: value})]}})
 
     def test_english_inventory_and_source_metadata_must_be_well_formed(self):
         for model in ({}, {"articles": {}}, {"articles": {"en": {}}}, {"articles": {"en": [None]}},

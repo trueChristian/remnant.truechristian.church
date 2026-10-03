@@ -15,8 +15,9 @@ const canonicalNames = new Map(Object.entries(curated).flatMap(([name, aliases])
 const canonicalName = name => canonicalNames.get(name) || name;
 const authors = new Map();
 const sourceNames = new Map();
+const namedCredits = article => (article.byline?.authors || []).filter(author => author.name != null);
 for (const article of source) {
-  for (const author of article.byline?.authors || []) {
+  for (const author of namedCredits(article)) {
     const name = canonicalName(author.name);
     if (!authors.has(name)) authors.set(name, new Set());
     if (!sourceNames.has(name)) sourceNames.set(name, new Set());
@@ -29,7 +30,7 @@ const articlesFor = (tag, name) => indexes[tag].filter(article => authors.get(na
 const primary = [...authors.keys()].sort((a, b) => authors.get(b).size - authors.get(a).size)[0];
 const translatedTag = Object.keys(locales).find(tag => tag !== 'en' && articlesFor(tag, primary).length);
 const emptyTag = Object.keys(locales).find(tag => tag !== 'en' && !articlesFor(tag, primary).length);
-const shared = source.find(article => new Set((article.byline?.authors || []).map(author => canonicalName(author.name))).size > 1);
+const shared = source.find(article => new Set(namedCredits(article).map(author => canonicalName(author.name))).size > 1);
 const uuid = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/iu;
 const text = (tag, key, count) => locales[tag].ui[key].replace('{count}', String(count));
 const headingLinks = page => page.locator('.author-articles h2 a');
@@ -70,7 +71,7 @@ test('directory and author articles open the existing category canonical reader'
 
 test('one coauthored article is reachable under every credited name without duplicate readers', async ({ page }) => {
   expect(shared, 'The source fixture must exercise a real shared credit').toBeTruthy();
-  const names = [...new Set(shared.byline.authors.map(author => canonicalName(author.name)))];
+  const names = [...new Set(namedCredits(shared).map(author => canonicalName(author.name)))];
   const canonical = indexes.en.find(article => article.id === shared.id).url;
   for (const name of names) {
     const position = articlesFor('en', name).findIndex(article => article.id === shared.id);
@@ -85,6 +86,28 @@ test('one coauthored article is reachable under every credited name without dupl
     const credit = page.locator(`.article-byline a[href="${authorPath('en', name)}"]`);
     await expect(credit).toHaveCount(1);
     expect([name, ...sourceNames.get(name)]).toContain(await credit.textContent());
+  }
+});
+
+test('role-only editorial credits keep readers, issue links, and downloads without invented authors', async ({ page }) => {
+  const unnamed = source.filter(article => article.byline?.authors?.some(author => author.name == null)
+    && !namedCredits(article).length && article.byline.raw);
+  test.skip(!unnamed.length, 'This source fixture has no role-only editorial credits');
+  for (const article of unnamed) {
+    const result = indexes.en.find(record => record.id === article.id);
+    expect(result, 'An unnamed author must not remove an article from search').toBeTruthy();
+    expect(result.author).toBe(article.byline.raw);
+    expect(result.authors).toEqual([]);
+    await page.goto(result.url, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('.prose article')).toHaveAttribute('data-article-id', article.id);
+    await expect(page.locator('.article-byline')).toContainText(article.byline.raw);
+    await expect(page.locator('.article-byline .author-link')).toHaveCount(0);
+    const markdownURL = await page.locator('.reader-tools a[download]').getAttribute('href');
+    const markdown = await page.request.get(markdownURL);
+    expect(markdown.ok()).toBe(true);
+    expect((await markdown.text()).replace(/\\([\\`*{}\[\]()#+\-.!_>])/gu, '$1')).toContain(article.byline.raw);
+    await page.locator('.article-issue').click();
+    await expect(page.locator(`.issue-contents h2 a[href="${result.url}"]`)).toHaveCount(1);
   }
 });
 

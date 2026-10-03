@@ -14,6 +14,12 @@ reviewed spelling variants and alternate names to one canonical author identity.
 Names absent from this index remain distinct; the build does not guess from
 similar spellings or initials. Raw publisher/source credits are never parsed as
 names. Reviewed Anonymous/Unknown credits share the **Anonymous** profile.
+An omitted or null person name is supported source metadata, including credits
+such as `--The Editor`. These credits retain their exact printed byline, article
+body, search attribution and Markdown, without inventing a named author or
+assigning them to Anonymous. Empty names, non-text names and malformed recorded
+details still fail validation. Regression fixtures preserve the three role-only
+bylines from Berean Voice revision `58e50fca41cc0b53c8992502bd95166581036945`.
 A shared article appears once under each distinct canonical contributor, even
 when the same article credits two aliases of that person. Translations cannot
 introduce names or inflate original article totals.

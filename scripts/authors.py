@@ -102,8 +102,10 @@ def build_author_index(model: dict, aliases: dict[str, str] | None = None) -> li
     Only English source metadata establishes membership. Translations neither
     add authors nor increase counts. The caller filters article IDs for each
     language's availability and constructs its own routes and presentation.
-    Absent bylines and raw strings yield no authors. Malformed structured
-    authors fail with article context rather than silently dropping a credit.
+    Absent bylines, raw strings, and structured credits whose name is omitted
+    or null yield no named authors. Role-only credits remain in the article's
+    original byline; they do not establish a person or an Anonymous identity.
+    Malformed structured authors still fail with article context.
     """
     if not isinstance(model, dict) or not isinstance(model.get("articles"), dict):
         raise AuthorError("Author index requires an English article collection")
@@ -137,6 +139,22 @@ def build_author_index(model: dict, aliases: dict[str, str] | None = None) -> li
             if not isinstance(person, dict):
                 raise AuthorError(f"Invalid structured author in {context}: expected an object")
             name = person.get("name")
+            # The source contract uses null/omission for unknown metadata,
+            # including an editorial role credited without a person's name.
+            # Validate recorded details even when no author can be indexed.
+            details = {}
+            for field in DETAIL_FIELDS:
+                value = person.get(field)
+                if value is None:
+                    continue
+                expected = int if field in INTEGER_FIELDS else str
+                if type(value) is not expected:
+                    raise AuthorError(f"Invalid author {field} in {context}: expected {expected.__name__}")
+                if isinstance(value, str) and not value.strip():
+                    continue
+                details[field] = value
+            if name is None:
+                continue
             if not isinstance(name, str) or not name.strip():
                 raise AuthorError(f"Invalid author name in {context}: expected nonempty text")
             canonical = aliases.get(name, name)
@@ -149,15 +167,7 @@ def build_author_index(model: dict, aliases: dict[str, str] | None = None) -> li
             if identity not in included:
                 author["article_ids"].append(identity)
                 included.add(identity)
-            for field in DETAIL_FIELDS:
-                value = person.get(field)
-                if value is None:
-                    continue
-                expected = int if field in INTEGER_FIELDS else str
-                if type(value) is not expected:
-                    raise AuthorError(f"Invalid author {field} in {context}: expected {expected.__name__}")
-                if isinstance(value, str) and not value.strip():
-                    continue
+            for field, value in details.items():
                 values = author["details"].setdefault(field, [])
                 if value not in values:
                     values.append(value)
