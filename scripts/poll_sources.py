@@ -38,8 +38,8 @@ def select_revisions() -> dict:
         except (OSError, ValueError, subprocess.SubprocessError):
             if name != 'translations':
                 raise
-            # English remains independently publishable. Unavailable translations
-            # never count as a healthy unchanged deployment and are retried.
+            # Missing translation acquisition must request a retry. Publication
+            # remains blocked until its complete inventory can be validated.
             selection[name] = None
     return validate_selection(selection)
 

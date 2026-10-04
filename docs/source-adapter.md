@@ -37,8 +37,10 @@ python3 scripts/export_sources.py \
 
 Outputs must be absent or empty. No previous translation directory is accepted as
 a fallback. English export failure is fatal; translation checkout/export failure
-produces an explicit English-only report and leaves English publishable. Any
-partial translation output is quarantined under a hidden build-only path, leaving
+produces an explicit English-only report for local inspection. Deployment planning
+requires healthy export and actual build reports and retains the last live site
+on translation failure or any loss of a previously published locale/UUID. Missing
+live inventory evidence also blocks publication. Any partial translation output is quarantined under a hidden build-only path, leaving
 the expected translation input absent. Use
 `--strict-translations` only when intentionally testing the translation integration.
 Detailed error reports stay in private build evidence; expose only a safe status

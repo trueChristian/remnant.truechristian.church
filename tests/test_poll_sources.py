@@ -79,7 +79,16 @@ class PollingTests(unittest.TestCase):
             report = {'site_revision': selected['site'],
                       'sources': {name: {'revision': selected[name]} for name in prepare_sources.REPOSITORIES},
                       'export': {'translation_status': 'ready'}}
-            deployment.deployment_plan(output, report, previous=self.live)
+            article_id = '00000000-0000-4000-8000-000000000001'
+            (output / 'en/read').mkdir(parents=True)
+            (output / 'en/read/index.html').write_text(f'<article data-article-id="{article_id}">Source</article>')
+            (output / 'en/search-index.json').write_text(json.dumps([{'id': article_id, 'url': '/en/read/'}]))
+            baseline = {**self.live, 'article_inventory': {'en': [article_id]}}
+            built = {'article_counts': {'en': 1}, 'site_revision': selected['site'], 'theme_revision': selected['theme'],
+                     'source': {'source_revision': selected['english'],
+                                'translation_revision': selected['translations'],
+                                'translation_status': 'ready'}}
+            deployment.deployment_plan(output, report, built, previous=baseline)
             # Merely creating candidate deployment metadata does not advance live state.
             self.assertTrue(poll_sources.poll_plan(selected, self.live)['build'])
 

@@ -137,7 +137,10 @@ jobs:
               for path in ('.build/source-report.json', '.build/deployment-plan.json', '.build/scripture-report.json', '.build/scripture-provider-report.json'):
                   if Path(path).is_file():
                       summary.write('### ' + Path(path).name + '\n\n```json\n')
-                      summary.write(json.dumps(json.loads(Path(path).read_text()), indent=2) + '\n```\n\n')
+                      evidence = json.loads(Path(path).read_text())
+                      if 'article_inventory' in evidence:
+                          evidence['article_counts'] = {tag: len(ids) for tag, ids in evidence.pop('article_inventory').items()}
+                      summary.write(json.dumps(evidence, indent=2) + '\n```\n\n')
               if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
                   summary.write('Pull-request validation: output is review-only; no production deployment.\n')
               elif os.environ.get('PRODUCTION_BUILD') == 'true':

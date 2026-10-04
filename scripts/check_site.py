@@ -372,9 +372,12 @@ class SiteChecker:
                             not (key == 'translations' and revision is None) and not (isinstance(revision, str) and re.fullmatch(r'[a-f0-9]{40}', revision))
                             for key, revision in revisions.items()):
                             self.error('deployment.json contains invalid publication revision identities')
-                        allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status'}
+                        allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status', 'article_inventory'}
                         if not isinstance(value, dict) or set(value) - allowed:
                             self.error('deployment.json contains more than the public publication identity')
+                        if isinstance(value, dict) and 'article_inventory' in value:
+                            from publication_inventory import validate_inventory
+                            validate_inventory(value['article_inventory'])
                     elif relative == 'scripture/manifest.json':
                         from scripture import load_manifest
                         load_manifest(file)

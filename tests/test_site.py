@@ -487,6 +487,16 @@ class GeneratedSiteTests(unittest.TestCase):
               'revisions': {'english': 'b'*40, 'translations': None, 'theme': 'c'*40, 'site': 'd'*40}, 'translation_status': 'failed'}))
         self.assertEqual(self.check().errors, [])
 
+    def test_public_article_inventory_contains_only_valid_locale_uuid_lists(self):
+        manifest = {'schema': 1, 'display_fingerprint': 'a'*64,
+                    'revisions': {'english': 'b'*40, 'translations': 'e'*40, 'theme': 'c'*40, 'site': 'd'*40},
+                    'translation_status': 'ready', 'article_inventory': {'en': [uuid_for(1)], 'af': []}}
+        write(self.output / 'deployment.json', json.dumps(manifest))
+        self.assertEqual(self.check().errors, [])
+        manifest['article_inventory']['en'] = ['not-an-article-uuid']
+        write(self.output / 'deployment.json', json.dumps(manifest))
+        self.assertTrue(any('Invalid public JSON: deployment.json' in error for error in self.check().errors))
+
     def test_detects_theme_logo_or_favicon_byte_changes(self):
         (self.output / 'assets/brand/logo.jpg').write_bytes(b'modified pixels')
         (self.output / 'assets/favicons/favicon.ico').write_bytes(b'modified icon')

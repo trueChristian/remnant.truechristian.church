@@ -19,7 +19,7 @@ on a second push workflow.
 
 Website `main` pushes remain automatic. For immediate recovery or a deliberate
 rebuild, open **Actions → Build and publish Remnant → Run workflow**, choose
-`main`, and run it. A manual run **always builds and deploys**, even when all pins
+`main`, and run it. A manual run **always builds and deploys after validation passes**, even when all pins
 and display bytes match. Pull requests always build and test for review only.
 Opening a PR never deploys it; owner merge is separate.
 
@@ -27,7 +27,9 @@ Opening a PR never deploys it; owner merge is separate.
 
 The live `deployment.json` is the only persisted comparison baseline. It includes
 exact site/English/translation/theme revisions, a display fingerprint, and
-translation health. There is no last-seen source marker or Actions cache that
+translation health, and the complete per-language UUID inventory. The exact checked
+legacy snapshot in `data/publication-baseline.json` is used only to migrate the
+existing pre-inventory deployment. There is no last-seen source marker or Actions cache that
 could incorrectly acknowledge a failed build.
 
 A candidate metadata file is generated inside `dist/` and packaged with the site.
@@ -36,7 +38,9 @@ artifact. A failed build, failed Pages deployment, or pending environment approv
 does not update the live baseline. The next hourly check retries still-unpublished
 pins. Missing, malformed, oversized, redirected, or unreachable live metadata
 conservatively requests a build; the bounded metadata request sends no credentials
-and permits no redirects. A stale CDN response can cause a harmless repeated build.
+and permits no redirects. Preflight may conservatively repeat work after a stale response. Publication
+planning separately retrieves a cache-busted live manifest with no-cache/no-store
+headers; missing or invalid retention evidence blocks publication.
 
 The preflight selects immutable full commit SHAs once. The build checks out that
 exact website revision and passes the same source selection to preparation;
@@ -180,11 +184,35 @@ locales and registry drift remain checkable. Raw language registry data is not
 copied wholesale into public output.
 
 Invalid English or a broken required theme stops the build and retains the last
-good site. Translation acquisition/export failure permits a fresh English-only
-publication, never stale or failed-quality translations. It is reported explicitly,
-including an honest null revision when no translation revision was obtainable.
-A degraded translation status requests another build at the next poll even if
-source revisions have not changed, allowing transient export/acquisition recovery.
+good site. Translation acquisition/export failure still permits an English-only
+local build for inspection, but deployment planning refuses to publish it.
+Publication requires both a ready translation export and ready translated content
+in the actual site-build report, with matching site/source/theme revisions. A
+missing or stale report also blocks publication. Manual `--force` bypasses only
+deduplication; it cannot bypass this validation gate. The last successful site and
+its translation pages remain live until the selected inputs validate. No older
+translations are mixed with newer English. A healthy export with zero compatible
+translations is valid only when the verified live inventory also has none.
+
+Every candidate must retain every previously published `(locale, article UUID)`
+from the live `deployment.json` inventory. Updates and additions are allowed;
+missing UUIDs, lost locales, malformed inventories, and an unavailable live
+baseline block the entire publication. Counts alone are never sufficient. The
+candidate inventory is checked against its search indexes, actual reader pages,
+and build-report counts. `--force` cannot authorize removals, and neither a
+source omission nor an incompatible revision is treated as a manual deletion.
+Intentional removal requires a separate explicit owner action; there is no
+automatic removal override in this workflow.
+
+For the one-time migration, `data/publication-baseline.json` records the 21
+served search indexes independently verified on 2026-10-04: 1,155 English and
+1,935 translated articles. It is accepted only for the exact stored live
+fingerprint and all four revision pins. A different or missing legacy manifest
+fails closed. Never regenerate this baseline from a new candidate or assume
+missing metadata means a new empty archive. Subsequent deployments carry their
+own complete inventory in `deployment.json`; the legacy snapshot is then unused.
+A failed candidate never advances the live baseline, so the next poll retries
+the changed pins after the source has been repaired.
 Normal incompatibility omits only incompatible translations. No build changes the
 source publication policy or starts paid translation work.
 
@@ -192,10 +220,10 @@ source publication policy or starts paid translation work.
 
 - **Unchanged healthy sources:** only the lightweight check runs; build/deploy jobs skip
 - **English invalid:** fix the source through its normal reviewed workflow; the next hourly check retries, or run the website workflow manually
-- **Translation unavailable/export failed:** inspect diagnostics; the next poll retries at the same pins, or force an immediate manual run
+- **Translation unavailable/export failed:** publication is blocked and the last successful site stays live; repair the source through its normal review process, then allow the next poll or an authorized manual run to retry
 - **Build or Pages failed:** the live baseline remains unchanged; inspect the failed job/environment/domain configuration, fix it, and use Run workflow on main if immediate retry is needed
-- **Missing live metadata/bootstrap:** a conservative full build/deploy creates the first baseline
-- **Manual unchanged rebuild:** Run workflow on main always republishes; no additional force checkbox is needed
+- **Missing live metadata/bootstrap:** polling requests a build, but publication fails closed until the actual last successful inventory is independently verified and restored; a missing baseline never authorizes an empty archive
+- **Manual unchanged rebuild:** Run workflow on main republishes after all validation gates pass; no additional force checkbox is needed and translation failures cannot be overridden
 
 Merge the website polling PR and the two source cleanup PRs through normal owner
 review. Confirm a successful Pages job, then inspect live deployment revisions and
