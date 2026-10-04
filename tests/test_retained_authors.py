@@ -1,5 +1,6 @@
 """Historical author attribution stays attached to the correct locale reader."""
 import copy
+from html import escape
 import json
 from pathlib import Path
 import re
@@ -81,6 +82,44 @@ class RetainedAuthorTests(unittest.TestCase):
                 self.assertEqual(structured['author'], [{'@type': 'Person', 'name': expected, 'url': ORIGIN + expected_url}])
                 record = json.loads((self.site.output / tag / 'search-index.json').read_text())[0]
                 self.assertEqual(record['authors'], [{'name': expected, 'url': expected_url, 'aliases': [expected]}])
+
+    def test_historical_only_author_keeps_counts_and_available_locale_without_english_shortcut(self):
+        checker = self.check()
+        self.assertEqual(checker.errors, [])
+        routes = self.site.routes['authors']
+        for tag, expected_available in [('en', 0), ('af', 1), ('fr', 0)]:
+            with self.subTest(locale=tag):
+                page = checker.pages[routes[tag][ORIGINAL_AUTHOR]]
+                self.assertIn(self.site.ui(tag, 'author_total_articles', count=1), page.author_counts_text)
+                self.assertIn(self.site.ui(tag, 'author_available_articles', count=expected_available), page.author_counts_text)
+                directory = checker.pages[f'/{tag}/authors/']
+                card = next(card for card in directory.author_cards if card['name'] == ORIGINAL_AUTHOR)
+                self.assertIn(self.site.ui(tag, 'author_total_articles', count=1), card['text'])
+                self.assertIn(self.site.ui(tag, 'author_available_articles', count=expected_available), card['text'])
+                self.assertEqual(page.author_empty_links, [])
+                self.assertEqual(page.languages['af'], routes['af'][ORIGINAL_AUTHOR])
+                self.assertIn(routes['af'][ORIGINAL_AUTHOR], page.references)
+                expected_articles = [self.site.articles['af'][0]['url']] if tag == 'af' else []
+                self.assertEqual(page.author_article_links, expected_articles)
+        # An empty translated profile still offers English when English work
+        # really exists for that author.
+        current_af = checker.pages[routes['af'][CURRENT_AUTHOR]]
+        self.assertEqual(current_af.author_empty_links, [
+            (self.site.ui('af', 'author_read_english'), routes['en'][CURRENT_AUTHOR])])
+
+    def test_checker_rejects_empty_english_shortcuts_for_historical_only_author(self):
+        for tag in ('en', 'fr'):
+            with self.subTest(locale=tag):
+                route = self.site.routes['authors'][tag][ORIGINAL_AUTHOR]
+                path = self.site.output / route.lstrip('/') / 'index.html'
+                original = path.read_text(encoding='utf-8')
+                notice = '<p>' + escape(self.site.ui(tag, 'author_no_articles'), quote=True) + '</p>'
+                shortcut = ('<a class="button" href="' + self.site.routes['authors']['en'][ORIGINAL_AUTHOR]
+                            + '" hreflang="en">' + escape(self.site.ui(tag, 'author_read_english'), quote=True) + '</a>')
+                self.assertIn(notice, original)
+                path.write_text(original.replace(notice, notice + shortcut, 1), encoding='utf-8')
+                self.assertTrue(any('empty author profile' in error for error in self.check().errors))
+                path.write_text(original, encoding='utf-8')
 
     def test_checker_rejects_current_author_inserted_into_retained_byline(self):
         article = self.site.articles['af'][0]

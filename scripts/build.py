@@ -291,7 +291,10 @@ class Site:
                     body += f'<li><div class="card-meta"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)["name"])}</a><a href="{esc(self.issue_url(tag,issue["id"]))}">{esc(issue_date(issue,self.locales[tag]))}</a></div><h2><a href="{esc(article["url"])}">{esc(self.title(tag,article))}</a></h2><p>{esc(article.get("excerpt",""))}</p><p class="author-article-byline">{self.byline_html(tag,article)}</p></li>'
                 body += '</ol></section>'
             else:
-                body += f'<div class="empty-state"><div><p>{esc(self.ui(tag,"author_no_articles"))}</p><a class="button" href="{esc(self.author_url("en",author["id"]))}" hreflang="en">{esc(self.ui(tag,"author_read_english"))}</a></div></div>'
+                english_link = ''
+                if self.author_articles['en'][author['id']]:
+                    english_link = f'<a class="button" href="{esc(self.author_url("en",author["id"]))}" hreflang="en">{esc(self.ui(tag,"author_read_english"))}</a>'
+                body += f'<div class="empty-state"><div><p>{esc(self.ui(tag,"author_no_articles"))}</p>{english_link}</div></div>'
             if pages > 1:
                 body += f'<nav class="pagination" aria-label="{esc(self.ui(tag,"articles"))}">'
                 if number > 1:

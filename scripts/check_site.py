@@ -754,6 +754,8 @@ class SiteChecker:
         from content import ordered_issues
 
         authors = build_author_index(model, aliases=routes.get('author_aliases'))
+        english_authors = {author['name'] for author in
+                           build_author_index(model, aliases=routes.get('author_aliases'), locale='en')}
         rank = {issue['id']: index for index, issue in enumerate(ordered_issues(model))}
         author_routes = routes.get('authors', {})
         expected_pages = set()
@@ -839,7 +841,9 @@ class SiteChecker:
                         for key, values in author['details'].items():
                             if normalized_text(ui['author_' + key]) not in page.author_details_text or any(normalized_text(str(value)) not in page.author_details_text for value in values):
                                 self.error(f'{page_path}: recorded author detail {key} is missing or relabeled')
-                    if not available and (normalized_text(ui['author_no_articles']) not in page.main_text or page.author_empty_links != [(normalized_text(ui['author_read_english']), author_routes.get('en', {}).get(name))]):
+                    expected_empty_links = ([(normalized_text(ui['author_read_english']), author_routes.get('en', {}).get(name))]
+                                            if name in english_authors else [])
+                    if not available and (normalized_text(ui['author_no_articles']) not in page.main_text or page.author_empty_links != expected_empty_links):
                         self.error(f'{page_path}: empty author profile lacks a localized notice or English author shortcut')
 
             for article in articles:
