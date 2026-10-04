@@ -13,7 +13,7 @@ Built from the authoritative [Berean Voice archive](https://github.com/trueChris
 - Stable localized article and category aliases, matching Markdown downloads with copy fallback, original issue citation, per-language RSS, sitemaps and canonical URLs
 - Static HTML and ordinary links for discovery and reading; JavaScript enhances preferences, search and archive rotation
 
-English publishes independently. Only compatible completed translations appear; existing AI notice text is preserved, with its English link updated to the readable canonical URL. Human review removes that notice but does not gate publication. No build starts a paid translation campaign.
+English articles do not wait for their translations. Production updates require a healthy translation export and build; validation or acquisition failures preserve the last published site. Every update must retain every published article UUID in every language; missing articles, lost locales, or an unverified live inventory block publication, even on manual runs. Only compatible completed translations appear; existing AI notice text is preserved, with its English link updated to the readable canonical URL. Human edits use the source-generated human-reviewed notice with an authoritative English link; model versions and reviewer identities are not displayed. Every translated reader links to its GitHub source editor so readers can propose a review or correction. No build starts a paid translation campaign.
 
 ## Stack
 
@@ -64,7 +64,7 @@ Place owner-approved files in `public/covers/` and supply alt text in every loca
 
 ## Publication through GitHub Pages Actions
 
-Pull requests build, test, and upload review artifacts only. Once GitHub Pages is configured to use Actions, successful trusted `main` builds publish changed output through the `github-pages` environment and its protection rules. No extra repository variable is required. Website pushes remain automatic; manual Actions “Run workflow” on main always rebuilds and deploys, even when revisions match.
+Pull requests run offline unit and contract tests with synthetic fixtures; they never generate the production website, fetch upstream content, run full-site browsers, or deploy. Full source-backed builds and browser checks run only from trusted main after the upstream health and no-loss gates pass. Once GitHub Pages is configured to use Actions, successful trusted `main` builds publish changed output through the `github-pages` environment and its protection rules. No extra repository variable is required. Website pushes remain automatic; manual Actions “Run workflow” on main always rebuilds and republishes after validation passes, even when revisions match. A manual run cannot bypass failed translation validation.
 
 The website checks source revisions hourly (best effort, at minute 17). Unchanged successfully deployed pins skip the build; changes trigger a fixed-revision build and deployment. The live deployment manifest advances only with a successful Pages publication. No source notification hooks, dispatch tokens, or extra activation variables are required. Configure the actual Pages custom domain and HTTPS in the repository settings; a `CNAME` file alone does not configure a GitHub Pages Actions domain. See [operations](docs/operations.md) for setup, deduplication, and recovery.
 

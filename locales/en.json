@@ -112,7 +112,8 @@
     "author_age": "Age as recorded",
     "author_no_articles": "None of this author's articles are available in this language yet.",
     "author_read_english": "Read this author's articles in English",
-    "no_authors": "No named authors are available yet."
+    "no_authors": "No named authors are available yet.",
+    "review_translation": "Review this translation on GitHub"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "Why we believe the Bible"
   }
 }
-

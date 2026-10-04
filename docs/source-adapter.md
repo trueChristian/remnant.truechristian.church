@@ -37,8 +37,10 @@ python3 scripts/export_sources.py \
 
 Outputs must be absent or empty. No previous translation directory is accepted as
 a fallback. English export failure is fatal; translation checkout/export failure
-produces an explicit English-only report and leaves English publishable. Any
-partial translation output is quarantined under a hidden build-only path, leaving
+produces an explicit English-only report for local inspection. Deployment planning
+requires healthy export and actual build reports and retains the last live site
+on translation failure or any loss of a previously published locale/UUID. Missing
+live inventory evidence also blocks publication. Any partial translation output is quarantined under a hidden build-only path, leaving
 the expected translation input absent. Use
 `--strict-translations` only when intentionally testing the translation integration.
 Detailed error reports stay in private build evidence; expose only a safe status
@@ -67,7 +69,8 @@ continuing with the previous inventory.
 
 When translation source acquisition is unavailable, pass `None`; the model emits
 an explicit warning that upstream language additions could not be checked, and
-valid English can publish with the website's known complete interfaces. An
+English can still be built locally with the website's known complete interfaces;
+production remains blocked until the complete live inventory is retained. An
 explicitly supplied missing/malformed registry raises `ContentError`. Available
 translation tags, folder codes and text directions must agree with the selected
 registry. The `english_export` Path is internal build context only; generated
@@ -83,7 +86,10 @@ retains the original HTML path metadata; `html` is the complete display fragment
 `html` is never parsed and reserialized. The renderer preserves translation
 notice text and changes only a known English UUID-link `href` to its readable
 canonical URL. The source model keeps the original fragment. `translation`
-contains only already-public exported translation metadata, not processing state.
+is internal build context containing exported provenance and control metadata.
+Never serialize it wholesale into reader HTML, search indexes, or Markdown;
+human editor names, email addresses, commits, and pending-edit diagnostics do not
+belong in the reader notice.
 
 The normalized article includes:
 
@@ -95,6 +101,24 @@ The normalized article includes:
 - `images`: original metadata/credits joined with display HTML alt text/captions
 - `image`: first image metadata record, or `None`
 - `human_reviewed` and `ai_notice_required`
+- `notice_count`: actual exported marked presentation count, independent of review state
+
+Human-attributed exports carry `human_edit` with the source-verified commit,
+author, email, and timestamp; their explicit control state is `human_reviewed=true`
+and `ai_notice_required=false`. `notice_present` describes source presentation,
+not permission to publish. The importer does not compare human prose, numbers,
+references, footer wording, or image choices against English. Human image records
+use their actual exported inventory and safe existing shared assets; existing
+source image attribution is preserved. Technical HTML, identity, checksum, and
+path checks still apply. AI-only exports retain their existing notice and image
+requirements.
+
+The translation repository generates the localized human-reviewed notice. The
+website preserves its wording and markup, updates only its known English UUID
+link, excludes marked notices from search/excerpts, and retains them as exact HTML
+in Markdown. The website also links every translated reader to its actual
+`content/<ISO3>/articles/<UUID>.html` GitHub edit page, using localized UI text.
+The link itself does not create a pull request or change source content.
 
 All manifest-listed checksums are verified before reading. English validation
 failure raises `ContentError`. Translation validation failure discards the entire

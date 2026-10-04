@@ -112,7 +112,8 @@
     "author_age": "Leeftijd zoals vermeld",
     "author_no_articles": "Er zijn nog geen artikelen van deze auteur beschikbaar in deze taal.",
     "author_read_english": "Lees de artikelen van deze auteur in het Engels",
-    "no_authors": "Er zijn nog geen auteurs met een geregistreerde naam beschikbaar."
+    "no_authors": "Er zijn nog geen auteurs met een geregistreerde naam beschikbaar.",
+    "review_translation": "Deze vertaling op GitHub nakijken"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "Waarom wij de Bijbel geloven"
   }
 }
-

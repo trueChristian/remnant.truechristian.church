@@ -97,9 +97,9 @@ def html_to_markdown(source: str, canonical_url: str = "") -> str:
         if isinstance(node, str):
             return escape_text(re.sub(r"\s+", " ", node))
         tag, attrs = node.tag, node.attrs
-        # Preserve exact application-owned notice markup, including original
-        # authoritative-English compatibility URL, model and localized wording.
-        if attrs.get("data-translation-notice") == "ai":
+        # Preserve the exported AI or human-reviewed presentation verbatim,
+        # including the authoritative-English link and localized wording.
+        if "data-translation-notice" in attrs:
             return "\n\n" + raw_html(node) + "\n\n"
         if tag in {"table", "dl", "pre", "u", "sup", "sub", "mark", "cite", "kbd", "samp", "del", "ins", "abbr", "ruby"} or "id" in attrs or (tag == "ol" and (attrs.get("type") or "reversed" in attrs)):
             raw = raw_html(node)

@@ -112,7 +112,8 @@
     "author_age": "原文记载的年龄",
     "author_no_articles": "这位作者的文章尚无此语言版本。",
     "author_read_english": "阅读这位作者的英文文章",
-    "no_authors": "目前尚无有署名的作者。"
+    "no_authors": "目前尚无有署名的作者。",
+    "review_translation": "在 GitHub 上审阅此译文"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "我们为何相信圣经"
   }
 }
-

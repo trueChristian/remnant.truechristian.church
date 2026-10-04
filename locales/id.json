@@ -112,7 +112,8 @@
     "author_age": "Usia yang tercatat",
     "author_no_articles": "Belum ada artikel penulis ini yang tersedia dalam bahasa ini.",
     "author_read_english": "Baca artikel penulis ini dalam bahasa Inggris",
-    "no_authors": "Belum ada penulis dengan nama yang tercatat."
+    "no_authors": "Belum ada penulis dengan nama yang tercatat.",
+    "review_translation": "Tinjau terjemahan ini di GitHub"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "Mengapa kami mempercayai Alkitab"
   }
 }
-

@@ -112,7 +112,8 @@
     "author_age": "Età riportata nella fonte",
     "author_no_articles": "Nessun articolo di questo autore è ancora disponibile in questa lingua.",
     "author_read_english": "Leggi gli articoli di questo autore in inglese",
-    "no_authors": "Non sono ancora disponibili autori con un nome registrato."
+    "no_authors": "Non sono ancora disponibili autori con un nome registrato.",
+    "review_translation": "Rivedi questa traduzione su GitHub"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "Perché crediamo nella Bibbia"
   }
 }
-

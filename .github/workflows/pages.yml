@@ -24,7 +24,28 @@ defaults:
     shell: bash
 
 jobs:
+  review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the proposed change for validation only
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate the review event
+        run: python3 scripts/validate_event.py
+      - name: Install pinned test dependencies
+        run: npm ci
+      - name: Run unit and synthetic contract regressions
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -v
+          node --test tests/*.test.mjs
+          for file in tests/browser/*.mjs; do node --check "$file"; done
+
   check:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     outputs:
@@ -32,22 +53,20 @@ jobs:
       site_revision: ${{ steps.poll.outputs.site_revision }}
       selection: ${{ steps.poll.outputs.selection }}
     steps:
-      - name: Check out review merge or trusted current main
+      - name: Check out trusted current main
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ github.event_name == 'pull_request' && github.sha || 'main' }}
+          ref: main
           persist-credentials: false
       - name: Validate the website event
         run: python3 scripts/validate_event.py
       - name: Compare current source pins with the last successful deployment
         id: poll
         env:
-          REVIEW_BUILD: ${{ github.event_name == 'pull_request' }}
           FORCE_REBUILD: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           set -euo pipefail
           args=()
-          if [[ "$REVIEW_BUILD" == true ]]; then args+=(--review); fi
           if [[ "$FORCE_REBUILD" == true ]]; then args+=(--force); fi
           python3 scripts/poll_sources.py "${args[@]}"
 
@@ -81,6 +100,8 @@ jobs:
         env:
           SOURCE_SELECTION: ${{ needs.check.outputs.selection }}
         run: python3 scripts/prepare_sources.py --selection "$SOURCE_SELECTION"
+      - name: Stop before site generation if upstream health or published inventory regressed
+        run: python3 scripts/check_sources.py
       - name: Run full source-backed regressions
         run: python3 -m unittest discover -s tests -v
       - name: Reuse the durable published Scripture scan ledger
@@ -99,9 +120,6 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Verify browser interactions and capture desktop, mobile, RTL, and print
         run: npm run test:browser
-      - name: Repeat no-JavaScript author navigation on review builds
-        if: github.event_name == 'pull_request'
-        run: npx playwright test tests/browser/authors.spec.mjs --grep 'Authors without JavaScript' --repeat-each=5 --reporter=list --output=.test-output/nojs-repeat-results
       - name: Retain browser review evidence
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -137,7 +155,10 @@ jobs:
               for path in ('.build/source-report.json', '.build/deployment-plan.json', '.build/scripture-report.json', '.build/scripture-provider-report.json'):
                   if Path(path).is_file():
                       summary.write('### ' + Path(path).name + '\n\n```json\n')
-                      summary.write(json.dumps(json.loads(Path(path).read_text()), indent=2) + '\n```\n\n')
+                      evidence = json.loads(Path(path).read_text())
+                      if 'article_inventory' in evidence:
+                          evidence['article_counts'] = {tag: len(ids) for tag, ids in evidence.pop('article_inventory').items()}
+                      summary.write(json.dumps(evidence, indent=2) + '\n```\n\n')
               if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
                   summary.write('Pull-request validation: output is review-only; no production deployment.\n')
               elif os.environ.get('PRODUCTION_BUILD') == 'true':

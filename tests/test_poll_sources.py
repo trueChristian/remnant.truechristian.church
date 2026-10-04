@@ -78,8 +78,17 @@ class PollingTests(unittest.TestCase):
             (output / 'index.html').write_text('validated candidate')
             report = {'site_revision': selected['site'],
                       'sources': {name: {'revision': selected[name]} for name in prepare_sources.REPOSITORIES},
-                      'export': {'translation_status': 'ready'}}
-            deployment.deployment_plan(output, report, previous=self.live)
+                      'export': {'english_status': 'ready', 'translation_status': 'ready'}}
+            article_id = '00000000-0000-4000-8000-000000000001'
+            (output / 'en/read').mkdir(parents=True)
+            (output / 'en/read/index.html').write_text(f'<article data-article-id="{article_id}">Source</article>')
+            (output / 'en/search-index.json').write_text(json.dumps([{'id': article_id, 'url': '/en/read/'}]))
+            baseline = {**self.live, 'article_inventory': {'en': [article_id]}}
+            built = {'article_counts': {'en': 1}, 'site_revision': selected['site'], 'theme_revision': selected['theme'],
+                     'source': {'source_revision': selected['english'],
+                                'translation_revision': selected['translations'],
+                                'translation_status': 'ready'}}
+            deployment.deployment_plan(output, report, built, previous=baseline)
             # Merely creating candidate deployment metadata does not advance live state.
             self.assertTrue(poll_sources.poll_plan(selected, self.live)['build'])
 
@@ -157,9 +166,17 @@ class PollingTests(unittest.TestCase):
 class PollWorkflowTests(unittest.TestCase):
     def test_hourly_preflight_skips_expensive_jobs_and_manual_always_forces(self):
         text = (ROOT / '.github/workflows/pages.yml').read_text()
-        check, build = text.split('\n  build:\n', 1)
-        self.assertIn("- cron: '17 * * * *'", check)
-        self.assertIn('  workflow_dispatch:\n', check)
+        header, jobs = text.split('\njobs:\n', 1)
+        review, production = jobs.split('\n  check:\n', 1)
+        check, build = production.split('\n  build:\n', 1)
+        self.assertIn("- cron: '17 * * * *'", header)
+        self.assertIn('  workflow_dispatch:\n', header)
+        self.assertIn("if: github.event_name == 'pull_request'", review)
+        self.assertIn('python3 -m unittest discover', review)
+        self.assertIn('node --test', review)
+        for forbidden in ('scripts/build.py', 'prepare_sources.py', 'test:browser', 'playwright test', 'upload-pages-artifact'):
+            self.assertNotIn(forbidden, review)
+        self.assertIn("if: github.event_name != 'pull_request'", check)
         self.assertNotIn('inputs.force_rebuild', text)
         self.assertEqual(text.count("FORCE_REBUILD: ${{ github.event_name == 'workflow_dispatch' }}"), 2)
         self.assertNotIn('repository_dispatch:', text)
@@ -171,6 +188,8 @@ class PollWorkflowTests(unittest.TestCase):
         self.assertIn('ref: ${{ needs.check.outputs.site_revision }}', build)
         self.assertIn('SOURCE_SELECTION: ${{ needs.check.outputs.selection }}', build)
         self.assertIn('prepare_sources.py --selection "$SOURCE_SELECTION"', build)
+        self.assertLess(build.index('scripts/prepare_sources.py'), build.index('scripts/check_sources.py'))
+        self.assertLess(build.index('scripts/check_sources.py'), build.index('scripts/build.py'))
         self.assertIn("cancel-in-progress: ${{ github.event_name == 'pull_request' }}", text)
         self.assertIn("|| 'production'", text)
         self.assertIn('python3 scripts/deployment.py', build)

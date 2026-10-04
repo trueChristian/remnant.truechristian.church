@@ -164,7 +164,7 @@ class PageParser(HTMLParser):
             self.author_card = {'name': '', 'url': '', 'text': []}
         if a.get('data-article-id'):
             p.article_ids.append(a['data-article-id'])
-        if a.get('data-translation-notice') == 'ai':
+        if 'data-translation-notice' in a:
             p.notices += 1
         if tag == 'a':
             href = a.get('href', '')
@@ -372,9 +372,12 @@ class SiteChecker:
                             not (key == 'translations' and revision is None) and not (isinstance(revision, str) and re.fullmatch(r'[a-f0-9]{40}', revision))
                             for key, revision in revisions.items()):
                             self.error('deployment.json contains invalid publication revision identities')
-                        allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status'}
+                        allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status', 'article_inventory'}
                         if not isinstance(value, dict) or set(value) - allowed:
                             self.error('deployment.json contains more than the public publication identity')
+                        if isinstance(value, dict) and 'article_inventory' in value:
+                            from publication_inventory import validate_inventory
+                            validate_inventory(value['article_inventory'])
                     elif relative == 'scripture/manifest.json':
                         from scripture import load_manifest
                         load_manifest(file)
@@ -964,7 +967,8 @@ class SiteChecker:
                     self.error(f'{article["url"]}: original exported HTML/notice was changed')
                 if page.h1 != normalized_text(article.get('title') or locale['ui']['untitled_article']):
                     self.error(f'{article["url"]}: article title differs from published locale text')
-                if page.notices != int(bool(article.get('ai_notice_required'))):
+                expected_notices = article.get('notice_count', int(bool(article.get('ai_notice_required'))))
+                if page.notices != expected_notices:
                     self.error(f'{article["url"]}: AI notice does not match approved export')
                 issue_url = routes['issues'][tag][article['issue_id']]
                 if issue_url not in page.references:
@@ -981,7 +985,7 @@ class SiteChecker:
                     markdown = markdown_path.read_text(encoding='utf-8')
                     if self.origin + article['url'] not in markdown or self.origin + issue_url not in markdown:
                         self.error(f'{markdown_url}: canonical or issue backlink missing')
-                    if PageParser(markdown_url, markdown).page.notices != int(bool(article.get('ai_notice_required'))):
+                    if PageParser(markdown_url, markdown).page.notices != expected_notices:
                         self.error(f'{markdown_url}: AI notice parity mismatch')
                 expected_equivalents = equivalents[article['id']]
                 if page.alternates != expected_equivalents:
