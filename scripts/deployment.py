@@ -140,9 +140,12 @@ def main() -> None:
     validated_revisions(sources, built)
     # A verified live inventory is mandatory, including review and manual runs.
     # --compare-live remains a compatibility option; it never disables retention.
+    previous = live_deployment(fresh=True)
+    migration = None
+    if isinstance(previous, dict) and 'article_inventory' not in previous:
+        migration = json.loads(args.migration_baseline.read_text())
     result = deployment_plan(args.site_output, sources, built,
-                             previous=live_deployment(fresh=True),
-                             migration_snapshot=json.loads(args.migration_baseline.read_text()),
+                             previous=previous, migration_snapshot=migration,
                              force=args.force)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(result, indent=2) + '\n')

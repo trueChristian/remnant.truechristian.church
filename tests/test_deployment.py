@@ -180,6 +180,20 @@ class DeploymentTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse(plan.exists())
 
+    def test_modern_live_inventory_does_not_depend_on_legacy_snapshot_file(self):
+        source_file, build_file, plan = (self.output / name for name in ('sources.json', 'build.json', 'plan.json'))
+        source_file.write_text(json.dumps(self.report))
+        build_file.write_text(json.dumps(self.built))
+        argv = ['deployment.py', '--site-output', str(self.output), '--source-report', str(source_file),
+                '--build-report', str(build_file), '--migration-baseline', str(self.output / 'absent-baseline.json'),
+                '--report', str(plan), '--force']
+        with patch.object(sys, 'argv', argv), patch.object(deployment, 'live_deployment', return_value=self.live) as live, \
+             patch.dict(os.environ, {'GITHUB_OUTPUT': str(self.output / 'workflow-output')}), \
+             patch('builtins.print'):
+            deployment.main()
+        live.assert_called_once_with(fresh=True)
+        self.assertEqual(json.loads(plan.read_text())['article_inventory'], self.live['article_inventory'])
+
     def test_live_marker_network_failure_never_suppresses_a_build(self):
         self.assertIsNone(deployment.live_deployment(Mock(side_effect=TimeoutError())))
         for content in [b'not json', b'[]', b'{"schema":1,"display_fingerprint":"bad"}']:
