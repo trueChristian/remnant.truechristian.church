@@ -20,7 +20,7 @@ class DeploymentTests(unittest.TestCase):
         (self.output / 'index.html').write_text('<h1>English</h1>')
         self.report = {'site_revision': 'a' * 40, 'sources': {
             key: {'revision': value * 40} for key, value in [('english', 'b'), ('translations', 'c'), ('theme', 'd')]},
-            'export': {'translation_status': 'ready'}}
+            'export': {'english_status': 'ready', 'translation_status': 'ready'}}
         self.article_id = '00000000-0000-4000-8000-000000000001'
         (self.output / 'en/read').mkdir(parents=True)
         (self.output / 'af').mkdir()

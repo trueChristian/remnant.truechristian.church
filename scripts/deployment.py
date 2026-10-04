@@ -79,7 +79,7 @@ def live_deployment(request=request_bytes, *, fresh: bool = False) -> dict | Non
     return None
 
 
-def validated_revisions(source_report: dict, build_report: dict) -> dict:
+def validated_source_revisions(source_report: dict) -> dict:
     revisions = {'site': source_report['site_revision']}
     revisions.update({key: value['revision'] for key, value in source_report['sources'].items()})
     if set(revisions) != {'site', 'english', 'translations', 'theme'} or any(
@@ -87,12 +87,24 @@ def validated_revisions(source_report: dict, build_report: dict) -> dict:
             for value in revisions.values()):
         raise ValueError('A complete fixed-revision report is required')
     exported = source_report.get('export')
+    english_status = exported.get('english_status') if isinstance(exported, dict) else None
+    if english_status != 'ready':
+        raise ValueError(f'Refusing publication: English export is {english_status or "unknown"}; '
+                         'retain the last successful site until English validates')
+    status = exported.get('translation_status') if isinstance(exported, dict) else None
+    if status != 'ready':
+        raise ValueError(f'Refusing publication: translation export is {status or "unknown"}; '
+                         'retain the last successful site until translations validate')
+    return revisions
+
+
+def validated_revisions(source_report: dict, build_report: dict) -> dict:
+    revisions = validated_source_revisions(source_report)
     built = build_report.get('source') if isinstance(build_report, dict) else None
-    for stage, report in (('export', exported), ('built content', built)):
-        status = report.get('translation_status') if isinstance(report, dict) else None
-        if status != 'ready':
-            raise ValueError(f'Refusing publication: translation {stage} is {status or "unknown"}; '
-                             'retain the last successful site until translations validate')
+    status = built.get('translation_status') if isinstance(built, dict) else None
+    if status != 'ready':
+        raise ValueError(f'Refusing publication: translation built content is {status or "unknown"}; '
+                         'retain the last successful site until translations validate')
     built_revisions = {'site': build_report.get('site_revision'),
                        'english': built.get('source_revision'),
                        'translations': built.get('translation_revision'),

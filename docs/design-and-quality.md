@@ -37,8 +37,10 @@ font layout instability led to fallback smooth scrolling, an offscreen hit-test,
 and a 20ms in-page retry timer that never fired with JavaScript disabled. Manual
 context cleanup then obscured that primary failure. The fix keeps normal
 actionability checks, the original timeout, native navigation, and Back history.
-PR checks repeat both viewport scenarios five times with fresh test contexts;
-their separate output directory preserves the complete browser review report.
+These browser scenarios run against a healthy full site only after merge to main.
+Pull requests run unit and synthetic contract tests without generating a full
+site or starting browser builds. The original repair was also verified with five
+fresh-context repeats per viewport; that historical evidence is in its PR.
 
 ## Measured initial budgets
 

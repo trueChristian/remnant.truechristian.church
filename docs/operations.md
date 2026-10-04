@@ -20,8 +20,10 @@ on a second push workflow.
 Website `main` pushes remain automatic. For immediate recovery or a deliberate
 rebuild, open **Actions → Build and publish Remnant → Run workflow**, choose
 `main`, and run it. A manual run **always builds and deploys after validation passes**, even when all pins
-and display bytes match. Pull requests always build and test for review only.
-Opening a PR never deploys it; owner merge is separate.
+and display bytes match. Pull requests run offline unit and contract validation
+only, including small synthetic rendered fixtures. They never generate the full
+production site, export upstream repositories, or run the full-site browser suite.
+Those production checks run only from trusted main; owner merge is separate.
 
 ## Last-successful-deployment baseline
 
@@ -186,6 +188,11 @@ copied wholesale into public output.
 Invalid English or a broken required theme stops the build and retains the last
 good site. Translation acquisition/export failure still permits an English-only
 local build for inspection, but deployment planning refuses to publish it.
+Before generating any site pages, `scripts/check_sources.py` requires a healthy
+export, validates its actual content and selected revisions, and compares its
+complete locale/UUID inventory with the verified live publication. Upstream
+validation failures and partial losses stop before the generator runs. The
+post-build publication gate repeats the checks against actual generated readers.
 Publication requires both a ready translation export and ready translated content
 in the actual site-build report, with matching site/source/theme revisions. A
 missing or stale report also blocks publication. Manual `--force` bypasses only
