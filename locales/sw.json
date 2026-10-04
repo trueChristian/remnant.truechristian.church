@@ -112,7 +112,8 @@
     "author_age": "Umri kama ulivyoandikwa",
     "author_no_articles": "Bado hakuna makala za mwandishi huyu zinazopatikana katika lugha hii.",
     "author_read_english": "Soma makala za mwandishi huyu kwa Kiingereza",
-    "no_authors": "Bado hakuna waandishi wenye majina yaliyorekodiwa."
+    "no_authors": "Bado hakuna waandishi wenye majina yaliyorekodiwa.",
+    "review_translation": "Kagua tafsiri hii kwenye GitHub"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "Kwa nini tunaiamini Biblia"
   }
 }
-

@@ -148,6 +148,17 @@ class GeneratedSiteTests(unittest.TestCase):
         self.assertEqual(issue.contents, [article['url'] for article in reversed(self.model['articles']['en'])])
         self.assertEqual(checker.pages[self.routes['issues']['en'][J]].contents, [])
 
+    def test_every_translated_reader_links_its_actual_github_edit_path(self):
+        for tag, articles in self.model['articles'].items():
+            for article in articles:
+                html = self.page_path(article['url']).read_text()
+                if tag == 'en':
+                    self.assertNotIn('data-review-translation', html)
+                else:
+                    expected = f"https://github.com/trueChristian/berean-translation/edit/main/content/{self.locales[tag]['meta']['code']}/articles/{article['id']}.html"
+                    self.assertIn(expected, html)
+                    self.assertIn(self.locales[tag]['ui']['review_translation'], html)
+
     def test_winter_2024_leads_latest_archive_search_and_feed(self):
         # Permanent identities from the current publisher catalogue, intentionally
         # added after the older Summer/2023 fixture records to catch array ordering.

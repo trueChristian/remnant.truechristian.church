@@ -112,7 +112,8 @@
     "author_age": "기록된 당시 나이",
     "author_no_articles": "이 저자의 글은 아직 이 언어로 제공되지 않습니다.",
     "author_read_english": "이 저자의 글을 영어로 읽기",
-    "no_authors": "아직 이름이 기록된 저자가 없습니다."
+    "no_authors": "아직 이름이 기록된 저자가 없습니다.",
+    "review_translation": "GitHub에서 이 번역 검토하기"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "우리가 성경을 믿는 이유"
   }
 }
-

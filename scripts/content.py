@@ -83,6 +83,7 @@ class FragmentText(HTMLParser):
         self.article_ids: list[str | None] = []
         self.images: list[dict] = []
         self.notice_count = 0
+        self.ai_notice_count = 0
         self.notice_depth = 0
         self.stack: list[str] = []
         self.figure_images: list[dict] | None = None
@@ -105,8 +106,10 @@ class FragmentText(HTMLParser):
             _require(tag == "img" and not urlsplit(target).scheme and target.startswith("/images/articles/"), f"Unsafe exported image source: {target}")
         if tag == "article":
             self.article_ids.append(attributes.get("data-article-id"))
-        if tag == "aside" and attributes.get("data-translation-notice") == "ai":
+        if "data-translation-notice" in attributes:
             self.notice_count += 1
+            if attributes["data-translation-notice"] == "ai":
+                self.ai_notice_count += 1
             self.notice_depth = len(self.stack) + 1
         if not self.notice_depth:
             if tag in self.BLOCK:
@@ -167,7 +170,20 @@ def excerpt(text: str, limit: int = 220) -> str:
     return flat[:cut].rstrip() + "…"
 
 
-def _normalize(source: dict, html: str, locale: str, root: Path, translation: dict | None = None) -> dict:
+def _human_edit(translation: dict | None) -> bool:
+    if not translation or "human_edit" not in translation:
+        return False
+    provenance = translation["human_edit"]
+    _require(isinstance(provenance, dict), "Invalid human edit provenance")
+    _require(isinstance(provenance.get("commit"), str) and bool(re.fullmatch(r"[a-f0-9]{40}", provenance["commit"])), "Missing human edit commit")
+    _require(all(isinstance(provenance.get(key), str) for key in ("author", "email", "time")), "Incomplete human edit provenance")
+    _require(translation.get("human_reviewed") is True and translation.get("ai_notice_required") is False, "Human edit control state disagrees with export")
+    _require(type(translation.get("notice_present")) is bool, "Missing human notice presentation metadata")
+    return True
+
+
+def _normalize(source: dict, html: str, locale: str, root: Path, translation: dict | None = None,
+               *, human_images: dict | None = None) -> dict:
     article = copy.deepcopy(source)
     article["html_source"] = copy.deepcopy(article.get("html"))
     article["locale"] = locale
@@ -178,7 +194,9 @@ def _normalize(source: dict, html: str, locale: str, root: Path, translation: di
     _require(parsed.article_ids == [article["id"]], f"Article identity mismatch: {article['id']}")
     article["text"] = parsed.text
     article["excerpt"] = excerpt(parsed.text)
-    original_images = {image["public_path"]: image for image in source.get("images", [])}
+    human = _human_edit(translation)
+    original_images = human_images if human else {image["public_path"]: image for image in source.get("images", [])}
+    _require(isinstance(original_images, dict), "Missing human image inventory")
     _require(set(original_images) == {image["public_path"] for image in parsed.images}, "Exported HTML image inventory mismatch")
     article["images"] = []
     for display in parsed.images:
@@ -194,8 +212,14 @@ def _normalize(source: dict, html: str, locale: str, root: Path, translation: di
         article["direction"] = translation["direction"]
         article["human_reviewed"] = translation["human_reviewed"]
         article["ai_notice_required"] = translation["ai_notice_required"]
-        _require(parsed.notice_count == int(bool(article["ai_notice_required"])), "Translation AI notice is missing or disagrees with export metadata")
-        _require(article["human_reviewed"] != article["ai_notice_required"], "Invalid translation review/notice state")
+        article["notice_count"] = parsed.notice_count
+        if human:
+            article["human_edit"] = copy.deepcopy(translation["human_edit"])
+            article["notice_present"] = translation["notice_present"]
+        else:
+            _require(parsed.notice_count == int(bool(article["ai_notice_required"])), "Translation AI notice is missing or disagrees with export metadata")
+            _require(parsed.ai_notice_count == parsed.notice_count, "AI-only translation requires an AI notice marker")
+            _require(article["human_reviewed"] != article["ai_notice_required"], "Invalid translation review/notice state")
     else:
         article.update(direction="ltr", human_reviewed=True, ai_notice_required=False)
         _require(parsed.notice_count == 0, "Unexpected AI notice in English")
@@ -310,6 +334,7 @@ def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[di
     _require(index.get("format_version") == "1.0", "Unsupported translation index")
     result: dict[str, list] = {}
     seen = set()
+    shared_images = {image["public_path"]: image for article in english_by_id.values() for image in article.get("images", [])}
     for item in index["articles"]:
         identity = _identity(item["id"])
         locale = item["language_tag"]
@@ -328,7 +353,23 @@ def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[di
         _require(all(sidecar[k] == item[k] for k in sidecar), "Translated sidecar/index mismatch")
         html = _file(root, item["html"]).read_bytes().decode("utf-8")
         _require(hashlib.sha256(html.encode()).hexdigest() == item["html_sha256"], "Translated HTML fingerprint mismatch")
-        article = _normalize(source, html, locale, root, item)
+        human_images = None
+        if _human_edit(item):
+            exported_images = item.get("images")
+            _require(isinstance(exported_images, list), "Missing human image inventory")
+            human_images = {}
+            for image in exported_images:
+                _require(isinstance(image, dict) and isinstance(image.get("public_path"), str)
+                         and isinstance(image.get("alt"), str), "Invalid human image metadata")
+                public_path = image["public_path"]
+                _require(public_path.startswith("/images/articles/"), "Unsafe human image path")
+                _require(public_path not in human_images, "Duplicate human image inventory")
+                english_root = model["english_export"]
+                asset_path = public_path.lstrip("/")
+                _file(english_root, asset_path if (english_root / "images").is_dir() else "public/" + asset_path)
+                human_images[public_path] = {**copy.deepcopy(shared_images.get(public_path, {})),
+                                             "public_path": public_path, "alt": image["alt"]}
+        article = _normalize(source, html, locale, root, item, human_images=human_images)
         article["issue"] = copy.deepcopy(english_by_id[identity]["issue"])
         article["source_revision"] = model["source_revision"]
         result.setdefault(locale, []).append(article)

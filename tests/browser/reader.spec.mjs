@@ -97,7 +97,11 @@ test('locale switching follows real article IDs and keeps the AI notice', async 
   await page.locator('[data-language-select]').selectOption(article('af'));
   await expect(page.locator('html')).toHaveAttribute('lang','af');
   if (noticeRequired) await expect(page.locator('.prose aside')).toContainText('OpenAI');
-  else await expect(page.locator('.prose aside[data-translation-notice]')).toHaveCount(0);
+  const exportedArticle = translationExport.find(item => item.id === id && item.language_tag === 'af');
+  const sourceHtml = fs.readFileSync(path.join('.build/translations', exportedArticle.html), 'utf8');
+  const noticeCount = await page.evaluate(html => new DOMParser().parseFromString(html, 'text/html').querySelectorAll('[data-translation-notice]').length, sourceHtml);
+  await expect(page.locator('.prose [data-translation-notice]')).toHaveCount(noticeCount);
+  await expect(page.locator('[data-review-translation]')).toHaveAttribute('href', `https://github.com/trueChristian/berean-translation/edit/main/content/${exportedArticle.language}/articles/${id}.html`);
   await capture(page, 'afrikaans-article');
   if (noticeRequired) await page.locator(`.prose aside a[href="${article('en')}"]`).click();
   else await page.locator('[data-language-select]').selectOption(article('en'));

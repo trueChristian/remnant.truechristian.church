@@ -112,7 +112,8 @@
     "author_age": "Alder som oppgitt i kilden",
     "author_no_articles": "Ingen av denne forfatterens artikler er tilgjengelige på dette språket ennå.",
     "author_read_english": "Les denne forfatterens artikler på engelsk",
-    "no_authors": "Ingen navngitte forfattere er tilgjengelige ennå."
+    "no_authors": "Ingen navngitte forfattere er tilgjengelige ennå.",
+    "review_translation": "Se gjennom denne oversettelsen på GitHub"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
@@ -314,4 +315,3 @@
     "Why we believe the Bible": "Hvorfor vi tror på Bibelen"
   }
 }
-
