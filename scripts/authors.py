@@ -89,7 +89,48 @@ def canonical_author_name(name: str, aliases: dict[str, str] | None = None) -> s
     return resolved.get(name, name)
 
 
-def build_author_index(model: dict, aliases: dict[str, str] | None = None) -> list[dict]:
+def _author_articles(model: dict, locale: str | None) -> list[dict]:
+    """Select English provenance, including frozen sources of retained readers."""
+    if not isinstance(model, dict) or not isinstance(model.get('articles'), dict):
+        raise AuthorError('Author index requires an English article collection')
+    english = model['articles'].get('en')
+    if not isinstance(english, list):
+        raise AuthorError('Author index requires an English article list')
+    if locale == 'en':
+        return english
+
+    def frozen(article):
+        retained = article.get('retention')
+        if retained is None:
+            return None
+        if (not isinstance(retained, dict) or retained.get('kind') != 'translation'
+                or retained.get('status') not in {'stale', 'source_removed'}
+                or not isinstance(article.get('source_metadata'), dict)):
+            raise AuthorError(f"Invalid retained English author metadata for article {article.get('id')}")
+        return {'id': article.get('id'), 'source_metadata': article['source_metadata']}
+
+    selected = list(english) if locale is None else []
+    english_by_id = {article['id']: article for article in english
+                     if isinstance(article, dict) and isinstance(article.get('id'), str)}
+    for tag, articles in model['articles'].items():
+        if tag == 'en' or (locale is not None and tag != locale):
+            continue
+        if not isinstance(articles, list):
+            raise AuthorError(f'Invalid {tag} article collection in author index')
+        for article in articles:
+            if not isinstance(article, dict):
+                raise AuthorError(f'Invalid {tag} article in author index')
+            original = frozen(article)
+            if original is not None:
+                selected.append(original)
+            elif locale is not None and article.get('id') in english_by_id:
+                # A ready translation cannot introduce or override source authors.
+                selected.append(english_by_id[article['id']])
+    return selected
+
+
+def build_author_index(model: dict, aliases: dict[str, str] | None = None, *,
+                       locale: str | None = None) -> list[dict]:
     """Return canonical authors, their distinct articles, and recorded details.
 
     Each record contains canonical ``id`` and ``name``, observed ``source_names``
@@ -99,19 +140,18 @@ def build_author_index(model: dict, aliases: dict[str, str] | None = None) -> li
     assert a current location, position, or age. Passing an empty aliases map
     explicitly disables grouping, which is useful when auditing source names.
 
-    Only English source metadata establishes membership. Translations neither
-    add authors nor increase counts. The caller filters article IDs for each
-    language's availability and constructs its own routes and presentation.
+    Only English source metadata establishes membership. The full catalogue
+    includes frozen English metadata belonging to retained translations, so an
+    older author remains discoverable after the current English credit changes.
+    Each UUID counts once per author regardless of the number of translations.
+    Passing ``locale`` selects that language's actual article membership: ready
+    translations use current English; retained ones use their frozen source.
     Absent bylines, raw strings, and structured credits whose name is omitted
     or null yield no named authors. Role-only credits remain in the article's
     original byline; they do not establish a person or an Anonymous identity.
     Malformed structured authors still fail with article context.
     """
-    if not isinstance(model, dict) or not isinstance(model.get("articles"), dict):
-        raise AuthorError("Author index requires an English article collection")
-    articles = model["articles"].get("en")
-    if not isinstance(articles, list):
-        raise AuthorError("Author index requires an English article list")
+    articles = _author_articles(model, locale)
     aliases = load_author_aliases() if aliases is None else _validated_aliases(aliases)
 
     authors: dict[str, dict] = {}

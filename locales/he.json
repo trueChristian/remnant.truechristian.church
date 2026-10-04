@@ -113,7 +113,11 @@
     "author_no_articles": "אין עדיין מאמרים של מחבר זה בשפה זו.",
     "author_read_english": "קריאת מאמריו של מחבר זה באנגלית",
     "no_authors": "אין עדיין מחברים בעלי שם מתועד.",
-    "review_translation": "בדיקת התרגום הזה ב־GitHub"
+    "review_translation": "בדיקת התרגום הזה ב־GitHub",
+    "retained_english": "המאמר האנגלי הזה נשמר בגרסתו האחרונה שפורסמה.",
+    "retained_translation_stale": "המקור האנגלי השתנה. התרגום שכבר פורסם נשאר זמין.",
+    "retained_translation_removed": "התרגום שפורסם נשמר יחד עם המקור האנגלי המתועד שלו.",
+    "retained_source_link": "צפייה בגרסת המקור המקורית"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

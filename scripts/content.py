@@ -1,7 +1,7 @@
 """Read only the supported, checksum-verified public display exports.
 
-English is authoritative. A missing/invalid translation bundle degrades explicitly
-and never permits an older translation bundle to accompany newer English.
+English is authoritative. Invalid bundles degrade only for local inspection;
+production requires verified history before retaining approved older versions.
 """
 from __future__ import annotations
 
@@ -59,16 +59,22 @@ def _identity(value: Any) -> str:
 
 
 def _verify_bundle(root: Path, version: str) -> dict:
-    _require(not root.is_symlink(), "Export root cannot be a symlink")
-    manifest = _read_json(root / "manifest.json")
+    _require(not any(part.is_symlink() for part in (root.absolute(), *root.absolute().parents)), "Export root cannot be a symlink")
+    manifest = _read_json(_file(root, "manifest.json"))
     _require(manifest.get("format_version") == version, "Unsupported export format")
     _require(manifest.get("base_path") == "/", "The custom-domain website requires root-base exports")
     _require(bool(re.fullmatch(r"[a-f0-9]{40}", manifest.get("source_revision", ""))), "Missing exact English revision")
     files = manifest.get("files")
     _require(isinstance(files, dict) and "index.json" in files, "Missing export file inventory")
+    actual_files = set()
+    for path in root.rglob('*'):
+        _require(not path.is_symlink(), "Exported symlinks are forbidden")
+        if path.is_file() and path != root / 'manifest.json':
+            actual_files.add(path.relative_to(root).as_posix())
     for relative, expected in files.items():
         actual = hashlib.sha256(_file(root, relative).read_bytes()).hexdigest()
         _require(actual == expected, f"Export checksum mismatch: {relative}")
+    _require(actual_files == set(files), "Export file inventory is incomplete or contains missing files")
     return manifest
 
 
@@ -272,9 +278,35 @@ def load_language_registry(registry: Path | dict) -> dict:
     return result
 
 
-def load_content(english_export: Path, translation_export: Path | None = None, *, strict_translations: bool = False, language_registry: Path | dict | None = None) -> dict:
+def _merge_historical_catalogue(model, context):
+    article, catalogue = context['article'], context['catalogue']
+    wanted = {'issues': {article['issue_id']},
+              'categories': {article['categories']['primary'], *article['categories'].get('additional', [])},
+              'topics': set(article.get('topics') or []),
+              'series': {article['series']['id']} if article.get('series') else set()}
+    for kind, identities in wanted.items():
+        existing = {item['id'] for item in model[kind]}
+        available = {item['id']: item for item in catalogue[kind]}
+        for identity in sorted(identities - existing):
+            _require(identity in available, 'Retained article has missing historical catalogue metadata')
+            model[kind].append(copy.deepcopy(available[identity]))
+
+
+def _historical_english(model, context, retention):
+    _merge_historical_catalogue(model, context)
+    article = _normalize(context['article'], context['html'], 'en', model['english_export'])
+    article['issue'] = copy.deepcopy(next(item for item in context['catalogue']['issues'] if item['id'] == article['issue_id']))
+    article['source_revision'] = context['revision']
+    article['retention'] = {'status': 'source_removed', 'kind': 'english', 'source_revision': context['revision']}
+    return retention.assets(article, retained=True, fallback_revisions=[context['revision'], retention.previous['revisions']['english']])
+
+
+def load_content(english_export: Path, translation_export: Path | None = None, *, strict_translations: bool = False, language_registry: Path | dict | None = None,
+                 retention=None) -> dict:
     root = Path(english_export)
     manifest = _verify_bundle(root, "2.0")
+    if retention:
+        _require(retention.current_revision == manifest['source_revision'], 'Retention context has a different current English revision')
     index = _read_json(root / "index.json")
     catalogue = _read_json(root / "catalogue.json")
     _require(index.get("format_version") == "2.0" and catalogue.get("format_version") == "2.0", "Unsupported English content format")
@@ -304,14 +336,22 @@ def load_content(english_export: Path, translation_export: Path | None = None, *
         article = _normalize(item, _file(root, item["html"]["repository_path"]).read_bytes().decode("utf-8"), "en", root)
         article["issue"] = copy.deepcopy(groups["issues"][item["issue_id"]])
         article["source_revision"] = manifest["source_revision"]
+        if retention:
+            article = retention.assets(article)
         english_by_id[identity] = article
         model["articles"]["en"].append(article)
     _require(len(english_by_id) == manifest["counts"]["articles"], "English article count mismatch")
+    model['current_english_ids'] = set(english_by_id)
+    if retention:
+        for context in retention.missing_english(english_by_id):
+            article = _historical_english(model, context, retention)
+            english_by_id[article['id']] = article
+            model['articles']['en'].append(article)
     if translation_export is None or not Path(translation_export).exists():
         model["warnings"].append("Translations unavailable: publishing the current English export only; no previous translations reused.")
     else:
         try:
-            translated, metadata = _load_translations(Path(translation_export), model, english_by_id)
+            translated, metadata = _load_translations(Path(translation_export), model, english_by_id, retention=retention)
             model["articles"].update(translated)
             model.update(metadata)
         except (ContentError, OSError, KeyError, TypeError, ValueError) as error:
@@ -322,15 +362,19 @@ def load_content(english_export: Path, translation_export: Path | None = None, *
     order = {issue["id"]: position for position, issue in enumerate(ordered_issues(model))}
     for articles in model["articles"].values():
         articles.sort(key=lambda item: (order[item["issue_id"]], item["sequence"], item["id"]))
+    if retention:
+        retention.finish(model)
     return model
 
 
-def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[dict, dict]:
+def _load_translations(root: Path, model: dict, english_by_id: dict, *, retention=None) -> tuple[dict, dict]:
     manifest = _verify_bundle(root, "1.0")
     index = _read_json(root / "index.json")
     _require(manifest["source_revision"] == index.get("source_revision") == model["source_revision"], "Translations were not exported against the selected English checkout")
     revision = manifest.get("translation_revision", "")
     _require(bool(re.fullmatch(r"[a-f0-9]{40}", revision)) and revision == index.get("translation_revision"), "Translation revision mismatch")
+    if retention and retention.source_revisions:
+        _require(revision == retention.source_revisions['translations'], 'Retention context has a different translation revision')
     _require(index.get("format_version") == "1.0", "Unsupported translation index")
     result: dict[str, list] = {}
     seen = set()
@@ -344,9 +388,23 @@ def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[di
             _require(configured is not None and configured["tag"] == locale and configured["dir"] == item.get("direction"), "Exported translation language disagrees with selected source registry")
         _require((locale, identity) not in seen, "Duplicate translation")
         seen.add((locale, identity))
-        _require(identity in english_by_id, "Translation refers to a removed English article")
-        _require(item.get("status") == "ready", "Unpublished translation in display export")
-        source = english_by_id[identity]["source_metadata"]
+        status = item.get('status')
+        context = None
+        if status in {'stale', 'source_removed'}:
+            _require(retention is not None, 'Retained translations require verified publication history')
+            _require((identity in model['current_english_ids']) == (status == 'stale'), 'Retained status disagrees with the selected English archive')
+            context = retention.translation_source(item)
+            _merge_historical_catalogue(model, context)
+            if identity not in english_by_id:
+                restored = _historical_english(model, context, retention)
+                english_by_id[identity] = restored
+                model['articles']['en'].append(restored)
+            source = context['article']
+        else:
+            _require(status == 'ready', "Unpublished translation in display export")
+            _require(identity in model['current_english_ids'], "Ready translation refers to a removed English article")
+            _require(item.get('retained') is not True, 'Current translation cannot claim retained status')
+            source = english_by_id[identity]["source_metadata"]
         _require(item["issue_id"] == source["issue_id"], "Translation issue mismatch")
         sidecar = _read_json(_file(root, item["metadata"]))
         _require(set(sidecar) == {"title", "subtitle", "section"}, "Unexpected translated metadata")
@@ -366,12 +424,20 @@ def _load_translations(root: Path, model: dict, english_by_id: dict) -> tuple[di
                 _require(public_path not in human_images, "Duplicate human image inventory")
                 english_root = model["english_export"]
                 asset_path = public_path.lstrip("/")
-                _file(english_root, asset_path if (english_root / "images").is_dir() else "public/" + asset_path)
-                human_images[public_path] = {**copy.deepcopy(shared_images.get(public_path, {})),
+                if context is None:
+                    _file(english_root, asset_path if (english_root / "images").is_dir() else "public/" + asset_path)
+                original_image = next((image for image in source.get('images', []) if image['public_path'] == public_path), None)
+                human_images[public_path] = {**copy.deepcopy(original_image or shared_images.get(public_path, {})),
                                              "public_path": public_path, "alt": image["alt"]}
         article = _normalize(source, html, locale, root, item, human_images=human_images)
-        article["issue"] = copy.deepcopy(english_by_id[identity]["issue"])
-        article["source_revision"] = model["source_revision"]
+        article["issue"] = copy.deepcopy(next(issue for issue in context['catalogue']['issues'] if issue['id'] == item['issue_id']) if context else english_by_id[identity]["issue"])
+        article["source_revision"] = context['revision'] if context else model["source_revision"]
+        if context:
+            article['retention'] = {'status': status, 'kind': 'translation', 'source_revision': context['revision']}
+        if retention:
+            previous = retention.previous['revisions']['english']
+            fallbacks = [previous, context['revision']] if context else []
+            article = retention.assets(article, retained=context is not None, fallback_revisions=fallbacks)
         result.setdefault(locale, []).append(article)
     _require(len(seen) == manifest["article_count"], "Translation count mismatch")
     return result, {"translation_status": "ready", "translation_revision": revision, "translation_omissions": copy.deepcopy(manifest.get("omitted", []))}

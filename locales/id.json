@@ -113,7 +113,11 @@
     "author_no_articles": "Belum ada artikel penulis ini yang tersedia dalam bahasa ini.",
     "author_read_english": "Baca artikel penulis ini dalam bahasa Inggris",
     "no_authors": "Belum ada penulis dengan nama yang tercatat.",
-    "review_translation": "Tinjau terjemahan ini di GitHub"
+    "review_translation": "Tinjau terjemahan ini di GitHub",
+    "retained_english": "Artikel bahasa Inggris ini dipertahankan dalam versi terakhir yang diterbitkan.",
+    "retained_translation_stale": "Sumber bahasa Inggris telah berubah. Terjemahan yang sebelumnya diterbitkan ini tetap tersedia.",
+    "retained_translation_removed": "Terjemahan yang telah diterbitkan ini dipertahankan bersama sumber bahasa Inggrisnya yang tercatat.",
+    "retained_source_link": "Lihat versi sumber aslinya"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

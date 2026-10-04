@@ -199,7 +199,7 @@ class AuthorSiteTests(unittest.TestCase):
         self.assertEqual(self.routes['authors'], original_routes['authors'])
         site = Site(self.model, self.locales, self.routes, self.theme, self.output, {})
         site.build()
-        self.assertEqual(site.article_authors[source['id']], [])
+        self.assertEqual(site.article_authors[('en', source['id'])], [])
         self.assertEqual(self.check().errors, [])
         for tag in ('en', 'af'):
             article = self.model['articles'][tag][0]

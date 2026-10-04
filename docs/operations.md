@@ -138,6 +138,7 @@ npm ci
 python3 -m unittest discover -s tests -v
 node --test tests/*.test.mjs
 python3 scripts/prepare_sources.py
+python3 scripts/check_sources.py
 python3 scripts/route_registry.py
 python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --registry .build/routes.json --output dist
 python3 scripts/check_site.py dist --registry .build/routes.json
@@ -197,9 +198,9 @@ Publication requires both a ready translation export and ready translated conten
 in the actual site-build report, with matching site/source/theme revisions. A
 missing or stale report also blocks publication. Manual `--force` bypasses only
 deduplication; it cannot bypass this validation gate. The last successful site and
-its translation pages remain live until the selected inputs validate. No older
-translations are mixed with newer English. A healthy export with zero compatible
-translations is valid only when the verified live inventory also has none.
+its translation pages remain live until the selected inputs validate. Approved translations whose English fingerprint changed remain published with a
+localized notice that identifies the older source version. A healthy export with
+zero translations is valid only when the verified live inventory also has none.
 
 Every candidate must retain every previously published `(locale, article UUID)`
 from the live `deployment.json` inventory. Updates and additions are allowed;
@@ -220,8 +221,44 @@ missing metadata means a new empty archive. Subsequent deployments carry their
 own complete inventory in `deployment.json`; the legacy snapshot is then unused.
 A failed candidate never advances the live baseline, so the next poll retries
 the changed pins after the source has been repaired.
-Normal incompatibility omits only incompatible translations. No build changes the
-source publication policy or starts paid translation work.
+Source changes no longer omit approved translations. The translation exporter
+marks preserved records as `stale` or `source_removed` and supplies their frozen
+English snapshot provenance. The website verifies the original HTML and canonical
+snapshot hash against immutable English Git objects, then recovers missing issue
+and taxonomy metadata from that same revision. It never runs historical source
+code. A removed English article is recovered from its last actually published
+English revision, which can be newer than a translation's recorded source.
+
+Every successful publication records the English revision for each article and
+the exact image origin, digest, and public path for each language/article pair.
+The bounded `retention` ledger in `deployment.json` includes an integrity digest;
+missing or altered entries fail before fallback can substitute newer image bytes.
+The original no-ledger deployment is migrated using its verified English revision.
+Later builds carry these origins forward instead of treating each new overall
+English revision as the origin of already preserved content.
+
+Preserved images use content-addressed URLs. Previously served unversioned image
+URLs remain available when missing from the current archive, without overwriting
+newer current image bytes. Human-added shared images use their actual accepted
+inventory; they need not have existed in the translation's original source.
+A known historical path being absent permits the next verified source candidate;
+network errors, unavailable commits, unsafe paths, and hash failures do not.
+Asset bytes are verified again against the packaged deployment ledger.
+
+The prebuild gate records a private `.build/retention-context.json` containing the
+verified live baseline and selected revision pins. Generation and source-backed
+checking replay that same context. It and the historical Git/image cache remain
+private. The public ledger contains only article identities and image/source
+provenance, not translation runtime records, prompts, or human reviewer identities.
+Reader and Markdown notices distinguish preserved English, a translation preserved after
+an English source update, and a translation whose source was removed. They link
+to the exact historical English source; the translation notice separately retains
+its matching authoritative English reader link.
+
+If an approved translation disappears entirely from the export, or its historical
+proof cannot be verified, the global UUID guard still preserves the whole previous
+site. A source omission is never permission to delete published content. No build
+changes the source publication policy or starts paid translation work.
 
 ## Recovery and rollout verification
 

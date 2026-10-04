@@ -22,6 +22,7 @@ from publication_inventory import candidate_inventory, baseline_inventory, asser
 
 PRODUCTION_MANIFEST = 'https://remnant.truechristian.church/deployment.json'
 DEPLOYMENT_REPORTS = {'deployment.json', 'build-report.json'}
+MAX_DEPLOYMENT_BYTES = 32 * 1024 * 1024
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -29,7 +30,7 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         raise ValueError('Redirects are not permitted for deployment metadata')
 
 
-def request_bytes(request: urllib.request.Request, *, limit: int = 8 * 1024 * 1024) -> tuple[int, bytes]:
+def request_bytes(request: urllib.request.Request, *, limit: int = MAX_DEPLOYMENT_BYTES) -> tuple[int, bytes]:
     with urllib.request.build_opener(NoRedirect).open(request, timeout=30) as response:
         content = response.read(limit + 1)
         if len(content) > limit:
@@ -120,16 +121,31 @@ def deployment_plan(output: Path, source_report: dict, build_report: dict, *, pr
     inventory = candidate_inventory(output, build_report.get('article_counts'))
     published = baseline_inventory(previous, migration_snapshot)
     assert_retains(published, inventory)
+    retained = None
+    if 'retention' in previous or 'retention' in build_report:
+        from retention import validate_ledger, validate_published_assets
+        if 'retention' in previous:
+            validate_ledger(previous['retention'], published)
+        if 'retention' not in build_report:
+            raise ValueError('Refusing publication: published retention provenance is missing from the candidate')
+        retained = validate_ledger(build_report['retention'], inventory)
+        validate_published_assets(output, retained)
     # Check health before fingerprinting or emitting a candidate/changed output.
     # Manual --force bypasses deduplication only, never failed validation.
     fingerprint = display_fingerprint(output)
     translation_status = 'ready'
     manifest = {'schema': 1, 'display_fingerprint': fingerprint, 'revisions': revisions,
                 'translation_status': translation_status, 'article_inventory': inventory}
-    (output / 'deployment.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    if retained is not None:
+        manifest['retention'] = retained
+    encoded = json.dumps(manifest, ensure_ascii=False, separators=(',', ':')) + '\n'
+    if len(encoded.encode('utf-8')) > MAX_DEPLOYMENT_BYTES:
+        raise ValueError('Refusing publication: deployment metadata exceeds its readable size limit')
+    (output / 'deployment.json').write_text(encoded, encoding='utf-8')
     unchanged = (isinstance(previous, dict) and previous.get('schema') == 1
                  and previous.get('display_fingerprint') == fingerprint
                  and previous.get('revisions') == revisions
+                 and previous.get('retention') == retained
                  and previous.get('translation_status') == translation_status)
     return {'changed': force or not unchanged,
             'previous_fingerprint': previous.get('display_fingerprint') if previous else None,
@@ -161,7 +177,7 @@ def main() -> None:
                              force=args.force)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(result, indent=2) + '\n')
-    print(json.dumps({**{key: value for key, value in result.items() if key != 'article_inventory'},
+    print(json.dumps({**{key: value for key, value in result.items() if key not in {'article_inventory', 'retention'}},
                       'article_counts': {tag: len(ids) for tag, ids in result['article_inventory'].items()}}, indent=2))
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as stream:

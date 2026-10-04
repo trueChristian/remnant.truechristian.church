@@ -45,6 +45,46 @@ class AuthorIndexTests(unittest.TestCase):
         ])
         self.assertEqual(model, original)
 
+    def test_retained_translation_uses_frozen_english_credit_and_ready_uses_current(self):
+        english = article('source', {'name': 'Current Author', 'location': 'Current town'})
+        retained = article('source', {'name': 'Untrusted display author'})
+        retained.update(source_metadata={'byline': {'authors': [{'name': 'Original Author', 'location': 'Old town'}]}},
+                        retention={'kind': 'translation', 'status': 'stale', 'source_revision': 'a' * 40})
+        ready = article('source', {'name': 'Invented translated author'})
+        ready['source_metadata'] = {'byline': {'authors': [{'name': 'Invented source override'}]}}
+        model = {'articles': {'en': [english], 'af': [retained], 'fr': [ready]}}
+        original = copy.deepcopy(model)
+        catalogue = {item['name']: item for item in build_author_index(model, aliases={})}
+        self.assertEqual(set(catalogue), {'Current Author', 'Original Author'})
+        self.assertEqual(catalogue['Original Author']['details'], {'location': ['Old town']})
+        for tag, expected in [('en', 'Current Author'), ('af', 'Original Author'), ('fr', 'Current Author')]:
+            with self.subTest(locale=tag):
+                selected = build_author_index(model, aliases={}, locale=tag)
+                self.assertEqual([item['name'] for item in selected], [expected])
+                self.assertEqual(selected[0]['article_ids'], ['source'])
+        self.assertEqual(build_author_index(model, aliases={}, locale='de'), [])
+        self.assertEqual(model, original)
+
+    def test_retained_copies_never_increase_author_original_article_counts(self):
+        english = article('source', {'name': 'Current Author'})
+        retained = article('source', {'name': 'Original Author'})
+        retained.update(source_metadata=copy.deepcopy(retained),
+                        retention={'kind': 'translation', 'status': 'source_removed', 'source_revision': 'a' * 40})
+        model = {'articles': {'en': [english], 'af': [retained], 'fr': [copy.deepcopy(retained)]}}
+        catalogue = {item['name']: item for item in build_author_index(model, aliases={})}
+        self.assertEqual(catalogue['Original Author']['article_ids'], ['source'])
+        self.assertEqual(catalogue['Original Author']['source_names'], ['Original Author'])
+
+    def test_retained_author_metadata_cannot_fall_back_to_current_or_display_byline(self):
+        english = article('source', {'name': 'Current Author'})
+        for source in (None, [], {'byline': {'authors': [{'name': 'Original Author', 'age': True}]}}):
+            with self.subTest(source=source):
+                retained = article('source', {'name': 'Display Author'})
+                retained.update(source_metadata=source,
+                                retention={'kind': 'translation', 'status': 'stale', 'source_revision': 'a' * 40})
+                with self.assertRaisesRegex(AuthorError, 'article source'):
+                    build_author_index({'articles': {'en': [english], 'af': [retained]}})
+
     def test_raw_source_credits_and_missing_bylines_do_not_invent_authors(self):
         model = {"articles": {"en": [
             {"id": "absent"}, {"id": "null", "byline": None},

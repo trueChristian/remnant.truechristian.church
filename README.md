@@ -1,7 +1,7 @@
 # The Heartbeat of the Remnant
 
 A multilingual, static magazine archive for **remnant.truechristian.church**.
-Built from the authoritative [Berean Voice archive](https://github.com/trueChristian/berean-voice), its [compatible translations](https://github.com/trueChristian/berean-translation), and the pinned [True Christian Church theme](https://github.com/trueChristian/theme).
+Built from the authoritative [Berean Voice archive](https://github.com/trueChristian/berean-voice), its [approved translations](https://github.com/trueChristian/berean-translation), and the pinned [True Christian Church theme](https://github.com/trueChristian/theme).
 
 ## Reading experience
 
@@ -13,7 +13,7 @@ Built from the authoritative [Berean Voice archive](https://github.com/trueChris
 - Stable localized article and category aliases, matching Markdown downloads with copy fallback, original issue citation, per-language RSS, sitemaps and canonical URLs
 - Static HTML and ordinary links for discovery and reading; JavaScript enhances preferences, search and archive rotation
 
-English articles do not wait for their translations. Production updates require a healthy translation export and build; validation or acquisition failures preserve the last published site. Every update must retain every published article UUID in every language; missing articles, lost locales, or an unverified live inventory block publication, even on manual runs. Only compatible completed translations appear; existing AI notice text is preserved, with its English link updated to the readable canonical URL. Human edits use the source-generated human-reviewed notice with an authoritative English link; model versions and reviewer identities are not displayed. Every translated reader links to its GitHub source editor so readers can propose a review or correction. No build starts a paid translation campaign.
+English articles do not wait for their translations. Production updates require a healthy translation export and build; validation or acquisition failures preserve the last published site. Every update must retain every published article UUID in every language; missing articles, lost locales, or an unverified live inventory block publication, even on manual runs. Completed translations publish with their recorded English provenance. Previously published English articles and approved translations remain available after source edits or removal, using verified historical source and image bytes with a localized version notice. Existing AI notice text is preserved, with its English link updated to the readable canonical URL. Human edits use the source-generated human-reviewed notice with an authoritative English link; model versions and reviewer identities are not displayed. Every translated reader links to its GitHub source editor so readers can propose a review or correction. No build starts a paid translation campaign.
 
 ## Stack
 
