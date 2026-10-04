@@ -76,12 +76,14 @@ class Page:
     author_cards: list = field(default_factory=list)
     author_article_links: list = field(default_factory=list)
     author_byline_links: list = field(default_factory=list)
+    structured_authors: list = field(default_factory=list)
     author_empty_links: list = field(default_factory=list)
     author_counts_text: str = ''
     author_details_text: str = ''
     main_images: int = 0
     downloads: set = field(default_factory=set)
     notices: int = 0
+    retained_statuses: list = field(default_factory=list)
     config: dict | None = None
     languages: dict = field(default_factory=dict)
     search_filters: dict = field(default_factory=dict)
@@ -102,6 +104,7 @@ class PageParser(HTMLParser):
                       'author-counts': [], 'author-details': []}
         self.author_card = None
         self.anchor = None
+        self.jsonld_parts = None
         self.feed(source)
         self.close()
         p = self.page
@@ -123,6 +126,8 @@ class PageParser(HTMLParser):
         a = dict(attrs)
         classes = set(a.get('class', '').split())
         p = self.page
+        if tag == 'script' and a.get('type') == 'application/ld+json':
+            self.jsonld_parts = []
         if tag == 'html':
             p.lang, p.direction = a.get('lang', ''), a.get('dir', '')
         if a.get('id'):
@@ -166,6 +171,8 @@ class PageParser(HTMLParser):
             p.article_ids.append(a['data-article-id'])
         if 'data-translation-notice' in a:
             p.notices += 1
+        if 'data-retained-publication' in a:
+            p.retained_statuses.append(a['data-retained-publication'])
         if tag == 'a':
             href = a.get('href', '')
             purposes = set()
@@ -217,6 +224,14 @@ class PageParser(HTMLParser):
             self.handle_endtag(tag)
 
     def handle_endtag(self, tag):
+        if tag == 'script' and self.jsonld_parts is not None:
+            try:
+                structured = json.loads(''.join(self.jsonld_parts))
+                if isinstance(structured, dict) and structured.get('@type') == 'Article':
+                    self.page.structured_authors.append(structured.get('author'))
+            except ValueError:
+                self.page.errors.append('invalid structured article JSON')
+            self.jsonld_parts = None
         if tag == 'a' and self.anchor is not None:
             anchor = self.anchor
             text = normalized_text(''.join(anchor['text']))
@@ -242,6 +257,8 @@ class PageParser(HTMLParser):
                 break
 
     def handle_data(self, data):
+        if self.jsonld_parts is not None:
+            self.jsonld_parts.append(data)
         if self.anchor is not None:
             self.anchor['text'].append(data)
         if self.author_card is not None:
@@ -372,12 +389,16 @@ class SiteChecker:
                             not (key == 'translations' and revision is None) and not (isinstance(revision, str) and re.fullmatch(r'[a-f0-9]{40}', revision))
                             for key, revision in revisions.items()):
                             self.error('deployment.json contains invalid publication revision identities')
-                        allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status', 'article_inventory'}
+                        allowed = {'schema', 'display_fingerprint', 'revisions', 'translation_status', 'article_inventory', 'retention'}
                         if not isinstance(value, dict) or set(value) - allowed:
                             self.error('deployment.json contains more than the public publication identity')
                         if isinstance(value, dict) and 'article_inventory' in value:
                             from publication_inventory import validate_inventory
                             validate_inventory(value['article_inventory'])
+                        if isinstance(value, dict) and 'retention' in value:
+                            from retention import validate_ledger, validate_published_assets
+                            validate_ledger(value['retention'], value['article_inventory'])
+                            validate_published_assets(self.output, value['retention'])
                     elif relative == 'scripture/manifest.json':
                         from scripture import load_manifest
                         load_manifest(file)
@@ -722,7 +743,7 @@ class SiteChecker:
                 self.error(f'{source}: registered redirect does not directly identify canonical destination {destination}')
 
     def check_authors(self, model, locales, routes):
-        """Check author discovery against English credits and localized articles.
+        """Check author discovery against each reader's English source credits.
 
         Counts describe distinct original articles and actual locale availability.
         This checks rendered inventories and links, independently of the template
@@ -736,11 +757,7 @@ class SiteChecker:
         rank = {issue['id']: index for index, issue in enumerate(ordered_issues(model))}
         author_routes = routes.get('authors', {})
         expected_pages = set()
-        names_by_article = {}
         authors_by_name = {author['name']: author for author in authors}
-        for author in authors:
-            for identity in author['article_ids']:
-                names_by_article.setdefault(identity, []).append(author['name'])
 
         def require_count(text, label, count, route):
             expected = normalized_text(label.format(count=count))
@@ -751,6 +768,10 @@ class SiteChecker:
 
         for tag, locale in locales.items():
             ui = locale['ui']
+            names_by_article = {}
+            for author in build_author_index(model, aliases=routes.get('author_aliases'), locale=tag):
+                for identity in author['article_ids']:
+                    names_by_article.setdefault(identity, []).append(author['name'])
             articles = sorted(model['articles'].get(tag, []), key=lambda article: (rank[article['issue_id']], article.get('sequence', 0)))
             available_by_author = {author['name']: [] for author in authors}
             for article in articles:
@@ -838,6 +859,11 @@ class SiteChecker:
                         or any(text not in valid_text.get(url, set())
                                for text, url in page.author_byline_links)):
                     self.error(f'{article["url"]}: author byline links do not match the original named contributors')
+                expected_structured = [{'@type': 'Person', 'name': name,
+                                        'url': self.origin + (registered.get(name) or '')} for name in expected_names]
+                if (len(page.structured_authors) != 1 or
+                        (expected_names and page.structured_authors[0] != expected_structured)):
+                    self.error(f'{article["url"]}: structured author attribution differs from the original named contributors')
             search_records = self.search.get(tag)
             if isinstance(search_records, list):
                 for record in search_records:
@@ -970,6 +996,17 @@ class SiteChecker:
                 expected_notices = article.get('notice_count', int(bool(article.get('ai_notice_required'))))
                 if page.notices != expected_notices:
                     self.error(f'{article["url"]}: AI notice does not match approved export')
+                retained = article.get('retention')
+                expected_statuses = [retained['status']] if retained else []
+                if page.retained_statuses != expected_statuses:
+                    self.error(f'{article["url"]}: retained source status is missing or incorrect')
+                retained_source_url, retained_text = None, None
+                if retained:
+                    retained_source_url = f"https://github.com/trueChristian/berean-voice/blob/{retained['source_revision']}/content/articles/{article['id']}.html"
+                    key = 'retained_english' if tag == 'en' else ('retained_translation_stale' if retained['status'] == 'stale' else 'retained_translation_removed')
+                    retained_text = locale['ui'][key]
+                    if retained_source_url not in page.references or normalized_text(retained_text) not in page.main_text:
+                        self.error(f'{article["url"]}: retained source notice or historical source link is missing')
                 issue_url = routes['issues'][tag][article['issue_id']]
                 if issue_url not in page.references:
                     self.error(f'{article["url"]}: missing original issue backlink')
@@ -987,6 +1024,10 @@ class SiteChecker:
                         self.error(f'{markdown_url}: canonical or issue backlink missing')
                     if PageParser(markdown_url, markdown).page.notices != expected_notices:
                         self.error(f'{markdown_url}: AI notice parity mismatch')
+                    if retained:
+                        from markdown import escape_text
+                        if retained_source_url not in markdown or escape_text(retained_text) not in markdown:
+                            self.error(f'{markdown_url}: retained source notice or historical source link is missing')
                 expected_equivalents = equivalents[article['id']]
                 if page.alternates != expected_equivalents:
                     self.error(f'{article["url"]}: article hreflang includes an unavailable translation')
@@ -1005,9 +1046,9 @@ class SiteChecker:
                 legacy = self.require_page(f'/{tag}/articles/{aid}/', 'legacy missing-translation redirect')
                 if legacy and self.local_reference(legacy.redirect or '', legacy.route) != (path, ''):
                     self.error(f'{legacy.route}: legacy missing-translation URL does not redirect to readable availability page')
-            self.check_rss(tag, articles, issue_map, routes['issues'][tag], locale['ui']['untitled_article'])
+            self.check_rss(tag, articles, issue_map, routes['issues'][tag], locale['ui']['untitled_article'], locale)
 
-    def check_rss(self, tag, articles, issues, issue_routes, untitled):
+    def check_rss(self, tag, articles, issues, issue_routes, untitled, locale=None):
         file = self.output / tag / 'feed.xml'
         if not file.is_file():
             self.error(f'{tag}: missing RSS feed')
@@ -1034,6 +1075,11 @@ class SiteChecker:
                 self.error(f'{tag}: RSS original issue backlink is missing or incorrect')
             else:
                 self.reference(citation.get('url'), f'/{tag}/feed.xml')
+                if locale:
+                    from i18n import format_issue_date
+                    issue = article.get('issue') or issues[article['issue_id']]
+                    if citation.text != issue['publication'] + ' · ' + format_issue_date(issue, locale):
+                        self.error(f'{tag}: RSS original issue citation differs from recorded source')
             if item.findtext('link') != self.origin + article['url'] or item.findtext('guid') != f'urn:remnant:{tag}:{article["id"]}':
                 self.error(f'{tag}: RSS contains wrong/stale article identity/order')
             self.reference(item.findtext('link') or '', f'/{tag}/feed.xml')
@@ -1082,7 +1128,9 @@ def main():
         from i18n import load_locales, validate_locales
         from routes import initialize_routes
         try:
-            model = load_content(args.english, None if args.english_only else args.translations)
+            from retention import load_retention_context
+            model = load_content(args.english, None if args.english_only else args.translations,
+                                 retention=None if args.english_only else load_retention_context(args.english))
             locales = load_locales(args.locales)
             validate_locales(locales, categories=model['categories'])
             routes = initialize_routes(model, locales, args.registry)

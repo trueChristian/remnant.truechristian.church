@@ -113,7 +113,11 @@
     "author_no_articles": "이 저자의 글은 아직 이 언어로 제공되지 않습니다.",
     "author_read_english": "이 저자의 글을 영어로 읽기",
     "no_authors": "아직 이름이 기록된 저자가 없습니다.",
-    "review_translation": "GitHub에서 이 번역 검토하기"
+    "review_translation": "GitHub에서 이 번역 검토하기",
+    "retained_english": "이 영어 기사는 마지막으로 발행된 버전으로 보존됩니다.",
+    "retained_translation_stale": "영어 원문이 변경되었습니다. 이전에 발행된 이 번역은 계속 제공됩니다.",
+    "retained_translation_removed": "이 번역은 기록된 영어 원문과 함께 보존됩니다.",
+    "retained_source_link": "원래 출처 버전 보기"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

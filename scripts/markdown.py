@@ -28,8 +28,8 @@ class Tree(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.source = source
         self.offsets = [0]
-        for line in source.splitlines(keepends=True):
-            self.offsets.append(self.offsets[-1] + len(line))
+        for match in re.finditer('\n', source):
+            self.offsets.append(match.end())
         self.root = Node("root")
         self.stack = [self.root]
         self.feed(source)
@@ -209,6 +209,10 @@ def generate_markdown(article: dict, canonical_url: str, issue_label: str) -> st
         lines.append(f"{escape_text(labels['source'])}: {escape_text(source['filename'])}")
     if article.get("issue_url"):
         lines.append(f"[{escape_text(issue_label)}](<{urljoin(canonical_url, article['issue_url'])}>)")
+    if article.get('retained_notice'):
+        note = article['retained_notice']
+        lines.extend(['', escape_text(note['text']),
+                      f"[{escape_text(note['source_label'])}](<{note['source_url']}>)"])
     lines.extend(["", html_to_markdown(article["html"], canonical_url).rstrip()])
     credits = []
     for image in article.get("images", []):

@@ -56,6 +56,11 @@ class DeploymentTests(unittest.TestCase):
         (self.output / 'deployment.json').write_text('{"revision": "new"}')
         self.assertEqual(before, deployment.display_fingerprint(self.output))
 
+    def test_candidate_metadata_cannot_exceed_the_next_reader_limit(self):
+        with patch.object(deployment, 'MAX_DEPLOYMENT_BYTES', 100), self.assertRaisesRegex(ValueError, 'readable size limit'):
+            deployment.deployment_plan(self.output, self.report, self.built, previous=self.live)
+        self.assertFalse((self.output / 'deployment.json').exists())
+
     def test_failed_translations_preserve_previous_manifest_and_healthy_recovery_works(self):
         (self.output / 'af.html').write_text('<h1>Afrikaans</h1>')
         ready = deployment.deployment_plan(self.output, self.report, self.built, previous=self.live)
@@ -136,6 +141,62 @@ class DeploymentTests(unittest.TestCase):
                 deployment.deployment_plan(self.output, self.report, self.built, previous=previous, force=force)
             fingerprint.assert_not_called()
             self.assertEqual((self.output / 'deployment.json').read_bytes(), original)
+
+    def retained_ledger(self):
+        from retention import ledger_digest
+        value = {'schema': 1, 'english_sources': {self.article_id: 'b' * 40},
+                 'images': {'en': {self.article_id: {}}, 'af': {}}, 'aliases': {}}
+        value['sha256'] = ledger_digest(value)
+        return value
+
+    def test_verified_retention_ledger_is_packaged_and_required_after_first_publication(self):
+        self.built['retention'] = self.retained_ledger()
+        first = deployment.deployment_plan(self.output, self.report, self.built, previous=self.live)
+        self.assertEqual(first['retention'], self.built['retention'])
+        self.assertFalse(deployment.deployment_plan(self.output, self.report, self.built, previous=first)['changed'])
+        del self.built['retention']
+        with patch.object(deployment, 'display_fingerprint') as fingerprint, self.assertRaisesRegex(ValueError, 'provenance is missing'):
+            deployment.deployment_plan(self.output, self.report, self.built, previous=first, force=True)
+        fingerprint.assert_not_called()
+
+    def test_incomplete_or_tampered_ledger_fails_before_fingerprinting(self):
+        ledger = self.retained_ledger()
+        for broken in ({}, {**ledger, 'sha256': '0' * 64}, {**ledger, 'english_sources': {}}):
+            self.built['retention'] = broken
+            with self.subTest(ledger=broken), patch.object(deployment, 'display_fingerprint') as fingerprint, self.assertRaises(ValueError):
+                deployment.deployment_plan(self.output, self.report, self.built, previous=self.live, force=True)
+            fingerprint.assert_not_called()
+            self.assertFalse((self.output / 'deployment.json').exists())
+
+    def test_retained_asset_missing_changed_or_symlinked_blocks_publication(self):
+        import hashlib
+        from retention import ledger_digest
+        ledger = self.retained_ledger()
+        original = '/images/articles/source.png'
+        raw = b'previously published image'
+        target = '/images/articles/retained/' + hashlib.sha256(raw).hexdigest() + '/source.png'
+        ledger['images']['en'][self.article_id][original] = {
+            'revision': 'b' * 40, 'repository_path': 'public' + original,
+            'sha256': hashlib.sha256(raw).hexdigest(), 'public_path': target}
+        ledger['sha256'] = ledger_digest(ledger)
+        self.built['retention'] = ledger
+        file = self.output / target.lstrip('/')
+        for state in ('missing', 'changed', 'symlink'):
+            if file.exists() or file.is_symlink():
+                file.unlink()
+            file.parent.mkdir(parents=True, exist_ok=True)
+            if state == 'changed':
+                file.write_bytes(b'replacement')
+            elif state == 'symlink':
+                other = self.output / 'other.png'
+                other.write_bytes(raw)
+                file.symlink_to(other)
+            with self.subTest(state=state), patch.object(deployment, 'display_fingerprint') as fingerprint, self.assertRaises(ValueError):
+                deployment.deployment_plan(self.output, self.report, self.built, previous=self.live)
+            fingerprint.assert_not_called()
+        file.unlink()
+        file.write_bytes(raw)
+        self.assertTrue(deployment.deployment_plan(self.output, self.report, self.built, previous=self.live)['changed'])
 
     def test_manual_cli_requires_live_inventory_and_cannot_bootstrap_from_missing_live_state(self):
         source_file, build_file, plan, migration = (self.output / name for name in

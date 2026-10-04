@@ -113,7 +113,11 @@
     "author_no_articles": "Bado hakuna makala za mwandishi huyu zinazopatikana katika lugha hii.",
     "author_read_english": "Soma makala za mwandishi huyu kwa Kiingereza",
     "no_authors": "Bado hakuna waandishi wenye majina yaliyorekodiwa.",
-    "review_translation": "Kagua tafsiri hii kwenye GitHub"
+    "review_translation": "Kagua tafsiri hii kwenye GitHub",
+    "retained_english": "Makala hii ya Kiingereza imehifadhiwa katika toleo lake la mwisho lililochapishwa.",
+    "retained_translation_stale": "Maandishi asili ya Kiingereza yamebadilika. Tafsiri hii iliyochapishwa awali bado inapatikana.",
+    "retained_translation_removed": "Tafsiri hii iliyochapishwa imehifadhiwa pamoja na chanzo chake cha Kiingereza kilichorekodiwa.",
+    "retained_source_link": "Tazama toleo la asili la chanzo"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

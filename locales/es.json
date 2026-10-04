@@ -113,7 +113,11 @@
     "author_no_articles": "Todavía no hay artículos de este autor disponibles en este idioma.",
     "author_read_english": "Leer los artículos de este autor en inglés",
     "no_authors": "Todavía no hay autores con nombre registrado disponibles.",
-    "review_translation": "Revisar esta traducción en GitHub"
+    "review_translation": "Revisar esta traducción en GitHub",
+    "retained_english": "Este artículo en inglés se conserva en su última versión publicada.",
+    "retained_translation_stale": "El original en inglés ha cambiado. Esta traducción ya publicada sigue disponible.",
+    "retained_translation_removed": "Esta traducción publicada se conserva junto con su fuente original en inglés registrada.",
+    "retained_source_link": "Ver la versión original de la fuente"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

@@ -158,6 +158,9 @@ jobs:
                       evidence = json.loads(Path(path).read_text())
                       if 'article_inventory' in evidence:
                           evidence['article_counts'] = {tag: len(ids) for tag, ids in evidence.pop('article_inventory').items()}
+                      if 'retention' in evidence:
+                          retained = evidence.pop('retention')
+                          evidence['retention_summary'] = {'sha256': retained['sha256'], 'english_articles': len(retained['english_sources']), 'image_references': sum(len(images) for articles in retained['images'].values() for images in articles.values())}
                       summary.write(json.dumps(evidence, indent=2) + '\n```\n\n')
               if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
                   summary.write('Pull-request validation: output is review-only; no production deployment.\n')

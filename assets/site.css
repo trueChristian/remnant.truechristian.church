@@ -196,6 +196,9 @@ button:disabled { cursor: default; opacity: .55; }
 .prose td,.prose th { border: 1px solid var(--line); padding: 10px; }
 .prose aside { font-size: 13px; line-height: 1.85; padding: 22px 25px; background: var(--surface); border-inline-start: 3px solid var(--accent); margin-bottom: 34px; }
 .prose aside p:last-child { margin-bottom: 0; }
+.retention-note { padding: 18px 22px; margin-block-end: 28px; border: 1px solid var(--line); border-inline-start: 3px solid var(--accent); background: var(--surface); font-size: 13px; line-height: 1.8; }
+.retention-note p { margin: 0; }
+.retention-note a { text-decoration: underline; text-underline-offset: 3px; }
 .image-credits { list-style: none; padding: 20px 0; font-size: 10px; color: var(--muted); border-top: 1px solid var(--line); }
 .image-credits li { margin-bottom: 10px; }
 .article-citation { margin-top: 40px; padding: 26px; background: var(--surface); }

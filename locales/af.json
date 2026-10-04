@@ -113,7 +113,11 @@
     "author_no_articles": "Geen van hierdie skrywer se artikels is nog in hierdie taal beskikbaar nie.",
     "author_read_english": "Lees hierdie skrywer se artikels in Engels",
     "no_authors": "Daar is nog geen skrywers met aangetekende name beskikbaar nie.",
-    "review_translation": "Hersien hierdie vertaling op GitHub"
+    "review_translation": "Hersien hierdie vertaling op GitHub",
+    "retained_english": "Hierdie Engelse artikel word in sy laaste gepubliseerde weergawe bewaar.",
+    "retained_translation_stale": "Die Engelse bronteks het verander. Hierdie reeds gepubliseerde vertaling bly beskikbaar.",
+    "retained_translation_removed": "Hierdie gepubliseerde vertaling word saam met die aangetekende Engelse bronteks bewaar.",
+    "retained_source_link": "Bekyk die oorspronklike bronweergawe"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

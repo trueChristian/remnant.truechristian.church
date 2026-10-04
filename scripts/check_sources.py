@@ -9,12 +9,15 @@ from pathlib import Path
 from content import load_content
 from deployment import live_deployment, validated_source_revisions
 from publication_inventory import assert_retains, baseline_inventory, validate_inventory
+from retention import PublicationRetention
 
 
 def check_inputs(source_report: dict, english: Path, translations: Path, languages: Path,
-                 *, previous: dict | None, migration_snapshot: dict | None = None) -> dict:
+                 *, previous: dict | None, migration_snapshot: dict | None = None, retention=None) -> dict:
     revisions = validated_source_revisions(source_report)
-    model = load_content(english, translations, strict_translations=True, language_registry=languages)
+    retained = retention or PublicationRetention(previous, migration_snapshot, current_root=english,
+        current_revision=revisions['english'], cache_dir=english.parent / 'retention-cache', source_revisions=revisions)
+    model = load_content(english, translations, strict_translations=True, language_registry=languages, retention=retained)
     if (model['translation_status'] != 'ready' or model['source_revision'] != revisions['english']
             or model['translation_revision'] != revisions['translations']):
         raise ValueError('Refusing site build: exported content does not match the selected healthy source revisions')
@@ -34,14 +37,20 @@ def main() -> None:
     parser.add_argument('--languages', type=Path, default=Path('.build/languages.json'))
     parser.add_argument('--migration-baseline', type=Path,
                         default=Path(__file__).resolve().parents[1] / 'data/publication-baseline.json')
+    parser.add_argument('--retention-context', type=Path, default=Path('.build/retention-context.json'))
     args = parser.parse_args()
     sources = json.loads(args.source_report.read_text())
     validated_source_revisions(sources)  # Stop before even reading an unusable export.
     previous = live_deployment(fresh=True)
     migration = (json.loads(args.migration_baseline.read_text())
                  if isinstance(previous, dict) and 'article_inventory' not in previous else None)
-    print(json.dumps(check_inputs(sources, args.english, args.translations, args.languages,
-                                  previous=previous, migration_snapshot=migration), indent=2))
+    result = check_inputs(sources, args.english, args.translations, args.languages,
+                          previous=previous, migration_snapshot=migration)
+    context = {'schema': 1, 'source_revisions': result['revisions'], 'baseline': previous,
+               'migration_snapshot': migration}
+    args.retention_context.parent.mkdir(parents=True, exist_ok=True)
+    args.retention_context.write_text(json.dumps(context, ensure_ascii=False, indent=2) + '\n')
+    print(json.dumps(result, indent=2))
 
 
 if __name__ == '__main__':

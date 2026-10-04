@@ -17,6 +17,12 @@ class MarkdownTests(unittest.TestCase):
         notice = '<aside data-translation-notice="ai" lang="af">\n  <p>Presiese kennisgewing.</p>\n\n\n  <a href="/en/articles/id/">Engels</a>\n</aside>'
         self.assertIn(notice, html_to_markdown('<article><p>Body</p></article>' + notice))
 
+    def test_notice_source_offsets_preserve_non_lf_separators(self):
+        notice = '<aside data-translation-notice="human-reviewed"><p>Exact reviewed notice.</p></aside>'
+        for separator in ('\r', '\u2028', '\u2029', '\v', '\f', '\x85'):
+            with self.subTest(separator=repr(separator)):
+                self.assertIn(notice, html_to_markdown('<article><p>First' + separator + 'line</p></article>\n' + notice))
+
     def test_tables_spans_underline_superscripts_and_typed_lists_preserved(self):
         for fragment in ['<table><tr><th colspan="2">Title</th></tr><tr><td>A</td><td>B</td></tr></table>', '<u>Underlined</u>', '<sup>1</sup>', '<ol type="i"><li>First</li><li>Second</li></ol>', '<h2 id="footnotes">Notes</h2>', '<pre>A\n\n\n  B</pre>']:
             self.assertIn(fragment, html_to_markdown('<article>' + fragment + '</article>'))
@@ -75,7 +81,9 @@ class MarkdownTests(unittest.TestCase):
         english = Path('.build/english')
         if not english.exists():
             self.skipTest('Optional real-export verification; fixture tests always run')
-        model = load_content(english, Path('.build/translations'))
+        from scripts.retention import load_retention_context
+        model = load_content(english, Path('.build/translations'), strict_translations=True,
+                             retention=load_retention_context(english))
         for locale, articles in model['articles'].items():
             for article in articles:
                 with self.subTest(locale=locale, article=article['id']):

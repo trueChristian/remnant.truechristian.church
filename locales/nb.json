@@ -113,7 +113,11 @@
     "author_no_articles": "Ingen av denne forfatterens artikler er tilgjengelige på dette språket ennå.",
     "author_read_english": "Les denne forfatterens artikler på engelsk",
     "no_authors": "Ingen navngitte forfattere er tilgjengelige ennå.",
-    "review_translation": "Se gjennom denne oversettelsen på GitHub"
+    "review_translation": "Se gjennom denne oversettelsen på GitHub",
+    "retained_english": "Denne engelske artikkelen bevares i sin sist publiserte versjon.",
+    "retained_translation_stale": "Den engelske kildeteksten er endret. Denne tidligere publiserte oversettelsen er fortsatt tilgjengelig.",
+    "retained_translation_removed": "Denne publiserte oversettelsen bevares sammen med den registrerte engelske kilden.",
+    "retained_source_link": "Se den opprinnelige kildeversjonen"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

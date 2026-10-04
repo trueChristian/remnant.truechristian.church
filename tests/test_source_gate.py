@@ -146,7 +146,7 @@ class SourceGateTests(unittest.TestCase):
             with self.subTest(source=source):
                 report = copy.deepcopy(self.report)
                 report['sources'][source]['revision'] = 'f' * 40
-                with self.assertRaisesRegex(ValueError, 'selected healthy source revisions'):
+                with self.assertRaisesRegex(ValueError, 'selected healthy source revisions|different .*revision'):
                     check_sources.check_inputs(report, self.english, self.translations,
                                                self.languages, previous=self.live)
 
@@ -196,12 +196,13 @@ class SourceGateTests(unittest.TestCase):
         result = self.check()
         self.assertEqual(result['article_counts'], {'en': 2, 'af': 2, 'ja': 0})
 
-    def test_healthy_cli_uses_fresh_baseline_and_prints_readiness_without_output_files(self):
+    def test_healthy_cli_records_private_context_without_generating_site_pages(self):
         report_path = self.root / 'source-report.json'
         write_json(report_path, self.report)
         argv = ['check_sources.py', '--source-report', str(report_path),
                 '--english', str(self.english), '--translations', str(self.translations),
                 '--languages', str(self.languages),
+                '--retention-context', str(self.root / 'retention-context.json'),
                 '--migration-baseline', str(self.root / 'unused-baseline.json')]
         before = inventory(self.root)
         with patch.object(sys, 'argv', argv), \
@@ -211,7 +212,9 @@ class SourceGateTests(unittest.TestCase):
             fetch.assert_called_once_with(fresh=True)
             self.assertEqual(json.loads(stdout.getvalue())['article_counts'],
                              {'en': 1, 'af': 1, 'ja': 0})
-        self.assertEqual(inventory(self.root), before)
+        after = inventory(self.root)
+        after.pop('retention-context.json')
+        self.assertEqual(after, before)
 
 
 if __name__ == '__main__':

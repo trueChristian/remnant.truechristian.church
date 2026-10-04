@@ -113,7 +113,11 @@
     "author_no_articles": "Inga av den här författarens artiklar finns ännu på detta språk.",
     "author_read_english": "Läs den här författarens artiklar på engelska",
     "no_authors": "Det finns ännu inga namngivna författare.",
-    "review_translation": "Granska den här översättningen på GitHub"
+    "review_translation": "Granska den här översättningen på GitHub",
+    "retained_english": "Den här engelska artikeln bevaras i sin senast publicerade version.",
+    "retained_translation_stale": "Den engelska källtexten har ändrats. Den här tidigare publicerade översättningen finns fortfarande tillgänglig.",
+    "retained_translation_removed": "Den här publicerade översättningen bevaras tillsammans med den dokumenterade engelska källan.",
+    "retained_source_link": "Visa den ursprungliga källversionen"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {

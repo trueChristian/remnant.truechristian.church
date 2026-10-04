@@ -79,13 +79,14 @@ class Site:
         self.authors = build_author_index(model, aliases=routes.get('author_aliases'))
         self.author_map = {author['id']: author for author in self.authors}
         self.article_authors = defaultdict(list)
-        for author in self.authors:
-            for identity in author['article_ids']:
-                self.article_authors[identity].append(author)
+        for tag in locales:
+            for author in build_author_index(model, aliases=routes.get('author_aliases'), locale=tag):
+                for identity in author['article_ids']:
+                    self.article_authors[(tag, identity)].append(self.author_map[author['id']])
         self.author_articles = {tag: {author['id']: [] for author in self.authors} for tag in locales}
         for tag in locales:
             for article in self.articles[tag]:
-                for author in self.article_authors[article['id']]:
+                for author in self.article_authors[(tag, article['id'])]:
                     self.author_articles[tag][author['id']].append(article)
         self.footer_template = (theme / 'src/html/site-footer.html').read_text()
         self.sitemap = []
@@ -178,11 +179,11 @@ class Site:
         doc_title = f'{title} · {BRAND}' if title != BRAND else BRAND
         structured = ''
         if article:
-            issue = self.issue_map[article['issue_id']]
+            issue = article.get('issue') or self.issue_map[article['issue_id']]
             data = {'@context':'https://schema.org','@type':'Article','headline':title,'inLanguage':tag,'url':ORIGIN+route,'isPartOf':{'@type':'PublicationIssue','name':f"{issue['publication']} · {issue_date(issue,locale)}",'url':ORIGIN+self.issue_url(tag,issue['id'])}}
             recorded_byline = article.get('source_metadata', article).get('byline')
-            if self.article_authors[article['id']]:
-                data['author'] = [{'@type':'Person', 'name':author['name'], 'url':ORIGIN+self.author_url(tag,author['id'])} for author in self.article_authors[article['id']]]
+            if self.article_authors[(tag, article['id'])]:
+                data['author'] = [{'@type':'Person', 'name':author['name'], 'url':ORIGIN+self.author_url(tag,author['id'])} for author in self.article_authors[(tag, article['id'])]]
             elif author_of(article) and not (isinstance(recorded_byline, dict) and recorded_byline.get('authors')):
                 # A role-only structured credit does not identify a Person.
                 data['author'] = {'@type':'Person','name':author_of(article)}
@@ -229,7 +230,7 @@ class Site:
     def byline_html(self, tag, article):
         """Link recorded names without rewriting the publication's raw byline."""
         raw = author_of(article)
-        authors = self.article_authors[article['id']]
+        authors = self.article_authors[(tag, article['id'])]
         if not authors:
             return esc(raw)
         names = {name: author for author in authors
@@ -286,7 +287,7 @@ class Site:
                 body += f'<section class="author-works"><h2>{esc(self.ui(tag,"articles"))}</h2><ol class="author-articles">'
                 for article in articles[(number-1)*PAGE_SIZE:number*PAGE_SIZE]:
                     category = article_categories(article)[0]
-                    issue = self.issue_map[article['issue_id']]
+                    issue = article.get('issue') or self.issue_map[article['issue_id']]
                     body += f'<li><div class="card-meta"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)["name"])}</a><a href="{esc(self.issue_url(tag,issue["id"]))}">{esc(issue_date(issue,self.locales[tag]))}</a></div><h2><a href="{esc(article["url"])}">{esc(self.title(tag,article))}</a></h2><p>{esc(article.get("excerpt",""))}</p><p class="author-article-byline">{self.byline_html(tag,article)}</p></li>'
                 body += '</ol></section>'
             else:
@@ -334,7 +335,7 @@ class Site:
 
     def card(self, tag, article, *, large=False, eager=False, number=None):
         category = self.category(tag, article_categories(article)[0])
-        issue = self.issue_map[article['issue_id']]
+        issue = article.get('issue') or self.issue_map[article['issue_id']]
         return f'''<article class="article-card{(' article-card--lead' if large else '')}"><a class="article-card__image" href="{esc(article['url'])}" tabindex="-1" aria-hidden="true">{self.image_markup(article,eager=eager)}</a><div class="article-card__body"><div class="card-meta"><span class="eyebrow">{esc(category['name'])}</span><span>{esc(issue_date(issue,self.locales[tag]))}</span></div><h{('2' if large else '3')}><a href="{esc(article['url'])}">{esc(self.title(tag,article))}</a></h{('2' if large else '3')}><p>{esc(article.get('excerpt',''))}</p><div class="card-bottom"><span>{self.byline_html(tag,article)}</span><a class="card-arrow" href="{esc(article['url'])}" aria-label="{esc(self.ui(tag,'read_article'))}: {esc(self.title(tag,article))}"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></a></div></div></article>'''
 
     def issue_cover(self, tag, issue, *, small=False):
@@ -499,7 +500,7 @@ class Site:
         self.page(tag,self.issue_url(tag,issue['id']),title,body,paths=self.localized_paths('issue',issue['id']),current='issues')
 
     def article_page(self,tag,article):
-        issue = self.issue_map[article['issue_id']]
+        issue = article.get('issue') or self.issue_map[article['issue_id']]
         category = article_categories(article)[0]
         title = self.title(tag,article)
         minutes = max(1,round(len(article.get('text','').split())/200))
@@ -512,11 +513,19 @@ class Site:
                 credit_items.append(f'<li>{esc(image.get("alt") or image.get("public_path"))} · {esc(image["credit"])}</li>')
         credit_html = '<ul class="image-credits">' + ''.join(credit_items) + '</ul>' if credit_items else ''
         display_html = self.canonical_article_links(self.scripture.render(tag,article) if self.scripture else article['html'])
+        retained_notice = ''
+        if article.get('retention'):
+            retained = article['retention']
+            key = 'retained_english' if tag == 'en' else ('retained_translation_stale' if retained['status'] == 'stale' else 'retained_translation_removed')
+            source_url = f"https://github.com/trueChristian/berean-voice/blob/{retained['source_revision']}/content/articles/{article['id']}.html"
+            note = {'text': self.ui(tag, key), 'source_label': self.ui(tag, 'retained_source_link'), 'source_url': source_url}
+            article['retained_notice'] = note
+            retained_notice = f'<aside class="retention-note" data-retained-publication="{esc(retained["status"])}"><p>{esc(note["text"])} <a href="{esc(source_url)}">{esc(note["source_label"])}</a></p></aside>'
         review_link = ''
         if tag != 'en':
             review_url = f"https://github.com/trueChristian/berean-translation/edit/main/content/{self.locales[tag]['meta']['code']}/articles/{article['id']}.html"
             review_link = f'<p class="translation-review"><a class="text-link" data-review-translation href="{esc(review_url)}">{esc(self.ui(tag,"review_translation"))}</a></p>'
-        body = f'''<div class="tcc-container article-shell">{self.breadcrumb(tag,[(self.category(tag,category)['name'],self.category_url(tag,category)),(title,None)])}<header class="article-heading"><p class="eyebrow"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)['name'])}</a></p><h1>{esc(title)}</h1>{subtitle}<div class="article-byline"><span>{self.byline_html(tag,article)}</span><span>{esc(self.ui(tag,'minutes',count=minutes))}</span></div><a class="article-issue" href="{esc(self.issue_url(tag,issue['id']))}"><span class="mini-book" aria-hidden="true">R</span><span><small>{esc(self.ui(tag,'original_issue'))}</small>{esc(issue['publication'])} · {esc(self.issue_identity(tag,issue))}</span><span aria-hidden="true"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></header><div class="reading-layout"><aside class="reading-rail"><p class="eyebrow">{esc(self.ui(tag,'magazine'))}</p><a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue_date(issue,self.locales[tag]))}</a><p>{esc(self.ui(tag,'source_pages'))} {esc(pages)}</p><a href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a></aside><div class="reading-main"><div class="prose">{display_html}</div>{credit_html}<section class="article-citation"><h2>{esc(self.ui(tag,'citation'))}</h2><p>{esc(title)}. {esc(byline)}. <a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue['publication'])}, {esc(self.issue_identity(tag,issue))}</a>{('. '+esc(self.ui(tag,'source_pages'))+' '+esc(pages) if pages else '')}.</p><p>{esc(issue.get('publisher',''))}</p></section><section class="reader-tools"><a class="button button--quiet" href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a><button class="button enhanced-only" type="button" data-copy-markdown="{esc(article['markdown_url'])}">{esc(self.ui(tag,'copy_markdown'))}</button><p role="status" id="copy-status"></p><div id="markdown-fallback" hidden><label for="markdown-text">{esc(self.ui(tag,'copy_fallback'))}</label><textarea id="markdown-text" readonly rows="12"></textarea></div></section>{review_link}</div></div></div>'''
+        body = f'''<div class="tcc-container article-shell">{self.breadcrumb(tag,[(self.category(tag,category)['name'],self.category_url(tag,category)),(title,None)])}<header class="article-heading"><p class="eyebrow"><a href="{esc(self.category_url(tag,category))}">{esc(self.category(tag,category)['name'])}</a></p><h1>{esc(title)}</h1>{subtitle}<div class="article-byline"><span>{self.byline_html(tag,article)}</span><span>{esc(self.ui(tag,'minutes',count=minutes))}</span></div><a class="article-issue" href="{esc(self.issue_url(tag,issue['id']))}"><span class="mini-book" aria-hidden="true">R</span><span><small>{esc(self.ui(tag,'original_issue'))}</small>{esc(issue['publication'])} · {esc(self.issue_identity(tag,issue))}</span><span aria-hidden="true"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg></span></a></header><div class="reading-layout"><aside class="reading-rail"><p class="eyebrow">{esc(self.ui(tag,'magazine'))}</p><a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue_date(issue,self.locales[tag]))}</a><p>{esc(self.ui(tag,'source_pages'))} {esc(pages)}</p><a href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a></aside><div class="reading-main">{retained_notice}<div class="prose">{display_html}</div>{credit_html}<section class="article-citation"><h2>{esc(self.ui(tag,'citation'))}</h2><p>{esc(title)}. {esc(byline)}. <a href="{esc(self.issue_url(tag,issue['id']))}">{esc(issue['publication'])}, {esc(self.issue_identity(tag,issue))}</a>{('. '+esc(self.ui(tag,'source_pages'))+' '+esc(pages) if pages else '')}.</p><p>{esc(issue.get('publisher',''))}</p></section><section class="reader-tools"><a class="button button--quiet" href="{esc(article['markdown_url'])}" download>{esc(self.ui(tag,'download_markdown'))} ↓</a><button class="button enhanced-only" type="button" data-copy-markdown="{esc(article['markdown_url'])}">{esc(self.ui(tag,'copy_markdown'))}</button><p role="status" id="copy-status"></p><div id="markdown-fallback" hidden><label for="markdown-text">{esc(self.ui(tag,'copy_fallback'))}</label><textarea id="markdown-text" readonly rows="12"></textarea></div></section>{review_link}</div></div></div>'''
         related = [a for a in self.articles[tag] if a['issue_id']==article['issue_id'] and a['id']!=article['id']][:3]
         if related:
             body += f'<section class="tcc-container page-section">{self.section_heading(tag,"related_articles",self.issue_url(tag,issue["id"]),"read_issue")}<div class="article-grid">'+''.join(self.card(tag,a) for a in related)+'</div></section>'
@@ -547,9 +556,9 @@ class Site:
         for article in self.articles[tag]:
             category_ids = article_categories(article)
             topics = [self.topic_map.get(topic,{}).get('name','') if isinstance(topic,str) else topic.get('name','') for topic in article.get('topics',[])]
-            issue = self.issue_map[article['issue_id']]
+            issue = article.get('issue') or self.issue_map[article['issue_id']]
             authors = [{'name':author['name'],'url':self.author_url(tag,author['id']),
-                        'aliases':author['source_names']} for author in self.article_authors[article['id']]]
+                        'aliases':author['source_names']} for author in self.article_authors[(tag, article['id'])]]
             records.append({'id':article['id'],'title':self.title(tag,article),'url':article['url'],'body':article['text'],'categories':[self.category(tag,c)['name'] for c in category_ids if c],'category_ids':category_ids,'topics':topics,'issue':' · '.join([issue['publication'],self.issue_identity(tag,issue),issue.get('publisher','')]),'issue_id':issue['id'],'author':author_of(article),'authors':authors})
         value = json.dumps(records,ensure_ascii=False,separators=(',',':'))
         self.write(f'/{tag}/search-index.json',value)
@@ -567,7 +576,8 @@ class Site:
             ET.SubElement(item,'link').text = ORIGIN+article['url']
             ET.SubElement(item,'guid',isPermaLink='false').text = f'urn:remnant:{tag}:{article["id"]}'
             ET.SubElement(item,'description').text = article.get('excerpt','')
-            ET.SubElement(item,'source',url=ORIGIN+self.issue_url(tag,article['issue_id'])).text = self.issue_map[article['issue_id']]['publication']+' · '+issue_date(self.issue_map[article['issue_id']],self.locales[tag])
+            issue = article.get('issue') or self.issue_map[article['issue_id']]
+            ET.SubElement(item,'source',url=ORIGIN+self.issue_url(tag,article['issue_id'])).text = issue['publication']+' · '+issue_date(issue,self.locales[tag])
         self.write(f'/{tag}/feed.xml',ET.tostring(root,encoding='unicode',xml_declaration=True))
 
     def redirect(self,path,destination):
@@ -634,6 +644,7 @@ class Site:
         self.write('/sitemap.xml',sitemap+'</urlset>')
 
 def main():
+    from retention import load_retention_context, copy_retained_assets
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--english',type=Path,default=ROOT/'.build/english')
     parser.add_argument('--translations',type=Path,default=ROOT/'.build/translations')
@@ -647,7 +658,8 @@ def main():
     args = parser.parse_args()
     if args.output.exists() and any(args.output.iterdir()):
         parser.error('Output must be empty. Remove your previous generated dist explicitly before building.')
-    model = load_content(args.english,None if args.english_only else args.translations, language_registry=args.languages if args.languages.exists() else None)
+    retained = None if args.english_only else load_retention_context(args.english, site_revision=git_revision(ROOT))
+    model = load_content(args.english,None if args.english_only else args.translations, language_registry=args.languages if args.languages.exists() else None, retention=retained)
     locales = load_locales(args.locales)
     validate_locales(locales,registry=model['languages'],categories=model['categories'])
     routes = initialize_routes(model,locales,args.registry,update=args.update_routes)
@@ -661,7 +673,11 @@ def main():
     images = args.english/'images'
     if not images.exists():
         images = args.english/'public/images'
-    shutil.copytree(images,args.output/'images')
+    if images.is_dir():
+        shutil.copytree(images,args.output/'images')
+    else:
+        (args.output/'images').mkdir(parents=True, exist_ok=True)
+    copy_retained_assets(args.output, model.get('retained_asset_copies', []))
     if (ROOT/'public/covers').is_dir():
         shutil.copytree(ROOT/'public/covers',args.output/'covers')
     covers = json.loads((ROOT/'data/covers.json').read_text())
@@ -672,6 +688,8 @@ def main():
     scripture.save(args.output)
     report = {'site_revision':git_revision(ROOT),'theme_revision':git_revision(args.theme),'source':{key:model.get(key) for key in ['source_revision','translation_revision','translation_status','translation_omissions']},'warnings':model.get('warnings',[]),'scripture':scripture.report,'article_counts':{tag:len(articles) for tag,articles in site.articles.items()},'issues':len(site.issues),'publisher_pdfs':{'linked':len(site.issue_pdfs),'unmapped':[issue['id'] for issue in site.issues if issue['id'] not in site.issue_pdfs]},'categories':len(site.categories),'authors':len(site.authors),'search':site.search_sizes,'html_pages':len(site.html_sizes),'largest_html':sorted(site.html_sizes,key=lambda x:x[1],reverse=True)[:10],'route_additions':len(routes.get('pending',[]))}
     (ROOT/'.build').mkdir(exist_ok=True)
+    if retained:
+        report['retention'] = model['retention']
     (ROOT/'.build/site-build-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({key:report[key] for key in ['article_counts','issues','categories','html_pages','warnings']},ensure_ascii=False,indent=2))
 

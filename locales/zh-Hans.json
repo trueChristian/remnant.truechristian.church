@@ -113,7 +113,11 @@
     "author_no_articles": "这位作者的文章尚无此语言版本。",
     "author_read_english": "阅读这位作者的英文文章",
     "no_authors": "目前尚无有署名的作者。",
-    "review_translation": "在 GitHub 上审阅此译文"
+    "review_translation": "在 GitHub 上审阅此译文",
+    "retained_english": "这篇英文文章保留为其最近一次发表的版本。",
+    "retained_translation_stale": "英文原文已更改。此前发表的译文仍予以保留。",
+    "retained_translation_removed": "此译文与其记录的英文原文一并保留。",
+    "retained_source_link": "查看原始来源版本"
   },
   "categories": {
     "1c75ca28-4f99-5339-b594-085359f81d18": {
