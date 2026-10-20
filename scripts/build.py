@@ -17,6 +17,7 @@ from xml.etree import ElementTree as ET
 
 from content import load_content, ordered_issues
 from authors import build_author_index, DETAIL_FIELDS
+from article_figures import arrange_article_figures, load_figure_rules
 from publisher import issue_pdf_links, PUBLISHER_URL
 from routes import initialize_routes
 from markdown import generate_markdown
@@ -65,6 +66,7 @@ class Site:
     def __init__(self, model, locales, routes, theme, output, covers, scripture=None):
         self.scripture = scripture
         self.scripture_ui = json.loads((ROOT/"data/scripture-ui.json").read_text()) if scripture else {}
+        self.figure_rules = load_figure_rules(ROOT / 'data/article-image-layouts.json')
         self.model, self.locales, self.routes = model, locales, routes
         self.theme, self.output, self.covers = theme, output, covers
         self.issues = ordered_issues(model)
@@ -516,6 +518,7 @@ class Site:
                 credit_items.append(f'<li>{esc(image.get("alt") or image.get("public_path"))} · {esc(image["credit"])}</li>')
         credit_html = '<ul class="image-credits">' + ''.join(credit_items) + '</ul>' if credit_items else ''
         display_html = self.canonical_article_links(self.scripture.render(tag,article) if self.scripture else article['html'])
+        display_html = arrange_article_figures(display_html, self.figure_rules)
         retained_notice = ''
         if article.get('retention'):
             retained = article['retention']

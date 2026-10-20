@@ -888,6 +888,8 @@ class SiteChecker:
 
     def check_content(self, model, locales, routes):
         from publisher import issue_pdf_links, PUBLISHER_URL
+        from article_figures import arrange_article_figures, load_figure_rules
+        figure_rules = load_figure_rules(ROOT / 'data/article-image-layouts.json')
         publisher_pdfs = issue_pdf_links(model['issues'])
         """Compare output against the validated exports, never hard-coded counts."""
         from content import ordered_issues
@@ -984,15 +986,18 @@ class SiteChecker:
                     continue
                 article_file = self.output / article['url'].lstrip('/') / 'index.html'
                 from scripture import strip_markers
-                # The sole permitted source-HTML change replaces legacy English
-                # UUID links with their saved readable canonicals. Keep this
-                # expectation independent of the generator implementation.
+                # Permit only canonical English links and the reviewed reader
+                # layout transform (static galleries and named split panels).
+                # Compare the entire exact fragment after these operations;
+                # changed text, image attributes, captions or notices still fail.
+                # Markdown continues to use the unarranged source fragment.
                 def canonical_source_link(match):
                     identity = match.group(2)
                     if identity not in english:
                         return match.group(0)
                     return 'href=' + match.group(1) + escape(english[identity]['url'], quote=True) + match.group(1)
                 expected_html = re.sub(r'href=([\'\"])/en/articles/([a-f0-9-]{36})/\1', canonical_source_link, article['html'])
+                expected_html = arrange_article_figures(expected_html, figure_rules)
                 if expected_html not in strip_markers(article_file.read_text(encoding='utf-8')):
                     self.error(f'{article["url"]}: original exported HTML/notice was changed')
                 if page.h1 != normalized_text(article.get('title') or locale['ui']['untitled_article']):

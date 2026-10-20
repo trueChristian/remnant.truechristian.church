@@ -186,7 +186,10 @@ button:disabled { cursor: default; opacity: .55; }
 .prose strong { font-weight: 600; }
 .prose a { color: var(--accent-ink); text-decoration: underline; }
 .prose .lead { font-size: 20px; line-height: 1.9; }
-.prose .drop-cap { float: inline-start; font-size: 64px; line-height: 1; padding-inline-end: 8px; padding-top: 8px; font-family: var(--tcc-font-display); }
+.prose span.drop-cap,
+.prose p.drop-cap::first-letter { float: inline-start; font-size: 64px; line-height: 1; padding-inline-end: 8px; padding-top: 8px; font-family: var(--tcc-font-display); }
+/* Connected scripts must not have their opening glyph detached from the word. */
+.prose p.drop-cap:is(:lang(ar), :lang(ur), :lang(bn), :lang(hi))::first-letter { float: none; font: inherit; padding: 0; }
 .prose figure { margin: 35px 0; }
 .prose img { max-height: 760px; width: auto; max-width: 100%; margin-inline: auto; object-fit: contain; }
 .prose figcaption { font-size: 12px; color: var(--muted); text-align: center; padding-top: 13px; line-height: 1.7; }

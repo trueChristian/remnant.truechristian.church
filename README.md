@@ -42,6 +42,7 @@ Visit `http://localhost:8080/en/`. `dist/` is disposable generated output and is
 - [Author directories, reviewed name aliases and multilingual article lists](docs/authors.md)
 - [Source adapters, route persistence and Markdown](docs/source-adapter.md)
 - [Complete dictionaries and truthful date formatting](docs/localization.md)
+- [Article image arrangements and reviewed artwork pairs](docs/article-images.md)
 - [Visual identity, accessibility and performance](docs/design-and-quality.md)
 - [Build workflows, publication and recovery](docs/operations.md)
 

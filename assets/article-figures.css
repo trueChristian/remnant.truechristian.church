@@ -1,10 +1,55 @@
-/* Progressive article-only enhancement. No script, narrow screens, and print stay stacked. */
+/* Static photo groups work without JavaScript; wrapping is an optional enhancement. */
 .prose .article-figures,
 .prose .article-figure-section { display: flow-root; }
 
+.prose .article-figures img { display: block; height: auto; }
+.prose .article-figure--standalone img { max-height: none; }
+
+/* Each original figure keeps its own caption. Images retain their full aspect ratio
+   and are never cropped or enlarged beyond their source dimensions. */
+.prose .article-gallery,
+.prose .article-gallery__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  align-items: start;
+  gap: 1.5rem;
+  clear: both;
+  margin-block: 2rem;
+}
+.prose .article-gallery > figure {
+  min-width: 0;
+  margin: 0;
+  float: none;
+}
+.prose .article-gallery__images { margin: 0; }
+.prose :is(.article-gallery, .article-gallery__images) img {
+  max-width: 100%;
+  max-height: 24rem;
+  width: auto;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+.prose .article-gallery figcaption { overflow-wrap: anywhere; }
+
+/* Reviewed split artwork is one composition: keep its physical left/right order
+   in every language, including mobile and print. Captions retain text direction. */
+.prose .article-gallery--paired {
+  --article-pair-gap: clamp(.5rem, 2vw, 1.5rem);
+  grid-template-columns: var(--article-pair-columns, repeat(2, minmax(0, 1fr)));
+  direction: ltr;
+  gap: var(--article-pair-gap);
+  align-items: center;
+  max-width: min(100%, calc(var(--article-pair-width, 640px) + var(--article-pair-gap)));
+  margin-inline: auto;
+  break-inside: avoid;
+}
+.prose .article-gallery--paired > :is(figure, img) { min-width: 0; }
+[dir="rtl"] .prose .article-gallery--paired figcaption { direction: rtl; }
+
 /* Later sections always clear; the figure's own opening heading is enhanced below. */
 .prose .article-figures figure,
-.prose .article-figures :is(h1,h2,h3,h4,h5,h6,hr,table,aside,blockquote) { clear: both; }
+.prose .article-figures :is(h1,h2,h3,h4,h5,h6,hr,table,aside,blockquote,section,.article-gallery) { clear: both; }
 .prose .article-figures :is(ul,ol) { display: flow-root; }
 
 @media screen and (min-width: 48rem) {
@@ -38,4 +83,7 @@
 
 @media print {
   .prose .article-figures figure { break-inside: avoid; }
+  .prose .article-gallery { gap: 1rem; }
+  .prose :is(.article-gallery, .article-gallery__images) img { max-height: 18rem; }
+  .prose .article-gallery--paired img { max-height: none; }
 }

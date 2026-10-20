@@ -12,9 +12,9 @@ export function figureLayout({ naturalWidth, naturalHeight, containerWidth, font
   const width = Math.min(naturalWidth, 320, containerWidth * 0.38);
   const gap = Math.max(24, fontSize * 1.5);
   const ratio = naturalWidth / naturalHeight;
-  // Large portraits can be scaled down; naturally small square-ish images need no upscaling.
-  // Landscape photography and multi-image compositions retain their full reading-column width.
-  if (!(ratio <= 0.9 || (naturalWidth <= width && ratio <= 1.25))) return null;
+  // Small photographs and illustrations can sit beside prose too. Large landscapes,
+  // banners, and reviewed text-bearing images keep the full reading column.
+  if (!(ratio <= 0.9 || (naturalWidth <= 480 && ratio <= 1.75))) return null;
   if (containerWidth - width - gap < fontSize * 18) return null;
   return { width, gap, side: index % 2 === 0 ? 'start' : 'end' };
 }
@@ -46,6 +46,7 @@ export function initArticleFigures(document) {
     if (!figures.length) continue;
     article.classList.add('article-figures');
     figures.forEach((figure, index) => {
+      if (figure.classList.contains('article-figure--standalone')) return;
       const parent = figure.parentElement;
       // Leave illustrations inside quotes, lists, and callouts in their original layout.
       if (parent !== article && (parent.tagName !== 'SECTION' ||

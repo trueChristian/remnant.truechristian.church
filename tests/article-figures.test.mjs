@@ -13,10 +13,16 @@ test('Courtship portraits wrap with ample text measure and no upscaling', () => 
 });
 
 test('wide photography and large square images keep the stacked layout', () => {
-  for (const [naturalWidth, naturalHeight] of [[1200, 700], [422, 300], [750, 750], [250, 100]]) {
+  for (const [naturalWidth, naturalHeight] of [[1200, 700], [750, 750], [250, 100]]) {
     assert.equal(layout({ naturalWidth, naturalHeight }), null);
   }
   assert.equal(layout({ naturalWidth: 240, naturalHeight: 240 }).width, 240);
+});
+
+test('small landscape and square illustrations can share readable prose', () => {
+  for (const [naturalWidth, naturalHeight] of [[374, 235], [422, 300], [300, 322], [400, 400]]) {
+    assert.equal(layout({ naturalWidth, naturalHeight }).width, 285);
+  }
 });
 
 test('mobile, narrow reading columns, and larger text cannot create tiny gutters', () => {
