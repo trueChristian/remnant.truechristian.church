@@ -3,7 +3,9 @@
 The reader arranges source images for the available reading width. Article text,
 image bytes, alt text, captions, credits, and Markdown remain authoritative
 upstream content; the website adds presentation wrappers and classes only.
-It does not crop, retouch, replace, or upscale the archive's images.
+It does not crop visible artwork, retouch, replace, or upscale the archive's images.
+Reviewed transparent canvas padding can be hidden in the reader without editing
+the source file.
 
 ## Archive review
 
@@ -86,6 +88,13 @@ It records exact image basenames under permanent article UUIDs:
 - `paired` contains ordered arrays of images forming one visual composition.
 - `standalone` lists images that need an independent reading-width block,
   including existing wide images whose presentation should be preserved.
+- `transparent_padding` maps a reviewed single image to its original `width` and
+  `height` and the fully transparent `top`, `right`, `bottom`, and `left` insets,
+  in source pixels. A responsive viewport hides only those empty edges, retains
+  every visible pixel, and keeps the original image tag and caption. These images
+  stay independent of galleries and floats; the rule also works without JavaScript,
+  in RTL, and in print. Do not use it for white backgrounds or infer it from image
+  dimensions. Verify the alpha bounds before adding or updating an entry.
 - `dimensions` records the original width and height of each reviewed paired
   image. The paired composition uses proportional columns and a common image
   height, preserving unequal panel widths without cropping or upscaling.
@@ -103,3 +112,9 @@ source content. `assets/article-figures.css` supplies static group layouts, and
 size-aware arrangements. Focused unit and browser checks protect source text,
 image/caption retention, responsive grouping, reviewed compositions, RTL,
 no-JavaScript reading, and print behavior.
+
+The final orchid illustration in **Power, Love, and a Sound Mind** has a 460 × 901
+canvas whose first 384 rows are entirely transparent. Its reviewed viewport is
+460 × 517: it removes the empty top area and scales down on narrow screens,
+without upscaling the flowers or changing the following Scripture quotation.
+The rule uses the article UUID and image basename, so translations share it.

@@ -5,6 +5,28 @@
 .prose .article-figures img { display: block; height: auto; }
 .prose .article-figure--standalone img { max-height: none; }
 
+/* Reviewed transparent canvas edges take no space in the reader. The original
+   image remains intact, at or below its natural size, including without JS. */
+.prose .article-image-window {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: var(--article-image-width);
+  max-width: 100%;
+  aspect-ratio: var(--article-image-ratio);
+  margin-inline: auto;
+}
+.prose .article-image-window > img {
+  position: absolute;
+  top: var(--article-image-top);
+  left: var(--article-image-left);
+  width: var(--article-image-scale);
+  max-width: none;
+  height: auto;
+  max-height: none;
+  margin: 0;
+}
+
 /* Each original figure keeps its own caption. Images retain their full aspect ratio
    and are never cropped or enlarged beyond their source dimensions. */
 .prose .article-gallery,

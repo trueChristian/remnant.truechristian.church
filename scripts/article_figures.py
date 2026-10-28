@@ -85,6 +85,17 @@ def load_figure_rules(path):
             if not isinstance(group, list) or len(group) != 2:
                 raise ValueError(f'Invalid paired image group: {identity}')
             names.extend(group)
+        padding = rule.get('transparent_padding', {})
+        if not isinstance(padding, dict):
+            raise ValueError(f'Invalid transparent padding rules: {identity}')
+        names.extend(padding)
+        for bounds in padding.values():
+            if (not isinstance(bounds, dict) or
+                set(bounds) != {'width', 'height', 'top', 'right', 'bottom', 'left'} or
+                any(type(value) is not int or value < 0 for value in bounds.values()) or
+                bounds['width'] <= bounds['left'] + bounds['right'] or
+                bounds['height'] <= bounds['top'] + bounds['bottom']):
+                raise ValueError(f'Invalid transparent padding dimensions: {identity}')
         if any(not isinstance(name, str) or not name or '/' in name or '\\' in name for name in names):
             raise ValueError(f'Image layout rules require image basenames: {identity}')
         if len(names) != len(set(names)):
@@ -207,6 +218,21 @@ def arrange_article_figures(source, rules=None):
         mark(figure, 'article-figure')
         if figure.parent.tag == 'section':
             mark(figure.parent, 'article-figure-section')
+        # Only explicitly reviewed, single-image figures lose transparent canvas
+        # padding. Keep the original img tag/bytes and caption outside the viewport.
+        padding = rule.get('transparent_padding', {}).get(names[0]) if len(names) == 1 else None
+        if padding:
+            image = _images(figure)[0]
+            width = padding['width'] - padding['left'] - padding['right']
+            height = padding['height'] - padding['top'] - padding['bottom']
+            style = (f'--article-image-width:{width}px;--article-image-ratio:{width}/{height};'
+                     f'--article-image-scale:{padding["width"] / width * 100:.8f}%;'
+                     f'--article-image-top:{-padding["top"] / height * 100:.8f}%;'
+                     f'--article-image-left:{-padding["left"] / width * 100:.8f}%')
+            insertions[image.start].append(f'<span class="article-image-window" style="{style}">')
+            insertions[image.end].append('</span>')
+            mark(figure, 'article-figure--standalone')
+            continue
         standalone = any(name in rule.get('standalone', []) for name in names)
         if standalone:
             mark(figure, 'article-figure--standalone')
