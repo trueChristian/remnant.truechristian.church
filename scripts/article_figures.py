@@ -117,11 +117,82 @@ def _empty_gap(source):
 
 
 def _article_parent(figure):
-    """Only article/section prose may acquire galleries or text wrapping."""
+    """Only article prose and explicit verse containers acquire reader layouts."""
     node = figure.parent
-    while node and node.tag == 'section':
+    while node and (node.tag == 'section' or
+                    (node.tag in {'div', 'blockquote'} and _verse_class(node))):
         node = node.parent
     return node if node and node.tag == 'article' and node.attrs.get('data-article-id') else None
+
+
+def _verse_class(node):
+    return bool({'poem', 'lyrics'} & set((node.attrs.get('class') or '').split()))
+
+
+def _arrange_verse_figures(source):
+    """Keep stanzas in a continuous column beside their own illustration.
+
+    Insert wrappers only: neither source bytes nor reading order are changed.
+    A closing illustration can accompany the final stanza, but groups never
+    cross a heading, ordinary paragraph, gallery, or unrelated container.
+    """
+    parsed = FigureElements(source)
+    insertions = defaultdict(list)
+
+    def is_verse(node):
+        if '<img' in source[node.opening_end:node.end].lower():
+            return False
+        if node.tag == 'p':
+            return (_verse_class(node) or _verse_class(node.parent) or
+                    sum(child.tag == 'br' for child in node.children) >= 2)
+        return node.tag in {'div', 'section', 'blockquote', 'ol'} and _verse_class(node)
+
+    def is_figure(node):
+        return (node.tag == 'figure' and _article_parent(node) and
+                len(_images(node)) == 1 and
+                'article-figure--standalone' not in node.attrs.get('class', '').split())
+
+    def wrap(figure, stanzas):
+        nodes = sorted([figure, *stanzas], key=lambda node: node.start)
+        insertions[nodes[0].start].append('<div class="article-verse-row">')
+        insertions[stanzas[0].start].append('<div class="article-verse-text">')
+        insertions[stanzas[-1].end].append('</div>')
+        insertions[nodes[-1].end].append('</div>')
+
+    for parent in parsed.elements:
+        if not (parent.tag == 'article' or parent.tag == 'section' or
+                (parent.tag in {'div', 'blockquote'} and _verse_class(parent))):
+            continue
+        children, i = parent.children, 0
+        while i < len(children):
+            node = children[i]
+            if is_figure(node):
+                end = i + 1
+                while end < len(children) and is_verse(children[end]) and _empty_gap(
+                        source[children[end - 1].end:children[end].start]):
+                    end += 1
+                if end > i + 1:
+                    # Leave the last stanza with a closing image, in source order.
+                    if (end < len(children) and is_figure(children[end]) and
+                            end == len(children) - 1 and end > i + 2):
+                        end -= 1
+                    wrap(node, children[i + 1:end])
+                    i = end
+                    continue
+            if is_verse(node):
+                end = i + 1
+                while end < len(children) and is_verse(children[end]) and _empty_gap(
+                        source[children[end - 1].end:children[end].start]):
+                    end += 1
+                if (end == len(children) - 1 and is_figure(children[end]) and
+                        _empty_gap(source[children[end - 1].end:children[end].start])):
+                    wrap(children[end], children[i:end])
+                    i = end + 1
+                    continue
+            i += 1
+    for offset in sorted(insertions, reverse=True):
+        source = source[:offset] + ''.join(insertions[offset]) + source[offset:]
+    return source
 
 
 def _images(figure):
@@ -307,4 +378,4 @@ def arrange_article_figures(source, rules=None):
 
     for offset in sorted(insertions, reverse=True):
         source = source[:offset] + ''.join(insertions[offset]) + source[offset:]
-    return source
+    return _arrange_verse_figures(source)

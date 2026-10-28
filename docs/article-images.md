@@ -29,6 +29,56 @@ The 2026-10-20 review used English revision
 
 ## Layout behavior
 
+### Poems and lyrics
+
+Illustrations next to verse use a separate stanza column, rather than prose
+floats. This includes `poem` and `lyrics` paragraphs and containers, and
+paragraphs with multiple explicit line breaks. In **A Godly Woman**, the opening
+illustration stays above the poem; the five remaining illustrations accompany
+their stanzas, including the closing image alongside the final stanza.
+
+The generator groups only adjacent source nodes, preserving every word, line
+break, image, caption, and their DOM reading order. Groups stop at ordinary prose,
+headings, galleries, and unrelated containers. Reviewed standalone images keep
+their existing presentation. This works across languages without title-specific
+or English-only rules.
+
+On wide screens, the reader measures the longest original verse line in its
+actual font. An illustration uses at most 180px of spare width and 300px of
+height; if there is not enough room for both, it stays above or below the verse
+in source order. The text never bends around a picture halfway through a stanza.
+Resizing, font loading, larger type, and delayed image loads recalculate the
+layout. Right-to-left text puts the illustration on the opposite logical side.
+Mobile, print, and JavaScript-disabled reading use bounded, centered images with
+full-width stanzas. Images are never cropped or enlarged.
+
+Very tall prose illustrations also use a proportionate float box, bounded to
+26 text ems in height; an image that would become illegibly narrow stays stacked.
+
+### Review on 2026-10-28
+
+The structural audit used English revision
+`ed75201a8e3b37913a14f4d949de33a7a0daa2c2` and translation revision
+`b5b2c1840abb0599ba275cff4ef1598b91cef831`:
+
+- 1,168 English articles, including 966 illustrated articles and 1,844 images.
+- 3,006 translations, including 2,421 illustrated articles and 3,422 images.
+- Verse arrangements apply to 93 English articles (103 groups) and 436
+  translations (436 groups).
+- Every article passed exact text/line-break and image-tag preservation checks,
+  and applying the layout twice produced the same output.
+
+These are archive-wide structural checks, not a claim of manual inspection of
+every page. A browser scan rendered all 3,387 illustrated article bodies with
+the site styles at desktop and phone widths (6,774 views). Deferred images were
+explicitly loaded and rechecked; the final scan found no broken images, image/text
+overlaps, or horizontal overflow. The complete multilingual build also passed
+the site checker with zero errors. Browser regressions cover the poem, prose portraits, captions,
+galleries, reviewed image pairs, transparent padding, narrow columns, phone
+widths, larger type, RTL, JavaScript-disabled reading, and print.
+
+### Prose and galleries
+
 Consecutive small photographs become a static responsive gallery. Existing large
 landscape images keep their individual reading-column presentation; the review
 protects 23 such images in 15 articles from being shrunk into a new gallery.

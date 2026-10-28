@@ -1,6 +1,33 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { figureLayout, figureFlowHeadings } from '../assets/article-figures.js';
+import { figureLayout, figureFlowHeadings, verseLayout } from '../assets/article-figures.js';
+
+const verse = (options = {}) => verseLayout({ naturalWidth: 320, naturalHeight: 420,
+  containerWidth: 750, textWidth: 530, fontSize: 17, ...options });
+
+test('verse illustration uses spare space without shortening printed lines', () => {
+  assert.deepEqual(verse(), { width: 180, gap: 25.5 });
+  const snug = verse({ textWidth: 600 });
+  assert.equal(snug.width, 122.5);
+  assert(snug.width + snug.gap + 600 < 750);
+  assert.equal(verse({ textWidth: 650 }), null);
+  assert.equal(verse({ naturalWidth: 80, naturalHeight: 120 }).width, 80);
+});
+
+test('narrow screens, long translated lines, and landscape verse artwork stack', () => {
+  for (const options of [{ wideScreen: false }, { containerWidth: 390 },
+    { textWidth: 1200 }, { naturalWidth: 1200, naturalHeight: 600 },
+    { naturalWidth: 0 }, { textWidth: NaN }, { fontSize: Infinity }]) {
+    assert.equal(verse(options), null);
+  }
+});
+
+test('very tall artwork has a proportionate box in prose and verse', () => {
+  assert.equal(verse({ naturalWidth: 100, naturalHeight: 1200 }), null);
+  const tall = figureLayout({ naturalWidth: 200, naturalHeight: 2000,
+    containerWidth: 750, fontSize: 18 });
+  assert.equal(tall, null);
+});
 
 const layout = (options = {}) => figureLayout({ naturalWidth: 422, naturalHeight: 679,
   containerWidth: 750, fontSize: 18, wideScreen: true, index: 0, ...options });
