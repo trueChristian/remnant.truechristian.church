@@ -74,7 +74,43 @@
 .prose .article-figures :is(h1,h2,h3,h4,h5,h6,hr,table,aside,blockquote,section,.article-gallery) { clear: both; }
 .prose .article-figures :is(ul,ol) { display: flow-root; }
 
+/* Poetry never bends around a float or changes measure halfway through a stanza.
+   Keep the original nodes in order, including when JavaScript is unavailable. */
+.prose .article-figures :is(.poem, .lyrics),
+.prose .article-verse-row { clear: both; }
+.prose .article-verse-row { display: flow-root; margin-block: 1.75rem; }
+.prose .article-verse-row > figure {
+  float: none;
+  margin: 1.25rem auto;
+  max-width: min(100%, 22rem);
+}
+.prose .article-verse-row > figure img { max-height: 300px; }
+.prose .article-verse-text { min-width: 0; }
+.prose .article-verse-text > :first-child { margin-block-start: 0; }
+.prose .article-verse-text > :last-child { margin-block-end: 0; }
+.prose .article-verse-text p { break-inside: avoid; }
+.prose .article-verse-measure {
+  position: fixed;
+  visibility: hidden;
+  inset: 0 auto auto 0;
+  width: max-content;
+  max-width: none;
+  pointer-events: none;
+}
+
 @media screen and (min-width: 48rem) {
+  .prose .article-verse-row--aside {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--article-verse-image-width);
+    align-items: start;
+    gap: var(--article-verse-gap);
+  }
+  .prose .article-verse-row--aside > .article-verse-text { grid-area: 1 / 1; }
+  .prose .article-verse-row--aside > figure {
+    grid-area: 1 / 2;
+    width: 100%;
+    margin: .25rem 0 0;
+  }
   .prose .article-figures .article-figure-heading {
     clear: none;
     display: flow-root;

@@ -31,6 +31,44 @@ def galleries(html):
 
 
 class ArticleFigureTests(unittest.TestCase):
+    def test_illustrated_poem_keeps_stanzas_images_and_captions_in_source_order(self):
+        stanza = '<p>First &amp; faithful line.<br>Second line.<br>Third line.</p>'
+        closing = '<p>Closing <em>words</em>.<br>Remain exact.<br>Always.</p>'
+        caption = '<figcaption>Original credit.</figcaption>'
+        source = article('<div class="poem">' + figure('one', caption) + stanza * 2 +
+                         figure('two') + stanza + closing + figure('last') + '</div>')
+        output = arrange_article_figures(source)
+        self.assertEqual(output.count('class="article-verse-row"'), 3)
+        self.assertEqual(output.count(stanza), 3)
+        self.assertIn(closing, output)
+        self.assertEqual(re.findall(r'<img\b[^>]*>|<figcaption>.*?</figcaption>', output),
+                         re.findall(r'<img\b[^>]*>|<figcaption>.*?</figcaption>', source))
+        self.assertLess(output.index(closing), output.index('last.jpg'))
+        self.assertEqual(arrange_article_figures(output), output)
+
+    def test_verse_shapes_and_closing_illustrations_share_the_reader_layout(self):
+        for verse in ['<p class="poem">First<br>Second</p>',
+                      '<div class="lyrics"><p>First<br>Second</p></div>',
+                      '<blockquote class="poem"><p>First<br>Second</p></blockquote>',
+                      '<section class="poem"><p>First<br>Second</p></section>',
+                      '<p>First<br>Second<br>Third</p>']:
+            for content in [figure('one') + verse, verse + figure('one')]:
+                output = arrange_article_figures(article(content))
+                self.assertEqual(output.count('class="article-verse-row"'), 1)
+                self.assertIn(verse, output)
+                self.assertEqual(arrange_article_figures(output), output)
+
+    def test_verse_groups_respect_prose_barriers_protected_images_and_galleries(self):
+        verse = '<p class="poem">First<br>Second</p>'
+        for content in [figure('one') + '<h2>New section</h2>' + verse,
+                        figure('one') + '<p>Ordinary prose.</p>' + verse,
+                        figure('one') + figure('two') + verse,
+                        '<aside class="poem">' + figure('one') + verse + '</aside>',
+                        '<blockquote>' + figure('one') + verse + '</blockquote>']:
+            self.assertNotIn('article-verse-row', arrange_article_figures(article(content)))
+        self.assertNotIn('article-verse-row', arrange_article_figures(article(figure('one') + verse),
+                         {A: {'standalone': ['one.jpg']}}))
+
     def test_reviewed_transparent_padding_preserves_source_and_is_idempotent(self):
         bounds = dict(width=460, height=901, top=384, right=0, bottom=0, left=0)
         rules = {A: {'transparent_padding': {'orchid.jpg': bounds}}}
