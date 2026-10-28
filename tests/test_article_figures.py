@@ -31,6 +31,46 @@ def galleries(html):
 
 
 class ArticleFigureTests(unittest.TestCase):
+    def test_reviewed_transparent_padding_preserves_source_and_is_idempotent(self):
+        bounds = dict(width=460, height=901, top=384, right=0, bottom=0, left=0)
+        rules = {A: {'transparent_padding': {'orchid.jpg': bounds}}}
+        caption = '<figcaption>Original caption &amp; credit.</figcaption>'
+        source = article(figure('orchid', caption) + '<blockquote>Original quotation.</blockquote>')
+        output = arrange_article_figures(source, rules)
+        self.assertIn('--article-image-width:460px;--article-image-ratio:460/517', output)
+        self.assertIn('--article-image-top:-74.27466151%', output)
+        self.assertIn(image('orchid') + '</span>' + caption, output)
+        self.assertIn('<blockquote>Original quotation.</blockquote>', output)
+        self.assertIn('article-figure--standalone', output)
+        self.assertEqual(arrange_article_figures(output, rules), output)
+        self.assertNotIn('article-image-window', arrange_article_figures(source, {}))
+        for content in [figure('other'), '<figure>' + image('orchid') + image('other') + '</figure>',
+                        '<blockquote>' + figure('orchid') + '</blockquote>']:
+            self.assertNotIn('article-image-window', arrange_article_figures(article(content), rules))
+
+    def test_transparent_padding_rules_reject_invalid_dimensions_and_conflicts(self):
+        bounds = dict(width=460, height=901, top=384, right=0, bottom=0, left=0)
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'layouts.json'
+            for changes in [{'top': -1}, {'top': 901}, {'width': 0}, {'left': 460},
+                            {'right': 460}, {'bottom': 517}, {'width': True},
+                            {'top': 1.5}, {'height': '901'}, {'extra': 1}]:
+                rule = {'transparent_padding': {'orchid.png': bounds | changes}}
+                path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+                with self.assertRaises(ValueError):
+                    load_figure_rules(path)
+            for padding in [[], {'../orchid.png': bounds}, {'orchid.png': {}}, {'orchid.png': None}]:
+                path.write_text(json.dumps({'version': 1, 'articles': {A: {'transparent_padding': padding}}}))
+                with self.assertRaises(ValueError):
+                    load_figure_rules(path)
+            rule = {'transparent_padding': {'orchid.png': bounds}}
+            path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+            self.assertEqual(load_figure_rules(path), {A: rule})
+            rule['paired'] = [['orchid.png', 'other.png']]
+            path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+            with self.assertRaises(ValueError):
+                load_figure_rules(path)
+
     def test_adjacent_figures_keep_exact_images_captions_comments_and_source_order(self):
         caption = '<figcaption>A <em>faithful</em> caption &amp; credit.</figcaption>'
         source = article('<p>Opening &mdash; words.</p>' + figure('one', caption, ' class="original"') +
@@ -187,7 +227,8 @@ class ArticleFigureTests(unittest.TestCase):
             item['html'] = article(figure('one', '<figcaption>Exact source caption.</figcaption>') +
                                    figure('two') + '<p>Original paragraph.</p>' +
                                    figure('left') + '<p>Prose between panels.</p>' + figure('right'))
-            rules = {A: {'paired': [['left.jpg', 'right.jpg']],
+            rules = {A: {'transparent_padding': {'one.jpg': dict(width=460, height=901, top=384, right=0, bottom=0, left=0)},
+                         'paired': [['left.jpg', 'right.jpg']],
                          'dimensions': {'left.jpg': [300, 400], 'right.jpg': [200, 400]}}}
             site = Site(model, locales, routes, theme, output, {})
             site.figure_rules = rules
