@@ -136,6 +136,13 @@ their existing behavior.
 It records exact image basenames under permanent article UUIDs:
 
 - `paired` contains ordered arrays of images forming one visual composition.
+- `opening_order` gives the reviewed order of a complete opening image group
+  immediately before the first paragraph. It applies only when every named
+  image occurs once in a contiguous, caption-free figure; changed, missing,
+  duplicated, captioned, or additional opening images leave the source order intact.
+  In **Through the Eye of a Needle**, the two decorative book rows stay paired
+  at the top and the cover follows them beside the opening paragraph, using the
+  normal responsive wrapping rules.
 - `standalone` lists images that need an independent reading-width block,
   including existing wide images whose presentation should be preserved.
 - `transparent_padding` maps a reviewed single image to its original `width` and
