@@ -117,8 +117,9 @@
     overflow-wrap: anywhere;
   }
   .prose .article-figure--wrap + .article-figure-heading { margin-block-start: 0; }
-  /* Adjacent list text regains the full column below the image. */
-  .prose .article-figures .article-figure--wrap + :is(ul,ol) {
+  /* List text regains the full column below the image, including when the
+     figure's opening headings come between them. */
+  .prose .article-figures :is(.article-figure--wrap, .article-figure-heading) + :is(ul,ol) {
     display: block;
   }
   .prose .article-figures figure.article-figure--wrap {
