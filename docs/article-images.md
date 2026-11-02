@@ -36,6 +36,9 @@ floats. This includes `poem` and `lyrics` paragraphs and containers, and
 paragraphs with multiple explicit line breaks. In **A Godly Woman**, the opening
 illustration stays above the poem; the five remaining illustrations accompany
 their stanzas, including the closing image alongside the final stanza.
+In **Until the Daybreak**, the twilight photograph stays centered above the
+opening stanza at every reading width. Both stanzas retain their original
+line breaks.
 
 The generator groups only adjacent source nodes, preserving every word, line
 break, image, caption, and their DOM reading order. Groups stop at ordinary prose,
@@ -113,9 +116,11 @@ or section parent. Article prose remains in its original order.
 Small individual images and portraits may wrap beside adjacent prose when the
 screen and reading column leave enough room for comfortable text. The figure's
 immediate opening headings can share that space; later sections, quotes, tables,
-and galleries clear the complete figure and caption. Narrow screens, narrow
-columns, and print remove text wrapping. Logical float sides follow the text
-language; physical sides of a paired composition do not reverse.
+and galleries clear the complete figure and caption. Lists following the figure
+or its opening headings regain the full reading width below the image, as in
+**Governing Your Family**. Narrow screens, narrow columns, and print remove text
+wrapping. Logical float sides follow the text language; physical sides of a
+paired composition do not reverse.
 
 The review marks 135 images as standalone. Of these, 112 contain sheet music,
 text-bearing graphics, handwritten letters, maps, tables, clippings, or
