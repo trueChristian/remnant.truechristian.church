@@ -194,6 +194,51 @@ class ArticleFigureTests(unittest.TestCase):
             self.assertNotIn('article-gallery--paired', result)
             self.assertEqual(re.findall(r'<img\b[^>]*>', unsafe), re.findall(r'<img\b[^>]*>', result))
 
+    def test_reviewed_opening_pair_precedes_cover_and_preserves_source_content(self):
+        rules = {A: {'opening_order': ['left.jpg', 'right.jpg', 'cover.jpg'],
+                     'paired': [['left.jpg', 'right.jpg']]}}
+        cover = '<figure id="cover">' + image('cover', ' width="96" height="151" loading="lazy"') + '</figure>'
+        paragraphs = '<p>First &amp; faithful <em>paragraph</em>.</p><p>Second paragraph.</p>'
+        gap = '\n<!-- original image separator -->\n'
+        source = article('\n  ' + cover + gap + figure('left') + '\n\n' + figure('right') + '\n  ' + paragraphs)
+        output = arrange_article_figures(source, rules)
+        nodes = FigureElements(output).elements
+        root = next(node for node in nodes if node.tag == 'article')
+        self.assertEqual([node.tag for node in root.children], ['div', 'figure', 'p', 'p'])
+        pair = root.children[0]
+        self.assertIn('article-gallery--paired', pair.attrs['class'].split())
+        self.assertEqual([node.tag for node in pair.children], ['figure', 'figure'])
+        self.assertEqual(root.children[1].attrs['id'], 'cover')
+        self.assertEqual(re.findall(r'<img\b[^>]*>', output),
+                         [image('left'), image('right'), image('cover', ' width="96" height="151" loading="lazy"')])
+        self.assertIn(paragraphs, output)
+        self.assertIn(gap, output)
+        self.assertEqual(arrange_article_figures(output, rules), output)
+        self.assertEqual(re.findall(r'<img\b[^>]*>', arrange_article_figures(source)),
+                         re.findall(r'<img\b[^>]*>', source))
+
+    def test_opening_order_leaves_changed_or_ambiguous_groups_in_source_order(self):
+        rules = {A: {'opening_order': ['left.jpg', 'right.jpg', 'cover.jpg'],
+                     'paired': [['left.jpg', 'right.jpg']]}}
+        opening = figure('cover') + figure('left') + figure('right')
+        paragraph = '<p>Unchanged opening paragraph.</p>'
+        cases = {
+            'missing image': figure('cover') + figure('left') + paragraph,
+            'duplicate later in article': opening + paragraph + figure('cover'),
+            'captioned cover': figure('cover', '<figcaption>Original caption.</figcaption>') + figure('left') + figure('right') + paragraph,
+            'intervening paragraph': figure('cover') + paragraph + figure('left') + figure('right') + paragraph,
+            'additional opening image': opening + figure('other') + paragraph,
+            'changed image': figure('cover') + figure('left') + figure('other') + paragraph,
+            'loose text between figures': figure('cover') + 'Original visible text.' + figure('left') + figure('right') + paragraph,
+            'heading before figures': '<h2>Original heading</h2>' + opening + paragraph,
+        }
+        for label, content in cases.items():
+            with self.subTest(label=label):
+                source = article(content)
+                output = arrange_article_figures(source, rules)
+                self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
+                self.assertEqual(re.findall(r'<p>.*?</p>', output), re.findall(r'<p>.*?</p>', source))
+
     def test_standalone_sheets_and_repeated_decorations_are_not_gallery_items(self):
         rules = {A: {'standalone': ['sheet.jpg', 'divider.jpg']}}
         source = article(figure('one') + figure('sheet') + figure('two') + figure('divider') + figure('three'))
@@ -225,6 +270,15 @@ class ArticleFigureTests(unittest.TestCase):
             valid = {'version': 1, 'articles': {A: {'paired': [['left.jpg', 'right.jpg']], 'standalone': ['sheet.jpg']}}}
             path.write_text(json.dumps(valid))
             self.assertEqual(load_figure_rules(path), valid['articles'])
+            valid['articles'][A]['opening_order'] = ['left.jpg', 'right.jpg', 'cover.jpg']
+            path.write_text(json.dumps(valid))
+            self.assertEqual(load_figure_rules(path), valid['articles'])
+            for opening_order in ['left.jpg', None, {}, ['only.jpg'], ['left.jpg', 'left.jpg'],
+                                  ['../left.jpg', 'right.jpg'], ['folder\\left.jpg', 'right.jpg'],
+                                  ['', 'right.jpg'], [42, 'right.jpg']]:
+                path.write_text(json.dumps({'version': 1, 'articles': {A: {'opening_order': opening_order}}}))
+                with self.subTest(opening_order=opening_order), self.assertRaises(ValueError):
+                    load_figure_rules(path)
             for invalid in [{}, {'version': 1, 'articles': {A: {'paired': [['only.jpg']]}}},
                             {'version': 1, 'articles': {A: {'paired': [['one.jpg', 'two.jpg', 'three.jpg']]}}},
                             {'version': 1, 'articles': {A: {'paired': [['one.jpg', 'two.jpg']], 'standalone': ['one.jpg']}}},

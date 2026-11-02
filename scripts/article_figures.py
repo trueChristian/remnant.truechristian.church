@@ -1,9 +1,10 @@
 """Presentation-only image groups, inserted without reserializing source HTML.
 
 The reader receives static galleries even with JavaScript disabled. Source image
-tags, captions and article text remain unchanged. Reviewed caption-free split
-artwork can be reunited by moving its exact figure bytes; all other changes are
-layout wrapper/class insertions. The source model and Markdown are untouched.
+tags, captions and article text remain unchanged. Reviewed caption-free opening
+images can be reordered and split artwork reunited by moving exact figure bytes;
+all other changes are layout wrapper/class insertions. The source model and
+Markdown are untouched.
 """
 from __future__ import annotations
 
@@ -96,8 +97,14 @@ def load_figure_rules(path):
                 bounds['width'] <= bounds['left'] + bounds['right'] or
                 bounds['height'] <= bounds['top'] + bounds['bottom']):
                 raise ValueError(f'Invalid transparent padding dimensions: {identity}')
-        if any(not isinstance(name, str) or not name or '/' in name or '\\' in name for name in names):
+        opening_order = rule.get('opening_order', [])
+        if not isinstance(opening_order, list) or len(opening_order) == 1:
+            raise ValueError(f'Invalid opening image order: {identity}')
+        if any(not isinstance(name, str) or not name or '/' in name or '\\' in name
+               for name in [*names, *opening_order]):
             raise ValueError(f'Image layout rules require image basenames: {identity}')
+        if len(opening_order) != len(set(opening_order)):
+            raise ValueError(f'Repeated opening image: {identity}')
         if len(names) != len(set(names)):
             raise ValueError(f'Conflicting or repeated image layout rules: {identity}')
         dimensions = rule.get('dimensions')
@@ -203,6 +210,47 @@ def _names(figure):
     return [image.attrs.get('src', '').rsplit('/', 1)[-1] for image in _images(figure)]
 
 
+def _order_reviewed_opening_figures(source, rules):
+    """Reorder only a complete, reviewed image run before the opening paragraph."""
+    parsed = FigureElements(source)
+    changes = []
+    for article in parsed.elements:
+        if article.tag != 'article':
+            continue
+        order = rules.get(article.attrs.get('data-article-id'), {}).get('opening_order', [])
+        if not order or len(article.children) <= len(order):
+            continue
+        figures = article.children[:len(order)]
+        paragraph = article.children[len(order)]
+        if paragraph.tag != 'p' or not _empty_gap(source[article.opening_end:figures[0].start]):
+            continue
+        # Captions, loose text, intervening content and additional opening images
+        # make a changed source ambiguous. Keep its existing arrangement instead.
+        if any(figure.tag != 'figure' or not figure.closing_start or len(figure.children) != 1 or
+               figure.children[0].tag != 'img' or
+               not _empty_gap(source[figure.opening_end:figure.children[0].start]) or
+               not _empty_gap(source[figure.children[0].end:figure.closing_start]) for figure in figures):
+            continue
+        if any(not _empty_gap(source[left.end:right.start])
+               for left, right in zip(figures, [*figures[1:], paragraph])):
+            continue
+        names = [_names(figure)[0] for figure in figures]
+        article_names = [node.attrs.get('src', '').rsplit('/', 1)[-1] for node in parsed.elements
+                         if node.tag == 'img' and article.start < node.start < article.end]
+        if set(names) != set(order) or any(article_names.count(name) != 1 for name in order):
+            continue
+        if names == order:
+            continue
+        originals = {name: source[figure.start:figure.end] for name, figure in zip(names, figures)}
+        replacement = originals[order[0]]
+        for index in range(1, len(figures)):
+            replacement += source[figures[index - 1].end:figures[index].start] + originals[order[index]]
+        changes.append((figures[0].start, figures[-1].end, replacement))
+    for start, end, replacement in sorted(changes, reverse=True):
+        source = source[:start] + replacement + source[end:]
+    return source
+
+
 def _reunite_reviewed_pairs(source, rules):
     """Move only unambiguous, caption-free panels from reviewed compositions."""
     parsed = FigureElements(source)
@@ -249,13 +297,14 @@ def arrange_article_figures(source, rules=None):
 
     Rules use permanent article UUIDs and exact ordered image basenames. Reviewed
     pairs stay distinct from ordinary responsive galleries. Generic grouping
-    never crosses prose or structural boundaries. Reviewed caption-free panels
-    can move together within the same parent without rearranging article text.
+    never crosses prose or structural boundaries. Reviewed caption-free opening
+    figures and split panels can move without rearranging article text.
     """
     if '<figure' not in source.lower():
         return source
     rules = rules or {}
     if rules:
+        source = _order_reviewed_opening_figures(source, rules)
         source = _reunite_reviewed_pairs(source, rules)
     parsed = FigureElements(source)
     insertions, classes = defaultdict(list), defaultdict(list)
