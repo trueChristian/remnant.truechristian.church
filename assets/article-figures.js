@@ -4,7 +4,7 @@ const WIDE_SCREEN = '(min-width: 48rem)';
 
 /** A readable measure takes priority over wrapping, including in narrow desktop columns. */
 export function figureLayout({ naturalWidth, naturalHeight, containerWidth, fontSize = 18,
-  wideScreen = true, index = 0 }) {
+  wideScreen = true, index = 0, reviewedWrap = false }) {
   if (!wideScreen || ![naturalWidth, naturalHeight, containerWidth, fontSize]
     .every(value => Number.isFinite(value) && value > 0)) return null;
   if (containerWidth < fontSize * 34) return null;
@@ -15,7 +15,8 @@ export function figureLayout({ naturalWidth, naturalHeight, containerWidth, font
   const width = Math.min(naturalWidth, 320, containerWidth * 0.38, ratio * fontSize * 26);
   // Small photographs and illustrations can sit beside prose too. Large landscapes,
   // banners, and reviewed text-bearing images keep the full reading column.
-  if (!(ratio <= 0.9 || (naturalWidth <= 480 && ratio <= 1.75))) return null;
+  // Reviewed small landscapes can wrap while retaining every size/readability limit.
+  if (!(ratio <= 0.9 || (naturalWidth <= 480 && (ratio <= 1.75 || reviewedWrap)))) return null;
   if (width < Math.min(naturalWidth, 100)) return null;
   if (containerWidth - width - gap < fontSize * 18) return null;
   return { width, gap, side: index % 2 === 0 ? 'start' : 'end' };
@@ -49,6 +50,10 @@ function verseMeasure(text) {
 
 /** Only a figure's opening heading run belongs beside it; later sections still clear. */
 export function figureFlowHeadings(figure) {
+  const previous = figure.previousElementSibling;
+  // Consecutive floats can squeeze the text. A standalone predecessor never floats.
+  if (previous?.tagName === 'FIGURE' &&
+    !previous.classList?.contains('article-figure--standalone')) return null;
   const headings = [];
   let next = figure.nextElementSibling;
   while (next && /^H[1-6]$/.test(next.tagName)) {
@@ -92,10 +97,6 @@ export function initArticleFigures(document) {
         parent.closest('aside, blockquote, li, table, figure'))) return;
       const images = figure.querySelectorAll('img');
       if (images.length !== 1) return;
-      // Consecutive floats can squeeze one line between their margin boxes even when
-      // clear: both keeps the images apart. Preserve stacked source groups instead.
-      if (figure.previousElementSibling?.tagName === 'FIGURE' ||
-        figure.nextElementSibling?.tagName === 'FIGURE') return;
       const headings = figureFlowHeadings(figure);
       if (!headings) return;
       if (parent !== article) parent.classList.add('article-figure-section');
@@ -120,6 +121,7 @@ export function initArticleFigures(document) {
       const layout = image.complete ? figureLayout({
         ...measurements.get(parent), naturalWidth: image.naturalWidth,
         naturalHeight: image.naturalHeight, wideScreen: media.matches, index,
+        reviewedWrap: figure.classList.contains('article-figure--reviewed-wrap'),
       }) : null;
       figure.classList.toggle('article-figure--wrap', Boolean(layout));
       for (const heading of headings) {

@@ -249,6 +249,44 @@ class ArticleFigureTests(unittest.TestCase):
         self.assertEqual(galleries(repeated), [])
         self.assertEqual(repeated.count('article-figure--standalone'), 2)
 
+    def test_reviewed_wrap_marks_only_its_single_image_figure_without_changing_content(self):
+        rules = {A: {'standalone': ['banner.jpg'], 'wrap': ['photo.jpg']}}
+        caption = '<figcaption>Original credit &amp; source.</figcaption>'
+        paragraph = '<p>Unchanged opening <em>paragraph</em>.</p>'
+        source = article(figure('banner') + figure('photo', caption) + paragraph)
+        output = arrange_article_figures(source, rules)
+        root = next(node for node in FigureElements(output).elements if node.tag == 'article')
+        self.assertEqual([node.tag for node in root.children], ['figure', 'figure', 'p'])
+        self.assertNotIn('article-figure--reviewed-wrap', root.children[0].attrs['class'].split())
+        self.assertIn('article-figure--standalone', root.children[0].attrs['class'].split())
+        self.assertIn('article-figure--reviewed-wrap', root.children[1].attrs['class'].split())
+        self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
+        self.assertIn(caption, output)
+        self.assertIn(paragraph, output)
+        self.assertEqual(arrange_article_figures(output, rules), output)
+        self.assertNotIn('article-figure--reviewed-wrap', arrange_article_figures(source))
+        multiple = article('<figure>' + image('photo') + image('other') + '</figure>' + paragraph)
+        self.assertNotIn('article-figure--reviewed-wrap', arrange_article_figures(multiple, rules))
+
+    def test_reviewed_wrap_rules_reject_invalid_basenames_and_conflicting_layouts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'layouts.json'
+            rule = {'wrap': ['photo.jpg'], 'standalone': ['banner.jpg'],
+                    'opening_order': ['banner.jpg', 'photo.jpg']}
+            path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+            self.assertEqual(load_figure_rules(path), {A: rule})
+            invalid = [{'wrap': value} for value in ['photo.jpg', None, {}, ['../photo.jpg'],
+                       ['folder\\photo.jpg'], [''], [42], ['photo.jpg', 'photo.jpg']]]
+            bounds = dict(width=300, height=200, top=0, right=0, bottom=0, left=0)
+            invalid.extend({'wrap': ['photo.jpg'], **conflict} for conflict in [
+                {'standalone': ['photo.jpg']}, {'paired': [['photo.jpg', 'other.jpg']]},
+                {'transparent_padding': {'photo.jpg': bounds}},
+            ])
+            for rule in invalid:
+                path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+                with self.subTest(rule=rule), self.assertRaises(ValueError):
+                    load_figure_rules(path)
+
     def test_text_between_images_inside_a_figure_is_never_moved(self):
         source = article('<figure>' + image('one') + '<p>Intervening explanation.</p>' + image('two') + '</figure>')
         self.assertNotIn('article-gallery__images', arrange_article_figures(source))

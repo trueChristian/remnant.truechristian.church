@@ -80,6 +80,10 @@ def load_figure_rules(path):
             raise ValueError('Invalid article image layout entry')
         standalone, paired = rule.get('standalone', []), rule.get('paired', [])
         names = list(standalone) if isinstance(standalone, list) else [None]
+        wrapping = rule.get('wrap', [])
+        if not isinstance(wrapping, list):
+            raise ValueError(f'Invalid prose wrapping rules: {identity}')
+        names.extend(wrapping)
         if not isinstance(paired, list):
             raise ValueError(f'Invalid paired image rules: {identity}')
         for group in paired:
@@ -357,6 +361,8 @@ def arrange_article_figures(source, rules=None):
         if standalone:
             mark(figure, 'article-figure--standalone')
             continue
+        if len(names) == 1 and names[0] in rule.get('wrap', []):
+            mark(figure, 'article-figure--reviewed-wrap')
         images = _images(figure)
         # A shared caption stays in its figure, outside the image row. Text or
         # structural elements between images are deliberate source boundaries.

@@ -145,6 +145,12 @@ It records exact image basenames under permanent article UUIDs:
   normal responsive wrapping rules.
 - `standalone` lists images that need an independent reading-width block,
   including existing wide images whose presentation should be preserved.
+- `wrap` permits reviewed small landscape photographs to wrap beside prose even
+  when wider than the automatic aspect-ratio limit. The 480px source-width limit
+  and all normal viewport, text-measure, and no-upscaling checks still apply.
+  In **Technology Dictates Morality**, the phone-and-camera photo wraps beside
+  the opening paragraph after the standalone banner. A preceding standalone
+  figure does not prevent this wrapping; ordinary consecutive figures stay stacked.
 - `transparent_padding` maps a reviewed single image to its original `width` and
   `height` and the fully transparent `top`, `right`, `bottom`, and `left` insets,
   in source pixels. A responsive viewport hides only those empty edges, retains

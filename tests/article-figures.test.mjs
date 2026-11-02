@@ -52,6 +52,18 @@ test('small landscape and square illustrations can share readable prose', () => 
   }
 });
 
+test('reviewed small wide photos wrap without bypassing size or readability limits', () => {
+  const photo = { naturalWidth: 294, naturalHeight: 129, index: 1 };
+  assert.equal(layout(photo), null);
+  const reviewed = { ...photo, reviewedWrap: true };
+  assert.deepEqual(layout(reviewed), { width: 285, gap: 27, side: 'end' });
+  assert.equal(layout({ ...reviewed, containerWidth: 1200 }).width, 294);
+  for (const options of [{ wideScreen: false }, { containerWidth: 500 }, { fontSize: 24 },
+    { naturalHeight: 0 }, { naturalWidth: 481 }, { naturalWidth: 725, naturalHeight: 170 }]) {
+    assert.equal(layout({ ...reviewed, ...options }), null);
+  }
+});
+
 test('mobile, narrow reading columns, and larger text cannot create tiny gutters', () => {
   assert.equal(layout({ wideScreen: false }), null);
   for (const containerWidth of [320, 500, 611]) assert.equal(layout({ containerWidth }), null);
@@ -90,6 +102,22 @@ test('only contiguous opening headings with adjacent prose qualify for figure fl
   for (const prose of ['P', 'OL', 'UL']) {
     assert.deepEqual(figureFlowHeadings(siblings('FIGURE', prose)), []);
     assert.equal(figureFlowHeadings(siblings('FIGURE', 'H2', prose)).length, 1);
+  }
+});
+
+test('only an explicitly standalone predecessor permits an adjacent figure to wrap', () => {
+  const preceding = standalone => ({ tagName: 'FIGURE', classList: {
+    contains: name => standalone && name === 'article-figure--standalone',
+  } });
+  const figure = siblings('FIGURE', 'P');
+  figure.previousElementSibling = preceding(true);
+  assert.deepEqual(figureFlowHeadings(figure), []);
+  figure.previousElementSibling = preceding(false);
+  assert.equal(figureFlowHeadings(figure), null);
+  for (const next of [preceding(false), preceding(true)]) {
+    const group = siblings('FIGURE', next, 'P');
+    group.previousElementSibling = preceding(true);
+    assert.equal(figureFlowHeadings(group), null);
   }
 });
 
