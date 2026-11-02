@@ -117,6 +117,10 @@
     overflow-wrap: anywhere;
   }
   .prose .article-figure--wrap + .article-figure-heading { margin-block-start: 0; }
+  /* Adjacent list text regains the full column below the image. */
+  .prose .article-figures .article-figure--wrap + :is(ul,ol) {
+    display: block;
+  }
   .prose .article-figures figure.article-figure--wrap {
     width: var(--article-figure-width);
     max-width: 38%;
