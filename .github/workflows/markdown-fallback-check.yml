@@ -1,0 +1,90 @@
+name: Verify Markdown fallback repair
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  replay:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the proposed test correction
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install the pinned browser tooling
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+      - name: Recover the exact failed browser trace
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import pathlib, sys, zipfile
+          sys.path.insert(0, 'scripts')
+          from publication_state import GitHub
+          client = GitHub()
+          artifact = client.api('/actions/artifacts/13568022453')
+          assert artifact['workflow_run']['id'] == 42354921017
+          assert artifact['digest'] == 'sha256:466f8f1d61c867fe6371a93556917cc70f8f9d15523748f5dbd951217090d166'
+          destination = pathlib.Path('.test-output/markdown-replay')
+          destination.mkdir(parents=True, exist_ok=True)
+          with client.download(artifact) as archive_path, zipfile.ZipFile(archive_path) as archive:
+              member = 'browser-results/reader-Markdown-fallback-p-41971--when-clipboard-unavailable-chromium/trace.zip'
+              (destination / 'trace.zip').write_bytes(archive.read(member))
+          PY
+          python3 tests/fixtures/ci-markdown-replay.py --trace .test-output/markdown-replay/trace.zip --repo . --output .test-output/markdown-replay --theme tests/fixtures/ci-markdown-theme.js
+      - name: Reproduce the original failure and verify the corrected test
+        run: |
+          python3 - <<'PY'
+          import json, os, pathlib, subprocess
+          root = pathlib.Path('.test-output/markdown-replay').resolve()
+          def run(variant):
+              result = subprocess.run(
+                  ['node', 'node_modules/@playwright/test/cli.js', 'test', f'tests/reader.{variant}.spec.mjs'],
+                  cwd=root, env={**os.environ, 'REPLAY_VARIANT': variant, 'FORCE_COLOR': '0'},
+                  text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+              (root / f'{variant}.log').write_text(result.stdout)
+              return result
+          original = run('original')
+          assert original.returncode == 1, original.stdout
+          assert 'Expected substring: "The Heartbeat of the Remnant"' in original.stdout, original.stdout
+          assert 'The Heartbeat of The Remnant' in original.stdout, original.stdout
+          print('Confirmed the original test fails on the recorded publication-name mismatch.')
+          fixed = run('fixed')
+          assert fixed.returncode == 0, fixed.stdout
+          print(fixed.stdout)
+          source = (root / 'tests/reader.fixed.spec.mjs').read_text()
+          interception = """await page.route('**/*.md', async route => {
+            const response = await route.fetch();
+            await route.fulfill({ response, body: (await response.text()).slice(0, -16) });
+          });
+          await page.goto(article(locale));"""
+          assert source.count('await page.goto(article(locale));') == 1
+          (root / 'tests/reader.truncated.spec.mjs').write_text(
+              source.replace('await page.goto(article(locale));', interception, 1))
+          truncated = run('truncated')
+          assert truncated.returncode == 1 and 'toHaveValue' in truncated.stdout, truncated.stdout
+          print('Confirmed the corrected test rejects a truncated browser copy response.')
+          summary = {'original_failure_reproduced': True, 'corrected_test_passed': True,
+                     'truncated_payload_rejected': True}
+          (root / 'verification.json').write_text(json.dumps(summary, indent=2) + '\n')
+          PY
+      - name: Retain focused verification evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: markdown-fallback-verification-${{ github.run_id }}
+          path: |
+            .test-output/markdown-replay/*.log
+            .test-output/markdown-replay/provenance.json
+            .test-output/markdown-replay/verification.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14
