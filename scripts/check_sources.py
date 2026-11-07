@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from content import load_content
-from deployment import live_deployment, validated_source_revisions
+from deployment import live_deployment, load_published_deployment, validated_source_revisions
 from publication_inventory import assert_retains, baseline_inventory, validate_inventory
 from retention import PublicationRetention
 
@@ -38,10 +38,13 @@ def main() -> None:
     parser.add_argument('--migration-baseline', type=Path,
                         default=Path(__file__).resolve().parents[1] / 'data/publication-baseline.json')
     parser.add_argument('--retention-context', type=Path, default=Path('.build/retention-context.json'))
+    parser.add_argument('--published-deployment', type=Path,
+                        help='Verified metadata from the last successful GitHub Pages deployment')
     args = parser.parse_args()
     sources = json.loads(args.source_report.read_text())
     validated_source_revisions(sources)  # Stop before even reading an unusable export.
-    previous = live_deployment(fresh=True)
+    previous = (load_published_deployment(args.published_deployment)
+                if args.published_deployment else live_deployment(fresh=True))
     migration = (json.loads(args.migration_baseline.read_text())
                  if isinstance(previous, dict) and 'article_inventory' not in previous else None)
     result = check_inputs(sources, args.english, args.translations, args.languages,

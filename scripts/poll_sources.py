@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 import subprocess
 
-from deployment import live_deployment
+from deployment import live_deployment, load_published_deployment
 from prepare_sources import REPOSITORIES, SHA, THEME_REVISION, git, resolve_main
 
 REVISION_KEYS = {'site', 'english', 'translations', 'theme'}
@@ -69,9 +69,14 @@ def main() -> None:
     parser.add_argument('--report', type=Path, default=Path('.build/poll-report.json'))
     parser.add_argument('--force', action='store_true')
     parser.add_argument('--review', action='store_true')
+    parser.add_argument('--published-deployment', type=Path,
+                        help='Verified metadata from the last successful GitHub Pages deployment')
     args = parser.parse_args()
     selection = select_revisions()
-    result = poll_plan(selection, None if args.review or args.force else live_deployment(),
+    previous = (load_published_deployment(args.published_deployment)
+                if args.published_deployment else
+                (None if args.review or args.force else live_deployment()))
+    result = poll_plan(selection, previous,
                        force=args.force, review=args.review)
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(result, indent=2) + '\n')
@@ -87,7 +92,7 @@ def main() -> None:
             stream.write(result['reason'] + '\n\n')
             stream.write('Build requested.\n' if result['build'] else
                          'No source or website revisions changed; build and deployment skipped.\n')
-            stream.write('The baseline is the live deployment.json, never the last seen or attempted revision.\n')
+            stream.write('The baseline is the last successfully deployed publication, never a build candidate or attempted revision.\n')
 
 
 if __name__ == '__main__':

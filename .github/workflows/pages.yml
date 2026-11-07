@@ -48,10 +48,15 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+      deployments: read
     outputs:
       build: ${{ steps.poll.outputs.build }}
       site_revision: ${{ steps.poll.outputs.site_revision }}
       selection: ${{ steps.poll.outputs.selection }}
+      deployment_id: ${{ steps.publication.outputs.deployment_id }}
     steps:
       - name: Check out trusted current main
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -60,6 +65,11 @@ jobs:
           persist-credentials: false
       - name: Validate the website event
         run: python3 scripts/validate_event.py
+      - name: Read the last successful Pages publication from GitHub
+        id: publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/publication_state.py fetch --output .build/published
       - name: Compare current source pins with the last successful deployment
         id: poll
         env:
@@ -68,13 +78,17 @@ jobs:
           set -euo pipefail
           args=()
           if [[ "$FORCE_REBUILD" == true ]]; then args+=(--force); fi
-          python3 scripts/poll_sources.py "${args[@]}"
+          python3 scripts/poll_sources.py --published-deployment .build/published/deployment.json "${args[@]}"
 
   build:
     needs: check
     if: needs.check.outputs.build == 'true'
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 45
+    permissions:
+      contents: read
+      actions: read
+      deployments: read
     outputs:
       changed: ${{ steps.plan.outputs.changed }}
     steps:
@@ -89,6 +103,11 @@ jobs:
         run: |
           python3 -c 'import sys; assert sys.version_info >= (3, 11), sys.version'
           node -e 'if (Number(process.versions.node.split(".")[0]) < 20) process.exit(1)'
+      - name: Restore the same successful publication selected by preflight
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUBLICATION_ID: ${{ needs.check.outputs.deployment_id }}
+        run: python3 scripts/publication_state.py fetch --deployment-id "$PUBLICATION_ID" --output .build/published
       - name: Install pinned build and browser tooling
         run: npm ci
       - name: Run offline regression suites
@@ -101,13 +120,13 @@ jobs:
           SOURCE_SELECTION: ${{ needs.check.outputs.selection }}
         run: python3 scripts/prepare_sources.py --selection "$SOURCE_SELECTION"
       - name: Stop before site generation if upstream health or published inventory regressed
-        run: python3 scripts/check_sources.py
+        run: python3 scripts/check_sources.py --published-deployment .build/published/deployment.json
       - name: Run full source-backed regressions
         run: python3 -m unittest discover -s tests -v
       - name: Reuse the durable published Scripture scan ledger
-        run: python3 scripts/scripture.py --fetch-published
+        run: cp .build/published/scripture/manifest.json .build/scripture-manifest.json
       - name: Reuse durable published route aliases
-        run: python3 scripts/route_registry.py
+        run: python3 scripts/route_registry.py --published .build/published/routes.json
       - name: Build the complete static site
         run: |
           python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --registry .build/routes.json --output dist
@@ -139,7 +158,7 @@ jobs:
           args=()
           if [[ "$COMPARE_LIVE" == true ]]; then args+=(--compare-live); fi
           if [[ "$FORCE_REBUILD" == true ]]; then args+=(--force); fi
-          python3 scripts/deployment.py "${args[@]}"
+          python3 scripts/deployment.py --published-deployment .build/published/deployment.json "${args[@]}"
       - name: Explain build and translation health
         if: always()
         env:
@@ -194,6 +213,17 @@ jobs:
           include-hidden-files: true
           if-no-files-found: warn
           retention-days: 14
+      - name: Retain exact publication metadata for deployment recovery
+        if: steps.plan.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: remnant-publication-metadata-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            dist/deployment.json
+            dist/routes.json
+            dist/scripture/manifest.json
+          if-no-files-found: error
+          retention-days: 90
       # Pages Actions and github-pages protection rules govern publication.
       # No separate repository-variable opt-in is required for trusted main.
       - name: Package the validated production candidate
@@ -225,3 +255,27 @@ jobs:
       - name: Deploy the validated artifact
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+  record:
+    needs: [check, build, deploy]
+    if: >-
+      github.repository == 'trueChristian/remnant.truechristian.church' &&
+      github.ref == 'refs/heads/main' &&
+      github.event_name != 'pull_request' &&
+      needs.deploy.result == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+      deployments: read
+    steps:
+      - name: Check out the exact trusted publisher revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ needs.check.outputs.site_revision }}
+          persist-credentials: false
+      - name: Preserve metadata only after successful Pages publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/publication_state.py record --run-id "$GITHUB_RUN_ID"

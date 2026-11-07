@@ -216,6 +216,22 @@ class SourceGateTests(unittest.TestCase):
         after.pop('retention-context.json')
         self.assertEqual(after, before)
 
+    def test_cli_uses_verified_snapshot_when_public_site_cannot_be_read(self):
+        report, previous, context = (self.root / name for name in
+                                     ('source-report.json', 'previous.json', 'retention-context.json'))
+        write_json(report, self.report)
+        write_json(previous, self.live)
+        argv = ['check_sources.py', '--source-report', str(report),
+                '--english', str(self.english), '--translations', str(self.translations),
+                '--languages', str(self.languages), '--retention-context', str(context),
+                '--published-deployment', str(previous)]
+        with patch.object(sys, 'argv', argv), \
+             patch.object(check_sources, 'live_deployment', side_effect=AssertionError('public site is challenged')) as live, \
+             patch('builtins.print'):
+            check_sources.main()
+        live.assert_not_called()
+        self.assertEqual(json.loads(context.read_text())['baseline'], self.live)
+
 
 if __name__ == '__main__':
     unittest.main()

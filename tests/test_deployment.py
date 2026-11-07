@@ -268,6 +268,27 @@ class DeploymentTests(unittest.TestCase):
         self.assertRegex(checked.full_url, r'/deployment\.json\?publication-check=[a-f0-9]{32}$')
         self.assertIn('no-store', checked.get_header('Cache-control'))
 
+    def test_verified_publication_snapshot_allows_planning_without_public_site_access(self):
+        sources, built, previous, plan = (self.output / name for name in
+                                        ('sources.json', 'built.json', 'previous.json', 'plan.json'))
+        sources.write_text(json.dumps(self.report))
+        built.write_text(json.dumps(self.built))
+        previous.write_text(json.dumps(self.live))
+        argv = ['deployment.py', '--site-output', str(self.output), '--source-report', str(sources),
+                '--build-report', str(built), '--report', str(plan),
+                '--published-deployment', str(previous), '--compare-live']
+        with patch.object(sys, 'argv', argv), \
+             patch.object(deployment, 'live_deployment', side_effect=AssertionError('public site is challenged')) as live, \
+             patch('builtins.print'):
+            deployment.main()
+        live.assert_not_called()
+        self.assertEqual(json.loads(plan.read_text())['article_inventory'], self.live['article_inventory'])
+        # An explicit file still goes through the ordinary retention gate.
+        self.live['article_inventory']['af'] = [self.article_id]
+        previous.write_text(json.dumps(self.live))
+        with patch.object(sys, 'argv', argv), self.assertRaisesRegex(ValueError, 'disappeared'):
+            deployment.main()
+
     def test_redirects_are_refused(self):
         with self.assertRaisesRegex(ValueError, 'Redirects'):
             deployment.NoRedirect().redirect_request(None, None, 302, '', {}, 'https://attacker.example')
