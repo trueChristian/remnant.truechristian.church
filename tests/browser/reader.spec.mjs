@@ -193,15 +193,32 @@ test('search filters, zero results, pagination, and keyboard navigation', async 
 
 test('Markdown fallback preserves selectable text when clipboard unavailable', async ({ page }) => {
   const locale = afCandidate ? 'af' : 'en';
-  await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:undefined}));
+  await page.addInitScript(() => Object.defineProperty(navigator, 'clipboard', { value: undefined }));
   await page.goto(article(locale));
-  await page.locator('[data-copy-markdown]').click();
-  await expect(page.locator('#markdown-fallback')).toBeVisible();
-  await expect(page.locator('#markdown-text')).toContainText('');
-  const value=await page.locator('#markdown-text').inputValue();
-  if (noticeRequired) expect(value).toContain('OpenAI');
-  expect(value).toContain('The Heartbeat of the Remnant');
-  expect(value).toContain(`/${locale}/issues/`);
+
+  const copyButton = page.locator('[data-copy-markdown]');
+  const fallback = page.locator('#markdown-fallback');
+  const textarea = page.locator('#markdown-text');
+  const markdownUrl = await page.locator('.reader-tools a[download]').getAttribute('href');
+  expect(markdownUrl).toBeTruthy();
+  await expect(copyButton).toHaveAttribute('data-copy-markdown', markdownUrl);
+
+  // The selected article changes as translations arrive; preserve its exact download.
+  const response = await page.request.get(markdownUrl);
+  expect(response.ok()).toBe(true);
+  const markdown = await response.text();
+  expect(markdown.trim()).not.toBe('');
+  if (noticeRequired) expect(markdown).toContain('OpenAI');
+  expect(markdown).toContain(`/${locale}/issues/`);
+
+  await expect(fallback).toBeHidden();
+  await copyButton.click();
+  await expect(fallback).toBeVisible();
+  await expect(textarea).toHaveValue(markdown);
+  await expect(textarea).toBeFocused();
+  expect(await textarea.evaluate(element => [element.selectionStart, element.selectionEnd]))
+    .toEqual([0, markdown.length]);
+  await expect(copyButton).toBeEnabled();
 });
 
 test('reduced motion keeps all three archive cards readable without autoplay', async ({ page }) => {
