@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "b4919aca41ad1b32a88f7e93d26e5735a3d0279336d99f565575a7a7fde9aaf8",
+  "integrity": "aee2eb60c87190f189a5ffc99d0a8dff41af71edc203156205331b8fee2cfd8a",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -3127,6 +3127,63 @@
         }
       ],
       "record_hash": "53950ff45b3ab63b628cd4f9113b6ee72990c54381fc5a3e31cc034d4caff524"
+    },
+    "049f2e7d-675c-4dac-9584-5aefceb9b9c1:de:b9efab1eca3b7501fbe8babaeee581a8829886d82606fd66328be7bbbe1bf278:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "049f2e7d-675c-4dac-9584-5aefceb9b9c1",
+      "locale": "de",
+      "content_hash": "b9efab1eca3b7501fbe8babaeee581a8829886d82606fd66328be7bbbe1bf278",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "af5e07991f989ae4cd7ab3da",
+          "quote": "Daniel 2",
+          "before": "",
+          "after": ",21 sagt uns, dass unser Schöpfergott „d",
+          "spans": [
+            [
+              465,
+              473
+            ]
+          ],
+          "osis": "Dan.2.1-Dan.2.49",
+          "queries": [
+            "27 2:1-49"
+          ]
+        },
+        {
+          "id": "0deef7be524bc15a27b8488a",
+          "quote": "Hiob 12,7–10",
+          "before": "ebewesens und der Atem jedes Menschen“ (",
+          "after": ").",
+          "spans": [
+            [
+              4367,
+              4379
+            ]
+          ],
+          "osis": "Job.12.7-Job.12.10",
+          "queries": [
+            "18 12:7-10"
+          ]
+        },
+        {
+          "id": "983af7be7fdc7604229fcd96",
+          "quote": "2. Korinther 9",
+          "before": " Dank für seine unaussprechliche Gabe“ (",
+          "after": ",15).",
+          "spans": [
+            [
+              4578,
+              4592
+            ]
+          ],
+          "osis": "2Cor.9.1-2Cor.9.15",
+          "queries": [
+            "47 9:1-15"
+          ]
+        }
+      ],
+      "record_hash": "8c699333f9018b547d6d8e79ab8b3be70d4bd17902b5847bddba59ab87f96622"
     },
     "049f2e7d-675c-4dac-9584-5aefceb9b9c1:el:fc0730084cc0d09c5773a2d057508cb20d30e924133511a4b9796d3ecf4cb087:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "049f2e7d-675c-4dac-9584-5aefceb9b9c1",
@@ -73567,6 +73624,271 @@
         }
       ],
       "record_hash": "2f2a27fe876868a46da7a6ead686f5d1670cc4f27a7967288c3b35109cb5358f"
+    },
+    "269bd2b1-418e-4d93-bd15-e7937c1adb85:sv:ed19c77fd3e5f83355bbc4c7838c99f19a339ed3c6340cb795e901b4df93ad88:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "269bd2b1-418e-4d93-bd15-e7937c1adb85",
+      "locale": "sv",
+      "content_hash": "ed19c77fd3e5f83355bbc4c7838c99f19a339ed3c6340cb795e901b4df93ad88",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f9c250e497ed15367145ec9f",
+          "quote": "Lukas 4:18-19",
+          "before": " i frihet, att förkunna Herrens nådeår –",
+          "after": ".",
+          "spans": [
+            [
+              354,
+              367
+            ]
+          ],
+          "osis": "Luke.4.18-Luke.4.19",
+          "queries": [
+            "42 4:18-19"
+          ]
+        },
+        {
+          "id": "d87f8a242e628d59df422158",
+          "quote": "Jesaja 61",
+          "before": "ort tidigare. Denna sabbat läste Han ur ",
+          "after": ". När Han var färdig sade Han, …I dag är",
+          "spans": [
+            [
+              532,
+              541
+            ]
+          ],
+          "osis": "Isa.61.1-Isa.61.11",
+          "queries": [
+            "23 61:1-11"
+          ]
+        },
+        {
+          "id": "be5dbff09014b8d7de342f6d",
+          "quote": "Lukas 4:21",
+          "before": "denna skrift uppfylld medan ni hör den –",
+          "after": ".",
+          "spans": [
+            [
+              622,
+              632
+            ]
+          ],
+          "osis": "Luke.4.21",
+          "queries": [
+            "42 4:21"
+          ]
+        },
+        {
+          "id": "af6d5fca8bc7c6d91bd973fd",
+          "quote": "Johannes 10:10",
+          "before": " de ska ha liv, och ha det i överflöd – ",
+          "after": ".",
+          "spans": [
+            [
+              1450,
+              1464
+            ]
+          ],
+          "osis": "John.10.10",
+          "queries": [
+            "43 10:10"
+          ]
+        },
+        {
+          "id": "2ea42c115250cb2362e25e3d",
+          "quote": "Jakobsbrevet 5:14-16",
+          "before": "verksamma, innerliga bön förmår mycket –",
+          "after": ".",
+          "spans": [
+            [
+              3737,
+              3757
+            ]
+          ],
+          "osis": "Jas.5.14-Jas.5.16",
+          "queries": [
+            "59 5:14-16"
+          ]
+        },
+        {
+          "id": "1d24559d16fbe8b8097b2eb6",
+          "quote": "Markus 2",
+          "before": "d mellan fysiskt och andligt helande. I ",
+          "after": ", när de sänkte den lamme genom taket in",
+          "spans": [
+            [
+              7286,
+              7294
+            ]
+          ],
+          "osis": "Mark.2.1-Mark.2.28",
+          "queries": [
+            "41 2:1-28"
+          ]
+        },
+        {
+          "id": "24d77995443ff3b95c82f61d",
+          "quote": "Johannes 5",
+          "before": "I ",
+          "after": " botade Jesus en man som låg vid Betesda",
+          "spans": [
+            [
+              7787,
+              7797
+            ]
+          ],
+          "osis": "John.5.1-John.5.47",
+          "queries": [
+            "43 5:1-47"
+          ]
+        },
+        {
+          "id": "ba813f2d2268ec5c6265b7ea",
+          "quote": "Psaltaren 119:67",
+          "before": " jag vilse; men nu håller jag ditt ord –",
+          "after": ". Jesus sade: Herrens Ande är över mig, ",
+          "spans": [
+            [
+              8330,
+              8346
+            ]
+          ],
+          "osis": "Ps.119.67",
+          "queries": [
+            "19 119:67"
+          ]
+        },
+        {
+          "id": "f1ffcf402c11e02847e6019a",
+          "quote": "Lukas 4:18-19",
+          "before": " i frihet, att förkunna Herrens nådeår –",
+          "after": ". ",
+          "spans": [
+            [
+              8649,
+              8662
+            ]
+          ],
+          "osis": "Luke.4.18-Luke.4.19",
+          "queries": [
+            "42 4:18-19"
+          ]
+        },
+        {
+          "id": "8621764918c0daf71e94735c",
+          "quote": "1 Johannesbrevet 4:18",
+          "before": "en fullkomlig kärlek driver ut fruktan –",
+          "after": ".",
+          "spans": [
+            [
+              10105,
+              10126
+            ]
+          ],
+          "osis": "1John.4.18",
+          "queries": [
+            "62 4:18"
+          ]
+        },
+        {
+          "id": "a2f866d2a5bb1fa9500e5d71",
+          "quote": "Psaltaren 56:3",
+          "before": " När jag är rädd förtröstar jag på dig –",
+          "after": ". ",
+          "spans": [
+            [
+              10191,
+              10205
+            ]
+          ],
+          "osis": "Ps.56.3",
+          "queries": [
+            "19 56:3"
+          ]
+        },
+        {
+          "id": "5adb3eacf3d50c2bac67304f",
+          "quote": "Filipperbrevet 4:6",
+          "before": " genom bön och åkallan med tacksägelse –",
+          "after": ". ",
+          "spans": [
+            [
+              10448,
+              10466
+            ]
+          ],
+          "osis": "Phil.4.6",
+          "queries": [
+            "50 4:6"
+          ]
+        },
+        {
+          "id": "7056229720ce3d999f646c26",
+          "quote": "Efesierbrevet 4:31",
+          "before": "as från er, tillsammans med all ondska –",
+          "after": ".",
+          "spans": [
+            [
+              10632,
+              10650
+            ]
+          ],
+          "osis": "Eph.4.31",
+          "queries": [
+            "49 4:31"
+          ]
+        },
+        {
+          "id": "f3bb5e07bd5e83460b2ef271",
+          "quote": "Hebreerbrevet 4:15-16",
+          "before": "nner nåd till hjälp när vi behöver det –",
+          "after": ".",
+          "spans": [
+            [
+              11272,
+              11293
+            ]
+          ],
+          "osis": "Heb.4.15-Heb.4.16",
+          "queries": [
+            "58 4:15-16"
+          ]
+        },
+        {
+          "id": "f43ed1e81f6c69115bdc6146",
+          "quote": "Hebreerbrevet 4:1-2",
+          "before": "örenades med tro hos dem som hörde det –",
+          "after": ". Är vår tro på Gud så svag (kom ihåg at",
+          "spans": [
+            [
+              12339,
+              12358
+            ]
+          ],
+          "osis": "Heb.4.1-Heb.4.2",
+          "queries": [
+            "58 4:1-2"
+          ]
+        },
+        {
+          "id": "271abb28d0e6048747f5eab3",
+          "quote": "Psaltaren 103:1-5",
+          "before": ", så att din ungdom förnyas som örnens –",
+          "after": ".",
+          "spans": [
+            [
+              14625,
+              14642
+            ]
+          ],
+          "osis": "Ps.103.1-Ps.103.5",
+          "queries": [
+            "19 103:1-5"
+          ]
+        }
+      ],
+      "record_hash": "03cb486fc1e9ce8f3fb5349e7b256bc7907aff21bdddcbe96dbe97d0fb50725f"
     },
     "269bd2b1-418e-4d93-bd15-e7937c1adb85:ur:7092383604ab35a7d1ad94160a6c6d0c4f6467116ca60830aa9009b2ec53bf81:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "269bd2b1-418e-4d93-bd15-e7937c1adb85",
@@ -187281,6 +187603,22 @@
       "markers": [],
       "record_hash": "178d898356e0d9a7c2ad933cdc90781420488b43beaebec488cf4e7db4808b78"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:id:6f75ca1959c4db781ad82c42ddd16e0ac1b8f474c6bcaa104c6cbf660ccbbeeb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "id",
+      "content_hash": "6f75ca1959c4db781ad82c42ddd16e0ac1b8f474c6bcaa104c6cbf660ccbbeeb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a8f4328b167e0ee4f1f38df17159c6867e42e8e391bc3d36984d29ebbbbec56d"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:pt:47d4ed39be92c8278c5d9ad5cbc316249fc72996149786d63de174b01bf515de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "pt",
+      "content_hash": "47d4ed39be92c8278c5d9ad5cbc316249fc72996149786d63de174b01bf515de",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "1c7594bee719974da69319e55ceb6dc06550cfb96c3190e42320f2aa85b4c9fb"
+    },
     "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf:af:b72fcbb8503942ae679c2d5e7077d39a1c544a32c69764012e1bd6a1136c8381:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf",
       "locale": "af",
@@ -198359,6 +198697,14 @@
       ],
       "record_hash": "f428fc5318550e90ebaa8f292605c94dfb8d618b741d328206fd0f578da00744"
     },
+    "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac:af:6195b34eb67bbc774e0d2a87761d6d5d450496cd8b5631ba9edd6fec84bbec89:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac",
+      "locale": "af",
+      "content_hash": "6195b34eb67bbc774e0d2a87761d6d5d450496cd8b5631ba9edd6fec84bbec89",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5404fc85a7db947e28a05c3f75dc643822a6216bfb6f52c3ff0c28c8a2d27ec3"
+    },
     "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac:ar:f75528e642c19663a3c9adbbda7338abbf23f313d25cab4b302cf7675fe3ba7f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac",
       "locale": "ar",
@@ -198439,6 +198785,14 @@
       "markers": [],
       "record_hash": "3e6ce2eb5563dc6c983dff5cdf945b1bf0b83a208b69d35f7a3adc6ebc6a8b8c"
     },
+    "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac:it:896ebb50516750db6fa81eaea3ce6713a84beea05b8cbdf20858927862a364dd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac",
+      "locale": "it",
+      "content_hash": "896ebb50516750db6fa81eaea3ce6713a84beea05b8cbdf20858927862a364dd",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ce310389bfa39ba42f20d00a1d50e065925eb0a96fa49e5ed0ef5d5b52e31d9a"
+    },
     "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac:ko:f76542fd05e781e403493e22784f71da2d6ce23e425d080da9177266fea1d89f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac",
       "locale": "ko",
@@ -198486,6 +198840,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "c796d986ec4d3a645431ac28074ab14086ad4d1871eff971c11010a785e7cacc"
+    },
+    "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac:sw:377cd92ba53295844b97f333b5b9ecdb5c5ba5d0d1bdf855da2e92e30457e2a3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac",
+      "locale": "sw",
+      "content_hash": "377cd92ba53295844b97f333b5b9ecdb5c5ba5d0d1bdf855da2e92e30457e2a3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "1777ee26298bc8002943456d530bc8c2dc117938a0cda20a75dd9eacf4d05454"
     },
     "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac:ur:4989759092a6b39864c02ad73574e941a85cdc8db0bc2e56ffe41940a11754d3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac",
@@ -206509,6 +206871,152 @@
         }
       ],
       "record_hash": "3b20b0b15845a66ca241ba2a29327c69806f458bfd34dab164a880a74838d070"
+    },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:ur:b34c191b149cf67ab8c125306b6d673f0aa890cdbb36040d0ba3f2713bd8c9a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "ur",
+      "content_hash": "b34c191b149cf67ab8c125306b6d673f0aa890cdbb36040d0ba3f2713bd8c9a2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "112424c0b9c194bfc93335ea",
+          "quote": "گلتیوں 6:1-5",
+          "before": "ں۔ کیونکہ ہر شخص اپنا ہی بوجھ اٹھائے گا—",
+          "after": "۔",
+          "spans": [
+            [
+              6065,
+              6077
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "80b22805947baab153c7a85e",
+          "quote": "یعقوب 1:2-3",
+          "before": "تمہارے ایمان کی آزمائش صبر پیدا کرتی ہے—",
+          "after": "۔",
+          "spans": [
+            [
+              6467,
+              6478
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "d993d224a873b9a91499e6ce",
+          "quote": "گلتیوں 6:9-10",
+          "before": "ھ نیکی کریں، خاص کر اہلِ ایمان کے ساتھ۔—",
+          "after": "۔ اس زمین پر اجنبیوں اور مسافروں کی حیثی",
+          "spans": [
+            [
+              7784,
+              7797
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "10e0255ef891b7ca00e0e73c2551a61757645ab5f9fea879a66760e31600b577"
+    },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:zh-Hans:4897143338ae517b4bb46287765c390de5edd0d7acf610aea1245abffb92afb7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "zh-Hans",
+      "content_hash": "4897143338ae517b4bb46287765c390de5edd0d7acf610aea1245abffb92afb7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "771e58e791b6f3470741861d",
+          "quote": "哥林多前书 15:19",
+          "before": "人相同。我想起了一节经文：如果我们在基督里的盼望只在今生，我们就比众人更可怜——",
+          "after": "。作为基督徒……",
+          "spans": [
+            [
+              1852,
+              1863
+            ]
+          ],
+          "osis": "1Cor.15.19",
+          "queries": [
+            "46 15:19"
+          ]
+        },
+        {
+          "id": "ce3072d3ff5c9736709e6323",
+          "quote": "加拉太书 6:1-5",
+          "before": "验自己的行为，这样，他所夸的只在自己，不在别人身上。因为各人必担当自己的担子——",
+          "after": "。",
+          "spans": [
+            [
+              2368,
+              2378
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "d561c01001fa85794ef59fd3",
+          "quote": "哥林多前书 10:13",
+          "before": "遇见的试探，无非是人所能受的；神是信实的，必不叫你们受试探过于所能承受的……——",
+          "after": "。",
+          "spans": [
+            [
+              2474,
+              2485
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "07a215d49b75e7b920abb683",
+          "quote": "雅各书 1:2-3",
+          "before": "，你们落在百般试炼中，都要以为大喜乐；因为知道，你们的信心经过考验，就生忍耐——",
+          "after": "。",
+          "spans": [
+            [
+              2583,
+              2592
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "4b772fd859892c5e261c71cd",
+          "quote": "加拉太书 6:9-10",
+          "before": "心，到了时候就要收成。所以，有了机会就当向众人行善，向信徒一家的人更当这样。——",
+          "after": "。我们既是这世上的客旅和寄居者，就不要忘记我们永恒的家乡、体恤我们的救主、掌权的",
+          "spans": [
+            [
+              3083,
+              3094
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "424207f5757d575ea7b16c5cb843437657cb8ae5f7aa3ca76440285927952b6b"
     },
     "7a66963a-8f7e-4083-bed3-227b354fae1b:en:e65c76c0d3aba3e855e93c1f32fa9aea59c60d24de9cd1fb9b6ceb980b3337b3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7a66963a-8f7e-4083-bed3-227b354fae1b",
@@ -432634,6 +433142,184 @@
       ],
       "record_hash": "8879fca23b85f43a45b0c39fe07ee90d40365496f12cf51ce3e6c59b6fff18d8"
     },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:ko:c0093fc41f633bef7aece152e0dfb72b09c493bce0d9dab9ff32d8ad785734ff:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "ko",
+      "content_hash": "c0093fc41f633bef7aece152e0dfb72b09c493bce0d9dab9ff32d8ad785734ff",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3f904a8ffaa4c6d6467ad93e",
+          "quote": "요한복음 3:3-6",
+          "before": " 수 없느니라. 육으로 난 것은 육이요, 영으로 난 것은 영이니라.” (",
+          "after": ")",
+          "spans": [
+            [
+              322,
+              332
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "5dcec9dd4b617b71529ec7ef",
+          "quote": "요한복음 3:6",
+          "before": "는 “육으로 난 것은 육이요, 영으로 난 것은 영이니라”라고 말씀하셨다(",
+          "after": "). 무슨 뜻인가? 육으로 나면 육을 따라 살게 된다. 성경은 육이 선한",
+          "spans": [
+            [
+              3459,
+              3467
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "6ca309470a7770920636c3f9",
+          "quote": "로마서 8:8",
+          "before": "오직 자기 자신만 생각하며, 그 안에는 조금도 선한 것이 없다. 바울이 ",
+          "after": "에서 말하듯, 육신에 속한 사람은 하나님을 기쁘시게 할 수 없다. 그러나",
+          "spans": [
+            [
+              3610,
+              3617
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "0d9a005f519e0961cf96ed14",
+          "quote": "로마서 7",
+          "before": "거듭난 사람은 ",
+          "after": "장의 바울처럼 스스로는 할 수 없다고 인정하고, 선을 행하려 할 때 그것",
+          "spans": [
+            [
+              4865,
+              4870
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "5dcc1d3aa2adce185ee27f12",
+          "quote": "고린도후서 5:17",
+          "before": "으면 새로운 피조물이라. 이전 것은 지나갔으니 보라, 새것이 되었도다”(",
+          "after": ").",
+          "spans": [
+            [
+              5120,
+              5130
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "f9b803c5d432190dfbbe213679593b588dd616eb7f1afc35ec6426a615772d4b"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:nb:6c1c780a8617f4309afe0b60be7db0afcc545b7d0ec5a33193e40ee438ab6a44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "nb",
+      "content_hash": "6c1c780a8617f4309afe0b60be7db0afcc545b7d0ec5a33193e40ee438ab6a44",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "aa6d9a6661b6c68f930a9bbe",
+          "quote": "Johannes 3:3-6",
+          "before": " og det som er født av Ånden, er ånd.» (",
+          "after": ")",
+          "spans": [
+            [
+              518,
+              532
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "196a38828824ad59b1efc34d",
+          "quote": "Johannes 3:6",
+          "before": ", og det som er født av Ånden, er ånd» (",
+          "after": "). Hva mener han? Hvis du er født av kjø",
+          "spans": [
+            [
+              6052,
+              6064
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "6534fccf334f5e48e285fa10",
+          "quote": "Romerne 8:8",
+          "before": " det i det hele tatt. Som Paulus sier i ",
+          "after": ", er det umulig for kjøttet å behage Gud",
+          "spans": [
+            [
+              6362,
+              6373
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "eb4c9d6ee9986892f5bb4294",
+          "quote": "Romerne 7",
+          "before": "å ny, innrømmer man, slik Paulus gjør i ",
+          "after": ", at man ikke kan klare det på egen hånd",
+          "spans": [
+            [
+              8681,
+              8690
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "febe3cddc0d68d85ff82ea16",
+          "quote": "2. Korinter 5:17",
+          "before": "le er borte, se, det nye er blitt til» (",
+          "after": ").",
+          "spans": [
+            [
+              9164,
+              9180
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "7235df4fa2f8d347ce033f89515edbc777bbf49c9075fdb67085e0a1d0be4db7"
+    },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:pt:7c2cf5e74071ad495885b9da113962ff823691648bc03582444fd3fc1a037be6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
       "locale": "pt",
@@ -432722,6 +433408,184 @@
         }
       ],
       "record_hash": "49e3505a03f360a82eb2a36b002bc17c5d3eb84950b09d6a31b162556f710c71"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:ru:9323f4d07031d14415f62875aea0c8db8d9dbca5774d4b656f582a9450859759:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "ru",
+      "content_hash": "9323f4d07031d14415f62875aea0c8db8d9dbca5774d4b656f582a9450859759",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f8c42ba4399b1215cd6a79a1",
+          "quote": "Иоанна 3:3-6",
+          "before": "ь плоть, а рожденное от Духа есть дух. (",
+          "after": ")",
+          "spans": [
+            [
+              510,
+              522
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "353d9917606b04f561c390cd",
+          "quote": "Иоанна 3:6",
+          "before": "ь плоть, а рожденное от Духа есть дух» (",
+          "after": "). Что Он имеет в виду? Если ты рожден о",
+          "spans": [
+            [
+              6001,
+              6011
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "503d3984764b04cbb62be061",
+          "quote": "к Римлянам 8:8",
+          "before": "брого. Как говорит нам Павел в Послании ",
+          "after": ", плоть не может угодить Богу. Однако вс",
+          "spans": [
+            [
+              6300,
+              6314
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "603c39b209d3203caece936b",
+          "quote": "к Римлянам 7",
+          "before": "выше, человек, подобно Павлу в Послании ",
+          "after": ", признает, что не может справиться сам;",
+          "spans": [
+            [
+              8571,
+              8583
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "44a4a4d3b80150557d6ebfe5",
+          "quote": "2 Коринфянам 5:17",
+          "before": "арь; древнее прошло, теперь все новое» (",
+          "after": ").",
+          "spans": [
+            [
+              9005,
+              9022
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "9cbc642fd889ff7e11947a664ca30f41a82ad16a7b00efe4ca7397a6d1e24997"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:sw:b3cfb8a703f187872b97b4ae980ee40be80af11dd627813c9ede14aff760ea01:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "sw",
+      "content_hash": "b3cfb8a703f187872b97b4ae980ee40be80af11dd627813c9ede14aff760ea01",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "55ff58a096a82a65fab396be",
+          "quote": "Yohana 3:3-6",
+          "before": "li; na kilichozaliwa kwa Roho ni roho. (",
+          "after": ")",
+          "spans": [
+            [
+              488,
+              500
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "429cd7e7026b3a160e9e40e8",
+          "quote": "Yohana 3:6",
+          "before": "li; na kilichozaliwa kwa Roho ni roho” (",
+          "after": "). Anamaanisha nini? Ukizaliwa kwa mwili",
+          "spans": [
+            [
+              6273,
+              6283
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "9bf899707e2021c2c8d1122c",
+          "quote": "Warumi 8:8",
+          "before": "uuhusu. Kama Paulo anavyotuambia katika ",
+          "after": ", haiwezekani kwa mwili kumpendeza Mungu",
+          "spans": [
+            [
+              6587,
+              6597
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "4d26bc53ace55aa3238f8ac0",
+          "quote": "Warumi 7",
+          "before": "ozaliwa mara ya pili, kama Paulo katika ",
+          "after": ", hukiri kwamba hawezi kufanya hivyo kwa",
+          "spans": [
+            [
+              9017,
+              9025
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "0e00c25d9b006d26a743ef20",
+          "quote": "2 Wakorintho 5:17",
+          "before": "kale yamepita; tazama, yamekuwa mapya” (",
+          "after": ").",
+          "spans": [
+            [
+              9497,
+              9514
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "666ae8605cdc3023cdde2b13081576c791558c08084950378e9bd04d2812753b"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:ur:1917f1d41030d19488633f895f2d32b58b6ab20dc47e47599f5d00f4a84098b8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",

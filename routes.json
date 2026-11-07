@@ -14194,11 +14194,12 @@
       },
       "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "not-my-will",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poësie",
+        "alias": "nie-my-wil-nie",
+        "history": [
+          "/af/articles/not-my-will/"
+        ],
+        "fallback": false
       },
       "71e30451-7860-462c-9956-310b0ff431bc": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -40786,11 +40787,12 @@
       },
       "049f2e7d-675c-4dac-9584-5aefceb9b9c1": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-3",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "leitartikel",
+        "alias": "aus-der-redaktion-2",
+        "history": [
+          "/de/articles/from-the-editor-3/"
+        ],
+        "fallback": false
       },
       "04e692e0-5199-4d0e-8b09-a16e84f80894": {
         "category_id": "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408",
@@ -118186,11 +118188,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "puisi",
+        "alias": "yakub-bergulat",
+        "history": [
+          "/id/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -128364,11 +128367,12 @@
       },
       "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "not-my-will",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poesia",
+        "alias": "non-la-mia-volontà",
+        "history": [
+          "/it/articles/not-my-will/"
+        ],
+        "fallback": false
       },
       "71e30451-7860-462c-9956-310b0ff431bc": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -142140,11 +142144,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "그리스도인의-삶",
+        "alias": "새로운-피조물",
+        "history": [
+          "/ko/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -152138,11 +152143,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristent-liv",
+        "alias": "en-ny-skapning",
+        "history": [
+          "/nb/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -167975,11 +167981,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poesia",
+        "alias": "a-luta-de-jacó",
+        "history": [
+          "/pt/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -181946,11 +181953,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "новое-творение",
+        "history": [
+          "/ru/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -185671,11 +185679,12 @@
       },
       "269bd2b1-418e-4d93-bd15-e7937c1adb85": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "discipleship-the-path-of-healing",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "lärjungaskap-helandets-väg",
+        "history": [
+          "/sv/articles/discipleship-the-path-of-healing/"
+        ],
+        "fallback": false
       },
       "26e64c91-d756-4bf5-94b8-afd661a38c4c": {
         "category_id": "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408",
@@ -197570,11 +197579,12 @@
       },
       "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "not-my-will",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ushairi",
+        "alias": "si-mapenzi-yangu",
+        "history": [
+          "/sw/articles/not-my-will/"
+        ],
+        "fallback": false
       },
       "71e30451-7860-462c-9956-310b0ff431bc": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -201467,11 +201477,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "maisha-ya-kikristo",
+        "alias": "kiumbe-kipya",
+        "history": [
+          "/sw/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -207754,11 +207765,12 @@
       },
       "7a4d646a-0c04-4b44-a54f-ef63df487f81": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-8-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "دل-میں-اترنے-والی-باتیں",
+        "alias": "مدیر-کی-جانب-سے-2",
+        "history": [
+          "/ur/articles/from-the-editor-8-2/"
+        ],
+        "fallback": false
       },
       "7af6dfb2-a389-40eb-807b-682e81454dff": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -217538,11 +217550,12 @@
       },
       "7a4d646a-0c04-4b44-a54f-ef63df487f81": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-8-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "警醒之言",
+        "alias": "编者的话-6",
+        "history": [
+          "/zh-Hans/articles/from-the-editor-8-2/"
+        ],
+        "fallback": false
       },
       "7af6dfb2-a389-40eb-807b-682e81454dff": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
