@@ -80,6 +80,17 @@ def live_deployment(request=request_bytes, *, fresh: bool = False) -> dict | Non
     return None
 
 
+def load_published_deployment(path: Path) -> dict:
+    """Read the verified GitHub publication snapshot supplied by the workflow."""
+    with Path(path).open('rb') as stream:
+        raw = stream.read(MAX_DEPLOYMENT_BYTES + 1)
+    if len(raw) > MAX_DEPLOYMENT_BYTES:
+        raise ValueError('Published deployment metadata exceeds its readable size limit')
+    value = json.loads(raw)
+    baseline_inventory(value)
+    return value
+
+
 def validated_source_revisions(source_report: dict) -> dict:
     revisions = {'site': source_report['site_revision']}
     revisions.update({key: value['revision'] for key, value in source_report['sources'].items()})
@@ -162,13 +173,17 @@ def main() -> None:
     parser.add_argument('--report', type=Path, default=Path('.build/deployment-plan.json'))
     parser.add_argument('--compare-live', action='store_true')
     parser.add_argument('--force', action='store_true')
+    parser.add_argument('--published-deployment', type=Path,
+                        help='Verified metadata from the last successful GitHub Pages deployment')
     args = parser.parse_args()
     sources = json.loads(args.source_report.read_text())
     built = json.loads(args.build_report.read_text())
     validated_revisions(sources, built)
-    # A verified live inventory is mandatory, including review and manual runs.
-    # --compare-live remains a compatibility option; it never disables retention.
-    previous = live_deployment(fresh=True)
+    # Production uses the same verified GitHub snapshot throughout the build.
+    # The public URL remains available for local inspection without a snapshot.
+    # --compare-live never disables retention or overrides the supplied snapshot.
+    previous = (load_published_deployment(args.published_deployment)
+                if args.published_deployment else live_deployment(fresh=True))
     migration = None
     if isinstance(previous, dict) and 'article_inventory' not in previous:
         migration = json.loads(args.migration_baseline.read_text())

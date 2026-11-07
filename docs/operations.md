@@ -5,8 +5,8 @@
 `Build and publish Remnant` runs a lightweight source check hourly, at minute 17
 (`17 * * * *`). GitHub schedules are best effort and can start late. The website
 reads the current English and translation `main` revisions and compares them,
-its own selected revision, and the reviewed theme pin with the live
-[`deployment.json`](https://remnant.truechristian.church/deployment.json).
+its own selected revision, and the reviewed theme pin with the last publication
+whose `github-pages` deployment GitHub confirms as successful.
 If those pins match a healthy successful publication, the check exits: no source
 clones, package installation, site generation, browser suite, or deployment runs.
 
@@ -27,22 +27,48 @@ Those production checks run only from trusted main; owner merge is separate.
 
 ## Last-successful-deployment baseline
 
-The live `deployment.json` is the only persisted comparison baseline. It includes
-exact site/English/translation/theme revisions, a display fingerprint, and
-translation health, and the complete per-language UUID inventory. The exact checked
-legacy snapshot in `data/publication-baseline.json` is used only to migrate the
-existing pre-inventory deployment. There is no last-seen source marker or Actions cache that
-could incorrectly acknowledge a failed build.
+`scripts/publication_state.py` obtains the publication authority from GitHub's
+Deployments API. It requires the current successful status for `github-pages`,
+checks its linked run belongs to this repository's trusted main workflow, and
+verifies that the linked Pages deployment job and deployment step succeeded.
+A green build, a skipped deployment, or a historically successful but now inactive
+deployment cannot become the baseline.
 
-A candidate metadata file is generated inside `dist/` and packaged with the site.
-It only becomes the next baseline when GitHub Pages successfully publishes that
-artifact. A failed build, failed Pages deployment, or pending environment approval
-does not update the live baseline. The next hourly check retries still-unpublished
-pins. Missing, malformed, oversized, redirected, or unreachable live metadata
-conservatively requests a build; the bounded metadata request sends no credentials
-and permits no redirects. Preflight may conservatively repeat work after a stale response. Publication
-planning separately retrieves a cache-busted live manifest with no-cache/no-store
-headers; missing or invalid retention evidence blocks publication.
+The `publication-state` branch keeps the exact deployed `deployment.json`,
+`routes.json`, and `scripture/manifest.json`, together with a receipt recording
+their hashes and the successful deployment identity. This branch is metadata
+storage, not website source; source polling continues to use `main`. Reads pin
+one immutable state commit and verify it against GitHub's current deployment.
+The deployment manifest still includes the exact four source revisions, display
+fingerprint, translation health, complete per-language UUID inventory, and
+retained source/image provenance.
+
+Candidate metadata is uploaded as
+`remnant-publication-metadata-<run-id>-<run-attempt>` before Pages publication.
+Only the separate `record` job, after a successful Pages deployment, may update
+`publication-state`. If that job is interrupted, the next run recovers the exact
+newly deployed artifact instead of using an older state branch. Artifact hashes
+and all existing metadata validators must pass. Initial recovery can read the
+three files from the exact successful `github-pages` archive. It never recreates
+the baseline from current candidate content or the old migration snapshot.
+
+The dedicated artifact is retained for 90 days to recover an interrupted record
+job. The state branch supplies durable storage beyond artifact expiry. A failed
+build, failed deployment, or pending approval cannot advance the baseline.
+Unavailable or invalid evidence for the actual published deployment still stops
+publication with a specific recovery error. GitHub API operations have bounded
+retries for temporary transport/server failures.
+
+Preflight and build agree on the same deployment ID. Source validation, route
+preparation, Scripture-ledger reuse, and final publication planning consume that
+verified snapshot. Production builds therefore do not depend on browser access
+to the public site's metadata URLs, including Cloudflare challenges or CDN cache
+behavior. The metadata files remain packaged with the public site. Local
+inspection can still use those URLs when no explicit snapshot is supplied.
+
+The exact checked legacy snapshot in `data/publication-baseline.json` remains
+restricted to migration of its matching pre-inventory deployment; it is not a
+fallback for missing modern metadata.
 
 The preflight selects immutable full commit SHAs once. The build checks out that
 exact website revision and passes the same source selection to preparation;
@@ -65,11 +91,16 @@ or manually forced deployment plan. The event validator accepts only main pushes
 hourly schedules, manual runs on main, and review-only pull requests. Unsupported
 notification events are rejected. There is no extra repository-variable opt-in.
 
-The check/build jobs have only `contents: read`. The deploy job has only
+The check/build jobs have `contents: read`, `actions: read`, and `deployments: read`
+to verify and retrieve the published snapshot. Pull-request validation retains
+only `contents: read`. The deploy job has only
 `pages: write` and `id-token: write`, runs in `github-pages`, and deploys the validated
 artifact without checking out or executing source scripts. Every action is pinned
 to a full commit SHA. Keep environment protections and restrict production branches
-to main; any configured required reviewer still controls deployment.
+to main; any configured required reviewer still controls deployment. The separate
+post-deployment `record` job has `contents: write` plus Actions/deployments read
+access. It checks out the exact trusted publisher revision selected by preflight
+and may save metadata only for its own confirmed successful Pages deployment.
 
 `dist/` is the only public artifact. Raw checkouts, runtime state, prompts, budgets,
 recovery records, and logs are never copied wholesale into it. Detailed build
@@ -79,20 +110,19 @@ internal source/runtime records remain private.
 
 ## Durable route aliases
 
-Every build runs `scripts/route_registry.py` before generation. It retrieves the
-previously published `https://remnant.truechristian.church/routes.json`, validates
-it, and merges it with reviewed `data/routes.json` into `.build/routes.json`.
+Every build runs `scripts/route_registry.py` before generation. Production passes
+the verified `.build/published/routes.json` from the successful deployment,
+validates it, and merges it with reviewed `data/routes.json` into `.build/routes.json`.
 Both generation and source-backed checking use that same merged file. Automatically
 assigned localized aliases survive later title corrections and category moves,
 even when they have not yet been copied into the committed registry.
 
 The generated candidate registry is published with the site. A failed build or
-deployment cannot advance this baseline. Only HTTP 404 permits a first-publication
-build using the committed registry alone. Network errors, other HTTP failures,
-redirects, invalid schemas, and collisions stop route preparation; silently
-discarding the published baseline could change existing URLs. Restore access to
-the valid published registry and retry, or use a captured valid registry for an
-offline review with `--published`.
+deployment cannot advance this baseline. Local public-URL acquisition still allows
+only HTTP 404 to indicate a missing first-publication registry. Invalid schemas
+and collisions stop route preparation; silently discarding the published baseline
+could change existing URLs. A verified snapshot is supplied with `--published`
+for production and offline review.
 
 Articles and categories retain localized canonical aliases. Manually replacing a
 known URL's language prefix redirects directly to the same object's canonical
@@ -137,15 +167,23 @@ translation campaign is started by a website build.
 npm ci
 python3 -m unittest discover -s tests -v
 node --test tests/*.test.mjs
+python3 scripts/publication_state.py fetch --output .build/published
 python3 scripts/prepare_sources.py
-python3 scripts/check_sources.py
-python3 scripts/route_registry.py
+python3 scripts/check_sources.py --published-deployment .build/published/deployment.json
+cp .build/published/scripture/manifest.json .build/scripture-manifest.json
+python3 scripts/route_registry.py --published .build/published/routes.json
 python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --registry .build/routes.json --output dist
 python3 scripts/check_site.py dist --registry .build/routes.json
 npx playwright install --with-deps chromium
 npm run test:browser
-python3 scripts/deployment.py
+python3 scripts/deployment.py --published-deployment .build/published/deployment.json
 ```
+
+Snapshot acquisition accepts `GH_TOKEN` or `GITHUB_TOKEN` with repository contents,
+Actions, and deployments read access. Actions supplies its ordinary job token;
+no new stored secret is required. The production build allows 45 minutes, including
+full validation and large artifact uploads. A prior healthy build reached the
+old 30-minute limit during preview upload.
 
 Preparation requires fresh destinations. For a repeat build, use a new
 `--build-root` or explicitly remove only disposable generated output. It never
@@ -172,9 +210,10 @@ alone can omit automatically published additions. For an isolated initial-build
 fixture, it can explicitly serve as the local baseline, but it is not a substitute
 for the published registry when preparing a replacement deployment.
 
-The lightweight check can be inspected with `python3 scripts/poll_sources.py`.
-This reads public remote refs and live metadata but does not build, deploy, modify
-source repositories, or advance any deployed state. Its JSON report explains whether
+The lightweight check can be inspected after snapshot acquisition with
+`python3 scripts/poll_sources.py --published-deployment .build/published/deployment.json`.
+This reads public remote refs and verified publication metadata but does not build,
+deploy, modify source repositories, or advance any deployed state. Its JSON report explains whether
 a build is needed. CI's selected revisions are passed through validated job outputs,
 never through user-controlled URLs or executable ref expressions.
 
@@ -191,7 +230,7 @@ good site. Translation acquisition/export failure still permits an English-only
 local build for inspection, but deployment planning refuses to publish it.
 Before generating any site pages, `scripts/check_sources.py` requires a healthy
 export, validates its actual content and selected revisions, and compares its
-complete locale/UUID inventory with the verified live publication. Upstream
+complete locale/UUID inventory with the verified last successful publication. Upstream
 validation failures and partial losses stop before the generator runs. The
 post-build publication gate repeats the checks against actual generated readers.
 Publication requires both a ready translation export and ready translated content
@@ -200,11 +239,11 @@ missing or stale report also blocks publication. Manual `--force` bypasses only
 deduplication; it cannot bypass this validation gate. The last successful site and
 its translation pages remain live until the selected inputs validate. Approved translations whose English fingerprint changed remain published with a
 localized notice that identifies the older source version. A healthy export with
-zero translations is valid only when the verified live inventory also has none.
+zero translations is valid only when the verified published inventory also has none.
 
 Every candidate must retain every previously published `(locale, article UUID)`
-from the live `deployment.json` inventory. Updates and additions are allowed;
-missing UUIDs, lost locales, malformed inventories, and an unavailable live
+from the verified last-deployed `deployment.json` inventory. Updates and additions are allowed;
+missing UUIDs, lost locales, malformed inventories, and an unavailable verified
 baseline block the entire publication. Counts alone are never sufficient. The
 candidate inventory is checked against its search indexes, actual reader pages,
 and build-report counts. `--force` cannot authorize removals, and neither a
@@ -246,7 +285,7 @@ network errors, unavailable commits, unsafe paths, and hash failures do not.
 Asset bytes are verified again against the packaged deployment ledger.
 
 The prebuild gate records a private `.build/retention-context.json` containing the
-verified live baseline and selected revision pins. Generation and source-backed
+verified publication baseline and selected revision pins. Generation and source-backed
 checking replay that same context. It and the historical Git/image cache remain
 private. The public ledger contains only article identities and image/source
 provenance, not translation runtime records, prompts, or human reviewer identities.
@@ -266,14 +305,18 @@ changes the source publication policy or starts paid translation work.
 - **English invalid:** fix the source through its normal reviewed workflow; the next hourly check retries, or run the website workflow manually
 - **Translation unavailable/export failed:** publication is blocked and the last successful site stays live; repair the source through its normal review process, then allow the next poll or an authorized manual run to retry
 - **Build or Pages failed:** the live baseline remains unchanged; inspect the failed job/environment/domain configuration, fix it, and use Run workflow on main if immediate retry is needed
-- **Missing live metadata/bootstrap:** polling requests a build, but publication fails closed until the actual last successful inventory is independently verified and restored; a missing baseline never authorizes an empty archive
+- **Public metadata challenged or unreachable:** production uses the verified GitHub deployment snapshot and continues without accessing the public metadata URLs
+- **Missing or stale state branch:** recover the exact currently deployed metadata artifact; never use an older successful publication or the current build candidate as its replacement
+- **Pages succeeded but recording failed:** rerun the failed `record` job to finish durable storage. Unchanged hourly checks can read the 90-day recovery artifact but do not write the state branch; the next successful deployment also records its own metadata.
+- **Missing all verified deployment evidence:** stop with the specific recovery error; a missing baseline never authorizes an empty archive
 - **Manual unchanged rebuild:** Run workflow on main republishes after all validation gates pass; no additional force checkbox is needed and translation failures cannot be overridden
 
-Merge the website polling PR and the two source cleanup PRs through normal owner
-review. Confirm a successful Pages job, then inspect live deployment revisions and
-content. Confirm an unchanged subsequent scheduled check skips build/deploy. Confirm
-future source changes are picked up without source credentials or notifications.
-Offline tests and green PR CI do not establish this live end-to-end proof.
+After an authorized rollout, confirm successful Pages and metadata-recording jobs.
+Check that the `publication-state` receipt names that actual deployment and that a
+fresh read recovers its exact metadata. Confirm an unchanged subsequent source
+check skips build/deploy and future source changes are picked up without source
+credentials or notifications. Offline tests and green PR CI do not establish this
+production end-to-end proof.
 
 Do not delete translations, rewrite source history, force-push, regenerate paid
 work, or change credentials automatically in response to a build failure. These

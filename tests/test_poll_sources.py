@@ -142,6 +142,21 @@ class PollingTests(unittest.TestCase):
             config.mkdir(parents=True)
             (config / 'languages.json').write_text('{}')
 
+    def test_verified_publication_snapshot_drives_polling_without_public_http(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            previous, report = root / 'previous.json', root / 'report.json'
+            previous.write_text(json.dumps({**self.live, 'article_inventory': {
+                'en': ['00000000-0000-4000-8000-000000000001'], 'af': []}}))
+            argv = ['poll_sources.py', '--published-deployment', str(previous), '--report', str(report)]
+            with patch.object(sys, 'argv', argv), \
+                 patch.object(poll_sources, 'select_revisions', return_value=self.selection), \
+                 patch.object(poll_sources, 'live_deployment', side_effect=AssertionError('public site is challenged')) as live, \
+                 patch('builtins.print'):
+                poll_sources.main()
+            live.assert_not_called()
+            self.assertFalse(json.loads(report.read_text())['build'])
+
     def test_build_uses_preflight_pins_even_if_source_main_moves(self):
         with tempfile.TemporaryDirectory() as temp, \
              patch.object(prepare_sources, 'git', return_value=self.selection['site']), \
