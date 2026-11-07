@@ -45578,11 +45578,12 @@
       },
       "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "til-the-storm-passes-by",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "frauen",
+        "alias": "bis-der-sturm-vorüberzieht",
+        "history": [
+          "/de/articles/til-the-storm-passes-by/"
+        ],
+        "fallback": false
       },
       "b07a10da-3815-4676-ad8c-be94ebe06fd0": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -78723,11 +78724,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poesía",
+        "alias": "la-lucha-de-jacob",
+        "history": [
+          "/es/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -95475,11 +95477,12 @@
       },
       "049f2e7d-675c-4dac-9584-5aefceb9b9c1": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-3",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "דבר-העורך",
+        "alias": "מדברי-העורך",
+        "history": [
+          "/he/articles/from-the-editor-3/"
+        ],
+        "fallback": false
       },
       "04e692e0-5199-4d0e-8b09-a16e84f80894": {
         "category_id": "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "71ad42e68612e962d19d8cbc30a8776180c0f1a5ee292fe22b45e8a9b366a7e1",
+  "integrity": "dac6d3814fa96c98d96651d8a7cd02c1f0732f0c22cc862a226ea3c389efe05c",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -3355,6 +3355,14 @@
         }
       ],
       "record_hash": "45c7eceecc310ddaef9658b8840f4dcbacffedcabdafc25ae14bcb6cf3a7df80"
+    },
+    "049f2e7d-675c-4dac-9584-5aefceb9b9c1:he:f2af6f70f90f2afff1bff9a29a4a6aceb66ed6fcb5467bf318866159c14f6e9c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "049f2e7d-675c-4dac-9584-5aefceb9b9c1",
+      "locale": "he",
+      "content_hash": "f2af6f70f90f2afff1bff9a29a4a6aceb66ed6fcb5467bf318866159c14f6e9c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "cbf25d2bafebd75a56b525c4544b5db4d0b2691da17cdbbdb4ca8ae4247a58af"
     },
     "049f2e7d-675c-4dac-9584-5aefceb9b9c1:hi:5b804647d24d9fe47214a80c5037af3282f02c0b5def8679dc4fc367d1a52537:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "049f2e7d-675c-4dac-9584-5aefceb9b9c1",
@@ -187249,6 +187257,14 @@
       "markers": [],
       "record_hash": "de618a27eda2f367dfdd35d8b11a5c6d1560050bbe45097ecee94b731413fb24"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:es:618667e2bc742f3146fb5a6bf12a40a4f0c04c908014422d32745ffaf78be6b7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "es",
+      "content_hash": "618667e2bc742f3146fb5a6bf12a40a4f0c04c908014422d32745ffaf78be6b7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "9cd3d72dc8800a314249cf67b34822b8d9d3c0adddcfda355e91a00bf15e7ebe"
+    },
     "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf:af:b72fcbb8503942ae679c2d5e7077d39a1c544a32c69764012e1bd6a1136c8381:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf",
       "locale": "af",
@@ -301832,6 +301848,47 @@
         }
       ],
       "record_hash": "2a6f5052beee57cd3d45c6ca287b0deef07c68335292b27bc4dde921478adfc2"
+    },
+    "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:de:b85ed8c1d61e971e58fff427ec4835c90f024e3bf505ceba3ceba4112476386a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
+      "locale": "de",
+      "content_hash": "b85ed8c1d61e971e58fff427ec4835c90f024e3bf505ceba3ceba4112476386a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f5967432fade9d3d61141a54",
+          "quote": "Römer 8:28",
+          "before": " die nach seinem Vorsatz berufen sind – ",
+          "after": ". Das glaube ich. Ich kann das Gute nich",
+          "spans": [
+            [
+              4356,
+              4366
+            ]
+          ],
+          "osis": "Rom.8.28",
+          "queries": [
+            "45 8:28"
+          ]
+        },
+        {
+          "id": "92e029828ec868c738e9afb7",
+          "quote": "Offenbarung 21:1-4",
+          "before": "r sein; denn das Frühere ist vergangen. ",
+          "after": ".",
+          "spans": [
+            [
+              5395,
+              5413
+            ]
+          ],
+          "osis": "Rev.21.1-Rev.21.4",
+          "queries": [
+            "66 21:1-4"
+          ]
+        }
+      ],
+      "record_hash": "f8328926ce4ec0852e2a2530019436575615b2e8a3a39f7809502fb59c9bc182"
     },
     "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:el:420a4350b7b4bb5c4215718aca8adf36bad4fa52b47b3214965e4c13f5243dc5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
