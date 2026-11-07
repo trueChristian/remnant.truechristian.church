@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "dac6d3814fa96c98d96651d8a7cd02c1f0732f0c22cc862a226ea3c389efe05c",
+  "integrity": "b4919aca41ad1b32a88f7e93d26e5735a3d0279336d99f565575a7a7fde9aaf8",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -187249,6 +187249,14 @@
       "markers": [],
       "record_hash": "bdf1a97a7b38aad5462d78cdfad42c740a88e88d6dd78e7157a930d816e160d9"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:bn:21676178af2a9b5dbdc95c5184ce6b67568d3ec8e7937c9ca8685b3b78629db5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "bn",
+      "content_hash": "21676178af2a9b5dbdc95c5184ce6b67568d3ec8e7937c9ca8685b3b78629db5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "979f2bde4b0fa43154175a01b557705e0a3712ed895edeb00188ef0aec89f2ee"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:en:06fd744a5d8d062157ba38a90e50de8a0982015ecca3a34c5254b18615a979d9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "en",
@@ -187264,6 +187272,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "9cd3d72dc8800a314249cf67b34822b8d9d3c0adddcfda355e91a00bf15e7ebe"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:fr:c04a7d6edc74a3273f07c84c42e0d7a18b7f3e87104cf39f0e6c8f0ca65b9178:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "fr",
+      "content_hash": "c04a7d6edc74a3273f07c84c42e0d7a18b7f3e87104cf39f0e6c8f0ca65b9178",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "178d898356e0d9a7c2ad933cdc90781420488b43beaebec488cf4e7db4808b78"
     },
     "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf:af:b72fcbb8503942ae679c2d5e7077d39a1c544a32c69764012e1bd6a1136c8381:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf",
@@ -245599,21 +245615,21 @@
       ],
       "record_hash": "3a5493b05a27cdf3b495acfe69f50fbf2671e81ca9eb2b2f98166b5e8f6553a5"
     },
-    "903e4b58-b246-4ee3-85e7-eecf158a7a75:af:8f9885eccb226e6e81beb0afbd1d995e0d576f3da3453fef60e84e025e45e1b2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "903e4b58-b246-4ee3-85e7-eecf158a7a75:af:1d4b1e172223bf9042dc86048c5428e6b55145694d6cc875e76c3b5a3c0855f5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
       "locale": "af",
-      "content_hash": "8f9885eccb226e6e81beb0afbd1d995e0d576f3da3453fef60e84e025e45e1b2",
+      "content_hash": "1d4b1e172223bf9042dc86048c5428e6b55145694d6cc875e76c3b5a3c0855f5",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "df039dff13801b1db899ff80",
+          "id": "a1fdccc6a7d9b4346a999f02",
           "quote": "Titus 2:3-5",
           "before": "ie woord van God nie belaster word nie –",
           "after": ".",
           "spans": [
             [
-              2742,
-              2753
+              2738,
+              2749
             ]
           ],
           "osis": "Titus.2.3-Titus.2.5",
@@ -245622,14 +245638,14 @@
           ]
         },
         {
-          "id": "89865e3e3e22017a32639edf",
+          "id": "142809fcfe6ac13753c08335",
           "quote": "1 Timoteus 5:13",
-          "before": "deur …van huis tot huis rond te dwaal… –",
-          "after": ", op ons telefone. In 2 Timoteus gaan Pa",
+          "before": " deur …van huis tot huis rond te gaan… –",
+          "after": ", op ons fone. In 2 Timoteus gaan Paulus",
           "spans": [
             [
-              3001,
-              3016
+              2972,
+              2987
             ]
           ],
           "osis": "1Tim.5.13",
@@ -245638,14 +245654,14 @@
           ]
         },
         {
-          "id": "e9ad9d04d6449cedece65c15",
+          "id": "6111d8d02907832e0720f559",
           "quote": "2 Timoteus 3:1-2",
-          "before": "ense sal liefhebbers van hulself wees… –",
+          "before": "se sal liefhebbers van hulleself wees… –",
           "after": ". Hoeveel van my boodskappe en kommunika",
           "spans": [
             [
-              3189,
-              3205
+              3161,
+              3177
             ]
           ],
           "osis": "2Tim.3.1-2Tim.3.2",
@@ -245654,14 +245670,14 @@
           ]
         },
         {
-          "id": "9db5b4db7ba999906aef44a8",
+          "id": "dd81116d5e35c07d6aa3fd65",
           "quote": "Titus 2",
-          "before": " groot en verlaat die huis. Wat dan? In ",
-          "after": " word godvrugtige ouer vroue beskryf as ",
+          "before": "d groot en verlaat die huis. En dan? In ",
+          "after": " word godvresende ouer vroue beskryf as ",
           "spans": [
             [
-              7670,
-              7677
+              7544,
+              7551
             ]
           ],
           "osis": "Titus.2.1-Titus.2.15",
@@ -245670,14 +245686,14 @@
           ]
         },
         {
-          "id": "d28fabf504b05c13915331e2",
+          "id": "2880fe35aed479862aab2d4a",
           "quote": "Titus 2:3",
-          "before": "…vroue wat onderrig gee in goeie dinge –",
-          "after": ". Hulle word die opdrag gegee: Sodat hul",
+          "before": "ue beskryf as …leraars van wat goed is –",
+          "after": ". Hulle kry die opdrag: sodat hulle die ",
           "spans": [
             [
-              7761,
-              7770
+              7621,
+              7630
             ]
           ],
           "osis": "Titus.2.3",
@@ -245686,14 +245702,14 @@
           ]
         },
         {
-          "id": "e4bd95f41928cc299eacaabf",
+          "id": "095b5e7db81bb41c99faf7cb",
           "quote": "Titus 2:4-5",
           "before": "ie woord van God nie belaster word nie –",
           "after": ".",
           "spans": [
             [
-              8060,
-              8071
+              7913,
+              7924
             ]
           ],
           "osis": "Titus.2.4-Titus.2.5",
@@ -245702,14 +245718,14 @@
           ]
         },
         {
-          "id": "35a6927d0b623e8d4ff2edc0",
+          "id": "71a83cd30e31c05a1c55ca39",
           "quote": "1 Timoteus 2:11-13",
-          "before": "Want Adam is eerste gevorm, daarna Eva –",
-          "after": ". Net soos Paulus ons onderrig, glo ons ",
+          "before": "Want Adam is eerste gemaak, daarna Eva –",
+          "after": ". Net soos Paulus ons opdrag gee, glo on",
           "spans": [
             [
-              8293,
-              8311
+              8154,
+              8172
             ]
           ],
           "osis": "1Tim.2.11-1Tim.2.13",
@@ -245718,14 +245734,14 @@
           ]
         },
         {
-          "id": "ad8df9a7467aa67adb8ae701",
+          "id": "dde56e46a1c93827aaa5ff85",
           "quote": "Titus 2:4-5",
           "before": "ie woord van God nie belaster word nie –",
           "after": ".",
           "spans": [
             [
-              8927,
-              8938
+              8774,
+              8785
             ]
           ],
           "osis": "Titus.2.4-Titus.2.5",
@@ -245734,14 +245750,14 @@
           ]
         },
         {
-          "id": "c0d10a0671f178befc19aba0",
+          "id": "d31a4aef9f2865a76f3e693d",
           "quote": "Galasiërs 6:9",
-          "before": "yd sal ons oes, as ons nie verslap nie –",
+          "before": "yd sal ons maai as ons nie verslap nie –",
           "after": ".",
           "spans": [
             [
-              11511,
-              11524
+              11333,
+              11346
             ]
           ],
           "osis": "Gal.6.9",
@@ -245750,7 +245766,7 @@
           ]
         }
       ],
-      "record_hash": "476231052e4f0bbac73972ed12451bb54ad15e7e603c218ed9c4aa7a31f9c58a"
+      "record_hash": "a28e15e510b40c11b7230d546c56087e5e01e552edafa6b3a9557c5a65a836fd"
     },
     "903e4b58-b246-4ee3-85e7-eecf158a7a75:ar:5694649b93d1ad0223952e557dba7e1de7bf12894d03107dfe1ada4d9ad4f9e9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
@@ -301800,6 +301816,47 @@
       ],
       "record_hash": "04290590a351cb554b6fb869765728251c8d0f4ce8beefb4ec22d012dc18d216"
     },
+    "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:af:f461df39d60a113c19e91c66c769a32b2193ccaa84c0898fc9b8fabaebc142ec:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
+      "locale": "af",
+      "content_hash": "f461df39d60a113c19e91c66c769a32b2193ccaa84c0898fc9b8fabaebc142ec",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "bc47ead1ff3d96b67bcf32b8",
+          "quote": "Romeine 8:28",
+          "before": " dié wat geroep is volgens sy voorneme –",
+          "after": ". Ek glo dit. Ek kan nie altyd die goeie",
+          "spans": [
+            [
+              4174,
+              4186
+            ]
+          ],
+          "osis": "Rom.8.28",
+          "queries": [
+            "45 8:28"
+          ]
+        },
+        {
+          "id": "76f8e54268fbb4006eed63df",
+          "quote": "Openbaring 21:1-4",
+          "before": " want die eerste dinge het verbygegaan. ",
+          "after": ".",
+          "spans": [
+            [
+              5136,
+              5153
+            ]
+          ],
+          "osis": "Rev.21.1-Rev.21.4",
+          "queries": [
+            "66 21:1-4"
+          ]
+        }
+      ],
+      "record_hash": "0e5d9f5d76968f2808a617c8ed0df49ed78d0e7fbae828a18c0149bd4f5bfecf"
+    },
     "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:ar:0a881b0dd374949f123125c03474a8d04e366140dc09400d0d76bf11175909a0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
       "locale": "ar",
@@ -302144,6 +302201,88 @@
       ],
       "record_hash": "3dfeb6d55c8e1aabe7153285ba612cf303ac4e54cb94a95f98edb43d7f6735c4"
     },
+    "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:it:192d29dfaa167dd03ab2a4b8eb618a49c9bac76f5c8f1e482d6fde5c0389a49e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
+      "locale": "it",
+      "content_hash": "192d29dfaa167dd03ab2a4b8eb618a49c9bac76f5c8f1e482d6fde5c0389a49e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ae61742475d59b6974a6ff2e",
+          "quote": "Romani 8:28",
+          "before": "ono chiamati secondo il suo proposito – ",
+          "after": ". Ci credo. Non sempre riesco a vedere i",
+          "spans": [
+            [
+              4304,
+              4315
+            ]
+          ],
+          "osis": "Rom.8.28",
+          "queries": [
+            "45 8:28"
+          ]
+        },
+        {
+          "id": "54c7cfe47323ece59a314111",
+          "quote": "Apocalisse 21:1-4",
+          "before": " perché le cose di prima sono passate». ",
+          "after": ".",
+          "spans": [
+            [
+              5212,
+              5229
+            ]
+          ],
+          "osis": "Rev.21.1-Rev.21.4",
+          "queries": [
+            "66 21:1-4"
+          ]
+        }
+      ],
+      "record_hash": "e3fafa266ca7a111e55a5e78e12c0433fa02ab80399a92c1dec1cc0d59516705"
+    },
+    "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:ko:d5babf10c76227529b0475b11985e4b9a6fc53c9cf5eb12e469f8c130729408f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
+      "locale": "ko",
+      "content_hash": "d5babf10c76227529b0475b11985e4b9a6fc53c9cf5eb12e469f8c130729408f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "474f097aa1e0665eb223bb9b",
+          "quote": "로마서 8:28",
+          "before": " 뜻대로 부르심을 입은 자들에게는 모든 것이 합력하여 선을 이루느니라 –",
+          "after": ". 저는 이것을 믿습니다. 언제나 그 선을 볼 수 있는 것은 아니지만, ",
+          "spans": [
+            [
+              2522,
+              2530
+            ]
+          ],
+          "osis": "Rom.8.28",
+          "queries": [
+            "45 8:28"
+          ]
+        },
+        {
+          "id": "d18c66bb5d836f6cf1d8d071",
+          "quote": "요한계시록 21:1-4",
+          "before": "것이나 아픈 것이 다시 있지 아니하리니 처음 것들이 다 지나갔음이러라. ",
+          "after": ".",
+          "spans": [
+            [
+              3046,
+              3058
+            ]
+          ],
+          "osis": "Rev.21.1-Rev.21.4",
+          "queries": [
+            "66 21:1-4"
+          ]
+        }
+      ],
+      "record_hash": "9fb8aa549e3ea988ae1a79a3ee45ef4064d74fab9b6532402ce8fb31d67a13f4"
+    },
     "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:nb:65779665845499acb6b099f21839d9c78ed87c6b926c6902f62b3387a9bff04a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
       "locale": "nb",
@@ -302307,6 +302446,47 @@
         }
       ],
       "record_hash": "3239f471dbebad78888a5f0dacd67344251bed35f4d409ac8088119130d6761c"
+    },
+    "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:sw:da23f5ebce135d69d878e20e7450f800eaf5cba060941fb22cefb54dd6fe51dd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
+      "locale": "sw",
+      "content_hash": "da23f5ebce135d69d878e20e7450f800eaf5cba060941fb22cefb54dd6fe51dd",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "dadacfcd8c5f5cc2da1591dc",
+          "quote": "Warumi 8:28",
+          "before": "ale walioitwa kulingana na kusudi lake –",
+          "after": ". Ninaamini hivyo. Siwezi kuona mema kil",
+          "spans": [
+            [
+              4235,
+              4246
+            ]
+          ],
+          "osis": "Rom.8.28",
+          "queries": [
+            "45 8:28"
+          ]
+        },
+        {
+          "id": "9357e54698bc193204e6006c",
+          "quote": "Ufunuo 21:1-4",
+          "before": "kuwa mambo ya kwanza yamekwisha kupita. ",
+          "after": ".",
+          "spans": [
+            [
+              5231,
+              5244
+            ]
+          ],
+          "osis": "Rev.21.1-Rev.21.4",
+          "queries": [
+            "66 21:1-4"
+          ]
+        }
+      ],
+      "record_hash": "1f410c092af1e1db410101fbe293fd13e6c02565b2aed4f2d0993f3e50034164"
     },
     "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:ur:99d48cdd372648d8db6e3c800847a1c5b17cda9e4c1d19dc44b56f137f67d7cf:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
@@ -431984,6 +432164,63 @@
       "markers": [],
       "record_hash": "a8e07d5b68de03d79a588b7248c7428f0d3127ca50d77b3d3fddbf9c88a0aefe"
     },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:ar:d3479f858c6581139f59c9e0ab511f1526484200b8e8bf0d91f9e3fc9ad7e9d5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "ar",
+      "content_hash": "d3479f858c6581139f59c9e0ab511f1526484200b8e8bf0d91f9e3fc9ad7e9d5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d21115db9b8982391da0d84d",
+          "quote": "يوحنا 3:3-6",
+          "before": "لجسد جسد هو، والمولود من الروح روح هو» (",
+          "after": ").",
+          "spans": [
+            [
+              424,
+              435
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "2e3e87c5b6b35c8fc884152a",
+          "quote": "يوحنا 3:6",
+          "before": "لجسد جسد هو، والمولود من الروح روح هو» (",
+          "after": "). ماذا يعني؟ إذا وُلدت من الجسد، فستعيش",
+          "spans": [
+            [
+              4799,
+              4808
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "5492a6bca318c0047dfe52ad",
+          "quote": "كورنثوس الثانية 5:17",
+          "before": "عتيقة قد مضت، هوذا الكل قد صار جديدًا» (",
+          "after": ").",
+          "spans": [
+            [
+              7234,
+              7254
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "b614d9ac228202de2ba6dc2059f7ad79462de870954f195867c5cb3906c4ade8"
+    },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:en:f040d9046bf42f0aa0569cd6c88968f1f2e9591dc11821417f09440139b98dda:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
       "locale": "en",
@@ -432307,6 +432544,184 @@
         }
       ],
       "record_hash": "1e03283536ffc07d1ebe3d6f8935b874801d0aec90b88ee140e37f2128d7e3c0"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:id:24cd8fa74cbd584a9ae9db7be0567e4d384ea8d7d725c5f21819a8326bd9fe80:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "id",
+      "content_hash": "24cd8fa74cbd584a9ae9db7be0567e4d384ea8d7d725c5f21819a8326bd9fe80",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "39f6caafad6ebff7f94e34ee",
+          "quote": "Yohanes 3:3-6",
+          "before": " yang dilahirkan dari Roh adalah roh.” (",
+          "after": ")",
+          "spans": [
+            [
+              669,
+              682
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "87b152e7d0ab2de997df6a27",
+          "quote": "Yohanes 3:6",
+          "before": "a yang dilahirkan dari Roh adalah roh” (",
+          "after": "). Apa maksud-Nya? Jika kamu dilahirkan ",
+          "spans": [
+            [
+              7161,
+              7172
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "d018d76eff92e80d97a3f47f",
+          "quote": "Roma 8:8",
+          "before": "eperti yang Paulus beri tahu kita dalam ",
+          "after": ", tidak mungkin daging menyenangkan Alla",
+          "spans": [
+            [
+              7548,
+              7556
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "69fb54518c00bb1d9bcfa030",
+          "quote": "Roma 7",
+          "before": "ilahirkan kembali, seperti Paulus dalam ",
+          "after": ", ia mengakui bahwa ia tidak dapat melak",
+          "spans": [
+            [
+              10184,
+              10190
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "50dc36691e6ddb7af560d625",
+          "quote": "2 Korintus 5:17",
+          "before": "ah, segala sesuatu telah menjadi baru” (",
+          "after": ").",
+          "spans": [
+            [
+              10766,
+              10781
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "8879fca23b85f43a45b0c39fe07ee90d40365496f12cf51ce3e6c59b6fff18d8"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:pt:7c2cf5e74071ad495885b9da113962ff823691648bc03582444fd3fc1a037be6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "pt",
+      "content_hash": "7c2cf5e74071ad495885b9da113962ff823691648bc03582444fd3fc1a037be6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f7fadd96b637689e99247931",
+          "quote": "João 3:3-6",
+          "before": " que é nascido do Espírito é espírito. (",
+          "after": ")",
+          "spans": [
+            [
+              541,
+              551
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "7e9c9b6f1f2d942a97639fef",
+          "quote": "João 3:6",
+          "before": " que é nascido do Espírito é espírito” (",
+          "after": "). O que ele quer dizer? Se você é nasci",
+          "spans": [
+            [
+              6292,
+              6300
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "5ceae46ce39acdf587f4dbf9",
+          "quote": "Romanos 8:8",
+          "before": "nada de bom nela. Como Paulo nos diz em ",
+          "after": ", é impossível que a carne agrade a Deus",
+          "spans": [
+            [
+              6585,
+              6596
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "e4fe94ee5572cb954f8dd45b",
+          "quote": "Romanos 7",
+          "before": "ndo alguém nasce de novo, como Paulo em ",
+          "after": ", admite que não consegue fazer isso por",
+          "spans": [
+            [
+              8961,
+              8970
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "1cfb465a0bd537a2ccb21ebb",
+          "quote": "2 Coríntios 5:17",
+          "before": "já passaram; eis que se fizeram novas” (",
+          "after": ").",
+          "spans": [
+            [
+              9458,
+              9474
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "49e3505a03f360a82eb2a36b002bc17c5d3eb84950b09d6a31b162556f710c71"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:ur:1917f1d41030d19488633f895f2d32b58b6ab20dc47e47599f5d00f4a84098b8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",

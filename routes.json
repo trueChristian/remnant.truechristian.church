@@ -15986,11 +15986,12 @@
       },
       "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "til-the-storm-passes-by",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vrou",
+        "alias": "tot-die-storm-verbygaan",
+        "history": [
+          "/af/articles/til-the-storm-passes-by/"
+        ],
+        "fallback": false
       },
       "b07a10da-3815-4676-ad8c-be94ebe06fd0": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -27914,11 +27915,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "خليقة-جديدة",
+        "history": [
+          "/ar/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -33686,11 +33688,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "কবিতা",
+        "alias": "যাকোবের-সঙ্গে-মল্লযুদ্ধ",
+        "history": [
+          "/bn/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -88707,11 +88710,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poésie",
+        "alias": "jacob-en-lutte",
+        "history": [
+          "/fr/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -122289,11 +122293,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kehidupan-kristen",
+        "alias": "ciptaan-baru",
+        "history": [
+          "/id/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -130143,11 +130148,12 @@
       },
       "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "til-the-storm-passes-by",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "donna",
+        "alias": "finché-la-tempesta-non-sarà-passata",
+        "history": [
+          "/it/articles/til-the-storm-passes-by/"
+        ],
+        "fallback": false
       },
       "b07a10da-3815-4676-ad8c-be94ebe06fd0": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -140033,11 +140039,12 @@
       },
       "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "til-the-storm-passes-by",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "여성",
+        "alias": "폭풍이-지나갈-때까지",
+        "history": [
+          "/ko/articles/til-the-storm-passes-by/"
+        ],
+        "fallback": false
       },
       "b07a10da-3815-4676-ad8c-be94ebe06fd0": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -172087,11 +172094,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristã",
+        "alias": "uma-nova-criação",
+        "history": [
+          "/pt/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -199363,11 +199371,12 @@
       },
       "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "til-the-storm-passes-by",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "wanawake",
+        "alias": "mpaka-dhoruba-ipite",
+        "history": [
+          "/sw/articles/til-the-storm-passes-by/"
+        ],
+        "fallback": false
       },
       "b07a10da-3815-4676-ad8c-be94ebe06fd0": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
