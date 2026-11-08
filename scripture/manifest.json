@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "75682c5e7e20cb3c3817b80e47ea294063ac1c52a701f55094abbcf94a36403f",
+  "integrity": "60729a21892ead3f183018b828bc7dad25ebb22aef6f733cc9568300996701b0",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -109768,6 +109768,111 @@
       ],
       "record_hash": "e0a72236db75b1628167c403ca70f39adf60745acac7cbc65bd57b3dc7ce4224"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:he:a06e61310e147a4e47867bc655b8a98b989c29568d583b22e4352cd18c8e6dc0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "he",
+      "content_hash": "a06e61310e147a4e47867bc655b8a98b989c29568d583b22e4352cd18c8e6dc0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9ed0df23ddf1cf9335d5012d",
+          "quote": "מתי 7:22",
+          "before": " גירשנו שדים, ובשמך עשינו נפלאות רבות? –",
+          "after": ".",
+          "spans": [
+            [
+              427,
+              435
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "dbd2649808507daac9b1509b",
+          "quote": "מתי 23:26",
+          "before": " הכוס והקערה, כדי שגם חיצונם יהיה טהור –",
+          "after": ".",
+          "spans": [
+            [
+              3829,
+              3838
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "6e211ca27fadf75aaae1ef9c",
+          "quote": "לוקס 2:52",
+          "before": "ול …בחכמה ובקומה ובחן לפני אלוהים ואדם –",
+          "after": ".",
+          "spans": [
+            [
+              6434,
+              6443
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "5abdd1b34b20f750596515e9",
+          "quote": "לוקס 23:31",
+          "before": "אם כך עושים בעץ רענן, מה ייעשה ביבש? –",
+          "after": ".",
+          "spans": [
+            [
+              8540,
+              8550
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "62fda4aa85c6f3f5f123e4d6",
+          "quote": "מתי 7:16-20",
+          "before": "ומשליכים לאש. לכן בפירותיהם תכירו אותם –",
+          "after": ".",
+          "spans": [
+            [
+              10084,
+              10095
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "490153e46d34702677118a12",
+          "quote": "מתי 7:19",
+          "before": "שאינו עושה פרי טוב כורתים ומשליכים לאש –",
+          "after": ".",
+          "spans": [
+            [
+              10774,
+              10782
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "37281198830bd6338f396fae01ab58ceaa6f846fa27d13bad153146ed9f2d141"
+    },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:hi:033749ab9468b42517ae19c817c24803892802829bc8e7e3efecc53816e4e0f2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
       "locale": "hi",
@@ -110243,6 +110348,159 @@
       ],
       "record_hash": "78f8f60a4ac0c3c59cd347365342cc9bf833d661e87dd19041375433df09dc7d"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:nb:cb82aa1c6dd1c7caf3383a395ecd1522867264ae8f6a72f1f0f1eb457b6626e3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "nb",
+      "content_hash": "cb82aa1c6dd1c7caf3383a395ecd1522867264ae8f6a72f1f0f1eb457b6626e3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d63361750534be9f7432f043",
+          "quote": "Matteus 7:22",
+          "before": " mange mektige gjerninger i ditt navn? –",
+          "after": ".",
+          "spans": [
+            [
+              558,
+              570
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "4c422484b814d28887ab907e",
+          "quote": "Matteus 23:26",
+          "before": "og fatet, så også utsiden kan bli ren. –",
+          "after": ".",
+          "spans": [
+            [
+              5204,
+              5217
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "ae8970abf10b09a2e0a2b091",
+          "quote": "1. Johannes 5:3",
+          "before": "r hans bud. Og hans bud er ikke tunge. –",
+          "after": ".",
+          "spans": [
+            [
+              6914,
+              6929
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "9646f6393086a96162548390",
+          "quote": "1. Peter 2:2",
+          "before": " rene melk, så dere kan vokse ved den. –",
+          "after": ". Nye kristne trenger altså ikke rom til",
+          "spans": [
+            [
+              8376,
+              8388
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "7a288a6305190855634b41cd",
+          "quote": "Lukas 2:52",
+          "before": "st og i velvilje hos Gud og mennesker. –",
+          "after": ".",
+          "spans": [
+            [
+              8570,
+              8580
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "a26f0f2fb0abca496b8addac",
+          "quote": "Lukas 23:31",
+          "before": " hvordan skal det da gå med det tørre? –",
+          "after": ".",
+          "spans": [
+            [
+              11410,
+              11421
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "a257561ac855b474fba5f2a4",
+          "quote": "Matteus 7:16–20",
+          "before": "rfor skal dere kjenne dem på fruktene. –",
+          "after": ".",
+          "spans": [
+            [
+              13473,
+              13488
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "b30813d8141536409d19fb97",
+          "quote": "Galaterne 5:22–23",
+          "before": "et, tro, ydmykhet og selvbeherskelse … –",
+          "after": ". Er dette det folk ser når de ser på de",
+          "spans": [
+            [
+              13636,
+              13653
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "9f1da71598fb74d5ee7f1551",
+          "quote": "Matteus 7:19",
+          "before": "ukt, blir hogd ned og kastet på ilden. –",
+          "after": ".",
+          "spans": [
+            [
+              14377,
+              14389
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "6a5812ad10271cc74e257decdcc7ae656ac419cc7988de358430bb3d5ddd32a7"
+    },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:pt:e8e9dd840d6d21646f27f6d86f6a659ea17acb691ce350cf6439aeb0ec8f40f1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
       "locale": "pt",
@@ -110395,6 +110653,159 @@
         }
       ],
       "record_hash": "15418b00b9fa22eb123eee487b06822c81908f8a2e2389ff993ce870bf20e579"
+    },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:sw:7c3ade6997c41db04dfccc3808827b7743429fc573b41dbc825025d2a7d8b423:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "sw",
+      "content_hash": "7c3ade6997c41db04dfccc3808827b7743429fc573b41dbc825025d2a7d8b423",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "174416014afd74d49e97aee9",
+          "quote": "Mathayo 7:22",
+          "before": "ina lako kufanya kazi nyingi za ajabu? –",
+          "after": ".",
+          "spans": [
+            [
+              575,
+              587
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "555f142c1cb69709a32e3c12",
+          "quote": "Mathayo 23:26",
+          "before": " sahani, ili na nje yake pawe safi pia –",
+          "after": ".",
+          "spans": [
+            [
+              5479,
+              5492
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "6560844e4ae3a3bf3931b092",
+          "quote": "1 Yohana 5:3",
+          "before": "ika amri zake; wala amri zake si nzito –",
+          "after": ".",
+          "spans": [
+            [
+              7218,
+              7230
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "10294a5d5a91a3cfec83a163",
+          "quote": "1 Petro 2:2",
+          "before": "iyoghoshiwa, ili kwa hayo mpate kukua: –",
+          "after": ". Kwa hiyo Wakristo wapya hawahitaji naf",
+          "spans": [
+            [
+              8737,
+              8748
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "f2c463e73436a27d81090ccd",
+          "quote": "Luka 2:52",
+          "before": "na kimo, akimpendeza Mungu na wanadamu –",
+          "after": ".",
+          "spans": [
+            [
+              8944,
+              8953
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "e6ab8d016e0973cb84c69788",
+          "quote": "Luka 23:31",
+          "before": "ka mti mbichi, itakuwaje katika mkavu? –",
+          "after": ".",
+          "spans": [
+            [
+              11772,
+              11782
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "14e2429ed2c8274d7c9df15c",
+          "quote": "Mathayo 7:16-20",
+          "before": "oni. Basi, mtawatambua kwa matunda yao –",
+          "after": ".",
+          "spans": [
+            [
+              13824,
+              13839
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "cc533353e2e78b612e9b09c8",
+          "quote": "Wagalatia 5:22-23",
+          "before": "wema, fadhili, uaminifu, upole, kiasi… –",
+          "after": ". Je, watu huona mambo haya wanapokutaza",
+          "spans": [
+            [
+              13977,
+              13994
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "3158df5b6367eb95d6da2096",
+          "quote": "Mathayo 7:19",
+          "before": "tunda mazuri hukatwa na kutupwa motoni –",
+          "after": ".",
+          "spans": [
+            [
+              14716,
+              14728
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "65961e3c9877278622456ab1828e291a2c37d3447cd7f7f83adb15969f32155b"
     },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:ur:0669f8dfa1111078deb64fb1abd4613e0de09a31e41605eb998ad0bbd44ae671:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
@@ -187797,6 +188208,14 @@
       "markers": [],
       "record_hash": "44924954dbe08bd415b709c88927f7e913d4578b8cb086fce4181548cb089e1b"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:ar:8b76252e9d4c40db1e60dcdaf862694481f9762ddff2f904bda6bd9a0defb807:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "ar",
+      "content_hash": "8b76252e9d4c40db1e60dcdaf862694481f9762ddff2f904bda6bd9a0defb807",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "201a8e73af4da839756abff9bc55ddecf78d1959570f6c5641a524f4c0397eb9"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:bn:21676178af2a9b5dbdc95c5184ce6b67568d3ec8e7937c9ca8685b3b78629db5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "bn",
@@ -187877,6 +188296,14 @@
       "markers": [],
       "record_hash": "1c7594bee719974da69319e55ceb6dc06550cfb96c3190e42320f2aa85b4c9fb"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:ru:b5f44ddc8d8d401492d727d7ddec9790fe135f58d6a5ca2557a0bf2ec1b9a066:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "ru",
+      "content_hash": "b5f44ddc8d8d401492d727d7ddec9790fe135f58d6a5ca2557a0bf2ec1b9a066",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b922e3a41820cce74d7b213f5a2867aeea5394a1e5dfd05f7aa834f79a2ee065"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:sw:59a3ae98b905a1133f1f032e77aa6cbb3d67246d4f4a615b2b5d902a90403c45:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "sw",
@@ -187892,6 +188319,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "898ad4d4133a6080e244b481b427ca21cc08083ba6d99b6ebc6bf8fe26c3c28e"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:zh-Hans:77e2fff2478b2865a52fa4bd5e25fb8611e40683d0f848beeb8c85e42bc53676:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "zh-Hans",
+      "content_hash": "77e2fff2478b2865a52fa4bd5e25fb8611e40683d0f848beeb8c85e42bc53676",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "62cc6c612c71618de76d70468765df8ed4ca588dd76eab24c830fe745e5285e7"
     },
     "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf:af:b72fcbb8503942ae679c2d5e7077d39a1c544a32c69764012e1bd6a1136c8381:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf",
@@ -208663,6 +209098,14 @@
       "markers": [],
       "record_hash": "637dc78cbfca4efb7b8e87511beb0bfc1e6290df4b6b5bf2a93ec71b3b0cbcc2"
     },
+    "7c9d5015-158a-4c07-92fc-ae40c998d9ae:zh-Hans:85228380d4864d29c17a7db8d6c2f02095afb9f844f84015059cf299346c0bdc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7c9d5015-158a-4c07-92fc-ae40c998d9ae",
+      "locale": "zh-Hans",
+      "content_hash": "85228380d4864d29c17a7db8d6c2f02095afb9f844f84015059cf299346c0bdc",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "deaf37b9c025f4732bdf79bdc4fdecdf58251962c5a5c66c711618f5da9b6946"
+    },
     "7cdda5c4-11c0-4b7f-bcd4-b37677267f87:af:614061e9c1cf4d86cd3ee1c1a7fbfa3a93f45a72446a88d074acaa42a48b6492:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7cdda5c4-11c0-4b7f-bcd4-b37677267f87",
       "locale": "af",
@@ -213970,6 +214413,336 @@
         }
       ],
       "record_hash": "24b5baef5808f3170c484babe632a9c1db32010d1a42cd59e074ffd0d0e148c2"
+    },
+    "7f8746cc-2e3a-476f-a5a0-28d15abe5412:el:5862899427466f1ac349c2d98d2b05d542f22db49355c60a7f5efa92bcdbf85c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7f8746cc-2e3a-476f-a5a0-28d15abe5412",
+      "locale": "el",
+      "content_hash": "5862899427466f1ac349c2d98d2b05d542f22db49355c60a7f5efa92bcdbf85c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "afd41101953ead0490037203",
+          "quote": "Εφεσίους 5:5",
+          "before": " στη βασιλεία του Χριστού και του Θεού. ",
+          "after": "",
+          "spans": [
+            [
+              264,
+              276
+            ]
+          ],
+          "osis": "Eph.5.5",
+          "queries": [
+            "49 5:5"
+          ]
+        },
+        {
+          "id": "d92af88c158eb1c812db9886",
+          "quote": "Ιώβ 21:14",
+          "before": "πό τον αληθινό Θεό, είστε ειδωλολάτρες (",
+          "after": ").",
+          "spans": [
+            [
+              5174,
+              5183
+            ]
+          ],
+          "osis": "Job.21.14",
+          "queries": [
+            "18 21:14"
+          ]
+        },
+        {
+          "id": "219f1b7f81a5aff7c36433a7",
+          "quote": "Δευτ. 6:5",
+          "before": "ιτεί ιδιαιτέρως ως οφειλόμενη σ’ Αυτόν (",
+          "after": "). Σε αυτό ο Κύριος Χριστός συνόψισε όλη",
+          "spans": [
+            [
+              9561,
+              9570
+            ]
+          ],
+          "osis": "Deut.6.5",
+          "queries": [
+            "5 6:5"
+          ]
+        },
+        {
+          "id": "5c03dc647558414038ceca83",
+          "quote": "Ματθ. 22:37",
+          "before": "λατρεία που απαιτείται από τον άνθρωπο (",
+          "after": "). Μπορούμε να αγαπάμε και άλλα πράγματα",
+          "spans": [
+            [
+              9654,
+              9665
+            ]
+          ],
+          "osis": "Matt.22.37",
+          "queries": [
+            "40 22:37"
+          ]
+        },
+        {
+          "id": "05ca4239a6c94fe9cff1e36e",
+          "quote": "Α΄ Ιωάννη 2:15",
+          "before": "γματα περισσότερο ή εξίσου με τον ίδιο (",
+          "after": "). Η αγάπη για το δημιούργημα, όταν είνα",
+          "spans": [
+            [
+              10038,
+              10052
+            ]
+          ],
+          "osis": "1John.2.15",
+          "queries": [
+            "62 2:15"
+          ]
+        },
+        {
+          "id": "7fe86483fd563e4c1ea9c5e1",
+          "quote": "Ιώβ 31:24",
+          "before": "ράξεις που τιμωρούνταν από τον δικαστή (",
+          "after": "). Και ο απόστολός μας, που αποκαλεί την",
+          "spans": [
+            [
+              10942,
+              10951
+            ]
+          ],
+          "osis": "Job.31.24",
+          "queries": [
+            "18 31:24"
+          ]
+        },
+        {
+          "id": "6a7f24eb6d576fbab27585ff",
+          "quote": "Α΄ Τιμ. 6:17",
+          "before": "συμβίβαστη με την εμπιστοσύνη στον Θεό (",
+          "after": "). Το να εμπιστευόμαστε τους φίλους μας,",
+          "spans": [
+            [
+              11119,
+              11131
+            ]
+          ],
+          "osis": "1Tim.6.17",
+          "queries": [
+            "54 6:17"
+          ]
+        },
+        {
+          "id": "8b44d87c68a463a18be0e949",
+          "quote": "Ψαλμός 136:3",
+          "before": "οποίο εμπιστευόμαστε στη θέση του Θεού (",
+          "after": "). Ψαλμός 118:8, 9—«Είναι καλύτερο να εμ",
+          "spans": [
+            [
+              11387,
+              11399
+            ]
+          ],
+          "osis": "Ps.136.3",
+          "queries": [
+            "19 136:3"
+          ]
+        },
+        {
+          "id": "a4e65689912773bd55c1c95b",
+          "quote": "Ψαλμός 118:8, 9",
+          "before": "μαστε στη θέση του Θεού (Ψαλμός 136:3). ",
+          "after": "—«Είναι καλύτερο να εμπιστεύεσαι στον Κύ",
+          "spans": [
+            [
+              11402,
+              11417
+            ]
+          ],
+          "osis": "Ps.118.8-Ps.118.9",
+          "queries": [
+            "19 118:8-9"
+          ]
+        },
+        {
+          "id": "77b2e32014d1cbe28c7ac691",
+          "quote": "Ματθ. 4:10",
+          "before": "ού εκφράζεται συχνά με τη λέξη «φόβος» (",
+          "after": "· Δευτ. 6:13)· και ο Κύριος απαιτεί αυτή",
+          "spans": [
+            [
+              12053,
+              12063
+            ]
+          ],
+          "osis": "Matt.4.10",
+          "queries": [
+            "40 4:10"
+          ]
+        },
+        {
+          "id": "a4afc7d6129b5768dbc21065",
+          "quote": "Δευτ. 6:13",
+          "before": "ι συχνά με τη λέξη «φόβος» (Ματθ. 4:10· ",
+          "after": ")· και ο Κύριος απαιτεί αυτή τη λατρεία,",
+          "spans": [
+            [
+              12065,
+              12075
+            ]
+          ],
+          "osis": "Deut.6.13",
+          "queries": [
+            "5 6:13"
+          ]
+        },
+        {
+          "id": "344b6d1eb02487b907938e55",
+          "quote": "Λουκ. 12:4, 5",
+          "before": "εκείνο που μας προκαλεί φόβο και τρόμο (",
+          "after": "). Αν φοβάστε τους άλλους περισσότερο απ",
+          "spans": [
+            [
+              12232,
+              12245
+            ]
+          ],
+          "osis": "Luke.12.4-Luke.12.5",
+          "queries": [
+            "42 12:4-5"
+          ]
+        },
+        {
+          "id": "0cc37521450d26ef7a397879",
+          "quote": "Ρωμ. 15:13",
+          "before": "ίναι η ελπίδα του λαού Του (Ιερ. 17:13· ",
+          "after": "). Όταν κάνουμε άλλα πράγματα ελπίδα μας",
+          "spans": [
+            [
+              12627,
+              12637
+            ]
+          ],
+          "osis": "Rom.15.13",
+          "queries": [
+            "45 15:13"
+          ]
+        },
+        {
+          "id": "b60eda2bb5a3e593d5dad6dc",
+          "quote": "Α΄ Τιμ. 1:1",
+          "before": "τόν. Γι’ αυτό αποκαλείται η ελπίδα μας (",
+          "after": ")· «η ελπίδα της δόξας μας» (Κολ. 1:27).",
+          "spans": [
+            [
+              13513,
+              13524
+            ]
+          ],
+          "osis": "1Tim.1.1",
+          "queries": [
+            "54 1:1"
+          ]
+        },
+        {
+          "id": "f835e1a65c69c893c2702be4",
+          "quote": "Κολ. 1:27",
+          "before": "Α΄ Τιμ. 1:1)· «η ελπίδα της δόξας μας» (",
+          "after": "). Όσοι κάνουν τη δική τους δικαιοσύνη θ",
+          "spans": [
+            [
+              13553,
+              13562
+            ]
+          ],
+          "osis": "Col.1.27",
+          "queries": [
+            "51 1:27"
+          ]
+        },
+        {
+          "id": "dc143a1b1eeac4af38ebd34d",
+          "quote": "Ψαλμός 27:4",
+          "before": "του Κυρίου και να ερευνώ στον ναό του». ",
+          "after": "",
+          "spans": [
+            [
+              14502,
+              14513
+            ]
+          ],
+          "osis": "Ps.27.4",
+          "queries": [
+            "19 27:4"
+          ]
+        },
+        {
+          "id": "8a3d5dbe069d47e450241556",
+          "quote": "Α΄ Κορ. 1:31",
+          "before": "τό είναι προνόμιο που απαιτεί ο Κύριος (",
+          "after": "· Ιερ. 9:23, 24). Το να χαιρόμαστε περισ",
+          "spans": [
+            [
+              14922,
+              14934
+            ]
+          ],
+          "osis": "1Cor.1.31",
+          "queries": [
+            "46 1:31"
+          ]
+        },
+        {
+          "id": "629d8125449aa1a8d89934d9",
+          "quote": "Ωσηέ 2:5, 8",
+          "before": "ύριος απειλεί αυτούς τους ειδωλολάτρες (",
+          "after": "). Έτσι, όταν αποδίδουμε την αφθονία και",
+          "spans": [
+            [
+              17031,
+              17042
+            ]
+          ],
+          "osis": "Hos.2.5,Hos.2.8",
+          "queries": [
+            "28 2:5",
+            "28 2:8"
+          ]
+        },
+        {
+          "id": "49c47ab9530f3ce05e49593f",
+          "quote": "Αβ. 1:16",
+          "before": "ιάζουμε, όπως το διατυπώνει ο προφήτης (",
+          "after": "). Το να αποδίδουμε στα δημιουργήματα εκ",
+          "spans": [
+            [
+              17403,
+              17411
+            ]
+          ],
+          "osis": "Hab.1.16",
+          "queries": [
+            "35 1:16"
+          ]
+        },
+        {
+          "id": "584e5d924c82b180205ecff7",
+          "quote": "Α΄ Κορινθίους 10:14",
+          "before": "",
+          "after": "",
+          "spans": [
+            [
+              19927,
+              19946
+            ]
+          ],
+          "osis": "1Cor.10.14",
+          "queries": [
+            "46 10:14"
+          ]
+        }
+      ],
+      "record_hash": "4940fad3737347aaddabf2531d2eae3832b93b904a25fc51905e815ff3d9f00a"
     },
     "7f8746cc-2e3a-476f-a5a0-28d15abe5412:en:441f33ede2f16fa9efa3119aa840ea15c5b17ebfe8b84a5783d6e30c33fe46e3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7f8746cc-2e3a-476f-a5a0-28d15abe5412",
@@ -295305,6 +296078,79 @@
       ],
       "record_hash": "116312353ae62067ab01b9a5866e250a4a1f147eb110ffbb9b49139755be209a"
     },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:zh-Hans:ba020f662915e4a509ce3b8f425634a0c4d3ca130c3c9a35a7bd750bbf2a97b3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "zh-Hans",
+      "content_hash": "ba020f662915e4a509ce3b8f425634a0c4d3ca130c3c9a35a7bd750bbf2a97b3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8d4b2931e63ebb1944eb02cd",
+          "quote": "希伯来书11:1",
+          "before": "",
+          "after": "肯定地说，信心是“我们所盼望之事的把握，是未见之事的确据”。圣经所说的信心，简单",
+          "spans": [
+            [
+              518,
+              526
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "6a33ed71e3d575f668922aca",
+          "quote": "路加福音1:1-4",
+          "before": "头追溯，也就定意按着次序写给你，尊贵的提阿非罗，好使你知道所学之道确实可靠。——",
+          "after": "。（新国际版）",
+          "spans": [
+            [
+              1102,
+              1111
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "37f61bf0d51ca7b8d4fa29dd",
+          "quote": "罗马书1:18-20",
+          "before": "—祂永恒的大能和神性——已经清楚可见，人从所造之物就能明白，因而人无可推诿。——",
+          "after": "。（新国际版）",
+          "spans": [
+            [
+              1323,
+              1333
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "18647dab025faecaededc614",
+          "quote": "约翰福音20:29",
+          "before": "复活后探访多马，对他说：……你因为看见了我才信吗？那没有看见就信的人有福了。——",
+          "after": "。（英语标准版）由此，人很容易把信心定义为“没有看见却相信”。但这样就偏离了重点",
+          "spans": [
+            [
+              1714,
+              1723
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        }
+      ],
+      "record_hash": "4320d5e00353086c352957631921a5167329e83c1e9ec0095b023773b94af423"
+    },
     "a9eade03-1180-4ae5-b4bf-b45a1961b446:en:83e5d02ad9a02588900d8b8d10760140729f7bd03eb9e417a254aad2545d0494:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9eade03-1180-4ae5-b4bf-b45a1961b446",
       "locale": "en",
@@ -327716,6 +328562,22 @@
       "markers": [],
       "record_hash": "d81fb9bb65692a64c8403ecbb3e290d7119aea844d03a0642d12b446eac8b35b"
     },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:de:0e0123ceba0e70b3bdd947ec31f27223cd52af09e992154ec5c68e8a91288e88:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "de",
+      "content_hash": "0e0123ceba0e70b3bdd947ec31f27223cd52af09e992154ec5c68e8a91288e88",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "58f20b7266ff37fc60ef4d5f2eb64a38d273231ca503ead8fcb89091dbe470e9"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:el:e7c07ed958d2e6db16aa8f362e4d1224085dede3c2a32f714b91863588e2ca46:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "el",
+      "content_hash": "e7c07ed958d2e6db16aa8f362e4d1224085dede3c2a32f714b91863588e2ca46",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "f639916bd6f6a51c56f88dee65f8e41b8431ba6e8df70c2d5529f067f37a2ce3"
+    },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:en:a2be596278a21963f493ecd1e54ea8406e29de82c3a5ce7504ce4f481105fa85:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
       "locale": "en",
@@ -327732,6 +328594,22 @@
       "markers": [],
       "record_hash": "0de37c54b5601b82669990144a2be192b5a408fef03a4cd17abc1cef5a939bdb"
     },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:fr:766ef2df892289238fd07c893dae6cf7e71d3fc0210a01cd7fcdb8988dbb3eab:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "fr",
+      "content_hash": "766ef2df892289238fd07c893dae6cf7e71d3fc0210a01cd7fcdb8988dbb3eab",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a5ac9f08b879e19f6f8c91a33eea123ccca9f9a883723e50e8a814c25c47ef52"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:nl:bebb5c9de5a3389d764f1f37ef70c1c30d3560b10fa4280af687670151842f71:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "nl",
+      "content_hash": "bebb5c9de5a3389d764f1f37ef70c1c30d3560b10fa4280af687670151842f71",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "d6cdc09dfbf83750af6b4fb37cdfdb24f8489d336407d7496b418a3ab3f106a1"
+    },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:pt:ae0d63232f6cd6c0e92bfe2626a61ff3de2e98987ef2c067544e518a1d1aebed:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
       "locale": "pt",
@@ -327739,6 +328617,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "b39d2096c2e693c5793acc3a813aab813c4b1b9397c531759e4d14beef88a006"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:zh-Hans:7a5ade313886037c646b9d9843b5c360b8a4ecc76c133e59e44dfcc74e96ff85:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "zh-Hans",
+      "content_hash": "7a5ade313886037c646b9d9843b5c360b8a4ecc76c133e59e44dfcc74e96ff85",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3dac7a12d8c70d314ae868b1785f6ebe14df1ab21b1281276eab5e03d19f19cc"
     },
     "bd7bc21c-5e26-46de-af8e-c1b13b47a349:en:b9264ffebdcef8e82f3a23e69643f439c87a4ab00de6b1d65e8edf4e7ad1e0fd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd7bc21c-5e26-46de-af8e-c1b13b47a349",
@@ -367930,6 +368816,159 @@
         }
       ],
       "record_hash": "8afe1c81a928778385806d61dd146434839740f5d096cb5470748d4a85ad3668"
+    },
+    "dce3d3b3-8b56-4be5-9674-e682b97d3b43:hi:0bc760e26a11977cdd98d1f38c2e118ddaffce606a7407f640f9b5b6638baf17:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",
+      "locale": "hi",
+      "content_hash": "0bc760e26a11977cdd98d1f38c2e118ddaffce606a7407f640f9b5b6638baf17",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b5564fe0dfcec9406111fd44",
+          "quote": "नीतिवचन 21:1",
+          "before": "है: वह उसे जहाँ चाहता है, मोड़ देता है –",
+          "after": ". यदि हम सोचते हैं कि विश्वासी होने के न",
+          "spans": [
+            [
+              3335,
+              3347
+            ]
+          ],
+          "osis": "Prov.21.1",
+          "queries": [
+            "20 21:1"
+          ]
+        },
+        {
+          "id": "acd29ffc65884e7defca5f79",
+          "quote": "दानिय्येल 4:31-32",
+          "before": "करता है, और जिसे चाहता है, उसे देता है –",
+          "after": ".",
+          "spans": [
+            [
+              3647,
+              3664
+            ]
+          ],
+          "osis": "Dan.4.31-Dan.4.32",
+          "queries": [
+            "27 4:31-32"
+          ]
+        },
+        {
+          "id": "108045f944ae8e91e595dae4",
+          "quote": "यूहन्ना 18:36",
+          "before": "ते … परन्तु मेरा राज्य यहाँ का नहीं है –",
+          "after": ". जब हम दो-राज्य सिद्धांत पर आधारित एक व",
+          "spans": [
+            [
+              3963,
+              3976
+            ]
+          ],
+          "osis": "John.18.36",
+          "queries": [
+            "43 18:36"
+          ]
+        },
+        {
+          "id": "06222f0c28eefc911fd9b3d1",
+          "quote": "इब्रानियों 11:13-16",
+          "before": " उसने [हमारे] लिए एक नगर तैयार किया है –",
+          "after": ". राजनीतिक भागीदारी से संबंधित सभी मामलो",
+          "spans": [
+            [
+              4372,
+              4391
+            ]
+          ],
+          "osis": "Heb.11.13-Heb.11.16",
+          "queries": [
+            "58 11:13-16"
+          ]
+        },
+        {
+          "id": "70064eb903dbb8a355099973",
+          "quote": "2 कुरिन्थियों 6:17",
+          "before": ": …उनके बीच से निकल आओ, और अलग हो जाओ… –",
+          "after": ".",
+          "spans": [
+            [
+              4565,
+              4583
+            ]
+          ],
+          "osis": "2Cor.6.17",
+          "queries": [
+            "47 6:17"
+          ]
+        },
+        {
+          "id": "95514ce1714ffde578354fd4",
+          "quote": "रोमियों 13:1-4",
+          "before": "ि वह तुम्हारे लिए परमेश्वर का सेवक है… –",
+          "after": ".",
+          "spans": [
+            [
+              4987,
+              5001
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.4",
+          "queries": [
+            "45 13:1-4"
+          ]
+        },
+        {
+          "id": "0d515ef0ab5e31f8f378ada2",
+          "quote": "1 तीमुथियुस 2:1-2",
+          "before": " के साथ शांत और शांतिपूर्ण जीवन बिताएँ। ",
+          "after": ". मसीही के प्रभाव डालने की गुप्त शक्ति उ",
+          "spans": [
+            [
+              6305,
+              6322
+            ]
+          ],
+          "osis": "1Tim.2.1-1Tim.2.2",
+          "queries": [
+            "54 2:1-2"
+          ]
+        },
+        {
+          "id": "7a5b863acb4395d334477d3c",
+          "quote": "मत्ती 17:20",
+          "before": "ा; और तुम्हारे लिए कुछ भी असंभव न होगा –",
+          "after": ". आइए हम सदैव यह याद रखें कि …धर्मी मनुष",
+          "spans": [
+            [
+              6732,
+              6743
+            ]
+          ],
+          "osis": "Matt.17.20",
+          "queries": [
+            "40 17:20"
+          ]
+        },
+        {
+          "id": "42fb7427a06b137e7a30855b",
+          "quote": "याकूब 5:16",
+          "before": "और उत्कट प्रार्थना बहुत कुछ कर सकती है –",
+          "after": ".",
+          "spans": [
+            [
+              6849,
+              6859
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        }
+      ],
+      "record_hash": "65faef265f9027f77bc215655b32c19489aaf8165c096fd5ee8d95b0a5599437"
     },
     "dce3d3b3-8b56-4be5-9674-e682b97d3b43:id:ea20e813648b614fefb38ef076395185f294cbaa69690455c59a646468b7609f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",

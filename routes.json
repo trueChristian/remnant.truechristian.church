@@ -23823,11 +23823,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الشعر",
+        "alias": "يعقوب-يصارع",
+        "history": [
+          "/ar/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -45997,11 +45998,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "gemeinde",
+        "alias": "die-geschichte-dreier-männer",
+        "history": [
+          "/de/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -54135,11 +54137,12 @@
       },
       "7f8746cc-2e3a-476f-a5a0-28d15abe5412": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "soul-idolatry-excludes-men-out-of-heaven",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "χριστιανική-ζωή",
+        "alias": "η-ειδωλολατρία-τησ-ψυχήσ-αποκλείει-τουσ-ανθρώπουσ-από-τον-ουρανό",
+        "history": [
+          "/el/articles/soul-idolatry-excludes-men-out-of-heaven/"
+        ],
+        "fallback": false
       },
       "7fe63551-500f-4963-8b75-e17ae8cfd46a": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -55868,11 +55871,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "εκκλησία",
+        "alias": "μια-ιστορία-τριών-ανδρών",
+        "history": [
+          "/el/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -91135,11 +91139,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "église",
+        "alias": "l-histoire-de-trois-hommes",
+        "history": [
+          "/fr/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -96975,11 +96980,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "חיים-נוצריים",
+        "alias": "על-פי-פירותיהם",
+        "history": [
+          "/he/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -111569,11 +111575,12 @@
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-27",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "संपादकीय",
+        "alias": "संपादक-की-ओर-से-6",
+        "history": [
+          "/hi/articles/from-the-editor-27/"
+        ],
+        "fallback": false
       },
       "dda47f1b-68c2-491b-b85d-accf7a24f4db": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -146728,11 +146735,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristent-liv",
+        "alias": "på-fruktene-skal-dere-kjenne-dem",
+        "history": [
+          "/nb/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -160458,11 +160466,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kerk",
+        "alias": "het-verhaal-van-drie-mannen",
+        "history": [
+          "/nl/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -177853,11 +177862,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "поэзия",
+        "alias": "борющийся-иаков",
+        "history": [
+          "/ru/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -196044,11 +196054,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "maisha-ya-kikristo",
+        "alias": "kwa-matunda-yao",
+        "history": [
+          "/sw/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -217050,11 +217061,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "诗歌",
+        "alias": "与雅各摔跤",
+        "history": [
+          "/zh-Hans/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -217638,11 +217650,12 @@
       },
       "7c9d5015-158a-4c07-92fc-ae40c998d9ae": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "our-fellowship-is-with-the-father",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "属灵操练",
+        "alias": "我们与父相交",
+        "history": [
+          "/zh-Hans/articles/our-fellowship-is-with-the-father/"
+        ],
+        "fallback": false
       },
       "7cdda5c4-11c0-4b7f-bcd4-b37677267f87": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -218888,11 +218901,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "属灵操练",
+        "alias": "信心与理性",
+        "history": [
+          "/zh-Hans/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -219471,11 +219485,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "教会",
+        "alias": "三个男人的故事",
+        "history": [
+          "/zh-Hans/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
