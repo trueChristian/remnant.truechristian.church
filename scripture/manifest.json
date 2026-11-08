@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "60729a21892ead3f183018b828bc7dad25ebb22aef6f733cc9568300996701b0",
+  "integrity": "bb0bbc1b68dfd431cbab448fc7d1927a77a96dd82207a3ca2951580831e348fd",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -585,6 +585,175 @@
         }
       ],
       "record_hash": "aacedb81346fab3b451d509adafb2ff205c49c61322923059ec8c0a4fc664734"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:hi:b7bbca631de9da0d6eb401e2862208b937d395a1f65b5f042f88ae801b9112d8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "hi",
+      "content_hash": "b7bbca631de9da0d6eb401e2862208b937d395a1f65b5f042f88ae801b9112d8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "677c7537fc041fcb4eb521de",
+          "quote": "मत्ती 1:21",
+          "before": "े लोगों का उनके पापों से उद्धार करेगा” (",
+          "after": ")।",
+          "spans": [
+            [
+              347,
+              357
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "fa8a114a2f52253b3640c1ab",
+          "quote": "यूहन्ना 3:18-21",
+          "before": "ापमय दशा को स्वीकार नहीं करना चाहते थे। ",
+          "after": " के ये कुछ पद हमें इस बाधा को समझने में ",
+          "spans": [
+            [
+              1454,
+              1469
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "a206e4a6bcef9507fd7b8df4",
+          "quote": "यूहन्ना 3:19-21",
+          "before": "रगट हों कि वे परमेश्वर में किए गए हैं” (",
+          "after": ")।",
+          "spans": [
+            [
+              1837,
+              1852
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "18bf9c3ce2eca73c9ca4f091",
+          "quote": "लूका 7:29-30",
+          "before": " लिए परमेश्वर की सम्मति को ठुकरा दिया” (",
+          "after": ")।",
+          "spans": [
+            [
+              2713,
+              2725
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "c01a948651bde3bc8a6f1333",
+          "quote": "1 तीमुथियुस 5:24-25",
+          "before": "से नहीं हैं, वे भी छिपाए नहीं जा सकते” (",
+          "after": ")।",
+          "spans": [
+            [
+              3245,
+              3264
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "a3d1c5203cc818192e04af49",
+          "quote": "यूहन्ना 8:11",
+          "before": "ी नहीं ठहराता; जा, और फिर पाप न करना’” (",
+          "after": ")।",
+          "spans": [
+            [
+              3637,
+              3649
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "169f27362c750dc8af0b55ca",
+          "quote": "मरकुस 10:21",
+          "before": "ा; और आ, क्रूस उठा और मेरे पीछे हो ले” (",
+          "after": ")।",
+          "spans": [
+            [
+              3777,
+              3788
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "d41b90a4a34e70a0ef1d772d",
+          "quote": "लूका 22:32",
+          "before": "न फिराए, तो अपने भाइयों को स्थिर करना” (",
+          "after": ")।",
+          "spans": [
+            [
+              3855,
+              3865
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "72c7caad0c8272cb109c083b",
+          "quote": "लूका 9:23-24",
+          "before": "लिए अपना प्राण खोएगा, वही उसे बचाएगा’” (",
+          "after": ")।",
+          "spans": [
+            [
+              4111,
+              4123
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "6f60911ac2befca7ca29c25c",
+          "quote": "मरकुस 6:16-28",
+          "before": "मिल सके और वह हेरोदियास के साथ रह सके? (",
+          "after": " पढ़ें।) क्या उसे इतना टकरावपूर्ण होना ह",
+          "spans": [
+            [
+              4766,
+              4779
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "b896286c689c78c405d9107bd5910b117c31b6ab81756482f547dc81ff05613a"
     },
     "01d6d043-59d2-4042-a6e9-8c4abf368212:en:4132f5fdbeb38cd2f841d4f52c22ee0467ac7c199a48f6d7c9d2e819f6e0468f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01d6d043-59d2-4042-a6e9-8c4abf368212",
@@ -109003,6 +109172,127 @@
       ],
       "record_hash": "ed1b553e3593f35f4bed806f0600559a00cd18637df98c94770e0920aa6a11c0"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:ar:73d5fa34b4ad73390d04da3cbd2b8f53b8c46070de4334c5573fd4dd6370b1ba:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "ar",
+      "content_hash": "73d5fa34b4ad73390d04da3cbd2b8f53b8c46070de4334c5573fd4dd6370b1ba",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "73eefc448fa2c2cbfe661b55",
+          "quote": "متى 7:22",
+          "before": "نا الشياطين، وباسمك صنعنا قوات كثيرة؟» –",
+          "after": ".",
+          "spans": [
+            [
+              450,
+              458
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "77549a301f5e89dedc70d07a",
+          "quote": "متى 23:26",
+          "before": " والصحفة لكي يكون خارجهما أيضًا نقيًا» –",
+          "after": ".",
+          "spans": [
+            [
+              4203,
+              4212
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "8a1f73d3eb62bb1b04a9200e",
+          "quote": "يوحنا 5:3",
+          "before": " أن نحفظ وصاياه، وليست وصاياه ثقيلة» –1 ",
+          "after": ".",
+          "spans": [
+            [
+              5581,
+              5590
+            ]
+          ],
+          "osis": "John.5.3",
+          "queries": [
+            "43 5:3"
+          ]
+        },
+        {
+          "id": "ab51c7c36972d6ff2db85639",
+          "quote": "لوقا 2:52",
+          "before": "لحكمة والقامة والنعمة عند الله والناس» –",
+          "after": ".",
+          "spans": [
+            [
+              6937,
+              6946
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "40236b646d178c61d0246aea",
+          "quote": "لوقا 23:31",
+          "before": "الرطب يفعلون هذا، فماذا يكون باليابس؟» –",
+          "after": ".",
+          "spans": [
+            [
+              9174,
+              9184
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "dc838ddd967a2eb0ba60ad72",
+          "quote": "متى 7:16-20",
+          "before": "لقى في النار. إذًا من ثمارهم تعرفونهم» –",
+          "after": ".",
+          "spans": [
+            [
+              10776,
+              10787
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "6db98511e9c78a59525b4ce4",
+          "quote": "متى 7:19",
+          "before": "صنع ثمرًا جيدًا تُقطع وتُلقى في النار» –",
+          "after": ".",
+          "spans": [
+            [
+              11477,
+              11485
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "1d6464f3c8531357a2420630672c7a7772f68b7fbfe3ec011f2ba8d7288ad008"
+    },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:bn:01cdb04d63b12b15f5fc2a3ac93b12ed3c83bb8d3a49e335e6ac7bd4b4b6584f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
       "locale": "bn",
@@ -110026,6 +110316,159 @@
       ],
       "record_hash": "0ba9196fa1a72ae6d713566139ee94f3ab8c0202b6a49ee8c5de8fe91d80912d"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:id:c3fed1946b3807cffc2524acabe48fb193d9dc7a8f313e7b9f792eea8f2caf7e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "id",
+      "content_hash": "c3fed1946b3807cffc2524acabe48fb193d9dc7a8f313e7b9f792eea8f2caf7e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fc2df7b365cb28e6c8e10384",
+          "quote": "Matius 7:22",
+          "before": "a-Mu melakukan banyak pekerjaan ajaib? –",
+          "after": ".",
+          "spans": [
+            [
+              571,
+              582
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "8903167256814d73196f66fe",
+          "quote": "Matius 23:26",
+          "before": "aya bagian luarnya juga menjadi bersih –",
+          "after": ".",
+          "spans": [
+            [
+              6032,
+              6044
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "79c42c2c6008fccfa01ae0f7",
+          "quote": "1 Yohanes 5:3",
+          "before": " perintah-perintah-Nya itu tidak berat –",
+          "after": ".",
+          "spans": [
+            [
+              8022,
+              8035
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "9b7cacf22b1202eea060dc7f",
+          "quote": "1 Petrus 2:2",
+          "before": "g murni, supaya olehnya kamu bertumbuh –",
+          "after": ". Jadi, orang Kristen baru tidak membutu",
+          "spans": [
+            [
+              9796,
+              9808
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "27de1fde2ef2465438fd53b1",
+          "quote": "Lukas 2:52",
+          "before": "rta dalam perkenanan Allah dan manusia –",
+          "after": ".",
+          "spans": [
+            [
+              10070,
+              10080
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "0e2f33dd40f79176667cf03e",
+          "quote": "Lukas 23:31",
+          "before": "kan terjadi terhadap kayu yang kering? –",
+          "after": ".",
+          "spans": [
+            [
+              13442,
+              13453
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "ddaa26659ce71b1ed1c06e79",
+          "quote": "Matius 7:16-20",
+          "before": "i buahnyalah kamu akan mengenal mereka –",
+          "after": ".",
+          "spans": [
+            [
+              16063,
+              16077
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "07be4c11da04387b67c19511",
+          "quote": "Galatia 5:22-23",
+          "before": "man, kelemahlembutan, penguasaan diri… –",
+          "after": ". Apakah hal-hal inilah yang dilihat ora",
+          "spans": [
+            [
+              16245,
+              16260
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "5e6b0fb775c2536d7c8a79be",
+          "quote": "Matius 7:19",
+          "before": "akan ditebang dan dibuang ke dalam api –",
+          "after": ".",
+          "spans": [
+            [
+              17138,
+              17149
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "7a9b628af609caa89de4651b8acb8975045de4ac9c1a555a219bfcd4892c1a42"
+    },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:it:62c9abcb4627a636bdaecd1367c8a6486b04f981ee42b4a34ad696c1e61db73d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
       "locale": "it",
@@ -110501,6 +110944,159 @@
       ],
       "record_hash": "6a5812ad10271cc74e257decdcc7ae656ac419cc7988de358430bb3d5ddd32a7"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:nl:e5f45aa246ba498f2a36e349b689cacccebc6a7522e3a44d05a151206a749c5b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "nl",
+      "content_hash": "e5f45aa246ba498f2a36e349b689cacccebc6a7522e3a44d05a151206a749c5b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a4549c8dab6a3be927e82a3d",
+          "quote": "Matteüs 7:22",
+          "before": "n, en in uw naam vele wonderen gedaan? –",
+          "after": ".",
+          "spans": [
+            [
+              527,
+              539
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "eeed610b94f2c76df95e11b8",
+          "quote": "Matteüs 23:26",
+          "before": "dat ook de buitenkant ervan rein wordt –",
+          "after": ".",
+          "spans": [
+            [
+              5676,
+              5689
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "d5657d44c1901a6d0268c992",
+          "quote": "1 Johannes 5:3",
+          "before": "; en Zijn geboden zijn geen zware last –",
+          "after": ".",
+          "spans": [
+            [
+              7583,
+              7597
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "d77820dc83ac9070a3a43fbe",
+          "quote": "1 Petrus 2:2",
+          "before": "et Woord, opdat u daardoor mag groeien –",
+          "after": ". Nieuwe christenen hebben dus geen ruim",
+          "spans": [
+            [
+              9206,
+              9218
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "b49eba0f3f6ebe1f6878bc4b",
+          "quote": "Lukas 2:52",
+          "before": "otte en in genade bij God en de mensen –",
+          "after": ".",
+          "spans": [
+            [
+              9441,
+              9451
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "1376c9328a89360bdd5aa144",
+          "quote": "Lukas 23:31",
+          "before": "wat zal er dan met het dorre gebeuren? –",
+          "after": ".",
+          "spans": [
+            [
+              12481,
+              12492
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "47a3b36711b7786d1b134889",
+          "quote": "Matteüs 7:16-20",
+          "before": "t u hen dan aan hun vruchten herkennen –",
+          "after": ".",
+          "spans": [
+            [
+              14803,
+              14818
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "144f7e76e450e9971c650d07",
+          "quote": "Galaten 5:22-23",
+          "before": "loof, zachtmoedigheid, zelfbeheersing… –",
+          "after": ". Zijn dit de dingen die mensen zien wan",
+          "spans": [
+            [
+              14989,
+              15004
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "b440ffad7232ff5b70c8b8d4",
+          "quote": "Matteüs 7:19",
+          "before": "wordt omgehakt en in het vuur geworpen –",
+          "after": ".",
+          "spans": [
+            [
+              15797,
+              15809
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "86f9561818b29cb35c74c9a2c835d8415e95e4976448c877914bdafad21d2d6f"
+    },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:pt:e8e9dd840d6d21646f27f6d86f6a659ea17acb691ce350cf6439aeb0ec8f40f1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
       "locale": "pt",
@@ -110653,6 +111249,312 @@
         }
       ],
       "record_hash": "15418b00b9fa22eb123eee487b06822c81908f8a2e2389ff993ce870bf20e579"
+    },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:ru:40b2dacbd3ece31c1ee6b319e2bbd316bcbec821e98aa29208565fa50614f12b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "ru",
+      "content_hash": "40b2dacbd3ece31c1ee6b319e2bbd316bcbec821e98aa29208565fa50614f12b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "501bd02957293baf2bf996d5",
+          "quote": "Матфея 7:22",
+          "before": "воим ли именем многие чудеса творили? — ",
+          "after": ".",
+          "spans": [
+            [
+              544,
+              555
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "cad872831bad4ca98402e6cd",
+          "quote": "Матфея 23:26",
+          "before": "юда, чтобы чиста была и внешность их. — ",
+          "after": ".",
+          "spans": [
+            [
+              5054,
+              5066
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "1d36eaa4a8517fdbd31fb934",
+          "quote": "1 Иоанна 5:3",
+          "before": "заповеди Его; и заповеди Его нетяжки. — ",
+          "after": ".",
+          "spans": [
+            [
+              6775,
+              6787
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "ad5ba1a0e1f5554100767b6d",
+          "quote": "1 Петра 2:2",
+          "before": "лока, чтобы благодаря ему возрастать, — ",
+          "after": ". Итак, новообращенным христианам не нуж",
+          "spans": [
+            [
+              8290,
+              8301
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "d24012a800765110a756c151",
+          "quote": "Луки 2:52",
+          "before": "озрасте и в любви у Бога и человеков. — ",
+          "after": ".",
+          "spans": [
+            [
+              8508,
+              8517
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "5549779bfdcb7fad0c5fa2c8",
+          "quote": "Луки 23:31",
+          "before": "вом это делают, то с сухим что будет? — ",
+          "after": ".",
+          "spans": [
+            [
+              11232,
+              11242
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "2b1228f7489ab5e0f7c53b1b",
+          "quote": "Матфея 7:16–20",
+          "before": " огонь. Итак по плодам их узнаете их. — ",
+          "after": ".",
+          "spans": [
+            [
+              13194,
+              13208
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "90d245b4f285356b3bc02c36",
+          "quote": "Галатам 5:22–23",
+          "before": "осердие, вера, кротость, воздержание… — ",
+          "after": ". Видят ли люди все это, когда смотрят н",
+          "spans": [
+            [
+              13353,
+              13368
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "f42dd46c95d652e8ea2667f3",
+          "quote": "Матфея 7:19",
+          "before": "ого плода, срубают и бросают в огонь. — ",
+          "after": ".",
+          "spans": [
+            [
+              14082,
+              14093
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "448732f509b5a81e1382682b163440b14cf9f4a37e6c3387546a6899c2de7b3f"
+    },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:sv:64b5ae02b3ab1dfabdeb249e836c680560745e6bded4b17ef04da26e6a5c6817:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "sv",
+      "content_hash": "64b5ae02b3ab1dfabdeb249e836c680560745e6bded4b17ef04da26e6a5c6817",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "64f078463cd0663095f10135",
+          "quote": "Matteus 7:22",
+          "before": "mn och gjort många under i ditt namn? – ",
+          "after": ".",
+          "spans": [
+            [
+              537,
+              549
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "7593e29247e83dda472c3204",
+          "quote": "Matteus 23:26",
+          "before": "tet ren, så att även utsidan blir ren – ",
+          "after": ".",
+          "spans": [
+            [
+              5192,
+              5205
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "63cc0cab19c4d453774d9664",
+          "quote": "1 Johannesbrevet 5:3",
+          "before": "ller hans bud. Hans bud är inte tunga – ",
+          "after": ".",
+          "spans": [
+            [
+              6951,
+              6971
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "8b1e5b3a23116b4ed273dd7a",
+          "quote": "1 Petrusbrevet 2:2",
+          "before": "a mjölk, så att ni genom den kan växa – ",
+          "after": ". Nya kristna behöver alltså inte utrymm",
+          "spans": [
+            [
+              8431,
+              8449
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "e6e91b63ff9d065484861acc",
+          "quote": "Lukasevangeliet 2:52",
+          "before": " och välbehag inför Gud och människor – ",
+          "after": ".",
+          "spans": [
+            [
+              8643,
+              8663
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "cefaf25247c371e50402d34e",
+          "quote": "Lukasevangeliet 23:31",
+          "before": "trädet, vad ska då ske med det torra? – ",
+          "after": ".",
+          "spans": [
+            [
+              11464,
+              11485
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "cc6ef3b12f0146c79436aa08",
+          "quote": "Matteus 7:16–20",
+          "before": " ska ni känna igen dem på deras frukt – ",
+          "after": ".",
+          "spans": [
+            [
+              13552,
+              13567
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "56b6d0a590b78b7c7422d82d",
+          "quote": "Galaterbrevet 5:22–23",
+          "before": "tro, ödmjukhet och självbehärskning … – ",
+          "after": ". Är det sådant människor ser när de ser",
+          "spans": [
+            [
+              13712,
+              13733
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "e484fc9b7c518055b4051254",
+          "quote": "Matteus 7:19",
+          "before": "od frukt huggs ner och kastas i elden – ",
+          "after": ".",
+          "spans": [
+            [
+              14479,
+              14491
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "8a7023a96d4eb0ab8910b845bb755a34b206b33e8786bd7f556826ed64a88579"
     },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:sw:7c3ade6997c41db04dfccc3808827b7743429fc573b41dbc825025d2a7d8b423:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
@@ -188256,6 +189158,22 @@
       "markers": [],
       "record_hash": "178d898356e0d9a7c2ad933cdc90781420488b43beaebec488cf4e7db4808b78"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:he:1ff138dd5ee8de466cbfe1750af32df458f5d42e81895c656f541e51e445c7eb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "he",
+      "content_hash": "1ff138dd5ee8de466cbfe1750af32df458f5d42e81895c656f541e51e445c7eb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b424517cc0f9cdf2aa9c8d35ff4c78c7bfe8f4eeaa66c331450223c12ac3b14f"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:hi:d6dabe35278fc0689cb202371e89da7cb975fcb186b1f68664be3f4ec976c6a8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "hi",
+      "content_hash": "d6dabe35278fc0689cb202371e89da7cb975fcb186b1f68664be3f4ec976c6a8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "121b6c362c3bf2c7120fcdeaaf438da23806ebfd36eabea11462bc2e2fa77fad"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:id:6f75ca1959c4db781ad82c42ddd16e0ac1b8f474c6bcaa104c6cbf660ccbbeeb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "id",
@@ -207054,6 +207972,63 @@
         }
       ],
       "record_hash": "a023cc6fc9933c0d310187c764f582df544669a03fbb3bcac687d5828b208f80"
+    },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:he:1fc5966efb9d1d0166b525558d633d87293a46eab3fecd6d6114d53dfa795d4a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "he",
+      "content_hash": "1fc5966efb9d1d0166b525558d633d87293a46eab3fecd6d6114d53dfa795d4a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f0ea7cf7a9855091acdb0edd",
+          "quote": "אל הגלטים 6:1-5",
+          "before": "לא בזולתו. כי כל אחד יישא את משאו שלו – ",
+          "after": ".",
+          "spans": [
+            [
+              4773,
+              4788
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "b24f14394f81fa4e3b1104e3",
+          "quote": "יעקב 1:2-3",
+          "before": "יודעכם כי בחינת אמונתכם מצמיחה סבלנות – ",
+          "after": ".",
+          "spans": [
+            [
+              5117,
+              5127
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "6cb9f34c55abd1831f535b7f",
+          "quote": "אל הגלטים 6:9-10",
+          "before": "ב לכל אדם, ובייחוד לבני משפחת האמונה. – ",
+          "after": ". כזרים ועולי רגל כאן על פני האדמה, הבה ",
+          "spans": [
+            [
+              6151,
+              6167
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "1edfdd2755a2d763e62bb252ed16a0e2c43804d6e6934f95573ef43e8e07e5fc"
     },
     "7a4d646a-0c04-4b44-a54f-ef63df487f81:hi:cff8b82492a0ab78ee5337342798415a7faef6b23d69631136ffde1a6c7fbeec:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
@@ -295455,6 +296430,63 @@
       "markers": [],
       "record_hash": "63a934aba6d1c1712ff44e50b0b4beb1fff113027f9c00491caf7541ba8727ea"
     },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:ar:b706cf34fc2479d6fed9ac6683198105a982a0307038f2d8c487dd6ef72ddea0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "ar",
+      "content_hash": "b706cf34fc2479d6fed9ac6683198105a982a0307038f2d8c487dd6ef72ddea0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d867f0e8ff5a0b899011a085",
+          "quote": "لوقا 1:1-4",
+          "before": "لكي تعرف يقين الأمور التي عُلّمت بها». –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              2253,
+              2263
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "66e6f4528e31fd19049701b4",
+          "quote": "يوحنا 20:29",
+          "before": "نك رأيتني؟ طوبى للذين لم يروا وآمنوا». –",
+          "after": ". (ESV) ومن هذا، يسهل أن نعرّف الإيمان ب",
+          "spans": [
+            [
+              3628,
+              3639
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "7af5e989bf8858aa24b49634",
+          "quote": "متى 16:21",
+          "before": "ال بوضوح إنه سيقوم من بين الأموات (انظر ",
+          "after": "). ثالثًا، كان يسوع قد أثبت ألوهيته بالف",
+          "spans": [
+            [
+              4000,
+              4009
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "ba378cd7c3e84cb19edc9216d8d36d7b715ee75306bc432289c996be3044937d"
+    },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:bn:b4421d1bf83516bf23c46df69b32e76e464e2c282d2ac420110a713fc3030a93:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
       "locale": "bn",
@@ -316773,6 +317805,159 @@
       ],
       "record_hash": "ee0b8048d9a7976c5da4a44565de8984cfe9c72faf421b9a7fdeb653628fa705"
     },
+    "b8181ffd-5861-420e-b92a-573b7e66fc3e:ru:efb93809bf812301c6460dac2b6c53515fae41d9310d754e44357cde3095811f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b8181ffd-5861-420e-b92a-573b7e66fc3e",
+      "locale": "ru",
+      "content_hash": "efb93809bf812301c6460dac2b6c53515fae41d9310d754e44357cde3095811f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "08edefc9de184db87d1740d0",
+          "quote": "Бытие 3",
+          "before": "м о жизни до грехопадения, описанного в ",
+          "after": ". Но нам известно: …и увидел Бог всё, чт",
+          "spans": [
+            [
+              1063,
+              1070
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "34f898cd7848b717c516e7e4",
+          "quote": "Бытие 1:31",
+          "before": " что Он создал, и вот, хорошо весьма… — ",
+          "after": ".",
+          "spans": [
+            [
+              1151,
+              1161
+            ]
+          ],
+          "osis": "Gen.1.31",
+          "queries": [
+            "1 1:31"
+          ]
+        },
+        {
+          "id": "bec3c45cc1544027a7c3624e",
+          "quote": "Екклесиаст 2:24",
+          "before": "И это, как я увидел, — от руки Божией — ",
+          "after": ".",
+          "spans": [
+            [
+              2175,
+              2190
+            ]
+          ],
+          "osis": "Eccl.2.24",
+          "queries": [
+            "21 2:24"
+          ]
+        },
+        {
+          "id": "cf74d89272d9ea16ee72d3a5",
+          "quote": "Притчи 23:20–21",
+          "before": "беднеют, и сонливость оденет в рубище — ",
+          "after": ".",
+          "spans": [
+            [
+              2581,
+              2596
+            ]
+          ],
+          "osis": "Prov.23.20-Prov.23.21",
+          "queries": [
+            "20 23:20-21"
+          ]
+        },
+        {
+          "id": "fc91780168916fa947afb6c1",
+          "quote": "Деяния 15:20",
+          "before": "идолами, от блуда, удавленины и крови — ",
+          "after": ". В остальном, по-видимому, им было позв",
+          "spans": [
+            [
+              2853,
+              2865
+            ]
+          ],
+          "osis": "Acts.15.20",
+          "queries": [
+            "44 15:20"
+          ]
+        },
+        {
+          "id": "09d67e2b22c8233795654a4c",
+          "quote": "1 Коринфянам 9:27",
+          "before": "бы самому не оказаться отверженным (см. ",
+          "after": ").",
+          "spans": [
+            [
+              3234,
+              3251
+            ]
+          ],
+          "osis": "1Cor.9.27",
+          "queries": [
+            "46 9:27"
+          ]
+        },
+        {
+          "id": "a66743216dda09083265e711",
+          "quote": "1 Коринфянам 6:19–20",
+          "before": "х, и в духе вашем, которые суть Божии — ",
+          "after": ".",
+          "spans": [
+            [
+              3488,
+              3508
+            ]
+          ],
+          "osis": "1Cor.6.19-1Cor.6.20",
+          "queries": [
+            "46 6:19-20"
+          ]
+        },
+        {
+          "id": "69de3ba25a9d49ff3f616ccd",
+          "quote": "1 Коринфянам 3:16–17",
+          "before": "ибо храм Божий свят; а этот храм — вы — ",
+          "after": ".",
+          "spans": [
+            [
+              3680,
+              3700
+            ]
+          ],
+          "osis": "1Cor.3.16-1Cor.3.17",
+          "queries": [
+            "46 3:16-17"
+          ]
+        },
+        {
+          "id": "8597c9429ceebd61ecd6edf9",
+          "quote": "1 Коринфянам 6:19",
+          "before": "к своему телу как к храму Святого Духа (",
+          "after": "). Я слышал, как этим стихом объясняли, ",
+          "spans": [
+            [
+              13254,
+              13271
+            ]
+          ],
+          "osis": "1Cor.6.19",
+          "queries": [
+            "46 6:19"
+          ]
+        }
+      ],
+      "record_hash": "ccf4505a525adc2ff38d6c06e177a4eae6c55f47ca1f261bc747af7a1459a775"
+    },
     "b8181ffd-5861-420e-b92a-573b7e66fc3e:sv:843585f983521cf796be6b4ef8415417b0ea1b3d29fa6ae2b1ace639954c66d9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b8181ffd-5861-420e-b92a-573b7e66fc3e",
       "locale": "sv",
@@ -328562,6 +329747,14 @@
       "markers": [],
       "record_hash": "d81fb9bb65692a64c8403ecbb3e290d7119aea844d03a0642d12b446eac8b35b"
     },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:bn:685eb757a4b0cec8ad644f5dcf1120222f249be1cabc2966f1a029f6f3bd117d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "bn",
+      "content_hash": "685eb757a4b0cec8ad644f5dcf1120222f249be1cabc2966f1a029f6f3bd117d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "20873793575fa4d004e0d83ba77abef3aeb451d96e0fdea9b1965ac6b537f86c"
+    },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:de:0e0123ceba0e70b3bdd947ec31f27223cd52af09e992154ec5c68e8a91288e88:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
       "locale": "de",
@@ -328602,6 +329795,22 @@
       "markers": [],
       "record_hash": "a5ac9f08b879e19f6f8c91a33eea123ccca9f9a883723e50e8a814c25c47ef52"
     },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:he:3bace16f1fcc0a3e072c0275845e07d1f59f100d64d3c9f40151d628a6cb3e3f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "he",
+      "content_hash": "3bace16f1fcc0a3e072c0275845e07d1f59f100d64d3c9f40151d628a6cb3e3f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "85e7136aded5bcae95d3e34241493a7a34a610f26bcb6ad62855ee3aacb2a367"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:nb:ede5d0aab0e2eaa0860faeebf481d8418b197cac0b431e6ef40b0af71a1e328e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "nb",
+      "content_hash": "ede5d0aab0e2eaa0860faeebf481d8418b197cac0b431e6ef40b0af71a1e328e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "13e44d6d17c242c8af4c6d947f2174f3eafdae38c7fa1fcd28333118d559d886"
+    },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:nl:bebb5c9de5a3389d764f1f37ef70c1c30d3560b10fa4280af687670151842f71:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
       "locale": "nl",
@@ -328617,6 +329826,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "b39d2096c2e693c5793acc3a813aab813c4b1b9397c531759e4d14beef88a006"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:sv:2ab02b555648cf1d908f47c893478816250991d5abd47a45e1436c19e0eb5da9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "sv",
+      "content_hash": "2ab02b555648cf1d908f47c893478816250991d5abd47a45e1436c19e0eb5da9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3a15b0971d8f6d061e71adba1df918d9f4d6061f74c5b723db8a6435174bd252"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:ur:371ce0222df8fdad0acea976789113f8f1013deeb0b229a1f99216be429ab5db:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "ur",
+      "content_hash": "371ce0222df8fdad0acea976789113f8f1013deeb0b229a1f99216be429ab5db",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "08994eab2f49d2b4ef66a9e2d7057d0c8802faf5c2e15478682c839d4dc5063d"
     },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:zh-Hans:7a5ade313886037c646b9d9843b5c360b8a4ecc76c133e59e44dfcc74e96ff85:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
@@ -434721,6 +435946,95 @@
         }
       ],
       "record_hash": "49f28a6e834bfd9a79798cba30fac9e52f1b8cdac12cb33377e50a0910ab6339"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:el:a85faf33391f1056fa05ffd4f397f7c492ad3d0af0272975971b4ab51f5d8bfd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "el",
+      "content_hash": "a85faf33391f1056fa05ffd4f397f7c492ad3d0af0272975971b4ab51f5d8bfd",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f3c10e1e2d72506fac5d3e65",
+          "quote": "Ιωάννης 3:3-6",
+          "before": " γεννιέται από το Πνεύμα είναι πνεύμα» (",
+          "after": ")",
+          "spans": [
+            [
+              604,
+              617
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "85f90f093bd7553497910ba2",
+          "quote": "Ιωάννης 3:6",
+          "before": " γεννιέται από το Πνεύμα είναι πνεύμα» (",
+          "after": "). Τι εννοεί; Αν γεννηθείς από τη σάρκα,",
+          "spans": [
+            [
+              6900,
+              6911
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "f791377588fd6344ec4feb4b",
+          "quote": "Προς Ρωμαίους 8:8",
+          "before": "ό σε αυτήν. Όπως μας λέει ο Παύλος στην ",
+          "after": ", είναι αδύνατο να ευαρεστήσει τον Θεό η",
+          "spans": [
+            [
+              7223,
+              7240
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "b1443e47f0bb575c78782c12",
+          "quote": "Προς Ρωμαίους 7",
+          "before": "οιος γεννιέται ξανά, όπως ο Παύλος στην ",
+          "after": ", παραδέχεται ότι δεν μπορεί να τα καταφ",
+          "spans": [
+            [
+              9947,
+              9962
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "6b19034751c5d67236d54e1b",
+          "quote": "Β΄ Κορινθίους 5:17",
+          "before": "ιά πέρασαν, και όλα έγιναν καινούργια» (",
+          "after": ").",
+          "spans": [
+            [
+              10469,
+              10487
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "551047a5529931c20b6c675116019d33328f4ba614a5c0d6d34834c4f7c28195"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:en:f040d9046bf42f0aa0569cd6c88968f1f2e9591dc11821417f09440139b98dda:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",

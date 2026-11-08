@@ -22473,11 +22473,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "من-ثمارهم-تعرفونهم",
+        "history": [
+          "/ar/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -25654,11 +25655,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "التدريب-الروحي",
+        "alias": "الإيمان-والعقل",
+        "history": [
+          "/ar/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -36113,11 +36115,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "মণ্ডলী",
+        "alias": "তিন-ব্যক্তির-কাহিনি",
+        "history": [
+          "/bn/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -57567,11 +57570,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "χριστιανική-ζωή",
+        "alias": "ένα-νέο-δημιούργημα",
+        "history": [
+          "/el/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -98324,11 +98328,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "שירה",
+        "alias": "יעקב-הנאבק",
+        "history": [
+          "/he/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -98846,11 +98851,12 @@
       },
       "7a4d646a-0c04-4b44-a54f-ef63df487f81": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-8-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "מילים-נוקבות",
+        "alias": "מאת-העורך-3",
+        "history": [
+          "/he/articles/from-the-editor-8-2/"
+        ],
+        "fallback": false
       },
       "7af6dfb2-a389-40eb-807b-682e81454dff": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -100759,11 +100765,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "הקהילה",
+        "alias": "סיפורם-של-שלושה-גברים",
+        "history": [
+          "/he/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -105315,11 +105322,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "वह-अपने-लोगों-का-उनके-पापों-से-उद्धार-करेगा",
+        "history": [
+          "/hi/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -108215,11 +108223,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "कविता",
+        "alias": "याकूब-का-मल्लयुद्ध",
+        "history": [
+          "/hi/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -116872,11 +116881,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kehidupan-kristen",
+        "alias": "dari-buahnya",
+        "history": [
+          "/id/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -150477,11 +150487,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kirken",
+        "alias": "en-fortelling-om-tre-menn",
+        "history": [
+          "/nb/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -156718,11 +156729,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelijk-leven",
+        "alias": "aan-hun-vruchten",
+        "history": [
+          "/nl/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -176531,11 +176543,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "по-плодам-их",
+        "history": [
+          "/ru/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -180104,11 +180117,12 @@
       },
       "b8181ffd-5861-420e-b92a-573b7e66fc3e": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "weight-loss",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "медицина",
+        "alias": "похудение",
+        "history": [
+          "/ru/articles/weight-loss/"
+        ],
+        "fallback": false
       },
       "b820707c-fd83-47f5-b3da-d1e0aac6db2e": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -186335,11 +186349,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "av-deras-frukt",
+        "history": [
+          "/sv/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -190084,11 +190099,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kyrkan",
+        "alias": "berättelsen-om-tre-män",
+        "history": [
+          "/sv/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -209698,11 +209714,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "کلیسیا",
+        "alias": "تین-آدمیوں-کی-کہانی",
+        "history": [
+          "/ur/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
