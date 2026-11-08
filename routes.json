@@ -14496,11 +14496,12 @@
       },
       "7a4d646a-0c04-4b44-a54f-ef63df487f81": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-8-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "skerp-woorde",
+        "alias": "van-die-redakteur-7",
+        "history": [
+          "/af/articles/from-the-editor-8-2/"
+        ],
+        "fallback": false
       },
       "7af6dfb2-a389-40eb-807b-682e81454dff": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -18086,11 +18087,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelike-lewe",
+        "alias": "n-nuwe-skepping",
+        "history": [
+          "/af/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -47676,11 +47678,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "eine-neue-kreatur",
+        "history": [
+          "/de/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -98987,11 +98990,12 @@
       },
       "7f8746cc-2e3a-476f-a5a0-28d15abe5412": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "soul-idolatry-excludes-men-out-of-heaven",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "חיים-נוצריים",
+        "alias": "עבודת-אלילים-של-הנפש-מונעת-מאנשים-להיכנס-לשמים",
+        "history": [
+          "/he/articles/soul-idolatry-excludes-men-out-of-heaven/"
+        ],
+        "fallback": false
       },
       "7fe63551-500f-4963-8b75-e17ae8cfd46a": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -128145,11 +128149,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poesia",
+        "alias": "giacobbe-in-lotta",
+        "history": [
+          "/it/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -148347,11 +148352,12 @@
       },
       "73def952-dd77-4a51-b030-27713e0cedd2": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "do-i-need-to-tell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "barn",
+        "alias": "må-jeg-si-det",
+        "history": [
+          "/nb/articles/do-i-need-to-tell/"
+        ],
+        "fallback": false
       },
       "742a597d-8b1d-4010-84ae-a9e58f474025": {
         "category_id": "59e78031-c269-52d1-9b00-08dba0398cb4",
@@ -165170,11 +165176,12 @@
       },
       "049f2e7d-675c-4dac-9584-5aefceb9b9c1": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-3",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "editorial",
+        "alias": "do-editor-8",
+        "history": [
+          "/pt/articles/from-the-editor-3/"
+        ],
+        "fallback": false
       },
       "04e692e0-5199-4d0e-8b09-a16e84f80894": {
         "category_id": "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408",
@@ -178360,11 +178367,12 @@
       },
       "7a4d646a-0c04-4b44-a54f-ef63df487f81": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-8-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "слова-проникающие-в-сердце",
+        "alias": "от-редактора-8",
+        "history": [
+          "/ru/articles/from-the-editor-8-2/"
+        ],
+        "fallback": false
       },
       "7af6dfb2-a389-40eb-807b-682e81454dff": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -189645,11 +189653,12 @@
       },
       "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "til-the-storm-passes-by",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kvinnor",
+        "alias": "tills-stormen-har-dragit-förbi",
+        "history": [
+          "/sv/articles/til-the-storm-passes-by/"
+        ],
+        "fallback": false
       },
       "b07a10da-3815-4676-ad8c-be94ebe06fd0": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -196886,11 +196895,12 @@
       },
       "58d3859b-42f6-4cf1-80e6-fa847d9dc4a4": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "a-life-changing-influence",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "watoto",
+        "alias": "ushawishi-unaobadilisha-maisha",
+        "history": [
+          "/sw/articles/a-life-changing-influence/"
+        ],
+        "fallback": false
       },
       "594e6de0-71ae-4367-8d81-2ae37c93b98b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -197880,11 +197890,12 @@
       },
       "7a4d646a-0c04-4b44-a54f-ef63df487f81": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-8-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "maneno-makali-ya-kutafakari",
+        "alias": "kutoka-kwa-mhariri-5",
+        "history": [
+          "/sw/articles/from-the-editor-8-2/"
+        ],
+        "fallback": false
       },
       "7af6dfb2-a389-40eb-807b-682e81454dff": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",

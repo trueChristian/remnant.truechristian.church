@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "aee2eb60c87190f189a5ffc99d0a8dff41af71edc203156205331b8fee2cfd8a",
+  "integrity": "8d92683cd95915955cc984d78bd1166127133d38d3aeeccc1e8844d7965324b9",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -3689,6 +3689,63 @@
         }
       ],
       "record_hash": "84b3cd38890e2bcb18b1a965af1a29f48e189941e9c70c9506d968adaf4b6a9e"
+    },
+    "049f2e7d-675c-4dac-9584-5aefceb9b9c1:pt:fed75f65866806bb759c5e8720f3f232d726f8bd21d46aeb4032392a6749d6e0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "049f2e7d-675c-4dac-9584-5aefceb9b9c1",
+      "locale": "pt",
+      "content_hash": "fed75f65866806bb759c5e8720f3f232d726f8bd21d46aeb4032392a6749d6e0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "12af621bd1c0e4330682c046",
+          "quote": "Daniel 2:21",
+          "before": "",
+          "after": " nos diz que nosso Deus Criador “muda os",
+          "spans": [
+            [
+              463,
+              474
+            ]
+          ],
+          "osis": "Dan.2.21",
+          "queries": [
+            "27 2:21"
+          ]
+        },
+        {
+          "id": "ff6426406d5d3ead079fdc7e",
+          "quote": "Jó 12:7-10",
+          "before": " vivo e o fôlego de toda a humanidade” (",
+          "after": ").",
+          "spans": [
+            [
+              4132,
+              4142
+            ]
+          ],
+          "osis": "Job.12.7-Job.12.10",
+          "queries": [
+            "18 12:7-10"
+          ]
+        },
+        {
+          "id": "32cd7496717a4a17af748442",
+          "quote": "2 Coríntios 9:15",
+          "before": "ças a Deus pelo seu dom indescritível” (",
+          "after": ").",
+          "spans": [
+            [
+              4319,
+              4335
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "a399572755ab7aa02f86847cdc3161d7efffc8d1eeb838544d60e9b900b1484a"
     },
     "049f2e7d-675c-4dac-9584-5aefceb9b9c1:ru:a885b81c1ccf256f108b50f8e55046dead259f72178ba6c481c44383c48a9a36:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "049f2e7d-675c-4dac-9584-5aefceb9b9c1",
@@ -166431,6 +166488,14 @@
       "markers": [],
       "record_hash": "f894ab50ebf87418f304edb2b7de061e6e1a51276a8f120c207f8f1b4747ff7e"
     },
+    "58d3859b-42f6-4cf1-80e6-fa847d9dc4a4:sw:4dccd9a178ee768ea2beccf87d38a85f7a134466351b0850c52b16736f3d6c78:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "58d3859b-42f6-4cf1-80e6-fa847d9dc4a4",
+      "locale": "sw",
+      "content_hash": "4dccd9a178ee768ea2beccf87d38a85f7a134466351b0850c52b16736f3d6c78",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "85ab9d88aba5f5fbea3bb9d42d59df0ab1c60569ce085129ce152cde1c2a7191"
+    },
     "58d3859b-42f6-4cf1-80e6-fa847d9dc4a4:ur:a78407ea9dab2453cfa5213e82a14bd8d07ddd9524cd106fd9e0a33a70c3b3ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "58d3859b-42f6-4cf1-80e6-fa847d9dc4a4",
       "locale": "ur",
@@ -187611,6 +187676,14 @@
       "markers": [],
       "record_hash": "a8f4328b167e0ee4f1f38df17159c6867e42e8e391bc3d36984d29ebbbbec56d"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:it:07383dc92039b92f8a25a5f6e2e54d5e81fda3afe6409b12494e1d1a5b499018:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "it",
+      "content_hash": "07383dc92039b92f8a25a5f6e2e54d5e81fda3afe6409b12494e1d1a5b499018",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "963096cf43aa905f573d9309e7045047a3df43206f8b507cf086e05882ea9908"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:pt:47d4ed39be92c8278c5d9ad5cbc316249fc72996149786d63de174b01bf515de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "pt",
@@ -202450,6 +202523,14 @@
       "markers": [],
       "record_hash": "140fff5b31a463aa6e0cdb778cc946c1740de373338a929be2cbf9fe463b9566"
     },
+    "73def952-dd77-4a51-b030-27713e0cedd2:nb:0337b6e9ffe7fcfc04b59a693d2b3a1ccb1924f0177d0c614df2fcd8a9f55982:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "73def952-dd77-4a51-b030-27713e0cedd2",
+      "locale": "nb",
+      "content_hash": "0337b6e9ffe7fcfc04b59a693d2b3a1ccb1924f0177d0c614df2fcd8a9f55982",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3336c8060768ed6ecbb43a46b33dc68b40923e87c0aa189e0ca66eef429c265a"
+    },
     "73def952-dd77-4a51-b030-27713e0cedd2:nl:3335b3762b2a21ce48209601de6990bc51f59d1a4a9ccfef17bf31e8af2925dd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "73def952-dd77-4a51-b030-27713e0cedd2",
       "locale": "nl",
@@ -205658,6 +205739,95 @@
       "markers": [],
       "record_hash": "c312e6ee201482d2bc543f6e2eb92cd143cabae81878cc71d1d4a0f5d8e07fd2"
     },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:af:78892a9ef2c05f7be920d98091b919c377d0a12b2986c36578417f11afebab96:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "af",
+      "content_hash": "78892a9ef2c05f7be920d98091b919c377d0a12b2986c36578417f11afebab96",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "dfa2704a0e08bda7c509de23",
+          "quote": "1 Korintiërs 15:19",
+          "before": " is ons die ellendigste van alle mense –",
+          "after": ". As Christene…",
+          "spans": [
+            [
+              5313,
+              5331
+            ]
+          ],
+          "osis": "1Cor.15.19",
+          "queries": [
+            "46 15:19"
+          ]
+        },
+        {
+          "id": "11a3fd106d2ce4c69c664d9c",
+          "quote": "Galasiërs 6:1-5",
+          "before": "er nie. Want elkeen sal sy eie las dra –",
+          "after": ".",
+          "spans": [
+            [
+              6705,
+              6720
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "8bb85f1b0802239188dc07fe",
+          "quote": "1 Korintiërs 10:13",
+          "before": "ulle bo julle vermoë versoek word nie… –",
+          "after": ".",
+          "spans": [
+            [
+              6925,
+              6943
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "98aee82589c0733eef75d341",
+          "quote": "Jakobus 1:2-3",
+          "before": "ing van julle geloof volharding bewerk –",
+          "after": ".",
+          "spans": [
+            [
+              7156,
+              7169
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "0dc16fcc97b32ea8f0e908a4",
+          "quote": "Galasiërs 6:9-10",
+          "before": " die huisgesin van die geloof behoort. –",
+          "after": ". As vreemdelinge en pelgrims hier op aa",
+          "spans": [
+            [
+              8526,
+              8542
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "8bc4a543dfe1a336dfca23edef68c0922293507df1ae7d072b085cca751a31e7"
+    },
     "7a4d646a-0c04-4b44-a54f-ef63df487f81:ar:12a7ee58ec4fb467c8f1a487f1accbab5f51b245efc2e7993a3d827e7eb3197a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
       "locale": "ar",
@@ -206871,6 +207041,184 @@
         }
       ],
       "record_hash": "3b20b0b15845a66ca241ba2a29327c69806f458bfd34dab164a880a74838d070"
+    },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:ru:9cd56ba86f5401c5507bbb789a00ac4f18baf006ef6e0e0bb4503e041483c0cb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "ru",
+      "content_hash": "9cd56ba86f5401c5507bbb789a00ac4f18baf006ef6e0e0bb4503e041483c0cb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b63140d9604642754b3deac4",
+          "quote": "1 Коринфянам 15:19",
+          "before": " Христа, то мы несчастнее всех людей» — ",
+          "after": ". Как христиане…",
+          "spans": [
+            [
+              4926,
+              4944
+            ]
+          ],
+          "osis": "1Cor.15.19",
+          "queries": [
+            "46 15:19"
+          ]
+        },
+        {
+          "id": "0f53d66500179340f036d67a",
+          "quote": "Галатам 6:1-5",
+          "before": "ругом, ибо каждый понесёт своё бремя» — ",
+          "after": ".",
+          "spans": [
+            [
+              6160,
+              6173
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "91945502b9dfd455ec3081d3",
+          "quote": "1 Коринфянам 10:13",
+          "before": "стит вам быть искушаемыми сверх сил…» — ",
+          "after": ".",
+          "spans": [
+            [
+              6345,
+              6363
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "e9d5606369167f8e38e2e876",
+          "quote": "Иакова 1:2-3",
+          "before": "тание вашей веры производит терпение» — ",
+          "after": ".",
+          "spans": [
+            [
+              6552,
+              6564
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "cb812f91e9782c6f1b118f0b",
+          "quote": "Галатам 6:9-10",
+          "before": " добро всем, а наипаче своим по вере» — ",
+          "after": ". Будучи здесь, на земле, странниками и ",
+          "spans": [
+            [
+              7838,
+              7852
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "eaea569a085a2f8e97b728cd1f2d8fe853707f2a0bf8ad3685a56d191e702ba5"
+    },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:sw:e922bd5210b6f84cbaacffd1b6ebc73fd98867850cf37af4d6403a5e9728a5ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "sw",
+      "content_hash": "e922bd5210b6f84cbaacffd1b6ebc73fd98867850cf37af4d6403a5e9728a5ce",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "20f338c4b2110087b6108bf8",
+          "quote": "1 Wakorintho 15:19",
+          "before": "si ni wa kusikitikiwa kuliko watu wote –",
+          "after": ". Sisi Wakristo…",
+          "spans": [
+            [
+              5137,
+              5155
+            ]
+          ],
+          "osis": "1Cor.15.19",
+          "queries": [
+            "46 15:19"
+          ]
+        },
+        {
+          "id": "587691b773884ab351ee1188",
+          "quote": "Wagalatia 6:1-5",
+          "before": " mtu atalichukua furushi lake mwenyewe –",
+          "after": ".",
+          "spans": [
+            [
+              6515,
+              6530
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "cc7bb31df129063cd12473e6",
+          "quote": "1 Wakorintho 10:13",
+          "before": " hatawaacha mjaribiwe kupita mwezavyo… –",
+          "after": ".",
+          "spans": [
+            [
+              6729,
+              6747
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "fdeb6ee9b857415d011d3ca9",
+          "quote": "Yakobo 1:2-3",
+          "before": "ujaribiwa kwa imani yenu huleta saburi –",
+          "after": ".",
+          "spans": [
+            [
+              6939,
+              6951
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "8f461faf6fb0876caf81624e",
+          "quote": "Wagalatia 6:9-10",
+          "before": "atu wote mema, na hasa jamaa waaminio. –",
+          "after": ". Kwa kuwa sisi ni wageni na wasafiri ha",
+          "spans": [
+            [
+              8295,
+              8311
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "17b53d6c8b952b1a85c3ebfd090a6715c1d638ad78ce01115d2bd6dbefdac976"
     },
     "7a4d646a-0c04-4b44-a54f-ef63df487f81:ur:b34c191b149cf67ab8c125306b6d673f0aa890cdbb36040d0ba3f2713bd8c9a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
@@ -214641,6 +214989,14 @@
         }
       ],
       "record_hash": "3ec5898c204bbfd6cc112a3fd9d934959bad9b2b4ad3f1a091df7ea75fc95122"
+    },
+    "7f8746cc-2e3a-476f-a5a0-28d15abe5412:he:7b0e4764025440fd21a07e3472bdad67e531879e713f8e3caa0430e8e726ae1c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7f8746cc-2e3a-476f-a5a0-28d15abe5412",
+      "locale": "he",
+      "content_hash": "7b0e4764025440fd21a07e3472bdad67e531879e713f8e3caa0430e8e726ae1c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "af9c553273440dd9c6583ee47572f82f8e732e534dac2e2a9fb20188d7387b9e"
     },
     "7f8746cc-2e3a-476f-a5a0-28d15abe5412:hi:a41f35c7d8d99f25495c6e0473314fdba22411d5356635680b43a6082b2039c5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7f8746cc-2e3a-476f-a5a0-28d15abe5412",
@@ -302954,6 +303310,47 @@
         }
       ],
       "record_hash": "3239f471dbebad78888a5f0dacd67344251bed35f4d409ac8088119130d6761c"
+    },
+    "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:sv:579f248248ccb39253ceece5bea286422fd9996a5de72bbc51a2c9e4a0ca6422:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
+      "locale": "sv",
+      "content_hash": "579f248248ccb39253ceece5bea286422fd9996a5de72bbc51a2c9e4a0ca6422",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f79756d74dd6ea2c22114d14",
+          "quote": "Romarbrevet 8:28",
+          "before": " dem som är kallade efter hans beslut – ",
+          "after": ". Det tror jag på. Jag kan inte alltid s",
+          "spans": [
+            [
+              3957,
+              3973
+            ]
+          ],
+          "osis": "Rom.8.28",
+          "queries": [
+            "45 8:28"
+          ]
+        },
+        {
+          "id": "03ec4d7d8ba65dadd63fdf12",
+          "quote": "Uppenbarelseboken 21:1-4",
+          "before": "as mer, för det som förr var är borta.” ",
+          "after": ".",
+          "spans": [
+            [
+              4893,
+              4917
+            ]
+          ],
+          "osis": "Rev.21.1-Rev.21.4",
+          "queries": [
+            "66 21:1-4"
+          ]
+        }
+      ],
+      "record_hash": "9c13798f0a3d128c0f2d65e829cc98187a483dd7d3f47d14c6cd7db82a3032a8"
     },
     "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0:sw:da23f5ebce135d69d878e20e7450f800eaf5cba060941fb22cefb54dd6fe51dd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "affa9e6e-7d44-4174-ae66-fd44cfaeeaa0",
@@ -432672,6 +433069,95 @@
       "markers": [],
       "record_hash": "a8e07d5b68de03d79a588b7248c7428f0d3127ca50d77b3d3fddbf9c88a0aefe"
     },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:af:587d9512cf9cdb9dfcc4f9934461f1ee8a3c9c32f3cb238174e281a94c24f4a5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "af",
+      "content_hash": "587d9512cf9cdb9dfcc4f9934461f1ee8a3c9c32f3cb238174e281a94c24f4a5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c46b2c7c6b8d8cd2dc3ae060",
+          "quote": "Johannes 3:3-6",
+          "before": "n wat uit die Gees gebore is, is gees. (",
+          "after": ")",
+          "spans": [
+            [
+              603,
+              617
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "f4a7725c5798c028384a3ee2",
+          "quote": "Johannes 3:6",
+          "before": "n wat uit die Gees gebore is, is gees” (",
+          "after": "). Wat bedoel Hy? As jy uit die vlees ge",
+          "spans": [
+            [
+              6249,
+              6261
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "ac4661601b86b53562b44ed1",
+          "quote": "Romeine 8:8",
+          "before": "s goeds daaraan nie. Soos Paulus ons in ",
+          "after": " vertel, is dit vir die vlees onmoontlik",
+          "spans": [
+            [
+              6561,
+              6572
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "9672e373689c4d889e7f0bb6",
+          "quote": "Romeine 7",
+          "before": "e word, erken hulle, net soos Paulus in ",
+          "after": ", dat hulle dit nie op hul eie kan doen ",
+          "spans": [
+            [
+              9049,
+              9058
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "a606ec3ea96e1c32ca6afe47",
+          "quote": "2 Korintiërs 5:17",
+          "before": "rbygegaan; kyk, alles het nuut geword” (",
+          "after": ").",
+          "spans": [
+            [
+              9545,
+              9562
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "788a2da1513896f28b5a627e66df17f15391dd7008a4a9f31788d9544e8955d4"
+    },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:ar:d3479f858c6581139f59c9e0ab511f1526484200b8e8bf0d91f9e3fc9ad7e9d5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
       "locale": "ar",
@@ -432728,6 +433214,95 @@
         }
       ],
       "record_hash": "b614d9ac228202de2ba6dc2059f7ad79462de870954f195867c5cb3906c4ade8"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:de:392ced5425e543f99ace53decdaae6f264f9b0805f64f71218f87a68cae22f4f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "de",
+      "content_hash": "392ced5425e543f99ace53decdaae6f264f9b0805f64f71218f87a68cae22f4f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e8d93521bb87f0e99ffae5cd",
+          "quote": "Johannes 3:3-6",
+          "before": " dem Geist geboren ist, das ist Geist. (",
+          "after": ")",
+          "spans": [
+            [
+              650,
+              664
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "4ee342004013c1399667faea",
+          "quote": "Johannes 3:6",
+          "before": " dem Geist geboren ist, das ist Geist“ (",
+          "after": "). Was meint er damit? Wenn du aus dem F",
+          "spans": [
+            [
+              6957,
+              6969
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "5878635f0c9a75a1cd07b00b",
+          "quote": "Römer 8:8",
+          "before": "erhaupt nichts Gutes. Wie Paulus uns in ",
+          "after": " sagt, ist es dem Fleisch unmöglich, Got",
+          "spans": [
+            [
+              7285,
+              7294
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "ccc0f1f99a9e868efb58dcfb",
+          "quote": "Römer 7",
+          "before": "em geboren wird, gibt er, wie Paulus in ",
+          "after": ", zu, dass er es nicht aus eigener Kraft",
+          "spans": [
+            [
+              9957,
+              9964
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "84d8c8e0dc7e920357ff7120",
+          "quote": "2. Korinther 5:17",
+          "before": " vergangen, siehe, Neues ist geworden“ (",
+          "after": ").",
+          "spans": [
+            [
+              10478,
+              10495
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "49f28a6e834bfd9a79798cba30fac9e52f1b8cdac12cb33377e50a0910ab6339"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:en:f040d9046bf42f0aa0569cd6c88968f1f2e9591dc11821417f09440139b98dda:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
