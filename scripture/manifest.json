@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "8d92683cd95915955cc984d78bd1166127133d38d3aeeccc1e8844d7965324b9",
+  "integrity": "75682c5e7e20cb3c3817b80e47ea294063ac1c52a701f55094abbcf94a36403f",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -110549,6 +110549,159 @@
       ],
       "record_hash": "24f209742ec417ace4ee703bbc2e70a4e5cd2d71428b46236de983a56dd9fa46"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:zh-Hans:b980b3e3bce67f58c3881ac92805c346d095af604b961a45d296a7d1277de13e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "zh-Hans",
+      "content_hash": "b980b3e3bce67f58c3881ac92805c346d095af604b961a45d296a7d1277de13e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e539d2e7807c51bb600e60e4",
+          "quote": "马太福音 7:22",
+          "before": "说：主啊，主啊，我们不是奉你的名说预言，奉你的名赶鬼，奉你的名行许多异能吗？——",
+          "after": "。",
+          "spans": [
+            [
+              304,
+              313
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "b7373597f407eaa94adc2988",
+          "quote": "马太福音 23:26",
+          "before": "这是不可能的。耶稣说：你这瞎眼的法利赛人，先洗净杯盘里面，好叫外面也干净了。——",
+          "after": "。",
+          "spans": [
+            [
+              1834,
+              1844
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "21b0b5a91a8bfc344ca30f59",
+          "quote": "约翰一书 5:3",
+          "before": "我们遵守神的诫命，这就是爱他了；并且他的诫命不是难守的。——",
+          "after": "。",
+          "spans": [
+            [
+              2422,
+              2430
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "4a918782b1a0f635b211b0a5",
+          "quote": "彼得前书 2:2",
+          "before": "：像才生的婴孩一样，并吩咐我们各人都要爱慕神话语的纯净奶汁，叫你们因此渐长。——",
+          "after": "。所以，新信徒不需要空间，让他们继续一段时间过不敬虔的生活；但他们确实需要空间，",
+          "spans": [
+            [
+              2940,
+              2948
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "d2b0bfcb06b243dea7e41c67",
+          "quote": "路加福音 2:52",
+          "before": "实需要空间，让自己……在智慧和身量上，并在神和人对他们的喜爱上，都一齐增长。——",
+          "after": "。",
+          "spans": [
+            [
+              3031,
+              3040
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "ae9c07c09d1a0d922eadda5a",
+          "quote": "路加福音 23:31",
+          "before": "这些事既行在有汁水的树上，那枯干的树将来怎么样呢？——",
+          "after": "。",
+          "spans": [
+            [
+              4001,
+              4011
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "0adb8a0406b1ba005613c792",
+          "quote": "马太福音 7:16-20",
+          "before": "凡不结好果子的树就砍下来，丢在火里。所以，凭着他们的果子，就可以认出他们来。——",
+          "after": "。",
+          "spans": [
+            [
+              4693,
+              4705
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "103eab1f5f0e29e8fe177ffe",
+          "quote": "加拉太书 5:22-23",
+          "before": "圣灵所结的果子，就是仁爱、喜乐、和平、忍耐、恩慈、良善、信心、温柔、节制……——",
+          "after": "。人们看着你和我时，看到的是这些吗？我知道，我们很容易为自己缺少其中一种或几种果",
+          "spans": [
+            [
+              4771,
+              4783
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "bf368a8601abfef158b3284b",
+          "quote": "马太福音 7:19",
+          "before": "凡不结好果子的树就砍下来，丢在火里。——",
+          "after": "。",
+          "spans": [
+            [
+              5043,
+              5052
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "006b04591c684408caee7f1f6aab8130fd56f585c19e9601a087eeb9795a21f0"
+    },
     "3b3b3e75-afd9-49a6-ac06-d99a29802261:af:833540d39a928413d8af1c5668c541d3c16de9db7bed7504a87fa58697d52217:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3b3b3e75-afd9-49a6-ac06-d99a29802261",
       "locale": "af",
@@ -187636,6 +187789,14 @@
       "markers": [],
       "record_hash": "bdf1a97a7b38aad5462d78cdfad42c740a88e88d6dd78e7157a930d816e160d9"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:af:2c48106b71081225ca00a2d5677745be5b3b7abb8a7c58de6bda7073727b3ff4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "af",
+      "content_hash": "2c48106b71081225ca00a2d5677745be5b3b7abb8a7c58de6bda7073727b3ff4",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "44924954dbe08bd415b709c88927f7e913d4578b8cb086fce4181548cb089e1b"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:bn:21676178af2a9b5dbdc95c5184ce6b67568d3ec8e7937c9ca8685b3b78629db5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "bn",
@@ -187643,6 +187804,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "979f2bde4b0fa43154175a01b557705e0a3712ed895edeb00188ef0aec89f2ee"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:el:8d9671494a93231d561d28233f71e17a612b51355fbc007b933424c53015d6f5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "el",
+      "content_hash": "8d9671494a93231d561d28233f71e17a612b51355fbc007b933424c53015d6f5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "c63a221a5fed3d3b032be8d0e465beeceef2ece27b877a8ad28d835618c966db"
     },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:en:06fd744a5d8d062157ba38a90e50de8a0982015ecca3a34c5254b18615a979d9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
@@ -187684,6 +187853,22 @@
       "markers": [],
       "record_hash": "963096cf43aa905f573d9309e7045047a3df43206f8b507cf086e05882ea9908"
     },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:ko:c9183705a5c508681266cd4e79bd8e446ec462e1ab80e127d8285a8edda6b057:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "ko",
+      "content_hash": "c9183705a5c508681266cd4e79bd8e446ec462e1ab80e127d8285a8edda6b057",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "13b16f206cada3875b4080ffd819bcaaa96dfd78c8f19560cfb31bacaca3a3fb"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:nb:459041dafb8be8c7a83778502d2bc3f2dca2e55ab7a016ef6d903a27d45c3696:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "nb",
+      "content_hash": "459041dafb8be8c7a83778502d2bc3f2dca2e55ab7a016ef6d903a27d45c3696",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "f2cf105da0d9e3d4707f03aaafcfe99c3e7d14c32d488acba23b0e0076b40edd"
+    },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:pt:47d4ed39be92c8278c5d9ad5cbc316249fc72996149786d63de174b01bf515de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
       "locale": "pt",
@@ -187691,6 +187876,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "1c7594bee719974da69319e55ceb6dc06550cfb96c3190e42320f2aa85b4c9fb"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:sw:59a3ae98b905a1133f1f032e77aa6cbb3d67246d4f4a615b2b5d902a90403c45:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "sw",
+      "content_hash": "59a3ae98b905a1133f1f032e77aa6cbb3d67246d4f4a615b2b5d902a90403c45",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "02e081ff97e4dcbac6783481b518cea0d81a14203d65546b05a626c006301acc"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:ur:c3e28feffcfd7576aa5b25eddf67ab11318a1422f07b3b083500290a8fb2d40c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "ur",
+      "content_hash": "c3e28feffcfd7576aa5b25eddf67ab11318a1422f07b3b083500290a8fb2d40c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "898ad4d4133a6080e244b481b427ca21cc08083ba6d99b6ebc6bf8fe26c3c28e"
     },
     "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf:af:b72fcbb8503942ae679c2d5e7077d39a1c544a32c69764012e1bd6a1136c8381:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf",
@@ -207130,6 +207331,95 @@
         }
       ],
       "record_hash": "eaea569a085a2f8e97b728cd1f2d8fe853707f2a0bf8ad3685a56d191e702ba5"
+    },
+    "7a4d646a-0c04-4b44-a54f-ef63df487f81:sv:50a2ff9fe957ec71ed879cd9f6b41e786348ee902fad3eb8cbd366333cab6f3f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
+      "locale": "sv",
+      "content_hash": "50a2ff9fe957ec71ed879cd9f6b41e786348ee902fad3eb8cbd366333cab6f3f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9f03d964bf16fd94e4c21451",
+          "quote": "1 Korinthierbrevet 15:19",
+          "before": " mest beklagansvärda av alla människor –",
+          "after": ". Som kristna …",
+          "spans": [
+            [
+              5014,
+              5038
+            ]
+          ],
+          "osis": "1Cor.15.19",
+          "queries": [
+            "46 15:19"
+          ]
+        },
+        {
+          "id": "b110e59444daa9425c88304f",
+          "quote": "Galaterbrevet 6:1-5",
+          "before": "ch en ska nämligen bära sin egen börda –",
+          "after": ".",
+          "spans": [
+            [
+              6335,
+              6354
+            ]
+          ],
+          "osis": "Gal.6.1-Gal.6.5",
+          "queries": [
+            "48 6:1-5"
+          ]
+        },
+        {
+          "id": "8219550131e47be948111b25",
+          "quote": "1 Korinthierbrevet 10:13",
+          "before": "ta er bli frestade utöver er förmåga … –",
+          "after": ".",
+          "spans": [
+            [
+              6545,
+              6569
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "09a786c9d0da6eb750db3f14",
+          "quote": "Jakobsbrevet 1:2-3",
+          "before": "tro prövas, leder det till uthållighet –",
+          "after": ".",
+          "spans": [
+            [
+              6768,
+              6786
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.3",
+          "queries": [
+            "59 1:2-3"
+          ]
+        },
+        {
+          "id": "d42f0199ec9788646067a71f",
+          "quote": "Galaterbrevet 6:9-10",
+          "before": "r, särskilt mot dem som delar vår tro. –",
+          "after": ". Som främlingar och pilgrimer här på jo",
+          "spans": [
+            [
+              8127,
+              8147
+            ]
+          ],
+          "osis": "Gal.6.9-Gal.6.10",
+          "queries": [
+            "48 6:9-10"
+          ]
+        }
+      ],
+      "record_hash": "fb1d52508bf76c5a618913e8bbce986c5d54f3d349b0d2f339deb2e2932a50c3"
     },
     "7a4d646a-0c04-4b44-a54f-ef63df487f81:sw:e922bd5210b6f84cbaacffd1b6ebc73fd98867850cf37af4d6403a5e9728a5ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7a4d646a-0c04-4b44-a54f-ef63df487f81",
@@ -248668,21 +248958,21 @@
       ],
       "record_hash": "02745d228e10d621461472549311e75c27b1ba6d25ec192370d9ec0a08fd8141"
     },
-    "903e4b58-b246-4ee3-85e7-eecf158a7a75:ru:b99cbcaa455f539d780822af650ee685ad72490e10e546620ee984f1b1a99d7d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "903e4b58-b246-4ee3-85e7-eecf158a7a75:ru:6bb0002a691128a959957545cb5258fae420007a369befd39d38706127c099e9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
       "locale": "ru",
-      "content_hash": "b99cbcaa455f539d780822af650ee685ad72490e10e546620ee984f1b1a99d7d",
+      "content_hash": "6bb0002a691128a959957545cb5258fae420007a369befd39d38706127c099e9",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "06a5b49b63e9c999081e159e",
-          "quote": "Титу 2:3-5",
-          "before": "м, чтобы слово Божие не было поношено — ",
+          "id": "81e61732d08b9453e1fddec5",
+          "quote": "Титу 2:3–5",
+          "before": "ьям, дабы не было хулы на слово Божие — ",
           "after": ".",
           "spans": [
             [
-              2631,
-              2641
+              2589,
+              2599
             ]
           ],
           "osis": "Titus.2.3-Titus.2.5",
@@ -248691,14 +248981,14 @@
           ]
         },
         {
-          "id": "b34a5033f4d896b8c1e1ce51",
+          "id": "14239e1940921aa0a8bcb817",
           "quote": "1 Тимофею 5:13",
-          "before": "оглощёнными …хождением из дома в дом… — ",
-          "after": ", через наши телефоны. Во 2 Тимофею Паве",
+          "before": "глощёнными тем, чтобы …ходя по домам… — ",
+          "after": ", в телефонах. Во 2-м послании к Тимофею",
           "spans": [
             [
-              2835,
-              2849
+              2800,
+              2814
             ]
           ],
           "osis": "1Tim.5.13",
@@ -248707,14 +248997,14 @@
           ]
         },
         {
-          "id": "016ef2e701080780f6459f90",
-          "quote": "2 Тимофею 3:1-2",
-          "before": "на. Ибо люди будут любить самих себя… — ",
-          "after": ". Какая часть моей переписки и общения з",
+          "id": "cb8b975fa90b8db1896448ba",
+          "quote": "2 Тимофею 3:1–2",
+          "before": "на тяжкие. Ибо люди будут самолюбивы… — ",
+          "after": ". Сколько моих сообщений и общения погло",
           "spans": [
             [
-              3008,
-              3023
+              2967,
+              2982
             ]
           ],
           "osis": "2Tim.3.1-2Tim.3.2",
@@ -248723,14 +249013,14 @@
           ]
         },
         {
-          "id": "af79d79e3e0d2a26062fead0",
+          "id": "012de781b0d8c01cea128e49",
           "quote": "Псалом 127:3",
-          "before": "т ГОСПОДА, и плод чрева — Его награда — ",
+          "before": ": дети; награда от Него — плод чрева. — ",
           "after": ". Наши дети — Его наследие и Его награда",
           "spans": [
             [
-              3522,
-              3534
+              3499,
+              3511
             ]
           ],
           "osis": "Ps.127.3",
@@ -248739,14 +249029,14 @@
           ]
         },
         {
-          "id": "5d1b5eaaff293f27a3c0f54a",
-          "quote": "Псалом 127:3-5",
-          "before": " будут говорить с врагами при воротах — ",
-          "after": ". Отрывки Писания, говорящие о детях, по",
+          "id": "1d2374fb1b5bfad7fd87c0a6",
+          "quote": "Псалом 127:3–5",
+          "before": "гда будут говорить с врагами у ворот. — ",
+          "after": ". Отрывки Писания о детях показывают нам",
           "spans": [
             [
-              4684,
-              4698
+              4594,
+              4608
             ]
           ],
           "osis": "Ps.127.3-Ps.127.5",
@@ -248755,30 +249045,14 @@
           ]
         },
         {
-          "id": "6abdb6cd684223ec1831c7b8",
-          "quote": "Титу 2 ",
-          "before": "стают и уходят из дома. И что дальше? В ",
-          "after": "богобоязненные старшие женщины описаны к",
-          "spans": [
-            [
-              7262,
-              7269
-            ]
-          ],
-          "osis": "Titus.2.1-Titus.2.15",
-          "queries": [
-            "56 2:1-15"
-          ]
-        },
-        {
-          "id": "7ce6d2670f5e6a5439d06b1a",
+          "id": "e7cdf2035db0521f6423c8dc",
           "quote": "Титу 2:3",
-          "before": "щины описаны как …учительницы доброго — ",
-          "after": ". Им даётся наставление: Чтобы они могли",
+          "before": " женщины названы …учительницами добра — ",
+          "after": ". Им дано наставление: чтобы наставлять ",
           "spans": [
             [
-              7339,
-              7347
+              7180,
+              7188
             ]
           ],
           "osis": "Titus.2.3",
@@ -248787,14 +249061,14 @@
           ]
         },
         {
-          "id": "2e2942be093e8dfae729899e",
-          "quote": "Титу 2:4-5",
-          "before": "м, чтобы слово Божие не было поношено — ",
+          "id": "02b58d89d655d2b9fd249db7",
+          "quote": "Титу 2:4–5",
+          "before": "ьям, дабы не было хулы на слово Божие — ",
           "after": ".",
           "spans": [
             [
-              7616,
-              7626
+              7428,
+              7438
             ]
           ],
           "osis": "Titus.2.4-Titus.2.5",
@@ -248803,14 +249077,14 @@
           ]
         },
         {
-          "id": "79553ed9bfc9b67db5c8f011",
-          "quote": "1 Тимофею 2:11-13",
-          "before": "бо сначала был создан Адам, потом Ева — ",
-          "after": ". Как учит нас Павел, мы верим, что женщ",
+          "id": "cb54f6313e4fe3e7e20f0bb8",
+          "quote": "1 Тимофею 2:11–13",
+          "before": " Ибо прежде создан Адам, а потом Ева. — ",
+          "after": ". Как наставляет нас Павел, мы верим, чт",
           "spans": [
             [
-              7835,
-              7852
+              7621,
+              7638
             ]
           ],
           "osis": "1Tim.2.11-1Tim.2.13",
@@ -248819,14 +249093,14 @@
           ]
         },
         {
-          "id": "68f4ac5ed0a70397aa63918a",
-          "quote": "Титу 2:4-5",
-          "before": "м, чтобы слово Божие не было поношено — ",
+          "id": "9d40586a1d57dafecdb7b2a3",
+          "quote": "Титу 2:4–5",
+          "before": "ьям, дабы не было хулы на слово Божие — ",
           "after": ".",
           "spans": [
             [
-              8401,
-              8411
+              8168,
+              8178
             ]
           ],
           "osis": "Titus.2.4-Titus.2.5",
@@ -248835,14 +249109,14 @@
           ]
         },
         {
-          "id": "ed33b7ec3af793e8430c0ab0",
+          "id": "43b2a2dd5df327e3d236255f",
           "quote": "Галатам 6:9",
-          "before": "в своё время пожнём, если не ослабеем — ",
+          "before": " своё время пожнём, если не ослабеем. — ",
           "after": ".",
           "spans": [
             [
-              10743,
-              10754
+              10432,
+              10443
             ]
           ],
           "osis": "Gal.6.9",
@@ -248851,7 +249125,7 @@
           ]
         }
       ],
-      "record_hash": "761b584e7d3aa33e143e8984729eb8bcff2726da260cd090f73cd79ee304929f"
+      "record_hash": "5c7cdf65ae50ff130b40902e35ae3304793911f8c738bfc153da285effd1de97"
     },
     "903e4b58-b246-4ee3-85e7-eecf158a7a75:sv:f3bce2b9035176801989ac0b523507171204539ee1ad62a1520603bac150d7ab:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
@@ -327449,6 +327723,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "27c9558bc3b5e902fcd91f216c2d45cf1535dd323d9146f80bcb7bcb9569c460"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:es:941c979c9e82c15eef79b7f39878a55904624a4f091a4eb60ac7b8dd849599ae:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "es",
+      "content_hash": "941c979c9e82c15eef79b7f39878a55904624a4f091a4eb60ac7b8dd849599ae",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "0de37c54b5601b82669990144a2be192b5a408fef03a4cd17abc1cef5a939bdb"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:pt:ae0d63232f6cd6c0e92bfe2626a61ff3de2e98987ef2c067544e518a1d1aebed:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "pt",
+      "content_hash": "ae0d63232f6cd6c0e92bfe2626a61ff3de2e98987ef2c067544e518a1d1aebed",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b39d2096c2e693c5793acc3a813aab813c4b1b9397c531759e4d14beef88a006"
     },
     "bd7bc21c-5e26-46de-af8e-c1b13b47a349:en:b9264ffebdcef8e82f3a23e69643f439c87a4ab00de6b1d65e8edf4e7ad1e0fd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd7bc21c-5e26-46de-af8e-c1b13b47a349",
@@ -433215,6 +433505,95 @@
       ],
       "record_hash": "b614d9ac228202de2ba6dc2059f7ad79462de870954f195867c5cb3906c4ade8"
     },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:bn:9dbd2936d73d5062ddf905365ed43372f376a6d17d10d28078d9d4b9cb203065:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "bn",
+      "content_hash": "9dbd2936d73d5062ddf905365ed43372f376a6d17d10d28078d9d4b9cb203065",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "cff3374438914faf27828630",
+          "quote": "যোহন ৩:৩-৬",
+          "before": "ংস, আর যা আত্মা থেকে জন্মেছে তা আত্মা। (",
+          "after": ")",
+          "spans": [
+            [
+              510,
+              520
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "0e8c770e0ba967e15158abc4",
+          "quote": "যোহন ৩:৬",
+          "before": "ংস, আর যা আত্মা থেকে জন্মেছে তা আত্মা” (",
+          "after": ")। তিনি কী বোঝাতে চেয়েছেন? তুমি যদি মাং",
+          "spans": [
+            [
+              5932,
+              5940
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "7f1628dda53b14ba48453348",
+          "quote": "রোমীয় ৮:৮",
+          "before": "ে, আর তার মধ্যে একেবারেই ভালো কিছু নেই। ",
+          "after": " পদে পৌল যেমন আমাদের বলেন, মাংসের পক্ষে ",
+          "spans": [
+            [
+              6206,
+              6216
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "9336605670119fe4cf899f18",
+          "quote": "রোমীয় ৭",
+          "before": "কেউ যখন নতুন করে জন্ম নেয়, তখন ",
+          "after": " অধ্যায়ে পৌলের মতো সে স্বীকার করে যে সে",
+          "spans": [
+            [
+              8527,
+              8535
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "673f4ebb495ba35648fe9f19",
+          "quote": "২ করিন্থীয় ৫:১৭",
+          "before": " হয়েছে, দেখো, সবকিছু নতুন হয়ে উঠেছে” (",
+          "after": ")।",
+          "spans": [
+            [
+              9029,
+              9045
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "7bf35cd6012c67ecce9794bb154e3bc5d8e336e0f5e7cd9b8b42ab553fb171bf"
+    },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:de:392ced5425e543f99ace53decdaae6f264f9b0805f64f71218f87a68cae22f4f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
       "locale": "de",
@@ -433894,6 +434273,95 @@
         }
       ],
       "record_hash": "7235df4fa2f8d347ce033f89515edbc777bbf49c9075fdb67085e0a1d0be4db7"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:nl:b9670702b08f5aa39aa9a0768fff44358553eb564a473474fba59c60c691f318:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "nl",
+      "content_hash": "b9670702b08f5aa39aa9a0768fff44358553eb564a473474fba59c60c691f318",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fec778f45b09afb83c177a1d",
+          "quote": "Johannes 3:3-6",
+          "before": "wat uit de Geest geboren is, is geest. (",
+          "after": ")",
+          "spans": [
+            [
+              605,
+              619
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "9c5a60869f6687e584a67e63",
+          "quote": "Johannes 3:6",
+          "before": "wat uit de Geest geboren is, is geest’ (",
+          "after": "). Wat bedoelt Hij? Als je uit het vlees",
+          "spans": [
+            [
+              6683,
+              6695
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "2aeb9ca7e0fd67b44ece73be",
+          "quote": "Romeinen 8:8",
+          "before": " goeds aan. Zoals Paulus ons vertelt in ",
+          "after": ", is het voor het vlees onmogelijk God t",
+          "spans": [
+            [
+              7003,
+              7015
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "df48ae39aba20207b617046d",
+          "quote": "Romeinen 7",
+          "before": "ren wordt, geeft die, net als Paulus in ",
+          "after": ", toe dat hij het niet op eigen kracht k",
+          "spans": [
+            [
+              9570,
+              9580
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "0e8052fea8aff03cf785c913",
+          "quote": "2 Korintiërs 5:17",
+          "before": "jgegaan, zie, alles is nieuw geworden’ (",
+          "after": ").",
+          "spans": [
+            [
+              10102,
+              10119
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "9168293c92d2ab485a0eb0f31cc7a304e5060beaceb1c3be90a5792f1efbc829"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:pt:7c2cf5e74071ad495885b9da113962ff823691648bc03582444fd3fc1a037be6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
