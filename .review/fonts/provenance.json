@@ -1,0 +1,68 @@
+{
+  "purpose": "Temporary offline visual QA; not production assets.",
+  "fonts": [
+    {
+      "file": "Raleway.woff2",
+      "family": "Raleway",
+      "style": "normal",
+      "weight_range": [
+        100,
+        900
+      ],
+      "bytes": 74788,
+      "repository": "google/fonts",
+      "source_path": "ofl/raleway/Raleway[wght].ttf",
+      "sha256": "9860e6475383321b17ad8f115613177f618b4dc217731afb1675d848f5a80def",
+      "license_file": "Raleway-OFL.txt",
+      "source_url": "https://github.com/google/fonts/blob/main/ofl/raleway/Raleway%5Bwght%5D.ttf",
+      "source_binary": {
+        "file": "Raleway.ttf",
+        "bytes": 312352,
+        "git_blob_sha": "d81d42f537c7dc1bbde81b54e4c52a92977a8fde",
+        "sha256": "8bbcc3eb8275c388f4bcd998832f8a4b943eadbaf6a595205312774b5951aefb"
+      },
+      "subset_unicode_ranges": [
+        "U+0000-024F",
+        "U+2000-206F",
+        "U+20AC"
+      ],
+      "retained_codepoints": 416
+    },
+    {
+      "file": "Montserrat.woff2",
+      "family": "Montserrat",
+      "style": "normal",
+      "weight_range": [
+        100,
+        900
+      ],
+      "bytes": 98096,
+      "repository": "google/fonts",
+      "source_path": "ofl/montserrat/Montserrat[wght].ttf",
+      "sha256": "9d3693ba187c7dc586b983b91bf5f513d7d2dc432c78d79c8100d6b5626b996c",
+      "license_file": "Montserrat-OFL.txt",
+      "source_url": "https://github.com/google/fonts/blob/main/ofl/montserrat/Montserrat%5Bwght%5D.ttf",
+      "source_binary": {
+        "file": "Montserrat.ttf",
+        "bytes": 744936,
+        "git_blob_sha": "c97aca18592834d8706549c279cb8d5ac5d85f69",
+        "sha256": "0f7b311b2f3279e4eef9b2f968bcdbab6e28f4daeb1f049f4f278a902bcd82f7"
+      },
+      "subset_unicode_ranges": [
+        "U+0000-024F",
+        "U+2000-206F",
+        "U+20AC"
+      ],
+      "retained_codepoints": 528
+    }
+  ],
+  "theme": {
+    "file": "../theme.css",
+    "repository": "trueChristian/theme",
+    "commit": "3bd0c28956610506f83e3ecd3af6ea775ac7cb45",
+    "source_path": "dist/truechristian-theme.css",
+    "git_blob_sha": "b58addb9b4bdf1135be543378af31a2cf978fb9a",
+    "source_url": "https://github.com/trueChristian/theme/blob/3bd0c28956610506f83e3ecd3af6ea775ac7cb45/dist/truechristian-theme.css"
+  },
+  "note": "Temporary Latin WOFF2 subsets of the documented Google Fonts originals. The original continuous 100\u2013900 normal weight axis is preserved to keep variation metrics unchanged, including reader weights 400, 500, and 600. Requested codepoints U+0000\u2013024F, U+2000\u2013206F, and U+20AC are retained wherever present in the original. All retained horizontal advances verified unchanged at weights 400, 500, and 600. Original OFL licenses are retained. Theme CSS is the unmodified pinned build revision."
+}
