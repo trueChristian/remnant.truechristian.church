@@ -204,11 +204,12 @@ async function expectContour(page) {
   const shapedLines = result.lines.filter(line => line.top < result.image.bottom && line.bottom > result.image.top);
   expect(shapedLines.length, 'The opening must actually enter the transparent arch').toBeGreaterThanOrEqual(2);
   expect(result.lines.some(line => line.top >= result.image.bottom), 'Long prose continues below the image').toBe(true);
-  // Word packing need not be monotonic, but the curved opening must release
-  // substantially more room on both sides as the paragraph progresses.
+  // Word packing need not be monotonic or symmetric, but later lines must
+  // occupy substantially more width as the transparent opening grows.
   const first = shapedLines[0];
-  expect(shapedLines.slice(1).some(line => line.left < first.left - result.fontSize &&
-    line.right > first.right + result.fontSize), 'Later lines should widen with the transparent opening').toBe(true);
+  expect(Math.max(...shapedLines.slice(1).map(line => line.right - line.left)),
+    'Later lines should widen with the transparent opening')
+    .toBeGreaterThan(first.right - first.left + result.fontSize * 3);
   expect(result.figurePosition).toBe('absolute');
   expect(result.edgeDisplays).toEqual(['block', 'block']);
   // These remain physical image edges even when the document is right-to-left.
