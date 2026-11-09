@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "f9c0a62723c46f7ec96a07a891642e85c4ba06fcae980438adc7a9f5dd18102f",
+  "integrity": "3ceac626faf2824f9e50c2a00f3df7c6e9ccaaa9873ed7023bf28260d18e040c",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -417,6 +417,175 @@
       ],
       "record_hash": "6aa1368a74d4b3a0692fc1dcabbb7fc13006c3339c92324b0a54dc9128e1be02"
     },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:de:8ba1d7f3b46f14d7d938544e7e8ba952694e1bc32519bdef0bcbb3d3373eb4ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "de",
+      "content_hash": "8ba1d7f3b46f14d7d938544e7e8ba952694e1bc32519bdef0bcbb3d3373eb4ef",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "08969a9b733f1bb957659ee5",
+          "quote": "Matthäus 1,21",
+          "before": " sein Volk von seinen Sünden erretten“ (",
+          "after": ").",
+          "spans": [
+            [
+              365,
+              378
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "50b40f9e76351e4b43454cdf",
+          "quote": "Johannes 3,18–21",
+          "before": "stand nicht anerkennen. Einige Verse in ",
+          "after": " helfen uns, dieses Hindernis zu begreif",
+          "spans": [
+            [
+              1622,
+              1638
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "941f9e40987a038e92a7ceec",
+          "quote": "Johannes 3,19–21",
+          "before": "dass seine Taten in Gott gewirkt sind“ (",
+          "after": ").",
+          "spans": [
+            [
+              1985,
+              2001
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "739e0d189b6b5cdbea13f442",
+          "quote": "Lukas 7",
+          "before": " sie sich nicht von ihm taufen ließen“ (",
+          "after": ",29–30).",
+          "spans": [
+            [
+              2914,
+              2921
+            ]
+          ],
+          "osis": "Luke.7.1-Luke.7.50",
+          "queries": [
+            "42 7:1-50"
+          ]
+        },
+        {
+          "id": "10c58fb33086038f6da1d569",
+          "quote": "1. Timotheus 5",
+          "before": "en können sie nicht verborgen bleiben“ (",
+          "after": ",24–25).",
+          "spans": [
+            [
+              3514,
+              3528
+            ]
+          ],
+          "osis": "1Tim.5.1-1Tim.5.25",
+          "queries": [
+            "54 5:1-25"
+          ]
+        },
+        {
+          "id": "fe63d2520bf1a97e772a4e89",
+          "quote": "Johannes 8,11",
+          "before": "nicht. Geh hin und sündige nicht mehr“ (",
+          "after": ").",
+          "spans": [
+            [
+              3957,
+              3970
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "dceed1fc6cdabd74a0368919",
+          "quote": "Markus 10",
+          "before": "nimm das Kreuz auf dich und folge mir“ (",
+          "after": ",21).",
+          "spans": [
+            [
+              4139,
+              4148
+            ]
+          ],
+          "osis": "Mark.10.1-Mark.10.52",
+          "queries": [
+            "41 10:1-52"
+          ]
+        },
+        {
+          "id": "15a7f885835aa1b5d18d3b92",
+          "quote": "Lukas 22",
+          "before": "ich bekehrt hast, stärke deine Brüder“ (",
+          "after": ",32).",
+          "spans": [
+            [
+              4217,
+              4225
+            ]
+          ],
+          "osis": "Luke.22.1-Luke.22.71",
+          "queries": [
+            "42 22:1-71"
+          ]
+        },
+        {
+          "id": "902c7a808285fba49f1f5455",
+          "quote": "Lukas 9,23–24",
+          "before": "etwillen verliert, der wird es retten“ (",
+          "after": ").",
+          "spans": [
+            [
+              4495,
+              4508
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "2fd0635db648ef4454118322",
+          "quote": "Markus 6",
+          "before": "d er bei Herodias bleiben könnte? (Lies ",
+          "after": ",16–28.) Musste er wirklich so konfronta",
+          "spans": [
+            [
+              5204,
+              5212
+            ]
+          ],
+          "osis": "Mark.6.1-Mark.6.56",
+          "queries": [
+            "41 6:1-56"
+          ]
+        }
+      ],
+      "record_hash": "cc96b1dd67dd94f96f298bfcda89eddbd87a0a1633df4e033c1f1f6afa45c909"
+    },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:en:b6beabc2b45f45908e130ae6f388fba0783bd0b8535c2662b0458847bfc6ffab:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
       "locale": "en",
@@ -586,6 +755,369 @@
       ],
       "record_hash": "aacedb81346fab3b451d509adafb2ff205c49c61322923059ec8c0a4fc664734"
     },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:es:c9b421055adf6349757088070059d5c1a9018c4340c4363cee14a8594336669e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "es",
+      "content_hash": "c9b421055adf6349757088070059d5c1a9018c4340c4363cee14a8594336669e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fefa86f5ae351c42c9c114d8",
+          "quote": "Mateo 1:21",
+          "before": "él salvará a su pueblo de sus pecados» (",
+          "after": ").",
+          "spans": [
+            [
+              357,
+              367
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "3ee25580bab54245c64ee1a3",
+          "quote": "Juan 3:18-21",
+          "before": "ndición pecaminosa. Estos versículos de ",
+          "after": " nos ayudan a comprender este obstáculo:",
+          "spans": [
+            [
+              1568,
+              1580
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "fd29739a41e1d2843e718e99",
+          "quote": "Juan 3:19-21",
+          "before": "que sus obras han sido hechas en Dios» (",
+          "after": ").",
+          "spans": [
+            [
+              1919,
+              1931
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "b2a2e4c2197c325480d80b43",
+          "quote": "Lucas 7:29-30",
+          "before": "ra ellos, al no ser bautizados por él» (",
+          "after": ").",
+          "spans": [
+            [
+              2778,
+              2791
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "ceeecfe5cbb49e1e47bf1072",
+          "quote": "1 Timoteo 5:24-25",
+          "before": "ue no lo son no pueden quedar ocultas» (",
+          "after": ").",
+          "spans": [
+            [
+              3319,
+              3336
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "da11324fee6cf09d2f9e638e",
+          "quote": "Juan 8:11",
+          "before": "i yo te condeno; vete y no peques más» (",
+          "after": ").",
+          "spans": [
+            [
+              3725,
+              3734
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "cdee29ca798048de3d5b46b4",
+          "quote": "Marcos 10:21",
+          "before": " cielo; y ven, toma la cruz y sígueme» (",
+          "after": ").",
+          "spans": [
+            [
+              3863,
+              3875
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "62be5f1a84742a2ea650f3d8",
+          "quote": "Lucas 22:32",
+          "before": " convertido, fortalece a tus hermanos» (",
+          "after": ").",
+          "spans": [
+            [
+              3947,
+              3958
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "28087f70fd11608e1e8b90b5",
+          "quote": "Lucas 9:23-24",
+          "before": "a su vida por causa de mí, la salvará» (",
+          "after": ").",
+          "spans": [
+            [
+              4192,
+              4205
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "e6e3eaa9c6097a026ac19fa1",
+          "quote": "Marcos 6:16-28",
+          "before": "r perdonado y seguir con Herodías? (Lea ",
+          "after": "). ¿Tenía que ser tan confrontativo y, p",
+          "spans": [
+            [
+              4839,
+              4853
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "fd49fa95ffd06f230f9e22c651b8905f4a84fe1cebbe25260ff4bd85dfd332f9"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:fr:7cff838a1e3291d6de8b373d4fa17aaa7cfeb15c8413d07f4653807a66cbe9ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "fr",
+      "content_hash": "7cff838a1e3291d6de8b373d4fa17aaa7cfeb15c8413d07f4653807a66cbe9ce",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3bac9e2e9839d36cef2985f5",
+          "quote": "Matthieu 1:21",
+          "before": "qui sauvera son peuple de ses péchés » (",
+          "after": ").",
+          "spans": [
+            [
+              367,
+              380
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "2ba5bd5a43b72cb5407011ff",
+          "quote": "Jean 3:18-21",
+          "before": " de pécheurs. Voici quelques versets de ",
+          "after": " qui nous aident à comprendre cet obstac",
+          "spans": [
+            [
+              1575,
+              1587
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "7d4726089bf76a21a25f4b65",
+          "quote": "Jean 3:19-21",
+          "before": "e ses œuvres sont accomplies en Dieu » (",
+          "after": ").",
+          "spans": [
+            [
+              1966,
+              1978
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "7ae04e578da677cfe87f126f",
+          "quote": "Luc 7:29-30",
+          "before": "n ne se faisant pas baptiser par lui » (",
+          "after": ").",
+          "spans": [
+            [
+              2909,
+              2920
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "f27bf103ed109d02100bf882",
+          "quote": "1 Timothée 5:24-25",
+          "before": "des autres ne peuvent rester cachées » (",
+          "after": ").",
+          "spans": [
+            [
+              3489,
+              3507
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "c8a61038a365d2c5ec3fd046",
+          "quote": "Jean 8:11",
+          "before": " condamne pas ; va, et ne pèche plus » (",
+          "after": ").",
+          "spans": [
+            [
+              3921,
+              3930
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "382acca4bb9528da6071ebaa",
+          "quote": "Marc 10:21",
+          "before": "s viens, prends ta croix et suis-moi » (",
+          "after": ").",
+          "spans": [
+            [
+              4079,
+              4089
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "25ed6d61d0680a47f0d6b0d6",
+          "quote": "Luc 22:32",
+          "before": "tu seras revenu, fortifie tes frères » (",
+          "after": ").",
+          "spans": [
+            [
+              4153,
+              4162
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "b0ee7622df872870ae9ddc31",
+          "quote": "Luc 9:23-24",
+          "before": "dra sa vie à cause de moi la sauvera » (",
+          "after": ").",
+          "spans": [
+            [
+              4425,
+              4436
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "491d27b6e9ab038040a38937",
+          "quote": "Marc 6:16-28",
+          "before": "rdonné et rester avec Hérodias ? (Lisez ",
+          "after": ".) Devait-il être aussi provocateur et p",
+          "spans": [
+            [
+              5068,
+              5080
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "f8f5e94ea28b57b0c865a95dc1ce71dda4e054ea2304da1d829c2eed2dbce873"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:he:242de22ca13cffc9b8edb33aaf68a0b79e676259c6e0ad9630d7467d7222f3ae:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "he",
+      "content_hash": "242de22ca13cffc9b8edb33aaf68a0b79e676259c6e0ad9630d7467d7222f3ae",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b2cde3555686cf4e9f199d92",
+          "quote": "מתי 1:21",
+          "before": "שמו ישוע, כי הוא יושיע את עמו מחטאיהם״ (",
+          "after": ").",
+          "spans": [
+            [
+              305,
+              313
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        }
+      ],
+      "record_hash": "744251dee4556c3f206fca8773a8400e5921efd1b0eb1caca5bdac47f98099e6"
+    },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:hi:b7bbca631de9da0d6eb401e2862208b937d395a1f65b5f042f88ae801b9112d8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
       "locale": "hi",
@@ -754,6 +1286,682 @@
         }
       ],
       "record_hash": "b896286c689c78c405d9107bd5910b117c31b6ab81756482f547dc81ff05613a"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:it:6a7bd4b4ad2ec9361d2822ba5bc7a370ef8ffa6611fd6ea3fa04212cc13b0df9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "it",
+      "content_hash": "6a7bd4b4ad2ec9361d2822ba5bc7a370ef8ffa6611fd6ea3fa04212cc13b0df9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f0222ab0a0ae29bc4480d1a7",
+          "quote": "Matteo 1:21",
+          "before": "alverà il suo popolo dai suoi peccati» (",
+          "after": ").",
+          "spans": [
+            [
+              356,
+              367
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "56d68d18f5c1da845392ff47",
+          "quote": "Giovanni 3:18-21",
+          "before": "to peccaminoso. Ecco alcuni versetti di ",
+          "after": " che ci aiutano a comprendere questo ost",
+          "spans": [
+            [
+              1623,
+              1639
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "ae96ba277f97c00878ffcc49",
+          "quote": "Giovanni 3:19-21",
+          "before": "ifestate, perché sono compiute in Dio» (",
+          "after": ").",
+          "spans": [
+            [
+              1982,
+              1998
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "c6d6a33c06b8cb535205605b",
+          "quote": "Luca 7:29-30",
+          "before": "loro, non facendosi battezzare da lui» (",
+          "after": ").",
+          "spans": [
+            [
+              2926,
+              2938
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "ea2544ab241a7b5fa7bf094b",
+          "quote": "1 Timoteo 5:24-25",
+          "before": "rimenti non possono rimanere nascoste» (",
+          "after": ").",
+          "spans": [
+            [
+              3506,
+              3523
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "cff5626a235666f4d76d1611",
+          "quote": "Giovanni 8:11",
+          "before": "io ti condanno; va’ e non peccare più» (",
+          "after": ").",
+          "spans": [
+            [
+              3899,
+              3912
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "f6310884bcd8666738572d58",
+          "quote": "Marco 10:21",
+          "before": " poi vieni, prendi la croce e seguimi» (",
+          "after": ").",
+          "spans": [
+            [
+              4047,
+              4058
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "5841a3dd41bc55f547f059d0",
+          "quote": "Luca 22:32",
+          "before": " ritornato, fortifica i tuoi fratelli» (",
+          "after": ").",
+          "spans": [
+            [
+              4127,
+              4137
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "018b4c53757d540a9aa356f5",
+          "quote": "Luca 9:23-24",
+          "before": "ropria vita per causa mia, la salverà» (",
+          "after": ").",
+          "spans": [
+            [
+              4369,
+              4381
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "eb2c7634ff0d9ff55db9d1e9",
+          "quote": "Marco 6:16-28",
+          "before": " potesse restare con Erodiade? (Leggete ",
+          "after": ".) Doveva essere così provocatorio e per",
+          "spans": [
+            [
+              5017,
+              5030
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "1c897ffa236199242f43cb79d6eac459eb32f13e64d4ddaad77f1d33eb25ab14"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:nl:2fc2c86d8a87c42b77f817cac17c8a9b49e8a4826b5b43ce2cbb9a65f094f313:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "nl",
+      "content_hash": "2fc2c86d8a87c42b77f817cac17c8a9b49e8a4826b5b43ce2cbb9a65f094f313",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8568dcbe8c2675fc0df6a788",
+          "quote": "Matteüs 1:21",
+          "before": " Zijn volk zalig maken van hun zonden’ (",
+          "after": ").",
+          "spans": [
+            [
+              365,
+              377
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "c660d5d1dd91e7d37a8d5272",
+          "quote": "Johannes 3:18-21",
+          "before": "erkennen. Hier volgen enkele verzen uit ",
+          "after": " die ons helpen dit obstakel te begrijpe",
+          "spans": [
+            [
+              1580,
+              1596
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "952d7ab9c31daff50a97c445",
+          "quote": "Johannes 3:19-21",
+          "before": "nbaar wordt dat ze in God gedaan zijn’ (",
+          "after": ").",
+          "spans": [
+            [
+              1959,
+              1975
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "13ca2ae44a49044cd66ae7fd",
+          "quote": "Lukas 7:29-30",
+          "before": "omdat zij niet door hem gedoopt waren’ (",
+          "after": ").",
+          "spans": [
+            [
+              2861,
+              2874
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "61612fd44707889ba45a6a78",
+          "quote": "1 Timoteüs 5:24-25",
+          "before": "anderen kunnen niet verborgen blijven’ (",
+          "after": ").",
+          "spans": [
+            [
+              3432,
+              3450
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "5a0f8ebd465e13529179296f",
+          "quote": "Johannes 8:11",
+          "before": "l u niet; ga heen en zondig niet meer’ (",
+          "after": ").",
+          "spans": [
+            [
+              3851,
+              3864
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "b9166edf4a7129426cbb736f",
+          "quote": "Markus 10:21",
+          "before": "om dan, neem het kruis op en volg Mij’ (",
+          "after": ").",
+          "spans": [
+            [
+              4022,
+              4034
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "5f0688a9e66473f5c8964895",
+          "quote": "Lukas 22:32",
+          "before": "d zult zijn, versterk dan uw broeders’ (",
+          "after": ").",
+          "spans": [
+            [
+              4115,
+              4126
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "f3eb9a54723c44369e6811ba",
+          "quote": "Lukas 9:23-24",
+          "before": "le van Mij verliest, zal het behouden’ (",
+          "after": ").",
+          "spans": [
+            [
+              4410,
+              4423
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "d88f7bf10ff6e4bce97b2269",
+          "quote": "Markus 6:16-28",
+          "before": "jgen en bij Herodias kon blijven? (Lees ",
+          "after": ".) Had hij zo confronterend moeten zijn ",
+          "spans": [
+            [
+              5128,
+              5142
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "58ef7612f4f2da3988cc83f70a5074db78caa07df84604ec5ff9f1ac3a000892"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:sv:125c6a3b68756f249895c4134db25e64758271524a6dc0b5880b3c8c29388681:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "sv",
+      "content_hash": "125c6a3b68756f249895c4134db25e64758271524a6dc0b5880b3c8c29388681",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7fc74956a20fd5852aab4f67",
+          "quote": "Matteusevangeliet 1:21",
+          "before": "ka frälsa sitt folk från deras synder” (",
+          "after": ").",
+          "spans": [
+            [
+              357,
+              379
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "2048eb9a8051535cf1d10222",
+          "quote": "Johannesevangeliet 3:18–21",
+          "before": "yndiga tillstånd. Här är några verser i ",
+          "after": " som hjälper oss att förstå detta hinder",
+          "spans": [
+            [
+              1446,
+              1472
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "a71a515f5886ccf848ce40ee",
+          "quote": "Johannesevangeliet 3:19–21",
+          "before": "rt att hans gärningar är gjorda i Gud” (",
+          "after": ").",
+          "spans": [
+            [
+              1843,
+              1869
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "87d3328a6d66204c3557a246",
+          "quote": "Lukasevangeliet 7:29–30",
+          "before": "genom att inte låta döpa sig av honom” (",
+          "after": ").",
+          "spans": [
+            [
+              2700,
+              2723
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "d5258a75a3a12fcf62ed61b1",
+          "quote": "Första Timotheosbrevet 5:24–25",
+          "before": "som inte är det kan inte förbli dolda” (",
+          "after": ").",
+          "spans": [
+            [
+              3238,
+              3268
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "ec83b1ae758c38d1d91dcb81",
+          "quote": "Johannesevangeliet 8:11",
+          "before": "jag dömer dig. Gå, och synda inte mer” (",
+          "after": ").",
+          "spans": [
+            [
+              3667,
+              3690
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "bc37b8e03a4efcf6eb9984ba",
+          "quote": "Markusevangeliet 10:21",
+          "before": "Kom sedan, ta upp korset och följ mig” (",
+          "after": ").",
+          "spans": [
+            [
+              3827,
+              3849
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "4be729c211895922a0640e40",
+          "quote": "Lukasevangeliet 22:32",
+          "before": " har omvänt dig, styrk då dina bröder” (",
+          "after": ").",
+          "spans": [
+            [
+              3912,
+              3933
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "33d1f082ee8b46f9d513c526",
+          "quote": "Lukasevangeliet 9:23–24",
+          "before": " liv för min skull, han ska rädda det” (",
+          "after": ").",
+          "spans": [
+            [
+              4181,
+              4204
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "5ff86677cd6e8abd4a497407",
+          "quote": "Markusevangeliet 6:16–28",
+          "before": " förlåten och stanna hos Herodias? (Läs ",
+          "after": ".) Var han tvungen att vara så konfronta",
+          "spans": [
+            [
+              4821,
+              4845
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "b86abfffc255bcf9c40aea93706daa8ac0e9d15f859cb6ba48a6361cc6192c65"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:sw:3bb087aec3c296991dc56ffd4252f1a19c7a7de16b9db6daef720da941dc1d57:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "sw",
+      "content_hash": "3bb087aec3c296991dc56ffd4252f1a19c7a7de16b9db6daef720da941dc1d57",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c2ac47b72181816350308d09",
+          "quote": "Mathayo 1:21",
+          "before": "atakayewaokoa watu wake na dhambi zao” (",
+          "after": ").",
+          "spans": [
+            [
+              383,
+              395
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "581ece913d47f5b3a5ebb997",
+          "quote": "Yohana 3:18-21",
+          "before": "mbi. Hapa kuna baadhi ya mistari katika ",
+          "after": " inayotusaidia kuelewa kikwazo hiki. “Na",
+          "spans": [
+            [
+              1530,
+              1544
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "122f3662ecac996668a364a7",
+          "quote": "Yohana 3:19-21",
+          "before": "e wazi kwamba yametendwa katika Mungu” (",
+          "after": ").",
+          "spans": [
+            [
+              1873,
+              1887
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "f0c78fc5c241165eca36b573",
+          "quote": "Luka 7:29-30",
+          "before": " wenyewe, kwa kuwa hawakubatizwa naye” (",
+          "after": ").",
+          "spans": [
+            [
+              2739,
+              2751
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "a09005bc487c0eeda27193f2",
+          "quote": "1 Timotheo 5:24-25",
+          "before": "aliyo kinyume chake hayawezi kufichwa” (",
+          "after": ").",
+          "spans": [
+            [
+              3242,
+              3260
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "14db40b3fcba8f23d50e0b8f",
+          "quote": "Yohana 8:11",
+          "before": "nenda zako, wala usitende dhambi tena” (",
+          "after": ").",
+          "spans": [
+            [
+              3643,
+              3654
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "e85d3730019a766d6c47f3d1",
+          "quote": "Marko 10:21",
+          "before": "; kisha njoo, ubebe msalaba, unifuate” (",
+          "after": ").",
+          "spans": [
+            [
+              3796,
+              3807
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "2a34c83d8cfc0bf66fdea003",
+          "quote": "Luka 22:32",
+          "before": "wisha kuongoka, waimarishe ndugu zako” (",
+          "after": ").",
+          "spans": [
+            [
+              3872,
+              3882
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "8340a889d0785390f2a9dc2a",
+          "quote": "Luka 9:23-24",
+          "before": " ajili yangu, huyo ndiye atakayeiokoa” (",
+          "after": ").",
+          "spans": [
+            [
+              4157,
+              4169
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "7f5afe473cf6fe905c7dac5f",
+          "quote": "Marko 6:16-28",
+          "before": " kusamehewa na kubaki na Herodia? (Soma ",
+          "after": ".) Je, ilimbidi akabiliane naye kwa ukal",
+          "spans": [
+            [
+              4770,
+              4783
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "9ecee86edf2a53990b2ff648685120803655127ba8c27484a74676dbc788e16b"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:zh-Hans:b3954b8a4e27b57fcfed32a6072915f6159bbddd0eaca2c28c532871ad5d225a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -296729,6 +297937,95 @@
       ],
       "record_hash": "d838b34845b3696a9aeb7a216df8186dd569a931d3222b0aa3adbe7fed5f4e3b"
     },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:de:c00ed193fd294f5bfeec3ce866256c80c7ffdd8fa25c0a585b92c80dc8ef706c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "de",
+      "content_hash": "c00ed193fd294f5bfeec3ce866256c80c7ffdd8fa25c0a585b92c80dc8ef706c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "cdf98fc2b59303e08dc376f1",
+          "quote": "Hebräer 11:1",
+          "before": "",
+          "after": " bestätigt, dass Glaube „Zuversicht auf ",
+          "spans": [
+            [
+              1304,
+              1316
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "dd33e08696910f274b093671",
+          "quote": "Lukas 1:1-4",
+          "before": ", in denen du unterwiesen worden bist. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3337,
+              3348
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "1e0b572ada8272e75c86d5d9",
+          "quote": "Römer 1:18-20",
+          "before": "ben die Menschen keine Entschuldigung. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              4074,
+              4087
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "5466a6ad33c76cc4fbda642c",
+          "quote": "Johannes 20:29",
+          "before": "sind, die nicht sehen und doch glauben –",
+          "after": ". (ESV) Daraus könnte man versucht sein,",
+          "spans": [
+            [
+              5382,
+              5396
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "18a84dece701ec3ba5e04858",
+          "quote": "Matthäus 16:21",
+          "before": "esagt, dass er auferstehen werde (siehe ",
+          "after": "). Drittens hatte Jesus bereits durch se",
+          "spans": [
+            [
+              5866,
+              5880
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "3657ae6fedf1dffaeb059a9d5bd050c41df5a6b20142099a0c59eeb10317e260"
+    },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:el:abe665461a27fcf8dfe790f55576102f1b4984522406cfc3ed491f44a218b4ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
       "locale": "el",
@@ -296906,6 +298203,103 @@
         }
       ],
       "record_hash": "d240c38f9f0bedefeb1b43886e36310eb7b4ac88a91e0a84d9f09abac2aff7b1"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:fr:e5aaafa280ed6b63e9021753e36b2e4dc10d07bc37ce5c348e72bb3d414f39a1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "fr",
+      "content_hash": "e5aaafa280ed6b63e9021753e36b2e4dc10d07bc37ce5c348e72bb3d414f39a1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "71fddcda01599ce47ef41828",
+          "quote": "Hébreux 11:1",
+          "before": "",
+          "after": " affirme que la foi est « la confiance e",
+          "spans": [
+            [
+              1239,
+              1251
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "e1088541f9372da5a531d0b0",
+          "quote": "Luc 1:1-4",
+          "before": "ude des enseignements que tu as reçus. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3271,
+              3280
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "a442bc8a50cd1ff17f55b0e3",
+          "quote": "Romains 1:18-20",
+          "before": "sorte que les hommes sont inexcusables –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3928,
+              3943
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "da9a61b3066fbe8500987e12",
+          "quote": "Jean 20:29",
+          "before": "n’ont pas vu et qui ont pourtant cru ! –",
+          "after": ". (ESV) On pourrait être tenté d’en conc",
+          "spans": [
+            [
+              5292,
+              5302
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "9b07af1c43b8d14ea62fd204",
+          "quote": "Matthieu 16:21",
+          "before": "airement dit qu’il ressusciterait (voir ",
+          "after": "). Troisièmement, Jésus avait déjà prouv",
+          "spans": [
+            [
+              5781,
+              5795
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "aac5e5d5063520ae066ea2e2860a498e1e5a07b7bdb2741d6e911b9396a0194e"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:he:1d388a11eba0bad9061fc789499a3fce88653e0e115600035bfd7c9d8c0db32d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "he",
+      "content_hash": "1d388a11eba0bad9061fc789499a3fce88653e0e115600035bfd7c9d8c0db32d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5f6935ec0bd74612f892f5caa0c60f605a0cb3b79180f0fc80556a9f173851f3"
     },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:hi:ee0fdceb1acc94f1782e405b890b5f5239c7982130c5f2bd1242388be46ab909:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
@@ -297262,6 +298656,95 @@
         }
       ],
       "record_hash": "116312353ae62067ab01b9a5866e250a4a1f147eb110ffbb9b49139755be209a"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:ur:3277efcbe76c83388a0c2a90d1a367950aa42c00f6af34a4ded854f1e7979632:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "ur",
+      "content_hash": "3277efcbe76c83388a0c2a90d1a367950aa42c00f6af34a4ded854f1e7979632",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f4ac0f0417f469d8b46f8ef1",
+          "quote": "عبرانیوں 11:1",
+          "before": "",
+          "after": " تصدیق کرتی ہے کہ ایمان ”اُن چیزوں کے با",
+          "spans": [
+            [
+              1121,
+              1134
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "7840d27720c301cdd53446c5",
+          "quote": "لوقا 1:1-4",
+          "before": "کو جان لو جن کی تمہیں تعلیم دی گئی ہے۔ –",
+          "after": "۔ (NIV)",
+          "spans": [
+            [
+              2982,
+              2992
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "38cc57059081f71786faf648",
+          "quote": "رومیوں 1:18-20",
+          "before": "ہیں، تاکہ لوگوں کے پاس کوئی عذر نہ رہے –",
+          "after": "۔ (NIV)",
+          "spans": [
+            [
+              3571,
+              3585
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "6ed99d90b5f227f8fe009e65",
+          "quote": "یوحنا 20:29",
+          "before": " مبارک ہیں وہ جو دیکھے بغیر ایمان لائے –",
+          "after": "۔ (ESV) اس سے ایمان کی تعریف ”دیکھے بغیر",
+          "spans": [
+            [
+              4828,
+              4839
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "6e5aa3760b4d513b5b0f5e14",
+          "quote": "متی 16:21",
+          "before": "ہا تھا کہ وہ دوبارہ جی اُٹھے گا (دیکھیں ",
+          "after": ")۔ تیسری بات، یسوع مُردوں کو زندہ کرنے، ",
+          "spans": [
+            [
+              5295,
+              5304
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "24d5bb101fa014bf4ee9d7c2a41c831fe8589d9c035f9e8211209ffb65e0dd2d"
     },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:zh-Hans:ba020f662915e4a509ce3b8f425634a0c4d3ca130c3c9a35a7bd750bbf2a97b3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
@@ -329955,6 +331438,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "85e7136aded5bcae95d3e34241493a7a34a610f26bcb6ad62855ee3aacb2a367"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:it:9ff1b60333cf3bf8434541066e3b78c52c746ca3602ac9805b27d4b5ab3856a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "it",
+      "content_hash": "9ff1b60333cf3bf8434541066e3b78c52c746ca3602ac9805b27d4b5ab3856a2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "f421d0b0a1f3565da2451a82523f611bbbd6fb4d493ff11adc97d1cfaf113423"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:ko:87189cd0f36c8a9e30166e422bf5fa54e69eca18225744f2b535afc9983af56d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "ko",
+      "content_hash": "87189cd0f36c8a9e30166e422bf5fa54e69eca18225744f2b535afc9983af56d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "6bf4978f2f6cd23f4e00cf3f1b330f76e1c46af1d461b20f6686136830bef4fe"
     },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:nb:ede5d0aab0e2eaa0860faeebf481d8418b197cac0b431e6ef40b0af71a1e328e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
@@ -414997,6 +416496,399 @@
         }
       ],
       "record_hash": "97dc05d744b7761a96116d60070a132b1d094cd88e9a2efe1a9d35e49e5993c6"
+    },
+    "f82c479a-345a-4ffa-98d9-f10ddef90777:zh-Hans:262aea8312bbd91f83ee86d9926134f7d55402265c3a700631b0bc43f51b547c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "f82c479a-345a-4ffa-98d9-f10ddef90777",
+      "locale": "zh-Hans",
+      "content_hash": "262aea8312bbd91f83ee86d9926134f7d55402265c3a700631b0bc43f51b547c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3467e7da1a117411e8595415",
+          "quote": "诗篇25:12",
+          "before": "使你们作孤儿。正如大卫说：谁是敬畏耶和华的人呢？耶和华要指示他当选择的道路。——",
+          "after": "。孩子们，被管教时不要忧愁，也不要向管教你们的人怒言相向。智慧的儿子听父亲的教训",
+          "spans": [
+            [
+              584,
+              591
+            ]
+          ],
+          "osis": "Ps.25.12",
+          "queries": [
+            "19 25:12"
+          ]
+        },
+        {
+          "id": "80c35f0636ee512d07e8dca6",
+          "quote": "箴言13:1",
+          "before": "愁，也不要向管教你们的人怒言相向。智慧的儿子听父亲的教训；亵慢人却不听责备。——",
+          "after": "。",
+          "spans": [
+            [
+              669,
+              675
+            ]
+          ],
+          "osis": "Prov.13.1",
+          "queries": [
+            "20 13:1"
+          ]
+        },
+        {
+          "id": "4d595b27e52959f9c23eaee7",
+          "quote": "箴言12:22",
+          "before": "说谎的嘴为耶和华所憎恶；行事诚实的，为祂所喜悦。——",
+          "after": "。我劝你们当防备说谎，因为说谎的人在神的国里没有分。——参见启示录21:8。",
+          "spans": [
+            [
+              883,
+              890
+            ]
+          ],
+          "osis": "Prov.12.22",
+          "queries": [
+            "20 12:22"
+          ]
+        },
+        {
+          "id": "c6df00a5a4fb05524ffcfd01",
+          "quote": "帖撒罗尼迦后书3:10",
+          "before": "并施舍。无论在哪里，总要勤劳做工；保罗说过：……若有人不肯作工，就不可吃饭。——",
+          "after": "。经上也写到，要殷勤劳作，叫你们……有余可以分给那缺乏的人。——以弗所书4:28",
+          "spans": [
+            [
+              1017,
+              1028
+            ]
+          ],
+          "osis": "2Thess.3.10",
+          "queries": [
+            "53 3:10"
+          ]
+        },
+        {
+          "id": "f44a26701394eb74c3a71a55",
+          "quote": "以弗所书4:28",
+          "before": "尼迦后书3:10。经上也写到，要殷勤劳作，叫你们……有余可以分给那缺乏的人。——",
+          "after": "。",
+          "spans": [
+            [
+              1078,
+              1086
+            ]
+          ],
+          "osis": "Eph.4.28",
+          "queries": [
+            "49 4:28"
+          ]
+        },
+        {
+          "id": "fb143c76e67ed4b8bcad7ecb",
+          "quote": "箴言21:13",
+          "before": "不要转脸不顾穷人。人若塞耳不听穷人的哀求，他自己呼求的时候也必无人听。——",
+          "after": "。所以，要常常殷勤祷告，并当爱穷人；因为基督也为我们成了贫穷——你们知道我们主耶",
+          "spans": [
+            [
+              1143,
+              1150
+            ]
+          ],
+          "osis": "Prov.21.13",
+          "queries": [
+            "20 21:13"
+          ]
+        },
+        {
+          "id": "b9c83e3fb9f2dcde280b297c",
+          "quote": "哥林多后书8:9",
+          "before": "耶稣基督的恩典，祂本来富足，为你们却成为贫穷，叫你们因祂的贫穷可以成为富足。——",
+          "after": "。因此也要怜悯人，正如你们在天上的父是怜悯人的；因为这样的人必蒙祝福，必得怜悯。",
+          "spans": [
+            [
+              1238,
+              1246
+            ]
+          ],
+          "osis": "2Cor.8.9",
+          "queries": [
+            "47 8:9"
+          ]
+        },
+        {
+          "id": "d36eec9f1ad3b2aabe7cd777",
+          "quote": "箴言15:16",
+          "before": "敬畏耶和华而有一点儿，强如有大财宝而有许多烦恼。——",
+          "after": "。又说：宁可吃干饼而享平安，强如家中满了祭物却充满纷争。——箴言17:1。当选择",
+          "spans": [
+            [
+              1352,
+              1359
+            ]
+          ],
+          "osis": "Prov.15.16",
+          "queries": [
+            "20 15:16"
+          ]
+        },
+        {
+          "id": "0be0e762ae14a84276929c42",
+          "quote": "箴言17:1",
+          "before": "。——箴言15:16。又说：宁可吃干饼而享平安，强如家中满了祭物却充满纷争。——",
+          "after": "。当选择用双手的劳碌来谋生，并在平安中吃饭。不要追求作商人，也不要为赚取厚利而焦",
+          "spans": [
+            [
+              1398,
+              1404
+            ]
+          ],
+          "osis": "Prov.17.1",
+          "queries": [
+            "20 17:1"
+          ]
+        },
+        {
+          "id": "69c9c36a69b16645e32ce8bf",
+          "quote": "路加福音6:36",
+          "before": "温柔谦卑，因为这样的人有福，将承受地土。你们要怜悯人，正如你们的父也是怜悯人的。",
+          "after": "。并且，温柔的人有福了，因为他们必承受地土。——马太福音5:5。最后，清心的人有",
+          "spans": [
+            [
+              1538,
+              1546
+            ]
+          ],
+          "osis": "Luke.6.36",
+          "queries": [
+            "42 6:36"
+          ]
+        },
+        {
+          "id": "877235eb80d9804c928f425e",
+          "quote": "马太福音5:5",
+          "before": "父也是怜悯人的。路加福音6:36。并且，温柔的人有福了，因为他们必承受地土。——",
+          "after": "。最后，清心的人有福了，因为他们必得见神。——马太福音5:8。所以，我亲爱的儿女",
+          "spans": [
+            [
+              1579,
+              1586
+            ]
+          ],
+          "osis": "Matt.5.5",
+          "queries": [
+            "40 5:5"
+          ]
+        },
+        {
+          "id": "d86237bc432fb6e2d52d413a",
+          "quote": "马太福音5:8",
+          "before": "他们必承受地土。——马太福音5:5。最后，清心的人有福了，因为他们必得见神。——",
+          "after": "。所以，我亲爱的儿女，不要让污秽的念头留在你们心里。让自己专注于诗篇、赞美诗和属",
+          "spans": [
+            [
+              1618,
+              1625
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "56db2c93b1c76b9025f728b6",
+          "quote": "马太福音23:12",
+          "before": "在别人说话时常保持沉默。要谦卑自己，因……凡自高的必降为卑，自卑的必升为高。——",
+          "after": "。因为基督本为至大，却使自己成为至小，为要给我们作榜样。——参见约翰福音13:1",
+          "spans": [
+            [
+              1838,
+              1847
+            ]
+          ],
+          "osis": "Matt.23.12",
+          "queries": [
+            "40 23:12"
+          ]
+        },
+        {
+          "id": "27c6890126773c0cf761dd5f",
+          "quote": "使徒行传20:35",
+          "before": "劳碌所得。只要能取得必需的东西，就不要成为别人的负担——……施比受更为有福。——",
+          "after": "。保罗说：若有衣食，就当知足。——提摩太前书6:8。",
+          "spans": [
+            [
+              2014,
+              2023
+            ]
+          ],
+          "osis": "Acts.20.35",
+          "queries": [
+            "44 20:35"
+          ]
+        },
+        {
+          "id": "ccf5946d81769cb44ab79f99",
+          "quote": "提摩太前书6:8",
+          "before": "——……施比受更为有福。——使徒行传20:35。保罗说：若有衣食，就当知足。——",
+          "after": "。",
+          "spans": [
+            [
+              2049,
+              2057
+            ]
+          ],
+          "osis": "1Tim.6.8",
+          "queries": [
+            "54 6:8"
+          ]
+        },
+        {
+          "id": "c7db1918e4edbccfd2deb5ca",
+          "quote": "希伯来书11:25",
+          "before": "宁愿与神的百姓一同受苦［好使你们与他们一同得赏赐］，也不愿暂时享受罪的快乐。——",
+          "after": "。神一切美好的应许都属于这样的人。经上写着：……你们将要哭泣哀号，但世人要喜乐；",
+          "spans": [
+            [
+              2937,
+              2946
+            ]
+          ],
+          "osis": "Heb.11.25",
+          "queries": [
+            "58 11:25"
+          ]
+        },
+        {
+          "id": "4ca9317a0f12f3a028803999",
+          "quote": "约翰福音16:20",
+          "before": "：……你们将要哭泣哀号，但世人要喜乐；你们将要忧愁，但你们的忧愁要变为喜乐。——",
+          "after": "。又说：你将要受的苦，你一点也不要怕。看哪，魔鬼要将你们中间的一些人下在监里，叫",
+          "spans": [
+            [
+              3016,
+              3025
+            ]
+          ],
+          "osis": "John.16.20",
+          "queries": [
+            "43 16:20"
+          ]
+        },
+        {
+          "id": "b64cf43ad34102179a4f0b2b",
+          "quote": "启示录2:10",
+          "before": "里，叫你们受试炼；你们必受患难十日。你务要至死忠心，我就把生命的冠冕赐给你。——",
+          "after": "。最后，我将这些事告诉你们，是要叫你们在我里面有平安。在世上你们将有苦难；但你们",
+          "spans": [
+            [
+              3111,
+              3118
+            ]
+          ],
+          "osis": "Rev.2.10",
+          "queries": [
+            "66 2:10"
+          ]
+        },
+        {
+          "id": "60d10567f74b4bc40844d50a",
+          "quote": "约翰福音16:33",
+          "before": "要叫你们在我里面有平安。在世上你们将有苦难；但你们可以放心，我已经胜了世界。——",
+          "after": "。",
+          "spans": [
+            [
+              3182,
+              3191
+            ]
+          ],
+          "osis": "John.16.33",
+          "queries": [
+            "43 16:33"
+          ]
+        },
+        {
+          "id": "10faf38d44792c0c8a7b38ca",
+          "quote": "马太福音24:12",
+          "before": "静。常常关顾彼此，因为时候已到，……不法的事必增多，许多人的爱心必渐渐冷淡。——",
+          "after": "。",
+          "spans": [
+            [
+              3612,
+              3621
+            ]
+          ],
+          "osis": "Matt.24.12",
+          "queries": [
+            "40 24:12"
+          ]
+        },
+        {
+          "id": "0c8985c2361c54c2cf5a5eb9",
+          "quote": "马太福音24:24",
+          "before": "当防备迷惑。记得耶稣说：……若是可能，他们连选民也要迷惑。——",
+          "after": "。要学习殷勤查考圣经，使自己不致被迷惑。不要轻信闲言碎语，必须查明实情。",
+          "spans": [
+            [
+              3672,
+              3681
+            ]
+          ],
+          "osis": "Matt.24.24",
+          "queries": [
+            "40 24:24"
+          ]
+        },
+        {
+          "id": "30259bf316d0031193356508",
+          "quote": "马太福音22:37-40",
+          "before": "命。其次也相仿，就是要爱邻舍如同自己。全部律法和先知的教导都系于这两条诫命。——",
+          "after": "。",
+          "spans": [
+            [
+              4493,
+              4505
+            ]
+          ],
+          "osis": "Matt.22.37-Matt.22.40",
+          "queries": [
+            "40 22:37-40"
+          ]
+        },
+        {
+          "id": "e3dd5ca810fd7f4eb7e5c3bb",
+          "quote": "启示录19:7-8",
+          "before": "的妻子已经预备好了。她蒙恩得以穿上洁净白色的细麻衣，因为细麻衣就是圣徒的义。——",
+          "after": "。我的女儿们，这是圣徒的装饰；当为这样的婚服劳苦，好使你们能进入羔羊的婚筵，在那",
+          "spans": [
+            [
+              4608,
+              4617
+            ]
+          ],
+          "osis": "Rev.19.7-Rev.19.8",
+          "queries": [
+            "66 19:7-8"
+          ]
+        },
+        {
+          "id": "926e3d729b9cd49773621b72",
+          "quote": "马太福音13:43",
+          "before": "们能进入羔羊的婚筵，在那里他们……义人［必］在他们父的国里发光，如同太阳……——",
+          "after": "。愿主引导你们，如祂引导以色列出埃及，领你们到新耶路撒冷，使我们在复活的日子欢喜",
+          "spans": [
+            [
+              4694,
+              4703
+            ]
+          ],
+          "osis": "Matt.13.43",
+          "queries": [
+            "40 13:43"
+          ]
+        }
+      ],
+      "record_hash": "e1d7ccb8a0883828fcf6e76be98d203d3e72e17a08efd4ff4c51fdf6e1b96d36"
     },
     "f838e04e-5633-4a29-9d34-793f456248a6:bn:8dfca9ed1569bf3f38c1302e7db4dacc36e7e5deff096fc9d8b6dcf294022bfe:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "f838e04e-5633-4a29-9d34-793f456248a6",
