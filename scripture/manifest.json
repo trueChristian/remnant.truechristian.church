@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "3ceac626faf2824f9e50c2a00f3df7c6e9ccaaa9873ed7023bf28260d18e040c",
+  "integrity": "4a757c310147d683f881e877c94dee715585e881d8bd732d46ab5bb07c2ba2bf",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -50701,10 +50701,10 @@
       ],
       "record_hash": "9b7e84cf478bbab60d939e196cad0fb688baba7502f9ca3453146395f117dc03"
     },
-    "1bae0eee-b104-4df8-b428-cf4822ed67a9:en:8680cf294601c29d8e9f84b68bb823a88a34d0ef863ae2a5b073ec5f45c969fb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "1bae0eee-b104-4df8-b428-cf4822ed67a9:en:f6e5a011ff0e86154a092e6b689cacb0ed800c41c8c2a13eb3512ef55d179c52:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1bae0eee-b104-4df8-b428-cf4822ed67a9",
       "locale": "en",
-      "content_hash": "8680cf294601c29d8e9f84b68bb823a88a34d0ef863ae2a5b073ec5f45c969fb",
+      "content_hash": "f6e5a011ff0e86154a092e6b689cacb0ed800c41c8c2a13eb3512ef55d179c52",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
@@ -51158,14 +51158,14 @@
           ]
         },
         {
-          "id": "8ed23c4da4640b04b934b595",
+          "id": "6106a80b63130fe61d431b06",
           "quote": "Gal 5:6",
           "before": "sion; but faith which worketh by love” (",
           "after": "). But even though he knew this, and kne",
           "spans": [
             [
-              27657,
-              27664
+              27498,
+              27505
             ]
           ],
           "osis": "Gal.5.6",
@@ -51174,14 +51174,14 @@
           ]
         },
         {
-          "id": "bf7512c1cd1a0eb4e0ba5021",
+          "id": "0d46573928c4e74249f92a12",
           "quote": "Acts 16:1-3",
           "before": " knew all that his father was a Greek. (",
           "after": ")",
           "spans": [
             [
-              28207,
-              28218
+              28048,
+              28059
             ]
           ],
           "osis": "Acts.16.1-Acts.16.3",
@@ -51206,7 +51206,7 @@
           ]
         }
       ],
-      "record_hash": "6cab37a747c6f74a9a1ef5d46e1ef27c1e41e63a26c3f5a425cde5563f1e4a67"
+      "record_hash": "6544ebd505f0e397290d2cc72242e9a81ed36aa86f7f87f95d758bc65cb00af5"
     },
     "1bb83eea-79df-42fa-8919-99c206444ab4:en:e2444e2f39235482578ed71bf4e9714cfccb11dedb15315ae9ab2388eeb2e7c5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1bb83eea-79df-42fa-8919-99c206444ab4",
@@ -56716,10 +56716,10 @@
       "markers": [],
       "record_hash": "f8145a0e1a2123be2f4599bce940054133ae7b2d5259eb032c54631cdd15a398"
     },
-    "1c75dce8-1781-427f-8099-01596d53c2a4:af:d460557884c73a69c86e0daeb7ce136c02c0aaae16459b0d206ca9c57dc75d35:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "1c75dce8-1781-427f-8099-01596d53c2a4:af:b7cd99e561afe896c0c492ac21e0692f31e79086d932a6da76bf2dea65e7bbf5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1c75dce8-1781-427f-8099-01596d53c2a4",
       "locale": "af",
-      "content_hash": "d460557884c73a69c86e0daeb7ce136c02c0aaae16459b0d206ca9c57dc75d35",
+      "content_hash": "b7cd99e561afe896c0c492ac21e0692f31e79086d932a6da76bf2dea65e7bbf5",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
@@ -56819,7 +56819,7 @@
           ]
         }
       ],
-      "record_hash": "61c5813375e6f756df486e0dd070f7a52a704a79a3be47464cb0810c45ebd697"
+      "record_hash": "447d5636bc08dbc005c6c87dde79c4228ead2e36f23910984e50ee72e1986e77"
     },
     "1c75dce8-1781-427f-8099-01596d53c2a4:ar:ab1cf2938d7209f58fad089d61f5e3599ed72f93fd00a8ba608eeb7c3cc78395:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1c75dce8-1781-427f-8099-01596d53c2a4",
@@ -94681,6 +94681,400 @@
       "markers": [],
       "record_hash": "3d6416d690c7ec77ac5bc3e7634028519e9b171ff8e9529e4b72eab9451cf79d"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:bn:2d015634641abea4d6f1d642907bf58ee1e4753efd0d6771d501eacf7daa3d49:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "bn",
+      "content_hash": "2d015634641abea4d6f1d642907bf58ee1e4753efd0d6771d501eacf7daa3d49",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1faf8c2475e6a7b447b64271",
+          "quote": "আদিপুস্তক ৩",
+          "before": "ভাঙন ও পাপ চলমান। এর প্রথম লিখিত প্রমাণ ",
+          "after": " অধ্যায়ে দেখা যায়। “আর তিনি বললেন, উদ্",
+          "spans": [
+            [
+              1491,
+              1502
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "e0be59db786fa6744f2f5929",
+          "quote": "আদিপুস্তক ৩:১০",
+          "before": "্গ ছিলাম; তাই আমি নিজেকে লুকিয়েছিলাম” (",
+          "after": ")। আদম ভয় পেয়েছিলেন। কীসের ভয়? আদম ও ",
+          "spans": [
+            [
+              1644,
+              1658
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "afdec15fde5e602fd9a71f65",
+          "quote": "আদিপুস্তক ৪:৫",
+          "before": "্রুদ্ধ হলো, এবং তার মুখ মলিন হয়ে গেল” (",
+          "after": ")। আপনি হয়তো এই শিশুদের একজন ছিলেন।",
+          "spans": [
+            [
+              3431,
+              3444
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "71109f08850118bff04ed9d1",
+          "quote": "আদিপুস্তক ১",
+          "before": "ধান হিসেবে ভেষজ, ভেষজ নির্যাস ও চা দেন। ",
+          "after": " অধ্যায়ে ঈশ্বর খাদ্যের জন্য সবুজ উদ্ভিদ",
+          "spans": [
+            [
+              5143,
+              5154
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "0d292486a2fe3fea9d129d7d",
+          "quote": "যোহন ৩:৩",
+          "before": " নিলে তিনি স্বর্গরাজ্য দেখতে পারবেন না (",
+          "after": ")। অনেকে হৃদয়ের বিভ্রান্তি ও ভারের সমাধ",
+          "spans": [
+            [
+              5677,
+              5685
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "2466065f6ee9fecdd90fa327",
+          "quote": "যোহন ৩:৭",
+          "before": "“তোমাদের নতুন করে জন্মগ্রহণ করতেই হবে” (",
+          "after": "), তখন তিনি কী বোঝাতে চেয়েছিলেন? কখনো ক",
+          "spans": [
+            [
+              6087,
+              6095
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "d8e6cb36571ecfa7ab77a3a0",
+          "quote": "২ করিন্থীয় ১১:২-৩",
+          "before": "ে তা থেকে বিপথে চালিত হয়ে কলুষিত হয়” (",
+          "after": ")। পরিত্রাণের সুসমাচার সহজ, এবং তা লাভ ক",
+          "spans": [
+            [
+              6628,
+              6646
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "b61d58a78f327b2618220826",
+          "quote": "মথি ৩:৬",
+          "before": "প্তাইজিত হলো, নিজেদের পাপ স্বীকার করে” (",
+          "after": ")। পরিত্রাণের প্রথম ধাপ হলো ঈশ্বরের কাছে",
+          "spans": [
+            [
+              6949,
+              6956
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "10953e1d241a0b9f33311d25",
+          "quote": "যাকোব ৫:১৬",
+          "before": "্ঠ প্রার্থনা অনেক কিছু সাধন করতে পারে” (",
+          "after": ")। একজন ধর্মযাজক বা অভিজ্ঞ খ্রিষ্টানের স",
+          "spans": [
+            [
+              7635,
+              7645
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "31e7b7d36721ed1a3d6c49ac",
+          "quote": "প্রেরিত ৩:১৯",
+          "before": "ার সময় এলে তোমাদের পাপ মুছে ফেলা হয়” (",
+          "after": ")। “অতএব তোমার এই দুষ্টতার জন্য অনুতপ্ত ",
+          "spans": [
+            [
+              8257,
+              8269
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "3cec1b358c687fac1d85478b",
+          "quote": "প্রেরিত ৮:২২",
+          "before": "তোমার হৃদয়ের এই চিন্তা ক্ষমা করা হবে” (",
+          "after": ")। নিজের পাপের জন্য অনুতপ্ত হয়ে আপনি ঈশ",
+          "spans": [
+            [
+              8390,
+              8402
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "6bf08bb58989f141b28af96f",
+          "quote": "রোমীয় ১০:১৩",
+          "before": "েউ প্রভুর নাম ডাকবে, সে পরিত্রাণ পাবে” (",
+          "after": ")। এখন যেহেতু আপনি নিজের পাপ স্বীকার ও ত",
+          "spans": [
+            [
+              8637,
+              8649
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "0a6c448c8dc938e9ef991064",
+          "quote": "প্রেরিত ২:২১",
+          "before": "েউ প্রভুর নাম ডাকবে, সে পরিত্রাণ পাবে” (",
+          "after": ")। “তোমরা জানো যে, তোমাদের পিতৃপুরুষদের ",
+          "spans": [
+            [
+              9006,
+              9018
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "62cefad98fb36c0189130f4f",
+          "quote": "১ পিতর ১:১৮-১৯",
+          "before": "প খ্রিষ্টের বহুমূল্য রক্ত দিয়ে হয়েছ” (",
+          "after": ")। “তখন আমি তোমাদের ওপর শুচি জল ছিটাব, আ",
+          "spans": [
+            [
+              9233,
+              9247
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "983bab96d75f9692fc5743c8",
+          "quote": "যিহিষ্কেল ৩৬:২৫-২৮",
+          "before": "ার প্রজা হবে, আর আমি তোমাদের ঈশ্বর হব” (",
+          "after": ")।",
+          "spans": [
+            [
+              9752,
+              9770
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "ef8b75b7f89d53b76d531317",
+          "quote": "প্রেরিত ১৬:৩০-৩১",
+          "before": "স করো, তাহলে তুমি পরিত্রাণ পাবে . . .” (",
+          "after": ")। আপনি নিজের পাপ স্বীকার ও তার জন্য অনু",
+          "spans": [
+            [
+              10047,
+              10063
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "70e5a04e134a6e0184aeb158",
+          "quote": "রোমীয় ১০:৯",
+          "before": "েকে উঠিয়েছেন, তবে তুমি পরিত্রাণ পাবে” (",
+          "after": ")। “কারণ ঈশ্বর জগৎকে এমন প্রেম করলেন যে,",
+          "spans": [
+            [
+              10400,
+              10411
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "823e40f2f726878a0bafbbbf",
+          "quote": "যোহন ৩:১৬",
+          "before": "বিনষ্ট না হয়, কিন্তু অনন্ত জীবন পায়” (",
+          "after": ")। প্রভুকে ধন্যবাদ দিন যে তিনি আপনার পাপ",
+          "spans": [
+            [
+              10556,
+              10565
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "af401b1d42c0832bffaec710",
+          "quote": "১ পিতর ৩:২১",
+          "before": ", যিশু খ্রিষ্টের পুনরুত্থানের মাধ্যমে” (",
+          "after": ")। শুদ্ধ বিবেকের অধিকারী সেই মানুষটি আপন",
+          "spans": [
+            [
+              11204,
+              11215
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "9568175e9bb15833fc09f036",
+          "quote": "ইফিষীয় ৪:২১-২৩",
+          "before": "চ্ছে; আর তোমাদের মনের আত্মায় নতুন হও” (",
+          "after": ")। এটি একটি গুরুত্বপূর্ণ বিষয়, এবং এ নি",
+          "spans": [
+            [
+              11954,
+              11969
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "b8548d9f8efb13af3e1506c2",
+          "quote": "মথি ৭:১৩-১৪",
+          "before": "ং পথও সরু, আর অল্প লোকই তা খুঁজে পায়” (",
+          "after": ")।",
+          "spans": [
+            [
+              12703,
+              12714
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "a1256a4c45ffb8698dd3f9f8",
+          "quote": "লূক ৯:২৩",
+          "before": "র ক্রুশ তুলে নিক এবং আমার অনুসরণ করুক” (",
+          "after": ")। প্রতিদিন আমাদের দেহের আকাঙ্ক্ষাগুলো ক",
+          "spans": [
+            [
+              13287,
+              13295
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "01cf76556d81f7d49117acfd",
+          "quote": "১ যোহন ১:৭,৯",
+          "before": "এবং সমস্ত অধার্মিকতা থেকে শুচি করবেন।” (",
+          "after": ")।",
+          "spans": [
+            [
+              13901,
+              13913
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "4062c0f21cc358c09c45ffff",
+          "quote": "২ করিন্থীয় ৯:১৫",
+          "before": "ে ধন্যবাদ তাঁর অনির্বচনীয় দানের জন্য” (",
+          "after": ")। পরিত্রাণের বিনামূল্যের দান আপনার জন্য",
+          "spans": [
+            [
+              14583,
+              14599
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "b63bfbd2f39fb4c7c216486102078649b54edfa20b07ddc0df7e0371f89c4b88"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:en:9f2264ed59822e728a782ac185fc87f596544716b2434000a841d1f6b2a80eca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "en",
@@ -95074,6 +95468,1156 @@
         }
       ],
       "record_hash": "9fa1116672f7124d9b94686b7ad0e04d0e2d5f1702bffdbb21f806dcaa64354d"
+    },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:es:ca076e778977a769aa604d39e5aa56941f1b8ffad08dd1216f35992c6da6e356:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "es",
+      "content_hash": "ca076e778977a769aa604d39e5aa56941f1b8ffad08dd1216f35992c6da6e356",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "cca47ed4bf2a782658e87f42",
+          "quote": "Génesis 3",
+          "before": "primera evidencia registrada aparece en ",
+          "after": ". «Y él respondió: Oí tu voz en el huert",
+          "spans": [
+            [
+              1786,
+              1795
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "f23a7a273e5552b024e52138",
+          "quote": "Génesis 3:10",
+          "before": ", porque estaba desnudo; y me escondí» (",
+          "after": "). Adán tenía miedo. ¿De qué tenía miedo",
+          "spans": [
+            [
+              1890,
+              1902
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "6a647d961c884082d402e69b",
+          "quote": "Génesis 4:5",
+          "before": "se enojó mucho, y decayó su semblante» (",
+          "after": "). Tú podrías haber sido uno de esos niñ",
+          "spans": [
+            [
+              3896,
+              3907
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "54f7a08de8673498ba9f10f2",
+          "quote": "Génesis 1",
+          "before": "ones a las dificultades emocionales. En ",
+          "after": ", Dios creó hierbas verdes y árboles par",
+          "spans": [
+            [
+              5959,
+              5968
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "3e662bb830af27ab2c06dd9b",
+          "quote": "Juan 3:3",
+          "before": "o, no podía ver el reino de los cielos (",
+          "after": "). Muchas personas recorren el mundo ent",
+          "spans": [
+            [
+              6481,
+              6489
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "daf62a33eb164d6f3ca84c27",
+          "quote": "Juan 3:7",
+          "before": "irmó: «Os es necesario nacer de nuevo» (",
+          "after": ")? A veces hacemos que el mensaje del ev",
+          "spans": [
+            [
+              6986,
+              6994
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "cb7fcee0ec407fd5663bf288",
+          "quote": "2 Corintios 11:2-3",
+          "before": "ose de la sencillez que hay en Cristo» (",
+          "after": "). Las buenas nuevas de la salvación son",
+          "spans": [
+            [
+              7465,
+              7483
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "262b404ad013ffefba9de583",
+          "quote": "Mateo 3:6",
+          "before": " en el Jordán, confesando sus pecados» (",
+          "after": "). El primer paso de la salvación es con",
+          "spans": [
+            [
+              7857,
+              7866
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "47222c713ea6c8b88cc14735",
+          "quote": "Santiago 5:16",
+          "before": "caz y ferviente del justo puede mucho» (",
+          "after": "). Busca la ayuda de un ministro o de un",
+          "spans": [
+            [
+              8570,
+              8583
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "299d4dc8bc3050c0571764dd",
+          "quote": "Hechos 3:19",
+          "before": "encia del Señor tiempos de refrigerio» (",
+          "after": "). «Arrepiéntete, pues, de esta tu malda",
+          "spans": [
+            [
+              9277,
+              9288
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "5884dd4167478eb44af991a5",
+          "quote": "Hechos 8:22",
+          "before": "erdonado el pensamiento de tu corazón» (",
+          "after": "). Al arrepentirte de tus pecados, le di",
+          "spans": [
+            [
+              9405,
+              9416
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "fc56f600c14cfcece8379c2b",
+          "quote": "Romanos 10:13",
+          "before": "vocare el nombre del Señor será salvo» (",
+          "after": "). Ahora que has confesado y te has arre",
+          "spans": [
+            [
+              9669,
+              9682
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "c1047156436b80aeba6b6195",
+          "quote": "Hechos 2:21",
+          "before": "vocare el nombre del Señor será salvo» (",
+          "after": "). «Sabiendo que fuisteis rescatados de ",
+          "spans": [
+            [
+              10033,
+              10044
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "840b608eeae2f5476e46f0ab",
+          "quote": "1 Pedro 1:18-19",
+          "before": "e un cordero sin defecto y sin mancha» (",
+          "after": "). «Esparciré sobre vosotros agua limpia",
+          "spans": [
+            [
+              10298,
+              10313
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "42b35375eb869ae64f1421a6",
+          "quote": "Ezequiel 36:25-28",
+          "before": "éis mi pueblo, y yo seré vuestro Dios» (",
+          "after": ").",
+          "spans": [
+            [
+              10832,
+              10849
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "23e4a5ccdeb4594a30a9236d",
+          "quote": "Hechos 16:30-31",
+          "before": "el Señor Jesucristo, y serás salvo...» (",
+          "after": "). Has confesado tus pecados y te has ar",
+          "spans": [
+            [
+              11086,
+              11101
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "17f1ab3bcb8dd6ee503f3775",
+          "quote": "Romanos 10:9",
+          "before": "e levantó de los muertos, serás salvo» (",
+          "after": "). «Porque de tal manera amó Dios al mun",
+          "spans": [
+            [
+              11417,
+              11429
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "f49ae08a810d5004724f2641",
+          "quote": "Juan 3:16",
+          "before": "e no se pierda, mas tenga vida eterna» (",
+          "after": "). Da gracias al Señor porque ha quitado",
+          "spans": [
+            [
+              11579,
+              11588
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "da82f03f135b1e3269bf6a69",
+          "quote": "1 Pedro 3:21",
+          "before": "s), por la resurrección de Jesucristo» (",
+          "after": "). ¡Tú también puedes ser esa persona co",
+          "spans": [
+            [
+              12256,
+              12268
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "d0a8416ea443a324a5a78198",
+          "quote": "Efesios 4:21-23",
+          "before": "ovaos en el espíritu de vuestra mente» (",
+          "after": "). Este es un tema importante y se podrí",
+          "spans": [
+            [
+              13134,
+              13149
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "2cc47f824fd3b943a7b94613",
+          "quote": "Mateo 7:13-14",
+          "before": "a vida, y pocos son los que la hallan» (",
+          "after": ").",
+          "spans": [
+            [
+              13970,
+              13983
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "8d3dc291e660b361eead77a6",
+          "quote": "Lucas 9:23",
+          "before": "mismo, tome su cruz cada día y sígame» (",
+          "after": "). Debemos crucificar a diario los deseo",
+          "spans": [
+            [
+              14568,
+              14578
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "0fcc6982a5d633381437e8f3",
+          "quote": "1 Juan 1:7,9",
+          "before": "s pecados y limpiarnos de toda maldad» (",
+          "after": ").",
+          "spans": [
+            [
+              15155,
+              15167
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "c4956415c2177185994907d3",
+          "quote": "2 Corintios 9:15",
+          "before": ". «Gracias a Dios por su don inefable» (",
+          "after": "). El don gratuito de la salvación está ",
+          "spans": [
+            [
+              15832,
+              15848
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "9dcec38cdbc7faf9740b44d8c4c79d2a6b99edb8b55675e467110c4043a50fc3"
+    },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:hi:88918c28dd80735403ed9a91d6dd7be8b066d8d17461bd77f0f1d55a8dcf6329:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "hi",
+      "content_hash": "88918c28dd80735403ed9a91d6dd7be8b066d8d17461bd77f0f1d55a8dcf6329",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "47cc9387b2fa623f8d680b3e",
+          "quote": "उत्पत्ति 3",
+          "before": "ातार बने हुए हैं। इसका पहला दर्ज प्रमाण ",
+          "after": " में दिखाई देता है। “उसने कहा, मैं वाटिक",
+          "spans": [
+            [
+              1660,
+              1670
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "c06ac214fb2a82a5f8e7511b",
+          "quote": "उत्पत्ति 3:10",
+          "before": "्योंकि मैं नंगा था; इसलिए मैं छिप गया” (",
+          "after": ")। आदम डर गया था। किस बात से? आदम और हव्",
+          "spans": [
+            [
+              1781,
+              1794
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "58dd97d18aeba4c4cdee46dd",
+          "quote": "उत्पत्ति 4:5",
+          "before": "हुत क्रोधित हुआ, और उसका मुँह उतर गया” (",
+          "after": ")। हो सकता है कि आप भी ऐसे बच्चों में से",
+          "spans": [
+            [
+              3599,
+              3611
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "2e38a23ba1b275ca0e036977",
+          "quote": "उत्पत्ति 1",
+          "before": "में जड़ी-बूटियाँ, अर्क और चाय देते हैं। ",
+          "after": " में परमेश्वर ने भोजन के लिए हरी वनस्पति",
+          "spans": [
+            [
+              5448,
+              5458
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "99aed224c9ca8b93adb522d3",
+          "quote": "यूहन्ना 3:3",
+          "before": "े, वह स्वर्ग के राज्य को नहीं देख सकता (",
+          "after": ")। बहुत से लोग अपने हृदय के भ्रम और बोझ ",
+          "spans": [
+            [
+              5972,
+              5983
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "8d240da734a61686c1e883b5",
+          "quote": "यूहन्ना 3:7",
+          "before": "तुम्हें नए सिरे से जन्म लेना अवश्य है” (",
+          "after": ")? कभी-कभी हम सुसमाचार के संदेश को परमेश",
+          "spans": [
+            [
+              6418,
+              6429
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "2d0415ad4c1135e045aa0ac5",
+          "quote": "2 कुरिन्थियों 11:2-3",
+          "before": "ई जाने वाली सरलता से भ्रष्ट न हो जाएँ” (",
+          "after": ")। उद्धार का सुसमाचार सरल है और उसे पाना",
+          "spans": [
+            [
+              6896,
+              6916
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "b64eea1570673d3df78380ad",
+          "quote": "मत्ती 3:6",
+          "before": "े हुए यरदन नदी में उससे बपतिस्मा लिया” (",
+          "after": ")। उद्धार का पहला कदम परमेश्वर के सामने ",
+          "spans": [
+            [
+              7223,
+              7232
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "c6e48b2af6666a7f52e4287f",
+          "quote": "याकूब 5:16",
+          "before": ", उत्कट प्रार्थना बहुत कुछ कर सकती है” (",
+          "after": ")। किसी सेवक या अनुभवी ईसाई से मदद लें। ",
+          "spans": [
+            [
+              8001,
+              8011
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "88d49f14f8604cc0f9705b94",
+          "quote": "प्रेरितों के काम 3:19",
+          "before": " प्रभु के सम्मुख से ताज़गी के दिन आएँ” (",
+          "after": ")। “इसलिए अपनी इस दुष्टता से मन फिरा, और",
+          "spans": [
+            [
+              8649,
+              8670
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "4fc2d39648dbb271cb3fc927",
+          "quote": "प्रेरितों के काम 8:22",
+          "before": "है कि तेरे मन का विचार क्षमा किया जाए” (",
+          "after": ")। अपने पापों से मन फिराकर आप परमेश्वर स",
+          "spans": [
+            [
+              8782,
+              8803
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "f39b6d4a72fcd23056466759",
+          "quote": "रोमियों 10:13",
+          "before": "्रभु का नाम पुकारेगा, वह उद्धार पाएगा” (",
+          "after": ")। अब जब आपने अपने पापों का अंगीकार और प",
+          "spans": [
+            [
+              9042,
+              9055
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "79ed2193011426180085e67b",
+          "quote": "प्रेरितों के काम 2:21",
+          "before": "्रभु का नाम पुकारेगा, वह उद्धार पाएगा” (",
+          "after": ")। “तुम जानते हो कि तुम्हारा निकम्मा चाल",
+          "spans": [
+            [
+              9434,
+              9455
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "c93cb5ea1695c2f345442495",
+          "quote": "1 पतरस 1:18-19",
+          "before": " निर्दोष और निष्कलंक मेमने के समान है” (",
+          "after": ")। “तब मैं तुम पर शुद्ध जल छिड़कूँगा, और",
+          "spans": [
+            [
+              9685,
+              9699
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "8f3b00894afd814cd63f9a29",
+          "quote": "यहेजकेल 36:25-28",
+          "before": "होगे, और मैं तुम्हारा परमेश्वर होऊँगा” (",
+          "after": ")।",
+          "spans": [
+            [
+              10213,
+              10229
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "bdcdd54d307194c778bb2034",
+          "quote": "प्रेरितों के काम 16:30-31",
+          "before": " विश्वास कर, तो तू उद्धार पाएगा . . .” (",
+          "after": ")। आपने अपने पापों का अंगीकार और पश्चात्",
+          "spans": [
+            [
+              10480,
+              10505
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "c80d69e927bfb2202fc58edf",
+          "quote": "रोमियों 10:9",
+          "before": "ुओं में से जिलाया, तो तू उद्धार पाएगा” (",
+          "after": ")। “क्योंकि परमेश्वर ने जगत से ऐसा प्रेम",
+          "spans": [
+            [
+              10830,
+              10842
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "31166277bd721883254e84b4",
+          "quote": "यूहन्ना 3:16",
+          "before": "े, वह नाश न हो, परन्तु अनन्त जीवन पाए” (",
+          "after": ")। प्रभु का धन्यवाद करें कि उसने आपके पा",
+          "spans": [
+            [
+              10990,
+              11002
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "21e76ee6c3c27fe96f7258a9",
+          "quote": "1 पतरस 3:21",
+          "before": "्वर के प्रति शुद्ध विवेक का उत्तर है)” (",
+          "after": ")। वह शुद्ध विवेक वाला व्यक्ति आप भी हो ",
+          "spans": [
+            [
+              11666,
+              11677
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "08a546d44fb25b9e3489b8b6",
+          "quote": "इफिसियों 4:21-23",
+          "before": "े मन के आत्मिक स्वभाव में नए बनते जाओ” (",
+          "after": ")। यह एक महत्वपूर्ण विषय है और इसके बारे",
+          "spans": [
+            [
+              12419,
+              12435
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "38d1dbddf71949a31825b320",
+          "quote": "मत्ती 7:13-14",
+          "before": "ा है, और थोड़े ही हैं जो उसे पाते हैं” (",
+          "after": ")।",
+          "spans": [
+            [
+              13187,
+              13200
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "727dd9da29d539b2191fa4cd",
+          "quote": "लूका 9:23",
+          "before": "न अपना क्रूस उठाए हुए मेरे पीछे हो ले” (",
+          "after": ")। हमें अपने शरीर की इच्छाओं को प्रतिदिन",
+          "spans": [
+            [
+              13789,
+              13798
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "8a91c255baafdbcb705d2a66",
+          "quote": "1 यूहन्ना 1:7,9",
+          "before": "्ध करने में विश्वासयोग्य और धर्मी है।” (",
+          "after": ")।",
+          "spans": [
+            [
+              14420,
+              14435
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "2b7b09783af01d76ad851de1",
+          "quote": "2 कुरिन्थियों 9:15",
+          "before": "ा उसके अवर्णनीय दान के लिए धन्यवाद हो” (",
+          "after": ")। उद्धार का मुफ्त उपहार आपके लिए उपलब्ध",
+          "spans": [
+            [
+              15106,
+              15124
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "00f2b8e0b4c220aeddea46b26f80621c4cec99d53133ce27fdbc40d27aa6610b"
+    },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:zh-Hans:06f03217a098df23a5bc0a1d69a8305ac6f186bee1fa0e7c51398a1601fefc43:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "zh-Hans",
+      "content_hash": "06f03217a098df23a5bc0a1d69a8305ac6f186bee1fa0e7c51398a1601fefc43",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5e9240a86f73645532cf1def",
+          "quote": "《创世记》3:",
+          "before": "：“他说：‘我在园中听见你的声音，我就害怕，因为我赤身露体；我便藏了起来。’”（",
+          "after": "10）亚当害怕了。他害怕什么？亚当和夏娃因生命中经历了罪的后果，害怕面对上帝。他",
+          "spans": [
+            [
+              704,
+              711
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "f4cb3cf5b38c550479b5d82f",
+          "quote": "《创世记》4",
+          "before": "时以愤怒回应。“只是耶和华看不中该隐和他的供物。该隐就大大地发怒，变了脸色。”（",
+          "after": ":5）你可能曾是这样的孩子之一。",
+          "spans": [
+            [
+              1258,
+              1264
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "7272ca8dd12b3ba6dd7a7b84",
+          "quote": "《约翰福音》3",
+          "before": "着。尼哥底母带着关于生命的问题来见耶稣时，耶稣告诉他，人若不重生，就不能见天国（",
+          "after": ":3）。许多人跑遍世界各地，寻找解决内心困惑和沉重感的方法。也许你曾是这样的人之",
+          "spans": [
+            [
+              2004,
+              2011
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "3da7e4288156dd5c5cadba46",
+          "quote": "《约翰福音》3",
+          "before": "什么才是真正符合圣经的救恩？耶稣说“你们必须重生”（",
+          "after": ":7）时，是什么意思？有时，我们把福音信息讲得比上帝——圣经的作者——所要表达的",
+          "spans": [
+            [
+              2233,
+              2240
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "4edc3e78c0b48b544b60a24a",
+          "quote": "”（《哥林多后书》11",
+          "before": "基督。但我怕你们的心思受到败坏，偏离在基督里的纯一，就像蛇用诡诈诱惑了夏娃一样。",
+          "after": ":2-3）救恩的福音简单明了，并不难得着。让我们一步步来看圣经中这些简单的得救步",
+          "spans": [
+            [
+              2399,
+              2410
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "2637e2bd7ccfac334c23edba",
+          "quote": "《马太福音》3",
+          "before": "罪，是他们来到施洗约翰那里受洗的时候。“在约旦河里受了他的洗，承认他们的罪。”（",
+          "after": ":6）得救的第一步是向上帝承认你的罪。上帝本来就知道你的罪。你要在祷告中来到祂面",
+          "spans": [
+            [
+              2522,
+              2529
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "5e3c9470d99acc8bdd55c51d",
+          "quote": "”（《雅各书》",
+          "before": "所以你们要彼此认罪，互相代求，使你们可以得医治。义人恳切而有功效的祷告大有力量。",
+          "after": "5:16）请一位传道人或有经验的基督徒帮助你。绝不要独自与异性一起处理这些事。有",
+          "spans": [
+            [
+              2745,
+              2752
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "f9decfe177d85683497f127d",
+          "quote": "《使徒行传》3:",
+          "before": "所以你们当悔改归正，使你们的罪得以涂抹，这样，那安舒的日子就必从主面前来到。”（",
+          "after": "19）“你当为你的恶行悔改，祈求上帝，或者你心里的意念可得赦免。”（《使徒行传》",
+          "spans": [
+            [
+              2971,
+              2979
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "d822d6a7724c12225d46944d",
+          "quote": "”（《使徒行传》",
+          "before": "《使徒行传》3:19）“你当为你的恶行悔改，祈求上帝，或者你心里的意念可得赦免。",
+          "after": "8:22）悔改自己的罪，就是告诉上帝你愿意离开罪恶的生活，转向另一个方向，走向上",
+          "spans": [
+            [
+              3011,
+              3019
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "a29d9aa393551524ead66324",
+          "quote": "《罗马书》10:",
+          "before": "“因为凡求告主名的，就必得救。”（",
+          "after": "13）现在你已经承认并悔改了自己的罪，就呼求主耶稣的名，求祂洗净你的罪。祂应许，",
+          "spans": [
+            [
+              3104,
+              3112
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "2bf8b1ecdacb8ac4eaee5e20",
+          "quote": "”（《使徒行传》",
+          "before": "自己为祭，使祂纯洁无罪的血可以为你的罪赎罪。“到那时候，凡求告主名的，就必得救。",
+          "after": "2:21）“知道你们得赎，脱去你们祖宗所传流虚妄的行为，不是凭着能坏的金银等物，",
+          "spans": [
+            [
+              3215,
+              3223
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "893a68ccf896bc25e5b9c42f",
+          "quote": "血。”（《彼得前书》1",
+          "before": "妄的行为，不是凭着能坏的金银等物，乃是凭着基督的宝血，如同无瑕疵、无玷污的羔羊之",
+          "after": ":18-19）“我必用清水洒在你们身上，你们就洁净了。我要洁净你们，使你们脱离一",
+          "spans": [
+            [
+              3286,
+              3297
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "8be84d3722c3166784875be7",
+          "quote": "的上帝。”（《以西结书》",
+          "before": "，谨守遵行我的典章。你们必住在我所赐给你们列祖之地，你们要作我的子民，我要作你们",
+          "after": "36:25-28）",
+          "spans": [
+            [
+              3452,
+              3464
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "479f035f470b0a4940c43cce",
+          "quote": "《使徒行传》16:30-",
+          "before": "二位先生，我当怎样行才可以得救？’他们说：‘当信主耶稣基督，你就必得救……’”（",
+          "after": "31）你已经承认并悔改了自己的罪，也呼求耶稣用祂的血洗净你的罪。要凭信心相信祂已",
+          "spans": [
+            [
+              3570,
+              3582
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "7b768f9059f27d3b065dfc17",
+          "quote": "”（《罗马书》",
+          "before": "你如今已是上帝的儿女。“你若口里认耶稣为主，心里信上帝叫他从死里复活，就必得救。",
+          "after": "10:9）“上帝爱世人，甚至将他的独生子赐给他们，叫一切信他的，不至灭亡，反得永",
+          "spans": [
+            [
+              3671,
+              3678
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "813c970e09a79de47fc9320f",
+          "quote": "生。”（《约翰福",
+          "before": "10:9）“上帝爱世人，甚至将他的独生子赐给他们，叫一切信他的，不至灭亡，反得永",
+          "after": "音》3:16）感谢主除去了你的罪。赞美祂使你成为祂的儿女。求祂以圣灵充满你。",
+          "spans": [
+            [
+              3718,
+              3726
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "e1dacdd0b07b154457a12f23",
+          "quote": "《彼得前书》3:",
+          "before": "耶稣基督的复活拯救我们（不是除掉肉体的污秽，而是向上帝作出无亏良心的回应）。”（",
+          "after": "21）你也可以成为那存无亏良心的人！",
+          "spans": [
+            [
+              3922,
+              3930
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "e9684d8128cfb23c7b6c4e21",
+          "quote": "《以弗所书》4:21-",
+          "before": "从前生活方式中的旧人，这旧人因迷惑人的私欲而败坏；又要将你们的心志改换一新。”（",
+          "after": "23）这是一个重要的话题，还可以写得更多。",
+          "spans": [
+            [
+              4164,
+              4175
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "3733dd2636f70a65a8abf171",
+          "quote": "《马太福音》7:13-",
+          "before": "宽的，路是大的，进去的人也多；引到生命，那门是窄的，路是小的，找着的人也少。”（",
+          "after": "14）",
+          "spans": [
+            [
+              4406,
+              4417
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "26892a5c227ff5ae80ee8c1b",
+          "quote": "《路加福音》9:",
+          "before": "“耶稣又对众人说：‘若有人要跟从我，就当舍己，天天背起他的十字架来跟从我。’”（",
+          "after": "23）我们必须天天将肉体的欲望钉在十字架上；但如今我们有上帝的灵充满，在祂的力量",
+          "spans": [
+            [
+              4599,
+              4607
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "146ecfda8196cf63247385f4",
+          "quote": "《约翰一书》1:7",
+          "before": "们若认自己的罪，他是信实的，是公义的，必要赦免我们的罪，洗净我们一切的不义。”（",
+          "after": ",9）",
+          "spans": [
+            [
+              4802,
+              4811
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "d189cb34c57a9e50cd7fca62",
+          "quote": "《哥林多后书》9:",
+          "before": "使我们脱离情感捆绑、获得自由的持久解决之道。“感谢上帝，因他有说不尽的恩赐！”（",
+          "after": "15）这白白赐下的救恩也为你预备着。",
+          "spans": [
+            [
+              5037,
+              5046
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "a383ead4f687ab7a004ccb375e8ae877b2e4715188e58643ef5c9da8fbdec550"
     },
     "327747e0-4fa9-413a-ba74-c48f5eae9c42:en:91d57c66e4583a2ce4d268ce3c7cf7e9a5fcbcb5fc9d0b34fb6031184773b10d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "327747e0-4fa9-413a-ba74-c48f5eae9c42",
@@ -110807,6 +112351,159 @@
       ],
       "record_hash": "57dbf5ea9745aba8a5f3efa0088d1b3d105eb1e19aa05962819a95c62255db09"
     },
+    "3a454052-a824-4d0c-888d-a6b04c8cf917:de:c5458a635b69c4a732a3fd175584e4efa0d034d1e79e2d410fecc4329fa91ce6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
+      "locale": "de",
+      "content_hash": "c5458a635b69c4a732a3fd175584e4efa0d034d1e79e2d410fecc4329fa91ce6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "15afe3f1275fdcbbafc8ea57",
+          "quote": "Matthäus 7:22",
+          "before": "d in deinem Namen viele Wunder getan? – ",
+          "after": ".",
+          "spans": [
+            [
+              575,
+              588
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "43cd31d052b730f27198539f",
+          "quote": "Matthäus 23:26",
+          "before": "sel, damit auch ihr Äußeres rein wird – ",
+          "after": ".",
+          "spans": [
+            [
+              6015,
+              6029
+            ]
+          ],
+          "osis": "Matt.23.26",
+          "queries": [
+            "40 23:26"
+          ]
+        },
+        {
+          "id": "38e3e8468069cc2316583e3d",
+          "quote": "1. Johannes 5:3",
+          "before": "n; und seine Gebote sind nicht schwer – ",
+          "after": ".",
+          "spans": [
+            [
+              8069,
+              8084
+            ]
+          ],
+          "osis": "1John.5.3",
+          "queries": [
+            "62 5:3"
+          ]
+        },
+        {
+          "id": "deb67542ca2f104760245ab7",
+          "quote": "1. Petrus 2:2",
+          "before": " verlangen, damit ihr dadurch wachset – ",
+          "after": ". Neue Christen brauchen also keinen Fre",
+          "spans": [
+            [
+              9824,
+              9837
+            ]
+          ],
+          "osis": "1Pet.2.2",
+          "queries": [
+            "60 2:2"
+          ]
+        },
+        {
+          "id": "acff76dd3666cd2d44b72a93",
+          "quote": "Lukas 2:52",
+          "before": " bei Gott und den Menschen zuzunehmen – ",
+          "after": ".",
+          "spans": [
+            [
+              10059,
+              10069
+            ]
+          ],
+          "osis": "Luke.2.52",
+          "queries": [
+            "42 2:52"
+          ]
+        },
+        {
+          "id": "2353349072ed7ee01e86f706",
+          "quote": "Lukas 23:31",
+          "before": "t, was wird dann am dürren geschehen? – ",
+          "after": ".",
+          "spans": [
+            [
+              13225,
+              13236
+            ]
+          ],
+          "osis": "Luke.23.31",
+          "queries": [
+            "42 23:31"
+          ]
+        },
+        {
+          "id": "f9a165d77ad9628b029f47ff",
+          "quote": "Matthäus 7:16-20",
+          "before": "et ihr sie an ihren Früchten erkennen – ",
+          "after": ".",
+          "spans": [
+            [
+              15618,
+              15634
+            ]
+          ],
+          "osis": "Matt.7.16-Matt.7.20",
+          "queries": [
+            "40 7:16-20"
+          ]
+        },
+        {
+          "id": "76a1f397ce331d607acdb147",
+          "quote": "Galater 5:22-23",
+          "before": "laube, Sanftmut, Selbstbeherrschung … – ",
+          "after": ". Sind das die Dinge, die die Menschen s",
+          "spans": [
+            [
+              15799,
+              15814
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "ccad8bb5538951d2be0b5869",
+          "quote": "Matthäus 7:19",
+          "before": "wird abgehauen und ins Feuer geworfen – ",
+          "after": ".",
+          "spans": [
+            [
+              16665,
+              16678
+            ]
+          ],
+          "osis": "Matt.7.19",
+          "queries": [
+            "40 7:19"
+          ]
+        }
+      ],
+      "record_hash": "9b88bf2484525a1880a4ebbfd20d906156b6bdd11f780a1f055f13e029621ada"
+    },
     "3a454052-a824-4d0c-888d-a6b04c8cf917:el:ed54e7f978ced56bc1c85d0287ee0cffe4d4cdff0fe091a977f57d072d261c8d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3a454052-a824-4d0c-888d-a6b04c8cf917",
       "locale": "el",
@@ -117030,6 +118727,95 @@
         }
       ],
       "record_hash": "216b15cc72b45501b33c983c51b5241379ccbf89ff316c9d6fb64c4f4edb07bd"
+    },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:zh-Hans:ae627754dad6c09e2c75a0850ff054bdea8781a647e0f0b86703ff8e4b716936:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "zh-Hans",
+      "content_hash": "ae627754dad6c09e2c75a0850ff054bdea8781a647e0f0b86703ff8e4b716936",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c2b17927338ea08c16e9d6fd",
+          "quote": "诗篇 144:12",
+          "before": "愿我们的儿子在幼年时如茁壮成长的植物；愿我们的女儿如宫殿式样雕琢而成的房角石——",
+          "after": "。",
+          "spans": [
+            [
+              260,
+              269
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "bfa480ae9f5c94802e97b6d2",
+          "quote": "路加福音 2:51",
+          "before": "在圣殿里的那件事之后，我们读到：他就同他们下去，回到拿撒勒，并且顺从他们……——",
+          "after": "。我们将探讨父母可以做些什么来培育儿女的成熟；但首先，我们要思考几种对健康成熟至",
+          "spans": [
+            [
+              1055,
+              1064
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "c9a15104d0aa59a681c096c0",
+          "quote": "诗篇 144:15",
+          "before": "处在这样的光景中的百姓有福了！以耶和华为神的百姓有福了！——",
+          "after": "。",
+          "spans": [
+            [
+              1181,
+              1190
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "ab02d058903e56e8959deb26",
+          "quote": "诗篇 127:4",
+          "before": "勇士手中的箭怎样，少年所生的儿女也怎样——",
+          "after": "。这节经文提醒我们，儿女是抵御仇敌的强大防线。如果得到适当的磨砺（训练）和平衡（",
+          "spans": [
+            [
+              4803,
+              4811
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "3436e5862ef31fde2db88821",
+          "quote": "诗篇 127:5",
+          "before": "的地方。箭袋充满了箭的人便为有福；他们在城门口和仇敌说话的时候，必不至于羞愧——",
+          "after": "。",
+          "spans": [
+            [
+              4953,
+              4961
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "1ba1f0f769ec0883a7a64e18ec43f97489b3846f02d98ad3e5d89202c08b42b3"
     },
     "3be24d0c-4c97-452e-b3c3-177e16d990ff:bn:6489fba2e8893cfd07440e8c478611e26b2fdbc77d7631ffd6eaf2a1f24c119d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3be24d0c-4c97-452e-b3c3-177e16d990ff",
@@ -190566,6 +192352,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "f2cf105da0d9e3d4707f03aaafcfe99c3e7d14c32d488acba23b0e0076b40edd"
+    },
+    "6c25be17-3343-451b-afeb-ed9c56942fd0:nl:2f589871f0403d53402a0666315ad9b13872af905641e1c86225ad1986302057:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
+      "locale": "nl",
+      "content_hash": "2f589871f0403d53402a0666315ad9b13872af905641e1c86225ad1986302057",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "aaff24ff0fa429432121ff4e4bef2c952f5c6944110a84fd8c66ad40daa1c2bd"
     },
     "6c25be17-3343-451b-afeb-ed9c56942fd0:pt:47d4ed39be92c8278c5d9ad5cbc316249fc72996149786d63de174b01bf515de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6c25be17-3343-451b-afeb-ed9c56942fd0",
@@ -298568,6 +300362,95 @@
       ],
       "record_hash": "bef907373543e91af7dcb651e975747ba5b3432d2ecbd6b9d8d96e26e78eff27"
     },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:nb:41d69ef86992564a612da96a90d8c3c43a1aaa257c787a4ebc3993bf73f4f493:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "nb",
+      "content_hash": "41d69ef86992564a612da96a90d8c3c43a1aaa257c787a4ebc3993bf73f4f493",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7b19b8c22009d701c21f1710",
+          "quote": "Hebreerne 11:1",
+          "before": "",
+          "after": " bekrefter at tro er «visshet om det en ",
+          "spans": [
+            [
+              1153,
+              1167
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "5027a4d614a51a8df85345d9",
+          "quote": "Lukas 1:1-4",
+          "before": " læren er som du er blitt undervist i. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              2931,
+              2942
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "da51a779fee996f078e3e2ef",
+          "quote": "Romerne 1:18-20",
+          "before": "t, så menneskene er uten unnskyldning. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3532,
+              3547
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "7cb88ca9b362172c256698c9",
+          "quote": "Johannes 20:29",
+          "before": "e er de som ikke ser, og likevel tror. –",
+          "after": ". (ESV) På bakgrunn av dette kan det vær",
+          "spans": [
+            [
+              4658,
+              4672
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "f229a778d3418d3712ac6f45",
+          "quote": "Matteus 16:21",
+          "before": "t at han skulle stå opp fra de døde (se ",
+          "after": "). For det tredje hadde Jesus allerede b",
+          "spans": [
+            [
+              5113,
+              5126
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "01d65d88a4b15a345c92a76300ac128d10a90f315ef665dfc797fe984103278e"
+    },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:pt:b0f6c3d06e024fa5efe82083a2feb0f5175844b7bbf5152f8aa9cda89560c228:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
       "locale": "pt",
@@ -298656,6 +300539,95 @@
         }
       ],
       "record_hash": "116312353ae62067ab01b9a5866e250a4a1f147eb110ffbb9b49139755be209a"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:sw:40d4cda8365ab3d485fff218a5b83efb271b2a0832cb7cd648243dabbc312dc8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "sw",
+      "content_hash": "40d4cda8365ab3d485fff218a5b83efb271b2a0832cb7cd648243dabbc312dc8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "86a3c5d1e530f164549095f3",
+          "quote": "Waebrania 11:1",
+          "before": "",
+          "after": " inathibitisha kwamba imani ni “uhakika ",
+          "spans": [
+            [
+              1132,
+              1146
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "3cd126d01d7f4486d9473cdc",
+          "quote": "Luka 1:1-4",
+          "before": "ua hakika ya mambo yale uliyoelekezwa. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              2927,
+              2937
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "8c6983c6dbbfcc47239498e3",
+          "quote": "Warumi 1:18-20",
+          "before": "ilivyoumbwa, ili watu wasiwe na udhuru –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3556,
+              3570
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "2c06c9044555c8ee95e1cc7c",
+          "quote": "Yohana 20:29",
+          "before": "wale ambao hawakuona, lakini wakaamini –",
+          "after": ". (ESV) Kutokana na maneno haya, ni rahi",
+          "spans": [
+            [
+              4790,
+              4802
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "5d0f8c192c308fd764582de0",
+          "quote": "Mathayo 16:21",
+          "before": "mesema wazi kwamba angefufuliwa (tazama ",
+          "after": "). Tatu, Yesu alikuwa tayari amethibitis",
+          "spans": [
+            [
+              5233,
+              5246
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "b799fc46447dd5233fdce4df54a0ea4f39dd012a2f3bc12a1c2d924075116f03"
     },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:ur:3277efcbe76c83388a0c2a90d1a367950aa42c00f6af34a4ded854f1e7979632:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
@@ -438501,6 +440473,95 @@
         }
       ],
       "record_hash": "8879fca23b85f43a45b0c39fe07ee90d40365496f12cf51ce3e6c59b6fff18d8"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:it:6ba3d0621a0897482f36e3f06d1cd1e9d990af50d910c4fffd08181fc4f50ed0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "it",
+      "content_hash": "6ba3d0621a0897482f36e3f06d1cd1e9d990af50d910c4fffd08181fc4f50ed0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8625db5341e6736ffa42959b",
+          "quote": "Giovanni 3:3-6",
+          "before": "el che è nato dallo Spirito è spirito» (",
+          "after": ").",
+          "spans": [
+            [
+              538,
+              552
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "661c282a353db39e6145150a",
+          "quote": "Giovanni 3:6",
+          "before": "el che è nato dallo Spirito è spirito» (",
+          "after": "). Che cosa intende? Se sei nato dalla c",
+          "spans": [
+            [
+              6378,
+              6390
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "1d0ae6c13d84620da68df8ba",
+          "quote": "Romani 8:8",
+          "before": "di buono in essa. Come ci dice Paolo in ",
+          "after": ", è impossibile che la carne piaccia a D",
+          "spans": [
+            [
+              6676,
+              6686
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "f9e311f84e7b2f23e9c1805f",
+          "quote": "Romani 7",
+          "before": "Quando si nasce di nuovo, come Paolo in ",
+          "after": ", si ammette di non potercela fare da so",
+          "spans": [
+            [
+              9107,
+              9115
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "c1f76d936c4f0d254e250a10",
+          "quote": "2 Corinzi 5:17",
+          "before": "o, tutte le cose sono diventate nuove» (",
+          "after": ").",
+          "spans": [
+            [
+              9625,
+              9639
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "5e14ecef2dc2bcdee7ddcaf470144881f19e502f02ba6290d32b1e7ad4450f51"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:ko:c0093fc41f633bef7aece152e0dfb72b09c493bce0d9dab9ff32d8ad785734ff:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",

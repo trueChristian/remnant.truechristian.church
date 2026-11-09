@@ -32097,11 +32097,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "যিশু-খ্রিষ্ট-ভগ্ন-মানবতার-উত্তর",
+        "history": [
+          "/bn/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -42261,11 +42262,12 @@
       },
       "3a454052-a824-4d0c-888d-a6b04c8cf917": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "by-their-fruits",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "an-ihren-früchten",
+        "history": [
+          "/de/articles/by-their-fruits/"
+        ],
+        "fallback": false
       },
       "3b3b3e75-afd9-49a6-ac06-d99a29802261": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -77153,11 +77155,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristiana",
+        "alias": "jesucristo-la-respuesta-a-una-humanidad-quebrantada",
+        "history": [
+          "/es/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -106630,11 +106633,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "यीशु-मसीह-टूटी-हुई-मानवता-का-उत्तर",
+        "history": [
+          "/hi/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -132280,11 +132284,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vita-cristiana",
+        "alias": "una-nuova-creazione",
+        "history": [
+          "/it/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -149914,11 +149919,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "åndelig-øvelse",
+        "alias": "tro-og-fornuft",
+        "history": [
+          "/nb/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -158077,11 +158083,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "poëzie",
+        "alias": "worstelen-met-jakob",
+        "history": [
+          "/nl/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -199263,11 +199270,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "mazoezi-ya-kiroho",
+        "alias": "imani-na-akili",
+        "history": [
+          "/sw/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -215480,11 +215488,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "基督徒生活",
+        "alias": "耶稣基督-破碎人类的答案",
+        "history": [
+          "/zh-Hans/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -215766,11 +215775,12 @@
       },
       "3b932103-b3fb-450d-885a-eaca95ee48fe": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "from-childhood-to-adulthood",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "养育子女",
+        "alias": "从童年走向成年",
+        "history": [
+          "/zh-Hans/articles/from-childhood-to-adulthood/"
+        ],
+        "fallback": false
       },
       "3be24d0c-4c97-452e-b3c3-177e16d990ff": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
