@@ -122,6 +122,21 @@ or its opening headings regain the full reading width below the image, as in
 wrapping. Logical float sides follow the text language; physical sides of a
 paired composition do not reverse.
 
+In **Tribulation Worketh**, the first paragraph follows the transparent arch in
+the heading illustration. Two reviewed physical edge shapes reserve the visible
+artwork while the original image is displayed once at its full available width.
+The paragraph retains its normal type size and continues below the illustration;
+the second paragraph and all later content keep their ordinary flow. The shapes
+follow the PNG's nonzero-alpha boundaries with extra clearance, without changing
+the image, text, or source markup.
+
+This enhancement requires the loaded image to match its reviewed dimensions,
+CSS Shapes support, a screen at least 48rem wide, and a reading column at least
+34 text ems wide. It recalculates when the column or font size changes. Narrow
+columns, larger text, image errors, JavaScript-disabled reading, and print retain
+the stacked image and paragraph. The artwork and its physical left/right edges
+remain in their original orientation in right-to-left languages.
+
 The review marks 135 images as standalone. Of these, 112 contain sheet music,
 text-bearing graphics, handwritten letters, maps, tables, clippings, or
 decorative section dividers; the other 23 are existing large landscape images.
@@ -163,6 +178,14 @@ It records exact image basenames under permanent article UUIDs:
   stay independent of galleries and floats; the rule also works without JavaScript,
   in RTL, and in print. Do not use it for white backgrounds or infer it from image
   dimensions. Verify the alpha bounds before adding or updating an entry.
+- `opening_contour` identifies one caption-free leading `image`, its original
+  `width` and `height`, the source-pixel `text_start`, and ordered `edges` rows
+  of `[y, left, right]` enclosing the opaque wings around a transparent opening.
+  These reviewed bounds create two physical half-width exclusion polygons. The
+  renderer groups only that figure and its immediately following ordinary
+  paragraph. A missing, repeated, moved, captioned, or structurally changed
+  opening keeps the standard layout. Verify the complete alpha boundary before
+  adding or updating a contour; dimensions alone do not establish transparency.
 - `dimensions` records the original width and height of each reviewed paired
   image. The paired composition uses proportional columns and a common image
   height, preserving unequal panel widths without cropping or upscaling.

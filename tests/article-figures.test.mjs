@@ -1,6 +1,34 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { figureLayout, figureFlowHeadings, verseLayout } from '../assets/article-figures.js';
+import { figureLayout, figureFlowHeadings, verseLayout, contourLayout } from '../assets/article-figures.js';
+
+const contour = (options = {}) => contourLayout({ naturalWidth: 1045, naturalHeight: 261,
+  expectedWidth: 1045, expectedHeight: 261, textStart: 104, containerWidth: 750,
+  fontSize: 18, ...options });
+
+test('reviewed contour fits the complete image and keeps normal-size prose', () => {
+  const result = contour();
+  assert(result);
+  assert(result.offset > result.height * .39);
+  assert(result.offset < result.height * .5);
+  assert(result.gap >= 10);
+  assert.equal(contour({ containerWidth: 1400 }).height, 261);
+});
+
+test('contour keeps stacked reading for narrow columns, large type, and unsupported shapes', () => {
+  for (const options of [{ containerWidth: 390 }, { containerWidth: 500 }, { fontSize: 24 },
+    { wideScreen: false }, { supportsShapes: false }]) {
+    assert.equal(contour(options), null);
+  }
+});
+
+test('changed or missing image dimensions cannot apply an obsolete contour', () => {
+  for (const options of [{ naturalWidth: 1044 }, { naturalHeight: 260 }, { naturalWidth: 0 },
+    { expectedWidth: NaN }, { expectedHeight: 0 }, { textStart: 261 },
+    { containerWidth: Infinity }, { fontSize: -1 }]) {
+    assert.equal(contour(options), null);
+  }
+});
 
 const verse = (options = {}) => verseLayout({ naturalWidth: 320, naturalHeight: 420,
   containerWidth: 750, textWidth: 530, fontSize: 17, ...options });

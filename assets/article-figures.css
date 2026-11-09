@@ -5,6 +5,11 @@
 .prose .article-figures img { display: block; height: auto; }
 .prose .article-figure--standalone img { max-height: none; }
 
+/* A reviewed opening keeps its source figure and paragraph in reading order.
+   Without the measured enhancement, it is an ordinary stacked illustration. */
+.prose .article-contour-opening { display: flow-root; }
+.prose .article-contour-edge { display: none; }
+
 /* Reviewed transparent canvas edges take no space in the reader. The original
    image remains intact, at or below its natural size, including without JS. */
 .prose .article-image-window {
@@ -99,6 +104,50 @@
 }
 
 @media screen and (min-width: 48rem) {
+  /* The PNG has an open middle between two curved opaque wings. Two physical
+     floats reserve those wings; the complete source image is displayed once. */
+  .prose .article-contour-opening--active {
+    position: relative;
+    max-width: min(100%, var(--article-contour-max-width));
+    min-height: var(--article-contour-height);
+    margin: 35px auto 1.55em;
+  }
+  .prose .article-contour-opening--active > figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+  .prose .article-contour-opening--active > figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    margin: 0;
+  }
+  .prose .article-contour-opening--active > .article-contour-edge {
+    display: block;
+    width: 50%;
+    height: var(--article-contour-height);
+    shape-margin: var(--article-contour-gap);
+    pointer-events: none;
+  }
+  .prose .article-contour-opening--active > .article-contour-edge--left {
+    float: left;
+    shape-outside: var(--article-contour-left);
+  }
+  .prose .article-contour-opening--active > .article-contour-edge--right {
+    float: right;
+    shape-outside: var(--article-contour-right);
+  }
+  .prose .article-contour-opening--active > p {
+    position: relative;
+    margin: 0;
+    padding-block-start: var(--article-contour-offset);
+  }
+
   .prose .article-verse-row--aside {
     display: grid;
     grid-template-columns: minmax(0, 1fr) var(--article-verse-image-width);
