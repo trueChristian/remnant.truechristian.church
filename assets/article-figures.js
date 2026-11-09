@@ -35,6 +35,21 @@ export function verseLayout({ naturalWidth, naturalHeight, containerWidth, textW
   return { width, gap };
 }
 
+/** Reviewed concave artwork reserves both edges without shrinking the prose. */
+export function contourLayout({ naturalWidth, naturalHeight, expectedWidth, expectedHeight,
+  textStart, containerWidth, fontSize = 18, wideScreen = true, supportsShapes = true }) {
+  if (!wideScreen || !supportsShapes || ![naturalWidth, naturalHeight, expectedWidth,
+    expectedHeight, textStart, containerWidth, fontSize]
+    .every(value => Number.isFinite(value) && value > 0)) return null;
+  if (naturalWidth !== expectedWidth || naturalHeight !== expectedHeight ||
+    textStart >= expectedHeight) return null;
+  const width = Math.min(containerWidth, naturalWidth);
+  if (width < fontSize * 34) return null;
+  const scale = width / naturalWidth;
+  const gap = fontSize * 0.6;
+  return { height: naturalHeight * scale, offset: textStart * scale + gap, gap };
+}
+
 function verseMeasure(text) {
   const copy = text.cloneNode(true);
   copy.classList.add('article-verse-measure');
@@ -75,11 +90,20 @@ export function initArticleFigures(document) {
   const articles = [...document.querySelectorAll('.prose article[data-article-id]')];
   const records = [];
   const verseRecords = [];
+  const contourRecords = [];
   const containers = new Set();
   for (const article of articles) {
     const figures = [...article.querySelectorAll('figure')];
     if (!figures.length) continue;
     article.classList.add('article-figures');
+    for (const row of article.querySelectorAll('.article-contour-opening')) {
+      const figure = row.querySelector(':scope > figure');
+      const text = row.querySelector(':scope > p');
+      const image = figure?.querySelector('img');
+      if (!image || !text) continue;
+      containers.add(row);
+      contourRecords.push({ row, image, text, source: image.getAttribute('src') });
+    }
     for (const row of article.querySelectorAll('.article-verse-row')) {
       const figure = row.querySelector(':scope > figure');
       const text = row.querySelector(':scope > .article-verse-text');
@@ -104,9 +128,10 @@ export function initArticleFigures(document) {
       records.push({ figure, image: images[0], parent, index, headings });
     });
   }
-  if (!records.length && !verseRecords.length) return null;
+  if (!records.length && !verseRecords.length && !contourRecords.length) return null;
 
   const media = window.matchMedia(WIDE_SCREEN);
+  const supportsShapes = Boolean(window.CSS?.supports('shape-outside', 'polygon(0 0, 100% 0, 0 100%)'));
   let frame = null;
   const update = () => {
     frame = null;
@@ -152,27 +177,44 @@ export function initArticleFigures(document) {
         row.style.removeProperty('--article-verse-gap');
       }
     }
+    for (const { row, image, text, source } of contourRecords) {
+      const layout = image.complete && image.getAttribute('src') === source ? contourLayout({
+        ...measurements.get(row), fontSize: parseFloat(window.getComputedStyle(text).fontSize),
+        naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+        expectedWidth: Number(row.dataset.contourWidth), expectedHeight: Number(row.dataset.contourHeight),
+        textStart: Number(row.dataset.contourStart), wideScreen: media.matches, supportsShapes,
+      }) : null;
+      row.classList.toggle('article-contour-opening--active', Boolean(layout));
+      for (const name of ['height', 'offset', 'gap']) {
+        if (layout) row.style.setProperty(`--article-contour-${name}`, `${layout[name]}px`);
+        else row.style.removeProperty(`--article-contour-${name}`);
+      }
+    }
   };
   const schedule = () => {
     if (frame === null) frame = window.requestAnimationFrame(update);
   };
   // Both cached and delayed/lazy images work; an error or a new source removes old wrapping.
-  for (const { image } of [...records, ...verseRecords]) {
+  for (const { image } of [...records, ...verseRecords, ...contourRecords]) {
     image.addEventListener('load', schedule);
     image.addEventListener('error', schedule);
   }
   window.addEventListener('resize', schedule, { passive: true });
   media.addEventListener('change', schedule);
-  const widths = new WeakMap();
+  const sizes = new WeakMap();
   const observer = window.ResizeObserver ? new window.ResizeObserver(entries => {
     for (const entry of entries) {
-      if (widths.get(entry.target) !== entry.contentRect.width) {
-        widths.set(entry.target, entry.contentRect.width);
+      // A larger reading font can make a contour too tight without changing
+      // the column width. Ignore height-only changes caused by wrapping itself.
+      const size = `${entry.contentRect.width}:${window.getComputedStyle(entry.target).fontSize}`;
+      if (sizes.get(entry.target) !== size) {
+        sizes.set(entry.target, size);
         schedule();
       }
     }
   }) : null;
   for (const parent of containers) observer?.observe(parent);
+  for (const { text } of contourRecords) observer?.observe(text);
   document.fonts?.ready.then(schedule);
   const controller = { update };
   controllers.set(document, controller);

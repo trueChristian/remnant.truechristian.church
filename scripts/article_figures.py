@@ -10,8 +10,10 @@ from __future__ import annotations
 
 from collections import defaultdict
 from dataclasses import dataclass, field
+from html import unescape
 from html.parser import HTMLParser
 import json
+import math
 from pathlib import Path
 import re
 
@@ -101,6 +103,27 @@ def load_figure_rules(path):
                 bounds['width'] <= bounds['left'] + bounds['right'] or
                 bounds['height'] <= bounds['top'] + bounds['bottom']):
                 raise ValueError(f'Invalid transparent padding dimensions: {identity}')
+        contour = rule.get('opening_contour')
+        if 'opening_contour' in rule:
+            if not isinstance(contour, dict) or set(contour) != {'image', 'width', 'height', 'text_start', 'edges'}:
+                raise ValueError(f'Invalid opening contour rules: {identity}')
+            if isinstance(contour['image'], str) and contour['image'] in {'.', '..'}:
+                raise ValueError(f'Image layout rules require image basenames: {identity}')
+            width, height, start = (contour[key] for key in ('width', 'height', 'text_start'))
+            if (any(type(value) not in (int, float) or not math.isfinite(value)
+                    for value in (width, height, start)) or
+                    width <= 0 or height <= 0 or not 0 <= start < height):
+                raise ValueError(f'Invalid opening contour dimensions: {identity}')
+            edges = contour['edges']
+            if (not isinstance(edges, list) or len(edges) < 2 or
+                    any(not isinstance(row, list) or len(row) != 3 or
+                        any(type(value) not in (int, float) or not math.isfinite(value) for value in row) or
+                        not 0 <= row[0] <= height or not 0 <= row[1] <= width / 2 <= row[2] <= width
+                        for row in edges) or
+                    edges[0] != [0, width / 2, width / 2] or edges[-1] != [height, 0, width] or
+                    any(left[0] >= right[0] for left, right in zip(edges, edges[1:]))):
+                raise ValueError(f'Invalid opening contour edges: {identity}')
+            names.append(contour['image'])
         opening_order = rule.get('opening_order', [])
         if not isinstance(opening_order, list) or len(opening_order) == 1:
             raise ValueError(f'Invalid opening image order: {identity}')
@@ -109,6 +132,8 @@ def load_figure_rules(path):
             raise ValueError(f'Image layout rules require image basenames: {identity}')
         if len(opening_order) != len(set(opening_order)):
             raise ValueError(f'Repeated opening image: {identity}')
+        if contour and contour['image'] in opening_order:
+            raise ValueError(f'Conflicting opening contour order: {identity}')
         if len(names) != len(set(names)):
             raise ValueError(f'Conflicting or repeated image layout rules: {identity}')
         dimensions = rule.get('dimensions')
@@ -212,6 +237,49 @@ def _images(figure):
 
 def _names(figure):
     return [image.attrs.get('src', '').rsplit('/', 1)[-1] for image in _images(figure)]
+
+
+def _contour_paragraph(source, parsed, article, figure, contour):
+    """A reviewed contour contains only its original opening figure and prose."""
+    if (figure.parent is not article or len(article.children) < 2 or
+            article.children[0] is not figure or len(figure.children) != 1 or
+            figure.children[0].tag != 'img' or not figure.closing_start or
+            _verse_class(article)):
+        return None
+    image, paragraph = figure.children[0], article.children[1]
+    if (paragraph.tag != 'p' or not paragraph.closing_start or _verse_class(paragraph) or
+            any('hidden' in node.attrs for node in (figure, image, paragraph)) or
+            _names(figure) != [contour['image']]):
+        return None
+    if any(not _empty_gap(gap) for gap in (
+            source[article.opening_end:figure.start], source[figure.opening_end:image.start],
+            source[image.end:figure.closing_start], source[figure.end:paragraph.start])):
+        return None
+    article_images = [node for node in parsed.elements if node.tag == 'img' and article.start < node.start < article.end]
+    if sum(node.attrs.get('src', '').rsplit('/', 1)[-1] == contour['image'] for node in article_images) != 1:
+        return None
+    descendants = [node for node in parsed.elements if paragraph.start < node.start < paragraph.end]
+    if any(node.tag in {'br', 'img', 'picture', 'svg', 'figure', 'table', 'ul', 'ol',
+                        'blockquote', 'div', 'section', 'script', 'style'} or _verse_class(node)
+           for node in descendants):
+        return None
+    text = re.sub(r'<!--.*?-->|<[^>]*>', '', source[paragraph.opening_end:paragraph.closing_start], flags=re.S)
+    return paragraph if unescape(text).strip() else None
+
+
+def _contour_opening(contour):
+    """Keep physical alpha edges in each half-width float's coordinate system."""
+    width, height = contour['width'], contour['height']
+    left = [(0, 0), *((edge * 200 / width, y * 100 / height) for y, edge, _ in contour['edges'])]
+    right = [(100, 0), *(((edge * 2 / width - 1) * 100, y * 100 / height)
+                         for y, _, edge in contour['edges'])]
+    def polygon(points):
+        return 'polygon(' + ', '.join(f'{x:.8f}% {y:.8f}%' for x, y in points) + ')'
+
+    style = (f'--article-contour-max-width:{width:g}px;'
+             f'--article-contour-left:{polygon(left)};--article-contour-right:{polygon(right)}')
+    return (f'<div class="article-contour-opening" data-contour-width="{width:g}" '
+            f'data-contour-height="{height:g}" data-contour-start="{contour["text_start"]:g}" style="{style}">')
 
 
 def _order_reviewed_opening_figures(source, rules):
@@ -342,6 +410,16 @@ def arrange_article_figures(source, rules=None):
         mark(figure, 'article-figure')
         if figure.parent.tag == 'section':
             mark(figure.parent, 'article-figure-section')
+        contour = rule.get('opening_contour')
+        paragraph = _contour_paragraph(source, parsed, article, figure, contour) if contour else None
+        if paragraph:
+            insertions[figure.start].append(_contour_opening(contour))
+            insertions[paragraph.start].append(''.join(
+                f'<span class="article-contour-edge article-contour-edge--{side}" aria-hidden="true"></span>'
+                for side in ('left', 'right')))
+            insertions[paragraph.end].append('</div>')
+            mark(figure, 'article-figure--standalone')
+            continue
         # Only explicitly reviewed, single-image figures lose transparent canvas
         # padding. Keep the original img tag/bytes and caption outside the viewport.
         padding = rule.get('transparent_padding', {}).get(names[0]) if len(names) == 1 else None

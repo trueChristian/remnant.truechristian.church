@@ -12,6 +12,8 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 from article_figures import arrange_article_figures, FigureElements, load_figure_rules
 
 A = '00000000-0000-4000-9000-000000000001'
+CONTOUR = {'image': 'arch.jpg', 'width': 100, 'height': 40, 'text_start': 18,
+           'edges': [[0, 50, 50], [10, 50, 50], [20, 20, 80], [40, 0, 100]]}
 
 
 def image(name, extra=''):
@@ -238,6 +240,110 @@ class ArticleFigureTests(unittest.TestCase):
                 output = arrange_article_figures(source, rules)
                 self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
                 self.assertEqual(re.findall(r'<p>.*?</p>', output), re.findall(r'<p>.*?</p>', source))
+
+    def test_opening_contour_preserves_source_and_contains_only_the_first_paragraph(self):
+        rules = {A: {'opening_contour': CONTOUR}}
+        image_tag = image('arch', ' width="100" height="40" loading="lazy"')
+        paragraph = '<p class="lead">First &amp; faithful <em>words</em>, with <a href="#note">a reference</a>.</p>'
+        later = '<p>Second paragraph remains outside the contour.</p>'
+        gap = '\n<!-- original figure separator -->\n'
+        for direction in ('ltr', 'rtl'):
+            source = article('\n<!-- opening -->\n<figure class="original">' + image_tag +
+                             '</figure>' + gap + paragraph + '\n' + later + figure('other'),
+                             f' dir="{direction}"')
+            output = arrange_article_figures(source, rules)
+            nodes = FigureElements(output).elements
+            root = next(node for node in nodes if node.tag == 'article')
+            self.assertEqual([node.tag for node in root.children], ['div', 'p', 'figure'])
+            wrapper = root.children[0]
+            self.assertEqual(wrapper.attrs['class'], 'article-contour-opening')
+            self.assertEqual([wrapper.attrs[f'data-contour-{key}'] for key in ('width', 'height', 'start')],
+                             ['100', '40', '18'])
+            self.assertIn('--article-contour-max-width:100px;', wrapper.attrs['style'])
+            self.assertIn('40.00000000% 50.00000000%', wrapper.attrs['style'].split('--article-contour-right:')[0])
+            self.assertIn('60.00000000% 50.00000000%', wrapper.attrs['style'].split('--article-contour-right:')[1])
+            self.assertEqual([node.tag for node in wrapper.children], ['figure', 'span', 'span', 'p'])
+            self.assertIn('original', wrapper.children[0].attrs['class'].split())
+            self.assertIn('article-figure--standalone', wrapper.children[0].attrs['class'].split())
+            for edge, side in zip(wrapper.children[1:3], ('left', 'right')):
+                self.assertEqual(edge.attrs['class'], f'article-contour-edge article-contour-edge--{side}')
+                self.assertEqual(edge.attrs['aria-hidden'], 'true')
+                self.assertEqual(edge.opening_end, edge.closing_start)
+            self.assertEqual(output[wrapper.children[-1].start:wrapper.children[-1].end], paragraph)
+            self.assertEqual(output[root.children[1].start:root.children[1].end], later)
+            self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
+            self.assertIn(gap, output)
+            self.assertEqual(arrange_article_figures(output, rules), output)
+            self.assertNotIn('article-contour-opening', arrange_article_figures(source))
+
+    def test_opening_contour_declines_changed_ambiguous_or_nonprose_content(self):
+        rules = {A: {'opening_contour': CONTOUR}}
+        opening, paragraph = figure('arch'), '<p>Opening &amp; prose.</p>'
+        cases = {
+            'different image': figure('other') + paragraph,
+            'repeated image later': opening + paragraph + figure('arch'),
+            'caption': figure('arch', '<figcaption>Original caption.</figcaption>') + paragraph,
+            'loose figure text': figure('arch', 'Visible source explanation.') + paragraph,
+            'two images in figure': '<figure>' + image('arch') + image('other') + '</figure>' + paragraph,
+            'linked image': '<figure><a href="#image">' + image('arch') + '</a></figure>' + paragraph,
+            'second leading figure': opening + figure('other') + paragraph,
+            'preceding heading': '<h2>Source heading</h2>' + opening + paragraph,
+            'intervening heading': opening + '<h2>Source heading</h2>' + paragraph,
+            'preceding loose text': 'Source introduction.' + opening + paragraph,
+            'intervening loose text': opening + 'Original visible text.' + paragraph,
+            'nested figure': '<section>' + opening + paragraph + '</section>',
+            'empty paragraph': opening + '<p><!-- source comment --><em>&nbsp;</em></p>',
+            'poem': opening + '<p class="poem">Opening verse.</p>',
+            'lyrics': opening + '<p class="lyrics">Opening lyrics.</p>',
+            'nested line break': opening + '<p>Opening <em>line<br>second line.</em></p>',
+            'inline image': opening + '<p>Opening ' + image('other') + ' prose.</p>',
+            'hidden paragraph': opening + '<p hidden>Opening prose.</p>',
+            'hidden figure': figure('arch', extra=' hidden') + paragraph,
+        }
+        for label, content in cases.items():
+            with self.subTest(label=label):
+                source = article(content)
+                output = arrange_article_figures(source, rules)
+                self.assertNotIn('article-contour-opening', output)
+                self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
+                self.assertEqual(re.findall(r'<p\b[^>]*>.*?</p>', output, re.S),
+                                 re.findall(r'<p\b[^>]*>.*?</p>', source, re.S))
+        self.assertNotIn('article-contour-opening', arrange_article_figures(
+            article(opening + paragraph, ' class="poem"'), rules))
+
+    def test_opening_contour_rules_reject_invalid_geometry_paths_and_conflicts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'layouts.json'
+            valid = {'opening_contour': CONTOUR, 'standalone': ['other.jpg']}
+            path.write_text(json.dumps({'version': 1, 'articles': {A: valid}}))
+            self.assertEqual(load_figure_rules(path), {A: valid})
+            invalid = [None, [], {}, CONTOUR | {'extra': 1}]
+            invalid.extend(CONTOUR | {key: value} for key, values in {
+                'image': ['', '.', '..', '../arch.jpg', 'folder\\arch.jpg', 42],
+                'width': [0, -1, True, float('inf'), float('nan'), '100'],
+                'height': [0, float('-inf')], 'text_start': [-1, 40, True, float('nan')],
+                'edges': [None, {}, [], [[0, 50, 50]], [[0, 50], [40, 0, 100]],
+                          [[0, 50, 50], [20, -1, 80], [40, 0, 100]],
+                          [[0, 50, 50], [20, 51, 80], [40, 0, 100]],
+                          [[0, 50, 50], [20, 20, 49], [40, 0, 100]],
+                          [[0, 50, 50], [20, 20, 101], [40, 0, 100]],
+                          [[0, 50, 50], [40, 0, 100], [20, 20, 80]],
+                          [[0, 50, 50], [0, 20, 80], [40, 0, 100]],
+                          [[1, 50, 50], [40, 0, 100]], [[0, 49, 50], [40, 0, 100]],
+                          [[0, 50, 50], [40, 1, 100]], [[0, 50, 50], [41, 0, 100]],
+                          [[0, 50, 50], [20, float('nan'), 80], [40, 0, 100]]],
+            }.items() for value in values)
+            rules = [{'opening_contour': contour} for contour in invalid]
+            bounds = dict(width=100, height=40, top=0, right=0, bottom=0, left=0)
+            rules.extend({'opening_contour': CONTOUR, **conflict} for conflict in [
+                {'standalone': ['arch.jpg']}, {'wrap': ['arch.jpg']},
+                {'paired': [['arch.jpg', 'other.jpg']]}, {'transparent_padding': {'arch.jpg': bounds}},
+                {'opening_order': ['arch.jpg', 'other.jpg']},
+            ])
+            for rule in rules:
+                path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+                with self.subTest(rule=rule), self.assertRaises(ValueError):
+                    load_figure_rules(path)
 
     def test_standalone_sheets_and_repeated_decorations_are_not_gallery_items(self):
         rules = {A: {'standalone': ['sheet.jpg', 'divider.jpg']}}
