@@ -180299,11 +180299,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "церковь",
+        "alias": "история-трёх-мужчин",
+        "history": [
+          "/ru/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -214147,11 +214148,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "基督徒生活",
+        "alias": "他要将自己的百姓从罪恶中拯救出来",
+        "history": [
+          "/zh-Hans/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",

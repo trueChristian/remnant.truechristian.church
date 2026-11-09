@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "bb0bbc1b68dfd431cbab448fc7d1927a77a96dd82207a3ca2951580831e348fd",
+  "integrity": "f9c0a62723c46f7ec96a07a891642e85c4ba06fcae980438adc7a9f5dd18102f",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -754,6 +754,159 @@
         }
       ],
       "record_hash": "b896286c689c78c405d9107bd5910b117c31b6ab81756482f547dc81ff05613a"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:zh-Hans:b3954b8a4e27b57fcfed32a6072915f6159bbddd0eaca2c28c532871ad5d225a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "zh-Hans",
+      "content_hash": "b3954b8a4e27b57fcfed32a6072915f6159bbddd0eaca2c28c532871ad5d225a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "75c391d9caa3360312a302be",
+          "quote": "马太福音 1:21",
+          "before": "“她将要生一个儿子，你要给他起名叫耶稣，因为他要将自己的百姓从罪恶中拯救出来”（",
+          "after": "）。",
+          "spans": [
+            [
+              246,
+              255
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "b3893b1d3a5f63567fe27691",
+          "quote": "约翰福音 3:18-21",
+          "before": "许多法利赛人不愿承认自己处于罪中。",
+          "after": " 中有几节经文，帮助我们明白这道障碍。“世人因自己的行为是恶的，不爱光倒爱黑暗。",
+          "spans": [
+            [
+              659,
+              671
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "f1cc2d7d094458461a3157c5",
+          "quote": "约翰福音 3:19-21",
+          "before": "不来就光，恐怕他的行为受责备；但行真理的必来就光，要显明他所行的是靠着神而行”（",
+          "after": "）。",
+          "spans": [
+            [
+              760,
+              772
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "e8944fddc3df708eeea96f19",
+          "quote": "路加福音 7:29-30",
+          "before": "的洗，就以神为义；但法利赛人和律法师没有受过约翰的洗，竟为自己废弃了神的旨意”（",
+          "after": "）。",
+          "spans": [
+            [
+              1012,
+              1024
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "cf3a65db062c95004075b95a",
+          "quote": "提摩太前书 5:24-25",
+          "before": "有些人的罪却随后跟着。照样，有些人的善行显而易见；那些并非如此的，也不能隐藏”（",
+          "after": "）。",
+          "spans": [
+            [
+              1189,
+              1202
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "a7b495dab4eb29c4d8b1f40c",
+          "quote": "约翰福音 8:11",
+          "before": "“耶稣对她说：‘我也不定你的罪。去吧，从此不要再犯罪了！’”（",
+          "after": "）。",
+          "spans": [
+            [
+              1376,
+              1385
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "7f6250e65fba837a01329304",
+          "quote": "马可福音 10:21",
+          "before": "“去变卖你所有的，分给穷人，就必有财宝在天上；还要来，背起十字架跟从我”（",
+          "after": "）。",
+          "spans": [
+            [
+              1438,
+              1448
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "c830abdf230b3e5082861813",
+          "quote": "路加福音 22:32",
+          "before": "“你回头以后，要坚固你的弟兄”（",
+          "after": "）。",
+          "spans": [
+            [
+              1480,
+              1490
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "a7efb1ce6e92d55e5c092f9b",
+          "quote": "路加福音 9:23-24",
+          "before": "来跟从我。因为凡要救自己生命的，必丧掉生命；凡为我丧掉生命的，必救了生命。’”（",
+          "after": "）。",
+          "spans": [
+            [
+              1578,
+              1590
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        }
+      ],
+      "record_hash": "29b50225ed0df37dd2f4b8062421699022459c0109010026378443f9139bcbb5"
     },
     "01d6d043-59d2-4042-a6e9-8c4abf368212:en:4132f5fdbeb38cd2f841d4f52c22ee0467ac7c199a48f6d7c9d2e819f6e0468f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01d6d043-59d2-4042-a6e9-8c4abf368212",
@@ -329826,6 +329979,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "b39d2096c2e693c5793acc3a813aab813c4b1b9397c531759e4d14beef88a006"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:ru:4cc9d1746da0801cf7e2a5431c3600695db11efbc6b3154548be446da17726b7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "ru",
+      "content_hash": "4cc9d1746da0801cf7e2a5431c3600695db11efbc6b3154548be446da17726b7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "39a769374651b91c2d226c3f969d07f4f459a14cffd113114412a69870d1d164"
     },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:sv:2ab02b555648cf1d908f47c893478816250991d5abd47a45e1436c19e0eb5da9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
