@@ -51184,11 +51184,12 @@
       },
       "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "understanding-submission",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "γυναίκα",
+        "alias": "κατανόηση-τησ-υποταγήσ",
+        "history": [
+          "/el/articles/understanding-submission/"
+        ],
+        "fallback": false
       },
       "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -87150,11 +87151,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vie-chrétienne",
+        "alias": "jésus-christ-la-réponse-à-une-humanité-brisée",
+        "history": [
+          "/fr/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -106923,11 +106925,12 @@
       },
       "3b932103-b3fb-450d-885a-eaca95ee48fe": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "from-childhood-to-adulthood",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "बच्चों-का-पालन-पोषण",
+        "alias": "बचपन-से-वयस्कता-तक",
+        "history": [
+          "/hi/articles/from-childhood-to-adulthood/"
+        ],
+        "fallback": false
       },
       "3be24d0c-4c97-452e-b3c3-177e16d990ff": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -116926,11 +116929,12 @@
       },
       "3b932103-b3fb-450d-885a-eaca95ee48fe": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "from-childhood-to-adulthood",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "pengasuhan-anak",
+        "alias": "dari-masa-kanak-kanak-menuju-kedewasaan",
+        "history": [
+          "/id/articles/from-childhood-to-adulthood/"
+        ],
+        "fallback": false
       },
       "3be24d0c-4c97-452e-b3c3-177e16d990ff": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -165124,11 +165128,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristã",
+        "alias": "ele-salvará-o-seu-povo-dos-seus-pecados",
+        "history": [
+          "/pt/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -189535,11 +189540,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "andlig-övning",
+        "alias": "tro-och-förnuft",
+        "history": [
+          "/sv/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",

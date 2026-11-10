@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "4a757c310147d683f881e877c94dee715585e881d8bd732d46ab5bb07c2ba2bf",
+  "integrity": "24896d529f538d748ea1298528086bc77d7539733051e591fc0dc55d0a5a6a44",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -1624,6 +1624,175 @@
         }
       ],
       "record_hash": "58ef7612f4f2da3988cc83f70a5074db78caa07df84604ec5ff9f1ac3a000892"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:pt:2fa3d37a4295447dc10c84bd2788d3a7cb78731a9f9b3a0072f3188ea2b39819:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "pt",
+      "content_hash": "2fa3d37a4295447dc10c84bd2788d3a7cb78731a9f9b3a0072f3188ea2b39819",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f1fd261dbcbf76a4dbcedf69",
+          "quote": "Mateus 1:21",
+          "before": "e salvará o seu povo dos seus pecados” (",
+          "after": ").",
+          "spans": [
+            [
+              355,
+              366
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "5defa5ca976850c8094755fe",
+          "quote": "João 3:18-21",
+          "before": "do pecaminoso. Eis alguns versículos de ",
+          "after": " que nos ajudam a compreender esse obstá",
+          "spans": [
+            [
+              1533,
+              1545
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "74d0d5f19ab8263f33e667d3",
+          "quote": "João 3:19-21",
+          "before": "ste que suas obras são feitas em Deus” (",
+          "after": ").",
+          "spans": [
+            [
+              1884,
+              1896
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "099eb0dcb7f61d2034c4371c",
+          "quote": "Lucas 7:29-30",
+          "before": "mos, não tendo sido batizados por ele” (",
+          "after": ").",
+          "spans": [
+            [
+              2731,
+              2744
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "7d8a9dda583747d0b0cf22bf",
+          "quote": "1 Timóteo 5:24-25",
+          "before": "ão o são não podem permanecer ocultas” (",
+          "after": ").",
+          "spans": [
+            [
+              3252,
+              3269
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "87c2fe8b80f297099216e293",
+          "quote": "João 8:11",
+          "before": " eu te condeno; vai e não peques mais” (",
+          "after": ").",
+          "spans": [
+            [
+              3645,
+              3654
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "7e4d958b08bd5b7023d67169",
+          "quote": "Marcos 10:21",
+          "before": "u; depois vem, toma a cruz e segue-me” (",
+          "after": ").",
+          "spans": [
+            [
+              3780,
+              3792
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "772ce25bad630232c45956c0",
+          "quote": "Lucas 22:32",
+          "before": "converteres, fortalece os teus irmãos” (",
+          "after": ").",
+          "spans": [
+            [
+              3859,
+              3870
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "fe6cd3d779914d63629f40c0",
+          "quote": "Lucas 9:23-24",
+          "before": " vida por minha causa, esse a salvará” (",
+          "after": ").",
+          "spans": [
+            [
+              4100,
+              4113
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "1d8865bd235e5f71d6bb7da9",
+          "quote": "Marcos 6:16-28",
+          "before": "erdoado e continuar com Herodias? (Leia ",
+          "after": ".) Ele precisava ser tão confrontador e,",
+          "spans": [
+            [
+              4724,
+              4738
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "9c91666f01ea4710572d4ec4373421410f423ddae76d030a983ba3a100e5f714"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:sv:125c6a3b68756f249895c4134db25e64758271524a6dc0b5880b3c8c29388681:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -55625,6 +55794,160 @@
       ],
       "record_hash": "ddd1af9fe43df2efe79974b9bead4cdbe8c6c789be3243202e87eced4d469fc0"
     },
+    "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:el:614c57589cf9e48c4e52dbb8503305e7b00f34a6a664ee065a609b97f104aeeb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
+      "locale": "el",
+      "content_hash": "614c57589cf9e48c4e52dbb8503305e7b00f34a6a664ee065a609b97f104aeeb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4cb46b25aedb0c81708094c6",
+          "quote": "Εφεσίους 5:33",
+          "before": " … η γυναίκα να σέβεται τον σύζυγό της –",
+          "after": ".",
+          "spans": [
+            [
+              1669,
+              1682
+            ]
+          ],
+          "osis": "Eph.5.33",
+          "queries": [
+            "49 5:33"
+          ]
+        },
+        {
+          "id": "fbeaa93dbbe26aa6eba3c959",
+          "quote": "Α΄ Πέτρου 3:1",
+          "before": "α υποτάσσεστε στους δικούς σας άνδρες… –",
+          "after": ".",
+          "spans": [
+            [
+              1782,
+              1795
+            ]
+          ],
+          "osis": "1Pet.3.1",
+          "queries": [
+            "60 3:1"
+          ]
+        },
+        {
+          "id": "236eafa522e28ddd9703bda4",
+          "quote": "Α΄ Πέτρου 3:6",
+          "before": " τον κύριό της· δικές της κόρες είστε… –",
+          "after": ".",
+          "spans": [
+            [
+              1941,
+              1954
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "43b2ef4b28538147f87d3ec5",
+          "quote": "Εφεσίους 5:22",
+          "before": "ους δικούς σας άνδρες, όπως στον Κύριο –",
+          "after": ".",
+          "spans": [
+            [
+              2062,
+              2075
+            ]
+          ],
+          "osis": "Eph.5.22",
+          "queries": [
+            "49 5:22"
+          ]
+        },
+        {
+          "id": "ec32798f99772773b7467ef5",
+          "quote": "Α΄ Κορινθίους 11:3",
+          "before": " και η κεφαλή του Χριστού είναι ο Θεός –",
+          "after": ".",
+          "spans": [
+            [
+              2258,
+              2276
+            ]
+          ],
+          "osis": "1Cor.11.3",
+          "queries": [
+            "46 11:3"
+          ]
+        },
+        {
+          "id": "a3a8e4c357932f67282a0e61",
+          "quote": "Εφεσίους 5:24",
+          "before": "μένες] στους δικούς τους άνδρες σε όλα –",
+          "after": ".",
+          "spans": [
+            [
+              2789,
+              2802
+            ]
+          ],
+          "osis": "Eph.5.24",
+          "queries": [
+            "49 5:24"
+          ]
+        },
+        {
+          "id": "dab0762bda869b11d35f5b87",
+          "quote": "Α΄ Κορινθίους 14:34",
+          "before": "τολή να υπακούν, όπως λέει και ο νόμος –",
+          "after": ".",
+          "spans": [
+            [
+              2986,
+              3005
+            ]
+          ],
+          "osis": "1Cor.14.34",
+          "queries": [
+            "46 14:34"
+          ]
+        },
+        {
+          "id": "2f217587112c10f8e46b58d5",
+          "quote": "Γένεση 2:18",
+          "before": ", αρμόζοντα, συμπληρωματικό] γι’ αυτόν –",
+          "after": ".",
+          "spans": [
+            [
+              7562,
+              7573
+            ]
+          ],
+          "osis": "Gen.2.18",
+          "queries": [
+            "1 2:18"
+          ]
+        },
+        {
+          "id": "23030b17a19028029c09d8ff",
+          "quote": "Α΄ Πέτρου 3:1-2 & 3:6-7",
+          "before": "ε να μην εμποδίζονται οι προσευχές σας –",
+          "after": ".",
+          "spans": [
+            [
+              10150,
+              10177
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2,1Pet.3.6-1Pet.3.7",
+          "queries": [
+            "60 3:1-2",
+            "60 3:6-7"
+          ]
+        }
+      ],
+      "record_hash": "a4011bafdc65f2bd1c82164e1127bc569edd2388797ac5c5c25ac3b60c012b64"
+    },
     "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:en:cb454709b43c920f54450d1d1216938b14114e2bf64cc2849127de8b07c528fc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
       "locale": "en",
@@ -95863,6 +96186,400 @@
       ],
       "record_hash": "9dcec38cdbc7faf9740b44d8c4c79d2a6b99edb8b55675e467110c4043a50fc3"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:fr:8b6d23a7be4fc3e82fa14f386c6f8f00af094edbcac852d232d004614124886a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "fr",
+      "content_hash": "8b6d23a7be4fc3e82fa14f386c6f8f00af094edbcac852d232d004614124886a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "260d4bb8048018e7e2c98ee9",
+          "quote": "Genèse 3",
+          "before": ". La première trace écrite se trouve en ",
+          "after": ". « Il répondit : J’ai entendu ta voix d",
+          "spans": [
+            [
+              1972,
+              1980
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "fe4d2dba17bd637fa4d78373",
+          "quote": "Genèse 3:10",
+          "before": "car j’étais nu ; et je me suis caché » (",
+          "after": "). Adam avait peur. De quoi avait-il peu",
+          "spans": [
+            [
+              2092,
+              2103
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "f7ef921ee72b6af4ef3d0105",
+          "quote": "Genèse 4:5",
+          "before": "rès irrité, et son visage fut abattu » (",
+          "after": "). Vous avez peut-être été l’un de ces e",
+          "spans": [
+            [
+              4213,
+              4223
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "806680a0598551b45681f591",
+          "quote": "Genèse 1",
+          "before": "tions aux difficultés émotionnelles. En ",
+          "after": ", Dieu a créé les herbes vertes et les a",
+          "spans": [
+            [
+              6437,
+              6445
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "6ab8650550a5a245e15aef98",
+          "quote": "Jean 3:3",
+          "before": ", il ne peut voir le royaume des cieux (",
+          "after": "). Beaucoup de gens parcourent le monde ",
+          "spans": [
+            [
+              7033,
+              7041
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "2fb2384d406033b14d2e3ae4",
+          "quote": "Jean 3:7",
+          "before": "Il faut que vous naissiez de nouveau » (",
+          "after": ") ? Parfois, nous rendons le message de ",
+          "spans": [
+            [
+              7559,
+              7567
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "7c4be22cb4d022bf4a343078",
+          "quote": "2 Corinthiens 11:2-3",
+          "before": "t de la simplicité qui est en Christ » (",
+          "after": "). La Bonne Nouvelle du salut est simple",
+          "spans": [
+            [
+              8032,
+              8052
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "9d5ef3a2d8de3c5cb55078b1",
+          "quote": "Matthieu 3:6",
+          "before": "Jourdain, en confessant leurs péchés » (",
+          "after": "). La première étape du salut consiste à",
+          "spans": [
+            [
+              8402,
+              8414
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "289ece050993580fb236ae40",
+          "quote": "Jacques 5:16",
+          "before": "nte du juste a une grande efficacité » (",
+          "after": "). Demandez l’aide d’un ministre ou d’un",
+          "spans": [
+            [
+              9225,
+              9237
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "1f8f70cd7cfe954f93444e89",
+          "quote": "Actes 3:19",
+          "before": "ment viennent de la part du Seigneur » (",
+          "after": "). « Repens-toi donc de ta méchanceté, e",
+          "spans": [
+            [
+              10016,
+              10026
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "1c47aa06518906c93c9ac138",
+          "quote": "Actes 8:22",
+          "before": "ton cœur te soit peut-être pardonnée » (",
+          "after": "). En vous repentant de vos péchés, vous",
+          "spans": [
+            [
+              10147,
+              10157
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "17f59d8e772ba1720570cd4b",
+          "quote": "Romains 10:13",
+          "before": "oquera le nom du Seigneur sera sauvé » (",
+          "after": "). Maintenant que vous avez confessé vos",
+          "spans": [
+            [
+              10411,
+              10424
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "03c68e110affc7898756595b",
+          "quote": "Actes 2:21",
+          "before": "oquera le nom du Seigneur sera sauvé » (",
+          "after": "). « Vous savez que ce n’est pas par des",
+          "spans": [
+            [
+              10803,
+              10813
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "f0630397516f6bd457db4ada",
+          "quote": "1 Pierre 1:18-19",
+          "before": "’un agneau sans défaut et sans tache » (",
+          "after": "). « Je répandrai sur vous une eau pure,",
+          "spans": [
+            [
+              11079,
+              11095
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "e2ac121b7df648625680ad2b",
+          "quote": "Ézéchiel 36:25-28",
+          "before": "z mon peuple, et je serai votre Dieu » (",
+          "after": ").",
+          "spans": [
+            [
+              11619,
+              11636
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "3f65b0f5454f1a7110a73115",
+          "quote": "Actes 16:30-31",
+          "before": "u Seigneur Jésus, et tu seras sauvé… » (",
+          "after": "). Vous avez confessé vos péchés et vous",
+          "spans": [
+            [
+              11898,
+              11912
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "2e4296d600086cf386b2b1c7",
+          "quote": "Romains 10:9",
+          "before": "ressuscité des morts, tu seras sauvé » (",
+          "after": "). « Car Dieu a tant aimé le monde qu’il",
+          "spans": [
+            [
+              12255,
+              12267
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "4ae7d734ebc31cc102e73610",
+          "quote": "Jean 3:16",
+          "before": "pas, mais qu’il ait la vie éternelle » (",
+          "after": "). Remerciez le Seigneur d’avoir ôté vos",
+          "spans": [
+            [
+              12416,
+              12425
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "59d766ff9d566ec5795389e2",
+          "quote": "1 Pierre 3:21",
+          "before": " par la résurrection de Jésus-Christ » (",
+          "after": "). Vous aussi, vous pouvez être cette pe",
+          "spans": [
+            [
+              13168,
+              13181
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "5d104597636cd7ccab0dbe78",
+          "quote": "Éphésiens 4:21-23",
+          "before": " dans l’esprit de votre intelligence » (",
+          "after": "). C’est un sujet important, et il serai",
+          "spans": [
+            [
+              14130,
+              14147
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "f5ff1a27a223798c474c04bd",
+          "quote": "Matthieu 7:13-14",
+          "before": "e, et il y en a peu qui les trouvent » (",
+          "after": ").",
+          "spans": [
+            [
+              14970,
+              14986
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "2008ddc17df36a13da95bb2b",
+          "quote": "Luc 9:23",
+          "before": " jour de sa croix, et qu’il me suive » (",
+          "after": "). Nous devons chaque jour crucifier les",
+          "spans": [
+            [
+              15638,
+              15646
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "e1028173e816dc80858bb99c",
+          "quote": "1 Jean 1:7,9",
+          "before": "our nous purifier de toute iniquité. » (",
+          "after": ").",
+          "spans": [
+            [
+              16334,
+              16346
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "a7cd39d2e8e841120ab48fc1",
+          "quote": "2 Corinthiens 9:15",
+          "before": "dues à Dieu pour son don ineffable ! » (",
+          "after": "). Le don gratuit du salut vous est offe",
+          "spans": [
+            [
+              17089,
+              17107
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "6e95f4a27d6e4f245130f05a06283d3f61e42621692376d68d6736424f9d3aac"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:hi:88918c28dd80735403ed9a91d6dd7be8b066d8d17461bd77f0f1d55a8dcf6329:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "hi",
@@ -118097,6 +118814,216 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "1b397d02b962824925c504cb042d2eba44eeca405f3e364d6bec9bc91c593068"
+    },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:hi:1404c7da7e730921fab615be909de5754ee27355d438f41d1373eeec4c898822:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "hi",
+      "content_hash": "1404c7da7e730921fab615be909de5754ee27355d438f41d1373eeec4c898822",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "415a9f0b99ae1c6b9c70494f",
+          "quote": "भजन संहिता 144:12",
+          "before": "ं तराशे हुए कोने के पत्थरों के समान हों—",
+          "after": "।",
+          "spans": [
+            [
+              390,
+              407
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "0b64a020ea2f30af16c54e12",
+          "quote": "लूका 2:47",
+          "before": "उनकी समझ और उत्तरों से चकित हुए। (देखें ",
+          "after": ") यीशु ने बारह वर्ष की आयु में अद्भुत पर",
+          "spans": [
+            [
+              1616,
+              1625
+            ]
+          ],
+          "osis": "Luke.2.47",
+          "queries": [
+            "42 2:47"
+          ]
+        },
+        {
+          "id": "559853d075ecce9369797153",
+          "quote": "लूका 2:51",
+          "before": "या, और नासरत में आया, और उनके अधीन रहा…—",
+          "after": "। हम कुछ ऐसी बातों पर विचार करेंगे जो मा",
+          "spans": [
+            [
+              2603,
+              2612
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "48009426e3aa94d1f3b00187",
+          "quote": "भजन संहिता 144:15",
+          "before": "धन्य है वह जाति जिसका परमेश्वर यहोवा है—",
+          "after": "।",
+          "spans": [
+            [
+              2910,
+              2927
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "6081fbbd48f82732d716f0da",
+          "quote": "भजन संहिता 127:4",
+          "before": "ें तीर, वैसे ही जवानी के लड़के होते हैं—",
+          "after": "। यह वचन हमें याद दिलाता है कि हमारे बच्",
+          "spans": [
+            [
+              14109,
+              14125
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "3d4a32d009e707a527972da7",
+          "quote": "भजन संहिता 127:5",
+          "before": "े, वरन् फाटक पर शत्रुओं से बातें करेंगे—",
+          "after": "।",
+          "spans": [
+            [
+              14600,
+              14616
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "39fd1458f7c1b271485c3bd118d093834a57e4b89109a1091a30e60566fa534c"
+    },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:id:a3f4a685b74847f603064276f7b677022869fea94d6c2f3265a88c1599a71e82:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "id",
+      "content_hash": "a3f4a685b74847f603064276f7b677022869fea94d6c2f3265a88c1599a71e82",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a23859442654ab744bac6a5b",
+          "quote": "Mazmur 144:12",
+          "before": "enjuru, yang dipahat menyerupai istana –",
+          "after": ".",
+          "spans": [
+            [
+              429,
+              442
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "c97523492092f2640f0330de",
+          "quote": "Lukas 2:47",
+          "before": "akan pengertian dan jawaban-Nya. (lihat ",
+          "after": ") Yesus menunjukkan tingkat kematangan y",
+          "spans": [
+            [
+              1753,
+              1763
+            ]
+          ],
+          "osis": "Luke.2.47",
+          "queries": [
+            "42 2:47"
+          ]
+        },
+        {
+          "id": "34bc8206e059c050d54f5ba8",
+          "quote": "Lukas 2:51",
+          "before": " ke Nazaret, dan tunduk kepada mereka… –",
+          "after": ". Kita akan melihat beberapa hal yang da",
+          "spans": [
+            [
+              2907,
+              2917
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "4859ce8166535f8a80ae15f3",
+          "quote": "Mazmur 144:15",
+          "before": "alah bangsa yang Allahnya ialah TUHAN! –",
+          "after": ".",
+          "spans": [
+            [
+              3274,
+              3287
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "1af3862aa6e1a9a32ea0fb9b",
+          "quote": "Mazmur 127:4",
+          "before": ", demikianlah anak-anak pada masa muda –",
+          "after": ". Ayat ini mengingatkan kita bahwa anak-",
+          "spans": [
+            [
+              15777,
+              15789
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "0d6801edf27b23a6ca284be5",
+          "quote": "Mazmur 127:5",
+          "before": "dengan musuh-musuhnya di pintu gerbang –",
+          "after": ".",
+          "spans": [
+            [
+              16410,
+              16422
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "150e41d521ed7aff2dba82a66a5c3a2ca7ef9f45f8e750ae2700fa157d43fc75"
     },
     "3b932103-b3fb-450d-885a-eaca95ee48fe:it:15ac001af0e552d0368015573381ffd3648053cff63f02af6dfe41aefd286b89:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
@@ -300539,6 +301466,95 @@
         }
       ],
       "record_hash": "116312353ae62067ab01b9a5866e250a4a1f147eb110ffbb9b49139755be209a"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:sv:aa65fae77f3b2558ff516e12504e4ed60be6596b5c5ca5e12f3b3dd7da7ddd1c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "sv",
+      "content_hash": "aa65fae77f3b2558ff516e12504e4ed60be6596b5c5ca5e12f3b3dd7da7ddd1c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "40a69a1b52fe198695b75af8",
+          "quote": "Hebreerbrevet 11:1",
+          "before": "",
+          "after": " bekräftar att tron är ”en övertygelse o",
+          "spans": [
+            [
+              1220,
+              1238
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "9e5de0c07ccd949b25f50e6f",
+          "quote": "Lukas 1:1-4",
+          "before": "g den undervisning är som du har fått. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              2998,
+              3009
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "38b10c363f44b4727fe9b707",
+          "quote": "Romarbrevet 1:18-20",
+          "before": "ats, så att människorna är utan ursäkt –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3619,
+              3638
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "566ada59788dc6cb6734a8bd",
+          "quote": "Johannes 20:29",
+          "before": "är de som inte har sett och ändå tror. –",
+          "after": ". (ESV) Utifrån detta är det frestande a",
+          "spans": [
+            [
+              4781,
+              4795
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "4e6cbeb228cb90a5005d3562",
+          "quote": "Matteus 16:21",
+          "before": " tydligt sagt att han skulle uppstå (se ",
+          "after": "). För det tredje hade Jesus redan bevis",
+          "spans": [
+            [
+              5225,
+              5238
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "ac6f0968c9effc3cfcc54b30cafe8a94f59d044ceb10e93d3d0e06cbc20758c6"
     },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:sw:40d4cda8365ab3d485fff218a5b83efb271b2a0832cb7cd648243dabbc312dc8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
