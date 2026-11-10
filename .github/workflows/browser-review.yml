@@ -1,0 +1,79 @@
+name: Review complete browser suite
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  actions: read
+  deployments: read
+
+concurrency:
+  group: remnant-browser-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  browser:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out the proposed pull-request revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Validate the review event
+        run: python3 scripts/validate_event.py
+      - name: Verify installed runtimes
+        run: |
+          python3 -c 'import sys; assert sys.version_info >= (3, 11), sys.version'
+          node -e 'if (Number(process.versions.node.split(".")[0]) < 20) process.exit(1)'
+      - name: Install pinned build and browser tooling
+        run: npm ci
+      - name: Read the verified successful publication for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/publication_state.py fetch --output .build/published
+      - name: Select current source revisions once for this review
+        id: poll
+        run: python3 scripts/poll_sources.py --review --published-deployment .build/published/deployment.json
+      - name: Export exactly the selected source revisions
+        env:
+          SOURCE_SELECTION: ${{ steps.poll.outputs.selection }}
+        run: python3 scripts/prepare_sources.py --selection "$SOURCE_SELECTION"
+      - name: Stop if source health or published inventory regressed
+        run: python3 scripts/check_sources.py --published-deployment .build/published/deployment.json
+      - name: Reuse the published Scripture scan ledger
+        run: cp .build/published/scripture/manifest.json .build/scripture-manifest.json
+      - name: Restore durable published route aliases
+        run: python3 scripts/route_registry.py --published .build/published/routes.json
+      - name: Build the complete proposed site
+        run: python3 scripts/build.py --english .build/english --translations .build/translations --theme .build/theme --languages .build/languages.json --registry .build/routes.json --output dist
+      - name: Validate generated links and public-output contract
+        run: python3 scripts/check_site.py dist --registry .build/routes.json
+      - name: Install browser test tooling
+        run: npx playwright install --with-deps chromium
+      - name: Run the complete existing browser suite
+        run: npm run test:browser
+      - name: Retain browser results and selected-source build evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: remnant-pr-browser-review-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            .test-output/
+            .build/event-report.json
+            .build/poll-report.json
+            .build/source-report.json
+            .build/site-build-report.json
+            .build/route-registry-report.json
+            .build/scripture-report.json
+            .build/published/receipt.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 14

@@ -93,34 +93,74 @@ test('mobile stacks, desktop restores, and narrow desktop columns stay readable'
   await expect(figures.first()).toHaveClass(/article-figure--start/);
 });
 
-test('Courtship Series opening heading and list flow beside the portrait', async ({ page }) => {
+test('Courtship Series keeps its large illustration above the heading and list', async ({ page }, testInfo) => {
+  const source = fs.readFileSync(`dist${courtshipSeries}index.html`, 'utf8');
   await page.goto(courtshipSeries);
-  const figures = page.locator('.prose article > figure');
-  const portrait = figures.first();
-  await portrait.scrollIntoViewIfNeeded();
-  await expect(portrait).toHaveClass(/article-figure--start/);
-  const heading = portrait.locator('xpath=following-sibling::*[1]');
-  await expect(heading).toHaveText('Young men');
-  await expect(heading).toHaveClass(/article-figure-heading/);
-  const box = await rect(portrait);
-  for (const content of [heading, portrait.locator('xpath=following-sibling::p[1]'),
-    portrait.locator('xpath=following-sibling::ol[1]')]) {
-    const text = await firstTextRect(content);
-    expect(text.top).toBeLessThan(box.bottom);
-    expect(text.left).toBeGreaterThanOrEqual(box.right + 20);
+  const illustration = page.locator('.prose article > figure').first();
+  for (const width of [1440, 390, 320]) {
+    await page.setViewportSize({ width, height: 1000 });
+    await illustration.scrollIntoViewIfNeeded();
+    await expect.poll(() => illustration.locator('img').evaluate(image =>
+      image.complete && image.naturalWidth > 0 && image.naturalHeight > 0)).toBe(true);
+    // Let the load/resize enhancement run before checking its stacked fallback.
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    await expect(illustration).not.toHaveClass(/article-figure--(?:wrap|start|end)/);
+    const layout = await page.evaluate(html => {
+      const article = document.querySelector('.prose article');
+      const original = new DOMParser().parseFromString(html, 'text/html').querySelector('.prose article');
+      const figure = article.querySelector(':scope > figure');
+      const image = figure.querySelector('img');
+      const box = node => {
+        const { top, right, bottom, left, width, height } = node.getBoundingClientRect();
+        return { top, right, bottom, left, width, height };
+      };
+      const following = [...article.children].slice([...article.children].indexOf(figure) + 1);
+      const content = [following.find(node => /^H[1-6]$/.test(node.tagName)),
+        following.find(node => node.tagName === 'P'), following.find(node => node.tagName === 'OL')];
+      const images = root => [...root.querySelectorAll('img')].map(node =>
+        [...node.attributes].map(attribute => [attribute.name, attribute.value]));
+      const order = root => [...root.children].map(node => node.tagName);
+      return { reader: box(article.closest('.prose')), figure: box(figure), image: box(image),
+        naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+        float: getComputedStyle(figure).float,
+        content: content.map(node => ({ ...box(node), tag: node.tagName,
+          headingWrap: node.classList.contains('article-figure-heading') })),
+        unchanged: { text: article.textContent === original.textContent,
+          images: JSON.stringify(images(article)) === JSON.stringify(images(original)),
+          order: JSON.stringify(order(article)) === JSON.stringify(order(original)) },
+        scrollX, scrollY, viewport: innerWidth };
+    }, source);
+    expect(layout.naturalHeight).toBeGreaterThan(760);
+    expect(layout.float).toBe('none');
+    expect(layout.figure.width).toBeCloseTo(layout.reader.width, 1);
+    expect(layout.image.height / layout.image.width).toBeCloseTo(layout.naturalHeight / layout.naturalWidth, 3);
+    // Stacking uses the normal reader height/column limits, never a narrow float.
+    const heightLimit = width === 1440 ? 760 : 520;
+    const containedWidth = Math.min(layout.naturalWidth, layout.reader.width,
+      heightLimit * layout.naturalWidth / layout.naturalHeight);
+    expect(layout.image.width).toBeCloseTo(containedWidth, 1);
+    expect(Math.abs(layout.image.left + layout.image.right - layout.reader.left - layout.reader.right)).toBeLessThan(1);
+    for (const content of layout.content) {
+      expect(content.headingWrap).toBe(false);
+      expect(content.top + 0.5).toBeGreaterThanOrEqual(layout.figure.bottom);
+      expect(content.width).toBeCloseTo(layout.reader.width, 1);
+    }
+    expect(layout.unchanged).toEqual({ text: true, images: true, order: true });
+    await noOverflow(page);
+    const name = `courtship-series-stacked-${width}`;
+    const geometryPath = testInfo.outputPath(`${name}.json`);
+    fs.writeFileSync(geometryPath, JSON.stringify(layout, null, 2));
+    await testInfo.attach(`${name}-geometry`, { path: geometryPath, contentType: 'application/json' });
+    const top = Math.max(0, layout.figure.top + layout.scrollY - 16);
+    const list = layout.content[2];
+    const bottom = Math.min(list.bottom, list.top + 180) + layout.scrollY;
+    const screenshotPath = testInfo.outputPath(`${name}.png`);
+    await page.screenshot({ path: screenshotPath, fullPage: true, clip: {
+      x: Math.max(0, layout.reader.left + layout.scrollX - 16), y: top,
+      width: Math.min(layout.viewport, layout.reader.width + 32), height: bottom + 16 - top,
+    } });
+    await testInfo.attach(name, { path: screenshotPath, contentType: 'image/png' });
   }
-  await expect(figures.nth(1)).not.toHaveClass(/article-figure--wrap/);
-  await expect(page.getByRole('heading', { name: 'Young women', exact: true })).not.toHaveClass(/article-figure-heading/);
-  await noOverflow(page);
-  fs.mkdirSync('.test-output/screenshots', { recursive: true });
-  await page.screenshot({ path: '.test-output/screenshots/courtship-series-heading-desktop.png' });
-  await page.setViewportSize({ width: 390, height: 844 });
-  await expect(portrait).not.toHaveClass(/article-figure--wrap/);
-  await expect(heading).not.toHaveClass(/article-figure-heading/);
-  expect((await rect(heading)).top).toBeGreaterThanOrEqual((await rect(portrait)).bottom);
-  await portrait.scrollIntoViewIfNeeded();
-  await noOverflow(page);
-  await page.screenshot({ path: '.test-output/screenshots/courtship-series-heading-mobile.png' });
 });
 
 test('opening heading runs respect captions, later boundaries, RTL, resize and print', async ({ page }) => {

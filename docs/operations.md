@@ -20,10 +20,31 @@ on a second push workflow.
 Website `main` pushes remain automatic. For immediate recovery or a deliberate
 rebuild, open **Actions → Build and publish Remnant → Run workflow**, choose
 `main`, and run it. A manual run **always builds and deploys after validation passes**, even when all pins
-and display bytes match. Pull requests run offline unit and contract validation
-only, including small synthetic rendered fixtures. They never generate the full
-production site, export upstream repositories, or run the full-site browser suite.
-Those production checks run only from trusted main; owner merge is separate.
+and display bytes match. Pull requests retain the fast offline unit and contract
+validation job, alongside the complete browser review described below. Publication
+remains exclusive to trusted main; owner merge is separate.
+
+## Complete browser review before merge
+
+`.github/workflows/browser-review.yml` runs **Review complete browser suite** for
+each pull request. It checks out the proposed merge revision (`github.sha`), so
+the review exercises the submitted changes together with their current base.
+It uses independent cancelable concurrency and a 45-minute timeout.
+
+The review reads and verifies the last successful publication, selects upstream
+revisions once with `poll_sources.py --review`, and exports that exact selection.
+The normal source-health and no-loss gates run before generation. The published
+Scripture ledger, retained content, and durable routes remain part of the build.
+It generates the complete multilingual site, checks links and the public-output
+contract, then executes unfiltered `npm run test:browser` using the normal
+Playwright configuration. Browser assertions fail the check normally.
+
+Permissions are limited to reading repository contents, Actions evidence, and
+deployment metadata. The workflow has no Pages environment, artifact packaging,
+deployment planning, publication, or publication-state write step. Its browser
+report, screenshots, traces, selected source revisions, and bounded build evidence
+are retained for 14 days, including when a check fails. A successful review is
+evidence for merging; only the existing trusted-main workflow publishes the site.
 
 ## Last-successful-deployment baseline
 
