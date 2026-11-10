@@ -90,6 +90,7 @@
   max-width: min(100%, 22rem);
 }
 .prose .article-verse-row > figure img { max-height: 300px; }
+.prose .article-verse-row > figure.article-figure--native-verse img { max-height: none; }
 .prose .article-verse-text { min-width: 0; }
 .prose .article-verse-text > :first-child { margin-block-start: 0; }
 .prose .article-verse-text > :last-child { margin-block-end: 0; }
@@ -150,7 +151,8 @@
 
   .prose .article-verse-row--aside {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) var(--article-verse-image-width);
+    grid-template-columns: minmax(0, var(--article-verse-text-width)) var(--article-verse-image-width);
+    justify-content: start;
     align-items: start;
     gap: var(--article-verse-gap);
   }
@@ -158,8 +160,14 @@
   .prose .article-verse-row--aside > figure {
     grid-area: 1 / 2;
     width: 100%;
-    margin: .25rem 0 0;
+    margin: 0;
   }
+  .prose .article-verse-row--aside > figure img {
+    width: 100%;
+    max-height: none;
+    margin: 0;
+  }
+  .prose .article-verse-row--aside > .article-verse-text > blockquote > p { margin: 0; }
   .prose .article-figures .article-figure-heading {
     clear: none;
     display: flow-root;
@@ -173,7 +181,7 @@
   }
   .prose .article-figures figure.article-figure--wrap {
     width: var(--article-figure-width);
-    max-width: 38%;
+    max-width: 100%;
     margin-block: .35em 1.4em;
     break-inside: avoid;
   }
@@ -188,9 +196,34 @@
   .prose .article-figure--wrap img {
     display: block;
     height: auto;
+    max-height: none;
     max-width: 100%;
   }
   .prose .article-figure--wrap figcaption { overflow-wrap: anywhere; }
+  /* Each reviewed photograph belongs to its own paragraph, including a caption
+     taller than that paragraph. The next paragraph starts below the whole pair. */
+  .prose .article-figure--wrap:is(.article-figure--reviewed-start, .article-figure--reviewed-end) + p::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  /* An eligible portrait shares only its immediate prose quotation. The quote's
+     own formatting context keeps its border and padding beside the portrait. */
+  .prose .article-figures figure.article-figure--quotation {
+    margin-block-start: 0;
+  }
+  .prose .article-figures .article-figure--quotation + blockquote {
+    clear: none;
+    display: flow-root;
+    margin-block-start: 0;
+  }
+  .prose .article-figures .article-figure--quotation + blockquote > p {
+    margin: 0;
+  }
+  .prose .article-figures .article-figure--quotation + blockquote + * {
+    clear: both;
+  }
 }
 
 @media print {

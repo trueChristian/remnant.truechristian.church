@@ -34,7 +34,8 @@ test('A Godly Woman keeps complete stanzas beside the illustrations', async ({ p
         }) };
     });
     expect(boxes.gap).toBeGreaterThanOrEqual(24);
-    expect(boxes.imageWidth).toBeLessThanOrEqual(180);
+    expect(boxes.imageWidth).toBeLessThanOrEqual(320);
+    expect(boxes.gap).toBeLessThanOrEqual(32);
     expect(boxes.fits).toBe(true);
     expect(boxes.linesIntact).toBe(true);
   }

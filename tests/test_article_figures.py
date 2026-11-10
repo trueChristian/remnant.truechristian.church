@@ -14,6 +14,7 @@ from article_figures import arrange_article_figures, FigureElements, load_figure
 A = '00000000-0000-4000-9000-000000000001'
 CONTOUR = {'image': 'arch.jpg', 'width': 100, 'height': 40, 'text_start': 18,
            'edges': [[0, 50, 50], [10, 50, 50], [20, 20, 80], [40, 0, 100]]}
+PARAGRAPH_PAIR = [{'image': 'family.jpg', 'side': 'end'}, {'image': 'boy.jpg', 'side': 'start'}]
 
 
 def image(name, extra=''):
@@ -33,6 +34,80 @@ def galleries(html):
 
 
 class ArticleFigureTests(unittest.TestCase):
+    def test_reviewed_paragraph_positions_preserve_complete_figures_and_source_text(self):
+        quote = '<blockquote><p>First line<br>Second line<br>Reference</p></blockquote>'
+        paragraphs = ['<p>First ordinary paragraph.</p>', '<p>Second ordinary paragraph.</p>',
+                      '<p><strong>Original announcement<br>Original date</strong></p>']
+        picture = figure('picture', '<figcaption>Original <em>caption</em>.</figcaption>')
+        for content, position in [(picture + '\n' + quote + ''.join(paragraphs), 1),
+                                  (''.join(paragraphs[:2]) + picture + '\n' + paragraphs[2], 1),
+                                  (picture + '\n' + ''.join(paragraphs), 3)]:
+            source = article(content)
+            rules = {A: {'paragraph_positions': {'picture.jpg': position}}}
+            output = arrange_article_figures(source, rules)
+            root = next(node for node in FigureElements(output).elements if node.tag == 'article')
+            target = [node for node in root.children if node.tag == 'p'][position - 1]
+            moved = root.children[root.children.index(target) - 1]
+            self.assertEqual(moved.tag, 'figure')
+            self.assertEqual(output[moved.opening_end:moved.closing_start],
+                             picture[picture.index('>') + 1:picture.rindex('</figure>')])
+            self.assertEqual(re.findall(r'<p\b[^>]*>.*?</p>', output),
+                             re.findall(r'<p\b[^>]*>.*?</p>', source))
+            self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
+            self.assertEqual(arrange_article_figures(output, rules), output)
+
+    def test_paragraph_positions_decline_missing_repeated_or_nested_figures(self):
+        rules = {A: {'paragraph_positions': {'picture.jpg': 2}}}
+        prose = '<p>First paragraph.</p><p>Second paragraph.</p>'
+        for content in [figure('picture') + '<p>Only one paragraph.</p>',
+                        figure('picture') + prose + figure('picture'),
+                        '<section>' + figure('picture') + '</section>' + prose,
+                        '<figure>' + image('picture') + '<aside>Other content.</aside></figure>' + prose,
+                        figure('picture') + 'Loose visible words.' + prose]:
+            source = article(content)
+            self.assertEqual(arrange_article_figures(source, rules), arrange_article_figures(source))
+
+    def test_reviewed_opening_verse_quote_keeps_lineation_and_order(self):
+        quote = '<blockquote><p><em>First line<br>Second line<br>Reference</em></p></blockquote>'
+        picture = figure('picture')
+        prose = '<p>Subsequent ordinary prose remains outside the row.</p>'
+        source = article(quote + '\n' + picture + '\n' + prose)
+        rules = {A: {'verse_quote': ['picture.jpg']}}
+        output = arrange_article_figures(source, rules)
+        self.assertIn('article-figure--native-verse', output)
+        self.assertIn(quote, output)
+        self.assertIn(prose, output)
+        root = next(node for node in FigureElements(output).elements if node.tag == 'article')
+        self.assertEqual([node.tag for node in root.children], ['div', 'p'])
+        self.assertEqual([node.tag for node in root.children[0].children], ['div', 'figure'])
+        self.assertEqual(re.findall(r'<img\b[^>]*>', output), re.findall(r'<img\b[^>]*>', source))
+        self.assertEqual(arrange_article_figures(output, rules), output)
+        for content in [quote + '<h2>A boundary</h2>' + picture + prose,
+                        '<p>An introduction</p>' + quote + picture + prose,
+                        quote + picture + picture + prose,
+                        quote.replace('<blockquote>', '<blockquote hidden>') + picture + prose,
+                        quote.replace('<br>Second line', '') + picture + prose,
+                        quote.replace('</p>', '</p><p>Another paragraph</p>') + picture + prose]:
+            self.assertNotIn('article-verse-row', arrange_article_figures(article(content), rules))
+
+    def test_reviewed_verse_and_position_rules_reject_conflicts_and_invalid_values(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'layouts.json'
+            valid = {'paragraph_positions': {'picture.jpg': 2}, 'standalone': ['picture.jpg'],
+                     'verse_quote': ['another.jpg']}
+            path.write_text(json.dumps({'version': 1, 'articles': {A: valid}}))
+            self.assertEqual(load_figure_rules(path), {A: valid})
+            invalid = [{'paragraph_positions': value} for value in
+                       [[], None, {'picture.jpg': 0}, {'picture.jpg': True}, {'picture.jpg': 1.5},
+                        {'../picture.jpg': 1}, {'one.jpg': 1, 'two.jpg': 1}]]
+            invalid += [{'verse_quote': value} for value in ['picture.jpg', None, ['../picture.jpg']]]
+            invalid += [{'verse_quote': ['picture.jpg'], 'standalone': ['picture.jpg']},
+                        {'paragraph_positions': {'family.jpg': 1}, 'paragraph_pair': PARAGRAPH_PAIR}]
+            for rule in invalid:
+                path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+                with self.subTest(rule=rule), self.assertRaises(ValueError):
+                    load_figure_rules(path)
+
     def test_illustrated_poem_keeps_stanzas_images_and_captions_in_source_order(self):
         stanza = '<p>First &amp; faithful line.<br>Second line.<br>Third line.</p>'
         closing = '<p>Closing <em>words</em>.<br>Remain exact.<br>Always.</p>'
@@ -195,6 +270,96 @@ class ArticleFigureTests(unittest.TestCase):
             result = arrange_article_figures(article(unsafe), rules)
             self.assertNotIn('article-gallery--paired', result)
             self.assertEqual(re.findall(r'<img\b[^>]*>', unsafe), re.findall(r'<img\b[^>]*>', result))
+
+    def test_paragraph_pair_moves_complete_captioned_figures_without_changing_prose(self):
+        rules = {A: {'paragraph_pair': PARAGRAPH_PAIR}}
+        before = '<p id="before">Earlier &amp; unchanged <em>paragraph</em>.</p>'
+        after = '<p id="after">The following paragraph stays second.</p>'
+        boy = figure('boy', '<figcaption><strong>Original portrait caption.</strong></figcaption>', ' id="boy" class="source"')
+        family = figure('family', '<figcaption><strong>Family &amp; children<br>Original second line.</strong></figcaption>', ' id="family" class="source"')
+        gaps = ['\n<!-- first gap -->\n', '\n<!-- second gap -->\n', '\n<!-- third gap -->\n']
+        for figures, direction in [([boy, family], 'ltr'), ([family, boy], 'rtl')]:
+            source = article(before + gaps[0] + figures[0] + gaps[1] + figures[1] + gaps[2] + after,
+                             f' dir="{direction}"')
+            output = arrange_article_figures(source, rules)
+            root = next(node for node in FigureElements(output).elements if node.tag == 'article')
+            self.assertEqual([node.tag for node in root.children], ['figure', 'p', 'figure', 'p'])
+            self.assertEqual([node.attrs['id'] for node in root.children], ['family', 'before', 'boy', 'after'])
+            for node, original, side in [(root.children[0], family, 'end'), (root.children[2], boy, 'start')]:
+                figure_node = FigureElements(original).elements[0]
+                self.assertEqual(output[node.opening_end:node.closing_start],
+                                 original[figure_node.opening_end:figure_node.closing_start])
+                self.assertIn('source', node.attrs['class'].split())
+                self.assertIn(f'article-figure--reviewed-{side}', node.attrs['class'].split())
+            self.assertEqual(re.findall(r'<p\b[^>]*>.*?</p>', output), [before, after])
+            self.assertEqual(re.findall(r'<img\b[^>]*>', output), [image('family'), image('boy')])
+            self.assertTrue(all(gap in output for gap in gaps))
+            self.assertEqual(arrange_article_figures(output, rules), output)
+
+    def test_paragraph_pair_declines_ambiguous_or_changed_boundaries(self):
+        rules = {A: {'paragraph_pair': PARAGRAPH_PAIR}}
+        paragraph = '<p>Unchanged ordinary prose.</p>'
+        pair = figure('boy') + figure('family')
+        cases = {
+            'missing image': paragraph + figure('boy') + paragraph,
+            'duplicate elsewhere': paragraph + pair + paragraph + figure('boy'),
+            'extra leading figure': paragraph + figure('other') + pair + paragraph,
+            'extra trailing figure': paragraph + pair + figure('other') + paragraph,
+            'earlier figure would become adjacent': figure('other') + paragraph + pair + paragraph,
+            'separated figures': paragraph + figure('boy') + paragraph + figure('family') + paragraph,
+            'preceding heading': '<h2>Heading</h2>' + pair + paragraph,
+            'following heading': paragraph + pair + '<h2>Heading</h2>',
+            'nested section': '<section>' + paragraph + pair + paragraph + '</section>',
+            'loose boundary text': paragraph + 'Original words.' + pair + paragraph,
+            'loose text between figures': paragraph + figure('boy') + 'Original words.' + figure('family') + paragraph,
+            'hidden paragraph': paragraph + pair + '<p hidden>Hidden prose.</p>',
+            'hidden image': paragraph + '<figure>' + image('boy', ' hidden') + '</figure>' + figure('family') + paragraph,
+            'hidden figure': paragraph + figure('boy', extra=' hidden') + figure('family') + paragraph,
+            'verse paragraph': '<p class="poem">Verse.</p>' + pair + paragraph,
+            'line breaks': paragraph + pair + '<p>First line.<br>Second line.</p>',
+            'empty paragraph': '<p><em>&nbsp;</em></p>' + pair + paragraph,
+            'paragraph media': paragraph + pair + '<p>Words <video></video></p>',
+            'figure media': paragraph + figure('boy', '<figcaption><video></video></figcaption>') + figure('family') + paragraph,
+            'loose figure text': paragraph + figure('boy', 'Original explanation.') + figure('family') + paragraph,
+            'multiple figure images': paragraph + '<figure>' + image('boy') + image('other') + '</figure>' + figure('family') + paragraph,
+        }
+        for label, content in cases.items():
+            with self.subTest(label=label):
+                source = article(content)
+                self.assertEqual(arrange_article_figures(source, rules), arrange_article_figures(source))
+        source = article(paragraph + pair + paragraph, ' class="lyrics"')
+        self.assertEqual(arrange_article_figures(source, rules), arrange_article_figures(source))
+
+    def test_paragraph_pair_and_verse_quote_rules_reject_invalid_entries_and_conflicts(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'layouts.json'
+            valid = {'paragraph_pair': PARAGRAPH_PAIR, 'verse_quote': ['lion.jpg']}
+            path.write_text(json.dumps({'version': 1, 'articles': {A: valid}}))
+            self.assertEqual(load_figure_rules(path), {A: valid})
+            invalid_pairs = [None, {}, [], PARAGRAPH_PAIR[:1], PARAGRAPH_PAIR * 2,
+                             ['family.jpg', 'boy.jpg'], [PARAGRAPH_PAIR[0], PARAGRAPH_PAIR[0]],
+                             [{'image': 'family.jpg'}, PARAGRAPH_PAIR[1]],
+                             [PARAGRAPH_PAIR[0] | {'extra': True}, PARAGRAPH_PAIR[1]],
+                             [PARAGRAPH_PAIR[0] | {'side': 'right'}, PARAGRAPH_PAIR[1]]]
+            invalid_pairs.extend([PARAGRAPH_PAIR[0] | {'image': name}, PARAGRAPH_PAIR[1]]
+                                 for name in ['', '.', '..', '../family.jpg', 'folder\\family.jpg', 42])
+            invalid = [{'paragraph_pair': pair} for pair in invalid_pairs]
+            invalid.extend({'verse_quote': value} for value in
+                           ['lion.jpg', None, {}, ['../lion.jpg'], ['folder\\lion.jpg'], [''], [42], ['lion.jpg', 'lion.jpg']])
+            bounds = dict(width=100, height=100, top=0, right=0, bottom=0, left=0)
+            for field, value, name in [('paragraph_pair', PARAGRAPH_PAIR, 'family.jpg'),
+                                       ('verse_quote', ['lion.jpg'], 'lion.jpg')]:
+                invalid.extend({field: value, **conflict} for conflict in [
+                    {'standalone': [name]}, {'wrap': [name]},
+                    {'paired': [[name, 'other.jpg']]}, {'transparent_padding': {name: bounds}},
+                    {'opening_contour': CONTOUR | {'image': name}},
+                ])
+            invalid.extend([{'paragraph_pair': PARAGRAPH_PAIR, 'verse_quote': ['family.jpg']},
+                            {'paragraph_pair': PARAGRAPH_PAIR, 'opening_order': ['family.jpg', 'boy.jpg']}])
+            for rule in invalid:
+                path.write_text(json.dumps({'version': 1, 'articles': {A: rule}}))
+                with self.subTest(rule=rule), self.assertRaises(ValueError):
+                    load_figure_rules(path)
 
     def test_reviewed_opening_pair_precedes_cover_and_preserves_source_content(self):
         rules = {A: {'opening_order': ['left.jpg', 'right.jpg', 'cover.jpg'],

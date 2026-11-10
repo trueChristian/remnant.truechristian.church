@@ -52,7 +52,7 @@ test('Courtship portraits alternate around text without changing source content'
     expect(text.top).toBeLessThan(box.bottom);
     if (!index) expect(text.left).toBeGreaterThanOrEqual(box.right + 20);
     else expect(text.right).toBeLessThanOrEqual(box.left - 20);
-    expect(box.width).toBeLessThanOrEqual(320);
+    expect(box.width).toBe(await figures.nth(index).locator('img').evaluate(img => img.naturalWidth));
   }
   const source = fs.readFileSync(`dist${courtship}index.html`, 'utf8');
   const unchanged = await page.evaluate(html => {

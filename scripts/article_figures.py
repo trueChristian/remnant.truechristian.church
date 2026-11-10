@@ -1,10 +1,10 @@
 """Presentation-only image groups, inserted without reserializing source HTML.
 
 The reader receives static galleries even with JavaScript disabled. Source image
-tags, captions and article text remain unchanged. Reviewed caption-free opening
-images can be reordered and split artwork reunited by moving exact figure bytes;
-all other changes are layout wrapper/class insertions. The source model and
-Markdown are untouched.
+tags, captions and article text remain unchanged. Reviewed opening images, split
+artwork and paragraph pairs can move as complete original figures; all other
+changes are layout wrapper/class insertions. The source model and Markdown are
+untouched.
 """
 from __future__ import annotations
 
@@ -86,6 +86,17 @@ def load_figure_rules(path):
         if not isinstance(wrapping, list):
             raise ValueError(f'Invalid prose wrapping rules: {identity}')
         names.extend(wrapping)
+        verse_quotes = rule.get('verse_quote', [])
+        if not isinstance(verse_quotes, list):
+            raise ValueError(f'Invalid verse quotation rules: {identity}')
+        names.extend(verse_quotes)
+        paragraph_pair = rule.get('paragraph_pair', [])
+        if 'paragraph_pair' in rule:
+            if (not isinstance(paragraph_pair, list) or len(paragraph_pair) != 2 or
+                    any(not isinstance(item, dict) or set(item) != {'image', 'side'} or
+                        item['side'] not in ('start', 'end') for item in paragraph_pair)):
+                raise ValueError(f'Invalid paragraph image pair: {identity}')
+            names.extend(item['image'] for item in paragraph_pair)
         if not isinstance(paired, list):
             raise ValueError(f'Invalid paired image rules: {identity}')
         for group in paired:
@@ -127,13 +138,26 @@ def load_figure_rules(path):
         opening_order = rule.get('opening_order', [])
         if not isinstance(opening_order, list) or len(opening_order) == 1:
             raise ValueError(f'Invalid opening image order: {identity}')
-        if any(not isinstance(name, str) or not name or '/' in name or '\\' in name
+        if any(not isinstance(name, str) or not name or name in {'.', '..'} or '/' in name or '\\' in name
                for name in [*names, *opening_order]):
             raise ValueError(f'Image layout rules require image basenames: {identity}')
         if len(opening_order) != len(set(opening_order)):
             raise ValueError(f'Repeated opening image: {identity}')
         if contour and contour['image'] in opening_order:
             raise ValueError(f'Conflicting opening contour order: {identity}')
+        if any(item['image'] in opening_order for item in paragraph_pair):
+            raise ValueError(f'Conflicting paragraph pair order: {identity}')
+        positions = rule.get('paragraph_positions', {})
+        if (not isinstance(positions, dict) or
+                any(not isinstance(name, str) or not name or name in {'.', '..'} or
+                    '/' in name or '\\' in name or type(position) is not int or position < 1
+                    for name, position in positions.items()) or
+                len(set(positions.values())) != len(positions)):
+            raise ValueError(f'Invalid paragraph image positions: {identity}')
+        if (set(positions) & set(opening_order) or
+                set(positions) & {item['image'] for item in paragraph_pair} or
+                (contour and contour['image'] in positions)):
+            raise ValueError(f'Conflicting paragraph image positions: {identity}')
         if len(names) != len(set(names)):
             raise ValueError(f'Conflicting or repeated image layout rules: {identity}')
         dimensions = rule.get('dimensions')
@@ -195,6 +219,32 @@ def _arrange_verse_figures(source):
         insertions[stanzas[-1].end].append('</div>')
         insertions[nodes[-1].end].append('</div>')
 
+    def reviewed_epigraph(quote, figure, parent):
+        # A reviewed opening quotation keeps its printed lines and original
+        # order. It never turns unrelated quotations into prose floats.
+        if (parent.tag != 'article' or quote.tag != 'blockquote' or
+                not is_figure(figure) or
+                'article-figure--native-verse' not in figure.attrs.get('class', '').split() or
+                len(quote.children) != 1 or quote.children[0].tag != 'p' or
+                len(figure.children) != 1 or 'hidden' in parent.attrs or
+                not quote.closing_start or not quote.children[0].closing_start or
+                not _empty_gap(source[parent.opening_end:quote.start]) or
+                not _empty_gap(source[quote.end:figure.start])):
+            return False
+        descendants = [node for node in parsed.elements if quote.start <= node.start < quote.end]
+        if (any('hidden' in node.attrs for node in [*descendants, figure, *_images(figure)]) or
+                any(node.tag not in {'blockquote', 'p', 'br', 'em', 'strong', 'b', 'i', 'u',
+                                     's', 'span', 'a', 'small', 'sup', 'sub', 'mark'}
+                    for node in descendants) or
+                sum(node.tag == 'br' for node in descendants) < 2 or
+                sum(node.tag == 'p' for node in descendants) != 1 or
+                sum(node.tag == 'blockquote' for node in descendants) != 1):
+            return False
+        paragraph = quote.children[0]
+        return (bool(unescape(re.sub(r'<[^>]*>', '', source[paragraph.opening_end:paragraph.closing_start])).strip()) and
+                _empty_gap(source[quote.opening_end:paragraph.start]) and
+                _empty_gap(source[paragraph.end:quote.closing_start]))
+
     for parent in parsed.elements:
         if not (parent.tag == 'article' or parent.tag == 'section' or
                 (parent.tag in {'div', 'blockquote'} and _verse_class(parent))):
@@ -202,6 +252,10 @@ def _arrange_verse_figures(source):
         children, i = parent.children, 0
         while i < len(children):
             node = children[i]
+            if i == 0 and len(children) > 1 and reviewed_epigraph(node, children[1], parent):
+                wrap(children[1], [node])
+                i = 2
+                continue
             if is_figure(node):
                 end = i + 1
                 while end < len(children) and is_verse(children[end]) and _empty_gap(
@@ -364,20 +418,142 @@ def _reunite_reviewed_pairs(source, rules):
     return source
 
 
+def _distribute_reviewed_paragraph_pair(source, rules):
+    """Move one complete image pair beside its two original neighbouring paragraphs."""
+    parsed = FigureElements(source)
+    changes, applied = [], {}
+    inline = {'a', 'abbr', 'b', 'cite', 'code', 'em', 'i', 'mark', 'q', 's',
+              'small', 'span', 'strong', 'sub', 'sup', 'u'}
+
+    def descendants(node):
+        return [child for child in parsed.elements if node.start < child.start < node.end]
+
+    def ordinary_paragraph(node):
+        if (node.tag != 'p' or not node.closing_start or 'hidden' in node.attrs or _verse_class(node) or
+                any(child.tag not in inline or 'hidden' in child.attrs or _verse_class(child)
+                    for child in descendants(node))):
+            return False
+        text = re.sub(r'<!--.*?-->|<[^>]*>', '', source[node.opening_end:node.closing_start], flags=re.S)
+        return bool(unescape(text).strip())
+
+    def complete_figure(node):
+        if (node.tag != 'figure' or not node.closing_start or len(_images(node)) != 1 or
+                sorted(child.tag for child in node.children) not in (['img'], ['figcaption', 'img']) or
+                'hidden' in node.attrs or _verse_class(node)):
+            return False
+        image = _images(node)[0]
+        if any('hidden' in child.attrs or _verse_class(child) or
+               (child is not image and child.tag not in inline | {'figcaption', 'br'})
+               for child in descendants(node)):
+            return False
+        points = [node.opening_end, *(child.end for child in node.children)]
+        ends = [*(child.start for child in node.children), node.closing_start]
+        return all(_empty_gap(source[start:end]) for start, end in zip(points, ends))
+
+    for article in parsed.elements:
+        if article.tag != 'article' or _verse_class(article) or 'hidden' in article.attrs:
+            continue
+        identity = article.attrs.get('data-article-id')
+        pair = rules.get(identity, {}).get('paragraph_pair', [])
+        if not pair:
+            continue
+        names = [item['image'] for item in pair]
+        article_images = [node.attrs.get('src', '').rsplit('/', 1)[-1] for node in descendants(article)
+                          if node.tag == 'img']
+        if any(article_images.count(name) != 1 for name in names):
+            continue
+        children = article.children
+        for position in range(1, len(children) - 2):
+            before, first, second, after = children[position - 1:position + 3]
+            if (not ordinary_paragraph(before) or not ordinary_paragraph(after) or
+                    not complete_figure(first) or not complete_figure(second) or
+                    {_names(first)[0], _names(second)[0]} != set(names) or
+                    (position > 1 and children[position - 2].tag == 'figure')):
+                continue
+            nodes = [before, first, second, after]
+            gaps = [source[left.end:right.start] for left, right in zip(nodes, nodes[1:])]
+            if not all(_empty_gap(gap) for gap in gaps):
+                continue
+            figures = {_names(node)[0]: source[node.start:node.end] for node in (first, second)}
+            replacement = (figures[names[0]] + gaps[0] + source[before.start:before.end] + gaps[1] +
+                           figures[names[1]] + gaps[2] + source[after.start:after.end])
+            changes.append((before.start, after.end, replacement))
+            applied[identity] = {item['image']: item['side'] for item in pair}
+            break
+    for start, end, replacement in sorted(changes, reverse=True):
+        source = source[:start] + replacement + source[end:]
+    return source, applied
+
+
+def _position_reviewed_paragraph_figures(source, rules):
+    """Move reviewed complete illustrations before a direct article paragraph.
+
+    Image and paragraph contents are copied verbatim. Repeated assets, missing
+    paragraphs, nested figures and unexpected figure contents stay in place.
+    Positions count only direct article paragraphs, never epigraphs or captions.
+    """
+    parsed = FigureElements(source)
+    changes = []
+    for article in parsed.elements:
+        if article.tag != 'article' or 'hidden' in article.attrs:
+            continue
+        positions = rules.get(article.attrs.get('data-article-id'), {}).get('paragraph_positions', {})
+        paragraphs = [node for node in article.children if node.tag == 'p']
+        for name, position in positions.items():
+            if position > len(paragraphs):
+                continue
+            target = paragraphs[position - 1]
+            matches = [node for node in parsed.elements if node.tag == 'img' and
+                       article.start < node.start < article.end and
+                       node.attrs.get('src', '').rsplit('/', 1)[-1] == name]
+            if len(matches) != 1:
+                continue
+            image = matches[0]
+            figure = image.parent
+            if (figure.tag != 'figure' or figure.parent is not article or
+                    len(_images(figure)) != 1 or not figure.closing_start or
+                    not target.closing_start or 'hidden' in target.attrs or
+                    any('hidden' in node.attrs for node in (figure, image)) or
+                    any(node.tag not in {'img', 'figcaption'} for node in figure.children)):
+                continue
+            figure_nodes = figure.children
+            boundaries = [(figure.opening_end, figure_nodes[0].start),
+                          *((left.end, right.start) for left, right in zip(figure_nodes, figure_nodes[1:])),
+                          (figure_nodes[-1].end, figure.closing_start)]
+            if not all(_empty_gap(source[start:end]) for start, end in boundaries):
+                continue
+            figure_index = article.children.index(figure)
+            next_node = article.children[figure_index + 1] if figure_index + 1 < len(article.children) else None
+            if next_node is target:
+                continue
+            following = next_node.start if next_node else article.closing_start
+            gap = source[figure.end:following]
+            if not _empty_gap(gap):
+                continue
+            changes.extend([(figure.start, following, ''),
+                            (target.start, target.start, source[figure.start:figure.end] + gap)])
+    for start, end, replacement in sorted(changes, reverse=True):
+        source = source[:start] + replacement + source[end:]
+    return source
+
+
 def arrange_article_figures(source, rules=None):
     """Group adjacent photographs and reviewed compositions in the reader only.
 
     Rules use permanent article UUIDs and exact ordered image basenames. Reviewed
     pairs stay distinct from ordinary responsive galleries. Generic grouping
-    never crosses prose or structural boundaries. Reviewed caption-free opening
-    figures and split panels can move without rearranging article text.
+    never crosses prose or structural boundaries. Reviewed opening figures,
+    split panels and paragraph pairs can move without changing prose or captions.
     """
     if '<figure' not in source.lower():
         return source
     rules = rules or {}
+    paragraph_sides = {}
     if rules:
         source = _order_reviewed_opening_figures(source, rules)
         source = _reunite_reviewed_pairs(source, rules)
+        source = _position_reviewed_paragraph_figures(source, rules)
+        source, paragraph_sides = _distribute_reviewed_paragraph_pair(source, rules)
     parsed = FigureElements(source)
     insertions, classes = defaultdict(list), defaultdict(list)
 
@@ -441,6 +617,15 @@ def arrange_article_figures(source, rules=None):
             continue
         if len(names) == 1 and names[0] in rule.get('wrap', []):
             mark(figure, 'article-figure--reviewed-wrap')
+        if len(names) == 1 and names[0] in rule.get('verse_quote', []):
+            occurrences = sum(node.tag == 'img' and article.start < node.start < article.end and
+                              node.attrs.get('src', '').rsplit('/', 1)[-1] == names[0]
+                              for node in parsed.elements)
+            if occurrences == 1:
+                mark(figure, 'article-figure--native-verse')
+        side = paragraph_sides.get(article.attrs['data-article-id'], {}).get(names[0]) if len(names) == 1 else None
+        if side:
+            mark(figure, f'article-figure--reviewed-{side}')
         images = _images(figure)
         # A shared caption stays in its figure, outside the image row. Text or
         # structural elements between images are deliberate source boundaries.
