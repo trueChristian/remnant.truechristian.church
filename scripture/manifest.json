@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "4d4e893c96f5574971e5d03a7fad1720ded34ddd07d0e93e5e5a920495eb92a7",
+  "integrity": "e39494a7983d48fecf45f29e29597fe51f89c73c2c4b80bebf0063d8b23299ac",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -1793,6 +1793,175 @@
         }
       ],
       "record_hash": "9c91666f01ea4710572d4ec4373421410f423ddae76d030a983ba3a100e5f714"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:ru:9c0c575bc5d4bd4be9e5618cb6b4eaa7cbf56d3de81e8632e2e965f047c5db20:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "ru",
+      "content_hash": "9c0c575bc5d4bd4be9e5618cb6b4eaa7cbf56d3de81e8632e2e965f047c5db20",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d4ee0e18c52eb53fe115dcf9",
+          "quote": "Матфея 1:21",
+          "before": "бо Он спасет людей Своих от грехов их» (",
+          "after": ").",
+          "spans": [
+            [
+              322,
+              333
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "cae0a598700aded7a5081107",
+          "quote": "Иоанна 3:18–21",
+          "before": "греховное состояние. Следующие стихи из ",
+          "after": " помогают понять, в чем состояло это пре",
+          "spans": [
+            [
+              1383,
+              1397
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "b79be5d8e3bca583453f47d2",
+          "quote": "Иоанна 3:19–21",
+          "before": "а его, потому что они в Боге соделаны» (",
+          "after": ").",
+          "spans": [
+            [
+              1706,
+              1720
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "ca57e4c12d728512fb8eb817",
+          "quote": "Луки 7:29–30",
+          "before": "амысел о себе, не крестившись от него» (",
+          "after": ").",
+          "spans": [
+            [
+              2460,
+              2472
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "c685e2ecf7f85d13ba25f757",
+          "quote": "1 Тимофею 5:24–25",
+          "before": "т иначе, не могут оставаться скрытыми» (",
+          "after": ").",
+          "spans": [
+            [
+              2958,
+              2975
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "331d52aad61c33529bb31e0d",
+          "quote": "Иоанна 8:11",
+          "before": "е осуждаю тебя; иди и впредь не греши» (",
+          "after": ").",
+          "spans": [
+            [
+              3319,
+              3330
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "cf77bf7d54124c6c0739e0d7",
+          "quote": "Марка 10:21",
+          "before": "риходи, возьми крест и следуй за Мною» (",
+          "after": ").",
+          "spans": [
+            [
+              3474,
+              3485
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "9a9321cc9e3f721d19d2ed0a",
+          "quote": "Луки 22:32",
+          "before": "огда обратишься, укрепи братьев твоих» (",
+          "after": ").",
+          "spans": [
+            [
+              3543,
+              3553
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "c45e485d4275fa952073ca1b",
+          "quote": "Луки 9:23–24",
+          "before": " душу свою ради Меня, тот сбережет ее» (",
+          "after": ").",
+          "spans": [
+            [
+              3784,
+              3796
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "2b58add21aac9b9700e2de4b",
+          "quote": "Марка 6:16–28",
+          "before": "ние и остаться с Иродиадой? (Прочитайте ",
+          "after": ".) Разве ему нужно было так открыто прот",
+          "spans": [
+            [
+              4413,
+              4426
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "b2639cf4b852a03054d70b77716c69d23b31d78bc3540b7707adaf91baf0b8dc"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:sv:125c6a3b68756f249895c4134db25e64758271524a6dc0b5880b3c8c29388681:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -95004,6 +95173,368 @@
       "markers": [],
       "record_hash": "3d6416d690c7ec77ac5bc3e7634028519e9b171ff8e9529e4b72eab9451cf79d"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:ar:cc62fc41bb411c9becb2e64be5e5b41142e9cb490156bf1968f386a9b6512b11:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "ar",
+      "content_hash": "cc62fc41bb411c9becb2e64be5e5b41142e9cb490156bf1968f386a9b6512b11",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f3fb57d4463e65dafbdcccfe",
+          "quote": "سفر التكوين 3",
+          "before": "جنة عدن. ويظهر أول دليل مسجل على ذلك في ",
+          "after": ". «فقال: سمعت صوتك في الجنة فخشيت، لأني ",
+          "spans": [
+            [
+              1373,
+              1386
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "db97759efe8775ccef5f6507",
+          "quote": "سفر التكوين 3:10",
+          "before": "تك في الجنة فخشيت، لأني عريان فاختبأت» (",
+          "after": "). كان آدم خائفًا. ممَّ كان خائفًا؟ خاف ",
+          "spans": [
+            [
+              1442,
+              1458
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "12018eb14eb67803bacd4c0a",
+          "quote": "سفر التكوين 4:5",
+          "before": "ر إليهما. فاغتاظ قايين جدًا وسقط وجهه» (",
+          "after": "). وربما كنت واحدًا من هؤلاء الأطفال.",
+          "spans": [
+            [
+              2834,
+              2849
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "101ce3fb336e23e04b382d2b",
+          "quote": "سفر التكوين 1",
+          "before": "اي بوصفها حلولًا للصراعات العاطفية. ففي ",
+          "after": "، خلق الله الأعشاب الخضراء والأشجار طعام",
+          "spans": [
+            [
+              4346,
+              4359
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "7dbf6ad1c29e1ec82692eb30",
+          "quote": "إنجيل يوحنا 3:3",
+          "before": "ن جديد لا يستطيع أن يرى ملكوت السماوات (",
+          "after": "). يطوف كثيرون العالم بحثًا عن حلول للار",
+          "spans": [
+            [
+              4755,
+              4770
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "8c1689c1ac6f08e7eaae9214",
+          "quote": "إنجيل يوحنا 3:7",
+          "before": "ع عندما قال: «ينبغي أن تولدوا من جديد» (",
+          "after": ")؟ أحيانًا نجعل رسالة الإنجيل أكثر تعقيد",
+          "spans": [
+            [
+              5146,
+              5161
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "af71b6bc9cc94c49a330b074",
+          "quote": "الرسالة الثانية إلى أهل كورنثوس 11:2-3",
+          "before": "فسد أذهانكم عن البساطة التي في المسيح» (",
+          "after": "). إن بشرى الخلاص بسيطة وليس من الصعب ني",
+          "spans": [
+            [
+              5467,
+              5505
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "7f9a21abad79ee3c03a5ebd8",
+          "quote": "إنجيل متى 3:6",
+          "before": "عتمدوا منه في الأردن معترفين بخطاياهم» (",
+          "after": "). الخطوة الأولى للخلاص هي أن تعترف بخطا",
+          "spans": [
+            [
+              5751,
+              5764
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "24ff2dc9fcf187a855c0447c",
+          "quote": "رسالة يعقوب 5:16",
+          "before": "لاة البار الحارة الفعالة تقتدر كثيرًا» (",
+          "after": "). اطلب مساعدة خادم أو مسيحي ذي خبرة. لا",
+          "spans": [
+            [
+              6321,
+              6337
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "97f26a749fa01d7c4fe221d2",
+          "quote": "أعمال الرسل 3:19",
+          "before": "، عندما تأتي أوقات الفرج من حضرة الرب» (",
+          "after": "). «فتب من شرك هذا، واطلب إلى الله عسى أ",
+          "spans": [
+            [
+              6804,
+              6820
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "900887e06050f9a2db272868",
+          "quote": "أعمال الرسل 8:22",
+          "before": "طلب إلى الله عسى أن يُغفر لك فكر قلبك» (",
+          "after": "). عندما تتوب عن خطاياك، فأنت تخبر الله ",
+          "spans": [
+            [
+              6882,
+              6898
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "7c3a72e8fda310fecae09a5b",
+          "quote": "أعمال الرسل 2:21",
+          "before": ". «ويكون أن كل من يدعو باسم الرب يخلص» (",
+          "after": "). «عالمين أنكم افتديتم لا بأشياء تفنى، ",
+          "spans": [
+            [
+              7322,
+              7338
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "9ca77eeedfca00e3c16e464d",
+          "quote": "رسالة بطرس الأولى 1:18-19",
+          "before": "كما من حمل بلا عيب ولا دنس، دم المسيح» (",
+          "after": "). «وأرش عليكم ماءً طاهرًا فتطهرون. من ك",
+          "spans": [
+            [
+              7488,
+              7513
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "3e7136b26483a237658498a4",
+          "quote": "سفر حزقيال 36:25-28",
+          "before": " وتكونون لي شعبًا وأنا أكون لكم إلهًا» (",
+          "after": ").",
+          "spans": [
+            [
+              7833,
+              7852
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "cab1439c3283bc52e01222c2",
+          "quote": "أعمال الرسل 16:30-31",
+          "before": "لا: آمن بالرب يسوع المسيح فتخلص . . .» (",
+          "after": "). لقد اعترفت بخطاياك وتبت عنها؛ ودعوت ي",
+          "spans": [
+            [
+              8026,
+              8046
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "b077bab0ee112f2e466a829d",
+          "quote": "إنجيل يوحنا 3:16",
+          "before": "من يؤمن به، بل تكون له الحياة الأبدية» (",
+          "after": "). اشكر الرب لأنه أزال خطاياك. سبّحه لأن",
+          "spans": [
+            [
+              8363,
+              8379
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "bafb8ffa6ae56d3d58ebf0fc",
+          "quote": "رسالة بطرس الأولى 3:21",
+          "before": "ر صالح تجاه الله)، بقيامة يسوع المسيح» (",
+          "after": "). وقد تكون أنت ذلك الشخص الذي له ضمير ص",
+          "spans": [
+            [
+              8844,
+              8866
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "1d278fe7ddaeaf84d92d37e8",
+          "quote": "الرسالة إلى أهل أفسس 4:21-23",
+          "before": " الشهوات الخادعة، وتتجددوا بروح ذهنكم» (",
+          "after": "). وهذا موضوع مهم ويمكن أن يُكتب عنه الم",
+          "spans": [
+            [
+              9452,
+              9480
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "36287723dc8da5c235cf0d82",
+          "quote": "إنجيل متى 7:13-14",
+          "before": "ي إلى الحياة، وقليلون هم الذين يجدونه» (",
+          "after": ").",
+          "spans": [
+            [
+              10062,
+              10079
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "511034ff15dd81bb26fa40d0",
+          "quote": "إنجيل لوقا 9:23",
+          "before": "لينكر نفسه ويحمل صليبه كل يوم ويتبعني» (",
+          "after": "). يجب أن نصلب شهوات جسدنا كل يوم، لكننا",
+          "spans": [
+            [
+              10504,
+              10519
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "0ebbd7124319e2adee2bdead",
+          "quote": "رسالة يوحنا الأولى 1:7,9",
+          "before": "ى يغفر لنا خطايانا ويطهرنا من كل إثم.» (",
+          "after": ").",
+          "spans": [
+            [
+              10901,
+              10925
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "3083ba8b44a9d375f1f83d5b",
+          "quote": "كورنثوس الثانية 9:15",
+          "before": " على عطيته التي لا يُعبَّر عنها» (رسالة ",
+          "after": "). هبة الخلاص المجانية متاحة لك.",
+          "spans": [
+            [
+              11401,
+              11421
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "5032beb7a4916dac98b6e64dbd6a110fd33b034eb46e65559bd8ff8ab0b56be1"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:bn:2d015634641abea4d6f1d642907bf58ee1e4753efd0d6771d501eacf7daa3d49:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "bn",
@@ -96974,6 +97505,319 @@
       ],
       "record_hash": "6e95f4a27d6e4f245130f05a06283d3f61e42621692376d68d6736424f9d3aac"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:he:151fc7f93a7eddb706b336d54be566f8a567f7fbf7107a7b54f4c2e42b7520c8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "he",
+      "content_hash": "151fc7f93a7eddb706b336d54be566f8a567f7fbf7107a7b54f4c2e42b7520c8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "06086715100a5b81a59ccd60",
+          "quote": "בראשית 3:10",
+          "before": "ן ופחדתי, מפני שהייתי עירום, והתחבאתי״ (",
+          "after": "). אדם פחד. ממה פחד? אדם וחוה חששו לפגוש",
+          "spans": [
+            [
+              1349,
+              1360
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "7fdee4e9b67f10d1d048d1c6",
+          "quote": "בראשית 4:5",
+          "before": "לא פנה ברצון. קין כעס מאוד ופניו נפלו״ (",
+          "after": "). אולי גם אתה היית אחד הילדים האלה.",
+          "spans": [
+            [
+              2652,
+              2662
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "8116faa18361ccab66e6ab41",
+          "quote": "יוחנן 3:3",
+          "before": "ולד מחדש, לא יוכל לראות את מלכות השמים (",
+          "after": "). אנשים רבים רצים בכל רחבי העולם ומחפשי",
+          "spans": [
+            [
+              4504,
+              4513
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "ef19cb73631cc60298eda693",
+          "quote": "יוחנן 3:7",
+          "before": "תכוון ישוע כשאמר: ״עליכם להיוולד מחדש״ (",
+          "after": ")? לפעמים אנו הופכים את בשורת הישועה למו",
+          "spans": [
+            [
+              4881,
+              4890
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "5081e2865ed5d509a4a44fdd",
+          "quote": "השנייה אל הקורינתים 11:2-3",
+          "before": "בותיכם יושחתו ויסורו מן הפשטות שבמשיח״ (",
+          "after": "). הבשורה הטובה על הישועה פשוטה ואינה קש",
+          "spans": [
+            [
+              5208,
+              5234
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "bdc6082615804c82aca7f5a8",
+          "quote": "מתי 3:6",
+          "before": " על ידו בירדן, כשהם מתוודים על חטאיהם״ (",
+          "after": "). הצעד הראשון לישועה הוא להתוודות לפני ",
+          "spans": [
+            [
+              5491,
+              5498
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "02a7d16e02e15a2475aeb6c6",
+          "quote": "יעקב 5:16",
+          "before": "ו הנלהבת והפועלת של הצדיק מועילה מאוד״ (",
+          "after": "). בקש את עזרתו של איש דת או של נוצרי מנ",
+          "spans": [
+            [
+              6041,
+              6050
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "234fdc6bbe017f433bd3c807",
+          "quote": "מעשי השליחים 3:19",
+          "before": "כשיבואו זמנים של התרעננות מלפני האדון״ (",
+          "after": "). ״לכן חזור בתשובה על רשעתך זו והתפלל ל",
+          "spans": [
+            [
+              6550,
+              6567
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "9968dc22b00ce48681da9213",
+          "quote": "מעשי השליחים 8:22",
+          "before": "תפלל לאלוהים, אולי תיסלח לך מחשבת לבך״ (",
+          "after": "). כשאתה חוזר בתשובה על חטאיך, אתה אומר ",
+          "spans": [
+            [
+              6641,
+              6658
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "b00d80059783b0e11d4f3452",
+          "quote": "אל הרומים 10:13",
+          "before": "״כי כל מי שיקרא בשם האדון ייוושע״ (",
+          "after": "). כעת, לאחר שהתוודית על חטאיך וחזרת בתש",
+          "spans": [
+            [
+              6840,
+              6855
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "f8a371ab810687b2a5310403",
+          "quote": "מעשי השליחים 2:21",
+          "before": " ״ויהיה שכל מי שיקרא בשם האדון ייוושע״ (",
+          "after": "). ״שהרי אתם יודעים שלא בדברים מתכלים, כ",
+          "spans": [
+            [
+              7094,
+              7111
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "71cd5835c838afa3081b62ad",
+          "quote": "יחזקאל 36:25-28",
+          "before": "כם; תהיו לי לעם ואני אהיה לכם לאלוהים״ (",
+          "after": ").",
+          "spans": [
+            [
+              7588,
+              7603
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "5a6f3ecaa20e79d693e2de3a",
+          "quote": "מעשי השליחים 16:30-31",
+          "before": ": האמן באדון ישוע המשיח ותיוושע . . .״ (",
+          "after": "). התוודית על חטאיך וחזרת בתשובה; קראת ל",
+          "spans": [
+            [
+              7806,
+              7827
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "be9410c75db2a0fdbf043b9e",
+          "quote": "אל הרומים 10:9",
+          "before": "בך שאלוהים הקים אותו מן המתים, תיוושע״ (",
+          "after": "). ״כי אלוהים אהב את העולם עד כדי כך שנת",
+          "spans": [
+            [
+              8021,
+              8035
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "722dbbba4ad0fe5d76ebfbf4",
+          "quote": "יוחנן 3:16",
+          "before": "מאמין בו לא יאבד אלא יהיו לו חיי עולם״ (",
+          "after": "). הודה לאדון על שהסיר את חטאיך. שבח אות",
+          "spans": [
+            [
+              8140,
+              8150
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "f497841ab5ccdadd239c6353",
+          "quote": "אל האפסים 4:21-23",
+          "before": " בתאוות מתעות, ולהתחדש ברוח מחשבותיכם״ (",
+          "after": "). זהו נושא חשוב, ואפשר היה לכתוב עליו ע",
+          "spans": [
+            [
+              9155,
+              9172
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "e22a4354d178fe5037890eea",
+          "quote": "מתי 7:13-14",
+          "before": "דרך המובילה לחיים, ומעטים מוצאים אותה״ (",
+          "after": ").",
+          "spans": [
+            [
+              9687,
+              9698
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "40d8cb4d10e406318785d809",
+          "quote": "לוקס 9:23",
+          "before": "עצמו, יישא את צלבו מדי יום וילך אחריי״ (",
+          "after": "). עלינו לצלוב מדי יום את תאוות בשרנו, א",
+          "spans": [
+            [
+              10112,
+              10121
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "46dbd534a0ed8ed9c42cf2b9",
+          "quote": "השנייה אל הקורינתים 9:15",
+          "before": "ודה לאלוהים על מתנתו שאין מילים לתארה״ (",
+          "after": "). מתנת הישועה הניתנת בחינם זמינה לך.",
+          "spans": [
+            [
+              11042,
+              11066
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "6840b667a24922872b4c71026c18f69c1f7eb90bd4451ee3f94930feabdaf1b6"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:hi:88918c28dd80735403ed9a91d6dd7be8b066d8d17461bd77f0f1d55a8dcf6329:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "hi",
@@ -98156,6 +99000,400 @@
       ],
       "record_hash": "22aba66c47e3c3d395547b030b8021861626ae94cc736109a3571b61814d9f8d"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:nb:8817776edbf04173bd1d5b8fa8deab8ceb0b92d57bafd1e454edf9f66168d2b7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "nb",
+      "content_hash": "8817776edbf04173bd1d5b8fa8deab8ceb0b92d57bafd1e454edf9f66168d2b7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "772c9700cc2d0de0f3f030f9",
+          "quote": "1. Mosebok 3",
+          "before": "t første nedtegnede beviset finner vi i ",
+          "after": ". «Han svarte: Jeg hørte stemmen din i h",
+          "spans": [
+            [
+              1653,
+              1665
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "91253b93f4857a3357a997d8",
+          "quote": "1. Mosebok 3:10",
+          "before": "ordi jeg var naken, og jeg gjemte meg» (",
+          "after": "). Adam var redd. Redd for hva? Adam og ",
+          "spans": [
+            [
+              1768,
+              1783
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "3a357c2fced6f852eed0dbde",
+          "quote": "1. Mosebok 4:5",
+          "before": "ain svært vred, og ansiktet hans falt» (",
+          "after": "). Kanskje var du et av disse barna.",
+          "spans": [
+            [
+              3640,
+              3654
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "4c6f7fa2fd03ebafde063e83",
+          "quote": "1. Mosebok 1",
+          "before": " løsninger på følelsesmessige kamper. I ",
+          "after": " skapte Gud grønne urter og trær til mat",
+          "spans": [
+            [
+              5504,
+              5516
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "ffa295091fca96b4ae4d09db",
+          "quote": "Johannes 3:3",
+          "before": "melriket hvis han ikke blir født på ny (",
+          "after": "). Mange løper verden rundt på jakt ette",
+          "spans": [
+            [
+              5978,
+              5990
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "687474b51961715ca871eaa6",
+          "quote": "Johannes 3:7",
+          "before": "us da han sa: «Dere må bli født på ny» (",
+          "after": ")? Noen ganger gjør vi evangeliets budsk",
+          "spans": [
+            [
+              6394,
+              6406
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "ba58354daf49d0c81ebcd68a",
+          "quote": "2. Korinter 11:2-3",
+          "before": "og ført bort fra enkelheten i Kristus» (",
+          "after": "). Det gode budskapet om frelse er enkel",
+          "spans": [
+            [
+              6850,
+              6868
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "5057c6358884962960cb1127",
+          "quote": "Matteus 3:6",
+          "before": "Jordan, mens de bekjente syndene sine» (",
+          "after": "). Det første trinnet til frelse er å be",
+          "spans": [
+            [
+              7198,
+              7209
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "7422587a4bc7876b9f02443c",
+          "quote": "Jakob 5:16",
+          "before": "irksomme, inderlige bønn utretter mye» (",
+          "after": "). Søk hjelp hos en forkynner eller en e",
+          "spans": [
+            [
+              7908,
+              7918
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "3d87e1d4c992d31332333a22",
+          "quote": "Apostlenes gjerninger 3:19",
+          "before": "indring skal komme fra Herrens nærvær» (",
+          "after": "). «Vend derfor om fra denne ondskapen d",
+          "spans": [
+            [
+              8603,
+              8629
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "155dabed1c5cc2b9da5fb55e",
+          "quote": "Apostlenes gjerninger 8:22",
+          "before": "ilgivelse for det du tenkte i hjertet» (",
+          "after": "). Når du omvender deg fra syndene dine,",
+          "spans": [
+            [
+              8752,
+              8778
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "d4731d1855c88e3d3bcce4f6",
+          "quote": "Romerne 10:13",
+          "before": "åkaller Herrens navn, skal bli frelst» (",
+          "after": "). Nå som du har bekjent og vendt om fra",
+          "spans": [
+            [
+              9023,
+              9036
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "5371ba3cd73d7ae3dc8dc01f",
+          "quote": "Apostlenes gjerninger 2:21",
+          "before": "åkaller Herrens navn, skal bli frelst» (",
+          "after": "). «Dere vet jo at det ikke var med forg",
+          "spans": [
+            [
+              9407,
+              9433
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "d805e0ae02c8e40f2607ec64",
+          "quote": "1. Peter 1:18-19",
+          "before": "blod, som av et lam uten feil og lyte» (",
+          "after": "). «Jeg vil stenke rent vann på dere, så",
+          "spans": [
+            [
+              9640,
+              9656
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "902bb1416f6cb4df5d0ac0c7",
+          "quote": "Esekiel 36:25-28",
+          "before": "mitt folk, og jeg skal være deres Gud» (",
+          "after": ").",
+          "spans": [
+            [
+              10130,
+              10146
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "d8df44286b4f6cbc3026e2cb",
+          "quote": "Apostlenes gjerninger 16:30-31",
+          "before": "Kristus, så skal du bli frelst . . .’» (",
+          "after": "). Du har bekjent og vendt om fra synden",
+          "spans": [
+            [
+              10378,
+              10408
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "a20e7a75d5f53912262ed887",
+          "quote": "Romerne 10:9",
+          "before": "m opp fra de døde, skal du bli frelst» (",
+          "after": "). «For så høyt har Gud elsket verden at",
+          "spans": [
+            [
+              10719,
+              10731
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "ef3f550eb08998c12e5f4c46",
+          "quote": "Johannes 3:16",
+          "before": "ikke skal gå fortapt, men ha evig liv» (",
+          "after": "). Takk Herren for at han har tatt synde",
+          "spans": [
+            [
+              10875,
+              10888
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "da6778f2386af9e01836575d",
+          "quote": "1. Peter 3:21",
+          "before": "or Gud), ved Jesu Kristi oppstandelse» (",
+          "after": "). Du kan være dette mennesket med ren s",
+          "spans": [
+            [
+              11535,
+              11548
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "35ff72b5f6a6111f19359652",
+          "quote": "Efeserne 4:21-23",
+          "before": "ene, og bli fornyet i deres sinns ånd» (",
+          "after": "). Dette er et viktig tema, og det kunne",
+          "spans": [
+            [
+              12347,
+              12363
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "beb6026ab17b9fe6ba154ec9",
+          "quote": "Matteus 7:13-14",
+          "before": "til livet, og få er de som finner den» (",
+          "after": ").",
+          "spans": [
+            [
+              13134,
+              13149
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "6212142cfa8a36d3d70f0766",
+          "quote": "Lukas 9:23",
+          "before": "er dag ta sitt kors opp og følge meg’» (",
+          "after": "). Vi må daglig korsfeste kjødets begjær",
+          "spans": [
+            [
+              13688,
+              13698
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "ae235f62e81e1c57d36f2145",
+          "quote": "1. Johannes 1:7,9",
+          "before": "og renser oss for all urettferdighet.» (",
+          "after": ").",
+          "spans": [
+            [
+              14232,
+              14249
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "1c8ee8b82ca1732804a0014e",
+          "quote": "2. Korinter 9:15",
+          "before": " være takk for sin ubeskrivelige gave» (",
+          "after": "). Frelsens frie gave er tilgjengelig fo",
+          "spans": [
+            [
+              14893,
+              14909
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "8421da675058c3dcbd5b152f66cf003fbe9289bffbd4a938a2f06ea9a5e036a3"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:nl:936bb4bebdd374a24c28a2877c4eba40fffdd3f482dd9861514a80b9d74f1a51:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "nl",
@@ -98549,6 +99787,400 @@
         }
       ],
       "record_hash": "8ede3942a79bf758dab2d77772f2ef7a810d07cc32be76324887b5f46ee3f741"
+    },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:sw:763afc67d9580fcf6b427e30a8fc9dd69abf30188edcc98c9883cbfe96fe012c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "sw",
+      "content_hash": "763afc67d9580fcf6b427e30a8fc9dd69abf30188edcc98c9883cbfe96fe012c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4f4e50e51fb7c3e591b71fe0",
+          "quote": "Mwanzo 3",
+          "before": "wa kwanza ulioandikwa unaonekana katika ",
+          "after": ". “Akasema, Nalisikia sauti yako bustani",
+          "spans": [
+            [
+              1645,
+              1653
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "2a9c441a026a2722024f94cd",
+          "quote": "Mwanzo 3:10",
+          "before": "pa kwa kuwa mimi ni uchi; nikajificha” (",
+          "after": "). Adamu aliogopa. Aliogopa nini? Adamu ",
+          "spans": [
+            [
+              1744,
+              1755
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "56e8aaaafd190c75fc2a524e",
+          "quote": "Mwanzo 4:5",
+          "before": "akasirika sana, uso wake ukakunjamana” (",
+          "after": "). Huenda ulikuwa mmoja wa watoto hao.",
+          "spans": [
+            [
+              3576,
+              3586
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "6ee4c4eebcb0b1fb62c33ee1",
+          "quote": "Mwanzo 1",
+          "before": "hisho kwa misukosuko ya kihisia. Katika ",
+          "after": ", Mungu aliumba mimea ya kijani na miti ",
+          "spans": [
+            [
+              5512,
+              5520
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "4589de913c2f45f9b54ee256",
+          "quote": "Yohana 3:3",
+          "before": "pili, hawezi kuuona ufalme wa mbinguni (",
+          "after": "). Watu wengi hukimbia huku na huko ulim",
+          "spans": [
+            [
+              6015,
+              6025
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "e6e9f3c11b4d7ecb7b08d64c",
+          "quote": "Yohana 3:7",
+          "before": "ema, “Imewapasa kuzaliwa mara ya pili” (",
+          "after": ")? Nyakati nyingine, tunaufanya ujumbe w",
+          "spans": [
+            [
+              6524,
+              6534
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "eb359b26e4787f164bfa399c",
+          "quote": "2 Wakorintho 11:2-3",
+          "before": "ewa katika urahisi ulio katika Kristo” (",
+          "after": "). Habari Njema ya wokovu ni rahisi na s",
+          "spans": [
+            [
+              7002,
+              7021
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "22cbc632f15ec4d32fe468a5",
+          "quote": "Mathayo 3:6",
+          "before": "Yordani, huku wakiziungama dhambi zao” (",
+          "after": "). Hatua ya kwanza ya wokovu ni kuungama",
+          "spans": [
+            [
+              7326,
+              7337
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "8fed8f1c97e7845dd01fcb44",
+          "quote": "Yakobo 5:16",
+          "before": "aki yenye bidii na nguvu yanafaa sana” (",
+          "after": "). Tafuta msaada wa mhudumu wa kanisa au",
+          "spans": [
+            [
+              8023,
+              8034
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "83de3833fc8e426d43f83e13",
+          "quote": "Matendo 3:19",
+          "before": "wa zitakapokuja kutoka mbele za Bwana” (",
+          "after": "). “Basi tubia uovu huu wako, ukamwombe ",
+          "spans": [
+            [
+              8661,
+              8673
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "8d2102c5368492bfb8aa2da2",
+          "quote": "Matendo 8:22",
+          "before": "a, usamehewe shauri hili la moyo wako” (",
+          "after": "). Kwa kutubu dhambi zako, unamwambia Mu",
+          "spans": [
+            [
+              8775,
+              8787
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "5a25e3781351d1ec2e0169e7",
+          "quote": "Warumi 10:13",
+          "before": " atakayeliitia jina la Bwana ataokoka” (",
+          "after": "). Sasa kwa kuwa umeungama na kutubu dha",
+          "spans": [
+            [
+              9023,
+              9035
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "025249643d386ba5e36d3e34",
+          "quote": "Matendo 2:21",
+          "before": " atakayeliitia jina la Bwana ataokoka” (",
+          "after": "). “Mkijua kwamba mlikombolewa si kwa vi",
+          "spans": [
+            [
+              9378,
+              9390
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "fc20e67840bc8dbfd47f5133",
+          "quote": "1 Petro 1:18-19",
+          "before": "ana-kondoo asiye na ila, asiye na waa” (",
+          "after": "). “Nami nitawanyunyizia maji safi, nany",
+          "spans": [
+            [
+              9630,
+              9645
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "e5950632b9364b8ae119c6a2",
+          "quote": "Ezekieli 36:25-28",
+          "before": " watu wangu, nami nitakuwa Mungu wenu” (",
+          "after": ").",
+          "spans": [
+            [
+              10123,
+              10140
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "079a8dbc519de3b9428ff7bf",
+          "quote": "Matendo 16:30-31",
+          "before": "wana Yesu Kristo, nawe utaokoka . . .” (",
+          "after": "). Umeungama na kutubu dhambi zako; umem",
+          "spans": [
+            [
+              10385,
+              10401
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "f0957a2ec3a23d99042e3f89",
+          "quote": "Warumi 10:9",
+          "before": "Mungu alimfufua katika wafu, utaokoka” (",
+          "after": "). “Kwa maana jinsi hii Mungu aliupenda ",
+          "spans": [
+            [
+              10691,
+              10702
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "f9831cc5df9c65dd0027d86a",
+          "quote": "Yohana 3:16",
+          "before": "asipotee, bali awe na uzima wa milele” (",
+          "after": "). Mshukuru Bwana kwa kuwa amekuondolea ",
+          "spans": [
+            [
+              10845,
+              10856
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "b111b2206dc1ff8252db09b1",
+          "quote": "1 Petro 3:21",
+          "before": "ungu), kwa kufufuka kwake Yesu Kristo” (",
+          "after": "). Mtu huyo mwenye dhamiri safi anaweza ",
+          "spans": [
+            [
+              11460,
+              11472
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "dcf7aa7e71ae1771f7173b0d",
+          "quote": "Waefeso 4:21-23",
+          "before": "mfanywe wapya katika roho ya nia zenu” (",
+          "after": "). Hili ni jambo muhimu, na mengi zaidi ",
+          "spans": [
+            [
+              12221,
+              12236
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "28c087130bf5b10484248b5c",
+          "quote": "Mathayo 7:13-14",
+          "before": "ayo uzimani, nao waipatao ni wachache” (",
+          "after": ").",
+          "spans": [
+            [
+              12975,
+              12990
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "bea5cabd88cfa7e996d173df",
+          "quote": "Luka 9:23",
+          "before": "wike msalaba wake kila siku, anifuate” (",
+          "after": "). Ni lazima tuyasulubishe matamanio ya ",
+          "spans": [
+            [
+              13574,
+              13583
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "4dbef44b05b00acb110a1d15",
+          "quote": "1 Yohana 1:7,9",
+          "before": "etu, na kutusafisha na udhalimu wote.” (",
+          "after": ").",
+          "spans": [
+            [
+              14150,
+              14164
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "db438a6af7b4fb2858672252",
+          "quote": "2 Wakorintho 9:15",
+          "before": "ipawa chake kisichoelezeka kwa maneno” (",
+          "after": "). Zawadi ya bure ya wokovu inapatikana ",
+          "spans": [
+            [
+              14829,
+              14846
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "eaad89ef85c98882fb385c185b50b439af332ede1d251d31fa14772613986d7b"
     },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:zh-Hans:06f03217a098df23a5bc0a1d69a8305ac6f186bee1fa0e7c51398a1601fefc43:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
@@ -101002,6 +102634,223 @@
         }
       ],
       "record_hash": "1d0b28c7a263058352662a9d1c8a710253b768e824bbc238638b0f98be527b98"
+    },
+    "34125090-b480-4d63-b13a-33d47470f335:ar:851d791ad42f692b310f033647eae8a2b8bd60141d34f30fb58a76a36780b313:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "34125090-b480-4d63-b13a-33d47470f335",
+      "locale": "ar",
+      "content_hash": "851d791ad42f692b310f033647eae8a2b8bd60141d34f30fb58a76a36780b313",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4a71761a042447d803926465",
+          "quote": "متى 4:18-22",
+          "before": "ما. فتركا المركب وأباهما فورًا واتبعاه –",
+          "after": ".",
+          "spans": [
+            [
+              419,
+              430
+            ]
+          ],
+          "osis": "Matt.4.18-Matt.4.22",
+          "queries": [
+            "40 4:18-22"
+          ]
+        },
+        {
+          "id": "be83db7a51cf9fc02c475224",
+          "quote": "متى 3:11-12",
+          "before": "خزنه، وأما التبن فسيحرقه بنار لا تُطفأ –",
+          "after": ".",
+          "spans": [
+            [
+              1157,
+              1168
+            ]
+          ],
+          "osis": "Matt.3.11-Matt.3.12",
+          "queries": [
+            "40 3:11-12"
+          ]
+        },
+        {
+          "id": "d0afb220993132f91fa39008",
+          "quote": "لوقا 8:1-3",
+          "before": "اء أخريات كثيرات كنّ يخدمنه من أموالهن –",
+          "after": ".",
+          "spans": [
+            [
+              2790,
+              2800
+            ]
+          ],
+          "osis": "Luke.8.1-Luke.8.3",
+          "queries": [
+            "42 8:1-3"
+          ]
+        },
+        {
+          "id": "899b2d0fb00ab5b53832fd66",
+          "quote": "يوحنا 20:15-16",
+          "before": "التفتت وقالت له: «ربّوني»، أي: يا معلم –",
+          "after": ".",
+          "spans": [
+            [
+              3263,
+              3277
+            ]
+          ],
+          "osis": "John.20.15-John.20.16",
+          "queries": [
+            "43 20:15-16"
+          ]
+        },
+        {
+          "id": "0cd43a1f5218bce13afe06aa",
+          "quote": "لوقا 5",
+          "before": "ى الأرض أن يخلّصنا من سلطان الخطيئة. في ",
+          "after": " يسجل الطبيب لوقا قصة رجل مشلول. لم يكن ",
+          "spans": [
+            [
+              3532,
+              3538
+            ]
+          ],
+          "osis": "Luke.5.1-Luke.5.39",
+          "queries": [
+            "42 5:1-39"
+          ]
+        },
+        {
+          "id": "99b928b9ba7c86c5cc4c67b6",
+          "quote": "لوقا 5:20",
+          "before": "نهم قال له: «يا رجل، مغفورة لك خطاياك» –",
+          "after": ". طلبوا شفاءً، لكن يسوع رأى الحاجة الأعم",
+          "spans": [
+            [
+              3884,
+              3893
+            ]
+          ],
+          "osis": "Luke.5.20",
+          "queries": [
+            "42 5:20"
+          ]
+        },
+        {
+          "id": "914daab3d07f2eb1e89c312f",
+          "quote": "لوقا 5:21",
+          "before": "من يقدر أن يغفر الخطايا إلا الله وحده؟ –",
+          "after": ". كانوا على حق، لا يقدر أن يغفر الخطايا ",
+          "spans": [
+            [
+              4112,
+              4121
+            ]
+          ],
+          "osis": "Luke.5.21",
+          "queries": [
+            "42 5:21"
+          ]
+        },
+        {
+          "id": "3f72639858c9aae3b4cac227",
+          "quote": "لوقا 5:22-24",
+          "before": "لك أقول، قم واحمل فراشك واذهب إلى بيتك –",
+          "after": ".",
+          "spans": [
+            [
+              4529,
+              4541
+            ]
+          ],
+          "osis": "Luke.5.22-Luke.5.24",
+          "queries": [
+            "42 5:22-24"
+          ]
+        },
+        {
+          "id": "c56cf8e0cd920710895887fd",
+          "quote": "متى 22",
+          "before": "في ",
+          "after": " روى يسوع قصة ملك خطط لعرس ابنه. فلما رف",
+          "spans": [
+            [
+              5515,
+              5521
+            ]
+          ],
+          "osis": "Matt.22.1-Matt.22.46",
+          "queries": [
+            "40 22:1-46"
+          ]
+        },
+        {
+          "id": "f119e10d8698459b4ef81d83",
+          "quote": "لوقا 7:37-39",
+          "before": "مرأة التي تلمسه وما حالها؛ لأنها خاطئة –",
+          "after": ".",
+          "spans": [
+            [
+              8161,
+              8173
+            ]
+          ],
+          "osis": "Luke.7.37-Luke.7.39",
+          "queries": [
+            "42 7:37-39"
+          ]
+        },
+        {
+          "id": "cb2a89d4512f6c6832f3a4d6",
+          "quote": "لوقا 7:44-47",
+          "before": " وأما من يُغفر له قليل فإنه يحب قليلًا –",
+          "after": ".",
+          "spans": [
+            [
+              8924,
+              8936
+            ]
+          ],
+          "osis": "Luke.7.44-Luke.7.47",
+          "queries": [
+            "42 7:44-47"
+          ]
+        },
+        {
+          "id": "a167387708a62724e53ae2ae",
+          "quote": "لوقا 7:48",
+          "before": "وقال للمرأة: …مغفورة لكِ خطاياكِ –",
+          "after": ". المغفرة والتحرر من الخطيئة يوقظان القل",
+          "spans": [
+            [
+              8990,
+              8999
+            ]
+          ],
+          "osis": "Luke.7.48",
+          "queries": [
+            "42 7:48"
+          ]
+        },
+        {
+          "id": "386490ac8297e7eea77f20a3",
+          "quote": "متى 1:21",
+          "before": "مه يسوع، لأنه هو يخلّص شعبه من خطاياهم –",
+          "after": ".",
+          "spans": [
+            [
+              9581,
+              9589
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        }
+      ],
+      "record_hash": "bdef0bec7b43e586a2cb886d18b356cc351245ce7edf4d7d29e5301a1091ef02"
     },
     "34125090-b480-4d63-b13a-33d47470f335:el:de0bc269f644106ce4b10e0fe8ef2f7eb8daded55d38d8c4eb3ce8a2eb7cf168:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "34125090-b480-4d63-b13a-33d47470f335",
@@ -120811,6 +122660,111 @@
       ],
       "record_hash": "6c1b4f280b220f91261768d2833b93dc3d5263df2101ad320a0a55f3a81b7ab2"
     },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:ko:3591c748a98ff29c8ac40fb0fd4600657f668890c832903a0fa923d23ba8c3e2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "ko",
+      "content_hash": "3591c748a98ff29c8ac40fb0fd4600657f668890c832903a0fa923d23ba8c3e2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "63297fba7b168cd40bbe9152",
+          "quote": "시편 144:12",
+          "before": " 같고, 우리 딸들은 궁전의 모양을 따라 다듬은 모퉁잇돌 같게 하소서 –",
+          "after": ".",
+          "spans": [
+            [
+              281,
+              290
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "e050c4f47616fe9dd0e54404",
+          "quote": "누가복음 2:47",
+          "before": ". 그분의 말을 들은 사람들은 모두 그분의 이해와 대답에 놀랐습니다. (",
+          "after": " 참조) 예수님은 열두 살에 놀라운 성숙함을 보이셨습니다. 부모님조차 놀",
+          "spans": [
+            [
+              917,
+              926
+            ]
+          ],
+          "osis": "Luke.2.47",
+          "queries": [
+            "42 2:47"
+          ]
+        },
+        {
+          "id": "ca9109479bf22588ce50c958",
+          "quote": "누가복음 2:51",
+          "before": "서 그들과 함께 내려가 나사렛에 이르러 그들에게 순종하며 지내셨더라… –",
+          "after": ". 부모가 자녀의 성숙을 북돋우기 위해 할 수 있는 몇 가지를 살펴보겠습",
+          "spans": [
+            [
+              1468,
+              1477
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "c95d9f95c2f21d0bd970f7d2",
+          "quote": "시편 144:15",
+          "before": "이 있나니, 참으로 여호와를 자기 하나님으로 삼는 백성은 복이 있도다 –",
+          "after": ".",
+          "spans": [
+            [
+              1654,
+              1663
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "5b319dd995a22c8d1f1b5978",
+          "quote": "시편 127:4",
+          "before": "용사의 손에 있는 화살과 같이 젊어서 낳은 자녀도 그러하도다 –",
+          "after": ". 이 구절은 자녀가 원수에 맞서는 강력한 방어가 된다는 점을 일깨워 줍",
+          "spans": [
+            [
+              7354,
+              7362
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "fb5d0c653d28103c5540803e",
+          "quote": "시편 127:5",
+          "before": "복되도다. 그들은 수치를 당하지 아니하고 성문에서 원수들과 말하리로다 –",
+          "after": ".",
+          "spans": [
+            [
+              7621,
+              7629
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "e1a17fbc5879f3970c2e5f3114f57de3c25f518a4ed6e26219ee3efa63f11375"
+    },
     "3b932103-b3fb-450d-885a-eaca95ee48fe:nb:8b6390aad005534c270efe0d3f03d7c71a394633f8f976b41ea5b7c47b0c6c85:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
       "locale": "nb",
@@ -121335,6 +123289,111 @@
         }
       ],
       "record_hash": "1953680c513f7dadadc2f600fc44cf31a7024074d6cbb010f2320cc5d61c70d7"
+    },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:sw:a41af9ba5106d8a7dd31ea450627e59726498ef8a7af0b23a1861e79179f7433:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "sw",
+      "content_hash": "a41af9ba5106d8a7dd31ea450627e59726498ef8a7af0b23a1861e79179f7433",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5d9a1c31dcae91fccdca0b88",
+          "quote": "Zaburi 144:12",
+          "before": "’arishwa kwa mfano wa jumba la kifalme –",
+          "after": ".",
+          "spans": [
+            [
+              422,
+              435
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "e966c67e4c937abb22d0eade",
+          "quote": "Luka 2:47",
+          "before": "na ufahamu wake na majibu yake. (tazama ",
+          "after": ") Yesu alionyesha kiwango cha ajabu cha ",
+          "spans": [
+            [
+              1602,
+              1611
+            ]
+          ],
+          "osis": "Luke.2.47",
+          "queries": [
+            "42 2:47"
+          ]
+        },
+        {
+          "id": "02e213f8826ed24839d29c02",
+          "quote": "Luka 2:51",
+          "before": "aenda Nazareti, naye alikuwa akiwatii… –",
+          "after": ". Tutaangalia mambo kadhaa ambayo wazazi",
+          "spans": [
+            [
+              2641,
+              2650
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "1f9fefa6050803bc2e3140ef",
+          "quote": "Zaburi 144:15",
+          "before": "am, heri watu ambao Mungu wao ni BWANA –",
+          "after": ".",
+          "spans": [
+            [
+              2939,
+              2952
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "b41ae33ebb0daffc307c01ad",
+          "quote": "Zaburi 127:4",
+          "before": "vyo watoto waliozaliwa wakati wa ujana –",
+          "after": ". Mstari huu unatukumbusha kwamba watoto",
+          "spans": [
+            [
+              13959,
+              13971
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "4eda776008691bb20eb7ecdd",
+          "quote": "Zaburi 127:5",
+          "before": "ibika, bali watasema na maadui langoni –",
+          "after": ".",
+          "spans": [
+            [
+              14440,
+              14452
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "3a4c9ae0e6dcb36536c6339c823870108061bc4cd547ed2451a975cf1fd7f827"
     },
     "3b932103-b3fb-450d-885a-eaca95ee48fe:ur:85e62d0a6accf0d57555b1297d8516f7b39d237614e1fc93d095a7d8c55caa74:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
@@ -148340,6 +150399,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "47d80dc7474ddba8ed237d583b1db72cf9049613621498d7377a6a5a9ee72e68"
+    },
+    "4e180a0e-db17-4e62-9eb8-da82bbe72d17:el:a7e0f9b1b622d2cbabebd09094cee8a8af08a385a0b9c019c6d9bba90ed59e16:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "4e180a0e-db17-4e62-9eb8-da82bbe72d17",
+      "locale": "el",
+      "content_hash": "a7e0f9b1b622d2cbabebd09094cee8a8af08a385a0b9c019c6d9bba90ed59e16",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "e95b05ebb3be0300086ed7b3ddfa378cd73c475170da4b48733c27e00f61ebb6"
     },
     "4e180a0e-db17-4e62-9eb8-da82bbe72d17:en:6cf7692cf723562e63577a441d1d00e24a6cd3d499d163fc2e8f7c5d09341ff2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "4e180a0e-db17-4e62-9eb8-da82bbe72d17",
@@ -210732,6 +212799,14 @@
       "markers": [],
       "record_hash": "76687ab8ba01a55b06175a4e61a1db4302503d710649d228b8b6569028ca1a6c"
     },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:ko:2cbe487f55bfb66f0b0cb57b68b5508a992afc533e52ccfe711c050bc239f54a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "ko",
+      "content_hash": "2cbe487f55bfb66f0b0cb57b68b5508a992afc533e52ccfe711c050bc239f54a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "2583a0259707914168ab2c503ab06eab906d4c56be0f96ecf2fd244b3659d8b2"
+    },
     "7750b3b4-3c80-48a5-860c-4958331969d7:pt:1985de21173cbebef01ac75a0c84c7a99a44cbf770ca59c0a5729a40e8f11e51:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
       "locale": "pt",
@@ -210739,6 +212814,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4298eac1c54c656c133aad56687d31f1b5609edbaf8a0e6452570d4df24f4ee1"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:ur:b3296dc584c2df8485d8124463a60091710c9c1df3a097fa55a1ca5f9d5bf2af:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "ur",
+      "content_hash": "b3296dc584c2df8485d8124463a60091710c9c1df3a097fa55a1ca5f9d5bf2af",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ebcb700e1291055d447fa5289ce4d1c510a84b9a4c80a118fef6632d91420e16"
     },
     "7750b3b4-3c80-48a5-860c-4958331969d7:zh-Hans:6dcea2af2ce1443851d9c45e94653058a175af93bdfdcb64f8e3c39574fa2164:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
@@ -272462,6 +274545,303 @@
         }
       ],
       "record_hash": "d2f85e118c7dd6b5c2470d019385401d26ac1fcef1208812dc97213987f64c9e"
+    },
+    "951f56e4-2ce8-4f01-9500-bfeee209cdb4:he:770fc45e2bbe6d397f193dba6fc955901b133efbd9297527ac3d651709727379:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "951f56e4-2ce8-4f01-9500-bfeee209cdb4",
+      "locale": "he",
+      "content_hash": "770fc45e2bbe6d397f193dba6fc955901b133efbd9297527ac3d651709727379",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d1ee8f235e46ad476798784d",
+          "quote": "מרקוס 4:37-41",
+          "before": " האיש הזה, שאפילו הרוח והים מצייתים לו? ",
+          "after": "",
+          "spans": [
+            [
+              441,
+              454
+            ]
+          ],
+          "osis": "Mark.4.37-Mark.4.41",
+          "queries": [
+            "41 4:37-41"
+          ]
+        },
+        {
+          "id": "abe45cb456d55532c86f6cbe",
+          "quote": "מעשי השליחים 27:20",
+          "before": "שתוללה עלינו, עד שאבדה כל תקווה שנינצל –",
+          "after": ". בתוך מצב קודר וחסר תקווה פעמון אחד ממש",
+          "spans": [
+            [
+              1833,
+              1851
+            ]
+          ],
+          "osis": "Acts.27.20",
+          "queries": [
+            "44 27:20"
+          ]
+        },
+        {
+          "id": "e89492819f9cb730fc0efe77",
+          "quote": "השנייה אל הקורינתים 11:25",
+          "before": "חוויה מסוכנת: …לילה ויום הייתי במצולות –",
+          "after": ", ובכל זאת לא דרש כי הרוח והים ייכנעו לס",
+          "spans": [
+            [
+              2024,
+              2049
+            ]
+          ],
+          "osis": "2Cor.11.25",
+          "queries": [
+            "47 11:25"
+          ]
+        },
+        {
+          "id": "63bb629b68a7c4b99be2812a",
+          "quote": "מעשי השליחים 27:23-24",
+          "before": "ואותו אני משרת, ואמר: אל תפחד, פאולוס… –",
+          "after": ". זו תמונה דומה לסכנה שעברו התלמידים בקט",
+          "spans": [
+            [
+              2226,
+              2247
+            ]
+          ],
+          "osis": "Acts.27.23-Acts.27.24",
+          "queries": [
+            "44 27:23-24"
+          ]
+        },
+        {
+          "id": "c128690d29dd1ce22582d983",
+          "quote": "מרקוס 4:38",
+          "before": "ידים: …מורה, לא אכפת לך שאנחנו אובדים? –",
+          "after": ". כמה טבעי לכולנו להטיל את תסכולנו ואת ה",
+          "spans": [
+            [
+              2487,
+              2497
+            ]
+          ],
+          "osis": "Mark.4.38",
+          "queries": [
+            "41 4:38"
+          ]
+        },
+        {
+          "id": "2958963441a7fb7983427cdc",
+          "quote": "יונה 1:6",
+          "before": "ולי אלוהים ייתן את דעתו עלינו ולא נאבד –",
+          "after": ".",
+          "spans": [
+            [
+              2739,
+              2747
+            ]
+          ],
+          "osis": "Jonah.1.6",
+          "queries": [
+            "32 1:6"
+          ]
+        },
+        {
+          "id": "24a55f8ef77039c362ccb06e",
+          "quote": "השנייה אל הקורינתים 1:8",
+          "before": "לכוחותינו, עד שהתייאשנו אפילו מן החיים –",
+          "after": ". ובכל זאת נשא בלבו עוגן של חזון לנפשו.",
+          "spans": [
+            [
+              3201,
+              3224
+            ]
+          ],
+          "osis": "2Cor.1.8",
+          "queries": [
+            "47 1:8"
+          ]
+        },
+        {
+          "id": "b762f98711482616107633fe",
+          "quote": "תהילים 107:25-30",
+          "before": " על השקט, והוא מביא אותם אל הנמל הנכסף –",
+          "after": ".",
+          "spans": [
+            [
+              3610,
+              3626
+            ]
+          ],
+          "osis": "Ps.107.25-Ps.107.30",
+          "queries": [
+            "19 107:25-30"
+          ]
+        },
+        {
+          "id": "a9254161d91371fa222266dc",
+          "quote": "מעשי השליחים 27:12-13",
+          "before": "שהייה בחורף … בחושבם שהשיגו את מבוקשם… –",
+          "after": ", ולכן הפליג עם הסימן הראשון של עידוד מן",
+          "spans": [
+            [
+              3870,
+              3891
+            ]
+          ],
+          "osis": "Acts.27.12-Acts.27.13",
+          "queries": [
+            "44 27:12-13"
+          ]
+        },
+        {
+          "id": "05243a31de689347a5c5ccea",
+          "quote": "יוחנן 14:27",
+          "before": "י שהעולם נותן. אל ייטרד לבבכם ואל יפחד –",
+          "after": ". מנוחה זו יכולה להיות שלנו פשוט בהפלגה ",
+          "spans": [
+            [
+              4096,
+              4107
+            ]
+          ],
+          "osis": "John.14.27",
+          "queries": [
+            "43 14:27"
+          ]
+        },
+        {
+          "id": "6e06badc51d762a1d523b80f",
+          "quote": "מעשי השליחים 27:14",
+          "before": "ת כמו …רוח סערה עזה, הנקראת יורוקלידון –",
+          "after": ". רוחות סוערות אלו נושאות עמן תעוזה מדהי",
+          "spans": [
+            [
+              4302,
+              4320
+            ]
+          ],
+          "osis": "Acts.27.14",
+          "queries": [
+            "44 27:14"
+          ]
+        },
+        {
+          "id": "6225c603a0d96d402b1ae575",
+          "quote": "אל הפיליפים 1:23",
+          "before": "להיות עם המשיח, דבר שהוא טוב הרבה יותר –",
+          "after": ". אם אנו יכולים להפקיד בביטחון את חיינו ",
+          "spans": [
+            [
+              8048,
+              8064
+            ]
+          ],
+          "osis": "Phil.1.23",
+          "queries": [
+            "50 1:23"
+          ]
+        },
+        {
+          "id": "99f8030f216f58402ee0fb4a",
+          "quote": "מרקוס 8:35",
+          "before": "ד את חייו למעני ולמען הבשורה יציל אותם –",
+          "after": ".",
+          "spans": [
+            [
+              8254,
+              8264
+            ]
+          ],
+          "osis": "Mark.8.35",
+          "queries": [
+            "41 8:35"
+          ]
+        },
+        {
+          "id": "a7d3c171e07bb9651e6a1cc5",
+          "quote": "לוקס 12:13",
+          "before": ": מורה, אמור לאחי שיחלק איתי את הירושה –",
+          "after": ". ישוע סירב לצדד בו. במקום זאת פנה אל הל",
+          "spans": [
+            [
+              8747,
+              8757
+            ]
+          ],
+          "osis": "Luke.12.13",
+          "queries": [
+            "42 12:13"
+          ]
+        },
+        {
+          "id": "8e03ba35747ab716a9702e6e",
+          "quote": "מעשי השליחים 27:22",
+          "before": "איש מכם לא יאבד את חייו, אלא רק הספינה –",
+          "after": ". הדברים הוגשו כמשחת מרפא למלחים המותשים",
+          "spans": [
+            [
+              8988,
+              9006
+            ]
+          ],
+          "osis": "Acts.27.22",
+          "queries": [
+            "44 27:22"
+          ]
+        },
+        {
+          "id": "c49ba1da75a75adace165048",
+          "quote": "מתי 19:22",
+          "before": ", …הוא הלך משם עצוב, כי היה לו רכוש רב –",
+          "after": ". אלה מאיתנו המתמלאים חרדה לנוכח אובדן ע",
+          "spans": [
+            [
+              9219,
+              9228
+            ]
+          ],
+          "osis": "Matt.19.22",
+          "queries": [
+            "40 19:22"
+          ]
+        },
+        {
+          "id": "96354f37ec1b1e79c21335dd",
+          "quote": "לוקס 10:40",
+          "before": " אותי לשרת לבדי? אמור לה אפוא לעזור לי –",
+          "after": ". חרדתה לא נגרמה מהזנחתה של מרים או מאדי",
+          "spans": [
+            [
+              9931,
+              9941
+            ]
+          ],
+          "osis": "Luke.10.40",
+          "queries": [
+            "42 10:40"
+          ]
+        },
+        {
+          "id": "56c9241a7df7bcf74bcecb7a",
+          "quote": "אל העברים 4:9-11",
+          "before": " ממעשיו. לכן נשתדל להיכנס למנוחה ההיא… –",
+          "after": ".",
+          "spans": [
+            [
+              11198,
+              11214
+            ]
+          ],
+          "osis": "Heb.4.9-Heb.4.11",
+          "queries": [
+            "58 4:9-11"
+          ]
+        }
+      ],
+      "record_hash": "fe42f6dfc02394f46e033c38f5af52f785a0d5547c6700dbd2b423c4eb2b16e2"
     },
     "951f56e4-2ce8-4f01-9500-bfeee209cdb4:hi:2d6f2c3ee1841f9a3293fada91308f9bcc5fd1a05b81f6d0132e1fa144e74e6f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "951f56e4-2ce8-4f01-9500-bfeee209cdb4",
@@ -357743,6 +360123,95 @@
         }
       ],
       "record_hash": "8f1e33f72290baab385de9b678c3aa16675ebadb6a705ed2cfb323046be9b7aa"
+    },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:hi:f4de3f24b44d5723e4f86410cbbdaee2b25dbfed89d4cb83b5e2753694806a92:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "hi",
+      "content_hash": "f4de3f24b44d5723e4f86410cbbdaee2b25dbfed89d4cb83b5e2753694806a92",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "12dc65798bd79b747b46e799",
+          "quote": "रोमियों 13",
+          "before": "रने के लिए बुलाते हैं, और प्रेरित पौलुस ",
+          "after": " में हमें “उच्च अधिकारियों के अधीन रहने”",
+          "spans": [
+            [
+              2089,
+              2099
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "86e5f69ca6187bee8e547d5c",
+          "quote": "1 पतरस 2",
+          "before": "श्वर की ओर से न हो तो कोई अधिकार नहीं।” ",
+          "after": " में राजा के संदर्भ में इस्तेमाल किए गए ",
+          "spans": [
+            [
+              2210,
+              2218
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "277457f83f08588f01951c49",
+          "quote": "लूका 21",
+          "before": "",
+          "after": " में भविष्य की घटनाओं के बारे में एक आयत",
+          "spans": [
+            [
+              5880,
+              5887
+            ]
+          ],
+          "osis": "Luke.21.1-Luke.21.38",
+          "queries": [
+            "42 21:1-38"
+          ]
+        },
+        {
+          "id": "e0658022283f7a0144f41b27",
+          "quote": "2 तीमुथियुस 1:7",
+          "before": ", प्रेम और स्वस्थ विवेक की आत्मा दी है –",
+          "after": ". ये दावे सच हों या न हों, बाइबल फिलिप्प",
+          "spans": [
+            [
+              6484,
+              6499
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "a9909152d038af6a4ae47677",
+          "quote": "फिलिप्पियों 4:8",
+          "before": "सुहावना है, जो कुछ अच्छी ख्याति का है… –",
+          "after": ". इन सिद्धांतों का अनुसरण करने में थोड़ा",
+          "spans": [
+            [
+              6720,
+              6735
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "d3d1d8cce20a43bbf4b9055943511c1d517c10439a1c23320cfe5c8174e8d467"
     },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:id:e34200037f598a23e3f5e2bbc8a3164b6bb1dac453d871bf59e579c9bf13fd8d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
@@ -449378,6 +451847,31 @@
         }
       ],
       "record_hash": "d6a54ee965fbfc990f3099c66971c575f76d8eac8fec06629772e5304e61abd9"
+    },
+    "fe4a7487-2a8a-47c1-96c1-cecbfccbc0dd:zh-Hans:febbbd47a422bdaf0292eac2d40ef8a94acf1589984304fdeae867a7f60d1223:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fe4a7487-2a8a-47c1-96c1-cecbfccbc0dd",
+      "locale": "zh-Hans",
+      "content_hash": "febbbd47a422bdaf0292eac2d40ef8a94acf1589984304fdeae867a7f60d1223",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "068cadc208eb66bc6671f136",
+          "quote": "罗马书 12:21",
+          "before": "“不要被恶所胜，反要以善胜恶。”",
+          "after": " ~",
+          "spans": [
+            [
+              1892,
+              1901
+            ]
+          ],
+          "osis": "Rom.12.21",
+          "queries": [
+            "45 12:21"
+          ]
+        }
+      ],
+      "record_hash": "cde94d90febe301909b34cf9b89b9bcfe69bcfb1d0a5b54382f93ab55dbad318"
     },
     "fe619ee3-c6fd-4dae-a245-268cac617a99:en:65e4c090c6fcd5ec13d3cf1f340977a4f87855278384528fd0d19a24be44e5e7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fe619ee3-c6fd-4dae-a245-268cac617a99",
