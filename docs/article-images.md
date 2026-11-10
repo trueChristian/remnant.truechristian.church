@@ -194,6 +194,28 @@ layout rules. The structural poetry audit covers all 1,168 articles and finds
 four reference/credit groups that retain their original sizing policy. Existing
 standalone and paired compositions retain their intended boundaries.
 
+The [hosted Chromium review](https://github.com/trueChristian/remnant.truechristian.church/actions/runs/42792163904)
+passed on website commit `46342ac8a0fac668400dbecda38a60f89736b9d9`:
+
+- All 966 illustrated articles were checked at 1440px and 390px viewport widths
+  (1,932 rendered pages). All 694 active prose floats retained their native
+  dimensions, with no detected text/image overlap, clipped captions, horizontal
+  overflow, or source-content changes.
+- The 102 verse groups in 92 articles and 19 additional poetry controls were
+  reviewed at both widths (222 pages), preserving printed line breaks and
+  keeping enlarged illustrations beside the measured text column where they fit.
+- All 26 focused/corpus checks and 17 separate permanent browser
+  regression tests passed. Focused checks also cover narrow columns, larger
+  reader text, right-to-left layouts, print, and JavaScript-disabled reading.
+- The repository suite passed 528 Python tests (four existing source-cache
+  skips) and all 90 Node tests. A structural pass across all 1,168 source articles
+  preserved paragraphs, captions, image tags, and line-break counts and confirmed
+  that applying the renderer a second time makes no further changes.
+
+The temporary original-archive review harness is retained in that review commit
+and its Actions artifact. It is removed from the final PR diff; the permanent
+regression tests remain.
+
 ### Rule fields
 
 `data/article-image-layouts.json` is the small editorial exception registry.
