@@ -11,26 +11,34 @@ export function figureLayout({ naturalWidth, naturalHeight, containerWidth, font
 
   const gap = Math.max(24, fontSize * 1.5);
   const ratio = naturalWidth / naturalHeight;
-  // Very tall illustrations must not reserve a broad, mostly empty float box.
-  const width = Math.min(naturalWidth, 320, containerWidth * 0.38, ratio * fontSize * 26);
+  // Wrapping never shrinks an image. Keep its natural size, or let it remain
+  // in the full column when the neighboring text would become too narrow.
+  const width = naturalWidth;
+  if (naturalHeight > fontSize * 40) return null;
   // Small photographs and illustrations can sit beside prose too. Large landscapes,
   // banners, and reviewed text-bearing images keep the full reading column.
   // Reviewed small landscapes can wrap while retaining every size/readability limit.
-  if (!(ratio <= 0.9 || (naturalWidth <= 480 && (ratio <= 1.75 || reviewedWrap)))) return null;
-  if (width < Math.min(naturalWidth, 100)) return null;
-  if (containerWidth - width - gap < fontSize * 18) return null;
+  if (!(ratio <= 0.9 || (naturalWidth <= 480 && (ratio <= 2.4 || reviewedWrap)))) return null;
+  if (containerWidth - width - gap < fontSize * 14) return null;
   return { width, gap, side: index % 2 === 0 ? 'start' : 'end' };
 }
 
 /** Verse keeps its printed line lengths; artwork uses only the remaining space. */
 export function verseLayout({ naturalWidth, naturalHeight, containerWidth, textWidth,
-  fontSize = 18, wideScreen = true }) {
+  fontSize = 18, wideScreen = true, enlarge = false, preserveSize = false }) {
   if (!wideScreen || ![naturalWidth, naturalHeight, containerWidth, textWidth, fontSize]
     .every(value => Number.isFinite(value) && value > 0)) return null;
   const ratio = naturalWidth / naturalHeight;
   if (ratio > 1.75) return null;
   const gap = Math.max(24, fontSize * 1.5);
-  const width = Math.min(naturalWidth, 180, ratio * 300, containerWidth - textWidth - gap - 2);
+  const available = containerWidth - textWidth - gap - 2;
+  // Explicit poems use a substantial illustration beside their actual line
+  // measure. Small originals may grow at most twofold; credits keep their size.
+  const preferred = preserveSize ? naturalWidth : enlarge ?
+    Math.min(Math.max(naturalWidth, 240), naturalWidth * 2, 320, ratio * 600) :
+    Math.min(naturalWidth, 180, ratio * 300);
+  if (preserveSize && available < naturalWidth) return null;
+  const width = Math.min(preferred, available);
   if (width < Math.min(naturalWidth, 100)) return null;
   return { width, gap };
 }
@@ -76,7 +84,18 @@ export function figureFlowHeadings(figure) {
     headings.push(next);
     next = next.nextElementSibling;
   }
-  // Without adjacent readable prose there is no useful wrap. Quotes, tables,
+  // Ordinary adjacent quotations can share an eligible illustration. Verse,
+  // nested structures, and later quotes retain their independent reading flow.
+  if (!headings.length && next?.tagName === 'BLOCKQUOTE') {
+    const paragraph = next.children?.[0];
+    if (figure.hidden || next.hidden || next.children?.length !== 1 || paragraph?.tagName !== 'P' ||
+      paragraph.hidden || !paragraph.textContent.trim() ||
+      [...next.childNodes].some(node => node.nodeType === 3 && node.textContent.trim()) ||
+      figure.closest?.('.poem, .lyrics') || next.matches?.('.poem, .lyrics') ||
+      next.querySelector?.('br, .poem, .lyrics, figure, img, picture, svg, canvas, video, audio, iframe, object, embed, table, ul, ol, blockquote, aside, div, section, script, style')) return null;
+    return headings;
+  }
+  // Without adjacent readable prose there is no useful wrap. Unreviewed quotes, tables,
   // callouts, another figure, and section boundaries keep their stacked layout.
   if (!next || next.hidden || !/^(P|UL|OL)$/.test(next.tagName) ||
     !next.textContent.trim()) return null;
@@ -110,7 +129,10 @@ export function initArticleFigures(document) {
       const image = figure?.querySelector('img');
       if (!image || !text) continue;
       containers.add(row);
-      verseRecords.push({ row, image, text });
+      verseRecords.push({ row, image, text,
+        enlarge: Boolean(text.closest('.poem, .lyrics') || text.querySelector('.poem, .lyrics')),
+        preserveSize: figure.classList.contains('article-figure--native-verse'),
+      });
     }
     figures.forEach((figure, index) => {
       if (figure.classList.contains('article-figure--standalone') ||
@@ -123,9 +145,10 @@ export function initArticleFigures(document) {
       if (images.length !== 1) return;
       const headings = figureFlowHeadings(figure);
       if (!headings) return;
+      const quote = figure.nextElementSibling?.tagName === 'BLOCKQUOTE' ? figure.nextElementSibling : null;
       if (parent !== article) parent.classList.add('article-figure-section');
       containers.add(parent);
-      records.push({ figure, image: images[0], parent, index, headings });
+      records.push({ figure, image: images[0], parent, index, headings, quote });
     });
   }
   if (!records.length && !verseRecords.length && !contourRecords.length) return null;
@@ -142,13 +165,23 @@ export function initArticleFigures(document) {
         fontSize: parseFloat(style.fontSize),
       }];
     }));
-    for (const { figure, image, parent, index, headings } of records) {
-      const layout = image.complete ? figureLayout({
+    for (const { figure, image, parent, index, headings, quote } of records) {
+      const quoteStyle = quote ? window.getComputedStyle(quote) : null;
+      const fontSize = Math.max(measurements.get(parent).fontSize, parseFloat(quoteStyle?.fontSize) || 0);
+      const sideIndex = figure.classList.contains('article-figure--reviewed-end') ? 1 :
+        (quote || figure.classList.contains('article-figure--reviewed-start') ? 0 : index);
+      let layout = image.complete ? figureLayout({
         ...measurements.get(parent), naturalWidth: image.naturalWidth,
-        naturalHeight: image.naturalHeight, wideScreen: media.matches, index,
+        naturalHeight: image.naturalHeight, fontSize, wideScreen: media.matches, index: sideIndex,
         reviewedWrap: figure.classList.contains('article-figure--reviewed-wrap'),
       }) : null;
+      if (layout && quoteStyle) {
+        const inset = ['paddingLeft', 'paddingRight', 'borderLeftWidth', 'borderRightWidth']
+          .reduce((sum, name) => sum + (parseFloat(quoteStyle[name]) || 0), 0);
+        if (measurements.get(parent).containerWidth - layout.width - layout.gap - inset < fontSize * 14) layout = null;
+      }
       figure.classList.toggle('article-figure--wrap', Boolean(layout));
+      figure.classList.toggle('article-figure--quotation', Boolean(layout && quote));
       for (const heading of headings) {
         heading.classList.toggle('article-figure-heading', Boolean(layout));
       }
@@ -163,18 +196,21 @@ export function initArticleFigures(document) {
         figure.style.removeProperty('--article-figure-gap');
       }
     }
-    for (const { row, image, text } of verseRecords) {
+    for (const { row, image, text, enlarge, preserveSize } of verseRecords) {
+      const textWidth = media.matches ? verseMeasure(text) : 0;
       const layout = image.complete && media.matches ? verseLayout({
         ...measurements.get(row), naturalWidth: image.naturalWidth,
-        naturalHeight: image.naturalHeight, textWidth: verseMeasure(text),
+        naturalHeight: image.naturalHeight, textWidth, enlarge, preserveSize,
       }) : null;
       row.classList.toggle('article-verse-row--aside', Boolean(layout));
       if (layout) {
         row.style.setProperty('--article-verse-image-width', `${layout.width}px`);
         row.style.setProperty('--article-verse-gap', `${layout.gap}px`);
+        row.style.setProperty('--article-verse-text-width', `${textWidth + 1}px`);
       } else {
         row.style.removeProperty('--article-verse-image-width');
         row.style.removeProperty('--article-verse-gap');
+        row.style.removeProperty('--article-verse-text-width');
       }
     }
     for (const { row, image, text, source } of contourRecords) {
@@ -214,6 +250,11 @@ export function initArticleFigures(document) {
     }
   }) : null;
   for (const parent of containers) observer?.observe(parent);
+  for (const { quote } of records) if (quote) observer?.observe(quote);
+  for (const { text } of verseRecords) {
+    observer?.observe(text);
+    for (const verse of text.querySelectorAll('.poem, .lyrics, blockquote')) observer?.observe(verse);
+  }
   for (const { text } of contourRecords) observer?.observe(text);
   document.fonts?.ready.then(schedule);
   const controller = { update };

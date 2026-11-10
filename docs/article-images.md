@@ -3,7 +3,9 @@
 The reader arranges source images for the available reading width. Article text,
 image bytes, alt text, captions, credits, and Markdown remain authoritative
 upstream content; the website adds presentation wrappers and classes only.
-It does not crop visible artwork, retouch, replace, or upscale the archive's images.
+It does not crop visible artwork, retouch, or replace the archive's images.
+Prose wrapping retains the image's natural dimensions. Small illustrations beside
+explicitly marked poems may be displayed at up to twice their original dimensions.
 Reviewed transparent canvas padding can be hidden in the reader without editing
 the source file.
 
@@ -47,16 +49,24 @@ their existing presentation. This works across languages without title-specific
 or English-only rules.
 
 On wide screens, the reader measures the longest original verse line in its
-actual font. An illustration uses at most 180px of spare width and 300px of
-height; if there is not enough room for both, it stays above or below the verse
+actual font. Explicit poems and lyrics use up to 320px of spare width and 600px
+of height. Small originals may grow up to twice their natural size, aiming for
+240px width. The text column uses its measured line width and the illustration
+sits immediately beside it with a gap of at least 24px (normally 27px), aligned
+to the top. If there is not enough room for both, it stays above or below the verse
 in source order. The text never bends around a picture halfway through a stanza.
 Resizing, font loading, larger type, and delayed image loads recalculate the
 layout. Right-to-left text puts the illustration on the opposite logical side.
 Mobile, print, and JavaScript-disabled reading use bounded, centered images with
-full-width stanzas. Images are never cropped or enlarged.
+full-width stanzas. Images are never cropped. Paragraphs grouped solely because
+they contain multiple line breaks, such as book credits and addresses, retain
+their previous 180px/300px limits and are not enlarged.
 
-Very tall prose illustrations also use a proportionate float box, bounded to
-26 text ems in height; an image that would become illegibly narrow stays stacked.
+Prose illustrations keep their native width and height when wrapped. A float
+requires a reading column of at least 34 text ems, at least 14 text ems beside
+the image after its gap, and an illustration no taller than 40 text ems. An image
+that cannot fit these conditions stays in the full reading column, with normal
+responsive containment on narrow screens.
 
 ### Review on 2026-10-28
 
@@ -116,7 +126,13 @@ or section parent. Article prose remains in its original order.
 Small individual images and portraits may wrap beside adjacent prose when the
 screen and reading column leave enough room for comfortable text. The figure's
 immediate opening headings can share that space; later sections, quotes, tables,
-and galleries clear the complete figure and caption. Lists following the figure
+and galleries clear the complete figure and caption. Eligible illustrations
+can also share their immediately following ordinary one-paragraph quotation. Its
+border stays beside the image, and subsequent prose clears both. Quotation
+padding and the quotation's actual font size are included in the fit calculation.
+Verse, hidden or empty quotations, and nested structural content keep their
+independent layout. Small landscapes up to a 2.4 aspect ratio share the same
+native-size wrapping rules; reviewed wider images can opt in. Lists following the figure
 or its opening headings regain the full reading width below the image, as in
 **Governing Your Family**. Narrow screens, narrow columns, and print remove text
 wrapping. Logical float sides follow the text language; physical sides of a
@@ -152,6 +168,34 @@ their existing behavior.
 
 ## Maintaining reviewed exceptions
 
+### Website review on 2026-11-10
+
+The review uses English archive revision
+`6c3e27346b6b031f46e29e723e884fe8407806b7`. All placement changes are applied by
+the website renderer; no archive changes or index updates are required.
+
+| Requested article | Website arrangement |
+| --- | --- |
+| Religious Affections | Native 108 × 171 portrait at the left of its ordinary quotation |
+| God’s Faithfulness Through Tragedy | Family photograph beside the preceding paragraph, portrait beside the following paragraph, each with its complete caption |
+| The Spirit of Fear | Native 242 × 429 lion after the epigraph and beside the opening prose |
+| The Power of God’s Word to Heal | Native 241 × 360 image beside the opening verse quotation |
+| I AM HABIT | Illustration enlarged from 120 × 137 to 240 × 274 when it fits, close to the measured verse column and aligned at the top |
+| The Radical Chinese House Churches (part II) | First photograph after the epigraph and beside the opening paragraph |
+| Godly Home Series • 2003 | Complete photograph and caption above the availability announcement; the ordered list keeps its full width |
+| Rees Howells: Intercessor | Building photograph wraps beside its paragraph at native size |
+| Do We Treasure God’s Word? | Original logo beside P1; second photograph beside P3 |
+
+The same reviewed opening placement is applied to 20 further illustrations
+separated from their introductory prose by an epigraph. Ordinary quotations,
+small landscapes, and preservation of native prose-image dimensions use shared
+layout rules. The structural poetry audit covers all 1,168 articles and finds
+102 existing verse groups in 92 articles: 98 explicit poem/lyrics groups and
+four reference/credit groups that retain their original sizing policy. Existing
+standalone and paired compositions retain their intended boundaries.
+
+### Rule fields
+
 `data/article-image-layouts.json` is the small editorial exception registry.
 It records exact image basenames under permanent article UUIDs:
 
@@ -171,6 +215,27 @@ It records exact image basenames under permanent article UUIDs:
   In **Technology Dictates Morality**, the phone-and-camera photo wraps beside
   the opening paragraph after the standalone banner. A preceding standalone
   figure does not prevent this wrapping; ordinary consecutive figures stay stacked.
+- `verse_quote` identifies a unique image immediately after an opening verse
+  quotation. A single paragraph with preserved printed line breaks and its
+  original caption-free image form a measured verse row, in source order. In
+  **The Power of God’s Word to Heal**, the image remains 241 × 360 to the right
+  of its seven-line quotation. The row stacks when both cannot fit at that size.
+- `paragraph_positions` maps image basenames to one-based direct article
+  paragraph numbers. It moves the complete original figure, including its
+  caption, immediately before the selected paragraph in the website only.
+  Paragraphs inside quotations and captions do not count. Missing or repeated
+  images, missing target paragraphs, nested figures, hidden content, and
+  unexpected figure structure leave the source arrangement intact. This
+  presentation rule does not modify archive HTML, image filenames, or index data.
+- `paragraph_pair` contains two reviewed `{ "image": "basename", "side": "start" | "end" }`
+  entries in their intended displayed order. It applies only to those two unique,
+  adjacent single-image figures between ordinary paragraphs. Each complete figure,
+  including its caption, moves immediately before one of those paragraphs;
+  paragraph text and reading order stay intact. In **God’s Faithfulness Through
+  Tragedy**, the family photograph moves beside the preceding paragraph at the
+  logical end, and Nathanael’s portrait sits beside the following paragraph at
+  the logical start. Missing or repeated images, extra figures, loose text,
+  verse, or changed neighboring structure retain the source arrangement.
 - `transparent_padding` maps a reviewed single image to its original `width` and
   `height` and the fully transparent `top`, `right`, `bottom`, and `left` insets,
   in source pixels. A responsive viewport hides only those empty edges, retains
