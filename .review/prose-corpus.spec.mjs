@@ -76,11 +76,37 @@ async function routeOriginals(page, blocked) {
 
 async function ready(page) {
   return page.evaluate(async () => {
-    await Promise.all([...document.querySelectorAll('article img')].map(image => image.decode()));
-    const faces = await Promise.all(['18px Raleway', 'italic 21px Raleway', '600 12px Raleway', '30px Montserrat']
-      .map(font => document.fonts.load(font)));
-    await document.fonts.ready;
-    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    const bounded = (promise, label, details) => {
+      let timer;
+      return Promise.race([promise, new Promise((resolve, reject) => {
+        timer = setTimeout(() => reject(new Error(`${label} timed out after 10s: ${JSON.stringify(details())}`)), 10_000);
+      })]).finally(() => clearTimeout(timer));
+    };
+    const fontState = () => ({ status: document.fonts.status,
+      faces: [...document.fonts].map(font => ({ family: font.family, style: font.style, status: font.status })) });
+    const faces = await bounded(Promise.all(['18px Raleway', 'italic 21px Raleway', '600 12px Raleway', '30px Montserrat']
+      .map(font => document.fonts.load(font))), 'Offline font loading', fontState);
+    await bounded(document.fonts.ready, 'Font-set readiness', fontState);
+    const originalScroll = { left: scrollX, top: scrollY };
+    for (const image of document.querySelectorAll('article img')) {
+      const state = () => ({ src: image.getAttribute('src'), currentSrc: image.currentSrc, loading: image.loading,
+        complete: image.complete, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+        imageTop: image.getBoundingClientRect().top, scrollY, viewportHeight: innerHeight });
+      // Native lazy loading is part of the original source. Visit each pending
+      // image instead of changing its attributes or waiting forever on decode().
+      if (!image.complete && image.loading === 'lazy') {
+        image.scrollIntoView({ block: 'center', behavior: 'instant' });
+        await bounded(new Promise(resolve => requestAnimationFrame(resolve)), 'Lazy-image viewport update', state);
+      }
+      try {
+        await bounded(image.decode(), 'Original image decode', state);
+      } catch (error) {
+        throw new Error(`${error.message}; image state: ${JSON.stringify(state())}`);
+      }
+    }
+    scrollTo({ ...originalScroll, behavior: 'instant' });
+    await bounded(new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+      'Final layout frames', () => ({ url: location.href, scrollY }));
     return faces.map(font => font.length);
   });
 }
@@ -215,7 +241,14 @@ test('all original illustrated articles keep native prose floats, attached capti
       await page.setViewportSize({ width, height: 1000 });
       for (const original of originals) {
         await page.goto(`${origin}/prose-review/${original.id}/`, { waitUntil: 'load' });
-        const faces = await ready(page);
+        let faces;
+        try {
+          faces = await ready(page);
+        } catch (error) {
+          failures.push({ id: original.id, title: original.title, mode,
+            issues: [{ code: 'resource-readiness', message: error.message }] });
+          throw error;
+        }
         const result = { id: original.id, title: original.title, mode, ...(await inspect(page, original, mode)) };
         if (faces.some(count => count !== 1)) result.issues.push({ code: 'offline-fonts', faces });
         results.push(result);
@@ -233,6 +266,8 @@ test('all original illustrated articles keep native prose floats, attached capti
             await testInfo.attach(`failure-${mode}-${original.id}`, { path: output, contentType: 'image/png' });
           }
         }
+        if (results.length % 100 === 0) console.log(
+          `[prose corpus] ${results.length}/${originals.length * 2} pages; ${failures.length} findings; last ${mode}/${original.id}`);
       }
     }
     expect(results).toHaveLength(originals.length * 2);
