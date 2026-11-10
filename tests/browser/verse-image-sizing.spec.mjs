@@ -61,7 +61,8 @@ test('small poem artwork grows beside the actual verse measure, including inheri
     expect(result.image.height).toBeCloseTo(274, 1);
     expect(Math.abs(result.image.top - result.text.top)).toBeLessThanOrEqual(1);
     const gap = options.dir === 'rtl' ? result.text.left - result.image.right : result.image.left - result.text.right;
-    expect(gap).toBeCloseTo(27, 1);
+    // A row inside .poem inherits its 17px type; other rows inherit 18px.
+    expect(gap).toBeCloseTo(options.inherited ? 25.5 : 27, 1);
     expect(result.breaks).toBe(2);
     expect(result.overflow).toBe(false);
   }

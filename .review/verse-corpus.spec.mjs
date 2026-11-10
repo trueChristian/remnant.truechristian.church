@@ -88,11 +88,37 @@ async function routeOriginals(page, blocked) {
 
 async function ready(page) {
   return page.evaluate(async () => {
-    await Promise.all([...document.querySelectorAll('article img')].map(image => image.decode()));
-    const faces = await Promise.all(['17px Raleway', '18px Raleway', 'italic 21px Raleway', '600 12px Raleway', '30px Montserrat']
-      .map(font => document.fonts.load(font)));
-    await document.fonts.ready;
-    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    const bounded = (promise, label, details) => {
+      let timer;
+      return Promise.race([promise, new Promise((resolve, reject) => {
+        timer = setTimeout(() => reject(new Error(`${label} timed out after 10s: ${JSON.stringify(details())}`)), 10_000);
+      })]).finally(() => clearTimeout(timer));
+    };
+    const fontState = () => ({ status: document.fonts.status,
+      faces: [...document.fonts].map(font => ({ family: font.family, style: font.style, status: font.status })) });
+    const faces = await bounded(Promise.all(['17px Raleway', '18px Raleway', 'italic 21px Raleway', '600 12px Raleway', '30px Montserrat']
+      .map(font => document.fonts.load(font))), 'Offline font loading', fontState);
+    await bounded(document.fonts.ready, 'Font-set readiness', fontState);
+    const originalScroll = { left: scrollX, top: scrollY };
+    for (const image of document.querySelectorAll('article img')) {
+      const state = () => ({ src: image.getAttribute('src'), currentSrc: image.currentSrc, loading: image.loading,
+        complete: image.complete, naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight,
+        imageTop: image.getBoundingClientRect().top, scrollY, viewportHeight: innerHeight });
+      // decode() alone does not start an offscreen native lazy image. Scroll it
+      // into view without changing its original loading or other attributes.
+      if (!image.complete && image.loading === 'lazy') {
+        image.scrollIntoView({ block: 'center', behavior: 'instant' });
+        await bounded(new Promise(resolve => requestAnimationFrame(resolve)), 'Lazy-image viewport update', state);
+      }
+      try {
+        await bounded(image.decode(), 'Original image decode', state);
+      } catch (error) {
+        throw new Error(`${error.message}; image state: ${JSON.stringify(state())}`);
+      }
+    }
+    scrollTo({ ...originalScroll, behavior: 'instant' });
+    await bounded(new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+      'Final layout frames', () => ({ url: location.href, scrollY }));
     return faces.map(font => font.length);
   });
 }
@@ -112,13 +138,26 @@ async function measure(page, original) {
     const wordBoxes = element => {
       const words = [];
       let segment = 0;
+      let previousBlock;
+      const blockFor = node => {
+        let block = node.parentElement;
+        while (block !== element && !['block', 'flow-root', 'list-item', 'table-cell', 'table-caption', 'flex', 'grid']
+          .includes(getComputedStyle(block).display)) block = block.parentElement;
+        return block;
+      };
       const walker = document.createTreeWalker(element, NodeFilter.SHOW_ELEMENT | NodeFilter.SHOW_TEXT);
       while (walker.nextNode()) {
         const node = walker.currentNode;
         if (node.nodeType === Node.ELEMENT_NODE) {
-          if (['P', 'BR', 'LI', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6'].includes(node.tagName)) segment += 1;
+          if (node.tagName === 'BR') segment += 1;
           continue;
         }
+        if (!node.textContent.trim()) continue;
+        // A footer/citation in its own block is a new authored line, just as a
+        // paragraph is. Inline emphasis must not hide a wrapped printed line.
+        const block = blockFor(node);
+        if (block !== previousBlock) segment += 1;
+        previousBlock = block;
         const size = parseFloat(getComputedStyle(node.parentElement).fontSize);
         for (const match of node.textContent.matchAll(/\S+/g)) {
           const range = document.createRange();
@@ -266,7 +305,13 @@ test('original verse corpus preserves lineation and uses bounded compact artwork
       for (const id of identities) {
         const original = articles.get(id);
         await page.goto(`${origin}/verse-review/${id}/`, { waitUntil: 'load' });
-        const faces = await ready(page);
+        let faces;
+        try {
+          faces = await ready(page);
+        } catch (error) {
+          failures.push(`${id} ${mode}: resource readiness failed: ${error.message}`);
+          throw error;
+        }
         if (faces.some(count => count !== 1)) failures.push(`${id} ${mode}: offline fonts did not load: ${faces}`);
         const result = { id, title: rowsByArticle.get(id)?.[0]?.title || boundaries.find(item => item.id === id)?.title,
           mode, ...(await measure(page, original)) };
@@ -275,6 +320,8 @@ test('original verse corpus preserves lineation and uses bounded compact artwork
         for (const [index, row] of result.rows.entries()) if (screenshotImages.has(row.image)) {
           await screenshot(page, testInfo, id, mode, index, row.image);
         }
+        if (measurements.length % 50 === 0) console.log(
+          `[verse corpus] ${measurements.length}/${identities.length * 2} pages; ${failures.length} findings; last ${mode}/${id}`);
       }
     }
     const habit = measurements.find(item => item.id === '76009211-1c2a-4f55-a4be-17d515e9cfcd' && item.mode === 'desktop').rows[0];

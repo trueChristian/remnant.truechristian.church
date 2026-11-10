@@ -209,7 +209,8 @@ test('Tragedy keeps safe large-text, print and no-JavaScript layouts', async ({ 
   await mount(page, { fontSize: 24 });
   await expectStacked(page);
   await evidence(page, testInfo, 'tragedy-large-type');
-  await page.locator('.prose').evaluate(reader => reader.style.removeProperty('font-size'));
+  // The large font lives in the fixture stylesheet, so an inline reset must override it.
+  await page.locator('.prose').evaluate(reader => reader.style.fontSize = '18px');
   await expectWrapped(page);
   await page.emulateMedia({ media: 'print' });
   await expectStacked(page, { print: true });
