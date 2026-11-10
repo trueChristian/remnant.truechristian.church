@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "24896d529f538d748ea1298528086bc77d7539733051e591fc0dc55d0a5a6a44",
+  "integrity": "5608cdbfb0b9294781078ee1e50a00bc14286609e67d4afb194929c645262ddb",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -96974,6 +96974,400 @@
       ],
       "record_hash": "00f2b8e0b4c220aeddea46b26f80621c4cec99d53133ce27fdbc40d27aa6610b"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:nl:936bb4bebdd374a24c28a2877c4eba40fffdd3f482dd9861514a80b9d74f1a51:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "nl",
+      "content_hash": "936bb4bebdd374a24c28a2877c4eba40fffdd3f482dd9861514a80b9d74f1a51",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "47d0d138a994e75ea15a5878",
+          "quote": "Genesis 3",
+          "before": "opgetekende bewijs daarvan vinden we in ",
+          "after": ". “En hij zei: Ik hoorde uw stem in de h",
+          "spans": [
+            [
+              1714,
+              1723
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "9d807e4d22529ae1e311e5fe",
+          "quote": "Genesis 3:10",
+          "before": "t ik naakt was; daarom verborg ik mij” (",
+          "after": "). Adam was bang. Waarvoor? Adam en Eva ",
+          "spans": [
+            [
+              1831,
+              1843
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "2536c45f538b15d4379ea623",
+          "quote": "Genesis 4:5",
+          "before": " boos en liet hij zijn gezicht zakken” (",
+          "after": "). Misschien was jij een van deze kinder",
+          "spans": [
+            [
+              3872,
+              3883
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "26ff15d96d2388b5fefadf4a",
+          "quote": "Genesis 1",
+          "before": "lossingen voor emotionele problemen. In ",
+          "after": " schiep God groene kruiden en bomen als ",
+          "spans": [
+            [
+              5903,
+              5912
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "4197d18d176f2fae17b40b63",
+          "quote": "Johannes 3:3",
+          "before": " kon zien tenzij hij wedergeboren werd (",
+          "after": "). Veel mensen trekken de hele wereld ov",
+          "spans": [
+            [
+              6445,
+              6457
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "b3d750b7d4b26916f2ffd671",
+          "quote": "Johannes 3:7",
+          "before": " Hij zei: “U moet wedergeboren worden” (",
+          "after": ")? Soms maken we de boodschap van het ev",
+          "spans": [
+            [
+              6931,
+              6943
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "86b92aeeca69e997493ab9e8",
+          "quote": "2 Korintiërs 11:2-3",
+          "before": "jkt van de eenvoud die in Christus is” (",
+          "after": "). Het goede nieuws van de verlossing is",
+          "spans": [
+            [
+              7426,
+              7445
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "1269731168b9475aa1db0b5b",
+          "quote": "Mattheüs 3:6",
+          "before": "rdaan, terwijl zij hun zonden beleden” (",
+          "after": "). De eerste stap naar verlossing is je ",
+          "spans": [
+            [
+              7816,
+              7828
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "bb396f03d9c6a7cb55acf545",
+          "quote": "Jakobus 5:16",
+          "before": "n rechtvaardige brengt veel tot stand” (",
+          "after": "). Zoek hulp bij een predikant of een er",
+          "spans": [
+            [
+              8538,
+              8550
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "4f7da191c921fa291e45421f",
+          "quote": "Handelingen 3:19",
+          "before": "komen van het aangezicht van de Heere” (",
+          "after": "). “Heb dan berouw over deze slechtheid ",
+          "spans": [
+            [
+              9241,
+              9257
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "4a15e2c722bf45db22327f4b",
+          "quote": "Handelingen 8:22",
+          "before": " hart u misschien vergeven mag worden” (",
+          "after": "). Door berouw te hebben over je zonden,",
+          "spans": [
+            [
+              9378,
+              9394
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "a410e42cf138c6c44c4e7335",
+          "quote": "Romeinen 10:13",
+          "before": "Heere zal aanroepen, zal zalig worden” (",
+          "after": "). Nu je je zonden hebt beleden en er be",
+          "spans": [
+            [
+              9663,
+              9677
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "4f61a1057ae37f4ec959f957",
+          "quote": "Handelingen 2:21",
+          "before": "Heere zal aanroepen, zalig zal worden” (",
+          "after": "). “U weet immers dat u niet met vergank",
+          "spans": [
+            [
+              10097,
+              10113
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "4b0edb30f34226a6b72d90a7",
+          "quote": "1 Petrus 1:18-19",
+          "before": "s van een smetteloos en onbevlekt Lam” (",
+          "after": "). “Dan zal Ik rein water op u sprenkele",
+          "spans": [
+            [
+              10353,
+              10369
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "f8d251e7aa88bf144da9ccf4",
+          "quote": "Ezechiël 36:25-28",
+          "before": "ij zijn en Ik zal een God voor u zijn” (",
+          "after": ").",
+          "spans": [
+            [
+              10914,
+              10931
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "ca4e7989d88dfcfbf401784a",
+          "quote": "Handelingen 16:30-31",
+          "before": "Christus en u zult zalig worden . . .” (",
+          "after": "). Je hebt je zonden beleden en er berou",
+          "spans": [
+            [
+              11229,
+              11249
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "8e8103a6d859d5aa3a2739bc",
+          "quote": "Romeinen 10:9",
+          "before": "n heeft opgewekt, zult u zalig worden” (",
+          "after": "). “Want zo lief heeft God de wereld geh",
+          "spans": [
+            [
+              11586,
+              11599
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "43a6477f37178c2d88b588c1",
+          "quote": "Johannes 3:16",
+          "before": "erloren gaat, maar eeuwig leven heeft” (",
+          "after": "). Dank de Heere dat Hij je zonden heeft",
+          "spans": [
+            [
+              11766,
+              11779
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "4b838578476ef25114250256",
+          "quote": "1 Petrus 3:21",
+          "before": "door de opstanding van Jezus Christus” (",
+          "after": "). Jij kunt die persoon met een zuiver g",
+          "spans": [
+            [
+              12512,
+              12525
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "766c2b3ed0e1db6ce5ce88c2",
+          "quote": "Efeziërs 4:21-23",
+          "before": "ieuwd wordt in de geest van uw denken” (",
+          "after": "). Dit is een belangrijk onderwerp waaro",
+          "spans": [
+            [
+              13404,
+              13420
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "f7378e414a4054c53dbf8d56",
+          "quote": "Mattheüs 7:13-14",
+          "before": "t, en weinigen zijn er die hem vinden” (",
+          "after": ").",
+          "spans": [
+            [
+              14299,
+              14315
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "863b85aa4e7515a494e0e75a",
+          "quote": "Lukas 9:23",
+          "before": "kruis dagelijks opnemen en Mij volgen” (",
+          "after": "). We moeten dagelijks de verlangens van",
+          "spans": [
+            [
+              14931,
+              14941
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "7066dd129e4c36bd18326b12",
+          "quote": "1 Johannes 1:7,9",
+          "before": " te reinigen van alle ongerechtigheid” (",
+          "after": ").",
+          "spans": [
+            [
+              15574,
+              15590
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "64eaf2c5cf1de6df355fdcbd",
+          "quote": "2 Korintiërs 9:15",
+          "before": "dank voor Zijn onuitsprekelijke gave!” (",
+          "after": "). De vrije gave van verlossing is voor ",
+          "spans": [
+            [
+              16334,
+              16351
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "8ede3942a79bf758dab2d77772f2ef7a810d07cc32be76324887b5f46ee3f741"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:zh-Hans:06f03217a098df23a5bc0a1d69a8305ac6f186bee1fa0e7c51398a1601fefc43:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "zh-Hans",
@@ -118177,6 +118571,111 @@
       ],
       "record_hash": "dd5d8d7e65f10040814809b9dc43f614c162a275d0ae3572dc2c4db6c27c9dd3"
     },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:ar:71374739b42711e459ed4752173fc6ecc0f709959342826c66215a01c545d1d5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "ar",
+      "content_hash": "71374739b42711e459ed4752173fc6ecc0f709959342826c66215a01c545d1d5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c0f971e6c621d050649e20e1",
+          "quote": "مزمور 144:12",
+          "before": "ارة الزوايا المصقولة على مثال بناء قصر –",
+          "after": ".",
+          "spans": [
+            [
+              334,
+              346
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "ac267387c286be2338d4e06d",
+          "quote": "لوقا 2:47",
+          "before": "ذين سمعوه بُهتوا من فهمه وأجوبته. (انظر ",
+          "after": ") أظهر يسوع نضجًا مذهلًا في سن الثانية ع",
+          "spans": [
+            [
+              1156,
+              1165
+            ]
+          ],
+          "osis": "Luke.2.47",
+          "queries": [
+            "42 2:47"
+          ]
+        },
+        {
+          "id": "5029809e0e8e6b50188d7e64",
+          "quote": "لوقا 2:51",
+          "before": " وجاء إلى الناصرة، وكان خاضعًا لهما... –",
+          "after": ". سنتناول بعض الأمور التي يستطيع الوالدا",
+          "spans": [
+            [
+              1943,
+              1952
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "1f706d3491e78d46eaf7dd0a",
+          "quote": "مزمور 144:15",
+          "before": "ي حاله هكذا. طوبى للشعب الذي الرب إلهه –",
+          "after": ".",
+          "spans": [
+            [
+              2182,
+              2194
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "1d2894c93d4d2c4b65ee0752",
+          "quote": "مزمور 127:4",
+          "before": " في يد الجبار سهام، كذلك أبناء الشبيبة –",
+          "after": ". تذكّرنا هذه الآية بأن أبناءنا دفاع قوي",
+          "spans": [
+            [
+              10635,
+              10646
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "cda5dfa92d519a011a2d9b91",
+          "quote": "مزمور 127:5",
+          "before": ". لا يخزون، بل يكلمون الأعداء في الباب –",
+          "after": ".",
+          "spans": [
+            [
+              10977,
+              10988
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "d7fa32608dc7c2c2b1bbc356dc8ccafa2baf13956618b1fe735c0be7eae4dca8"
+    },
     "3b932103-b3fb-450d-885a-eaca95ee48fe:bn:8f2f642621838595a8288e56fe8c72afe05a09b25667d0ab7ecd4581d861792f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
       "locale": "bn",
@@ -129889,21 +130388,21 @@
       ],
       "record_hash": "4b6eaaa65b5edcc02573f2c61cd2813fa69ef31f5c4a8c8bd9f48f7e6b1a5d6b"
     },
-    "3ecef108-58f3-42fc-a9c1-be12086c3e87:en:60410039991e544118e0b87ad5b5cc14223fafa6a12a9a766790433d0c9b5cc6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "3ecef108-58f3-42fc-a9c1-be12086c3e87:en:bb9d5cb0d74651b85e889a9a3b70c05d4ce90232dcf96f12a3fd5758132e4ef0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3ecef108-58f3-42fc-a9c1-be12086c3e87",
       "locale": "en",
-      "content_hash": "60410039991e544118e0b87ad5b5cc14223fafa6a12a9a766790433d0c9b5cc6",
+      "content_hash": "bb9d5cb0d74651b85e889a9a3b70c05d4ce90232dcf96f12a3fd5758132e4ef0",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "391d101233a71c5e606f3c4d",
+          "id": "956a547ed16d504928933f13",
           "quote": "John 2:1-11",
           "before": "",
           "after": "",
           "spans": [
             [
-              1681,
-              1692
+              1411,
+              1422
             ]
           ],
           "osis": "John.2.1-John.2.11",
@@ -129928,7 +130427,7 @@
           ]
         }
       ],
-      "record_hash": "8000cb023affd6d804df7b8f6a8144698c893fde8397f45ca26379e0319f1be6"
+      "record_hash": "735b7d658ccd66a1cc566e7d6d15ed43f083495378ec4c9991cd21dbe4839e42"
     },
     "3f679973-e351-4fe3-8930-e08d9fba23a5:af:b648a84e571fd84e3c5a05c9656ddd61608c0e01cb60b1d88022f7fec8afea07:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3f679973-e351-4fe3-8930-e08d9fba23a5",
@@ -334371,6 +334870,14 @@
       "markers": [],
       "record_hash": "d81fb9bb65692a64c8403ecbb3e290d7119aea844d03a0642d12b446eac8b35b"
     },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:af:0f07777501a7c8de43e0af8b161a5d93673429c724d9bb6747058991c40f63cf:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "af",
+      "content_hash": "0f07777501a7c8de43e0af8b161a5d93673429c724d9bb6747058991c40f63cf",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b092ca423e8ffefd1b2ea45110c22838b189a2b463af99343034701c3fbc852a"
+    },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:bn:685eb757a4b0cec8ad644f5dcf1120222f249be1cabc2966f1a029f6f3bd117d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
       "locale": "bn",
@@ -334426,6 +334933,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "85e7136aded5bcae95d3e34241493a7a34a610f26bcb6ad62855ee3aacb2a367"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:hi:c7eb7fec38ad1db81e2b15cd3a27654a295a642b5c3d6b55aef9fcf1dc035637:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "hi",
+      "content_hash": "c7eb7fec38ad1db81e2b15cd3a27654a295a642b5c3d6b55aef9fcf1dc035637",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "e60c402657d695c8dcb2f107652ddd82cc680453de47bde2a1f6ce15a6b64e59"
     },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:it:9ff1b60333cf3bf8434541066e3b78c52c746ca3602ac9805b27d4b5ab3856a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",

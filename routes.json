@@ -16402,11 +16402,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kerk",
+        "alias": "n-verhaal-van-drie-mans",
+        "history": [
+          "/af/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -22507,11 +22508,12 @@
       },
       "3b932103-b3fb-450d-885a-eaca95ee48fe": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "from-childhood-to-adulthood",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "تربية-الأبناء",
+        "alias": "من-الطفولة-إلى-الرشد",
+        "history": [
+          "/ar/articles/from-childhood-to-adulthood/"
+        ],
+        "fallback": false
       },
       "3be24d0c-4c97-452e-b3c3-177e16d990ff": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -110664,11 +110666,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "कलीसिया",
+        "alias": "तीन-पुरुषों-की-कहानी",
+        "history": [
+          "/hi/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -156498,11 +156501,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelijk-leven",
+        "alias": "jezus-christus-het-antwoord-voor-de-gebroken-mensheid",
+        "history": [
+          "/nl/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
