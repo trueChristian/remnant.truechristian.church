@@ -37,9 +37,13 @@ font layout instability led to fallback smooth scrolling, an offscreen hit-test,
 and a 20ms in-page retry timer that never fired with JavaScript disabled. Manual
 context cleanup then obscured that primary failure. The fix keeps normal
 actionability checks, the original timeout, native navigation, and Back history.
-These browser scenarios run against a healthy full site only after merge to main.
-Pull requests run unit and synthetic contract tests without generating a full
-site or starting browser builds. The original repair was also verified with five
+These browser scenarios run against a healthy full site in the separate
+**Review complete browser suite** PR workflow and again in the production
+workflow on main. The PR review builds the proposed revision from a single
+immutable source selection and runs the entire normal Playwright configuration,
+including the existing generated-article tests. Offline unit and synthetic
+contract checks remain a separate fast job. The browser review has read-only
+permissions and cannot publish. The original repair was also verified with five
 fresh-context repeats per viewport; that historical evidence is in its PR.
 
 ## Measured initial budgets
