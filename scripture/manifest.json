@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "5608cdbfb0b9294781078ee1e50a00bc14286609e67d4afb194929c645262ddb",
+  "integrity": "86116a75e0cb32398b2015449fc3ad415de2d9cf93b3f688c1aa275478b1fdd2",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -96974,6 +96974,794 @@
       ],
       "record_hash": "00f2b8e0b4c220aeddea46b26f80621c4cec99d53133ce27fdbc40d27aa6610b"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:id:c1a8adbb390055fd1a2d5c7908a2f011f1321e7aee441e309940d79938eeb4d9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "id",
+      "content_hash": "c1a8adbb390055fd1a2d5c7908a2f011f1321e7aee441e309940d79938eeb4d9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "156f8b78581c333bbcebabb3",
+          "quote": "Kejadian 3",
+          "before": "ti pertama yang tercatat terlihat dalam ",
+          "after": ". “Katanya: ‘Aku mendengar suara-Mu di t",
+          "spans": [
+            [
+              1879,
+              1889
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "b53bec47ac9f01b0954c3209",
+          "quote": "Kejadian 3:10",
+          "before": " aku telanjang; maka aku bersembunyi’” (",
+          "after": "). Adam takut. Takut akan apa? Adam dan ",
+          "spans": [
+            [
+              1995,
+              2008
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "e4dc3a6730bcd9c9b45c2c92",
+          "quote": "Kejadian 4:5",
+          "before": "njadi sangat marah, dan mukanya muram” (",
+          "after": "). Anda mungkin salah satu dari anak-ana",
+          "spans": [
+            [
+              4047,
+              4059
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "2a45ee065a689f9eb83a4d0d",
+          "quote": "Kejadian 1",
+          "before": "solusi bagi pergumulan emosional. Dalam ",
+          "after": ", Allah menciptakan tumbuh-tumbuhan hija",
+          "spans": [
+            [
+              6055,
+              6065
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "dba313cc2a295d35b4762905",
+          "quote": "Yohanes 3:3",
+          "before": " ia tidak dapat melihat Kerajaan Surga (",
+          "after": "). Banyak orang berkeliling ke seluruh d",
+          "spans": [
+            [
+              6685,
+              6696
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "312a4a94d221324b19e9b44f",
+          "quote": "Yohanes 3:7",
+          "before": "rkata, “Kamu harus dilahirkan kembali” (",
+          "after": ")? Terkadang, kita menjadikan pesan Inji",
+          "spans": [
+            [
+              7199,
+              7210
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "b9f0bd8236b81aca756c4684",
+          "quote": "2 Korintus 11:2-3",
+          "before": " kesederhanaan yang ada dalam Kristus” (",
+          "after": "). Kabar Baik tentang keselamatan itu se",
+          "spans": [
+            [
+              7747,
+              7764
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "51d6f7033e93e34966b16949",
+          "quote": "Matius 3:6",
+          "before": "rdan sambil mengakui dosa-dosa mereka” (",
+          "after": "). Langkah pertama keselamatan adalah me",
+          "spans": [
+            [
+              8156,
+              8166
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "f1cf0562a48cf2363f0ac4e6",
+          "quote": "Yakobus 5:16",
+          "before": " penuh semangat sangat besar kuasanya” (",
+          "after": "). Mintalah bantuan seorang pelayan Tuha",
+          "spans": [
+            [
+              9044,
+              9056
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "6c59666014f4ef2fb01ba231",
+          "quote": "Kisah Para Rasul 3:19",
+          "before": " penyegaran datang dari hadirat Tuhan” (",
+          "after": "). “Karena itu bertobatlah dari kejahata",
+          "spans": [
+            [
+              9814,
+              9835
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "af7cc984ea3ba6f6cdbdb5f8",
+          "quote": "Kisah Para Rasul 8:22",
+          "before": "-kalau niat hatimu itu dapat diampuni” (",
+          "after": "). Dengan bertobat dari dosa-dosa Anda, ",
+          "spans": [
+            [
+              9957,
+              9978
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "b362d9598ca066044969693d",
+          "quote": "Roma 10:13",
+          "before": " kepada nama Tuhan, akan diselamatkan” (",
+          "after": "). Setelah mengakui dan bertobat dari do",
+          "spans": [
+            [
+              10278,
+              10288
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "11a63af38fa0d480a0dae320",
+          "quote": "Kisah Para Rasul 2:21",
+          "before": "u kepada nama Tuhan akan diselamatkan” (",
+          "after": "). “Sebab kamu tahu bahwa kamu ditebus b",
+          "spans": [
+            [
+              10748,
+              10769
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "277da25f18b64291c7132cb4",
+          "quote": "1 Petrus 1:18-19",
+          "before": "mba yang tak bercacat dan tak bernoda” (",
+          "after": "). “Lalu Aku akan memercikkan air bersih",
+          "spans": [
+            [
+              11046,
+              11062
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "50aa1d6120208d5b1070b903",
+          "quote": "Yehezkiel 36:25-28",
+          "before": "umat-Ku, dan Aku akan menjadi Allahmu” (",
+          "after": ").",
+          "spans": [
+            [
+              11690,
+              11708
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "d679646560ce6cd4f3e83ebe",
+          "quote": "Kisah Para Rasul 16:30-31",
+          "before": ", dan engkau akan diselamatkan . . .’” (",
+          "after": "). Anda telah mengakui dan bertobat dari",
+          "spans": [
+            [
+              12029,
+              12054
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "44f213954292b331d0baae10",
+          "quote": "Roma 10:9",
+          "before": "ra orang mati, kamu akan diselamatkan” (",
+          "after": "). “Karena begitu besar kasih Allah kepa",
+          "spans": [
+            [
+              12460,
+              12469
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "6902bb44e9e84b4b90e0686f",
+          "quote": "Yohanes 3:16",
+          "before": ", melainkan memiliki hidup yang kekal” (",
+          "after": "). Bersyukurlah kepada Tuhan karena Dia ",
+          "spans": [
+            [
+              12665,
+              12677
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "7931bd0c36e23e895b9ab80e",
+          "quote": "1 Petrus 3:21",
+          "before": "llah), oleh kebangkitan Yesus Kristus” (",
+          "after": "). Anda juga dapat menjadi orang yang be",
+          "spans": [
+            [
+              13434,
+              13447
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "f7864c7e9c7b5dfdbe8ba51a",
+          "quote": "Efesus 4:21-23",
+          "before": "u; dan diperbarui dalam roh pikiranmu” (",
+          "after": "). Ini adalah pokok bahasan penting dan ",
+          "spans": [
+            [
+              14308,
+              14322
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "a204b8d06eaa3dd81389cfe3",
+          "quote": "Matius 7:13-14",
+          "before": ", dan sedikit orang yang mendapatinya” (",
+          "after": ").",
+          "spans": [
+            [
+              15175,
+              15189
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "fc48393101cc94f3a9bd93b5",
+          "quote": "Lukas 9:23",
+          "before": "libnya setiap hari, dan mengikut Aku’” (",
+          "after": "). Kita harus menyalibkan keinginan dagi",
+          "spans": [
+            [
+              15864,
+              15874
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "e7954cb40e05ef7ff86e5fd7",
+          "quote": "1 Yohanes 1:7,9",
+          "before": "hkan kita dari segala ketidakbenaran.” (",
+          "after": ").",
+          "spans": [
+            [
+              16541,
+              16556
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "19fa81b98b5113f2fd1ac2d4",
+          "quote": "2 Korintus 9:15",
+          "before": "a karunia-Nya yang tak terkatakan itu” (",
+          "after": "). Karunia keselamatan yang cuma-cuma te",
+          "spans": [
+            [
+              17316,
+              17331
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "e6b07a007970c99e45362c7e3460ae35acfa60eda12678fe9a0d959ce3047e1d"
+    },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:it:833f7669b4ef2e3542a8ec6ba670a54c9ca13e924689f7f01a2bda6b455cb26d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "it",
+      "content_hash": "833f7669b4ef2e3542a8ec6ba670a54c9ca13e924689f7f01a2bda6b455cb26d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d0a575aa483227fa9e132392",
+          "quote": "Genesi 3",
+          "before": "prima testimonianza scritta si trova in ",
+          "after": ". «Egli rispose: “Ho udito la tua voce n",
+          "spans": [
+            [
+              1736,
+              1744
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "7d516dcd0b22e1f3908b6bb5",
+          "quote": "Genesi 3:10",
+          "before": " perché ero nudo; e mi sono nascosto”» (",
+          "after": "). Adamo aveva paura. Paura di cosa? Ada",
+          "spans": [
+            [
+              1854,
+              1865
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "9319d8fadb2b4acbe6d7ddae",
+          "quote": "Genesi 4:5",
+          "before": "irritato e il suo volto era abbattuto» (",
+          "after": "). Potresti essere stato uno di questi b",
+          "spans": [
+            [
+              3814,
+              3824
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "7b977153fd3f788fb6375cbb",
+          "quote": "Genesi 1",
+          "before": "e soluzioni alle difficoltà emotive. In ",
+          "after": ", Dio creò le erbe verdi e gli alberi co",
+          "spans": [
+            [
+              5780,
+              5788
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "91f6b0b539706dad5b7ba55e",
+          "quote": "Giovanni 3:3",
+          "before": "uovo non può vedere il regno dei cieli (",
+          "after": "). Molte persone corrono in tutto il mon",
+          "spans": [
+            [
+              6297,
+              6309
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "63beab5cd1428d7152a09800",
+          "quote": "Giovanni 3:7",
+          "before": "uando disse: «Dovete nascere di nuovo» (",
+          "after": ")? A volte rendiamo il messaggio del Van",
+          "spans": [
+            [
+              6784,
+              6796
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "bfc5bb8b7998b9d6ee6ce098",
+          "quote": "2 Corinzi 11:2-3",
+          "before": " dalla purezza nei riguardi di Cristo» (",
+          "after": "). La buona notizia della salvezza è sem",
+          "spans": [
+            [
+              7259,
+              7275
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "52a8e5af6685623fbc57c7ed",
+          "quote": "Matteo 3:6",
+          "before": " Giordano, confessando i loro peccati» (",
+          "after": "). Il primo passo della salvezza è confe",
+          "spans": [
+            [
+              7650,
+              7660
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "aa2bf27df12d578e05ce29fe",
+          "quote": "Giacomo 5:16",
+          "before": "ra del giusto ha una grande efficacia» (",
+          "after": "). Cerca l’aiuto di un ministro o di un ",
+          "spans": [
+            [
+              8396,
+              8408
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "9e8cb426a1919f794dd88ee1",
+          "quote": "Atti 3:19",
+          "before": "refrigerio dalla presenza del Signore» (",
+          "after": "). «Ravvediti dunque di questa tua malva",
+          "spans": [
+            [
+              9114,
+              9123
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "4fcc18617e8f83f368420f39",
+          "quote": "Atti 8:22",
+          "before": "a perdonato il pensiero del tuo cuore» (",
+          "after": "). Ravvedendoti dei tuoi peccati, dici a",
+          "spans": [
+            [
+              9259,
+              9268
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "1d729daacf739f732bc9e74b",
+          "quote": "Romani 10:13",
+          "before": "cato il nome del Signore sarà salvato» (",
+          "after": "). Ora che hai confessato e ti sei ravve",
+          "spans": [
+            [
+              9511,
+              9523
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "5fe03f614997bfcd6b490a97",
+          "quote": "Atti 2:21",
+          "before": "cato il nome del Signore sarà salvato» (",
+          "after": "). «Sapendo che non con cose corruttibil",
+          "spans": [
+            [
+              9923,
+              9932
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "89f411ce1f03ab072a3991b3",
+          "quote": "1 Pietro 1:18-19",
+          "before": "i un agnello senza difetto né macchia» (",
+          "after": "). «Vi aspergerò con acqua pura e sarete",
+          "spans": [
+            [
+              10166,
+              10182
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "42db48ecbf562960b02cb997",
+          "quote": "Ezechiele 36:25-28",
+          "before": "il mio popolo e io sarò il vostro Dio» (",
+          "after": ").",
+          "spans": [
+            [
+              10685,
+              10703
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "ea87f7814a859a97b84466db",
+          "quote": "Atti 16:30-31",
+          "before": " nel Signore Gesù e sarai salvato...”» (",
+          "after": "). Hai confessato e ti sei ravveduto dei",
+          "spans": [
+            [
+              10962,
+              10975
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "354fd130cc606f6348e54724",
+          "quote": "Romani 10:9",
+          "before": " risuscitato dai morti, sarai salvato» (",
+          "after": "). «Dio ha tanto amato il mondo, che ha ",
+          "spans": [
+            [
+              11311,
+              11322
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "b2e395f467674109ad60f935",
+          "quote": "Giovanni 3:16",
+          "before": "lui non perisca, ma abbia vita eterna» (",
+          "after": "). Ringrazia il Signore perché ha tolto ",
+          "spans": [
+            [
+              11459,
+              11472
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "0442215d8cd6e8d60792a045",
+          "quote": "1 Pietro 3:21",
+          "before": "diante la risurrezione di Gesù Cristo» (",
+          "after": "). Anche tu puoi avere una coscienza lim",
+          "spans": [
+            [
+              12181,
+              12194
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "c490d238213d236f92bd3f32",
+          "quote": "Efesini 4:21-23",
+          "before": "vati nello spirito della vostra mente» (",
+          "after": "). È un argomento importante e si potreb",
+          "spans": [
+            [
+              13042,
+              13057
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "6cafb2647d92dc50bd6ee823",
+          "quote": "Matteo 7:13-14",
+          "before": "a, e pochi sono quelli che la trovano» (",
+          "after": ").",
+          "spans": [
+            [
+              13853,
+              13867
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "14de59cab08d0c44309173c2",
+          "quote": "Luca 9:23",
+          "before": " ogni giorno la sua croce e mi segua”» (",
+          "after": "). Dobbiamo crocifiggere ogni giorno i d",
+          "spans": [
+            [
+              14470,
+              14479
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "4fef9c9ea5094900a8fd5de7",
+          "quote": "1 Giovanni 1:7,9",
+          "before": "eccati e purificarci da ogni iniquità» (",
+          "after": ").",
+          "spans": [
+            [
+              15078,
+              15094
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "25e9ad06ed5458dfc48015f8",
+          "quote": "2 Corinzi 9:15",
+          "before": "azie a Dio per il suo dono ineffabile» (",
+          "after": "). Il dono gratuito della salvezza è a t",
+          "spans": [
+            [
+              15767,
+              15781
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "22aba66c47e3c3d395547b030b8021861626ae94cc736109a3571b61814d9f8d"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:nl:936bb4bebdd374a24c28a2877c4eba40fffdd3f482dd9861514a80b9d74f1a51:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "nl",
@@ -119733,6 +120521,111 @@
         }
       ],
       "record_hash": "43cd17d95cc2da1d5ba0643ce72e6d076a08b1f0dc1356246b6c7b7a6daf7551"
+    },
+    "3b932103-b3fb-450d-885a-eaca95ee48fe:nl:f2e286ce1befabfe84fb090b47664ca494e678cbe0161864b099809242422f89:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
+      "locale": "nl",
+      "content_hash": "f2e286ce1befabfe84fb090b47664ca494e678cbe0161864b099809242422f89",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c4194aafe6e2b86865c01678",
+          "quote": "Psalm 144:12",
+          "before": "ijst naar het voorbeeld van een paleis –",
+          "after": ".",
+          "spans": [
+            [
+              419,
+              431
+            ]
+          ],
+          "osis": "Ps.144.12",
+          "queries": [
+            "19 144:12"
+          ]
+        },
+        {
+          "id": "553a80aa4f947737caafdd43",
+          "quote": "Lukas 2:47",
+          "before": "eld van Zijn begrip en antwoorden. (zie ",
+          "after": ") Jezus toonde op twaalfjarige leeftijd ",
+          "spans": [
+            [
+              1662,
+              1672
+            ]
+          ],
+          "osis": "Luke.2.47",
+          "queries": [
+            "42 2:47"
+          ]
+        },
+        {
+          "id": "f8b526c313d57c97878f52ab",
+          "quote": "Lukas 2:51",
+          "before": "wam in Nazareth en was hun onderdanig… –",
+          "after": ". We zullen kijken naar een aantal dinge",
+          "spans": [
+            [
+              2784,
+              2794
+            ]
+          ],
+          "osis": "Luke.2.51",
+          "queries": [
+            "42 2:51"
+          ]
+        },
+        {
+          "id": "bd785293539972c0f07c50fe",
+          "quote": "Psalm 144:15",
+          "before": "t volk dat de HEERE tot zijn God heeft –",
+          "after": ".",
+          "spans": [
+            [
+              3136,
+              3148
+            ]
+          ],
+          "osis": "Ps.144.15",
+          "queries": [
+            "19 144:15"
+          ]
+        },
+        {
+          "id": "32a68077a656e35d0d8e453a",
+          "quote": "Psalm 127:4",
+          "before": " kinderen die men in zijn jeugd krijgt –",
+          "after": ". Dit vers herinnert ons eraan dat onze ",
+          "spans": [
+            [
+              15129,
+              15140
+            ]
+          ],
+          "osis": "Ps.127.4",
+          "queries": [
+            "19 127:4"
+          ]
+        },
+        {
+          "id": "758161d81ba6bba61f138d7c",
+          "quote": "Psalm 127:5",
+          "before": "en met de vijanden spreken in de poort –",
+          "after": ".",
+          "spans": [
+            [
+              15682,
+              15693
+            ]
+          ],
+          "osis": "Ps.127.5",
+          "queries": [
+            "19 127:5"
+          ]
+        }
+      ],
+      "record_hash": "e642d1910e7e62ca2b6e9d7072a858f9076cd8eeb8c6c2fdb9b63f7232b730da"
     },
     "3b932103-b3fb-450d-885a-eaca95ee48fe:pt:d40872f4eab1804e557eed6281ce7da3ea1334ebe130a0d2a4adf3e7ffbef340:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3b932103-b3fb-450d-885a-eaca95ee48fe",
@@ -209397,6 +210290,22 @@
       ],
       "record_hash": "5df460e16b68ab719ee10f3aebb59879bc52aa9cc56f44159d65f73be9828cff"
     },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:ar:f355f02503681785de3e80cc92506884dc4385a27cf51100d42e4b674e4351f8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "ar",
+      "content_hash": "f355f02503681785de3e80cc92506884dc4385a27cf51100d42e4b674e4351f8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5f968559af39a984c0d99de1e92f856004860a0d540295509ec4594161819c20"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:bn:3ab1031a76c0b44c3c11e4a0431effc316fd8037e4a7b1696d19f6a7e7355e8d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "bn",
+      "content_hash": "3ab1031a76c0b44c3c11e4a0431effc316fd8037e4a7b1696d19f6a7e7355e8d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3efa169c0bf54c489f1b087d5458a95e76aca3e54f6e228895628f554edc66f2"
+    },
     "7750b3b4-3c80-48a5-860c-4958331969d7:en:71c5283111f360382bf96fdc05893c983fe76d7efd5448b9a30020ab0609616f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
       "locale": "en",
@@ -209404,6 +210313,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "ead1a8f1ae37547aab2be278a683c418bc98f8fd2d8a82c242980327139d1dce"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:fr:8d58fa002309bcfaeaada4dbc8464d2c0446908225448d11cd6e80884f3734b2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "fr",
+      "content_hash": "8d58fa002309bcfaeaada4dbc8464d2c0446908225448d11cd6e80884f3734b2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "79237fe7b0bf7a62487e1a7a113a1c1576d0e9a197f5ce36e20992c33f322492"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:zh-Hans:6dcea2af2ce1443851d9c45e94653058a175af93bdfdcb64f8e3c39574fa2164:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "zh-Hans",
+      "content_hash": "6dcea2af2ce1443851d9c45e94653058a175af93bdfdcb64f8e3c39574fa2164",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "62b152877894beea184c5d0474389755bab745b6a365e5710707405f10fc26d5"
     },
     "7783f526-dda5-4e3d-8f54-9840aa68a419:en:8ee776d26fe0a47b0ee0d308d0e66b11f00f2515fe64d2f94969910881fb4778:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7783f526-dda5-4e3d-8f54-9840aa68a419",
@@ -334941,6 +335866,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "e60c402657d695c8dcb2f107652ddd82cc680453de47bde2a1f6ce15a6b64e59"
+    },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:id:a3ffc15d916ed0da3c213ae4996693b11416487e9c1ddfd656b8aacbcfe92e2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "id",
+      "content_hash": "a3ffc15d916ed0da3c213ae4996693b11416487e9c1ddfd656b8aacbcfe92e2a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "18da3d266eb39b6b97bb50810efe172c058ac95b474b87cb9ec6ecec2d3e75aa"
     },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:it:9ff1b60333cf3bf8434541066e3b78c52c746ca3602ac9805b27d4b5ab3856a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
