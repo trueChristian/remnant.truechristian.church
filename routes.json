@@ -25102,11 +25102,12 @@
       },
       "951f56e4-2ce8-4f01-9500-bfeee209cdb4": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-haven-of-rest",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "ميناء-الراحة",
+        "history": [
+          "/ar/articles/the-haven-of-rest/"
+        ],
+        "fallback": false
       },
       "958da9ad-3de2-4e1f-a3dc-c777af6d11ab": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -43597,11 +43598,12 @@
       },
       "6c25be17-3343-451b-afeb-ed9c56942fd0": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "wrestling-jacob",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "gedichte",
+        "alias": "der-ringende-jakob",
+        "history": [
+          "/de/articles/wrestling-jacob/"
+        ],
+        "fallback": false
       },
       "6c4d3026-69b5-42c2-92aa-02d8ea8d73cf": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -45875,11 +45877,12 @@
       },
       "b8ff6643-9234-465f-ab06-4adfc189a851": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-22",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "leitartikel",
+        "alias": "vom-herausgeber-4",
+        "history": [
+          "/de/articles/from-the-editor-22/"
+        ],
+        "fallback": false
       },
       "b90378a3-1fae-4535-b33f-ccc4edf514ea": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -50568,11 +50571,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "χριστιανική-ζωή",
+        "alias": "θα-σώσει-τον-λαό-του-από-τισ-αμαρτίεσ-τουσ",
+        "history": [
+          "/el/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -109354,11 +109358,12 @@
       },
       "903e4b58-b246-4ee3-85e7-eecf158a7a75": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-joyful-calling",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "महिलाएँ",
+        "alias": "आनंदमय-बुलाहट",
+        "history": [
+          "/hi/articles/a-joyful-calling/"
+        ],
+        "fallback": false
       },
       "907cbbdb-6566-483a-bf46-1b55a8faab8c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -131186,11 +131191,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vita-cristiana",
+        "alias": "nel-mondo-ma-non-del-mondo",
+        "history": [
+          "/it/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -176347,11 +176353,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "иисус-христос-ответ-надломленному-человечеству",
+        "history": [
+          "/ru/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -207662,11 +207669,12 @@
       },
       "73def952-dd77-4a51-b030-27713e0cedd2": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "do-i-need-to-tell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "بچے",
+        "alias": "کیا-مجھے-بتانا-ضروری-ہے",
+        "history": [
+          "/ur/articles/do-i-need-to-tell/"
+        ],
+        "fallback": false
       },
       "742a597d-8b1d-4010-84ae-a9e58f474025": {
         "category_id": "59e78031-c269-52d1-9b00-08dba0398cb4",
@@ -210351,11 +210359,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "مسیحی-زندگی",
+        "alias": "دنیا-میں-مگر-دنیا-کے-نہیں",
+        "history": [
+          "/ur/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -214846,11 +214855,12 @@
       },
       "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "understanding-submission",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "姊妹",
+        "alias": "理解顺服",
+        "history": [
+          "/zh-Hans/articles/understanding-submission/"
+        ],
+        "fallback": false
       },
       "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
