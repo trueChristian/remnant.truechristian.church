@@ -34,11 +34,11 @@ jobs:
           git -C .review/source archive HEAD index.json catalogue.json content/articles > .review/inputs/source.tar
           git -C .review/theme archive HEAD > .review/inputs/theme.tar
           python3 - <<'PY'
-          import json, pathlib, subprocess, tarfile
+          import json, pathlib, re, subprocess, tarfile
           root = pathlib.Path('.review/source')
           records = json.loads((root / 'index.json').read_text())['articles']
           needles = ('soul sculpture', 'keep thy heart with all diligence', 'konkomba testimonies')
-          chosen = [r for r in records if any(n in r['title'].casefold() for n in needles)]
+          chosen = [r for r in records if any(n in ' '.join(re.findall(r'\w+', (r['title'] or '').casefold())) for n in needles)]
           assert len(chosen) == 3, [(r['id'], r['title']) for r in chosen]
           with tarfile.open('.review/inputs/images.tar', 'w') as out:
               for record in chosen:
@@ -55,6 +55,7 @@ jobs:
           npm ci
           tar -czf .review/inputs/node_modules.tar.gz node_modules
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+        if: always()
         with:
           name: requested-layout-inputs
           path: .review/inputs/
