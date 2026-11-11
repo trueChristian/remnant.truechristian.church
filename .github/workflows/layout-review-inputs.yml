@@ -37,9 +37,9 @@ jobs:
           import json, pathlib, re, subprocess, tarfile
           root = pathlib.Path('.review/source')
           records = json.loads((root / 'index.json').read_text())['articles']
-          needles = ('soul sculpture', 'keep thy heart with all diligence', 'konkomba testimonies')
-          chosen = [r for r in records if any(n in ' '.join(re.findall(r'\w+', (r['title'] or '').casefold())) for n in needles)]
-          assert len(chosen) == 3, [(r['id'], r['title']) for r in chosen]
+          needles = ('soul sculpture', 'keep thy heart with all diligence', 'konkomba testimonies', 'william law')
+          chosen = [r for r in records if ' '.join(re.findall(r'\w+', (r['title'] or '').casefold())) in needles]
+          assert len(chosen) == 4, [(r['id'], r['title']) for r in chosen]
           with tarfile.open('.review/inputs/images.tar', 'w') as out:
               for record in chosen:
                   for image in record['images']:
