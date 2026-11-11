@@ -1,3 +1,5 @@
+@import url("./article-editorial.css");
+
 /* Remnant-specific editorial components. The church-wide chrome stays upstream. */
 :root {
   --paper: #fff;

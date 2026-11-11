@@ -303,6 +303,14 @@
         "68ea86dd-7e55-416b-9bdc-07fce6e1aa44-2.png"
       ]
     },
+    "691f67b8-a430-4420-8b25-499101aec0c3": {
+      "editorial": {
+        "kind": "quote-portrait",
+        "images": [
+          "691f67b8-a430-4420-8b25-499101aec0c3-1.jpg"
+        ]
+      }
+    },
     "6b3e3e7e-b5fd-4701-9a63-699b90f17ec9": {
       "standalone": [
         "6b3e3e7e-b5fd-4701-9a63-699b90f17ec9-2.jpg"
@@ -430,6 +438,14 @@
         "78f9f69c-fb93-4e61-847e-b1c74a18aab5-1.png"
       ]
     },
+    "7a66963a-8f7e-4083-bed3-227b354fae1b": {
+      "editorial": {
+        "kind": "poem-heading",
+        "images": [
+          "7a66963a-8f7e-4083-bed3-227b354fae1b-1.jpg"
+        ]
+      }
+    },
     "7b64c74b-c4d6-4a98-b95c-b34823831d64": {
       "standalone": [
         "7b64c74b-c4d6-4a98-b95c-b34823831d64-2.jpg",
@@ -533,9 +549,13 @@
       ]
     },
     "a0845312-06a2-4d8b-82ed-076c7305fcc1": {
-      "standalone": [
-        "a0845312-06a2-4d8b-82ed-076c7305fcc1-1.jpg"
-      ]
+      "editorial": {
+        "kind": "quote-frame",
+        "images": [
+          "a0845312-06a2-4d8b-82ed-076c7305fcc1-1.jpg",
+          "a0845312-06a2-4d8b-82ed-076c7305fcc1-2.jpg"
+        ]
+      }
     },
     "a11d7521-063e-4e4e-a95b-f5a51163737d": {
       "standalone": [
@@ -707,6 +727,23 @@
         }
       ]
     },
+    "bb70a7bb-68b1-4cdd-b85a-f732afefeaa2": {
+      "editorial": {
+        "kind": "verse-pictures",
+        "images": [
+          "bb70a7bb-68b1-4cdd-b85a-f732afefeaa2-1.png",
+          "bb70a7bb-68b1-4cdd-b85a-f732afefeaa2-2.png"
+        ]
+      }
+    },
+    "bbeefd6c-2894-4a32-88a8-1d6e889e3159": {
+      "editorial": {
+        "kind": "source-note",
+        "images": [
+          "bbeefd6c-2894-4a32-88a8-1d6e889e3159-1.jpg"
+        ]
+      }
+    },
     "bddf62b1-cf16-40ec-b5e9-6bd42a5127b7": {
       "standalone": [
         "bddf62b1-cf16-40ec-b5e9-6bd42a5127b7-1.jpg"
@@ -756,8 +793,22 @@
       ]
     },
     "d5e65bbb-a0fd-4996-894a-dc47d8af844b": {
+      "editorial": {
+        "kind": "reduced-prose",
+        "images": [
+          "d5e65bbb-a0fd-4996-894a-dc47d8af844b-2.png"
+        ],
+        "width": 400,
+        "source_size": [
+          1276,
+          1059
+        ]
+      },
+      "paragraph_positions": {
+        "d5e65bbb-a0fd-4996-894a-dc47d8af844b-2.png": 1
+      },
       "standalone": [
-        "d5e65bbb-a0fd-4996-894a-dc47d8af844b-2.png"
+        "d5e65bbb-a0fd-4996-894a-dc47d8af844b-1.png"
       ]
     },
     "dd3379b6-7f59-4c94-baee-65374d62a955": {
@@ -786,9 +837,29 @@
         "e284aecb-ae49-4104-8a5c-065b053dda57-1.jpg": 1
       }
     },
+    "e287ea36-8b9d-4d08-aa35-d9a6b7113981": {
+      "paragraph_positions": {
+        "e287ea36-8b9d-4d08-aa35-d9a6b7113981-1.jpg": 1
+      },
+      "standalone": [
+        "e287ea36-8b9d-4d08-aa35-d9a6b7113981-2.jpg"
+      ],
+      "list_flow": [
+        "e287ea36-8b9d-4d08-aa35-d9a6b7113981-1.jpg",
+        "e287ea36-8b9d-4d08-aa35-d9a6b7113981-3.jpg"
+      ]
+    },
     "e296cdce-916b-4ecd-8bc5-8cc00726a580": {
       "standalone": [
         "e296cdce-916b-4ecd-8bc5-8cc00726a580-1.jpg"
+      ]
+    },
+    "e38dca23-911a-42b6-96a2-de9ff0c4bb87": {
+      "paragraph_positions": {
+        "e38dca23-911a-42b6-96a2-de9ff0c4bb87-1.png": 1
+      },
+      "standalone": [
+        "e38dca23-911a-42b6-96a2-de9ff0c4bb87-2.png"
       ]
     },
     "e4e6c9b4-b846-48c8-aacf-0e81b7bc4693": {
@@ -811,6 +882,18 @@
       "paragraph_positions": {
         "e94f1b0c-ab32-4323-8d3b-4bc60ea82ace-1.jpg": 1
       }
+    },
+    "ea463a08-df2c-4fdf-96c4-5833e4100265": {
+      "editorial": {
+        "kind": "prose-pair",
+        "images": [
+          "ea463a08-df2c-4fdf-96c4-5833e4100265-2.png",
+          "ea463a08-df2c-4fdf-96c4-5833e4100265-3.jpg"
+        ]
+      },
+      "standalone": [
+        "ea463a08-df2c-4fdf-96c4-5833e4100265-1.png"
+      ]
     },
     "eb5aa215-314b-4e44-b9ae-533e88d0b855": {
       "paragraph_positions": {
