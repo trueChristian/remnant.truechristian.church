@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { fixtureAsset } from './fixture-assets.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -27,7 +28,6 @@ const baseCss = process.env.QUOTE_THEME_PATH ? fs.readFileSync(process.env.QUOTE
 `;
 const css = baseCss + '\n' + ['assets/site.css', 'assets/article-figures.css']
   .map(file => fs.readFileSync(file, 'utf8')).join('\n');
-const script = fs.readFileSync('assets/article-figures.js', 'utf8');
 const fontFiles = new Map();
 if (process.env.QUOTE_FONT_DIR) {
   for (const name of ['fonts.css', 'Raleway.woff2', 'Montserrat.woff2']) {
@@ -56,7 +56,8 @@ async function mount(page, { width = 1440, column = 750, direction = 'ltr', inpu
     const pathname = new URL(route.request().url()).pathname;
     if (pathname === imageSource) return route.fulfill(picture);
     if (fontFiles.has(pathname)) return route.fulfill(fontFiles.get(pathname));
-    if (pathname === '/assets/article-figures.js') return route.fulfill({ contentType: 'text/javascript', body: script });
+    const asset = fixtureAsset(pathname);
+    if (asset) return route.fulfill(asset);
     if (pathname !== '/quote-fixture/') return route.abort('blockedbyclient');
     return route.fulfill({ contentType: 'text/html', body: `<!doctype html>
       <html lang="en" dir="${direction}"><head><meta charset="utf-8">

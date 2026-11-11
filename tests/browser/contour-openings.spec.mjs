@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { fixtureAsset } from './fixture-assets.mjs';
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
@@ -27,7 +28,6 @@ print(arrange_article_figures(sys.stdin.read(), load_figure_rules('data/article-
 `], { input: source, encoding: 'utf8' });
 const css = ['assets/site.css', 'assets/article-figures.css']
   .map(file => fs.readFileSync(file, 'utf8')).join('\n');
-const script = fs.readFileSync('assets/article-figures.js', 'utf8');
 const openingSelector = '.article-contour-opening';
 const activeClass = /article-contour-opening--active/;
 
@@ -39,9 +39,8 @@ async function mount(page, { width = 1440, column = 750, direction = 'ltr', serv
       if (serveImage) return serveImage(route);
       return route.fulfill({ contentType: 'image/png', body: illustration });
     }
-    if (path === '/assets/article-figures.js') {
-      return route.fulfill({ contentType: 'text/javascript', body: script });
-    }
+    const asset = fixtureAsset(path);
+    if (asset) return route.fulfill(asset);
     if (path === '/contour-fixture/') {
       return route.fulfill({ contentType: 'text/html', body: `<!doctype html>
         <html lang="en" dir="${direction}"><head><meta charset="utf-8">
