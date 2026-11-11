@@ -85,7 +85,7 @@ export function initEditorialLayouts(document) {
   if (!rows.length && !continuous.length) return null;
   const updateVerse = () => continuous.forEach(arrangeContinuousVerse);
   const media = window.matchMedia('(min-width: 48rem)');
-  const images = [...new Set(rows.flatMap(row => [...row.querySelectorAll('img')]))];
+  const images = [...new Set([...rows, ...continuous].flatMap(row => [...row.querySelectorAll('img')]))];
   let frame = null;
   const update = () => {
     frame = null;
@@ -162,6 +162,7 @@ export function initEditorialLayouts(document) {
       }
       row.classList.toggle('article-editorial--active', active);
     }
+    updateVerse();
   };
   const schedule = () => { if (frame === null) frame = window.requestAnimationFrame(update); };
   for (const image of images) {
@@ -184,6 +185,32 @@ export function initEditorialLayouts(document) {
     observer?.observe(row);
     for (const text of row.querySelectorAll('.poem, blockquote')) observer?.observe(text);
   }
+  for (const article of continuous) observer?.observe(article);
+  // A reader font or direction can change without resizing the verse boxes:
+  // printed stanzas have their own font size, and the cups are positioned
+  // independently. Observe inherited presentation changes as well as geometry.
+  // Compare computed reading metrics so our own class/style writes do not
+  // schedule an endless layout loop.
+  const readingSignature = () => continuous.map(article => {
+    const style = window.getComputedStyle(article);
+    return `${style.fontSize}:${style.direction}`;
+  }).join('|');
+  let readingState = readingSignature();
+  const presentationObserver = continuous.length && window.MutationObserver
+    ? new window.MutationObserver(() => {
+      const current = readingSignature();
+      if (current !== readingState) {
+        readingState = current;
+        schedule();
+      }
+    }) : null;
+  const ancestors = new Set();
+  for (const article of continuous) {
+    for (let node = article; node; node = node.parentElement) ancestors.add(node);
+  }
+  for (const node of ancestors) presentationObserver?.observe(node, {
+    attributes: true, attributeFilter: ['class', 'style', 'dir'],
+  });
   document.fonts?.ready.then(schedule);
   document.fonts?.addEventListener?.('loadingdone', schedule);
   const controller = { update, updateVerse };

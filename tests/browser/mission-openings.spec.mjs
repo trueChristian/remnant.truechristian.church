@@ -19,9 +19,9 @@ const box = locator => locator.evaluate(node => {
   const { top, bottom, left, right, width, height } = node.getBoundingClientRect();
   return { top, bottom, left, right, width, height };
 });
-async function ready(page, id) {
+async function ready(page, id, { animations = true } = {}) {
   await page.goto(route(id));
-  await page.evaluate(async () => {
+  await page.evaluate(async animations => {
     await Promise.all([...document.querySelectorAll('.prose img')].map(async image => {
       const loading = image.getAttribute('loading');
       image.loading = 'eager';
@@ -31,8 +31,10 @@ async function ready(page, id) {
       }
     }));
     await document.fonts.ready;
-    await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
-  });
+    // Chromium suppresses animation callbacks when page JavaScript is disabled.
+    // Image decoding and font readiness are sufficient for that static fallback.
+    if (animations) await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+  }, animations);
 }
 async function safe(page, id) {
   const html = fs.readFileSync(`dist${route(id)}index.html`, 'utf8');
@@ -178,13 +180,19 @@ test('continuous verse removes stanza gaps without changing the previous display
 
 test('large text, RTL, print, and failed artwork restore safe verse and logo fallbacks', async ({ page }) => {
   await ready(page, ids.vessel);
+  await expect(article(page)).toHaveClass(/article-verse-continuous--active/);
   await page.locator('.prose').evaluate(node => node.style.fontSize = '28px');
   await expect(article(page)).not.toHaveClass(/article-verse-continuous--active/);
   await safe(page, ids.vessel);
-  await ready(page, ids.vessel);
+  // Restoration must work on the same page, without a resize or reload.
+  await page.locator('.prose').evaluate(node => node.style.removeProperty('font-size'));
+  await expect(article(page)).toHaveClass(/article-verse-continuous--active/);
+  await safe(page, ids.vessel);
   await page.locator('html').evaluate(node => node.dir = 'rtl');
-  await page.setViewportSize({ width: 1400, height: 1000 });
   await expect(article(page)).not.toHaveClass(/article-verse-continuous--active/);
+  await safe(page, ids.vessel);
+  await page.locator('html').evaluate(node => node.dir = 'ltr');
+  await expect(article(page)).toHaveClass(/article-verse-continuous--active/);
   await safe(page, ids.vessel);
   await ready(page, ids.vessel); await page.emulateMedia({ media: 'print' });
   for (const figure of await article(page).locator('figure').all()) {
@@ -200,11 +208,11 @@ test('large text, RTL, print, and failed artwork restore safe verse and logo fal
 
 test.describe('without JavaScript', () => {
   test.use({ javaScriptEnabled: false });
-  test('all eight layouts retain their full source content and visible artwork', async ({ page }) => {
-    for (const id of Object.values(ids)) {
-      await ready(page, id);
+  for (const [name, id] of Object.entries(ids)) {
+    test(`${name}: retains full source content and visible artwork`, async ({ page }) => {
+      await ready(page, id, { animations: false });
       await expect(article(page)).not.toHaveClass(/article-verse-continuous--active/);
       await safe(page, id);
-    }
-  });
+    });
+  }
 });
