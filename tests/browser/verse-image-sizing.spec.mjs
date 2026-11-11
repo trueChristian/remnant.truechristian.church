@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
+import { fixtureAsset } from './fixture-assets.mjs';
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
 
 const css = ['assets/site.css', 'assets/article-figures.css'].map(file => fs.readFileSync(file, 'utf8')).join('\n');
-const script = fs.readFileSync('assets/article-figures.js', 'utf8');
 const poem = '<p>Each line retains its place<br>The picture stays nearby<br>These words remain unchanged</p>';
 const arrange = source => execFileSync('python3', ['-c', `
 import sys
@@ -22,13 +22,14 @@ async function mount(page, { width = 120, height = 137, verse = true, inherited 
     const pathname = new URL(route.request().url()).pathname;
     if (pathname === '/picture.svg') return route.fulfill({ contentType: 'image/svg+xml',
       body: `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="100%" height="100%" fill="#789582"/></svg>` });
-    if (pathname === '/figures.js') return route.fulfill({ contentType: 'text/javascript', body: script });
+    const asset = fixtureAsset(pathname);
+    if (asset) return route.fulfill(asset);
     if (pathname !== '/verse-size-fixture/') return route.abort();
     return route.fulfill({ contentType: 'text/html', body: `<!doctype html><html dir="${dir}"><head>
       <meta name="viewport" content="width=device-width, initial-scale=1"><style>
       *{box-sizing:border-box}img{display:block;max-width:100%;height:auto}${css}
       body{margin:16px}.prose{max-width:750px;margin:auto;font-family:Arial,sans-serif}
-      </style><script type="module" src="/figures.js"></script></head><body><main class="prose">${rendered}</main></body></html>` });
+      </style><script type="module" src="/assets/article-figures.js"></script></head><body><main class="prose">${rendered}</main></body></html>` });
   });
   await page.goto('http://127.0.0.1:8080/verse-size-fixture/');
   await expect.poll(() => page.locator('article img').evaluate(image => image.naturalWidth)).toBe(width);

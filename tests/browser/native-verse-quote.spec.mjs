@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { fixtureAsset } from './fixture-assets.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -23,7 +24,6 @@ const baseCss = process.env.HEALING_THEME_PATH ? fs.readFileSync(process.env.HEA
 `;
 const css = baseCss + '\n' + ['assets/site.css', 'assets/article-figures.css']
   .map(file => fs.readFileSync(file, 'utf8')).join('\n');
-const script = fs.readFileSync('assets/article-figures.js', 'utf8');
 const fontFiles = new Map();
 if (process.env.HEALING_FONT_DIR) for (const name of ['fonts.css', 'Raleway.woff2', 'Montserrat.woff2']) {
   fontFiles.set(`/healing-fonts/${name}`, { body: fs.readFileSync(path.join(process.env.HEALING_FONT_DIR, name)),
@@ -44,7 +44,8 @@ async function mount(page, { width = 1440, column = 750, fontSize, quoteFontSize
     const pathname = new URL(route.request().url()).pathname;
     if (pathname === imageSource) return route.fulfill(picture);
     if (fontFiles.has(pathname)) return route.fulfill(fontFiles.get(pathname));
-    if (pathname === '/assets/article-figures.js') return route.fulfill({ contentType: 'text/javascript', body: script });
+    const asset = fixtureAsset(pathname);
+    if (asset) return route.fulfill(asset);
     if (pathname !== '/native-verse-quote-fixture/') return route.abort('blockedbyclient');
     return route.fulfill({ contentType: 'text/html', body: `<!doctype html>
       <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">

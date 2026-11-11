@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { fixtureAsset } from './fixture-assets.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -34,7 +35,6 @@ const baseCss = process.env.LION_THEME_PATH ? fs.readFileSync(process.env.LION_T
 `;
 const css = baseCss + '\n' + ['assets/site.css', 'assets/article-figures.css']
   .map(file => fs.readFileSync(file, 'utf8')).join('\n');
-const script = fs.readFileSync('assets/article-figures.js', 'utf8');
 const arranged = execFileSync('python3', ['-c', `
 import sys
 sys.path.insert(0, 'scripts')
@@ -50,7 +50,8 @@ async function mount(page, { width = 1440, column = 750, direction = 'ltr', font
     const pathname = new URL(route.request().url()).pathname;
     if (files.has(pathname)) return route.fulfill(files.get(pathname));
     if (fontFiles.has(pathname)) return route.fulfill(fontFiles.get(pathname));
-    if (pathname === '/assets/article-figures.js') return route.fulfill({ contentType: 'text/javascript', body: script });
+    const asset = fixtureAsset(pathname);
+    if (asset) return route.fulfill(asset);
     if (pathname !== '/native-figure-fixture/') return route.abort('blockedbyclient');
     return route.fulfill({ contentType: 'text/html', body: `<!doctype html>
       <html lang="en" dir="${direction}"><head><meta charset="utf-8">
