@@ -22,24 +22,42 @@ jobs:
           ref: ccefc5a5c3d79409cc78319f94b5490718d30670
           path: .review/source
           persist-credentials: false
-      - name: Prepare original financial-report assets and record provenance
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: trueChristian/theme
+          ref: 3bd0c28956610506f83e3ecd3af6ea775ac7cb45
+          path: .review/theme
+          persist-credentials: false
+      - name: Prepare exact tracked source and selected original images
         run: |
           mkdir -p .review/inputs
+          git archive HEAD > .review/inputs/site.tar
+          git -C .review/source archive HEAD index.json catalogue.json content/articles > .review/inputs/source.tar
+          git -C .review/theme archive HEAD > .review/inputs/theme.tar
           python3 - <<'PY'
-          import json, pathlib, subprocess, tarfile
+          import json, pathlib, re, subprocess, tarfile
           root = pathlib.Path('.review/source')
           records = json.loads((root / 'index.json').read_text())['articles']
-          record, = [r for r in records if r['id'] == 'e287ea36-8b9d-4d08-aa35-d9a6b7113981']
+          needles = ('soul sculpture', 'keep thy heart with all diligence', 'konkomba testimonies', 'william law', 'year end financial report', 'amy carmichael of dohnavur')
+          chosen = [r for r in records if ' '.join(re.findall(r'\w+', (r['title'] or '').casefold())) in needles]
+          assert len(chosen) == 6, [(r['id'], r['title']) for r in chosen]
           with tarfile.open('.review/inputs/images.tar', 'w') as out:
-              for image in record['images']:
-                  name = image['repository_path']
-                  out.add(root / name, arcname=name)
-          provenance = {'english': subprocess.check_output(['git', '-C', str(root), 'rev-parse', 'HEAD'], text=True).strip(), 'article': record}
+              for record in chosen:
+                  for image in record['images']:
+                      name = image['repository_path']
+                      out.add(root / name, arcname=name)
+          provenance = {name: subprocess.check_output(['git', '-C', directory, 'rev-parse', 'HEAD'], text=True).strip()
+                        for name, directory in [('website', '.'), ('english', '.review/source'), ('theme', '.review/theme')]}
+          provenance['articles'] = chosen
           pathlib.Path('.review/inputs/provenance.json').write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + '\n')
           PY
+      - name: Install exact existing test dependencies
+        run: |
+          npm ci
+          tar -czf .review/inputs/node_modules.tar.gz node_modules
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
         if: always()
         with:
-          name: financial-layout-inputs
+          name: six-article-layout-inputs
           path: .review/inputs/
           retention-days: 1
