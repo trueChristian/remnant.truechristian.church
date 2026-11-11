@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "d10637dfc957f92072912f51745c86ed677504149db87c9683ff0e484aa2b57b",
+  "integrity": "10e8975b0e4adf1a77a73b0f341bb449fdff22d4cf13d3b358cc9a17a30c2577",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -60894,13 +60894,13 @@
       ],
       "record_hash": "cf7dbd073a33dc930ea8454701ebcbb80bf63485dfbe38c7507458be8f0c05cd"
     },
-    "1caf6642-2283-4363-b3b6-33e40c39f945:af:5c1b1192110eeb786c6a91f26b540f8910264cbb2e148bf11204e642715a81bb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "1caf6642-2283-4363-b3b6-33e40c39f945:af:fff0b5875be2699555972724628b8fc1af8ef0624571620bdbcd72230fac8f63:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1caf6642-2283-4363-b3b6-33e40c39f945",
       "locale": "af",
-      "content_hash": "5c1b1192110eeb786c6a91f26b540f8910264cbb2e148bf11204e642715a81bb",
+      "content_hash": "fff0b5875be2699555972724628b8fc1af8ef0624571620bdbcd72230fac8f63",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
-      "record_hash": "dc185d16313712a4dd2bb252c90e0d32a95b9d86615eae84f290105d2bf90ec7"
+      "record_hash": "96de9f891a0cd87d9820fd1b45982c27f653e13d2b2e5eddbeb47d3705f3d919"
     },
     "1caf6642-2283-4363-b3b6-33e40c39f945:ar:3d8dec5530b8258bff79892290023b3a481ad6498dadce0b90c18cde04c8b645:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1caf6642-2283-4363-b3b6-33e40c39f945",
@@ -143778,6 +143778,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "acf188c79e635242c5c1ad116cfb6b315fc9df89cf057c6b0b7f02ecc13fbfa7"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:hi:9ce9c5d999bfee1e390857a598d58e41395cb38f202dfcc023443dcf028f3164:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "hi",
+      "content_hash": "9ce9c5d999bfee1e390857a598d58e41395cb38f202dfcc023443dcf028f3164",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ccecaf3641bef0e207ba4cdb0dcdae02018223f05fbf2d1529afd693b0392dcf"
     },
     "476b0ca1-7039-4dab-98ed-f471fb3a1663:en:603f2f9c7815c2aedbae9f61d838a19d2b0103066d77b9c9aa483935b4782b08:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "476b0ca1-7039-4dab-98ed-f471fb3a1663",
