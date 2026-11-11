@@ -1,13 +1,10 @@
 name: Prepare requested layout review inputs
-
 on:
   push:
     branches: [fix/soul-sculpture-poetry-konkomba-layouts]
     paths: [.github/workflows/layout-review-inputs.yml]
-
 permissions:
   contents: read
-
 jobs:
   inputs:
     runs-on: ubuntu-24.04
@@ -15,49 +12,29 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          persist-credentials: false
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
           repository: trueChristian/berean-voice
           ref: ccefc5a5c3d79409cc78319f94b5490718d30670
-          path: .review/source
           persist-credentials: false
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
-        with:
-          repository: trueChristian/theme
-          ref: 3bd0c28956610506f83e3ecd3af6ea775ac7cb45
-          path: .review/theme
-          persist-credentials: false
-      - name: Prepare exact tracked source and selected original images
+      - name: Retain exact original artwork for the additional requests
         run: |
-          mkdir -p .review/inputs
-          git archive HEAD > .review/inputs/site.tar
-          git -C .review/source archive HEAD index.json catalogue.json content/articles > .review/inputs/source.tar
-          git -C .review/theme archive HEAD > .review/inputs/theme.tar
+          mkdir -p .review
           python3 - <<'PY'
-          import json, pathlib, re, subprocess, tarfile
-          root = pathlib.Path('.review/source')
-          records = json.loads((root / 'index.json').read_text())['articles']
-          needles = ('soul sculpture', 'keep thy heart with all diligence', 'konkomba testimonies', 'william law', 'year end financial report', 'amy carmichael of dohnavur')
-          chosen = [r for r in records if ' '.join(re.findall(r'\w+', (r['title'] or '').casefold())) in needles]
-          assert len(chosen) == 6, [(r['id'], r['title']) for r in chosen]
-          with tarfile.open('.review/inputs/images.tar', 'w') as out:
-              for record in chosen:
+          import json, pathlib, tarfile, hashlib
+          identities = {'a5232cdc-2e95-42b0-85f1-b2bfd9ad160c', '7a66963a-8f7e-4083-bed3-227b354fae1b', 'ea463a08-df2c-4fdf-96c4-5833e4100265', 'e38dca23-911a-42b6-96a2-de9ff0c4bb87'}
+          records = [r for r in json.loads(pathlib.Path('index.json').read_text())['articles'] if r['id'] in identities]
+          assert len(records) == len(identities)
+          hashes = {}
+          with tarfile.open('.review/images.tar', 'w') as output:
+              for record in records:
                   for image in record['images']:
-                      name = image['repository_path']
-                      out.add(root / name, arcname=name)
-          provenance = {name: subprocess.check_output(['git', '-C', directory, 'rev-parse', 'HEAD'], text=True).strip()
-                        for name, directory in [('website', '.'), ('english', '.review/source'), ('theme', '.review/theme')]}
-          provenance['articles'] = chosen
-          pathlib.Path('.review/inputs/provenance.json').write_text(json.dumps(provenance, indent=2, ensure_ascii=False) + '\n')
+                      path = pathlib.Path(image['repository_path'])
+                      output.add(path, arcname=str(path))
+                      hashes[str(path)] = hashlib.sha256(path.read_bytes()).hexdigest()
+          pathlib.Path('.review/hashes.json').write_text(json.dumps(hashes, indent=2))
           PY
-      - name: Install exact existing test dependencies
-        run: |
-          npm ci
-          tar -czf .review/inputs/node_modules.tar.gz node_modules
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
-        if: always()
         with:
-          name: six-article-layout-inputs
-          path: .review/inputs/
+          name: remaining-layout-artwork
+          path: .review/
+          include-hidden-files: true
           retention-days: 1
