@@ -148486,11 +148486,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "barn",
+        "alias": "vennlighetens-kraft",
+        "history": [
+          "/nb/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -156744,11 +156745,12 @@
       },
       "391d4642-07e2-4003-83db-fa33dc08a8ca": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "ye-must-be-born-again",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelijk-leven",
+        "alias": "u-moet-wedergeboren-worden",
+        "history": [
+          "/nl/articles/ye-must-be-born-again/"
+        ],
+        "fallback": false
       },
       "39530116-8c39-4abd-beb6-89f05771a4f8": {
         "category_id": "729ef2d2-cb45-545b-b9a8-555cc7a423df",
@@ -158485,11 +158487,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kinderen",
+        "alias": "de-kracht-van-vriendelijkheid",
+        "history": [
+          "/nl/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -197832,11 +197835,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "watoto",
+        "alias": "nguvu-ya-wema",
+        "history": [
+          "/sw/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",

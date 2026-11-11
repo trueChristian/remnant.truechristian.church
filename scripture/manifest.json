@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "f7521016ad2f5bff2b0db5196269b65a4be08fb7a5310ef3d937f6942d615f92",
+  "integrity": "d10637dfc957f92072912f51745c86ed677504149db87c9683ff0e484aa2b57b",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -113784,6 +113784,431 @@
       ],
       "record_hash": "d59838121b1fa92f0661eb335039d89d4650249ef1f5c7902a0ee19bbbf205d2"
     },
+    "391d4642-07e2-4003-83db-fa33dc08a8ca:nl:31d99cb714b7c59632eb420df719d92d45435acc8483956c18bbb5a3337753d2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "391d4642-07e2-4003-83db-fa33dc08a8ca",
+      "locale": "nl",
+      "content_hash": "31d99cb714b7c59632eb420df719d92d45435acc8483956c18bbb5a3337753d2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "be5eef731600f3bd0fc5c5ea",
+          "quote": "Mattheüs 13:44",
+          "before": "n wat hij heeft en koopt hij die akker –",
+          "after": ".",
+          "spans": [
+            [
+              1875,
+              1889
+            ]
+          ],
+          "osis": "Matt.13.44",
+          "queries": [
+            "40 13:44"
+          ]
+        },
+        {
+          "id": "4004b1bb0caedc365d93609e",
+          "quote": "Galaten 5:22-23",
+          "before": "loof, zachtmoedigheid, zelfbeheersing… –",
+          "after": " voortvloeien, en dat is de vrucht van d",
+          "spans": [
+            [
+              3347,
+              3362
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "079cb66282f15f2a2d47e358",
+          "quote": "Johannes 3:2",
+          "before": "doen die U doet, tenzij God met hem is –",
+          "after": ".",
+          "spans": [
+            [
+              6003,
+              6015
+            ]
+          ],
+          "osis": "John.3.2",
+          "queries": [
+            "43 3:2"
+          ]
+        },
+        {
+          "id": "9dd3b8877e4008246a658182",
+          "quote": "Johannes 3:3",
+          "before": "n hij het koninkrijk van God niet zien –",
+          "after": ". Het is bijna alsof Hij zei: [“Hoewel u",
+          "spans": [
+            [
+              6242,
+              6254
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "1f4f03a09c8d5a55aad5329d",
+          "quote": "Johannes 3:6",
+          "before": " wat uit de Geest geboren is, is geest –",
+          "after": ".",
+          "spans": [
+            [
+              6613,
+              6625
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "f0cd35dff96b9bfc6bd72896",
+          "quote": "Jeremia 17:9",
+          "before": "or en door slecht; wie kan het kennen? –",
+          "after": ". Hij legt verder uit: Ik, de HEER, door",
+          "spans": [
+            [
+              7357,
+              7369
+            ]
+          ],
+          "osis": "Jer.17.9",
+          "queries": [
+            "24 17:9"
+          ]
+        },
+        {
+          "id": "5bbb17aca26eefd4d086f799",
+          "quote": "Jeremia 17:10",
+          "before": "art, Ik beproef het diepste innerlijk… –",
+          "after": ".",
+          "spans": [
+            [
+              7468,
+              7481
+            ]
+          ],
+          "osis": "Jer.17.10",
+          "queries": [
+            "24 17:10"
+          ]
+        },
+        {
+          "id": "c496404dab45dd62b1da9ee1",
+          "quote": "Johannes 3:4",
+          "before": " zijn moeder ingaan en geboren worden? –",
+          "after": ".",
+          "spans": [
+            [
+              7995,
+              8007
+            ]
+          ],
+          "osis": "John.3.4",
+          "queries": [
+            "43 3:4"
+          ]
+        },
+        {
+          "id": "bd5d3f96b158439c4520a97f",
+          "quote": "Johannes 3:14",
+          "before": "oet de Mensenzoon omhooggeheven worden –",
+          "after": ".",
+          "spans": [
+            [
+              8225,
+              8238
+            ]
+          ],
+          "osis": "John.3.14",
+          "queries": [
+            "43 3:14"
+          ]
+        },
+        {
+          "id": "bdfc95c6f278fcf98f89e0ef",
+          "quote": "Johannes 3:20",
+          "before": " zijn daden niet terechtgewezen worden –",
+          "after": ". Als we eerst moeten sterven om wederge",
+          "spans": [
+            [
+              8392,
+              8405
+            ]
+          ],
+          "osis": "John.3.20",
+          "queries": [
+            "43 3:20"
+          ]
+        },
+        {
+          "id": "ab0eac3eb8f51e4da0a66ef7",
+          "quote": "Galaten 5:24",
+          "before": "n hartstochten en begeerten gekruisigd –",
+          "after": ". Dus hoe wordt een oprecht zoekend pers",
+          "spans": [
+            [
+              8585,
+              8597
+            ]
+          ],
+          "osis": "Gal.5.24",
+          "queries": [
+            "48 5:24"
+          ]
+        },
+        {
+          "id": "e4ba3e4e1082f3038d32cd09",
+          "quote": "Romeinen 10:9-10",
+          "before": "n heeft opgewekt, zult u gered worden… –",
+          "after": ".",
+          "spans": [
+            [
+              8826,
+              8842
+            ]
+          ],
+          "osis": "Rom.10.9-Rom.10.10",
+          "queries": [
+            "45 10:9-10"
+          ]
+        },
+        {
+          "id": "10eeaa607978c72b83f18f2c",
+          "quote": "Handelingen 2:38",
+          "before": "de gave van de Heilige Geest ontvangen –",
+          "after": ".",
+          "spans": [
+            [
+              9046,
+              9062
+            ]
+          ],
+          "osis": "Acts.2.38",
+          "queries": [
+            "44 2:38"
+          ]
+        },
+        {
+          "id": "ac91efcbda4157bcc10144df",
+          "quote": "Hebreeën 4:2",
+          "before": "t hoorden niet met geloof gepaard ging –",
+          "after": ".",
+          "spans": [
+            [
+              9198,
+              9210
+            ]
+          ],
+          "osis": "Heb.4.2",
+          "queries": [
+            "58 4:2"
+          ]
+        },
+        {
+          "id": "9d61b39628f84cfbbb4ea800",
+          "quote": "Hebreeën 11:6",
+          "before": "loof is het onmogelijk Hem te behagen… –",
+          "after": ".",
+          "spans": [
+            [
+              9288,
+              9301
+            ]
+          ],
+          "osis": "Heb.11.6",
+          "queries": [
+            "58 11:6"
+          ]
+        },
+        {
+          "id": "382b91c765ae9c3051295dae",
+          "quote": "Lukas 3:3",
+          "before": "n bekering tot vergeving van de zonden –",
+          "after": ".",
+          "spans": [
+            [
+              9401,
+              9410
+            ]
+          ],
+          "osis": "Luke.3.3",
+          "queries": [
+            "42 3:3"
+          ]
+        },
+        {
+          "id": "d34fb9808fb06308df1ae8a7",
+          "quote": "Johannes 10:9",
+          "before": " Mij binnengaat, zal hij gered worden… –",
+          "after": ".",
+          "spans": [
+            [
+              9505,
+              9518
+            ]
+          ],
+          "osis": "John.10.9",
+          "queries": [
+            "43 10:9"
+          ]
+        },
+        {
+          "id": "46e4ed86fda961773f5445f2",
+          "quote": "Marcus 8:34-35",
+          "before": "nen, zijn kruis opnemen en Mij volgen… –",
+          "after": ".",
+          "spans": [
+            [
+              9640,
+              9654
+            ]
+          ],
+          "osis": "Mark.8.34-Mark.8.35",
+          "queries": [
+            "41 8:34-35"
+          ]
+        },
+        {
+          "id": "67acc47d4985d118053cedce",
+          "quote": "Openbaring 3:20",
+          "before": "hem de maaltijd houden, en hij met Mij –",
+          "after": ".",
+          "spans": [
+            [
+              9830,
+              9845
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "1dbb81add6d91f858951c0fc",
+          "quote": "Johannes 9:35-38",
+          "before": "ei: Heer, ik geloof. En hij aanbad Hem –",
+          "after": ".",
+          "spans": [
+            [
+              9994,
+              10010
+            ]
+          ],
+          "osis": "John.9.35-John.9.38",
+          "queries": [
+            "43 9:35-38"
+          ]
+        },
+        {
+          "id": "a70a15ec3f44c1cb3b3b8c29",
+          "quote": "Efeziërs 2:8-9",
+          "before": "ave van God, niet op grond van werken… –",
+          "after": ".",
+          "spans": [
+            [
+              10134,
+              10148
+            ]
+          ],
+          "osis": "Eph.2.8-Eph.2.9",
+          "queries": [
+            "49 2:8-9"
+          ]
+        },
+        {
+          "id": "fcbb7a5f2123d6104c929e0d",
+          "quote": "Ezechiël 36:26-27",
+          "before": "palingen in acht nemen en ze uitvoeren –",
+          "after": ".",
+          "spans": [
+            [
+              12746,
+              12763
+            ]
+          ],
+          "osis": "Ezek.36.26-Ezek.36.27",
+          "queries": [
+            "26 36:26-27"
+          ]
+        },
+        {
+          "id": "8355b2782038fcecf813438c",
+          "quote": "Mattheüs 7:7-8",
+          "before": "p, en er zal voor u worden opengedaan… –",
+          "after": ".",
+          "spans": [
+            [
+              14663,
+              14677
+            ]
+          ],
+          "osis": "Matt.7.7-Matt.7.8",
+          "queries": [
+            "40 7:7-8"
+          ]
+        },
+        {
+          "id": "3cafd2594603f0549b0bd335",
+          "quote": "1 Korinthiërs 10:13",
+          "before": "weg bieden, zodat u die kunt verdragen –",
+          "after": ".",
+          "spans": [
+            [
+              14844,
+              14863
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "3365e77e91f60151a0f30bc3",
+          "quote": "Mattheüs 21:21",
+          "before": "n de zee geworpen; en het zal gebeuren –",
+          "after": ".",
+          "spans": [
+            [
+              15016,
+              15030
+            ]
+          ],
+          "osis": "Matt.21.21",
+          "queries": [
+            "40 21:21"
+          ]
+        },
+        {
+          "id": "e455e2da294f78e2a84696b2",
+          "quote": "Galaten 5:16",
+          "before": " begeerte van het vlees niet vervullen –",
+          "after": ".",
+          "spans": [
+            [
+              15142,
+              15154
+            ]
+          ],
+          "osis": "Gal.5.16",
+          "queries": [
+            "48 5:16"
+          ]
+        }
+      ],
+      "record_hash": "7b442bcb8c977b34acd5331ce5ede15910c1f08d1ac35ddf9bc3f7136e476c1d"
+    },
     "391d4642-07e2-4003-83db-fa33dc08a8ca:pt:360262c3de63fafd829483ad84ecdc148a69df043ec2a15fca71a74d16f85dd9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "391d4642-07e2-4003-83db-fa33dc08a8ca",
       "locale": "pt",
@@ -173945,13 +174370,13 @@
       ],
       "record_hash": "d5ff4db3bd44edcc810cd2699a66fb95e61e4269c0c3a6654b8b3d3f4f59b2ec"
     },
-    "56f87e8c-a689-40cd-95b1-57f12dac367a:en:c2ab027ac2e51035b30dbf8f35ee2ec1cdb6cc1cafd8da857fcfa04d816bb083:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "56f87e8c-a689-40cd-95b1-57f12dac367a:en:655746aa810630299934d57e2d03b0f1b13fb7a2aeab1940c572be022bce5fb4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "56f87e8c-a689-40cd-95b1-57f12dac367a",
       "locale": "en",
-      "content_hash": "c2ab027ac2e51035b30dbf8f35ee2ec1cdb6cc1cafd8da857fcfa04d816bb083",
+      "content_hash": "655746aa810630299934d57e2d03b0f1b13fb7a2aeab1940c572be022bce5fb4",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
-      "record_hash": "5ceaa89bbf0c02b3b09081e8ef2d7b0cf8981adb20c71f61bf9720c7400cafc4"
+      "record_hash": "46eeae52db156342fe2f3e8df719c1968d4b0692e6e3a250ce0454c91f414ace"
     },
     "572ec209-1870-46a2-ba99-bc6121777d7c:af:e1e89586ec78e14300b6e99fe3e63ea9513503e30a90e4cbdae350ee8c985457:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
@@ -213346,6 +213771,22 @@
       "markers": [],
       "record_hash": "2583a0259707914168ab2c503ab06eab906d4c56be0f96ecf2fd244b3659d8b2"
     },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:nb:6a11bbd084478c53d2194e4c1ebf9af250f08bab784823c847700be315d4d7a7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "nb",
+      "content_hash": "6a11bbd084478c53d2194e4c1ebf9af250f08bab784823c847700be315d4d7a7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "dc182b55dd40a7870b54295a3a69f9fdacb61787c262f8c45d35d6a43081ede2"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:nl:61bce580e92f94f1fc5b619ea0d070725859f9562f499af67a4471b5615929a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "nl",
+      "content_hash": "61bce580e92f94f1fc5b619ea0d070725859f9562f499af67a4471b5615929a2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5edebe7d44317a45d1ab4f8d94df858ec1f1f1020e8254175a811be89502b7f0"
+    },
     "7750b3b4-3c80-48a5-860c-4958331969d7:pt:1985de21173cbebef01ac75a0c84c7a99a44cbf770ca59c0a5729a40e8f11e51:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
       "locale": "pt",
@@ -213353,6 +213794,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4298eac1c54c656c133aad56687d31f1b5609edbaf8a0e6452570d4df24f4ee1"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:sw:5bf12a9687e28be267f789f8e3edccaf994103aabe54244a300d763fe4a4bd81:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "sw",
+      "content_hash": "5bf12a9687e28be267f789f8e3edccaf994103aabe54244a300d763fe4a4bd81",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "2618ce92ec61f3f184269b0f25dbcf4002b5bd7de26d0907ade4e9667a86409d"
     },
     "7750b3b4-3c80-48a5-860c-4958331969d7:ur:b3296dc584c2df8485d8124463a60091710c9c1df3a097fa55a1ca5f9d5bf2af:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
