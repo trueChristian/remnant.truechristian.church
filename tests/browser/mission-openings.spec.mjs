@@ -200,10 +200,21 @@ test('large text, RTL, print, and failed artwork restore safe verse and logo fal
   }
   await safe(page, ids.vessel); await page.emulateMedia({ media: 'screen' });
   await ready(page, ids.painful);
-  const logo = image(page, ids.painful, 1);
-  await expect(logo.locator('..')).toHaveClass(/article-standalone--enlarged/);
+  // The source URL is deliberately changed below, so anchor this check to the
+  // reviewed figure, not to an image locator containing the old URL.
+  const logoFigure = article(page).locator('figure[data-reader-enlarge]');
+  await expect(logoFigure).toHaveCount(1);
+  const logo = logoFigure.locator('img');
+  const originalSource = await logo.getAttribute('src');
+  await expect(logoFigure).toHaveClass(/article-standalone--enlarged/);
   await logo.evaluate(node => node.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"></svg>'));
-  await expect(logo.locator('..')).not.toHaveClass(/article-standalone--enlarged/);
+  await expect(logo).toHaveJSProperty('naturalWidth', 20);
+  await expect(logoFigure).not.toHaveClass(/article-standalone--enlarged/);
+  expect((await box(logo)).width).toBeCloseTo(20, 0);
+  await logo.evaluate((node, src) => node.setAttribute('src', src), originalSource);
+  await expect(logoFigure).toHaveClass(/article-standalone--enlarged/);
+  expect((await box(logo)).width).toBeCloseTo(150, 0);
+  await safe(page, ids.painful);
 });
 
 test.describe('without JavaScript', () => {
