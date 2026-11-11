@@ -8,6 +8,7 @@ untouched.
 """
 from __future__ import annotations
 
+from article_editorial import arrange_editorial, validate_editorial_rules
 from collections import defaultdict
 from dataclasses import dataclass, field
 from html import unescape
@@ -169,6 +170,7 @@ def load_figure_rules(path):
                    any(type(value) is not int or value <= 0 for value in size)
                    for size in dimensions.values()):
                 raise ValueError(f'Invalid paired image dimensions: {identity}')
+        validate_editorial_rules(identity, rule)
     return rules
 
 
@@ -554,6 +556,7 @@ def arrange_article_figures(source, rules=None):
         source = _reunite_reviewed_pairs(source, rules)
         source = _position_reviewed_paragraph_figures(source, rules)
         source, paragraph_sides = _distribute_reviewed_paragraph_pair(source, rules)
+    source = arrange_editorial(source, rules, FigureElements)
     parsed = FigureElements(source)
     insertions, classes = defaultdict(list), defaultdict(list)
 

@@ -1,0 +1,101 @@
+/* Reviewed source notes, complete verse columns and restrained native-size artwork. */
+.prose article .article-source-note { margin-block: 0 2rem; }
+.prose article .article-source-note p { margin-block: 0 1em; }
+.prose article .article-source-note p:last-child { margin-bottom: 0; }
+.prose article :is(.article-editorial-verse, .article-editorial-prose, .article-quote-frame, .article-poem-heading) {
+  display: flow-root;
+  clear: both;
+  margin-block: 2rem;
+}
+.prose article .article-editorial-art { width: var(--editorial-art-width, max-content); max-width: 100%; margin-inline: auto; }
+.prose article .article-editorial-art > figure { float: none; clear: none; margin: 0 0 1.5rem; }
+.prose article .article-editorial-art > figure:last-child { margin-bottom: 0; }
+.prose article .article-editorial-art img { max-width: 100%; height: auto; max-height: none; }
+.prose article .article-editorial-art--pair { display: grid; grid-template-columns: var(--editorial-pair-columns, 295fr 99fr); gap: 18px; align-items: end; width: var(--editorial-art-width, 412px); }
+.prose article .article-editorial-art--pair > figure { margin: 0; }
+.prose article .article-editorial-text { min-width: 0; }
+.prose article .article-editorial-text > :first-child { margin-top: 0; }
+.prose article .article-editorial-text > :last-child { margin-bottom: 0; }
+.prose article .article-editorial-text blockquote > p:last-child { margin-bottom: 0; }
+.prose article .article-editorial-measure { position: fixed; inset: 0 auto auto 0; width: max-content; max-width: none; visibility: hidden; pointer-events: none; }
+.prose article .article-poem-heading > figure { margin: 0 0 1.5rem; float: none; }
+.prose article .article-poem-heading > figure img { margin-left: auto; margin-right: 0; max-height: none; }
+.prose article .article-poem-heading > .poem { clear: both; }
+.prose article .article-quote-edge { display: none; }
+.prose article .article-quote-frame > figure:first-child img { margin-left: 0; margin-right: auto; }
+.prose article .article-quote-frame > figure:last-child img { margin-left: auto; margin-right: 0; }
+/* These lists keep their native bullets and regain the full width below a float. */
+.prose article.article-figures :is(ul, ol)[data-reader-list-flow] { display: block; }
+
+@media screen and (min-width: 48rem) {
+  .prose article .article-editorial-verse.article-editorial--active {
+    display: grid;
+    grid-template-columns: minmax(0, var(--editorial-text-width)) var(--editorial-art-width);
+    justify-content: start;
+    align-items: start;
+    gap: var(--editorial-gap);
+  }
+  .prose article .article-editorial-verse.article-editorial--active > .article-editorial-text { grid-area: 1 / 1; }
+  .prose article .article-editorial-verse.article-editorial--active > .article-editorial-art { grid-area: 1 / 2; margin: 0; }
+  .prose article .article-editorial-verse.article-editorial--active .article-editorial-art img { width: 100%; }
+  .prose article .article-editorial-prose.article-editorial--active > .article-editorial-art {
+    float: inline-end;
+    margin: .35em 0 1.4em;
+    margin-inline-start: var(--editorial-gap);
+  }
+  .prose article .article-editorial-prose > p:last-child { margin-bottom: 0; }
+  .prose article .article-quote-frame.article-editorial--active { position: relative; min-height: var(--frame-height); }
+  .prose article .article-quote-frame.article-editorial--active > figure { position: absolute; float: none; clear: none; margin: 0; }
+  .prose article .article-quote-frame.article-editorial--active > figure:first-child { top: 0; left: 0; width: var(--frame-left-width); }
+  .prose article .article-quote-frame.article-editorial--active > figure:last-child { bottom: 0; right: 0; width: var(--frame-right-width); }
+  .prose article .article-quote-frame.article-editorial--active > figure img { width: 100%; max-height: none; margin: 0; }
+  .prose article .article-quote-frame.article-editorial--active > .article-quote-edge {
+    display: block;
+    height: var(--frame-height);
+    pointer-events: none;
+  }
+  .prose article .article-quote-frame.article-editorial--active > .article-quote-edge--left {
+    float: left;
+    width: calc(var(--frame-left-width) + var(--editorial-gap));
+    shape-outside: inset(0 0 calc(100% - var(--frame-left-height)) 0);
+  }
+  .prose article .article-quote-frame.article-editorial--active > .article-quote-edge--right {
+    float: right;
+    width: calc(var(--frame-right-width) + var(--editorial-gap));
+    shape-outside: inset(calc(100% - var(--frame-right-height)) 0 0 0);
+  }
+  .prose article .article-quote-frame.article-editorial--active > blockquote {
+    clear: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .prose article .article-quote-frame.article-editorial--active > blockquote > p:last-child { margin-bottom: 0; }
+}
+
+/* Long credited name lists remain complete and in DOM reading order. */
+.article-byline > span:first-child:has(> a.author-link:nth-of-type(6)) {
+  display: block;
+  flex-basis: 100%;
+  width: 100%;
+  columns: 3 8rem;
+  column-gap: 1.5rem;
+  line-height: 1.9;
+}
+.card-bottom:has(> span > a.author-link:nth-of-type(6)) { display: block; }
+.card-bottom > span:has(> a.author-link:nth-of-type(6)) {
+  display: block;
+  width: 100%;
+  columns: 2 7.5rem;
+  column-gap: 1rem;
+  line-height: 1.9;
+}
+.card-bottom:has(> span > a.author-link:nth-of-type(6)) > .card-arrow { display: block; margin-top: .5rem; }
+:is(.article-byline, .card-bottom) > span:has(> a.author-link:nth-of-type(6)) > a { display: inline-block; max-width: 100%; break-inside: avoid; }
+
+@media print {
+  .prose article :is(.article-editorial-verse, .article-editorial-prose, .article-quote-frame) { display: block; min-height: 0; }
+  .prose article .article-editorial-art { float: none; margin: 1rem auto; }
+  .prose article .article-quote-frame > figure { position: static; }
+  .prose article .article-quote-edge { display: none; }
+}

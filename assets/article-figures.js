@@ -1,3 +1,4 @@
+import { initEditorialLayouts } from "./article-editorial.js";
 /** Size-aware figure wrapping; source nodes, image attributes, and captions stay intact. */
 const controllers = new WeakMap();
 const WIDE_SCREEN = '(min-width: 48rem)';
@@ -264,6 +265,8 @@ export function initArticleFigures(document) {
 }
 
 if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => initEditorialLayouts(document), { once: true });
+  else initEditorialLayouts(document);
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', () => initArticleFigures(document), { once: true });
   } else initArticleFigures(document);
