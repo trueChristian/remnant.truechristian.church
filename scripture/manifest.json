@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "e39494a7983d48fecf45f29e29597fe51f89c73c2c4b80bebf0063d8b23299ac",
+  "integrity": "f7521016ad2f5bff2b0db5196269b65a4be08fb7a5310ef3d937f6942d615f92",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -99788,6 +99788,400 @@
       ],
       "record_hash": "8ede3942a79bf758dab2d77772f2ef7a810d07cc32be76324887b5f46ee3f741"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:sv:280a9a08834980a48c23cac575890843900e1ae3051f006215e16cf952d543eb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "sv",
+      "content_hash": "280a9a08834980a48c23cac575890843900e1ae3051f006215e16cf952d543eb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "379ae9c3cdd152d26feb9d1f",
+          "quote": "Första Moseboken 3",
+          "before": " De första nedtecknade beläggen finns i ",
+          "after": ". ”Han svarade: ’Jag hörde din röst i tr",
+          "spans": [
+            [
+              1620,
+              1638
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "170750512a25566eb47d3329",
+          "quote": "Första Moseboken 3:10",
+          "before": " jag var naken. Därför gömde jag mig’” (",
+          "after": "). Adam var rädd. Rädd för vad? Adam och",
+          "spans": [
+            [
+              1750,
+              1771
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "6b57cf4e3a474984fab316ec",
+          "quote": "Första Moseboken 4:5",
+          "before": "et vred och hans ansikte blev dystert” (",
+          "after": "). Du kan ha varit ett av dessa barn.",
+          "spans": [
+            [
+              3622,
+              3642
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "89421d2720d51cce7bfe3193",
+          "quote": "Första Moseboken 1",
+          "before": "sningar på känslomässiga svårigheter. I ",
+          "after": " skapade Gud gröna örter och träd till f",
+          "spans": [
+            [
+              5529,
+              5547
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "7ac2c3bba7d0ddd27f39e76b",
+          "quote": "Johannes 3:3",
+          "before": "melriket om han inte blir född på nytt (",
+          "after": "). Många människor far runt i hela värld",
+          "spans": [
+            [
+              6004,
+              6016
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "29ae65d2942c0f0aa46354bd",
+          "quote": "Johannes 3:7",
+          "before": "när han sade: ”Ni måste födas på nytt” (",
+          "after": ")? Ibland gör vi evangeliets budskap mer",
+          "spans": [
+            [
+              6448,
+              6460
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "aaa1d1b523a91caccf712854",
+          "quote": "Andra Korinthierbrevet 11:2–3",
+          "before": " liksom ormen bedrog Eva med sin list” (",
+          "after": "). De goda nyheterna om frälsningen är e",
+          "spans": [
+            [
+              6902,
+              6931
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "9f04c2a1cf62bda623121673",
+          "quote": "Matteusevangeliet 3:6",
+          "before": " samtidigt som de bekände sina synder” (",
+          "after": "). Det första steget till frälsning är a",
+          "spans": [
+            [
+              7293,
+              7314
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "1111cdfb17b74985dbc58b58",
+          "quote": "Jakobsbrevet 5:16",
+          "before": "erksamma, innerliga bön förmår mycket” (",
+          "after": "). Sök hjälp hos en förkunnare eller en ",
+          "spans": [
+            [
+              7995,
+              8012
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "3cecd4204ff3a0f9eb57f261",
+          "quote": "Apostlagärningarna 3:19",
+          "before": "kvickelse kommer från Herrens närvaro” (",
+          "after": "). ”Omvänd dig därför från denna din ond",
+          "spans": [
+            [
+              8717,
+              8740
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "8ce5ce724c656f1ce7016fab",
+          "quote": "Apostlagärningarna 8:22",
+          "before": " uppsåt kanske skall bli dig förlåtet” (",
+          "after": "). Genom att omvända dig från dina synde",
+          "spans": [
+            [
+              8856,
+              8879
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "dc5914aa4cc38b9e41c3807a",
+          "quote": "Romarbrevet 10:13",
+          "before": "åkallar Herrens namn skall bli frälst” (",
+          "after": "). Nu när du har bekänt och omvänt dig f",
+          "spans": [
+            [
+              9115,
+              9132
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "7e0e1324ac553e2a85679770",
+          "quote": "Apostlagärningarna 2:21",
+          "before": "åkallar Herrens namn skall bli frälst” (",
+          "after": "). ”Ni vet ju att det inte var med förgä",
+          "spans": [
+            [
+              9503,
+              9526
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "43c0702000724fd841069c60",
+          "quote": "Första Petrusbrevet 1:18–19",
+          "before": " blodet av ett lamm utan fel och lyte” (",
+          "after": "). ”Jag skall stänka rent vatten på er, ",
+          "spans": [
+            [
+              9754,
+              9781
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "d6c19713ac2a4acc7ed25f1e",
+          "quote": "Hesekiel 36:25–28",
+          "before": " mitt folk, och jag skall vara er Gud” (",
+          "after": ").",
+          "spans": [
+            [
+              10267,
+              10284
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "b0f4ef396d1d83dee894ed64",
+          "quote": "Apostlagärningarna 16:30–31",
+          "before": "Jesus Kristus, så blir du frälst ...’” (",
+          "after": "). Du har bekänt och omvänt dig från din",
+          "spans": [
+            [
+              10533,
+              10560
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "4e1f47fe74d5c6ca28fc4ff1",
+          "quote": "Romarbrevet 10:9",
+          "before": "nom från de döda, skall du bli frälst” (",
+          "after": "). ”Ty Gud älskade världen så att han ga",
+          "spans": [
+            [
+              10878,
+              10894
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "3847ba5623798e0636955c06",
+          "quote": "Johannes 3:16",
+          "before": "e skall gå förlorad utan ha evigt liv” (",
+          "after": "). Tacka Herren för att han har tagit bo",
+          "spans": [
+            [
+              11033,
+              11046
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "93c5bfca93771ff893968110",
+          "quote": "Första Petrusbrevet 3:21",
+          "before": " Gud), genom Jesu Kristi uppståndelse” (",
+          "after": "). Den personen med ett rent samvete kan",
+          "spans": [
+            [
+              11711,
+              11735
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "c75530188b36698b198a17c7",
+          "quote": "Efesierbrevet 4:21–23",
+          "before": "egären, och förnyas i ert sinnes ande” (",
+          "after": "). Detta är ett viktigt ämne, och mer sk",
+          "spans": [
+            [
+              12533,
+              12554
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "6c461b0713045c065efbb303",
+          "quote": "Matteusevangeliet 7:13–14",
+          "before": "l livet, och det är få som finner den” (",
+          "after": ").",
+          "spans": [
+            [
+              13313,
+              13338
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "c373efc812afdc96939b0661",
+          "quote": "Lukasevangeliet 9:23",
+          "before": "varje dag ta sitt kors och följa mig’” (",
+          "after": "). Vi måste dagligen korsfästa vårt kött",
+          "spans": [
+            [
+              13920,
+              13940
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "08f6fb1d8ece6d8f8026352e",
+          "quote": "Första Johannesbrevet 1:7,9",
+          "before": "ch renar oss från all orättfärdighet.” (",
+          "after": ").",
+          "spans": [
+            [
+              14489,
+              14516
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "01604a9d13e359bc7b0f76d5",
+          "quote": "Andra Korinthierbrevet 9:15",
+          "before": " vare tack för hans obeskrivliga gåva” (",
+          "after": "). Frälsningens fria gåva är tillgänglig",
+          "spans": [
+            [
+              15164,
+              15191
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "2a734715995380cf69dc647a067ab8831a5b65227dd88968771caac49b3cc150"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:sw:763afc67d9580fcf6b427e30a8fc9dd69abf30188edcc98c9883cbfe96fe012c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "sw",
@@ -193358,6 +193752,143 @@
       "markers": [],
       "record_hash": "3aa4a8f56f27f43cdd5ce284999a2dc361122cba8cde7c19db1898f6a147a70a"
     },
+    "6485a6ed-e76f-4142-9e27-e649823cb1a3:ar:f709c7814c922c75a887d0872c4f4cbfb9f4438e3ef36a671c9113d7f3b43560:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
+      "locale": "ar",
+      "content_hash": "f709c7814c922c75a887d0872c4f4cbfb9f4438e3ef36a671c9113d7f3b43560",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "6f7af5aa1dc2eeb0ba7ec7af",
+          "quote": "متى 5:8",
+          "before": "ع: طوبى لأنقياء القلب لأنهم سيرون الله –",
+          "after": ".",
+          "spans": [
+            [
+              1264,
+              1271
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "589cccb7dd30b69580a6d721",
+          "quote": "بطرس الأولى 3:3-6",
+          "before": "تن تفعلن الخير ولا يستولي عليكن أي خوف –",
+          "after": ".",
+          "spans": [
+            [
+              1650,
+              1667
+            ]
+          ],
+          "osis": "1Pet.3.3-1Pet.3.6",
+          "queries": [
+            "60 3:3-6"
+          ]
+        },
+        {
+          "id": "ba75f6fbd3a0617375f74395",
+          "quote": "مزمور 19:7",
+          "before": "در الحيرة—ناموس الرب كامل، يردّ النفس… –",
+          "after": ". تذكري: مخافة الرب بداية الحكمة [وليس ا",
+          "spans": [
+            [
+              3741,
+              3751
+            ]
+          ],
+          "osis": "Ps.19.7",
+          "queries": [
+            "19 19:7"
+          ]
+        },
+        {
+          "id": "4485a7158ba9b4244910ab5b",
+          "quote": "أمثال 9:10",
+          "before": "مخافة الرب بداية الحكمة [وليس الحيرة]… –",
+          "after": ".",
+          "spans": [
+            [
+              3818,
+              3828
+            ]
+          ],
+          "osis": "Prov.9.10",
+          "queries": [
+            "20 9:10"
+          ]
+        },
+        {
+          "id": "3de7ea166084d7c9047b3bcc",
+          "quote": "تيموثاوس الثانية 2:4-22",
+          "before": "والسلام مع الذين يدعون الرب من قلب نقي –",
+          "after": ".",
+          "spans": [
+            [
+              4249,
+              4272
+            ]
+          ],
+          "osis": "2Tim.2.4-2Tim.2.22",
+          "queries": [
+            "55 2:4-22"
+          ]
+        },
+        {
+          "id": "cfe856686f03308963dae7a5",
+          "quote": "تيموثاوس الأولى 2:9-10",
+          "before": "كما يليق بالنساء اللواتي يقررن بالتقوى –",
+          "after": ".",
+          "spans": [
+            [
+              7149,
+              7171
+            ]
+          ],
+          "osis": "1Tim.2.9-1Tim.2.10",
+          "queries": [
+            "54 2:9-10"
+          ]
+        },
+        {
+          "id": "89e23311b3bba62028ebe0fb",
+          "quote": "متى 10:28",
+          "before": "در أن يهلك النفس والجسد كليهما في جهنم –",
+          "after": ". ونحن نعيش في هذه الأزمنة الأخيرة، فإن ",
+          "spans": [
+            [
+              9980,
+              9989
+            ]
+          ],
+          "osis": "Matt.10.28",
+          "queries": [
+            "40 10:28"
+          ]
+        },
+        {
+          "id": "76a467e79dfa1ec00d16cc63",
+          "quote": "يوحنا 14:6-7",
+          "before": "بي أيضًا، ومن الآن تعرفونه وقد رأيتموه –",
+          "after": ". سبّحوا الرب، لأن الله أعطانا مثالًا نت",
+          "spans": [
+            [
+              10312,
+              10324
+            ]
+          ],
+          "osis": "John.14.6-John.14.7",
+          "queries": [
+            "43 14:6-7"
+          ]
+        }
+      ],
+      "record_hash": "59a355ddd05cffdfe598883b61b5b51ce6e7382731a57041561f22be4db91039"
+    },
     "6485a6ed-e76f-4142-9e27-e649823cb1a3:el:910c1fd6e51a12eaebc8129ecda69aca236d8c79df275eab3f79cc4959ff9380:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
       "locale": "el",
@@ -212790,6 +213321,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "79237fe7b0bf7a62487e1a7a113a1c1576d0e9a197f5ce36e20992c33f322492"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:he:079ebacbfc5d68f69cbab409ea5f1515646aa5af3493c73b02910c92cba8b985:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "he",
+      "content_hash": "079ebacbfc5d68f69cbab409ea5f1515646aa5af3493c73b02910c92cba8b985",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "fc91646282d43b45a1049bc765eca674a187ffda2ad01815651f01cac19b3e6e"
     },
     "7750b3b4-3c80-48a5-860c-4958331969d7:id:167463eda6ee9e43d77d1b39876ba42a54308d1e1a1a55f8d2af4e391bccea60:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
@@ -338729,6 +339268,14 @@
       "markers": [],
       "record_hash": "3a15b0971d8f6d061e71adba1df918d9f4d6061f74c5b723db8a6435174bd252"
     },
+    "bd2e73dd-b296-4983-a6ec-54a3527362d8:sw:2bab0d9005907555bf943fced86cb150cb2b6b0dcaecb6aa1110f0cfe275671c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
+      "locale": "sw",
+      "content_hash": "2bab0d9005907555bf943fced86cb150cb2b6b0dcaecb6aa1110f0cfe275671c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ed9461f0250de38708047c16a36ebde1260250f3331508bb71eca6757a561712"
+    },
     "bd2e73dd-b296-4983-a6ec-54a3527362d8:ur:371ce0222df8fdad0acea976789113f8f1013deeb0b229a1f99216be429ab5db:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "bd2e73dd-b296-4983-a6ec-54a3527362d8",
       "locale": "ur",
@@ -359873,6 +360420,95 @@
       ],
       "record_hash": "702f9b72d908858f62627c3a5a1a0182389f382af264bc1490db03a8fddf2ace"
     },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:bn:43676336ada9d0fbb256f00c49d64570003b0f94c94e956d0fb231f494ff37f2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "bn",
+      "content_hash": "43676336ada9d0fbb256f00c49d64570003b0f94c94e956d0fb231f494ff37f2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "47a2b453d46c7d9826f3e02d",
+          "quote": "রোমীয় ১৩",
+          "before": "াজাকে সম্মান” করতে বলেন, আর প্রেরিত পৌল ",
+          "after": " অধ্যায়ে আমাদের “উচ্চতর কর্তৃপক্ষের অধী",
+          "spans": [
+            [
+              2127,
+              2136
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "1a7190a77c3a99f2843e3337",
+          "quote": "১ পিতর ২",
+          "before": "াছ থেকে না এলে কোনো কর্তৃত্বই থাকে না।” ",
+          "after": " অধ্যায়ে রাজাকে নির্দেশ করে ব্যবহৃত ‘সম",
+          "spans": [
+            [
+              2249,
+              2257
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "4c1dde0c960a194c8cfcc5cd",
+          "quote": "লূক ২১",
+          "before": "",
+          "after": " অধ্যায়ে ভবিষ্যতের ঘটনাবলি নিয়ে একটি প",
+          "spans": [
+            [
+              5860,
+              5866
+            ]
+          ],
+          "osis": "Luke.21.1-Luke.21.38",
+          "queries": [
+            "42 21:1-38"
+          ]
+        },
+        {
+          "id": "549693815681eb480298729c",
+          "quote": "২ তীমথিয় ১:৭",
+          "before": "রেম ও সুস্থ বিবেচনাবোধের আত্মা দিয়েছেন—",
+          "after": "। এসব দাবি সত্য হোক বা না হোক, বাইবেল এখ",
+          "spans": [
+            [
+              6526,
+              6539
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "2597659ed4694db67d083cd4",
+          "quote": "ফিলিপীয় ৪:৮",
+          "before": "ত্র, যা কিছু মনোহর, যা কিছু সুনামযুক্ত…—",
+          "after": "। এসব তত্ত্ব অনুসরণ করতে সামান্য সময় ব্",
+          "spans": [
+            [
+              6754,
+              6766
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "a4f7aebbd303f7cb81ed364b32fdb6f437081da06ef7cb2ccedb20e5acbaed7c"
+    },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:el:9dc29e7119364280d94d62954e417e7bab5d89a050a2f7e4f3acb6189589b3ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
       "locale": "el",
@@ -360034,6 +360670,95 @@
         }
       ],
       "record_hash": "e0c6a9f1cff765f9a3a2b589357eb8c686ef07aca3a667fba83b26041a0448ec"
+    },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:es:07e0c3ddffbfd4ec1937667b28e4541b19e9f6bc43159aac201ed14e2ac8136f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "es",
+      "content_hash": "07e0c3ddffbfd4ec1937667b28e4541b19e9f6bc43159aac201ed14e2ac8136f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1ed0ae47176e5513a6eb94cc",
+          "quote": "Romanos 13 ",
+          "before": "rey», y el apóstol Pablo nos exhorta en ",
+          "after": "a estar «sujetos a las autoridades super",
+          "spans": [
+            [
+              2254,
+              2265
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "1bf6d6566f8abd1a71cf2f88",
+          "quote": "1 Pedro 2",
+          "before": "La palabra «honrar», tal como se usa en ",
+          "after": " con referencia al rey, significa «estim",
+          "spans": [
+            [
+              2391,
+              2400
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "d1bdea2118e69170262e7067",
+          "quote": "Lucas 21",
+          "before": "En ",
+          "after": " hay un versículo que habla de acontecim",
+          "spans": [
+            [
+              6219,
+              6227
+            ]
+          ],
+          "osis": "Luke.21.1-Luke.21.38",
+          "queries": [
+            "42 21:1-38"
+          ]
+        },
+        {
+          "id": "c2110d1e6642f563afd9af63",
+          "quote": "2 Timoteo 1:7",
+          "before": " de poder, de amor y de dominio propio –",
+          "after": ". Sean ciertas o no estas afirmaciones, ",
+          "spans": [
+            [
+              6951,
+              6964
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "19d9982353027d0e52c61904",
+          "quote": "Filipenses 4:8",
+          "before": "amable, todo lo que es de buen nombre… –",
+          "after": ". Dedicar siquiera un poco de tiempo a s",
+          "spans": [
+            [
+              7188,
+              7202
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "322be3f7566998edbd237361e980debc5bdffee1b5d70abd8875ea04a84404c0"
     },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:fr:0169dbf2b06882e610d92ccf21cbaff4126e3fd7836aa5e947fd8b8b86ede9d6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
@@ -451905,6 +452630,47 @@
         }
       ],
       "record_hash": "5d7d475ad0b01e287797fe05e7d446d2686bd69d1ff3d7a5f4701bdcfaf66b1b"
+    },
+    "fe94355d-8741-49a7-8f66-16003daa3f89:ar:55280c11248cbe49622f16ec3347bf6f985c043e5341497ee95052c12bab9a24:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fe94355d-8741-49a7-8f66-16003daa3f89",
+      "locale": "ar",
+      "content_hash": "55280c11248cbe49622f16ec3347bf6f985c043e5341497ee95052c12bab9a24",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1e1e0262e1402bdb29aeacf9",
+          "quote": "في 4",
+          "before": "ورغم أنه كان منهكاً بشدة بسبب مرضه، ",
+          "after": " أيلول (سبتمبر) 1847، حينما كان لايت على",
+          "spans": [
+            [
+              1944,
+              1948
+            ]
+          ],
+          "osis": "Phil.4.1-Phil.4.23",
+          "queries": [
+            "50 4:1-23"
+          ]
+        },
+        {
+          "id": "acb6d28a9c0522a48aa03ab3",
+          "quote": "لوقا 24:28-29",
+          "before": "ال النهار إلى نهايته. فدخل ليمكث معهما –",
+          "after": ".",
+          "spans": [
+            [
+              5196,
+              5209
+            ]
+          ],
+          "osis": "Luke.24.28-Luke.24.29",
+          "queries": [
+            "42 24:28-29"
+          ]
+        }
+      ],
+      "record_hash": "00dbe78de16c72908b76f16b3ba46b6413bdb737fedf0adf05acc2f2fa6c0d07"
     },
     "fe94355d-8741-49a7-8f66-16003daa3f89:bn:badf25311ecdc1e753f0ace88b238bc84fbb7999ba3c46cf9e0e5bc584b6a879:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fe94355d-8741-49a7-8f66-16003daa3f89",

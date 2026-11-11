@@ -23706,11 +23706,12 @@
       },
       "6485a6ed-e76f-4142-9e27-e649823cb1a3": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "with-what-should-we-be-adorned",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "المرأة",
+        "alias": "بماذا-ينبغي-أن-نتزين",
+        "history": [
+          "/ar/articles/with-what-should-we-be-adorned/"
+        ],
+        "fallback": false
       },
       "6497a93f-bea4-44dd-bbe5-da90318f3d48": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -28110,11 +28111,12 @@
       },
       "fe94355d-8741-49a7-8f66-16003daa3f89": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "abide-with-me-fast-falls-the-eventide",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "ابقَ-معي-المساء-يحلّ-سريعاً",
+        "history": [
+          "/ar/articles/abide-with-me-fast-falls-the-eventide/"
+        ],
+        "fallback": false
       },
       "feb1e173-673e-4364-b2f8-f00a099102e5": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -36683,11 +36685,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "জগতে-কিন্তু-জগতের-নয়",
+        "history": [
+          "/bn/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -81749,11 +81752,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristiana",
+        "alias": "en-el-mundo-pero-no-del-mundo",
+        "history": [
+          "/es/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -98718,11 +98722,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ילדים",
+        "alias": "כוחה-של-טוב-לב",
+        "history": [
+          "/he/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -186145,11 +186150,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "jesus-kristus-svaret-på-en-brusten-mänsklighet",
+        "history": [
+          "/sv/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -199894,11 +199900,12 @@
       },
       "bd2e73dd-b296-4983-a6ec-54a3527362d8": {
         "category_id": "8d7646c9-072b-51ea-a1ef-cff3f7f50285",
-        "category_slug": "articles",
-        "alias": "a-story-of-three-men",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kanisa",
+        "alias": "kisa-cha-wanaume-watatu",
+        "history": [
+          "/sw/articles/a-story-of-three-men/"
+        ],
+        "fallback": false
       },
       "bd7bc21c-5e26-46de-af8e-c1b13b47a349": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
