@@ -107,6 +107,7 @@ export function figureFlowHeadings(figure) {
 export function initArticleFigures(document) {
   if (controllers.has(document)) return controllers.get(document);
   const window = document.defaultView;
+  const editorial = initEditorialLayouts(document);
   const articles = [...document.querySelectorAll('.prose article[data-article-id]')];
   const records = [];
   const verseRecords = [];
@@ -227,6 +228,7 @@ export function initArticleFigures(document) {
         else row.style.removeProperty(`--article-contour-${name}`);
       }
     }
+    editorial?.updateVerse?.();
   };
   const schedule = () => {
     if (frame === null) frame = window.requestAnimationFrame(update);
