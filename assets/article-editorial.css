@@ -99,3 +99,38 @@
   .prose article .article-quote-frame > figure { position: static; }
   .prose article .article-quote-edge { display: none; }
 }
+
+
+/* Reviewed independent illustrations remain at native sizes when paired. */
+.prose article .article-gallery--native {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+}
+.prose article .article-gallery--native .article-native-panel { width: var(--panel-width); max-width: 100%; }
+.prose article .article-gallery--native figure { margin: 0; }
+.prose article .article-gallery--native img { max-height: none; }
+.prose article figure.article-standalone--enlarged img { width: var(--standalone-display-width); height: auto; max-width: 100%; }
+
+@media screen and (min-width: 48rem) {
+  .prose article.article-verse-continuous--active {
+    position: relative;
+    display: flow-root;
+    min-height: var(--continuous-verse-height, 0);
+  }
+  .prose article.article-verse-continuous--active > .article-verse-row {
+    margin-block: 0 var(--continuous-stanza-gap, 1.55em);
+  }
+  .prose article.article-verse-continuous--active > .article-verse-row:last-child { margin-bottom: 0; }
+  .prose article.article-verse-continuous--active > .article-verse-row > figure {
+    position: absolute;
+    grid-area: auto;
+    top: var(--continuous-figure-top);
+    right: 0;
+    left: auto;
+    width: var(--article-verse-image-width);
+    margin: 0;
+  }
+}

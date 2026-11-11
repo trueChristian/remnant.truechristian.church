@@ -107,6 +107,14 @@
         "1d58d8bb-729e-4936-a3b4-653b3bb89012-1.jpg"
       ]
     },
+    "1fb1624e-5fee-4f45-9bb9-73728210ff1f": {
+      "standalone": [
+        "1fb1624e-5fee-4f45-9bb9-73728210ff1f-1.png"
+      ],
+      "paragraph_positions": {
+        "1fb1624e-5fee-4f45-9bb9-73728210ff1f-2.jpg": 1
+      }
+    },
     "201a1b3e-85b3-4e62-bc45-118a8c1f5367": {
       "standalone": [
         "201a1b3e-85b3-4e62-bc45-118a8c1f5367-2.jpg",
@@ -187,6 +195,27 @@
         "44a8fdc0-8f22-43d0-b406-fb9b47df1dc6-3.png"
       ]
     },
+    "498f95c3-9cf2-4b3d-97c6-9d4d15b08972": {
+      "paired": [
+        [
+          "498f95c3-9cf2-4b3d-97c6-9d4d15b08972-1.png",
+          "498f95c3-9cf2-4b3d-97c6-9d4d15b08972-2.png"
+        ]
+      ],
+      "dimensions": {
+        "498f95c3-9cf2-4b3d-97c6-9d4d15b08972-1.png": [
+          417,
+          432
+        ],
+        "498f95c3-9cf2-4b3d-97c6-9d4d15b08972-2.png": [
+          411,
+          428
+        ]
+      },
+      "paragraph_positions": {
+        "498f95c3-9cf2-4b3d-97c6-9d4d15b08972-3.jpg": 1
+      }
+    },
     "4ac0b49f-ab0e-4c97-a96c-a9a7765ad7d4": {
       "standalone": [
         "4ac0b49f-ab0e-4c97-a96c-a9a7765ad7d4-1.jpg",
@@ -244,6 +273,22 @@
         "53e9d8d0-3a14-4cb9-9940-513f65f859b5-1.jpg"
       ]
     },
+    "54d5a0ed-09dc-4e75-8447-b9e3ad2db302": {
+      "standalone": [
+        "54d5a0ed-09dc-4e75-8447-b9e3ad2db302-2.png"
+      ],
+      "paragraph_gallery": {
+        "images": [
+          "54d5a0ed-09dc-4e75-8447-b9e3ad2db302-1.png",
+          "54d5a0ed-09dc-4e75-8447-b9e3ad2db302-3.jpg"
+        ],
+        "widths": [
+          202,
+          427
+        ],
+        "after_paragraph": 2
+      }
+    },
     "56f87e8c-a689-40cd-95b1-57f12dac367a": {
       "paragraph_positions": {
         "56f87e8c-a689-40cd-95b1-57f12dac367a-1.jpg": 1
@@ -258,6 +303,14 @@
       "standalone": [
         "59d2bf61-43b3-4ea7-b7de-517c32ffa956-1.jpg"
       ]
+    },
+    "5a6259c0-5450-4502-b504-8db7b37e4cc1": {
+      "standalone": [
+        "5a6259c0-5450-4502-b504-8db7b37e4cc1-1.png"
+      ],
+      "paragraph_positions": {
+        "5a6259c0-5450-4502-b504-8db7b37e4cc1-2.jpg": 1
+      }
     },
     "5d827809-6784-42c9-9745-03944a506b5c": {
       "paragraph_positions": {
@@ -274,6 +327,14 @@
         "61996151-3b49-4498-9285-995520ca542d-1.jpg",
         "61996151-3b49-4498-9285-995520ca542d-2.jpg"
       ]
+    },
+    "635b775e-3815-4c17-9c75-bdab9ea88661": {
+      "standalone": [
+        "635b775e-3815-4c17-9c75-bdab9ea88661-2.png"
+      ],
+      "paragraph_positions": {
+        "635b775e-3815-4c17-9c75-bdab9ea88661-1.jpg": 1
+      }
     },
     "64555f1c-017c-4ac5-a941-3b577cf58ff3": {
       "paired": [
@@ -297,6 +358,15 @@
       "standalone": [
         "6497a93f-bea4-44dd-bbe5-da90318f3d48-2.png"
       ]
+    },
+    "65cde85d-5f09-47af-ac75-0a3ea061d639": {
+      "continuous_verse": {
+        "images": [
+          "65cde85d-5f09-47af-ac75-0a3ea061d639-1.png",
+          "65cde85d-5f09-47af-ac75-0a3ea061d639-2.png",
+          "65cde85d-5f09-47af-ac75-0a3ea061d639-3.jpg"
+        ]
+      }
     },
     "68ea86dd-7e55-416b-9bdc-07fce6e1aa44": {
       "standalone": [
@@ -832,6 +902,23 @@
         "e14d9ebc-c490-40d0-8d79-1727a9572f6f-1.jpg": 1
       }
     },
+    "e2717533-f2de-48a9-94a8-feee73a69a6f": {
+      "standalone": [
+        "e2717533-f2de-48a9-94a8-feee73a69a6f-1.jpg"
+      ],
+      "paragraph_positions": {
+        "e2717533-f2de-48a9-94a8-feee73a69a6f-2.png": 1
+      },
+      "enlarged_standalone": {
+        "e2717533-f2de-48a9-94a8-feee73a69a6f-1.jpg": {
+          "width": 150,
+          "source_size": [
+            99,
+            48
+          ]
+        }
+      }
+    },
     "e284aecb-ae49-4104-8a5c-065b053dda57": {
       "paragraph_positions": {
         "e284aecb-ae49-4104-8a5c-065b053dda57-1.jpg": 1
@@ -967,6 +1054,12 @@
     "ff756543-8b73-4182-a901-596bfa199152": {
       "standalone": [
         "ff756543-8b73-4182-a901-596bfa199152-4.png"
+      ],
+      "list_positions": {
+        "ff756543-8b73-4182-a901-596bfa199152-2.jpg": 1
+      },
+      "list_flow": [
+        "ff756543-8b73-4182-a901-596bfa199152-2.jpg"
       ]
     }
   }

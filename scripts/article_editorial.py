@@ -13,6 +13,51 @@ def validate_editorial_rules(identity, rule):
     names = rule.get('list_flow', [])
     if not isinstance(names, list):
         raise ValueError(f'Invalid list flow rule: {identity}')
+    positions = rule.get('list_positions', {})
+    if (not isinstance(positions, dict) or
+            any(type(number) is not int or number < 1 for number in positions.values()) or
+            len(set(positions.values())) != len(positions)):
+        raise ValueError(f'Invalid list image positions: {identity}')
+    names = [*names, *positions]
+    enlargements = rule.get('enlarged_standalone', {})
+    if not isinstance(enlargements, dict):
+        raise ValueError(f'Invalid standalone enlargement: {identity}')
+    for name, size in enlargements.items():
+        if (name not in rule.get('standalone', []) or not isinstance(size, dict) or
+                set(size) != {'width', 'source_size'} or
+                not isinstance(size['source_size'], list) or len(size['source_size']) != 2 or
+                any(type(value) is not int or value <= 0 for value in size['source_size']) or
+                type(size['width']) is not int or not size['source_size'][0] < size['width'] <= size['source_size'][0] * 2):
+            raise ValueError(f'Invalid standalone enlargement: {identity}')
+    names.extend(enlargements)
+    gallery = rule.get('paragraph_gallery')
+    continuous = rule.get('continuous_verse')
+    protected = {*rule.get('standalone', []), *rule.get('wrap', []),
+                 *rule.get('verse_quote', []), *rule.get('paragraph_positions', {}),
+                 *rule.get('list_positions', {}), *rule.get('opening_order', []),
+                 *rule.get('transparent_padding', {})}
+    protected.update(name for pair in rule.get('paired', []) for name in pair)
+    for setting, keys in [(gallery, {'images', 'widths', 'after_paragraph'}),
+                          (continuous, {'images'})]:
+        if setting is None:
+            continue
+        if (not isinstance(setting, dict) or set(setting) != keys or
+                not isinstance(setting['images'], list) or len(setting['images']) < 2 or
+                any(not isinstance(name, str) for name in setting['images']) or
+                len(set(setting['images'])) != len(setting['images']) or
+                protected.intersection(setting['images'])):
+            raise ValueError(f'Invalid reviewed image composition: {identity}')
+        names.extend(setting['images'])
+        protected.update(setting['images'])
+    if gallery is not None and (len(gallery['images']) != 2 or
+            type(gallery['after_paragraph']) is not int or gallery['after_paragraph'] < 1 or
+            not isinstance(gallery['widths'], list) or len(gallery['widths']) != 2 or
+            any(type(width) is not int or width <= 0 for width in gallery['widths'])):
+        raise ValueError(f'Invalid paragraph gallery: {identity}')
+    if continuous is not None and (gallery is not None or rule.get('editorial') is not None):
+        raise ValueError(f'Conflicting continuous verse: {identity}')
+    if set(positions).intersection(rule.get('paragraph_positions', {})):
+        raise ValueError(f'Conflicting list image positions: {identity}')
     composition = rule.get('editorial')
     if composition is not None:
         if not isinstance(composition, dict) or composition.get('kind') not in KINDS:
@@ -80,6 +125,58 @@ def arrange_editorial(source, rules, parser):
                     [node.tag for node in figure.children] not in (['img'], ['img', 'figcaption'])):
                 return None
             return figure
+
+        continuous = rule.get('continuous_verse')
+        if continuous and 'data-reader-continuous-verse' not in article.attrs:
+            expected = [find_figure(name) for name in continuous['images']]
+            actual = [node for node in children if node.tag == 'figure']
+            if (None not in expected and actual == expected and len(images) == len(expected) and
+                    all(len(figure.children) == 1 for figure in actual) and
+                    all(safe(node) and (node in actual or (node.tag == 'p' and verse(node))) for node in children) and
+                    contiguous(children) and empty(source[article.opening_end:children[0].start]) and
+                    empty(source[children[-1].end:article.closing_start])):
+                changes.append((article.opening_end - 1, article.opening_end - 1,
+                                ' data-reader-continuous-verse=""'))
+
+        for name, setting in rule.get('enlarged_standalone', {}).items():
+            figure = find_figure(name)
+            if figure and 'data-reader-enlarge' not in figure.attrs:
+                width, height = setting['source_size']
+                changes.append((figure.opening_end - 1, figure.opening_end - 1,
+                                f' data-reader-enlarge="{setting["width"]}"'
+                                f' data-source-width="{width}" data-source-height="{height}"'))
+
+        for name, number in rule.get('list_positions', {}).items():
+            figure = find_figure(name)
+            lists = [node for node in children if node.tag in {'ul', 'ol'}]
+            if not figure or number > len(lists):
+                continue
+            listing = lists[number - 1]
+            if not safe(listing) or figure.end > listing.start:
+                continue
+            next_index = children.index(figure) + 1
+            next_node = children[next_index] if next_index < len(children) else None
+            if next_node is listing or not next_node or not empty(source[figure.end:next_node.start]):
+                continue
+            changes.extend([(figure.start, next_node.start, ''),
+                            (listing.start, listing.start, raw(figure) + '\n  ')])
+
+        gallery = rule.get('paragraph_gallery')
+        if gallery:
+            panels = [find_figure(name) for name in gallery['images']]
+            paragraphs = [node for node in children if paragraph(node)]
+            if None not in panels and gallery['after_paragraph'] <= len(paragraphs):
+                target = paragraphs[gallery['after_paragraph'] - 1]
+                # Do not detach content from an intervening nested container or
+                # silently move unnamed figures as part of this reviewed pair.
+                if all(contiguous([node, children[children.index(node) + 1]])
+                       if children.index(node) + 1 < len(children) else
+                       empty(source[node.end:article.closing_start]) for node in panels):
+                    artwork = ''.join(f'<div class="article-native-panel" style="--panel-width:{width}px">{raw(node)}</div>'
+                                      for node, width in zip(panels, gallery['widths']))
+                    block = f'\n  <div class="article-gallery article-gallery--native">{artwork}</div>'
+                    changes.extend((node.start, node.end, '') for node in panels)
+                    changes.append((target.end, target.end, block))
 
         for name in rule.get('list_flow', []):
             figure = find_figure(name)
