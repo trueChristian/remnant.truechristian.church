@@ -108207,11 +108207,12 @@
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "painting-for-eternity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "अनंतकाल-के-लिए-चित्र-बनाना",
+        "history": [
+          "/hi/articles/painting-for-eternity/"
+        ],
+        "fallback": false
       },
       "68a52dbc-b796-4f32-931a-bd26a29f5cbb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -151110,11 +151111,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristent-liv",
+        "alias": "i-verden-men-ikke-av-verden",
+        "history": [
+          "/nb/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -200491,11 +200493,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "maisha-ya-kikristo",
+        "alias": "ulimwenguni-lakini-si-wa-ulimwengu",
+        "history": [
+          "/sw/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "7f31ee71a9b937fe4af4945b2e6ee8726bcc9f92173761d5cf79f75b7369d416",
+  "integrity": "5b78bb42553dcee1d6fb31371a1c5d1d0b9af968c593ebab431295583f4bc20e",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -198684,6 +198684,14 @@
       "markers": [],
       "record_hash": "bb72205e6ad2d75e19fac440b9899c2affee243ad17913ffb313217a5985d27a"
     },
+    "683a4e23-acbb-434a-8e0e-2b0793e1a0fb:hi:773fb15c059493a2be79427d10690e1b6496cf7e5e938b55294baa8bc1615d5c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "683a4e23-acbb-434a-8e0e-2b0793e1a0fb",
+      "locale": "hi",
+      "content_hash": "773fb15c059493a2be79427d10690e1b6496cf7e5e938b55294baa8bc1615d5c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "695999ddbd86184f4df911a5dfa9f0b9a1fd2b9f0519b94d61c91acffd7cc922"
+    },
     "683a4e23-acbb-434a-8e0e-2b0793e1a0fb:id:b657f43eb572ca19fd20a2643e6c59e20b1a72b30abc470138dd9586108f3dab:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "683a4e23-acbb-434a-8e0e-2b0793e1a0fb",
       "locale": "id",
@@ -363874,6 +363882,79 @@
       ],
       "record_hash": "463bbde7b8d142ae0d47e202fe4acad878f73845a3ad3a9fb87f513ae2e99bbd"
     },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:nb:afba428643423bb970ff64b457d91b8b8dbc2b877daf9f7a5fdb7bc23a0c59a7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "nb",
+      "content_hash": "afba428643423bb970ff64b457d91b8b8dbc2b877daf9f7a5fdb7bc23a0c59a7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fa2fc8b5ba0b379da6481188",
+          "quote": "Romerne 13",
+          "before": "en», og apostelen Paulus formaner oss i ",
+          "after": " til å «underordne oss de høyere myndigh",
+          "spans": [
+            [
+              2127,
+              2137
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "217d48346ec7f74888a42243",
+          "quote": "1. Peter 2",
+          "before": "ra Gud». Ordet «ære», slik det brukes i ",
+          "after": " med henvisning til kongen, betyr å «set",
+          "spans": [
+            [
+              2270,
+              2280
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "449a95af74a435f51ff8bcd9",
+          "quote": "2. Timoteus 1:7",
+          "before": "ens, kjærlighetens og sindighetens ånd –",
+          "after": ". Enten disse påstandene er sanne eller ",
+          "spans": [
+            [
+              6633,
+              6648
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "b9f739dbb3c2c83af1c768a3",
+          "quote": "Filipperne 4:8",
+          "before": "rdt å elske, alt som det står godt om… –",
+          "after": ". Selv litt tid brukt på å følge disse t",
+          "spans": [
+            [
+              6886,
+              6900
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "3225035ab518c1e5f6fddfade547b290ecbe9507b0541589227a11579b127577"
+    },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:nl:5d73291305f2a03cd338dc74fa2840ead36920aaa9861494f81e5bb8125fd156:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
       "locale": "nl",
@@ -364092,6 +364173,95 @@
         }
       ],
       "record_hash": "a1da510a641f7999640b3538b0c3e9f984ba0efa7a7845b9984dbd623270c139"
+    },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:sw:18c1ded75050e62b9fa1d3d7143998e49d66e44fc5c750deb2f656ba98ed94f9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "sw",
+      "content_hash": "18c1ded75050e62b9fa1d3d7143998e49d66e44fc5c750deb2f656ba98ed94f9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d27167a96d130b363eb32f34",
+          "quote": "Warumi 13",
+          "before": "lme,” na Mtume Paulo anatuhimiza katika ",
+          "after": " “kuwatii wenye mamlaka walio juu, kwa m",
+          "spans": [
+            [
+              2171,
+              2180
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "d48ac1fd6b6b2b9f50b00b1f",
+          "quote": "1 Petro 2",
+          "before": "no “heshima,” kama lilivyotumiwa katika ",
+          "after": " kumhusu mfalme, linamaanisha “kumthamin",
+          "spans": [
+            [
+              2316,
+              2325
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "67143a80ec3b51c3218eddab",
+          "quote": "Luka 21",
+          "before": "Katika ",
+          "after": ", tuna mstari unaozungumzia matukio ya w",
+          "spans": [
+            [
+              6072,
+              6079
+            ]
+          ],
+          "osis": "Luke.21.1-Luke.21.38",
+          "queries": [
+            "42 21:1-38"
+          ]
+        },
+        {
+          "id": "5df104fbc7541bca78f954a0",
+          "quote": "2 Timotheo 1:7",
+          "before": "guvu, na ya upendo, na ya akili timamu –",
+          "after": ". Iwe madai haya ni ya kweli au la, Bibl",
+          "spans": [
+            [
+              6781,
+              6795
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "371f399b02a13471759d8f5d",
+          "quote": "Wafilipi 4:8",
+          "before": "a kupendeza, yo yote yenye sifa njema… –",
+          "after": ". Kutumia hata muda mfupi tu kufuatilia ",
+          "spans": [
+            [
+              7045,
+              7057
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "9eeddcaefc96403823ddb20c37974977602c04f8b86104c59f9d650f4f7d8341"
     },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:ur:45c57ffd2f12d2e3aba0aae60aa449b04c889155f35fa87ea2ea11a5a2fc7a08:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
