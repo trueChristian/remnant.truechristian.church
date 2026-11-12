@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "5b78bb42553dcee1d6fb31371a1c5d1d0b9af968c593ebab431295583f4bc20e",
+  "integrity": "03940e445f7aa7b15fb1c263bdd332b107703a674cbcab9f5828c2c7b4492858",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -62128,21 +62128,21 @@
       ],
       "record_hash": "1bae704ddde20c1038d1997cbdd0c55e6bcc4ed05db51307d590e90deac6ac6d"
     },
-    "1f294c3b-4295-4493-8a52-a33af40f298b:af:c519d7d2b91bee4f7d60c84d20985883f0c5e15c850d1d03e15819d505baca39:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "1f294c3b-4295-4493-8a52-a33af40f298b:af:2938673e23e1bb9e31097cdccfb36a4de15082b01df45a13f55cab667cc3f506:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1f294c3b-4295-4493-8a52-a33af40f298b",
       "locale": "af",
-      "content_hash": "c519d7d2b91bee4f7d60c84d20985883f0c5e15c850d1d03e15819d505baca39",
+      "content_hash": "2938673e23e1bb9e31097cdccfb36a4de15082b01df45a13f55cab667cc3f506",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "72cef67c8ecba0956c0fc92a",
-          "quote": "Gen 6:3",
-          "before": "es sal nie altyd met die mens twis nie (",
-          "after": ")” en “As jy geweet het, selfs jy, ten m",
+          "id": "a7c016f649e8dbe0558e8e64",
+          "quote": "Génesis 6:3",
+          "before": "al nie vir ewig in die mens heers nie” (",
+          "after": "), en “As jy tog maar geweet het, ja, oo",
           "spans": [
             [
-              2701,
-              2708
+              2845,
+              2856
             ]
           ],
           "osis": "Gen.6.3",
@@ -62151,14 +62151,14 @@
           ]
         },
         {
-          "id": "6de5e4731156fe0f7ea7bb4e",
-          "quote": "Luk 19:42",
-          "before": "en! Maar nou is dit vir jou oë verberg (",
-          "after": ").”",
+          "id": "faa6931d4551f4702e95246b",
+          "quote": "Lukas 19:42",
+          "before": "ien! Maar nou is dit vir jou oë bedek” (",
+          "after": ").",
           "spans": [
             [
-              2838,
-              2847
+              2991,
+              3002
             ]
           ],
           "osis": "Luke.19.42",
@@ -62167,7 +62167,7 @@
           ]
         }
       ],
-      "record_hash": "a4c2a15b3dbae05cdb55083399cdfd3a770d006752476558f0786f4fb00e9546"
+      "record_hash": "fc5fb2a341a2867af5be82183636a7ff04e5a55ed26534b70011947eeb16fd1e"
     },
     "1f294c3b-4295-4493-8a52-a33af40f298b:bn:646d41f3e30f9ad284b043679f17ab8e5970d169e6546792000b7783cb7bf86c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1f294c3b-4295-4493-8a52-a33af40f298b",
@@ -144929,6 +144929,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "acf188c79e635242c5c1ad116cfb6b315fc9df89cf057c6b0b7f02ecc13fbfa7"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:fr:ed0d26721d417ed68262512602cb99e08fd0f601777658ffa6fe0ea8798ce05f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "fr",
+      "content_hash": "ed0d26721d417ed68262512602cb99e08fd0f601777658ffa6fe0ea8798ce05f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "4453a5e76aa5e6a13bd1c67c9770acbed17398a8c3ac4ad0d0446399e48ac1c2"
     },
     "46f89299-c0a0-407c-9898-01a0c150c453:hi:9ce9c5d999bfee1e390857a598d58e41395cb38f202dfcc023443dcf028f3164:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
@@ -339163,6 +339171,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "0d0a43edf93e1702efb194dc74d1084086659126bbc780dc9be2568a6ee1d9a7"
+    },
+    "ba15e3da-aab4-401c-9ec7-64b88ac22833:zh-Hans:9a3f5e39390bc8c2ea464e7906c7d4758a1f91e3f48ae34ec0688978cb99dca3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
+      "locale": "zh-Hans",
+      "content_hash": "9a3f5e39390bc8c2ea464e7906c7d4758a1f91e3f48ae34ec0688978cb99dca3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "e191dc89b491f5650e6ea76cbc28354a0042e1a6c3d566d48a3c1b276ceadbf5"
     },
     "ba1df680-e125-4b7a-a6dd-6ad35433e1b5:af:61798c82cb1ca1e1070ef1a60e2a979ad4b82a21e8fdffdaf99ec98d08451003:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba1df680-e125-4b7a-a6dd-6ad35433e1b5",

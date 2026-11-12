@@ -87764,11 +87764,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "femmes",
+        "alias": "l-adoration-d-une-mère",
+        "history": [
+          "/fr/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -219508,11 +219509,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "姊妹",
+        "alias": "当上帝的道路行得通",
+        "history": [
+          "/zh-Hans/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
