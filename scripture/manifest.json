@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "49ea9b2e08dc2ab2b8037d2c2f77f6ea9a95c9d5667ca0b07fd6c3f373f9c1cf",
+  "integrity": "7f31ee71a9b937fe4af4945b2e6ee8726bcc9f92173761d5cf79f75b7369d416",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -96300,6 +96300,399 @@
       ],
       "record_hash": "b63bfbd2f39fb4c7c216486102078649b54edfa20b07ddc0df7e0371f89c4b88"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:de:7c1773878251cf17852a719371046b33eb01757169ab04bb7057c61d4b4bca1e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "de",
+      "content_hash": "7c1773878251cf17852a719371046b33eb01757169ab04bb7057c61d4b4bca1e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ae871815c5923d92b200cf81",
+          "quote": "1. Mose 3",
+          "before": "fgezeichnete Beleg dafür findet sich in ",
+          "after": ". „Und er sprach: Ich hörte deine Stimme",
+          "spans": [
+            [
+              1845,
+              1854
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "bfbd75f6f9d4fb61385b4a17",
+          "quote": "1. Mose 3,10",
+          "before": " war nackt; darum versteckte ich mich“ (",
+          "after": "). Adam hatte Angst. Wovor? Adam und Eva",
+          "spans": [
+            [
+              1973,
+              1985
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "f8184235b0e94ea8f1ce897e",
+          "quote": "1. Mose 4,5",
+          "before": "ornig, und sein Angesicht senkte sich“ (",
+          "after": "). Vielleicht waren Sie eines dieser Kin",
+          "spans": [
+            [
+              4033,
+              4044
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "b7f74d16ec86007f0757f3cb",
+          "quote": "1. Mose 1",
+          "before": "ls Lösungen für seelische Kämpfe an. In ",
+          "after": " schuf Gott grüne Kräuter und Bäume zur ",
+          "spans": [
+            [
+              6117,
+              6126
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "969ab1379a4fa194f3497623",
+          "quote": "Johannes 3,3",
+          "before": " wenn er nicht von neuem geboren werde (",
+          "after": "). Viele Menschen laufen auf der ganzen ",
+          "spans": [
+            [
+              6692,
+              6704
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "67daa5b1db834725a270dff3",
+          "quote": "Johannes 3,7",
+          "before": ": „Ihr müsst von neuem geboren werden“ (",
+          "after": ")? Manchmal machen wir die Botschaft des",
+          "spans": [
+            [
+              7191,
+              7203
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "a42d7c06d5987918b1d6c335",
+          "quote": "2. Korinther 11,2–3",
+          "before": "bgebracht werden, die in Christus ist“ (",
+          "after": "). Die gute Nachricht von der Erlösung i",
+          "spans": [
+            [
+              7716,
+              7735
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "00d147145d7d7db2e869e5f7",
+          "quote": "Matthäus 3,6",
+          "before": "rdan taufen und bekannten ihre Sünden“ (",
+          "after": "). Der erste Schritt zur Erlösung besteh",
+          "spans": [
+            [
+              8126,
+              8138
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "a22f293d1d7f9dcbe2310832",
+          "quote": "Jakobus 5",
+          "before": "ame Gebet eines Gerechten vermag viel“ (",
+          "after": ",16). Suchen Sie die Hilfe eines Predige",
+          "spans": [
+            [
+              8926,
+              8935
+            ]
+          ],
+          "osis": "Jas.5.1-Jas.5.20",
+          "queries": [
+            "59 5:1-20"
+          ]
+        },
+        {
+          "id": "c920bfad2a62e623e63b6adb",
+          "quote": "Apostelgeschichte 3,19",
+          "before": "vom Angesicht des Herrn kommen werden“ (",
+          "after": "). „Tu nun Buße über diese deine Bosheit",
+          "spans": [
+            [
+              9682,
+              9704
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "8cedb76a5e487ff4aff0fd94",
+          "quote": "Apostelgeschichte 8,22",
+          "before": "Gedanke deines Herzens vergeben werde“ (",
+          "after": "). Wenn Sie Buße über Ihre Sünden tun, s",
+          "spans": [
+            [
+              9823,
+              9845
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "df0fbdac7e5fb8b03903139a",
+          "quote": "Römer 10,13",
+          "before": "rn anrufen wird, wird gerettet werden“ (",
+          "after": "). Nachdem Sie nun Ihre Sünden bekannt u",
+          "spans": [
+            [
+              10124,
+              10135
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "e583e863f999bcd59764f194",
+          "quote": "Apostelgeschichte 2,21",
+          "before": "rn anrufen wird, wird gerettet werden“ (",
+          "after": "). „Denn ihr wisst, dass ihr nicht mit v",
+          "spans": [
+            [
+              10564,
+              10586
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "c0441695f48c37c08987c3cf",
+          "quote": "1. Petrus 1",
+          "before": "s Lammes ohne Fehler und ohne Flecken“ (",
+          "after": ",18–19). „Und ich werde reines Wasser üb",
+          "spans": [
+            [
+              10833,
+              10844
+            ]
+          ],
+          "osis": "1Pet.1.1-1Pet.1.25",
+          "queries": [
+            "60 1:1-25"
+          ]
+        },
+        {
+          "id": "f0e6e1817d1664ee8b408d38",
+          "quote": "Hesekiel 36,25–28",
+          "before": "lk sein, und ich werde euer Gott sein“ (",
+          "after": ").",
+          "spans": [
+            [
+              11433,
+              11450
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "a0c65d858f71ed4bc431a77c",
+          "quote": "Apostelgeschichte 16",
+          "before": "ristus, so wirst du gerettet werden …“ (",
+          "after": ",30–31). Sie haben Ihre Sünden bekannt u",
+          "spans": [
+            [
+              11745,
+              11765
+            ]
+          ],
+          "osis": "Acts.16.1-Acts.16.40",
+          "queries": [
+            "44 16:1-40"
+          ]
+        },
+        {
+          "id": "53da81f42883a23ccc58fff2",
+          "quote": "Römer 10,9",
+          "before": "erweckt hat, wirst du gerettet werden“ (",
+          "after": "). „Denn so sehr hat Gott die Welt gelie",
+          "spans": [
+            [
+              12149,
+              12159
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "9a56d210749851ee34954065",
+          "quote": "Johannes 3,16",
+          "before": "rloren geht, sondern ewiges Leben hat“ (",
+          "after": "). Danken Sie dem Herrn, dass er Ihre Sü",
+          "spans": [
+            [
+              12321,
+              12334
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "a86eabb2f06ffd075a6dac51",
+          "quote": "1. Petrus 3",
+          "before": ") durch die Auferstehung Jesu Christi“ (",
+          "after": ",21). Auch Sie können dieser Mensch mit ",
+          "spans": [
+            [
+              13093,
+              13104
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.22",
+          "queries": [
+            "60 3:1-22"
+          ]
+        },
+        {
+          "id": "3ce042198eea4fa8f864b583",
+          "quote": "Epheser 4",
+          "before": "Geist eurer Gesinnung erneuert werdet“ (",
+          "after": ",21–23). Dies ist ein wichtiges Thema, ü",
+          "spans": [
+            [
+              13993,
+              14002
+            ]
+          ],
+          "osis": "Eph.4.1-Eph.4.32",
+          "queries": [
+            "49 4:1-32"
+          ]
+        },
+        {
+          "id": "7c87abe1804e14c17339453d",
+          "quote": "Matthäus 7,13–14",
+          "before": "t, und wenige sind es, die ihn finden“ (",
+          "after": ").",
+          "spans": [
+            [
+              14853,
+              14869
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "a6f55d530de4a39825421ec1",
+          "quote": "Lukas 9,23",
+          "before": "ich sein Kreuz auf und folge mir nach“ (",
+          "after": "). Wir müssen die Begierden unseres Flei",
+          "spans": [
+            [
+              15521,
+              15531
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "9c7bad1e66d8797728c699de",
+          "quote": "1. Johannes 1",
+          "before": "ns von aller Ungerechtigkeit reinigt.“ (",
+          "after": ",7.9).",
+          "spans": [
+            [
+              16148,
+              16161
+            ]
+          ],
+          "osis": "1John.1.1-1John.1.10",
+          "queries": [
+            "62 1:1-10"
+          ]
+        },
+        {
+          "id": "0f34a2d03b856fb829798062",
+          "quote": "2. Korinther 9",
+          "before": "Dank für seine unaussprechliche Gabe!“ (",
+          "after": ",15). Das freie Geschenk der Erlösung st",
+          "spans": [
+            [
+              16933,
+              16947
+            ]
+          ],
+          "osis": "2Cor.9.1-2Cor.9.15",
+          "queries": [
+            "47 9:1-15"
+          ]
+        }
+      ],
+      "record_hash": "efc29b332a49b0e24cff4eb8d797bc2f9d98bb916f3e424dd984304feebbfe0f"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:el:bbb6c59b6a173a58bb708c90ba216a82cbc221a46adce13fabdf9305c07b4a7a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "el",
@@ -137123,6 +137516,31 @@
         }
       ],
       "record_hash": "6d0b86ca077b9a4f9b5ea6a008642c28c4aee76d1429fd1033545633a0793823"
+    },
+    "3feab4dd-c830-4ead-ad57-24d853847088:sv:06a693f2118fd8f6d6099bc7e09c32f4f38cf471fbf4a724570f8209afa4200d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3feab4dd-c830-4ead-ad57-24d853847088",
+      "locale": "sv",
+      "content_hash": "06a693f2118fd8f6d6099bc7e09c32f4f38cf471fbf4a724570f8209afa4200d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "af782dc42a07f435842d0eca",
+          "quote": "2 Timoteusbrevet 3:7",
+          "before": "d att komma till kunskap om sanningen – ",
+          "after": ". Åter andra tror att ett liv i tjänst k",
+          "spans": [
+            [
+              454,
+              474
+            ]
+          ],
+          "osis": "2Tim.3.7",
+          "queries": [
+            "55 3:7"
+          ]
+        }
+      ],
+      "record_hash": "260823edbd4a79faaaafb50757edbee7590facaaaac7bef27f6ae70601a8b199"
     },
     "3feab4dd-c830-4ead-ad57-24d853847088:ur:c11b5185f83681952d2eb56b5b9196b67f8c6eb1158d6bf314ba4cacbc7b47b5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3feab4dd-c830-4ead-ad57-24d853847088",
@@ -194918,6 +195336,223 @@
       "markers": [],
       "record_hash": "3aa4a8f56f27f43cdd5ce284999a2dc361122cba8cde7c19db1898f6a147a70a"
     },
+    "6485a6ed-e76f-4142-9e27-e649823cb1a3:af:3ed9069e25d5c691c0795636b78960e389ad8b2913c3546c5649a80a571efca7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
+      "locale": "af",
+      "content_hash": "3ed9069e25d5c691c0795636b78960e389ad8b2913c3546c5649a80a571efca7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "70287d504d0931ae2e2f7ee7",
+          "quote": "Matteus 5:8",
+          "before": " van hart is, want hulle sal God sien – ",
+          "after": ".",
+          "spans": [
+            [
+              1670,
+              1681
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "29a4335b28164aada9f68448",
+          "quote": "1 Petrus 3:3-6",
+          "before": "e deur enige vrees oorweldig word nie – ",
+          "after": ".",
+          "spans": [
+            [
+              2280,
+              2294
+            ]
+          ],
+          "osis": "1Pet.3.3-1Pet.3.6",
+          "queries": [
+            "60 3:3-6"
+          ]
+        },
+        {
+          "id": "391d970a62eb48f61024a33e",
+          "quote": "Spreuke 9:10",
+          "before": "sel van wysheid [nie verwarring nie]… – ",
+          "after": ".",
+          "spans": [
+            [
+              5303,
+              5315
+            ]
+          ],
+          "osis": "Prov.9.10",
+          "queries": [
+            "20 9:10"
+          ]
+        },
+        {
+          "id": "e1efa892ab2be8fc1d547e9f",
+          "quote": "2 Timoteus 2:4-22",
+          "before": "wat die Here uit ’n rein hart aanroep – ",
+          "after": ".",
+          "spans": [
+            [
+              5921,
+              5938
+            ]
+          ],
+          "osis": "2Tim.2.4-2Tim.2.22",
+          "queries": [
+            "55 2:4-22"
+          ]
+        },
+        {
+          "id": "133d9d229b3a4a270044df9d",
+          "quote": "Hebreërs 11:17",
+          "before": "aham se nageslag getel sou word. – sien ",
+          "after": " en Genesis 22:13. As God in Sy Woord vi",
+          "spans": [
+            [
+              8311,
+              8325
+            ]
+          ],
+          "osis": "Heb.11.17",
+          "queries": [
+            "58 11:17"
+          ]
+        },
+        {
+          "id": "ee3327d782aec4fb2ef22046",
+          "quote": "Genesis 22:13",
+          "before": "etel sou word. – sien Hebreërs 11:17 en ",
+          "after": ". As God in Sy Woord vir ons sê om godde",
+          "spans": [
+            [
+              8329,
+              8342
+            ]
+          ],
+          "osis": "Gen.22.13",
+          "queries": [
+            "1 22:13"
+          ]
+        },
+        {
+          "id": "8c458fe55b84a1f70abeca1a",
+          "quote": "1 Timoteus 2:9-10",
+          "before": "am wat godsvrug bely) met goeie werke – ",
+          "after": ".",
+          "spans": [
+            [
+              9787,
+              9804
+            ]
+          ],
+          "osis": "1Tim.2.9-1Tim.2.10",
+          "queries": [
+            "54 2:9-10"
+          ]
+        },
+        {
+          "id": "0078a825e0dcd681586dabdb",
+          "quote": "Titus 2:11-12",
+          "before": "n hierdie teenwoordige wêreld te leef – ",
+          "after": ".",
+          "spans": [
+            [
+              10704,
+              10717
+            ]
+          ],
+          "osis": "Titus.2.11-Titus.2.12",
+          "queries": [
+            "56 2:11-12"
+          ]
+        },
+        {
+          "id": "0f1779302e9b2733f8d04b6f",
+          "quote": "Jesaja 61:10",
+          "before": "’n bruid haar met haar juwele versier – ",
+          "after": ".",
+          "spans": [
+            [
+              10980,
+              10992
+            ]
+          ],
+          "osis": "Isa.61.10",
+          "queries": [
+            "23 61:10"
+          ]
+        },
+        {
+          "id": "b2092535475cb5f156a03f46",
+          "quote": "Openbaring 21:2-3",
+          "before": " sal by hulle wees en hulle God wees. – ",
+          "after": ".",
+          "spans": [
+            [
+              11850,
+              11867
+            ]
+          ],
+          "osis": "Rev.21.2-Rev.21.3",
+          "queries": [
+            "66 21:2-3"
+          ]
+        },
+        {
+          "id": "5e60fcc25e320e2c9435a6a2",
+          "quote": "Galasiërs 6:7",
+          "before": "wat ’n mens saai, dit sal hy ook maai – ",
+          "after": ". Moenie mislei word nie. Hierdie vers g",
+          "spans": [
+            [
+              12343,
+              12356
+            ]
+          ],
+          "osis": "Gal.6.7",
+          "queries": [
+            "48 6:7"
+          ]
+        },
+        {
+          "id": "0f454cf46c6225f3e0ca79aa",
+          "quote": "Matteus 10:28",
+          "before": " die liggaam in die hel kan vernietig – ",
+          "after": ". Terwyl ons in hierdie laaste tye leef,",
+          "spans": [
+            [
+              13696,
+              13709
+            ]
+          ],
+          "osis": "Matt.10.28",
+          "queries": [
+            "40 10:28"
+          ]
+        },
+        {
+          "id": "63e824de09ec8922492f73a8",
+          "quote": "Johannes 14:6-7",
+          "before": " ken julle Hom en het julle Hom gesien –",
+          "after": ". Loof die Here dat God ons ’n voorbeeld",
+          "spans": [
+            [
+              14126,
+              14141
+            ]
+          ],
+          "osis": "John.14.6-John.14.7",
+          "queries": [
+            "43 14:6-7"
+          ]
+        }
+      ],
+      "record_hash": "552ee45373eb7fc543492a713bfc2946adde03af77b13fe74d124dfa219cafc4"
+    },
     "6485a6ed-e76f-4142-9e27-e649823cb1a3:ar:f709c7814c922c75a887d0872c4f4cbfb9f4438e3ef36a671c9113d7f3b43560:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
       "locale": "ar",
@@ -196669,6 +197304,239 @@
         }
       ],
       "record_hash": "76f6303e57adbe7d9b96cfa0541393851ac3c20e3dfd3884265519993424ccd4"
+    },
+    "6485a6ed-e76f-4142-9e27-e649823cb1a3:ru:37c900834e9d248c90f03c761e188904e91f3f8e43fdb9f823a2b3b085db8788:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
+      "locale": "ru",
+      "content_hash": "37c900834e9d248c90f03c761e188904e91f3f8e43fdb9f823a2b3b085db8788",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "71f8085ab7b8a5d64ac7fb01",
+          "quote": "Матфея 5:8",
+          "before": "ны чистые сердцем: ибо они увидят Бога –",
+          "after": ".",
+          "spans": [
+            [
+              1601,
+              1611
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "548d1419ae5f34cf00ac17a3",
+          "quote": "1 Петра 3:3-6",
+          "before": " поддаётесь никакому страху и смятению –",
+          "after": ".",
+          "spans": [
+            [
+              2089,
+              2102
+            ]
+          ],
+          "osis": "1Pet.3.3-1Pet.3.6",
+          "queries": [
+            "60 3:3-6"
+          ]
+        },
+        {
+          "id": "97d03499bda20e6f45c94ecb",
+          "quote": "Псалом 19:7",
+          "before": "кон Господень совершен, обращает душу… –",
+          "after": ". Помните: Страх Господень — начало мудр",
+          "spans": [
+            [
+              5011,
+              5022
+            ]
+          ],
+          "osis": "Ps.19.7",
+          "queries": [
+            "19 19:7"
+          ]
+        },
+        {
+          "id": "2cef0cfe8339eb302da09a5e",
+          "quote": "Притчи 9:10",
+          "before": "одень — начало мудрости [не смятения]… –",
+          "after": ".",
+          "spans": [
+            [
+              5101,
+              5112
+            ]
+          ],
+          "osis": "Prov.9.10",
+          "queries": [
+            "20 9:10"
+          ]
+        },
+        {
+          "id": "5bb501d8c471061e7f8eae40",
+          "quote": "2 Тимофею 2:4-22",
+          "before": "то призывает Господа от чистого сердца –",
+          "after": ".",
+          "spans": [
+            [
+              5661,
+              5677
+            ]
+          ],
+          "osis": "2Tim.2.4-2Tim.2.22",
+          "queries": [
+            "55 2:4-22"
+          ]
+        },
+        {
+          "id": "ca9ae5fc02504901f02eb862",
+          "quote": "Евреям 11:17",
+          "before": "ыло исчисляться потомство Авраама. –см. ",
+          "after": " и Бытие 22:13. Если Бог говорит нам в С",
+          "spans": [
+            [
+              8040,
+              8052
+            ]
+          ],
+          "osis": "Heb.11.17",
+          "queries": [
+            "58 11:17"
+          ]
+        },
+        {
+          "id": "59e2b0f532c436b97dbdb072",
+          "quote": "Бытие 22:13",
+          "before": " потомство Авраама. –см. Евреям 11:17 и ",
+          "after": ". Если Бог говорит нам в Своём Слове изб",
+          "spans": [
+            [
+              8055,
+              8066
+            ]
+          ],
+          "osis": "Gen.22.13",
+          "queries": [
+            "1 22:13"
+          ]
+        },
+        {
+          "id": "7c9aa987651b8a3bd0a6f176",
+          "quote": "1 Тимофею 2:9-10",
+          "before": "ет женщинам, исповедующим благочестие) –",
+          "after": ".",
+          "spans": [
+            [
+              9492,
+              9508
+            ]
+          ],
+          "osis": "1Tim.2.9-1Tim.2.10",
+          "queries": [
+            "54 2:9-10"
+          ]
+        },
+        {
+          "id": "052c418793fd69f22e5e7b38",
+          "quote": "Титу 2:11-12",
+          "before": "раведно и благочестиво в нынешнем мире –",
+          "after": ".",
+          "spans": [
+            [
+              10341,
+              10353
+            ]
+          ],
+          "osis": "Titus.2.11-Titus.2.12",
+          "queries": [
+            "56 2:11-12"
+          ]
+        },
+        {
+          "id": "7ebd3b225a917449ff9c0f34",
+          "quote": "Исаия 61:10",
+          "before": "а украшает себя своими драгоценностями –",
+          "after": ".",
+          "spans": [
+            [
+              10605,
+              10616
+            ]
+          ],
+          "osis": "Isa.61.10",
+          "queries": [
+            "23 61:10"
+          ]
+        },
+        {
+          "id": "29ce04e6078580a81fc41aff",
+          "quote": "Откровение 21:2-3",
+          "before": "Сам Бог будет с ними и будет их Богом. –",
+          "after": ".",
+          "spans": [
+            [
+              11366,
+              11383
+            ]
+          ],
+          "osis": "Rev.21.2-Rev.21.3",
+          "queries": [
+            "66 21:2-3"
+          ]
+        },
+        {
+          "id": "fae51cce91465368b517635c",
+          "quote": "Галатам 6:7",
+          "before": "угаем; что человек посеет, то и пожнёт –",
+          "after": ". Не вводитесь в заблуждение. Этот стих ",
+          "spans": [
+            [
+              11879,
+              11890
+            ]
+          ],
+          "osis": "Gal.6.7",
+          "queries": [
+            "48 6:7"
+          ]
+        },
+        {
+          "id": "9bae5ccf4931abc1198caab0",
+          "quote": "Матфея 10:28",
+          "before": "то может погубить и душу, и тело в аду –",
+          "after": ". В эти последние времена мы повсюду слы",
+          "spans": [
+            [
+              13118,
+              13130
+            ]
+          ],
+          "osis": "Matt.10.28",
+          "queries": [
+            "40 10:28"
+          ]
+        },
+        {
+          "id": "36b958b23b65aa7f85a02fbc",
+          "quote": "Иоанна 14:6-7",
+          "before": "а; и отныне вы знаете Его и видели Его –",
+          "after": ". Слава Господу за то, что Бог дал нам п",
+          "spans": [
+            [
+              13524,
+              13537
+            ]
+          ],
+          "osis": "John.14.6-John.14.7",
+          "queries": [
+            "43 14:6-7"
+          ]
+        }
+      ],
+      "record_hash": "4dede6123e8769f976ed7d5346cac6e4267830455c829e3dd119c50d3dd79f29"
     },
     "6485a6ed-e76f-4142-9e27-e649823cb1a3:sv:4029c073cff7798ce8cc7b0d6d2acebca0a163a7cb9b192a175c6b61f0ea208e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
@@ -214480,6 +215348,14 @@
       "markers": [],
       "record_hash": "3efa169c0bf54c489f1b087d5458a95e76aca3e54f6e228895628f554edc66f2"
     },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:el:193e2562196c7858e65e8bfb094715c3e795e95a48a9b5f0dcceaf3a4fadf7da:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "el",
+      "content_hash": "193e2562196c7858e65e8bfb094715c3e795e95a48a9b5f0dcceaf3a4fadf7da",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ba1df9fdc12e27988f78570b50ccdcbe858e86603a0a3eb7747be37e2c7e2a1f"
+    },
     "7750b3b4-3c80-48a5-860c-4958331969d7:en:71c5283111f360382bf96fdc05893c983fe76d7efd5448b9a30020ab0609616f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
       "locale": "en",
@@ -214520,6 +215396,14 @@
       "markers": [],
       "record_hash": "76687ab8ba01a55b06175a4e61a1db4302503d710649d228b8b6569028ca1a6c"
     },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:it:7766c0066c3b553a19a247e7a78c1746b77dc2edbb0adc1eca2fdba112eec361:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "it",
+      "content_hash": "7766c0066c3b553a19a247e7a78c1746b77dc2edbb0adc1eca2fdba112eec361",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a9ff3b6566a0522aa1e745ddb15d18242873d724eaa98f08ca1a29fde9790721"
+    },
     "7750b3b4-3c80-48a5-860c-4958331969d7:ko:2cbe487f55bfb66f0b0cb57b68b5508a992afc533e52ccfe711c050bc239f54a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
       "locale": "ko",
@@ -214551,6 +215435,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4298eac1c54c656c133aad56687d31f1b5609edbaf8a0e6452570d4df24f4ee1"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:sv:b2be3075c61bb819b94d41d23c5d01f8b0b91c517a1f2cf1cef3f817ce7fcbf1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "sv",
+      "content_hash": "b2be3075c61bb819b94d41d23c5d01f8b0b91c517a1f2cf1cef3f817ce7fcbf1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "2750b79508423292d903ca5aab6d86d53875db938398d684764e8297c980f01a"
     },
     "7750b3b4-3c80-48a5-860c-4958331969d7:sw:5bf12a9687e28be267f789f8e3edccaf994103aabe54244a300d763fe4a4bd81:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
@@ -362286,6 +363178,95 @@
       ],
       "record_hash": "a4f7aebbd303f7cb81ed364b32fdb6f437081da06ef7cb2ccedb20e5acbaed7c"
     },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:de:e55a60b4a16559f896be97530c5f2023c110b0923208883333ba75e7806d0cb5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "de",
+      "content_hash": "e55a60b4a16559f896be97530c5f2023c110b0923208883333ba75e7806d0cb5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "2f904158e59042d609946b73",
+          "quote": "Römer 13",
+          "before": ", und der Apostel Paulus ermahnt uns in ",
+          "after": ", den „höheren Gewalten untertan“ zu sei",
+          "spans": [
+            [
+              2396,
+              2404
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "ae889da15257cf51d95c25b9",
+          "quote": "1. Petrus 2",
+          "before": " von Gott“. Das Wort „ehren“, wie es in ",
+          "after": " in Bezug auf den König verwendet wird, ",
+          "spans": [
+            [
+              2521,
+              2532
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "29899de9d8ed85624e2db045",
+          "quote": "Lukas 21",
+          "before": "In ",
+          "after": " finden wir einen Vers über zukünftige E",
+          "spans": [
+            [
+              6675,
+              6683
+            ]
+          ],
+          "osis": "Luke.21.1-Luke.21.38",
+          "queries": [
+            "42 21:1-38"
+          ]
+        },
+        {
+          "id": "585ab4573f2a3ad350bde6f2",
+          "quote": "2. Timotheus 1:7",
+          "before": "t und der Liebe und der Besonnenheit.“ –",
+          "after": ". Ob diese Behauptungen wahr sind oder n",
+          "spans": [
+            [
+              7485,
+              7501
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "eb9205addef81d4145e502f7",
+          "quote": "Philipper 4:8",
+          "before": "was liebenswert, was wohllautend ist…“ –",
+          "after": ". Schon ein wenig Zeit, die wir mit dem ",
+          "spans": [
+            [
+              7715,
+              7728
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "a06d2cc7bb6a3560358af273caa07a49c463f4de147ba9d34968f5cb0bad302d"
+    },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:el:9dc29e7119364280d94d62954e417e7bab5d89a050a2f7e4f3acb6189589b3ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
       "locale": "el",
@@ -414277,6 +415258,623 @@
       ],
       "record_hash": "07e260c523b776214410fcfb9d9c499abb13cc2c10b16bd77796a852be05f570"
     },
+    "f236d8e2-96e3-4d12-89e7-41dc995fa490:ru:dd2cf66c3e7d44fa9d41fce5bafadd17efb15896dec611721a99aecdf7de8c80:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "f236d8e2-96e3-4d12-89e7-41dc995fa490",
+      "locale": "ru",
+      "content_hash": "dd2cf66c3e7d44fa9d41fce5bafadd17efb15896dec611721a99aecdf7de8c80",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7e1721e40c91fc25bae4f6e7",
+          "quote": "Матфея 19:6",
+          "before": "Итак, они уже не двое, но одна плоть… — ",
+          "after": ".",
+          "spans": [
+            [
+              125,
+              136
+            ]
+          ],
+          "osis": "Matt.19.6",
+          "queries": [
+            "40 19:6"
+          ]
+        },
+        {
+          "id": "eb3612de5b0a10af14ca9bfa",
+          "quote": "Бытие 1:28",
+          "before": " Бог также предложил благословить брак (",
+          "after": ") мужчины и женщины, вступающих в него, ",
+          "spans": [
+            [
+              270,
+              280
+            ]
+          ],
+          "osis": "Gen.1.28",
+          "queries": [
+            "1 1:28"
+          ]
+        },
+        {
+          "id": "b755da8df07badf518dfde05",
+          "quote": "Притчи 5:18",
+          "before": " твой; и радуйся с женою юности твоей — ",
+          "after": ". Обратите внимание на слова женою юност",
+          "spans": [
+            [
+              2016,
+              2027
+            ]
+          ],
+          "osis": "Prov.5.18",
+          "queries": [
+            "20 5:18"
+          ]
+        },
+        {
+          "id": "3b8e31ec6a1550ef0319554b",
+          "quote": "Исаия 54:6",
+          "before": "юности, отверженную, говорит Бог твой — ",
+          "after": ". То, что она была женой юности, а затем",
+          "spans": [
+            [
+              2247,
+              2257
+            ]
+          ],
+          "osis": "Isa.54.6",
+          "queries": [
+            "23 54:6"
+          ]
+        },
+        {
+          "id": "a34a1c8f8d919a8cbd8feecb",
+          "quote": "Малахия 2:14–16",
+          "before": "те дух ваш и не поступайте вероломно. — ",
+          "after": ". И почему они созданы одним целым, прин",
+          "spans": [
+            [
+              2993,
+              3008
+            ]
+          ],
+          "osis": "Mal.2.14-Mal.2.16",
+          "queries": [
+            "39 2:14-16"
+          ]
+        },
+        {
+          "id": "c37791cbeb14fbbdd395d49e",
+          "quote": "Матфея 19:3–12",
+          "before": "",
+          "after": ": ст. 4. «В начале…» Когда фарисеи спрос",
+          "spans": [
+            [
+              3302,
+              3316
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.12",
+          "queries": [
+            "40 19:3-12"
+          ]
+        },
+        {
+          "id": "3a58f99870399da49ddb0f03",
+          "quote": "Матфея 19:4",
+          "before": "чале сотворил их мужчиной и женщиной? — ",
+          "after": ". Затем Он напоминает им учение Писания:",
+          "spans": [
+            [
+              3554,
+              3565
+            ]
+          ],
+          "osis": "Matt.19.4",
+          "queries": [
+            "40 19:4"
+          ]
+        },
+        {
+          "id": "abbdc27606e46a25d9c139ad",
+          "quote": "Матфея 19:5–6",
+          "before": "очетал, того человек да не разлучает. — ",
+          "after": ". Не приравнивайте власть человека (граж",
+          "spans": [
+            [
+              3810,
+              3823
+            ]
+          ],
+          "osis": "Matt.19.5-Matt.19.6",
+          "queries": [
+            "40 19:5-6"
+          ]
+        },
+        {
+          "id": "4a506bae9f2addf6a0987b3a",
+          "quote": "Римлянам 7:2–3",
+          "before": "ейкой, даже выйдя за другого мужчину. — ",
+          "after": ". И здесь речь снова возвращает нас к на",
+          "spans": [
+            [
+              4421,
+              4435
+            ]
+          ],
+          "osis": "Rom.7.2-Rom.7.3",
+          "queries": [
+            "45 7:2-3"
+          ]
+        },
+        {
+          "id": "cda1b92d7c9976cec458848a",
+          "quote": "1 Коринфянам 7:5",
+          "before": "оздержания [недостатка самообладания] — ",
+          "after": ". Таким образом, временное воздержание о",
+          "spans": [
+            [
+              5054,
+              5070
+            ]
+          ],
+          "osis": "1Cor.7.5",
+          "queries": [
+            "46 7:5"
+          ]
+        },
+        {
+          "id": "9e524075a48dedaa84a2c00d",
+          "quote": "1 Коринфянам 7:10–11",
+          "before": "ужем; и мужу не оставлять своей жены. — ",
+          "after": ". Этот отрывок Писания освобождает невин",
+          "spans": [
+            [
+              5880,
+              5900
+            ]
+          ],
+          "osis": "1Cor.7.10-1Cor.7.11",
+          "queries": [
+            "46 7:10-11"
+          ]
+        },
+        {
+          "id": "b87812d9cd6d09dd7f0ba505",
+          "quote": "Матфея 5:31–32",
+          "before": "на разведённой, тот прелюбодействует. — ",
+          "after": ". В Нагорной проповеди Иисус учил народ,",
+          "spans": [
+            [
+              6439,
+              6453
+            ]
+          ],
+          "osis": "Matt.5.31-Matt.5.32",
+          "queries": [
+            "40 5:31-32"
+          ]
+        },
+        {
+          "id": "15c875fe6a4a63716fb733cf",
+          "quote": "Матфея 1:18, 19",
+          "before": "ь Её, намеревался тайно отпустить Её. — ",
+          "after": ".",
+          "spans": [
+            [
+              8206,
+              8221
+            ]
+          ],
+          "osis": "Matt.1.18-Matt.1.19",
+          "queries": [
+            "40 1:18-19"
+          ]
+        },
+        {
+          "id": "9e4bdf9962c0b6f06bee274b",
+          "quote": "Матфея 19:3–10",
+          "before": "В ",
+          "after": " Иисус преподает тот же урок, что и в Ма",
+          "spans": [
+            [
+              8806,
+              8820
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "708b160f9944a065735ba029",
+          "quote": "Матфея 5:31–32",
+          "before": "10 Иисус преподает тот же урок, что и в ",
+          "after": ". Однако Матфея 19:3–10 начинается с поп",
+          "spans": [
+            [
+              8858,
+              8872
+            ]
+          ],
+          "osis": "Matt.5.31-Matt.5.32",
+          "queries": [
+            "40 5:31-32"
+          ]
+        },
+        {
+          "id": "9fa5a9e98ca80a7ef0086c10",
+          "quote": "Матфея 19:3–10",
+          "before": "же урок, что и в Матфея 5:31–32. Однако ",
+          "after": " начинается с попытки фарисеев уловить И",
+          "spans": [
+            [
+              8881,
+              8895
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "11941e4f526650f3cfd5df79",
+          "quote": "Матфея 19:7",
+          "before": "ть разводное письмо и отпускать жену? — ",
+          "after": ". Иисус отвечает дальше: …Моисей по жест",
+          "spans": [
+            [
+              9043,
+              9054
+            ]
+          ],
+          "osis": "Matt.19.7",
+          "queries": [
+            "40 19:7"
+          ]
+        },
+        {
+          "id": "c94d95ac08cbd26f0a1783dd",
+          "quote": "Матфея 19:8",
+          "before": "женами вашими, а сначала не было так. — ",
+          "after": ".",
+          "spans": [
+            [
+              9187,
+              9198
+            ]
+          ],
+          "osis": "Matt.19.8",
+          "queries": [
+            "40 19:8"
+          ]
+        },
+        {
+          "id": "be6485e4e01ced1846cea5b0",
+          "quote": "Марка 10:6–9",
+          "before": "очетал, того человек да не разлучает. — ",
+          "after": ".",
+          "spans": [
+            [
+              9502,
+              9514
+            ]
+          ],
+          "osis": "Mark.10.6-Mark.10.9",
+          "queries": [
+            "41 10:6-9"
+          ]
+        },
+        {
+          "id": "1d5bef9cf72823f8a537f3b2",
+          "quote": "Матфея 19:8",
+          "before": " женами вашими; а сначала не было так — ",
+          "after": ". Здесь Иисус учит об изначальном замысл",
+          "spans": [
+            [
+              9942,
+              9953
+            ]
+          ],
+          "osis": "Matt.19.8",
+          "queries": [
+            "40 19:8"
+          ]
+        },
+        {
+          "id": "c29c7f358357a8e6984499c7",
+          "quote": "Второзаконие 24:1–4",
+          "before": " не может снова взять её себе в жёны… — ",
+          "after": ".",
+          "spans": [
+            [
+              10564,
+              10583
+            ]
+          ],
+          "osis": "Deut.24.1-Deut.24.4",
+          "queries": [
+            "5 24:1-4"
+          ]
+        },
+        {
+          "id": "b76f1c6dc695d958ead6fa24",
+          "quote": "Матфея 19:8",
+          "before": "ил это, сказав: а сначала не было так — ",
+          "after": ".",
+          "spans": [
+            [
+              10798,
+              10809
+            ]
+          ],
+          "osis": "Matt.19.8",
+          "queries": [
+            "40 19:8"
+          ]
+        },
+        {
+          "id": "30aeb08b4cbb4a809fbd0238",
+          "quote": "Иеремия 3:1",
+          "before": " возвращайся ко Мне, говорит Господь. — ",
+          "after": ". В остальной части третьей главы Иереми",
+          "spans": [
+            [
+              11202,
+              11213
+            ]
+          ],
+          "osis": "Jer.3.1",
+          "queries": [
+            "24 3:1"
+          ]
+        },
+        {
+          "id": "88b54c6c0547f2376b4a8107",
+          "quote": "Иеремии 3:8",
+          "before": "В ",
+          "after": " Господь отверг её (Израиль) и дал ей ра",
+          "spans": [
+            [
+              11665,
+              11676
+            ]
+          ],
+          "osis": "Jer.3.8",
+          "queries": [
+            "24 3:8"
+          ]
+        },
+        {
+          "id": "de469b7b70b84ee8407525c5",
+          "quote": "Малахия 2:11",
+          "before": "бил, и женился на дочери чужого бога. — ",
+          "after": ".",
+          "spans": [
+            [
+              12008,
+              12020
+            ]
+          ],
+          "osis": "Mal.2.11",
+          "queries": [
+            "39 2:11"
+          ]
+        },
+        {
+          "id": "614678de3c650abd501711c1",
+          "quote": "Иеремия 3:13–14",
+          "before": "глашал их вернуться, если они покаются (",
+          "after": "). Ко времени Второзакония, глава 24, и ",
+          "spans": [
+            [
+              12252,
+              12267
+            ]
+          ],
+          "osis": "Jer.3.13-Jer.3.14",
+          "queries": [
+            "24 3:13-14"
+          ]
+        },
+        {
+          "id": "d6f9e727685ac9e7f9cc602c",
+          "quote": "Осия 1:2",
+          "before": "твует земля сия, отступив от Господа. — ",
+          "after": " (см. также Осия 2:5).",
+          "spans": [
+            [
+              12706,
+              12714
+            ]
+          ],
+          "osis": "Hos.1.2",
+          "queries": [
+            "28 1:2"
+          ]
+        },
+        {
+          "id": "5ff93295c7a6f4f1b87cd512",
+          "quote": "Осия 2:5",
+          "before": "тупив от Господа. — Осия 1:2 (см. также ",
+          "after": ").",
+          "spans": [
+            [
+              12731,
+              12739
+            ]
+          ],
+          "osis": "Hos.2.5",
+          "queries": [
+            "28 2:5"
+          ]
+        },
+        {
+          "id": "be5d2e4a4e64049622227efe",
+          "quote": "Осия 3:3",
+          "before": "й, она возвращается к жизни «блудницы» (",
+          "after": ") и идет за другими «любовниками» (2:7).",
+          "spans": [
+            [
+              12846,
+              12854
+            ]
+          ],
+          "osis": "Hos.3.3",
+          "queries": [
+            "28 3:3"
+          ]
+        },
+        {
+          "id": "957f68c31ffad777a9d99a49",
+          "quote": "Осия 3:5",
+          "before": "дом, ищущее Его милости и прощения (см. ",
+          "after": ").",
+          "spans": [
+            [
+              13520,
+              13528
+            ]
+          ],
+          "osis": "Hos.3.5",
+          "queries": [
+            "28 3:5"
+          ]
+        },
+        {
+          "id": "2d900eedad3d7ae1ac9dc8e7",
+          "quote": "Иоанна 4:1–42",
+          "before": "Некоторые истолковывают ",
+          "after": " как возражение против воссоединения пос",
+          "spans": [
+            [
+              13562,
+              13575
+            ]
+          ],
+          "osis": "John.4.1-John.4.42",
+          "queries": [
+            "43 4:1-42"
+          ]
+        },
+        {
+          "id": "54a9610c500b5e6c10651a48",
+          "quote": "Иоанна 4:17–18",
+          "before": "муж тебе; это ты справедливо сказала. — ",
+          "after": ".",
+          "spans": [
+            [
+              13903,
+              13917
+            ]
+          ],
+          "osis": "John.4.17-John.4.18",
+          "queries": [
+            "43 4:17-18"
+          ]
+        },
+        {
+          "id": "b7c10535bbc9f5be76095321",
+          "quote": "Откровение 22:18",
+          "before": "» к Писанию или «отнятию» от него. (См. ",
+          "after": ".)",
+          "spans": [
+            [
+              15493,
+              15509
+            ]
+          ],
+          "osis": "Rev.22.18",
+          "queries": [
+            "66 22:18"
+          ]
+        },
+        {
+          "id": "6054dfdcd289b7db7bc20e81",
+          "quote": "1 Коринфянам 7:10–16",
+          "before": "Контекст ",
+          "after": " — это ситуация, когда верующий состоит ",
+          "spans": [
+            [
+              16073,
+              16093
+            ]
+          ],
+          "osis": "1Cor.7.10-1Cor.7.16",
+          "queries": [
+            "46 7:10-16"
+          ]
+        },
+        {
+          "id": "7503cc9d60c5f4fe3fa90a87",
+          "quote": "Матфея 19:5",
+          "before": "а представлена в остальном Писании (см. ",
+          "after": " и 1 Коринфянам 7:10). Раздельное прожив",
+          "spans": [
+            [
+              16524,
+              16535
+            ]
+          ],
+          "osis": "Matt.19.5",
+          "queries": [
+            "40 19:5"
+          ]
+        },
+        {
+          "id": "72de5810d60b15442d27b3eb",
+          "quote": "1 Коринфянам 7:10",
+          "before": " в остальном Писании (см. Матфея 19:5 и ",
+          "after": "). Раздельное проживание ограничивает вл",
+          "spans": [
+            [
+              16538,
+              16555
+            ]
+          ],
+          "osis": "1Cor.7.10",
+          "queries": [
+            "46 7:10"
+          ]
+        },
+        {
+          "id": "0f632712b205084381405456",
+          "quote": "Матфея 18:20",
+          "before": "обраны во имя Моё, там Я посреди них. — ",
+          "after": ". А Павел говорит: Если же Дух Того, Кто",
+          "spans": [
+            [
+              17811,
+              17823
+            ]
+          ],
+          "osis": "Matt.18.20",
+          "queries": [
+            "40 18:20"
+          ]
+        },
+        {
+          "id": "7bf6d5687e3fd78f6f839f16",
+          "quote": "Римлянам 8:11",
+          "before": "тные тела Духом Своим, живущим в вас. — ",
+          "after": ".",
+          "spans": [
+            [
+              18007,
+              18020
+            ]
+          ],
+          "osis": "Rom.8.11",
+          "queries": [
+            "45 8:11"
+          ]
+        }
+      ],
+      "record_hash": "fd41c64effa44e4bfe26609659da707359c52a40d358296ae76e70fe55533daf"
+    },
     "f236d8e2-96e3-4d12-89e7-41dc995fa490:sv:0f8ae3e54e650a764f29ffc95d14e46454227a8b28f19d09b3d6690c00715668:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "f236d8e2-96e3-4d12-89e7-41dc995fa490",
       "locale": "sv",
@@ -448254,6 +449852,95 @@
       ],
       "record_hash": "38034de9f10abb68e3fde0112c5e5b67ccfea22ac9f610c2a1e2f0b35ea0de41"
     },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:fr:9782d1f09dd6fc35cce8d155c98897fce7f53d9a61f6373d8d9b7cd79e6a8515:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "fr",
+      "content_hash": "9782d1f09dd6fc35cce8d155c98897fce7f53d9a61f6373d8d9b7cd79e6a8515",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1f691e2e2c94d3dfe1ca3c15",
+          "quote": "Jean 3:3-6",
+          "before": "e qui est né de l’Esprit est esprit. » (",
+          "after": ")",
+          "spans": [
+            [
+              577,
+              587
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "91c3b5533fc6431aa98279e3",
+          "quote": "Jean 3:6",
+          "before": "ce qui est né de l’Esprit est esprit » (",
+          "after": "). Que veut-il dire ? Si vous êtes né de",
+          "spans": [
+            [
+              6845,
+              6853
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "3f50182517a814273c4cf53f",
+          "quote": "Romains 8:8",
+          "before": " bon en elle. Comme Paul nous le dit en ",
+          "after": ", il est impossible à la chair de plaire",
+          "spans": [
+            [
+              7161,
+              7172
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "6b49b4cc4f7770a6eec3f9b1",
+          "quote": "Romains 7",
+          "before": "orsqu’on naît de nouveau, comme Paul en ",
+          "after": ", on reconnaît qu’on ne peut pas y arriv",
+          "spans": [
+            [
+              9741,
+              9750
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "b0a3deb640b3e2bfda23eb38",
+          "quote": "2 Corinthiens 5:17",
+          "before": "outes choses sont devenues nouvelles » (",
+          "after": ").",
+          "spans": [
+            [
+              10338,
+              10356
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "048d99defe2a4b73e036714b3e3a784570f07a3b00b95e4cd8544ebf21206a36"
+    },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:he:4ec15c79ef1f1fc8f56a329c0373b48570d6b7731d0a323bc8cd10da8d0cbf59:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
       "locale": "he",
@@ -449200,6 +450887,63 @@
         }
       ],
       "record_hash": "eeb0592a8c3e28769617afb9f61fa3b503e40c93bb8c4ce0a974af17509145ac"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:zh-Hans:bb96a08e046004b016f4ba687bc2cb8ffc645e8a613dabe08758ca7500f32b19:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "zh-Hans",
+      "content_hash": "bb96a08e046004b016f4ba687bc2cb8ffc645e8a613dabe08758ca7500f32b19",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d13c2f644d0a6f4f61eea7bf",
+          "quote": "约翰福音 3:3-6",
+          "before": "，人若不是从水和圣灵生的，就不能进神的国。从肉身生的就是肉身；从灵生的就是灵。（",
+          "after": "）",
+          "spans": [
+            [
+              206,
+              216
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "97617c30e8f6e3d67b765f7d",
+          "quote": "约翰福音 3:6",
+          "before": "耶稣说：“从肉身生的就是肉身；从灵生的就是灵”（",
+          "after": "）。祂是什么意思？如果你是从肉身生的，就会按肉身而活。圣经非常清楚地告诉我们，肉",
+          "spans": [
+            [
+              2212,
+              2220
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "eb8064786ff547675e2ecba6",
+          "quote": "”（哥林多后书 5:",
+          "before": "人，一个被圣灵充满的人。“若有人在基督里，他就是新造的人，旧事已过，都变成新的了",
+          "after": "17）。",
+          "spans": [
+            [
+              3171,
+              3181
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "ead2dfb8b14257d91b52119fb87cdef3b4ffd13a0e81fad96ef6110a70cca197"
     },
     "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b:af:4423a5663f9c574c88658df6fa58733132b3c1d13c904863df4abdd1c2774631:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b",

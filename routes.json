@@ -13850,11 +13850,12 @@
       },
       "6485a6ed-e76f-4142-9e27-e649823cb1a3": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "with-what-should-we-be-adorned",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vrou",
+        "alias": "waarmee-behoort-ons-versier-te-wees",
+        "history": [
+          "/af/articles/with-what-should-we-be-adorned/"
+        ],
+        "fallback": false
       },
       "6497a93f-bea4-44dd-bbe5-da90318f3d48": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -42021,11 +42022,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "jesus-christus-die-antwort-auf-die-zerbrochenheit-der-menschheit",
+        "history": [
+          "/de/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -46579,11 +46581,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "in-der-welt-aber-nicht-von-ihr",
+        "history": [
+          "/de/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -53849,11 +53852,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "παιδιά",
+        "alias": "η-δύναμη-τησ-καλοσύνησ",
+        "history": [
+          "/el/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -92865,11 +92869,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vie-chrétienne",
+        "alias": "une-nouvelle-créature",
+        "history": [
+          "/fr/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -128585,11 +128590,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "bambini",
+        "alias": "il-potere-della-gentilezza",
+        "history": [
+          "/it/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -177817,11 +177823,12 @@
       },
       "6485a6ed-e76f-4142-9e27-e649823cb1a3": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "with-what-should-we-be-adorned",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "женщина",
+        "alias": "чем-же-нам-украшаться",
+        "history": [
+          "/ru/articles/with-what-should-we-be-adorned/"
+        ],
+        "fallback": false
       },
       "6497a93f-bea4-44dd-bbe5-da90318f3d48": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -181806,11 +181813,12 @@
       },
       "f236d8e2-96e3-4d12-89e7-41dc995fa490": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "they-are-no-more-twain",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "они-уже-не-двое",
+        "history": [
+          "/ru/articles/they-are-no-more-twain/"
+        ],
+        "fallback": false
       },
       "f23b48e8-ae04-4469-9ee3-be0e5461cb94": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -186584,11 +186592,12 @@
       },
       "3feab4dd-c830-4ead-ad57-24d853847088": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
+        "category_slug": "berättelser-från-hemmen",
         "alias": "hans-landis",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/sv/articles/hans-landis/"
+        ],
+        "fallback": false
       },
       "3ffcb3c6-d608-4d9a-8efb-bf25a3652040": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -188113,11 +188122,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "barn",
+        "alias": "vänlighetens-kraft",
+        "history": [
+          "/sv/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -221273,11 +221283,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "基督徒生活",
+        "alias": "一个新造的人",
+        "history": [
+          "/zh-Hans/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
