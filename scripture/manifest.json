@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "03940e445f7aa7b15fb1c263bdd332b107703a674cbcab9f5828c2c7b4492858",
+  "integrity": "a3ce0c17b44d95f36cb5168a646ff66a30d6691e6209f19ff8cc388dd41bdc04",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -2469,6 +2469,159 @@
         }
       ],
       "record_hash": "9ecee86edf2a53990b2ff648685120803655127ba8c27484a74676dbc788e16b"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:ur:376bafaf6c0aa16b94e8f8b09e2b5d809abb092612824a186e662cd407f3597a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "ur",
+      "content_hash": "376bafaf6c0aa16b94e8f8b09e2b5d809abb092612824a186e662cd407f3597a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fa5af144ace1fb3ab810db80",
+          "quote": "متی 1:21",
+          "before": "نی قوم کو اُن کے گناہوں سے نجات دے گا» (",
+          "after": ")۔",
+          "spans": [
+            [
+              351,
+              359
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "50aabea7ee424674f73f53ec",
+          "quote": "یوحنا 3:18-21",
+          "before": "اہ آلود حالت تسلیم نہیں کرنا چاہتے تھے۔ ",
+          "after": " کی یہ آیات اس رکاوٹ کو سمجھنے میں ہماری",
+          "spans": [
+            [
+              1405,
+              1418
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "1dc2f3cad861b180833d6be5",
+          "quote": "یوحنا 3:19-21",
+          "before": "ام ظاہر ہوں کہ وہ خدا میں کیے گئے ہیں» (",
+          "after": ")۔",
+          "spans": [
+            [
+              1775,
+              1788
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "eb05c493e6459487733dceb4",
+          "quote": "لوقا 7:29-30",
+          "before": "کر اپنے حق میں خدا کے ارادے کو رد کیا» (",
+          "after": ")۔",
+          "spans": [
+            [
+              2624,
+              2636
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "5ca770c364c7ea7244384761",
+          "quote": "یوحنا 8:11",
+          "before": "رم نہیں ٹھہراتا؛ جا، پھر گناہ نہ کرنا» (",
+          "after": ")۔",
+          "spans": [
+            [
+              3544,
+              3554
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "8d13eaddc835dc531a11d4e8",
+          "quote": "مرقس 10:21",
+          "before": "ر آ کر صلیب اٹھا اور میرے پیچھے ہو لے» (",
+          "after": ")۔",
+          "spans": [
+            [
+              3687,
+              3697
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "e324c48fcf180e936a18c27a",
+          "quote": "لوقا 22:32",
+          "before": "جوع کرے تو اپنے بھائیوں کو مضبوط کرنا» (",
+          "after": ")۔",
+          "spans": [
+            [
+              3766,
+              3776
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "66e4f3c58df8b703f9a4b23d",
+          "quote": "لوقا 9:23-24",
+          "before": "طر اپنی جان کھوئے گا وہ اُسے بچائے گا» (",
+          "after": ")۔",
+          "spans": [
+            [
+              4029,
+              4041
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "1b4923bc59625f15c2bff580",
+          "quote": "مرقس 6:16-28",
+          "before": "فی پا سکے اور ہیرودیاس کے ساتھ رہ سکے؟ (",
+          "after": " پڑھیں۔) کیا اُسے اتنا دوٹوک ہونے کی ضرو",
+          "spans": [
+            [
+              4647,
+              4659
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "5247d13031198747c3d3fd5902e6b72fed144587605e4201dbceb3c1085d50a7"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:zh-Hans:b3954b8a4e27b57fcfed32a6072915f6159bbddd0eaca2c28c532871ad5d225a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -144922,6 +145075,14 @@
       "markers": [],
       "record_hash": "45fb83b1cd91e70b4cb414d68fbb35e6183991c34b3b16f6946c08d6ae68c4aa"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:ar:3d5713fafdb5c108167a762f655698d824ba906d66f6674321dac3a561155500:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "ar",
+      "content_hash": "3d5713fafdb5c108167a762f655698d824ba906d66f6674321dac3a561155500",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "829fd5f74064d77d7da5f15a24b37b417e569aa446ba2ef907877402566883a2"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:en:e5b40e8fb2d32e949a031827ce693bef6d0714ca76b74d98a9c0dc4d9b5fd951:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "en",
@@ -144938,6 +145099,14 @@
       "markers": [],
       "record_hash": "4453a5e76aa5e6a13bd1c67c9770acbed17398a8c3ac4ad0d0446399e48ac1c2"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:he:320928b769c244aac3b518b065e7406d6b3c1e26c3f4d2e54f3a55964898cd5a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "he",
+      "content_hash": "320928b769c244aac3b518b065e7406d6b3c1e26c3f4d2e54f3a55964898cd5a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "afaef1a29b6f67e68c2ceea93a1a80ff605e89f38fe90a4c47b408bf705862d6"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:hi:9ce9c5d999bfee1e390857a598d58e41395cb38f202dfcc023443dcf028f3164:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "hi",
@@ -144945,6 +145114,38 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "ccecaf3641bef0e207ba4cdb0dcdae02018223f05fbf2d1529afd693b0392dcf"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:pt:be17d602888fb3e188806e7f5436cdd2fbb41faaa698c0d7a7c5dd70bfedee44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "pt",
+      "content_hash": "be17d602888fb3e188806e7f5436cdd2fbb41faaa698c0d7a7c5dd70bfedee44",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b3779d8684ffa36517dd6627e68157ff9ca6e32891e5df3a5099cfbf2dc32832"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:sw:d71a4eb1096959637cb48c9f98c70cfd62d0f6038e689ca062a9bc085ee20b57:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "sw",
+      "content_hash": "d71a4eb1096959637cb48c9f98c70cfd62d0f6038e689ca062a9bc085ee20b57",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "eeb893ca9ec4817b2f9c76df8f9023fb03e48df8984ecf37ecf23bad64bb6f5b"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:ur:1d2d4f5ea72f730a0c7e22edc79297f9ffad73cafb52d2ea4385b6bcf050cd9b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "ur",
+      "content_hash": "1d2d4f5ea72f730a0c7e22edc79297f9ffad73cafb52d2ea4385b6bcf050cd9b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "9c687cb686041ee88b4e4f991214b0b585f58724acc31b72ba2715a452cdb257"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:zh-Hans:a6139799d0b2d39b213637dc7829bffbfaccc4c9149dcdd4595d56bec09a390d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "zh-Hans",
+      "content_hash": "a6139799d0b2d39b213637dc7829bffbfaccc4c9149dcdd4595d56bec09a390d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a6606a2029a849595e0d2255e16f16bcfe565587b0283ad05cfa6c8535e7fa66"
     },
     "476b0ca1-7039-4dab-98ed-f471fb3a1663:en:603f2f9c7815c2aedbae9f61d838a19d2b0103066d77b9c9aa483935b4782b08:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "476b0ca1-7039-4dab-98ed-f471fb3a1663",
@@ -152489,6 +152690,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "48893a079bcfbcad79e48829230ee9993d5e93b25d48aea5c841d329a4e6f46f"
+    },
+    "4e180a0e-db17-4e62-9eb8-da82bbe72d17:sw:28ac4b6650c41a3a5cb4cbcc5251e7eadc3200e4332fd61176cfdc2129d38480:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "4e180a0e-db17-4e62-9eb8-da82bbe72d17",
+      "locale": "sw",
+      "content_hash": "28ac4b6650c41a3a5cb4cbcc5251e7eadc3200e4332fd61176cfdc2129d38480",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "87c857869b76f09e580ae46bc8cd807edc7a202c9d9a301e770eecc211b424f2"
     },
     "4e180a0e-db17-4e62-9eb8-da82bbe72d17:ur:6640144aafe3f9839b035a3f0d4122f0e5a0e6ed48283f9492b309c372f372e7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "4e180a0e-db17-4e62-9eb8-da82bbe72d17",
@@ -172172,6 +172381,287 @@
         }
       ],
       "record_hash": "26541dfedde8049055be5e93673e5ce95381098156280e4bb494dd40c61ac4a9"
+    },
+    "55b18915-e213-448c-8fe1-d430e195e768:de:80869f251c250f8e70e121b600d25dc97b8dc316a4c2d5ab427329498aad5d36:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "55b18915-e213-448c-8fe1-d430e195e768",
+      "locale": "de",
+      "content_hash": "80869f251c250f8e70e121b600d25dc97b8dc316a4c2d5ab427329498aad5d36",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "18bec53c57e2ca481d23dfd5",
+          "quote": "Matthäus 14",
+          "before": " auf dem Wasser, um zu Jesus zu gehen – ",
+          "after": ",28–29.",
+          "spans": [
+            [
+              306,
+              317
+            ]
+          ],
+          "osis": "Matt.14.1-Matt.14.36",
+          "queries": [
+            "40 14:1-36"
+          ]
+        },
+        {
+          "id": "e263774e50f0eb52883d6245",
+          "quote": "Matthäus 14,22",
+          "before": "u fahren, während er das Volk entließ – ",
+          "after": ".",
+          "spans": [
+            [
+              784,
+              798
+            ]
+          ],
+          "osis": "Matt.14.22",
+          "queries": [
+            "40 14:22"
+          ]
+        },
+        {
+          "id": "902cafaddfab6e942dfc7a9b",
+          "quote": "Matthäus 14,25–27",
+          "before": "trost! Ich bin’s; fürchtet euch nicht – ",
+          "after": ".",
+          "spans": [
+            [
+              1447,
+              1464
+            ]
+          ],
+          "osis": "Matt.14.25-Matt.14.27",
+          "queries": [
+            "40 14:25-27"
+          ]
+        },
+        {
+          "id": "8d19683c67769cbbd560279b",
+          "quote": "Matthäus 14,28",
+          "before": " mir, zu dir auf das Wasser zu kommen – ",
+          "after": ". Was dachte Petrus? Er war noch nie auf",
+          "spans": [
+            [
+              1597,
+              1611
+            ]
+          ],
+          "osis": "Matt.14.28",
+          "queries": [
+            "40 14:28"
+          ]
+        },
+        {
+          "id": "f65b418a5f4dabcbc0007e6e",
+          "quote": "Lukas 9,3",
+          "before": "d habt auch nicht jeder zwei Gewänder – ",
+          "after": ".",
+          "spans": [
+            [
+              4515,
+              4524
+            ]
+          ],
+          "osis": "Luke.9.3",
+          "queries": [
+            "42 9:3"
+          ]
+        },
+        {
+          "id": "99b0bc729c7901dd6505f741",
+          "quote": "Lukas 22",
+          "before": "twas gefehlt? Sie antworteten: Nichts – ",
+          "after": ",35.",
+          "spans": [
+            [
+              4735,
+              4743
+            ]
+          ],
+          "osis": "Luke.22.1-Luke.22.71",
+          "queries": [
+            "42 22:1-71"
+          ]
+        },
+        {
+          "id": "247ee26e1d2f5ebba8a632c9",
+          "quote": "Matthäus 14",
+          "before": "f gekommen waren, legte sich der Wind – ",
+          "after": ",30–32.",
+          "spans": [
+            [
+              7108,
+              7119
+            ]
+          ],
+          "osis": "Matt.14.1-Matt.14.36",
+          "queries": [
+            "40 14:1-36"
+          ]
+        },
+        {
+          "id": "5077ca1101d12bc4a6c49895",
+          "quote": "Hebräer 11",
+          "before": "In ",
+          "after": " lesen wir, dass …der Glaube die Substan",
+          "spans": [
+            [
+              7461,
+              7471
+            ]
+          ],
+          "osis": "Heb.11.1-Heb.11.40",
+          "queries": [
+            "58 11:1-40"
+          ]
+        },
+        {
+          "id": "343e9dd1ef5ff00b5d36fca0",
+          "quote": "Hebräer 11,1",
+          "before": "Beweis für Dinge, die man nicht sieht – ",
+          "after": ".",
+          "spans": [
+            [
+              7588,
+              7600
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "e73c6f102627c5084b3cb5ac",
+          "quote": "Johannes 1,1",
+          "before": "i Gott, und das Wort [Logos] war Gott – ",
+          "after": ". Von dem griechischen Wort Logos leitet",
+          "spans": [
+            [
+              8544,
+              8556
+            ]
+          ],
+          "osis": "John.1.1",
+          "queries": [
+            "43 1:1"
+          ]
+        },
+        {
+          "id": "1d0b72b3318628b4206c6e73",
+          "quote": "Johannes 16,13",
+          "before": "wird er euch in alle Wahrheit leiten… – ",
+          "after": ".",
+          "spans": [
+            [
+              9157,
+              9171
+            ]
+          ],
+          "osis": "John.16.13",
+          "queries": [
+            "43 16:13"
+          ]
+        },
+        {
+          "id": "69029d912fae670e345a25c3",
+          "quote": "1. Korinther 2,14",
+          "before": ", weil sie geistlich beurteilt werden – ",
+          "after": ". Männer des Glaubens sind Männer, deren",
+          "spans": [
+            [
+              9798,
+              9815
+            ]
+          ],
+          "osis": "1Cor.2.14",
+          "queries": [
+            "46 2:14"
+          ]
+        },
+        {
+          "id": "0824077774336b3e1b604fd3",
+          "quote": "Matthäus 14",
+          "before": "eingläubiger, warum hast du gezweifelt? ",
+          "after": ",31. Petrus war eben auf dem Wasser gega",
+          "spans": [
+            [
+              10440,
+              10451
+            ]
+          ],
+          "osis": "Matt.14.1-Matt.14.36",
+          "queries": [
+            "40 14:1-36"
+          ]
+        },
+        {
+          "id": "842f386ce1bcc02f53949cb6",
+          "quote": "Matthäus 17,20",
+          "before": "; und nichts wird euch unmöglich sein – ",
+          "after": ".",
+          "spans": [
+            [
+              10861,
+              10875
+            ]
+          ],
+          "osis": "Matt.17.20",
+          "queries": [
+            "40 17:20"
+          ]
+        },
+        {
+          "id": "ef8ecedafd60b469ef89956b",
+          "quote": "Matthäus 14",
+          "before": "f gekommen waren, legte sich der Wind – ",
+          "after": ",32. Und er erwies sich als Herr der gei",
+          "spans": [
+            [
+              11674,
+              11685
+            ]
+          ],
+          "osis": "Matt.14.1-Matt.14.36",
+          "queries": [
+            "40 14:1-36"
+          ]
+        },
+        {
+          "id": "d0dff56f26f08324ba25546e",
+          "quote": "Matthäus 14",
+          "before": "rachen: Wahrlich, du bist Gottes Sohn – ",
+          "after": ",33.",
+          "spans": [
+            [
+              11855,
+              11866
+            ]
+          ],
+          "osis": "Matt.14.1-Matt.14.36",
+          "queries": [
+            "40 14:1-36"
+          ]
+        },
+        {
+          "id": "a95c1208c1144284a45e3261",
+          "quote": "Galater 6,2",
+          "before": "en und erfüllen so das Gesetz Christi – ",
+          "after": ".",
+          "spans": [
+            [
+              13392,
+              13403
+            ]
+          ],
+          "osis": "Gal.6.2",
+          "queries": [
+            "48 6:2"
+          ]
+        }
+      ],
+      "record_hash": "58fe2fa65e79c0065013323958d7a2db11d82780d1aa2f4d7926733b4b0bd325"
     },
     "55b18915-e213-448c-8fe1-d430e195e768:en:668b0d8e55481566d1e40ab7c6afebbe6ffd333b7ede462712a6e9fe59b9f3c0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "55b18915-e213-448c-8fe1-d430e195e768",
@@ -215347,6 +215837,14 @@
         }
       ],
       "record_hash": "5df460e16b68ab719ee10f3aebb59879bc52aa9cc56f44159d65f73be9828cff"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:af:50b213b82df445d0e7992eb9123a4ac8b01d28cbe0496d4f4644f9fe4059d6fa:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "af",
+      "content_hash": "50b213b82df445d0e7992eb9123a4ac8b01d28cbe0496d4f4644f9fe4059d6fa",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a45979793a89288b0cba5bbe30f3f4dc64860643a48e87a9951cb91a51a005bf"
     },
     "7750b3b4-3c80-48a5-860c-4958331969d7:ar:f355f02503681785de3e80cc92506884dc4385a27cf51100d42e4b674e4351f8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
@@ -259571,6 +260069,191 @@
         }
       ],
       "record_hash": "b2275538ecfba2a7c04ee573cd289f0e48438ade2337d073fc0a94c4b4f9d60f"
+    },
+    "903e4b58-b246-4ee3-85e7-eecf158a7a75:de:4b1130fe1557efe2df334ba9a8b6f9aecc45a4f195da8ecf070cc71c097fd3e1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
+      "locale": "de",
+      "content_hash": "4b1130fe1557efe2df334ba9a8b6f9aecc45a4f195da8ecf070cc71c097fd3e1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9bc2c30b7ec3767648b3d041",
+          "quote": "Titus 2:3-5",
+          "before": " das Wort Gottes nicht verlästert wird –",
+          "after": ".",
+          "spans": [
+            [
+              3007,
+              3018
+            ]
+          ],
+          "osis": "Titus.2.3-Titus.2.5",
+          "queries": [
+            "56 2:3-5"
+          ]
+        },
+        {
+          "id": "93cd58b04f90c885f34562db",
+          "quote": "1. Timotheus 5:13",
+          "before": " Handy …von Haus zu Haus umherzugehen… –",
+          "after": ", Im 2. Timotheusbrief fährt Paulus fort",
+          "spans": [
+            [
+              3254,
+              3271
+            ]
+          ],
+          "osis": "1Tim.5.13",
+          "queries": [
+            "54 5:13"
+          ]
+        },
+        {
+          "id": "e2b9878d8cd552cd506e1294",
+          "quote": "2. Timotheus 3:1-2",
+          "before": "ie Menschen werden selbstsüchtig sein… –",
+          "after": ". Wie viel meiner Nachrichten und Kommun",
+          "spans": [
+            [
+              3456,
+              3474
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.2",
+          "queries": [
+            "55 3:1-2"
+          ]
+        },
+        {
+          "id": "7a259e5edfad994f6b891c95",
+          "quote": "Psalm 127:3",
+          "before": " HERRN, und Leibesfrucht ist sein Lohn –",
+          "after": ". Unsere Kinder sind sein Erbe und sein ",
+          "spans": [
+            [
+              4106,
+              4117
+            ]
+          ],
+          "osis": "Ps.127.3",
+          "queries": [
+            "19 127:3"
+          ]
+        },
+        {
+          "id": "fa0336f50d3f56755cf26430",
+          "quote": "Psalm 127:3-5",
+          "before": "rn werden mit den Feinden im Tor reden –",
+          "after": ". Die Bibelstellen über Kinder zeigen un",
+          "spans": [
+            [
+              5411,
+              5424
+            ]
+          ],
+          "osis": "Ps.127.3-Ps.127.5",
+          "queries": [
+            "19 127:3-5"
+          ]
+        },
+        {
+          "id": "e75bb5093404c58af0298dc0",
+          "quote": "Titus 2",
+          "before": " verlassen das Elternhaus. Und dann? In ",
+          "after": " werden gottesfürchtige ältere Frauen al",
+          "spans": [
+            [
+              8272,
+              8279
+            ]
+          ],
+          "osis": "Titus.2.1-Titus.2.15",
+          "queries": [
+            "56 2:1-15"
+          ]
+        },
+        {
+          "id": "435ba1859fcfc28e79652e89",
+          "quote": "Titus 2:3",
+          "before": "tere Frauen als …Lehrerinnen des Guten –",
+          "after": ". beschrieben. Sie erhalten den Auftrag:",
+          "spans": [
+            [
+              8349,
+              8358
+            ]
+          ],
+          "osis": "Titus.2.3",
+          "queries": [
+            "56 2:3"
+          ]
+        },
+        {
+          "id": "5d2cd7558912ddd2b20eaaff",
+          "quote": "Titus 2:4-5",
+          "before": " das Wort Gottes nicht verlästert wird –",
+          "after": ".",
+          "spans": [
+            [
+              8655,
+              8666
+            ]
+          ],
+          "osis": "Titus.2.4-Titus.2.5",
+          "queries": [
+            "56 2:4-5"
+          ]
+        },
+        {
+          "id": "9d8d1954d3c6431fe52c01c4",
+          "quote": "1. Timotheus 2:11-13",
+          "before": "Adam wurde zuerst gebildet, danach Eva –",
+          "after": ". Wie Paulus uns anweist, glauben wir da",
+          "spans": [
+            [
+              8915,
+              8935
+            ]
+          ],
+          "osis": "1Tim.2.11-1Tim.2.13",
+          "queries": [
+            "54 2:11-13"
+          ]
+        },
+        {
+          "id": "f0300fba80f6dcd6040b09fe",
+          "quote": "Titus 2:4-5",
+          "before": " das Wort Gottes nicht verlästert wird –",
+          "after": ".",
+          "spans": [
+            [
+              9587,
+              9598
+            ]
+          ],
+          "osis": "Titus.2.4-Titus.2.5",
+          "queries": [
+            "56 2:4-5"
+          ]
+        },
+        {
+          "id": "6070b7468f1a92a449427573",
+          "quote": "Galater 6:9",
+          "before": " wir ernten, wenn wir nicht nachlassen –",
+          "after": ".",
+          "spans": [
+            [
+              12440,
+              12451
+            ]
+          ],
+          "osis": "Gal.6.9",
+          "queries": [
+            "48 6:9"
+          ]
+        }
+      ],
+      "record_hash": "7f1ea1409cd88b4812f9a254f9f6e84d5df0535be6d9b92ee5a4bd07a1514867"
     },
     "903e4b58-b246-4ee3-85e7-eecf158a7a75:el:46198f6b505a1b28cdc2d179e763d877d2827b61d62368c0bdbe35fd543617c3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
@@ -308217,6 +308900,95 @@
         }
       ],
       "record_hash": "d240c38f9f0bedefeb1b43886e36310eb7b4ac88a91e0a84d9f09abac2aff7b1"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:es:09075d7f1e1021b4668ae476864b640a9cc1dde91cddf15e521b7955b4d4b8b3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "es",
+      "content_hash": "09075d7f1e1021b4668ae476864b640a9cc1dde91cddf15e521b7955b4d4b8b3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a22a68e5ea5621960448be29",
+          "quote": "Hebreos 11:1",
+          "before": "",
+          "after": " afirma que la fe es «la confianza en lo",
+          "spans": [
+            [
+              1088,
+              1100
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "2a013b91949e887f713a4a1d",
+          "quote": "Lucas 1:1-4",
+          "before": " la certeza de lo que te han enseñado. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              2936,
+              2947
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "c7deab09e9916f62713762a6",
+          "quote": "Romanos 1:18-20",
+          "before": "creado, de modo que nadie tiene excusa –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3580,
+              3595
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "ed34696df61a8f2c3f3c841c",
+          "quote": "Juan 20:29",
+          "before": " no han visto y sin embargo han creído –",
+          "after": ". (ESV) A partir de esto, resulta tentad",
+          "spans": [
+            [
+              4905,
+              4915
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "4351e078f6a86c38d40a407d",
+          "quote": "Mateo 16:21",
+          "before": "dicho claramente que resucitaría (véase ",
+          "after": "). Tercero, Jesús ya había demostrado qu",
+          "spans": [
+            [
+              5355,
+              5366
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "4abbbb3fce9ef6b3a3d373c1f943ed33746f757ef6d48bb8dd1c5d02b5238059"
     },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:fr:e5aaafa280ed6b63e9021753e36b2e4dc10d07bc37ce5c348e72bb3d414f39a1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
@@ -363898,6 +364670,95 @@
       ],
       "record_hash": "463bbde7b8d142ae0d47e202fe4acad878f73845a3ad3a9fb87f513ae2e99bbd"
     },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:ko:cc3c2e1a9a545e4c4d7ab5f22db320030177b7a3b0bd5acf0a2c13dd252d6a54:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "ko",
+      "content_hash": "cc3c2e1a9a545e4c4d7ab5f22db320030177b7a3b0bd5acf0a2c13dd252d6a54",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e1e92b9cbdd169130266e462",
+          "quote": "로마서 13",
+          "before": "서에서 사도 베드로는 우리에게 “왕을 공경하라”고 권하고, 사도 바울은 ",
+          "after": "장에서 “위에 있는 권세들에게 복종하라. 권세는 하나님께로부터 나지 않음",
+          "spans": [
+            [
+              1127,
+              1133
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "430297f5c9b006607abf35d6",
+          "quote": "베드로전서 2",
+          "before": "에게 복종하라. 권세는 하나님께로부터 나지 않음이 없다”고 권면합니다. ",
+          "after": "장에서 왕을 두고 사용된 ‘공경하다’라는 말은 “귀하게 여기다” 또는 “",
+          "spans": [
+            [
+              1187,
+              1194
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "0af7d3d4f8f5e64fd4e97f55",
+          "quote": "누가복음 21",
+          "before": "",
+          "after": "장에는 미래에 일어날 일에 대해 말하는 구절이 있습니다. “땅에 임할 일",
+          "spans": [
+            [
+              3059,
+              3066
+            ]
+          ],
+          "osis": "Luke.21.1-Luke.21.38",
+          "queries": [
+            "42 21:1-38"
+          ]
+        },
+        {
+          "id": "283d6c673ec43e4066c93f41",
+          "quote": "디모데후서 1:7",
+          "before": " 것은 두려워하는 마음이 아니요 오직 능력과 사랑과 절제하는 마음이니 –",
+          "after": ". 이러한 주장들이 사실이든 아니든, 성경은 여전히 빌립보서에서 우리에게",
+          "spans": [
+            [
+              3438,
+              3447
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "23ebd410945b3c81ef32b7e9",
+          "quote": "빌립보서 4:8",
+          "before": "에든지 사랑받을 만하며 무엇에든지 칭찬받을 만하며… 이것들을 생각하라 –",
+          "after": ".라고 말씀합니다. 이러한 이론들을 따라가는 데 조금이라도 시간을 쓰면 ",
+          "spans": [
+            [
+              3582,
+              3590
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "14c37e373c1740471aacefc789fb04266e6bec756af5f4cf4da25dbeabf6471d"
+    },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:nb:afba428643423bb970ff64b457d91b8b8dbc2b877daf9f7a5fdb7bc23a0c59a7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
       "locale": "nb",
@@ -364189,6 +365050,79 @@
         }
       ],
       "record_hash": "a1da510a641f7999640b3538b0c3e9f984ba0efa7a7845b9984dbd623270c139"
+    },
+    "cf3bcef6-affc-4c39-9c73-ce940fab787f:sv:ea748f1ce308f90f0f830eaa0c5c80eab3206ed8c7dca1c21e918cec6a22e3c1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
+      "locale": "sv",
+      "content_hash": "ea748f1ce308f90f0f830eaa0c5c80eab3206ed8c7dca1c21e918cec6a22e3c1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "6a370056155ef683891da42f",
+          "quote": "Romarbrevet 13",
+          "before": "en”, och aposteln Paulus förmanar oss i ",
+          "after": " att ”underordna oss de överordnade makt",
+          "spans": [
+            [
+              2066,
+              2080
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.14",
+          "queries": [
+            "45 13:1-14"
+          ]
+        },
+        {
+          "id": "a37d4ea3a1d790e6d8197ed3",
+          "quote": "Första Petrusbrevet 2",
+          "before": "v Gud”. Ordet ära, så som det används i ",
+          "after": " med hänvisning till kungen, betyder att",
+          "spans": [
+            [
+              2204,
+              2225
+            ]
+          ],
+          "osis": "1Pet.2.1-1Pet.2.25",
+          "queries": [
+            "60 2:1-25"
+          ]
+        },
+        {
+          "id": "cd97790edeaf02644f75dc6d",
+          "quote": "2 Timoteusbrevet 1:7",
+          "before": "ns, kärlekens och ett sunt sinnes ande –",
+          "after": ". Oavsett om dessa påståenden är sanna e",
+          "spans": [
+            [
+              6518,
+              6538
+            ]
+          ],
+          "osis": "2Tim.1.7",
+          "queries": [
+            "55 1:7"
+          ]
+        },
+        {
+          "id": "9b70816fdda212dc483d55ab",
+          "quote": "Filipperbrevet 4:8",
+          "before": "ärt, allt som förtjänar gott anseende… –",
+          "after": ". Att ens ägna lite tid åt att följa des",
+          "spans": [
+            [
+              6792,
+              6810
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "cf336be7ce5b1bdf6d572b170f40a30d899fe250f20f389b53430e77b579ec6c"
     },
     "cf3bcef6-affc-4c39-9c73-ce940fab787f:sw:18c1ded75050e62b9fa1d3d7143998e49d66e44fc5c750deb2f656ba98ed94f9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cf3bcef6-affc-4c39-9c73-ce940fab787f",
@@ -450895,6 +451829,95 @@
         }
       ],
       "record_hash": "9cbc642fd889ff7e11947a664ca30f41a82ad16a7b00efe4ca7397a6d1e24997"
+    },
+    "fac37c80-d157-4543-8b49-8bdf869e9d4a:sv:1ea84ec7481d505949b1c9b702f4adba981b9cc3c5f06385ec95a744ef8b2b7b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",
+      "locale": "sv",
+      "content_hash": "1ea84ec7481d505949b1c9b702f4adba981b9cc3c5f06385ec95a744ef8b2b7b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8a43ed00d51fb90f48c6471f",
+          "quote": "Johannesevangeliet 3:3-6",
+          "before": "och det som är fött av Anden är ande.” (",
+          "after": ")",
+          "spans": [
+            [
+              529,
+              553
+            ]
+          ],
+          "osis": "John.3.3-John.3.6",
+          "queries": [
+            "43 3:3-6"
+          ]
+        },
+        {
+          "id": "98320319f54ae7bc2ed4a121",
+          "quote": "Johannesevangeliet 3:6",
+          "before": " och det som är fött av Anden är ande” (",
+          "after": "). Vad menar han? Om du är född av kötte",
+          "spans": [
+            [
+              6097,
+              6119
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "fe26e3af183c50f12cfea30d",
+          "quote": "Romarbrevet 8:8",
+          "before": "get gott alls i det. Som Paulus säger i ",
+          "after": " är det omöjligt för köttet att behaga G",
+          "spans": [
+            [
+              6402,
+              6417
+            ]
+          ],
+          "osis": "Rom.8.8",
+          "queries": [
+            "45 8:8"
+          ]
+        },
+        {
+          "id": "efbcf2de6666b10f8b95fb98",
+          "quote": "Romarbrevet 7",
+          "before": " nytt erkänner man, precis som Paulus i ",
+          "after": ", att man inte kan klara det på egen han",
+          "spans": [
+            [
+              8704,
+              8717
+            ]
+          ],
+          "osis": "Rom.7.1-Rom.7.25",
+          "queries": [
+            "45 7:1-25"
+          ]
+        },
+        {
+          "id": "a5eb84f677d55762a234b7bd",
+          "quote": "Andra Korinthierbrevet 5:17",
+          "before": "har förgått; se, allt har blivit nytt” (",
+          "after": ").",
+          "spans": [
+            [
+              9207,
+              9234
+            ]
+          ],
+          "osis": "2Cor.5.17",
+          "queries": [
+            "47 5:17"
+          ]
+        }
+      ],
+      "record_hash": "b2602f6cb108c19ecf80816fde38f001e1df105a7f5394d64a7e3aec9078e312"
     },
     "fac37c80-d157-4543-8b49-8bdf869e9d4a:sw:b3cfb8a703f187872b97b4ae980ee40be80af11dd627813c9ede14aff760ea01:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fac37c80-d157-4543-8b49-8bdf869e9d4a",

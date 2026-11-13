@@ -14343,11 +14343,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kinders",
+        "alias": "die-krag-van-vriendelikheid",
+        "history": [
+          "/af/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -22821,11 +22822,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "المرأة",
+        "alias": "عبادة-أمّ",
+        "history": [
+          "/ar/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -43037,11 +43039,12 @@
       },
       "55b18915-e213-448c-8fe1-d430e195e768": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "men-of-faith",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "männer-des-glaubens",
+        "history": [
+          "/de/articles/men-of-faith/"
+        ],
+        "fallback": false
       },
       "55e4dde8-b528-4ae4-b916-f122c8ff7237": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -44708,11 +44711,12 @@
       },
       "903e4b58-b246-4ee3-85e7-eecf158a7a75": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-joyful-calling",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "frauen",
+        "alias": "eine-freudige-berufung",
+        "history": [
+          "/de/articles/a-joyful-calling/"
+        ],
+        "fallback": false
       },
       "907cbbdb-6566-483a-bf46-1b55a8faab8c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -80602,11 +80606,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ejercicio-espiritual",
+        "alias": "fe-y-razón",
+        "history": [
+          "/es/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -97362,11 +97367,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "נשים",
+        "alias": "עבודת-האלוהים-של-אם",
+        "history": [
+          "/he/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -141104,11 +141110,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "그리스도인의-삶",
+        "alias": "세상에-있으나-세상에-속하지-않은",
+        "history": [
+          "/ko/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -167090,11 +167097,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "mulher",
+        "alias": "a-adoração-de-uma-mãe",
+        "history": [
+          "/pt/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -190750,11 +190758,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "i-världen-men-inte-av-den",
+        "history": [
+          "/sv/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -191878,11 +191887,12 @@
       },
       "fac37c80-d157-4543-8b49-8bdf869e9d4a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-new-creation",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "en-ny-skapelse",
+        "history": [
+          "/sv/articles/a-new-creation/"
+        ],
+        "fallback": false
       },
       "fb02a7e7-4fdc-4363-bea0-aa8a68b36f8b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -196488,11 +196498,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "wanawake",
+        "alias": "ibada-ya-mama",
+        "history": [
+          "/sw/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -196683,11 +196694,12 @@
       },
       "4e180a0e-db17-4e62-9eb8-da82bbe72d17": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "confidence",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ushairi",
+        "alias": "uhakika",
+        "history": [
+          "/sw/articles/confidence/"
+        ],
+        "fallback": false
       },
       "4e61acd5-0d1f-499e-b00d-3ae6320cc89a": {
         "category_id": "0648d4df-242a-5815-8d22-08b555d1b542",
@@ -204488,11 +204500,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "مسیحی-زندگی",
+        "alias": "وہ-اپنی-قوم-کو-اُن-کے-گناہوں-سے-نجات-دے-گا",
+        "history": [
+          "/ur/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -206390,11 +206403,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "خواتین",
+        "alias": "ایک-ماں-کی-عبادت",
+        "history": [
+          "/ur/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -216156,11 +216170,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "姊妹",
+        "alias": "母亲的敬拜",
+        "history": [
+          "/zh-Hans/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
