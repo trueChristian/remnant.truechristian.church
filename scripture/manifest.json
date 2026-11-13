@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "208a60dcd49a03e2f8d6ce128475276c4dc5d13adef583078759c053df82d6d5",
+  "integrity": "b064fd6980477fed9da31b5cde06dc153149c9cf647c0523abec08c7f60c61d8",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -41355,6 +41355,95 @@
         }
       ],
       "record_hash": "9cc5e1ccf9a46ab87a6896360127614356f2f072770a4005eb5aa6732c13b178"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:hi:61bdd1623aa1bce72908c663f0c9c16ee8f7ded177eee87af68c0fee59e87824:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "hi",
+      "content_hash": "61bdd1623aa1bce72908c663f0c9c16ee8f7ded177eee87af68c0fee59e87824",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "84a4a0573599131210a0dfce",
+          "quote": "नीतिवचन 18:22",
+          "before": ", और यहोवा से अनुग्रह प्राप्त करता है” (",
+          "after": ")।",
+          "spans": [
+            [
+              2793,
+              2806
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "b01644163110d5a1e04aed00",
+          "quote": "मत्ती 19",
+          "before": "",
+          "after": " में, यीशु ने विवाह की गंभीरता के बारे म",
+          "spans": [
+            [
+              2818,
+              2826
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "cbc0daf791846a95f71c9737",
+          "quote": "मत्ती 19:3-10",
+          "before": " सम्बन्ध है, तो विवाह करना अच्छा नहीं” (",
+          "after": ")।",
+          "spans": [
+            [
+              3770,
+              3783
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "f96b048cd71c79f097bbce72",
+          "quote": "1 कुरिन्थियों 7:1-2",
+          "before": " पत्नी रखे, और हर स्त्री अपना पति रखे” (",
+          "after": ")। स्पर्शरहित प्रणय-प्रक्रिया का अभ्यास ",
+          "spans": [
+            [
+              10589,
+              10608
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "c22ce8d562654e65f8c36194",
+          "quote": "1 कुरिन्थियों 7:1-2",
+          "before": "",
+          "after": " को ध्यान में रखते हुए, स्पर्श करना क्या",
+          "spans": [
+            [
+              11308,
+              11327
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "f62a6ab76dd53c4d118caf53759b46851fba205af3d0f7a0de42ce729cd2bd8a"
     },
     "12b8818b-ec0b-4b20-83a2-17fc74f174b0:en:a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12b8818b-ec0b-4b20-83a2-17fc74f174b0",
@@ -145405,6 +145494,14 @@
       "markers": [],
       "record_hash": "b3779d8684ffa36517dd6627e68157ff9ca6e32891e5df3a5099cfbf2dc32832"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:ru:fdc5f72104f1f1337eb7e24a0ee18b21f63836fa492e92d4c2da97cb18725cc7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "ru",
+      "content_hash": "fdc5f72104f1f1337eb7e24a0ee18b21f63836fa492e92d4c2da97cb18725cc7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "8bc41b02cc79a3e5541a80dc7679fc5a0e2fccec8aa2f98c9b65f892de9597df"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:sw:d71a4eb1096959637cb48c9f98c70cfd62d0f6038e689ca062a9bc085ee20b57:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "sw",
@@ -199383,6 +199480,79 @@
         }
       ],
       "record_hash": "05030196bb789fb1d8a0c615c8512a104c961cad3568e1ef07212e6e600c3241"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:zh-Hans:453d809c9835625bb839996e7e2c1aa8ecdf0a44d47ea4d14d2d8e086f70d2ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "zh-Hans",
+      "content_hash": "453d809c9835625bb839996e7e2c1aa8ecdf0a44d47ea4d14d2d8e086f70d2ca",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "52597623e82e6a6af991651b",
+          "quote": "《但以理书",
+          "before": "但以理和他的朋友们来到巴比伦时（",
+          "after": "》1），王把桌上的肉食供给他们，他们却拒绝了，选择只吃蔬菜。在那种情况下，问题可",
+          "spans": [
+            [
+              1110,
+              1115
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "fc0d474584d625082357fd8b",
+          "quote": "《使徒行传》",
+          "before": "临一个问题：是否应当要求这些信徒遵守洁食律法。耶路撒冷的教会会议对此进行了讨论（",
+          "after": "15）。",
+          "spans": [
+            [
+              1313,
+              1319
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "8c313f02f5ca018155bf5f49",
+          "quote": "《哥林多前书》3:",
+          "before": "要谨慎留意放进身体里的东西。“岂不知你们是上帝的殿，上帝的灵住在你们里面吗？”（",
+          "after": "16）。",
+          "spans": [
+            [
+              1479,
+              1488
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "acb0a6a9813ee2503cce5a6f",
+          "quote": "《以弗所书》5:",
+          "before": "“你们要谨慎行事，不要像愚昧人，要像智慧人。”（",
+          "after": "15）我们应当谨慎生活，作出明智的选择。",
+          "spans": [
+            [
+              4270,
+              4278
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "00c8eebc098a8327198e3e15b36126b94ff2e9f96d65e4c641c250cafe4099fc"
     },
     "682f0bfb-d8b8-4b96-ba4f-3ab86066033c:en:dd278ef2e9277394dd4afe1e580d5f76f281cb53d298b9a931249c564ce42433:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682f0bfb-d8b8-4b96-ba4f-3ab86066033c",
@@ -340378,6 +340548,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "22a9be5be6a67d4993aa1d6d1bb2bd21a45415d84f163512390b4c00e00b3bcf"
+    },
+    "ba15e3da-aab4-401c-9ec7-64b88ac22833:nb:6f7801580b476439367e0a532c496c9a31c3bfedad1981bc2207b2c90e97eea0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
+      "locale": "nb",
+      "content_hash": "6f7801580b476439367e0a532c496c9a31c3bfedad1981bc2207b2c90e97eea0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "849721c928bcb70ac60cf617bb692791348dfdb3cd079c48f9e6b2fa5e4270c8"
     },
     "ba15e3da-aab4-401c-9ec7-64b88ac22833:nl:7095e58a64d025590aa3bc4fd95257cc11b3ca8f754ad4e49abfaee30e050ffc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",

@@ -105772,11 +105772,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "युवा",
+        "alias": "मसीह-केंद्रित-प्रणय-प्रक्रिया",
+        "history": [
+          "/hi/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -150476,11 +150477,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kvinner",
+        "alias": "når-guds-vei-virker",
+        "history": [
+          "/nb/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -176979,11 +176981,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "женщина",
+        "alias": "поклонение-матери",
+        "history": [
+          "/ru/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -217134,11 +217137,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "医疗",
+        "alias": "超加工食品的危害",
+        "history": [
+          "/zh-Hans/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
