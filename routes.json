@@ -45936,11 +45936,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "frauen",
+        "alias": "wenn-gottes-weg-funktioniert",
+        "history": [
+          "/de/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -101381,11 +101382,12 @@
       },
       "cf3bcef6-affc-4c39-9c73-ce940fab787f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "in-the-world-but-not-of-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "חיים-נוצריים",
+        "alias": "בעולם-אך-לא-מן-העולם",
+        "history": [
+          "/he/articles/in-the-world-but-not-of-it/"
+        ],
+        "fallback": false
       },
       "cf4457c7-ae5f-4825-9279-dc30f3169818": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -120604,11 +120606,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "perempuan",
+        "alias": "ketika-cara-allah-berhasil",
+        "history": [
+          "/id/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -130559,11 +130562,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "donna",
+        "alias": "quando-la-via-di-dio-funziona",
+        "history": [
+          "/it/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
