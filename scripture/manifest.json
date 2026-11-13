@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "a3ce0c17b44d95f36cb5168a646ff66a30d6691e6209f19ff8cc388dd41bdc04",
+  "integrity": "1bf53450a0474277f581deab7485b71bc554b2d97ac71d90dd5a7b4eb184df60",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -416,6 +416,175 @@
         }
       ],
       "record_hash": "6aa1368a74d4b3a0692fc1dcabbb7fc13006c3339c92324b0a54dc9128e1be02"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:bn:c9990eba1923e911ebcc6f56786dd3717685d35a7e2fe78f93ed0148f6843d36:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "bn",
+      "content_hash": "c9990eba1923e911ebcc6f56786dd3717685d35a7e2fe78f93ed0148f6843d36",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "57e6cf8b5d4da151473b596e",
+          "quote": "মথি ১:২১",
+          "before": "ঁর লোকদের তাদের পাপ থেকে উদ্ধার করবেন” (",
+          "after": ")।",
+          "spans": [
+            [
+              358,
+              366
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "2a0506d5bcc64d4c8c5e87bc",
+          "quote": "যোহন ৩:১৮-২১",
+          "before": "দের পাপপূর্ণ অবস্থা স্বীকার করতে চাননি। ",
+          "after": "-এর কয়েকটি পদ এই বাধাটি বুঝতে সাহায্য ক",
+          "spans": [
+            [
+              1366,
+              1378
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "1e4289d4fecfc969b3facf8d",
+          "quote": "যোহন ৩:১৯-২১",
+          "before": "াশ পায় যে সেগুলো ঈশ্বরে সাধিত হয়েছে” (",
+          "after": ")।",
+          "spans": [
+            [
+              1696,
+              1708
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "d6a499c45fbefa5c70ec2172",
+          "quote": "লূক ৭:২৯-৩০",
+          "before": "দের জন্য ঈশ্বরের পরামর্শ অগ্রাহ্য করল” (",
+          "after": ")।",
+          "spans": [
+            [
+              2497,
+              2508
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "2d6424ed4c99750847aedbbb",
+          "quote": "১ তীমথিয় ৫:২৪-২৫",
+          "before": " তা নয়, সেগুলোও লুকানো থাকতে পারে না” (",
+          "after": ")।",
+          "spans": [
+            [
+              3007,
+              3024
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "a6c881f25889c991e15aa435",
+          "quote": "যোহন ৮:১১",
+          "before": "োমাকে দোষী করি না; যাও, আর পাপ করো না” (",
+          "after": ")।",
+          "spans": [
+            [
+              3357,
+              3366
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "4deefd8bf119cae190661362",
+          "quote": "মার্ক ১০:২১",
+          "before": "এসো, ক্রুশ তুলে নিয়ে আমার অনুসারী হও” (",
+          "after": ")।",
+          "spans": [
+            [
+              3497,
+              3508
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "1eb7a61fe7171d7face89fad",
+          "quote": "লূক ২২:৩২",
+          "before": " ফিরে এলে, তোমার ভাইদের শক্তিশালী করো” (",
+          "after": ")।",
+          "spans": [
+            [
+              3569,
+              3578
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "30da2d537fd6f5f97bc8656b",
+          "quote": "লূক ৯:২৩-২৪",
+          "before": " নিজের প্রাণ হারায়, সে তা রক্ষা করবে” (",
+          "after": ")।",
+          "spans": [
+            [
+              3846,
+              3857
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "da00a611db7ba593f0a22e38",
+          "quote": "মার্ক ৬:১৬-২৮",
+          "before": " প্রস্তাব না দেওয়ায় ক্ষমা চাইতে হবে? (",
+          "after": " পড়ুন।) তাঁকে কি এতটাই মুখোমুখি হতে হয়",
+          "spans": [
+            [
+              4442,
+              4455
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "656b11146d4a1adf340bdf0bbc0e7a35934efdeeeea3569531896ee735ebc674"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:de:8ba1d7f3b46f14d7d938544e7e8ba952694e1bc32519bdef0bcbb3d3373eb4ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -41097,6 +41266,95 @@
         }
       ],
       "record_hash": "1d59c3483b23b86a3c099d27da94dffa2159077f38a6f3ee1e1b3a4fe05619e7"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:es:f841f7ac7755c4bf330acf19ba5f645a31b34e0eac37e6614b976ceb1556ccc4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "es",
+      "content_hash": "f841f7ac7755c4bf330acf19ba5f645a31b34e0eac37e6614b976ceb1556ccc4",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "23c42869d0d808f8094ac86d",
+          "quote": "Proverbios 18:22",
+          "before": "el bien, y alcanza el favor del Señor» (",
+          "after": ").",
+          "spans": [
+            [
+              3028,
+              3044
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "13af9df1f01a0cf665881abc",
+          "quote": "Mateo 19",
+          "before": "En ",
+          "after": ", Jesús enseñó cuán serio es el matrimon",
+          "spans": [
+            [
+              3059,
+              3067
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "7b75058521fcd12de6fab5e5",
+          "quote": "Mateo 19:3-10",
+          "before": "bre con su mujer, no conviene casarse» (",
+          "after": ").",
+          "spans": [
+            [
+              4002,
+              4015
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "91b7212541dc2b6c7095b119",
+          "quote": "1 Corintios 7:1-2",
+          "before": "er, y cada una tenga su propio marido» (",
+          "after": "). La práctica de un noviazgo sin contac",
+          "spans": [
+            [
+              10928,
+              10945
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "6285429baf2380c1bfc812a9",
+          "quote": "1 Corintios 7:1-2",
+          "before": "Considerando ",
+          "after": ", ¿qué significa tocar? Si pueden sentir",
+          "spans": [
+            [
+              11637,
+              11654
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "9cc5e1ccf9a46ab87a6896360127614356f2f072770a4005eb5aa6732c13b178"
     },
     "12b8818b-ec0b-4b20-83a2-17fc74f174b0:en:a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12b8818b-ec0b-4b20-83a2-17fc74f174b0",
@@ -145083,6 +145341,22 @@
       "markers": [],
       "record_hash": "829fd5f74064d77d7da5f15a24b37b417e569aa446ba2ef907877402566883a2"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:bn:c921e9438df386a92cdc187eecf0fc8abce56e7532a2caa93cb79eab5acdc0b6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "bn",
+      "content_hash": "c921e9438df386a92cdc187eecf0fc8abce56e7532a2caa93cb79eab5acdc0b6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "695f869dc9b355a883e53bafe7e8ff534932b28cc06e95bf70896194d133b3f8"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:el:064003a9bc48bdde4fe69cc68ee213e560da22171e391ab234e702069f45657f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "el",
+      "content_hash": "064003a9bc48bdde4fe69cc68ee213e560da22171e391ab234e702069f45657f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3f3dabb7b88a42eb68de50cad2440779700703964d4b26b47cb30fd017350cdd"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:en:e5b40e8fb2d32e949a031827ce693bef6d0714ca76b74d98a9c0dc4d9b5fd951:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "en",
@@ -145090,6 +145364,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "acf188c79e635242c5c1ad116cfb6b315fc9df89cf057c6b0b7f02ecc13fbfa7"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:es:bb438275c17eef45597d69742437bb6ad104a69812bc8bc4f6ba94a8ad7082e8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "es",
+      "content_hash": "bb438275c17eef45597d69742437bb6ad104a69812bc8bc4f6ba94a8ad7082e8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "18faceff1b37e9010e4faec2a7edd03b9a81b413ec9867178dab8eec06de89ad"
     },
     "46f89299-c0a0-407c-9898-01a0c150c453:fr:ed0d26721d417ed68262512602cb99e08fd0f601777658ffa6fe0ea8798ce05f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
@@ -215949,6 +216231,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4298eac1c54c656c133aad56687d31f1b5609edbaf8a0e6452570d4df24f4ee1"
+    },
+    "7750b3b4-3c80-48a5-860c-4958331969d7:ru:e4a1edb6e223cc6a0c15c9b10adfc26dc1fe531edd033c04ac1f72bfdaded942:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
+      "locale": "ru",
+      "content_hash": "e4a1edb6e223cc6a0c15c9b10adfc26dc1fe531edd033c04ac1f72bfdaded942",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5b07afd17cebab0969446248784fd75c5f22b3bf26bfdd0292a9b24828797f95"
     },
     "7750b3b4-3c80-48a5-860c-4958331969d7:sv:b2be3075c61bb819b94d41d23c5d01f8b0b91c517a1f2cf1cef3f817ce7fcbf1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7750b3b4-3c80-48a5-860c-4958331969d7",
@@ -333886,6 +334176,159 @@
       ],
       "record_hash": "cef05b4f18195e1dc8cab9f8a7871efc9a5979c6e4b699c887f3c606b54bad73"
     },
+    "b8ff6643-9234-465f-ab06-4adfc189a851:zh-Hans:35bbac3949cdc1f2be58b24f1c5f54157f06226627dd08a72a118511b96fa8fa:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b8ff6643-9234-465f-ab06-4adfc189a851",
+      "locale": "zh-Hans",
+      "content_hash": "35bbac3949cdc1f2be58b24f1c5f54157f06226627dd08a72a118511b96fa8fa",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b3d0d3f014d6396afb5ea0c5",
+          "quote": "创世记 8:22",
+          "before": "只要地还存留，播种和收割、寒冷和炎热、夏天和冬天、白昼和黑夜就不会止息——",
+          "after": "。向大家问好。我写这篇文章时正值五月初，可我们这里似乎春天还没有真正到来。夏天终",
+          "spans": [
+            [
+              124,
+              132
+            ]
+          ],
+          "osis": "Gen.8.22",
+          "queries": [
+            "1 8:22"
+          ]
+        },
+        {
+          "id": "c845e195d51429b9a6c00ade",
+          "quote": "马太福音 24:6-7",
+          "before": "必须有的，只是末期还没有到。民要攻打民，国要攻打国；多处必有饥荒、瘟疫、地震——",
+          "after": "。",
+          "spans": [
+            [
+              475,
+              486
+            ]
+          ],
+          "osis": "Matt.24.6-Matt.24.7",
+          "queries": [
+            "40 24:6-7"
+          ]
+        },
+        {
+          "id": "56da55b08e83e9c5da85baf1",
+          "quote": "马太福音 24:6",
+          "before": "日来到之前临到地上的事情不胜枚举：……因为这些事是必须有的，只是末期还没有到——",
+          "after": "。",
+          "spans": [
+            [
+              1165,
+              1174
+            ]
+          ],
+          "osis": "Matt.24.6",
+          "queries": [
+            "40 24:6"
+          ]
+        },
+        {
+          "id": "211ef99432842ca9ad38312c",
+          "quote": "路加福音 21:26",
+          "before": "如何：人因恐惧，又因等候那将要临到世界的事，就都吓得魂不附体；因天势都要震动——",
+          "after": "。因为……那些额上没有上帝印记的人……要受痛苦五个月……他们愿意死，死却远避他们",
+          "spans": [
+            [
+              1901,
+              1911
+            ]
+          ],
+          "osis": "Luke.21.26",
+          "queries": [
+            "42 21:26"
+          ]
+        },
+        {
+          "id": "ae589a26a0336e0d156ea63b",
+          "quote": "启示录 9:4-6",
+          "before": "为……那些额上没有上帝印记的人……要受痛苦五个月……他们愿意死，死却远避他们——",
+          "after": "。还有一天……地上的君王、臣宰、富户、将军、壮士，以及一切为奴的、自主的，都要藏",
+          "spans": [
+            [
+              1953,
+              1962
+            ]
+          ],
+          "osis": "Rev.9.4-Rev.9.6",
+          "queries": [
+            "66 9:4-6"
+          ]
+        },
+        {
+          "id": "5f761217c5602dde1467638d",
+          "quote": "启示录 6:15-17",
+          "before": "起来，躲避坐宝座者的面目和羔羊的忿怒；因为他忿怒的大日到了，谁能站得住呢？”——",
+          "after": "。",
+          "spans": [
+            [
+              2072,
+              2083
+            ]
+          ],
+          "osis": "Rev.6.15-Rev.6.17",
+          "queries": [
+            "66 6:15-17"
+          ]
+        },
+        {
+          "id": "22d3fd9260584cebdd950955",
+          "quote": "马太福音 16:24-26",
+          "before": "若赚得全世界，却赔上自己的灵魂，有什么益处呢？人还能拿什么换自己的灵魂呢？”——",
+          "after": "。",
+          "spans": [
+            [
+              2247,
+              2260
+            ]
+          ],
+          "osis": "Matt.16.24-Matt.16.26",
+          "queries": [
+            "40 16:24-26"
+          ]
+        },
+        {
+          "id": "9794169d9ba961b75c4b8495",
+          "quote": "马太福音 25:34-40",
+          "before": "实在告诉你们，这些事你们既做在我这弟兄中一个最小的身上，就是做在我身上了。”——",
+          "after": "。",
+          "spans": [
+            [
+              3228,
+              3241
+            ]
+          ],
+          "osis": "Matt.25.34-Matt.25.40",
+          "queries": [
+            "40 25:34-40"
+          ]
+        },
+        {
+          "id": "4c6824feb5f6e0a117f05d16",
+          "quote": "犹大书 1:24-25",
+          "before": "欢喜喜站在他荣耀面前的，我们的救主、独一有智慧的上帝，从现今直到永远。阿们。——",
+          "after": "。",
+          "spans": [
+            [
+              4239,
+              4250
+            ]
+          ],
+          "osis": "Jude.1.24-Jude.1.25",
+          "queries": [
+            "65 1:24-25"
+          ]
+        }
+      ],
+      "record_hash": "8d7d26011aa914cb3b0ae396ea1383e9ff8098b4e8f8c7113a8eed64bdf0332d"
+    },
     "b90378a3-1fae-4535-b33f-ccc4edf514ea:en:fa27533feb1d1ca9846cddf355c900b9e352c17099669538d88844782fe69431:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b90378a3-1fae-4535-b33f-ccc4edf514ea",
       "locale": "en",
@@ -339847,6 +340290,14 @@
         }
       ],
       "record_hash": "15b2c2e5d7879b5f7e04f4d5af2b415c553c74d70da90ca97dc262fd954b85d8"
+    },
+    "ba15e3da-aab4-401c-9ec7-64b88ac22833:af:036b1690d522dbe9b66641ba794870a4417182eb5a9061224ec779a7ba10c3c2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
+      "locale": "af",
+      "content_hash": "036b1690d522dbe9b66641ba794870a4417182eb5a9061224ec779a7ba10c3c2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "25b702a6b89040151c1aed13c8c030ae13b98f4bcbe489fe820462251c99de27"
     },
     "ba15e3da-aab4-401c-9ec7-64b88ac22833:ar:78b46a4e2a2b70680a7564f6964dc7f7b91d7acbad47e25992c3bda7ca9eb192:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",

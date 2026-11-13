@@ -16314,11 +16314,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vrou",
+        "alias": "wanneer-god-se-manier-werk",
+        "history": [
+          "/af/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -30803,11 +30804,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "তিনি-তাঁর-লোকদের-তাদের-পাপ-থেকে-উদ্ধার-করবেন",
+        "history": [
+          "/bn/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -32698,11 +32700,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "নারী",
+        "alias": "এক-মায়ের-উপাসনা",
+        "history": [
+          "/bn/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -52487,11 +52490,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "γυναίκα",
+        "alias": "η-λατρεία-μιασ-μητέρασ",
+        "history": [
+          "/el/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -76273,11 +76277,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "jóvenes",
+        "alias": "un-proceso-de-noviazgo-centrado-en-cristo",
+        "history": [
+          "/es/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -77781,11 +77786,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "mujer",
+        "alias": "la-adoración-de-una-madre",
+        "history": [
+          "/es/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -178326,11 +178332,12 @@
       },
       "7750b3b4-3c80-48a5-860c-4958331969d7": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-power-of-kindness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "дети",
+        "alias": "сила-доброты",
+        "history": [
+          "/ru/articles/the-power-of-kindness/"
+        ],
+        "fallback": false
       },
       "7783f526-dda5-4e3d-8f54-9840aa68a419": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -219474,11 +219481,12 @@
       },
       "b8ff6643-9234-465f-ab06-4adfc189a851": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-22",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "编者的话",
+        "alias": "编者的话-5",
+        "history": [
+          "/zh-Hans/articles/from-the-editor-22/"
+        ],
+        "fallback": false
       },
       "b90378a3-1fae-4535-b33f-ccc4edf514ea": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
