@@ -33649,11 +33649,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "চিকিৎসা",
+        "alias": "অতি-প্রক্রিয়াজাত-খাবারের-বিপদ",
+        "history": [
+          "/bn/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -43545,11 +43546,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medizin",
+        "alias": "die-gefahren-hochverarbeiteter-lebensmittel",
+        "history": [
+          "/de/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -52924,11 +52926,12 @@
       },
       "55b18915-e213-448c-8fe1-d430e195e768": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "men-of-faith",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "χριστιανική-ζωή",
+        "alias": "άνδρεσ-τησ-πίστησ",
+        "history": [
+          "/el/articles/men-of-faith/"
+        ],
+        "fallback": false
       },
       "55e4dde8-b528-4ae4-b916-f122c8ff7237": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -78719,11 +78722,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medicina",
+        "alias": "los-peligros-de-los-alimentos-ultraprocesados",
+        "history": [
+          "/es/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -136564,11 +136568,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "그리스도인의-삶",
+        "alias": "예수-그리스도-깨어진-인류의-해답",
+        "history": [
+          "/ko/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -137153,11 +137158,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "여성",
+        "alias": "어머니의-예배",
+        "history": [
+          "/ko/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -145275,11 +145281,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristent-liv",
+        "alias": "han-skal-frelse-sitt-folk-fra-deres-synder",
+        "history": [
+          "/nb/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -157161,11 +157168,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vrouw",
+        "alias": "de-aanbidding-van-een-moeder",
+        "history": [
+          "/nl/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -177914,11 +177922,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "медицина",
+        "alias": "опасность-ультрапереработанных-продуктов",
+        "history": [
+          "/ru/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -199872,11 +199881,12 @@
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "when-god-s-way-works",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "wanawake",
+        "alias": "njia-ya-mungu-inapofanya-kazi",
+        "history": [
+          "/sw/articles/when-god-s-way-works/"
+        ],
+        "fallback": false
       },
       "ba1df680-e125-4b7a-a6dd-6ad35433e1b5": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",

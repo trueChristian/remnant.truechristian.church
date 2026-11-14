@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "14d66c1495f984a163090fb96ff827699fa36324b35e057b2273145e886f9aef",
+  "integrity": "5424e4f773aa02dc15f4584dd0da61cbd7c40dbb1402461104d65e0ec784942a",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -2300,6 +2300,175 @@
         }
       ],
       "record_hash": "fcc8bd144a792486be07eaea461bf3a1f1c02fa2c686f428eb53532dbe45d10e"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:nb:f6209cf7d147f1964633910232d34471388f22646abf61fd861dfeb2f395c591:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "nb",
+      "content_hash": "f6209cf7d147f1964633910232d34471388f22646abf61fd861dfeb2f395c591",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "101a908a4183a5e52d6b373d",
+          "quote": "Matteus 1:21",
+          "before": "kal frelse sitt folk fra deres synder» (",
+          "after": ").",
+          "spans": [
+            [
+              353,
+              365
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "9e4378322e3716e654bedb36",
+          "quote": "Johannes 3:18-21",
+          "before": "in syndige tilstand. Her er noen vers i ",
+          "after": " som hjelper oss å forstå dette hinderet",
+          "spans": [
+            [
+              1448,
+              1464
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "7bc299b59007216e061e3f5e",
+          "quote": "Johannes 3:19-21",
+          "before": "ig at gjerningene hans er gjort i Gud» (",
+          "after": ").",
+          "spans": [
+            [
+              1809,
+              1825
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "1a729ac9711367cac2aefe36",
+          "quote": "Lukas 7:29-30",
+          "before": "elv, idet de ikke lot seg døpe av ham» (",
+          "after": ").",
+          "spans": [
+            [
+              2631,
+              2644
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "69072234055f4a94f61bae91",
+          "quote": "1. Timoteus 5:24-25",
+          "before": " de som ikke er det, kan ikke skjules» (",
+          "after": ").",
+          "spans": [
+            [
+              3153,
+              3172
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "59e534def99f795eac019f23",
+          "quote": "Johannes 8:11",
+          "before": "dømmer deg. Gå bort, og synd ikke mer» (",
+          "after": ").",
+          "spans": [
+            [
+              3553,
+              3566
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "0ed720e76d03f0dc6f6d135c",
+          "quote": "Markus 10:21",
+          "before": "en. Kom så, ta opp korset og følg meg» (",
+          "after": ").",
+          "spans": [
+            [
+              3707,
+              3719
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "cd327fb4db03fd35e5bce8c8",
+          "quote": "Lukas 22:32",
+          "before": " har vendt om, så styrk brødrene dine» (",
+          "after": ").",
+          "spans": [
+            [
+              3782,
+              3793
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "1f02079adb195b03caccfa38",
+          "quote": "Lukas 9:23-24",
+          "before": "et sitt for min skyld, skal berge det» (",
+          "after": ").",
+          "spans": [
+            [
+              4039,
+              4052
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "3960209a4ba416439d7c71d0",
+          "quote": "Markus 6:16-28",
+          "before": "tsette å være sammen med Herodias? (Les ",
+          "after": ".) Måtte han virkelig være så konfronter",
+          "spans": [
+            [
+              4690,
+              4704
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "78682df99247f4f0729e8396648608c5a77b9601099e8c467beaeb389b847080"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:nl:2fc2c86d8a87c42b77f817cac17c8a9b49e8a4826b5b43ce2cbb9a65f094f313:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -100957,6 +101126,400 @@
       ],
       "record_hash": "22aba66c47e3c3d395547b030b8021861626ae94cc736109a3571b61814d9f8d"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:ko:2276164148f9003a5941527454cc88d447cb47ff463fcc0516d55721febce2fc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "ko",
+      "content_hash": "2276164148f9003a5941527454cc88d447cb47ff463fcc0516d55721febce2fc",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "28290d7d8c635122143b99e7",
+          "quote": "창세기 3",
+          "before": " 인간이 타락한 이후로 깨어짐과 죄는 계속되어 왔습니다. 최초의 기록은 ",
+          "after": "장에 나옵니다. “그가 이르되 내가 동산에서 주의 음성을 듣고 내가 벗었",
+          "spans": [
+            [
+              967,
+              972
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "b6d6358efb3ba1815ad752c7",
+          "quote": "창세기 3:10",
+          "before": "내가 동산에서 주의 음성을 듣고 내가 벗었으므로 두려워하여 숨었나이다”(",
+          "after": "). 아담은 두려워했습니다. 무엇을 두려워했을까요? 아담과 하와는 자기 ",
+          "spans": [
+            [
+              1029,
+              1037
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "f47f612ff9566aca8d03e03f",
+          "quote": "창세기 4:5",
+          "before": "과 그의 제물은 받지 아니하셨으므로 가인이 몹시 분하여 안색이 변하니”(",
+          "after": "). 당신도 이런 아이들 가운데 하나였을 수 있습니다.",
+          "spans": [
+            [
+              1932,
+              1939
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "655dd74d13a3c46fd2f0514d",
+          "quote": "창세기 1",
+          "before": " 전문가들은 정서적 어려움의 해결책으로 약초와 팅크제, 차를 권합니다. ",
+          "after": "장에서 하나님은 먹을거리로 푸른 풀과 나무를 창조하셨습니다. 그 가운데 ",
+          "spans": [
+            [
+              2850,
+              2855
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "246fff2d6f3325ba8da63b2b",
+          "quote": "요한복음 3:3",
+          "before": ", 예수님께서는 거듭나지 않으면 하늘나라를 볼 수 없다고 말씀하셨습니다(",
+          "after": "). 많은 사람이 마음속의 혼란과 무거움을 해결할 방법을 찾아 온 세상을",
+          "spans": [
+            [
+              3116,
+              3124
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "279b5caaf01254968cab4a06",
+          "quote": "요한복음 3:7",
+          "before": "말하는 참된 구원이란 무엇일까요? 예수님께서 “너희가 거듭나야 하리라”(",
+          "after": ")고 말씀하셨을 때 무슨 뜻이셨을까요? 때때로 우리는 성경의 저자이신 하",
+          "spans": [
+            [
+              3412,
+              3420
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "f7ec8598cd782e318bc8ec5d",
+          "quote": "고린도후서 11:2-3",
+          "before": "너희 마음이 그리스도 안에 있는 단순함에서 떠나 부패할까 두려워하노라”(",
+          "after": "). 구원이라는 복음은 단순하며 얻기 어렵지 않습니다. 구원에 이르는 성",
+          "spans": [
+            [
+              3666,
+              3678
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "7a29f23ea2581a73b3fa2e4e",
+          "quote": "마태복음 3:6",
+          "before": "때였습니다. “자기들의 죄를 자백하며 요단강에서 그에게 세례를 받더니”(",
+          "after": "). 구원의 첫 단계는 하나님께 죄를 고백하는 것입니다. 하나님은 어차피",
+          "spans": [
+            [
+              3844,
+              3852
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "14867595f448526db71947f8",
+          "quote": "야고보서 5:16",
+          "before": "병 낫기를 위하여 서로 기도하라. 의인의 간구는 역사하는 힘이 크니라”(",
+          "after": "). 목회자나 신앙이 성숙한 그리스도인의 도움을 구하십시오. 이성인 사람",
+          "spans": [
+            [
+              4220,
+              4229
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "cb16700c269433667bcc5200",
+          "quote": "사도행전 3:19",
+          "before": "이 함을 받으라. 그리하면 새롭게 되는 때가 주의 앞에서 이를 것이요”(",
+          "after": "). “그러므로 너의 이 악함을 회개하고 하나님께 기도하라. 혹 마음의 ",
+          "spans": [
+            [
+              4559,
+              4568
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "08b891188bb830194523add6",
+          "quote": "사도행전 8:22",
+          "before": " 회개하고 하나님께 기도하라. 혹 마음의 생각을 용서받을 수 있으리라”(",
+          "after": "). 죄를 회개함으로써 당신은 죄 많은 삶에서 떠나 반대 방향으로 돌아서",
+          "spans": [
+            [
+              4625,
+              4634
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "2b81789e6b5ae09ede8ac9ef",
+          "quote": "로마서 10:13",
+          "before": "“누구든지 주의 이름을 부르는 자는 구원을 받으리라”(",
+          "after": "). 이제 죄를 고백하고 회개했으니, 주 예수님의 이름을 불러 죄를 씻어",
+          "spans": [
+            [
+              4763,
+              4772
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "7b375eefc0ef065c4ee648d5",
+          "quote": "사도행전 2:21",
+          "before": " 하셨습니다. “누구든지 주의 이름을 부르는 자는 구원을 받게 되리라”(",
+          "after": "). “너희가 알거니와 너희 조상에게서 물려받은 헛된 행실에서 너희가 은",
+          "spans": [
+            [
+              4957,
+              4966
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "62f05718182e35d1700d8c67",
+          "quote": "베드로전서 1:18-19",
+          "before": "도 없고 점도 없는 어린양 같은 그리스도의 보배로운 피로 된 것이니라”(",
+          "after": "). “맑은 물을 너희에게 뿌려 너희를 정결하게 하리니 너희가 모든 더러",
+          "spans": [
+            [
+              5074,
+              5087
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "e0285e9e96ef6a8741aa65d9",
+          "quote": "에스겔 36:25-28",
+          "before": "땅에 거주할 것이며 너희는 내 백성이 되고 나는 너희 하나님이 되리라”(",
+          "after": ").",
+          "spans": [
+            [
+              5332,
+              5344
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "8210d351ca7a6752ca73a632",
+          "quote": "사도행전 16:30-31",
+          "before": "이르되 주 예수 그리스도를 믿으라. 그리하면 네가 구원을 받으리라 …”(",
+          "after": "). 당신은 죄를 고백하고 회개했으며, 예수님께 피로 죄를 씻어 달라고 ",
+          "spans": [
+            [
+              5499,
+              5512
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "a370bd3ba227f76589228c7a",
+          "quote": "로마서 10:9",
+          "before": "그를 죽은 자 가운데서 살리신 것을 네 마음에 믿으면 구원을 받으리라”(",
+          "after": "). “하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 그를 믿는",
+          "spans": [
+            [
+              5682,
+              5690
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "f793677dbe187903b71d6e02",
+          "quote": "요한복음 3:16",
+          "before": "으니 이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라”(",
+          "after": "). 당신의 죄를 가져가신 주님께 감사하십시오. 당신을 그분의 자녀로 삼",
+          "spans": [
+            [
+              5759,
+              5768
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "b1fa76485dc7c0f4675df9a0",
+          "quote": "베드로전서 3:21",
+          "before": "의 더러운 것을 제거함이 아니요 하나님을 향한 선한 양심의 응답이니라”(",
+          "after": "). 깨끗한 양심을 가진 그 사람이 바로 당신일 수 있습니다!",
+          "spans": [
+            [
+              6101,
+              6111
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "fc1c4b58ac9badf1b2fe2951",
+          "quote": "에베소서 4:21-23",
+          "before": "는 욕심을 따라 썩어져 가는 것이니라. 너희 마음의 영이 새롭게 되어”(",
+          "after": "). 이는 중요한 주제이며 더 많은 글을 쓸 수 있습니다.",
+          "spans": [
+            [
+              6493,
+              6505
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "af345754a820a5aed64ba351",
+          "quote": "마태복음 7:13-14",
+          "before": ", 생명으로 인도하는 문은 좁고 그 길이 협착하여 찾는 자가 적음이라”(",
+          "after": ").",
+          "spans": [
+            [
+              6857,
+              6869
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "8e3dfecfc16858980f9954fd",
+          "quote": "누가복음 9:23",
+          "before": "오려거든 자기를 부인하고 날마다 제 십자가를 지고 나를 따를 것이니라”(",
+          "after": "). 우리는 날마다 육체의 욕망을 십자가에 못 박아야 하지만, 이제 하나",
+          "spans": [
+            [
+              7189,
+              7198
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "d116a32614f6d8f8bdb88d65",
+          "quote": "요한일서 1:7,9",
+          "before": "로우사 우리 죄를 사하시며 우리를 모든 불의에서 깨끗하게 하시느니라.”(",
+          "after": ").",
+          "spans": [
+            [
+              7524,
+              7534
+            ]
+          ],
+          "osis": "1John.1.7,1John.1.9",
+          "queries": [
+            "62 1:7",
+            "62 1:9"
+          ]
+        },
+        {
+          "id": "fdefdbcba55838cf158b5b1a",
+          "quote": "고린도후서 9:15",
+          "before": "구원입니다. “말할 수 없는 그의 은사로 말미암아 하나님께 감사하노라”(",
+          "after": "). 구원의 값없는 선물은 당신에게도 열려 있습니다.",
+          "spans": [
+            [
+              7917,
+              7927
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "8fa1313d390d41903d0d0f05536d92333dd21f1d054ef8f3dc727bfaa902d867"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:nb:8817776edbf04173bd1d5b8fa8deab8ceb0b92d57bafd1e454edf9f66168d2b7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "nb",
@@ -146589,6 +147152,22 @@
       "markers": [],
       "record_hash": "1dea086af0966bb54f06a56a50a35b33fbe07e2cfda2d79d730b31510cee8da4"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:ko:c960e77340e949f683948b8a99d36d6fbf8784cd9748f3e0d4b34bc6cf9e8b78:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "ko",
+      "content_hash": "c960e77340e949f683948b8a99d36d6fbf8784cd9748f3e0d4b34bc6cf9e8b78",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "55498cca7081ec5a652dd48a270856c01e318ee3ef042944db0b3c3819716c2d"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:nl:7c36b57b540a954205dc068e550eeacc154fc061e5dd9165f32cb616a6db8616:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "nl",
+      "content_hash": "7c36b57b540a954205dc068e550eeacc154fc061e5dd9165f32cb616a6db8616",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "62124c810468b93e3ffc18e96938dd50df43ded81209a8a70203ca9ec7dca8ca"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:pt:be17d602888fb3e188806e7f5436cdd2fbb41faaa698c0d7a7c5dd70bfedee44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "pt",
@@ -174145,6 +174724,287 @@
       ],
       "record_hash": "58fe2fa65e79c0065013323958d7a2db11d82780d1aa2f4d7926733b4b0bd325"
     },
+    "55b18915-e213-448c-8fe1-d430e195e768:el:41ff5cb080810aa28fdcb2d2e0e43c5ed37afd0fbc3f593fb37385ec9ecc9ea0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "55b18915-e213-448c-8fe1-d430e195e768",
+      "locale": "el",
+      "content_hash": "41ff5cb080810aa28fdcb2d2e0e43c5ed37afd0fbc3f593fb37385ec9ecc9ea0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "6730e56b1f689bb6eef53c7c",
+          "quote": "Ματθαίος 14:28-29",
+          "before": "νω στο νερό για να πάει προς τον Ιησού –",
+          "after": ".",
+          "spans": [
+            [
+              307,
+              324
+            ]
+          ],
+          "osis": "Matt.14.28-Matt.14.29",
+          "queries": [
+            "40 14:28-29"
+          ]
+        },
+        {
+          "id": "732d7c15a8b73f2f742f6c7e",
+          "quote": "Ματθαίος 14:22",
+          "before": "θη, ενώ εκείνος αποχαιρετούσε τα πλήθη –",
+          "after": ".",
+          "spans": [
+            [
+              809,
+              823
+            ]
+          ],
+          "osis": "Matt.14.22",
+          "queries": [
+            "40 14:22"
+          ]
+        },
+        {
+          "id": "1412816282d85f493391c2be",
+          "quote": "Ματθαίος 14:25-27",
+          "before": " «Έχετε θάρρος· εγώ είμαι· μη φοβάστε» –",
+          "after": ".",
+          "spans": [
+            [
+              1449,
+              1466
+            ]
+          ],
+          "osis": "Matt.14.25-Matt.14.27",
+          "queries": [
+            "40 14:25-27"
+          ]
+        },
+        {
+          "id": "43cc179cca213b34c8a43aa0",
+          "quote": "Ματθαίος 14:28",
+          "before": "ξέ με να έρθω προς εσένα πάνω στο νερό –",
+          "after": ". Τι σκεφτόταν ο Πέτρος; Ποτέ δεν είχε π",
+          "spans": [
+            [
+              1600,
+              1614
+            ]
+          ],
+          "osis": "Matt.14.28",
+          "queries": [
+            "40 14:28"
+          ]
+        },
+        {
+          "id": "54f1b8b844e0408f0cfc065f",
+          "quote": "Λουκάς 9:3",
+          "before": "ύτε να έχετε από δύο χιτώνες ο καθένας –",
+          "after": ".",
+          "spans": [
+            [
+              4647,
+              4657
+            ]
+          ],
+          "osis": "Luke.9.3",
+          "queries": [
+            "42 9:3"
+          ]
+        },
+        {
+          "id": "6e382b69de32deb7a3da1378",
+          "quote": "Λουκάς 22:35",
+          "before": "τα, σας έλειψε κάτι; Και είπαν, Τίποτα –",
+          "after": ".",
+          "spans": [
+            [
+              4846,
+              4858
+            ]
+          ],
+          "osis": "Luke.22.35",
+          "queries": [
+            "42 22:35"
+          ]
+        },
+        {
+          "id": "34789e50c9937d5b3d731c83",
+          "quote": "Ματθαίος 14:30-32",
+          "before": "ν μπήκαν στο πλοίο, ο άνεμος σταμάτησε –",
+          "after": ".",
+          "spans": [
+            [
+              7208,
+              7225
+            ]
+          ],
+          "osis": "Matt.14.30-Matt.14.32",
+          "queries": [
+            "40 14:30-32"
+          ]
+        },
+        {
+          "id": "38515b904205d52ddfd2858f",
+          "quote": "προς Εβραίους 11",
+          "before": "Στην ",
+          "after": " διαβάζουμε ότι …η πίστη είναι η ουσία τ",
+          "spans": [
+            [
+              7555,
+              7571
+            ]
+          ],
+          "osis": "Heb.11.1-Heb.11.40",
+          "queries": [
+            "58 11:1-40"
+          ]
+        },
+        {
+          "id": "3c6b567bc349477d6ed31360",
+          "quote": "Εβραίους 11:1",
+          "before": "εκμήριο των πραγμάτων που δεν βλέπουμε –",
+          "after": ".",
+          "spans": [
+            [
+              7687,
+              7700
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "144eb8c8c7add0b055e7e2c5",
+          "quote": "Ιωάννης 1:1",
+          "before": "τον Θεό, και ο Λόγος [Logos] ήταν Θεός –",
+          "after": ". Από την ελληνική λέξη Λόγος προέρχεται",
+          "spans": [
+            [
+              8642,
+              8653
+            ]
+          ],
+          "osis": "John.1.1",
+          "queries": [
+            "43 1:1"
+          ]
+        },
+        {
+          "id": "582ffdc050df77a9c07692e8",
+          "quote": "Ιωάννης 16:13",
+          "before": "ς, θα σας οδηγήσει σε όλη την αλήθεια… –",
+          "after": ".",
+          "spans": [
+            [
+              9232,
+              9245
+            ]
+          ],
+          "osis": "John.16.13",
+          "queries": [
+            "43 16:13"
+          ]
+        },
+        {
+          "id": "41b2b701a3f946d9eb3a6bc8",
+          "quote": "Α΄ Κορινθίους 2:14",
+          "before": "ωρίσει, επειδή διακρίνονται πνευματικά –",
+          "after": ". Οι άνδρες της πίστης είναι εκείνοι των",
+          "spans": [
+            [
+              9880,
+              9898
+            ]
+          ],
+          "osis": "1Cor.2.14",
+          "queries": [
+            "46 2:14"
+          ]
+        },
+        {
+          "id": "0687f8a80ca3420b138135a4",
+          "quote": "Ματθαίος 14:31",
+          "before": "ον Πέτρο, …Ολιγόπιστε, γιατί αμφέβαλες; ",
+          "after": ". Ο Πέτρος μόλις είχε περπατήσει πάνω στ",
+          "spans": [
+            [
+              10475,
+              10489
+            ]
+          ],
+          "osis": "Matt.14.31",
+          "queries": [
+            "40 14:31"
+          ]
+        },
+        {
+          "id": "b313b365fa0651020ac26519",
+          "quote": "Ματθαίος 17:20",
+          "before": "ι τίποτε δεν θα είναι αδύνατο για εσάς –",
+          "after": ".",
+          "spans": [
+            [
+              10908,
+              10922
+            ]
+          ],
+          "osis": "Matt.17.20",
+          "queries": [
+            "40 17:20"
+          ]
+        },
+        {
+          "id": "45e08a5440ea79588de8712e",
+          "quote": "Ματθαίος 14:32",
+          "before": "ν μπήκαν στο πλοίο, ο άνεμος σταμάτησε –",
+          "after": ". Και απέδειξε ότι είναι ο Κύριος του πν",
+          "spans": [
+            [
+              11754,
+              11768
+            ]
+          ],
+          "osis": "Matt.14.32",
+          "queries": [
+            "40 14:32"
+          ]
+        },
+        {
+          "id": "a15bf0c1cc70d8d618697595",
+          "quote": "Ματθαίος 14:33",
+          "before": "ντας, Πραγματικά είσαι ο Υιός του Θεού –",
+          "after": ".",
+          "spans": [
+            [
+              11932,
+              11946
+            ]
+          ],
+          "osis": "Matt.14.33",
+          "queries": [
+            "40 14:33"
+          ]
+        },
+        {
+          "id": "249dda2260f8375268551ef3",
+          "quote": "Γαλάτες 6:2",
+          "before": "έτσι εκπληρώνουμε τον νόμο του Χριστού –",
+          "after": ".",
+          "spans": [
+            [
+              13483,
+              13494
+            ]
+          ],
+          "osis": "Gal.6.2",
+          "queries": [
+            "48 6:2"
+          ]
+        }
+      ],
+      "record_hash": "95d180fcba8e82569c14105a2cc7d5d4eff18f74f1a083e333eb7a7aa4b0601f"
+    },
     "55b18915-e213-448c-8fe1-d430e195e768:en:668b0d8e55481566d1e40ab7c6afebbe6ffd333b7ede462712a6e9fe59b9f3c0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "55b18915-e213-448c-8fe1-d430e195e768",
       "locale": "en",
@@ -200568,6 +201428,152 @@
       ],
       "record_hash": "af36d00596f086ec64f8bb6c4655163d2e020674da6620c3715b6e7498e333a6"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:bn:de8c0cb860c0d88ee54520a15449d28614d980bf29c9f767ecf9c5816ec840fa:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "bn",
+      "content_hash": "de8c0cb860c0d88ee54520a15449d28614d980bf29c9f767ecf9c5816ec840fa",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "aa3611fd2717052ea1a5b398",
+          "quote": "দানিয়েল ১",
+          "before": "়েল ও তাঁর বন্ধুরা যখন বাবিলে পৌঁছালেন (",
+          "after": "), তখন তাঁদের রাজার টেবিলের মাংস দেওয়া ",
+          "spans": [
+            [
+              2855,
+              2865
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "18f720b6f4d7d1be849919d3",
+          "quote": "প্রেরিত ১৫",
+          "before": " সভায় এই প্রশ্নটি বিবেচনা করা হয়েছিল (",
+          "after": ")।",
+          "spans": [
+            [
+              3490,
+              3500
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "5059ccf70926ae7a542aac0a",
+          "quote": "১ করিন্থীয় ৩:১৬",
+          "before": "ঈশ্বরের আত্মা তোমাদের মধ্যে বাস করেন?” (",
+          "after": ")।",
+          "spans": [
+            [
+              3974,
+              3990
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "42095363e4c18355070277cc",
+          "quote": "ইফিষীয় ৫:১৫",
+          "before": "; নির্বোধের মতো নয়, বরং জ্ঞানীর মতো।” (",
+          "after": ") আমাদের বিচক্ষণতার সঙ্গে জীবনযাপন করতে ",
+          "spans": [
+            [
+              11943,
+              11955
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "fb61a139a596340120c2ca6a88f02cfbd0590fd2506e833e140fc89b80032031"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:de:8bce15759500ffea51744cca45b5408d615dc7536926abfe0cceba174adf0d5c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "de",
+      "content_hash": "8bce15759500ffea51744cca45b5408d615dc7536926abfe0cceba174adf0d5c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fd9b4a4c9b1f6dfa08280ea0",
+          "quote": "Daniel 1",
+          "before": "l und seine Freunde nach Babylon kamen (",
+          "after": "), wurde ihnen Fleisch von der königlich",
+          "spans": [
+            [
+              3544,
+              3552
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "37d9b330c3683357739f45e6",
+          "quote": "Apostelgeschichte 15",
+          "before": "rusalem befasste sich mit dieser Frage (",
+          "after": ").",
+          "spans": [
+            [
+              4286,
+              4306
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "8005abb021d65338cb634f4a",
+          "quote": "1. Korinther 3,16",
+          "before": " und dass Gottes Geist in euch wohnt?“ (",
+          "after": ").",
+          "spans": [
+            [
+              4829,
+              4846
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "e9ee7bf267c30fd271c5a43d",
+          "quote": "Epheser 5",
+          "before": "nicht wie Unweise, sondern wie Weise.“ (",
+          "after": ",15) Wir sollen umsichtig leben und klug",
+          "spans": [
+            [
+              14617,
+              14626
+            ]
+          ],
+          "osis": "Eph.5.1-Eph.5.33",
+          "queries": [
+            "49 5:1-33"
+          ]
+        }
+      ],
+      "record_hash": "62d37caec7db824b811cbb23dac7cd92339c8a9217804f61409f5d2516deec5b"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:en:4250cb3f813cfd4ee10fc7150fd3ad15535dd12d65a37f35d832c7b5b53e1b48:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "en",
@@ -200641,6 +201647,79 @@
       ],
       "record_hash": "05030196bb789fb1d8a0c615c8512a104c961cad3568e1ef07212e6e600c3241"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:es:d927c9aadb053fcada6404d2f4153f31e5180990f264a15854cd7dfecf8ad379:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "es",
+      "content_hash": "d927c9aadb053fcada6404d2f4153f31e5180990f264a15854cd7dfecf8ad379",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b063be2e78fb622c581d5bf3",
+          "quote": "Daniel 1",
+          "before": "niel y sus amigos llegaron a Babilonia (",
+          "after": "), les ofrecieron la carne de la mesa de",
+          "spans": [
+            [
+              3373,
+              3381
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "256044d3763016c8858ee68e",
+          "quote": "Hechos 15",
+          "before": "esia en Jerusalén sopesó esta cuestión (",
+          "after": ").",
+          "spans": [
+            [
+              4093,
+              4102
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "3cd5fda7204c49d7828cc127",
+          "quote": "1 Corintios 3:16",
+          "before": "el Espíritu de Dios mora en vosotros?» (",
+          "after": ").",
+          "spans": [
+            [
+              4586,
+              4602
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "96ffd92ea134abe8d6e58638",
+          "quote": "Efesios 5:15",
+          "before": "is; no como necios, sino como sabios». (",
+          "after": ") Debemos vivir con prudencia y tomar de",
+          "spans": [
+            [
+              13789,
+              13801
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "4a36770680c710dc20d053677c84bc06cfa79da228cc0633e107599e1c605cc9"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:hi:364108f4c3c05b678c5580acd6fd6b396b1c6d174d01145307a38a05b5269439:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "hi",
@@ -200713,6 +201792,79 @@
         }
       ],
       "record_hash": "46167efff33aa0161dd1f5ebd361e3713aaa2e31c73c6779f0a2eb9a897f71f0"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:ru:904b85d305025a2085a87285e1a1eafeeea11662436b1e2a701a1b14abe6c5a7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "ru",
+      "content_hash": "904b85d305025a2085a87285e1a1eafeeea11662436b1e2a701a1b14abe6c5a7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ddc1e23767d78bf9f1e7ab57",
+          "quote": "Даниил 1",
+          "before": "ниил и его друзья оказались в Вавилоне (",
+          "after": "), им предложили мясо с царского стола, ",
+          "spans": [
+            [
+              3058,
+              3066
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "fd15bffb4d4efce4788fb682",
+          "quote": "Деяния 15",
+          "before": "ассмотрел церковный собор в Иерусалиме (",
+          "after": ").",
+          "spans": [
+            [
+              3703,
+              3712
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "86136aeb5150c38f442e30af",
+          "quote": "1 Коринфянам 3:16",
+          "before": " храм Божий, и Дух Божий живёт в вас?» (",
+          "after": ").",
+          "spans": [
+            [
+              4164,
+              4181
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "b4d846b2f1e75bc72a9f7cbe",
+          "quote": "Ефесянам 5:15",
+          "before": "но, не как неразумные, но как мудрые». (",
+          "after": ") Мы должны жить рассудительно и делать ",
+          "spans": [
+            [
+              12873,
+              12886
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "f26f724ca91274d437f12d8ac98172503ea97bf31fa9c3678b97b07d8de0d163"
     },
     "682dc04d-bea3-4325-ac73-926bb3396990:zh-Hans:453d809c9835625bb839996e7e2c1aa8ecdf0a44d47ea4d14d2d8e086f70d2ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
@@ -341821,6 +342973,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "99cb886d70c24219a68f0a2b29f878b54a76e59a95575bf0f13d8fb6a51ba974"
+    },
+    "ba15e3da-aab4-401c-9ec7-64b88ac22833:sw:e3384208158d2e9cdb2a82a67771f6d5b046312fc680e2a9e9f54708573a7ac2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
+      "locale": "sw",
+      "content_hash": "e3384208158d2e9cdb2a82a67771f6d5b046312fc680e2a9e9f54708573a7ac2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "931d4b157e83e5d46f0f12110dea24ae3f1deec060b225a7d90c03b70bde11be"
     },
     "ba15e3da-aab4-401c-9ec7-64b88ac22833:ur:e5903560b18bbb0cedf6217f4b8dc6972798fa64e1316e8ab37169d9a5c2bee5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
