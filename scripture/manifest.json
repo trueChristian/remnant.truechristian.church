@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "b064fd6980477fed9da31b5cde06dc153149c9cf647c0523abec08c7f60c61d8",
+  "integrity": "14d66c1495f984a163090fb96ff827699fa36324b35e057b2273145e886f9aef",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -416,6 +416,344 @@
         }
       ],
       "record_hash": "6aa1368a74d4b3a0692fc1dcabbb7fc13006c3339c92324b0a54dc9128e1be02"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:af:d9e9cf14d6c37ab66db22a16c04b918e970d30957f85c23b701d18fd5c566d6d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "af",
+      "content_hash": "d9e9cf14d6c37ab66db22a16c04b918e970d30957f85c23b701d18fd5c566d6d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c6a121e00002a03c0b14a367",
+          "quote": "Matteus 1:21",
+          "before": "t sy volk van hulle sondes sal verlos” (",
+          "after": ").",
+          "spans": [
+            [
+              357,
+              369
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "e7153926eb5dc3093acdbe7b",
+          "quote": "Johannes 3:18-21",
+          "before": "tand erken nie. Hier is enkele verse in ",
+          "after": " wat ons help om hierdie struikelblok te",
+          "spans": [
+            [
+              1583,
+              1599
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "80f2da4b9568a46282bab6a3",
+          "quote": "Johannes 3:19-21",
+          "before": "an word dat sy werke in God gedoen is” (",
+          "after": ").",
+          "spans": [
+            [
+              1946,
+              1962
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "0c2cabe1a9ec45a2118e25b5",
+          "quote": "Lukas 7:29-30",
+          "before": "mdat hulle nie deur hom gedoop is nie” (",
+          "after": ").",
+          "spans": [
+            [
+              2847,
+              2860
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "2198ec38b0457350c9757fbf",
+          "quote": "1 Timoteus 5:24-25",
+          "before": "t anders is, kan nie verborge bly nie” (",
+          "after": ").",
+          "spans": [
+            [
+              3377,
+              3395
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "e92191889dbde2ff23879c96",
+          "quote": "Johannes 8:11",
+          "before": "nie. Gaan heen en sondig nie meer nie” (",
+          "after": ").",
+          "spans": [
+            [
+              3792,
+              3805
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "64749bab595b4b2d7648be69",
+          "quote": "Markus 10:21",
+          "before": "kom dan, neem die kruis op en volg My” (",
+          "after": ").",
+          "spans": [
+            [
+              3960,
+              3972
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "75c9f61c5766e9c8441fd2c6",
+          "quote": "Lukas 22:32",
+          "before": "erd is, moet jy jou broeders versterk” (",
+          "after": ").",
+          "spans": [
+            [
+              4054,
+              4065
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "1a377cc60ef8fb5aeee8a740",
+          "quote": "Lukas 9:23-24",
+          "before": " om My ontwil verloor, hy sal dit red” (",
+          "after": ").",
+          "spans": [
+            [
+              4311,
+              4324
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "385a28d69080d0c4ce559959",
+          "quote": "Markus 6:16-28",
+          "before": " word en by Herodias kon bly nie? (Lees ",
+          "after": ".) Moes hy regtig so konfronterend wees ",
+          "spans": [
+            [
+              4941,
+              4955
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "553d608a03d07afa4deacee7db962c2fc394fdee2771612bab5e47c77293eed2"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:ar:cf93d27a5ecd03abf9d1a03e4693dd3ea52f72e41796e0463d1a83e82a45d298:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "ar",
+      "content_hash": "cf93d27a5ecd03abf9d1a03e4693dd3ea52f72e41796e0463d1a83e82a45d298",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "201a776dba93a5a747720c5f",
+          "quote": "متى 1:21",
+          "before": "اسمه يسوع، لأنه يخلّص شعبه من خطاياهم» (",
+          "after": ").",
+          "spans": [
+            [
+              296,
+              304
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "bbf273b5e12b5284d908e703",
+          "quote": "يوحنا 3:18-21",
+          "before": "ار بحالتهم الخاطئة. إليكم بعض الآيات في ",
+          "after": " التي تساعدنا على فهم هذه العقبة. «وأحب ",
+          "spans": [
+            [
+              1178,
+              1191
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "4ba198067155f699db300efa",
+          "quote": "يوحنا 3:19-21",
+          "before": "ور، لكي تظهر أعماله أنها بالله معمولة» (",
+          "after": ").",
+          "spans": [
+            [
+              1430,
+              1443
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "ca93b118aceb75b3c2d42c09",
+          "quote": "لوقا 7:29-30",
+          "before": "ة الله من جهة أنفسهم، غير معتمدين منه» (",
+          "after": ").",
+          "spans": [
+            [
+              2077,
+              2089
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "02e9a62d4bac877c43a05b55",
+          "quote": "تيموثاوس الأولى 5:24-25",
+          "before": "وأما التي ليست كذلك فلا يمكن أن تُخفى» (",
+          "after": ").",
+          "spans": [
+            [
+              2476,
+              2499
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "1817bec90e541ef5a14d6895",
+          "quote": "يوحنا 8:11",
+          "before": " ولا أنا أدينك. اذهبي ولا تخطئي أيضاً» (",
+          "after": ").",
+          "spans": [
+            [
+              2785,
+              2795
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "81bdcd27603cb83ad02f8a73",
+          "quote": "مرقس 10:21",
+          "before": " في السماء، وتعال احمل الصليب واتبعني» (",
+          "after": ").",
+          "spans": [
+            [
+              2895,
+              2905
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "89177161e8ad927c800667a6",
+          "quote": "لوقا 22:32",
+          "before": "«ومتى رجعتَ ثبّت إخوتك» (",
+          "after": ").",
+          "spans": [
+            [
+              2946,
+              2956
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "26ddf4acdd13f2a713f18796",
+          "quote": "لوقا 9:23-24",
+          "before": "ا، ومن يهلك نفسه من أجلي فهذا يخلّصها» (",
+          "after": ").",
+          "spans": [
+            [
+              3124,
+              3136
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "93d93c0f949138c7dc870256",
+          "quote": "مرقس 6:16-28",
+          "before": "وع لكي يُغفر له ويبقى مع هيروديا؟ (اقرأ ",
+          "after": "). وهل كان لا بد أن يكون صدامياً إلى هذا",
+          "spans": [
+            [
+              3639,
+              3651
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "a3ce21f35bcc8b632d6d90b76ae4b0b836c74f63f75e5f48c712401c3619a522"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:bn:c9990eba1923e911ebcc6f56786dd3717685d35a7e2fe78f93ed0148f6843d36:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -1793,6 +2131,175 @@
         }
       ],
       "record_hash": "1c897ffa236199242f43cb79d6eac459eb32f13e64d4ddaad77f1d33eb25ab14"
+    },
+    "01a0a64f-d629-4e05-b1ec-993f86ef4d68:ko:367b90f3366882699fa70aa9abc97a896fa9a97477a773c07a8c8389bb8b3a13:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
+      "locale": "ko",
+      "content_hash": "367b90f3366882699fa70aa9abc97a896fa9a97477a773c07a8c8389bb8b3a13",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3708c2e533e0e377160cffef",
+          "quote": "마태복음 1:21",
+          "before": "수라 하라. 이는 그가 자기 백성을 그들의 죄에서 구원할 자이심이라” (",
+          "after": ").",
+          "spans": [
+            [
+              276,
+              285
+            ]
+          ],
+          "osis": "Matt.1.21",
+          "queries": [
+            "40 1:21"
+          ]
+        },
+        {
+          "id": "91600f0643d630ddc92f9d6f",
+          "quote": "요한복음 3:18-21",
+          "before": " 많은 이들은 자신이 죄인이라는 사실을 인정하고 싶어 하지 않았습니다. ",
+          "after": "의 몇 구절은 우리가 이 장애물을 이해하는 데 도움이 됩니다. “사람들이",
+          "spans": [
+            [
+              890,
+              902
+            ]
+          ],
+          "osis": "John.3.18-John.3.21",
+          "queries": [
+            "43 3:18-21"
+          ]
+        },
+        {
+          "id": "6b8870add982fe016a45912a",
+          "quote": "요한복음 3:19-21",
+          "before": "나니, 이는 자기 행위가 하나님 안에서 행한 것임을 드러내려 함이라” (",
+          "after": ").",
+          "spans": [
+            [
+              1088,
+              1100
+            ]
+          ],
+          "osis": "John.3.19-John.3.21",
+          "queries": [
+            "43 3:19-21"
+          ]
+        },
+        {
+          "id": "f0a6f89106d31e90b1e79e81",
+          "quote": "누가복음 7:29-30",
+          "before": "게 세례를 받지 아니함으로 자기들을 위한 하나님의 뜻을 저버렸느니라” (",
+          "after": ").",
+          "spans": [
+            [
+              1529,
+              1541
+            ]
+          ],
+          "osis": "Luke.7.29-Luke.7.30",
+          "queries": [
+            "42 7:29-30"
+          ]
+        },
+        {
+          "id": "5b4426686d463a97885e89bf",
+          "quote": "디모데전서 5:24-25",
+          "before": "일부의 선행도 먼저 드러나며, 그렇지 않은 선행도 숨길 수 없느니라” (",
+          "after": ").",
+          "spans": [
+            [
+              1805,
+              1818
+            ]
+          ],
+          "osis": "1Tim.5.24-1Tim.5.25",
+          "queries": [
+            "54 5:24-25"
+          ]
+        },
+        {
+          "id": "fbebe5bca26e7862561b1d57",
+          "quote": "요한복음 8:11",
+          "before": "르시되 나도 너를 정죄하지 아니하노니, 가서 다시는 죄를 짓지 말라” (",
+          "after": ").",
+          "spans": [
+            [
+              2065,
+              2074
+            ]
+          ],
+          "osis": "John.8.11",
+          "queries": [
+            "43 8:11"
+          ]
+        },
+        {
+          "id": "6c8e783be9c41a702cf75fac",
+          "quote": "마가복음 10:21",
+          "before": "에서 보화가 네게 있으리라. 그리고 와서 십자가를 지고 나를 따르라” (",
+          "after": ").",
+          "spans": [
+            [
+              2165,
+              2175
+            ]
+          ],
+          "osis": "Mark.10.21",
+          "queries": [
+            "41 10:21"
+          ]
+        },
+        {
+          "id": "e1f0a95d66ed60c310d5a392",
+          "quote": "누가복음 22:32",
+          "before": "“네가 돌이킨 후에 네 형제들을 굳세게 하라” (",
+          "after": ").",
+          "spans": [
+            [
+              2218,
+              2228
+            ]
+          ],
+          "osis": "Luke.22.32",
+          "queries": [
+            "42 22:32"
+          ]
+        },
+        {
+          "id": "b3cb0e98fab9705c0496519c",
+          "quote": "누가복음 9:23-24",
+          "before": " 잃을 것이요, 누구든지 나를 위하여 자기 생명을 잃으면 구원하리라” (",
+          "after": ").",
+          "spans": [
+            [
+              2370,
+              2382
+            ]
+          ],
+          "osis": "Luke.9.23-Luke.9.24",
+          "queries": [
+            "42 9:23-24"
+          ]
+        },
+        {
+          "id": "bb2fc2cde3c32adbd2f576ec",
+          "quote": "마가복음 6:16-28",
+          "before": " 계속 함께 살도록 해 주겠다고 제안하지 않은 일을 사과해야 할까요? (",
+          "after": "을 읽어 보십시오.) 그렇게까지 대놓고 맞서다가 목숨을 잃어야 했을까요?",
+          "spans": [
+            [
+              2699,
+              2711
+            ]
+          ],
+          "osis": "Mark.6.16-Mark.6.28",
+          "queries": [
+            "41 6:16-28"
+          ]
+        }
+      ],
+      "record_hash": "fcc8bd144a792486be07eaea461bf3a1f1c02fa2c686f428eb53532dbe45d10e"
     },
     "01a0a64f-d629-4e05-b1ec-993f86ef4d68:nl:2fc2c86d8a87c42b77f817cac17c8a9b49e8a4826b5b43ce2cbb9a65f094f313:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "01a0a64f-d629-4e05-b1ec-993f86ef4d68",
@@ -41178,6 +41685,184 @@
       "markers": [],
       "record_hash": "4a8e17b6532ae09102d76e407e6711881d0b540293807b74fc1faf04b40d017e"
     },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:af:889a90705ae850f16746ac96f0024ba2e0358f8c98f989acd03f13a5e206c5fe:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "af",
+      "content_hash": "889a90705ae850f16746ac96f0024ba2e0358f8c98f989acd03f13a5e206c5fe",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e1650cfe1cfb121a3f78027d",
+          "quote": "Spreuke 18:22",
+          "before": "ets goeds en verkry guns van die Here” (",
+          "after": ").",
+          "spans": [
+            [
+              2990,
+              3003
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "9619520e5760854e94e85d5c",
+          "quote": "Matteus 19",
+          "before": "In ",
+          "after": " het Jesus oor die erns van die huwelik ",
+          "spans": [
+            [
+              3018,
+              3028
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "ab84611253830015b11702e0",
+          "quote": "Matteus 19:3-10",
+          "before": "so is, is dit nie goed om te trou nie” (",
+          "after": ").",
+          "spans": [
+            [
+              4074,
+              4089
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "a7d66ba38d9c534c2b28994c",
+          "quote": "1 Korintiërs 7:1-2",
+          "before": "eie vrou hê en elke vrou haar eie man” (",
+          "after": "). Die gebruik van ’n hofmakery sonder a",
+          "spans": [
+            [
+              10709,
+              10727
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "cff6baf5d21f4f9815de0e3e",
+          "quote": "1 Korintiërs 7:1-2",
+          "before": "Met ",
+          "after": " in gedagte, wat is aanraking? As jy die",
+          "spans": [
+            [
+              11497,
+              11515
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "04f6e9c5226616fe71b28a1b12bb7cda14c792519b563d70e05b072c1f60fb27"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:bn:9b305a4a770a7f31eafcf003b140f80c85e9b5e299190d786631359432f61cf3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "bn",
+      "content_hash": "9b305a4a770a7f31eafcf003b140f80c85e9b5e299190d786631359432f61cf3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b3a4121140cf95928b1bf371",
+          "quote": "হিতোপদেশ ১৮:২২",
+          "before": "ু পায়, এবং সদাপ্রভুর অনুগ্রহ লাভ করে” (",
+          "after": ")।",
+          "spans": [
+            [
+              2834,
+              2848
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "af59d643a9dcc00d7dab06f2",
+          "quote": "মথি ১৯",
+          "before": "",
+          "after": " অধ্যায়ে যিশু বিবাহের গুরুত্ব সম্পর্কে ",
+          "spans": [
+            [
+              2860,
+              2866
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "3fc685718a581c07102c2df0",
+          "quote": "মথি ১৯:৩-১০",
+          "before": "মন সম্পর্ক হয়, তবে বিবাহ না করাই ভাল” (",
+          "after": ")।",
+          "spans": [
+            [
+              3925,
+              3936
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "1ef8914a31c07aa9d66aea56",
+          "quote": "১ করিন্থীয় ৭:১-২",
+          "before": "প্রত্যেক স্ত্রীর নিজ নিজ স্বামী থাকুক” (",
+          "after": ")। স্পর্শবর্জিত প্রণয়পর্বের রীতি এই শাস",
+          "spans": [
+            [
+              10318,
+              10335
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "04e3b66eef36422704cfd1cc",
+          "quote": "১ করিন্থীয় ৭:১-২",
+          "before": "",
+          "after": " বিবেচনা করে, স্পর্শ বলতে কী বোঝায়? যদি",
+          "spans": [
+            [
+              10963,
+              10980
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "d8fda6d0541f47dd5f513c4dc04a93b152a9d483c2d9e45018a03ee4cce0bb17"
+    },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:en:6d314bce5da6ecad766877eb98702f43ab041a5f79dbfaceaf00433b357200f5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
       "locale": "en",
@@ -41355,6 +42040,14 @@
         }
       ],
       "record_hash": "9cc5e1ccf9a46ab87a6896360127614356f2f072770a4005eb5aa6732c13b178"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:he:a9cc9c5823732bf0fd47a17e602aec8d99b3f9cb8583928c489af7bbcfd3fadc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "he",
+      "content_hash": "a9cc9c5823732bf0fd47a17e602aec8d99b3f9cb8583928c489af7bbcfd3fadc",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "33623e5d8900dd22d4bf2211221f08cf786109e6636d598bb40e58233a8c4fbd"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:hi:61bdd1623aa1bce72908c663f0c9c16ee8f7ded177eee87af68c0fee59e87824:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -102202,6 +102895,400 @@
       ],
       "record_hash": "eaad89ef85c98882fb385c185b50b439af332ede1d251d31fa14772613986d7b"
     },
+    "324b0fa1-c057-471e-8e90-8eb699e8285a:ur:31afcef6658a64328edbd2f9ffa9325874d594eeb926b4506894d899714d8f8e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
+      "locale": "ur",
+      "content_hash": "31afcef6658a64328edbd2f9ffa9325874d594eeb926b4506894d899714d8f8e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3ce3ec1a5d6398edc4103607",
+          "quote": "پیدائش 3",
+          "before": " گناہ جاری ہیں۔ اس کا پہلا درج شدہ ثبوت ",
+          "after": " میں ملتا ہے۔ ”اُس نے کہا، میں نے باغ می",
+          "spans": [
+            [
+              1487,
+              1495
+            ]
+          ],
+          "osis": "Gen.3.1-Gen.3.24",
+          "queries": [
+            "1 3:1-24"
+          ]
+        },
+        {
+          "id": "7f03cddb390f1af4332c1459",
+          "quote": "پیدائش 3:10",
+          "before": "نکہ میں ننگا تھا؛ اِس لیے میں چھپ گیا“ (",
+          "after": ")۔ آدم ڈر گیا تھا۔ کس بات سے؟ آدم اور حو",
+          "spans": [
+            [
+              1610,
+              1621
+            ]
+          ],
+          "osis": "Gen.3.10",
+          "queries": [
+            "1 3:10"
+          ]
+        },
+        {
+          "id": "b2e376cad22379945958d228",
+          "quote": "پیدائش 4:5",
+          "before": " غصے میں آیا اور اُس کا چہرہ اُتر گیا“ (",
+          "after": ")۔ شاید آپ بھی ان بچوں میں سے ایک رہے ہو",
+          "spans": [
+            [
+              3376,
+              3386
+            ]
+          ],
+          "osis": "Gen.4.5",
+          "queries": [
+            "1 4:5"
+          ]
+        },
+        {
+          "id": "96434fefaafac9ac91c5074d",
+          "quote": "پیدائش 1",
+          "before": "ڑی بوٹیاں، ٹنکچر اور چائے پیش کرتے ہیں۔ ",
+          "after": " میں خدا نے کھانے کے لیے سبز جڑی بوٹیاں ",
+          "spans": [
+            [
+              5138,
+              5146
+            ]
+          ],
+          "osis": "Gen.1.1-Gen.1.31",
+          "queries": [
+            "1 1:1-31"
+          ]
+        },
+        {
+          "id": "705c5ccec291b16a025b3048",
+          "quote": "یوحنا 3:3",
+          "before": "نہ ہو، آسمان کی بادشاہی نہیں دیکھ سکتا (",
+          "after": ")۔ بہت سے لوگ اپنے دلوں کی الجھن اور بوج",
+          "spans": [
+            [
+              5653,
+              5662
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "2f57bbcd77da32b580f93cc8",
+          "quote": "یوحنا 3:7",
+          "before": "ہ ”تمہیں نئے سرے سے پیدا ہونا ضرور ہے“ (",
+          "after": ")؟ کبھی کبھی ہم خوشخبری کے پیغام کو اُس ",
+          "spans": [
+            [
+              6103,
+              6112
+            ]
+          ],
+          "osis": "John.3.7",
+          "queries": [
+            "43 3:7"
+          ]
+        },
+        {
+          "id": "010f77e4db0ad5686a974111",
+          "quote": "2 کرنتھیوں 11:2-3",
+          "before": "شتہ ہو کر بگڑ نہ جائیں جو مسیح میں ہے“ (",
+          "after": ")۔ نجات کی خوشخبری سادہ ہے اور اسے پانا ",
+          "spans": [
+            [
+              6586,
+              6603
+            ]
+          ],
+          "osis": "2Cor.11.2-2Cor.11.3",
+          "queries": [
+            "47 11:2-3"
+          ]
+        },
+        {
+          "id": "f44864dfda6eeb8936865bfc",
+          "quote": "متی 3:6",
+          "before": "یتے اور اپنے گناہوں کا اقرار کرتے تھے“ (",
+          "after": ")۔ نجات کا پہلا قدم اپنے گناہوں کا خدا ک",
+          "spans": [
+            [
+              6916,
+              6923
+            ]
+          ],
+          "osis": "Matt.3.6",
+          "queries": [
+            "40 3:6"
+          ]
+        },
+        {
+          "id": "8c8acec50da60b5be91ccade",
+          "quote": "یعقوب 5:16",
+          "before": "ی پُرجوش، مؤثر دعا بہت کچھ کر سکتی ہے“ (",
+          "after": ")۔ کسی خادم یا تجربہ کار مسیحی سے مدد لی",
+          "spans": [
+            [
+              7642,
+              7652
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "f3a1dbb492a14a8fbec4a984",
+          "quote": "اعمال 3:19",
+          "before": "خداوند کے حضور سے تازگی کے زمانے آئیں“ (",
+          "after": ")۔ ”پس اپنی اِس بدی سے توبہ کر اور خدا س",
+          "spans": [
+            [
+              8270,
+              8280
+            ]
+          ],
+          "osis": "Acts.3.19",
+          "queries": [
+            "44 3:19"
+          ]
+        },
+        {
+          "id": "6c2cdb2465382219156a1a57",
+          "quote": "اعمال 8:22",
+          "before": "تیرے دل کا خیال تجھے معاف کر دیا جائے“ (",
+          "after": ")۔ اپنے گناہوں سے توبہ کرکے آپ خدا سے کہ",
+          "spans": [
+            [
+              8375,
+              8385
+            ]
+          ],
+          "osis": "Acts.8.22",
+          "queries": [
+            "44 8:22"
+          ]
+        },
+        {
+          "id": "d7f86255d5c1bb67ca3f399e",
+          "quote": "رومیوں 10:13",
+          "before": "کوئی خداوند کا نام لے گا نجات پائے گا“ (",
+          "after": ")۔ اب جب آپ اپنے گناہوں کا اقرار اور ان ",
+          "spans": [
+            [
+              8614,
+              8626
+            ]
+          ],
+          "osis": "Rom.10.13",
+          "queries": [
+            "45 10:13"
+          ]
+        },
+        {
+          "id": "f3cca5151fc6d1c00e0183b4",
+          "quote": "اعمال 2:21",
+          "before": "کوئی خداوند کا نام لے گا نجات پائے گا“ (",
+          "after": ")۔ ”کیونکہ تم جانتے ہو کہ تمہاری بے فائد",
+          "spans": [
+            [
+              9003,
+              9013
+            ]
+          ],
+          "osis": "Acts.2.21",
+          "queries": [
+            "44 2:21"
+          ]
+        },
+        {
+          "id": "fa99f68e23e11293c096928e",
+          "quote": "1 پطرس 1:18-19",
+          "before": "رّے یعنی مسیح کے بیش قیمت خون سے ہوئی“ (",
+          "after": ")۔ ”تب مَیں تم پر صاف پانی چھڑکوں گا اور",
+          "spans": [
+            [
+              9226,
+              9240
+            ]
+          ],
+          "osis": "1Pet.1.18-1Pet.1.19",
+          "queries": [
+            "60 1:18-19"
+          ]
+        },
+        {
+          "id": "2b0080fdba4614b764d84756",
+          "quote": "حزقی ایل 36:25-28",
+          "before": " قوم ہو گے اور مَیں تمہارا خدا ہوں گا“ (",
+          "after": ")۔",
+          "spans": [
+            [
+              9731,
+              9748
+            ]
+          ],
+          "osis": "Ezek.36.25-Ezek.36.28",
+          "queries": [
+            "26 36:25-28"
+          ]
+        },
+        {
+          "id": "e3e6ef0f262e5141cac75f75",
+          "quote": "اعمال 16:30-31",
+          "before": "پر ایمان لا تو تُو نجات پائے گا . . .“ (",
+          "after": ")۔ آپ نے اپنے گناہوں کا اقرار کیا اور تو",
+          "spans": [
+            [
+              9991,
+              10005
+            ]
+          ],
+          "osis": "Acts.16.30-Acts.16.31",
+          "queries": [
+            "44 16:30-31"
+          ]
+        },
+        {
+          "id": "2fb9595b6a71155045539b0a",
+          "quote": "رومیوں 10:9",
+          "before": "سے مردوں میں سے جلایا تو نجات پائے گا“ (",
+          "after": ")۔ ”کیونکہ خدا نے دنیا سے ایسی محبت رکھی",
+          "spans": [
+            [
+              10312,
+              10323
+            ]
+          ],
+          "osis": "Rom.10.9",
+          "queries": [
+            "45 10:9"
+          ]
+        },
+        {
+          "id": "c13e90974eea88867e80a936",
+          "quote": "یوحنا 3:16",
+          "before": "ے ہلاک نہ ہو بلکہ ہمیشہ کی زندگی پائے“ (",
+          "after": ")۔ خداوند کا شکر کریں کہ اُس نے آپ کے گن",
+          "spans": [
+            [
+              10468,
+              10478
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        },
+        {
+          "id": "cfe70339655ed995ba6418b2",
+          "quote": "1 پطرس 3:21",
+          "before": "لکہ خدا کے حضور اچھے ضمیر کا جواب ہے)“ (",
+          "after": ")۔ وہ شخص جس کا ضمیر صاف ہے، آپ بھی ہو س",
+          "spans": [
+            [
+              11118,
+              11129
+            ]
+          ],
+          "osis": "1Pet.3.21",
+          "queries": [
+            "60 3:21"
+          ]
+        },
+        {
+          "id": "b977a2161a831006a96795a0",
+          "quote": "افسیوں 4:21-23",
+          "before": " اور اپنے ذہن کی روح میں نئے بنتے جاؤ“ (",
+          "after": ")۔ یہ ایک اہم موضوع ہے اور اس کے بارے می",
+          "spans": [
+            [
+              11828,
+              11842
+            ]
+          ],
+          "osis": "Eph.4.21-Eph.4.23",
+          "queries": [
+            "49 4:21-23"
+          ]
+        },
+        {
+          "id": "a6cff31639b229bf2272c838",
+          "quote": "متی 7:13-14",
+          "before": "اتا ہے اور اُس کے پانے والے تھوڑے ہیں“ (",
+          "after": ")۔",
+          "spans": [
+            [
+              12561,
+              12572
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "de52d13a5583581d07972554",
+          "quote": "لوقا 9:23",
+          "before": "پنی صلیب اُٹھائے اور میرے پیچھے ہو لے“ (",
+          "after": ")۔ ہمیں ہر روز اپنے جسم کی خواہشوں کو مص",
+          "spans": [
+            [
+              13197,
+              13206
+            ]
+          ],
+          "osis": "Luke.9.23",
+          "queries": [
+            "42 9:23"
+          ]
+        },
+        {
+          "id": "0b6ba6835be006a16f1a573d",
+          "quote": "یوحنا 1:7,9",
+          "before": "سے پاک کرنے میں وفادار اور عادل ہے۔“ (1 ",
+          "after": ")۔",
+          "spans": [
+            [
+              13743,
+              13754
+            ]
+          ],
+          "osis": "John.1.7,John.1.9",
+          "queries": [
+            "43 1:7",
+            "43 1:9"
+          ]
+        },
+        {
+          "id": "1f74c64b84ecaa9eacba398d",
+          "quote": "2 کرنتھیوں 9:15",
+          "before": " کا اُس کی بے بیان بخشش کے لیے شکر ہو“ (",
+          "after": ")۔ نجات کی مفت بخشش آپ کے لیے دستیاب ہے۔",
+          "spans": [
+            [
+              14372,
+              14387
+            ]
+          ],
+          "osis": "2Cor.9.15",
+          "queries": [
+            "47 9:15"
+          ]
+        }
+      ],
+      "record_hash": "9041bc3ff16829d9b690d75b3d1fcdf69cce0c5d7ffcdfbf36cce4b5b4db4609"
+    },
     "324b0fa1-c057-471e-8e90-8eb699e8285a:zh-Hans:06f03217a098df23a5bc0a1d69a8305ac6f186bee1fa0e7c51398a1601fefc43:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "324b0fa1-c057-471e-8e90-8eb699e8285a",
       "locale": "zh-Hans",
@@ -145485,6 +146572,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "ccecaf3641bef0e207ba4cdb0dcdae02018223f05fbf2d1529afd693b0392dcf"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:id:03eb7aee1b18bbb87bd3731617d9b8c9900661cf845b9da579b4ded1012d64b6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "id",
+      "content_hash": "03eb7aee1b18bbb87bd3731617d9b8c9900661cf845b9da579b4ded1012d64b6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "658187bad92423cfe2cca075a7926a1a4e36be5186f6c0890316fc7498d7cb52"
+    },
+    "46f89299-c0a0-407c-9898-01a0c150c453:it:71ffd753b203aa0b74325bef4f0f974d59c98fa2abb157a75f69aca20d2c8469:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "it",
+      "content_hash": "71ffd753b203aa0b74325bef4f0f974d59c98fa2abb157a75f69aca20d2c8469",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "1dea086af0966bb54f06a56a50a35b33fbe07e2cfda2d79d730b31510cee8da4"
     },
     "46f89299-c0a0-407c-9898-01a0c150c453:pt:be17d602888fb3e188806e7f5436cdd2fbb41faaa698c0d7a7c5dd70bfedee44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
@@ -199408,6 +200511,63 @@
       ],
       "record_hash": "0441d9718bf168d661ab7b11afe5946455690d59971e45b5a3fdf9c85d00d402"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:ar:6f68b87977a8a22878993bc4faef3d8bf5d66a995bd3291a98d9e7e4baa24455:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "ar",
+      "content_hash": "6f68b87977a8a22878993bc4faef3d8bf5d66a995bd3291a98d9e7e4baa24455",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "39f3d42a33f34fabfd485d5c",
+          "quote": "دانيال 1",
+          "before": "عندما وصل دانيال وأصدقاؤه إلى بابل (",
+          "after": ")، عُرض عليهم لحم من مائدة الملك، فرفضوه",
+          "spans": [
+            [
+              2739,
+              2747
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "53afaaf969cbb33effdfecf8",
+          "quote": "أعمال الرسل 15",
+          "before": "نظر مجمع كنسي في أورشليم في هذا السؤال (",
+          "after": ").",
+          "spans": [
+            [
+              3232,
+              3246
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "ffe7d119d2a8972e9dad64e9",
+          "quote": "كورنثوس الأولى 3:16",
+          "before": "كم هيكل الله، وأن روح الله يسكن فيكم؟» (",
+          "after": ").",
+          "spans": [
+            [
+              3623,
+              3642
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        }
+      ],
+      "record_hash": "af36d00596f086ec64f8bb6c4655163d2e020674da6620c3715b6e7498e333a6"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:en:4250cb3f813cfd4ee10fc7150fd3ad15535dd12d65a37f35d832c7b5b53e1b48:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "en",
@@ -199480,6 +200640,79 @@
         }
       ],
       "record_hash": "05030196bb789fb1d8a0c615c8512a104c961cad3568e1ef07212e6e600c3241"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:hi:364108f4c3c05b678c5580acd6fd6b396b1c6d174d01145307a38a05b5269439:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "hi",
+      "content_hash": "364108f4c3c05b678c5580acd6fd6b396b1c6d174d01145307a38a05b5269439",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "46c2613aca77b6a44d100d32",
+          "quote": "दानिय्येल 1",
+          "before": "ब दानिय्येल और उसके मित्र बाबुल पहुँचे (",
+          "after": "), तो उन्हें राजा की मेज़ का माँस दिया ग",
+          "spans": [
+            [
+              2952,
+              2963
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "c3e912cffb3b3711eb259f1a",
+          "quote": "प्रेरितों के काम 15",
+          "before": "ा की एक सभा ने इस प्रश्न पर विचार किया (",
+          "after": ")।",
+          "spans": [
+            [
+              3592,
+              3611
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "c0a6a7eccf896275baa3f100",
+          "quote": "1 कुरिन्थियों 3:16",
+          "before": "रमेश्वर का आत्मा तुम में वास करता है?” (",
+          "after": ")।",
+          "spans": [
+            [
+              4086,
+              4104
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "be5413602a029b9ef0e536eb",
+          "quote": "इफिसियों 5:15",
+          "before": "ाईं नहीं, पर बुद्धिमानों की नाईं चलो।” (",
+          "after": ") हमें विवेक से जीना है और बुद्धिमानी से",
+          "spans": [
+            [
+              12638,
+              12651
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "46167efff33aa0161dd1f5ebd361e3713aaa2e31c73c6779f0a2eb9a897f71f0"
     },
     "682dc04d-bea3-4325-ac73-926bb3396990:zh-Hans:453d809c9835625bb839996e7e2c1aa8ecdf0a44d47ea4d14d2d8e086f70d2ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",

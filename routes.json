@@ -11065,11 +11065,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelike-lewe",
+        "alias": "hy-sal-sy-volk-van-hulle-sondes-verlos",
+        "history": [
+          "/af/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -11472,11 +11473,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "jeug",
+        "alias": "n-christusgesentreerde-hofmakeryproses",
+        "history": [
+          "/af/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -20903,11 +20905,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "هو-يخلّص-شعبه-من-خطاياهم",
+        "history": [
+          "/ar/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -23767,11 +23770,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الطب",
+        "alias": "مخاطر-الأطعمة-فائقة-المعالجة",
+        "history": [
+          "/ar/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -31203,11 +31207,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "তরুণসমাজ",
+        "alias": "খ্রিষ্টকেন্দ্রিক-প্রণয়পর্বের-প্রক্রিয়া",
+        "history": [
+          "/bn/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -95843,11 +95848,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "נוער",
+        "alias": "תהליך-חיזור-שמעמיד-את-המשיח-במרכז",
+        "history": [
+          "/he/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -108215,11 +108221,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "चिकित्सा",
+        "alias": "अति-प्रसंस्कृत-खाद्य-पदार्थों-के-खतरे",
+        "history": [
+          "/hi/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -117281,11 +117288,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "perempuan",
+        "alias": "ibadah-seorang-ibu",
+        "history": [
+          "/id/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -127234,11 +127242,12 @@
       },
       "46f89299-c0a0-407c-9898-01a0c150c453": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-worship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "donna",
+        "alias": "l-adorazione-di-una-madre",
+        "history": [
+          "/it/articles/a-mother-s-worship/"
+        ],
+        "fallback": false
       },
       "47c2bd87-06a9-4c31-854b-84c64975d399": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -135247,11 +135256,12 @@
       },
       "01a0a64f-d629-4e05-b1ec-993f86ef4d68": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "he-shall-save-his-people-from-their-sins",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "그리스도인의-삶",
+        "alias": "그가-자기-백성을-그들의-죄에서-구원하시리라",
+        "history": [
+          "/ko/articles/he-shall-save-his-people-from-their-sins/"
+        ],
+        "fallback": false
       },
       "01d6d043-59d2-4042-a6e9-8c4abf368212": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -205826,11 +205836,12 @@
       },
       "324b0fa1-c057-471e-8e90-8eb699e8285a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "jesus-christ-the-answer-to-broken-humanity",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "مسیحی-زندگی",
+        "alias": "یسوع-مسیح-شکستہ-انسانیت-کا-جواب",
+        "history": [
+          "/ur/articles/jesus-christ-the-answer-to-broken-humanity/"
+        ],
+        "fallback": false
       },
       "327747e0-4fa9-413a-ba74-c48f5eae9c42": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
