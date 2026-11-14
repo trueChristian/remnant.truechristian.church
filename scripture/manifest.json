@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "fe50344a88df45100b28b6231fda78f623a1a968b4ed8d8da65ce1a256f211fb",
+  "integrity": "ed7b65f9ffbc8b72281aa438fd924a142ad1694b928f0e23752beabb871bcd71",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -42396,6 +42396,95 @@
       ],
       "record_hash": "f62a6ab76dd53c4d118caf53759b46851fba205af3d0f7a0de42ce729cd2bd8a"
     },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:it:0d1de62f4c8cc17fdd5b5baf30a3c44ea2a5e2fb12dda056b0d13e21eff2c3b5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "it",
+      "content_hash": "0d1de62f4c8cc17fdd5b5baf30a3c44ea2a5e2fb12dda056b0d13e21eff2c3b5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9cebed5bc50e5e709f5ffc36",
+          "quote": "Proverbi 18:22",
+          "before": " cosa e ottiene il favore del Signore» (",
+          "after": ").",
+          "spans": [
+            [
+              3160,
+              3174
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "9fdc2dfdb75d1c5828da87f7",
+          "quote": "Matteo 19",
+          "before": "In ",
+          "after": ", Gesù insegnò quanto sia serio il matri",
+          "spans": [
+            [
+              3189,
+              3198
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "0a6ab5a4dd3dd7c25a0f9e88",
+          "quote": "Matteo 19:3-10",
+          "before": "to alla moglie, non conviene sposarsi» (",
+          "after": ").",
+          "spans": [
+            [
+              4191,
+              4205
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "4a2903f94eee1ecb02601d29",
+          "quote": "1 Corinzi 7:1-2",
+          "before": "moglie e ogni donna il proprio marito» (",
+          "after": "). La pratica di un corteggiamento senza",
+          "spans": [
+            [
+              11375,
+              11390
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "2bf9606b008673c4f75ce1eb",
+          "quote": "1 Corinzi 7:1-2",
+          "before": "Considerando ",
+          "after": ", che cosa significa toccarsi? Se percep",
+          "spans": [
+            [
+              12194,
+              12209
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "350ec6fa2a52d663c10f9c346f92d9c89b0c24484b87b9f1e4758a9037f36ad4"
+    },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:ko:9a9b159e7474df725d4a94d57d145c41d729864b7cb6b5c0f7928c80a5ea1020:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
       "locale": "ko",
@@ -42484,6 +42573,152 @@
         }
       ],
       "record_hash": "8ea89b0c83a40224db59048cddf9592fe14a10fcba650d980507880cf1db20f9"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:sv:8ad5fce39239e405e327f70026955e3b99ce732f5f5d048283f76e1fcdaaf9e0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "sv",
+      "content_hash": "8ad5fce39239e405e327f70026955e3b99ce732f5f5d048283f76e1fcdaaf9e0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7ad249e00b1b1b1e40d972be",
+          "quote": "Ordspråksboken 18:22",
+          "before": "er något gott och får nåd från Herren” (",
+          "after": ").",
+          "spans": [
+            [
+              2963,
+              2983
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "2395ad80ad94548cf268c57c",
+          "quote": "Matteusevangeliet 19",
+          "before": "I ",
+          "after": " undervisade Jesus om äktenskapets allva",
+          "spans": [
+            [
+              2997,
+              3017
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "7ea3185a826cc49eaf0b1b4a",
+          "quote": "Matteusevangeliet 19:3-10",
+          "before": "strun, är det inte gott att gifta sig” (",
+          "after": ").",
+          "spans": [
+            [
+              4068,
+              4093
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "227ebe92d30d646c6154a6c8",
+          "quote": "Första Korinthierbrevet 7:1-2",
+          "before": " hustru och varje kvinna sin egen man” (",
+          "after": "). Bruket att inte röra varandra under u",
+          "spans": [
+            [
+              10673,
+              10702
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "85112e6eecf90c1fcc16a8e4",
+          "quote": "Första Korinthierbrevet 7:1-2",
+          "before": "Med tanke på ",
+          "after": ", vad innebär det att röra vid någon? Om",
+          "spans": [
+            [
+              11433,
+              11462
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "1aad3127d491d21cbe58009a30ae7540fc9fea440ef1f81cc9ce4e1330c69db6"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:ur:9192c942fbdd839347e8d264e3cfd5e78559e8d2ca83991cb5b4d8cba8929d59:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "ur",
+      "content_hash": "9192c942fbdd839347e8d264e3cfd5e78559e8d2ca83991cb5b4d8cba8929d59",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a34cdb3e41de857b947c0969",
+          "quote": "امثال 18:22",
+          "before": "ی چیز ملی اور خداوند کا فضل حاصل ہوا‘‘ (",
+          "after": ")۔",
+          "spans": [
+            [
+              2788,
+              2799
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "5dd01243633434c0b73653b2",
+          "quote": "متی 19",
+          "before": "",
+          "after": " میں یسوع نے شادی کی سنجیدگی کے بارے میں",
+          "spans": [
+            [
+              2811,
+              2817
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "33b7af6a130b7d33340ced16",
+          "quote": "متی 19:3-10",
+          "before": " معاملہ ہے تو بیاہ کرنا ہی اچھا نہیں‘‘ (",
+          "after": ")۔",
+          "spans": [
+            [
+              3782,
+              3793
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        }
+      ],
+      "record_hash": "305cffd720b2a78d0ab118583c5c8b61b1ab44f2a847d26d3ada7b247dfeba51"
     },
     "12b8818b-ec0b-4b20-83a2-17fc74f174b0:en:a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12b8818b-ec0b-4b20-83a2-17fc74f174b0",
@@ -58835,6 +59070,208 @@
         }
       ],
       "record_hash": "4b2bd6a2a13df121c1ffa77f24eb8b1bc6587b4aae6443abad1806ca3bd44855"
+    },
+    "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:ru:793319f029c179f1d89cac3c9a0d71a1c2d0c63595244be8e9656f46d0a3888b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
+      "locale": "ru",
+      "content_hash": "793319f029c179f1d89cac3c9a0d71a1c2d0c63595244be8e9656f46d0a3888b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "696a9e6bf4ea560f2615f7a4",
+          "quote": "Ефесянам 5:33",
+          "before": "ится о том, чтобы почитать своего мужа –",
+          "after": ".",
+          "spans": [
+            [
+              1410,
+              1423
+            ]
+          ],
+          "osis": "Eph.5.33",
+          "queries": [
+            "49 5:33"
+          ]
+        },
+        {
+          "id": "c8e57cb76c11d344a0fc7cf5",
+          "quote": "1 Петра 3:1",
+          "before": "и вы, жёны, подчиняйтесь своим мужьям… –",
+          "after": ".",
+          "spans": [
+            [
+              1510,
+              1521
+            ]
+          ],
+          "osis": "1Pet.3.1",
+          "queries": [
+            "60 3:1"
+          ]
+        },
+        {
+          "id": "57f6fe783015f4f27b02b65f",
+          "quote": "1 Петра 3:6",
+          "before": "азывая его господином: вы — её дочери… –",
+          "after": ".",
+          "spans": [
+            [
+              1652,
+              1663
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "b3fa6e49602294186de7fe7c",
+          "quote": "Ефесянам 5:22",
+          "before": "подчиняйтесь своим мужьям, как Господу –",
+          "after": ".",
+          "spans": [
+            [
+              1750,
+              1763
+            ]
+          ],
+          "osis": "Eph.5.22",
+          "queries": [
+            "49 5:22"
+          ]
+        },
+        {
+          "id": "c6d0fb1d32233e8f3cbf4675",
+          "quote": "1 Коринфянам 11:3",
+          "before": "енщины — мужчина; а глава Христа — Бог –",
+          "after": ".",
+          "spans": [
+            [
+              1911,
+              1928
+            ]
+          ],
+          "osis": "1Cor.11.3",
+          "queries": [
+            "46 11:3"
+          ]
+        },
+        {
+          "id": "73d04287cd95757f21cfd24a",
+          "quote": "1 Тимофею 2:11-14",
+          "before": " будучи обманута, впала в преступление –",
+          "after": ".",
+          "spans": [
+            [
+              2244,
+              2261
+            ]
+          ],
+          "osis": "1Tim.2.11-1Tim.2.14",
+          "queries": [
+            "54 2:11-14"
+          ]
+        },
+        {
+          "id": "981e202efe13250f9e9ebe9a",
+          "quote": "Ефесянам 5:24",
+          "before": "будут [подчинены] своим мужьям во всём –",
+          "after": ".",
+          "spans": [
+            [
+              2398,
+              2411
+            ]
+          ],
+          "osis": "Eph.5.24",
+          "queries": [
+            "49 5:24"
+          ]
+        },
+        {
+          "id": "367cebb14bac11ba6a8eed6a",
+          "quote": "1 Коринфянам 14:34",
+          "before": "быть в послушании, как говорит и закон –",
+          "after": ".",
+          "spans": [
+            [
+              2569,
+              2587
+            ]
+          ],
+          "osis": "1Cor.14.34",
+          "queries": [
+            "46 14:34"
+          ]
+        },
+        {
+          "id": "8392d0cd876e2e7e9a0daf38",
+          "quote": "Титу 2:3-5",
+          "before": "чтобы слово Божье не подвергалось хуле –",
+          "after": ".",
+          "spans": [
+            [
+              5694,
+              5704
+            ]
+          ],
+          "osis": "Titus.2.3-Titus.2.5",
+          "queries": [
+            "56 2:3-5"
+          ]
+        },
+        {
+          "id": "4ee5377891c32bb48f8d7434",
+          "quote": "Бытие 2:18",
+          "before": "дходящую, надлежащую, дополняющую его] –",
+          "after": ".",
+          "spans": [
+            [
+              6399,
+              6409
+            ]
+          ],
+          "osis": "Gen.2.18",
+          "queries": [
+            "1 2:18"
+          ]
+        },
+        {
+          "id": "50a877ca273b5a1768363f53",
+          "quote": "Титу 2:4",
+          "before": "любить своих мужей, любить своих детей –",
+          "after": ". Слово «любить» в выражении любить свои",
+          "spans": [
+            [
+              6523,
+              6531
+            ]
+          ],
+          "osis": "Titus.2.4",
+          "queries": [
+            "56 2:4"
+          ]
+        },
+        {
+          "id": "8a9656caeaa21b61b1b2b575",
+          "quote": "1 Петра 3:1-2 & 3:6-7",
+          "before": "обы вашим молитвам не было препятствия –",
+          "after": ".",
+          "spans": [
+            [
+              8601,
+              8626
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2,1Pet.3.6-1Pet.3.7",
+          "queries": [
+            "60 3:1-2",
+            "60 3:6-7"
+          ]
+        }
+      ],
+      "record_hash": "01c38eeae2cdb61541cf8ae1b8e8f078ceb10f5b25ae1498ea57e2257db4ce10"
     },
     "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:ur:b66b3f8901c9e872e9c217789cbee96f827bb1ed09ecb922587b496ee698e49c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
@@ -201833,6 +202270,79 @@
       ],
       "record_hash": "62d37caec7db824b811cbb23dac7cd92339c8a9217804f61409f5d2516deec5b"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:el:394f0aae2cd144e416c8cfff4005259ba477fda165b1af7d9744237a3c87ce1e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "el",
+      "content_hash": "394f0aae2cd144e416c8cfff4005259ba477fda165b1af7d9744237a3c87ce1e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "76b073760f0970439b411845",
+          "quote": "Δανιήλ 1",
+          "before": " και οι φίλοι του έφτασαν στη Βαβυλώνα (",
+          "after": "), τους προσφέρθηκε το κρέας από το τραπ",
+          "spans": [
+            [
+              3423,
+              3431
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "e979d6e9035b19f0fdfcf3a3",
+          "quote": "Πράξεις 15",
+          "before": "στην Ιερουσαλήμ εξέτασε το ζήτημα αυτό (",
+          "after": ").",
+          "spans": [
+            [
+              4238,
+              4248
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "4be02a85671fac1bb84603c9",
+          "quote": "Α΄ Κορινθίους 3:16",
+          "before": "το Πνεύμα του Θεού κατοικεί μέσα σας;» (",
+          "after": ").",
+          "spans": [
+            [
+              4772,
+              4790
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "860ffa542af933c533b38af8",
+          "quote": "Εφεσίους 5:15",
+          "before": "πατάτε, όχι ως άσοφοι, αλλά ως σοφοί». (",
+          "after": ") Πρέπει να ζούμε με σύνεση, κάνοντας σο",
+          "spans": [
+            [
+              14557,
+              14570
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "3c4a52bb64ab7a5abfc004b09e2db54a358d13898599ce653269c8d94415266f"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:en:4250cb3f813cfd4ee10fc7150fd3ad15535dd12d65a37f35d832c7b5b53e1b48:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "en",
@@ -202052,6 +202562,152 @@
       ],
       "record_hash": "46167efff33aa0161dd1f5ebd361e3713aaa2e31c73c6779f0a2eb9a897f71f0"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:it:81fc9e3f90d9610d7633ef28c7e8c21865d2fdd04ea210b6d1c4ea5d94c0135b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "it",
+      "content_hash": "81fc9e3f90d9610d7633ef28c7e8c21865d2fdd04ea210b6d1c4ea5d94c0135b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "6d410bf6d487b0c16a171bb3",
+          "quote": "Daniele 1",
+          "before": " e i suoi amici arrivarono a Babilonia (",
+          "after": "), fu loro offerta la carne della tavola",
+          "spans": [
+            [
+              3343,
+              3352
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "ca74b3e223caced85098fa61",
+          "quote": "Atti 15",
+          "before": "iesa a Gerusalemme valutò la questione (",
+          "after": ").",
+          "spans": [
+            [
+              4091,
+              4098
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "f7b599ac26c7bd8f9f045bd9",
+          "quote": "1 Corinzi 3:16",
+          "before": "e che lo Spirito di Dio abita in voi?» (",
+          "after": ").",
+          "spans": [
+            [
+              4595,
+              4609
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "0d67b2929eb331739b38047f",
+          "quote": "Efesini 5:15",
+          "before": "spezione, non da stolti, ma da saggi». (",
+          "after": ") Dobbiamo vivere con prudenza, facendo ",
+          "spans": [
+            [
+              13927,
+              13939
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "8ba74f8c77dd73da408f446148211bc04cdb8e34d58c09f40a30f4a1aa9ab773"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:nb:42b041b09bc8d64a18dbb8c77107ef2c61b693e92aa45405cb338e19ab9d9c85:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "nb",
+      "content_hash": "42b041b09bc8d64a18dbb8c77107ef2c61b693e92aa45405cb338e19ab9d9c85",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7cda175ae6cc8a87129c13d7",
+          "quote": "Daniel 1",
+          "before": "Daniel og vennene hans kom til Babylon (",
+          "after": "), ble de tilbudt kjøtt fra kongens bord",
+          "spans": [
+            [
+              3082,
+              3090
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "b341a87610f2d48327c60d04",
+          "quote": "Apostlenes gjerninger 15",
+          "before": "rkemøte i Jerusalem drøftet spørsmålet (",
+          "after": ").",
+          "spans": [
+            [
+              3712,
+              3736
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "4197eeafeb59575dad2f6176",
+          "quote": "1. Korinter 3:16",
+          "before": "ds tempel, og at Guds Ånd bor i dere?» (",
+          "after": ").",
+          "spans": [
+            [
+              4191,
+              4207
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "4e8cf9dbf5996c07b82d9c1b",
+          "quote": "Efeserne 5:15",
+          "before": "ever, ikke som ukloke, men som kloke.» (",
+          "after": ") Vi skal leve forstandig og ta kloke va",
+          "spans": [
+            [
+              12281,
+              12294
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "669ec309791abebbdbe24e5df8345e6f9986b6ca60125d1963956f8989a2476f"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:ru:904b85d305025a2085a87285e1a1eafeeea11662436b1e2a701a1b14abe6c5a7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "ru",
@@ -202125,6 +202781,79 @@
       ],
       "record_hash": "f26f724ca91274d437f12d8ac98172503ea97bf31fa9c3678b97b07d8de0d163"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:sv:e7c4a5c139af0a51c47c14b73d2e17dcf0be1c583bf2ce61b9e23e3443957e2e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "sv",
+      "content_hash": "e7c4a5c139af0a51c47c14b73d2e17dcf0be1c583bf2ce61b9e23e3443957e2e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f098c167e1e28c216886ba03",
+          "quote": "Daniel 1",
+          "before": "aniel och hans vänner kom till Babylon (",
+          "after": ") erbjöds de kött från kungens bord, men",
+          "spans": [
+            [
+              3063,
+              3071
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "ce5a3307ba3cb119f783a1d1",
+          "quote": "Apostlagärningarna 15",
+          "before": " i Jerusalem tog ställning till frågan (",
+          "after": ").",
+          "spans": [
+            [
+              3674,
+              3695
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "27e3241f0ee0105b0918048b",
+          "quote": "1 Korinthierbrevet 3:16",
+          "before": "ds tempel och att Guds Ande bor i er?” (",
+          "after": ").",
+          "spans": [
+            [
+              4142,
+              4165
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "0ae5ece2fb73d024c40a0df5",
+          "quote": "Efesierbrevet 5:15",
+          "before": "te som ovisa människor utan som visa.” (",
+          "after": ") Vi ska leva klokt och fatta visa beslu",
+          "spans": [
+            [
+              12354,
+              12372
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "5d3aeae53fe5ac69c764380fb7d088f313d4d2a6f0b9eca9474f2f83d6f8b272"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:sw:8f6a684d28fa6343368212ce281fece35a8fcfda2e136212af0d9ebcd8411242:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "sw",
@@ -202197,6 +202926,63 @@
         }
       ],
       "record_hash": "ee5c4014556018f8597be2705087dc1a52e526e3fb64d8666801f56201c2213d"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:ur:ca6f5fea45ad8d1296195305017cd058a4b0bde44cf6ce8a43ec2f1d237409d2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "ur",
+      "content_hash": "ca6f5fea45ad8d1296195305017cd058a4b0bde44cf6ce8a43ec2f1d237409d2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f232dafade580d44d4049ac0",
+          "quote": "دانی ایل 1",
+          "before": "جب دانی ایل اور اس کے دوست بابل پہنچے (",
+          "after": ")، تو انہیں بادشاہ کے دسترخوان کا گوشت پ",
+          "spans": [
+            [
+              3126,
+              3136
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "3d7f82be0f59de3c38779577",
+          "quote": "اعمال 15",
+          "before": "یسیا کی ایک مجلس نے اس سوال پر غور کیا (",
+          "after": ")۔",
+          "spans": [
+            [
+              3801,
+              3809
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "cbfe825e1fd9450345b9569e",
+          "quote": "افسیوں 5:15",
+          "before": "دانوں کی طرح نہیں بلکہ داناؤں کی طرح۔“ (",
+          "after": ") ہمیں سمجھ داری سے زندگی گزارنی اور دان",
+          "spans": [
+            [
+              12917,
+              12928
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "f4b5906f46cd8956496b3b73f772ccc63f6797e76e0a1062b974ee474eed313a"
     },
     "682dc04d-bea3-4325-ac73-926bb3396990:zh-Hans:453d809c9835625bb839996e7e2c1aa8ecdf0a44d47ea4d14d2d8e086f70d2ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
@@ -212910,6 +213696,127 @@
         }
       ],
       "record_hash": "de9f2f5f8a0ee6762afa9cea1825244c42557f7798e68adf3da9a914f3ce5f48"
+    },
+    "71a8a627-ef21-4efb-9dd1-36d5124ac192:bn:34bbfeac126d676108deb6c4f4eccf79b5b46ccf9e0caaba5bca11e119cc9552:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "71a8a627-ef21-4efb-9dd1-36d5124ac192",
+      "locale": "bn",
+      "content_hash": "34bbfeac126d676108deb6c4f4eccf79b5b46ccf9e0caaba5bca11e119cc9552",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "10e9dd5834ce5594fe42f965",
+          "quote": "মথি ২৪:৬",
+          "before": "এই সব অবশ্যই ঘটবে, কিন্তু তখনও শেষ নয় –",
+          "after": "। আসুন মনে রাখি, আমাদের বিচলিত হওয়া উচি",
+          "spans": [
+            [
+              1847,
+              1855
+            ]
+          ],
+          "osis": "Matt.24.6",
+          "queries": [
+            "40 24:6"
+          ]
+        },
+        {
+          "id": "028742d9ba10185798f67f2a",
+          "quote": "মথি ২৪:১৩",
+          "before": "্ত ধৈর্য ধরে থাকবে, সে-ই পরিত্রাণ পাবে –",
+          "after": "। আমরা যদি পিতরের মতো আমাদের প্রভুর কাছ ",
+          "spans": [
+            [
+              1992,
+              2001
+            ]
+          ],
+          "osis": "Matt.24.13",
+          "queries": [
+            "40 24:13"
+          ]
+        },
+        {
+          "id": "119e317fb690198469c27547",
+          "quote": "প্রকাশিত বাক্য ২১:৮",
+          "before": " অংশ পাবে আগুন ও গন্ধকে জ্বলন্ত হ্রদে… –",
+          "after": "। কিন্তু, যে জয়ী হবে, সে সমস্ত কিছুর উত",
+          "spans": [
+            [
+              2228,
+              2247
+            ]
+          ],
+          "osis": "Rev.21.8",
+          "queries": [
+            "66 21:8"
+          ]
+        },
+        {
+          "id": "2c5501eae2acfe68c14557a1",
+          "quote": "প্রকাশিত বাক্য ২১:৭",
+          "before": "মি তার ঈশ্বর হব, এবং সে আমার পুত্র হবে –",
+          "after": "।",
+          "spans": [
+            [
+              2356,
+              2375
+            ]
+          ],
+          "osis": "Rev.21.7",
+          "queries": [
+            "66 21:7"
+          ]
+        },
+        {
+          "id": "1813488cc147d46c71d1ef4c",
+          "quote": "ইব্রীয় ১৩:১৭",
+          "before": "র্ক প্রহরা দেন, যাঁদের হিসাব দিতে হবে… –",
+          "after": "। এখানে কথা মানার নির্দেশ কেবল ঈশ্বরের ব",
+          "spans": [
+            [
+              8922,
+              8935
+            ]
+          ],
+          "osis": "Heb.13.17",
+          "queries": [
+            "58 13:17"
+          ]
+        },
+        {
+          "id": "bbb809e84f900eec52e65a7a",
+          "quote": "২ করিন্থীয় ৫:১০",
+          "before": "মন্দ হোক, তার কাজ অনুসারে প্রতিফল পায় –",
+          "after": "। প্রত্যেক ব্যক্তির বিচার হবে বাইবেলের শ",
+          "spans": [
+            [
+              9218,
+              9234
+            ]
+          ],
+          "osis": "2Cor.5.10",
+          "queries": [
+            "47 5:10"
+          ]
+        },
+        {
+          "id": "ba425b1395a83ad33ed1c94f",
+          "quote": "মথি ৮:১০",
+          "before": ", ইস্রায়েলেও আমি এত বড় বিশ্বাস পাইনি –",
+          "after": "। আমি আমাদের সরল জীবনযাপনকারী গোষ্ঠীগুলো",
+          "spans": [
+            [
+              9563,
+              9571
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        }
+      ],
+      "record_hash": "555ebc235eaa9732abb70d59c94a73074d3243d43ed5950bcd47b7d22a2d6f89"
     },
     "71a8a627-ef21-4efb-9dd1-36d5124ac192:en:c9dec880bed9230959b1988f026f7b237db075f314074984074274504753b9be:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "71a8a627-ef21-4efb-9dd1-36d5124ac192",
@@ -248489,6 +249396,111 @@
         }
       ],
       "record_hash": "f391bc3e0fe69c27376b8d5606569cefee1a426785c8ab0bd9f3feea4e77cbf3"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:pt:428cb837fb683e1180cbf24e4b9ca77123ee01c8a541cb0ec4175a1f400d2cb1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "pt",
+      "content_hash": "428cb837fb683e1180cbf24e4b9ca77123ee01c8a541cb0ec4175a1f400d2cb1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "efbb9f1a0ec185576aa186c7",
+          "quote": "Filipenses 4:8",
+          "before": " há algum louvor, pensem nessas coisas –",
+          "after": ".",
+          "spans": [
+            [
+              3684,
+              3698
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "913756cfad6b69aae4835f08",
+          "quote": "Filipenses 4:8",
+          "before": "A música secular não passa no teste de ",
+          "after": ". A maior parte da música secular tem le",
+          "spans": [
+            [
+              3754,
+              3768
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "f603229390b8c4aad852bfd6",
+          "quote": "Efésios 5:19",
+          "before": "endo melodia em seu coração ao Senhor; –",
+          "after": ". Isso parece música feita com instrumen",
+          "spans": [
+            [
+              7106,
+              7118
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "8af296aaacfecad49adcaf13",
+          "quote": "Atos 16:25",
+          "before": "louvores a Deus, e os presos os ouviam –",
+          "after": ". Quando Paulo e Silas estavam na prisão",
+          "spans": [
+            [
+              7329,
+              7339
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "129718c7737de1b5d22dea47",
+          "quote": "Colossenses 3:16",
+          "before": "o com graça em seus corações ao Senhor –",
+          "after": ". Permitimos que salmos, hinos e cântico",
+          "spans": [
+            [
+              8076,
+              8092
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "7996a8e8b428cf8760b92adb",
+          "quote": "João 4:23",
+          "before": "ois o Pai procura pessoas que o adorem –",
+          "after": ".",
+          "spans": [
+            [
+              9362,
+              9371
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "20d1a98cfab5eb6bc1883e9c9f2b86d2b7741602850c5eb19346934eeab9d84e"
     },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:sw:fe9833f5fe88bb11a4b7932e94580e49529829674406f88be9a2140e6ad80603:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
@@ -334817,6 +335829,175 @@
         }
       ],
       "record_hash": "a0bb724ba38c975b5e3086bed3879c2e0dd693b07dde0318d4fe3a63b42e4730"
+    },
+    "b8ff6643-9234-465f-ab06-4adfc189a851:ar:7afd5c8baebf2105412286d56670bc23f385b0a8da5b1996702c8ff90baa008c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b8ff6643-9234-465f-ab06-4adfc189a851",
+      "locale": "ar",
+      "content_hash": "7afd5c8baebf2105412286d56670bc23f385b0a8da5b1996702c8ff90baa008c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "93107b1da1b8b36f066b096c",
+          "quote": "متى 24:6-7",
+          "before": "ن مجاعات وأوبئة وزلازل في أماكن مختلفة –",
+          "after": ".",
+          "spans": [
+            [
+              1092,
+              1102
+            ]
+          ],
+          "osis": "Matt.24.6-Matt.24.7",
+          "queries": [
+            "40 24:6-7"
+          ]
+        },
+        {
+          "id": "31c7a5c75738398469caed9e",
+          "quote": "متى 24:6",
+          "before": "كون هذه كلها، ولكن النهاية لم تأتِ بعد –",
+          "after": ".",
+          "spans": [
+            [
+              2772,
+              2780
+            ]
+          ],
+          "osis": "Matt.24.6",
+          "queries": [
+            "40 24:6"
+          ]
+        },
+        {
+          "id": "4a2f5a2ebc52be80d5060cf0",
+          "quote": "مزمور 20:7",
+          "before": "ا … يتكلون على المركبات وبعض على الخيل: ",
+          "after": "أ، تكون عاقبتهم أنهم يُصرعون ويسقطون… –م",
+          "spans": [
+            [
+              3829,
+              3839
+            ]
+          ],
+          "osis": "Ps.20.7",
+          "queries": [
+            "19 20:7"
+          ]
+        },
+        {
+          "id": "4c7ec2ebed9922a53687fd15",
+          "quote": "مزمور 20:8",
+          "before": "7أ، تكون عاقبتهم أنهم يُصرعون ويسقطون… –",
+          "after": "أ. أما إذا … ذكرنا اسم الرب إلهنا –مزمور",
+          "spans": [
+            [
+              3887,
+              3897
+            ]
+          ],
+          "osis": "Ps.20.8",
+          "queries": [
+            "19 20:8"
+          ]
+        },
+        {
+          "id": "f9c7b9070a5189229e14b6e3",
+          "quote": "مزمور 20:7",
+          "before": " 20:8أ. أما إذا … ذكرنا اسم الرب إلهنا –",
+          "after": "ب، فإننا … قد قمنا وسنقف منتصبين –مزمور ",
+          "spans": [
+            [
+              3932,
+              3942
+            ]
+          ],
+          "osis": "Ps.20.7",
+          "queries": [
+            "19 20:7"
+          ]
+        },
+        {
+          "id": "047fe24a29cfe05e2bcdce8d",
+          "quote": "مزمور 20:8",
+          "before": "ر 20:7ب، فإننا … قد قمنا وسنقف منتصبين –",
+          "after": "ب.",
+          "spans": [
+            [
+              4002,
+              4012
+            ]
+          ],
+          "osis": "Ps.20.8",
+          "queries": [
+            "19 20:8"
+          ]
+        },
+        {
+          "id": "6e1f466e233abdadbb91db14",
+          "quote": "لوقا 21:26",
+          "before": "على المسكونة، لأن قوات السماوات تتزعزع –",
+          "after": ". لأن … أولئك الذين ليس لهم ختم الله على",
+          "spans": [
+            [
+              4419,
+              4429
+            ]
+          ],
+          "osis": "Luke.21.26",
+          "queries": [
+            "42 21:26"
+          ]
+        },
+        {
+          "id": "d46dac5e0ed9e69b4f425acc",
+          "quote": "متى 16:24-26",
+          "before": "ه؟ أو ماذا يعطي الإنسان فداءً عن نفسه؟ –",
+          "after": ".",
+          "spans": [
+            [
+              5117,
+              5129
+            ]
+          ],
+          "osis": "Matt.16.24-Matt.16.26",
+          "queries": [
+            "40 16:24-26"
+          ]
+        },
+        {
+          "id": "782c4c60186b572989187fe5",
+          "quote": "متى 25:34-40",
+          "before": " بأحد إخوتي هؤلاء الأصاغر، فبي فعلتموه –",
+          "after": ".",
+          "spans": [
+            [
+              7236,
+              7248
+            ]
+          ],
+          "osis": "Matt.25.34-Matt.25.40",
+          "queries": [
+            "40 25:34-40"
+          ]
+        },
+        {
+          "id": "c5ba8741ee88258eb8e0dbe9",
+          "quote": "يهوذا 1:24-25",
+          "before": "ة والسلطان، الآن وإلى كل الدهور. آمين. –",
+          "after": ".",
+          "spans": [
+            [
+              9895,
+              9908
+            ]
+          ],
+          "osis": "Jude.1.24-Jude.1.25",
+          "queries": [
+            "65 1:24-25"
+          ]
+        }
+      ],
+      "record_hash": "aff74306ba017bbe31f622f2f5b5a92bb46e129c0c7cf04b5fb693669bd91aa7"
     },
     "b8ff6643-9234-465f-ab06-4adfc189a851:bn:753f7a4528638c2cba8e5030d677ac4da025d46d6666314477d09c88d84e4753:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b8ff6643-9234-465f-ab06-4adfc189a851",

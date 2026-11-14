@@ -26120,11 +26120,12 @@
       },
       "b8ff6643-9234-465f-ab06-4adfc189a851": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-22",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الافتتاحية",
+        "alias": "من-المحرر-7",
+        "history": [
+          "/ar/articles/from-the-editor-22/"
+        ],
+        "fallback": false
       },
       "b90378a3-1fae-4535-b33f-ccc4edf514ea": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -33930,11 +33931,12 @@
       },
       "71a8a627-ef21-4efb-9dd1-36d5124ac192": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-7-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "শাণিত-বাণী",
+        "alias": "সম্পাদকের-কথা",
+        "history": [
+          "/bn/articles/from-the-editor-7-2/"
+        ],
+        "fallback": false
       },
       "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -53438,11 +53440,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ιατρικά-θέματα",
+        "alias": "οι-κίνδυνοι-των-υπερεπεξεργασμένων-τροφίμων",
+        "history": [
+          "/el/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -125747,11 +125750,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "giovani",
+        "alias": "un-percorso-di-corteggiamento-incentrato-su-cristo",
+        "history": [
+          "/it/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -128189,11 +128193,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medicina",
+        "alias": "i-pericoli-degli-alimenti-ultra-processati",
+        "history": [
+          "/it/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -148106,11 +148111,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medisin",
+        "alias": "farene-ved-ultraprosessert-mat",
+        "history": [
+          "/nb/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -168951,11 +168957,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "juventude",
+        "alias": "o-que-há-de-certo-na-música-que-ouço",
+        "history": [
+          "/pt/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -175705,11 +175712,12 @@
       },
       "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "understanding-submission",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "женщина",
+        "alias": "понимание-подчинения",
+        "history": [
+          "/ru/articles/understanding-submission/"
+        ],
+        "fallback": false
       },
       "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -185287,11 +185295,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ungdom",
+        "alias": "en-kristuscentrerad-uppvaktningsprocess",
+        "history": [
+          "/sv/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -187738,11 +187747,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medicin",
+        "alias": "farorna-med-ultraprocessade-livsmedel",
+        "history": [
+          "/sv/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -204938,11 +204948,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "نوجوان",
+        "alias": "مسیح-مرکوز-ازدواجی-نیت-سے-میل-جول-کا-عمل",
+        "history": [
+          "/ur/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -207368,11 +207379,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "طب",
+        "alias": "انتہائی-پراسیس-شدہ-غذاؤں-کے-خطرات",
+        "history": [
+          "/ur/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
