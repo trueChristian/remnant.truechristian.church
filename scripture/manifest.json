@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "5424e4f773aa02dc15f4584dd0da61cbd7c40dbb1402461104d65e0ec784942a",
+  "integrity": "fe50344a88df45100b28b6231fda78f623a1a968b4ed8d8da65ce1a256f211fb",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -42032,6 +42032,95 @@
       ],
       "record_hash": "d8fda6d0541f47dd5f513c4dc04a93b152a9d483c2d9e45018a03ee4cce0bb17"
     },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:el:13bea895192e9f4950774ff91406e5ba7f14f92c08c33bf930e7725284d42835:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "el",
+      "content_hash": "13bea895192e9f4950774ff91406e5ba7f14f92c08c33bf930e7725284d42835",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "221172cf58ce8935d64503de",
+          "quote": "Παροιμίες 18:22",
+          "before": "λό και απέκτησε την εύνοια του Κυρίου» (",
+          "after": ").",
+          "spans": [
+            [
+              3521,
+              3536
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "6de8c35fb6e38e07cb925698",
+          "quote": "Κατά Ματθαίον 19",
+          "before": "Στο ",
+          "after": ", ο Ιησούς δίδαξε για τη σοβαρότητα του ",
+          "spans": [
+            [
+              3552,
+              3568
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "8c02f00d8244dd8ee8fd4abb",
+          "quote": "Κατά Ματθαίον 19:3-10",
+          "before": "ου, δεν συμφέρει να παντρευτεί κανείς» (",
+          "after": ").",
+          "spans": [
+            [
+              4627,
+              4648
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "0d2c8cdaf4671be5b66bc3ae",
+          "quote": "Α΄ Κορινθίους 7:1-2",
+          "before": "α και κάθε γυναίκα τον δικό της άνδρα» (",
+          "after": "). Η πρακτική της γνωριμίας χωρίς σωματι",
+          "spans": [
+            [
+              12445,
+              12464
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "7adcd12b59e4b85461b6bff1",
+          "quote": "Α΄ Κορινθίους 7:1-2",
+          "before": "Λαμβάνοντας υπόψη τα ",
+          "after": ", τι σημαίνει άγγιγμα; Αν αισθάνεστε την",
+          "spans": [
+            [
+              13243,
+              13262
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "f4129f61e22ecfe51d43d1f7eb8dbbb81c1b6d8e6150df1f009f705b2078b47e"
+    },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:en:6d314bce5da6ecad766877eb98702f43ab041a5f79dbfaceaf00433b357200f5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
       "locale": "en",
@@ -42306,6 +42395,95 @@
         }
       ],
       "record_hash": "f62a6ab76dd53c4d118caf53759b46851fba205af3d0f7a0de42ce729cd2bd8a"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:ko:9a9b159e7474df725d4a94d57d145c41d729864b7cb6b5c0f7928c80a5ea1020:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "ko",
+      "content_hash": "9a9b159e7474df725d4a94d57d145c41d729864b7cb6b5c0f7928c80a5ea1020",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "6a1e935f087156c43b5d5cf5",
+          "quote": "잠언 18:22",
+          "before": "하십니다. “아내를 얻는 자는 복을 얻고 여호와께 은총을 받는 자니라”(",
+          "after": ").",
+          "spans": [
+            [
+              1615,
+              1623
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "e9c6a2e2d497f7faafb79824",
+          "quote": "마태복음 19",
+          "before": "",
+          "after": "장에서 예수님은 결혼의 엄중함에 대해 가르치셨습니다. “바리새인들이 예수",
+          "spans": [
+            [
+              1635,
+              1642
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "9d352d6a192f459f573ee84f",
+          "quote": "마태복음 19:3-10",
+          "before": "되 만일 사람이 아내에게 이같이 할진대 장가들지 않는 것이 좋삽나이다”(",
+          "after": ").",
+          "spans": [
+            [
+              2148,
+              2160
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "484314ec065ad7836f3b587f",
+          "quote": "고린도전서 7:1-2",
+          "before": " 음행의 연고로 남자마다 자기 아내를 두고 여자마다 자기 남편을 두라”(",
+          "after": "). 신체 접촉을 하지 않는 구애 방식은 이 성경 말씀에 근거합니다. 감",
+          "spans": [
+            [
+              5779,
+              5790
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "94d26e8ee69d9d33dc94add8",
+          "quote": "고린도전서 7:1-2",
+          "before": "",
+          "after": "를 고려할 때, 접촉이란 무엇일까요? 접촉의 압력이나 체온을 느낄 수 있",
+          "spans": [
+            [
+              6131,
+              6142
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "8ea89b0c83a40224db59048cddf9592fe14a10fcba650d980507880cf1db20f9"
     },
     "12b8818b-ec0b-4b20-83a2-17fc74f174b0:en:a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12b8818b-ec0b-4b20-83a2-17fc74f174b0",
@@ -147160,6 +147338,14 @@
       "markers": [],
       "record_hash": "55498cca7081ec5a652dd48a270856c01e318ee3ef042944db0b3c3819716c2d"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:nb:e5afe93fd07f0f0d0fdc6694fc27e6ff9f5e5ed31d4d9979110dc7f05cd2b348:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "nb",
+      "content_hash": "e5afe93fd07f0f0d0fdc6694fc27e6ff9f5e5ed31d4d9979110dc7f05cd2b348",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "8f654916463e41794b5bb3389a034bb8931734acab2b9cecfcdae24455228425"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:nl:7c36b57b540a954205dc068e550eeacc154fc061e5dd9165f32cb616a6db8616:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "nl",
@@ -201371,6 +201557,79 @@
       ],
       "record_hash": "0441d9718bf168d661ab7b11afe5946455690d59971e45b5a3fdf9c85d00d402"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:af:d7a58add4980f71ba54b044d3f7f5273b748207a72566813dffb313a3cdd4e18:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "af",
+      "content_hash": "d7a58add4980f71ba54b044d3f7f5273b748207a72566813dffb313a3cdd4e18",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9a912d1e96872c2d3464809f",
+          "quote": "Daniël 1",
+          "before": "Daniël en sy vriende in Babilon aankom (",
+          "after": "), is vleis van die koning se tafel aan ",
+          "spans": [
+            [
+              3267,
+              3275
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "104bd0fa6514301ea8c6ee58",
+          "quote": "Handelinge 15",
+          "before": "in Jerusalem het hierdie vraag oorweeg (",
+          "after": ").",
+          "spans": [
+            [
+              4009,
+              4022
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "cff4444fa76f06730e73101b",
+          "quote": "1 Korintiërs 3:16",
+          "before": "t die Gees van God in julle woon nie?” (",
+          "after": ").",
+          "spans": [
+            [
+              4558,
+              4575
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "3a408225d1f9a4245cf52dc8",
+          "quote": "Efesiërs 5:15",
+          "before": "ie as onwyse mense nie, maar as wyse.” (",
+          "after": ") Ons moet verstandig leef en wyse keuse",
+          "spans": [
+            [
+              13209,
+              13222
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "007d69fc6a25d88a6bda8db2c9b438f4b356bf8c49fa310b37db11ba98298ed2"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:ar:6f68b87977a8a22878993bc4faef3d8bf5d66a995bd3291a98d9e7e4baa24455:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "ar",
@@ -201865,6 +202124,79 @@
         }
       ],
       "record_hash": "f26f724ca91274d437f12d8ac98172503ea97bf31fa9c3678b97b07d8de0d163"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:sw:8f6a684d28fa6343368212ce281fece35a8fcfda2e136212af0d9ebcd8411242:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "sw",
+      "content_hash": "8f6a684d28fa6343368212ce281fece35a8fcfda2e136212af0d9ebcd8411242",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7bfc230b0ce34a7d17e83076",
+          "quote": "Danieli 1",
+          "before": "eli na marafiki zake walipofika Babeli (",
+          "after": "), walipewa nyama kutoka mezani pa mfalm",
+          "spans": [
+            [
+              3363,
+              3372
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "31f7c34a16934638d7e20b45",
+          "quote": "Matendo 15",
+          "before": " huko Yerusalemu lilijadili swali hilo (",
+          "after": ").",
+          "spans": [
+            [
+              4003,
+              4013
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "c84fb9e5a61fa38d590d92e9",
+          "quote": "1 Wakorintho 3:16",
+          "before": "amba Roho wa Mungu anakaa ndani yenu?” (",
+          "after": ").",
+          "spans": [
+            [
+              4485,
+              4502
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "c864c767bbfc43476597201a",
+          "quote": "Waefeso 5:15",
+          "before": " hekima, bali kama watu wenye hekima.” (",
+          "after": ") Tunapaswa kuishi kwa busara, tukifanya",
+          "spans": [
+            [
+              13963,
+              13975
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "ee5c4014556018f8597be2705087dc1a52e526e3fb64d8666801f56201c2213d"
     },
     "682dc04d-bea3-4325-ac73-926bb3396990:zh-Hans:453d809c9835625bb839996e7e2c1aa8ecdf0a44d47ea4d14d2d8e086f70d2ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
@@ -247632,6 +247964,111 @@
         }
       ],
       "record_hash": "4eea78843337e3c7ed36786ca50263e267beb938165f2be070bc2520a3ee4322"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:bn:5874edd2e975d52990a2341e757ef03ca65635e7ed1e14993542c5fcb2b91064:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "bn",
+      "content_hash": "5874edd2e975d52990a2341e757ef03ca65635e7ed1e14993542c5fcb2b91064",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "408b14c23bc015252c76ecc7",
+          "quote": "ফিলিপীয় ৪:৮",
+          "before": "িষয় থাকে, তবে সেই সব বিষয় চিন্তা করো –",
+          "after": "।",
+          "spans": [
+            [
+              3610,
+              3622
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "5cb9542ad7301960bb8ffe78",
+          "quote": "ফিলিপীয় ৪:৮",
+          "before": "ধর্মনিরপেক্ষ সংগীত ",
+          "after": "-এর পরীক্ষায় উত্তীর্ণ হয় না। অধিকাংশ ধ",
+          "spans": [
+            [
+              3658,
+              3670
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "99e84f8bbf2a300f9e018d32",
+          "quote": "ইফিষীয় ৫:১৯",
+          "before": "ে প্রভুর উদ্দেশে গান করো এবং সুর তোলো; –",
+          "after": "। এটি কি বাদ্যযন্ত্র দিয়ে সংগীত তৈরির ম",
+          "spans": [
+            [
+              6737,
+              6749
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "90724e524d80ff6a18d0a6af",
+          "quote": "প্রেরিত ১৬:২৫",
+          "before": "প্রশংসা গাইছিলেন; আর বন্দিরা তা শুনছিল –",
+          "after": "। পৌল ও সীল যখন কারাগারে ছিলেন, বেড়িতে ",
+          "spans": [
+            [
+              6970,
+              6983
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "0e6e32b83f7842bbd23d98a4",
+          "quote": "কলসীয় ৩:১৬",
+          "before": "ে অনুগ্রহসহকারে প্রভুর উদ্দেশে গান করো –",
+          "after": "। আমরা কি গীতসংহিতা, স্তোত্র ও আত্মিক গা",
+          "spans": [
+            [
+              7684,
+              7695
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "3e59f4b561b952d5cbe4968f",
+          "quote": "যোহন ৪:২৩",
+          "before": "া করবে; কারণ পিতা এমন উপাসকদেরই খোঁজেন –",
+          "after": "।",
+          "spans": [
+            [
+              8972,
+              8981
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "47eb85321414c363551164cf25ec7d2cbe2666d5ef644e1d7c59fc701bb854db"
     },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:de:6065a134850b056f02eec4bf668af4830adf52c358d3481de30f24426af125ee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
@@ -335274,6 +335711,159 @@
       ],
       "record_hash": "b62ce45debb6dbdc0d4c1b9afcfe67c68f0a55c32866cd2a2963220495c46a94"
     },
+    "b8ff6643-9234-465f-ab06-4adfc189a851:fr:d52bb775f1eab8fb2f3622bd85b4c4f5d4672856be08ddcff38f65e4fcad4914:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b8ff6643-9234-465f-ab06-4adfc189a851",
+      "locale": "fr",
+      "content_hash": "d52bb775f1eab8fb2f3622bd85b4c4f5d4672856be08ddcff38f65e4fcad4914",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8e263233b7ce058be1ac4da7",
+          "quote": "Genèse 8:22",
+          "before": "r, le jour et la nuit ne cesseront pas –",
+          "after": ". Salutations à tous. Au moment où j’écr",
+          "spans": [
+            [
+              225,
+              236
+            ]
+          ],
+          "osis": "Gen.8.22",
+          "queries": [
+            "1 8:22"
+          ]
+        },
+        {
+          "id": "c77911a3de6041d1d1dc6191",
+          "quote": "Matthieu 24:6-7",
+          "before": " tremblements de terre en divers lieux –",
+          "after": ".",
+          "spans": [
+            [
+              1604,
+              1619
+            ]
+          ],
+          "osis": "Matt.24.6-Matt.24.7",
+          "queries": [
+            "40 24:6-7"
+          ]
+        },
+        {
+          "id": "58b6bfbb6ec01e446531af1b",
+          "quote": "Matthieu 24:6",
+          "before": "ent, mais ce ne sera pas encore la fin –",
+          "after": ".",
+          "spans": [
+            [
+              3915,
+              3928
+            ]
+          ],
+          "osis": "Matt.24.6",
+          "queries": [
+            "40 24:6"
+          ]
+        },
+        {
+          "id": "1384a10d4f7e5b2e24dacb16",
+          "quote": "Luc 21:26",
+          "before": " puissances des cieux seront ébranlées –",
+          "after": ". Car… ces hommes qui n’ont pas le sceau",
+          "spans": [
+            [
+              6220,
+              6229
+            ]
+          ],
+          "osis": "Luke.21.26",
+          "queries": [
+            "42 21:26"
+          ]
+        },
+        {
+          "id": "dfb24a0f1cffe012eea5e470",
+          "quote": "Apocalypse 9:4-6",
+          "before": "ireront mourir, mais la mort les fuira –",
+          "after": ". Un jour viendra aussi où… les rois de ",
+          "spans": [
+            [
+              6383,
+              6399
+            ]
+          ],
+          "osis": "Rev.9.4-Rev.9.6",
+          "queries": [
+            "66 9:4-6"
+          ]
+        },
+        {
+          "id": "67398db45b4e2a66f72567c8",
+          "quote": "Apocalypse 6:15-17",
+          "before": "est venu, et qui pourra tenir debout ? –",
+          "after": ".",
+          "spans": [
+            [
+              6859,
+              6877
+            ]
+          ],
+          "osis": "Rev.6.15-Rev.6.17",
+          "queries": [
+            "66 6:15-17"
+          ]
+        },
+        {
+          "id": "28366fb1af80d920f1db3a69",
+          "quote": "Matthieu 16:24-26",
+          "before": "erait un homme en échange de son âme ? –",
+          "after": ".",
+          "spans": [
+            [
+              7324,
+              7341
+            ]
+          ],
+          "osis": "Matt.16.24-Matt.16.26",
+          "queries": [
+            "40 16:24-26"
+          ]
+        },
+        {
+          "id": "928948d54bbc53904cd17f77",
+          "quote": "Matthieu 25:34-40",
+          "before": ", c’est à moi que vous les avez faites –",
+          "after": ".",
+          "spans": [
+            [
+              10722,
+              10739
+            ]
+          ],
+          "osis": "Matt.25.34-Matt.25.40",
+          "queries": [
+            "40 25:34-40"
+          ]
+        },
+        {
+          "id": "60222639d05f479bf9250192",
+          "quote": "Jude 1:24-25",
+          "before": "ssance, maintenant et à jamais. Amen. – ",
+          "after": ".",
+          "spans": [
+            [
+              14441,
+              14453
+            ]
+          ],
+          "osis": "Jude.1.24-Jude.1.25",
+          "queries": [
+            "65 1:24-25"
+          ]
+        }
+      ],
+      "record_hash": "8a37af3f580e11f9189677878156f2bfa2696194e2e5d1661f79cf9f4359a196"
+    },
     "b8ff6643-9234-465f-ab06-4adfc189a851:he:c869ee66a95e1844b7cedc534c484af57450e160c98f343f2e8817b7c94ed5cb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b8ff6643-9234-465f-ab06-4adfc189a851",
       "locale": "he",
@@ -385820,6 +386410,127 @@
         }
       ],
       "record_hash": "03d102137ace59ec9abba2ea4e7311e8a7b845efb0882eea2aa6ec8354ca9791"
+    },
+    "dc9bb2ea-cefd-4340-b274-deddb70afcaf:zh-Hans:b04b38d4ab458fbd52dcb7a1ceb06dc71072075e21aa1d49f0c4a66f3da94e44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",
+      "locale": "zh-Hans",
+      "content_hash": "b04b38d4ab458fbd52dcb7a1ceb06dc71072075e21aa1d49f0c4a66f3da94e44",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e90bee512039cfbb637f5505",
+          "quote": "民数记13:30",
+          "before": "说出了他们该如何对待这片新的迦南地：……我们立刻上去得那地吧！我们足能得胜。——",
+          "after": "。",
+          "spans": [
+            [
+              299,
+              307
+            ]
+          ],
+          "osis": "Num.13.30",
+          "queries": [
+            "4 13:30"
+          ]
+        },
+        {
+          "id": "4d98024bba7016d988e6232a",
+          "quote": "使徒行传9:20",
+          "before": "，一切都改变了。保罗受洗之后，……随即在各会堂里传扬基督，说祂是上帝的儿子。——",
+          "after": "。下一节说众人都惊奇；到了第23节，也就是他受洗后五节经文，那里说：犹太人商议要",
+          "spans": [
+            [
+              1046,
+              1054
+            ]
+          ],
+          "osis": "Acts.9.20",
+          "queries": [
+            "44 9:20"
+          ]
+        },
+        {
+          "id": "a86c61039001c7e81479c913",
+          "quote": "提摩太后书4:6-7",
+          "before": "候到了。那美好的仗我已经打过了，当跑的路我已经跑尽了，所信的道我已经守住了。——",
+          "after": "。",
+          "spans": [
+            [
+              1235,
+              1245
+            ]
+          ],
+          "osis": "2Tim.4.6-2Tim.4.7",
+          "queries": [
+            "55 4:6-7"
+          ]
+        },
+        {
+          "id": "fe68eea9f10846276cc189ad",
+          "quote": "诗篇44:22",
+          "before": "帝”而被称为愚人。他们因自己的“愚昧”而遭到嘲笑和鄙视；他们……终日被杀……——",
+          "after": "。人们质疑他们的做法，质疑他们的宗教组织，质疑他们所传的信息，也质疑许多事情，却",
+          "spans": [
+            [
+              1542,
+              1549
+            ]
+          ],
+          "osis": "Ps.44.22",
+          "queries": [
+            "19 44:22"
+          ]
+        },
+        {
+          "id": "a6bc48fc7b873ff793c49ca5",
+          "quote": "使徒行传1:8",
+          "before": "你们就必得着能力；并要在耶路撒冷、犹太全地和撒马利亚，直到地极，作我的见证。——",
+          "after": "。",
+          "spans": [
+            [
+              2771,
+              2778
+            ]
+          ],
+          "osis": "Acts.1.8",
+          "queries": [
+            "44 1:8"
+          ]
+        },
+        {
+          "id": "8aa3867cf63103265a0b0088",
+          "quote": "以弗所书5:25-27",
+          "before": "，可以献给自己，作荣耀的教会，毫无玷污、皱纹等类的病，乃是圣洁、没有瑕疵的。——",
+          "after": "。",
+          "spans": [
+            [
+              3500,
+              3511
+            ]
+          ],
+          "osis": "Eph.5.25-Eph.5.27",
+          "queries": [
+            "49 5:25-27"
+          ]
+        },
+        {
+          "id": "0cf8cdfa9b4b2a9ef89f2820",
+          "quote": "以赛亚书61:1-3",
+          "before": "代替悲哀；赞美衣代替忧伤之灵；使他们称为公义树，是耶和华所栽的，叫祂得荣耀。——",
+          "after": "。",
+          "spans": [
+            [
+              4630,
+              4640
+            ]
+          ],
+          "osis": "Isa.61.1-Isa.61.3",
+          "queries": [
+            "23 61:1-3"
+          ]
+        }
+      ],
+      "record_hash": "ce8adcd3da29152e700d31268feeabbca1c51b9a336792474c743e6f395ad69c"
     },
     "dce3d3b3-8b56-4be5-9674-e682b97d3b43:af:b50532fb5fdd91bdc03ea8e04f3c0da3f6c54d404a00ef964b43fb76ccef9d30:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",
