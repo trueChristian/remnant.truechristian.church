@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "9e9e6a9ae6da369b4beed0ea6a56d18600838f18d7dc0e8fca9bf208f5fd7bb4",
+  "integrity": "0ccda8f444656110c50abfc03d6cb21d0eace2f758737e056d241412154543aa",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -201791,6 +201791,207 @@
       ],
       "record_hash": "c33888f391fc7b1473375808afac07f1f48534817b0a2b64e5e689da6b22c04b"
     },
+    "6485a6ed-e76f-4142-9e27-e649823cb1a3:zh-Hans:e3a6b1946ed90def5fcd9b9ac294f5113a89da68fcd2ac801a01f8d1d1aba1a4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
+      "locale": "zh-Hans",
+      "content_hash": "e3a6b1946ed90def5fcd9b9ac294f5113a89da68fcd2ac801a01f8d1d1aba1a4",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "192824fd648c885ec7fe4d14",
+          "quote": "马太福音 5:8",
+          "before": "能突出身体而不是荣耀主的衣物。耶稣说：心里清洁的人有福了，因为他们必得见上帝——",
+          "after": "。",
+          "spans": [
+            [
+              612,
+              620
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "26a40b389ca7ef9644710697",
+          "quote": "彼得前书 3:3-6",
+          "before": "如撒拉顺服亚伯拉罕，称他为主。你们只要行善，不因任何惊惶而惧怕，就是她的女儿——",
+          "after": "。",
+          "spans": [
+            [
+              776,
+              786
+            ]
+          ],
+          "osis": "1Pet.3.3-1Pet.3.6",
+          "queries": [
+            "60 3:3-6"
+          ]
+        },
+        {
+          "id": "e5aff2e7aeb1ab97bf6062d2",
+          "quote": "诗篇 19:7",
+          "before": "就是撒拉的女儿。上帝不是混乱的源头——耶和华的律法是完全的，能使灵魂回转……——",
+          "after": "。记住：敬畏耶和华是智慧的开端［不是混乱］……——箴言 9:10。",
+          "spans": [
+            [
+              1794,
+              1801
+            ]
+          ],
+          "osis": "Ps.19.7",
+          "queries": [
+            "19 19:7"
+          ]
+        },
+        {
+          "id": "b9365c6053e3a345db8d95bd",
+          "quote": "箴言 9:10",
+          "before": "灵魂回转……——诗篇 19:7。记住：敬畏耶和华是智慧的开端［不是混乱］……——",
+          "after": "。",
+          "spans": [
+            [
+              1844,
+              1851
+            ]
+          ],
+          "osis": "Prov.9.10",
+          "queries": [
+            "20 9:10"
+          ]
+        },
+        {
+          "id": "b710f71fbe7e312de741fb0b",
+          "quote": "提摩太后书 2:4-22",
+          "before": "要逃避年少的私欲，与那些出于清洁的心呼求主的人一同追求公义、信心、仁爱、平安——",
+          "after": "。",
+          "spans": [
+            [
+              2050,
+              2062
+            ]
+          ],
+          "osis": "2Tim.2.4-2Tim.2.22",
+          "queries": [
+            "55 2:4-22"
+          ]
+        },
+        {
+          "id": "760cf88802036a4615238798",
+          "quote": "提摩太前书 2:9-10",
+          "before": "编发、黄金、珍珠或昂贵的衣服为妆饰，而要以善行为妆饰，这才适合自称敬虔的妇女——",
+          "after": "。",
+          "spans": [
+            [
+              3401,
+              3413
+            ]
+          ],
+          "osis": "1Tim.2.9-1Tim.2.10",
+          "queries": [
+            "54 2:9-10"
+          ]
+        },
+        {
+          "id": "d30bdaa2647d8bc294f520c8",
+          "quote": "提多书 2:11-12",
+          "before": "已经向众人显明，教导我们弃绝不敬虔和世俗的私欲，在今世自守、公义、敬虔地生活——",
+          "after": "。",
+          "spans": [
+            [
+              3747,
+              3758
+            ]
+          ],
+          "osis": "Titus.2.11-Titus.2.12",
+          "queries": [
+            "56 2:11-12"
+          ]
+        },
+        {
+          "id": "42a9e6c920417d1c080dbf16",
+          "quote": "以赛亚书 61:10",
+          "before": "上救恩的衣服，以公义的袍子遮盖我，如新郎用饰物装饰自己，如新妇用珠宝装饰自己——",
+          "after": "。",
+          "spans": [
+            [
+              3847,
+              3857
+            ]
+          ],
+          "osis": "Isa.61.10",
+          "queries": [
+            "23 61:10"
+          ]
+        },
+        {
+          "id": "d84d4b4cd5660d0f2526ca50",
+          "quote": "启示录 21:2-3",
+          "before": "人间，祂要与他们同住，他们要作祂的子民，上帝要亲自与他们同在，作他们的上帝。——",
+          "after": "。",
+          "spans": [
+            [
+              4130,
+              4140
+            ]
+          ],
+          "osis": "Rev.21.2-Rev.21.3",
+          "queries": [
+            "66 21:2-3"
+          ]
+        },
+        {
+          "id": "89e7552eecb52303d9f6b2b9",
+          "quote": "加拉太书 6:7",
+          "before": "不要自欺，上帝是不可戏弄的；人种的是什么，收的也是什么——",
+          "after": "。不要被误导。这节经文也是对信徒说的，不只是对尚未归主之人说的。我们每个人都可以",
+          "spans": [
+            [
+              4328,
+              4336
+            ]
+          ],
+          "osis": "Gal.6.7",
+          "queries": [
+            "48 6:7"
+          ]
+        },
+        {
+          "id": "b6d26e1e8f56e6f5f400b28b",
+          "quote": "马太福音 10:28",
+          "before": "怕那些能杀身体却不能杀灵魂的人；倒要怕那能把灵魂和身体都毁灭在地狱里的那一位——",
+          "after": "。我们活在这末后的日子里，四周传来的信息是，只要你信奉某个神，你就会没事。这是错",
+          "spans": [
+            [
+              4740,
+              4750
+            ]
+          ],
+          "osis": "Matt.10.28",
+          "queries": [
+            "40 10:28"
+          ]
+        },
+        {
+          "id": "bfd51ea472b09584f8683f6b",
+          "quote": "约翰福音 14:6-7",
+          "before": "那里去。你们若认识了我，也就认识我的父；从今以后，你们认识祂，并且已经看见祂——",
+          "after": "。赞美主，上帝赐给了我们一个可效法的榜样。",
+          "spans": [
+            [
+              4896,
+              4907
+            ]
+          ],
+          "osis": "John.14.6-John.14.7",
+          "queries": [
+            "43 14:6-7"
+          ]
+        }
+      ],
+      "record_hash": "5292d0570328baf387e802fc4098b0da2b68a5df301616e4d28c4f6d22e38803"
+    },
     "6497a93f-bea4-44dd-bbe5-da90318f3d48:en:03fd187d8162dd4c57f29d2c2fcc982a02bf53300b88a7fed75b469f57945622:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6497a93f-bea4-44dd-bbe5-da90318f3d48",
       "locale": "en",
@@ -250916,6 +251117,111 @@
       ],
       "record_hash": "2e7ad76d649b38d8f6fb86eae8efcd490f74532375615fd871cb432dedb02656"
     },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:nb:5955de492c58f4e93ee1c59b28a6800e9920325fbce2ad5a5fb5fd01358f2b89:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "nb",
+      "content_hash": "5955de492c58f4e93ee1c59b28a6800e9920325fbce2ad5a5fb5fd01358f2b89",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "2aebbe71cba47ec88abc6157",
+          "quote": "Filipperne 4:8",
+          "before": "nnes noe prisverdig, så tenk på dette – ",
+          "after": ".",
+          "spans": [
+            [
+              3669,
+              3683
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "a37297a74ecf731ebfe7b92f",
+          "quote": "Filipperne 4:8",
+          "before": "Verdslig musikk består ikke ",
+          "after": "-prøven. Det meste av den verdslige musi",
+          "spans": [
+            [
+              3728,
+              3742
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "94aa1fa89d6c837c25e597a4",
+          "quote": "Efeserne 5:19",
+          "before": "dier lyde i hjertet deres for Herren; – ",
+          "after": ". Høres dette ut som å lage musikk med i",
+          "spans": [
+            [
+              6968,
+              6981
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "2a6e51ca485f413d8f07a9bf",
+          "quote": "Apostlenes gjerninger 16:25",
+          "before": "nger til Gud, og fangene hørte på dem – ",
+          "after": ". Da Paulus og Silas satt i fengsel med ",
+          "spans": [
+            [
+              7209,
+              7236
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "e945ef027f44b17ceee49639",
+          "quote": "Kolosserne 3:16",
+          "before": " med nåde i hjertene deres for Herren – ",
+          "after": ". Lar vi salmer, hymner og åndelige sang",
+          "spans": [
+            [
+              7906,
+              7921
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "811d7a8ef0e9419d1499b50a",
+          "quote": "Johannes 4:23",
+          "before": "r Faderen søker slike til å tilbe ham – ",
+          "after": ".",
+          "spans": [
+            [
+              9154,
+              9167
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "0f57b7f69831e94a08be9b43ab3b1e87d671f9f961807b2cdecc925c5ce08e56"
+    },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:nl:8579d14cda7141a6001214a6d09ac2e22ed1fb7e394cd066b97045076ba7e309:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
       "locale": "nl",
@@ -251230,6 +251536,111 @@
         }
       ],
       "record_hash": "90ddab425ab79ac9c96932acc0a05f732923ea01bceab1fad268c94e73d82184"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:sv:421e207f4eecff4278f29432b00b1ba79b624e738df94deff1da3ab0685517f3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "sv",
+      "content_hash": "421e207f4eecff4278f29432b00b1ba79b624e738df94deff1da3ab0685517f3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f5f70366ab33e7e82d954e1a",
+          "quote": "Filipperbrevet 4:8",
+          "before": "got som förtjänar beröm, tänk på detta –",
+          "after": ".",
+          "spans": [
+            [
+              3668,
+              3686
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "b122225f9fd84cb2317c11b7",
+          "quote": "Filipperbrevet 4:8",
+          "before": "Sekulär musik klarar inte testet i ",
+          "after": ". De flesta sekulära sånger har orena te",
+          "spans": [
+            [
+              3738,
+              3756
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "a070724e3a01d1fba4fb2031",
+          "quote": "Efesierbrevet 5:19",
+          "before": "ela melodier i era hjärtan till Herren –",
+          "after": ". Låter det som att skapa musik med inst",
+          "spans": [
+            [
+              6960,
+              6978
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "82faa1896182de7678e0222b",
+          "quote": "Apostlagärningarna 16:25",
+          "before": "ånger till Gud, och fångarna hörde dem –",
+          "after": ". När Paulus och Silas satt i fängelse, ",
+          "spans": [
+            [
+              7209,
+              7233
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "baf29605a6e9796f0ed22b6f",
+          "quote": "Kolosserbrevet 3:16",
+          "before": "jung med nåd i era hjärtan till Herren –",
+          "after": ". Låter vi psalmer, hymner och andliga s",
+          "spans": [
+            [
+              7915,
+              7934
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "ac040ba2e572cc6ff6024b82",
+          "quote": "Johannesevangeliet 4:23",
+          "before": " Fadern söker sådana som tillber honom –",
+          "after": ".",
+          "spans": [
+            [
+              9224,
+              9247
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "b45127b79424a1afd8f7afe3c10cb5be8a1118bba243416b09604fc1fe5cf6e3"
     },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:sw:fe9833f5fe88bb11a4b7932e94580e49529829674406f88be9a2140e6ad80603:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
@@ -333990,6 +334401,59 @@
       ],
       "record_hash": "b35ea2fd94101ee31cf96b66f46de323747587ce4e1430de72454d5ea08a11ec"
     },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:nb:801bee6b4bc3d570e22ea2658757f82b5ff2ed5313a26b4a103b43f066fff778:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "nb",
+      "content_hash": "801bee6b4bc3d570e22ea2658757f82b5ff2ed5313a26b4a103b43f066fff778",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c69f20b46d0fc56dc3bd9185",
+          "quote": "2. Mosebok 10,21–23",
+          "before": "e israelittene hadde lys der de bodde» (",
+          "after": ").",
+          "spans": [
+            [
+              537,
+              556
+            ]
+          ],
+          "osis": "Exod.10.1-Exod.10.29,Exod.21.1-Exod.23.33",
+          "queries": [
+            "2 10:1-29",
+            "2 21:1-36",
+            "2 22:1-31",
+            "2 23:1-33"
+          ]
+        }
+      ],
+      "record_hash": "ee7cf1cd5e2ee1906c299bbcf09f7db115aa8ffb1a62e6119ba2e848a0e8d2a2"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:nl:993081a8079e98b73474845315355ba93fd735340d96b51ec6ff79b2cf1ec109:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "nl",
+      "content_hash": "993081a8079e98b73474845315355ba93fd735340d96b51ec6ff79b2cf1ec109",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d33410367b3b4aef2510e8bb",
+          "quote": "Exodus 10:21-23",
+          "before": "an Israël hadden licht in hun woningen’ ",
+          "after": ".",
+          "spans": [
+            [
+              682,
+              697
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "42b1e841b65b9c066a66ac07e1d2d0225576132cd03f6a188429286e70e9ce04"
+    },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:ru:bb9fb2df15b065ce52382877d04f7dea203644d3e4ddb4b852def61cd753c22e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
       "locale": "ru",
@@ -408492,6 +408956,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "c733aa9c69a36aef8900a72b1a415fd194206faaf8cd060c33481434106bbc7e"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:es:2b6e584f2eca9b43684e37abbcc151a1c45ca48227b92dd7d6be06aafb45b010:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "es",
+      "content_hash": "2b6e584f2eca9b43684e37abbcc151a1c45ca48227b92dd7d6be06aafb45b010",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "e9b10e73b05b8ed4cd294636e7191aad2e85ec4a1bef51e2ea1ff0598ea97d51"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:zh-Hans:430f32e744d26d2440e8b4bbd80ad1b01bcfd7b08637ad9c8d95435f7a4f49ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "zh-Hans",
+      "content_hash": "430f32e744d26d2440e8b4bbd80ad1b01bcfd7b08637ad9c8d95435f7a4f49ef",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a50d9f710dce7e35149b2295ca8941acf83fed3774cf97a0a8a327474ec5b989"
     },
     "e942af59-8d9c-4044-a7de-1928ccf8ca87:en:dbd7a4828a4bd8dfd22982cfa5c2a4fa56c049e03a1259f8d89bb0fb8cf23209:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e942af59-8d9c-4044-a7de-1928ccf8ca87",

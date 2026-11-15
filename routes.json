@@ -82414,11 +82414,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "editorial",
+        "alias": "del-editor-8",
+        "history": [
+          "/es/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -149011,11 +149012,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ungdom",
+        "alias": "hva-er-rett-ved-musikken-min",
+        "history": [
+          "/nb/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -150392,11 +150394,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristent-liv",
+        "alias": "verdens-lys-er-jesus",
+        "history": [
+          "/nb/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -160391,11 +160394,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelijk-leven",
+        "alias": "het-licht-der-wereld-is-jezus",
+        "history": [
+          "/nl/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -188657,11 +188661,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ungdom",
+        "alias": "vad-är-rätt-med-min-musik",
+        "history": [
+          "/sv/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -217150,11 +217155,12 @@
       },
       "6485a6ed-e76f-4142-9e27-e649823cb1a3": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "with-what-should-we-be-adorned",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "姊妹",
+        "alias": "我们当以什么为装饰",
+        "history": [
+          "/zh-Hans/articles/with-what-should-we-be-adorned/"
+        ],
+        "fallback": false
       },
       "6497a93f-bea4-44dd-bbe5-da90318f3d48": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -220884,11 +220890,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "编者的话",
+        "alias": "编者的话-6",
+        "history": [
+          "/zh-Hans/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
