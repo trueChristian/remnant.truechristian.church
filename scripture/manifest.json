@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "91560b6223d05671e82b7e7d5d22b7304b948c8d9941f4db4edf4a5b99b6ba27",
+  "integrity": "9e9e6a9ae6da369b4beed0ea6a56d18600838f18d7dc0e8fca9bf208f5fd7bb4",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -41710,6 +41710,14 @@
       "markers": [],
       "record_hash": "a8d519acea817078fe2172975a71da577c50b04132216e692b0c29b33b9ea1a3"
     },
+    "11b11932-7978-4944-8e7e-16e48c9aef1a:de:a60788bbe6e9f1f25ee2768f42f2f626d87424ecb63dae5f0bfe92df3420ff07:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "11b11932-7978-4944-8e7e-16e48c9aef1a",
+      "locale": "de",
+      "content_hash": "a60788bbe6e9f1f25ee2768f42f2f626d87424ecb63dae5f0bfe92df3420ff07",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "fa817f774f29ee0bdd83b873af1d9230bdf4eab92f03e7829fa67064e42aa8a0"
+    },
     "11b11932-7978-4944-8e7e-16e48c9aef1a:el:a21d45e445912c06ea9d30186e868828cd32b7e241be1f7db70d8850bbc49d7c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "11b11932-7978-4944-8e7e-16e48c9aef1a",
       "locale": "el",
@@ -42388,6 +42396,95 @@
       ],
       "record_hash": "9cc5e1ccf9a46ab87a6896360127614356f2f072770a4005eb5aa6732c13b178"
     },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:fr:d4ad0ead52948729e8f49f63a51c1fad47020650487297a386036bf741b00858:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "fr",
+      "content_hash": "d4ad0ead52948729e8f49f63a51c1fad47020650487297a386036bf741b00858",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3b3542160f682213850efe19",
+          "quote": "Proverbes 18:22",
+          "before": "ne faveur qu’il obtient de l’Éternel » (",
+          "after": ").",
+          "spans": [
+            [
+              3292,
+              3307
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "1cf350f0639d9b86a7a61d76",
+          "quote": "Matthieu 19",
+          "before": "Dans ",
+          "after": ", Jésus a enseigné le sérieux du mariage",
+          "spans": [
+            [
+              3324,
+              3335
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "6d3f84138b3856df2fb60f8e",
+          "quote": "Matthieu 19:3-10",
+          "before": "il n’est pas avantageux de se marier » (",
+          "after": ").",
+          "spans": [
+            [
+              4422,
+              4438
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "ec76763c54b7300069857f9c",
+          "quote": "1 Corinthiens 7:1-2",
+          "before": "me, et que chaque femme ait son mari » (",
+          "after": "). La pratique d’une cour sans contact p",
+          "spans": [
+            [
+              12213,
+              12232
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "1cf465b46114e24f94dad57b",
+          "quote": "1 Corinthiens 7:1-2",
+          "before": "À la lumière de ",
+          "after": ", qu’est-ce que toucher ? Si vous pouvez",
+          "spans": [
+            [
+              13104,
+              13123
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "1c55d58202c5948da0519ef0a091133cb82b5d24f09c9241d6dec483d5aa8456"
+    },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:he:a9cc9c5823732bf0fd47a17e602aec8d99b3f9cb8583928c489af7bbcfd3fadc:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
       "locale": "he",
@@ -42751,6 +42848,95 @@
         }
       ],
       "record_hash": "8ea89b0c83a40224db59048cddf9592fe14a10fcba650d980507880cf1db20f9"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:nb:12afeff643be4b3da7482709e36de8d4b086145aa4c1a9bdd9fef726449a5556:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "nb",
+      "content_hash": "12afeff643be4b3da7482709e36de8d4b086145aa4c1a9bdd9fef726449a5556",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e5f1806a710095c792191ebd",
+          "quote": "Ordspråkene 18:22",
+          "before": "r noe godt og vinner Herrens velvilje» (",
+          "after": ").",
+          "spans": [
+            [
+              2860,
+              2877
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "04f9a13addc31d962695b35c",
+          "quote": "Matteus 19",
+          "before": "I ",
+          "after": " underviste Jesus om hvor alvorlig ektes",
+          "spans": [
+            [
+              2891,
+              2901
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "e5c4f2c4d76a6814d1255244",
+          "quote": "Matteus 19:3-10",
+          "before": "a hans, er det bedre ikke å gifte seg» (",
+          "after": ").",
+          "spans": [
+            [
+              3913,
+              3928
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "3f660dd68f15b319465a01ba",
+          "quote": "1. Korinter 7:1-2",
+          "before": "en kone, og hver kvinne sin egen mann» (",
+          "after": "). Praksisen med kurtise uten berøring b",
+          "spans": [
+            [
+              10423,
+              10440
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "79b878a88f5ed12e6f0c12a4",
+          "quote": "1. Korinter 7:1-2",
+          "before": "Hva betyr berøring når vi ser på ",
+          "after": "? Hvis dere kan kjenne trykket fra berør",
+          "spans": [
+            [
+              11159,
+              11176
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "ec7b9babb7d1c12a0daa484ba98f5c2e8f3053b87686636a2f9570cec35078e4"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:sv:8ad5fce39239e405e327f70026955e3b99ce732f5f5d048283f76e1fcdaaf9e0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -147985,6 +148171,14 @@
       "markers": [],
       "record_hash": "8bc41b02cc79a3e5541a80dc7679fc5a0e2fccec8aa2f98c9b65f892de9597df"
     },
+    "46f89299-c0a0-407c-9898-01a0c150c453:sv:b6f9c09e3b176d71f80c8c09213eef8cf0f5bdc27ac97aaa6d8bd5d1f0620903:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
+      "locale": "sv",
+      "content_hash": "b6f9c09e3b176d71f80c8c09213eef8cf0f5bdc27ac97aaa6d8bd5d1f0620903",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "53613a8716234a91e6b0ff99babc1699db873c656afa03d940b021aab0c96e6e"
+    },
     "46f89299-c0a0-407c-9898-01a0c150c453:sw:d71a4eb1096959637cb48c9f98c70cfd62d0f6038e689ca062a9bc085ee20b57:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "46f89299-c0a0-407c-9898-01a0c150c453",
       "locale": "sw",
@@ -202998,6 +203192,79 @@
       ],
       "record_hash": "8ba74f8c77dd73da408f446148211bc04cdb8e34d58c09f40a30f4a1aa9ab773"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:ko:692a032999a3115b14f887da129fa6bfab000fc5cfdf002a8574531d0b77d030:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "ko",
+      "content_hash": "692a032999a3115b14f887da129fa6bfab000fc5cfdf002a8574531d0b77d030",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "10fc3689139d7268f7c08106",
+          "quote": "다니엘 1",
+          "before": "다니엘과 그의 친구들이 바빌론에 도착했을 때(",
+          "after": "장), 왕의 식탁에서 나온 고기를 권유받았지만 이를 거절하고 채소만 먹기",
+          "spans": [
+            [
+              1633,
+              1638
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "9fbb07b3a3cc2336db7b1835",
+          "quote": "사도행전 15",
+          "before": "에 직면했습니다. 예루살렘에서 열린 교회 회의가 이 문제를 논의했습니다(",
+          "after": "장).",
+          "spans": [
+            [
+              1976,
+              1983
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "f7be8e2e292f5a01a26f0d6e",
+          "quote": "고린도전서 3:16",
+          "before": "성전인 것과 하나님의 성령이 너희 안에 거하시는 것을 알지 못하느냐?”(",
+          "after": ").",
+          "spans": [
+            [
+              2222,
+              2232
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "abb0c845a5e85c4d13e2c358",
+          "quote": "에베소서 5:15",
+          "before": "자세히 살펴 지혜 없는 자처럼 하지 말고 지혜 있는 자처럼 하십시오.”(",
+          "after": ") 우리는 신중하게 살며 현명한 선택을 해야 합니다.",
+          "spans": [
+            [
+              6612,
+              6621
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "61cee36d9aa7376df3453865aa2d86989884c7c5c010d53d620019dacff3c0d7"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:nb:42b041b09bc8d64a18dbb8c77107ef2c61b693e92aa45405cb338e19ab9d9c85:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "nb",
@@ -203070,6 +203337,79 @@
         }
       ],
       "record_hash": "669ec309791abebbdbe24e5df8345e6f9986b6ca60125d1963956f8989a2476f"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:pt:69a63c06fd7059820739ce78150fb5af3a9bc12b2387edd68ea0a9e00ea82f46:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "pt",
+      "content_hash": "69a63c06fd7059820739ce78150fb5af3a9bc12b2387edd68ea0a9e00ea82f46",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ab0a9fa32582f25bccba9f37",
+          "quote": "Daniel 1",
+          "before": "iel e seus amigos chegaram à Babilônia (",
+          "after": "), ofereceram-lhes a carne da mesa do re",
+          "spans": [
+            [
+              3253,
+              3261
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "27bea03abe970b9935ce3731",
+          "quote": "Atos 15",
+          "before": "eja em Jerusalém ponderou essa questão (",
+          "after": ").",
+          "spans": [
+            [
+              3953,
+              3960
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "1472c000625dfb872027cf97",
+          "quote": "1 Coríntios 3:16",
+          "before": "que o Espírito de Deus habita em vós?” (",
+          "after": ").",
+          "spans": [
+            [
+              4419,
+              4435
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "dc02f4e60718e9d0bab005b1",
+          "quote": "Efésios 5:15",
+          "before": "s, não como néscios, mas como sábios.” (",
+          "after": ") Devemos viver com prudência e fazer es",
+          "spans": [
+            [
+              13445,
+              13457
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "ed035ea794ad2d4d757a9eab72508371d2b47c8c73535922b29e5878dc3b6caa"
     },
     "682dc04d-bea3-4325-ac73-926bb3396990:ru:904b85d305025a2085a87285e1a1eafeeea11662436b1e2a701a1b14abe6c5a7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
@@ -215534,6 +215874,127 @@
         }
       ],
       "record_hash": "6f1fc2492a85a7c5a7d692f1e4a131ca44b5efe76d726c33ac22d9b765318560"
+    },
+    "71a8a627-ef21-4efb-9dd1-36d5124ac192:sw:4ca60f5d552be41958fa3f44fcc2252a799b29b35b756dd45b27b907181fd130:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "71a8a627-ef21-4efb-9dd1-36d5124ac192",
+      "locale": "sw",
+      "content_hash": "4ca60f5d552be41958fa3f44fcc2252a799b29b35b756dd45b27b907181fd130",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "592f2fc621c2e0b7589706ad",
+          "quote": "Mathayo 24:6",
+          "before": " yatokee, lakini mwisho bado haujafika –",
+          "after": ". Tukumbuke kwamba hatupaswi kufadhaika.",
+          "spans": [
+            [
+              2065,
+              2077
+            ]
+          ],
+          "osis": "Matt.24.6",
+          "queries": [
+            "40 24:6"
+          ]
+        },
+        {
+          "id": "5b9eef92f568ef6bf14f945e",
+          "quote": "Mathayo 24:13",
+          "before": "ilia hadi mwisho, ndiye atakayeokolewa –",
+          "after": ". Ikiwa sisi, kama Petro, tutaacha kumta",
+          "spans": [
+            [
+              2208,
+              2221
+            ]
+          ],
+          "osis": "Matt.24.13",
+          "queries": [
+            "40 24:13"
+          ]
+        },
+        {
+          "id": "256e379700837731eaef1a40",
+          "quote": "Ufunuo 21:8",
+          "before": "tika ziwa linalowaka moto na kiberiti… –",
+          "after": ". Lakini, Yeye ashindaye atarithi vitu v",
+          "spans": [
+            [
+              2469,
+              2480
+            ]
+          ],
+          "osis": "Rev.21.8",
+          "queries": [
+            "66 21:8"
+          ]
+        },
+        {
+          "id": "2df4ccf2271cc28d961efa6c",
+          "quote": "Ufunuo 21:7",
+          "before": "kuwa Mungu wake, naye atakuwa mwanangu –",
+          "after": ".",
+          "spans": [
+            [
+              2584,
+              2595
+            ]
+          ],
+          "osis": "Rev.21.7",
+          "queries": [
+            "66 21:7"
+          ]
+        },
+        {
+          "id": "d87f0abf4fc3bb53b4a0837b",
+          "quote": "Waebrania 13:17",
+          "before": "kama wale ambao lazima watatoa hesabu… –",
+          "after": ". Kutii hapa ni katika muktadha wa Neno ",
+          "spans": [
+            [
+              9633,
+              9648
+            ]
+          ],
+          "osis": "Heb.13.17",
+          "queries": [
+            "58 13:17"
+          ]
+        },
+        {
+          "id": "c107b04be809f64062fbe3f1",
+          "quote": "2 Wakorintho 5:10",
+          "before": "a na aliyoyafanya, yawe mema au mabaya –",
+          "after": ". Kila mtu atapokea hukumu binafsi kwa m",
+          "spans": [
+            [
+              9991,
+              10008
+            ]
+          ],
+          "osis": "2Cor.5.10",
+          "queries": [
+            "47 5:10"
+          ]
+        },
+        {
+          "id": "182b01c193b55405b2e31062",
+          "quote": "Mathayo 8:10",
+          "before": "bwa namna hii, la, hata katika Israeli –",
+          "after": ". Pia ninaona mielekeo ya sasa ya baadhi",
+          "spans": [
+            [
+              10378,
+              10390
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        }
+      ],
+      "record_hash": "dd75700aa7b9fd191b873d010e1bf65b42466b34c416187e9ca93996367eb3cd"
     },
     "71a8a627-ef21-4efb-9dd1-36d5124ac192:ur:b3c926af406695c7eebe240a6c169b5e61c9985a1625435ba9dcd52fb16c1866:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "71a8a627-ef21-4efb-9dd1-36d5124ac192",
@@ -249469,6 +249930,111 @@
       ],
       "record_hash": "72f9ff2c1b1db6b0cbc207cec5e7ab68c2f8cfc33364fab37058ba1011a890d3"
     },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:af:13c0c5e86cd1e195b928bad829b1f49d1a31e8e1d8ad09946c8b56e89f13e591:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "af",
+      "content_hash": "13c0c5e86cd1e195b928bad829b1f49d1a31e8e1d8ad09946c8b56e89f13e591",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8e1a9ec0eb6df33c6853ed62",
+          "quote": "Filippense 4:8",
+          "before": "f lof daar ook al mag wees, bedink dit –",
+          "after": ".",
+          "spans": [
+            [
+              3888,
+              3902
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "4757a981da34f4f297c4acf3",
+          "quote": "Filippense 4:8",
+          "before": "Sekulêre musiek slaag nie die ",
+          "after": "-toets nie. Die lirieke van die meeste s",
+          "spans": [
+            [
+              3949,
+              3963
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "b6df4318720d139ec617b2dd",
+          "quote": "Efesiërs 5:19",
+          "before": "ek in julle hart tot eer van die Here; –",
+          "after": ". Klink dit na musiek maak met instrumen",
+          "spans": [
+            [
+              7390,
+              7403
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "fcb9368d5e46b38eb839fd0a",
+          "quote": "Handelinge 16:25",
+          "before": " die gevangenes het na hulle geluister –",
+          "after": ". Toe Paulus en Silas in die gevangenis ",
+          "spans": [
+            [
+              7657,
+              7673
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "39096d35b394bf790698f1b5",
+          "quote": "Kolossense 3:16",
+          "before": "id in julle harte tot eer van die Here –",
+          "after": ". Laat ons toe dat psalms, lofsange en g",
+          "spans": [
+            [
+              8468,
+              8483
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "b718d2db3a938d7e59c2ad61",
+          "quote": "Johannes 4:23",
+          "before": "die Vader soek mense wat Hom só aanbid –",
+          "after": ".",
+          "spans": [
+            [
+              9813,
+              9826
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "0b18802dbd68347b6648ae25343db3abfec6543c3b97d2b6e6acebde4d0ebc8c"
+    },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:ar:929b33ba4bcf2f93b72484bed21afffb3bdb3ad678af021cd7841a630ecc5c73:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
       "locale": "ar",
@@ -250140,6 +250706,321 @@
       ],
       "record_hash": "0868eb5b84e40e5ba6ce30f6e65e0c6ff871b268e4a9f870f5a5ab288e83a546"
     },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:it:e61a9233aed06e630882d16c2b1cf76253f0265771944c72f8c742ac76cd5a7b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "it",
+      "content_hash": "e61a9233aed06e630882d16c2b1cf76253f0265771944c72f8c742ac76cd5a7b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9a0d31c9eb1c11d032b96a24",
+          "quote": "Filippesi 4:8",
+          "before": " e qualche lode, pensate a queste cose –",
+          "after": ".",
+          "spans": [
+            [
+              3879,
+              3892
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "8350d4cffc2760e361d640a4",
+          "quote": "Filippesi 4:8",
+          "before": " musica secolare non supera la prova di ",
+          "after": ". La maggior parte della musica secolare",
+          "spans": [
+            [
+              3951,
+              3964
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "12b6f8b8782188f327bed8ea",
+          "quote": "Efesini 5:19",
+          "before": "neggiando nel vostro cuore al Signore; –",
+          "after": ". Vi sembra che si parli di fare musica ",
+          "spans": [
+            [
+              7423,
+              7435
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "b9c6721cd60b94f00bd7e5bf",
+          "quote": "Atti 16:25",
+          "before": "inni a Dio, e i prigionieri li udivano –",
+          "after": ". Quando Paolo e Sila erano in prigione,",
+          "spans": [
+            [
+              7674,
+              7684
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "67b5234cdcbf36052184e190",
+          "quote": "Colossesi 3:16",
+          "before": "con grazia nei vostri cuori al Signore –",
+          "after": ". Lasciamo che i salmi, gli inni e i can",
+          "spans": [
+            [
+              8469,
+              8483
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "679697d1a82f5fc5d5b67622",
+          "quote": "Giovanni 4:23",
+          "before": "; perché il Padre cerca tali adoratori –",
+          "after": ".",
+          "spans": [
+            [
+              9832,
+              9845
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "6fef8c815807966f7911e038f9639605de5664c32223b37a21739e01c2417d58"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:ko:8cbbf429d6ca52875fa414eb9ff9fd1b36cbda3a9c7f2b51c2dcacc27f181bd9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "ko",
+      "content_hash": "8cbbf429d6ca52875fa414eb9ff9fd1b36cbda3a9c7f2b51c2dcacc27f181bd9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "16725add415823c7885d979c",
+          "quote": "빌립보서 4:8",
+          "before": "찬할 만하며, 무슨 덕이 있든지 무슨 칭찬이 있든지 이것들을 생각하라 –",
+          "after": ".",
+          "spans": [
+            [
+              2146,
+              2154
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "f719075c243e39273fb55811",
+          "quote": "빌립보서 4:8",
+          "before": "세속 음악은 ",
+          "after": "의 기준을 통과하지 못합니다. 세속 음악의 대부분은 불순한 가사를 담고 ",
+          "spans": [
+            [
+              2178,
+              2186
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "a2c1e565898918c6dd5489a0",
+          "quote": "에베소서 5:19",
+          "before": " 영적인 노래로 서로 말하고, 너희 마음으로 주님께 노래하며 찬송하라 –",
+          "after": ". 이것은 악기로 음악을 만드는 것처럼 들립니까? 아니면 마음으로 하나님",
+          "spans": [
+            [
+              3800,
+              3809
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "c8138dd00577a2c4657f3dcc",
+          "quote": "사도행전 16:25",
+          "before": "중에 바울과 실라가 기도하고 하나님께 찬송을 부르니 죄수들이 들었더라 –",
+          "after": ". 바울과 실라가 감옥에 갇혀 차꼬에 채인 채 한밤중에 노래했을 때, 자",
+          "spans": [
+            [
+              3931,
+              3941
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "bcdc33e63ded7d2ca05fb529",
+          "quote": "골로새서 3:16",
+          "before": " 노래로 서로 가르치고 권면하며, 너희 마음에 은혜로 주님께 노래하라 –",
+          "after": ". 우리는 시와 찬송과 영적인 노래가 우리를 가르치고 권면하며 격려하게 ",
+          "spans": [
+            [
+              4309,
+              4318
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "d4210009c747491b3c2f0272",
+          "quote": "요한복음 4:23",
+          "before": " 지금이라. 아버지께서는 자기에게 이렇게 예배하는 자들을 찾으시느니라 –",
+          "after": ".",
+          "spans": [
+            [
+              5034,
+              5043
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "2e7ad76d649b38d8f6fb86eae8efcd490f74532375615fd871cb432dedb02656"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:nl:8579d14cda7141a6001214a6d09ac2e22ed1fb7e394cd066b97045076ba7e309:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "nl",
+      "content_hash": "8579d14cda7141a6001214a6d09ac2e22ed1fb7e394cd066b97045076ba7e309",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b15ea9aa2ce69b80e7ac9018",
+          "quote": "Filippenzen 4:8",
+          "before": "ets prijzenswaardigs is, denk daaraan – ",
+          "after": ".",
+          "spans": [
+            [
+              3949,
+              3964
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "800e23595f630bdf4170591a",
+          "quote": "Filippenzen 4:8",
+          "before": "Seculiere muziek doorstaat de toets van ",
+          "after": " niet. De meeste seculiere muziek heeft ",
+          "spans": [
+            [
+              4021,
+              4036
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "def1e039dc896d212a2a6242",
+          "quote": "Efeziërs 5:19",
+          "before": "maak melodie in uw hart voor de Heer; – ",
+          "after": ". Klinkt dat als muziek maken met instru",
+          "spans": [
+            [
+              7562,
+              7575
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "8a5a3036c3c99eabfad8fa74",
+          "quote": "Handelingen 16:25",
+          "before": " en de gevangenen luisterden naar hen – ",
+          "after": ". Toen Paulus en Silas in de gevangenis ",
+          "spans": [
+            [
+              7829,
+              7846
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "9a15daebc657927ada92bbe3",
+          "quote": "Kolossenzen 3:16",
+          "before": "nd met genade in uw hart voor de Heer – ",
+          "after": ". Laten we ons door psalmen, lofzangen e",
+          "spans": [
+            [
+              8635,
+              8651
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "05f0f2fbd33f413afe142aea",
+          "quote": "Johannes 4:23",
+          "before": "der zoekt immers wie Hem zo aanbidden – ",
+          "after": ".",
+          "spans": [
+            [
+              10038,
+              10051
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "6a699eb267849f341940eb9a90f253915bf1242cfa7e00294131cfd58295c3d7"
+    },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:pt:428cb837fb683e1180cbf24e4b9ca77123ee01c8a541cb0ec4175a1f400d2cb1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
       "locale": "pt",
@@ -250244,6 +251125,111 @@
         }
       ],
       "record_hash": "20d1a98cfab5eb6bc1883e9c9f2b86d2b7741602850c5eb19346934eeab9d84e"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:ru:47583dea8ee68c199907aa9741b0c7ba5e2aeb93acf01fa01f7d3d89251f7299:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "ru",
+      "content_hash": "47583dea8ee68c199907aa9741b0c7ba5e2aeb93acf01fa01f7d3d89251f7299",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3e5eb7c2f81d9fc06a07e7a8",
+          "quote": "К Филиппийцам 4:8",
+          "before": "о достойное похвалы, о том помышляйте. –",
+          "after": ".",
+          "spans": [
+            [
+              3482,
+              3499
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "1a27db1dd8e205e013a5e381",
+          "quote": "Филиппийцам 4:8",
+          "before": "Светская музыка не проходит проверку по ",
+          "after": ". В текстах большинства светских песен е",
+          "spans": [
+            [
+              3556,
+              3571
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "765717e5faedea0f7ddd7d2c",
+          "quote": "К Ефесянам 5:19",
+          "before": ", пойте и воспевайте в сердце Господу; –",
+          "after": ". Похоже ли это на создание музыки с инс",
+          "spans": [
+            [
+              6737,
+              6752
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "0cf6e0ea379b7449333af92e",
+          "quote": "Деяния 16:25",
+          "before": "евали хвалу Богу, а узники слушали их. –",
+          "after": ". Когда Павел и Сила находились в темниц",
+          "spans": [
+            [
+              6971,
+              6983
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "9d8f37005a0da629ca26806e",
+          "quote": "К Колоссянам 3:16",
+          "before": "атью воспевая в сердцах ваших Господу. –",
+          "after": ". Позволяем ли мы псалмам, гимнам и духо",
+          "spans": [
+            [
+              7678,
+              7695
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "ca0d9c2a156e53583bc5fd75",
+          "quote": "Иоанна 4:23",
+          "before": "о таких поклонников Отец ищет Себе. –От ",
+          "after": ".",
+          "spans": [
+            [
+              8978,
+              8989
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "90ddab425ab79ac9c96932acc0a05f732923ea01bceab1fad268c94e73d82184"
     },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:sw:fe9833f5fe88bb11a4b7932e94580e49529829674406f88be9a2140e6ad80603:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
@@ -256978,6 +257964,271 @@
         }
       ],
       "record_hash": "049b0609f2ea1d2b0a2b8eba05a51b6202274e600ce845da0f0e76d33805e668"
+    },
+    "8aa76d0a-4ff5-403e-a366-7d6b8fe26924:sw:78d5f1a6bb65b59d28cc8671ffe5de504de97726afa148ae59616d492f01956a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8aa76d0a-4ff5-403e-a366-7d6b8fe26924",
+      "locale": "sw",
+      "content_hash": "78d5f1a6bb65b59d28cc8671ffe5de504de97726afa148ae59616d492f01956a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "98ce72b014c383174cf6865b",
+          "quote": "Zaburi 37:4",
+          "before": "a BWANA naye atakupa haja za moyo wako –",
+          "after": ".",
+          "spans": [
+            [
+              132,
+              143
+            ]
+          ],
+          "osis": "Ps.37.4",
+          "queries": [
+            "19 37:4"
+          ]
+        },
+        {
+          "id": "9080dd955982f4e39aa84e8c",
+          "quote": "Mithali 4:23",
+          "before": "aana ndiko zitokako chemchemi za uzima –",
+          "after": ". Ikiwa Sulemani, mtu mwenye hekima kuli",
+          "spans": [
+            [
+              3543,
+              3555
+            ]
+          ],
+          "osis": "Prov.4.23",
+          "queries": [
+            "20 4:23"
+          ]
+        },
+        {
+          "id": "e9e67f41f820f20eff2b29ed",
+          "quote": "Marko 12:30",
+          "before": "ili zako zote, na kwa nguvu zako zote… –",
+          "after": ", kwa kweli tunailisha shauku hiyo, na k",
+          "spans": [
+            [
+              3850,
+              3861
+            ]
+          ],
+          "osis": "Mark.12.30",
+          "queries": [
+            "41 12:30"
+          ]
+        },
+        {
+          "id": "8b2fbad2cb2cd1ea9c259c72",
+          "quote": "Mathayo 6:21",
+          "before": "lipo, ndipo utakapokuwapo na moyo wako –",
+          "after": "; Luka 12:34.",
+          "spans": [
+            [
+              4497,
+              4509
+            ]
+          ],
+          "osis": "Matt.6.21",
+          "queries": [
+            "40 6:21"
+          ]
+        },
+        {
+          "id": "208793ed25c3aa4f7f65070b",
+          "quote": "Luka 12:34",
+          "before": "akapokuwapo na moyo wako –Mathayo 6:21; ",
+          "after": ".",
+          "spans": [
+            [
+              4511,
+              4521
+            ]
+          ],
+          "osis": "Luke.12.34",
+          "queries": [
+            "42 12:34"
+          ]
+        },
+        {
+          "id": "c11fd3a331ed4fe2bd3c0f7a",
+          "quote": "Luka 12:15",
+          "before": "atika wingi wa vitu vyake alivyo navyo –",
+          "after": ". Choyo ni shauku isiyo ya kimungu. Tusi",
+          "spans": [
+            [
+              4651,
+              4661
+            ]
+          ],
+          "osis": "Luke.12.15",
+          "queries": [
+            "42 12:15"
+          ]
+        },
+        {
+          "id": "39416ed1e7507df092f5a493",
+          "quote": "Wakolosai 3:17",
+          "before": " Yesu, mkimshukuru Mungu Baba kwa yeye –",
+          "after": ".",
+          "spans": [
+            [
+              5259,
+              5273
+            ]
+          ],
+          "osis": "Col.3.17",
+          "queries": [
+            "51 3:17"
+          ]
+        },
+        {
+          "id": "b03a9a0081ace693ec9d1972",
+          "quote": "Yoshua 7:21",
+          "before": "eli hamsini, nikavitamani, nikavitwaa… –",
+          "after": ".",
+          "spans": [
+            [
+              6334,
+              6345
+            ]
+          ],
+          "osis": "Josh.7.21",
+          "queries": [
+            "6 7:21"
+          ]
+        },
+        {
+          "id": "64f6490756c3dce7a4ab35c3",
+          "quote": "Nehemia 2:12",
+          "before": "gine pamoja nami ila yule niliyempanda –",
+          "after": ". Tukisoma zaidi… Musa akawaita Bezaleli",
+          "spans": [
+            [
+              9028,
+              9040
+            ]
+          ],
+          "osis": "Neh.2.12",
+          "queries": [
+            "16 2:12"
+          ]
+        },
+        {
+          "id": "d412eed533fc84948a38be90",
+          "quote": "Kutoka 36:2",
+          "before": "wake ulimchochea aje kufanya kazi hiyo –",
+          "after": ".",
+          "spans": [
+            [
+              9255,
+              9266
+            ]
+          ],
+          "osis": "Exod.36.2",
+          "queries": [
+            "2 36:2"
+          ]
+        },
+        {
+          "id": "c9b32934b8f1a518e0b71319",
+          "quote": "Zaburi 78:29-31",
+          "before": "anaume wateule wa Israeli akawaangusha –",
+          "after": ". Ingawa Mungu aliwaongoza Waisraeli jan",
+          "spans": [
+            [
+              9758,
+              9773
+            ]
+          ],
+          "osis": "Ps.78.29-Ps.78.31",
+          "queries": [
+            "19 78:29-31"
+          ]
+        },
+        {
+          "id": "3fc037f5f6e793855c27b6a0",
+          "quote": "1 Samweli 8",
+          "before": "atamanio yao wenyewe unapatikana katika ",
+          "after": ", wakati wana wa Israeli walipotaka mfal",
+          "spans": [
+            [
+              10117,
+              10128
+            ]
+          ],
+          "osis": "1Sam.8.1-1Sam.8.22",
+          "queries": [
+            "9 8:1-22"
+          ]
+        },
+        {
+          "id": "cfebfb6fe52dd1dda1891077",
+          "quote": "1 Samweli 8:5-7",
+          "before": "ikataa mimi, ili nisiwe mfalme juu yao –",
+          "after": ". Ee Israeli, …kwa maana yeye (Mungu) al",
+          "spans": [
+            [
+              10625,
+              10640
+            ]
+          ],
+          "osis": "1Sam.8.5-1Sam.8.7",
+          "queries": [
+            "9 8:5-7"
+          ]
+        },
+        {
+          "id": "85a8eb15f666bbbad3efca5b",
+          "quote": "Zaburi 78:29",
+          "before": "ana yeye (Mungu) aliwapa walichotamani –",
+          "after": ".",
+          "spans": [
+            [
+              10710,
+              10722
+            ]
+          ],
+          "osis": "Ps.78.29",
+          "queries": [
+            "19 78:29"
+          ]
+        },
+        {
+          "id": "e17fcce6faf88451eedaa981",
+          "quote": "Zaburi 37:4",
+          "before": "a BWANA naye atakupa haja za moyo wako –",
+          "after": ". Na, Ndipo utakapojifurahisha katika BW",
+          "spans": [
+            [
+              12213,
+              12224
+            ]
+          ],
+          "osis": "Ps.37.4",
+          "queries": [
+            "19 37:4"
+          ]
+        },
+        {
+          "id": "09a95285541ade0970e1bab8",
+          "quote": "Isaya 58:14",
+          "before": "o; maana kinywa cha BWANA kimenena hayo–",
+          "after": "",
+          "spans": [
+            [
+              12410,
+              12421
+            ]
+          ],
+          "osis": "Isa.58.14",
+          "queries": [
+            "23 58:14"
+          ]
+        }
+      ],
+      "record_hash": "dca16846ba881289e7f3ec705500812c71831b42f01f8eb8fc535ccc7e94243c"
     },
     "8aa76d0a-4ff5-403e-a366-7d6b8fe26924:ur:3ce32a2065c6358148a4593e98d44bb3dca91cc7dc5dbecc4f4dfc20e74077d4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8aa76d0a-4ff5-403e-a366-7d6b8fe26924",
@@ -332573,6 +333824,31 @@
       ],
       "record_hash": "392336686563a9240863ce52f689232ecd53bd0fecab34f5d794aab651638b9c"
     },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:af:3800d2f6cff6b930ab70c9aeea2d2fefa3dcaabd0b9f2e6adccc79bef14bd7d7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "af",
+      "content_hash": "3800d2f6cff6b930ab70c9aeea2d2fefa3dcaabd0b9f2e6adccc79bef14bd7d7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "962e324d89c5139da02797be",
+          "quote": "Eksodus 10:21-23",
+          "before": "srael was daar lig in hulle woonplekke” ",
+          "after": ".",
+          "spans": [
+            [
+              686,
+              702
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "4b9469252c311b2f97b53d81c2e75671f189142a182cb3b20192f6a57c96de0a"
+    },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:ar:df7e5afe97614c22b314444f1adf978c57379a90fd3a21520b9ed8a85b1e662e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
       "locale": "ar",
@@ -332639,6 +333915,31 @@
       ],
       "record_hash": "e65a511257bd23b88f59b51e09c35c004cd261a01e0ac754c68f3660e89feeab"
     },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:es:db5f6e2def726d90b4c4cd8547404156ce5c9e590aa85d8e39c799bd198f42c3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "es",
+      "content_hash": "db5f6e2def726d90b4c4cd8547404156ce5c9e590aa85d8e39c799bd198f42c3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9ed9fb30fe80541e420fd6cd",
+          "quote": "Éxodo 10:21-23",
+          "before": "os de Israel tenían luz en sus moradas» ",
+          "after": ".",
+          "spans": [
+            [
+              643,
+              657
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "7c45477011401a9d355a0958af05985628fe1790718c037553610269915f0a9d"
+    },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:hi:0e01d4db6e4d5d9ed21a658071af662136d0b9c84cb6b86727a4109c9c7d3e14:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
       "locale": "hi",
@@ -332663,6 +333964,81 @@
         }
       ],
       "record_hash": "242b922c4d348aa385cddd96b0f848986371ffef127fdbb1f71a62647075843d"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:id:1beb11469ab9f124b7246fe9aeb28ee9d0393167648c356850302225a1439f3f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "id",
+      "content_hash": "1beb11469ab9f124b7246fe9aeb28ee9d0393167648c356850302225a1439f3f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "52e9c84efd02b78e829da18e",
+          "quote": "Keluaran 10:21-23",
+          "before": "dapat terang di tempat tinggal mereka.” ",
+          "after": ".",
+          "spans": [
+            [
+              691,
+              708
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "b35ea2fd94101ee31cf96b66f46de323747587ce4e1430de72454d5ea08a11ec"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:ru:bb9fb2df15b065ce52382877d04f7dea203644d3e4ddb4b852def61cd753c22e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "ru",
+      "content_hash": "bb9fb2df15b065ce52382877d04f7dea203644d3e4ddb4b852def61cd753c22e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1bf4e4fd3cb9b369bb04de8a",
+          "quote": "Исход 10:21-23",
+          "before": "сынов Израилевых был свет в жилищах их» ",
+          "after": ".",
+          "spans": [
+            [
+              518,
+              532
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "942a85e18a04cf1685573ab78bdb4e383114a5e160580c294da94423fbf91cc9"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:sw:9f1106d7d8728412710b5e15db84d019bc917be5dd1063db80e9262c3b46804a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "sw",
+      "content_hash": "9f1106d7d8728412710b5e15db84d019bc917be5dd1063db80e9262c3b46804a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "523fc6f3b4350222f240a10c",
+          "quote": "Kutoka 10:21-23",
+          "before": "aeli walikuwa na nuru katika makao yao” ",
+          "after": ".",
+          "spans": [
+            [
+              604,
+              619
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "df9333e5d54b26be12f9189d980d430eec53624ee25207b55b029d4e1b6537ff"
     },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:zh-Hans:a6087c365b4c73059d1117f0e076b3d84bc75370d7e794b0b402b5d4ed6d21b6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
@@ -345490,6 +346866,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "49a887a51014c33f3ce1922430c62c121afbc91b5a869798f3c4d8f4955e23e7"
+    },
+    "ba15e3da-aab4-401c-9ec7-64b88ac22833:es:0bd3fabad1c82fcaeb63eff63c186bb96f5edbd25e1a2597b01b5bf0e3654f50:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
+      "locale": "es",
+      "content_hash": "0bd3fabad1c82fcaeb63eff63c186bb96f5edbd25e1a2597b01b5bf0e3654f50",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "2854f4a0e4993366293284df8095754236f456f77774e4e5b293c1fb4fea7d09"
     },
     "ba15e3da-aab4-401c-9ec7-64b88ac22833:fr:47a347d774fbfdd0a143ff3ab854d72e7345c37cca39fcf608ed2b32624a2126:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba15e3da-aab4-401c-9ec7-64b88ac22833",
@@ -463589,6 +464973,31 @@
         }
       ],
       "record_hash": "d65fe7007ad944b18e4a4d43c963ecd61dadeeec079ab7710286ffe1eeda5992"
+    },
+    "fe94355d-8741-49a7-8f66-16003daa3f89:he:695d07f6241515236c9553faa8cbba61e2231e3c6811e16a67f12ffc49d9f770:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fe94355d-8741-49a7-8f66-16003daa3f89",
+      "locale": "he",
+      "content_hash": "695d07f6241515236c9553faa8cbba61e2231e3c6811e16a67f12ffc49d9f770",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "76e25383593cc5029b7801a4",
+          "quote": "לוקס 24:28-29",
+          "before": "ום כבר נוטה לסופו. והוא נכנס לשהות עמם –",
+          "after": ".",
+          "spans": [
+            [
+              4875,
+              4888
+            ]
+          ],
+          "osis": "Luke.24.28-Luke.24.29",
+          "queries": [
+            "42 24:28-29"
+          ]
+        }
+      ],
+      "record_hash": "77ba2d481bb484f4455705e92b3784e718d2f6a92ec8024036998ad72f6b22e4"
     },
     "fe94355d-8741-49a7-8f66-16003daa3f89:id:aec9ee4e8b0441fe72c6faafb46f7e44db25b2e09b2f2a465a90f682ac579c16:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fe94355d-8741-49a7-8f66-16003daa3f89",
