@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "ed7b65f9ffbc8b72281aa438fd924a142ad1694b928f0e23752beabb871bcd71",
+  "integrity": "91560b6223d05671e82b7e7d5d22b7304b948c8d9941f4db4edf4a5b99b6ba27",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -42032,6 +42032,95 @@
       ],
       "record_hash": "d8fda6d0541f47dd5f513c4dc04a93b152a9d483c2d9e45018a03ee4cce0bb17"
     },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:de:6fd75009aa439a285afc2e911eda7a5a2139f3d00ba730eaa06e069391581c68:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "de",
+      "content_hash": "6fd75009aa439a285afc2e911eda7a5a2139f3d00ba730eaa06e069391581c68",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "df72ac4b9ba3bed362c965fc",
+          "quote": "Sprüche 18,22",
+          "before": "en und Wohlgefallen erlangt vom HERRN“ (",
+          "after": ").",
+          "spans": [
+            [
+              3274,
+              3287
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "91fd5e3c18d22da98f3338ce",
+          "quote": "Matthäus 19",
+          "before": "In ",
+          "after": " lehrte Jesus über die Ernsthaftigkeit d",
+          "spans": [
+            [
+              3302,
+              3313
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "edfc4918dc22ca6252e13374",
+          "quote": "Matthäus 19,3-10",
+          "before": "o steht, ist es nicht gut zu heiraten“ (",
+          "after": ").",
+          "spans": [
+            [
+              4397,
+              4413
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "60eb7ecd34ea3a2c5db7b7ee",
+          "quote": "1. Korinther 7,1-2",
+          "before": "ben, und jede Frau ihren eigenen Mann“ (",
+          "after": "). Die Praxis einer Kennenlernzeit ohne ",
+          "spans": [
+            [
+              11962,
+              11980
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "e7b2416e0ca3546c4906d246",
+          "quote": "1. Korinther 7,1-2",
+          "before": "Was bedeutet Berühren im Licht von ",
+          "after": "? Wenn ihr den Druck des Kontakts oder d",
+          "spans": [
+            [
+              12857,
+              12875
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "d9398a37894ce0b4d7d0ba4c2203e96d9a0bc1d8c0060a98de67a130a1416924"
+    },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:el:13bea895192e9f4950774ff91406e5ba7f14f92c08c33bf930e7725284d42835:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
       "locale": "el",
@@ -42395,6 +42484,95 @@
         }
       ],
       "record_hash": "f62a6ab76dd53c4d118caf53759b46851fba205af3d0f7a0de42ce729cd2bd8a"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:id:8f593e4029ca894eaf64587fdb407870b1a94179abfcca47264637db06730d4f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "id",
+      "content_hash": "8f593e4029ca894eaf64587fdb407870b1a94179abfcca47264637db06730d4f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a455558d31c6feb6c6b65dc4",
+          "quote": "Amsal 18:22",
+          "before": "suatu yang baik, dan ia dikenan TUHAN” (",
+          "after": ").",
+          "spans": [
+            [
+              3238,
+              3249
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "d566268f7bf9322b0f053a38",
+          "quote": "Matius 19",
+          "before": "Dalam ",
+          "after": ", Yesus mengajarkan betapa seriusnya per",
+          "spans": [
+            [
+              3267,
+              3276
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "50ad5fb4e9aa66fb0aed2e8d",
+          "quote": "Matius 19:3-10",
+          "before": "an istrinya, lebih baik jangan kawin’” (",
+          "after": ").",
+          "spans": [
+            [
+              4518,
+              4532
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "79c449f78d3bbe8b28c6e562",
+          "quote": "1 Korintus 7:1-2",
+          "before": " perempuan mempunyai suaminya sendiri” (",
+          "after": "). Praktik masa pendekatan tanpa sentuha",
+          "spans": [
+            [
+              12333,
+              12349
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "8509a32b10c6b3276c5c9542",
+          "quote": "1 Korintus 7:1-2",
+          "before": "Dengan mempertimbangkan ",
+          "after": ", apa yang dimaksud dengan menyentuh? Ji",
+          "spans": [
+            [
+              13171,
+              13187
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "088dbfeee811fd5e2d69d5c9605fc542c1fc28382ced95ac352a1be85a39b8d0"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:it:0d1de62f4c8cc17fdd5b5baf30a3c44ea2a5e2fb12dda056b0d13e21eff2c3b5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -201234,6 +201412,191 @@
       ],
       "record_hash": "724519edbc60b43b1c1ccce0f108ee12a777769dc826886acb0255a7326aafa4"
     },
+    "6485a6ed-e76f-4142-9e27-e649823cb1a3:ur:c8607bf0c80468a7ab2ba06cf5a0b8a1be0c8f9d4336b95eabcf6b3f0399ab9d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
+      "locale": "ur",
+      "content_hash": "c8607bf0c80468a7ab2ba06cf5a0b8a1be0c8f9d4336b95eabcf6b3f0399ab9d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7bd12b61241acbfe46444bde",
+          "quote": "متی 5:8",
+          "before": "کے پاک ہیں، کیونکہ وہ خدا کو دیکھیں گے –",
+          "after": "۔",
+          "spans": [
+            [
+              1692,
+              1699
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "5bf5985e7a5f766a2b7f8359",
+          "quote": "1 پطرس 3:3-6",
+          "before": "نیکی کرو اور کسی دہشت سے خوف زدہ نہ ہو –",
+          "after": "۔",
+          "spans": [
+            [
+              2175,
+              2187
+            ]
+          ],
+          "osis": "1Pet.3.3-1Pet.3.6",
+          "queries": [
+            "60 3:3-6"
+          ]
+        },
+        {
+          "id": "3971277d1c72ffd0a323e8b3",
+          "quote": "زبور 19:7",
+          "before": "ی شریعت کامل ہے، جان کو تبدیل کرتی ہے… –",
+          "after": "۔ یاد رکھیں: خداوند کا خوف حکمت کی ابتدا",
+          "spans": [
+            [
+              4886,
+              4895
+            ]
+          ],
+          "osis": "Ps.19.7",
+          "queries": [
+            "19 19:7"
+          ]
+        },
+        {
+          "id": "dac0c3e88a5b32125210dac7",
+          "quote": "امثال 9:10",
+          "before": " خوف حکمت کی ابتدا ہے [الجھن کی نہیں]… –",
+          "after": "۔",
+          "spans": [
+            [
+              4975,
+              4985
+            ]
+          ],
+          "osis": "Prov.9.10",
+          "queries": [
+            "20 9:10"
+          ]
+        },
+        {
+          "id": "c516c263e1273c987f4d0289",
+          "quote": "عبرانیوں 11:17",
+          "before": "ے ابراہیم کی نسل شمار ہونی تھی۔ –دیکھیں ",
+          "after": " اور پیدائش 22:13۔ اگر خدا اپنے کلام میں",
+          "spans": [
+            [
+              7821,
+              7835
+            ]
+          ],
+          "osis": "Heb.11.17",
+          "queries": [
+            "58 11:17"
+          ]
+        },
+        {
+          "id": "ab167399a95aef5232928ce5",
+          "quote": "پیدائش 22:13",
+          "before": "ار ہونی تھی۔ –دیکھیں عبرانیوں 11:17 اور ",
+          "after": "۔ اگر خدا اپنے کلام میں ہمیں بتاتا ہے کہ",
+          "spans": [
+            [
+              7840,
+              7852
+            ]
+          ],
+          "osis": "Gen.22.13",
+          "queries": [
+            "1 22:13"
+          ]
+        },
+        {
+          "id": "9a5094e8948d4b0f41a406e6",
+          "quote": "یسعیاہ 61:10",
+          "before": "ر دلہن اپنے جواہرات سے خود کو سجاتی ہے –",
+          "after": "۔",
+          "spans": [
+            [
+              10373,
+              10385
+            ]
+          ],
+          "osis": "Isa.61.10",
+          "queries": [
+            "23 61:10"
+          ]
+        },
+        {
+          "id": "7df64891c07ffc872676ca35",
+          "quote": "مکاشفہ 21:2-3",
+          "before": "ود ان کے ساتھ ہوگا اور ان کا خدا ہوگا۔ –",
+          "after": "۔",
+          "spans": [
+            [
+              11160,
+              11173
+            ]
+          ],
+          "osis": "Rev.21.2-Rev.21.3",
+          "queries": [
+            "66 21:2-3"
+          ]
+        },
+        {
+          "id": "84b58a121efa35c5a2ebc8f8",
+          "quote": "گلتیوں 6:7",
+          "before": "کیونکہ آدمی جو کچھ بوتا ہے وہی کاٹے گا –",
+          "after": "۔ گمراہ نہ ہوں۔ یہ آیت مومن کے لیے بھی ہ",
+          "spans": [
+            [
+              11683,
+              11693
+            ]
+          ],
+          "osis": "Gal.6.7",
+          "queries": [
+            "48 6:7"
+          ]
+        },
+        {
+          "id": "e3e6578bd92e5c203a9a7617",
+          "quote": "متی 10:28",
+          "before": " جسم دونوں کو جہنم میں ہلاک کر سکتا ہے –",
+          "after": "۔ ان آخری زمانوں میں رہتے ہوئے ہمارے چار",
+          "spans": [
+            [
+              12970,
+              12979
+            ]
+          ],
+          "osis": "Matt.10.28",
+          "queries": [
+            "40 10:28"
+          ]
+        },
+        {
+          "id": "154a3f46b8b668a4844cebc6",
+          "quote": "یوحنا 14:6-7",
+          "before": "سے تم اسے جانتے ہو اور اسے دیکھ چکے ہو –",
+          "after": "۔ خداوند کی حمد ہو کہ خدا نے ہمیں پیروی ",
+          "spans": [
+            [
+              13353,
+              13365
+            ]
+          ],
+          "osis": "John.14.6-John.14.7",
+          "queries": [
+            "43 14:6-7"
+          ]
+        }
+      ],
+      "record_hash": "c33888f391fc7b1473375808afac07f1f48534817b0a2b64e5e689da6b22c04b"
+    },
     "6497a93f-bea4-44dd-bbe5-da90318f3d48:en:03fd187d8162dd4c57f29d2c2fcc982a02bf53300b88a7fed75b469f57945622:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6497a93f-bea4-44dd-bbe5-da90318f3d48",
       "locale": "en",
@@ -220479,6 +220842,31 @@
         }
       ],
       "record_hash": "0f2a1145d7a654d53a8d6ed1c33c8839e26502765709aabd96fa516ff2e17c3a"
+    },
+    "77cd4a24-14db-4ba2-905f-4f3ecb1d3ea5:de:0b802e86826fe4be0e73d7f58398bf8f5f719fc788b92bb77ed4aa06cab4b326:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "77cd4a24-14db-4ba2-905f-4f3ecb1d3ea5",
+      "locale": "de",
+      "content_hash": "0b802e86826fe4be0e73d7f58398bf8f5f719fc788b92bb77ed4aa06cab4b326",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "37c4b826bb9e2f8fc8e77233",
+          "quote": "Jeremia 18:1-6",
+          "before": "s Gedicht wurde durch die Schriftstelle ",
+          "after": " angeregt.",
+          "spans": [
+            [
+              1780,
+              1794
+            ]
+          ],
+          "osis": "Jer.18.1-Jer.18.6",
+          "queries": [
+            "24 18:1-6"
+          ]
+        }
+      ],
+      "record_hash": "ce4e393f733b4e68486247007fe5bd1f6eeadee8f40a19b038b8abb9b95b38ad"
     },
     "77cd4a24-14db-4ba2-905f-4f3ecb1d3ea5:el:d00086545e620b65e25e1e1bf75bedcd7b5c3d01ef4d3006d3ffc1c37a05b874:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "77cd4a24-14db-4ba2-905f-4f3ecb1d3ea5",
@@ -242587,6 +242975,256 @@
       ],
       "record_hash": "8b02e097fa27002e7f43bac234ba3a134014f60fdca17c41e52495a0733f9faf"
     },
+    "80e78d22-936e-48de-885a-f9a8898d5e42:he:62d0842e59c6f4c93c94c0a326d7e926c83b0a011dcf3a791ba89d31cc82cb71:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "80e78d22-936e-48de-885a-f9a8898d5e42",
+      "locale": "he",
+      "content_hash": "62d0842e59c6f4c93c94c0a326d7e926c83b0a011dcf3a791ba89d31cc82cb71",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5fbc4e867f30a50fdf39467a",
+          "quote": "בראשית 2:18-24",
+          "before": "את אמו וידבק באשתו, והם יהיו לבשר אחד״ (",
+          "after": ").",
+          "spans": [
+            [
+              3109,
+              3123
+            ]
+          ],
+          "osis": "Gen.2.18-Gen.2.24",
+          "queries": [
+            "1 2:18-24"
+          ]
+        },
+        {
+          "id": "1d2f94c1d9b944b86a2343a3",
+          "quote": "בראשית 1:26-28",
+          "before": "עופות השמיים ובכל יצור חי הנע על הארץ״ (",
+          "after": ").",
+          "spans": [
+            [
+              3473,
+              3487
+            ]
+          ],
+          "osis": "Gen.1.26-Gen.1.28",
+          "queries": [
+            "1 1:26-28"
+          ]
+        },
+        {
+          "id": "2cfdd1f27e541c4ebc68f4bf",
+          "quote": "בראשית 2:18",
+          "before": "ם יהיה לבדו; אעשה לו עוזרת המתאימה לו״ (",
+          "after": "). ״אעשה לו עוזרת שתתאים לו.״ אלוהים אמר",
+          "spans": [
+            [
+              3569,
+              3580
+            ]
+          ],
+          "osis": "Gen.2.18",
+          "queries": [
+            "1 2:18"
+          ]
+        },
+        {
+          "id": "ef6e62792660130e81224721",
+          "quote": "בראשית 1:27",
+          "before": " הוא ברא אותו; זכר ונקבה הוא ברא אותם״ (",
+          "after": "). אלוהים עשה. אלוהים ברא אותנו זכר ונקב",
+          "spans": [
+            [
+              3731,
+              3742
+            ]
+          ],
+          "osis": "Gen.1.27",
+          "queries": [
+            "1 1:27"
+          ]
+        },
+        {
+          "id": "ffc4f2f383a869fa57b2cbc0",
+          "quote": "בראשית 2:22-23",
+          "before": "שרי; היא תיקרא אישה, כי מן האיש נלקחה״ (",
+          "after": ").",
+          "spans": [
+            [
+              4434,
+              4448
+            ]
+          ],
+          "osis": "Gen.2.22-Gen.2.23",
+          "queries": [
+            "1 2:22-23"
+          ]
+        },
+        {
+          "id": "c2a783bf9edd3ced82b316b4",
+          "quote": "בראשית 2:24",
+          "before": "את אמו וידבק באשתו, והם יהיו לבשר אחד״ (",
+          "after": ").",
+          "spans": [
+            [
+              5252,
+              5263
+            ]
+          ],
+          "osis": "Gen.2.24",
+          "queries": [
+            "1 2:24"
+          ]
+        },
+        {
+          "id": "5cd29e910782cb050fadb340",
+          "quote": "בראשית 2:24",
+          "before": "את אמו וידבק באשתו, והם יהיו לבשר אחד״ (",
+          "after": "). שני רווקים שנעשים לזוג נשוי אחד נעשים",
+          "spans": [
+            [
+              6432,
+              6443
+            ]
+          ],
+          "osis": "Gen.2.24",
+          "queries": [
+            "1 2:24"
+          ]
+        },
+        {
+          "id": "9c9333d3ab394fd40189111e",
+          "quote": "מרקוס 10:8-9",
+          "before": " את מה שאלוהים חיבר יחד, אל יפריד אדם״ (",
+          "after": "). תוכנית אלוהים לגבר ולאישה היא שהוא מב",
+          "spans": [
+            [
+              6691,
+              6703
+            ]
+          ],
+          "osis": "Mark.10.8-Mark.10.9",
+          "queries": [
+            "41 10:8-9"
+          ]
+        },
+        {
+          "id": "cac9b0e12e854a771969b39b",
+          "quote": "בראשית 1:28",
+          "before": "עופות השמיים ובכל יצור חי הנע על הארץ״ (",
+          "after": "). חשבו על השמחה ועל הנס בכל פעם שילד נו",
+          "spans": [
+            [
+              8004,
+              8015
+            ]
+          ],
+          "osis": "Gen.1.28",
+          "queries": [
+            "1 1:28"
+          ]
+        },
+        {
+          "id": "c3ec045b2fd3e58fae567686",
+          "quote": "בראשית 9:1",
+          "before": " להם: היו פוריים והתרבו ומלאו את הארץ״ (",
+          "after": "). ״ואתם, היו פוריים והתרבו; העמידו צאצא",
+          "spans": [
+            [
+              8359,
+              8369
+            ]
+          ],
+          "osis": "Gen.9.1",
+          "queries": [
+            "1 9:1"
+          ]
+        },
+        {
+          "id": "786171331a4a3448875c9782",
+          "quote": "בראשית 9:7",
+          "before": "בו; העמידו צאצאים לרוב בארץ והתרבו בה״ (",
+          "after": "). תוכנית אלוהים מביאה ברכה.",
+          "spans": [
+            [
+              8434,
+              8444
+            ]
+          ],
+          "osis": "Gen.9.7",
+          "queries": [
+            "1 9:7"
+          ]
+        },
+        {
+          "id": "8ba6edc36e149c77a70a04f2",
+          "quote": "אל האפסים 6:1-3",
+          "before": "חה — כדי שייטב לך ותאריך ימים על הארץ״ (",
+          "after": "). . ילדים, צייתו להוריכם באדון — זה חלק",
+          "spans": [
+            [
+              8889,
+              8904
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "4f087ae41b14b0ca94985264",
+          "quote": "משלי 3:1-2",
+          "before": "וסיפו לך ימים רבים, חיים ארוכים ושלום״ (",
+          "after": ").",
+          "spans": [
+            [
+              9911,
+              9921
+            ]
+          ],
+          "osis": "Prov.3.1-Prov.3.2",
+          "queries": [
+            "20 3:1-2"
+          ]
+        },
+        {
+          "id": "db26a97dd7c60342cc8c8718",
+          "quote": "אל האפסים 5: 22, 24",
+          "before": "",
+          "after": ": ״נשים, היכנעו לבעליכן כפי שאתן נכנעות ",
+          "spans": [
+            [
+              10515,
+              10534
+            ]
+          ],
+          "osis": "Eph.5.22,Eph.5.24",
+          "queries": [
+            "49 5:22",
+            "49 5:24"
+          ]
+        },
+        {
+          "id": "f3199c4bd986074ee915990e",
+          "quote": "אל האפסים 5:24-29",
+          "before": "ו ומטפח אותו, כפי שהאדון עושה לכנסייה״ (",
+          "after": ").",
+          "spans": [
+            [
+              13445,
+              13462
+            ]
+          ],
+          "osis": "Eph.5.24-Eph.5.29",
+          "queries": [
+            "49 5:24-29"
+          ]
+        }
+      ],
+      "record_hash": "f27aeac71f8b4197fc2b0a3400c82e48b8d789e5e39b42ec3ac96d9be1f295da"
+    },
     "80e78d22-936e-48de-885a-f9a8898d5e42:hi:4bd6c7968de5c0adf0d955dcd6767b627c9b5c0ad2948a5387715b601ea3d649:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "80e78d22-936e-48de-885a-f9a8898d5e42",
       "locale": "hi",
@@ -249396,6 +250034,111 @@
         }
       ],
       "record_hash": "f391bc3e0fe69c27376b8d5606569cefee1a426785c8ab0bd9f3feea4e77cbf3"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:id:668b591ca6ff8c592ea5c9f05492b77f895ffad96cf402ab29fe93837d57384d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "id",
+      "content_hash": "668b591ca6ff8c592ea5c9f05492b77f895ffad96cf402ab29fe93837d57384d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b1cff2e3597a9dea393a06e7",
+          "quote": "Filipi 4:8",
+          "before": "patut dipuji, pikirkanlah semuanya itu –",
+          "after": ".",
+          "spans": [
+            [
+              4236,
+              4246
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "e6500fc7677958314ab2d7cb",
+          "quote": "Filipi 4:8",
+          "before": "sik sekuler tidak lolos dari tolok ukur ",
+          "after": ". Kebanyakan musik sekuler memiliki liri",
+          "spans": [
+            [
+              4305,
+              4315
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "16b868da2242ed9ec66f02fa",
+          "quote": "Efesus 5:19",
+          "before": "nlah melodi dalam hatimu kepada Tuhan; –",
+          "after": ". Apakah itu terdengar seperti membuat m",
+          "spans": [
+            [
+              7821,
+              7832
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "e26d916e50e810c884eda5d2",
+          "quote": "Kisah Para Rasul 16:25",
+          "before": "rang-orang hukuman mendengarkan mereka –",
+          "after": ". Ketika Paulus dan Silas berada di penj",
+          "spans": [
+            [
+              8117,
+              8139
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "248a85a5333cc0432ac7e619",
+          "quote": "Kolose 3:16",
+          "before": "arunia di dalam hati kita kepada Tuhan –",
+          "after": ". Apakah kita membiarkan mazmur, himne, ",
+          "spans": [
+            [
+              8989,
+              9000
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "691972ee2f06e3a27464fceb",
+          "quote": "Yohanes 4:23",
+          "before": "-orang seperti itu untuk menyembah-Nya –",
+          "after": ".",
+          "spans": [
+            [
+              10546,
+              10558
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "0868eb5b84e40e5ba6ce30f6e65e0c6ff871b268e4a9f870f5a5ab288e83a546"
     },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:pt:428cb837fb683e1180cbf24e4b9ca77123ee01c8a541cb0ec4175a1f400d2cb1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
@@ -331830,6 +332573,47 @@
       ],
       "record_hash": "392336686563a9240863ce52f689232ecd53bd0fecab34f5d794aab651638b9c"
     },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:ar:df7e5afe97614c22b314444f1adf978c57379a90fd3a21520b9ed8a85b1e662e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "ar",
+      "content_hash": "df7e5afe97614c22b314444f1adf978c57379a90fd3a21520b9ed8a85b1e662e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "aa7afaab46cc8a4eb7fde90f",
+          "quote": "الخروج 10: 21-23",
+          "before": " كان لجميع بني إسرائيل نور في مساكنهم» (",
+          "after": ").",
+          "spans": [
+            [
+              439,
+              455
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        },
+        {
+          "id": "326a22663c3f3859208f1c81",
+          "quote": "في 1",
+          "before": "ده الحادي والعشرين بخمسة أسابيع. وكتب: «",
+          "after": " يونيو 1859، تزوجت الآنسة لوسي ج. يونغ، ",
+          "spans": [
+            [
+              4565,
+              4569
+            ]
+          ],
+          "osis": "Phil.1.1-Phil.1.30",
+          "queries": [
+            "50 1:1-30"
+          ]
+        }
+      ],
+      "record_hash": "fa4294f0ccf7dc8ccb50907d1ce758df15be2173c80c3283eec154a933bd1a21"
+    },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:en:9e777115a04fc72efe6506c6fb9e7442c47be7ef87f34d9d03da67abbbe1df8b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
       "locale": "en",
@@ -331854,6 +332638,56 @@
         }
       ],
       "record_hash": "e65a511257bd23b88f59b51e09c35c004cd261a01e0ac754c68f3660e89feeab"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:hi:0e01d4db6e4d5d9ed21a658071af662136d0b9c84cb6b86727a4109c9c7d3e14:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "hi",
+      "content_hash": "0e01d4db6e4d5d9ed21a658071af662136d0b9c84cb6b86727a4109c9c7d3e14",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1f297631d7f81ff2b9a707ac",
+          "quote": "निर्गमन 10:21-23",
+          "before": " बच्चों के निवासस्थानों में प्रकाश था।” ",
+          "after": "।",
+          "spans": [
+            [
+              562,
+              578
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "242b922c4d348aa385cddd96b0f848986371ffef127fdbb1f71a62647075843d"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:zh-Hans:a6087c365b4c73059d1117f0e076b3d84bc75370d7e794b0b402b5d4ed6d21b6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "zh-Hans",
+      "content_hash": "a6087c365b4c73059d1117f0e076b3d84bc75370d7e794b0b402b5d4ed6d21b6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5e7087ecdc92e97356741efa",
+          "quote": "出埃及记10:21-23",
+          "before": "黑了三天。三天之久，人不能相见，谁也没有从本处起来；惟有以色列人家中都有亮光。”",
+          "after": "。",
+          "spans": [
+            [
+              224,
+              236
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "2fdbd2a544a9683ad02e439101bc3b00e1306a33ef5c47484834cede7c15bd27"
     },
     "b6a6823e-0f2a-4354-aebb-5c37ad85937a:af:e1b156a865047ece44aac328246dfe0f945e9265605cc030980e679bdc259d05:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b6a6823e-0f2a-4354-aebb-5c37ad85937a",
@@ -386623,6 +387457,127 @@
         }
       ],
       "record_hash": "922f69f1def9cce7c39e7bf7b75efbde35e2034d22fd84095068be5badd7edb8"
+    },
+    "dc9bb2ea-cefd-4340-b274-deddb70afcaf:bn:5cd71c5a0bd522522fea735bce32fe73650c94ce1725b0a63f458c1ee4eb1106:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",
+      "locale": "bn",
+      "content_hash": "5cd71c5a0bd522522fea735bce32fe73650c94ce1725b0a63f458c1ee4eb1106",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a20eb6640a713ce34bfbb6c8",
+          "quote": "গণনাপুস্তক ১৩:৩০",
+          "before": "রি; কেননা আমরা তা জয় করতে অবশ্যই সক্ষম—",
+          "after": "।",
+          "spans": [
+            [
+              770,
+              786
+            ]
+          ],
+          "osis": "Num.13.30",
+          "queries": [
+            "4 13:30"
+          ]
+        },
+        {
+          "id": "9a144ea973318b147189711d",
+          "quote": "প্রেরিত ৯:২০",
+          "before": "চার করতে লাগলেন যে, তিনিই ঈশ্বরের পুত্র—",
+          "after": "। পরের পদে বলা হয়েছে, লোকেরা বিস্মিত হয",
+          "spans": [
+            [
+              2827,
+              2839
+            ]
+          ],
+          "osis": "Acts.9.20",
+          "queries": [
+            "44 9:20"
+          ]
+        },
+        {
+          "id": "3ed0a22fe85e02b26c338d03",
+          "quote": "২ তীমথিয় ৪:৬-৭",
+          "before": "মার দৌড় শেষ করেছি, বিশ্বাস রক্ষা করেছি—",
+          "after": "।",
+          "spans": [
+            [
+              3339,
+              3354
+            ]
+          ],
+          "osis": "2Tim.4.6-2Tim.4.7",
+          "queries": [
+            "55 4:6-7"
+          ]
+        },
+        {
+          "id": "46f6c58379b9fed1e5f44152",
+          "quote": "গীতসংহিতা ৪৪:২২",
+          "before": "য করা হতো; তাদের …সারা দিনই বধ করা হতো…—",
+          "after": "। লোকেরা তাদের আচার-আচরণ নিয়ে প্রশ্ন তু",
+          "spans": [
+            [
+              4273,
+              4288
+            ]
+          ],
+          "osis": "Ps.44.22",
+          "queries": [
+            "19 44:22"
+          ]
+        },
+        {
+          "id": "290f23d5cf177a2b820361f2",
+          "quote": "প্রেরিত ১:৮",
+          "before": "পৃথিবীর প্রান্ত পর্যন্ত আমার সাক্ষী হবে—",
+          "after": "।",
+          "spans": [
+            [
+              8065,
+              8076
+            ]
+          ],
+          "osis": "Acts.1.8",
+          "queries": [
+            "44 1:8"
+          ]
+        },
+        {
+          "id": "ba7ec17c131ee90e0ce1b420",
+          "quote": "ইফিষীয় ৫:২৫-২৭",
+          "before": "া থাকে, বরং সে যেন পবিত্র ও নির্দোষ হয়—",
+          "after": "।",
+          "spans": [
+            [
+              10185,
+              10200
+            ]
+          ],
+          "osis": "Eph.5.25-Eph.5.27",
+          "queries": [
+            "49 5:25-27"
+          ]
+        },
+        {
+          "id": "b7c4e918175ab39a858c7962",
+          "quote": "যিশাইয় ৬১:১-৩",
+          "before": "নামে আখ্যাত হয়, এবং তিনি মহিমান্বিত হন—",
+          "after": "।",
+          "spans": [
+            [
+              13634,
+              13648
+            ]
+          ],
+          "osis": "Isa.61.1-Isa.61.3",
+          "queries": [
+            "23 61:1-3"
+          ]
+        }
+      ],
+      "record_hash": "99d1312164637b2807c167a0bdfe73971721d0e0f9ed210b04d7e0b8adfbe15b"
     },
     "dc9bb2ea-cefd-4340-b274-deddb70afcaf:el:f8c4de85e1b3f94bfbfb1a1606a7e52cbfcd6a2ad399aba5b5188d3c55d4a633:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",

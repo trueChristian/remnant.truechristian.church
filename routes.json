@@ -26038,11 +26038,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "نور-العالم-هو-يسوع",
+        "history": [
+          "/ar/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -37058,11 +37059,12 @@
       },
       "dc9bb2ea-cefd-4340-b274-deddb70afcaf": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "confidence-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "আধ্যাত্মিক-অনুশীলন",
+        "alias": "আত্মবিশ্বাস",
+        "history": [
+          "/bn/articles/confidence-2/"
+        ],
+        "fallback": false
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -41129,11 +41131,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "jugend",
+        "alias": "ein-christuszentrierter-weg-des-kennenlernens",
+        "history": [
+          "/de/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -44017,11 +44020,12 @@
       },
       "77cd4a24-14db-4ba2-905f-4f3ecb1d3ea5": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "pots",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "gedichte",
+        "alias": "töpfe",
+        "history": [
+          "/de/articles/pots/"
+        ],
+        "fallback": false
       },
       "77fad9bd-e155-4f8b-9412-68f96cd634ca": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
@@ -99106,11 +99110,12 @@
       },
       "80e78d22-936e-48de-885a-f9a8898d5e42": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "נוער",
+        "alias": "חיזור-שהמשיח-במרכזו",
+        "history": [
+          "/he/articles/a-christ-centered-courtship/"
+        ],
+        "fallback": false
       },
       "81500054-38d9-4132-b51e-5030167769c9": {
         "category_id": "cb0c6e89-5a7b-5693-b6b6-0b47f5e46408",
@@ -110503,11 +110508,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "जगत-का-प्रकाश-यीशु-है",
+        "history": [
+          "/hi/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -115801,11 +115807,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kaum-muda",
+        "alias": "proses-pendekatan-yang-berpusat-pada-kristus",
+        "history": [
+          "/id/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -119107,11 +119114,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kaum-muda",
+        "alias": "apa-yang-benar-tentang-musik-saya",
+        "history": [
+          "/id/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -207323,11 +207331,12 @@
       },
       "6485a6ed-e76f-4142-9e27-e649823cb1a3": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "with-what-should-we-be-adorned",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "خواتین",
+        "alias": "ہمیں-کن-چیزوں-سے-آراستہ-ہونا-چاہیے",
+        "history": [
+          "/ur/articles/with-what-should-we-be-adorned/"
+        ],
+        "fallback": false
       },
       "6497a93f-bea4-44dd-bbe5-da90318f3d48": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -219446,11 +219455,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "基督徒生活",
+        "alias": "耶稣是世界的光",
+        "history": [
+          "/zh-Hans/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
