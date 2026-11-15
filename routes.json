@@ -27434,11 +27434,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الافتتاحية",
+        "alias": "من-المحرر-8",
+        "history": [
+          "/ar/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -35482,11 +35483,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "জীবনের-সরু-ফটক",
+        "history": [
+          "/bn/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -37324,11 +37326,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "সম্পাদকীয়",
+        "alias": "সম্পাদকের-কাছ-থেকে-3",
+        "history": [
+          "/bn/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -55706,11 +55709,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "χριστιανική-ζωή",
+        "alias": "το-φωσ-του-κόσμου-είναι-ο-ιησούσ",
+        "history": [
+          "/el/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -92402,11 +92406,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "éditorial",
+        "alias": "de-la-rédaction-6",
+        "history": [
+          "/fr/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -98339,11 +98344,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "רפואה",
+        "alias": "הסכנות-שבמזונות-אולטרה-מעובדים",
+        "history": [
+          "/he/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -107845,11 +107851,12 @@
       },
       "58d3859b-42f6-4cf1-80e6-fa847d9dc4a4": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "a-life-changing-influence",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "बच्चे",
+        "alias": "जीवन-बदलने-वाला-प्रभाव",
+        "history": [
+          "/hi/articles/a-life-changing-influence/"
+        ],
+        "fallback": false
       },
       "594e6de0-71ae-4367-8d81-2ae37c93b98b": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -171777,11 +171784,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "editorial",
+        "alias": "do-editor-9",
+        "history": [
+          "/pt/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -215036,11 +215044,12 @@
       },
       "1f294c3b-4295-4493-8a52-a33af40f298b": {
         "category_id": "94dddad2-cc75-5292-86c4-8f450af98ad4",
-        "category_slug": "articles",
-        "alias": "past-redemption-point",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "审判",
+        "alias": "越此无救处",
+        "history": [
+          "/zh-Hans/articles/past-redemption-point/"
+        ],
+        "fallback": false
       },
       "1fb11dd9-8813-4447-a91c-f33005907b91": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
