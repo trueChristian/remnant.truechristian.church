@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "ccd96c1de694b0aed137c1a8029fe9d8a69f07c1e139c0b5c8ac0c6bc4824c38",
+  "integrity": "a2ae3b6bad0e6679e8e175e274f79d134a4c8acf73716665aa5bec4d4fb1be89",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -59030,6 +59030,208 @@
         }
       ],
       "record_hash": "cccfdcf6b5d9486fb310be1123666c5dba48b27670c4d700cf9c7b05974c86a0"
+    },
+    "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:it:9b4eb98b8e35055a4625b67f1eef61edaa897f66bd35bc40cada87427f8f0b28:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
+      "locale": "it",
+      "content_hash": "9b4eb98b8e35055a4625b67f1eef61edaa897f66bd35bc40cada87427f8f0b28",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "db84229d7322e35d2dd3072e",
+          "quote": "Efesini 5:33",
+          "before": "… la moglie badi a riverire il marito – ",
+          "after": ".",
+          "spans": [
+            [
+              1610,
+              1622
+            ]
+          ],
+          "osis": "Eph.5.33",
+          "queries": [
+            "49 5:33"
+          ]
+        },
+        {
+          "id": "0bc33d51c1338680d02ad1e2",
+          "quote": "1 Pietro 3:1",
+          "before": "i, siate sottomesse ai vostri mariti… – ",
+          "after": ".",
+          "spans": [
+            [
+              1722,
+              1734
+            ]
+          ],
+          "osis": "1Pet.3.1",
+          "queries": [
+            "60 3:1"
+          ]
+        },
+        {
+          "id": "6f3a1778d11ad1f73a9fdcd5",
+          "quote": "1 Pietro 3:6",
+          "before": "mandolo signore: di cui siete figlie… – ",
+          "after": ".",
+          "spans": [
+            [
+              1864,
+              1876
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "cf3cf84ae6fdaf8a126cfeba",
+          "quote": "Efesini 5:22",
+          "before": "sse ai vostri mariti, come al Signore – ",
+          "after": ".",
+          "spans": [
+            [
+              1977,
+              1989
+            ]
+          ],
+          "osis": "Eph.5.22",
+          "queries": [
+            "49 5:22"
+          ]
+        },
+        {
+          "id": "b09c6bdcd880fcb74684a88b",
+          "quote": "1 Corinzi 11:3",
+          "before": "a è l’uomo; e il capo di Cristo è Dio – ",
+          "after": ".",
+          "spans": [
+            [
+              2148,
+              2162
+            ]
+          ],
+          "osis": "1Cor.11.3",
+          "queries": [
+            "46 11:3"
+          ]
+        },
+        {
+          "id": "d9c24354aecac34b097d5ab8",
+          "quote": "1 Timoteo 2:11-14",
+          "before": " ingannata, cadde nella trasgressione – ",
+          "after": ".",
+          "spans": [
+            [
+              2491,
+              2508
+            ]
+          ],
+          "osis": "1Tim.2.11-1Tim.2.14",
+          "queries": [
+            "54 2:11-14"
+          ]
+        },
+        {
+          "id": "e385d9d60173c7ed1c55d6d0",
+          "quote": "Efesini 5:24",
+          "before": "ttomesse] ai loro mariti in ogni cosa – ",
+          "after": ".",
+          "spans": [
+            [
+              2656,
+              2668
+            ]
+          ],
+          "osis": "Eph.5.24",
+          "queries": [
+            "49 5:24"
+          ]
+        },
+        {
+          "id": "659729c4e2321bb21108996a",
+          "quote": "1 Corinzi 14:34",
+          "before": "e sottomesse, come pure dice la legge – ",
+          "after": ".",
+          "spans": [
+            [
+              2852,
+              2867
+            ]
+          ],
+          "osis": "1Cor.14.34",
+          "queries": [
+            "46 14:34"
+          ]
+        },
+        {
+          "id": "4eadaa3800fb4d5c1f1fc6ad",
+          "quote": "Tito 2:3-5",
+          "before": " la parola di Dio non sia bestemmiata – ",
+          "after": ".",
+          "spans": [
+            [
+              6360,
+              6370
+            ]
+          ],
+          "osis": "Titus.2.3-Titus.2.5",
+          "queries": [
+            "56 2:3-5"
+          ]
+        },
+        {
+          "id": "265271bf7c34e7dea28fab9b",
+          "quote": "Genesi 2:18",
+          "before": "eo, appropriato, complementare] a lui – ",
+          "after": ".",
+          "spans": [
+            [
+              7097,
+              7108
+            ]
+          ],
+          "osis": "Gen.2.18",
+          "queries": [
+            "1 2:18"
+          ]
+        },
+        {
+          "id": "6ea3122ab7a1357e430c8895",
+          "quote": "Tito 2:4",
+          "before": " i loro mariti, ad amare i loro figli – ",
+          "after": ". La parola “amare” in ad amare i loro m",
+          "spans": [
+            [
+              7226,
+              7234
+            ]
+          ],
+          "osis": "Titus.2.4",
+          "queries": [
+            "56 2:4"
+          ]
+        },
+        {
+          "id": "a42eb1db9707fccb9f2f66a9",
+          "quote": "1 Pietro 3:1-2 & 3:6-7",
+          "before": "e vostre preghiere non siano impedite – ",
+          "after": ".",
+          "spans": [
+            [
+              9479,
+              9505
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2,1Pet.3.6-1Pet.3.7",
+          "queries": [
+            "60 3:1-2",
+            "60 3:6-7"
+          ]
+        }
+      ],
+      "record_hash": "12f7ac36e04b6c66d700a6ab484a331e5dad3d49e8bceb26227cce434432a49a"
     },
     "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:ko:f7e1485b9a636a5e3da71b67434f365e100f6964ae5ff581b550874efd817c31:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
@@ -203377,6 +203579,79 @@
       ],
       "record_hash": "46167efff33aa0161dd1f5ebd361e3713aaa2e31c73c6779f0a2eb9a897f71f0"
     },
+    "682dc04d-bea3-4325-ac73-926bb3396990:id:32171ebaec84c0437f097c7d2141ff550b9b94053bf2a569a2a5b5187ec58f66:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "id",
+      "content_hash": "32171ebaec84c0437f097c7d2141ff550b9b94053bf2a569a2a5b5187ec58f66",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9d85a01fa0710408b03f3d62",
+          "quote": "Daniel 1",
+          "before": "aniel dan teman-temannya tiba di Babel (",
+          "after": "), mereka ditawari daging dari meja raja",
+          "spans": [
+            [
+              3469,
+              3477
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "603055b459d2d9000b3e6560",
+          "quote": "Kisah Para Rasul 15",
+          "before": "usalem mempertimbangkan pertanyaan ini (",
+          "after": ").",
+          "spans": [
+            [
+              4260,
+              4279
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "3f72f756af58ba8fda8ae396",
+          "quote": "1 Korintus 3:16",
+          "before": "n bahwa Roh Allah diam di dalam kamu?” (",
+          "after": ").",
+          "spans": [
+            [
+              4864,
+              4879
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        },
+        {
+          "id": "891f01af6c7491c19f5f17c0",
+          "quote": "Efesus 5:15",
+          "before": "ang bebal, tetapi seperti orang arif.” (",
+          "after": ") Kita harus hidup dengan bijaksana, mem",
+          "spans": [
+            [
+              14500,
+              14511
+            ]
+          ],
+          "osis": "Eph.5.15",
+          "queries": [
+            "49 5:15"
+          ]
+        }
+      ],
+      "record_hash": "b50eaf06e9f8c839442ded1e5b6468b7632b27fefb7af4dc967b2b07c3af0464"
+    },
     "682dc04d-bea3-4325-ac73-926bb3396990:it:81fc9e3f90d9610d7633ef28c7e8c21865d2fdd04ea210b6d1c4ea5d94c0135b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
       "locale": "it",
@@ -313828,6 +314103,479 @@
       ],
       "record_hash": "209dc968bda98011fd93e6b48755fd33a3eefaa8256c855cdc5b68034337173d"
     },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:fr:f034463ca7974efab34aca3d8eebcb8c62edd347cb4424c4abf4877059d2ed2e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "fr",
+      "content_hash": "f034463ca7974efab34aca3d8eebcb8c62edd347cb4424c4abf4877059d2ed2e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5b18b7be89fec5219e19e18a",
+          "quote": "Matthieu 7:13-14",
+          "before": " vie, et il y en a peu qui le trouvent –",
+          "after": ".",
+          "spans": [
+            [
+              470,
+              486
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "5bcb046c905b52c0fde7ce64",
+          "quote": "Matthieu 13:37-39",
+          "before": " ; les moissonneurs, ce sont les anges –",
+          "after": ". Mais dans l’image présentée sous la fo",
+          "spans": [
+            [
+              1190,
+              1207
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "f70a88b04cfa72a04f0c5134",
+          "quote": "Matthieu 7:22",
+          "before": "fait beaucoup de miracles en ton nom ? –",
+          "after": ". Se libérer des abjections du mal est t",
+          "spans": [
+            [
+              2467,
+              2480
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "cdbd868f075a830ddb3af911",
+          "quote": "Matthieu 7:21",
+          "before": "té de mon Père qui est dans les cieux. –",
+          "after": ". De plus, placer l’ascétisme — la doctr",
+          "spans": [
+            [
+              2687,
+              2700
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "b66cea8ab7ce0e14e3025469",
+          "quote": "Colossiens 2:20-22",
+          "before": "andements et les doctrines des hommes. –",
+          "after": ". Si nous applaudissons les efforts de q",
+          "spans": [
+            [
+              3298,
+              3316
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "fd619331a5404d7169cdc403",
+          "quote": "Jean 10:7",
+          "before": "rit lui-même comme la porte des brebis –",
+          "after": ". Qui voudrait refuser au Christ une pos",
+          "spans": [
+            [
+              3824,
+              3833
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "bacc57d9a32a859bf614e097",
+          "quote": "1 Thessaloniciens 3:4",
+          "before": "ons subir la tribulation ; (Thlee’-bo) –",
+          "after": ".",
+          "spans": [
+            [
+              4944,
+              4965
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "011302232afc1bad52386a25",
+          "quote": "Hébreux 11:37",
+          "before": "tout, affligés (Thlee’-bo), maltraités –",
+          "after": ".",
+          "spans": [
+            [
+              5084,
+              5097
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "5f48ca1c6ef3cef9599a209c",
+          "quote": "2 Corinthiens 4:8",
+          "before": "outes parts, mais non dans l’angoisse… –",
+          "after": ".",
+          "spans": [
+            [
+              5197,
+              5214
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "a7dd28d3d5198d767398a90a",
+          "quote": "Matthieu 7:28-29",
+          "before": "autorité, et non pas comme les scribes –",
+          "after": ". La porte étroite du Christ reposait su",
+          "spans": [
+            [
+              5473,
+              5489
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "b03e48698c1cdff0b17cb2d9",
+          "quote": "Luc 12:50",
+          "before": "ressé jusqu’à ce qu’il soit accompli ! –",
+          "after": ". C’est ainsi que Christ a reçu son auto",
+          "spans": [
+            [
+              5720,
+              5729
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "09fbd25cbeeb59e237bff18a",
+          "quote": "Luc 20:1-8",
+          "before": "par quelle autorité je fais ces choses –",
+          "after": ".",
+          "spans": [
+            [
+              6612,
+              6622
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "c60daa54b9a842aacb8d575d",
+          "quote": "Actes 5:29",
+          "before": "r …d’obéir à Dieu plutôt qu’aux hommes –",
+          "after": ". C’est alors que nous éprouverons le th",
+          "spans": [
+            [
+              7221,
+              7231
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "848f3e6cb175e90c4dd5cb71",
+          "quote": "Romains 13:1-2",
+          "before": "istent attireront sur eux la damnation –",
+          "after": ". Ce sont là des paroles fortes que nous",
+          "spans": [
+            [
+              7814,
+              7828
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "a5e6d851bff5c972100b33c8",
+          "quote": "Actes 4:19-20",
+          "before": "ler de ce que nous avons vu et entendu –",
+          "after": ". Les disciples n’éprouvaient aucune ani",
+          "spans": [
+            [
+              8102,
+              8115
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "c4c749a406563f79da9cc6dd",
+          "quote": "Matthieu 9:8",
+          "before": " avait donné aux hommes un tel pouvoir –",
+          "after": ". Leur expérience de l’autorité n’était ",
+          "spans": [
+            [
+              8959,
+              8971
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "e7c69de9cc0908188fa2f648",
+          "quote": "Romains 13:5",
+          "before": "e, mais encore par motif de conscience –",
+          "after": ". Accueillir nos autorités dans notre cœ",
+          "spans": [
+            [
+              9671,
+              9683
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "76081b61dd712a411af82e7f",
+          "quote": "Matthieu 8:10",
+          "before": "e n’ai pas trouvé une aussi grande foi –",
+          "after": ". C’était un homme qui avait de l’autori",
+          "spans": [
+            [
+              10575,
+              10588
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "6fffaffd3004ab05578531ea",
+          "quote": "Matthieu 8:8",
+          "before": "nt un mot, et mon serviteur sera guéri –",
+          "after": ". La porte formée par ses supérieurs et ",
+          "spans": [
+            [
+              10881,
+              10893
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "2983f528f636b0fb56dcf446",
+          "quote": "Genèse 24:12",
+          "before": "se de bonté envers mon maître Abraham s–",
+          "after": ".",
+          "spans": [
+            [
+              12529,
+              12541
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "290f83f8c6abc53be55d23cd",
+          "quote": "Actes 8:39",
+          "before": "ner, …il poursuivit sa route avec joie –",
+          "after": ", sa vie témoigne avec éclat de la proph",
+          "spans": [
+            [
+              13134,
+              13144
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "eafa924280d0095de91a42c7",
+          "quote": "Ésaïe 56:3",
+          "before": "dise pas : Voici, je suis un arbre sec –",
+          "after": ".",
+          "spans": [
+            [
+              13266,
+              13276
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "291a8d9d007a4a6a1467fb68",
+          "quote": "Éphésiens 6:1-3",
+          "before": "et que tu vives longtemps sur la terre –",
+          "after": ". Cela devrait être évident pour toute p",
+          "spans": [
+            [
+              13546,
+              13561
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "455d46d60ec2d9a1e42d4482",
+          "quote": "Hébreux 12:9",
+          "before": "e au Père des esprits, afin de vivre ? –",
+          "after": ". Ceux qui savent accueillir leurs pères",
+          "spans": [
+            [
+              13964,
+              13976
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "ebfbfda9eff9496ec34eaf01",
+          "quote": "Jean 4:16",
+          "before": "t : Va, appelle ton mari, et viens ici –",
+          "after": ". Christ cherchait à la convaincre que l",
+          "spans": [
+            [
+              14651,
+              14660
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "24bb5a41167347799d0f09b7",
+          "quote": "1 Corinthiens 11:10",
+          "before": " doit avoir une puissance sur la tête… –",
+          "after": ". Le voile exprimant le principe d’autor",
+          "spans": [
+            [
+              15193,
+              15212
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "f004b422dfca20fe7d8732c1",
+          "quote": "Tite 2:15",
+          "before": "e autorité. Que personne ne te méprise –",
+          "after": ". Beaucoup de croyants autoproclamés rej",
+          "spans": [
+            [
+              15750,
+              15759
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "86352ad9c1f972fdb078da42",
+          "quote": "1 Samuel 15:23",
+          "before": "ation comme l’iniquité et l’idolâtrie… –",
+          "after": ". Les efforts pour choisir …une voie qui",
+          "spans": [
+            [
+              16305,
+              16319
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "81d10cdf9b4f9b2e8b472fbc",
+          "quote": "Proverbes 14:12",
+          "before": "une voie qui paraît droite à un homme… –",
+          "after": ", conduisent à l’asservissement, tandis ",
+          "spans": [
+            [
+              16392,
+              16407
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "51fab0756ab069e4cf5afbb112b8a1dc3cb5edf270bc3d0e9a20350b690f9944"
+    },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:hi:69890bfaffb314126c3b2a67f6be944d85779c637aa3061e7cd127e30dd3d3da:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
       "locale": "hi",
@@ -314252,6 +315000,479 @@
         }
       ],
       "record_hash": "1f38fb85df39aa6059a0359d5ce55c25ec37b32b3e9cd33c6c6b75ebe4d4889f"
+    },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:id:08c1cff7cb0ea8b878c33e3451d5fe7dc5e9f35c9e3cf505194fc377ab7ebaf7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "id",
+      "content_hash": "08c1cff7cb0ea8b878c33e3451d5fe7dc5e9f35c9e3cf505194fc377ab7ebaf7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5a7f476b1f060bd239f41f8c",
+          "quote": "Matius 7:13-14",
+          "before": "n, dan sedikit orang yang menemukannya –",
+          "after": ".",
+          "spans": [
+            [
+              491,
+              505
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "140e11f025402beeed19c8ec",
+          "quote": "Matius 13:37-39",
+          "before": "n; dan para penuai ialah para malaikat –",
+          "after": ". Namun dalam gambaran yang disajikan se",
+          "spans": [
+            [
+              1169,
+              1184
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "2a29039abad5afecf8a295e3",
+          "quote": "Matius 7:22",
+          "before": "emi nama-Mu melakukan banyak mukjizat? –",
+          "after": ". Membebaskan diri dari sisa-sisa kejaha",
+          "spans": [
+            [
+              2511,
+              2522
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "ff9255905ce11ba5f53e4ad6",
+          "quote": "Matius 7:21",
+          "before": "akukan kehendak Bapa-Ku yang di surga. –",
+          "after": ". Selain itu, menempatkan asketisme, aja",
+          "spans": [
+            [
+              2743,
+              2754
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "4374513f4255969ed4781f00",
+          "quote": "Kolose 2:20-22",
+          "before": "… menurut perintah dan ajaran manusia. –",
+          "after": ". Sementara kita menghargai upaya siapa ",
+          "spans": [
+            [
+              3302,
+              3316
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "25dac41c24d68e0eea5e3182",
+          "quote": "Yohanes 10:7",
+          "before": "iri-Nya sebagai pintu bagi domba-domba –",
+          "after": ". Siapa yang mau menyangkal kedudukan ya",
+          "spans": [
+            [
+              3838,
+              3850
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "3f87a4942656e5c248ab55c6",
+          "quote": "1 Tesalonika 3:4",
+          "before": "an menderita kesengsaraan; (Thlee’-bo) –",
+          "after": ".",
+          "spans": [
+            [
+              5020,
+              5036
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "38e3562dfe2ebb02a56b49cd",
+          "quote": "Ibrani 11:37",
+          "before": "urangan, ditindas (Thlee’-bo), disiksa –",
+          "after": ".",
+          "spans": [
+            [
+              5166,
+              5178
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "597252a8bf95c42c98f28fc9",
+          "quote": "2 Korintus 4:8",
+          "before": "ri segala sisi, tetapi tidak terjepit… –",
+          "after": ".",
+          "spans": [
+            [
+              5261,
+              5275
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "dca1537e1c9d1406adb97652",
+          "quote": "Matius 7:28-29",
+          "before": "sa, dan bukan seperti ahli-ahli Taurat –",
+          "after": ". Pintu gerbang Kristus yang sempit bert",
+          "spans": [
+            [
+              5561,
+              5575
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "2eb194b6e1fdf16a359390e8",
+          "quote": "Lukas 12:50",
+          "before": "ya hati-Ku sebelum hal itu terlaksana! –",
+          "after": ". Di sinilah Kristus memperoleh kuasa-Ny",
+          "spans": [
+            [
+              5789,
+              5800
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "2a99165fbf5284f7992c1786",
+          "quote": "Lukas 20:1-8",
+          "before": "kuasa apakah Aku melakukan hal-hal ini –",
+          "after": ".",
+          "spans": [
+            [
+              6850,
+              6862
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "e02fe5e19a6e76594901c58c",
+          "quote": "Kisah Para Rasul 5:29",
+          "before": "k lebih menaati Allah daripada manusia –",
+          "after": ". Di sinilah kita akan mengalami thlee’-",
+          "spans": [
+            [
+              7492,
+              7513
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "fea92b2a60786fa524408840",
+          "quote": "Roma 13:1-2",
+          "before": "datangkan hukuman atas dirinya sendiri –",
+          "after": ". Ini adalah perkataan yang keras dan ti",
+          "spans": [
+            [
+              8153,
+              8164
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "8fb067ae4c1a213742e5bebf",
+          "quote": "Kisah Para Rasul 4:19-20",
+          "before": "g apa yang telah kami lihat dan dengar –",
+          "after": ". Meskipun para murid tidak menyimpan ke",
+          "spans": [
+            [
+              8519,
+              8543
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "96c244225a6e300cd9bff794",
+          "quote": "Matius 9:8",
+          "before": "rikan kuasa sebesar itu kepada manusia –",
+          "after": ". Pengalaman mereka mengenai otoritas ha",
+          "spans": [
+            [
+              9416,
+              9426
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "6ea301d5bcc8aa3e58a81c0a",
+          "quote": "Roma 13:5",
+          "before": "a murka, tetapi juga karena suara hati –",
+          "after": ". Menerima para pemegang otoritas atas k",
+          "spans": [
+            [
+              10104,
+              10113
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "312ca4ad1086e54718981c87",
+          "quote": "Matius 8:10",
+          "before": "temukan, bahkan di antara orang Israel –",
+          "after": ". Ia adalah seorang yang memiliki otorit",
+          "spans": [
+            [
+              11125,
+              11136
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "a65a7e3e945f3caacc7b6bcf",
+          "quote": "Matius 8:8",
+          "before": "ah kata saja, maka hambaku akan sembuh –",
+          "after": ". Pintu gerbang yang dibentuk oleh para ",
+          "spans": [
+            [
+              11447,
+              11457
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "4fca09f82c100ab5132d720d",
+          "quote": "Kejadian 24:12",
+          "before": "lah kasih setia kepada tuanku Abraham s–",
+          "after": ".",
+          "spans": [
+            [
+              13101,
+              13115
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "24bb61d142c5d7229b63baad",
+          "quote": "Kisah Para Rasul 8:39",
+          "before": "neruskan perjalanannya dengan sukacita –",
+          "after": ", Hidupnya menjadi kesaksian yang luar b",
+          "spans": [
+            [
+              13695,
+              13716
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "717d63b3144ea7c6b3d181b3",
+          "quote": "Yesaya 56:3",
+          "before": "esungguhnya, aku ini pohon yang kering –",
+          "after": ".",
+          "spans": [
+            [
+              13860,
+              13871
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "96a41b894732626ea9d95c4f",
+          "quote": "Efesus 6:1-3",
+          "before": " berbahagia dan panjang umurmu di bumi –",
+          "after": ". Hal ini seharusnya jelas bagi setiap o",
+          "spans": [
+            [
+              14128,
+              14140
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "848308674aef6478f488a709",
+          "quote": "Ibrani 12:9",
+          "before": "da Bapa segala roh, supaya kita hidup? –",
+          "after": ". Kehidupan ditemukan oleh mereka yang d",
+          "spans": [
+            [
+              14543,
+              14554
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "8ac8cfcb5a9e76f6234ce191",
+          "quote": "Yohanes 4:16",
+          "before": "nggillah suamimu dan datanglah ke sini –",
+          "after": ". Kristus berusaha meyakinkan perempuan ",
+          "spans": [
+            [
+              15272,
+              15284
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "ec198136caf44eab124c0e7d",
+          "quote": "1 Korintus 11:10",
+          "before": "an harus mempunyai kuasa di kepalanya… –",
+          "after": ". Tudung kepala yang menandakan tatanan ",
+          "spans": [
+            [
+              15878,
+              15894
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "382ba39e68fb56a4c47e51f7",
+          "quote": "Titus 2:15",
+          "before": "da orang yang menganggap rendah engkau –",
+          "after": ". Banyak orang yang mengaku percaya meno",
+          "spans": [
+            [
+              16466,
+              16476
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "f19a8801c4b949172bbc53b1",
+          "quote": "1 Samuel 15:23",
+          "before": "rti kejahatan dan penyembahan berhala… –",
+          "after": ". Upaya memilih …jalan yang disangka ora",
+          "spans": [
+            [
+              17022,
+              17036
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "10ac1a37ebc22a7451c13f1e",
+          "quote": "Amsal 14:12",
+          "before": "ilih …jalan yang disangka orang lurus… –",
+          "after": ", membawa kepada perhambaan, tetapi memi",
+          "spans": [
+            [
+              17092,
+              17103
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "03f544c07e44f91625f55753619c87161cb1abd6a9bae8ec5db0926c9b074c6a"
     },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:nb:deb2922dd207079bb6b49d396e1d312ae92c4e7c2f80d30379f77902acafeaef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
@@ -314725,6 +315946,447 @@
         }
       ],
       "record_hash": "9c4f7bca8df2c7da69005719dd4b6510a9e8fb82462bcc5cd218e23cfe6f75e7"
+    },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ur:42a34b344c3188faa6353847762cc4039a0318ddf9ae2a12f1b4f90edacbcde8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "ur",
+      "content_hash": "42a34b344c3188faa6353847762cc4039a0318ddf9ae2a12f1b4f90edacbcde8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d7938345896f77cd1d1c6f61",
+          "quote": "متی 7:13-14",
+          "before": "چاتا ہے، اور تھوڑے ہیں جو اُسے پاتے ہیں—",
+          "after": "۔",
+          "spans": [
+            [
+              458,
+              469
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "9cb527a84413d7e1cc136a49",
+          "quote": "متی 13:37-39",
+          "before": "ا کا خاتمہ ہے؛ اور کاٹنے والے فرشتے ہیں—",
+          "after": "۔ لیکن تنگ دروازے کی پیش کردہ تصویر میں ",
+          "spans": [
+            [
+              1045,
+              1057
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "589bf95b1c58e98f2de94d04",
+          "quote": "متی 7:22",
+          "before": "اور تیرے نام سے بہت سے معجزے نہ دکھائے؟—",
+          "after": "۔ برائی کی آلائشوں سے اپنے آپ کو آزاد کر",
+          "spans": [
+            [
+              2126,
+              2134
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "afd2ccdecc6ef209fe9b5c2e",
+          "quote": "متی 7:21",
+          "before": " جو میرے آسمانی باپ کی مرضی پر چلتا ہے۔—",
+          "after": "۔ نیز، دروازے کے دہانے پر زہد کو رکھنا، ",
+          "spans": [
+            [
+              2319,
+              2327
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "5c89e5024d404e98dfe3a0a5",
+          "quote": "کلسیوں 2:20-22",
+          "before": "…انسانوں کے احکام اور تعلیمات کے مطابق۔—",
+          "after": "۔ اگرچہ ہم ہر اُس شخص کی کوششوں کو سراہت",
+          "spans": [
+            [
+              2779,
+              2793
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "5096b80443c988a5f493aae7",
+          "quote": "یوحنا 10:7",
+          "before": "میں مسیح نے اپنے آپ کو بھیڑوں کا دروازہ—",
+          "after": "۔ قرار دیا۔ کون مسیح کو ایسا ممتاز مقام ",
+          "spans": [
+            [
+              3205,
+              3215
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "a7cd2e605c127de800880208",
+          "quote": "عبرانیوں 11:37",
+          "before": "حتاج، مصیبت زدہ (Thlee’-bo)، ستائے ہوئے—",
+          "after": "۔",
+          "spans": [
+            [
+              4275,
+              4289
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "ed70d5d468e42b274b301256",
+          "quote": "2 کرنتھیوں 4:8",
+          "before": "یں ہیں (Thlee’-bo)، لیکن کچلے نہیں گئے…—",
+          "after": "۔",
+          "spans": [
+            [
+              4364,
+              4378
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "9bdd206fb1b9be686f2b3427",
+          "quote": "متی 7:28-29",
+          "before": " کی طرح سکھاتا تھا، نہ کہ کاتبوں کی طرح—",
+          "after": "۔ مسیح کا تنگ دروازہ محض گھسے پٹے زبانی ",
+          "spans": [
+            [
+              4593,
+              4604
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "b3b73f4cb3d1c5566850414f",
+          "quote": "لوقا 12:50",
+          "before": "را نہ ہو جائے، میں کس قدر تنگی میں ہوں!—",
+          "after": "۔ مسیح نے اپنا اختیار اسی طرح حاصل کیا: ",
+          "spans": [
+            [
+              4775,
+              4785
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "9f7d61f0e9d8a9df7ab9c174",
+          "quote": "لوقا 20:1-8",
+          "before": "اتا کہ میں یہ کام کس اختیار سے کرتا ہوں—",
+          "after": "۔",
+          "spans": [
+            [
+              5577,
+              5588
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "764bbde023c6a1d436fc5feb",
+          "quote": "اعمال 5:29",
+          "before": " ہے کہ …آدمیوں کی نسبت خدا کا حکم مانیں—",
+          "after": "۔ یہیں ہم دروازے کی thlee’-bo تنگی کا تج",
+          "spans": [
+            [
+              6105,
+              6115
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "c7aa16962748c6de9048b86d",
+          "quote": "رومیوں 13:1-2",
+          "before": "ا ہے، اور مقابلہ کرنے والے سزا پائیں گے—",
+          "after": "۔ یہ سخت الفاظ ہیں جنہیں نظر انداز کرنے ",
+          "spans": [
+            [
+              6566,
+              6579
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "ef7427f451620581291cac6e",
+          "quote": "اعمال 4:19-20",
+          "before": "و کچھ ہم نے دیکھا اور سنا ہے وہ نہ کہیں—",
+          "after": "۔ اگرچہ شاگردوں کو حاکموں کے خلاف کوئی ذ",
+          "spans": [
+            [
+              6871,
+              6884
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "55f4b55b09c56441bc763d39",
+          "quote": "متی 9:8",
+          "before": "کی، جس نے آدمیوں کو ایسا اختیار دیا تھا—",
+          "after": "۔ اختیار کے ساتھ اُن کا سابقہ تجربہ محض ",
+          "spans": [
+            [
+              7627,
+              7634
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "0fe4606f52942283a9d2aaff",
+          "quote": "رومیوں 13:5",
+          "before": "رف غضب کے خوف سے، بلکہ ضمیر کی خاطر بھی—",
+          "after": "۔ اپنے دل میں حاکموں کو قبول کرنا بالآخر",
+          "spans": [
+            [
+              8197,
+              8208
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "ebd5dacca7210c4ad983aee8",
+          "quote": "متی 8:10",
+          "before": "نے اسرائیل میں بھی ایسا ایمان نہیں پایا—",
+          "after": "۔ وہ اختیار رکھنے والا بھی تھا… اور اختی",
+          "spans": [
+            [
+              8974,
+              8982
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "10f920ea25d154fbb58ef3fb",
+          "quote": "متی 8:8",
+          "before": "ف کلام فرما دے تو میرا خادم شفا پائے گا—",
+          "after": "۔ اُس کے نگرانوں اور اپنے ماتحت خادموں ک",
+          "spans": [
+            [
+              9254,
+              9261
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "00efc5ff7ed725da8023fe49",
+          "quote": "پیدائش 24:12",
+          "before": "خش اور میرے آقا ابرہام پر مہربانی فرما۔—",
+          "after": "۔",
+          "spans": [
+            [
+              10624,
+              10636
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "a5dcf9f00cd72ce99714fbfe",
+          "quote": "اعمال 8:39",
+          "before": "گئی تھی، …وہ اپنی راہ خوشی خوشی چلا گیا—",
+          "after": "، اُس کی زندگی یسعیاہ کی نبوت کی نمایاں ",
+          "spans": [
+            [
+              11134,
+              11144
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "353baed96907e652df2bce59",
+          "quote": "یسعیاہ 56:3",
+          "before": "را نہ کہے، دیکھو، میں تو سوکھا درخت ہوں—",
+          "after": "۔",
+          "spans": [
+            [
+              11253,
+              11264
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "5158bb1aef13cfba252416a5",
+          "quote": "افسیوں 6:1-3",
+          "before": " بھلا ہو اور زمین پر تمہاری عمر دراز ہو—",
+          "after": "۔ روحانی طور پر بیدار ہر شخص کے لیے یہ ب",
+          "spans": [
+            [
+              11501,
+              11513
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "ef3626829fa9dac8619e6c90",
+          "quote": "عبرانیوں 12:9",
+          "before": "ی زیادہ تابع نہ ہوں اور زندگی نہ پائیں؟—",
+          "after": "۔ زندگی اُنہیں ملتی ہے جو اپنے زمینی باپ",
+          "spans": [
+            [
+              11863,
+              11876
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "67cb57e0dd20af495a437c9b",
+          "quote": "یوحنا 4:16",
+          "before": " سے کہا، جا، اپنے شوہر کو بلا کر یہاں آ—",
+          "after": "۔ مسیح اُسے یہ سمجھانا چاہتا تھا کہ فراو",
+          "spans": [
+            [
+              12458,
+              12468
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "7e83a2d7dd8de973e51d90d7",
+          "quote": "ططس 2:15",
+          "before": "حت اور ملامت کر۔ کوئی تجھے حقیر نہ جانے—",
+          "after": "۔ بہت سے خود کو ایماندار کہنے والے لوگ ک",
+          "spans": [
+            [
+              13385,
+              13393
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "f3e70367475fc747b86d9fbf",
+          "quote": "1 سموئیل 15:23",
+          "before": "ے، اور ضد بدکاری اور بت پرستی کے برابر…—",
+          "after": "۔ …ایسا راستہ جو آدمی کو سیدھا معلوم ہوت",
+          "spans": [
+            [
+              13843,
+              13857
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "1e2d6232662793b312ba6c04",
+          "quote": "امثال 14:12",
+          "before": "ا راستہ جو آدمی کو سیدھا معلوم ہوتا ہے…—",
+          "after": "، چننے کی کوششیں غلامی کی طرف لے جاتی ہی",
+          "spans": [
+            [
+              13908,
+              13919
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "e6555a157635195bd8b2c473e3e4f250b2e7115de769da93a1ba414f3c9577c1"
     },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:zh-Hans:21088d5b0d63d2e112a51039a4cd7e98519aad73f33e01e492b612021bc365ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
@@ -409520,6 +411182,14 @@
       "markers": [],
       "record_hash": "4fef2d4a0d5e8dd22b0b5e0bcdab58ef7a38957764551bab6c36325110d7e1c2"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:de:cf91e0b217a2c72e88893de0102199d967838db5794b412f752715b424c25e49:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "de",
+      "content_hash": "cf91e0b217a2c72e88893de0102199d967838db5794b412f752715b424c25e49",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "185676810597b9d7c3ed8332296e8c176a14cda2723566ebc1bd4627662b2d6a"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:en:c4bbb66ccafea50d7be2489542702597cc16e4c6be186f2264f2c8a997b1bf05:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "en",
@@ -409544,6 +411214,22 @@
       "markers": [],
       "record_hash": "c2209b92b2b421cbd214fa893865674ccadf8db176946106fa6e9fe8bd0014ae"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:id:4282670fb4e37ebd06f8dfdf1a4ac26b6edb74acc04f2dbb2fa5b93afd20cfe2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "id",
+      "content_hash": "4282670fb4e37ebd06f8dfdf1a4ac26b6edb74acc04f2dbb2fa5b93afd20cfe2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "84a2921b348fb08e1e81a009d9b69ff411b7e1165cc34fcb8c704292505eb141"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:nl:92b220dcdaf6dfb2c0b963a8763cb84f99c15fa32fafd3d2996e9e12f3dddbd6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "nl",
+      "content_hash": "92b220dcdaf6dfb2c0b963a8763cb84f99c15fa32fafd3d2996e9e12f3dddbd6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a929b8d9fe6907de86e46700a5da8f2026691de9a8dcface26e4ee4877537229"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:pt:16c9fd5babb5f0249f1fab5ea9caf0e7e2a17d92646fda49f47abb7acc74e1ee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "pt",
@@ -409551,6 +411237,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "e03e7b459c5fd93bcdae329229fb49d44ba102c7bee4ceec70b5884f5ada34c3"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:ru:cf7a6323b955c9c497ca94bfdc0d7ea83b5f4046f45504bd2937f6a513ffc287:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "ru",
+      "content_hash": "cf7a6323b955c9c497ca94bfdc0d7ea83b5f4046f45504bd2937f6a513ffc287",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3ea131e58980167cb1b77e8e7b46b1eb86e2167f713f8cf1f14e19dca5ffeb1d"
     },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:zh-Hans:430f32e744d26d2440e8b4bbd80ad1b01bcfd7b08637ad9c8d95435f7a4f49ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",

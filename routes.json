@@ -47227,11 +47227,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "leitartikel",
+        "alias": "vom-herausgeber-5",
+        "history": [
+          "/de/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -90553,11 +90554,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vie-chrétienne",
+        "alias": "la-porte-étroite-qui-mène-à-la-vie",
+        "history": [
+          "/fr/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -118251,11 +118253,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medis",
+        "alias": "bahaya-makanan-ultra-proses",
+        "history": [
+          "/id/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -120075,11 +120078,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kehidupan-kristen",
+        "alias": "pintu-gerbang-sempit-menuju-kehidupan",
+        "history": [
+          "/id/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -121924,11 +121928,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "tajuk-redaksi",
+        "alias": "dari-editor-6",
+        "history": [
+          "/id/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -125994,11 +125999,12 @@
       },
       "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "understanding-submission",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "donna",
+        "alias": "comprendere-la-sottomissione",
+        "history": [
+          "/it/articles/understanding-submission/"
+        ],
+        "fallback": false
       },
       "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -161813,11 +161819,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "redactioneel",
+        "alias": "van-de-redactie-2",
+        "history": [
+          "/nl/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -181657,11 +181664,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "от-редакции",
+        "alias": "от-редактора-8",
+        "history": [
+          "/ru/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -209258,11 +209266,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "مسیحی-زندگی",
+        "alias": "زندگی-کا-تنگ-دروازہ",
+        "history": [
+          "/ur/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
