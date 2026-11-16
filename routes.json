@@ -15734,11 +15734,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelike-lewe",
+        "alias": "die-nou-poort-na-die-lewe",
+        "history": [
+          "/af/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -17589,11 +17590,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "redaksioneel",
+        "alias": "van-die-redakteur-9",
+        "history": [
+          "/af/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -25593,11 +25595,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "الباب-الضيق-المؤدي-إلى-الحياة",
+        "history": [
+          "/ar/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -90996,11 +90999,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vie-chrétienne",
+        "alias": "la-lumière-du-monde-c-est-jésus",
+        "history": [
+          "/fr/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -102036,11 +102040,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "דבר-העורך",
+        "alias": "מדברי-העורך-2",
+        "history": [
+          "/he/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -112491,11 +112496,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "आत्मिक-जागृति",
+        "alias": "किसी-भी-कीमत-पर-जागृति",
+        "history": [
+          "/hi/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -131891,11 +131897,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "editoriale",
+        "alias": "dall-editore-3",
+        "history": [
+          "/it/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -151817,11 +151824,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "lederartikkel",
+        "alias": "fra-redaktøren-7",
+        "history": [
+          "/nb/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -172345,11 +172353,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "avivamento",
+        "alias": "avivamento-a-qualquer-preço",
+        "history": [
+          "/pt/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -199368,11 +199377,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "maisha-ya-kikristo",
+        "alias": "lango-jembamba-linaloelekea-kwenye-uzima",
+        "history": [
+          "/sw/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -218123,11 +218133,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "青年",
+        "alias": "我的音乐-什么才是正确的",
+        "history": [
+          "/zh-Hans/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",

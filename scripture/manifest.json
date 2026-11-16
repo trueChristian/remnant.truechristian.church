@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "272c8fcb35146e3c15ca47ea47c4ba0a2590399528afbf602b1f0bae8fee4d6d",
+  "integrity": "26dea1a0fbc192da444df267d8d76b46864fc4cf2825982b1fcf2a9f084b30c5",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -68270,21 +68270,21 @@
       ],
       "record_hash": "a7cc1df54fdfea09388ef54699445637796a1e1b1d6c10b1181dc6d8aa1cb38e"
     },
-    "20914547-a133-4159-bd5b-dff81f36453b:af:5191d2c73c215a20280f325d8cd3a65a95c1ea35474921c92ef897e840c39ef3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "20914547-a133-4159-bd5b-dff81f36453b:af:7b110a4705ad2fdd418756b5c6b9ec32b73f665b162f5f7a16fb5830bca3f322:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "20914547-a133-4159-bd5b-dff81f36453b",
       "locale": "af",
-      "content_hash": "5191d2c73c215a20280f325d8cd3a65a95c1ea35474921c92ef897e840c39ef3",
+      "content_hash": "7b110a4705ad2fdd418756b5c6b9ec32b73f665b162f5f7a16fb5830bca3f322",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "d23d91b441c3f0f9cfec7870",
+          "id": "a0120867e5e9c2335a7aed11",
           "quote": "Johannes 4:14",
-          "before": "ater wees wat opborrel tot ewige lewe” (",
+          "before": "er wat opspring tot in die ewige lewe\" (",
           "after": ").",
           "spans": [
             [
-              1939,
-              1952
+              1980,
+              1993
             ]
           ],
           "osis": "John.4.14",
@@ -68293,14 +68293,14 @@
           ]
         },
         {
-          "id": "a2af02ce9894c0c4a1f45eef",
+          "id": "888ce10e99e6adf1cebffd0a",
           "quote": "Romeine 10:6-10",
-          "before": "nd word belying gemaak tot verlossing” (",
+          "before": "en met die mond bely ons tot redding.” (",
           "after": ").",
           "spans": [
             [
-              3280,
-              3295
+              3277,
+              3292
             ]
           ],
           "osis": "Rom.10.6-Rom.10.10",
@@ -68309,14 +68309,14 @@
           ]
         },
         {
-          "id": "00213ae8e24b1b6e229686b6",
+          "id": "b94df4611adaca3d624f951a",
           "quote": "1 Johannes 1:9",
           "before": "es om God en Sy Woord te gehoorsaam. In ",
           "after": " het God gesê dat as ons ons sondes bely",
           "spans": [
             [
-              4424,
-              4438
+              4420,
+              4434
             ]
           ],
           "osis": "1John.1.9",
@@ -68325,14 +68325,14 @@
           ]
         },
         {
-          "id": "9718d6cf132c3e7ace979fe1",
+          "id": "b289e0f907e163265850a381",
           "quote": "Romeine 8:1",
-          "before": "del na die vlees nie maar na die Gees” (",
+          "before": "e vlees wandel nie, maar na die Gees.” (",
           "after": ").",
           "spans": [
             [
-              4869,
-              4880
+              4872,
+              4883
             ]
           ],
           "osis": "Rom.8.1",
@@ -68341,46 +68341,46 @@
           ]
         },
         {
-          "id": "68ecd090bf42b9208bd065e2",
-          "quote": "Romeine 15:9",
-          "before": "dene; en laat al julle volke Hom prys” (",
+          "id": "1c2dd9828b938f18955d936b",
+          "quote": "Romeine 15:9-11",
+          "before": "sies en tot eer van u Naam psalmsing.” (",
           "after": ").",
           "spans": [
             [
-              6401,
-              6413
+              6283,
+              6298
             ]
           ],
-          "osis": "Rom.15.9",
+          "osis": "Rom.15.9-Rom.15.11",
           "queries": [
-            "45 15:9"
+            "45 15:9-11"
           ]
         },
         {
-          "id": "262e69b92fe745deef94367d",
-          "quote": "Hebreërs 13:5",
-          "before": "vrees wat ’n mens aan my kan doen nie” (",
+          "id": "b9142ee868b851298a1b7d99",
+          "quote": "Hebreërs 13:5-6",
+          "before": "ees nie; wat sal 'n mens aan my doen?” (",
           "after": ").",
           "spans": [
             [
-              6910,
-              6923
+              6799,
+              6814
             ]
           ],
-          "osis": "Heb.13.5",
+          "osis": "Heb.13.5-Heb.13.6",
           "queries": [
-            "58 13:5"
+            "58 13:5-6"
           ]
         },
         {
-          "id": "91bae89edcad1385973394b0",
+          "id": "1993f393b606d410ed421fc5",
           "quote": "Matteus 20",
           "before": "in jou verwagtinge is. As voorbeeld het ",
           "after": " die verhaal van die huisheer wat sy arb",
           "spans": [
             [
-              8580,
-              8590
+              8479,
+              8489
             ]
           ],
           "osis": "Matt.20.1-Matt.20.34",
@@ -68389,46 +68389,46 @@
           ]
         },
         {
-          "id": "17fec07ccbf9ea1e6f702e1f",
-          "quote": "Handelinge 2:41",
-          "before": "die breek van brood, en in die gebede” (",
+          "id": "369b7683e57eab44cacec439",
+          "quote": "Handelinge 2:41-42",
+          "before": "eking van die brood en in die gebede.” (",
           "after": ").",
           "spans": [
             [
-              9700,
-              9715
+              9610,
+              9628
             ]
           ],
-          "osis": "Acts.2.41",
+          "osis": "Acts.2.41-Acts.2.42",
           "queries": [
-            "44 2:41"
+            "44 2:41-42"
           ]
         },
         {
-          "id": "6058374414a5cfeb0659f656",
-          "quote": "Filippense 2:4",
-          "before": " in die gedaante van mense geword het” (",
-          "after": ") My vrou en ek het onlangs ons derde hu",
+          "id": "b34d25469bec8f8a92e82a35",
+          "quote": "Filippense 2:4-7",
+          "before": "te neem en aan die mense gelyk geword” (",
+          "after": "). My vrou en ek het onlangs ons derde h",
           "spans": [
             [
-              12274,
-              12288
+              12185,
+              12201
             ]
           ],
-          "osis": "Phil.2.4",
+          "osis": "Phil.2.4-Phil.2.7",
           "queries": [
-            "50 2:4"
+            "50 2:4-7"
           ]
         },
         {
-          "id": "a94ac9621c536f8cb4ec77c3",
+          "id": "d265c1b14506f0c44e46aff3",
           "quote": "Hebreërs 12:1-3",
           "before": "oedeloos in julle siel word nie . . .” (",
           "after": ").",
           "spans": [
             [
-              13945,
-              13960
+              13861,
+              13876
             ]
           ],
           "osis": "Heb.12.1-Heb.12.3",
@@ -68437,14 +68437,14 @@
           ]
         },
         {
-          "id": "009059ccf9156f33bdffbccb",
+          "id": "538a1540c08a8c8f4a088ba7",
           "quote": "Hebreërs 12:12-15",
-          "before": "ie deur dit nie besmet word nie . . .” (",
+          "before": "ele nie vermoeid word en verslap nie.” (",
           "after": ")",
           "spans": [
             [
-              14463,
-              14480
+              14470,
+              14487
             ]
           ],
           "osis": "Heb.12.12-Heb.12.15",
@@ -68453,23 +68453,23 @@
           ]
         },
         {
-          "id": "c2c637dbdc72c8268fd78f3c",
-          "quote": "Hebreërs 12",
-          "before": "eerbied en godvrugtige vrees kan dien” (",
-          "after": ";28).",
+          "id": "45ef89cd8a9e8bde25d4243a",
+          "quote": "Hebreërs 12:28",
+          "before": "lbehaaglik dien met eerbied en vrees.” (",
+          "after": ").",
           "spans": [
             [
-              14697,
-              14708
+              14666,
+              14680
             ]
           ],
-          "osis": "Heb.12.1-Heb.12.29",
+          "osis": "Heb.12.28",
           "queries": [
-            "58 12:1-29"
+            "58 12:28"
           ]
         }
       ],
-      "record_hash": "1c89fe3b9a27bacc17ad7a4274c45dc764f9afc67db388aa454d6ea967c64b1f"
+      "record_hash": "69f5db6340f0eaae22df24eafbe1a1acbd54402efdf31bd138711c64ea398310"
     },
     "20914547-a133-4159-bd5b-dff81f36453b:bn:62b318586c0c2a4c3d22399df7646be56891aeeb9553b014413028b0b5a196f4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "20914547-a133-4159-bd5b-dff81f36453b",
@@ -252168,6 +252168,95 @@
       ],
       "record_hash": "526a13aa0157f630abfcbcd8d7b839339a13a77d3dddf2aa679cd1c413b1d4c7"
     },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:zh-Hans:dc1bb1e9e34ffd89e3349193bb5117c754d1e4c4671400bba62130bd9b9680df:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "zh-Hans",
+      "content_hash": "dc1bb1e9e34ffd89e3349193bb5117c754d1e4c4671400bba62130bd9b9680df",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "059ccab707108080e47bd50b",
+          "quote": "《腓立比书》4",
+          "before": "的、可爱的、声誉良好的，若有什么德行，若有什么可称赞的事，这些事你们都要思念——",
+          "after": ":8。",
+          "spans": [
+            [
+              1380,
+              1387
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "af6e1f07cd379400cf30b2e9",
+          "quote": "《以弗所书》5:",
+          "before": "使徒保罗写道：当用诗章、颂词、灵歌彼此对说，从心里向主歌唱、奏出旋律——",
+          "after": "19。这听起来像是用乐器演奏音乐吗？还是更像从心里向上帝唱赞美诗？",
+          "spans": [
+            [
+              2427,
+              2435
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "e67092c9490b1e3d1151ec89",
+          "quote": "《使徒行传》16:",
+          "before": "到了半夜，保罗和西拉祷告，唱诗赞美上帝，众囚犯也听见了——",
+          "after": "25。保罗和西拉在监狱里，脚上戴着足枷，半夜唱诗时，我不相信他们是在唱歌荣耀自己",
+          "spans": [
+            [
+              2517,
+              2526
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "a615d97a09d693106880eba4",
+          "quote": "《歌罗西书》3:",
+          "before": "富富地住在你们里面，用诗章、颂词、灵歌，彼此教导，互相劝戒，心被恩感，歌颂主——",
+          "after": "16。我们是否让诗篇、圣诗和灵歌教导我们、劝戒我们、鼓励我们？",
+          "spans": [
+            [
+              2754,
+              2762
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "050b9d6019c116e89a0f50ea",
+          "quote": "《约翰福音》4:",
+          "before": "，如今就是了，那真正敬拜父的，要用心灵和真理敬拜祂，因为父寻找这样敬拜祂的人——",
+          "after": "23。",
+          "spans": [
+            [
+              3189,
+              3197
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "6527eb8603b23c747aaf82e1d9e3058fe390db7cd700e5f14ddde29220d20449"
+    },
     "864fd53d-da40-4478-9e1c-e62177efa866:en:2dd470b09213c1f1f449efe3620aaeaad22fd1eb14ee7e94918e83ab61d5570f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "864fd53d-da40-4478-9e1c-e62177efa866",
       "locale": "en",
@@ -312316,6 +312405,824 @@
       ],
       "record_hash": "3a207c95d4bd4f7c78253d2a8eaa36d23810fa251e7ff5e5c4d8cb1743b74fdf"
     },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:af:4450c14bd1f7f95e20007a2f4a64cca73fa1b35373a14483dab98ad11fdd387d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "af",
+      "content_hash": "4450c14bd1f7f95e20007a2f4a64cca73fa1b35373a14483dab98ad11fdd387d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e9579e198c64b7308eb04775",
+          "quote": "Matteus 7:13-14",
+          "before": " lewe lei, en daar is min wat dit vind –",
+          "after": ".",
+          "spans": [
+            [
+              434,
+              449
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "0429f23826941a778f2bc3c7",
+          "quote": "Matteus 13:37-39",
+          "before": "e wêreld; en die maaiers is die engele –",
+          "after": ". Maar in die beeld van die nou poort on",
+          "spans": [
+            [
+              1150,
+              1166
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "f08ee528654feea2e28e2f3c",
+          "quote": "Matteus 7:22",
+          "before": " u Naam baie kragtige dade gedoen het? –",
+          "after": ". Om ons van die droesem van die kwaad t",
+          "spans": [
+            [
+              2358,
+              2370
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "5e7bd698692659c7b134b831",
+          "quote": "Matteus 7:21",
+          "before": "oen van my Vader wat in die hemele is. –",
+          "after": ". Om askese, die leerstelling dat ’n men",
+          "spans": [
+            [
+              2574,
+              2586
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "988111925eada4ea99396b87",
+          "quote": "Kolossense 2:20-22",
+          "before": "gens die gebooie en leringe van mense. –",
+          "after": ". Hoewel ons die pogings prys van enigie",
+          "spans": [
+            [
+              3157,
+              3175
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "8bf59e2c0687abd19cbcfbed",
+          "quote": "Johannes 10:7",
+          "before": "self beskryf as die deur van die skape –",
+          "after": ". Wie sou dit waag om Christus so ’n ver",
+          "spans": [
+            [
+              3657,
+              3670
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "78cdd3703a86975ef9f52499",
+          "quote": "1 Tessalonisense 3:4",
+          "before": "at ons verdrukking sou ly; (Thlee’-bo) –",
+          "after": ".",
+          "spans": [
+            [
+              4637,
+              4657
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "ac2249780387b961795c7afd",
+          "quote": "Hebreërs 11:37",
+          "before": "hoeftig, verdruk (Thlee’-bo), gemartel –",
+          "after": ".",
+          "spans": [
+            [
+              4760,
+              4774
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "72017fc243427e192b0da4a5",
+          "quote": "2 Korintiërs 4:8",
+          "before": ", maar is nie in die noute gedryf nie… –",
+          "after": ".",
+          "spans": [
+            [
+              4872,
+              4888
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "bbb3bd0802551612ba4def83",
+          "quote": "Matteus 7:28-29",
+          "before": "et, en nie soos die skrifgeleerdes nie –",
+          "after": ". Christus se nou poort het berus op ’n ",
+          "spans": [
+            [
+              5165,
+              5180
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "18786dd0a5db586762267405",
+          "quote": "Lukas 12:50",
+          "before": "benoud voel Ek totdat dit volbring is! –",
+          "after": ". Dit is waar Christus Sy gesag gekry he",
+          "spans": [
+            [
+              5384,
+              5395
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "34118bb5edf5d0ad5732ddc6",
+          "quote": "Lukas 20:1-8",
+          "before": "watter gesag Ek hierdie dinge doen nie –",
+          "after": ".",
+          "spans": [
+            [
+              6291,
+              6303
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "de16443a3928a8caaa2ef133",
+          "quote": "Handelinge 5:29",
+          "before": "er gehoorsaam te wees as aan die mense –",
+          "after": ". Dit is hier waar ons die thlee’-bo van",
+          "spans": [
+            [
+              6859,
+              6874
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "ebc4283afcd9219b9e794ab2",
+          "quote": "Romeine 13:1-2",
+          "before": "t, sal die oordeel oor hulleself bring –",
+          "after": ". Dit is sterk woorde wat ons nie durf i",
+          "spans": [
+            [
+              7425,
+              7439
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "fb8cf8c8748726f3dd6ec15a",
+          "quote": "Handelinge 4:19-20",
+          "before": "t oor wat ons gesien en gehoor het nie –",
+          "after": ". Hoewel die dissipels geen persoonlike ",
+          "spans": [
+            [
+              7735,
+              7753
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "664a7cf709516b45bce9fd8a",
+          "quote": "Matteus 9:8",
+          "before": "lik, wat sulke mag aan mense gegee het –",
+          "after": ". Hulle ervaring van gesag was bloot ’n ",
+          "spans": [
+            [
+              8537,
+              8548
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "fc9d098accbc9c86e7f7befd",
+          "quote": "Romeine 13:5",
+          "before": "nie, maar ook ter wille van die gewete –",
+          "after": ". Om ons gesagsdraers in ons hart te omh",
+          "spans": [
+            [
+              9206,
+              9218
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "2bc25ea52070c802de36f343",
+          "quote": "Matteus 8:10",
+          "before": "t Ek so ’n groot geloof nie gevind nie –",
+          "after": ". Hy was ’n man met gesag… en onder gesa",
+          "spans": [
+            [
+              10097,
+              10109
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "ba79362d888a17cebb37af8f",
+          "quote": "Matteus 8:8",
+          "before": " te spreek, en my kneg sal gesond word –",
+          "after": ". Die poort wat deur sy toesighouers en ",
+          "spans": [
+            [
+              10402,
+              10413
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "4d2b992a957848fa87d25d7b",
+          "quote": "Genesis 24:12",
+          "before": " en bewys goedheid aan my heer Abraham –",
+          "after": ".",
+          "spans": [
+            [
+              11959,
+              11972
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "31b992aece5462384e28e4e4",
+          "quote": "Handelinge 8:39",
+          "before": "…het hy sy weg met blydskap voortgesit –",
+          "after": ", Sy lewe staan as ’n uitstaande getuien",
+          "spans": [
+            [
+              12527,
+              12542
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "f907303bc753eaa6e465a1bc",
+          "quote": "Jesaja 56:3",
+          "before": "et nie sê: Kyk, ek is ’n droë boom nie –",
+          "after": ".",
+          "spans": [
+            [
+              12673,
+              12684
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "c715bd938b2c61a7045a6aa7",
+          "quote": "Efesiërs 6:1-3",
+          "before": " gaan en jy lank mag lewe op die aarde –",
+          "after": ". Dit behoort vanselfsprekend te wees vi",
+          "spans": [
+            [
+              12937,
+              12951
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "408d2957dc67849b6a05a9b7",
+          "quote": "Hebreërs 12:9",
+          "before": " van die geeste onderwerp en lewe nie? –",
+          "after": ". Diegene wat hulle aardse vaders en die",
+          "spans": [
+            [
+              13311,
+              13324
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "aaf17bdbf6e62eaec94370ea",
+          "quote": "Johannes 4:16",
+          "before": "aar: Gaan roep jou man en kom hierheen –",
+          "after": ". Christus wou haar daarvan oortuig dat ",
+          "spans": [
+            [
+              13946,
+              13959
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "da64021cddb0d9e6f2e2c594",
+          "quote": "1 Korintiërs 11:10",
+          "before": "ort die vrou gesag op haar hoof te hê… –",
+          "after": ". Die sluier as teken van hoofskap is ni",
+          "spans": [
+            [
+              14456,
+              14474
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "a6be1b4b4521ad3011a47695",
+          "quote": "Titus 2:15",
+          "before": "alle gesag. Laat niemand jou verag nie –",
+          "after": ". Baie selfverklaarde gelowiges verwerp ",
+          "spans": [
+            [
+              14954,
+              14964
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "0fee6b55c86afdb63427753c",
+          "quote": "1 Samuel 15:23",
+          "before": "id is soos ongeregtigheid en afgodery… –",
+          "after": ". Pogings om …’n weg te kies wat vir ’n ",
+          "spans": [
+            [
+              15448,
+              15462
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "3e16a161c3fef5b3bff1bf36",
+          "quote": "Spreuke 14:12",
+          "before": "n weg te kies wat vir ’n mens reg lyk… –",
+          "after": ", lei tot gebondenheid; maar die keuse o",
+          "spans": [
+            [
+              15522,
+              15535
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "bbe5044f02a03f7fd62264838060127e8cddef9b195287d559078eb5b0440b48"
+    },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ar:aaa63202a4729f85cf73f9ad25545ccd29f30626e7d86844c172063f1c453d2b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "ar",
+      "content_hash": "aaa63202a4729f85cf73f9ad25545ccd29f30626e7d86844c172063f1c453d2b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1af480c593afbe17a7ffd0d7",
+          "quote": "متى 7:13-14",
+          "before": "دي إلى الحياة، وقليلون هم الذين يجدونه –",
+          "after": ".",
+          "spans": [
+            [
+              391,
+              402
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "9b2335f18f4a87d72ed3531c",
+          "quote": "متى 13:37-39",
+          "before": "و انقضاء العالم؛ والحصادون هم الملائكة –",
+          "after": ". أما في الصورة التي قدمها لنا عن الباب ",
+          "spans": [
+            [
+              901,
+              913
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "1a544f3a8eb11694bf9bd47e",
+          "quote": "متى 7:22",
+          "before": "خرجنا شياطين؟ وباسمك صنعنا قوات كثيرة؟ –",
+          "after": ". إن تحرير أنفسنا من أوحال الشر أمر لا غ",
+          "spans": [
+            [
+              1789,
+              1797
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "95d0abac550aefdaeb96446c",
+          "quote": "متى 7:21",
+          "before": " الذي يعمل إرادة أبي الذي في السماوات. –",
+          "after": ". كما أن وضع الزهد، أي المذهب القائل إن ",
+          "spans": [
+            [
+              1937,
+              1945
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "7e10d105066b111cb8dcf370",
+          "quote": "يوحنا 10:7",
+          "before": "ل آخر، وصف المسيح نفسه بأنه باب الخراف –",
+          "after": ". ومن ذا الذي يرغب في إنكار هذا المقام ا",
+          "spans": [
+            [
+              2714,
+              2724
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "95a44fcfdf3c832aca647c21",
+          "quote": "العبرانيين 11:37",
+          "before": "، معتازين، مضايقين (Thlee’-bo)، معذبين –",
+          "after": ".",
+          "spans": [
+            [
+              3634,
+              3650
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "3768f1bc96f7a7d87a1ecf73",
+          "quote": "كورنثوس الثانية 4:8",
+          "before": "lee’-bo) من كل جهة، لكننا غير محصورين… –",
+          "after": ".",
+          "spans": [
+            [
+              3720,
+              3739
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "3e47d3ff39e6f3f7e9b2541d",
+          "quote": "متى 7:28-29",
+          "before": " كان يعلمهم كمن له سلطان، وليس كالكتبة –",
+          "after": ". كان باب المسيح الضيق قائمًا على مبدأ ي",
+          "spans": [
+            [
+              3908,
+              3919
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "595d31b64ec75396e96c9c36",
+          "quote": "لوقا 12:50",
+          "before": "دية أعتمد بها، وكم أنا في ضيق حتى تتم! –",
+          "after": ". من هنا استمد المسيح سلطانه: إذ عمل بإص",
+          "spans": [
+            [
+              4051,
+              4061
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "dac2cd94b21f7ebe59bb1637",
+          "quote": "لوقا 20:1-8",
+          "before": "ع: ولا أنا أقول لكم بأي سلطان أفعل هذا –",
+          "after": ".",
+          "spans": [
+            [
+              4644,
+              4655
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "c975fca858b9c4fc9d3f4d91",
+          "quote": "أعمال الرسل 5:29",
+          "before": "ا أن نختار …أن نطيع الله أكثر من الناس –",
+          "after": ". وهنا نختبر thlee’-bo الخاص بالباب.",
+          "spans": [
+            [
+              5053,
+              5069
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "0d98deb9959b936329c8a321",
+          "quote": "أعمال الرسل 4:19-20",
+          "before": "لا نستطيع أن لا نتكلم بما رأينا وسمعنا –",
+          "after": ". لم يكن لدى التلاميذ أي ضغينة شخصية ضد ",
+          "spans": [
+            [
+              5654,
+              5673
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "42804a5b583e3857b9c1229d",
+          "quote": "متى 9:8",
+          "before": "ا الله الذي أعطى الناس سلطانًا مثل هذا –",
+          "after": ". كانت خبرتهم بالسلطان مجرد خضوع اجتماعي",
+          "spans": [
+            [
+              6228,
+              6235
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "76f90c345f54b1ff3bf33033",
+          "quote": "متى 8:10",
+          "before": " أجد ولا في إسرائيل إيمانًا بمقدار هذا –",
+          "after": ". كان رجلًا صاحب سلطان… وتحت سلطان. وبدا",
+          "spans": [
+            [
+              7361,
+              7369
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "2b3f48881506b990cd904d85",
+          "quote": "متى 8:8",
+          "before": "سقفه، بل أن …يقول كلمة فقط فيبرأ غلامي –",
+          "after": ". وكثيرًا ما لم يترك الباب الذي شكّله رؤ",
+          "spans": [
+            [
+              7551,
+              7558
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "1757b922ac1d66fdb436bdfd",
+          "quote": "أعمال الرسل 8:39",
+          "before": "تخيله معظمنا، فإنه …ذهب في طريقه فرحًا –",
+          "after": "، وتقف حياته شهادة بارزة لنبوءة إشعياء… ",
+          "spans": [
+            [
+              9118,
+              9134
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "83773e01f60b8db3cac9f308",
+          "quote": "العبرانيين 12:9",
+          "before": " نخضع بالأولى جدًا لأبي الأرواح فنحيا؟ –",
+          "after": ". يجد الحياة أولئك القادرون على احتضان آ",
+          "spans": [
+            [
+              9670,
+              9685
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "bc802c06d51d0f151dd15bb6",
+          "quote": "يوحنا 4:16",
+          "before": "يسوع: اذهبي وادعي زوجك وتعالي إلى ههنا –",
+          "after": ". كان المسيح يسعى إلى إقناعها بأن الحياة",
+          "spans": [
+            [
+              10179,
+              10189
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "7b9c741fedff2cd8977ae8ef",
+          "quote": "كورنثوس الأولى 11:10",
+          "before": " ينبغي أن يكون للمرأة سلطان على رأسها… –",
+          "after": ". فغطاء الرأس الدال على الرئاسة ليس مجرد",
+          "spans": [
+            [
+              10560,
+              10580
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "94b7735289e50a611066b73b",
+          "quote": "صموئيل الأول 15:23",
+          "before": " السحر، والعناد كالإثم وعبادة الأوثان… –",
+          "after": ". إن محاولات اختيار… طريق يبدو مستقيمًا ",
+          "spans": [
+            [
+              11270,
+              11288
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "0610ee78290f8e670bcab19a",
+          "quote": "أمثال 14:12",
+          "before": "ات اختيار… طريق يبدو مستقيمًا للإنسان… –",
+          "after": "، تقود إلى العبودية، أما اختيار السلوك ف",
+          "spans": [
+            [
+              11343,
+              11354
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "33f50778d0b398abab94d47e0810bf690a9347f19443d0fed42cc9f356980176"
+    },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:bn:67c227a93775d3003c687b3e02d3cc5c2537be210c78c26a4bd5b07d9e462d57:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
       "locale": "bn",
@@ -316508,6 +317415,479 @@
         }
       ],
       "record_hash": "17f0874d9fd3be6257ae672265fda210fd5cd7ad7a50a24642237adf40363d05"
+    },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:sw:18cd5de45b424b81f35fee626834912bd046c1fd92d045eec1780b9ab098515a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "sw",
+      "content_hash": "18cd5de45b424b81f35fee626834912bd046c1fd92d045eec1780b9ab098515a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8ad3eade4eeefecb6608182f",
+          "quote": "Mathayo 7:13-14",
+          "before": "dayo uzimani, nao waipatao ni wachache –",
+          "after": ".",
+          "spans": [
+            [
+              442,
+              457
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "ac5a8971b9ac46a5c90b1000",
+          "quote": "Mathayo 13:37-39",
+          "before": "wisho wa dunia; na wavunaji ni malaika –",
+          "after": ". Lakini katika picha inayowasilishwa ka",
+          "spans": [
+            [
+              1003,
+              1019
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "c4e547f1ce16d4274ed5d80c",
+          "quote": "Mathayo 7:22",
+          "before": "a kwa jina lako kufanya miujiza mingi? –",
+          "after": ". Kujiondoa katika mabaki ya uovu ni jam",
+          "spans": [
+            [
+              2150,
+              2162
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "febf80bab87db675f6e41402",
+          "quote": "Mathayo 7:21",
+          "before": " mapenzi ya Baba yangu aliye mbinguni. –",
+          "after": ". Pia, kuweka kujinyima, fundisho kwamba",
+          "spans": [
+            [
+              2364,
+              2376
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "d8f66fa5e2bf02b8cacd2498",
+          "quote": "Wakolosai 2:20-22",
+          "before": "ata maagizo na mafundisho ya wanadamu. –",
+          "after": ". Ingawa tunapongeza juhudi za yeyote al",
+          "spans": [
+            [
+              2876,
+              2893
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "ff93e2f8a9709e1497e49732",
+          "quote": "Yohana 10:7",
+          "before": "risto alijieleza kuwa mlango wa kondoo –",
+          "after": ". Nani angependa kumnyima Kristo nafasi ",
+          "spans": [
+            [
+              3325,
+              3336
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "ee5f97ae81b0c5fc3e78714a",
+          "quote": "1 Wathesalonike 3:4",
+          "before": "ali kwamba tutapata dhiki; (Thlee’-bo) –",
+          "after": ".",
+          "spans": [
+            [
+              4308,
+              4327
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "4b3b6daf5e956457d84bcd09",
+          "quote": "Waebrania 11:37",
+          "before": "ji, wenye dhiki (Thlee’-bo), wakiteswa –",
+          "after": ".",
+          "spans": [
+            [
+              4454,
+              4469
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "881d4d2016418efc561c0a3e",
+          "quote": "2 Wakorintho 4:8",
+          "before": "e’-bo) pande zote, lakini hatushindwi… –",
+          "after": ".",
+          "spans": [
+            [
+              4540,
+              4556
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "c51e2e9ebf5b5192e5991231",
+          "quote": "Mathayo 7:28-29",
+          "before": "mwenye mamlaka, wala si kama waandishi –",
+          "after": ". Lango jembamba la Kristo liliegemea ka",
+          "spans": [
+            [
+              4801,
+              4816
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "36fe0acea9bef5afa4a92d51",
+          "quote": "Luka 12:50",
+          "before": "i ninataabika kama nini hata utimizwe! –",
+          "after": ". Hapa ndipo Kristo alipopata mamlaka ya",
+          "spans": [
+            [
+              5007,
+              5017
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "4bf043d2285122afbd9a4a42",
+          "quote": "Luka 20:1-8",
+          "before": "i ni kwa mamlaka gani ninayafanya haya –",
+          "after": ".",
+          "spans": [
+            [
+              5794,
+              5805
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "8fdcb188bba7ddfe59dec290",
+          "quote": "Matendo 5:29",
+          "before": "tuchague …kumtii Mungu kuliko wanadamu –",
+          "after": ". Hapo ndipo tutakapopitia thlee’-bo ya ",
+          "spans": [
+            [
+              6337,
+              6349
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "c44600738224cabfdfa0e17e",
+          "quote": "Warumi 13:1-2",
+          "before": "ndanao watapata hukumu juu yao wenyewe –",
+          "after": ". Haya ni maneno yenye nguvu tusiyothubu",
+          "spans": [
+            [
+              6804,
+              6817
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "398ee5124b6b89ee741f2c5f",
+          "quote": "Matendo 4:19-20",
+          "before": "uyanena mambo tuliyoyaona na kuyasikia –",
+          "after": ". Ingawa wanafunzi hawakuwa na chuki bin",
+          "spans": [
+            [
+              7098,
+              7113
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "d466eba619fe4819ac7bde5c",
+          "quote": "Mathayo 9:8",
+          "before": " aliyewapa wanadamu nguvu ya namna hii –",
+          "after": ". Uzoefu wao kuhusu mamlaka ulikuwa tu u",
+          "spans": [
+            [
+              7884,
+              7895
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "a42894ba0ed67c050b6aceba",
+          "quote": "Warumi 13:5",
+          "before": "habu tu, bali na kwa sababu ya dhamiri –",
+          "after": ". Kuzikumbatia mamlaka zetu mioyoni mwet",
+          "spans": [
+            [
+              8481,
+              8492
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "19d1054e12e00a7c8df85dd8",
+          "quote": "Mathayo 8:10",
+          "before": "i kubwa namna hii, hata katika Israeli –",
+          "after": ". Alikuwa mtu mwenye mamlaka… na chini y",
+          "spans": [
+            [
+              9286,
+              9298
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "804077e5a2ce3b3903eb7639",
+          "quote": "Mathayo 8:8",
+          "before": "ema neno tu, na mtumishi wangu atapona –",
+          "after": ". Lango lililoundwa na wasimamizi wake n",
+          "spans": [
+            [
+              9548,
+              9559
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "5c4aa010fa2a18ebf8ad3dc1",
+          "quote": "Mwanzo 24:12",
+          "before": " umfanyie fadhili bwana wangu Abrahamu –",
+          "after": ".",
+          "spans": [
+            [
+              10972,
+              10984
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "a5c41fc502975e4b59e8d605",
+          "quote": "Matendo 8:39",
+          "before": ", …aliendelea na safari yake akifurahi –",
+          "after": ", Maisha yake ni ushuhuda wa pekee wa un",
+          "spans": [
+            [
+              11525,
+              11537
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "0f58dec7d17e7c58d5deb392",
+          "quote": "Isaya 56:3",
+          "before": "ala towashi asiseme, Mimi ni mti mkavu –",
+          "after": ".",
+          "spans": [
+            [
+              11642,
+              11652
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "609309d961c472ba346250dc",
+          "quote": "Waefeso 6:1-3",
+          "before": "te heri, ukae siku nyingi katika dunia –",
+          "after": ". Hili lapaswa kuwa dhahiri kwa kila mtu",
+          "spans": [
+            [
+              11888,
+              11901
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "e1a2fe505e0b1063680b24f8",
+          "quote": "Waebrania 12:9",
+          "before": " chini ya Baba wa roho zetu na kuishi? –",
+          "after": ". Uzima hupatikana na wale wanaoweza kuw",
+          "spans": [
+            [
+              12205,
+              12219
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "6a1e680560cd36c5fc9b464d",
+          "quote": "Yohana 4:16",
+          "before": "mbia, Nenda ukamwite mumeo, urudi hapa –",
+          "after": ". Kristo alikuwa akijaribu kumshawishi k",
+          "spans": [
+            [
+              12801,
+              12812
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "2c9ab350604ec888808616b9",
+          "quote": "1 Wakorintho 11:10",
+          "before": "ke awe na mamlaka juu ya kichwa chake… –",
+          "after": ". Kufunika kichwa si ishara tu ya kujiti",
+          "spans": [
+            [
+              13294,
+              13312
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "7f92a2d0a77dd6a3c6ac8696",
+          "quote": "Tito 2:15",
+          "before": "mlaka yote. Mtu awaye yote asikudharau –",
+          "after": ". Waumini wengi wanaojitangaza hukataa u",
+          "spans": [
+            [
+              13748,
+              13757
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "32b9b0732d26c48cdd60891b",
+          "quote": "1 Samweli 15:23",
+          "before": "kaidi ni kama uovu na ibada ya sanamu… –",
+          "after": ". Jitihada za kuchagua …njia ionekanayo ",
+          "spans": [
+            [
+              14217,
+              14232
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "159fffed2c50f63fa90ae2d7",
+          "quote": "Mithali 14:12",
+          "before": "a ionekanayo kuwa sawa machoni pa mtu… –",
+          "after": ", huongoza kwenye utumwa, lakini kuchagu",
+          "spans": [
+            [
+              14304,
+              14317
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "6ec273cfba65ba223831ebd6b77d2d09e3f325fdc6a7fb4113c3e30de766811a"
     },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ur:42a34b344c3188faa6353847762cc4039a0318ddf9ae2a12f1b4f90edacbcde8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
@@ -337129,6 +338509,31 @@
         }
       ],
       "record_hash": "7c45477011401a9d355a0958af05985628fe1790718c037553610269915f0a9d"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:fr:02a1b62d2c8e26c86cc9c38d876717c6ac80a057a920b8a10a91a2ab48d75fe6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "fr",
+      "content_hash": "02a1b62d2c8e26c86cc9c38d876717c6ac80a057a920b8a10a91a2ab48d75fe6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5f540980b82b9a4261f907ed",
+          "quote": "Exode 10:21-23",
+          "before": "ent de la lumière dans leurs demeures » ",
+          "after": ".",
+          "spans": [
+            [
+              699,
+              713
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "a72281687d62303cab098d320ff058282123c1e50d1eacf5a7b22a6d3fbd89fa"
     },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:hi:0e01d4db6e4d5d9ed21a658071af662136d0b9c84cb6b86727a4109c9c7d3e14:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
@@ -411728,6 +413133,14 @@
       "markers": [],
       "record_hash": "89ff5a9d4c8800e8e7b2ff0982f3115522b2ba36d49ce7b22e3278ab99429bb8"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:af:b1889e166110d871bc16e912f5988397b71fff59cef35480ae6bf300cc505cd5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "af",
+      "content_hash": "b1889e166110d871bc16e912f5988397b71fff59cef35480ae6bf300cc505cd5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "8e20cf9bc07f8d7928e19c75fbcf50e07cfbdb5ba064acb8b816c9fa22d87b2f"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:ar:fba389ea40524945fccd144ff4134bff9ed56dfcc55a90e7b0b27c7c341abbb6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "ar",
@@ -411784,6 +413197,14 @@
       "markers": [],
       "record_hash": "c2209b92b2b421cbd214fa893865674ccadf8db176946106fa6e9fe8bd0014ae"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:he:aba60d86bca13aecc53e0c2b48dbd08ea9b6f9ca7c4936e65a23834d7aabae45:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "he",
+      "content_hash": "aba60d86bca13aecc53e0c2b48dbd08ea9b6f9ca7c4936e65a23834d7aabae45",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "c1e3fa8da162a9a9bcdf2d193c0136597e43d4615d7ac07049843e2cecd930d0"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:id:4282670fb4e37ebd06f8dfdf1a4ac26b6edb74acc04f2dbb2fa5b93afd20cfe2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "id",
@@ -411792,6 +413213,14 @@
       "markers": [],
       "record_hash": "84a2921b348fb08e1e81a009d9b69ff411b7e1165cc34fcb8c704292505eb141"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:it:0df848d8a6ae771158bb5df16751f3432e9fee7d8d60b040727b0d3d8d0e8ebf:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "it",
+      "content_hash": "0df848d8a6ae771158bb5df16751f3432e9fee7d8d60b040727b0d3d8d0e8ebf",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "c817029b4e14f790d496d336cc8283107b39bfca1c9bc2696357ebe35a7c7a16"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:ko:c389957f8f0b2e1eaffc19c54cfb446d059378c2bf9c618f86dff2839c0db21f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "ko",
@@ -411799,6 +413228,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "a632c8091cbceac36148591583eb5d4b45bf646e9150fdff0392479f4d717336"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:nb:02f1aee51c16e721d23cede97893db24fba22f0c857a66644e02443509e22abe:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "nb",
+      "content_hash": "02f1aee51c16e721d23cede97893db24fba22f0c857a66644e02443509e22abe",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "13ecbc06594acd524a090b5d82fa86eb8012c2448137b17b735f8fcede9058ee"
     },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:nl:92b220dcdaf6dfb2c0b963a8763cb84f99c15fa32fafd3d2996e9e12f3dddbd6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
@@ -465973,6 +467410,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "2b9bf75a3249921704d9d5417ac7a6408b698d0a831a7ba1bf9b8d081e5ab80d"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:hi:72a71fae862b49da77e09313ac8b62646aab5f22976e6e2ac01dbb8cd357d2ad:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "hi",
+      "content_hash": "72a71fae862b49da77e09313ac8b62646aab5f22976e6e2ac01dbb8cd357d2ad",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a37182eec36ee9229f6d8c4d04226bf5b870577471f4946d32b1ce2336a99303"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:pt:14aade3531af4ebb5f817ac09f23a32a64d5b61454d40b8a62cf643d844af801:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "pt",
+      "content_hash": "14aade3531af4ebb5f817ac09f23a32a64d5b61454d40b8a62cf643d844af801",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "9464e965408536abc4d48a3d949aee3a4e1706884aedb707d3db54349f0dfc8e"
     },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:zh-Hans:d9d93e02e379a7765ed801ddc8c94202e1ef8d07109cc1f3d10343ed24f7e4d8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
