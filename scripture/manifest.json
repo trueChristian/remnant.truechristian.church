@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "a2ae3b6bad0e6679e8e175e274f79d134a4c8acf73716665aa5bec4d4fb1be89",
+  "integrity": "272c8fcb35146e3c15ca47ea47c4ba0a2590399528afbf602b1f0bae8fee4d6d",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -43026,6 +43026,95 @@
         }
       ],
       "record_hash": "1aad3127d491d21cbe58009a30ae7540fc9fea440ef1f81cc9ce4e1330c69db6"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:sw:6b4de5e178de2432124213ea2e09b36fdf869a5fa9832510cf42bdd59f7bbfdb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "sw",
+      "content_hash": "6b4de5e178de2432124213ea2e09b36fdf869a5fa9832510cf42bdd59f7bbfdb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "619015f498e89bfb31d3d4da",
+          "quote": "Mithali 18:22",
+          "before": " chema; naye amepata kibali kwa Bwana” (",
+          "after": ").",
+          "spans": [
+            [
+              2919,
+              2932
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "22881c024d2bdc79bb3b7ee4",
+          "quote": "Mathayo 19",
+          "before": "Katika ",
+          "after": ", Yesu alifundisha kuhusu uzito wa ndoa.",
+          "spans": [
+            [
+              2951,
+              2961
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "590bb585e668902f5a12bd56",
+          "quote": "Mathayo 19:3-10",
+          "before": "mke yako hivyo, ni afadhali mtu asioe” (",
+          "after": ").",
+          "spans": [
+            [
+              3837,
+              3852
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "8673aeedf7c8e12a3ce724cb",
+          "quote": "1 Wakorintho 7:1-2",
+          "before": "la mwanamke awe na mume wake mwenyewe” (",
+          "after": "). Desturi ya uchumba bila kugusana inat",
+          "spans": [
+            [
+              10462,
+              10480
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "eceb1d704d5670e287603a03",
+          "quote": "1 Wakorintho 7:1-2",
+          "before": "Tukizingatia ",
+          "after": ", kugusa ni nini? Ikiwa mnahisi shinikiz",
+          "spans": [
+            [
+              11118,
+              11136
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "1dc461947c046dfe78d5a503087c83548273affe3be4a14e191315531932a4e7"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:ur:9192c942fbdd839347e8d264e3cfd5e78559e8d2ca83991cb5b4d8cba8929d59:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -315947,6 +316036,479 @@
       ],
       "record_hash": "9c4f7bca8df2c7da69005719dd4b6510a9e8fb82462bcc5cd218e23cfe6f75e7"
     },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ru:64f0355e6d74ce642a5e67285795ff78e0a3495e7a91a8634a0944d90d325cb3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "ru",
+      "content_hash": "64f0355e6d74ce642a5e67285795ff78e0a3495e7a91a8634a0944d90d325cb3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9a0bb352581368732839d77b",
+          "quote": "Матфея 7:13–14",
+          "before": "едущие в жизнь, и немногие находят их — ",
+          "after": ".",
+          "spans": [
+            [
+              402,
+              416
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "65040bd322bed58ab4a89cc6",
+          "quote": "Матфея 13:37–39",
+          "before": " есть конец мира, а жнецы суть Ангелы — ",
+          "after": ". Но в образе тесных врат нам дано мало ",
+          "spans": [
+            [
+              951,
+              966
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "ac5f17e0e2022bf61e95f631",
+          "quote": "Матфея 7:22",
+          "before": "им ли именем совершали многие чудеса? — ",
+          "after": ". Освободиться от скверны зла совершенно",
+          "spans": [
+            [
+              2085,
+              2096
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "22903f64851f99a0bc608f6f",
+          "quote": "Матфея 7:21",
+          "before": " исполняет волю Отца Моего Небесного. — ",
+          "after": ". Кроме того, если поставить у входа меж",
+          "spans": [
+            [
+              2256,
+              2267
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "f6abf74e81aca3d1afdd9834",
+          "quote": "Колоссянам 2:20–22",
+          "before": "…по заповедям и учениям человеческим. — ",
+          "after": ". Мы одобряем усилия каждого, кто отказа",
+          "spans": [
+            [
+              2820,
+              2838
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "f31897e7170f7acc48bdd571",
+          "quote": "Иоанна 10:7",
+          "before": "итче Христос назвал Себя дверью овцам — ",
+          "after": ". Кто станет отрицать столь выдающееся м",
+          "spans": [
+            [
+              3245,
+              3256
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "3bcac8ec44e905c578aacb38",
+          "quote": "1 Фессалоникийцам 3:4",
+          "before": "что будем терпеть скорби; (Thlee’-bo) — ",
+          "after": ".",
+          "spans": [
+            [
+              4212,
+              4233
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "466d44dc27c6c2b1b3812f3e",
+          "quote": "Евреям 11:37",
+          "before": " лишения, скорби (Thlee’-bo), мучения — ",
+          "after": ".",
+          "spans": [
+            [
+              4330,
+              4342
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "57e913561a311bb2f5275fea",
+          "quote": "2 Коринфянам 4:8",
+          "before": "тесняемы (Thlee’-bo), но не стеснены… — ",
+          "after": ".",
+          "spans": [
+            [
+              4412,
+              4428
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "3e16804c9a6d9772f225dd9c",
+          "quote": "Матфея 7:28–29",
+          "before": "как власть имеющий, а не как книжники — ",
+          "after": ". Тесные врата Христа основывались на пр",
+          "spans": [
+            [
+              4631,
+              4645
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "bccc708a8003ea7ec0e70ee0",
+          "quote": "Луки 12:50",
+          "before": "и как Я томлюсь, пока сие совершится! — ",
+          "after": ". Именно здесь Христос обрел Свою власть",
+          "spans": [
+            [
+              4821,
+              4831
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "e2061b9722dd52c3a74aeaec",
+          "quote": "Луки 20:1–8",
+          "before": "не скажу вам, какою властью это делаю — ",
+          "after": ".",
+          "spans": [
+            [
+              5535,
+              5546
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "4a9f85b828f27c934dcb5c24",
+          "quote": "Деяния 5:29",
+          "before": "оваться больше Богу, нежели человекам — ",
+          "after": ". Именно здесь мы испытаем thlee’-bo эти",
+          "spans": [
+            [
+              6067,
+              6078
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "067d71ddf36df7fb78d403f2",
+          "quote": "Римлянам 13:1–2",
+          "before": "щиеся сами навлекут на себя осуждение — ",
+          "after": ". Это суровые слова, которые мы не смеем",
+          "spans": [
+            [
+              6554,
+              6569
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "4367b2736a5a5d3e09dcc8b6",
+          "quote": "Деяния 4:19–20",
+          "before": "е говорить того, что видели и слышали — ",
+          "after": ". Ученики не испытывали личной неприязни",
+          "spans": [
+            [
+              6808,
+              6822
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "99b71963bb63328bacbcbe7c",
+          "quote": "Матфея 9:8",
+          "before": " Бога, давшего такую власть человекам — ",
+          "after": ". Их прежний опыт власти сводился к соци",
+          "spans": [
+            [
+              7553,
+              7563
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "5bfbfa00375f98fc842b86a2",
+          "quote": "Римлянам 13:5",
+          "before": " из страха наказания, но и по совести — ",
+          "after": ". Принять власть тех, кто стоит над нами",
+          "spans": [
+            [
+              8118,
+              8131
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "05acccf5ee8be352706fce8c",
+          "quote": "Матфея 8:10",
+          "before": "ам: и в Израиле не нашел Я такой веры — ",
+          "after": ". Он был человеком, имевшим власть… и по",
+          "spans": [
+            [
+              8909,
+              8920
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "fedc96fef0f45c31c58c1ad8",
+          "quote": "Матфея 8:8",
+          "before": "только слово, и выздоровеет слуга мой — ",
+          "after": ". Врата, образованные его начальниками и",
+          "spans": [
+            [
+              9161,
+              9171
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "116423b2c6a398e53fb21e83",
+          "quote": "Бытие 24:12",
+          "before": "ри милость с господином моим Авраамом — ",
+          "after": ".",
+          "spans": [
+            [
+              10548,
+              10559
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "6af88ab2b8acf862e7c2526b",
+          "quote": "Деяния 8:39",
+          "before": "дставить, …он продолжал путь, радуясь — ",
+          "after": ", Его жизнь — яркое свидетельство пророч",
+          "spans": [
+            [
+              11073,
+              11084
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "5ca6e283bc863be2ecf31ac5",
+          "quote": "Исаии 56:3",
+          "before": "внух не говорит: «вот я сухое дерево» — ",
+          "after": ".",
+          "spans": [
+            [
+              11196,
+              11206
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "fbcc193825d37972920f2305",
+          "quote": "Ефесянам 6:1–3",
+          "before": "е благо, и будешь долголетен на земле — ",
+          "after": ". Это должно быть очевидно каждому духов",
+          "spans": [
+            [
+              11440,
+              11454
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "c5401b434d6b41240d5eadac",
+          "quote": "Евреям 12:9",
+          "before": "лжны мы покориться Отцу духов и жить? — ",
+          "after": ". Жизнь обретают те, кто может принять с",
+          "spans": [
+            [
+              11778,
+              11789
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "9069b4271c34d33c174d9968",
+          "quote": "Иоанна 4:16",
+          "before": "ойди, позови мужа твоего и приди сюда — ",
+          "after": ". Христос стремился убедить ее, что жизн",
+          "spans": [
+            [
+              12350,
+              12361
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "5399a2407caf03e0134d554a",
+          "quote": "1 Коринфянам 11:10",
+          "before": " должна иметь власть на своей голове… — ",
+          "after": ". Покрывало на голове в знак главенства ",
+          "spans": [
+            [
+              12841,
+              12859
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "5df7bf5aaa8cd33dd5ecc8e8",
+          "quote": "Титу 2:15",
+          "before": "астью; никто да не пренебрегает тобою — ",
+          "after": ". Многие люди, называющие себя верующими",
+          "spans": [
+            [
+              13282,
+              13291
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "cd3b8f97d8ab49862c0e648e",
+          "quote": "1 Царств 15:23",
+          "before": "мство — беззаконию и идолопоклонству… — ",
+          "after": ". Попытки выбрать …путь, который кажется",
+          "spans": [
+            [
+              13726,
+              13740
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "5358468e5ce8d9b82dc259d0",
+          "quote": "Притчи 14:12",
+          "before": " который кажется человеку правильным… — ",
+          "after": ", ведут к рабству, а решение идти путем ",
+          "spans": [
+            [
+              13809,
+              13821
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "17f0874d9fd3be6257ae672265fda210fd5cd7ad7a50a24642237adf40363d05"
+    },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ur:42a34b344c3188faa6353847762cc4039a0318ddf9ae2a12f1b4f90edacbcde8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
       "locale": "ur",
@@ -411190,6 +411752,14 @@
       "markers": [],
       "record_hash": "185676810597b9d7c3ed8332296e8c176a14cda2723566ebc1bd4627662b2d6a"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:el:b3609828420db50676d7d93b8a99631b1eef6640f51c86a5baec6abd4d36b011:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "el",
+      "content_hash": "b3609828420db50676d7d93b8a99631b1eef6640f51c86a5baec6abd4d36b011",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3a540861c6b957cce22935bcdb9334a006100af3d35656970969f77637fec9aa"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:en:c4bbb66ccafea50d7be2489542702597cc16e4c6be186f2264f2c8a997b1bf05:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "en",
@@ -411222,6 +411792,14 @@
       "markers": [],
       "record_hash": "84a2921b348fb08e1e81a009d9b69ff411b7e1165cc34fcb8c704292505eb141"
     },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:ko:c389957f8f0b2e1eaffc19c54cfb446d059378c2bf9c618f86dff2839c0db21f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "ko",
+      "content_hash": "c389957f8f0b2e1eaffc19c54cfb446d059378c2bf9c618f86dff2839c0db21f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a632c8091cbceac36148591583eb5d4b45bf646e9150fdff0392479f4d717336"
+    },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:nl:92b220dcdaf6dfb2c0b963a8763cb84f99c15fa32fafd3d2996e9e12f3dddbd6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
       "locale": "nl",
@@ -411245,6 +411823,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "3ea131e58980167cb1b77e8e7b46b1eb86e2167f713f8cf1f14e19dca5ffeb1d"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:sw:a8d9b43624226234bfe2d0dbd49f716543563e9efdde514062d9f8a248b25145:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "sw",
+      "content_hash": "a8d9b43624226234bfe2d0dbd49f716543563e9efdde514062d9f8a248b25145",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "f0f265c752e98a3255075063e87c028b1840f17c0f618a1a7a4cc3fcc8feb928"
+    },
+    "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:ur:f867e56ce2550b4d5cafd88eaeb48100dac6872df8ab7dbd25e24de15976fe45:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
+      "locale": "ur",
+      "content_hash": "f867e56ce2550b4d5cafd88eaeb48100dac6872df8ab7dbd25e24de15976fe45",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "8a93749f780b90fd20bccff4170b2053b41c92f93fdd7d61b70db6cc20e9015a"
     },
     "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3:zh-Hans:430f32e744d26d2440e8b4bbd80ad1b01bcfd7b08637ad9c8d95435f7a4f49ef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3",
@@ -465379,6 +465973,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "2b9bf75a3249921704d9d5417ac7a6408b698d0a831a7ba1bf9b8d081e5ab80d"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:zh-Hans:d9d93e02e379a7765ed801ddc8c94202e1ef8d07109cc1f3d10343ed24f7e4d8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "zh-Hans",
+      "content_hash": "d9d93e02e379a7765ed801ddc8c94202e1ef8d07109cc1f3d10343ed24f7e4d8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "31556ccfeecbf7b613d8ec5cf53fcb12ee159a04d153bff6e1ea4f1e2622adc4"
     },
     "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5:en:e034bac5120f0ef5a6d486de206bf60e291503013f414d744265d97ba38ed689:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5",

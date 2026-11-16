@@ -57113,11 +57113,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "από-τη-σύνταξη",
+        "alias": "από-τον-συντάκτη-3",
+        "history": [
+          "/el/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -141799,11 +141800,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "편집자의-글",
+        "alias": "편집자의-글-4",
+        "history": [
+          "/ko/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -179807,11 +179809,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "тесные-врата-ведущие-к-жизни",
+        "history": [
+          "/ru/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -195096,11 +195099,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vijana",
+        "alias": "mchakato-wa-uchumba-unaomweka-kristo-katikati",
+        "history": [
+          "/sw/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -201223,11 +201227,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "tahariri",
+        "alias": "kutoka-kwa-mhariri-7",
+        "history": [
+          "/sw/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -211111,11 +211116,12 @@
       },
       "e905899f-5f2b-42a4-a2b2-3a0af7f0e0e3": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-29",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "اداریہ",
+        "alias": "مدیر-کی-جانب-سے-6",
+        "history": [
+          "/ur/articles/from-the-editor-29/"
+        ],
+        "fallback": false
       },
       "e942af59-8d9c-4044-a7de-1928ccf8ca87": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -221467,11 +221473,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "复兴",
+        "alias": "不惜任何代价追求复兴",
+        "history": [
+          "/zh-Hans/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
