@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "826d50ede66300f30e953e16c15ac27ea661d2784f23e31a9f701a28fa7400e7",
+  "integrity": "b1b3c87288ae91f04bc7ef57a0c597888e9876dcdaff6dfa04905d52031f2f11",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -69999,21 +69999,21 @@
       ],
       "record_hash": "f52cea270fcccd0f76374656e0231f9fe5166ef34261c62ea4a871c90ffd6f6f"
     },
-    "21180900-6bdd-4c06-a4ed-fd0f6b8a3571:af:6208014d51dba5df6c0046c9b3d6031ed54a6dab12c23076a2cb8e7b3555e021:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "21180900-6bdd-4c06-a4ed-fd0f6b8a3571:af:6211f43f5c7a6f8091b34c47b2f157d3da78c241f530422b5860d16c5253bfa2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "21180900-6bdd-4c06-a4ed-fd0f6b8a3571",
       "locale": "af",
-      "content_hash": "6208014d51dba5df6c0046c9b3d6031ed54a6dab12c23076a2cb8e7b3555e021",
+      "content_hash": "6211f43f5c7a6f8091b34c47b2f157d3da78c241f530422b5860d16c5253bfa2",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "b90c4a025613ca0b20b79cd8",
+          "id": "6505f1582359916ec57721e6",
           "quote": "Spreuke 4:26",
-          "before": "e, en laat al jou paaie gevestig word” (",
+          "before": "et gelyk, en laat al jou weë vas wees” (",
           "after": ").",
           "spans": [
             [
-              8716,
-              8728
+              8733,
+              8745
             ]
           ],
           "osis": "Prov.4.26",
@@ -70022,7 +70022,7 @@
           ]
         }
       ],
-      "record_hash": "8e144f5fbe0524329c94c1fc254a327878323ed6e05aa1d9f06b33a85f99b547"
+      "record_hash": "bdfb8b61701501551d9cd3f8a51ab7cfad27aa83f09f098a545d3d17c6451ef0"
     },
     "21180900-6bdd-4c06-a4ed-fd0f6b8a3571:ar:cf2dc73e06bcea2107e92b827f5f52b9b9c32c6878f7fb88d2b8e3f0de43e3a0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "21180900-6bdd-4c06-a4ed-fd0f6b8a3571",
@@ -316833,6 +316833,479 @@
       ],
       "record_hash": "03f544c07e44f91625f55753619c87161cb1abd6a9bae8ec5db0926c9b074c6a"
     },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ko:9426ba690edcc3534dca1a431036cae9109ad41af08c5052372b13b92b522e61:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "ko",
+      "content_hash": "9426ba690edcc3534dca1a431036cae9109ad41af08c5052372b13b92b522e61",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "271281386f561c9231e0512c",
+          "quote": "마태복음 7:13-14",
+          "before": ", 생명으로 인도하는 문은 좁고 그 길이 협착하여 찾는 자가 적음이라 –",
+          "after": ".",
+          "spans": [
+            [
+              292,
+              304
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "452031bf365e9bd7aa8b369a",
+          "quote": "마태복음 13:37-39",
+          "before": "지를 뿌린 원수는 마귀요 추수 때는 세상 끝이요 추수꾼은 천사들이니라 –",
+          "after": ". 그러나 좁은 문으로 제시된 그림에서는 구체적인 설명을 거의 얻지 못하",
+          "spans": [
+            [
+              630,
+              643
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "4b422ce42563d88f96ade0d2",
+          "quote": "마태복음 7:22",
+          "before": "지 아니하였나이까? 주의 이름으로 많은 권능을 행하지 아니하였나이까? –",
+          "after": ". 악의 찌꺼기에서 벗어나는 것은 선한 삶을 위해 꼭 필요하지만, 좁은 ",
+          "spans": [
+            [
+              1230,
+              1239
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "e71828f257cdbefac5a31dbc",
+          "quote": "마태복음 7:21",
+          "before": "들어가려는 자는 하늘에 계신 내 아버지의 뜻을 행하는 자라야 하리라. –",
+          "after": ". 또한 금욕주의, 곧 사람이 자기 부인과 자기 고행 등을 실천함으로써 ",
+          "spans": [
+            [
+              1332,
+              1341
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "4be0f38671875bf1192f0fdb",
+          "quote": "골로새서 2:20-22",
+          "before": "만지지도 말라[는 규례들은] … 사람의 계명과 교훈을 따르는 것이라. –",
+          "after": ". 다른 이들의 유익을 위해 세상의 안락과 즐거움을 마다한 이들의 노력을",
+          "spans": [
+            [
+              1605,
+              1617
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "59bbfe4bc6d7bc10c6b99c1b",
+          "quote": "요한복음 10:7",
+          "before": " 분명 일리가 있습니다. 다른 비유에서 그리스도께서는 자신을 양의 문 –",
+          "after": ".이라고 묘사하셨습니다. 누가 그리스도의 그러한 탁월한 지위를 부인하려 ",
+          "spans": [
+            [
+              1838,
+              1847
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "ea37282473ec3649bd2e0af7",
+          "quote": "데살로니가전서 3:4",
+          "before": "…우리가 환난을 당할 것을 너희에게 미리 말하였더니(틀리보) –",
+          "after": ".",
+          "spans": [
+            [
+              2467,
+              2478
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "922b6dcc93908238dc7f7977",
+          "quote": "히브리서 11:37",
+          "before": "죽을 입고 유리하여 궁핍하며 환난을 당하며(틀리보) 괴로움을 받았으니 –",
+          "after": ".",
+          "spans": [
+            [
+              2542,
+              2552
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "2788be093aef1bddd32c0e6b",
+          "quote": "고린도후서 4:8",
+          "before": "우리가 사방으로 환난을 당하여도(틀리보) 눌리지 아니하며… –",
+          "after": ".",
+          "spans": [
+            [
+              2601,
+              2610
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "06583d378f8da46b6d07a11d",
+          "quote": "마태복음 7:28-29",
+          "before": "치시는 것이 권위 있는 자와 같고 그들의 서기관들과 같지 아니함일러라 –",
+          "after": ". 그리스도의 좁은 문은 말뿐인 진부한 고백을 넘어서는 원리에 기초했습니",
+          "spans": [
+            [
+              2751,
+              2763
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "3a7742126dcb8380882ca51c",
+          "quote": "누가복음 12:50",
+          "before": "을 세례가 있으니 그 일이 이루어질 때까지 내가 얼마나 답답하겠느냐! –",
+          "after": ". 그리스도께서 권위를 얻으신 것은 바로 이 길을 통해서였습니다. 자신을",
+          "spans": [
+            [
+              2859,
+              2869
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "c8a21b0608e62db388cb9123",
+          "quote": "누가복음 20:1-8",
+          "before": "도 무슨 권위로 이런 일을 하는지 너희에게 이르지 아니하리라 하시니라 –",
+          "after": ".",
+          "spans": [
+            [
+              3315,
+              3326
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "a65a14de6e0af286075c714e",
+          "quote": "사도행전 5:29",
+          "before": "남기지 않을 때, 우리는 …사람보다 하나님께 순종하는 것이 마땅하니라 –",
+          "after": ".를 택해야 합니다. 바로 여기서 우리는 문의 틀리보를 경험하게 됩니다.",
+          "spans": [
+            [
+              3599,
+              3608
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "faf1e63f593fe8b1b6a0f42b",
+          "quote": "로마서 13:1-2",
+          "before": "르는 자는 하나님의 명을 거스름이니 거스르는 자들은 심판을 자초하리라 –",
+          "after": ". 이는 감히 무시할 수 없는 강한 표현입니다. 그러나 제자들은 그러한 ",
+          "spans": [
+            [
+              3876,
+              3886
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "29dfcc13f171b3a5c4dbcda5",
+          "quote": "사도행전 4:19-20",
+          "before": "옳은가 판단하라. 우리는 보고 들은 것을 말하지 아니할 수 없다 하니 –",
+          "after": ".라고 대답했습니다. 제자들은 다스리는 자들에게 사적인 반감을 품지 않았",
+          "spans": [
+            [
+              4023,
+              4035
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "1dd8dd9afc8d62c64c846242",
+          "quote": "마태복음 9:8",
+          "before": "이를 보고 놀라며 이런 권능을 사람에게 주신 하나님께 영광을 돌리니라 –",
+          "after": ". 그들이 경험한 권위란 억압받고 짓눌리며 강제로 복종하게 만드는, 그저",
+          "spans": [
+            [
+              4447,
+              4455
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "80d54aeab04a7f62ddb1d383",
+          "quote": "로마서 13:5",
+          "before": "여움을 피하기 위하여만 복종할 것이 아니요 양심을 위하여도 할 것이라 –",
+          "after": ". 마음으로 권위자들을 받아들이는 것은 궁극적으로 자유에 이르는 내면의 ",
+          "spans": [
+            [
+              4775,
+              4783
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "dd280eec347dba3379311094",
+          "quote": "마태복음 8:10",
+          "before": "에게 이르노니 이스라엘 중 아무에게서도 이만한 믿음을 보지 못하였노라 –",
+          "after": ". 그는 권세 아래 있으면서 권세를 가진 사람이었습니다. 그는 세상의 권",
+          "spans": [
+            [
+              5236,
+              5245
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "410fb6e8cea57cccdd6ce753",
+          "quote": "마태복음 8:8",
+          "before": "자기 집에 오시지 말고 …말씀만 하옵소서 그러면 내 하인이 낫겠나이다 –",
+          "after": ".라고 청했기 때문입니다. 그의 윗사람들과 그가 거느린 종들에 대한 진실",
+          "spans": [
+            [
+              5382,
+              5390
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "0191979fa0c313dd7606952c",
+          "quote": "창세기 24:12",
+          "before": "에게 순조로운 길을 열어 주시고 내 주인 아브라함에게 은혜를 베푸소서 –",
+          "after": ".",
+          "spans": [
+            [
+              6149,
+              6158
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "fd83101484cf63434efb1fb2",
+          "quote": "사도행전 8:39",
+          "before": " 상상할 수 있는 것보다 훨씬 더 좁아졌지만, …기쁨으로 길을 가더라 –",
+          "after": ", 그의 삶은 이사야의 예언을 탁월하게 증언합니다. …고자도 나는 마른 ",
+          "spans": [
+            [
+              6418,
+              6427
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "65f21d6732961d40428c2c9f",
+          "quote": "이사야 56:3",
+          "before": " 예언을 탁월하게 증언합니다. …고자도 나는 마른 나무라 말하지 말라 –",
+          "after": ".",
+          "spans": [
+            [
+              6488,
+              6496
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "555947126cb9793b9abebc69",
+          "quote": "에베소서 6:1-3",
+          "before": "이것은 약속이 있는 첫 계명이니, 이는 네가 잘되고 땅에서 장수하리라 –",
+          "after": ". 영적으로 깨어난 사람이라면 누구나 이 점은 분명히 알 것입니다. 부모",
+          "spans": [
+            [
+              6633,
+              6643
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "ecf4d7c0e6f2acede2ddca3b",
+          "quote": "히브리서 12:9",
+          "before": "였거든, 하물며 영들의 아버지께 더욱 복종하고 살아야 하지 않겠느냐? –",
+          "after": ". 육신의 아버지들과 더불어 “영들의 아버지”를 받아들일 수 있는 이들에",
+          "spans": [
+            [
+              6820,
+              6829
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "154d40c559511dca03a5dcd3",
+          "quote": "요한복음 4:16",
+          "before": " 않게 하옵소서. 예수께서 이르시되 가서 네 남편을 불러 이리로 오라 –",
+          "after": ". 그리스도께서는 풍성한 생명이 두 기둥 사이에서 발견된다는 것을 그 여",
+          "spans": [
+            [
+              7193,
+              7202
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "cc165f2b4f6b390432ee2044",
+          "quote": "고린도전서 11:10",
+          "before": "을 얻습니다. 이러므로 여자는 그 머리 위에 권능을 지녀야 하느니라… –",
+          "after": ". 머리의 권위 질서를 나타내는 가리개는 복종의 상징일 뿐도 아니고 단순",
+          "spans": [
+            [
+              7453,
+              7464
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "5d0ec988c7a9cdc7c1b2796c",
+          "quote": "디도서 2:15",
+          "before": "고 권면하며 모든 권위로 책망하여 아무도 너를 업신여기지 못하게 하라 –",
+          "after": ". 스스로 믿는 자라 칭하는 많은 이들이 교회 안에서 권위가 드러나는 것",
+          "spans": [
+            [
+              7731,
+              7739
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "12cbc149fd074db369a7438a",
+          "quote": "사무엘상 15:23",
+          "before": "는 것은 주술의 죄와 같고 완고한 것은 불의와 우상 숭배와 같음이라… –",
+          "after": ". …사람이 보기에 옳아 보이는 길… –잠언 14:12, 그런 길을 택하",
+          "spans": [
+            [
+              7966,
+              7976
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "4de26fb53248ec3e6adcc881",
+          "quote": "잠언 14:12",
+          "before": " 같음이라… –사무엘상 15:23. …사람이 보기에 옳아 보이는 길… –",
+          "after": ", 그런 길을 택하려는 노력은 속박으로 이어지지만, 항복과 복종 가운데 ",
+          "spans": [
+            [
+              8003,
+              8011
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "dcbf707b36a86846bb400b4404034fe4b661e4a4537abf02d4d307d7189c3a88"
+    },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:nb:deb2922dd207079bb6b49d396e1d312ae92c4e7c2f80d30379f77902acafeaef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
       "locale": "nb",
@@ -317778,6 +318251,463 @@
         }
       ],
       "record_hash": "17f0874d9fd3be6257ae672265fda210fd5cd7ad7a50a24642237adf40363d05"
+    },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:sv:3799e3fe50b202bc18de62738a84b37a57173c3dc5d47da56c0483355789708c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "sv",
+      "content_hash": "3799e3fe50b202bc18de62738a84b37a57173c3dc5d47da56c0483355789708c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "54a621335716e6b0e4c67603",
+          "quote": "Matteusevangeliet 7:13-14",
+          "before": "ll livet, och få är de som finner den – ",
+          "after": ".",
+          "spans": [
+            [
+              441,
+              466
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "c828c158018c398af26635a5",
+          "quote": "Matteusevangeliet 13:37-39",
+          "before": "ns slut, och skördemännen är änglarna – ",
+          "after": ". Men i den bild som skildras som den tr",
+          "spans": [
+            [
+              1056,
+              1082
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "7d59fd765e969e15d20ac8ce",
+          "quote": "Matteusevangeliet 7:22",
+          "before": "ort många kraftgärningar i ditt namn? – ",
+          "after": ". Att befria oss från ondskans bottensat",
+          "spans": [
+            [
+              2262,
+              2284
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "97f80b8241a0e5a9d91598f5",
+          "quote": "Matteusevangeliet 7:21",
+          "before": "n som gör min himmelske Faders vilja. – ",
+          "after": ". Att dessutom placera askes, läran att ",
+          "spans": [
+            [
+              2470,
+              2492
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "5936b209aa3523ac23522d21",
+          "quote": "Kolosserbrevet 2:20-22",
+          "before": "r] … enligt människors bud och läror. – ",
+          "after": ". Vi uppskattar ansträngningarna hos all",
+          "spans": [
+            [
+              2989,
+              3011
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "7f84ab36ce937c62d3600259",
+          "quote": "Johannesevangeliet 10:7",
+          "before": "rev Kristus sig själv som fårens dörr – ",
+          "after": ". Vem skulle vilja förneka Kristus en så",
+          "spans": [
+            [
+              3456,
+              3479
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "821f58194f9521bc8a008be2",
+          "quote": "Första Thessalonikerbrevet 3:4",
+          "before": "komma att lida prövningar (Thlee’-bo) – ",
+          "after": ".",
+          "spans": [
+            [
+              4434,
+              4464
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "0ffd3c90040942d7801a3f19",
+          "quote": "Hebreerbrevet 11:37",
+          "before": "lottade, ansatta (Thlee’-bo), plågade – ",
+          "after": ".",
+          "spans": [
+            [
+              4560,
+              4579
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "524938a4c7ce84aa19328167",
+          "quote": "Andra Korinthierbrevet 4:8",
+          "before": ") på alla sidor, men inte utan utväg… – ",
+          "after": ".",
+          "spans": [
+            [
+              4658,
+              4684
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "b5ebfbdb81b2f8f6696a6651",
+          "quote": "Matteusevangeliet 7:28-29",
+          "before": "uktoritet och inte som de skriftlärda – ",
+          "after": ". Kristi trånga port vilade på en princi",
+          "spans": [
+            [
+              4918,
+              4943
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "ec21bbe592fe73133bf1d3d2",
+          "quote": "Lukasevangeliet 12:50",
+          "before": "das jag inte tills det är fullbordat! – ",
+          "after": ". Det var här Kristus fick sin auktorite",
+          "spans": [
+            [
+              5138,
+              5159
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "f4582cade03755ec279c2772",
+          "quote": "Lukasevangeliet 20:1-8",
+          "before": "er med vilken myndighet jag gör detta – ",
+          "after": ".",
+          "spans": [
+            [
+              6000,
+              6022
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "89902cf796dc5e15e01c2df4",
+          "quote": "Apostlagärningarna 5:29",
+          "before": " välja …att lyda Gud mer än människor – ",
+          "after": ". Det är då vi får erfara portens thlee’",
+          "spans": [
+            [
+              6606,
+              6629
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "f37208bd47a08cfd4c804f3e",
+          "quote": "Apostlagärningarna 4:19-20",
+          "before": "nte tiga med det vi har sett och hört – ",
+          "after": ". Lärjungarna hyste ingen personlig bitt",
+          "spans": [
+            [
+              7360,
+              7386
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "282aec384a0cc7c605f1ee0c",
+          "quote": "Matteusevangeliet 9:8",
+          "before": "som hade gett sådan makt åt människor – ",
+          "after": ". Deras erfarenhet av auktoritet var en ",
+          "spans": [
+            [
+              8151,
+              8172
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "b830edc97e51c67578357996",
+          "quote": "Romarbrevet 13:5",
+          "before": "skull, utan också för samvetets skull – ",
+          "after": ". Att i vårt hjärta omfamna dem som har ",
+          "spans": [
+            [
+              8808,
+              8824
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "75d6d2fb49dee3d9927a5c3c",
+          "quote": "Matteusevangeliet 8:10",
+          "before": " Israel har jag funnit en så stor tro – ",
+          "after": ". Han var en man med auktoritet… och sjä",
+          "spans": [
+            [
+              9691,
+              9713
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "f76edf01abdd18c9c361995d",
+          "quote": "Matteusevangeliet 8:8",
+          "before": "ga ett ord, så blir min tjänare frisk – ",
+          "after": ". Porten som hans överordnade och den up",
+          "spans": [
+            [
+              9997,
+              10018
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "7b2a13a25579ff553ef79ac0",
+          "quote": "Första Moseboken 24:12",
+          "before": "och visa godhet mot min herre Abraham – ",
+          "after": ".",
+          "spans": [
+            [
+              11431,
+              11453
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "e8cc2b40f2dd53b45c1c04d1",
+          "quote": "Apostlagärningarna 8:39",
+          "before": "ig, …fortsatte han sin väg med glädje – ",
+          "after": ", Hans liv är ett strålande vittnesbörd ",
+          "spans": [
+            [
+              11981,
+              12004
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "bd3a377ca70391763b781b10",
+          "quote": "Jesaja 56:3",
+          "before": "n säga: Se, jag är ett förtorkat träd – ",
+          "after": ".",
+          "spans": [
+            [
+              12138,
+              12149
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "65687e0bf9b6c2280abed2b9",
+          "quote": "Efesierbrevet 6:1-3",
+          "before": "g väl och du får leva länge på jorden – ",
+          "after": ". Detta borde vara självklart för var oc",
+          "spans": [
+            [
+              12380,
+              12399
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "69d29c0ff66c29c34f06a13a",
+          "quote": "Hebreerbrevet 12:9",
+          "before": "ordna oss andarnas Fader och få leva? – ",
+          "after": ". De som kan omfamna sina jordiska fäder",
+          "spans": [
+            [
+              12722,
+              12740
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "be85511b6776c13a46d956e6",
+          "quote": "Johannesevangeliet 4:16",
+          "before": "nne: Gå och hämta din man och kom hit – ",
+          "after": ". Kristus försökte övertyga henne om att",
+          "spans": [
+            [
+              13370,
+              13393
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "6650e8b7c947ff80cfb8197d",
+          "quote": "Första Korinthierbrevet 11:10",
+          "before": "ör bör kvinnan ha makt på sitt huvud… – ",
+          "after": ". Den slöja som uttrycker huvudmannaskap",
+          "spans": [
+            [
+              13919,
+              13948
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "4c678051abb6f2cc97955439",
+          "quote": "Titusbrevet 2:15",
+          "before": "all auktoritet. Låt ingen förakta dig – ",
+          "after": ". Många som själva bekänner sig vara tro",
+          "spans": [
+            [
+              14430,
+              14446
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "f207d052fc21386728da5fe9",
+          "quote": "Första Samuelsboken 15:23",
+          "before": "h trots är som synd och avgudadyrkan… – ",
+          "after": ". Försök att välja …en väg som tycks rät",
+          "spans": [
+            [
+              14918,
+              14943
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "74d360846b4322dc26a954c8",
+          "quote": "Ordspråksboken 14:12",
+          "before": "n väg som tycks rätt för en människa… – ",
+          "after": ", leder till träldom, men att välja att ",
+          "spans": [
+            [
+              15009,
+              15029
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "e2f802467a2ac17b2adf05c4bd98d49ab21b16de3c98de1ed7e07a16ddc03f08"
     },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:sw:18cd5de45b424b81f35fee626834912bd046c1fd92d045eec1780b9ab098515a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
@@ -389333,6 +390263,47 @@
         }
       ],
       "record_hash": "cae0b605c323e541b263495159b03fce392934f8e881f69b2c374220a95f99f9"
+    },
+    "d38bf79f-957f-413c-ad4d-a6b4fa8c8112:af:71b28bfc82af3d3e8553780358a6e1ba2eb7216fc8071d072d8bccdef8cf983d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "d38bf79f-957f-413c-ad4d-a6b4fa8c8112",
+      "locale": "af",
+      "content_hash": "71b28bfc82af3d3e8553780358a6e1ba2eb7216fc8071d072d8bccdef8cf983d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "507b192441a95498c6543516",
+          "quote": "Jesaja 41:10",
+          "before": "et die regterhand van my geregtigheid – ",
+          "after": ".",
+          "spans": [
+            [
+              13562,
+              13574
+            ]
+          ],
+          "osis": "Isa.41.10",
+          "queries": [
+            "23 41:10"
+          ]
+        },
+        {
+          "id": "09678971df0d277918759d4b",
+          "quote": "Matteus 6:31-34",
+          "before": " Elke dag het genoeg aan sy eie kwaad – ",
+          "after": ".",
+          "spans": [
+            [
+              14256,
+              14271
+            ]
+          ],
+          "osis": "Matt.6.31-Matt.6.34",
+          "queries": [
+            "40 6:31-34"
+          ]
+        }
+      ],
+      "record_hash": "199cd1bc07192d2b1ad0288fb88f0940a3c27496164d8009b56d8ea4fa9ffb5a"
     },
     "d38bf79f-957f-413c-ad4d-a6b4fa8c8112:ar:678f7463b9dab1f7176c400d6259d1e7028cc7f76e3134631a5db1fd59f15ff5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "d38bf79f-957f-413c-ad4d-a6b4fa8c8112",
@@ -467791,6 +468762,14 @@
       "markers": [],
       "record_hash": "d4df93e4b58f08d5e2a44a56881dc40bf0bab8a4cd27e0f97364db125c74224f"
     },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:ar:334fbc3b73d704751f6181d7c9f2fbceb8ecffd9e9b21783e4aa9696cbd7fd29:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "ar",
+      "content_hash": "334fbc3b73d704751f6181d7c9f2fbceb8ecffd9e9b21783e4aa9696cbd7fd29",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "cf5552f631c6a31096c4870f4a43ca4a8e49469abef85385991304dc2dd8f9c9"
+    },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:bn:71ea323ba35d164fb6af08314e8762b14173a7b45b68972c2c6aa11c4d32ba79:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
       "locale": "bn",
@@ -467798,6 +468777,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "a840743415d345789b43ab5e991070189864cc1db590ba7fa2fcb5bf9a53cf7d"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:de:453bf2f565aaf0f6cf36ed005f75bcc8bfa468470cd9d8a57b6c13c76ae4d11c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "de",
+      "content_hash": "453bf2f565aaf0f6cf36ed005f75bcc8bfa468470cd9d8a57b6c13c76ae4d11c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "79ec741a93a2f470c05055001185446ab28a0c7816651518804714d9889bfa3f"
     },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:en:97d371ffef536a8efc90d3f9f4e8bff720ac90a4378a3fd638b2f6f3243e433a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
@@ -467822,6 +468809,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "a37182eec36ee9229f6d8c4d04226bf5b870577471f4946d32b1ce2336a99303"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:it:5a9ab514a6dfaf888f6b0edf8f0b7b62a537f01dd877bd440ceafe4933f4c147:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "it",
+      "content_hash": "5a9ab514a6dfaf888f6b0edf8f0b7b62a537f01dd877bd440ceafe4933f4c147",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "55ba76a6b7e7e0fe7ae9f176733d6e44673b9f6719087db2ad66faf64d88e71b"
     },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:pt:14aade3531af4ebb5f817ac09f23a32a64d5b61454d40b8a62cf643d844af801:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",

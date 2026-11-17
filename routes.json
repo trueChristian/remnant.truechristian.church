@@ -17110,11 +17110,12 @@
       },
       "d38bf79f-957f-413c-ad4d-a6b4fa8c8112": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "cancer-what-is-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medies",
+        "alias": "kanker-wat-is-dit",
+        "history": [
+          "/af/articles/cancer-what-is-it/"
+        ],
+        "fallback": false
       },
       "d3d9a779-d35d-477a-ada8-6afd7e9619f0": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -27990,11 +27991,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "النهضة-الروحية",
+        "alias": "إحياء-بأي-ثمن",
+        "history": [
+          "/ar/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -47784,11 +47786,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "erweckung",
+        "alias": "erweckung-um-jeden-preis",
+        "history": [
+          "/de/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -132452,11 +132455,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "risveglio-spirituale",
+        "alias": "risveglio-a-qualsiasi-costo",
+        "history": [
+          "/it/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -139966,11 +139970,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "그리스도인의-삶",
+        "alias": "생명으로-가는-좁은-문",
+        "history": [
+          "/ko/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -189635,11 +189640,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "den-trånga-porten-till-livet",
+        "history": [
+          "/sv/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
