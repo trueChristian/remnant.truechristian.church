@@ -33024,11 +33024,12 @@
       },
       "51e3c3a2-bccc-462c-9ae7-8f232752fbc0": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "if-you-love-your-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "যদি-তুমি-তোমার-জীবনকে-ভালোবাসো",
+        "history": [
+          "/bn/articles/if-you-love-your-life/"
+        ],
+        "fallback": false
       },
       "52074824-2feb-4fe4-96d0-a08ec72c3565": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
@@ -37877,11 +37878,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "আধ্যাত্মিক-জাগরণ",
+        "alias": "যে-কোনো-মূল্যে-পুনর্জাগরণ",
+        "history": [
+          "/bn/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -45827,11 +45829,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "das-licht-der-welt-ist-jesus",
+        "history": [
+          "/de/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -82975,11 +82978,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "avivamiento",
+        "alias": "avivamiento-a-cualquier-precio",
+        "history": [
+          "/es/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -89616,11 +89620,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "jeunesse",
+        "alias": "qu-y-a-t-il-de-juste-dans-ma-musique",
+        "history": [
+          "/fr/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -214782,11 +214787,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "青年",
+        "alias": "以基督为中心的恋爱交往过程",
+        "history": [
+          "/zh-Hans/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",

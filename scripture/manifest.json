@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "26dea1a0fbc192da444df267d8d76b46864fc4cf2825982b1fcf2a9f084b30c5",
+  "integrity": "826d50ede66300f30e953e16c15ac27ea661d2784f23e31a9f701a28fa7400e7",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -43172,6 +43172,63 @@
         }
       ],
       "record_hash": "305cffd720b2a78d0ab118583c5c8b61b1ab44f2a847d26d3ada7b247dfeba51"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:zh-Hans:c0dc44ea24f61653df7bc4592879bd3f777f7236e0a2f3d7029c63ef437e88a2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "zh-Hans",
+      "content_hash": "c0dc44ea24f61653df7bc4592879bd3f777f7236e0a2f3d7029c63ef437e88a2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f402990a27fe2c1f289437c2",
+          "quote": "箴言18:22",
+          "before": "事。祂看着这个过程，称它为甚好。“找到妻子的，就是得着好处，也是蒙了主的恩惠”（",
+          "after": "）。",
+          "spans": [
+            [
+              1175,
+              1182
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "e3c4f5b3b7e5a8c050cf2aea",
+          "quote": "马太福音19:3-10",
+          "before": "被休的妇人，也是犯奸淫了。’门徒对耶稣说：‘人和妻子既是这样，倒不如不娶。’”（",
+          "after": "）",
+          "spans": [
+            [
+              1481,
+              1492
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "cf4814fb1d51984197de370b",
+          "quote": "哥林多前书7:1-2",
+          "before": "碰女人是好的。然而，为避免淫乱，男子当各有自己的妻子，女子也当各有自己的丈夫”（",
+          "after": "）。不发生身体接触的恋爱交往做法，是以这段经文为依据的。要谨慎对待自己的情感。你",
+          "spans": [
+            [
+              3675,
+              3685
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "55bfaee7a06ec95bf5a6dccba224372f31d26aaf9799e4f66e0089934ab60f98"
     },
     "12b8818b-ec0b-4b20-83a2-17fc74f174b0:en:a9b19f77ded63c81634323737893870f497ceda45317bb9c209f373b88efe247:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12b8818b-ec0b-4b20-83a2-17fc74f174b0",
@@ -164114,6 +164171,207 @@
       ],
       "record_hash": "79bdb9e11466d65a8523c6fb5dfbdce931e7192fbcc0cb2912ec8e4a3660ed02"
     },
+    "51e3c3a2-bccc-462c-9ae7-8f232752fbc0:bn:d26b9de4ae8eeedf0f31e3c6b1549528e159f48a07744e479ae0562abc8fd6d2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "51e3c3a2-bccc-462c-9ae7-8f232752fbc0",
+      "locale": "bn",
+      "content_hash": "d26b9de4ae8eeedf0f31e3c6b1549528e159f48a07744e479ae0562abc8fd6d2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f2d29e71f4819b49750332f8",
+          "quote": "লূক 14:25-33",
+          "before": "্যাগ করে না, সে আমার শিষ্য হতে পারে না –",
+          "after": ".",
+          "spans": [
+            [
+              1442,
+              1454
+            ]
+          ],
+          "osis": "Luke.14.25-Luke.14.33",
+          "queries": [
+            "42 14:25-33"
+          ]
+        },
+        {
+          "id": "6f4d290371417211ca869a76",
+          "quote": "২ তীমথিয় 3:12",
+          "before": "রতে চায়, তারা সকলেই নির্যাতন ভোগ করবে –",
+          "after": ". নির্যাতন সম্পর্কে যীশু তাঁর বাক্যে আমা",
+          "spans": [
+            [
+              1904,
+              1918
+            ]
+          ],
+          "osis": "2Tim.3.12",
+          "queries": [
+            "55 3:12"
+          ]
+        },
+        {
+          "id": "2eec52696cbf445f8480a9be",
+          "quote": "১ যোহন 2:6",
+          "before": " সেভাবে চলা উচিত, যেভাবে তিনি চলেছিলেন –",
+          "after": ". যীশু বলেন, তিনি যেভাবে চলেছিলেন আমাদের",
+          "spans": [
+            [
+              2204,
+              2214
+            ]
+          ],
+          "osis": "1John.2.6",
+          "queries": [
+            "62 2:6"
+          ]
+        },
+        {
+          "id": "63789eba34b4e0fc08f0b0fc",
+          "quote": "মার্ক 15:28",
+          "before": "। …তিনি অপরাধীদের সঙ্গে গণ্য হয়েছিলেন –",
+          "after": ".",
+          "spans": [
+            [
+              2885,
+              2896
+            ]
+          ],
+          "osis": "Mark.15.28",
+          "queries": [
+            "41 15:28"
+          ]
+        },
+        {
+          "id": "6602150f1e1cb5d161501e1e",
+          "quote": "দ্বিতীয় বিবরণ 3:3-6",
+          "before": "ারী ও শিশুদের সম্পূর্ণরূপে ধ্বংস করলাম –",
+          "after": ".",
+          "spans": [
+            [
+              3865,
+              3885
+            ]
+          ],
+          "osis": "Deut.3.3-Deut.3.6",
+          "queries": [
+            "5 3:3-6"
+          ]
+        },
+        {
+          "id": "7d4403af86a604e6a077ac74",
+          "quote": "যোহন 12:25",
+          "before": "রে, সে তা অনন্ত জীবনের জন্য রক্ষা করবে –",
+          "after": ".",
+          "spans": [
+            [
+              4989,
+              4999
+            ]
+          ],
+          "osis": "John.12.25",
+          "queries": [
+            "43 12:25"
+          ]
+        },
+        {
+          "id": "5bd205bb309b39f22b1de097",
+          "quote": "আদিপুস্তক 3:19",
+          "before": "য়েছে; তুমি ধূলি, আর ধূলিতেই ফিরে যাবে –",
+          "after": ". আমরা ধূলি থেকে সৃষ্ট হয়েছি, আর অল্প ক",
+          "spans": [
+            [
+              5153,
+              5167
+            ]
+          ],
+          "osis": "Gen.3.19",
+          "queries": [
+            "1 3:19"
+          ]
+        },
+        {
+          "id": "f069c7bd246fa35421f96b7f",
+          "quote": "যাকোব 4:14",
+          "before": "়ের জন্য দেখা দেয়, তারপর মিলিয়ে যায় –",
+          "after": ". বাইবেলও আমাদের জীবনকে বাষ্প বলে।",
+          "spans": [
+            [
+              5391,
+              5401
+            ]
+          ],
+          "osis": "Jas.4.14",
+          "queries": [
+            "59 4:14"
+          ]
+        },
+        {
+          "id": "a3c8cb1a188ab803ccf70ade",
+          "quote": "মার্ক 16:15",
+          "before": "ত্যেক সৃষ্টির কাছে সুসমাচার প্রচার করো –",
+          "after": ". এতে প্রেরিত পৌলের সঙ্গে এ কথা বলাও কঠি",
+          "spans": [
+            [
+              6628,
+              6639
+            ]
+          ],
+          "osis": "Mark.16.15",
+          "queries": [
+            "41 16:15"
+          ]
+        },
+        {
+          "id": "fbb989f7afe7c3ecc8144be4",
+          "quote": "ফিলিপীয় 1:21",
+          "before": "কাছে বেঁচে থাকা খ্রীষ্ট, আর মৃত্যু লাভ –",
+          "after": ". আসলে, এতে খ্রীষ্টান হওয়াই কঠিন হয়ে প",
+          "spans": [
+            [
+              6751,
+              6764
+            ]
+          ],
+          "osis": "Phil.1.21",
+          "queries": [
+            "50 1:21"
+          ]
+        },
+        {
+          "id": "dbf4e4fbb8406220d5f8ef04",
+          "quote": "মথি 16:25",
+          "before": "্য নিজের জীবন হারায়, সে তা খুঁজে পাবে –",
+          "after": ", তখন তিনি কী বোঝাতে চেয়েছিলেন? এর অর্থ",
+          "spans": [
+            [
+              6944,
+              6953
+            ]
+          ],
+          "osis": "Matt.16.25",
+          "queries": [
+            "40 16:25"
+          ]
+        },
+        {
+          "id": "27eecef63c50a2d466b91bce",
+          "quote": "প্রেরিত 21:10-13",
+          "before": "তেই নয়, মৃত্যুবরণ করতেও প্রস্তুত আছি। –",
+          "after": ".",
+          "spans": [
+            [
+              11684,
+              11700
+            ]
+          ],
+          "osis": "Acts.21.10-Acts.21.13",
+          "queries": [
+            "44 21:10-13"
+          ]
+        }
+      ],
+      "record_hash": "0e86d9c9918918c5b655649e1f1eafa96f36d8f9d44951a85808c780042617e0"
+    },
     "51e3c3a2-bccc-462c-9ae7-8f232752fbc0:de:bcd9a51dfb978ed0513edb6893b3423335ac13d4caede09eeab7556b72e71942:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "51e3c3a2-bccc-462c-9ae7-8f232752fbc0",
       "locale": "de",
@@ -251117,6 +251375,111 @@
         }
       ],
       "record_hash": "02f5e2fc5c6738a3708f121972f451a84d8f453eaf494f8e4043015090be1182"
+    },
+    "86459f54-72b0-4be2-a101-02b3c9462f6c:fr:f2548b980a9ff342c82cecce73fc60d7e23afcdfb8b3c00182e4b7b1f7281ad6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
+      "locale": "fr",
+      "content_hash": "f2548b980a9ff342c82cecce73fc60d7e23afcdfb8b3c00182e4b7b1f7281ad6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "0742a1053db68d2b165e47a2",
+          "quote": "Philippiens 4:8",
+          "before": " louange, que cela occupe vos pensées – ",
+          "after": ".",
+          "spans": [
+            [
+              4357,
+              4372
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "c6d50789ca1c71ffac0c19a6",
+          "quote": "Philippiens 4:8",
+          "before": " profane ne satisfait pas au critère de ",
+          "after": ". La plupart des musiques profanes ont d",
+          "spans": [
+            [
+              4439,
+              4454
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        },
+        {
+          "id": "867b904341bfc7f8506311b3",
+          "quote": "Éphésiens 5:19",
+          "before": "votre cœur les louanges du Seigneur ; – ",
+          "after": ". Cela ressemble-t-il à de la musique fa",
+          "spans": [
+            [
+              8168,
+              8182
+            ]
+          ],
+          "osis": "Eph.5.19",
+          "queries": [
+            "49 5:19"
+          ]
+        },
+        {
+          "id": "25a91aa2aa008c4ddbedfee1",
+          "quote": "Actes 16:25",
+          "before": "u, et les prisonniers les entendaient – ",
+          "after": ". Quand Paul et Silas étaient en prison,",
+          "spans": [
+            [
+              8471,
+              8482
+            ]
+          ],
+          "osis": "Acts.16.25",
+          "queries": [
+            "44 16:25"
+          ]
+        },
+        {
+          "id": "c41d511f7885f262b29a5e58",
+          "quote": "Colossiens 3:16",
+          "before": " cœurs sous l’inspiration de la grâce – ",
+          "after": ". Laissons-nous les psaumes, les hymnes ",
+          "spans": [
+            [
+              9396,
+              9411
+            ]
+          ],
+          "osis": "Col.3.16",
+          "queries": [
+            "51 3:16"
+          ]
+        },
+        {
+          "id": "4efb921b5f60d473944ae92e",
+          "quote": "Jean 4:23",
+          "before": "là les adorateurs que le Père demande – ",
+          "after": ".",
+          "spans": [
+            [
+              10909,
+              10918
+            ]
+          ],
+          "osis": "John.4.23",
+          "queries": [
+            "43 4:23"
+          ]
+        }
+      ],
+      "record_hash": "cbdd95d2241d347602346d01a0b2a0a895735bd0757405cfcf3a7773e7c966f6"
     },
     "86459f54-72b0-4be2-a101-02b3c9462f6c:hi:3dc6e3f0d40444b308f22e05d7c83ce111d1d39e3505339ed964a377881151e9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "86459f54-72b0-4be2-a101-02b3c9462f6c",
@@ -338434,6 +338797,31 @@
         }
       ],
       "record_hash": "fa4294f0ccf7dc8ccb50907d1ce758df15be2173c80c3283eec154a933bd1a21"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:de:f086e7432211cfa3fb144e72a3c3aeffc37023a8a9fbf54cfe0b57594e493aef:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "de",
+      "content_hash": "f086e7432211cfa3fb144e72a3c3aeffc37023a8a9fbf54cfe0b57594e493aef",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d40ddc800c2a876083af3c17",
+          "quote": "2. Mose 10,21-23",
+          "before": "srael hatten Licht in ihren Wohnungen.“ ",
+          "after": ".",
+          "spans": [
+            [
+              679,
+              695
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "ce8433becdc281beba099fb74c95a9bd37c1e763afe70c521177c8eb9b1e1311"
     },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:el:27552b808119926c5de2ec82723537accb67bae444a9d0f5359093525e708e75:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
@@ -467403,6 +467791,14 @@
       "markers": [],
       "record_hash": "d4df93e4b58f08d5e2a44a56881dc40bf0bab8a4cd27e0f97364db125c74224f"
     },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:bn:71ea323ba35d164fb6af08314e8762b14173a7b45b68972c2c6aa11c4d32ba79:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "bn",
+      "content_hash": "71ea323ba35d164fb6af08314e8762b14173a7b45b68972c2c6aa11c4d32ba79",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a840743415d345789b43ab5e991070189864cc1db590ba7fa2fcb5bf9a53cf7d"
+    },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:en:97d371ffef536a8efc90d3f9f4e8bff720ac90a4378a3fd638b2f6f3243e433a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
       "locale": "en",
@@ -467410,6 +467806,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "2b9bf75a3249921704d9d5417ac7a6408b698d0a831a7ba1bf9b8d081e5ab80d"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:es:2058b1bb7ee5aaf965203f79c868b9e6657b2f2f4a4927896cb67219344ac1aa:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "es",
+      "content_hash": "2058b1bb7ee5aaf965203f79c868b9e6657b2f2f4a4927896cb67219344ac1aa",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "4a362ee12007c1f535fcfb676779eab43d84f53201dda27dd0f426db2599791b"
     },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:hi:72a71fae862b49da77e09313ac8b62646aab5f22976e6e2ac01dbb8cd357d2ad:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
