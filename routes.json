@@ -57683,11 +57683,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "πνευματική-αναζωπύρωση",
+        "alias": "αναζωπυρωση-με-καθε-τιμημα",
+        "history": [
+          "/el/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -117809,11 +117810,12 @@
       },
       "572ec209-1870-46a2-ba99-bc6121777d7c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "a-suffering-savior",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "puisi",
+        "alias": "juruselamat-yang-menderita",
+        "history": [
+          "/id/articles/a-suffering-savior/"
+        ],
+        "fallback": false
       },
       "573a0ca5-65ff-40d1-beeb-6b2cdc0d95fb": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
@@ -130064,11 +130066,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vita-cristiana",
+        "alias": "la-porta-stretta-che-conduce-alla-vita",
+        "history": [
+          "/it/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -142379,11 +142382,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "부흥",
+        "alias": "어떤-대가를-치르더라도-부흥을",
+        "history": [
+          "/ko/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -152385,11 +152389,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vekkelse",
+        "alias": "vekking-for-enhver-pris",
+        "history": [
+          "/nb/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -162389,11 +162394,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "opwekking",
+        "alias": "herleving-tegen-elke-prijs",
+        "history": [
+          "/nl/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -177540,11 +177546,12 @@
       },
       "572ec209-1870-46a2-ba99-bc6121777d7c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "a-suffering-savior",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "поэзия",
+        "alias": "страдающий-спаситель",
+        "history": [
+          "/ru/articles/a-suffering-savior/"
+        ],
+        "fallback": false
       },
       "573a0ca5-65ff-40d1-beeb-6b2cdc0d95fb": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
@@ -182233,11 +182240,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "духовное-пробуждение",
+        "alias": "пробуждение-любой-ценой",
+        "history": [
+          "/ru/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "b1b3c87288ae91f04bc7ef57a0c597888e9876dcdaff6dfa04905d52031f2f11",
+  "integrity": "ca4a784d386891b67236a389d097f92fb52703fe3fba397f61de0e853c53db7e",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -180026,6 +180026,14 @@
       "markers": [],
       "record_hash": "3a9796a0ec370450ec876318d63e120243137fafaf029f3e422d396a43b3fb54"
     },
+    "572ec209-1870-46a2-ba99-bc6121777d7c:id:9775edf22cdc340db519014ba9ff1e46c87ef428625f93e6b744107ed408dc83:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
+      "locale": "id",
+      "content_hash": "9775edf22cdc340db519014ba9ff1e46c87ef428625f93e6b744107ed408dc83",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "46823227a183ae10c9cbca42e086c87896b1e10a8f259d024fa66d484237c29d"
+    },
     "572ec209-1870-46a2-ba99-bc6121777d7c:it:1b618c1575719bdc1f28c08c10ae76c254c81f6197386f8f3071af339326ecd3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
       "locale": "it",
@@ -180065,6 +180073,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "24403daed1c64807c0c15ed069bdb4f3a21fd27c7fbbdd40a2eb5147304ef690"
+    },
+    "572ec209-1870-46a2-ba99-bc6121777d7c:ru:8c3db2a89894a39d354ce4015f21f85991dbf51d2618ecadcf52c2dfe5be6a42:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
+      "locale": "ru",
+      "content_hash": "8c3db2a89894a39d354ce4015f21f85991dbf51d2618ecadcf52c2dfe5be6a42",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b9d18e18badb2960aa2c24b7127f1580cc878ac263cd133639af0f1e07eefb74"
     },
     "572ec209-1870-46a2-ba99-bc6121777d7c:ur:428a70c7a7e5161265738f81704343f3de3f41bfcbcde308362be15ae0447c4a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
@@ -316832,6 +316848,479 @@
         }
       ],
       "record_hash": "03f544c07e44f91625f55753619c87161cb1abd6a9bae8ec5db0926c9b074c6a"
+    },
+    "a7f59621-7083-44ce-8074-6ece8fdfbdcf:it:5aa28d67d7c29b15c34aacc2576357dabd0a6a3f0e52c7f050b3b20766ff18bf:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
+      "locale": "it",
+      "content_hash": "5aa28d67d7c29b15c34aacc2576357dabd0a6a3f0e52c7f050b3b20766ff18bf",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1aefd6955984ac1cf8af2f24",
+          "quote": "Matteo 7:13-14",
+          "before": "ta, e pochi sono quelli che la trovano –",
+          "after": ".",
+          "spans": [
+            [
+              466,
+              480
+            ]
+          ],
+          "osis": "Matt.7.13-Matt.7.14",
+          "queries": [
+            "40 7:13-14"
+          ]
+        },
+        {
+          "id": "fa02ebaf05930844a08d0ba7",
+          "quote": "Matteo 13:37-39",
+          "before": "el mondo e i mietitori sono gli angeli –",
+          "after": ". Ma nell’immagine presentata come la po",
+          "spans": [
+            [
+              1156,
+              1171
+            ]
+          ],
+          "osis": "Matt.13.37-Matt.13.39",
+          "queries": [
+            "40 13:37-39"
+          ]
+        },
+        {
+          "id": "db42dc3ad1071a2d3588ccd7",
+          "quote": "Matteo 7:22",
+          "before": "tuo nome compiuto molte opere potenti? –",
+          "after": ". Liberarci dai residui del male è del t",
+          "spans": [
+            [
+              2405,
+              2416
+            ]
+          ],
+          "osis": "Matt.7.22",
+          "queries": [
+            "40 7:22"
+          ]
+        },
+        {
+          "id": "34d3356c466d8faf5138b617",
+          "quote": "Matteo 7:21",
+          "before": "volontà del Padre mio che è nei cieli. –",
+          "after": ". Inoltre, porre l’ascetismo, la dottrin",
+          "spans": [
+            [
+              2604,
+              2615
+            ]
+          ],
+          "osis": "Matt.7.21",
+          "queries": [
+            "40 7:21"
+          ]
+        },
+        {
+          "id": "8ca35bf70d65843b2253ff41",
+          "quote": "Colossesi 2:20-22",
+          "before": "mandamenti e le dottrine degli uomini. –",
+          "after": ". Pur applaudendo gli sforzi di chiunque",
+          "spans": [
+            [
+              3166,
+              3183
+            ]
+          ],
+          "osis": "Col.2.20-Col.2.22",
+          "queries": [
+            "51 2:20-22"
+          ]
+        },
+        {
+          "id": "dce8d9525ddf1d3ac9ae203b",
+          "quote": "Giovanni 10:7",
+          "before": "e se stesso come la porta delle pecore –",
+          "after": ". Chi vorrebbe negare a Cristo una posiz",
+          "spans": [
+            [
+              3686,
+              3699
+            ]
+          ],
+          "osis": "John.10.7",
+          "queries": [
+            "43 10:7"
+          ]
+        },
+        {
+          "id": "6a230a9170a641ad0d3beeb6",
+          "quote": "1 Tessalonicesi 3:4",
+          "before": "mmo sofferto tribolazione; (Thlee’-bo) –",
+          "after": ".",
+          "spans": [
+            [
+              4756,
+              4775
+            ]
+          ],
+          "osis": "1Thess.3.4",
+          "queries": [
+            "52 3:4"
+          ]
+        },
+        {
+          "id": "f79d6a51dedb443422d055cf",
+          "quote": "Ebrei 11:37",
+          "before": "tto, afflitti (Thlee’-bo), maltrattati –",
+          "after": ".",
+          "spans": [
+            [
+              4898,
+              4909
+            ]
+          ],
+          "osis": "Heb.11.37",
+          "queries": [
+            "58 11:37"
+          ]
+        },
+        {
+          "id": "9414fb4ad035bef288f9cf01",
+          "quote": "2 Corinzi 4:8",
+          "before": "bo) da ogni parte, ma non schiacciati… –",
+          "after": ".",
+          "spans": [
+            [
+              4988,
+              5001
+            ]
+          ],
+          "osis": "2Cor.4.8",
+          "queries": [
+            "47 4:8"
+          ]
+        },
+        {
+          "id": "cd2076f38f05c716bf2a4905",
+          "quote": "Matteo 7:28-29",
+          "before": "che ha autorità, e non come gli scribi –",
+          "after": ". La porta stretta di Cristo si fondava ",
+          "spans": [
+            [
+              5268,
+              5282
+            ]
+          ],
+          "osis": "Matt.7.28-Matt.7.29",
+          "queries": [
+            "40 7:28-29"
+          ]
+        },
+        {
+          "id": "3ecf2407df5d3b7805fa472c",
+          "quote": "Luca 12:50",
+          "before": "no angustiato finché non sia compiuto! –",
+          "after": ". È da qui che Cristo trasse la sua auto",
+          "spans": [
+            [
+              5508,
+              5518
+            ]
+          ],
+          "osis": "Luke.12.50",
+          "queries": [
+            "42 12:50"
+          ]
+        },
+        {
+          "id": "b8456405ae7cbf8ee0da31b1",
+          "quote": "Luca 20:1-8",
+          "before": "con quale autorità faccio queste cose» –",
+          "after": ".",
+          "spans": [
+            [
+              6336,
+              6347
+            ]
+          ],
+          "osis": "Luke.20.1-Luke.20.8",
+          "queries": [
+            "42 20:1-8"
+          ]
+        },
+        {
+          "id": "0c9cb12d2fad13b6a9bf230b",
+          "quote": "Atti 5:29",
+          "before": "…di ubbidire a Dio anziché agli uomini –",
+          "after": ". È qui che sperimenteremo il thlee’-bo ",
+          "spans": [
+            [
+              6971,
+              6980
+            ]
+          ],
+          "osis": "Acts.5.29",
+          "queries": [
+            "44 5:29"
+          ]
+        },
+        {
+          "id": "b47e8da4d5d4cf86a8cd6e60",
+          "quote": "Romani 13:1-2",
+          "before": "ngono attireranno su di sé la condanna –",
+          "after": ". Sono parole forti che non osiamo ignor",
+          "spans": [
+            [
+              7524,
+              7537
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.2",
+          "queries": [
+            "45 13:1-2"
+          ]
+        },
+        {
+          "id": "b7527267efa5ad2641af8315",
+          "quote": "Atti 4:19-20",
+          "before": " delle cose che abbiamo visto e udito» –",
+          "after": ". I discepoli non nutrivano rancore pers",
+          "spans": [
+            [
+              7791,
+              7803
+            ]
+          ],
+          "osis": "Acts.4.19-Acts.4.20",
+          "queries": [
+            "44 4:19-20"
+          ]
+        },
+        {
+          "id": "eb03ad9388917b829e0e8ec2",
+          "quote": "Matteo 9:8",
+          "before": "he aveva dato tale potenza agli uomini –",
+          "after": ". La loro esperienza dell’autorità era u",
+          "spans": [
+            [
+              8582,
+              8592
+            ]
+          ],
+          "osis": "Matt.9.8",
+          "queries": [
+            "40 9:8"
+          ]
+        },
+        {
+          "id": "20b61482b562bcec6c55108f",
+          "quote": "Romani 13:5",
+          "before": "ira, ma anche per ragioni di coscienza –",
+          "after": ". Accogliere le nostre autorità nel cuor",
+          "spans": [
+            [
+              9259,
+              9270
+            ]
+          ],
+          "osis": "Rom.13.5",
+          "queries": [
+            "45 13:5"
+          ]
+        },
+        {
+          "id": "0c1313bb1043520c3698ad97",
+          "quote": "Matteo 8:10",
+          "before": "raele, ho trovato una fede così grande –",
+          "after": ". Era un uomo che esercitava autorità… e",
+          "spans": [
+            [
+              10181,
+              10192
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        },
+        {
+          "id": "1885842a6ed165efb1180658",
+          "quote": "Matteo 8:8",
+          "before": "parola e il mio servitore sarà guarito –",
+          "after": ". La porta formata dai suoi superiori e ",
+          "spans": [
+            [
+              10491,
+              10501
+            ]
+          ],
+          "osis": "Matt.8.8",
+          "queries": [
+            "40 8:8"
+          ]
+        },
+        {
+          "id": "43a14094773dae0b72c424d2",
+          "quote": "Genesi 24:12",
+          "before": "ra benevolenza al mio padrone Abraamo» –",
+          "after": ".",
+          "spans": [
+            [
+              12060,
+              12072
+            ]
+          ],
+          "osis": "Gen.24.12",
+          "queries": [
+            "1 24:12"
+          ]
+        },
+        {
+          "id": "cd5257458212b28abb43658c",
+          "quote": "Atti 8:39",
+          "before": " andò per la sua strada pieno di gioia –",
+          "after": ", La sua vita è una straordinaria testim",
+          "spans": [
+            [
+              12660,
+              12669
+            ]
+          ],
+          "osis": "Acts.8.39",
+          "queries": [
+            "44 8:39"
+          ]
+        },
+        {
+          "id": "67fbe636331f5531414bf8d3",
+          "quote": "Isaia 56:3",
+          "before": "unuco: «Ecco, io sono un albero secco» –",
+          "after": ".",
+          "spans": [
+            [
+              12803,
+              12813
+            ]
+          ],
+          "osis": "Isa.56.3",
+          "queries": [
+            "23 56:3"
+          ]
+        },
+        {
+          "id": "84b15d17012b633ea229e6db",
+          "quote": "Efesini 6:1-3",
+          "before": "a bene e abbia lunga vita sulla terra» –",
+          "after": ". Questo dovrebbe essere evidente a ogni",
+          "spans": [
+            [
+              13067,
+              13080
+            ]
+          ],
+          "osis": "Eph.6.1-Eph.6.3",
+          "queries": [
+            "49 6:1-3"
+          ]
+        },
+        {
+          "id": "0ee1326504d2bbc16cca45aa",
+          "quote": "Ebrei 12:9",
+          "before": "Padre degli spiriti per avere la vita? –",
+          "after": ". La vita viene trovata da coloro che sa",
+          "spans": [
+            [
+              13456,
+              13466
+            ]
+          ],
+          "osis": "Heb.12.9",
+          "queries": [
+            "58 12:9"
+          ]
+        },
+        {
+          "id": "1a4cb6a76382ccecece608e4",
+          "quote": "Giovanni 4:16",
+          "before": "Va’ a chiamare tuo marito e vieni qui» –",
+          "after": ". Cristo cercava di convincerla che la v",
+          "spans": [
+            [
+              14152,
+              14165
+            ]
+          ],
+          "osis": "John.4.16",
+          "queries": [
+            "43 4:16"
+          ]
+        },
+        {
+          "id": "014ab3a3046dbb50f4cfe39e",
+          "quote": "1 Corinzi 11:10",
+          "before": "o la donna deve avere potere sul capo… –",
+          "after": ". Il velo sul capo, legato al principio ",
+          "spans": [
+            [
+              14674,
+              14689
+            ]
+          ],
+          "osis": "1Cor.11.10",
+          "queries": [
+            "46 11:10"
+          ]
+        },
+        {
+          "id": "3f958b4965d156e65a8e8c0e",
+          "quote": "Tito 2:15",
+          "before": "on ogni autorità. Nessuno ti disprezzi –",
+          "after": ". Molti che si professano credenti respi",
+          "spans": [
+            [
+              15182,
+              15191
+            ]
+          ],
+          "osis": "Titus.2.15",
+          "queries": [
+            "56 2:15"
+          ]
+        },
+        {
+          "id": "c3f6ff2225835d735a01fff5",
+          "quote": "1 Samuele 15:23",
+          "before": "zione è come l’iniquità e l’idolatria… –",
+          "after": ". Gli sforzi per scegliere …una via che ",
+          "spans": [
+            [
+              15721,
+              15736
+            ]
+          ],
+          "osis": "1Sam.15.23",
+          "queries": [
+            "9 15:23"
+          ]
+        },
+        {
+          "id": "07435b81803304fc31b710ca",
+          "quote": "Proverbi 14:12",
+          "before": " …una via che all’uomo sembra diritta… –",
+          "after": ", conducono alla schiavitù, mentre scegl",
+          "spans": [
+            [
+              15807,
+              15821
+            ]
+          ],
+          "osis": "Prov.14.12",
+          "queries": [
+            "20 14:12"
+          ]
+        }
+      ],
+      "record_hash": "fc4670aa58ccb9c12eba50382afbf99ccf98d8cc525684b83130ebad7c04a5f7"
     },
     "a7f59621-7083-44ce-8074-6ece8fdfbdcf:ko:9426ba690edcc3534dca1a431036cae9109ad41af08c5052372b13b92b522e61:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7f59621-7083-44ce-8074-6ece8fdfbdcf",
@@ -468786,6 +469275,14 @@
       "markers": [],
       "record_hash": "79ec741a93a2f470c05055001185446ab28a0c7816651518804714d9889bfa3f"
     },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:el:1322a2ee08991efe9a8fc132a2aca60accae5ecd3408171fdffe83d665a9f836:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "el",
+      "content_hash": "1322a2ee08991efe9a8fc132a2aca60accae5ecd3408171fdffe83d665a9f836",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "6b281d34a101c0e153cfaaeed42be9060ce3cab99ce10f00572c11b3fb484006"
+    },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:en:97d371ffef536a8efc90d3f9f4e8bff720ac90a4378a3fd638b2f6f3243e433a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
       "locale": "en",
@@ -468818,6 +469315,30 @@
       "markers": [],
       "record_hash": "55ba76a6b7e7e0fe7ae9f176733d6e44673b9f6719087db2ad66faf64d88e71b"
     },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:ko:8e5c4bd8bbefe2ee9219b57c0748e85e53881fe0459c92ee87b59b3128e41f20:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "ko",
+      "content_hash": "8e5c4bd8bbefe2ee9219b57c0748e85e53881fe0459c92ee87b59b3128e41f20",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "15c0504314d9ef189d87b7052209aebc52eaf298aade0a2457448de442d01fff"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:nb:5364865313477fe086ab04d206301231eb5438de19adc13a53ba73ead0e1dd5c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "nb",
+      "content_hash": "5364865313477fe086ab04d206301231eb5438de19adc13a53ba73ead0e1dd5c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "3637fa13bad98d973b1f61352c1702d37bece9e53372ef1b6ee24134dd1b9dfe"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:nl:4561a55eadb2be61b3a2aae980c9820e6bb77cced200ef6f6d1cb7d4ae65e268:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "nl",
+      "content_hash": "4561a55eadb2be61b3a2aae980c9820e6bb77cced200ef6f6d1cb7d4ae65e268",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5e5db229d3b879092e74a928504d56f6c95ca21a618a9923f2db993142a070ca"
+    },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:pt:14aade3531af4ebb5f817ac09f23a32a64d5b61454d40b8a62cf643d844af801:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
       "locale": "pt",
@@ -468825,6 +469346,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "9464e965408536abc4d48a3d949aee3a4e1706884aedb707d3db54349f0dfc8e"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:ru:7d63154860bd01dd4a81ad340cebd40c2c016e27a85dff04078362c4c1620db6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "ru",
+      "content_hash": "7d63154860bd01dd4a81ad340cebd40c2c016e27a85dff04078362c4c1620db6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "69f30e9c0b877223f2f3a791cdc20b1e2cc04fd60edd3bc7a06f50b776fb5797"
     },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:zh-Hans:d9d93e02e379a7765ed801ddc8c94202e1ef8d07109cc1f3d10343ed24f7e4d8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
