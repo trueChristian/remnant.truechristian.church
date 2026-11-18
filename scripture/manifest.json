@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "ca4a784d386891b67236a389d097f92fb52703fe3fba397f61de0e853c53db7e",
+  "integrity": "0ec47dbdec802aa5829fb5fb9c04a0d035379aaa297b9f4ab43628eb76b7a390",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -42937,6 +42937,79 @@
         }
       ],
       "record_hash": "ec7b9babb7d1c12a0daa484ba98f5c2e8f3053b87686636a2f9570cec35078e4"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:ru:a9bcdb3907baa504c46ba1f07e6d876355601489eb3344814d3b8f3cbd4104b7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "ru",
+      "content_hash": "a9bcdb3907baa504c46ba1f07e6d876355601489eb3344814d3b8f3cbd4104b7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "009a8ec3dec04b3b93b8b325",
+          "quote": "Притчи 18:22",
+          "before": " благо и получил благодать от Господа» (",
+          "after": ").",
+          "spans": [
+            [
+              2799,
+              2811
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "738cd4a04a33de632039b664",
+          "quote": "Матфея 19:3–10",
+          "before": "человека к жене, то лучше не жениться» (",
+          "after": ").",
+          "spans": [
+            [
+              3748,
+              3762
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "73c84e57b40c87393217ff94",
+          "quote": "1 Коринфянам 7:1–2",
+          "before": " свою жену, и каждая имей своего мужа» (",
+          "after": "). Практика ухаживаний без прикосновений",
+          "spans": [
+            [
+              10175,
+              10193
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "f0c885eda0b67d3ebf34be2f",
+          "quote": "1 Коринфянам 7:1–2",
+          "before": "Если исходить из ",
+          "after": ", что значит касаться? Если вы чувствует",
+          "spans": [
+            [
+              10923,
+              10941
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "6abac2b29c616e764850c387d1924baa612b09d08a8898164da287cf5f3d7758"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:sv:8ad5fce39239e405e327f70026955e3b99ce732f5f5d048283f76e1fcdaaf9e0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -180082,6 +180155,14 @@
       "markers": [],
       "record_hash": "b9d18e18badb2960aa2c24b7127f1580cc878ac263cd133639af0f1e07eefb74"
     },
+    "572ec209-1870-46a2-ba99-bc6121777d7c:sv:a67df86d57adf410304cef182a48a6cdb9bc47b82b1a9e0bd558c06437725d46:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
+      "locale": "sv",
+      "content_hash": "a67df86d57adf410304cef182a48a6cdb9bc47b82b1a9e0bd558c06437725d46",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "81896986ba246e892f9d8ee5d4ee48fbcf7f2d94ee609e71ad2703fe9e41ea38"
+    },
     "572ec209-1870-46a2-ba99-bc6121777d7c:ur:428a70c7a7e5161265738f81704343f3de3f41bfcbcde308362be15ae0447c4a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
       "locale": "ur",
@@ -311961,6 +312042,47 @@
         }
       ],
       "record_hash": "b9871ca4fefac6c088f5da3d149770671c4e7693075770c07946e39a7420905a"
+    },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:hi:2565337df1b7ad27e330f822032051e329ee0b20efc3bdd76644c4956f5decda:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "hi",
+      "content_hash": "2565337df1b7ad27e330f822032051e329ee0b20efc3bdd76644c4956f5decda",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "30878c968315e2583516a9b1",
+          "quote": "यशायाह 44:3",
+          "before": " जल, और सूखी भूमि पर धाराएँ उंडेलूँगा” (",
+          "after": "क)। वे इतनी व्याकुल थीं कि दोनों ने सप्त",
+          "spans": [
+            [
+              1723,
+              1734
+            ]
+          ],
+          "osis": "Isa.44.3",
+          "queries": [
+            "23 44:3"
+          ]
+        },
+        {
+          "id": "0190c33891cf57f6f05d7549",
+          "quote": "भजन संहिता 24",
+          "before": "लूँगा,” तो गिरजे का एक युवा डीकन उठा और ",
+          "after": " पढ़ने लगा: “यहोवा के पर्वत पर कौन चढ़ स",
+          "spans": [
+            [
+              3282,
+              3295
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "43e9e833acdb98c1a483479d3b0f67e186b70b1435e4093c2e13564eb27daf34"
     },
     "a7480c1f-6359-4ae8-903c-5aa9d40da15d:en:be5403a1e3b6a587dc83d7b82e201cac71aa138073b0e9f01d150def96bd196f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a7480c1f-6359-4ae8-903c-5aa9d40da15d",
@@ -469354,6 +469476,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "69f30e9c0b877223f2f3a791cdc20b1e2cc04fd60edd3bc7a06f50b776fb5797"
+    },
+    "fc4c9504-47f0-4d15-9e2e-848dd10c349e:sw:77231a86a9791e3577b4ece6cb8b534396eadda69ff8d9d2502f30eda0ac5249:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
+      "locale": "sw",
+      "content_hash": "77231a86a9791e3577b4ece6cb8b534396eadda69ff8d9d2502f30eda0ac5249",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "68571caa0094c31ffdb750b50dac51c532b813f5cd540b1d6987d8cf3dd3e0da"
     },
     "fc4c9504-47f0-4d15-9e2e-848dd10c349e:zh-Hans:d9d93e02e379a7765ed801ddc8c94202e1ef8d07109cc1f3d10343ed24f7e4d8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fc4c9504-47f0-4d15-9e2e-848dd10c349e",
