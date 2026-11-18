@@ -33197,11 +33197,12 @@
       },
       "572ec209-1870-46a2-ba99-bc6121777d7c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "a-suffering-savior",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "কবিতা",
+        "alias": "দুঃখভোগী-ত্রাণকর্তা",
+        "history": [
+          "/bn/articles/a-suffering-savior/"
+        ],
+        "fallback": false
       },
       "573a0ca5-65ff-40d1-beeb-6b2cdc0d95fb": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
@@ -97898,11 +97899,12 @@
       },
       "572ec209-1870-46a2-ba99-bc6121777d7c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "a-suffering-savior",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "שירה",
+        "alias": "מושיע-סובל",
+        "history": [
+          "/he/articles/a-suffering-savior/"
+        ],
+        "fallback": false
       },
       "573a0ca5-65ff-40d1-beeb-6b2cdc0d95fb": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
@@ -100192,11 +100194,12 @@
       },
       "a7f59621-7083-44ce-8074-6ece8fdfbdcf": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-strait-gate-to-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "חיים-נוצריים",
+        "alias": "השער-הצר-אל-החיים",
+        "history": [
+          "/he/articles/the-strait-gate-to-life/"
+        ],
+        "fallback": false
       },
       "a819756d-e719-4429-95f6-1d6057113d57": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -102603,11 +102606,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "התעוררות-רוחנית",
+        "alias": "תחייה-בכל-מחיר",
+        "history": [
+          "/he/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -122496,11 +122500,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kebangunan-rohani",
+        "alias": "kebangunan-rohani-dengan-harga-berapa-pun",
+        "history": [
+          "/id/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -135846,11 +135851,12 @@
       },
       "175280ea-7e5f-4be2-bbce-b500c0fd93cb": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "편집자의-글",
+        "alias": "편집자-글-2",
+        "history": [
+          "/ko/articles/from-the-editor/"
+        ],
+        "fallback": false
       },
       "177fb1e6-bf90-48ef-ad9f-aa8508917fbd": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -169924,11 +169930,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "avivamento",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/pt/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -192068,11 +192075,12 @@
       },
       "fc4c9504-47f0-4d15-9e2e-848dd10c349e": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revival-at-any-cost",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "väckelse",
+        "alias": "väckelse-till-varje-pris",
+        "history": [
+          "/sv/articles/revival-at-any-cost/"
+        ],
+        "fallback": false
       },
       "fc5cd87f-66c5-4084-ac13-f82e4ebd7dc5": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -219049,11 +219057,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "复兴",
+        "alias": "邓肯-坎贝尔",
+        "history": [
+          "/zh-Hans/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
