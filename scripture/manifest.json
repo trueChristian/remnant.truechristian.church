@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "843856807aa595e5a053df3db89324805ebd9c410f6011e96c8c2da1e1619262",
+  "integrity": "10f0e5867e7b626bc9b76040e3b19813f51456bcc8e07dd591f38a3399a37805",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -42937,6 +42937,95 @@
         }
       ],
       "record_hash": "ec7b9babb7d1c12a0daa484ba98f5c2e8f3053b87686636a2f9570cec35078e4"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:nl:549a2a01739edb43c59b849600b9b93d1c9064adf773e2d40daa837fac528860:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "nl",
+      "content_hash": "549a2a01739edb43c59b849600b9b93d1c9064adf773e2d40daa837fac528860",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9980472c1d95211b5d886e7d",
+          "quote": "Spreuken 18:22",
+          "before": "onden en gunst van de HEERE verkregen’ (",
+          "after": ").",
+          "spans": [
+            [
+              3144,
+              3158
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "aa310a35fe938d86e0ba65e9",
+          "quote": "Mattheüs 19",
+          "before": "In ",
+          "after": " onderwees Jezus over de ernst van het h",
+          "spans": [
+            [
+              3173,
+              3184
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "da59c5685e450bf561301bd8",
+          "quote": "Mattheüs 19:3-10",
+          "before": "oorstaat, is het niet goed te trouwen’ (",
+          "after": ").",
+          "spans": [
+            [
+              4315,
+              4331
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "a3262f84ed0971c60451a95f",
+          "quote": "1 Korinthe 7:1-2",
+          "before": "hebben en iedere vrouw haar eigen man’ (",
+          "after": "). De praktijk van een verkering zonder ",
+          "spans": [
+            [
+              11440,
+              11456
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "df8d2f0a8b4de50d16e8910a",
+          "quote": "1 Korinthe 7:1-2",
+          "before": "Als je ",
+          "after": " in aanmerking neemt, wat is aanraken da",
+          "spans": [
+            [
+              12247,
+              12263
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "c242737b8cbe71c6000db47af032834d44f9a4165a2b80a43eb45f9d7c535d76"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:ru:a9bcdb3907baa504c46ba1f07e6d876355601489eb3344814d3b8f3cbd4104b7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -312042,6 +312131,31 @@
       "markers": [],
       "record_hash": "a2ee69de753ee57b07e25a4d0821bf41d391d604acac355beced0f0590a7bd68"
     },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:ar:1c0db78325c521c9d19ef9548df0641f72fbdfd876fa56a087208af41d60a311:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "ar",
+      "content_hash": "1c0db78325c521c9d19ef9548df0641f72fbdfd876fa56a087208af41d60a311",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8dd2466cd6a67b31961ee25a",
+          "quote": "المزمور 24",
+          "before": "نهض شاب معين، وهو شماس في الكنيسة، وقرأ ",
+          "after": ": «من يصعد إلى جبل الرب؟ ومن يقوم في موض",
+          "spans": [
+            [
+              2660,
+              2670
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "a83aff3df679f2eaee40bc07db40e04547c7555b2085ae2f6e74caa52a10db08"
+    },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:en:2ed4959f6f6f8f57af0c570afcab6b79f6fe2a4683fae5d838245aa14a7a6039:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
       "locale": "en",
@@ -312132,6 +312246,31 @@
         }
       ],
       "record_hash": "2209855345fbc462f1bab37736c9f363f593db3b07918dd086d3caa1c4d4bc30"
+    },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:ur:62f067ed4abb2ec55592be42fbfaf69564b452cb910a0b0f85fae60daddf6971:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "ur",
+      "content_hash": "62f067ed4abb2ec55592be42fbfaf69564b452cb910a0b0f85fae60daddf6971",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "2e1b1802e991cb2ef47e8087",
+          "quote": "زبور 24",
+          "before": "رجا گھر کا ایک نوجوان ڈیکن کھڑا ہوا اور ",
+          "after": " پڑھا: ”خداوند کے پہاڑ پر کون چڑھے گا؟ ا",
+          "spans": [
+            [
+              3390,
+              3397
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "cc200e46a49ff585c0c0c6f296f783b5e367fda30b3c11500c13d8b61f0909f8"
     },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:zh-Hans:9dad021e011c4f1c5f9750c888d7ccf6f69ae26671cd74daa53229e53a965e65:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",

@@ -25547,11 +25547,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "النهضة-الروحية",
+        "alias": "دنكان-كامبل",
+        "history": [
+          "/ar/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -155753,11 +155754,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "jeugd",
+        "alias": "een-op-christus-gericht-verkeringstraject",
+        "history": [
+          "/nl/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -209263,11 +209265,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "روحانی-بیداری",
+        "alias": "ڈنکن-کیمبل",
+        "history": [
+          "/ur/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
