@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "10f0e5867e7b626bc9b76040e3b19813f51456bcc8e07dd591f38a3399a37805",
+  "integrity": "e053e1063fdbc5693fb2218d0c643a9319a3d1baaf164ece9386afacc8a37111",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -41274,6 +41274,111 @@
       ],
       "record_hash": "30871f04174acb94c294e2c0521249b8468401586003c3089118a78467f64b67"
     },
+    "10d20eec-3e71-404f-9f8d-8068b010381e:ru:ff7687e2854781656af089c38965627ae469f916cbb4bf654dc10062b899dbaa:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "10d20eec-3e71-404f-9f8d-8068b010381e",
+      "locale": "ru",
+      "content_hash": "ff7687e2854781656af089c38965627ae469f916cbb4bf654dc10062b899dbaa",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "431587fc776c6bfd8717af65",
+          "quote": "Притчи 14:30",
+          "before": "ей 8:6). «Зависть — гниль для костей» — ",
+          "after": ". И ещё: «Жесток гнев, неукротима ярость",
+          "spans": [
+            [
+              2642,
+              2654
+            ]
+          ],
+          "osis": "Prov.14.30",
+          "queries": [
+            "20 14:30"
+          ]
+        },
+        {
+          "id": "0dad981581d9e6d839cdf8d7",
+          "quote": "Притчи 27:4",
+          "before": "рость; но кто устоит против зависти?» — ",
+          "after": ". Зависть чрезвычайно коварна. Она может",
+          "spans": [
+            [
+              2738,
+              2749
+            ]
+          ],
+          "osis": "Prov.27.4",
+          "queries": [
+            "20 27:4"
+          ]
+        },
+        {
+          "id": "9116822cb683837be4058679",
+          "quote": "2 Коринфянам 10:12",
+          "before": "бя сами с собою, поступают неразумно» — ",
+          "after": ". Женщины, которые не ценят то, что уже ",
+          "spans": [
+            [
+              6156,
+              6174
+            ]
+          ],
+          "osis": "2Cor.10.12",
+          "queries": [
+            "47 10:12"
+          ]
+        },
+        {
+          "id": "cd7710c8c6ef7cae2d57470c",
+          "quote": "Ефесянам 2:8–10",
+          "before": "торые Бог предназначил нам исполнять» — ",
+          "after": ".",
+          "spans": [
+            [
+              6760,
+              6775
+            ]
+          ],
+          "osis": "Eph.2.8-Eph.2.10",
+          "queries": [
+            "49 2:8-10"
+          ]
+        },
+        {
+          "id": "31a985d686b7af4b67f61312",
+          "quote": "1 Иоанна 2:9–11",
+          "before": ", потому что тьма ослепила ему глаза» — ",
+          "after": ".",
+          "spans": [
+            [
+              7514,
+              7529
+            ]
+          ],
+          "osis": "1John.2.9-1John.2.11",
+          "queries": [
+            "62 2:9-11"
+          ]
+        },
+        {
+          "id": "f2aa104a1c955a21c502a108",
+          "quote": "Филиппийцам 4:8",
+          "before": "родетель и похвала, о том помышляйте» — ",
+          "after": ".",
+          "spans": [
+            [
+              7971,
+              7986
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "8a3e421e1026eae03950b347e46543f6624a37d755275a108d3df2a69c80b8bc"
+    },
     "10d20eec-3e71-404f-9f8d-8068b010381e:sv:d92da6172155be23da1018c0e29aadab6a73941da290db92a3a8fd4664290040:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "10d20eec-3e71-404f-9f8d-8068b010381e",
       "locale": "sv",
@@ -41950,6 +42055,95 @@
         }
       ],
       "record_hash": "04f6e9c5226616fe71b28a1b12bb7cda14c792519b563d70e05b072c1f60fb27"
+    },
+    "12387934-7e9b-49f7-874a-0e66fa7942d3:ar:bae1fbac95da6656649e0559f1d20b48954e11ae08c35477c855cc410f90a5cb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
+      "locale": "ar",
+      "content_hash": "bae1fbac95da6656649e0559f1d20b48954e11ae08c35477c855cc410f90a5cb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3a1041001c68b96da77bec4c",
+          "quote": "الأمثال 18:22",
+          "before": " يجد زوجة يجد خيرًا وينال رضى من الرب» (",
+          "after": ").",
+          "spans": [
+            [
+              2251,
+              2264
+            ]
+          ],
+          "osis": "Prov.18.22",
+          "queries": [
+            "20 18:22"
+          ]
+        },
+        {
+          "id": "f680ecffd4b4fda92c334557",
+          "quote": "متى 19",
+          "before": "في ",
+          "after": "، علّم يسوع عن جدية الزواج. «وجاء إليه ا",
+          "spans": [
+            [
+              2279,
+              2285
+            ]
+          ],
+          "osis": "Matt.19.1-Matt.19.30",
+          "queries": [
+            "40 19:1-30"
+          ]
+        },
+        {
+          "id": "f2ea71a173564391775215dc",
+          "quote": "متى 19:3-10",
+          "before": "مر الرجل مع المرأة فلا يوافق أن يتزوج» (",
+          "after": ").",
+          "spans": [
+            [
+              2902,
+              2913
+            ]
+          ],
+          "osis": "Matt.19.3-Matt.19.10",
+          "queries": [
+            "40 19:3-10"
+          ]
+        },
+        {
+          "id": "9dc925fa113ad110b86f3fa7",
+          "quote": "كورنثوس الأولى 7:1-2",
+          "before": "كل واحد امرأته، وليكن لكل واحدة رجلها» (",
+          "after": "). تقوم ممارسة التودد بلا تلامس على هذا ",
+          "spans": [
+            [
+              8147,
+              8167
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        },
+        {
+          "id": "1b3490edeff42db17bb24aa1",
+          "quote": "كورنثوس الأولى 7:1-2",
+          "before": "إذا أخذنا في الاعتبار ",
+          "after": "، فما المقصود باللمس؟ إذا شعرت بضغط التل",
+          "spans": [
+            [
+              8670,
+              8690
+            ]
+          ],
+          "osis": "1Cor.7.1-1Cor.7.2",
+          "queries": [
+            "46 7:1-2"
+          ]
+        }
+      ],
+      "record_hash": "09d105dfca8a5315f7df492e2f6d9e773a95c3a82001a0ca9c2797f8549fe657"
     },
     "12387934-7e9b-49f7-874a-0e66fa7942d3:bn:9b305a4a770a7f31eafcf003b140f80c85e9b5e299190d786631359432f61cf3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "12387934-7e9b-49f7-874a-0e66fa7942d3",
@@ -180276,6 +180470,14 @@
       "markers": [],
       "record_hash": "81896986ba246e892f9d8ee5d4ee48fbcf7f2d94ee609e71ad2703fe9e41ea38"
     },
+    "572ec209-1870-46a2-ba99-bc6121777d7c:sw:d50d41ffc8fe90ab8790f032a8efd464f9137d12970ec97d71869ba530c1a467:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
+      "locale": "sw",
+      "content_hash": "d50d41ffc8fe90ab8790f032a8efd464f9137d12970ec97d71869ba530c1a467",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "4e921cfc630095f36bde6a8d4cab0d842d8c14c3293353fef91773cb533fb2e0"
+    },
     "572ec209-1870-46a2-ba99-bc6121777d7c:ur:428a70c7a7e5161265738f81704343f3de3f41bfcbcde308362be15ae0447c4a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "572ec209-1870-46a2-ba99-bc6121777d7c",
       "locale": "ur",
@@ -204427,6 +204629,63 @@
         }
       ],
       "record_hash": "669ec309791abebbdbe24e5df8345e6f9986b6ca60125d1963956f8989a2476f"
+    },
+    "682dc04d-bea3-4325-ac73-926bb3396990:nl:ae0237dd41a4177e73ac8d5fa0760e87cc577368941f8d1af9c2b5dd63a800d1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
+      "locale": "nl",
+      "content_hash": "ae0237dd41a4177e73ac8d5fa0760e87cc577368941f8d1af9c2b5dd63a800d1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "26ab6db54a0be1b15ca193c4",
+          "quote": "Daniël 1",
+          "before": " en zijn vrienden in Babylon aankwamen (",
+          "after": "), kregen ze vlees van de tafel van de k",
+          "spans": [
+            [
+              3345,
+              3353
+            ]
+          ],
+          "osis": "Dan.1.1-Dan.1.21",
+          "queries": [
+            "27 1:1-21"
+          ]
+        },
+        {
+          "id": "41070c75e9a89f36b0b954e6",
+          "quote": "Handelingen 15",
+          "before": "in Jeruzalem boog zich over deze vraag (",
+          "after": ").",
+          "spans": [
+            [
+              4066,
+              4080
+            ]
+          ],
+          "osis": "Acts.15.1-Acts.15.41",
+          "queries": [
+            "44 15:1-41"
+          ]
+        },
+        {
+          "id": "38a5a7d9e3bd3cf85d358e4d",
+          "quote": "1 Korinthe 3:16",
+          "before": "n dat de Geest Gods in ulieden woont?’ (",
+          "after": ").",
+          "spans": [
+            [
+              4573,
+              4588
+            ]
+          ],
+          "osis": "1Cor.3.16",
+          "queries": [
+            "46 3:16"
+          ]
+        }
+      ],
+      "record_hash": "e9411109d11d210148e2ee689de839147d6e92d84bcf541ea3eea886cd4e637b"
     },
     "682dc04d-bea3-4325-ac73-926bb3396990:pt:69a63c06fd7059820739ce78150fb5af3a9bc12b2387edd68ea0a9e00ea82f46:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "682dc04d-bea3-4325-ac73-926bb3396990",
@@ -265883,6 +266142,14 @@
       "markers": [],
       "record_hash": "4d666ac4ff42a4f9fed0423c16a3f17883fe525e2f941d966fa201c1adb44819"
     },
+    "8ef84e9e-0a7f-4a0b-8b7d-4e3a10f611e8:fr:2748fdf824ce0a32f067ce5e15ba70ec9671101591e58e488d74d54c5987325c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8ef84e9e-0a7f-4a0b-8b7d-4e3a10f611e8",
+      "locale": "fr",
+      "content_hash": "2748fdf824ce0a32f067ce5e15ba70ec9671101591e58e488d74d54c5987325c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "105a5eaaf32b424d804ded5bbc25cb41de7f0a55226e59e1938c805926e05bf3"
+    },
     "8ef84e9e-0a7f-4a0b-8b7d-4e3a10f611e8:he:50d4a3840f82507bf86e949bfbbaa75c0d2860ec42ae56c6c42bbcdf2c137971:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8ef84e9e-0a7f-4a0b-8b7d-4e3a10f611e8",
       "locale": "he",
@@ -269461,21 +269728,21 @@
       ],
       "record_hash": "6f26407182b7fff2bc0026597876a1ef405f94cd8a9e371b55dbe1626a3ae94e"
     },
-    "903e4b58-b246-4ee3-85e7-eecf158a7a75:nb:37fc36e738de221de0c7737ec4b8c6f75938a9d9d7d59b855bbf0a4dd3afb65c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+    "903e4b58-b246-4ee3-85e7-eecf158a7a75:nb:3f42a697146f10dc88c9a3b395062a5e49af4b0c226bf134d8acdd781b5aac88:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
       "locale": "nb",
-      "content_hash": "37fc36e738de221de0c7737ec4b8c6f75938a9d9d7d59b855bbf0a4dd3afb65c",
+      "content_hash": "3f42a697146f10dc88c9a3b395062a5e49af4b0c226bf134d8acdd781b5aac88",
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [
         {
-          "id": "2fe78de19fa9fbe86549cfb7",
+          "id": "d634a0aca6e8563f3af09b3b",
           "quote": "Titus 2:3-5",
-          "before": "ne menn, så Guds ord ikke blir spottet –",
+          "before": " for at Guds ord ikke skal bli spottet –",
           "after": ".",
           "spans": [
             [
-              2587,
-              2598
+              2584,
+              2595
             ]
           ],
           "osis": "Titus.2.3-Titus.2.5",
@@ -269484,14 +269751,14 @@
           ]
         },
         {
-          "id": "4c03f500c17d66d4ecdf1e38",
-          "quote": "1 Timoteus 5:13",
-          "before": " av …å vandre omkring fra hus til hus… –",
-          "after": ", på telefonene våre. I 2 Timoteus forts",
+          "id": "0c463557f92e25bb8bf14e7e",
+          "quote": "1. Timoteus 5:13",
+          "before": "lukt av …å gå omkring fra hus til hus… –",
+          "after": ", på telefonene våre. I 2. Timoteus fort",
           "spans": [
             [
-              2809,
-              2824
+              2784,
+              2800
             ]
           ],
           "osis": "1Tim.5.13",
@@ -269500,14 +269767,14 @@
           ]
         },
         {
-          "id": "ead2fd33f58c09671cb9c7ec",
-          "quote": "2 Timoteus 3:1-2",
-          "before": "r. For menneskene skal elske seg selv… –",
-          "after": ". Hvor mye av min kommunikasjon og mine ",
+          "id": "f8f7f1a5c901f40768115cc6",
+          "quote": "2. Timoteus 3:1-2",
+          "before": "For menneskene skal være egenkjærlige… –",
+          "after": ". Hvor mye av meldingsutvekslingen og ko",
           "spans": [
             [
-              3000,
-              3016
+              2975,
+              2992
             ]
           ],
           "osis": "2Tim.3.1-2Tim.3.2",
@@ -269516,14 +269783,14 @@
           ]
         },
         {
-          "id": "a4d01ce5de2bdcac11220998",
+          "id": "38c7945f86fc874ffb42c2ed",
           "quote": "Salme 127:3",
-          "before": "v fra Herren: livsfrukten er hans lønn –",
-          "after": ". Våre barn er Hans arv og Hans lønn! I ",
+          "before": "ERREN, og livsfrukt er en lønn fra ham –",
+          "after": ". Barna våre er Hans arv og Hans lønn! I",
           "spans": [
             [
-              3526,
-              3537
+              3541,
+              3552
             ]
           ],
           "osis": "Ps.127.3",
@@ -269532,14 +269799,14 @@
           ]
         },
         {
-          "id": "d066d4088c7110fab39ba4ac",
+          "id": "1690ce34f1a0817676175ab2",
           "quote": "Salme 127:3-5",
-          "before": "e, men skal tale med fiendene i porten –",
-          "after": ". Skriftstedene som taler om barn viser ",
+          "before": "skamme, men tale med fiendene i porten –",
+          "after": ". Bibelstedene som taler om barn, viser ",
           "spans": [
             [
-              4661,
-              4674
+              4729,
+              4742
             ]
           ],
           "osis": "Ps.127.3-Ps.127.5",
@@ -269548,14 +269815,14 @@
           ]
         },
         {
-          "id": "bb7fba1c9e4fe3ba30108f30",
+          "id": "d4ac028f1430cfea8e129ec1",
           "quote": "Titus 2",
-          "before": "kser opp og forlater hjemmet. Hva så? I ",
-          "after": " blir gudfryktige eldre kvinner beskreve",
+          "before": "ser opp og flytter hjemmefra. Hva så? I ",
+          "after": " beskrives gudfryktige eldre kvinner som",
           "spans": [
             [
-              7141,
-              7148
+              7193,
+              7200
             ]
           ],
           "osis": "Titus.2.1-Titus.2.15",
@@ -269564,14 +269831,14 @@
           ]
         },
         {
-          "id": "8a2377e11ec16a9dc7900f9d",
+          "id": "bea40f619878add7a2a83f7d",
           "quote": "Titus 2:3",
-          "before": "inner beskrevet som …lærere i det gode –",
-          "after": ". De får denne anvisningen: Slik at de k",
+          "before": "e eldre kvinner som …lærere i det gode –",
+          "after": ". De får denne oppgaven: å lære de unge ",
           "spans": [
             [
-              7218,
-              7227
+              7265,
+              7274
             ]
           ],
           "osis": "Titus.2.3",
@@ -269580,14 +269847,14 @@
           ]
         },
         {
-          "id": "296db239b076b4b277f58745",
+          "id": "e9d597d85e86a9a05bbd4339",
           "quote": "Titus 2:4-5",
-          "before": "ne menn, så Guds ord ikke blir spottet –",
+          "before": " for at Guds ord ikke skal bli spottet –",
           "after": ".",
           "spans": [
             [
-              7465,
-              7476
+              7508,
+              7519
             ]
           ],
           "osis": "Titus.2.4-Titus.2.5",
@@ -269596,14 +269863,14 @@
           ]
         },
         {
-          "id": "b06810705a97be3fd1ab6974",
-          "quote": "1 Timoteus 2:11-13",
-          "before": "For Adam ble først skapt, deretter Eva –",
+          "id": "67dadaaf7477dba726e7b73e",
+          "quote": "1. Timoteus 2:11-13",
+          "before": "For Adam ble skapt først, deretter Eva –",
           "after": ". Slik Paulus instruerer oss, tror vi at",
           "spans": [
             [
-              7702,
-              7720
+              7743,
+              7762
             ]
           ],
           "osis": "1Tim.2.11-1Tim.2.13",
@@ -269612,14 +269879,14 @@
           ]
         },
         {
-          "id": "6e038e34b0a1b6b355f4c1dc",
+          "id": "de75c5fdb8f65f7fe56158c3",
           "quote": "Titus 2:4-5",
-          "before": "ne menn, så Guds ord ikke blir spottet –",
+          "before": " for at Guds ord ikke skal bli spottet –",
           "after": ".",
           "spans": [
             [
-              8288,
-              8299
+              8340,
+              8351
             ]
           ],
           "osis": "Titus.2.4-Titus.2.5",
@@ -269628,14 +269895,14 @@
           ]
         },
         {
-          "id": "08dccfa41ba4745b3fca2769",
+          "id": "7b7050f7c782c99608db3052",
           "quote": "Galaterne 6:9",
-          "before": "id skal vi høste, hvis vi ikke gir opp –",
+          "before": " skal vi høste, dersom vi ikke gir opp –",
           "after": ".",
           "spans": [
             [
-              10657,
-              10670
+              10772,
+              10785
             ]
           ],
           "osis": "Gal.6.9",
@@ -269644,7 +269911,7 @@
           ]
         }
       ],
-      "record_hash": "90553802372d3dc756cf44065abcd9e10aaf83885e9409d437699fadc23682e8"
+      "record_hash": "77eebc89e18aa7a596bf1905b059ce03f43ee9cf843f7d8d4ad727c85d766e8f"
     },
     "903e4b58-b246-4ee3-85e7-eecf158a7a75:nl:88b2b48a3d3bddafdc28b09ec0fc6232391bd8e9b0537495cfeae94a773a5c51:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "903e4b58-b246-4ee3-85e7-eecf158a7a75",
@@ -312181,6 +312448,31 @@
       ],
       "record_hash": "b9871ca4fefac6c088f5da3d149770671c4e7693075770c07946e39a7420905a"
     },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:es:dd8fe5e794da3ce3af3586e98d40e57b78e84e94fd100011b509db2f18c7719b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "es",
+      "content_hash": "dd8fe5e794da3ce3af3586e98d40e57b78e84e94fd100011b509db2f18c7719b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d78bb16039d842c519e511ba",
+          "quote": "Salmo 24",
+          "before": "de la iglesia, se puso de pie y leyó el ",
+          "after": ": «¿Quién subirá al monte del Señor? ¿Y ",
+          "spans": [
+            [
+              3604,
+              3612
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "021832b491e0db1cd2e8b6632c0ca6cc32d1719707c9a8dceba5bcdd5839098b"
+    },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:hi:2565337df1b7ad27e330f822032051e329ee0b20efc3bdd76644c4956f5decda:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
       "locale": "hi",
@@ -312222,6 +312514,74 @@
       ],
       "record_hash": "43e9e833acdb98c1a483479d3b0f67e186b70b1435e4093c2e13564eb27daf34"
     },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:id:c8d33ca06f780b7e1cd3ef996617baa25018f0fa99d40ecf9c3815c8e893fc55:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "id",
+      "content_hash": "c8d33ca06f780b7e1cd3ef996617baa25018f0fa99d40ecf9c3815c8e893fc55",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9d6bdbb6119ce11732e1e7bd",
+          "quote": "Mazmur 24",
+          "before": "n di gereja itu, berdiri dan membacakan ",
+          "after": ": “Siapakah yang boleh naik ke gunung TU",
+          "spans": [
+            [
+              4153,
+              4162
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        },
+        {
+          "id": "05df4f55b7f7a80df13f66f7",
+          "quote": "ay. 3-5a",
+          "before": "kat, melainkan berkat itu] dari TUHAN” (",
+          "after": "). Lalu pemuda itu menutup Alkitabnya. S",
+          "spans": [
+            [
+              4473,
+              4481
+            ]
+          ],
+          "osis": "Job.3.1-Job.5.27",
+          "queries": [
+            "18 3:1-26",
+            "18 4:1-21",
+            "18 5:1-27"
+          ]
+        }
+      ],
+      "record_hash": "9a4484aabad4e5f15514bb35000a2be7674717585cf0e46dae147b09f64f4076"
+    },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:nl:58774a75cd8a8de01856023625d20ee8704587b0a99ea70bdc7cb6b543c334de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "nl",
+      "content_hash": "58774a75cd8a8de01856023625d20ee8704587b0a99ea70bdc7cb6b543c334de",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "610486a90b0dfbe4a6ba62cd",
+          "quote": "Psalm 24",
+          "before": " man op, een diaken van de kerk, en las ",
+          "after": ": „Wie mag de berg van de HEER beklimmen",
+          "spans": [
+            [
+              3534,
+              3542
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "8fe7786e7904354b1bea60795d32785039fc6ad96de243e7f2d932fa820ba8b4"
+    },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:pt:0eeef118df9dc4e83804de1413288990e9ef132820535405219bb04769513d1d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
       "locale": "pt",
@@ -312246,6 +312606,31 @@
         }
       ],
       "record_hash": "2209855345fbc462f1bab37736c9f363f593db3b07918dd086d3caa1c4d4bc30"
+    },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:ru:06854af9ba3d5f0c1d51844bda3831a0554d1912ff4f0fa0428bd2f7273ef72c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "ru",
+      "content_hash": "06854af9ba3d5f0c1d51844bda3831a0554d1912ff4f0fa0428bd2f7273ef72c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "32a7f0337175ce81693f3635",
+          "quote": "Псалом 24",
+          "before": "век, церковный диакон, встал и прочитал ",
+          "after": ": «Кто взойдет на гору Господню? или кто",
+          "spans": [
+            [
+              3328,
+              3337
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "1de127479454eb92bf8b968e0b18b72c4bb035d3722c7a3d8878ab0ff93f7fe3"
     },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:ur:62f067ed4abb2ec55592be42fbfaf69564b452cb910a0b0f85fae60daddf6971:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
@@ -322383,6 +322768,95 @@
         }
       ],
       "record_hash": "01d65d88a4b15a345c92a76300ac128d10a90f315ef665dfc797fe984103278e"
+    },
+    "a9c1e70c-906d-4eda-ad05-2789badb2369:nl:8a9a1620b354669a5cab9f72d8717dbff82f58e236f5f7b2a9427c5fb050e1ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
+      "locale": "nl",
+      "content_hash": "8a9a1620b354669a5cab9f72d8717dbff82f58e236f5f7b2a9427c5fb050e1ce",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "65d55623963aa132131bd513",
+          "quote": "Hebreeën 11:1",
+          "before": "",
+          "after": " bevestigt dat geloof ‘vertrouwen is in ",
+          "spans": [
+            [
+              1219,
+              1232
+            ]
+          ],
+          "osis": "Heb.11.1",
+          "queries": [
+            "58 11:1"
+          ]
+        },
+        {
+          "id": "e4d632142fc8b460b7deb0c0",
+          "quote": "Lukas 1:1-4",
+          "before": "er de dingen waarin u onderricht bent. –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3153,
+              3164
+            ]
+          ],
+          "osis": "Luke.1.1-Luke.1.4",
+          "queries": [
+            "42 1:1-4"
+          ]
+        },
+        {
+          "id": "57a713269a86e8ae9e7a55d9",
+          "quote": "Romeinen 1:18-20",
+          "before": "t mensen geen verontschuldiging hebben –",
+          "after": ". (NIV)",
+          "spans": [
+            [
+              3844,
+              3860
+            ]
+          ],
+          "osis": "Rom.1.18-Rom.1.20",
+          "queries": [
+            "45 1:18-20"
+          ]
+        },
+        {
+          "id": "f29d5a430d1b1ffba2b4c25b",
+          "quote": "Johannes 20:29",
+          "before": "t hebben gezien en toch hebben geloofd –",
+          "after": ". (ESV) Het is verleidelijk om geloof op",
+          "spans": [
+            [
+              5154,
+              5168
+            ]
+          ],
+          "osis": "John.20.29",
+          "queries": [
+            "43 20:29"
+          ]
+        },
+        {
+          "id": "3e715384408ae7ee64746300",
+          "quote": "Matteüs 16:21",
+          "before": "idelijk gezegd dat Hij zou opstaan (zie ",
+          "after": "). Ten derde had Jezus al bewezen dat Hi",
+          "spans": [
+            [
+              5614,
+              5627
+            ]
+          ],
+          "osis": "Matt.16.21",
+          "queries": [
+            "40 16:21"
+          ]
+        }
+      ],
+      "record_hash": "8b83740f1062f84bf893205d7a8736a7e6d6b3c51677829f6549293759efa0f0"
     },
     "a9c1e70c-906d-4eda-ad05-2789badb2369:pt:b0f6c3d06e024fa5efe82083a2feb0f5175844b7bbf5152f8aa9cda89560c228:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a9c1e70c-906d-4eda-ad05-2789badb2369",
@@ -340718,6 +341192,31 @@
       ],
       "record_hash": "b35ea2fd94101ee31cf96b66f46de323747587ce4e1430de72454d5ea08a11ec"
     },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:it:1e2ecf9f1251bd5f2baf7ffb35a1a2b148af120663fd19c2a66c0dd78369d506:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "it",
+      "content_hash": "1e2ecf9f1251bd5f2baf7ffb35a1a2b148af120663fd19c2a66c0dd78369d506",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "2558b2c792948793e5949f86",
+          "quote": "Esodo 10:21-23",
+          "before": "Israele avevano luce nelle loro dimore» ",
+          "after": ".",
+          "spans": [
+            [
+              651,
+              665
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "2ba64205209ba65014e42eb91251307bb6aa220ec764136b5230292cd9a068c0"
+    },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:nb:801bee6b4bc3d570e22ea2658757f82b5ff2ed5313a26b4a103b43f066fff778:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
       "locale": "nb",
@@ -340770,6 +341269,31 @@
         }
       ],
       "record_hash": "42b1e841b65b9c066a66ac07e1d2d0225576132cd03f6a188429286e70e9ce04"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:pt:aa1335081b3df2205835e6b480ae44608a42cfe953f337cd704f613e90fd49a0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "pt",
+      "content_hash": "aa1335081b3df2205835e6b480ae44608a42cfe953f337cd704f613e90fd49a0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3769e65344f5cfc469d55836",
+          "quote": "Êxodo 10:21-23",
+          "before": " Israel tinham luz nas suas habitações” ",
+          "after": ".",
+          "spans": [
+            [
+              625,
+              639
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "52426790162bb901b2018fb2d7c71fc446d0e2c32af757a15f3bfecd93724741"
     },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:ru:bb9fb2df15b065ce52382877d04f7dea203644d3e4ddb4b852def61cd753c22e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
@@ -391267,6 +391791,31 @@
         }
       ],
       "record_hash": "6ba8ce0eb42040e741396db0340af96fe98244959fca5bce3cd45484cb173a6b"
+    },
+    "d38bf79f-957f-413c-ad4d-a6b4fa8c8112:es:eb53ed6658b248056eef774a5ba7748466e34f963e634c05396c9c37b491da56:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "d38bf79f-957f-413c-ad4d-a6b4fa8c8112",
+      "locale": "es",
+      "content_hash": "eb53ed6658b248056eef774a5ba7748466e34f963e634c05396c9c37b491da56",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b8e896a3580bf38e7d68fbbe",
+          "quote": "Isaías 41:10",
+          "before": "stentaré con la diestra de mi justicia —",
+          "after": ".",
+          "spans": [
+            [
+              14277,
+              14289
+            ]
+          ],
+          "osis": "Isa.41.10",
+          "queries": [
+            "23 41:10"
+          ]
+        }
+      ],
+      "record_hash": "ef75cff0d47256d6d4cafa41c690a71f79bfe90e6a7ed4e668d18d1a449822cd"
     },
     "d38bf79f-957f-413c-ad4d-a6b4fa8c8112:he:b0aea185b5868e2f5a8553e195c0df79cbd89e0272a24fd2a8a42243969fc5c2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "d38bf79f-957f-413c-ad4d-a6b4fa8c8112",

@@ -21315,11 +21315,12 @@
       },
       "12387934-7e9b-49f7-874a-0e66fa7942d3": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "a-christ-centered-courtship-process",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الشباب",
+        "alias": "عملية-تودد-متمحورة-حول-المسيح",
+        "history": [
+          "/ar/articles/a-christ-centered-courtship-process/"
+        ],
+        "fallback": false
       },
       "12b8818b-ec0b-4b20-83a2-17fc74f174b0": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -80523,11 +80524,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "avivamiento",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/es/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -81954,11 +81956,12 @@
       },
       "d38bf79f-957f-413c-ad4d-a6b4fa8c8112": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "cancer-what-is-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medicina",
+        "alias": "cáncer-qué-es",
+        "history": [
+          "/es/articles/cancer-what-is-it/"
+        ],
+        "fallback": false
       },
       "d3d9a779-d35d-477a-ada8-6afd7e9619f0": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -89856,11 +89859,12 @@
       },
       "8ef84e9e-0a7f-4a0b-8b7d-4e3a10f611e8": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "the-promise-of-a-song",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "enfants",
+        "alias": "la-promesse-d-un-chant",
+        "history": [
+          "/fr/articles/the-promise-of-a-song/"
+        ],
+        "fallback": false
       },
       "8f36dee3-685c-47b8-b1d4-9981806d4cd5": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -120052,11 +120056,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "kebangunan-rohani",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/id/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -130506,11 +130511,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vita-cristiana",
+        "alias": "la-luce-del-mondo-è-gesù",
+        "history": [
+          "/it/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -158187,11 +158193,12 @@
       },
       "682dc04d-bea3-4325-ac73-926bb3396990": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "the-dangers-of-ultra-processed-foods",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medisch",
+        "alias": "de-gevaren-van-ultrabewerkte-voedingsmiddelen",
+        "history": [
+          "/nl/articles/the-dangers-of-ultra-processed-foods/"
+        ],
+        "fallback": false
       },
       "683a4e23-acbb-434a-8e0e-2b0793e1a0fb": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -159960,11 +159967,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "opwekking",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/nl/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -160089,11 +160097,12 @@
       },
       "a9c1e70c-906d-4eda-ad05-2789badb2369": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "faith-and-reason",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "geestelijke-oefening",
+        "alias": "geloof-en-rede",
+        "history": [
+          "/nl/articles/faith-and-reason/"
+        ],
+        "fallback": false
       },
       "a9eade03-1180-4ae5-b4bf-b45a1961b446": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -170424,11 +170433,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristã",
+        "alias": "a-luz-do-mundo-é-jesus",
+        "history": [
+          "/pt/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -175529,11 +175539,12 @@
       },
       "10d20eec-3e71-404f-9f8d-8068b010381e": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "rejoicing-with-her",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "женщина",
+        "alias": "радоваться-вместе-с-ней",
+        "history": [
+          "/ru/articles/rejoicing-with-her/"
+        ],
+        "fallback": false
       },
       "1140eb64-3891-46b1-9b3f-df09e2c02405": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
@@ -179797,11 +179808,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "духовное-пробуждение",
+        "alias": "данкан-кэмпбелл",
+        "history": [
+          "/ru/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -197111,11 +197123,12 @@
       },
       "572ec209-1870-46a2-ba99-bc6121777d7c": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
-        "category_slug": "articles",
-        "alias": "a-suffering-savior",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ushairi",
+        "alias": "mwokozi-anayeteseka",
+        "history": [
+          "/sw/articles/a-suffering-savior/"
+        ],
+        "fallback": false
       },
       "573a0ca5-65ff-40d1-beeb-6b2cdc0d95fb": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
