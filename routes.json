@@ -15685,11 +15685,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "herlewing",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/af/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -135571,11 +135572,12 @@
       },
       "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
-        "category_slug": "articles",
-        "alias": "the-mystery-of-marriage",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "가족",
+        "alias": "결혼의-비밀",
+        "history": [
+          "/ko/articles/the-mystery-of-marriage/"
+        ],
+        "fallback": false
       },
       "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",
@@ -185227,11 +185229,12 @@
       },
       "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
-        "category_slug": "articles",
-        "alias": "the-mystery-of-marriage",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "familj",
+        "alias": "äktenskapets-hemlighet",
+        "history": [
+          "/sv/articles/the-mystery-of-marriage/"
+        ],
+        "fallback": false
       },
       "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",
@@ -214663,11 +214666,12 @@
       },
       "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
-        "category_slug": "articles",
-        "alias": "the-mystery-of-marriage",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "家庭",
+        "alias": "婚姻的奥秘",
+        "history": [
+          "/zh-Hans/articles/the-mystery-of-marriage/"
+        ],
+        "fallback": false
       },
       "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",

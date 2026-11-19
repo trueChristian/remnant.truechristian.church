@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "e053e1063fdbc5693fb2218d0c643a9319a3d1baaf164ece9386afacc8a37111",
+  "integrity": "5ed5a18c6798aaf6d206d01ffec4870131aac388455e194b8db1fb742e4dfe89",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -17432,6 +17432,419 @@
       ],
       "record_hash": "7f6ad1bdd6c590173caf8440fe1eef90a777d3b60410853aac573466ba1c4e0f"
     },
+    "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:ko:48674bd9667be671db2d4f0d422a89c7d1d2c66ae86ed239b64a6b1fb9c1af15:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
+      "locale": "ko",
+      "content_hash": "48674bd9667be671db2d4f0d422a89c7d1d2c66ae86ed239b64a6b1fb9c1af15",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e105e84ac9713fe5ff9d627b",
+          "quote": "에베소서 5:22-33",
+          "before": " 별난 점을 기꺼이 받아 주는 사람과 결혼하는 모습을 그려 보았습니다. ",
+          "after": "에서 바로 그런 결혼을 발견합니다. 여기서 사도 바울은 남편과 아내의 관",
+          "spans": [
+            [
+              183,
+              195
+            ]
+          ],
+          "osis": "Eph.5.22-Eph.5.33",
+          "queries": [
+            "49 5:22-33"
+          ]
+        },
+        {
+          "id": "53e83fb3c76479b3b87b7383",
+          "quote": "엡 5:32",
+          "before": ". 이 비밀이 크도다 그러나 내가 그리스도와 교회에 대하여 말하노라. –",
+          "after": ". 이 놀라운 평행 관계를 보면 결혼은 그리스도께서 자신을 위해 신부를 ",
+          "spans": [
+            [
+              567,
+              573
+            ]
+          ],
+          "osis": "Eph.5.32",
+          "queries": [
+            "49 5:32"
+          ]
+        },
+        {
+          "id": "d29a7147d8fe661fe6c9a8ca",
+          "quote": "엡 5:25",
+          "before": "그리스도께서 교회를 사랑하시고 교회를 위하여 자신을 주심 같이 하라. –",
+          "after": ". 예수님께서 지상에 잠시 머무시는 동안의 생애를 살펴보면, 우리는 다른",
+          "spans": [
+            [
+              834,
+              840
+            ]
+          ],
+          "osis": "Eph.5.25",
+          "queries": [
+            "49 5:25"
+          ]
+        },
+        {
+          "id": "92b029907a7969d56c7c9855",
+          "quote": "고린도후서 5:14",
+          "before": "",
+          "after": "에서 바울은 이렇게 썼습니다. 그리스도의 사랑이 우리를 강권하시는도다….",
+          "spans": [
+            [
+              1018,
+              1028
+            ]
+          ],
+          "osis": "2Cor.5.14",
+          "queries": [
+            "47 5:14"
+          ]
+        },
+        {
+          "id": "29d765756e2208d80c52d65c",
+          "quote": "빌립보서 2",
+          "before": "",
+          "after": "장은 때때로 그리스도의 “위대한 케노시스”라고 불립니다. 7절에 나오는 ",
+          "spans": [
+            [
+              1314,
+              1320
+            ]
+          ],
+          "osis": "Phil.2.1-Phil.2.30",
+          "queries": [
+            "50 2:1-30"
+          ]
+        },
+        {
+          "id": "924392856e4a7b93e4b8830a",
+          "quote": "마 26:39",
+          "before": "가게 하옵소서 그러나 나의 원대로 마옵시고 아버지의 원대로 하옵소서. –",
+          "after": ". 그분은 자신의 삶과 희생적인 죽음을 통해, 관계의 친밀함은 그 관계 ",
+          "spans": [
+            [
+              1738,
+              1745
+            ]
+          ],
+          "osis": "Matt.26.39",
+          "queries": [
+            "40 26:39"
+          ]
+        },
+        {
+          "id": "4122316ecd91aeef20f9b866",
+          "quote": "딤후 3:1-2",
+          "before": " 썼습니다. …말세에 고통하는 때가 이르러 사람들이 자기를 사랑하며… –",
+          "after": "",
+          "spans": [
+            [
+              1915,
+              1923
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.2",
+          "queries": [
+            "55 3:1-2"
+          ]
+        },
+        {
+          "id": "5c0b0934b6a6dc875f97e01c",
+          "quote": "요 13:1",
+          "before": "줄 아시고 세상에 있는 자기 사람들을 사랑하시되 끝까지 사랑하시니라. –",
+          "after": ". 그리스도께서는 배척당하는 상황에서도 신실한 사랑을 보여 주셨습니다. ",
+          "spans": [
+            [
+              2360,
+              2366
+            ]
+          ],
+          "osis": "John.13.1",
+          "queries": [
+            "43 13:1"
+          ]
+        },
+        {
+          "id": "627a4a6068993c9b5ed2f141",
+          "quote": "요 1:11",
+          "before": "니다. 자기 땅에 오셨으나 자기 백성이 그를 영접하지 아니하였느니라. –",
+          "after": "",
+          "spans": [
+            [
+              2465,
+              2471
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "001a8414e241e903cd8a7002",
+          "quote": "마 26:56",
+          "before": "의 글을 이루려 함이니라 이에 제자들이 다 예수를 버리고 도망하니라. –",
+          "after": ". 우리를 사랑하는 사람들을 사랑하는 것은 별개의 문제입니다. 예수님은 ",
+          "spans": [
+            [
+              2564,
+              2571
+            ]
+          ],
+          "osis": "Matt.26.56",
+          "queries": [
+            "40 26:56"
+          ]
+        },
+        {
+          "id": "f5b1a017bee906d0b391f881",
+          "quote": "계 13:8",
+          "before": "로 지속되었습니다. 그분은 …창세로부터 죽임을 당한 어린 양이시니라. –",
+          "after": ". 그분은 그 무엇도 자신의 영원한 목적을 가로막지 못하게 하셨습니다.",
+          "spans": [
+            [
+              2778,
+              2784
+            ]
+          ],
+          "osis": "Rev.13.8",
+          "queries": [
+            "66 13:8"
+          ]
+        },
+        {
+          "id": "26831803b60c5849331f4061",
+          "quote": "말 2:14",
+          "before": "언약임을 분명히 말합니다. …그는 네 짝이요 너와 언약한 아내이니라. –",
+          "after": ". 성경적인 언약의 사랑은 그 사랑이 보답받든 그렇지 않든 지속되는 사랑",
+          "spans": [
+            [
+              3023,
+              3029
+            ]
+          ],
+          "osis": "Mal.2.14",
+          "queries": [
+            "39 2:14"
+          ]
+        },
+        {
+          "id": "273e213562ff316718a4a833",
+          "quote": "겔 33:11",
+          "before": "이키라 너희 악한 길에서 떠나라 어찌 죽고자 하느냐 이스라엘 족속아. –",
+          "after": ". 이사야는 이렇게 썼습니다. 너희는 여호와를 만날 만한 때에 찾으라 가",
+          "spans": [
+            [
+              3250,
+              3257
+            ]
+          ],
+          "osis": "Ezek.33.11",
+          "queries": [
+            "26 33:11"
+          ]
+        },
+        {
+          "id": "184f2b5469991ae869c46df6",
+          "quote": "사 55:6-7",
+          "before": "휼히 여기시리라 우리 하나님께로 나아오라 그가 너그럽게 용서하시리라. –",
+          "after": "",
+          "spans": [
+            [
+              3409,
+              3417
+            ]
+          ],
+          "osis": "Isa.55.6-Isa.55.7",
+          "queries": [
+            "23 55:6-7"
+          ]
+        },
+        {
+          "id": "857bdab93cbbf9471dbecdd9",
+          "quote": "창 3:15",
+          "before": "네 머리를 상하게 할 것이요 너는 그의 발꿈치를 상하게 할 것이니라. –",
+          "after": ". 이 약속은 약 사천 년 뒤 그리스도 안에서 성취되었습니다.",
+          "spans": [
+            [
+              3698,
+              3704
+            ]
+          ],
+          "osis": "Gen.3.15",
+          "queries": [
+            "1 3:15"
+          ]
+        },
+        {
+          "id": "de2668362db9f0b7b0a02991",
+          "quote": "벧전 4:1. 2",
+          "before": "위하여 육체에 고난을 받으셨으니 너희도 같은 마음으로 갑옷을 삼으라… –",
+          "after": "장에서 베드로는 이렇게 씁니다. 부당하게 고난을 받아도 하나님을 생각함으",
+          "spans": [
+            [
+              4550,
+              4557
+            ],
+            [
+              4562,
+              4564
+            ]
+          ],
+          "osis": "1Pet.4.1-1Pet.4.2",
+          "queries": [
+            "60 4:1-2"
+          ]
+        },
+        {
+          "id": "32f2a1e1fe3dce89eadd469f",
+          "quote": "벧전 2:19",
+          "before": "을 받아도 하나님을 생각함으로 슬픔을 참으면 이는 칭찬받을 일이니라. –",
+          "after": ". 몇 절 뒤에는 이렇게 말합니다. 이를 위하여 너희가 부르심을 입었으니",
+          "spans": [
+            [
+              4633,
+              4640
+            ]
+          ],
+          "osis": "1Pet.2.19",
+          "queries": [
+            "60 2:19"
+          ]
+        },
+        {
+          "id": "6eae75581efbfc094db1e81c",
+          "quote": "벧전 2:21",
+          "before": "난을 받으사 너희에게 본을 끼쳐 그 자취를 따라오게 하려 하셨느니라. –",
+          "after": ".",
+          "spans": [
+            [
+              4745,
+              4752
+            ]
+          ],
+          "osis": "1Pet.2.21",
+          "queries": [
+            "60 2:21"
+          ]
+        },
+        {
+          "id": "8587fa070cda632e56700553",
+          "quote": "벧전 3:1-2",
+          "before": "하려 함이니 그들이 너희의 경외심 어린 정결한 행실을 보기 때문이라. –",
+          "after": ". 선을 행하다가 겪는 이러한 고난은 모든 시대의 그리스도인들에게 큰 영",
+          "spans": [
+            [
+              4938,
+              4946
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2",
+          "queries": [
+            "60 3:1-2"
+          ]
+        },
+        {
+          "id": "5b14d0765d76b2326082a6be",
+          "quote": "벧전 3:6",
+          "before": "도 선을 행하고 어떤 두려운 일에도 놀라지 아니하면 그의 딸들이니라. –",
+          "after": "",
+          "spans": [
+            [
+              5849,
+              5855
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "eaa9e6ca6203605a7a9fdb13",
+          "quote": "롬 8:3-4",
+          "before": "의 의 [율법의 온전하고 완전한 성취]가 이루어지게 하려 하심이니라. –",
+          "after": "",
+          "spans": [
+            [
+              6640,
+              6647
+            ]
+          ],
+          "osis": "Rom.8.3-Rom.8.4",
+          "queries": [
+            "45 8:3-4"
+          ]
+        },
+        {
+          "id": "9e1d0d29345e9c3c31858f7e",
+          "quote": "마 5:20",
+          "before": "기관과 바리새인보다 더 낫지 못하면 결단코 천국에 들어가지 못하리라. –",
+          "after": ". 그분은 어떻게 살고 어떻게 사랑해야 하는지 보여 주셨습니다. 그분의 ",
+          "spans": [
+            [
+              6793,
+              6799
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "7c5d33af349b007926036e80",
+          "quote": "엡 5:27",
+          "before": " 잡힌 것이나 이런 것들이 없이 거룩하고 흠이 없게 하려 하심이니라. –",
+          "after": ". 예수님은 자신을 위해 신부를 얻으시려고 이 땅에 오셨습니다. 그 신부",
+          "spans": [
+            [
+              7140,
+              7146
+            ]
+          ],
+          "osis": "Eph.5.27",
+          "queries": [
+            "49 5:27"
+          ]
+        },
+        {
+          "id": "87c4dedabea2a2933103e779",
+          "quote": "요 1:11",
+          "before": "니다. 자기 땅에 오셨으나 자기 백성이 그를 영접하지 아니하였느니라. –",
+          "after": ". 그분은 인내하며 끈질기게 사랑하심으로 신부를 영광스럽고 찬란한 신부로",
+          "spans": [
+            [
+              7298,
+              7304
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "944eb15f08bcaad121a216b2",
+          "quote": "엡 5:32",
+          "before": ". 이 비밀이 크도다 그러나 내가 그리스도와 교회에 대하여 말하노라. –",
+          "after": ". 성경에서 비밀이란 이해할 수 없는 것이 아니라, 믿음으로 진리를 받아",
+          "spans": [
+            [
+              7893,
+              7899
+            ]
+          ],
+          "osis": "Eph.5.32",
+          "queries": [
+            "49 5:32"
+          ]
+        }
+      ],
+      "record_hash": "0c1f7288f053e9f2aa956d3a62c74c36c4bdb5f5818c6949460d7ad9bff39a58"
+    },
     "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:nl:bf815404cb9e2548fdab4279e4c3ac0896756722363d1d8f48583455cba8e94e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
       "locale": "nl",
@@ -18275,6 +18688,335 @@
       ],
       "record_hash": "36e1d5ebebfe52203d0624a038db38054a396e7e9b49b3d0dee48ef0d96a8d26"
     },
+    "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:sv:5ddb63eeca9ad8e3938175ed6d1f6ad51072f0e888b4a993851097cf393544e5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
+      "locale": "sv",
+      "content_hash": "5ddb63eeca9ad8e3938175ed6d1f6ad51072f0e888b4a993851097cf393544e5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "49be24fe89624b688bf9ade4",
+          "quote": "Efesierbrevet 5:22-33 f",
+          "before": "glatt accepterar alla våra egenheter. I ",
+          "after": "inner vi just ett sådant äktenskap. Här ",
+          "spans": [
+            [
+              275,
+              298
+            ]
+          ],
+          "osis": "Eph.5.22-Eph.5.33",
+          "queries": [
+            "49 5:22-33"
+          ]
+        },
+        {
+          "id": "25fe464ff912a839de56025c",
+          "quote": "2 Kor 5:14",
+          "before": "I ",
+          "after": " skrev Paulus: Ty Kristi kärlek tvingar ",
+          "spans": [
+            [
+              1733,
+              1743
+            ]
+          ],
+          "osis": "2Cor.5.14",
+          "queries": [
+            "47 5:14"
+          ]
+        },
+        {
+          "id": "fa2116e72cf77512ea933dfc",
+          "quote": "Matt 26:39",
+          "before": "n inte som jag vill, utan som du vill. –",
+          "after": ". Genom sitt liv och sin offerdöd visade",
+          "spans": [
+            [
+              2928,
+              2938
+            ]
+          ],
+          "osis": "Matt.26.39",
+          "queries": [
+            "40 26:39"
+          ]
+        },
+        {
+          "id": "9a3e8758178cfdedd0066ed2",
+          "quote": "2 Tim 3:1-2",
+          "before": "Ty människorna skall älska sig själva… –",
+          "after": "",
+          "spans": [
+            [
+              3259,
+              3270
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.2",
+          "queries": [
+            "55 3:1-2"
+          ]
+        },
+        {
+          "id": "47f3b3871a7ed8490820cd22",
+          "quote": "Joh 13:1",
+          "before": " och han älskade dem ända till slutet. –",
+          "after": ". Kristus visade trofast kärlek, även nä",
+          "spans": [
+            [
+              4079,
+              4087
+            ]
+          ],
+          "osis": "John.13.1",
+          "queries": [
+            "43 13:1"
+          ]
+        },
+        {
+          "id": "77c58ec6d559cc2e3bec505c",
+          "quote": "Joh 1:11",
+          "before": "et, och hans egna tog inte emot honom. –",
+          "after": "",
+          "spans": [
+            [
+              4235,
+              4243
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "e42a0cac12a3db13ea577ec4",
+          "quote": "Matt 26:56",
+          "before": "gav alla lärjungarna honom och flydde. –",
+          "after": ". Det är en sak att älska dem som älskar",
+          "spans": [
+            [
+              4397,
+              4407
+            ]
+          ],
+          "osis": "Matt.26.56",
+          "queries": [
+            "40 26:56"
+          ]
+        },
+        {
+          "id": "85baf308c770ed1fe2bce4ba",
+          "quote": "Upp 13:8",
+          "before": "r slaktat från världens grundläggning. –",
+          "after": ". Han lät ingenting hindra honom från ha",
+          "spans": [
+            [
+              4780,
+              4788
+            ]
+          ],
+          "osis": "Rev.13.8",
+          "queries": [
+            "66 13:8"
+          ]
+        },
+        {
+          "id": "10fa32e1cf51eff2ef78ffd8",
+          "quote": "Mal 2:14",
+          "before": "lagerska och din hustru genom förbund. –",
+          "after": ". Biblisk förbundskärlek är en kärlek so",
+          "spans": [
+            [
+              5242,
+              5250
+            ]
+          ],
+          "osis": "Mal.2.14",
+          "queries": [
+            "39 2:14"
+          ]
+        },
+        {
+          "id": "096c8093a8b6167d3c90e2d5",
+          "quote": "Hes 33:11",
+          "before": "gar! Varför skulle ni dö, Israels hus? –",
+          "after": ". Jesaja skrev: Sök HERREN medan han låt",
+          "spans": [
+            [
+              5663,
+              5672
+            ]
+          ],
+          "osis": "Ezek.33.11",
+          "queries": [
+            "26 33:11"
+          ]
+        },
+        {
+          "id": "1cca79ab375f822e4bb50331",
+          "quote": "Jes 55:6-7",
+          "before": "ud, ty han skall ge riklig förlåtelse. –",
+          "after": "",
+          "spans": [
+            [
+              5952,
+              5962
+            ]
+          ],
+          "osis": "Isa.55.6-Isa.55.7",
+          "queries": [
+            "23 55:6-7"
+          ]
+        },
+        {
+          "id": "24b51934002b3e972daf3176",
+          "quote": "1 Mos 3:15",
+          "before": "tt huvud, och du skall skada hans häl. –",
+          "after": ". Detta löfte uppfylldes i Kristus omkri",
+          "spans": [
+            [
+              6478,
+              6488
+            ]
+          ],
+          "osis": "Gen.3.15",
+          "queries": [
+            "1 3:15"
+          ]
+        },
+        {
+          "id": "ba49d16801ff6ec727b7ea6c",
+          "quote": "1 Pet 4:1",
+          "before": "ckså ni beväpna er med samma sinnelag… –",
+          "after": ". I kapitel två skriver Petrus: Det är n",
+          "spans": [
+            [
+              8091,
+              8100
+            ]
+          ],
+          "osis": "1Pet.4.1",
+          "queries": [
+            "60 4:1"
+          ]
+        },
+        {
+          "id": "ae679d43ff7f660c704a7af9",
+          "quote": "1 Pet 2:19",
+          "before": "Gud uthärdar sorg och lider orättvist. –",
+          "after": ". Några verser senare säger han: Det är ",
+          "spans": [
+            [
+              8235,
+              8245
+            ]
+          ],
+          "osis": "1Pet.2.19",
+          "queries": [
+            "60 2:19"
+          ]
+        },
+        {
+          "id": "bc971fd3160bda24e2dda4bb",
+          "quote": "1 Pet 2:21",
+          "before": "ör att ni skulle följa i hans fotspår. –",
+          "after": ".",
+          "spans": [
+            [
+              8443,
+              8453
+            ]
+          ],
+          "osis": "1Pet.2.21",
+          "queries": [
+            "60 2:21"
+          ]
+        },
+        {
+          "id": "f3235300f0745a709aeaacb5",
+          "quote": "1 Pet 3:1-2",
+          "before": "ser hur rent och gudfruktigt ni lever. –",
+          "after": ". Att lida för att göra det rätta har be",
+          "spans": [
+            [
+              8801,
+              8812
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2",
+          "queries": [
+            "60 3:1-2"
+          ]
+        },
+        {
+          "id": "6980e0148d98c37480aee794",
+          "quote": "1 Pet 3:6",
+          "before": "t och inte låter er skrämmas av något. –",
+          "after": "",
+          "spans": [
+            [
+              10556,
+              10565
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "474387ac4742fb669d80ea89",
+          "quote": "Rom 8:3-4",
+          "before": "e lever efter köttet utan efter Anden. –",
+          "after": "",
+          "spans": [
+            [
+              12031,
+              12040
+            ]
+          ],
+          "osis": "Rom.8.3-Rom.8.4",
+          "queries": [
+            "45 8:3-4"
+          ]
+        },
+        {
+          "id": "d6b56d191467a8cfcaaa109e",
+          "quote": "Matt 5:20",
+          "before": "as, kommer ni aldrig in i himmelriket. –",
+          "after": ". Han visade oss hur vi ska leva och äls",
+          "spans": [
+            [
+              12312,
+              12321
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "f86de6d3445361b60708cb88",
+          "quote": "Joh 1:11",
+          "before": "et, och hans egna tog inte emot honom. –",
+          "after": ". Genom sin tålmodiga, uthålliga kärlek ",
+          "spans": [
+            [
+              13220,
+              13228
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        }
+      ],
+      "record_hash": "8f100c4bafe917bb01317790684330324eb9d1fddb340f967d5135b6ab8fce9e"
+    },
     "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:sw:ecf66d8c1f9d56d9737f7f6c730241a3c97be8620bccc69f58f5694b952635ff:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
       "locale": "sw",
@@ -18619,6 +19361,367 @@
         }
       ],
       "record_hash": "12852553568e42d415f595972b072282ef822709e7d8b9d49358480ad3f697a1"
+    },
+    "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:zh-Hans:b1e427987660a3a61db5f0387c1988743e3253d2e01054e0903404509e821af7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
+      "locale": "zh-Hans",
+      "content_hash": "b1e427987660a3a61db5f0387c1988743e3253d2e01054e0903404509e821af7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c2aa3ef8e22b009164a6f67c",
+          "quote": "弗5:32",
+          "before": "保罗这样总结这段经文：这是极大的奥秘，但我是指着基督和教会说的。——",
+          "after": "。这鲜明的平行关系使我们相信，婚姻的设立，旨在充分反映基督为自己赢得新妇时所展现",
+          "spans": [
+            [
+              380,
+              385
+            ]
+          ],
+          "osis": "Eph.5.32",
+          "queries": [
+            "49 5:32"
+          ]
+        },
+        {
+          "id": "7ac5d64a39620895c0b19854",
+          "quote": "弗5:25",
+          "before": "保罗写道：你们作丈夫的，要爱你们的妻子，正如基督也爱教会，为教会舍己。——",
+          "after": "。我们观察耶稣短暂居住在世上的一生，看到的只有祂为他人益处而作的自我牺牲。我们找",
+          "spans": [
+            [
+              538,
+              543
+            ]
+          ],
+          "osis": "Eph.5.25",
+          "queries": [
+            "49 5:25"
+          ]
+        },
+        {
+          "id": "c2f747dd847a57b051abfa30",
+          "quote": "太26:39",
+          "before": "我父啊，倘若可行，求你叫这杯离开我；然而，不要照我的意思，只要照你的意思。”——",
+          "after": "。祂的一生和牺牲的死向我们表明，只有在一段关系中舍弃自己，才能在关系中寻得亲密。",
+          "spans": [
+            [
+              1050,
+              1056
+            ]
+          ],
+          "osis": "Matt.26.39",
+          "queries": [
+            "40 26:39"
+          ]
+        },
+        {
+          "id": "16cc842328e99d4cd1c3e8b7",
+          "quote": "提后3:1-2",
+          "before": "溺。保罗写信给提摩太说：……末世必有危险的日子来到。因为那时人要专顾自己……——",
+          "after": "。",
+          "spans": [
+            [
+              1165,
+              1172
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.2",
+          "queries": [
+            "55 3:1-2"
+          ]
+        },
+        {
+          "id": "86db5b910d049d7fe4c0a28c",
+          "quote": "约13:1",
+          "before": "以前，耶稣知道自己离世归父的时候到了；祂既然爱世间属自己的人，就爱他们到底。——",
+          "after": "。即使面对拒绝，基督仍显明忠贞的爱。约翰写道：祂到自己的地方来，自己的人倒不接待",
+          "spans": [
+            [
+              1467,
+              1472
+            ]
+          ],
+          "osis": "John.13.1",
+          "queries": [
+            "43 13:1"
+          ]
+        },
+        {
+          "id": "00a4c008eb9af4026f6b7aeb",
+          "quote": "约1:11",
+          "before": "对拒绝，基督仍显明忠贞的爱。约翰写道：祂到自己的地方来，自己的人倒不接待祂。——",
+          "after": "。",
+          "spans": [
+            [
+              1525,
+              1530
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "1d566658a723bac3b4c8402e",
+          "quote": "太26:56",
+          "before": "太写道：但这一切的事成就了，为要应验先知书上的话。当下，门徒都离开祂逃走了。——",
+          "after": "。爱那些也爱我们的人是一回事。耶稣说，连税吏也会这样做。耶稣爱那些恨祂的人、出卖",
+          "spans": [
+            [
+              1592,
+              1598
+            ]
+          ],
+          "osis": "Matt.26.56",
+          "queries": [
+            "40 26:56"
+          ]
+        },
+        {
+          "id": "7bad92063c9b31fc9d7e1f42",
+          "quote": "启13:8",
+          "before": "把祂钉十字架的人祷告。祂的爱由盟约的委身支撑。祂是……从创世以来被杀的羔羊。——",
+          "after": "。没有什么能使祂偏离永恒的旨意。",
+          "spans": [
+            [
+              1702,
+              1707
+            ]
+          ],
+          "osis": "Rev.13.8",
+          "queries": [
+            "66 13:8"
+          ]
+        },
+        {
+          "id": "ff73aa415f4ac6ed104371e5",
+          "quote": "玛2:14",
+          "before": "姻。玛拉基清楚指出，婚姻是一种盟约——……她是你的伴侣，又是与你立约的妻子。——",
+          "after": "。圣经所说的盟约之爱，是无论是否得到回应都持守到底的爱。",
+          "spans": [
+            [
+              1864,
+              1869
+            ]
+          ],
+          "osis": "Mal.2.14",
+          "queries": [
+            "39 2:14"
+          ]
+        },
+        {
+          "id": "f76e64e0521cf8f4d5224056",
+          "quote": "结33:11",
+          "before": "色列”归向祂——……回头吧，回头离开你们的恶道；以色列家啊，你们何必死亡呢？——",
+          "after": "。以赛亚写道：当趁耶和华可寻找的时候寻找祂，相近的时候求告祂。恶人当离弃自己的道",
+          "spans": [
+            [
+              2002,
+              2008
+            ]
+          ],
+          "osis": "Ezek.33.11",
+          "queries": [
+            "26 33:11"
+          ]
+        },
+        {
+          "id": "4c7525027481f7452d7b34a1",
+          "quote": "赛55:6-7",
+          "before": "自己的意念。归向耶和华，耶和华就必怜恤他；当归向我们的神，因为神必广行赦免。——",
+          "after": "。",
+          "spans": [
+            [
+              2106,
+              2113
+            ]
+          ],
+          "osis": "Isa.55.6-Isa.55.7",
+          "queries": [
+            "23 55:6-7"
+          ]
+        },
+        {
+          "id": "e882a39e6bb6de55d49f105f",
+          "quote": "创3:15",
+          "before": "为仇；你的后裔和女人的后裔也彼此为仇。女人的后裔要伤你的头；你要伤他的脚跟。——",
+          "after": "。约四千年后，这应许在基督里应验了。",
+          "spans": [
+            [
+              2272,
+              2277
+            ]
+          ],
+          "osis": "Gen.3.15",
+          "queries": [
+            "1 3:15"
+          ]
+        },
+        {
+          "id": "74fd3e9fbd3bdabe68a83139",
+          "quote": "彼前4:1",
+          "before": "自身以外的事业受苦。基督既在肉身为我们受苦，你们也当将同样的心志作为兵器……——",
+          "after": "。第二章中，彼得写道：倘若人为叫良心对得住神，就忍受冤屈的苦楚，这是可喜爱的。—",
+          "spans": [
+            [
+              2794,
+              2799
+            ]
+          ],
+          "osis": "1Pet.4.1",
+          "queries": [
+            "60 4:1"
+          ]
+        },
+        {
+          "id": "3692fd2939c54810ba47c541",
+          "quote": "彼前2:19",
+          "before": "第二章中，彼得写道：倘若人为叫良心对得住神，就忍受冤屈的苦楚，这是可喜爱的。——",
+          "after": "。几节之后，他说：你们蒙召原是为此；因基督也为我们受过苦，给你们留下榜样，叫你们",
+          "spans": [
+            [
+              2849,
+              2855
+            ]
+          ],
+          "osis": "1Pet.2.19",
+          "queries": [
+            "60 2:19"
+          ]
+        },
+        {
+          "id": "e4f074e377fa2f21178d4162",
+          "quote": "彼前2:21",
+          "before": "们蒙召原是为此；因基督也为我们受过苦，给你们留下榜样，叫你们跟随祂的脚踪行。——",
+          "after": "。",
+          "spans": [
+            [
+              2914,
+              2920
+            ]
+          ],
+          "osis": "1Pet.2.21",
+          "queries": [
+            "60 2:21"
+          ]
+        },
+        {
+          "id": "8572fbdf79c53b64672b828c",
+          "quote": "彼前3:1-2",
+          "before": "听道，也可以因妻子的品行被感化过来；这正是因看见你们有贞洁的品行和敬畏的心。——",
+          "after": "。历代基督徒都视为行善而受苦是一种崇高的荣誉。直到近年，因行善而受苦才被视为“虐",
+          "spans": [
+            [
+              3051,
+              3058
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2",
+          "queries": [
+            "60 3:1-2"
+          ]
+        },
+        {
+          "id": "0b704be0c340c7a7ed452839",
+          "quote": "彼前3:6",
+          "before": "…顺服亚伯拉罕，称他为主。你们若行善，不因任何恐吓而害怕，便是撒拉的女儿了。——",
+          "after": "。",
+          "spans": [
+            [
+              3627,
+              3632
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "95210f7dcbff675ed73c7690",
+          "quote": "罗8:3-4",
+          "before": "使律法的义[完全彻底地成全律法]成就在我们这不随从肉体、只随从圣灵的人身上。——",
+          "after": "。",
+          "spans": [
+            [
+              4097,
+              4103
+            ]
+          ],
+          "osis": "Rom.8.3-Rom.8.4",
+          "queries": [
+            "45 8:3-4"
+          ]
+        },
+        {
+          "id": "467dfd3cc04add2622eb3c91",
+          "quote": "太5:20",
+          "before": "了公义的标准。我告诉你们，你们的义若不胜于文士和法利赛人的义，断不能进天国。——",
+          "after": "。祂向我们显明如何生活、如何去爱。祂牺牲的死满足了律法的刑罚要求。借着祂的复活、",
+          "spans": [
+            [
+              4192,
+              4197
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "4d17a85e36ebb2653f065c8e",
+          "quote": "弗5:27",
+          "before": "洁，好献给自己，作荣耀的教会，毫无玷污、皱纹等类的缺陷，乃是圣洁没有瑕疵的。——",
+          "after": "。耶稣来到世上，为自己赢得一位新妇。她并不是一位美丽、光彩照人、热切等候祂到来的",
+          "spans": [
+            [
+              4390,
+              4395
+            ]
+          ],
+          "osis": "Eph.5.27",
+          "queries": [
+            "49 5:27"
+          ]
+        },
+        {
+          "id": "70f482bfb30b5e3a1be60423",
+          "quote": "约1:11",
+          "before": "妇。她被罪玷污，活在悖逆祂的状态中——祂到自己的地方来，自己的人倒不接待祂。——",
+          "after": "。祂以耐心而持久的爱，将新妇转变为一位荣耀、光彩照人的新妇；她敬畏祂，并欢喜地敬",
+          "spans": [
+            [
+              4485,
+              4490
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "6fa762b84005fb7bb008b2c1",
+          "quote": "弗5:32",
+          "before": "保罗这样结束他关于婚姻的论述：这是极大的奥秘，但我是指着基督和教会说的。——",
+          "after": "。在圣经的用语中，奥秘并非无法理解的事，而是只有凭信心领受并持守真理的人才能明白",
+          "spans": [
+            [
+              4844,
+              4849
+            ]
+          ],
+          "osis": "Eph.5.32",
+          "queries": [
+            "49 5:32"
+          ]
+        }
+      ],
+      "record_hash": "9b4ca524953da7c8ec3899d9ec0754a9d29e95e4646bb181677e389d3420c655"
     },
     "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b:en:2df6a327f524bd84e108947888367804f47b2382eb3e5df747b79b82c99c086a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b",
@@ -312397,6 +313500,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "a2ee69de753ee57b07e25a4d0821bf41d391d604acac355beced0f0590a7bd68"
+    },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:af:ccd402985004d372afd753a4553529b1c582f27bc97dadcdb6b35cce0db71544:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "af",
+      "content_hash": "ccd402985004d372afd753a4553529b1c582f27bc97dadcdb6b35cce0db71544",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "339fb5b6f7c61ec23cfb7181c4f5c712f5b1d45c726a4c63e0bf6511b1206c3b"
     },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:ar:1c0db78325c521c9d19ef9548df0641f72fbdfd876fa56a087208af41d60a311:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
