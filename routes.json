@@ -145606,11 +145606,12 @@
       },
       "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
-        "category_slug": "articles",
-        "alias": "the-mystery-of-marriage",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "familie",
+        "alias": "ekteskapets-mysterium",
+        "history": [
+          "/nb/articles/the-mystery-of-marriage/"
+        ],
+        "fallback": false
       },
       "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",
@@ -157088,11 +157089,12 @@
       },
       "3feab4dd-c830-4ead-ad57-24d853847088": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
+        "category_slug": "gezinsgeschiedenissen",
         "alias": "hans-landis",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/nl/articles/hans-landis/"
+        ],
+        "fallback": false
       },
       "3ffcb3c6-d608-4d9a-8efb-bf25a3652040": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -168994,11 +168996,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "educação-dos-filhos",
+        "alias": "uma-visão-motivadora-para-os-nossos-lares",
+        "history": [
+          "/pt/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -198257,11 +198260,12 @@
       },
       "7cdda5c4-11c0-4b7f-bcd4-b37677267f87": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
-        "category_slug": "articles",
-        "alias": "a-quiet-and-peaceable-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "umisheni",
+        "alias": "maisha-ya-utulivu-na-amani",
+        "history": [
+          "/sw/articles/a-quiet-and-peaceable-life/"
+        ],
+        "fallback": false
       },
       "7d047e24-76c4-4fb9-9172-3c9d5fafde78": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",

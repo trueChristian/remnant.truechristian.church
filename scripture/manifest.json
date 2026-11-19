@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "5ed5a18c6798aaf6d206d01ffec4870131aac388455e194b8db1fb742e4dfe89",
+  "integrity": "1f5dd50108663c187310389b6a21c3b63dc35aa3cd4fe379e644fb0ec55c72c0",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -17844,6 +17844,335 @@
         }
       ],
       "record_hash": "0c1f7288f053e9f2aa956d3a62c74c36c4bdb5f5818c6949460d7ad9bff39a58"
+    },
+    "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:nb:896a578e992ec7221eb7f71dde719801fcd45a4fdec549e62e56f8f034a91b0a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
+      "locale": "nb",
+      "content_hash": "896a578e992ec7221eb7f71dde719801fcd45a4fdec549e62e56f8f034a91b0a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1b5645d67713d9d78e1c5b27",
+          "quote": "Efeserne 5:22-33 f",
+          "before": "e imøtekommer alle våre særegenheter. I ",
+          "after": "inner vi nettopp et slikt ekteskap. Her ",
+          "spans": [
+            [
+              282,
+              300
+            ]
+          ],
+          "osis": "Eph.5.22-Eph.5.33",
+          "queries": [
+            "49 5:22-33"
+          ]
+        },
+        {
+          "id": "eb90aa556c7928f74cc6f38b",
+          "quote": "2 Kor 5:14",
+          "before": "I ",
+          "after": " skrev Paulus: For Kristi kjærlighet tvi",
+          "spans": [
+            [
+              1739,
+              1749
+            ]
+          ],
+          "osis": "2Cor.5.14",
+          "queries": [
+            "47 5:14"
+          ]
+        },
+        {
+          "id": "0ade97105d160be63c3526d5",
+          "quote": "Matt 26:39",
+          "before": "en ikke som jeg vil, bare som du vil.» –",
+          "after": ". Gjennom sitt liv og sin selvoppofrende",
+          "spans": [
+            [
+              2945,
+              2955
+            ]
+          ],
+          "osis": "Matt.26.39",
+          "queries": [
+            "40 26:39"
+          ]
+        },
+        {
+          "id": "c76563a0a7965fffb80d7620",
+          "quote": "2 Tim 3:1-2",
+          "before": "For menneskene skal være egenkjærlige… –",
+          "after": "",
+          "spans": [
+            [
+              3284,
+              3295
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.2",
+          "queries": [
+            "55 3:1-2"
+          ]
+        },
+        {
+          "id": "464173644222c22c3576d276",
+          "quote": "Joh 13:1",
+          "before": " og han elsket dem helt til det siste. –",
+          "after": ". Kristus viste trofast kjærlighet, også",
+          "spans": [
+            [
+              4108,
+              4116
+            ]
+          ],
+          "osis": "John.13.1",
+          "queries": [
+            "43 13:1"
+          ]
+        },
+        {
+          "id": "ddc8c502cb934fc6d4a65c05",
+          "quote": "Joh 1:11",
+          "before": " eget, og hans egne tok ikke imot ham. –",
+          "after": "",
+          "spans": [
+            [
+              4261,
+              4269
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "cdd9081ec4911d566402a5ca",
+          "quote": "Matt 26:56",
+          "before": " forlot alle disiplene ham og flyktet. –",
+          "after": ". Det er én ting å elske dem som elsker ",
+          "spans": [
+            [
+              4413,
+              4423
+            ]
+          ],
+          "osis": "Matt.26.56",
+          "queries": [
+            "40 26:56"
+          ]
+        },
+        {
+          "id": "3a4f7b2d152e036c3be7e29b",
+          "quote": "Åp 13:8",
+          "before": "laktet fra verdens grunnvoll ble lagt. –",
+          "after": ". Han lot ingenting hindre ham i hans ev",
+          "spans": [
+            [
+              4798,
+              4805
+            ]
+          ],
+          "osis": "Rev.13.8",
+          "queries": [
+            "66 13:8"
+          ]
+        },
+        {
+          "id": "bc9c3d159456fc35af78f09a",
+          "quote": "Mal 2:14",
+          "before": " hun din ledsager og din pakts hustru. –",
+          "after": ". Bibelsk paktskjærlighet er en kjærligh",
+          "spans": [
+            [
+              5220,
+              5228
+            ]
+          ],
+          "osis": "Mal.2.14",
+          "queries": [
+            "39 2:14"
+          ]
+        },
+        {
+          "id": "dc31f8ae2f41e076e7f702e7",
+          "quote": "Esek 33:11",
+          "before": "ier! Hvorfor vil dere dø, Israels hus? –",
+          "after": ". Jesaja skrev: Søk Herren mens han er å",
+          "spans": [
+            [
+              5649,
+              5659
+            ]
+          ],
+          "osis": "Ezek.33.11",
+          "queries": [
+            "26 33:11"
+          ]
+        },
+        {
+          "id": "ec7a174c3e80614cbdc8ca2f",
+          "quote": "Jes 55:6-7",
+          "before": ", og til vår Gud, for han tilgir rikt. –",
+          "after": "",
+          "spans": [
+            [
+              5915,
+              5925
+            ]
+          ],
+          "osis": "Isa.55.6-Isa.55.7",
+          "queries": [
+            "23 55:6-7"
+          ]
+        },
+        {
+          "id": "5e3ca7b2bb50d8ed7e3d7f15",
+          "quote": "1 Mos 3:15",
+          "before": " ditt hode, og du skal ramme dens hæl. –",
+          "after": ". Dette løftet ble oppfylt i Kristus omt",
+          "spans": [
+            [
+              6416,
+              6426
+            ]
+          ],
+          "osis": "Gen.3.15",
+          "queries": [
+            "1 3:15"
+          ]
+        },
+        {
+          "id": "77877ebff3fa9ad7b93b425f",
+          "quote": "1 Pet 4:1",
+          "before": " dere væpne dere med den samme tanken… –",
+          "after": ". I kapittel to skriver Peter: For dette",
+          "spans": [
+            [
+              8021,
+              8030
+            ]
+          ],
+          "osis": "1Pet.4.1",
+          "queries": [
+            "60 4:1"
+          ]
+        },
+        {
+          "id": "9141ef215845a18d579c2262",
+          "quote": "1 Pet 2:19",
+          "before": " Gud tåler sorger når han lider urett. –",
+          "after": ". Noen vers senere sier han: For til det",
+          "spans": [
+            [
+              8166,
+              8176
+            ]
+          ],
+          "osis": "1Pet.2.19",
+          "queries": [
+            "60 2:19"
+          ]
+        },
+        {
+          "id": "5514706a79f2a5d5dd86f431",
+          "quote": "1 Pet 2:21",
+          "before": "for at dere skal følge i hans fotspor. –",
+          "after": ".",
+          "spans": [
+            [
+              8342,
+              8352
+            ]
+          ],
+          "osis": "1Pet.2.21",
+          "queries": [
+            "60 2:21"
+          ]
+        },
+        {
+          "id": "842a3626001d2738d6c2b405",
+          "quote": "1 Pet 3:1-2",
+          "before": "når de ser deres rene liv i gudsfrykt. –",
+          "after": ". Blant kristne i alle tidsaldre er det ",
+          "spans": [
+            [
+              8708,
+              8719
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2",
+          "queries": [
+            "60 3:1-2"
+          ]
+        },
+        {
+          "id": "154388f9453f701fd34396eb",
+          "quote": "1 Pet 3:6",
+          "before": " godt og ikke lar dere skremme av noe. –",
+          "after": "",
+          "spans": [
+            [
+              10425,
+              10434
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "3c05473f7a33832b7ecbba9f",
+          "quote": "Rom 8:3-4",
+          "before": "andrer etter kjøttet, men etter Ånden. –",
+          "after": "",
+          "spans": [
+            [
+              11903,
+              11912
+            ]
+          ],
+          "osis": "Rom.8.3-Rom.8.4",
+          "queries": [
+            "45 8:3-4"
+          ]
+        },
+        {
+          "id": "5382e3d4a8741fd63b7cd2c3",
+          "quote": "Matt 5:20",
+          "before": "mer dere slett ikke inn i himmelriket. –",
+          "after": ". Han viste oss hvordan vi skal leve og ",
+          "spans": [
+            [
+              12205,
+              12214
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "b77657f22e407547709c30cf",
+          "quote": "Joh 1:11",
+          "before": " eget, og hans egne tok ikke imot ham. –",
+          "after": ". Med sin tålmodige, vedvarende kjærligh",
+          "spans": [
+            [
+              13082,
+              13090
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        }
+      ],
+      "record_hash": "abbe3285404066574bd1a25650724bf26938a879df53d0bb9142e3b2aa310716"
     },
     "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:nl:bf815404cb9e2548fdab4279e4c3ac0896756722363d1d8f48583455cba8e94e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
@@ -142452,6 +142781,31 @@
       ],
       "record_hash": "2960238577881372ec3e624d32199f7f87ab094e9d99f3a6fbf8ac3962b3de90"
     },
+    "3feab4dd-c830-4ead-ad57-24d853847088:nl:f4d98b978708362d88a9913d17b1b5743d7e4ad5d58af5ff7afb692cb2e015e1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3feab4dd-c830-4ead-ad57-24d853847088",
+      "locale": "nl",
+      "content_hash": "f4d98b978708362d88a9913d17b1b5743d7e4ad5d58af5ff7afb692cb2e015e1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b263d39939e4e540921e104b",
+          "quote": "2 Timoteüs 3:7",
+          "before": "tot de kennis van de waarheid te komen –",
+          "after": ". Weer anderen geloven dat een leven van",
+          "spans": [
+            [
+              513,
+              527
+            ]
+          ],
+          "osis": "2Tim.3.7",
+          "queries": [
+            "55 3:7"
+          ]
+        }
+      ],
+      "record_hash": "9e9c0a5c2061c03ad7455d493db2af6509a61e346e4cf8749ff937b5a2670e23"
+    },
     "3feab4dd-c830-4ead-ad57-24d853847088:pt:29679f328804fb22d411d1ae46c5a1989e762626452fd890ba27e42887740652:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3feab4dd-c830-4ead-ad57-24d853847088",
       "locale": "pt",
@@ -230503,6 +230857,79 @@
       ],
       "record_hash": "436f74905813de5d85ab4baba04d8637b7b46277bbe03b133baa8c41bd657d4e"
     },
+    "7cdda5c4-11c0-4b7f-bcd4-b37677267f87:sw:0d3ce4e02458b963af4f5255e270e5feaf2dd931ba150928abac162755341777:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7cdda5c4-11c0-4b7f-bcd4-b37677267f87",
+      "locale": "sw",
+      "content_hash": "0d3ce4e02458b963af4f5255e270e5feaf2dd931ba150928abac162755341777",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "834a0b5da588a245e162abfa",
+          "quote": "Mdo 4:20",
+          "before": "yasema mambo tuliyoyaona na kuyasikia. –",
+          "after": ". Hatimaye, walinyamazishwa kabisa—kwa k",
+          "spans": [
+            [
+              2636,
+              2644
+            ]
+          ],
+          "osis": "Acts.4.20",
+          "queries": [
+            "44 4:20"
+          ]
+        },
+        {
+          "id": "b5021ae979618c2af4e808a1",
+          "quote": "Rum 8:36",
+          "before": "esabiwa kuwa kama kondoo wa kuchinjwa. –",
+          "after": ". Baada ya muda, nilipata kanisa lenye m",
+          "spans": [
+            [
+              3262,
+              3270
+            ]
+          ],
+          "osis": "Rom.8.36",
+          "queries": [
+            "45 8:36"
+          ]
+        },
+        {
+          "id": "4324dcb8cddb950f0166032a",
+          "quote": "1Tim 2:1-2",
+          "before": " amani katika utauwa wote na uaminifu. –",
+          "after": ". Kwa ajili ya wafalme na wote wenye mam",
+          "spans": [
+            [
+              6254,
+              6264
+            ]
+          ],
+          "osis": "1Tim.2.1-1Tim.2.2",
+          "queries": [
+            "54 2:1-2"
+          ]
+        },
+        {
+          "id": "d4a789512ed1ced3dde300f3",
+          "quote": "1Pet 4:14",
+          "before": "nwa, lakini kwa upande wenu hutukuzwa. –",
+          "after": "",
+          "spans": [
+            [
+              9430,
+              9439
+            ]
+          ],
+          "osis": "1Pet.4.14",
+          "queries": [
+            "60 4:14"
+          ]
+        }
+      ],
+      "record_hash": "b9f964e34192efa0810524c2e277534d62cb602b693c64d25094a6b7fc9316f0"
+    },
     "7cdda5c4-11c0-4b7f-bcd4-b37677267f87:ur:70d9ec0f1f6c7614f46d8253ea6c7e047a4b76908b6c3b2dd741f04851b33533:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7cdda5c4-11c0-4b7f-bcd4-b37677267f87",
       "locale": "ur",
@@ -251405,6 +251832,79 @@
         }
       ],
       "record_hash": "cb6f914fc23068566a4420fe9b9bd72c96defeb011259b172a61180b327b48e3"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:pt:3b4027fef1535061bd12fb5b42fb6bb241f1e2d8c82abaa88c8adb0ff0bd55eb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "pt",
+      "content_hash": "3b4027fef1535061bd12fb5b42fb6bb241f1e2d8c82abaa88c8adb0ff0bd55eb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f11922d21ccad643ab09be28",
+          "quote": "Provérbios 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              195,
+              211
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "3ed255c8a7a1635366208e06",
+          "quote": "Deuteronômio 28",
+          "before": "Deus falou aos filhos de Israel em ",
+          "after": ". Pintou um belo retrato de um povo bati",
+          "spans": [
+            [
+              5998,
+              6013
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "26c41e5af4450d142b670f9c",
+          "quote": "Rev. 3:20",
+          "before": "\n    e ele comigo. ",
+          "after": "",
+          "spans": [
+            [
+              9149,
+              9158
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "d334b2db42715785000c967b",
+          "quote": "Eph. 3:20",
+          "before": "mos, segundo o poder que opera em nós” (",
+          "after": "). Se compreendo esse versículo, ele abr",
+          "spans": [
+            [
+              11604,
+              11613
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "f59e941d78743a0537aaa10ed6677aea6672d4c678a353187f1a04859fa1cde1"
     },
     "841aca82-8f8a-41cf-aa4c-e85889c446f5:en:7899bdfa4dd9c12aee326a6a6802539711cf5191417d88ca940e6e8111342929:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "841aca82-8f8a-41cf-aa4c-e85889c446f5",
