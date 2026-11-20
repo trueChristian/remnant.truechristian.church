@@ -119120,11 +119120,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "pengasuhan-anak",
+        "alias": "penglihatan-yang-menggerakkan-hati-bagi-rumah-tangga-kita",
+        "history": [
+          "/id/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "f41509c73de6907165043244379286c12f289c5a27df6dcad3629f22d535f8fc",
+  "integrity": "3c32051b2ed4475906e7244bf3508cd37960a5144accd465f0d93c93e67a84ad",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -253194,6 +253194,111 @@
         }
       ],
       "record_hash": "7cfb1eea68712facca8c467880a897a45f1cd3a9c8f22c2e362b4d948b31456a"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:id:4fd39d1316b8ccbaaee52c282e142b6e25afd0ea9687bed62ab736cc09739f57:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "id",
+      "content_hash": "4fd39d1316b8ccbaaee52c282e142b6e25afd0ea9687bed62ab736cc09739f57",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fdffa8f830320a358916eae9",
+          "quote": "Amsal 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              227,
+              238
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "93a8f57a4b1054f0a6bb6909",
+          "quote": "1 Sam. 3:1",
+          "before": ". “Tidak ada penglihatan yang terbuka” (",
+          "after": "). Meskipun setelah pernyataan ini kita ",
+          "spans": [
+            [
+              763,
+              773
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "edb7f01d2e5efa4ca7ad3bc4",
+          "quote": "2 Kor. 3:3",
+          "before": " loh-loh daging, yaitu di dalam hati.” (",
+          "after": ") Penglihatan adalah penyingkapan rohani",
+          "spans": [
+            [
+              1717,
+              1727
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "15937f37b9427ca0627d44ca",
+          "quote": "Ulangan 28",
+          "before": "lah berbicara kepada orang Israel dalam ",
+          "after": ". Dia melukiskan gambaran yang indah ten",
+          "spans": [
+            [
+              6808,
+              6818
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "9e6741431a55afba78bbfd08",
+          "quote": "Why. 3:20",
+          "before": "\n    dan dia bersama-Ku. ",
+          "after": "",
+          "spans": [
+            [
+              10574,
+              10583
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "84358ef361392235c54661f1",
+          "quote": "Ef. 3:20",
+          "before": "ngan kuasa yang bekerja di dalam kita” (",
+          "after": "). Jika saya memahami ayat ini, ayat ini",
+          "spans": [
+            [
+              13425,
+              13433
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "5efcd8f6bfa65ac3351ebd1aae36171b3fc6c23e9ddd0b51ad3e035cee00f1c8"
     },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:pt:3b4027fef1535061bd12fb5b42fb6bb241f1e2d8c82abaa88c8adb0ff0bd55eb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
