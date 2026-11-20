@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "e58b9514aea1b3a0534bb32057491239ac3821b5d96fe62eaa096a1fe8deac58",
+  "integrity": "f41509c73de6907165043244379286c12f289c5a27df6dcad3629f22d535f8fc",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -13398,6 +13398,63 @@
       ],
       "record_hash": "128483957e3fd37ba06d8895476fc3343c6cc59e10d2d5aa832242ab6be7c306"
     },
+    "08c717e6-5c69-433c-b04d-ab1957c20eb9:fr:2efba88fab4f66ed0e2f944a2cc36ff754c554212ce951a849d8769c227104f0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
+      "locale": "fr",
+      "content_hash": "2efba88fab4f66ed0e2f944a2cc36ff754c554212ce951a849d8769c227104f0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e8176fd84671e553a4681746",
+          "quote": "Ézéchiel 22:30",
+          "before": "se pas ; mais je n’en ai trouvé aucun. –",
+          "after": "",
+          "spans": [
+            [
+              248,
+              262
+            ]
+          ],
+          "osis": "Ezek.22.30",
+          "queries": [
+            "26 22:30"
+          ]
+        },
+        {
+          "id": "07595ee25e6d3f4d9b3cb36e",
+          "quote": "Apocalypse 4:11",
+          "before": "s existent et qu’elles ont été créées. –",
+          "after": ". Les fils de Scéva, qui s’imaginent rem",
+          "spans": [
+            [
+              7808,
+              7823
+            ]
+          ],
+          "osis": "Rev.4.11",
+          "queries": [
+            "66 4:11"
+          ]
+        },
+        {
+          "id": "ba9e5308b2e25ad319845221",
+          "quote": "Hé 11:24-27",
+          "before": " comme voyant celui qui est invisible. –",
+          "after": "",
+          "spans": [
+            [
+              10962,
+              10973
+            ]
+          ],
+          "osis": "Heb.11.24-Heb.11.27",
+          "queries": [
+            "58 11:24-27"
+          ]
+        }
+      ],
+      "record_hash": "713e8d80cbcc03238438ec670bd0c0831f263e3e195c51071d52b86bda50fde4"
+    },
     "08c717e6-5c69-433c-b04d-ab1957c20eb9:hi:64995dae2c096cf521fc94996f99338c14c853bc56668937eac53de906de8753:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
       "locale": "hi",
@@ -13856,6 +13913,143 @@
         }
       ],
       "record_hash": "f0508ccae41f5c59ea80c034bff8fa0b988c540fdc1b0034ef233d88abbf1e31"
+    },
+    "08c717e6-5c69-433c-b04d-ab1957c20eb9:nl:00515986961e8979f44286d26ec14be210d93c96a3a80176ffe3e53a0cddc097:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
+      "locale": "nl",
+      "content_hash": "00515986961e8979f44286d26ec14be210d93c96a3a80176ffe3e53a0cddc097",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "cc5ab83eef071f2dfc5ba4d5",
+          "quote": "Ezechiël 22:30",
+          "before": "zou vernietigen, maar Ik vond niemand. –",
+          "after": "",
+          "spans": [
+            [
+              233,
+              247
+            ]
+          ],
+          "osis": "Ezek.22.30",
+          "queries": [
+            "26 22:30"
+          ]
+        },
+        {
+          "id": "2c41f3e7ceccc44d3945fbc1",
+          "quote": "Pred 9:14-15",
+          "before": " herinnerde niemand zich die arme man. –",
+          "after": ". Hoewel de Bijbel ons veel uitvoerige b",
+          "spans": [
+            [
+              1453,
+              1465
+            ]
+          ],
+          "osis": "Eccl.9.14-Eccl.9.15",
+          "queries": [
+            "21 9:14-15"
+          ]
+        },
+        {
+          "id": "5dd3f6ecb709006b6f922b2a",
+          "quote": "Dan 6:10",
+          "before": " zijn God, zoals hij vroeger ook deed. –",
+          "after": ". Wat een kleinigheid zou het voor Danië",
+          "spans": [
+            [
+              2863,
+              2871
+            ]
+          ],
+          "osis": "Dan.6.10",
+          "queries": [
+            "27 6:10"
+          ]
+        },
+        {
+          "id": "90349001a90a97590df74cb8",
+          "quote": "Openbaring 4:11",
+          "before": "gen bestaan zij en zijn zij geschapen. –",
+          "after": ". Er is geen gebrek aan zonen van Sceva ",
+          "spans": [
+            [
+              7311,
+              7326
+            ]
+          ],
+          "osis": "Rev.4.11",
+          "queries": [
+            "66 4:11"
+          ]
+        },
+        {
+          "id": "542f9c58012d272fecb07211",
+          "quote": "Openb 3:4",
+          "before": "wit wandelen, want zij zijn het waard. –",
+          "after": "",
+          "spans": [
+            [
+              9565,
+              9574
+            ]
+          ],
+          "osis": "Rev.3.4",
+          "queries": [
+            "66 3:4"
+          ]
+        },
+        {
+          "id": "09decca661543467764529b4",
+          "quote": "Heb 11:24-27",
+          "before": "ield stand als zag hij de Onzichtbare. –",
+          "after": "",
+          "spans": [
+            [
+              10325,
+              10337
+            ]
+          ],
+          "osis": "Heb.11.24-Heb.11.27",
+          "queries": [
+            "58 11:24-27"
+          ]
+        },
+        {
+          "id": "21669da20e24f77b46113bc0",
+          "quote": "1 Tim 3:1-4",
+          "before": "met alle waardigheid onderdanig houdt; –",
+          "after": ". Ons doel bepaalt onze bestemming, maar",
+          "spans": [
+            [
+              12492,
+              12503
+            ]
+          ],
+          "osis": "1Tim.3.1-1Tim.3.4",
+          "queries": [
+            "54 3:1-4"
+          ]
+        },
+        {
+          "id": "c245cf8a94be0823c49494c3",
+          "quote": "2 Kor 2:15-16",
+          "before": "dt. En wie is tot deze dingen bekwaam? –",
+          "after": ". Dat zijn zij wier enige doel en priori",
+          "spans": [
+            [
+              14405,
+              14418
+            ]
+          ],
+          "osis": "2Cor.2.15-2Cor.2.16",
+          "queries": [
+            "47 2:15-16"
+          ]
+        }
+      ],
+      "record_hash": "8eb086d758d06e58b1e05892dd78310353d27d941547ca38d45b468562695f9d"
     },
     "08c717e6-5c69-433c-b04d-ab1957c20eb9:pt:b300facf108227b473afedf472e8cda4f48a3676ee2cca6fa27bb61d62217408:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
@@ -17520,6 +17714,143 @@
         }
       ],
       "record_hash": "7f6ad1bdd6c590173caf8440fe1eef90a777d3b60410853aac573466ba1c4e0f"
+    },
+    "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:it:5aca53f0380a76e8b864cf91ef3e9511e9432553d1de2b272560b78c650421ff:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
+      "locale": "it",
+      "content_hash": "5aca53f0380a76e8b864cf91ef3e9511e9432553d1de2b272560b78c650421ff",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ef98f4c62b138371532cfe94",
+          "quote": "Efesini 5:22-33",
+          "before": "uon grado ogni nostra particolarità. In ",
+          "after": " troviamo proprio un matrimonio del gene",
+          "spans": [
+            [
+              283,
+              298
+            ]
+          ],
+          "osis": "Eph.5.22-Eph.5.33",
+          "queries": [
+            "49 5:22-33"
+          ]
+        },
+        {
+          "id": "4e999805ef34371c986add1f",
+          "quote": "2 Corinzi 5:14",
+          "before": "In ",
+          "after": ", Paolo scrisse: Poiché l’amore di Crist",
+          "spans": [
+            [
+              1856,
+              1870
+            ]
+          ],
+          "osis": "2Cor.5.14",
+          "queries": [
+            "47 5:14"
+          ]
+        },
+        {
+          "id": "76c3d5a4f9cd7e3907837273",
+          "quote": "Mt 26:39",
+          "before": " non come voglio io, ma come tu vuoi». –",
+          "after": ". Con la sua vita e la sua morte sacrifi",
+          "spans": [
+            [
+              3142,
+              3150
+            ]
+          ],
+          "osis": "Matt.26.39",
+          "queries": [
+            "40 26:39"
+          ]
+        },
+        {
+          "id": "2de30282d45b63e1562b6979",
+          "quote": "Gv 13:1",
+          "before": "rano nel mondo, li amò fino alla fine. –",
+          "after": ". Cristo dimostrò un amore fedele, persi",
+          "spans": [
+            [
+              4342,
+              4349
+            ]
+          ],
+          "osis": "John.13.1",
+          "queries": [
+            "43 13:1"
+          ]
+        },
+        {
+          "id": "d4056bf8d2bae15a19360eb7",
+          "quote": "Gv 1:11",
+          "before": "tra i suoi, e i suoi non lo accolsero. –",
+          "after": "",
+          "spans": [
+            [
+              4490,
+              4497
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "2e8473fa709d84aa0b89be1d",
+          "quote": "Mt 26:56",
+          "before": "iscepoli lo abbandonarono e fuggirono. –",
+          "after": ". Una cosa è amare coloro che ci amano a",
+          "spans": [
+            [
+              4666,
+              4674
+            ]
+          ],
+          "osis": "Matt.26.56",
+          "queries": [
+            "40 26:56"
+          ]
+        },
+        {
+          "id": "754f9eb1cf82e70c08e5259c",
+          "quote": "Mt 5:20",
+          "before": "entrerete affatto nel regno dei cieli. –",
+          "after": ". Ci ha mostrato come vivere e come amar",
+          "spans": [
+            [
+              13137,
+              13144
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "0646354bdc13bae021382de4",
+          "quote": "Gv 1:11",
+          "before": "tra i suoi, e i suoi non lo accolsero. –",
+          "after": ". Con il suo amore paziente e perseveran",
+          "spans": [
+            [
+              14027,
+              14034
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        }
+      ],
+      "record_hash": "9b2188afc7f06f59ffce1c760a56c771e1e20565344dcf8e266e2c3988197a5a"
     },
     "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:ko:48674bd9667be671db2d4f0d422a89c7d1d2c66ae86ed239b64a6b1fb9c1af15:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
@@ -252581,6 +252912,79 @@
       ],
       "record_hash": "3aea0d6a3d369d9f93a23c06e0991bcfb3294189c7c28f4d186dd6cd6877c35f"
     },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:de:9353c0b8c092c693e28e0c507d45980a5d7f081ddee2c8e3db79922373a79dd1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "de",
+      "content_hash": "9353c0b8c092c693e28e0c507d45980a5d7f081ddee2c8e3db79922373a79dd1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d0cbccb99cb656de90bd96b9",
+          "quote": "Sprüche 29,18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              215,
+              228
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "5e210bf799c14b6172ed02a8",
+          "quote": "Röm. 4",
+          "before": "Nichtseiende zu rufen, als wäre es da“ (",
+          "after": ",17b). Abraham sah es mit den Augen sein",
+          "spans": [
+            [
+              6253,
+              6259
+            ]
+          ],
+          "osis": "Rom.4.1-Rom.4.25",
+          "queries": [
+            "45 4:1-25"
+          ]
+        },
+        {
+          "id": "edc5417348c92135b3f9ae29",
+          "quote": "5. Mose 28",
+          "before": "Gott sprach in ",
+          "after": " zu den Kindern Israels. Er zeichnete da",
+          "spans": [
+            [
+              6415,
+              6425
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "1c34ffb3339949aa085f8fc9",
+          "quote": "Eph. 3",
+          "before": "en, gemäß der Kraft, die in uns wirkt“ (",
+          "after": ",20). Wenn ich diesen Vers richtig verst",
+          "spans": [
+            [
+              12502,
+              12508
+            ]
+          ],
+          "osis": "Eph.3.1-Eph.3.21",
+          "queries": [
+            "49 3:1-21"
+          ]
+        }
+      ],
+      "record_hash": "3668ba4b3e7a6fd7cb43e770c1dfb4ca7923a6b2b4f02adc7e4db24531e77f2a"
+    },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:en:efa6ba29507eed679e48e7e8ef486bb496559a51f68b41272a7ec34d60fd1f19:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
       "locale": "en",
@@ -252685,6 +253089,111 @@
         }
       ],
       "record_hash": "cb6f914fc23068566a4420fe9b9bd72c96defeb011259b172a61180b327b48e3"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:hi:c5a7e8b8498c1c70ae0c6820840f915ce1d83a0f625f7f969b53a44a2d4d2a4b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "hi",
+      "content_hash": "c5a7e8b8498c1c70ae0c6820840f915ce1d83a0f625f7f969b53a44a2d4d2a4b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "21bf6affcbba3cc678b3a0ac",
+          "quote": "नीतिवचन 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              218,
+              231
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "eb89ba47a3b24e7591f83f83",
+          "quote": "1 शमूएल 3:1",
+          "before": " उपयोग करते हैं। “कोई खुला दर्शन न था” (",
+          "after": ")। इस कथन के बाद पढ़ने के लिए दुखद घटनाओ",
+          "spans": [
+            [
+              707,
+              718
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "69d334678f26021652b6aa5c",
+          "quote": "2 कुरिन्थियों 3:3",
+          "before": " आत्मा से…हृदय की मांसमय पट्टियों पर।” (",
+          "after": ") दर्शन परमेश्वर के मन और इच्छा का आत्मि",
+          "spans": [
+            [
+              1523,
+              1540
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "ae05d1c95a948651117470be",
+          "quote": "व्यवस्थाविवरण 28",
+          "before": "",
+          "after": " में परमेश्वर ने इस्राएल की संतानों से ब",
+          "spans": [
+            [
+              5890,
+              5906
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "c83816f0b954ce0bcf2be34c",
+          "quote": "प्रकाशितवाक्य 3:20",
+          "before": "\n    और वह मेरे साथ। ",
+          "after": "",
+          "spans": [
+            [
+              9068,
+              9086
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "cefe914705597ae9bb19c0c1",
+          "quote": "इफिसियों 3:20",
+          "before": "थ्य के अनुसार जो हम में कार्य करता है” (",
+          "after": ")। यदि मैं इस पद को समझता हूँ, तो इसमें ",
+          "spans": [
+            [
+              11526,
+              11539
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "7cfb1eea68712facca8c467880a897a45f1cd3a9c8f22c2e362b4d948b31456a"
     },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:pt:3b4027fef1535061bd12fb5b42fb6bb241f1e2d8c82abaa88c8adb0ff0bd55eb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
@@ -315120,6 +315629,31 @@
         }
       ],
       "record_hash": "1de127479454eb92bf8b968e0b18b72c4bb035d3722c7a3d8878ab0ff93f7fe3"
+    },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:sv:cf2950313efc8a0d4eb8040a2ff27d6000cafc31fa9188b8de87cce0c938aab7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "sv",
+      "content_hash": "cf2950313efc8a0d4eb8040a2ff27d6000cafc31fa9188b8de87cce0c938aab7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5e70994a79eba1f9df52290f",
+          "quote": "Psalm 24",
+          "before": " ung man, en diakon i kyrkan, och läste ",
+          "after": ": ”Vem får gå upp på Herrens berg? Vem f",
+          "spans": [
+            [
+              3430,
+              3438
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "92a18ad3a569c0a331bbb208d10054d0eec56cacc4c5d11b63059e7752dc1597"
     },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:ur:62f067ed4abb2ec55592be42fbfaf69564b452cb910a0b0f85fae60daddf6971:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",

@@ -44410,11 +44410,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kindererziehung",
+        "alias": "eine-motivierende-vision-für-unsere-familien",
+        "history": [
+          "/de/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -86106,11 +86107,12 @@
       },
       "08c717e6-5c69-433c-b04d-ab1957c20eb9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-man-in-the-gap",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vie-chrétienne",
+        "alias": "un-homme-dans-la-brèche",
+        "history": [
+          "/fr/articles/a-man-in-the-gap/"
+        ],
+        "fallback": false
       },
       "094d0bb6-2b7d-4a86-9de4-116f1b95fcbe": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -109113,11 +109115,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "बच्चों-का-पालन-पोषण",
+        "alias": "हमारे-घरों-के-लिए-प्रेरित-करने-वाला-दर्शन",
+        "history": [
+          "/hi/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -125650,11 +125653,12 @@
       },
       "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
-        "category_slug": "articles",
-        "alias": "the-mystery-of-marriage",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "famiglia",
+        "alias": "il-mistero-del-matrimonio",
+        "history": [
+          "/it/articles/the-mystery-of-marriage/"
+        ],
+        "fallback": false
       },
       "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",
@@ -155556,11 +155560,12 @@
       },
       "08c717e6-5c69-433c-b04d-ab1957c20eb9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-man-in-the-gap",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christelijk-leven",
+        "alias": "een-man-in-de-bres",
+        "history": [
+          "/nl/articles/a-man-in-the-gap/"
+        ],
+        "fallback": false
       },
       "094d0bb6-2b7d-4a86-9de4-116f1b95fcbe": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -189636,11 +189641,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "väckelse",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/sv/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
