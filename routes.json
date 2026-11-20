@@ -21093,11 +21093,12 @@
       },
       "08c717e6-5c69-433c-b04d-ab1957c20eb9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-man-in-the-gap",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "رجل-في-الثغرة",
+        "history": [
+          "/ar/articles/a-man-in-the-gap/"
+        ],
+        "fallback": false
       },
       "094d0bb6-2b7d-4a86-9de4-116f1b95fcbe": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -34494,11 +34495,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "সন্তান-লালনপালন",
+        "alias": "আমাদের-পরিবারের-জন্য-এক-অনুপ্রেরণাদায়ক-দর্শন",
+        "history": [
+          "/bn/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -53613,11 +53615,12 @@
       },
       "6f528c85-5ee6-4ccd-804f-63652b5c3a1d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
-        "category_slug": "articles",
-        "alias": "we-are-world-christians",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ιεραποστολή",
+        "alias": "είμαστε-παγκόσμιοι-χριστιανοί",
+        "history": [
+          "/el/articles/we-are-world-christians/"
+        ],
+        "fallback": false
       },
       "6f5da2d6-b248-440b-ba8c-a5f259000f85": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -79422,11 +79425,12 @@
       },
       "7cdda5c4-11c0-4b7f-bcd4-b37677267f87": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
-        "category_slug": "articles",
-        "alias": "a-quiet-and-peaceable-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "misiones",
+        "alias": "una-vida-tranquila-y-apacible",
+        "history": [
+          "/es/articles/a-quiet-and-peaceable-life/"
+        ],
+        "fallback": false
       },
       "7d047e24-76c4-4fb9-9172-3c9d5fafde78": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -89418,11 +89422,12 @@
       },
       "7cdda5c4-11c0-4b7f-bcd4-b37677267f87": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
-        "category_slug": "articles",
-        "alias": "a-quiet-and-peaceable-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "missions",
+        "alias": "une-vie-paisible-et-tranquille-2",
+        "history": [
+          "/fr/articles/a-quiet-and-peaceable-life/"
+        ],
+        "fallback": false
       },
       "7d047e24-76c4-4fb9-9172-3c9d5fafde78": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -100655,11 +100660,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "חיים-נוצריים",
+        "alias": "ישוע-הוא-אור-העולם",
+        "history": [
+          "/he/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -149957,11 +149963,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "vekkelse",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/nb/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -204909,11 +204916,12 @@
       },
       "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
-        "category_slug": "articles",
-        "alias": "the-mystery-of-marriage",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "خاندان",
+        "alias": "شادی-کا-بھید",
+        "history": [
+          "/ur/articles/the-mystery-of-marriage/"
+        ],
+        "fallback": false
       },
       "0b4125db-ad7a-4a74-a4fa-6bf1c00fb95b": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",

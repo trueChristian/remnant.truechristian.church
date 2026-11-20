@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "1f5dd50108663c187310389b6a21c3b63dc35aa3cd4fe379e644fb0ec55c72c0",
+  "integrity": "e58b9514aea1b3a0534bb32057491239ac3821b5d96fe62eaa096a1fe8deac58",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -12672,6 +12672,95 @@
       ],
       "record_hash": "9a0a8e323e3cded2e0baf0565c7c8e477bf424a0529d607423a809d1891e2864"
     },
+    "08c717e6-5c69-433c-b04d-ab1957c20eb9:ar:868a9c26410be89709f128adad59dd395ee813bc873589e5b93b2447fab654da:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
+      "locale": "ar",
+      "content_hash": "868a9c26410be89709f128adad59dd395ee813bc873589e5b93b2447fab654da",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "98ee189fefb05dc81cf8afec",
+          "quote": "حزقيال 22:30",
+          "before": "مي من أجل الأرض لئلا أخربها، فلم أجد. – ",
+          "after": "»",
+          "spans": [
+            [
+              166,
+              178
+            ]
+          ],
+          "osis": "Ezek.22.30",
+          "queries": [
+            "26 22:30"
+          ]
+        },
+        {
+          "id": "3ee09f3e67056e59d40e2b25",
+          "quote": "الجامعة 9:14-15",
+          "before": "كمته، ولم يذكر أحد ذلك الرجل المسكين. – ",
+          "after": "». ومع أن الكتاب المقدس يورد أوصافًا مفص",
+          "spans": [
+            [
+              1007,
+              1022
+            ]
+          ],
+          "osis": "Eccl.9.14-Eccl.9.15",
+          "queries": [
+            "21 9:14-15"
+          ]
+        },
+        {
+          "id": "f5ba3cc57647d65edea72a32",
+          "quote": "دانيال 6:10",
+          "before": " وصلّى وحمد إلهه كما كان يفعل من قبل. – ",
+          "after": "». يا له من أمر يسير كان أن يغلق دانيال ",
+          "spans": [
+            [
+              2087,
+              2098
+            ]
+          ],
+          "osis": "Dan.6.10",
+          "queries": [
+            "27 6:10"
+          ]
+        },
+        {
+          "id": "091527fd5d2f5e2e33f96744",
+          "quote": "تيموثاوس الأولى 3:1-4",
+          "before": "ه حسنًا، له أولاد في الخضوع بكل وقار؛ – ",
+          "after": "». ترسم غايتنا وجهتنا، لكن أولوياتنا تمه",
+          "spans": [
+            [
+              9009,
+              9030
+            ]
+          ],
+          "osis": "1Tim.3.1-1Tim.3.4",
+          "queries": [
+            "54 3:1-4"
+          ]
+        },
+        {
+          "id": "ab9fa7f056ab95d1e5d3752f",
+          "quote": "كورنثوس الثانية 2:15-16",
+          "before": "ة حياة لحياة. ومن هو كفؤ لهذه الأمور؟ – ",
+          "after": "». إنهم الذين يحكم الله غايتهم الوحيدة و",
+          "spans": [
+            [
+              10366,
+              10389
+            ]
+          ],
+          "osis": "2Cor.2.15-2Cor.2.16",
+          "queries": [
+            "47 2:15-16"
+          ]
+        }
+      ],
+      "record_hash": "12ae94ae229473c22e2a71423f6d660d51281ad6e14291cb713bf7d66b226dc7"
+    },
     "08c717e6-5c69-433c-b04d-ab1957c20eb9:bn:ee3bbc0010ba6a9fb100c43dc2f573b61c35f66b017d1676f12548b9f3ccae11:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
       "locale": "bn",
@@ -19690,6 +19779,383 @@
         }
       ],
       "record_hash": "12852553568e42d415f595972b072282ef822709e7d8b9d49358480ad3f697a1"
+    },
+    "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:ur:10cd65e57d838462814ad07070f3dc0c8cda8b944cf4290f3b454feaf6d9ff74:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
+      "locale": "ur",
+      "content_hash": "10cd65e57d838462814ad07070f3dc0c8cda8b944cf4290f3b454feaf6d9ff74",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "155c7f48cca978e1ccaa31bd",
+          "quote": "افسیوں 5:22-33",
+          "before": "لی سے ہماری ہر انوکھی عادت کو قبول کرے۔ ",
+          "after": " میں ہمیں بالکل ایسی ہی شادی ملتی ہے۔ یہ",
+          "spans": [
+            [
+              285,
+              299
+            ]
+          ],
+          "osis": "Eph.5.22-Eph.5.33",
+          "queries": [
+            "49 5:22-33"
+          ]
+        },
+        {
+          "id": "b2eb4312b78b3fba7220452f",
+          "quote": "افسیوں 5:32",
+          "before": " میں مسیح اور کلیسیا کی بابت کہتا ہوں۔ –",
+          "after": "۔ یہ نمایاں مماثلت ہمیں یقین دلاتی ہے کہ",
+          "spans": [
+            [
+              930,
+              941
+            ]
+          ],
+          "osis": "Eph.5.32",
+          "queries": [
+            "49 5:32"
+          ]
+        },
+        {
+          "id": "c105714440ae35d97956a73b",
+          "quote": "افسیوں 5:25",
+          "before": "کی اور اپنے آپ کو اُس کے واسطے دے دیا؛ –",
+          "after": "۔ جب ہم زمین پر یسوع کی مختصر زندگی کا م",
+          "spans": [
+            [
+              1386,
+              1397
+            ]
+          ],
+          "osis": "Eph.5.25",
+          "queries": [
+            "49 5:25"
+          ]
+        },
+        {
+          "id": "9b586c0bf330046ae54b87d1",
+          "quote": "۲ کرنتھیوں 5:14",
+          "before": "",
+          "after": " میں پولس نے لکھا، کیونکہ مسیح کی محبت ہ",
+          "spans": [
+            [
+              1667,
+              1682
+            ]
+          ],
+          "osis": "2Cor.5.14",
+          "queries": [
+            "47 5:14"
+          ]
+        },
+        {
+          "id": "70a08496e2cb25ebe3a82218",
+          "quote": "متی 26:39",
+          "before": " میں چاہتا ہوں بلکہ جیسا تُو چاہتا ہے۔ –",
+          "after": "۔ اپنی زندگی اور قربانی کی موت کے ذریعے ",
+          "spans": [
+            [
+              2891,
+              2900
+            ]
+          ],
+          "osis": "Matt.26.39",
+          "queries": [
+            "40 26:39"
+          ]
+        },
+        {
+          "id": "58d84159e13f88be1f9714c1",
+          "quote": "یوحنا 13:1",
+          "before": "رکھی، اور اُنہیں آخر تک محبت کرتا رہا۔ –",
+          "after": "۔ مسیح نے رد کیے جانے کے باوجود وفادار م",
+          "spans": [
+            [
+              4049,
+              4059
+            ]
+          ],
+          "osis": "John.13.1",
+          "queries": [
+            "43 13:1"
+          ]
+        },
+        {
+          "id": "32992424eaac3c9053fa8e88",
+          "quote": "یوحنا 1:11",
+          "before": " اور اُس کے اپنوں نے اُسے قبول نہ کیا۔ –",
+          "after": "",
+          "spans": [
+            [
+              4208,
+              4218
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "a24549aa72249d56d93b9fc9",
+          "quote": "متی 26:56",
+          "before": "ُس وقت سب شاگرد اُسے چھوڑ کر بھاگ گئے۔ –",
+          "after": "۔ اُن لوگوں سے محبت کرنا ایک بات ہے جو ج",
+          "spans": [
+            [
+              4351,
+              4360
+            ]
+          ],
+          "osis": "Matt.26.56",
+          "queries": [
+            "40 26:56"
+          ]
+        },
+        {
+          "id": "eee1898353b8ca350d8f8c13",
+          "quote": "مکاشفہ 13:8",
+          "before": "یاد رکھے جانے سے ذبح کیا ہوا برّہ تھا۔ –",
+          "after": "۔ اُس نے کسی چیز کو اپنے ابدی مقصد کی را",
+          "spans": [
+            [
+              4760,
+              4771
+            ]
+          ],
+          "osis": "Rev.13.8",
+          "queries": [
+            "66 13:8"
+          ]
+        },
+        {
+          "id": "6a26bfd71786ad3a0cd024f7",
+          "quote": "ملاکی 2:14",
+          "before": " وہ تیری رفیق اور تیرے عہد کی بیوی ہے۔ –",
+          "after": "۔ بائبلی عہد کی محبت ایسی محبت ہے جو قائ",
+          "spans": [
+            [
+              5185,
+              5195
+            ]
+          ],
+          "osis": "Mal.2.14",
+          "queries": [
+            "39 2:14"
+          ]
+        },
+        {
+          "id": "7870908035211eab3975d4fb",
+          "quote": "حزقی ایل 33:11",
+          "before": " اے اسرائیل کے گھرانے، تم کیوں مرو گے؟ –",
+          "after": "۔ یسعیاہ نے لکھا: خداوند کو تلاش کرو جب ",
+          "spans": [
+            [
+              5572,
+              5586
+            ]
+          ],
+          "osis": "Ezek.33.11",
+          "queries": [
+            "26 33:11"
+          ]
+        },
+        {
+          "id": "749e414059903ad05f8fa355",
+          "quote": "یسعیاہ 55:6-7",
+          "before": "رف، کیونکہ وہ فراخ دلی سے معاف کرے گا۔ –",
+          "after": "",
+          "spans": [
+            [
+              5857,
+              5870
+            ]
+          ],
+          "osis": "Isa.55.6-Isa.55.7",
+          "queries": [
+            "23 55:6-7"
+          ]
+        },
+        {
+          "id": "347a5575d09f222c4ea0fb1b",
+          "quote": "پیدائش 3:15",
+          "before": "ر کچلے گا اور تُو اُس کی ایڑی کچلے گا۔ –",
+          "after": "۔ یہ وعدہ تقریباً چار ہزار سال بعد مسیح ",
+          "spans": [
+            [
+              6319,
+              6330
+            ]
+          ],
+          "osis": "Gen.3.15",
+          "queries": [
+            "1 3:15"
+          ]
+        },
+        {
+          "id": "e53798f1a03580c92ff80827",
+          "quote": "۱ پطرس 4:1",
+          "before": " تم بھی اسی ذہنیت کو اپنا ہتھیار بناؤ… –",
+          "after": "۔ دوسرے باب میں پطرس لکھتا ہے: کیونکہ اگ",
+          "spans": [
+            [
+              7918,
+              7928
+            ]
+          ],
+          "osis": "1Pet.4.1",
+          "queries": [
+            "60 4:1"
+          ]
+        },
+        {
+          "id": "e24c036bbce1dc6e549bc4d5",
+          "quote": "۱ پطرس 2:19",
+          "before": "تکلیف برداشت کرتا ہے تو یہ پسندیدہ ہے۔ –",
+          "after": "۔ چند آیات بعد وہ کہتا ہے: کیونکہ تم اسی",
+          "spans": [
+            [
+              8071,
+              8082
+            ]
+          ],
+          "osis": "1Pet.2.19",
+          "queries": [
+            "60 2:19"
+          ]
+        },
+        {
+          "id": "1a0eca8af499d1dd948a0d6a",
+          "quote": "۱ پطرس 2:21",
+          "before": "دے گیا ہے تاکہ اُس کے نقشِ قدم پر چلو۔ –",
+          "after": "۔",
+          "spans": [
+            [
+              8257,
+              8268
+            ]
+          ],
+          "osis": "1Pet.2.21",
+          "queries": [
+            "60 2:21"
+          ]
+        },
+        {
+          "id": "7bc16d8a848a5e27e8c755d6",
+          "quote": "۱ پطرس 3:1-2",
+          "before": "اتھ گزارے جانے والے چال چلن کو دیکھیں۔ –",
+          "after": "۔ نیکی کرنے کی خاطر دکھ اٹھانے کو ہر دور",
+          "spans": [
+            [
+              8643,
+              8655
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2",
+          "queries": [
+            "60 3:1-2"
+          ]
+        },
+        {
+          "id": "d191eec5da81f0e05dcb0680",
+          "quote": "۱ پطرس 3:6",
+          "before": "سی دہشت سے نہ ڈرو تو اُس کی بیٹیاں ہو۔ –",
+          "after": "",
+          "spans": [
+            [
+              10307,
+              10317
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "9f568c36ca8c8f3336c75b4d",
+          "quote": "رومیوں 8:3-4",
+          "before": "مطابق نہیں بلکہ روح کے مطابق چلتے ہیں۔ –",
+          "after": "",
+          "spans": [
+            [
+              11703,
+              11715
+            ]
+          ],
+          "osis": "Rom.8.3-Rom.8.4",
+          "queries": [
+            "45 8:3-4"
+          ]
+        },
+        {
+          "id": "b16ae456c222fdd4a46a1520",
+          "quote": "متی 5:20",
+          "before": "مان کی بادشاہی میں ہرگز داخل نہ ہو گے۔ –",
+          "after": "۔ اُس نے ہمیں دکھایا کہ کیسے جینا اور کی",
+          "spans": [
+            [
+              12028,
+              12036
+            ]
+          ],
+          "osis": "Matt.5.20",
+          "queries": [
+            "40 5:20"
+          ]
+        },
+        {
+          "id": "4fcb9387bc82d7658b76a11a",
+          "quote": "افسیوں 5:27",
+          "before": "ایسی چیز نہ ہو بلکہ پاک اور بے عیب ہو۔ –",
+          "after": "۔ یسوع اپنے لیے دلہن حاصل کرنے زمین پر آ",
+          "spans": [
+            [
+              12666,
+              12677
+            ]
+          ],
+          "osis": "Eph.5.27",
+          "queries": [
+            "49 5:27"
+          ]
+        },
+        {
+          "id": "262b1e67da6beee0b2eae9c2",
+          "quote": "یوحنا 1:11",
+          "before": " اور اُس کے اپنوں نے اُسے قبول نہ کیا۔ –",
+          "after": "۔ اپنی صابر، مستقل مزاج محبت کے ذریعے اُ",
+          "spans": [
+            [
+              12934,
+              12944
+            ]
+          ],
+          "osis": "John.1.11",
+          "queries": [
+            "43 1:11"
+          ]
+        },
+        {
+          "id": "cf03f92bcb4c3dd3b78ef469",
+          "quote": "افسیوں 5:32",
+          "before": " میں مسیح اور کلیسیا کی بابت کہتا ہوں۔ –",
+          "after": "۔ بائبلی زبان میں بھید ایسی چیز نہیں جسے",
+          "spans": [
+            [
+              14066,
+              14077
+            ]
+          ],
+          "osis": "Eph.5.32",
+          "queries": [
+            "49 5:32"
+          ]
+        }
+      ],
+      "record_hash": "b0ee319aed1a38b301237b81886942860cb35b9ec434b6429cb6f6fc5c17ddee"
     },
     "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11:zh-Hans:b1e427987660a3a61db5f0387c1988743e3253d2e01054e0903404509e821af7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "0b10b42a-d2c7-4e0f-bf4d-62eec6c8ee11",
@@ -208621,6 +209087,14 @@
       "markers": [],
       "record_hash": "5e1a6069eee9dad918fac3f76a16863d77a7c312f9ba751f900d79116398d9b3"
     },
+    "6f528c85-5ee6-4ccd-804f-63652b5c3a1d:el:eed8c50b031269863b88212e19ed0589b1d7b76cc99bd754eb1c6459e642ae44:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6f528c85-5ee6-4ccd-804f-63652b5c3a1d",
+      "locale": "el",
+      "content_hash": "eed8c50b031269863b88212e19ed0589b1d7b76cc99bd754eb1c6459e642ae44",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "849dff4c5109b45b77c04ae17c6f5f8beab5e50ca4ea4b2875fab68cad7ad635"
+    },
     "6f528c85-5ee6-4ccd-804f-63652b5c3a1d:en:ec8a510442f9149f7a5d87f3a6048fe8274933dcaf108c59708866ae246c9cae:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6f528c85-5ee6-4ccd-804f-63652b5c3a1d",
       "locale": "en",
@@ -229438,6 +229912,248 @@
         }
       ],
       "record_hash": "412357a062a5c5c426b97487570283888b08788417ac02bf7bc05dad5a22d8f5"
+    },
+    "7cdda5c4-11c0-4b7f-bcd4-b37677267f87:es:3cad9dd43441e985f5d1335917248ff4924361a5d296360863dd4375521c4820:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7cdda5c4-11c0-4b7f-bcd4-b37677267f87",
+      "locale": "es",
+      "content_hash": "3cad9dd43441e985f5d1335917248ff4924361a5d296360863dd4375521c4820",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c3a09556f9eac8eff09ce1fc",
+          "quote": "Mat 4:23",
+          "before": "medad y toda dolencia entre el pueblo. –",
+          "after": ". Además, en Mateo, Jesús dice que se co",
+          "spans": [
+            [
+              1723,
+              1731
+            ]
+          ],
+          "osis": "Matt.4.23",
+          "queries": [
+            "40 4:23"
+          ]
+        },
+        {
+          "id": "7d1df20627914b23f7dd2358",
+          "quote": "Mat 9:37-38",
+          "before": "e la mies que envíe obreros a su mies. –",
+          "after": "",
+          "spans": [
+            [
+              2008,
+              2019
+            ]
+          ],
+          "osis": "Matt.9.37-Matt.9.38",
+          "queries": [
+            "40 9:37-38"
+          ]
+        },
+        {
+          "id": "bcb22ab252de1aeb7ed35936",
+          "quote": "Hch 4:20",
+          "before": "ar de decir lo que hemos visto y oído. –",
+          "after": ". Con el tiempo, los silenciaron para si",
+          "spans": [
+            [
+              2605,
+              2613
+            ]
+          ],
+          "osis": "Acts.4.20",
+          "queries": [
+            "44 4:20"
+          ]
+        },
+        {
+          "id": "21f01c38cdbfd894d3069cd3",
+          "quote": "Mat 10:22",
+          "before": "rsevere hasta el fin, este será salvo. –",
+          "after": ". Y en Romanos: Como está escrito: Por c",
+          "spans": [
+            [
+              3090,
+              3099
+            ]
+          ],
+          "osis": "Matt.10.22",
+          "queries": [
+            "40 10:22"
+          ]
+        },
+        {
+          "id": "8d269677da197fc2324a1272",
+          "quote": "Rom 8:36",
+          "before": "contados como ovejas para el matadero. –",
+          "after": ". Al cabo de un tiempo, encontré una igl",
+          "spans": [
+            [
+              3235,
+              3243
+            ]
+          ],
+          "osis": "Rom.8.36",
+          "queries": [
+            "45 8:36"
+          ]
+        },
+        {
+          "id": "8ac21558810e03126ebdf41e",
+          "quote": "Mat 13:22",
+          "before": " ahogan la palabra, y queda sin fruto. –",
+          "after": ". ¿Será que algunos de nosotros estamos ",
+          "spans": [
+            [
+              3744,
+              3753
+            ]
+          ],
+          "osis": "Matt.13.22",
+          "queries": [
+            "40 13:22"
+          ]
+        },
+        {
+          "id": "731006084eadbb841804efe0",
+          "quote": "Jn 15:18-19",
+          "before": "is del mundo, el mundo amaría lo suyo… –",
+          "after": ". Y también: Porque el que se avergonzar",
+          "spans": [
+            [
+              8432,
+              8443
+            ]
+          ],
+          "osis": "John.15.18-John.15.19",
+          "queries": [
+            "43 15:18-19"
+          ]
+        },
+        {
+          "id": "66ec55c09aaefc26b1dbe2e9",
+          "quote": "Mar 8:38",
+          "before": "ia de su Padre con los santos ángeles. –",
+          "after": "",
+          "spans": [
+            [
+              8669,
+              8677
+            ]
+          ],
+          "osis": "Mark.8.38",
+          "queries": [
+            "41 8:38"
+          ]
+        }
+      ],
+      "record_hash": "d6f442c0134cf3344709d54ce936b1e53f2e54eff9817f639642c49ebb956e30"
+    },
+    "7cdda5c4-11c0-4b7f-bcd4-b37677267f87:fr:17df6116e0fbf9b0529ca7c385d8877d2180f4479b329b5290eb6d1c56c4d1f2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7cdda5c4-11c0-4b7f-bcd4-b37677267f87",
+      "locale": "fr",
+      "content_hash": "17df6116e0fbf9b0529ca7c385d8877d2180f4479b329b5290eb6d1c56c4d1f2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5ae8bc042348ede9a20ee86e",
+          "quote": "Mt 4:23",
+          "before": "ie et toute infirmité parmi le peuple. –",
+          "after": ". De plus, dans Matthieu, Jésus dit qu’i",
+          "spans": [
+            [
+              1887,
+              1894
+            ]
+          ],
+          "osis": "Matt.4.23",
+          "queries": [
+            "40 4:23"
+          ]
+        },
+        {
+          "id": "93328cbab6c58bdbc9951d87",
+          "quote": "Mt 9:37-38",
+          "before": "’envoyer des ouvriers dans sa moisson. –",
+          "after": "",
+          "spans": [
+            [
+              2223,
+              2233
+            ]
+          ],
+          "osis": "Matt.9.37-Matt.9.38",
+          "queries": [
+            "40 9:37-38"
+          ]
+        },
+        {
+          "id": "168f999a7fdbb1157b96747f",
+          "quote": "Mt 10:22",
+          "before": "persévérera jusqu’à la fin sera sauvé. –",
+          "after": ". Et dans Romains : Selon qu’il est écri",
+          "spans": [
+            [
+              3421,
+              3429
+            ]
+          ],
+          "osis": "Matt.10.22",
+          "queries": [
+            "40 10:22"
+          ]
+        },
+        {
+          "id": "d1def05a671cc7eb968ddfcf",
+          "quote": "Mt 13:22",
+          "before": " la parole, et il devient infructueux. –",
+          "after": ". Serait-ce le cas de certains d’entre n",
+          "spans": [
+            [
+              4135,
+              4143
+            ]
+          ],
+          "osis": "Matt.13.22",
+          "queries": [
+            "40 13:22"
+          ]
+        },
+        {
+          "id": "5b08293d495de693e1b9b26e",
+          "quote": "Jn 15:18-19",
+          "before": " monde aimerait ce qui lui appartient… –",
+          "after": ". Et : Car quiconque aura honte de moi e",
+          "spans": [
+            [
+              9203,
+              9214
+            ]
+          ],
+          "osis": "John.15.18-John.15.19",
+          "queries": [
+            "43 15:18-19"
+          ]
+        },
+        {
+          "id": "7ef34ba4513b282fff90f519",
+          "quote": "Mc 8:38",
+          "before": "ire de son Père avec les saints anges. –",
+          "after": "",
+          "spans": [
+            [
+              9438,
+              9445
+            ]
+          ],
+          "osis": "Mark.8.38",
+          "queries": [
+            "41 8:38"
+          ]
+        }
+      ],
+      "record_hash": "1222dd5c0b92ae71db74c964ce44f7a7d2647054266ff5035ab2f4c7b6c58f7d"
     },
     "7cdda5c4-11c0-4b7f-bcd4-b37677267f87:he:60bc0a9f0a59def7711cc3977f1df13c4f8ea87991fb8337c417adb4201aa10e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7cdda5c4-11c0-4b7f-bcd4-b37677267f87",
@@ -251727,6 +252443,143 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4e6eec67e451b67379ce4c17c817561dc5dca61d714fd61698396b7aa98ac253"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:bn:e605e59c12247bf03ebd902dbd2499c4ded49e8a385299011db61c3125452cb8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "bn",
+      "content_hash": "e605e59c12247bf03ebd902dbd2499c4ded49e8a385299011db61c3125452cb8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "978bb1af3ea9aac51567e38a",
+          "quote": "হিতোপদেশ ২৯:১৮",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              203,
+              217
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "107094b0a7199ce17eb18768",
+          "quote": "১ শমূ. ৩:১",
+          "before": "হার করেন: “কোনো প্রকাশ্য দর্শন ছিল না” (",
+          "after": ")। এই কথার পর পড়ার মতো দুঃখজনক বিবরণ রয",
+          "spans": [
+            [
+              694,
+              704
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "06c28803d6bd13b2ff7be5cd",
+          "quote": "২ করি. ৩:৩",
+          "before": "বরের আত্মা দ্বারা…হৃদয়ের মাংসল ফলকে।” (",
+          "after": ") দর্শন হলো ঈশ্বরের মন ও ইচ্ছার আধ্যাত্ম",
+          "spans": [
+            [
+              1452,
+              1462
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "c408c6113a45ee6565083d68",
+          "quote": "রোমীয় ৪:১৭",
+          "before": "ে এমনভাবে ডাকতে শুরু করলেন যেন তা আছে” (",
+          "after": "খ)। অব্রাহাম হৃদয়ের চোখে সেগুলো দেখেছিল",
+          "spans": [
+            [
+              5420,
+              5431
+            ]
+          ],
+          "osis": "Rom.4.17",
+          "queries": [
+            "45 4:17"
+          ]
+        },
+        {
+          "id": "ac3d7adca76a688e96b9591d",
+          "quote": "দ্বিতীয় বিবরণ ২৮",
+          "before": "",
+          "after": " অধ্যায়ে ঈশ্বর ইস্রায়েল-সন্তানদের সঙ্গ",
+          "spans": [
+            [
+              5561,
+              5578
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "5ab0c3379f9261ba7bda913d",
+          "quote": "প্রকা. ৩:১৮",
+          "before": "র চোখে চোখের মলম লাগাও, যেন দেখতে পাও” (",
+          "after": "গ)। আমরা সবাই জানি, এই পদগুলোতে ঈশ্বর হৃ",
+          "spans": [
+            [
+              8188,
+              8199
+            ]
+          ],
+          "osis": "Rev.3.18",
+          "queries": [
+            "66 3:18"
+          ]
+        },
+        {
+          "id": "b3e97600d62d16cafb95cf37",
+          "quote": "প্রকাশিত বাক্য ৩:২০",
+          "before": "\n    আর সে আমার সঙ্গে। ",
+          "after": "",
+          "spans": [
+            [
+              8763,
+              8782
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "25a67746eef73a889d93b527",
+          "quote": "ইফি. ৩:২০",
+          "before": "রি, তার সবকিছুর চেয়েও অনেক বেশি করতে” (",
+          "after": ")। আমি যদি এই পদটি বুঝে থাকি, তাহলে এটি ",
+          "spans": [
+            [
+              11134,
+              11143
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "3aea0d6a3d369d9f93a23c06e0991bcfb3294189c7c28f4d186dd6cd6877c35f"
     },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:en:efa6ba29507eed679e48e7e8ef486bb496559a51f68b41272a7ec34d60fd1f19:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
@@ -314168,6 +315021,31 @@
       ],
       "record_hash": "9a4484aabad4e5f15514bb35000a2be7674717585cf0e46dae147b09f64f4076"
     },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:nb:92b76484a7813711f65cf9fddad42848dc630af0c76bcc1ecc03f931099f1748:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "nb",
+      "content_hash": "92b76484a7813711f65cf9fddad42848dc630af0c76bcc1ecc03f931099f1748",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3ec88488318852980a567c48",
+          "quote": "Salme 24",
+          "before": " mann, en diakon i kirken, seg og leste ",
+          "after": ": «Hvem kan gå opp på Herrens berg, hvem",
+          "spans": [
+            [
+              3296,
+              3304
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        }
+      ],
+      "record_hash": "e958437cfe758d4b600105b1b2acca2c963375c86847d4a2add2081bd812e8d5"
+    },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:nl:58774a75cd8a8de01856023625d20ee8704587b0a99ea70bdc7cb6b543c334de:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
       "locale": "nl",
@@ -342752,6 +343630,31 @@
         }
       ],
       "record_hash": "a72281687d62303cab098d320ff058282123c1e50d1eacf5a7b22a6d3fbd89fa"
+    },
+    "b649c2a3-20b1-4e02-9204-6285b234f34f:he:330e35f83ea9f0b1f35b763b2a4210ecab849e76bc83c1f2034aa707efc5e999:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
+      "locale": "he",
+      "content_hash": "330e35f83ea9f0b1f35b763b2a4210ecab849e76bc83c1f2034aa707efc5e999",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "813ea61cf39bcfdeec28c26f",
+          "quote": "שמות 10:21-23",
+          "before": "ימים; אבל לכל בני ישראל היה אור בבתיהם» ",
+          "after": ".",
+          "spans": [
+            [
+              440,
+              453
+            ]
+          ],
+          "osis": "Exod.10.21-Exod.10.23",
+          "queries": [
+            "2 10:21-23"
+          ]
+        }
+      ],
+      "record_hash": "6533f9a3a251f869bcdb5881638cde09c000be9f806ec1783efc0e0e41aed3f4"
     },
     "b649c2a3-20b1-4e02-9204-6285b234f34f:hi:0e01d4db6e4d5d9ed21a658071af662136d0b9c84cb6b86727a4109c9c7d3e14:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "b649c2a3-20b1-4e02-9204-6285b234f34f",
