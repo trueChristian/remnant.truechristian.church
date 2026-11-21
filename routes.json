@@ -11506,11 +11506,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "herlewing",
+        "alias": "n-boodskap-aan-die-wêreld",
+        "history": [
+          "/af/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -87162,11 +87163,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "femmes",
+        "alias": "le-cri-du-cœur-d-une-mère",
+        "history": [
+          "/fr/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -95704,11 +95706,12 @@
       },
       "08c717e6-5c69-433c-b04d-ab1957c20eb9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-man-in-the-gap",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "חיים-נוצריים",
+        "alias": "אדם-העומד-בפרץ",
+        "history": [
+          "/he/articles/a-man-in-the-gap/"
+        ],
+        "fallback": false
       },
       "094d0bb6-2b7d-4a86-9de4-116f1b95fcbe": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -110700,11 +110703,12 @@
       },
       "ba09e248-cc12-4573-9db1-cceb885953ac": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-finished-work-of-christ",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "मसीह-का-पूर्ण-किया-हुआ-कार्य",
+        "history": [
+          "/hi/articles/the-finished-work-of-christ/"
+        ],
+        "fallback": false
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -155833,11 +155837,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "opwekking",
+        "alias": "een-boodschap-aan-de-wereld",
+        "history": [
+          "/nl/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -175658,11 +175663,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "духовное-пробуждение",
+        "alias": "послание-миру",
+        "history": [
+          "/ru/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
