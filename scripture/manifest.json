@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "f0fda6f1095e2f1f122ea393bd31d1fba27080285ea982570c346641d0c95829",
+  "integrity": "b2bdb18897293afd2b3300fbe2fbb507529a63f0d2c7de2d2e3072d00ff5b112",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -46385,6 +46385,14 @@
       "markers": [],
       "record_hash": "0065b9fffb193a7f6b21c812a0efdb5fb1b982dd1a56a365fdf64a4314baf3b2"
     },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:ar:62e1f52c6315ce3bd95e6dfe6856cce187c08421a0897d4c2b89daebe51e17b9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "ar",
+      "content_hash": "62e1f52c6315ce3bd95e6dfe6856cce187c08421a0897d4c2b89daebe51e17b9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "0dac514d59e84e412f0856dc77a73059f5219ce30472d74efdecb5581181494e"
+    },
     "14a35072-cac9-42df-a3ca-1f7db446d968:en:9f5c46c9cd535a987e1dc21e68287059dc905713a8b854d700eb835e0d524e66:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
       "locale": "en",
@@ -46392,6 +46400,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "72c28734d2f3aeee74af2dcfcb95f3378e2d72e9cecd099554489fd0d179cb12"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:es:cfe7ca8deb346ed6ccd4eea8fa3d09f274a33a56c319a72472ed0068f9326328:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "es",
+      "content_hash": "cfe7ca8deb346ed6ccd4eea8fa3d09f274a33a56c319a72472ed0068f9326328",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ce77071904d4ed6ed40cb042aca5c9e79efa8693865f15198187d2cb72a2fd0f"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:fr:0577b0b73b90f69180ddbfca9387d47ea8f42b89d256045404b8e199cbdea3ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "fr",
+      "content_hash": "0577b0b73b90f69180ddbfca9387d47ea8f42b89d256045404b8e199cbdea3ce",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "4be670d8790eca5f29238c2a8299bf08065f75e22ae5d857c67f35aa3c697520"
     },
     "14a3e3e5-448e-495a-9e00-c5316912c679:en:ac192d6ad8f28178c09ad3815e7582a95fa750a7bee0521df2ee53b7fc59c158:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a3e3e5-448e-495a-9e00-c5316912c679",
@@ -253723,6 +253747,111 @@
       "markers": [],
       "record_hash": "4e6eec67e451b67379ce4c17c817561dc5dca61d714fd61698396b7aa98ac253"
     },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:af:117a2bc54cb5dea4d2b2077cb9d65e731cd8a83b7d5e9e0865fec2761f0d07f0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "af",
+      "content_hash": "117a2bc54cb5dea4d2b2077cb9d65e731cd8a83b7d5e9e0865fec2761f0d07f0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "06f237b4d4513ca037b44ed7",
+          "quote": "Spreuke 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              224,
+              237
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "f20090b37d062379cab8c944",
+          "quote": "I Sam. 3:1",
+          "before": ". “Daar was geen openlike visioen nie” (",
+          "after": "). Hoewel ons ná hierdie stelling verske",
+          "spans": [
+            [
+              768,
+              778
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "68211e40b09b24090648d4f6",
+          "quote": "II Kor. 3:3",
+          "before": "slike tafels van die hart geskryf is.” (",
+          "after": ") ’n Visioen is ’n geestelike openbaring",
+          "spans": [
+            [
+              1707,
+              1718
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "8cc6159d94589997712b3d73",
+          "quote": "Deuteronomium 28",
+          "before": "God het in ",
+          "after": " met die kinders van Israel gepraat. Hy ",
+          "spans": [
+            [
+              6262,
+              6278
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "782c2e33ac91d82cb057b54f",
+          "quote": "Op. 3:20",
+          "before": "\n    en hy saam met My. ",
+          "after": "",
+          "spans": [
+            [
+              9599,
+              9607
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "a10c88a2c88cfbbee4ad68f4",
+          "quote": "Ef. 3:20",
+          "before": "ink, volgens die krag wat in ons werk” (",
+          "after": "). As ek hierdie vers reg verstaan, omva",
+          "spans": [
+            [
+              12063,
+              12071
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "f0b8de52340947bf3bbda155093e9d4857aae11e1a04032a82a82cf7d25c193e"
+    },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:ar:839ff42257b9843b4f14bca21bb244a3d1fa2fe2925ebe2bde202c72b375220a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
       "locale": "ar",
@@ -254514,6 +254643,216 @@
         }
       ],
       "record_hash": "3033d9361545a28aa0b85705da3ba241a8fda6484f518e44c2f53a8309c35cce"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:nb:7082b45baf3bab0227f64dcda9ca8dee58329083c459f69484afb26293ea21d3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "nb",
+      "content_hash": "7082b45baf3bab0227f64dcda9ca8dee58329083c459f69484afb26293ea21d3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "382b14a993248a09ea5d6843",
+          "quote": "Ordspråkene 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              197,
+              214
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "f9f4292ceba4c479dae7558e",
+          "quote": "1. Sam. 3:1",
+          "before": "tiden. «Det var ikke noe åpenbart syn» (",
+          "after": "). Selv om vi har flere kapitler med sør",
+          "spans": [
+            [
+              689,
+              700
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "caeaeb73f238ceda68a6c173",
+          "quote": "2. Kor. 3:3",
+          "before": "de Guds Ånd … på hjertets kjøttavler.» (",
+          "after": ") En visjon er en åndelig åpenbaring av ",
+          "spans": [
+            [
+              1514,
+              1525
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "d16d666230cfa8ff72c527ff",
+          "quote": "5. Mosebok 28",
+          "before": "Gud talte til Israels barn i ",
+          "after": ". Han malte et vakkert bilde av et folk ",
+          "spans": [
+            [
+              5687,
+              5700
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "e2e0d020bbfcdcd8d0e117b0",
+          "quote": "Åp. 3:20",
+          "before": "\n    og han med meg. ",
+          "after": "",
+          "spans": [
+            [
+              8691,
+              8699
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "045983a4c45968e51fbe4fa7",
+          "quote": "Ef. 3:20",
+          "before": "r, etter den kraften som virker i oss» (",
+          "after": "). Hvis jeg forstår dette verset riktig,",
+          "spans": [
+            [
+              11025,
+              11033
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "ca277de9a29bc4292516bd5153b26f98d7cbd0f9c53371f2d8f3d6ee12a5468b"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:nl:aa16f1bf881a13d7a843775c63863274800754bd0e8645dd5e9df6112b8f6348:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "nl",
+      "content_hash": "aa16f1bf881a13d7a843775c63863274800754bd0e8645dd5e9df6112b8f6348",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e71b9a25e5ba7c1d7d16a152",
+          "quote": "Spreuken 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              218,
+              232
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "6c63b24e3fbc13141617a14c",
+          "quote": "1 Sam. 3:1",
+          "before": " beschrijven. ‘Er was geen openbaring’ (",
+          "after": "). Hoewel we na deze uitspraak nog versc",
+          "spans": [
+            [
+              742,
+              752
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "6d21736cdab1b837d334c88c",
+          "quote": "2 Kor. 3:3",
+          "before": "d ... op vlezen tafelen van het hart.’ (",
+          "after": ") Een visioen is een geestelijke openbar",
+          "spans": [
+            [
+              1675,
+              1685
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "36c25709532ef715f22eef7c",
+          "quote": "Deuteronomium 28",
+          "before": "God sprak in ",
+          "after": " tot de kinderen van Israël. Hij schilde",
+          "spans": [
+            [
+              6273,
+              6289
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "fae3787ceaa0237076ca5f09",
+          "quote": "Openb. 3:20",
+          "before": "\n    en hij met Mij. ",
+          "after": "",
+          "spans": [
+            [
+              9698,
+              9709
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "4c3ee4b5d6f7cbb12a8c6267",
+          "quote": "Ef. 3:20",
+          "before": "eenkomstig de kracht die in ons werkt’ (",
+          "after": "). Als ik deze tekst goed begrijp, omvat",
+          "spans": [
+            [
+              12232,
+              12240
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "e282ec1d26e794f278ead58d415b638199e53fa3a2daa998d0557e46c6b04d06"
     },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:pt:3b4027fef1535061bd12fb5b42fb6bb241f1e2d8c82abaa88c8adb0ff0bd55eb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",

@@ -14740,11 +14740,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ouerskap",
+        "alias": "n-motiverende-visioen-vir-ons-huise",
+        "history": [
+          "/af/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -21350,11 +21351,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "النهضة-الروحية",
+        "alias": "رسالة-إلى-العالم",
+        "history": [
+          "/ar/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -76364,11 +76366,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "avivamiento",
+        "alias": "un-mensaje-al-mundo",
+        "history": [
+          "/es/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -86372,11 +86375,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "réveil-spirituel",
+        "alias": "un-message-au-monde",
+        "history": [
+          "/fr/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -149039,11 +149043,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "foreldreskap",
+        "alias": "en-visjon-som-motiverer-hjemmene-våre",
+        "history": [
+          "/nb/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -159050,11 +159055,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "opvoeding",
+        "alias": "een-motiverend-visioen-voor-onze-gezinnen",
+        "history": [
+          "/nl/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
