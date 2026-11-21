@@ -31258,11 +31258,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "আধ্যাত্মিক-জাগরণ",
+        "alias": "বিশ্বের-উদ্দেশে-এক-বার্তা",
+        "history": [
+          "/bn/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -125610,11 +125611,12 @@
       },
       "08c717e6-5c69-433c-b04d-ab1957c20eb9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-man-in-the-gap",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vita-cristiana",
+        "alias": "un-uomo-sulla-breccia",
+        "history": [
+          "/it/articles/a-man-in-the-gap/"
+        ],
+        "fallback": false
       },
       "094d0bb6-2b7d-4a86-9de4-116f1b95fcbe": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -125866,11 +125868,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "risveglio-spirituale",
+        "alias": "un-messaggio-al-mondo",
+        "history": [
+          "/it/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -127462,11 +127465,12 @@
       },
       "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "trust-be-not-afraid",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "bambini",
+        "alias": "confida-non-temere",
+        "history": [
+          "/it/articles/trust-be-not-afraid/"
+        ],
+        "fallback": false
       },
       "4c281a52-8d82-4455-9559-37d18c0a4a7b": {
         "category_id": "0648d4df-242a-5815-8d22-08b555d1b542",
@@ -135789,11 +135793,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "부흥",
+        "alias": "세상을-향한-메시지",
+        "history": [
+          "/ko/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -139967,11 +139972,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "부흥",
+        "alias": "던컨-캠벨",
+        "history": [
+          "/ko/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -151622,11 +151628,12 @@
       },
       "dc9bb2ea-cefd-4340-b274-deddb70afcaf": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "confidence-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "åndelig-øvelse",
+        "alias": "frimodighet",
+        "history": [
+          "/nb/articles/confidence-2/"
+        ],
+        "fallback": false
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -165781,11 +165788,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "avivamento",
+        "alias": "uma-mensagem-ao-mundo",
+        "history": [
+          "/pt/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -200845,11 +200853,12 @@
       },
       "d38bf79f-957f-413c-ad4d-a6b4fa8c8112": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "cancer-what-is-it",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "afya-na-tiba",
+        "alias": "saratani-ni-nini",
+        "history": [
+          "/sw/articles/cancer-what-is-it/"
+        ],
+        "fallback": false
       },
       "d3d9a779-d35d-477a-ada8-6afd7e9619f0": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",

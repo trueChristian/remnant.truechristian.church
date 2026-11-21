@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "b2bdb18897293afd2b3300fbe2fbb507529a63f0d2c7de2d2e3072d00ff5b112",
+  "integrity": "8a1a1e537f41f58538f0b6586156d096270b23f8dce9f3fcf78d4680f418a377",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -13760,6 +13760,159 @@
         }
       ],
       "record_hash": "11be2cf58c044114ca15b877b47be353d41a693169b54a655bc836b4adaf16f6"
+    },
+    "08c717e6-5c69-433c-b04d-ab1957c20eb9:it:31a8f6bcddfa4d570ae90de582cca7ef23716be5918d9ad98bb725afb6429153:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
+      "locale": "it",
+      "content_hash": "31a8f6bcddfa4d570ae90de582cca7ef23716be5918d9ad98bb725afb6429153",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a51d90c2346d819d485c6127",
+          "quote": "Ezechiele 22:30",
+          "before": "istruggessi; ma non ne trovai nessuno. –",
+          "after": "",
+          "spans": [
+            [
+              233,
+              248
+            ]
+          ],
+          "osis": "Ezek.22.30",
+          "queries": [
+            "26 22:30"
+          ]
+        },
+        {
+          "id": "a32c9db8303b2fd73425c24c",
+          "quote": "Ecclesiaste 9:14-15",
+          "before": "essuno si ricordò di quel povero uomo. –",
+          "after": ". Sebbene nella Bibbia vi siano molte de",
+          "spans": [
+            [
+              1445,
+              1464
+            ]
+          ],
+          "osis": "Eccl.9.14-Eccl.9.15",
+          "queries": [
+            "21 9:14-15"
+          ]
+        },
+        {
+          "id": "fbd5640d6ff8f1b66d901137",
+          "quote": "Daniele 6:10",
+          "before": "azie al suo Dio, come era solito fare. –",
+          "after": ". Sarebbe stata una cosa da poco per Dan",
+          "spans": [
+            [
+              2848,
+              2860
+            ]
+          ],
+          "osis": "Dan.6.10",
+          "queries": [
+            "27 6:10"
+          ]
+        },
+        {
+          "id": "8fd9926f22aa4164606d27b4",
+          "quote": "Apocalisse 4:11",
+          "before": "r tuo volere esistono e furono create. –",
+          "after": ". Non mancano i figli di Sceva, che imma",
+          "spans": [
+            [
+              7317,
+              7332
+            ]
+          ],
+          "osis": "Rev.4.11",
+          "queries": [
+            "66 4:11"
+          ]
+        },
+        {
+          "id": "2ddbc52fc62805de9e754624",
+          "quote": "Apocalisse 3:4",
+          "before": "n vesti bianche, perché ne sono degni. –",
+          "after": "",
+          "spans": [
+            [
+              9517,
+              9531
+            ]
+          ],
+          "osis": "Rev.3.4",
+          "queries": [
+            "66 3:4"
+          ]
+        },
+        {
+          "id": "dce178df40ee0ec3471cae94",
+          "quote": "Ebrei 11:24-27",
+          "before": "ome se vedesse colui che è invisibile. –",
+          "after": "",
+          "spans": [
+            [
+              10262,
+              10276
+            ]
+          ],
+          "osis": "Heb.11.24-Heb.11.27",
+          "queries": [
+            "58 11:24-27"
+          ]
+        },
+        {
+          "id": "3f63cbdfd6ce512f65814852",
+          "quote": "1 Timoteo 3:1-4",
+          "before": "a i figli sottomessi con ogni dignità; –",
+          "after": ". Il nostro proposito determina la nostr",
+          "spans": [
+            [
+              12408,
+              12423
+            ]
+          ],
+          "osis": "1Tim.3.1-1Tim.3.4",
+          "queries": [
+            "54 3:1-4"
+          ]
+        },
+        {
+          "id": "328cfa6a52a3ca8983e4d425",
+          "quote": "Galati 1:10",
+          "before": "gli uomini, non sarei servo di Cristo. –",
+          "after": " ASV",
+          "spans": [
+            [
+              13126,
+              13137
+            ]
+          ],
+          "osis": "Gal.1.10",
+          "queries": [
+            "48 1:10"
+          ]
+        },
+        {
+          "id": "a904eee6106218119d2e7d73",
+          "quote": "2 Corinzi 2:15-16",
+          "before": "a. E chi è all’altezza di queste cose? –",
+          "after": ". Coloro il cui unico scopo e le cui pri",
+          "spans": [
+            [
+              14261,
+              14278
+            ]
+          ],
+          "osis": "2Cor.2.15-2Cor.2.16",
+          "queries": [
+            "47 2:15-16"
+          ]
+        }
+      ],
+      "record_hash": "7916135ff8a9f39c312c4c52239394301de3ce31b0f60a89bc37fe1ebf5131f9"
     },
     "08c717e6-5c69-433c-b04d-ab1957c20eb9:nb:76397f9c6b8597ebd4477ae8b97055fda7fb0fb3ddd51446874b6347693b4844:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "08c717e6-5c69-433c-b04d-ab1957c20eb9",
@@ -46393,6 +46546,14 @@
       "markers": [],
       "record_hash": "0dac514d59e84e412f0856dc77a73059f5219ce30472d74efdecb5581181494e"
     },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:bn:2349b1eebdc8b9670fe76de9633ff42fb3f15c32feff4da5fe219e3420560792:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "bn",
+      "content_hash": "2349b1eebdc8b9670fe76de9633ff42fb3f15c32feff4da5fe219e3420560792",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "248c52d74705e64b9d728c52090ae659c72301b4d1b0e024ed5c723aea6f784f"
+    },
     "14a35072-cac9-42df-a3ca-1f7db446d968:en:9f5c46c9cd535a987e1dc21e68287059dc905713a8b854d700eb835e0d524e66:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
       "locale": "en",
@@ -46416,6 +46577,30 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4be670d8790eca5f29238c2a8299bf08065f75e22ae5d857c67f35aa3c697520"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:it:47cedeadd165db31045e1ff78d7d0d2faac9913f6b511395cd306e2dd4a6d593:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "it",
+      "content_hash": "47cedeadd165db31045e1ff78d7d0d2faac9913f6b511395cd306e2dd4a6d593",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "cc9a31cd57ba3cf225f747eb37c9f64fb3c484e87833da9236d7180757fbbc0f"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:ko:8a28f351c1746d3a6becc177375b63305e7da02a2345c990e8b334a8d4f539e5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "ko",
+      "content_hash": "8a28f351c1746d3a6becc177375b63305e7da02a2345c990e8b334a8d4f539e5",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "676c4ce15c29d55a15f46d08062d633356ed1975cf48091463dd86bc05830761"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:pt:b681763fb27163e99aad45bb037696dd29dcd4829c25aee459fc46fcb067308d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "pt",
+      "content_hash": "b681763fb27163e99aad45bb037696dd29dcd4829c25aee459fc46fcb067308d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "12fec3eda8fce55f98f9b2653fa2a7f9b8718618c4e718a1833a8f1d9d2463bd"
     },
     "14a3e3e5-448e-495a-9e00-c5316912c679:en:ac192d6ad8f28178c09ad3815e7582a95fa750a7bee0521df2ee53b7fc59c158:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a3e3e5-448e-495a-9e00-c5316912c679",
@@ -158953,6 +159138,31 @@
         }
       ],
       "record_hash": "732b6af920c21f9dd8a6501a489e8d578b7f35108fe812fd4cee9136ba3044a3"
+    },
+    "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d:it:266f705719a6e019eb590a11c72e4ef887cd52159312e7180a7ad41a0b372c9b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d",
+      "locale": "it",
+      "content_hash": "266f705719a6e019eb590a11c72e4ef887cd52159312e7180a7ad41a0b372c9b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9349a8ba4b62a16a9356d31c",
+          "quote": "Sal 40:1-4",
+          "before": " quelli che deviano verso la menzogna. –",
+          "after": ". Questo mi rende così felice che vorrei",
+          "spans": [
+            [
+              5712,
+              5722
+            ]
+          ],
+          "osis": "Ps.40.1-Ps.40.4",
+          "queries": [
+            "19 40:1-4"
+          ]
+        }
+      ],
+      "record_hash": "8f007c853c4d3e8daa4910d0a629f88330f80d296bb4159543ecfed99a3aefd0"
     },
     "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d:ko:04fc567da0d88837e7aa6e3ca27678c01bac8af191142cf8d3045cdfc66f47ed:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d",
@@ -317796,6 +318006,79 @@
       ],
       "record_hash": "bf602c931f79bdf97e78039f06f1f4fa8f4556ae7b7fd497be8a1da2e901fd2c"
     },
+    "a6fd953e-3e00-4044-b995-5a38ea9192e5:ko:40278abb4037b05bdd0738cdf0e62e76ba84f11ae35c3fd75e1c18bb900840e6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
+      "locale": "ko",
+      "content_hash": "40278abb4037b05bdd0738cdf0e62e76ba84f11ae35c3fd75e1c18bb900840e6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "aa230f50cafc5af89cfb6018",
+          "quote": "시편 24",
+          "before": " 마른 땅에 넘치는 물을 부으리라.” 교회의 집사인 한 젊은이가 일어나 ",
+          "after": "편을 읽었습니다. “누가 주님의 산에 오를 수 있는가? 누가 그의 거룩한",
+          "spans": [
+            [
+              1913,
+              1918
+            ]
+          ],
+          "osis": "Ps.24.1-Ps.24.10",
+          "queries": [
+            "19 24:1-10"
+          ]
+        },
+        {
+          "id": "002c77773ae987d388bd7e48",
+          "quote": "시 15",
+          "before": "아홉 ",
+          "after": "분 전쯤 교회에 도착했더니 약 300명이 모여 있었습니다. 저는 말씀을 ",
+          "spans": [
+            [
+              3888,
+              3892
+            ]
+          ],
+          "osis": "Ps.15.1-Ps.15.5",
+          "queries": [
+            "19 15:1-5"
+          ]
+        },
+        {
+          "id": "f3e5f993c1b1251e7637f9ee",
+          "quote": "시 15",
+          "before": "는 의식은 있었지만, 그 이상은 아니었습니다. 그래서 축도를 하고 열한 ",
+          "after": "분 전쯤 교회를 나서고 있었습니다.",
+          "spans": [
+            [
+              4036,
+              4040
+            ]
+          ],
+          "osis": "Ps.15.1-Ps.15.5",
+          "queries": [
+            "19 15:1-5"
+          ]
+        },
+        {
+          "id": "529c9facc7585e2fa14c755d",
+          "quote": "약 1",
+          "before": "저는 그 모임으로 갔습니다. 시골길을 걸어가면서(",
+          "after": "마일을 걸어야 했습니다) 길가에서 누군가 기도하는 소리를 들었습니다. 한",
+          "spans": [
+            [
+              6894,
+              6897
+            ]
+          ],
+          "osis": "Jas.1.1-Jas.1.27",
+          "queries": [
+            "59 1:1-27"
+          ]
+        }
+      ],
+      "record_hash": "0e4b2e67e701ec28884d4b6a9cfc49636cd27ae43b7b4b81c3270eab5ac8eea1"
+    },
     "a6fd953e-3e00-4044-b995-5a38ea9192e5:nb:92b76484a7813711f65cf9fddad42848dc630af0c76bcc1ecc03f931099f1748:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "a6fd953e-3e00-4044-b995-5a38ea9192e5",
       "locale": "nb",
@@ -397493,6 +397776,47 @@
       ],
       "record_hash": "7968c3e8a21bf97a047b625350bb55bca87d1556db67f09fe20ea98c1734d9c0"
     },
+    "d38bf79f-957f-413c-ad4d-a6b4fa8c8112:sw:bd6bf1a754eac1801e1181322448c6588aafa731dcfce8b4827a73f4db466095:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "d38bf79f-957f-413c-ad4d-a6b4fa8c8112",
+      "locale": "sw",
+      "content_hash": "bd6bf1a754eac1801e1181322448c6588aafa731dcfce8b4827a73f4db466095",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "a0036f182575e6595a073fb7",
+          "quote": "Isaya 41:10",
+          "before": "kilia kwa mkono wa kuume wa haki yangu –",
+          "after": ".",
+          "spans": [
+            [
+              13971,
+              13982
+            ]
+          ],
+          "osis": "Isa.41.10",
+          "queries": [
+            "23 41:10"
+          ]
+        },
+        {
+          "id": "a7380f9e7d8dfc8c40158d43",
+          "quote": "Mathayo 6:31-34",
+          "before": "Kila siku ina matatizo yake ya kutosha –",
+          "after": ".",
+          "spans": [
+            [
+              14719,
+              14734
+            ]
+          ],
+          "osis": "Matt.6.31-Matt.6.34",
+          "queries": [
+            "40 6:31-34"
+          ]
+        }
+      ],
+      "record_hash": "2568cb0d1a529ecb64c045830535cc54bf62f585e3c4e320f5d9b5366cceec38"
+    },
     "d38bf79f-957f-413c-ad4d-a6b4fa8c8112:ur:acdf46b990da5dced6b6d0d8c8505027ffb1324235ec0f4f2a362f2205c31f17:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "d38bf79f-957f-413c-ad4d-a6b4fa8c8112",
       "locale": "ur",
@@ -402423,6 +402747,127 @@
         }
       ],
       "record_hash": "6522d7f749b52d4d86c1e5cb6537bec819f7651078af217e26704700b76ff456"
+    },
+    "dc9bb2ea-cefd-4340-b274-deddb70afcaf:nb:f43b699f547c50bbf9029bfe974ff9a6889d97eaf147ba7fec4371dbddfa81b6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",
+      "locale": "nb",
+      "content_hash": "f43b699f547c50bbf9029bfe974ff9a6889d97eaf147ba7fec4371dbddfa81b6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ddc4bd146e6cdec50c6ec92a",
+          "quote": "4. Mosebok 13:30",
+          "before": "eie! Vi er sterke nok til å innta det – ",
+          "after": ".",
+          "spans": [
+            [
+              692,
+              708
+            ]
+          ],
+          "osis": "Num.13.30",
+          "queries": [
+            "4 13:30"
+          ]
+        },
+        {
+          "id": "d99a6f92c523851adb1c455d",
+          "quote": "Apostlenes gjerninger 9:20",
+          "before": "ne i synagogene at Jesus er Guds Sønn – ",
+          "after": ". Det neste verset sier at folk ble foru",
+          "spans": [
+            [
+              2663,
+              2689
+            ]
+          ],
+          "osis": "Acts.9.20",
+          "queries": [
+            "44 9:20"
+          ]
+        },
+        {
+          "id": "a3d450d3f63f4681ed47bb9c",
+          "quote": "2. Timoteus 4:6–7",
+          "before": "strid, fullendt løpet og bevart troen – ",
+          "after": ".",
+          "spans": [
+            [
+              3158,
+              3175
+            ]
+          ],
+          "osis": "2Tim.4.6-2Tim.4.7",
+          "queries": [
+            "55 4:6-7"
+          ]
+        },
+        {
+          "id": "a795997150f782c5135f310e",
+          "quote": "Salme 44:22",
+          "before": "«dårskap», de ble …drept dagen lang … – ",
+          "after": ". Folk satte spørsmålstegn ved skikkene ",
+          "spans": [
+            [
+              4007,
+              4018
+            ]
+          ],
+          "osis": "Ps.44.22",
+          "queries": [
+            "19 44:22"
+          ]
+        },
+        {
+          "id": "a7db6edc3695d7c4088534ff",
+          "quote": "Apostlenes gjerninger 1:8",
+          "before": ", i Samaria og helt til jordens ender – ",
+          "after": ".",
+          "spans": [
+            [
+              7613,
+              7638
+            ]
+          ],
+          "osis": "Acts.1.8",
+          "queries": [
+            "44 1:8"
+          ]
+        },
+        {
+          "id": "047f25d6a874ff94156d619f",
+          "quote": "Efeserne 5:25–27",
+          "before": "er noe slikt, men hellig og uten feil – ",
+          "after": ".",
+          "spans": [
+            [
+              9650,
+              9666
+            ]
+          ],
+          "osis": "Eph.5.25-Eph.5.27",
+          "queries": [
+            "49 5:25-27"
+          ]
+        },
+        {
+          "id": "c1d7c658ede766660993611b",
+          "quote": "Jesaja 61:1–3",
+          "before": " planting, så Han kan bli herliggjort – ",
+          "after": ".",
+          "spans": [
+            [
+              12961,
+              12974
+            ]
+          ],
+          "osis": "Isa.61.1-Isa.61.3",
+          "queries": [
+            "23 61:1-3"
+          ]
+        }
+      ],
+      "record_hash": "fa13998ff98b29fd0c84a65869d5fa55b1e098525632b6f3e367e8e8dc1375d2"
     },
     "dc9bb2ea-cefd-4340-b274-deddb70afcaf:nl:2128bae96343e5afcf0e45bb6c7d5f20b23134b5405cb029b33e592d61ddfdd7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",
