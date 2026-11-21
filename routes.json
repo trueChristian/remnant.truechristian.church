@@ -24608,11 +24608,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "تربية-الأبناء",
+        "alias": "رؤيا-تحفّزنا-من-أجل-بيوتنا",
+        "history": [
+          "/ar/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -34332,11 +34333,12 @@
       },
       "7cdda5c4-11c0-4b7f-bcd4-b37677267f87": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
-        "category_slug": "articles",
-        "alias": "a-quiet-and-peaceable-life",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "সুসমাচার-প্রচার",
+        "alias": "একটি-শান্ত-ও-নিরুপদ্রব-জীবন",
+        "history": [
+          "/bn/articles/a-quiet-and-peaceable-life/"
+        ],
+        "fallback": false
       },
       "7d047e24-76c4-4fb9-9172-3c9d5fafde78": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -35446,11 +35448,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "আধ্যাত্মিক-জাগরণ",
+        "alias": "ডানকান-ক্যাম্পবেল",
+        "history": [
+          "/bn/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -35935,11 +35938,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "জগতের-আলো-যিশু",
+        "history": [
+          "/bn/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -46980,11 +46984,12 @@
       },
       "dc9bb2ea-cefd-4340-b274-deddb70afcaf": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "confidence-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "geistliche-übung",
+        "alias": "zuversicht",
+        "history": [
+          "/de/articles/confidence-2/"
+        ],
+        "fallback": false
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -53748,11 +53753,12 @@
       },
       "71a8a627-ef21-4efb-9dd1-36d5124ac192": {
         "category_id": "400977eb-3421-51cc-992f-b947d2cda0f4",
-        "category_slug": "articles",
-        "alias": "from-the-editor-7-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "λόγια-που-αφυπνίζουν",
+        "alias": "από-τον-συντάκτη-6",
+        "history": [
+          "/el/articles/from-the-editor-7-2/"
+        ],
+        "fallback": false
       },
       "71acc7cf-0c85-4e46-9a50-7afaeca6c9ac": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -54297,11 +54303,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ανατροφή-παιδιών",
+        "alias": "ένα-όραμα-που-κινητοποιεί-για-τα-σπίτια-μασ",
+        "history": [
+          "/el/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -54346,11 +54353,12 @@
       },
       "86459f54-72b0-4be2-a101-02b3c9462f6c": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "what-is-right-about-my-music",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "νέοι",
+        "alias": "τι-είναι-σωστό-στη-μουσική-μου",
+        "history": [
+          "/el/articles/what-is-right-about-my-music/"
+        ],
+        "fallback": false
       },
       "864fd53d-da40-4478-9e1c-e62177efa866": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -102702,11 +102710,12 @@
       },
       "fe13ba15-f33c-46ff-9d3c-f114f1b2f4d4": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-34",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "דבר-העורך",
+        "alias": "מן-העורך-2",
+        "history": [
+          "/he/articles/from-the-editor-34/"
+        ],
+        "fallback": false
       },
       "fe1fac5f-5e0c-4074-a84f-c6afe94dc716": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",
@@ -129096,11 +129105,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "educazione-dei-figli",
+        "alias": "una-visione-che-motiva-le-nostre-case",
+        "history": [
+          "/it/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -130041,11 +130051,12 @@
       },
       "a6fd953e-3e00-4044-b995-5a38ea9192e5": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
+        "category_slug": "risveglio-spirituale",
         "alias": "duncan-campbell",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/it/articles/duncan-campbell/"
+        ],
+        "fallback": false
       },
       "a7480c1f-6359-4ae8-903c-5aa9d40da15d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
@@ -136876,11 +136887,12 @@
       },
       "391d4642-07e2-4003-83db-fa33dc08a8ca": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "ye-must-be-born-again",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "그리스도인의-삶",
+        "alias": "너희는-거듭나야-한다",
+        "history": [
+          "/ko/articles/ye-must-be-born-again/"
+        ],
+        "fallback": false
       },
       "39530116-8c39-4abd-beb6-89f05771a4f8": {
         "category_id": "729ef2d2-cb45-545b-b9a8-555cc7a423df",
@@ -176596,11 +176608,12 @@
       },
       "34125090-b480-4d63-b13a-33d47470f335": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "a-call-to-holiness",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "призыв-к-святости",
+        "history": [
+          "/ru/articles/a-call-to-holiness/"
+        ],
+        "fallback": false
       },
       "34f1dbb0-adf7-4ab0-a8b8-efc5b8b8725c": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -178883,11 +178896,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "воспитание-детей",
+        "alias": "побуждающее-видение-для-наших-семей",
+        "history": [
+          "/ru/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -188701,11 +188715,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "föräldraskap",
+        "alias": "en-vision-som-driver-oss-för-våra-hem",
+        "history": [
+          "/sv/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -208350,11 +208365,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "بچوں-کی-پرورش",
+        "alias": "ہمارے-گھروں-کے-لیے-ایک-محرک-رویا",
+        "history": [
+          "/ur/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -209784,11 +209800,12 @@
       },
       "b649c2a3-20b1-4e02-9204-6285b234f34f": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-light-of-the-world-is-jesus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "مسیحی-زندگی",
+        "alias": "دنیا-کا-نور-یسوع-ہے",
+        "history": [
+          "/ur/articles/the-light-of-the-world-is-jesus/"
+        ],
+        "fallback": false
       },
       "b6a6823e-0f2a-4354-aebb-5c37ad85937a": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -218155,11 +218172,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "养育子女",
+        "alias": "激励我们家庭的异象",
+        "history": [
+          "/zh-Hans/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
