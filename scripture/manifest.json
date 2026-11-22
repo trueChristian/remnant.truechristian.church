@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "eb610c320941486a372ae976e5ffefd625d4a71c4ef301ac0ac781a7ba447910",
+  "integrity": "d0531eacf88d756e633112256ed3d5e201aab2784ceb3fd362a1b02ed9cb1eb3",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -46707,6 +46707,14 @@
       "markers": [],
       "record_hash": "676c4ce15c29d55a15f46d08062d633356ed1975cf48091463dd86bc05830761"
     },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:nb:cbe46b6133e318c5e52746e37639120c714f21004650c0088577e7f98ed9d0e7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "nb",
+      "content_hash": "cbe46b6133e318c5e52746e37639120c714f21004650c0088577e7f98ed9d0e7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "95e29bd9b7966780ac621c79992b6da37389367a4a12cede92ce2741d652081b"
+    },
     "14a35072-cac9-42df-a3ca-1f7db446d968:nl:bb0e8a588c4ad65e8e92f2745421956ba272c88d00c218c42e5dcdd3e5abc288:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
       "locale": "nl",
@@ -46730,6 +46738,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "caac26bcc38b20121b6078993dab50e987a2663154d44438538c19fec07a92c4"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:sv:4de1474c9d137cd3c519eb35dfb954d1a18fa6645726dd14da67dcd1b613f096:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "sv",
+      "content_hash": "4de1474c9d137cd3c519eb35dfb954d1a18fa6645726dd14da67dcd1b613f096",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "97b3ddd7401b2f5bb3c210c5fb7e588bd545c591aa1e22a33c83fccd18beb995"
     },
     "14a3e3e5-448e-495a-9e00-c5316912c679:en:ac192d6ad8f28178c09ad3815e7582a95fa750a7bee0521df2ee53b7fc59c158:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a3e3e5-448e-495a-9e00-c5316912c679",
@@ -92741,6 +92757,296 @@
       ],
       "record_hash": "666e0dfcdfcdde87be24e7d4ed5ae287731685f1cbf3697904cc3a9047b4f35a"
     },
+    "304e1120-f241-4d9e-972b-c72dec82b134:ar:ae4df62d0570c9a2607efbba9ccce816e689172da094e4e45e592366f12fdf4a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "ar",
+      "content_hash": "ae4df62d0570c9a2607efbba9ccce816e689172da094e4e45e592366f12fdf4a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "24ba831f4186b89f7e177e9d",
+          "quote": "نحميا 8:10",
+          "before": " تذكروا يا أصدقائي: «فرح الرب هو قوتي» (",
+          "after": "). من دون الفرح تقل القوة. كافحت بضع سنو",
+          "spans": [
+            [
+              2865,
+              2875
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "4389a79969d1fed5a2627a86",
+          "quote": "كورنثوس الأولى 10:10",
+          "before": "ت صباح مؤخرًا، أثناء عبادتي، هذه الآية: ",
+          "after": " «ولا تتذمروا كما تذمر بعضهم أيضًا فهلكو",
+          "spans": [
+            [
+              4420,
+              4440
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "bb0aa73b66e758d0fbecbeab",
+          "quote": "مزمور 118:24",
+          "before": "",
+          "after": " «هذا هو اليوم الذي صنعه الرب؛ سنبتهج ون",
+          "spans": [
+            [
+              5420,
+              5432
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "8e5f403689cd8c9c5488f488",
+          "quote": "تيموثاوس الأولى 6:6",
+          "before": " الوصايا في الكلمة الداعية إلى القناعة. ",
+          "after": " «أما التقوى مع القناعة فهي ربح عظيم...»",
+          "spans": [
+            [
+              6728,
+              6747
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "de83024f42fda8c7a9520fe9",
+          "quote": "مزمور 118:24",
+          "before": "مواضع كثيرة أخرى. انظر إلى بعض الأمثلة. ",
+          "after": " هذا هو اليوم الذي صنعه الرب؛ سنبتهج ونف",
+          "spans": [
+            [
+              7052,
+              7064
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "6a746d1af03e8d5cbabd6bee",
+          "quote": "مزمور 40:16",
+          "before": "",
+          "after": " «ليكن كل الذين يطلبونك مبتهجين وفرحين ب",
+          "spans": [
+            [
+              7137,
+              7148
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "0bb55470a75f84037beb366e",
+          "quote": "مزمور 90:14",
+          "before": " وليقل محبو خلاصك دائمًا: ليتعظم الرب». ",
+          "after": " «أشبعنا باكرًا برحمتك، لكي نبتهج ونفرح ",
+          "spans": [
+            [
+              7237,
+              7248
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "fc588f24c8ca1313420533b1",
+          "quote": "مزمور 100:4-5",
+          "before": "اشكروا له وباركوا اسمه، لأن الرب صالح». ",
+          "after": "",
+          "spans": [
+            [
+              7797,
+              7810
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "48e39cd12fded5f9c88c1b052469a9229bfa877e41e9da5d2772b3ddadb0a988"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:bn:2ac0443e79b5a67a350310bce8ebb902b55410a50d4b827fdf5dd5c02abc0105:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "bn",
+      "content_hash": "2ac0443e79b5a67a350310bce8ebb902b55410a50d4b827fdf5dd5c02abc0105",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8e1d11d39151223fa364258d",
+          "quote": "১ করিন্থীয় ১০:১০",
+          "before": "ে আমার ভক্তিচর্চার সময় এই পদটি পড়লাম, ",
+          "after": " “তোমরা বচসা করো না, যেমন তাদের মধ্যে কে",
+          "spans": [
+            [
+              5322,
+              5339
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "634b69d8fe33dc2811c47c2e",
+          "quote": "গীতসংহিতা ১১৮:২৪",
+          "before": "",
+          "after": " “এই দিনটি সদাপ্রভুই করেছেন; আমরা এতে আন",
+          "spans": [
+            [
+              6567,
+              6583
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "913c769bfcc5952d27e37a3a",
+          "quote": "১ তীমথিয় ৬:৬",
+          "before": "ে সন্তুষ্ট থাকার কয়েকটি আদেশ দেখে নিন। ",
+          "after": " “সন্তুষ্টিসহ ভক্তি মহালাভজনক...” এবং ফি",
+          "spans": [
+            [
+              8266,
+              8279
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "88332dc20e64983a212f1590",
+          "quote": "ফিলিপীয় ৪:১১",
+          "before": ":৬ “সন্তুষ্টিসহ ভক্তি মহালাভজনক...” এবং ",
+          "after": " “অভাবের কথা বলছি না; কেননা যে অবস্থায় ",
+          "spans": [
+            [
+              8326,
+              8339
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "751e28c76287c29d09aa846d",
+          "quote": "গীতসংহিতা ১১৮:২৪",
+          "before": "জায়গায় ছড়িয়ে আছে। কয়েকটি দেখে নিন। ",
+          "after": " এই দিনটি সদাপ্রভুই করেছেন; আমরা এতে আনন",
+          "spans": [
+            [
+              8591,
+              8607
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "e78540f8ea2615dab010f571",
+          "quote": "গীতসংহিতা ৪০:১৬",
+          "before": "",
+          "after": " “যারা তোমার অন্বেষণ করে তারা সকলে তোমাত",
+          "spans": [
+            [
+              8693,
+              8708
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "83974cb3d627fc61550df6ad",
+          "quote": "গীতসংহিতা ৯০:১৪",
+          "before": "নিরন্তর বলুক, সদাপ্রভু মহিমান্বিত হোন।” ",
+          "after": " “সকালে তোমার দয়ায় আমাদের পরিতৃপ্ত করো",
+          "spans": [
+            [
+              8857,
+              8872
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "6c2b76934d9fef7a49cea9b1",
+          "quote": "যিশাইয় ১২:৩",
+          "before": "ের সমস্ত দিন আনন্দ ও উল্লাস করতে পারি।” ",
+          "after": " “অতএব তোমরা আনন্দের সঙ্গে জল তুলবে পরিত",
+          "spans": [
+            [
+              8974,
+              8986
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "43db61e89f8c13316e0cb3a8",
+          "quote": "গীতসংহিতা ১০০:৪-৫",
+          "before": "ামের প্রশংসা করো, কারণ প্রভু মঙ্গলময়।” ",
+          "after": "",
+          "spans": [
+            [
+              9650,
+              9667
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "1da5fbb3ea49e996823fe85fc1d048838ac56ae9a4252822cfd763ce775512dc"
+    },
     "304e1120-f241-4d9e-972b-c72dec82b134:en:43f6a92b3dbdaee323a09eb56628a8e5dcac068a03e5c8dfd89df7d575e7ee4b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
       "locale": "en",
@@ -92910,6 +93216,175 @@
       ],
       "record_hash": "4bed07173440c0ebfcf5f12a30a24904895e491472fc51eafbb6fad4a645ec3a"
     },
+    "304e1120-f241-4d9e-972b-c72dec82b134:es:1843856296edef51d2df83ec75b16517839400066213221d373d0491fc354760:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "es",
+      "content_hash": "1843856296edef51d2df83ec75b16517839400066213221d373d0491fc354760",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3857ef3281f9c8536b207835",
+          "quote": "Nehemías 8:10",
+          "before": "igos: «el gozo del SEÑOR es mi fuerza» (",
+          "after": "). Sin gozo hay menos fuerzas. Durante a",
+          "spans": [
+            [
+              3701,
+              3714
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "38a8679f8837191cc79ecf4c",
+          "quote": "1 Corintios 10:10",
+          "before": " tiempo devocional, leí este versículo: ",
+          "after": " «Ni murmuréis, como algunos de ellos mu",
+          "spans": [
+            [
+              5722,
+              5739
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "080f014433554b5f69a4f5c4",
+          "quote": "Salmo 118:24",
+          "before": "",
+          "after": " «Este es el día que hizo el SEÑOR; nos ",
+          "spans": [
+            [
+              7083,
+              7095
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "cd93b32d0d1b4a28f2c53032",
+          "quote": "1 Timoteo 6:6",
+          "before": "e la Palabra acerca del contentamiento. ",
+          "after": " «Pero gran ganancia es la piedad acompa",
+          "spans": [
+            [
+              8853,
+              8866
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "c148f94c7c654b457c84f452",
+          "quote": "Filipenses 4:11",
+          "before": "edad acompañada de contentamiento...» y ",
+          "after": " «No lo digo porque tenga escasez, pues ",
+          "spans": [
+            [
+              8944,
+              8959
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "b7f21b5f2cf20ff5fdfbce7c",
+          "quote": "Salmo 118:24",
+          "before": "r muchos otros lugares. Veamos algunos. ",
+          "after": " Este es el día que hizo el SEÑOR; nos a",
+          "spans": [
+            [
+              9273,
+              9285
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "40e74e213d35d9fc0300eacb",
+          "quote": "Salmo 40:16",
+          "before": "",
+          "after": " «Gócense y alégrense en ti todos los qu",
+          "spans": [
+            [
+              9384,
+              9395
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "7415767a98e8516481ef9fb0",
+          "quote": "Salmo 90:14",
+          "before": " salvación: Sea el SEÑOR engrandecido». ",
+          "after": " «Sácianos de mañana con tu misericordia",
+          "spans": [
+            [
+              9526,
+              9537
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "d4dc9caf4fd616c648fa99c9",
+          "quote": "Isaías 12:3",
+          "before": "remos y gozaremos todos nuestros días». ",
+          "after": " «Por tanto, con gozo sacaréis agua de l",
+          "spans": [
+            [
+              9651,
+              9662
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "01a69a54ab673f5e649384ad",
+          "quote": "Salmo 100:4-5",
+          "before": "d su nombre, porque el Señor es bueno». ",
+          "after": "",
+          "spans": [
+            [
+              10325,
+              10338
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "0b98645deae4b754ba379101b9ceb561106c1101c26acc1c08aa2292338069cb"
+    },
     "304e1120-f241-4d9e-972b-c72dec82b134:fr:d765e9d4a499e292c8065891c4cc6ed8ea9a7fc82aadf84714c3d5003de28053:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
       "locale": "fr",
@@ -93062,6 +93537,175 @@
         }
       ],
       "record_hash": "fae275f68a9742f204dfe9d51d532ce8f6d3656c25f48b420f41d3a0a7586ead"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:hi:9c7e9c736d697422550a4bc95640b539b49872ac12c1b78a4ac37e95ffe71d88:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "hi",
+      "content_hash": "9c7e9c736d697422550a4bc95640b539b49872ac12c1b78a4ac37e95ffe71d88",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "44670daa372a753de97e91df",
+          "quote": "नहेमायाह 8:10",
+          "before": ", याद रखिए, “यहोवा का आनंद मेरा बल है” (",
+          "after": ")। आनंद के बिना बल कम हो जाता है। कुछ सा",
+          "spans": [
+            [
+              3438,
+              3451
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "6ef9f3520baaae9b5982715d",
+          "quote": "1 कुरिन्थियों 10:10",
+          "before": "ुबह अपनी भक्ति के समय मैंने यह पद पढ़ा, ",
+          "after": " “और न कुड़कुड़ाओ, जिस प्रकार उनमें से क",
+          "spans": [
+            [
+              5412,
+              5431
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "dc37f36a652d7c4ce3a9a883",
+          "quote": "भजन संहिता 118:24",
+          "before": "",
+          "after": " “यह वही दिन है जिसे यहोवा ने बनाया है; ",
+          "spans": [
+            [
+              6641,
+              6658
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "8d15bd7acda2b78dcc4f27ad",
+          "quote": "1 तीमुथियुस 6:6",
+          "before": "ीं है। वचन में संतोष के कुछ आदेश देखिए। ",
+          "after": " “पर संतोष सहित भक्ति बड़ी कमाई है...” औ",
+          "spans": [
+            [
+              8344,
+              8359
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "5e3607996dc6194313c9e272",
+          "quote": "फिलिप्पियों 4:11",
+          "before": "पर संतोष सहित भक्ति बड़ी कमाई है...” और ",
+          "after": " “यह मैं अपनी घटी के कारण नहीं कहता; क्य",
+          "spans": [
+            [
+              8410,
+              8426
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "f454868684e6d2cd7cbd58d2",
+          "quote": "भजन संहिता 118:24",
+          "before": " भी भरपूर मिलता है। इनमें से कुछ देखिए। ",
+          "after": " यह वही दिन है जिसे यहोवा ने बनाया है; ह",
+          "spans": [
+            [
+              8709,
+              8726
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "72659835a33730f45332293f",
+          "quote": "भजन संहिता 40:16",
+          "before": "",
+          "after": " “जो तुझे ढूँढ़ते हैं, वे सब तुझ में मगन",
+          "spans": [
+            [
+              8820,
+              8836
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "aae4daa715c0fff486163e50",
+          "quote": "भजन संहिता 90:14",
+          "before": "ं, वे निरन्तर कहें, यहोवा की महिमा हो।” ",
+          "after": " “भोर को अपनी करुणा से हमें तृप्त कर, कि",
+          "spans": [
+            [
+              8973,
+              8989
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "fab2d8ef4039b9bea4ec0313",
+          "quote": "यशायाह 12:3",
+          "before": " कर, कि हम जीवन भर मगन और आनंदित रहें।” ",
+          "after": " “इसलिए तुम आनंद के साथ उद्धार के सोतों ",
+          "spans": [
+            [
+              9069,
+              9080
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "a90ba7f4abf9c176cb280bd0",
+          "quote": "भजन संहिता 100:4-5",
+          "before": "नाम को धन्य कहो, क्योंकि यहोवा भला है।” ",
+          "after": "",
+          "spans": [
+            [
+              9722,
+              9740
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "d61bb272c878ee61ead252844a12128a9fd0949b75dcc1fff0e0b019f9e73f22"
     },
     "30637e28-4fcf-487a-a24d-49906c2810b9:en:2e6d0a3dde74a7375563a79d59639a97c9ef1ed79999bca757f01c679ddc4272:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "30637e28-4fcf-487a-a24d-49906c2810b9",
@@ -120044,6 +120688,415 @@
         }
       ],
       "record_hash": "6efafad2340e492c00231222a02f160ebd993044b82e22fb2ba8dff743aa5606"
+    },
+    "391d4642-07e2-4003-83db-fa33dc08a8ca:es:27bca1388340864d29e72c2759f952b19901d57693983de6b54654d29b61e2d3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "391d4642-07e2-4003-83db-fa33dc08a8ca",
+      "locale": "es",
+      "content_hash": "27bca1388340864d29e72c2759f952b19901d57693983de6b54654d29b61e2d3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4965bae8d055608c60653aee",
+          "quote": "Mateo 13:44",
+          "before": "odo lo que tiene, y compra aquel campo –",
+          "after": ".",
+          "spans": [
+            [
+              1797,
+              1808
+            ]
+          ],
+          "osis": "Matt.13.44",
+          "queries": [
+            "40 13:44"
+          ]
+        },
+        {
+          "id": "d735f614ea96df50d775a0e8",
+          "quote": "Gálatas 5:22-23",
+          "before": "d, bondad, fe, mansedumbre, templanza… –",
+          "after": ", que es fruto del Espíritu. Parece tene",
+          "spans": [
+            [
+              3110,
+              3125
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "95b6026adb0ed3bd8d602c41",
+          "quote": "Juan 3:2",
+          "before": "s que tú haces, si no está Dios con él –",
+          "after": ".",
+          "spans": [
+            [
+              5532,
+              5540
+            ]
+          ],
+          "osis": "John.3.2",
+          "queries": [
+            "43 3:2"
+          ]
+        },
+        {
+          "id": "9b3c306b8bcaf6417bed3842",
+          "quote": "Juan 3:3",
+          "before": "e nuevo, no puede ver el reino de Dios –",
+          "after": ". Es casi como si dijera: [“Aunque viene",
+          "spans": [
+            [
+              5740,
+              5748
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "40eb40b8c10deee797fe9863",
+          "quote": "Jeremías 17:9",
+          "before": "adamente perverso; ¿quién lo conocerá? –",
+          "after": ". Él sigue explicando: Yo, el SEÑOR, esc",
+          "spans": [
+            [
+              6855,
+              6868
+            ]
+          ],
+          "osis": "Jer.17.9",
+          "queries": [
+            "24 17:9"
+          ]
+        },
+        {
+          "id": "c2886f78fe0fcc7db70799ae",
+          "quote": "Jeremías 17:10",
+          "before": "razón y examino lo más íntimo del ser… –",
+          "after": ".",
+          "spans": [
+            [
+              6969,
+              6983
+            ]
+          ],
+          "osis": "Jer.17.10",
+          "queries": [
+            "24 17:10"
+          ]
+        },
+        {
+          "id": "00deadbf419846a70c018e0e",
+          "quote": "Juan 3:4",
+          "before": "vez en el vientre de su madre y nacer? –",
+          "after": ".",
+          "spans": [
+            [
+              7458,
+              7466
+            ]
+          ],
+          "osis": "John.3.4",
+          "queries": [
+            "43 3:4"
+          ]
+        },
+        {
+          "id": "274dde334679f546f3eb67c8",
+          "quote": "Juan 3:14",
+          "before": "o que el Hijo del Hombre sea levantado –",
+          "after": ".",
+          "spans": [
+            [
+              7681,
+              7690
+            ]
+          ],
+          "osis": "John.3.14",
+          "queries": [
+            "43 3:14"
+          ]
+        },
+        {
+          "id": "b95058ea14eead0435c81161",
+          "quote": "Juan 3:20",
+          "before": "para que sus obras no sean reprendidas –",
+          "after": ". Si primero debemos morir para nacer de",
+          "spans": [
+            [
+              7842,
+              7851
+            ]
+          ],
+          "osis": "John.3.20",
+          "queries": [
+            "43 3:20"
+          ]
+        },
+        {
+          "id": "95ce222757fdcd37eee62cbb",
+          "quote": "Gálatas 5:24",
+          "before": "la carne con sus pasiones y sus deseos –",
+          "after": ". Entonces, ¿cómo llega en la práctica a",
+          "spans": [
+            [
+              8003,
+              8015
+            ]
+          ],
+          "osis": "Gal.5.24",
+          "queries": [
+            "48 5:24"
+          ]
+        },
+        {
+          "id": "e76c94a89cfc3c5fd2b1cb28",
+          "quote": "Romanos 10:9-10",
+          "before": "e levantó de los muertos, serás salvo… –",
+          "after": ".",
+          "spans": [
+            [
+              8259,
+              8274
+            ]
+          ],
+          "osis": "Rom.10.9-Rom.10.10",
+          "queries": [
+            "45 10:9-10"
+          ]
+        },
+        {
+          "id": "71ccc934d160cc32f219fda2",
+          "quote": "Hechos 2:38",
+          "before": "y recibiréis el don del Espíritu Santo –",
+          "after": ".",
+          "spans": [
+            [
+              8464,
+              8475
+            ]
+          ],
+          "osis": "Acts.2.38",
+          "queries": [
+            "44 2:38"
+          ]
+        },
+        {
+          "id": "9603ce5e01a71e037e0dbecf",
+          "quote": "Hebreos 4:2",
+          "before": "tar mezclada con fe en los que la oían –",
+          "after": ".",
+          "spans": [
+            [
+              8588,
+              8599
+            ]
+          ],
+          "osis": "Heb.4.2",
+          "queries": [
+            "58 4:2"
+          ]
+        },
+        {
+          "id": "f92885003406452e1e6c377f",
+          "quote": "Hebreos 11:6",
+          "before": "ro sin fe es imposible agradar a Dios… –",
+          "after": ".",
+          "spans": [
+            [
+              8665,
+              8677
+            ]
+          ],
+          "osis": "Heb.11.6",
+          "queries": [
+            "58 11:6"
+          ]
+        },
+        {
+          "id": "ddc09d638f48a8b1d86a31fe",
+          "quote": "Lucas 3:3",
+          "before": "pentimiento para perdón de los pecados –",
+          "after": ".",
+          "spans": [
+            [
+              8780,
+              8789
+            ]
+          ],
+          "osis": "Luke.3.3",
+          "queries": [
+            "42 3:3"
+          ]
+        },
+        {
+          "id": "abee9486a095061c3c504994",
+          "quote": "Juan 10:9",
+          "before": "ta; el que por mí entrare, será salvo… –",
+          "after": ".",
+          "spans": [
+            [
+              8867,
+              8876
+            ]
+          ],
+          "osis": "John.10.9",
+          "queries": [
+            "43 10:9"
+          ]
+        },
+        {
+          "id": "8fc79b84480052be217a4695",
+          "quote": "Marcos 8:34-35",
+          "before": " a sí mismo, y tome su cruz, y sígame… –",
+          "after": ".",
+          "spans": [
+            [
+              8983,
+              8997
+            ]
+          ],
+          "osis": "Mark.8.34-Mark.8.35",
+          "queries": [
+            "41 8:34-35"
+          ]
+        },
+        {
+          "id": "af8392d6ba3eaf7003a1b600",
+          "quote": "Apocalipsis 3:20",
+          "before": "ré a él, y cenaré con él, y él conmigo –",
+          "after": ".",
+          "spans": [
+            [
+              9149,
+              9165
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "b7daa1e9582b570fad12f615",
+          "quote": "Juan 9:35-38",
+          "before": "onces dijo: Señor, yo creo. Y le adoró –",
+          "after": ".",
+          "spans": [
+            [
+              9295,
+              9307
+            ]
+          ],
+          "osis": "John.9.35-John.9.38",
+          "queries": [
+            "43 9:35-38"
+          ]
+        },
+        {
+          "id": "8315d36f29c7bc02b24d5726",
+          "quote": "Efesios 2:8-9",
+          "before": " la fe … es don de Dios: No por obras… –",
+          "after": ".",
+          "spans": [
+            [
+              9413,
+              9426
+            ]
+          ],
+          "osis": "Eph.2.8-Eph.2.9",
+          "queries": [
+            "49 2:8-9"
+          ]
+        },
+        {
+          "id": "fca09333a7c7c9681c5d1820",
+          "quote": "Ezequiel 36:26-27",
+          "before": "s mis juicios, y los pondréis por obra –",
+          "after": ".",
+          "spans": [
+            [
+              11974,
+              11991
+            ]
+          ],
+          "osis": "Ezek.36.26-Ezek.36.27",
+          "queries": [
+            "26 36:26-27"
+          ]
+        },
+        {
+          "id": "90a700aaf9865872d3c40105",
+          "quote": "Mateo 7:7-8",
+          "before": ", y hallaréis; llamad, y se os abrirá… –",
+          "after": ".",
+          "spans": [
+            [
+              13803,
+              13814
+            ]
+          ],
+          "osis": "Matt.7.7-Matt.7.8",
+          "queries": [
+            "40 7:7-8"
+          ]
+        },
+        {
+          "id": "9fdd98b501428ff43776c86f",
+          "quote": "1 Corintios 10:13",
+          "before": "una salida, para que podáis soportarla –",
+          "after": ".",
+          "spans": [
+            [
+              13982,
+              13999
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "d17f0ce65ae5564d8db80e36",
+          "quote": "Mateo 21:21",
+          "before": "ítate y échate en el mar; y será hecho –",
+          "after": ".",
+          "spans": [
+            [
+              14115,
+              14126
+            ]
+          ],
+          "osis": "Matt.21.21",
+          "queries": [
+            "40 21:21"
+          ]
+        },
+        {
+          "id": "8417e9602c794b14d896e218",
+          "quote": "Gálatas 5:16",
+          "before": " no satisfaréis los deseos de la carne –",
+          "after": ".",
+          "spans": [
+            [
+              14230,
+              14242
+            ]
+          ],
+          "osis": "Gal.5.16",
+          "queries": [
+            "48 5:16"
+          ]
+        }
+      ],
+      "record_hash": "d52a44f5d3217e8c966e2103fddaad2500b3ae33cd4f184d9e0bb039d4e775c2"
     },
     "391d4642-07e2-4003-83db-fa33dc08a8ca:fr:b84a14218efe2f827c494f64ba3b30e1b75750d2b17f96434d324623a94621c5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "391d4642-07e2-4003-83db-fa33dc08a8ca",
@@ -404121,6 +405174,127 @@
         }
       ],
       "record_hash": "f8bf36e6fbfcb4d48b1246d42b56bca529a27f5f68b80134faf370c6afc3f5c8"
+    },
+    "dc9bb2ea-cefd-4340-b274-deddb70afcaf:ru:5294cb3d7cd4734e4730d7dfb048659b35bd45fcaa91c119fbf2347a757704b9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",
+      "locale": "ru",
+      "content_hash": "5294cb3d7cd4734e4730d7dfb048659b35bd45fcaa91c119fbf2347a757704b9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "071c2941680cc31929e60e27",
+          "quote": "Числа 13:30",
+          "before": "потому что мы вполне можем одолеть её — ",
+          "after": ".",
+          "spans": [
+            [
+              739,
+              750
+            ]
+          ],
+          "osis": "Num.13.30",
+          "queries": [
+            "4 13:30"
+          ]
+        },
+        {
+          "id": "81ff882baa32b0617d80160a",
+          "quote": "Деяния 9:20",
+          "before": "нагогах Христа, что Он есть Сын Божий — ",
+          "after": ". В следующем стихе говорится, что люди ",
+          "spans": [
+            [
+              2643,
+              2654
+            ]
+          ],
+          "osis": "Acts.9.20",
+          "queries": [
+            "44 9:20"
+          ]
+        },
+        {
+          "id": "032a2abdb054114291237434",
+          "quote": "2 Тимофею 4:6–7",
+          "before": "лся, течение совершил, веру сохранил; — ",
+          "after": ".",
+          "spans": [
+            [
+              3182,
+              3197
+            ]
+          ],
+          "osis": "2Tim.4.6-2Tim.4.7",
+          "queries": [
+            "55 4:6-7"
+          ]
+        },
+        {
+          "id": "1ab210905e1a9828be311e5f",
+          "quote": "Псалом 44:22",
+          "before": "лупость»; их …умерщвляли всякий день… — ",
+          "after": ". Люди ставили под сомнение их обычаи, ц",
+          "spans": [
+            [
+              4020,
+              4032
+            ]
+          ],
+          "osis": "Ps.44.22",
+          "queries": [
+            "19 44:22"
+          ]
+        },
+        {
+          "id": "4f6b96a127b14ce7da8befb6",
+          "quote": "Деяния 1:8",
+          "before": " Иудее и Самарии и даже до края земли — ",
+          "after": ".",
+          "spans": [
+            [
+              7528,
+              7538
+            ]
+          ],
+          "osis": "Acts.1.8",
+          "queries": [
+            "44 1:8"
+          ]
+        },
+        {
+          "id": "b64d7d73cbb468aed73d87ed",
+          "quote": "Ефесянам 5:25–27",
+          "before": "о, но дабы она была свята и непорочна — ",
+          "after": ".",
+          "spans": [
+            [
+              9629,
+              9645
+            ]
+          ],
+          "osis": "Eph.5.25-Eph.5.27",
+          "queries": [
+            "49 5:25-27"
+          ]
+        },
+        {
+          "id": "6a3741be4cee23bf9ac96918",
+          "quote": "Исаия 61:1–3",
+          "before": "аждением Господа, дабы Он прославился — ",
+          "after": ".",
+          "spans": [
+            [
+              12756,
+              12768
+            ]
+          ],
+          "osis": "Isa.61.1-Isa.61.3",
+          "queries": [
+            "23 61:1-3"
+          ]
+        }
+      ],
+      "record_hash": "9234ffdd7ccedec316f6362a5f4512518065e43d833259c5a34df7229fabee7b"
     },
     "dc9bb2ea-cefd-4340-b274-deddb70afcaf:sw:7a10d8cbda472204292a86cd756462a2949cb7e9d43bbf8e114988233a32bce2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dc9bb2ea-cefd-4340-b274-deddb70afcaf",

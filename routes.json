@@ -22153,11 +22153,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "المرأة",
+        "alias": "صرخة-قلب-أم",
+        "history": [
+          "/ar/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -32046,11 +32047,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "নারী",
+        "alias": "এক-মায়ের-হৃদয়ের-আর্তি",
+        "history": [
+          "/bn/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -77153,11 +77155,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "mujer",
+        "alias": "el-clamor-del-corazón-de-una-madre",
+        "history": [
+          "/es/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -77464,11 +77467,12 @@
       },
       "391d4642-07e2-4003-83db-fa33dc08a8ca": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "ye-must-be-born-again",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristiana",
+        "alias": "debéis-nacer-de-nuevo",
+        "history": [
+          "/es/articles/ye-must-be-born-again/"
+        ],
+        "fallback": false
       },
       "39530116-8c39-4abd-beb6-89f05771a4f8": {
         "category_id": "729ef2d2-cb45-545b-b9a8-555cc7a423df",
@@ -106676,11 +106680,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "महिलाएँ",
+        "alias": "एक-माँ-के-हृदय-की-पुकार",
+        "history": [
+          "/hi/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -145834,11 +145839,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vekkelse",
+        "alias": "et-budskap-til-verden",
+        "history": [
+          "/nb/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -181507,11 +181513,12 @@
       },
       "dc9bb2ea-cefd-4340-b274-deddb70afcaf": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
-        "category_slug": "articles",
-        "alias": "confidence-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "духовные-упражнения",
+        "alias": "уверенность",
+        "history": [
+          "/ru/articles/confidence-2/"
+        ],
+        "fallback": false
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
@@ -185478,11 +185485,12 @@
       },
       "14a35072-cac9-42df-a3ca-1f7db446d968": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "a-message-to-the-world",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "väckelse",
+        "alias": "ett-budskap-till-världen",
+        "history": [
+          "/sv/articles/a-message-to-the-world/"
+        ],
+        "fallback": false
       },
       "14ed443a-4a0f-4365-945a-9bd4bc0cb33c": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
