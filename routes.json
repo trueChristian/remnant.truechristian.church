@@ -36069,11 +36069,12 @@
       },
       "ba09e248-cc12-4573-9db1-cceb885953ac": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-finished-work-of-christ",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "খ্রিষ্টীয়-জীবনযাপন",
+        "alias": "খ্রিষ্টের-সমাপ্ত-কাজ",
+        "history": [
+          "/bn/articles/the-finished-work-of-christ/"
+        ],
+        "fallback": false
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -116701,11 +116702,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "perempuan",
+        "alias": "seruan-hati-seorang-ibu",
+        "history": [
+          "/id/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -166587,11 +166589,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "mulher",
+        "alias": "o-clamor-do-coração-de-uma-mãe",
+        "history": [
+          "/pt/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -170618,11 +170621,12 @@
       },
       "ba09e248-cc12-4573-9db1-cceb885953ac": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-finished-work-of-christ",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vida-cristã",
+        "alias": "a-obra-consumada-de-cristo",
+        "history": [
+          "/pt/articles/the-finished-work-of-christ/"
+        ],
+        "fallback": false
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -176473,11 +176477,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "женщина",
+        "alias": "вопль-материнского-сердца",
+        "history": [
+          "/ru/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -196039,11 +196044,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "wanawake",
+        "alias": "kilio-cha-moyo-wa-mama",
+        "history": [
+          "/sw/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "01515f55a7ce641183fb3503e944e1cc026a76e50209b7934fdaaa5a35154e98",
+  "integrity": "5734b6d1e8af78e55d00a19762dfa3b9e534cf84ccfee2410dc9b6b47d206b32",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -93706,6 +93706,682 @@
         }
       ],
       "record_hash": "d61bb272c878ee61ead252844a12128a9fd0949b75dcc1fff0e0b019f9e73f22"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:id:3f00383349bdd2c09a74931eaa67887079eae8f8f96fd90bcfa34b04e8aeb56e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "id",
+      "content_hash": "3f00383349bdd2c09a74931eaa67887079eae8f8f96fd90bcfa34b04e8aeb56e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "dff220ed064996e20ffd3117",
+          "quote": "Nehemia 8:10",
+          "before": "an, “sukacita TUHAN adalah kekuatanku” (",
+          "after": "). Tanpa sukacita, kekuatan kita berkura",
+          "spans": [
+            [
+              3913,
+              3925
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "cda1c896a2c7a0da8584c600",
+          "quote": "1 Korintus 10:10",
+          "before": "alam saat teduh, saya membaca ayat ini, ",
+          "after": " “Janganlah kamu bersungut-sungut sepert",
+          "spans": [
+            [
+              6291,
+              6307
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "39535ee8e8654ff5cf037534",
+          "quote": "Mazmur 118:24",
+          "before": "",
+          "after": " “Inilah hari yang dijadikan TUHAN; mari",
+          "spans": [
+            [
+              7840,
+              7853
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "153d8ab9e73b267f18dbbb18",
+          "quote": "1 Timotius 6:6",
+          "before": "erintah dalam Firman untuk merasa puas. ",
+          "after": " “Memang ibadah yang disertai rasa cukup",
+          "spans": [
+            [
+              9854,
+              9868
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "76bb0ee4944e4d5f19318175",
+          "quote": "Filipi 4:11",
+          "before": "ukup memberi keuntungan besar. . .” dan ",
+          "after": " “Aku mengatakan hal ini bukan karena ke",
+          "spans": [
+            [
+              9953,
+              9964
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "3c0432675d63bd567b2fc958",
+          "quote": "Mazmur 118:24",
+          "before": "nnya. Perhatikan beberapa di antaranya. ",
+          "after": " Inilah hari yang dijadikan TUHAN; maril",
+          "spans": [
+            [
+              10308,
+              10321
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "924091be28f99b0f96e7f058",
+          "quote": "Mazmur 40:16",
+          "before": "",
+          "after": " “Biarlah semua orang yang mencari Engka",
+          "spans": [
+            [
+              10436,
+              10448
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "89d52ffbe73a09da0f91f892",
+          "quote": "Mazmur 90:14",
+          "before": "i-Mu selalu berkata: ‘TUHAN itu besar!’ ",
+          "after": " “Kenyangkanlah kami di waktu pagi denga",
+          "spans": [
+            [
+              10633,
+              10645
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "21c2a1c65d9453f2dfbd8207",
+          "quote": "Yesaya 12:3",
+          "before": " bersukacita sepanjang hari-hari kami.” ",
+          "after": " “Maka kamu akan menimba air dengan bers",
+          "spans": [
+            [
+              10780,
+              10791
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "223ff506e166e666a32b83b0",
+          "quote": "Mazmur 100:4-5",
+          "before": "ujilah nama-Nya, sebab TUHAN itu baik.” ",
+          "after": "",
+          "spans": [
+            [
+              11559,
+              11573
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "016b507070c6c4e65b64a5fe24cc7020eea3cb02a4380a6532c4ab5874dac8ac"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:pt:8e55c0158fa5946d80eafb8bcdaa30bf02b4de9b57ed43197748f1c6116d5df8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "pt",
+      "content_hash": "8e55c0158fa5946d80eafb8bcdaa30bf02b4de9b57ed43197748f1c6116d5df8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "024ad488c0b1efa94463dd34",
+          "quote": "Neemias 8:10",
+          "before": " “a alegria do SENHOR é a minha força” (",
+          "after": "). Sem alegria, há menos força. Durante ",
+          "spans": [
+            [
+              3718,
+              3730
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "e051375ab3dcc7eab07d8373",
+          "quote": "1 Coríntios 10:10",
+          "before": "ante meu devocional, li este versículo: ",
+          "after": " “Nem murmureis, como alguns deles també",
+          "spans": [
+            [
+              5761,
+              5778
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "959819fb65b2dca399dd76f7",
+          "quote": "Salmo 118:24",
+          "before": "",
+          "after": " “Este é o dia que o SENHOR fez; regozij",
+          "spans": [
+            [
+              7107,
+              7119
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "5f93762625ce0d6252404a03",
+          "quote": "1 Timóteo 6:6",
+          "before": "entos da Palavra sobre o contentamento. ",
+          "after": " “Mas a piedade com contentamento é gran",
+          "spans": [
+            [
+              8909,
+              8922
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "66d7108b55c17d2bf7a41627",
+          "quote": "Filipenses 4:11",
+          "before": "om contentamento é grande ganho. . .” e ",
+          "after": " “Não digo isto por causa de necessidade",
+          "spans": [
+            [
+              8988,
+              9003
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "c37e24295c7bb4d4201edb4d",
+          "quote": "Salmo 118:24",
+          "before": "itos outros lugares. Veja alguns deles. ",
+          "after": " Este é o dia que o SENHOR fez; nós vamo",
+          "spans": [
+            [
+              9313,
+              9325
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "d954bcf298ad3974ef472ab2",
+          "quote": "Salmo 40:16",
+          "before": "",
+          "after": " “Que todos os que te buscam se regozije",
+          "spans": [
+            [
+              9426,
+              9437
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "f5842ad7cedb3891e1ca693b",
+          "quote": "Salmo 90:14",
+          "before": " salvação: O SENHOR seja engrandecido.” ",
+          "after": " “Sacia-nos de manhã com a tua misericór",
+          "spans": [
+            [
+              9583,
+              9594
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "8dd28e8a977ea8a9af7eba4b",
+          "quote": "Isaías 12:3",
+          "before": "os e alegrar-nos todos os nossos dias.” ",
+          "after": " “Portanto, com alegria tirareis água da",
+          "spans": [
+            [
+              9715,
+              9726
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "60a9ec5968f32125ad657de4",
+          "quote": "Salmo 100:4-5",
+          "before": "zei o seu nome, porque o Senhor é bom.” ",
+          "after": "",
+          "spans": [
+            [
+              10406,
+              10419
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "c33c5db97467a982be0c7776b12d5296ade84575571042a403b011e88658d1e2"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:ru:42eaf9a031d7af5c1ea5ab20626d9231542ddac25af499e8c34ccf3af5078188:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "ru",
+      "content_hash": "42eaf9a031d7af5c1ea5ab20626d9231542ddac25af499e8c34ccf3af5078188",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "980c1c8e3bb5bef67c925bb3",
+          "quote": "Неемия 8:10",
+          "before": "омните: «радость о ГОСПОДЕ — моя сила» (",
+          "after": "). Без радости сил становится меньше. Не",
+          "spans": [
+            [
+              3563,
+              3574
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "8aa33559b40edf5ac18a31f8",
+          "quote": "1 Коринфянам 10:10",
+          "before": " общения с Богом я прочитала этот стих: ",
+          "after": " «Не ропщите, как некоторые из них ропта",
+          "spans": [
+            [
+              5612,
+              5630
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "fe46c5991e17edf1f0c6e234",
+          "quote": "Псалом 118:24",
+          "before": "",
+          "after": " «Это день, который сотворил ГОСПОДЬ; бу",
+          "spans": [
+            [
+              6851,
+              6864
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "752216dcbc788b01f15a2879",
+          "quote": "1 Тимофею 6:6",
+          "before": "о повелений Слова Божьего о довольстве. ",
+          "after": " «Но благочестие с довольством — великое",
+          "spans": [
+            [
+              8514,
+              8527
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "99979c0eafd9a3e79d58a9f1",
+          "quote": "Филиппийцам 4:11",
+          "before": "ольством — великое приобретение. . .» и ",
+          "after": " «Говорю это не из-за нужды: ибо я научи",
+          "spans": [
+            [
+              8598,
+              8614
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "7dfeec623ab9a0ba7d376036",
+          "quote": "Псалом 118:24",
+          "before": "Посмотрите на некоторые из этих стихов. ",
+          "after": " Это день, который сотворил ГОСПОДЬ; буд",
+          "spans": [
+            [
+              8906,
+              8919
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "186f498e68495ee5a3246f92",
+          "quote": "Псалом 40:16",
+          "before": "",
+          "after": " «Пусть все, ищущие Тебя, радуются и вес",
+          "spans": [
+            [
+              9024,
+              9036
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "31350a7b483ebcb7ac6eafcc",
+          "quote": "Псалом 90:14",
+          "before": " говорят: да будет возвеличен ГОСПОДЬ». ",
+          "after": " «Насыть нас рано милостью Твоей, чтобы ",
+          "spans": [
+            [
+              9177,
+              9189
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "88f1105056c6c50c9febbaee",
+          "quote": "Исаия 12:3",
+          "before": "доваться и веселиться во все дни наши». ",
+          "after": " «Поэтому с радостью будете черпать воду",
+          "spans": [
+            [
+              9287,
+              9297
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "cc6048a365c11a22e2b4d5c1",
+          "quote": "Псалом 100:4-5",
+          "before": "гословляйте имя Его, ибо Господь благ». ",
+          "after": "",
+          "spans": [
+            [
+              9923,
+              9937
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "627ce62cb941bdfac74d24c5b52295477852515f0b9b7ac1e530d48c9f1d1b7d"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:sw:9d2c44a033f7ff3524866418f925f167682725b0402ffb3996efb525b095bc41:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "sw",
+      "content_hash": "9d2c44a033f7ff3524866418f925f167682725b0402ffb3996efb525b095bc41",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "0344487e8d48ebbb5c902e67",
+          "quote": "Nehemia 8:10",
+          "before": "i, “furaha ya BWANA ndiyo nguvu zangu” (",
+          "after": "). Bila furaha, nguvu hupungua. Kwa miak",
+          "spans": [
+            [
+              3806,
+              3818
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "511204109cd9cd5462bb882d",
+          "quote": "1 Wakorintho 10:10",
+          "before": "bada yangu binafsi nilisoma mstari huu, ",
+          "after": " “Wala msinung'unike kama baadhi yao wal",
+          "spans": [
+            [
+              6009,
+              6027
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "2db7320ae4325bc475cf46a9",
+          "quote": "Zaburi 118:24",
+          "before": "",
+          "after": " “Hii ndiyo siku aliyoifanya BWANA; tuta",
+          "spans": [
+            [
+              7300,
+              7313
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "e069251db743753668e7f117",
+          "quote": "1 Timotheo 6:6",
+          "before": "a maagizo katika Neno kuhusu kuridhika. ",
+          "after": " “Lakini utauwa pamoja na kuridhika ni f",
+          "spans": [
+            [
+              9069,
+              9083
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "a092085b9d3dacff9852b8b2",
+          "quote": "Wafilipi 4:11",
+          "before": "ja na kuridhika ni faida kubwa. . .” na ",
+          "after": " “Sisemi haya kwa sababu ya mahitaji: ma",
+          "spans": [
+            [
+              9152,
+              9165
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "7555b75c94ed05aa96a48d07",
+          "quote": "Zaburi 118:24",
+          "before": "mu nyingine nyingi. Tazama baadhi yake. ",
+          "after": " Hii ndiyo siku aliyoifanya BWANA; tutak",
+          "spans": [
+            [
+              9469,
+              9482
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "215244465a79cdedc13fe860",
+          "quote": "Zaburi 40:16",
+          "before": "",
+          "after": " “Wote wanaokutafuta na washangilie na k",
+          "spans": [
+            [
+              9584,
+              9596
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "5f4bac98f340e51eb71f1300",
+          "quote": "Zaburi 90:14",
+          "before": "ko na waseme daima, BWANA na atukuzwe.” ",
+          "after": " “Utushibishe asubuhi kwa fadhili zako; ",
+          "spans": [
+            [
+              9724,
+              9736
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "66a38a1f587ac7007d68d8bb",
+          "quote": "Isaya 12:3",
+          "before": "ushangilie na kufurahi siku zetu zote.” ",
+          "after": " “Kwa hiyo kwa furaha mtateka maji katik",
+          "spans": [
+            [
+              9828,
+              9838
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "f186eaa3bc4cab768e506b6b",
+          "quote": "Zaburi 100:4-5",
+          "before": "fu jina lake, kwa kuwa Bwana ni mwema.” ",
+          "after": "",
+          "spans": [
+            [
+              10466,
+              10480
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "22de0d22653a4d78390a1f5f082217d1973244e4ccbb99d75c007c2328c01192"
     },
     "304e1120-f241-4d9e-972b-c72dec82b134:zh-Hans:5b7bb548eb713bcaf31588e5909c3cbfe38aec71585a3586df32f8e1646c3f13:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
@@ -357319,6 +357995,767 @@
       ],
       "record_hash": "b57e65e8d6baba1a856290a4dc3fb2a1654127a6ffcc15b4c06a1f64e9c528e8"
     },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:bn:71c9d559f712047c05cb40e42f77c19e1c058d8e70183ed99a127e0dd00889e8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "bn",
+      "content_hash": "71c9d559f712047c05cb40e42f77c19e1c058d8e70183ed99a127e0dd00889e8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "59eaee7b2a36addb5c713128",
+          "quote": "যোহন ১৯:৩০",
+          "before": " আর তিনি মাথা নত করে প্রাণত্যাগ করলেন। –",
+          "after": "",
+          "spans": [
+            [
+              397,
+              407
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "333ab042b5a5cf6a1e4332f5",
+          "quote": "লূক ২৪:৪৬-৪৭",
+          "before": "ানো ও পাপের ক্ষমার কথা প্রচার করা হয়… –",
+          "after": "। যিশাইয় ৫৩ অধ্যায়ের পুরোটা জুড়ে যে দ",
+          "spans": [
+            [
+              2019,
+              2031
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "29ed6c1c60023ff425e7bcfb",
+          "quote": "যিশাইয় ৫৩",
+          "before": "ষমার কথা প্রচার করা হয়… –লূক ২৪:৪৬-৪৭। ",
+          "after": " অধ্যায়ের পুরোটা জুড়ে যে দুঃখভোগী দাসে",
+          "spans": [
+            [
+              2038,
+              2048
+            ]
+          ],
+          "osis": "Isa.53.1-Isa.53.12",
+          "queries": [
+            "23 53:1-12"
+          ]
+        },
+        {
+          "id": "4b4db6f299e3ab09620859bb",
+          "quote": "যিশাইয় ৫৩:৫",
+          "before": "িদ্ধ… [এবং] আমাদের অধর্মের জন্য চূর্ণ… –",
+          "after": "। এখানে এ বাস্তবতাও রয়েছে যে তাঁর প্রহা",
+          "spans": [
+            [
+              2260,
+              2272
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "7e48c6886881c6904f0df707",
+          "quote": "যিশাইয় ৫৩:৫",
+          "before": "রের ক্ষত দ্বারা আমরা আরোগ্য লাভ করেছি। –",
+          "after": "। পরিশেষে, আমরা দেখি, তিনি অত্যাচারিত হল",
+          "spans": [
+            [
+              2361,
+              2373
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "4cd695548fa219b86abdf59c",
+          "quote": "যিশাইয় ৫৩:৭",
+          "before": "ি অত্যাচারিত হলেন, তিনি দুঃখভোগ করলেন… –",
+          "after": ", এবং তিনি সহ্য করলেন …তাঁর প্রাণের যন্ত",
+          "spans": [
+            [
+              2447,
+              2459
+            ]
+          ],
+          "osis": "Isa.53.7",
+          "queries": [
+            "23 53:7"
+          ]
+        },
+        {
+          "id": "39ebdb56c1482ee93d4f6c75",
+          "quote": "যিশাইয় ৫৩:১১",
+          "before": "িনি সহ্য করলেন …তাঁর প্রাণের যন্ত্রণা… –",
+          "after": "",
+          "spans": [
+            [
+              2515,
+              2528
+            ]
+          ],
+          "osis": "Isa.53.11",
+          "queries": [
+            "23 53:11"
+          ]
+        },
+        {
+          "id": "ca0771b581f4785be1a59865",
+          "quote": "১ পিতর ৩:১৮",
+          "before": " আমাদের ঈশ্বরের কাছে নিয়ে যেতে পারেন… –",
+          "after": "; তিনি পুত্র হয়েও যে দুঃখভোগ করেছিলেন, ",
+          "spans": [
+            [
+              2731,
+              2742
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "a8453ad95355e6622dee22d3",
+          "quote": "ইব্রীয় ৫:৮",
+          "before": "রেছিলেন, তার মধ্য দিয়ে আনুগত্য শিখলেন –",
+          "after": "; যাঁর জন্য সব কিছু এবং যাঁর দ্বারা সব ক",
+          "spans": [
+            [
+              2813,
+              2824
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "077219f636dee3441cfaba01",
+          "quote": "ইব্রীয় ২:১০",
+          "before": "ভোগের মধ্য দিয়ে সিদ্ধ করা উপযুক্ত ছিল –",
+          "after": "।",
+          "spans": [
+            [
+              2992,
+              3004
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "e789154fa0e7116c48d31c61",
+          "quote": "২ করিন্থীয় ১:৫",
+          "before": "ের মাধ্যমে আমাদের সান্ত্বনাও উপচে পড়ে –",
+          "after": "; …যদি তাঁর সঙ্গে দুঃখভোগ করি, যেন তাঁর ",
+          "spans": [
+            [
+              3293,
+              3308
+            ]
+          ],
+          "osis": "2Cor.1.5",
+          "queries": [
+            "47 1:5"
+          ]
+        },
+        {
+          "id": "100c8c7996e64e5dd35e9562",
+          "quote": "রোমীয় ৮:১৭",
+          "before": "ভোগ করি, যেন তাঁর সঙ্গে মহিমান্বিতও হই –",
+          "after": "; যেন তাঁকে, তাঁর পুনরুত্থানের শক্তি এবং",
+          "spans": [
+            [
+              3370,
+              3381
+            ]
+          ],
+          "osis": "Rom.8.17",
+          "queries": [
+            "45 8:17"
+          ]
+        },
+        {
+          "id": "bda98ca3b35ceb40e8104bdc",
+          "quote": "ফিলিপীয় ৩:১০",
+          "before": "া জানতে পারি, তাঁর মৃত্যুর অনুরূপ হয়ে –",
+          "after": "।",
+          "spans": [
+            [
+              3484,
+              3497
+            ]
+          ],
+          "osis": "Phil.3.10",
+          "queries": [
+            "50 3:10"
+          ]
+        },
+        {
+          "id": "083b0cc668355467a058f406",
+          "quote": "মথি ২৬:২৮",
+          "before": " জন্য পাপের ক্ষমার উদ্দেশ্যে ঝরানো হয় –",
+          "after": "।",
+          "spans": [
+            [
+              4090,
+              4099
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "3d02154c03896cee6c23c424",
+          "quote": "ইব্রীয় ৯",
+          "before": "",
+          "after": " ও ১০ অধ্যায়ে বিস্তারিতভাবে ব্যাখ্যা কর",
+          "spans": [
+            [
+              4115,
+              4124
+            ]
+          ],
+          "osis": "Heb.9.1-Heb.9.28",
+          "queries": [
+            "58 9:1-28"
+          ]
+        },
+        {
+          "id": "c5668a59f90ff36e45d77a95",
+          "quote": "ইব্রীয় ৯:২২",
+          "before": "রা হয়; আর রক্তপাত ছাড়া ক্ষমা হয় না। –",
+          "after": "। এটি বিশেষভাবে মনে রাখা জরুরি, কারণ কেউ",
+          "spans": [
+            [
+              4470,
+              4482
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "2a83430fc19b51375f907ceb",
+          "quote": "মথি ১৮:২৩-৩৫",
+          "before": "ষমা করতে পারতেন। তাঁরা প্রমাণপাঠ হিসেবে ",
+          "after": "-এর কাহিনি ব্যবহার করেন। আমাদের বিবেচনা ",
+          "spans": [
+            [
+              4649,
+              4661
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "1f18be8b6b31c4bd5b21e4b7",
+          "quote": "প্রকাশিত বাক্য ১:৫",
+          "before": "িজের রক্তে আমাদের পাপ থেকে ধৌত করেছেন, –",
+          "after": "।",
+          "spans": [
+            [
+              5131,
+              5149
+            ]
+          ],
+          "osis": "Rev.1.5",
+          "queries": [
+            "66 1:5"
+          ]
+        },
+        {
+          "id": "1b20b026ecfdd308cc3fa21e",
+          "quote": "রোমীয় ৩:২৩-২৫",
+          "before": "ার মাধ্যমে তাঁর ধার্মিকতা প্রকাশিত হয় –",
+          "after": "। এখানে আমরা দেখি, আমাদের মধ্যে যে কেউ প",
+          "spans": [
+            [
+              5482,
+              5496
+            ]
+          ],
+          "osis": "Rom.3.23-Rom.3.25",
+          "queries": [
+            "45 3:23-25"
+          ]
+        },
+        {
+          "id": "5b3ba20957fab0c480faa249",
+          "quote": "যোহন ১০:১৫",
+          "before": "ছিলেন, …আমি মেষদের জন্য আমার প্রাণ দিই –",
+          "after": ", এবং আবার তিনি বলেছিলেন, …আমি আমার প্রা",
+          "spans": [
+            [
+              5736,
+              5746
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "7b412484a4b73a4c95deb6b9",
+          "quote": "যোহন ১০:১৭-১৮",
+          "before": "আছে, আবার গ্রহণ করার ক্ষমতাও আমার আছে… –",
+          "after": "।",
+          "spans": [
+            [
+              5951,
+              5964
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "b516eb8cf0ce35eeed430b44",
+          "quote": "ইব্রীয় ২:৯-১০",
+          "before": "োগের মধ্য দিয়ে সিদ্ধ করা উপযুক্ত ছিল। –",
+          "after": "। যখন তোমরা প্রভুভোজে অংশ নাও, …তোমরা প্",
+          "spans": [
+            [
+              6375,
+              6389
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "5ac7dd4d5ee9609c5c80ecf0",
+          "quote": "১ করিন্থীয় ১১:২৬",
+          "before": "র মৃত্যু ঘোষণা কর, যতক্ষণ না তিনি আসেন –",
+          "after": "।",
+          "spans": [
+            [
+              6481,
+              6498
+            ]
+          ],
+          "osis": "1Cor.11.26",
+          "queries": [
+            "46 11:26"
+          ]
+        },
+        {
+          "id": "a0340678391d1acf0e055bce",
+          "quote": "রোমীয় ৬:৩-৪",
+          "before": "কে উঠেছেন, তেমনি আমরাও নতুন জীবনে চলি। –",
+          "after": "",
+          "spans": [
+            [
+              6783,
+              6795
+            ]
+          ],
+          "osis": "Rom.6.3-Rom.6.4",
+          "queries": [
+            "45 6:3-4"
+          ]
+        },
+        {
+          "id": "c774ce76fd047320f8e51864",
+          "quote": "রোমীয় ৬:৪",
+          "before": "তাঁর সঙ্গে আমাদের সমাধিস্থ করা হয়েছে… –",
+          "after": "। এই সব দিক সামগ্রিক বিষয়টির অংশ হলেও, ",
+          "spans": [
+            [
+              7087,
+              7097
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "22717af57ff0cf4a37c24801",
+          "quote": "যোহন ১২:২৪",
+          "before": "োঝায় …গমের একটি দানা মাটিতে পড়ে মরে… –",
+          "after": "। প্রথমে জীবনের অবসান (রক্ত ঝরে পড়া), ত",
+          "spans": [
+            [
+              7202,
+              7212
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "28252463a296b3e54d36637f",
+          "quote": "রোমীয় ৬:৪",
+          "before": " আমরা নতুন জীবনে তাঁর সঙ্গে উত্থিত হই। (",
+          "after": ") …এতে তোমরাও তাঁর সঙ্গে পুনরুত্থিত হয়ে",
+          "spans": [
+            [
+              7690,
+              7700
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "02ced6fbbfd9fdb5ce242823",
+          "quote": "কলসীয় ২:১২",
+          "before": " যিনি তাঁকে মৃতদের মধ্য থেকে উঠিয়েছেন –",
+          "after": "। অতএব, তাঁর পুনরুত্থানে আমরা তাঁর সঙ্গে",
+          "spans": [
+            [
+              7831,
+              7842
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "b443dbe40fab8825017e6800",
+          "quote": "প্রেরিত ১:৯",
+          "before": "কটি মেঘ তাঁকে তাদের দৃষ্টির আড়াল করল। –",
+          "after": "। তিনি এই পৃথিবী ছেড়ে চলে গিয়েছিলেন বল",
+          "spans": [
+            [
+              8305,
+              8316
+            ]
+          ],
+          "osis": "Acts.1.9",
+          "queries": [
+            "44 1:9"
+          ]
+        },
+        {
+          "id": "7d59c2085f2f2def87e1b86c",
+          "quote": "১ পিতর ৩:১৮",
+          "before": "বরণ করেছেন, …ধার্মিক অধার্মিকদের জন্য… –",
+          "after": "। এবং তিনি মৃত্যুবরণ করেছেন, যেন আমরা বা",
+          "spans": [
+            [
+              9954,
+              9965
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "c895f66f982ecc3587eeeedd",
+          "quote": "রোমীয় ৬:১-১১",
+          "before": " করেছেন বলে আমাকেও তাঁর সঙ্গে মরতে হবে। ",
+          "after": " দেখুন।",
+          "spans": [
+            [
+              10641,
+              10654
+            ]
+          ],
+          "osis": "Rom.6.1-Rom.6.11",
+          "queries": [
+            "45 6:1-11"
+          ]
+        },
+        {
+          "id": "ce440ede9c0cd4757ba8d0bc",
+          "quote": "ইব্রীয় ৯:২৮",
+          "before": " করার জন্য একবার উৎসর্গীকৃত হয়েছিলেন… –",
+          "after": " এবং, তিনি নিজেই গাছের ওপর নিজের দেহে আম",
+          "spans": [
+            [
+              10876,
+              10888
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "1625a262394961a808267e65",
+          "quote": "১ পিতর ২:২৪",
+          "before": " ওপর নিজের দেহে আমাদের পাপ বহন করেছেন… –",
+          "after": "। কিন্তু আমাদের পাপ “বহন” করার অর্থ কী—স",
+          "spans": [
+            [
+              10959,
+              10970
+            ]
+          ],
+          "osis": "1Pet.2.24",
+          "queries": [
+            "60 2:24"
+          ]
+        },
+        {
+          "id": "9286c9f3f9cc7b07ae8b97d5",
+          "quote": "ইব্রীয় ১০:১০-১২",
+          "before": " পাপের জন্য বলি হিসেবে উৎসর্গ করেছিলেন (",
+          "after": "), আমাদের পাপের প্রায়শ্চিত্ত হিসেবে (১ ",
+          "spans": [
+            [
+              11230,
+              11246
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "5d12465f2996f4293f937031",
+          "quote": "১ যোহন ২:১",
+          "before": "১২), আমাদের পাপের প্রায়শ্চিত্ত হিসেবে (",
+          "after": "), পাপ দূর করতে, এমনকি পাপের ক্ষমা হতে। ",
+          "spans": [
+            [
+              11301,
+              11311
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "6fa8fe546f6b27f679819199",
+          "quote": "২ করিন্থীয় ৫:২১",
+          "before": "রেছেন, যিনি [যিশু] কোনো পাপ জানতেন না… –",
+          "after": "। এই পদে “পাপ” হিসেবে অনূদিত গ্রিক শব্দট",
+          "spans": [
+            [
+              11600,
+              11616
+            ]
+          ],
+          "osis": "2Cor.5.21",
+          "queries": [
+            "47 5:21"
+          ]
+        },
+        {
+          "id": "47aef7d448011f3b110288bd",
+          "quote": "১ পিতর ১:১৯",
+          "before": "িনি …নিষ্কলঙ্ক ও নির্দোষ মেষশাবকের মতো –",
+          "after": "। নিজের অবস্থান বজায় রাখতে পারতেন না। ত",
+          "spans": [
+            [
+              11976,
+              11987
+            ]
+          ],
+          "osis": "1Pet.1.19",
+          "queries": [
+            "60 1:19"
+          ]
+        },
+        {
+          "id": "c88d2b0070b7361505d474d3",
+          "quote": "যোহন ৩:৩৬",
+          "before": "াবে না; বরং ঈশ্বরের ক্রোধ তার ওপর থাকে –",
+          "after": "; …যে মানুষেরা অধার্মিকতায় সত্যকে দমন ক",
+          "spans": [
+            [
+              12350,
+              12359
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "cccdfd905746b4de3fb301ad",
+          "quote": "রোমীয় ১:১৮",
+          "before": "স্বর্গ থেকে ঈশ্বরের ক্রোধ প্রকাশিত হয় –",
+          "after": "; …এবং অন্যদের মতো স্বভাবতই ক্রোধের সন্ত",
+          "spans": [
+            [
+              12491,
+              12502
+            ]
+          ],
+          "osis": "Rom.1.18",
+          "queries": [
+            "45 1:18"
+          ]
+        },
+        {
+          "id": "10f60502e4b424591be14140",
+          "quote": "ইফিষীয় ২:৩",
+          "before": "যদের মতো স্বভাবতই ক্রোধের সন্তান ছিলাম –",
+          "after": "।",
+          "spans": [
+            [
+              12552,
+              12563
+            ]
+          ],
+          "osis": "Eph.2.3",
+          "queries": [
+            "49 2:3"
+          ]
+        },
+        {
+          "id": "dc4c8096be4a0792f20dcff9",
+          "quote": "রোমীয় ৫:৯",
+          "before": "তাঁর মাধ্যমে আমরা ক্রোধ থেকে রক্ষা পাব –",
+          "after": "। তাই স্পষ্ট যে, তাঁর রক্তে ধার্মিক গণিত",
+          "spans": [
+            [
+              12741,
+              12751
+            ]
+          ],
+          "osis": "Rom.5.9",
+          "queries": [
+            "45 5:9"
+          ]
+        },
+        {
+          "id": "1aa63f7023a540b46a04af8c",
+          "quote": "যিহূদা ১:৩",
+          "before": "াছে একবারের জন্য সমর্পিত বিশ্বাস থেকে… –",
+          "after": " সরিয়ে নিতে ব্যবহার করতে চায়।",
+          "spans": [
+            [
+              14946,
+              14956
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "6fbc2edab64fc406fe169662",
+          "quote": "ইয়োব ১",
+          "before": "আমাদের পিতা তাঁর ইচ্ছা অনুসারে তা করেন (",
+          "after": " ও ২, এবং ১ করিন্থীয় ১০:১৩-ও দেখুন)। খ্",
+          "spans": [
+            [
+              16411,
+              16418
+            ]
+          ],
+          "osis": "Job.1.1-Job.1.22",
+          "queries": [
+            "18 1:1-22"
+          ]
+        },
+        {
+          "id": "b397dcb5e9733e0481ed6c8b",
+          "quote": "১ করিন্থীয় ১০:১৩",
+          "before": "ইচ্ছা অনুসারে তা করেন (ইয়োব ১ ও ২, এবং ",
+          "after": "-ও দেখুন)। খ্রিষ্টের রক্ত যেন অশুভ শক্তি",
+          "spans": [
+            [
+              16428,
+              16445
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "08b6ffbc2bdbe1e11da83fa4",
+          "quote": "ইব্রীয় ১০:১১",
+          "before": "া—যে বলিগুলো কখনো পাপ দূর করতে পারে না –",
+          "after": "",
+          "spans": [
+            [
+              17493,
+              17506
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "db4c4a6e00d9bf25cd65f79c",
+          "quote": "গালাতীয় ৩:২৪",
+          "before": "ওয়ার জন্য আমাদের শিক্ষকের কাজ করেছিল… –",
+          "after": "",
+          "spans": [
+            [
+              17608,
+              17621
+            ]
+          ],
+          "osis": "Gal.3.24",
+          "queries": [
+            "48 3:24"
+          ]
+        },
+        {
+          "id": "55fb6aa2869d2ef49471b683",
+          "quote": "মার্ক ১৫:৩৮",
+          "before": "আর মন্দিরের পর্দা দুই ভাগে ছিঁড়ে গেল… –",
+          "after": "",
+          "spans": [
+            [
+              17716,
+              17727
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "4714b6a80b1ba2a95073f27014a473a6f3e46e279b8f7741796fc7e7ef09d508"
+    },
     "ba09e248-cc12-4573-9db1-cceb885953ac:de:100d0bce5be8e92e89c4f0e543722e2c4c84d9804d2d6eefcc111df891b34e74:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
       "locale": "de",
@@ -361894,6 +363331,224 @@
         }
       ],
       "record_hash": "69373c41a5aaa6fba68078f6ad51f6115c43b51da03725f9cffe93cfb9c5f9b4"
+    },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:pt:d261689b92a6f4c2ac53c927fb59af2a16ef5f947b783f29b2b913cb5f43ed6e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "pt",
+      "content_hash": "d261689b92a6f4c2ac53c927fb59af2a16ef5f947b783f29b2b913cb5f43ed6e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c72d99051cdfdab399b19f2d",
+          "quote": "Jo 19:30",
+          "before": "linando a cabeça, entregou o espírito. –",
+          "after": "",
+          "spans": [
+            [
+              396,
+              404
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "3871ec248223d6050042bb32",
+          "quote": "Lc 24:46-47",
+          "before": "rependimento e a remissão dos pecados… –",
+          "after": ". O servo sofredor, tal como retratado e",
+          "spans": [
+            [
+              2098,
+              2109
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "641a20266510a5d769304b84",
+          "quote": "Mt 26:28",
+          "before": " por muitos, para remissão dos pecados –",
+          "after": ".",
+          "spans": [
+            [
+              4338,
+              4346
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "19e645829777848b7686be0a",
+          "quote": "Mateus 18:23-35",
+          "before": "texto de prova a história encontrada em ",
+          "after": ". Seria bom considerar que essa história",
+          "spans": [
+            [
+              5091,
+              5106
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "cc8f11b8da2e3ec606d4dd9a",
+          "quote": "Jo 10:15",
+          "before": "disse: …dou a minha vida pelas ovelhas –",
+          "after": ", e novamente disse: …dou a minha vida p",
+          "spans": [
+            [
+              6177,
+              6185
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "fc4187cac066f28959e8f586",
+          "quote": "Jo 10:17-18",
+          "before": "a a dar e poder para tornar a tomá-la… –",
+          "after": ".",
+          "spans": [
+            [
+              6362,
+              6373
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "3e7c965979db3a8d7c09bfec",
+          "quote": "Rm. 6:4",
+          "before": "ultados com ele pelo batismo na morte… –",
+          "after": ". Embora todos esses aspectos façam part",
+          "spans": [
+            [
+              7513,
+              7520
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "b98397d7b8402caec4d0e448",
+          "quote": "Jo 12:24",
+          "before": "rão de trigo que cai na terra e morre… –",
+          "after": ". Primeiro, vem o fim da vida (o derrama",
+          "spans": [
+            [
+              7651,
+              7659
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "3ba4cb57f8289e46508ab318",
+          "quote": "Romanos 6:4",
+          "before": "suscitados com ele para uma vida nova. (",
+          "after": ") …na qual também ressuscitastes com ele",
+          "spans": [
+            [
+              8246,
+              8257
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "406493eea283491d10ae7f10",
+          "quote": "1Jo 2:1",
+          "before": " como propiciação pelos nossos pecados (",
+          "after": "), para tirar o pecado, e até mesmo para",
+          "spans": [
+            [
+              11953,
+              11960
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "77bfeee03006b1657682c586",
+          "quote": "Jo 3:36",
+          "before": " mas sobre ele permanece a ira de Deus –",
+          "after": "; …a ira de Deus se revela do céu contra",
+          "spans": [
+            [
+              13124,
+              13131
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "f72e397d181c02b7e251064e",
+          "quote": "Jó 1 e 2",
+          "before": "Pai faz isso segundo a sua vontade (ver ",
+          "after": ", também 1Co 10:13). Não precisamos “inv",
+          "spans": [
+            [
+              17324,
+              17332
+            ]
+          ],
+          "osis": "Job.1.1-Job.2.13",
+          "queries": [
+            "18 1:1-22",
+            "18 2:1-13"
+          ]
+        },
+        {
+          "id": "4b4b198acc52eed8fe68a99a",
+          "quote": "Mc 15:38",
+          "before": "éu do templo se rasgou em duas partes… –",
+          "after": "",
+          "spans": [
+            [
+              18694,
+              18702
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "31204752ba8a6fd81a4d907fbd235224f13908d6e97a86ad075cd44a9376b380"
     },
     "ba09e248-cc12-4573-9db1-cceb885953ac:ur:b8156bef8634174eda4891b981244c7d38e5e175c740b2e846fd95d6d2a595be:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
