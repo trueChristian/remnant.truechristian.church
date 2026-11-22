@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "d0531eacf88d756e633112256ed3d5e201aab2784ceb3fd362a1b02ed9cb1eb3",
+  "integrity": "01515f55a7ce641183fb3503e944e1cc026a76e50209b7934fdaaa5a35154e98",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -93707,6 +93707,159 @@
       ],
       "record_hash": "d61bb272c878ee61ead252844a12128a9fd0949b75dcc1fff0e0b019f9e73f22"
     },
+    "304e1120-f241-4d9e-972b-c72dec82b134:zh-Hans:5b7bb548eb713bcaf31588e5909c3cbfe38aec71585a3586df32f8e1646c3f13:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "zh-Hans",
+      "content_hash": "5b7bb548eb713bcaf31588e5909c3cbfe38aec71585a3586df32f8e1646c3f13",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fc094c9c6c3be05e000544ec",
+          "quote": "尼希米记 8:10",
+          "before": "笑容也少了。当然，我很疲惫！但朋友们，请记住，“耶和华所赐的喜乐是你们的力量”（",
+          "after": "）。没有喜乐，力量就会减弱。有几年，我努力熬过困难，坚持下去，却实在缺少喜乐和活",
+          "spans": [
+            [
+              1413,
+              1422
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "6a6b6f9fe8cee3fe0e1cea42",
+          "quote": "哥林多前书 10:10",
+          "before": "前几天早晨灵修时，我读到这节经文：",
+          "after": " “你们也不要发怨言，像他们有发怨言的，就被灭命的所灭。”我想：“我们的幸福常常",
+          "spans": [
+            [
+              2141,
+              2152
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "61feb57b64b1805b641cf810",
+          "quote": "诗篇 118:24",
+          "before": "",
+          "after": " “这是耶和华所定的日子；我们在其中要高兴欢喜。”当你我学会这一课时，我们的整个",
+          "spans": [
+            [
+              2587,
+              2596
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "b3377505c90884cb40c63f63",
+          "quote": "提摩太前书 6:6",
+          "before": "中得到这个信息，她的故事正是从那里扎根的。来看看上帝的话语中几条关于知足的吩咐。",
+          "after": " “然而，敬虔加上知足的心便是大利了……”以及腓立比书 4:11 “我并不是因缺",
+          "spans": [
+            [
+              3193,
+              3202
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "511970b32c5e5e96af66e2b0",
+          "quote": "诗篇 118:24",
+          "before": "可见。诗篇里字里行间都洋溢着喜乐，在许多其他地方也同样屡见不鲜。来看看其中几处。",
+          "after": " 这是耶和华所定的日子；我们要在其中高兴欢喜。",
+          "spans": [
+            [
+              3350,
+              3359
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "5e7b20dc192dd5ec2fc8542a",
+          "quote": "诗篇 40:16",
+          "before": "",
+          "after": " “愿一切寻求你的，因你欢喜快乐；愿那些喜爱你救恩的人常说：当尊耶和华为大！”诗",
+          "spans": [
+            [
+              3408,
+              3416
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "f661e99413fce51b342a809a",
+          "quote": "诗篇 90:14",
+          "before": "6 “愿一切寻求你的，因你欢喜快乐；愿那些喜爱你救恩的人常说：当尊耶和华为大！”",
+          "after": " “求你使我们早早饱得你的慈爱，好叫我们一生欢呼喜乐。”以赛亚书 12:3 “所",
+          "spans": [
+            [
+              3462,
+              3470
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "7d30ed441f3875406cbab456",
+          "quote": "以赛亚书 12:3",
+          "before": "为大！”诗篇 90:14 “求你使我们早早饱得你的慈爱，好叫我们一生欢呼喜乐。”",
+          "after": " “所以你们必从救恩的泉源欢然取水。”",
+          "spans": [
+            [
+              3505,
+              3514
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "a894919354e36c0ae90464b1",
+          "quote": "诗篇 100:4-5",
+          "before": "。这确实会改变你看待一切的方式。“你们要称谢他，称颂他的名！因为耶和华本为善。”",
+          "after": "",
+          "spans": [
+            [
+              3805,
+              3815
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "5e6b9cce68830127490c94383a78c8dc8bd038561aa4a88a154ca5e99d3a1954"
+    },
     "30637e28-4fcf-487a-a24d-49906c2810b9:en:2e6d0a3dde74a7375563a79d59639a97c9ef1ed79999bca757f01c679ddc4272:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "30637e28-4fcf-487a-a24d-49906c2810b9",
       "locale": "en",
@@ -160573,6 +160726,31 @@
         }
       ],
       "record_hash": "8c643f47b1ae5b23b61cdcf85432b3f402d37db02b3427840ca041af46e69b74"
+    },
+    "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d:ru:fa33708cde17630c37c62faaa01cd33221b7749c0da0c4487b9c7281298e3ab2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d",
+      "locale": "ru",
+      "content_hash": "fa33708cde17630c37c62faaa01cd33221b7749c0da0c4487b9c7281298e3ab2",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ec72c2714146607644929307",
+          "quote": "Пс. 40:1–4",
+          "before": "дменных и тех, кто уклоняется ко лжи. — ",
+          "after": ". Я так счастлива, что хочется всё петь ",
+          "spans": [
+            [
+              5232,
+              5242
+            ]
+          ],
+          "osis": "Ps.40.1-Ps.40.4",
+          "queries": [
+            "19 40:1-4"
+          ]
+        }
+      ],
+      "record_hash": "432fcb6515e1394f4cbdea77a3a5b752972bdc6ad8c11c34c5e1b648e7338a61"
     },
     "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d:sw:ef8a2b9f45a5091953fd4a0ae02e9be886ff1361ad248ffe17afc54d52826915:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d",
@@ -231385,6 +231563,14 @@
       "markers": [],
       "record_hash": "74cfec18317776bd97b532bc7d61ad86e9300f4a99d1b70ecc5281593bb587d6"
     },
+    "7b699913-16ec-4087-9e0c-ca867e750d90:nl:1214d06581fcb1e1feed7063a4210ed0b0968791bd85cf60971cd64b1baa71a1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "7b699913-16ec-4087-9e0c-ca867e750d90",
+      "locale": "nl",
+      "content_hash": "1214d06581fcb1e1feed7063a4210ed0b0968791bd85cf60971cd64b1baa71a1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "0b5c880127cc4fb4c80912f3848732fed1c20f3661426b0c52be962ebe2522a1"
+    },
     "7b699913-16ec-4087-9e0c-ca867e750d90:sw:3d9689a0d68f14000eecf54f53be5a494bb85063343fa01eb8cd2060938a1d17:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "7b699913-16ec-4087-9e0c-ca867e750d90",
       "locale": "sw",
@@ -256188,6 +256374,143 @@
         }
       ],
       "record_hash": "3033d9361545a28aa0b85705da3ba241a8fda6484f518e44c2f53a8309c35cce"
+    },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:ko:6fd98a548ea0f9e26977e65a0cfce06e218ad4d3388024e571d240ff70b983ce:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "ko",
+      "content_hash": "6fd98a548ea0f9e26977e65a0cfce06e218ad4d3388024e571d240ff70b983ce",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "fecc30502e666e4b01a7724e",
+          "quote": "잠언 29:18",
+          "before": "\n    ",
+          "after": "",
+          "spans": [
+            [
+              161,
+              169
+            ]
+          ],
+          "osis": "Prov.29.18",
+          "queries": [
+            "20 29:18"
+          ]
+        },
+        {
+          "id": "f1f7e18fa920063ec6111a85",
+          "quote": "삼상 3:1",
+          "before": "의 상태를 드러내는 몇 마디 말씀을 하십니다. “열린 환상이 없었더라”(",
+          "after": "). 이 말씀 뒤에 슬픈 이야기가 담긴 여러 장을 읽게 되지만, 이 짧은",
+          "spans": [
+            [
+              488,
+              494
+            ]
+          ],
+          "osis": "1Sam.3.1",
+          "queries": [
+            "9 3:1"
+          ]
+        },
+        {
+          "id": "e0a8cdf74017ef62b3e832dd",
+          "quote": "고후 3:3",
+          "before": " 사도 바울은 이를 “살아 계신 하나님의 영으로…육의 마음판에…쓴 것”(",
+          "after": ")이라고 묘사했습니다. 환상은 하나님의 생각과 뜻에 관한 영적 계시입니다",
+          "spans": [
+            [
+              903,
+              909
+            ]
+          ],
+          "osis": "2Cor.3.3",
+          "queries": [
+            "47 3:3"
+          ]
+        },
+        {
+          "id": "3899a1e9e2cf8016e50fc36d",
+          "quote": "롬 4:17",
+          "before": "상이 담겨 있었습니다. 하나님께서는 “없는 것을 있는 것처럼 부르시는”(",
+          "after": "하) 일을 시작하셨습니다. 아브라함은 마음의 눈으로 그것들을 보고 그에 ",
+          "spans": [
+            [
+              3244,
+              3250
+            ]
+          ],
+          "osis": "Rom.4.17",
+          "queries": [
+            "45 4:17"
+          ]
+        },
+        {
+          "id": "85ab61f3e4a2d111d64460e1",
+          "quote": "신명기 28",
+          "before": "하나님께서는 ",
+          "after": "장에서 이스라엘 자손에게 말씀하셨습니다. 하나님께서는 복에 흠뻑 잠기고 ",
+          "spans": [
+            [
+              3351,
+              3357
+            ]
+          ],
+          "osis": "Deut.28.1-Deut.28.68",
+          "queries": [
+            "5 28:1-68"
+          ]
+        },
+        {
+          "id": "cbf9315559c59e46f59bfb5f",
+          "quote": "계 3:18",
+          "before": " 상태에 관해 그리스도께서 주신 권고는 “안약을 눈에 발라 보게 하라”(",
+          "after": "하)는 것이었습니다. 이 구절들에서 하나님께서 마음의 눈을 말씀하신다는 ",
+          "spans": [
+            [
+              4814,
+              4820
+            ]
+          ],
+          "osis": "Rev.3.18",
+          "queries": [
+            "66 3:18"
+          ]
+        },
+        {
+          "id": "ed0559b9a8f017e3997665f8",
+          "quote": "계 3:20",
+          "before": "\n    그는 나와 함께 먹으리라. ",
+          "after": "",
+          "spans": [
+            [
+              5241,
+              5247
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "b88068643f49e1a8ef342247",
+          "quote": "엡 3:20",
+          "before": "력대로 우리가 구하거나 생각하는 모든 것보다 훨씬 더 넘치도록 행하실”(",
+          "after": ") 수 있는(능력이 충만하신) 분이라고 말했습니다. 제가 이 구절을 이해",
+          "spans": [
+            [
+              6601,
+              6607
+            ]
+          ],
+          "osis": "Eph.3.20",
+          "queries": [
+            "49 3:20"
+          ]
+        }
+      ],
+      "record_hash": "b1a97879310e870bbe833648765fea25814b5b3257a57cdf43fb0e4c83b9341c"
     },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:nb:7082b45baf3bab0227f64dcda9ca8dee58329083c459f69484afb26293ea21d3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
@@ -358674,6 +358997,432 @@
         }
       ],
       "record_hash": "115b1f121c9066884d62583809d26bed14c66238c6e7616d1c833a85d0b263d9"
+    },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:fr:f4821be35b2d1a9c6b9bcd08204e3c71be807da1dced154659a72ce3f8aa13ad:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "fr",
+      "content_hash": "f4821be35b2d1a9c6b9bcd08204e3c71be807da1dced154659a72ce3f8aa13ad",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3ff1902dbbf00e5e6099e571",
+          "quote": "Jn 19:30",
+          "before": "il inclina la tête et rendit l’esprit. –",
+          "after": "",
+          "spans": [
+            [
+              412,
+              420
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "f226c5afe6b63a9b58c0bc68",
+          "quote": "Lc 24:46-47",
+          "before": "des péchés fussent prêchés en son nom… –",
+          "after": ". Le serviteur souffrant, tel qu’il est ",
+          "spans": [
+            [
+              2269,
+              2280
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "2e921c7a7909574fe29de536",
+          "quote": "És 53:5",
+          "before": "ns, [et] …meurtri pour nos iniquités : –",
+          "after": ". Nous trouvons aussi ici cette réalité ",
+          "spans": [
+            [
+              2531,
+              2538
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "524edf3977948edf4f2cb999",
+          "quote": "És 53:5",
+          "before": " meurtrissures que nous sommes guéris. –",
+          "after": ". Enfin, nous voyons qu’il a été opprimé",
+          "spans": [
+            [
+              2645,
+              2652
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "f481611fd46514ad027d5f35",
+          "quote": "És 53:7",
+          "before": "voyons qu’il a été opprimé et affligé… –",
+          "after": ", et qu’il a enduré …le travail de son â",
+          "spans": [
+            [
+              2715,
+              2722
+            ]
+          ],
+          "osis": "Isa.53.7",
+          "queries": [
+            "23 53:7"
+          ]
+        },
+        {
+          "id": "cbe4f9b0cefb3960be936f12",
+          "quote": "És 53:11",
+          "before": "qu’il a enduré …le travail de son âme… –",
+          "after": "",
+          "spans": [
+            [
+              2776,
+              2784
+            ]
+          ],
+          "osis": "Isa.53.11",
+          "queries": [
+            "23 53:11"
+          ]
+        },
+        {
+          "id": "411272768186a57466c3cdae",
+          "quote": "Hé 5:8",
+          "before": "ance par les choses qu’il a souffertes –",
+          "after": " ; Car il convenait que celui pour qui e",
+          "spans": [
+            [
+              3099,
+              3105
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "0c93f682df49e16ec559fef1",
+          "quote": "Hé 2:10",
+          "before": " les souffrances le chef de leur salut –",
+          "after": ".",
+          "spans": [
+            [
+              3280,
+              3287
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "0536cbea46190de65adee62d",
+          "quote": "Mt 26:28",
+          "before": "ur beaucoup, pour le pardon des péchés –",
+          "after": ".",
+          "spans": [
+            [
+              4513,
+              4521
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "30070e9eb56624e6e02624e1",
+          "quote": "Hé 9:22",
+          "before": "usion de sang, il n’y a pas de pardon. –",
+          "after": ". Il est particulièrement important de s",
+          "spans": [
+            [
+              5000,
+              5007
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "83dac20cfe0744fafff8ff0e",
+          "quote": "Matthieu 18:23-35",
+          "before": "nnes invoquent comme preuve le récit de ",
+          "after": ". Nous ferions bien de considérer que ce",
+          "spans": [
+            [
+              5277,
+              5294
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "1d19dd7dfabed14732d915c1",
+          "quote": "Jn 10:15",
+          "before": "dit : …je donne ma vie pour les brebis –",
+          "after": ", et il a dit encore : …je donne ma vie,",
+          "spans": [
+            [
+              6367,
+              6375
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "be5e42dbe34e865f51e52f64",
+          "quote": "Jn 10:17-18",
+          "before": "er et j’ai le pouvoir de la reprendre… –",
+          "after": ".",
+          "spans": [
+            [
+              6565,
+              6576
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "d1b0aeb72d0fa3947efe74f6",
+          "quote": "Hé 2:9-10",
+          "before": "les souffrances le chef de leur salut. –",
+          "after": ". Lorsque vous prenez la communion, …vou",
+          "spans": [
+            [
+              6991,
+              7000
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "2e3586ee7726ead1f32e56e4",
+          "quote": "Jn 12:24",
+          "before": "in de blé qui tombe en terre et meurt… –",
+          "after": ". D’abord la vie prend fin (le sang est ",
+          "spans": [
+            [
+              7946,
+              7954
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "4b5ec49838b0c56d312892bd",
+          "quote": "Romains 6:4",
+          "before": "scités avec lui dans une vie nouvelle. (",
+          "after": ") …en elle aussi vous êtes ressuscités a",
+          "spans": [
+            [
+              8544,
+              8555
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "96ee002fcbcc0ae6d3650a32",
+          "quote": "Col 2:12",
+          "before": " de Dieu, qui l’a ressuscité des morts –",
+          "after": ". Ainsi, par sa résurrection, nous somme",
+          "spans": [
+            [
+              8670,
+              8678
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "65c1923e811e879f8af99615",
+          "quote": "Hé 9:28",
+          "before": "is pour porter les péchés de beaucoup… –",
+          "after": " et lui qui a porté lui-même nos péchés ",
+          "spans": [
+            [
+              12083,
+              12090
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "fec8dca369f11e6f37dcc8a4",
+          "quote": "Hé 10:10-12",
+          "before": "’est offert en sacrifice pour le péché (",
+          "after": "), en propitiation pour nos péchés (1 Jn",
+          "spans": [
+            [
+              12443,
+              12454
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "178c8ae60be5c4e3b5ad3623",
+          "quote": "1 Jn 2:1",
+          "before": "0-12), en propitiation pour nos péchés (",
+          "after": "), afin d’ôter le péché, et même d’être ",
+          "spans": [
+            [
+              12507,
+              12515
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "24a4f5d2cf9fa47bee775ab7",
+          "quote": "Jn 3:36",
+          "before": "mais la colère de Dieu demeure sur lui –",
+          "after": " ; …la colère de Dieu se révèle du ciel ",
+          "spans": [
+            [
+              13693,
+              13700
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "531027104f67f51aff0fee69",
+          "quote": "Ép 2:3",
+          "before": "es enfants de colère, comme les autres –",
+          "after": ".",
+          "spans": [
+            [
+              13907,
+              13913
+            ]
+          ],
+          "osis": "Eph.2.3",
+          "queries": [
+            "49 2:3"
+          ]
+        },
+        {
+          "id": "b16398c7f810a8197663f857",
+          "quote": "Jude 1:3",
+          "before": "smise une fois pour toutes aux saints. –",
+          "after": "",
+          "spans": [
+            [
+              16709,
+              16717
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "6948aab6703a377245b0f198",
+          "quote": "Job 1 et 2",
+          "before": " Père agit ainsi selon sa volonté (voir ",
+          "after": ", ainsi que 1 Co 10:13). Nous n’avons pa",
+          "spans": [
+            [
+              18301,
+              18311
+            ]
+          ],
+          "osis": "Job.1.1-Job.2.13",
+          "queries": [
+            "18 1:1-22",
+            "18 2:1-13"
+          ]
+        },
+        {
+          "id": "e79f3775487e7b9bbaa2d5a0",
+          "quote": "Hé 10:11",
+          "before": " qui ne peuvent jamais ôter les péchés –",
+          "after": "",
+          "spans": [
+            [
+              19556,
+              19564
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "4ac70e1592fb7ec59defc6aa",
+          "quote": "Mc 15:38",
+          "before": "le voile du temple se déchira en deux… –",
+          "after": "",
+          "spans": [
+            [
+              19745,
+              19753
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "a3b06ddfae580182e0bbcf96af1e138eef14ed8130af24dd99ec5155b56cdfa6"
     },
     "ba09e248-cc12-4573-9db1-cceb885953ac:hi:1bef7db9ce0418a26139c1cfd608f96c37ed948d87c418fbeac435bb17eaf00e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",

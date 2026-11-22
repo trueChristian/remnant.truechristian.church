@@ -91169,11 +91169,12 @@
       },
       "ba09e248-cc12-4573-9db1-cceb885953ac": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-finished-work-of-christ",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vie-chrétienne",
+        "alias": "l-œuvre-achevée-de-christ",
+        "history": [
+          "/fr/articles/the-finished-work-of-christ/"
+        ],
+        "fallback": false
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -139041,11 +139042,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "자녀-양육",
+        "alias": "우리-가정에-동기를-불어넣는-환상",
+        "history": [
+          "/ko/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -158869,11 +158871,12 @@
       },
       "7b699913-16ec-4087-9e0c-ca867e750d90": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "power-from-on-high",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "opwekking",
+        "alias": "kracht-uit-den-hoge",
+        "history": [
+          "/nl/articles/power-from-on-high/"
+        ],
+        "fallback": false
       },
       "7b9b3fa0-a09b-4c5b-9389-0c0bb47500e2": {
         "category_id": "1706ffa6-a4d1-5e68-af38-d56888d6a2a2",
@@ -177282,11 +177285,12 @@
       },
       "4c0794e8-20a4-43fb-a2ea-5f8f45d93f7d": {
         "category_id": "78d8ed5b-bad4-58ae-ae10-a49f738e29d8",
-        "category_slug": "articles",
-        "alias": "trust-be-not-afraid",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "дети",
+        "alias": "уповай-не-бойся",
+        "history": [
+          "/ru/articles/trust-be-not-afraid/"
+        ],
+        "fallback": false
       },
       "4c281a52-8d82-4455-9559-37d18c0a4a7b": {
         "category_id": "0648d4df-242a-5815-8d22-08b555d1b542",
@@ -215722,11 +215726,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "姊妹",
+        "alias": "母亲心中的呐喊",
+        "history": [
+          "/zh-Hans/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
