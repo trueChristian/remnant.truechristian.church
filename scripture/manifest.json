@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "5734b6d1e8af78e55d00a19762dfa3b9e534cf84ccfee2410dc9b6b47d206b32",
+  "integrity": "62dc1ffa7d17eb19b1126eb4d6da51a26f35ff44e8c9836ca421599cd7902c42",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -92757,6 +92757,95 @@
       ],
       "record_hash": "666e0dfcdfcdde87be24e7d4ed5ae287731685f1cbf3697904cc3a9047b4f35a"
     },
+    "304e1120-f241-4d9e-972b-c72dec82b134:af:ac83b3bfb62cd909dc8c3687430f89d00e31bee43593c8253b50ffcf3161016d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "af",
+      "content_hash": "ac83b3bfb62cd909dc8c3687430f89d00e31bee43593c8253b50ffcf3161016d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3dd585d0140213d68f582647",
+          "quote": "Nehemia 8:10",
+          "before": " “die blydskap in die HERE is my krag” (",
+          "after": "). Sonder blydskap is daar minder krag. ",
+          "spans": [
+            [
+              3629,
+              3641
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "1aabce732da57c688bcc6e1e",
+          "quote": "1 Korintiërs 10:10",
+          "before": "ydens my stiltetyd hierdie vers gelees, ",
+          "after": " “En moenie mor soos sommige van hulle o",
+          "spans": [
+            [
+              5754,
+              5772
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "0a0b0134425b393d8786c626",
+          "quote": "1 Timoteus 6:6",
+          "before": "vele in die Woord om vergenoeg te wees. ",
+          "after": " “Maar die godsaligheid saam met vergeno",
+          "spans": [
+            [
+              8902,
+              8916
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "2695d8a52242fa1a066e1ed1",
+          "quote": "Filippense 4:11",
+          "before": "ergenoegdheid is ’n groot wins. . .” en ",
+          "after": " “Nie dat ek dit uit gebrek sê nie, want",
+          "spans": [
+            [
+              8999,
+              9014
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "e755a7b323b33d97948c4975",
+          "quote": "Jesaja 12:3",
+          "before": "t ons al ons dae kan juig en bly wees.” ",
+          "after": " “Daarom sal julle met vreugde water ske",
+          "spans": [
+            [
+              9707,
+              9718
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        }
+      ],
+      "record_hash": "f928cb25d8bc320d9e996ca355a226e0f1ad91d8110b5c1dddd1d5b97e58ba08"
+    },
     "304e1120-f241-4d9e-972b-c72dec82b134:ar:ae4df62d0570c9a2607efbba9ccce816e689172da094e4e45e592366f12fdf4a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
       "locale": "ar",
@@ -93046,6 +93135,175 @@
         }
       ],
       "record_hash": "1da5fbb3ea49e996823fe85fc1d048838ac56ae9a4252822cfd763ce775512dc"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:de:a83ac791276ccfb908db7f062a2a34e25613a2823f66e1abdb15de894c34b52b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "de",
+      "content_hash": "a83ac791276ccfb908db7f062a2a34e25613a2823f66e1abdb15de894c34b52b",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "23b5f9ea7fbefdae25824279",
+          "quote": "Nehemia 8,10",
+          "before": " „Die Freude am HERRN ist eure Stärke“ (",
+          "after": "). Ohne Freude hat man weniger Kraft. Ei",
+          "spans": [
+            [
+              3919,
+              3931
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "086a335ff736f95d8590afe8",
+          "quote": "1. Korinther 10,10",
+          "before": "las ich bei meiner Andacht diesen Vers: ",
+          "after": " „Murrt auch nicht, wie einige von ihnen",
+          "spans": [
+            [
+              6159,
+              6177
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "a0b1f84a222007a04143545e",
+          "quote": "Psalm 118,24",
+          "before": "",
+          "after": " „Dies ist der Tag, den der HERR gemacht",
+          "spans": [
+            [
+              7517,
+              7529
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "e20a9dc07fd6df3e65a5c02c",
+          "quote": "1. Timotheus 6,6",
+          "before": "e im Wort Gottes an, zufrieden zu sein. ",
+          "after": " „Die Gottesfurcht aber mit Genügsamkeit",
+          "spans": [
+            [
+              9503,
+              9519
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "251d016c888597a863228634",
+          "quote": "Philipper 4",
+          "before": "gsamkeit ist ein großer Gewinn ...“ und ",
+          "after": ",11 „Nicht dass ich dies des Mangels weg",
+          "spans": [
+            [
+              9600,
+              9611
+            ]
+          ],
+          "osis": "Phil.4.1-Phil.4.23",
+          "queries": [
+            "50 4:1-23"
+          ]
+        },
+        {
+          "id": "a1a7b718639bb9c085601d51",
+          "quote": "Psalm 118,24",
+          "before": "rstreut. Sehen wir uns einige davon an. ",
+          "after": " „Dies ist der Tag, den der HERR gemacht",
+          "spans": [
+            [
+              9974,
+              9986
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "2e1f45616a206d5815d80bf7",
+          "quote": "Psalm 40,16",
+          "before": "",
+          "after": " „Alle, die dich suchen, sollen sich fre",
+          "spans": [
+            [
+              10105,
+              10116
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "8b1eec08b8a747b1d55a49b3",
+          "quote": "Psalm 90,14",
+          "before": " stets sagen: Der HERR sei hochgelobt!“ ",
+          "after": " „Sättige uns früh mit deiner Gnade, dam",
+          "spans": [
+            [
+              10261,
+              10272
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "424fcba08fecac2f38a60b33",
+          "quote": "Jesaja 12,3",
+          "before": " Tage freuen und fröhlich sein können.“ ",
+          "after": " „Darum werdet ihr mit Freuden Wasser sc",
+          "spans": [
+            [
+              10381,
+              10392
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "e4b37bdedc1bbe7c6faa8218",
+          "quote": "Psalm 100,4-5",
+          "before": "t seinen Namen, denn der HERR ist gut.“ ",
+          "after": "",
+          "spans": [
+            [
+              11084,
+              11097
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "208fe2354aa1a635ff80e4488f3a1f0130a224a51f54bb6990b585bff8e1006b"
     },
     "304e1120-f241-4d9e-972b-c72dec82b134:en:43f6a92b3dbdaee323a09eb56628a8e5dcac068a03e5c8dfd89df7d575e7ee4b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
@@ -93875,6 +94133,344 @@
         }
       ],
       "record_hash": "016b507070c6c4e65b64a5fe24cc7020eea3cb02a4380a6532c4ab5874dac8ac"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:ko:963e6e81a937f14374a8a88ef271311961edf20a91b038d230b733ac9ec84e5c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "ko",
+      "content_hash": "963e6e81a937f14374a8a88ef271311961edf20a91b038d230b733ac9ec84e5c",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7f8087446cb93beaa6ba3a45",
+          "quote": "느헤미야 8:10",
+          "before": "친구 여러분, 기억하십시오. “여호와를 기뻐하는 것이 너희의 힘이니라”(",
+          "after": "). 기쁨이 없으면 힘도 줄어듭니다. 몇 년 동안 저는 어려움을 견디며 ",
+          "spans": [
+            [
+              2050,
+              2059
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "6897cf3ca06b096e234fdc15",
+          "quote": "고린도전서 10:10",
+          "before": "어느 날 아침 묵상 시간에 이 구절을 읽었습니다. ",
+          "after": " “그들 가운데 어떤 이들이 원망하다가 멸망한 것 같이 너희는 원망하지 ",
+          "spans": [
+            [
+              3202,
+              3213
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "e907dd397e9b1641efd536d6",
+          "quote": "시편 118:24",
+          "before": "",
+          "after": " “이 날은 여호와께서 만드신 것이라. 우리가 기뻐하고 즐거워하리로다.”",
+          "spans": [
+            [
+              3958,
+              3967
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "caeec1f0dbf228ed19df0e34",
+          "quote": "디모데전서 6:6",
+          "before": "기에 있습니다. 말씀에서 자족하라고 명하는 구절 몇 곳을 살펴보십시오. ",
+          "after": " “자족하는 마음이 있으면 경건은 큰 이익이 되느니라…” 그리고 빌립보서",
+          "spans": [
+            [
+              4949,
+              4958
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "e4d01630a1de2b3291938688",
+          "quote": "빌립보서 4:11",
+          "before": " 6:6 “자족하는 마음이 있으면 경건은 큰 이익이 되느니라…” 그리고 ",
+          "after": " “내가 궁핍하므로 말하는 것이 아니니라. 어떠한 형편에든지 나는 자족하",
+          "spans": [
+            [
+              5003,
+              5012
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "63368f0e5e8efc40fdc23192",
+          "quote": "시편 118:24",
+          "before": "흐르고 다른 많은 곳에도 널리 흩어져 있습니다. 몇 곳을 살펴보십시오. ",
+          "after": " 이 날은 여호와께서 만드신 것이라. 우리가 기뻐하고 즐거워하리로다.",
+          "spans": [
+            [
+              5172,
+              5181
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "4c407c070c15785bcd080f43",
+          "quote": "시편 40:16",
+          "before": "",
+          "after": " “주를 찾는 모든 자는 주 안에서 기뻐하고 즐거워하게 하시며 주의 구원",
+          "spans": [
+            [
+              5245,
+              5253
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "87baf707f09dd87e3fd6d76e",
+          "quote": "시편 90:14",
+          "before": "사랑하는 자들은 항상 말하기를 여호와는 높임을 받으시라 하게 하소서.” ",
+          "after": " “아침에 주의 인자하심으로 우리를 만족하게 하사 우리 평생에 기뻐하고 ",
+          "spans": [
+            [
+              5342,
+              5350
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "cb0641960ce129e824c9b263",
+          "quote": "이사야 12:3",
+          "before": "심으로 우리를 만족하게 하사 우리 평생에 기뻐하고 즐거워하게 하소서.” ",
+          "after": " “그러므로 너희가 구원의 우물들에서 기쁨으로 물을 길으리로다.”",
+          "spans": [
+            [
+              5409,
+              5417
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "07b2e2ab59439d41c0e27546",
+          "quote": "시편 100:4-5",
+          "before": "니다. “그분께 감사하며 그분의 이름을 찬송하라. 여호와는 선하시다.” ",
+          "after": "",
+          "spans": [
+            [
+              5842,
+              5852
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "a3b25f6577cfa101aa3f0c332bb7b30b31ee268e8a0e960e21d05fc79ff11f64"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:nl:de96518b0c6b83bbf08f04649049bb002a786f03b04410888a788ebfcf2db6d7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "nl",
+      "content_hash": "de96518b0c6b83bbf08f04649049bb002a786f03b04410888a788ebfcf2db6d7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "0825da6cb800139e6fe8c557",
+          "quote": "Nehemia 8:10",
+          "before": "de vreugde van de HEER is mijn kracht’ (",
+          "after": "). Zonder vreugde is er minder kracht. E",
+          "spans": [
+            [
+              3728,
+              3740
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "d4671da482d7ed4a77835f70",
+          "quote": "1 Korintiërs 10:10",
+          "before": "s ik tijdens mijn stille tijd dit vers: ",
+          "after": " ‘Mopper ook niet, zoals sommigen van he",
+          "spans": [
+            [
+              5930,
+              5948
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "be8d7ce0472ae080b4f69000",
+          "quote": "Psalm 118:24",
+          "before": "",
+          "after": " ‘Dit is de dag die de HEER gemaakt heef",
+          "spans": [
+            [
+              7285,
+              7297
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "361202dcf92b8689439dd334",
+          "quote": "1 Timoteüs 6:6",
+          "before": "boden in het Woord om tevreden te zijn. ",
+          "after": " ‘Maar de godsvrucht is inderdaad een gr",
+          "spans": [
+            [
+              9153,
+              9167
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "aa9a4e077f3f50e83a081257",
+          "quote": "Filippenzen 4:11",
+          "before": " winst, samen met tevredenheid. . .’ en ",
+          "after": " ‘Niet dat ik dit zeg vanwege gebrek: wa",
+          "spans": [
+            [
+              9259,
+              9275
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "2a84833a5efaf4d58d8faca2",
+          "quote": "Psalm 118:24",
+          "before": "lop. Kijk maar naar enkele voorbeelden. ",
+          "after": " Dit is de dag die de HEER gemaakt heeft",
+          "spans": [
+            [
+              9600,
+              9612
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "e1389c17f6a46a200d1c037b",
+          "quote": "Psalm 40:16",
+          "before": "",
+          "after": " ‘Laten allen die U zoeken zich in U ver",
+          "spans": [
+            [
+              9721,
+              9732
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "985b1778801f062e7f7772a7",
+          "quote": "Psalm 90:14",
+          "before": "rend zeggen: De HEER zij grootgemaakt.’ ",
+          "after": " ‘Verzadig ons in de morgen met Uw goede",
+          "spans": [
+            [
+              9887,
+              9898
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "f053fc767db01978e686b36a",
+          "quote": "Jesaja 12:3",
+          "before": " dagen ons verheugen en verblijd zijn.’ ",
+          "after": " ‘Daarom zult u met vreugde water putten",
+          "spans": [
+            [
+              10015,
+              10026
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "46f0c91d353fea37a91c30fc",
+          "quote": "Psalm 100:4-5",
+          "before": "prijs Zijn naam, want de HEER is goed.’ ",
+          "after": "",
+          "spans": [
+            [
+              10705,
+              10718
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "6f0f38affea1fc26f3403d5271e7c31798f859f05e1e75a66c4a5698636369bc"
     },
     "304e1120-f241-4d9e-972b-c72dec82b134:pt:8e55c0158fa5946d80eafb8bcdaa30bf02b4de9b57ed43197748f1c6116d5df8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
@@ -363549,6 +364145,752 @@
         }
       ],
       "record_hash": "31204752ba8a6fd81a4d907fbd235224f13908d6e97a86ad075cd44a9376b380"
+    },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:sw:4f0eb06e77e86306a68ad4f455ccb928c9f0e4b68a4f6ab8e7d509108bb68988:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "sw",
+      "content_hash": "4f0eb06e77e86306a68ad4f455ccb928c9f0e4b68a4f6ab8e7d509108bb68988",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3a6bf694f01009a26a0289cb",
+          "quote": "Yoh 19:30",
+          "before": "misha kichwa chake, akaitoa roho yake. –",
+          "after": "",
+          "spans": [
+            [
+              403,
+              412
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "3d248f5e4950468844308eac",
+          "quote": "Luka 24:46-47",
+          "before": "eo la dhambi lihubiriwe kwa jina lake… –",
+          "after": ". Mtumishi aliyeteseka, kama anavyoonyes",
+          "spans": [
+            [
+              2012,
+              2025
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "095b6b44176543b8910137c2",
+          "quote": "Isaya 53",
+          "before": "ama anavyoonyeshwa katika sura nzima ya ",
+          "after": ", anatupa picha dhahiri ya kipengele hik",
+          "spans": [
+            [
+              2095,
+              2103
+            ]
+          ],
+          "osis": "Isa.53.1-Isa.53.12",
+          "queries": [
+            "23 53:1-12"
+          ]
+        },
+        {
+          "id": "1d3a46308d5236f86efdbcc0",
+          "quote": "Isa 53:5",
+          "before": "tu, [na] …alichubuliwa kwa maovu yetu: –",
+          "after": ". Hapa pia tuna ukweli kwamba kwa kupigw",
+          "spans": [
+            [
+              2253,
+              2261
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "97773eff84405c9f79c2778f",
+          "quote": "Isa 53:5",
+          "before": "wamba kwa kupigwa kwake sisi tumepona. –",
+          "after": ". Mwishowe, tunaona kwamba Alionewa, nay",
+          "spans": [
+            [
+              2334,
+              2342
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "50a9f1b6076212e5bc6ef537",
+          "quote": "Isa 53:7",
+          "before": "unaona kwamba Alionewa, naye akateswa… –",
+          "after": ", na kwamba alivumilia …taabu ya nafsi y",
+          "spans": [
+            [
+              2404,
+              2412
+            ]
+          ],
+          "osis": "Isa.53.7",
+          "queries": [
+            "23 53:7"
+          ]
+        },
+        {
+          "id": "f0cdaf3b90dd03f8ab2fe427",
+          "quote": "Isa 53:11",
+          "before": "wamba alivumilia …taabu ya nafsi yake… –",
+          "after": "",
+          "spans": [
+            [
+              2467,
+              2476
+            ]
+          ],
+          "osis": "Isa.53.11",
+          "queries": [
+            "23 53:11"
+          ]
+        },
+        {
+          "id": "5913df7088d048aeea9da450",
+          "quote": "1Pet 3:18",
+          "before": " ya wasio haki, ili atulete kwa Mungu… –",
+          "after": "; Ingawa alikuwa Mwana, alijifunza kutii",
+          "spans": [
+            [
+              2703,
+              2712
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "f0df488ac5d84b023aa47884",
+          "quote": "Ebr 5:8",
+          "before": "lijifunza kutii kwa mateso aliyoyapata –",
+          "after": "; Kwa maana ilimpasa yeye, ambaye kwa aj",
+          "spans": [
+            [
+              2777,
+              2784
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "2f3d5603504c92540851de12",
+          "quote": "Ebr 2:10",
+          "before": "ngozi wa wokovu wao kwa njia ya mateso –",
+          "after": ".",
+          "spans": [
+            [
+              2971,
+              2979
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "d60ff6743177feb7fca8bcf5",
+          "quote": "2Kor 1:5",
+          "before": "ja yetu nayo huzidi kwa njia ya Kristo –",
+          "after": "; …ikiwa ni kweli tunateseka pamoja naye",
+          "spans": [
+            [
+              3283,
+              3291
+            ]
+          ],
+          "osis": "2Cor.1.5",
+          "queries": [
+            "47 1:5"
+          ]
+        },
+        {
+          "id": "d2a98ed20acc64f15ab5870b",
+          "quote": "Rum 8:17",
+          "before": ", ili tupate pia kutukuzwa pamoja naye –",
+          "after": "; Nipate kumjua yeye, na uweza wa kufufu",
+          "spans": [
+            [
+              3371,
+              3379
+            ]
+          ],
+          "osis": "Rom.8.17",
+          "queries": [
+            "45 8:17"
+          ]
+        },
+        {
+          "id": "025b6825ba2377a0c91c257b",
+          "quote": "Flp 3:10",
+          "before": "eso yake, nikifananishwa na kufa kwake –",
+          "after": ".",
+          "spans": [
+            [
+              3487,
+              3495
+            ]
+          ],
+          "osis": "Phil.3.10",
+          "queries": [
+            "50 3:10"
+          ]
+        },
+        {
+          "id": "41a6b30871cad94dce474563",
+          "quote": "Mat 26:28",
+          "before": "a ajili ya wengi kwa ondoleo la dhambi –",
+          "after": ".",
+          "spans": [
+            [
+              4194,
+              4203
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "a388c583310345d5ef195001",
+          "quote": "Ebr 9:22",
+          "before": "na pasipo kumwaga damu hakuna ondoleo. –",
+          "after": ". Jambo hili ni muhimu hasa kukumbuka tu",
+          "spans": [
+            [
+              4628,
+              4636
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "5b1bc4d5de4bd21950bd3c75",
+          "quote": "Mathayo 18:23-35",
+          "before": "wa hutumia hadithi inayopatikana katika ",
+          "after": " kama andiko lao la kuthibitisha hoja. I",
+          "spans": [
+            [
+              4883,
+              4899
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "2d42b58ae778179348fa41fd",
+          "quote": "Ufu 1:5",
+          "before": "dhambi zetu katika damu yake mwenyewe, –",
+          "after": ".",
+          "spans": [
+            [
+              5395,
+              5402
+            ]
+          ],
+          "osis": "Rev.1.5",
+          "queries": [
+            "66 1:5"
+          ]
+        },
+        {
+          "id": "438a9f84d7cbf59c6e9dc5ae",
+          "quote": "Rum 3:23-25",
+          "before": "tangulia, katika ustahimilivu wa Mungu –",
+          "after": ". Hapa tunaona kwamba kwa yeyote miongon",
+          "spans": [
+            [
+              5751,
+              5762
+            ]
+          ],
+          "osis": "Rom.3.23-Rom.3.25",
+          "queries": [
+            "45 3:23-25"
+          ]
+        },
+        {
+          "id": "40728b28a007c2961f4cdec9",
+          "quote": "Yoh 10:15",
+          "before": "…nautoa uhai wangu kwa ajili ya kondoo –",
+          "after": ", na tena alisema, …nautoa uhai wangu il",
+          "spans": [
+            [
+              6009,
+              6018
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "ed4a26e4fdc4ddb44371ca65",
+          "quote": "Yoh 10:17-18",
+          "before": "uutoa, na ninao uwezo wa kuutwaa tena… –",
+          "after": ".",
+          "spans": [
+            [
+              6191,
+              6203
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "f5ec8ff7550e02cd89dac9da",
+          "quote": "Ebr 2:9-10",
+          "before": "gozi wa wokovu wao kwa njia ya mateso. –",
+          "after": ". Mnaposhiriki meza ya Bwana …mwaitangaz",
+          "spans": [
+            [
+              6611,
+              6621
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "e40344009618d828628364f1",
+          "quote": "1Kor 11:26",
+          "before": "…mwaitangaza mauti ya Bwana hata ajapo –",
+          "after": ".",
+          "spans": [
+            [
+              6699,
+              6709
+            ]
+          ],
+          "osis": "1Cor.11.26",
+          "queries": [
+            "46 11:26"
+          ]
+        },
+        {
+          "id": "0105375dcf942b10d3f1da92",
+          "quote": "Rum 6:3-4",
+          "before": "na sisi tuenende katika upya wa uzima. –",
+          "after": "",
+          "spans": [
+            [
+              7003,
+              7012
+            ]
+          ],
+          "osis": "Rom.6.3-Rom.6.4",
+          "queries": [
+            "45 6:3-4"
+          ]
+        },
+        {
+          "id": "5f700bb501e12ad0ad87b17f",
+          "quote": "Rum. 6:4",
+          "before": "naye kwa njia ya ubatizo katika mauti… –",
+          "after": ". Ingawa vipengele hivi vyote ni sehemu ",
+          "spans": [
+            [
+              7346,
+              7354
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "81523c6c482f0a114a62dfd2",
+          "quote": "Yoh 12:24",
+          "before": " ngano ikianguka katika ardhi na kufa… –",
+          "after": ". Kwanza uhai hukoma (damu kumwagika), k",
+          "spans": [
+            [
+              7490,
+              7499
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "d01df567159196b512059f85",
+          "quote": "Warumi 6:4",
+          "before": "liwa pamoja naye katika upya wa uzima. (",
+          "after": ") …ambao katika huo mmefufuliwa pia pamo",
+          "spans": [
+            [
+              7998,
+              8008
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "90026b79d0dc103877241472",
+          "quote": "Kol 2:12",
+          "before": " wa Mungu, aliyemfufua kutoka kwa wafu –",
+          "after": ". Kwa hiyo, katika ufufuo Wake tunafuful",
+          "spans": [
+            [
+              8133,
+              8141
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "a54ba6e6489cde474aa4ebdc",
+          "quote": "Mdo 1:9",
+          "before": "; na wingu likampokea, wasimwone tena. –",
+          "after": ". Ni kwa sababu aliondoka duniani ndipo ",
+          "spans": [
+            [
+              8635,
+              8642
+            ]
+          ],
+          "osis": "Acts.1.9",
+          "queries": [
+            "44 1:9"
+          ]
+        },
+        {
+          "id": "0e7441311a19fe63b38b436c",
+          "quote": "1Pet 3:18",
+          "before": " …mwenye haki kwa ajili ya wasio haki… –",
+          "after": ". na alikufa ili tupate kuishi. Hakuna s",
+          "spans": [
+            [
+              10328,
+              10337
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "42366c592dcd2a173066c16f",
+          "quote": "Rum 6:1-11",
+          "before": "ami pia lazima nife pamoja naye. Tazama ",
+          "after": "",
+          "spans": [
+            [
+              11036,
+              11046
+            ]
+          ],
+          "osis": "Rom.6.1-Rom.6.11",
+          "queries": [
+            "45 6:1-11"
+          ]
+        },
+        {
+          "id": "851d7d76d525dc17f44fbe81",
+          "quote": "Ebr 9:28",
+          "before": "ra moja ili azichukue dhambi za wengi… –",
+          "after": " na, Yeye mwenyewe alizichukua dhambi ze",
+          "spans": [
+            [
+              11257,
+              11265
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "d98341df3a857908049153e6",
+          "quote": "1Pet 2:24",
+          "before": "mbi zetu katika mwili wake juu ya mti… –",
+          "after": ". Lakini maana sahihi ya “kubeba (kuchuk",
+          "spans": [
+            [
+              11348,
+              11357
+            ]
+          ],
+          "osis": "1Pet.2.24",
+          "queries": [
+            "60 2:24"
+          ]
+        },
+        {
+          "id": "2feb292a3279d3f1baebc438",
+          "quote": "Ebr 10:10-12",
+          "before": "enyewe awe dhabihu kwa ajili ya dhambi (",
+          "after": "), awe upatanisho kwa ajili ya dhambi ze",
+          "spans": [
+            [
+              11611,
+              11623
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "0a405e96ebb986668d75a59d",
+          "quote": "1Yoh 2:1",
+          "before": "we upatanisho kwa ajili ya dhambi zetu (",
+          "after": "), ili kuondoa dhambi, hata kuwa ondoleo",
+          "spans": [
+            [
+              11684,
+              11692
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "5898815f840ea2d97d12ffc9",
+          "quote": "2Kor 5:21",
+          "before": "ili yetu, yeye [Yesu] asiyejua dhambi… –",
+          "after": ". Tunapotazama neno la Kigiriki katika m",
+          "spans": [
+            [
+              12036,
+              12045
+            ]
+          ],
+          "osis": "2Cor.5.21",
+          "queries": [
+            "47 5:21"
+          ]
+        },
+        {
+          "id": "81bb851c6b9bc7ab5e879be3",
+          "quote": "1Pet 1:19",
+          "before": "wana-kondoo asiye na ila, asiye na doa –",
+          "after": ". Uelewa sahihi wa maana ya Yeye kuchuku",
+          "spans": [
+            [
+              12507,
+              12516
+            ]
+          ],
+          "osis": "1Pet.1.19",
+          "queries": [
+            "60 1:19"
+          ]
+        },
+        {
+          "id": "8c6a325e450fbbf8e11a8d7e",
+          "quote": "Yoh 3:36",
+          "before": "bali ghadhabu ya Mungu inakaa juu yake –",
+          "after": "; …ghadhabu ya Mungu inadhihirishwa kuto",
+          "spans": [
+            [
+              12817,
+              12825
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "583f695ace2c9e17bf43f5f5",
+          "quote": "Rum 1:18",
+          "before": "wanadamu, waipingao kweli kwa udhalimu –",
+          "after": "; …na kwa asili tulikuwa wana wa ghadhab",
+          "spans": [
+            [
+              12949,
+              12957
+            ]
+          ],
+          "osis": "Rom.1.18",
+          "queries": [
+            "45 1:18"
+          ]
+        },
+        {
+          "id": "5791c3caec71a7e6f713eff5",
+          "quote": "Efe 2:3",
+          "before": " wana wa ghadhabu, kama na hao wengine –",
+          "after": ".",
+          "spans": [
+            [
+              13021,
+              13028
+            ]
+          ],
+          "osis": "Eph.2.3",
+          "queries": [
+            "49 2:3"
+          ]
+        },
+        {
+          "id": "74b17c3a1a1fd95e64d6c9ff",
+          "quote": "Rum 5:9",
+          "before": "yake, tutaokolewa na ghadhabu kwa yeye –",
+          "after": ". Kwa hiyo, ni wazi kwamba ghadhabu ya M",
+          "spans": [
+            [
+              13206,
+              13213
+            ]
+          ],
+          "osis": "Rom.5.9",
+          "queries": [
+            "45 5:9"
+          ]
+        },
+        {
+          "id": "5fa1d00fc31ca5c27bd451a6",
+          "quote": "Yuda 1:3",
+          "before": "liyokabidhiwa watakatifu mara moja tu. –",
+          "after": "",
+          "spans": [
+            [
+              15589,
+              15597
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "7f2d8bb64adc04f399914f71",
+          "quote": "Ayubu 1 na 2",
+          "before": "hivyo kulingana na mapenzi Yake (tazama ",
+          "after": ", pia 1 Kor 10:13). Hatuhitaji “kuiomba ",
+          "spans": [
+            [
+              17017,
+              17029
+            ]
+          ],
+          "osis": "Job.1.1-Job.2.13",
+          "queries": [
+            "18 1:1-22",
+            "18 2:1-13"
+          ]
+        },
+        {
+          "id": "65313817b66e9f81d65dfe33",
+          "quote": "1 Kor 10:13",
+          "before": " mapenzi Yake (tazama Ayubu 1 na 2, pia ",
+          "after": "). Hatuhitaji “kuiomba damu itulinde” ka",
+          "spans": [
+            [
+              17035,
+              17046
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "9284b8b9233a55d81864a118",
+          "quote": "Ebr 10:11",
+          "before": "u ambazo haziwezi kamwe kuondoa dhambi –",
+          "after": "",
+          "spans": [
+            [
+              18119,
+              18128
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "f57e6e275dd810ab5eb3e71d",
+          "quote": "Gal 3:24",
+          "before": "uwa mlezi wetu wa kutuleta kwa Kristo… –",
+          "after": "",
+          "spans": [
+            [
+              18202,
+              18210
+            ]
+          ],
+          "osis": "Gal.3.24",
+          "queries": [
+            "48 3:24"
+          ]
+        },
+        {
+          "id": "bc9ed58dc1ffef3fef146279",
+          "quote": "Marko 15:38",
+          "before": "a la hekalu likapasuka vipande viwili… –",
+          "after": "",
+          "spans": [
+            [
+              18309,
+              18320
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "00181f27ee5ebcaea28adb67db67810904414e45c9d9c0c9bcda663c1d9789ee"
     },
     "ba09e248-cc12-4573-9db1-cceb885953ac:ur:b8156bef8634174eda4891b981244c7d38e5e175c740b2e846fd95d6d2a595be:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
