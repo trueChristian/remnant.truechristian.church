@@ -99237,11 +99237,12 @@
       },
       "8389d62e-1ba0-47de-bf13-29a71ffa204c": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
-        "category_slug": "articles",
-        "alias": "a-motivating-vision-for-our-homes",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "הורות",
+        "alias": "חזון-מניע-לבתינו",
+        "history": [
+          "/he/articles/a-motivating-vision-for-our-homes/"
+        ],
+        "fallback": false
       },
       "841aca82-8f8a-41cf-aa4c-e85889c446f5": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -109234,11 +109235,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "आत्मिक-जागृति",
+        "alias": "टिके-रहने-वाले-पुनरुत्थान",
+        "history": [
+          "/hi/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -189308,11 +189310,12 @@
       },
       "964d8688-6491-4ede-9271-c923db4c4079": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-call-to-discipleship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kristet-liv",
+        "alias": "kallelsen-till-lärjungaskap",
+        "history": [
+          "/sv/articles/the-call-to-discipleship/"
+        ],
+        "fallback": false
       },
       "968835a0-60ce-4fd2-8ec7-e9373d7a56c5": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",

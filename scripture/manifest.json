@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "527136a21a948c7b0d3a7cc7e8903d626bfcaafcf94e0e8cf4f77d3da75333b9",
+  "integrity": "31973fcb196270691072cd6389605553d9ac6836a6ffe2bea55a43611ca751aa",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -257863,6 +257863,14 @@
       ],
       "record_hash": "cb6f914fc23068566a4420fe9b9bd72c96defeb011259b172a61180b327b48e3"
     },
+    "8389d62e-1ba0-47de-bf13-29a71ffa204c:he:47ca4279e0bec817f0f15d68d35672434a326da9f6e9a87a263966f51d02317d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
+      "locale": "he",
+      "content_hash": "47ca4279e0bec817f0f15d68d35672434a326da9f6e9a87a263966f51d02317d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "b4f51c8797e12d4db899b2423abbc8fb44614fc33cefb493c08ad0fc6f0dde26"
+    },
     "8389d62e-1ba0-47de-bf13-29a71ffa204c:hi:c5a7e8b8498c1c70ae0c6820840f915ce1d83a0f625f7f969b53a44a2d4d2a4b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8389d62e-1ba0-47de-bf13-29a71ffa204c",
       "locale": "hi",
@@ -263237,6 +263245,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4c883639d5ec4463ec1923e650187133bce1ebfb07b2653e9d977a621c0f1509"
+    },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:hi:c47a8dbf02b0cb387131794bc76efbbd058bad20fb8dab4f922cc0433e260301:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "hi",
+      "content_hash": "c47a8dbf02b0cb387131794bc76efbbd058bad20fb8dab4f922cc0433e260301",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "1d2d71ae2b6b157d56ccd8aaa858b2f8d8a734eabb16ff1208e7b5e1f6d63b60"
     },
     "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120:en:4bc2d36e99211bd78e87983acae10f17fec2015faa527194e00edbc4acbfdf2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120",
@@ -299441,6 +299457,79 @@
         }
       ],
       "record_hash": "3ab1a5b0b5660a6cb35d71203e98116bcb8e7327ea3eb97f3881e60aa861a4bd"
+    },
+    "964d8688-6491-4ede-9271-c923db4c4079:sv:8b5ce942faa81b644352baf86de8ad49b551909b6b3b9671b216b94254456055:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "964d8688-6491-4ede-9271-c923db4c4079",
+      "locale": "sv",
+      "content_hash": "8b5ce942faa81b644352baf86de8ad49b551909b6b3b9671b216b94254456055",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1baa30c7fea2735c2236ad8f",
+          "quote": "Matteus 4:18-22",
+          "before": "st båten och sin far och följde honom – ",
+          "after": ".",
+          "spans": [
+            [
+              2122,
+              2137
+            ]
+          ],
+          "osis": "Matt.4.18-Matt.4.22",
+          "queries": [
+            "40 4:18-22"
+          ]
+        },
+        {
+          "id": "99eda5d672a8ce3899c63979",
+          "quote": "Johannes 21:3-6",
+          "before": " de inte dra upp det för mängden fisk – ",
+          "after": ".",
+          "spans": [
+            [
+              5635,
+              5650
+            ]
+          ],
+          "osis": "John.21.3-John.21.6",
+          "queries": [
+            "43 21:3-6"
+          ]
+        },
+        {
+          "id": "e2aefb5c1364bafaa000c656",
+          "quote": "Romarbrevet 7:18",
+          "before": "jag ska göra det goda finner jag inte – ",
+          "after": ".",
+          "spans": [
+            [
+              6381,
+              6397
+            ]
+          ],
+          "osis": "Rom.7.18",
+          "queries": [
+            "45 7:18"
+          ]
+        },
+        {
+          "id": "9d1eb05001aed37705ce7360",
+          "quote": "Lukas 9:62",
+          "before": " sig tillbaka är lämpad för Guds rike – ",
+          "after": ". Petrus såg tillbaka. Han sade: ”Jag gå",
+          "spans": [
+            [
+              6855,
+              6865
+            ]
+          ],
+          "osis": "Luke.9.62",
+          "queries": [
+            "42 9:62"
+          ]
+        }
+      ],
+      "record_hash": "c3219bd58980b96bdd2e3d7661a0af7a8f4f33372305f053a15db2ad6968d18c"
     },
     "964d8688-6491-4ede-9271-c923db4c4079:sw:e6909fcf5b7614d445a59ac4bfb0821dc108ad577c4dcf67100b7ee8f0d07fb4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "964d8688-6491-4ede-9271-c923db4c4079",
