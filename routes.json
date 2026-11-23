@@ -51865,11 +51865,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "γυναίκα",
+        "alias": "η-κραυγή-τησ-καρδιάσ-μιασ-μητέρασ",
+        "history": [
+          "/el/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -96768,11 +96769,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "נשים",
+        "alias": "זעקת-לבה-של-אם",
+        "history": [
+          "/he/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -126665,11 +126667,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "donna",
+        "alias": "il-grido-del-cuore-di-una-madre",
+        "history": [
+          "/it/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -178246,11 +178249,12 @@
       },
       "6f528c85-5ee6-4ccd-804f-63652b5c3a1d": {
         "category_id": "11f3b229-ad6c-5d69-b529-82d977f8d000",
-        "category_slug": "articles",
-        "alias": "we-are-world-christians",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "миссионерство",
+        "alias": "мы-христиане-для-всего-мира",
+        "history": [
+          "/ru/articles/we-are-world-christians/"
+        ],
+        "fallback": false
       },
       "6f5da2d6-b248-440b-ba8c-a5f259000f85": {
         "category_id": "ef4f5581-8e5a-5cf6-933e-ac68e8b55839",
@@ -219778,11 +219782,12 @@
       },
       "ba09e248-cc12-4573-9db1-cceb885953ac": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-finished-work-of-christ",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "基督徒生活",
+        "alias": "基督已经完成的工作",
+        "history": [
+          "/zh-Hans/articles/the-finished-work-of-christ/"
+        ],
+        "fallback": false
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
