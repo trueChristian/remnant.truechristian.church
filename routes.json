@@ -26180,11 +26180,12 @@
       },
       "ba09e248-cc12-4573-9db1-cceb885953ac": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-finished-work-of-christ",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الحياة-المسيحية",
+        "alias": "عمل-المسيح-المكتمل",
+        "history": [
+          "/ar/articles/the-finished-work-of-christ/"
+        ],
+        "fallback": false
       },
       "ba15e3da-aab4-401c-9ec7-64b88ac22833": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -119246,11 +119247,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kebangunan-rohani",
+        "alias": "kebangunan-rohani-yang-bertahan-lama",
+        "history": [
+          "/id/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -169156,11 +169158,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "avivamento",
+        "alias": "avivamentos-duradouros",
+        "history": [
+          "/pt/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -179036,11 +179039,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "духовное-пробуждение",
+        "alias": "пробуждения-которые-сохраняются",
+        "history": [
+          "/ru/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -182410,11 +182414,12 @@
       },
       "fdeac3b1-1f65-4a08-be46-c3bdca309210": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "one-christian-s-response",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "христианская-жизнь",
+        "alias": "ответ-одного-христианина",
+        "history": [
+          "/ru/articles/one-christian-s-response/"
+        ],
+        "fallback": false
       },
       "fdf03bc6-7f2d-403c-8254-462c961621a4": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
