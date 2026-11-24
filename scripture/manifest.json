@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "31973fcb196270691072cd6389605553d9ac6836a6ffe2bea55a43611ca751aa",
+  "integrity": "07770a6916bee4121d0feca65046b27e3ca6f8a0ddcdc3ff499f8fc9dd956832",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -46690,6 +46690,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "4be670d8790eca5f29238c2a8299bf08065f75e22ae5d857c67f35aa3c697520"
+    },
+    "14a35072-cac9-42df-a3ca-1f7db446d968:he:bc3cb891413667eb956dc6fa3cbaa9b80f130f81e2a87073fb847c85917269ca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
+      "locale": "he",
+      "content_hash": "bc3cb891413667eb956dc6fa3cbaa9b80f130f81e2a87073fb847c85917269ca",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "7ff8340d0d27df8ba3d55eafce2dbc425fdda2d9b14888595a05cc0361bfb8f4"
     },
     "14a35072-cac9-42df-a3ca-1f7db446d968:it:47cedeadd165db31045e1ff78d7d0d2faac9913f6b511395cd306e2dd4a6d593:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "14a35072-cac9-42df-a3ca-1f7db446d968",
@@ -361619,6 +361627,496 @@
       ],
       "record_hash": "115b1f121c9066884d62583809d26bed14c66238c6e7616d1c833a85d0b263d9"
     },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:es:c49cfc1d9ac928b89c6f45a61464dd5d3d31d710d1bf373b916d4535d82b3b48:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "es",
+      "content_hash": "c49cfc1d9ac928b89c6f45a61464dd5d3d31d710d1bf373b916d4535d82b3b48",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "08927de3235846f010dbe888",
+          "quote": "Jn 19:30",
+          "before": "clinó la cabeza y entregó el espíritu. –",
+          "after": "",
+          "spans": [
+            [
+              402,
+              410
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "8bb6f33b3a7639561e20a61f",
+          "quote": "Lc 24:46-47",
+          "before": "rrepentimiento y el perdón de pecados… –",
+          "after": ". El siervo sufriente, tal como se lo pr",
+          "spans": [
+            [
+              2180,
+              2191
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "cf2e44a91722e11f3ceffaf4",
+          "quote": "Heb 5:8",
+          "before": " lo que padeció aprendió la obediencia –",
+          "after": "; Porque convenía a aquel para quien son",
+          "spans": [
+            [
+              2948,
+              2955
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "1e2e0442b545174562ace890",
+          "quote": "Heb 2:10",
+          "before": "ntos al autor de la salvación de ellos –",
+          "after": ".",
+          "spans": [
+            [
+              3152,
+              3160
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "af262093331a35d678ed63ac",
+          "quote": "Rom 8:17",
+          "before": " juntamente con él seamos glorificados –",
+          "after": "; A fin de conocerle, y el poder de su r",
+          "spans": [
+            [
+              3577,
+              3585
+            ]
+          ],
+          "osis": "Rom.8.17",
+          "queries": [
+            "45 8:17"
+          ]
+        },
+        {
+          "id": "4155c883b31e313e1a0c1ab2",
+          "quote": "Fil 3:10",
+          "before": "ando a ser semejante a él en su muerte –",
+          "after": ".",
+          "spans": [
+            [
+              3723,
+              3731
+            ]
+          ],
+          "osis": "Phil.3.10",
+          "queries": [
+            "50 3:10"
+          ]
+        },
+        {
+          "id": "cd0d528106555712153a403f",
+          "quote": "Mt 26:28",
+          "before": "derramada para remisión de los pecados –",
+          "after": ".",
+          "spans": [
+            [
+              4480,
+              4488
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "923fa86421ff0baf37fb6aa1",
+          "quote": "Heb 9:22",
+          "before": "amiento de sangre no se hace remisión. –",
+          "after": ". Esto es particularmente importante de ",
+          "spans": [
+            [
+              4949,
+              4957
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "8c2f66dc4dffb22041c71497",
+          "quote": "Mateo 18:23-35",
+          "before": " usan como texto de prueba el relato de ",
+          "after": ". Nos conviene considerar que este relat",
+          "spans": [
+            [
+              5238,
+              5252
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "b6fbcb617d778e955082745d",
+          "quote": "Rom 3:23-25",
+          "before": "ados pasados, por la paciencia de Dios –",
+          "after": ". Aquí vemos que para cualquiera de noso",
+          "spans": [
+            [
+              6074,
+              6085
+            ]
+          ],
+          "osis": "Rom.3.23-Rom.3.25",
+          "queries": [
+            "45 3:23-25"
+          ]
+        },
+        {
+          "id": "8cb12304402b8e441c07a76b",
+          "quote": "Jn 10:15",
+          "before": "ús dijo: …pongo mi vida por las ovejas –",
+          "after": ", y volvió a decir: …yo pongo mi vida, p",
+          "spans": [
+            [
+              6333,
+              6341
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "494ee3652708c698bcc0cb27",
+          "quote": "Jn 10:17-18",
+          "before": ", y tengo poder para volverla a tomar… –",
+          "after": ".",
+          "spans": [
+            [
+              6529,
+              6540
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "33824bb8a1ce9c956783bf18",
+          "quote": "Heb 2:9-10",
+          "before": "tos al autor de la salvación de ellos. –",
+          "after": ". Cuando participan de la comunión, …la ",
+          "spans": [
+            [
+              6960,
+              6970
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "57d9b25ef13178b0bace5721",
+          "quote": "Rom 6:3-4",
+          "before": "ambién nosotros andemos en vida nueva. –",
+          "after": "",
+          "spans": [
+            [
+              7400,
+              7409
+            ]
+          ],
+          "osis": "Rom.6.3-Rom.6.4",
+          "queries": [
+            "45 6:3-4"
+          ]
+        },
+        {
+          "id": "9b5499644e93c8f60ceb6c83",
+          "quote": "Rom. 6:4",
+          "before": "e con él por el bautismo en la muerte… –",
+          "after": ". Aunque todos estos aspectos forman par",
+          "spans": [
+            [
+              7752,
+              7760
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "00207a3769d7297909faad2b",
+          "quote": "Jn 12:24",
+          "before": "ano de trigo cae en la tierra y muere… –",
+          "after": ". Primero viene el fin de la vida (el de",
+          "spans": [
+            [
+              7896,
+              7904
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "f6e5577163ad4e33d36069ea",
+          "quote": "Romanos 6:4",
+          "before": "s resucitados con él a una vida nueva. (",
+          "after": ") …en el cual fuisteis también resucitad",
+          "spans": [
+            [
+              8486,
+              8497
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "b1135de1a72e4e950a4e450c",
+          "quote": "Col 2:12",
+          "before": "de Dios, que le levantó de los muertos –",
+          "after": ". Así pues, en su resurrección somos lev",
+          "spans": [
+            [
+              8620,
+              8628
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "d40c2bac1bc575f1a1e7fa39",
+          "quote": "Hch 1:9",
+          "before": "ió una nube que le ocultó de sus ojos. –",
+          "after": ". Debido a que dejó esta tierra, contamo",
+          "spans": [
+            [
+              9115,
+              9122
+            ]
+          ],
+          "osis": "Acts.1.9",
+          "queries": [
+            "44 1:9"
+          ]
+        },
+        {
+          "id": "a4a3742b5db0326b1437a5a0",
+          "quote": "Rom 6:1-11",
+          "before": "ió, yo también debo morir con él. Véase ",
+          "after": "",
+          "spans": [
+            [
+              11633,
+              11643
+            ]
+          ],
+          "osis": "Rom.6.1-Rom.6.11",
+          "queries": [
+            "45 6:1-11"
+          ]
+        },
+        {
+          "id": "a4c22fbf2e5c43b043aa1401",
+          "quote": "Heb 9:28",
+          "before": "vez para llevar los pecados de muchos… –",
+          "after": " y quien llevó él mismo nuestros pecados",
+          "spans": [
+            [
+              11870,
+              11878
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "9f25b06258324d099739efda",
+          "quote": "Heb 10:10-12",
+          "before": "sí mismo como sacrificio por el pecado (",
+          "after": "), como propiciación por nuestros pecado",
+          "spans": [
+            [
+              12276,
+              12288
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "735e1c4c6e14434c3a36ba8d",
+          "quote": "1 Jn 2:1",
+          "before": "como propiciación por nuestros pecados (",
+          "after": "), para quitar el pecado, e incluso para",
+          "spans": [
+            [
+              12348,
+              12356
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "21652176873cc11cf47fa9c8",
+          "quote": "Jn 3:36",
+          "before": " que la ira de Dios permanece sobre él –",
+          "after": "; …la ira de Dios se revela desde el cie",
+          "spans": [
+            [
+              13542,
+              13549
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "4f072b1f11b0622343f9f303",
+          "quote": "Rom 1:18",
+          "before": "ue retienen la verdad en la injusticia –",
+          "after": "; …y éramos por naturaleza hijos de ira,",
+          "spans": [
+            [
+              13682,
+              13690
+            ]
+          ],
+          "osis": "Rom.1.18",
+          "queries": [
+            "45 1:18"
+          ]
+        },
+        {
+          "id": "65c36c323d93fdb07979abe5",
+          "quote": "Rom 5:9",
+          "before": "angre, por él seremos salvos de la ira –",
+          "after": ". Así que queda claro que la ira de Dios",
+          "spans": [
+            [
+              13928,
+              13935
+            ]
+          ],
+          "osis": "Rom.5.9",
+          "queries": [
+            "45 5:9"
+          ]
+        },
+        {
+          "id": "175cea37d24b8f483a3b2436",
+          "quote": "Jud 1:3",
+          "before": "ada una vez para siempre a los santos. –",
+          "after": "",
+          "spans": [
+            [
+              16316,
+              16323
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "14954cedf5722f8b29fa56a9",
+          "quote": "Job 1 y 2",
+          "before": "e lo hace conforme a su voluntad (véase ",
+          "after": ", y también 1 Co 10:13). No necesitamos ",
+          "spans": [
+            [
+              17812,
+              17821
+            ]
+          ],
+          "osis": "Job.1.1-Job.2.13",
+          "queries": [
+            "18 1:1-22",
+            "18 2:1-13"
+          ]
+        },
+        {
+          "id": "b5aaed404344f2dd38eab529",
+          "quote": "Heb 10:11",
+          "before": "os que nunca pueden quitar los pecados –",
+          "after": "",
+          "spans": [
+            [
+              19022,
+              19031
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "5dead5536ce3503a526756d0",
+          "quote": "Gál 3:24",
+          "before": "e nuestro ayo para llevarnos a Cristo… –",
+          "after": "",
+          "spans": [
+            [
+              19104,
+              19112
+            ]
+          ],
+          "osis": "Gal.3.24",
+          "queries": [
+            "48 3:24"
+          ]
+        }
+      ],
+      "record_hash": "a087c733bff3e972d9ce02d303b70052ef793a86c73a459e16a9e85ea1e194e2"
+    },
     "ba09e248-cc12-4573-9db1-cceb885953ac:fr:f4821be35b2d1a9c6b9bcd08204e3c71be807da1dced154659a72ce3f8aa13ad:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
       "locale": "fr",
@@ -363769,6 +364267,767 @@
       ],
       "record_hash": "2be99741bbddac3efec102e70d89001ea8f7744598049498578455cfe41399a8"
     },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:ko:a4dbcbd77afd392511841f3197af7ed6e4a46d337cb3c9251e569d0609220f9d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "ko",
+      "content_hash": "a4dbcbd77afd392511841f3197af7ed6e4a46d337cb3c9251e569d0609220f9d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7d9534082e9e0bbfcbbffeb7",
+          "quote": "요 19:30",
+          "before": " 말씀하시되, 다 이루었다. 그리고 머리를 숙이시고 숨을 거두시니라. –",
+          "after": "",
+          "spans": [
+            [
+              309,
+              316
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "077378e5b288919f8b33676b",
+          "quote": "눅 24:46-47",
+          "before": "살아나야 하며 … 회개와 죄 사함이 그의 이름으로 전파되어야 하리라… –",
+          "after": ".라는 말씀을 봅니다. 이사야 53장 전체에 묘사된 고난받는 종은 속죄의",
+          "spans": [
+            [
+              1225,
+              1235
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "f6652450811da1d10ff26340",
+          "quote": "이사야 53",
+          "before": "이름으로 전파되어야 하리라… –눅 24:46-47.라는 말씀을 봅니다. ",
+          "after": "장 전체에 묘사된 고난받는 종은 속죄의 이 측면을 생생하게 보여 줍니다.",
+          "spans": [
+            [
+              1253,
+              1259
+            ]
+          ],
+          "osis": "Isa.53.1-Isa.53.12",
+          "queries": [
+            "23 53:1-12"
+          ]
+        },
+        {
+          "id": "839d1a059922b8dc372d8f4b",
+          "quote": "사 53:5",
+          "before": "허물 때문에 상처를 입으시고, [또] …우리의 죄악 때문에 상하셨다… –",
+          "after": ".고 묘사합니다. 여기에는 또한 그분의 채찍에 맞음으로 우리가 나음을 입",
+          "spans": [
+            [
+              1358,
+              1364
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "c302b858f9f11f704d417272",
+          "quote": "사 53:5",
+          "before": "합니다. 여기에는 또한 그분의 채찍에 맞음으로 우리가 나음을 입었다. –",
+          "after": ".는 사실도 있습니다. 마지막으로 우리는 그분은 억압을 당하고 괴롭힘을 ",
+          "spans": [
+            [
+              1418,
+              1424
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "f36942b065e1b65a375ac97d",
+          "quote": "사 53:7",
+          "before": "습니다. 마지막으로 우리는 그분은 억압을 당하고 괴롭힘을 받으셨으며… –",
+          "after": ", 그분이 …그분의 영혼의 고통… –사 53:11을 감당하셨음을 봅니다.",
+          "spans": [
+            [
+              1481,
+              1487
+            ]
+          ],
+          "osis": "Isa.53.7",
+          "queries": [
+            "23 53:7"
+          ]
+        },
+        {
+          "id": "b0128028e8b74f1f5f203345",
+          "quote": "사 53:11",
+          "before": " 괴롭힘을 받으셨으며… –사 53:7, 그분이 …그분의 영혼의 고통… –",
+          "after": "을 감당하셨음을 봅니다.",
+          "spans": [
+            [
+              1516,
+              1523
+            ]
+          ],
+          "osis": "Isa.53.11",
+          "queries": [
+            "23 53:11"
+          ]
+        },
+        {
+          "id": "630af195d15fc56dfc977940",
+          "quote": "벧전 3:18",
+          "before": "의한 자들을 위하여 받으신 것은 우리를 하나님께로 인도하려 하심이라… –",
+          "after": "; 그분은 아들이셨으나 고난을 받으신 일들로 순종을 배우셨느니라 –히 5",
+          "spans": [
+            [
+              1666,
+              1673
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "0f3ae613886cab8900c769f6",
+          "quote": "히 5:8",
+          "before": ":18; 그분은 아들이셨으나 고난을 받으신 일들로 순종을 배우셨느니라 –",
+          "after": "; 만물이 그분을 위하여 있고 또 그분으로 말미암아 있으니, 많은 아들을",
+          "spans": [
+            [
+              1710,
+              1715
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "f255eed6ec74e0ec50ab4b68",
+          "quote": "히 2:10",
+          "before": "원의 대장을 고난을 통하여 완전하게 하시는 것이 그분께 합당하였느니라 –",
+          "after": ".",
+          "spans": [
+            [
+              1816,
+              1822
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "c9fa6f8dbd698db815f87ac8",
+          "quote": "고후 1:5",
+          "before": " 안에 넘치는 것 같이, 우리의 위로도 그리스도로 말미암아 넘치는도다 –",
+          "after": "; …우리가 그분과 함께 영광을 받기 위하여 그분과 함께 고난도 받아야 ",
+          "spans": [
+            [
+              1964,
+              1970
+            ]
+          ],
+          "osis": "2Cor.1.5",
+          "queries": [
+            "47 1:5"
+          ]
+        },
+        {
+          "id": "e1bc40887549205661c6ef71",
+          "quote": "롬 8:17",
+          "before": "가 그분과 함께 영광을 받기 위하여 그분과 함께 고난도 받아야 하리라 –",
+          "after": "; 내가 그분과 그분의 부활의 권능과 그분의 고난에 참여함을 알고자 하여",
+          "spans": [
+            [
+              2015,
+              2021
+            ]
+          ],
+          "osis": "Rom.8.17",
+          "queries": [
+            "45 8:17"
+          ]
+        },
+        {
+          "id": "791317065941ccc768a2c672",
+          "quote": "빌 3:10",
+          "before": "의 권능과 그분의 고난에 참여함을 알고자 하여 그분의 죽으심을 본받아 –",
+          "after": ".",
+          "spans": [
+            [
+              2076,
+              2082
+            ]
+          ],
+          "osis": "Phil.3.10",
+          "queries": [
+            "50 3:10"
+          ]
+        },
+        {
+          "id": "b1d75f4f42fdddaa5291625e",
+          "quote": "마 26:28",
+          "before": "사함을 얻게 하려고 많은 사람을 위하여 흘리는 나의 새 언약의 피니라 –",
+          "after": ".",
+          "spans": [
+            [
+              2451,
+              2458
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "0a65e69e5bd0ecbb9a68829a",
+          "quote": "히브리서 9",
+          "before": "",
+          "after": "장과 10장에는 구약의 “피 희생 제물들”이 그 자체로 완전한 것이 아니",
+          "spans": [
+            [
+              2474,
+              2480
+            ]
+          ],
+          "osis": "Heb.9.1-Heb.9.28",
+          "queries": [
+            "58 9:1-28"
+          ]
+        },
+        {
+          "id": "a0cc30315fc3688d9a586afd",
+          "quote": "히 9:22",
+          "before": "든 것이 피로써 깨끗하게 되나니, 피 흘림이 없이는 사함이 없느니라. –",
+          "after": ". 어떤 사람들은 하나님께서 원하시기만 하면 죽음이나 피 흘림 없이도 죄",
+          "spans": [
+            [
+              2694,
+              2700
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "f322bcb6471daa560b333be1",
+          "quote": "마태복음 18:23-35",
+          "before": " 있었다고 주장하므로, 이 점을 특히 기억하는 것이 중요합니다. 이들은 ",
+          "after": "에 나오는 이야기를 증거 구절로 사용합니다. 이 이야기는 결과가 나온 “",
+          "spans": [
+            [
+              2814,
+              2827
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "16feb01b9b094e437ee4114c",
+          "quote": "계 1:5",
+          "before": " … 자신의 피로 우리의 죄에서 우리를 씻어 주신 예수 그리스도로부터 –",
+          "after": ".",
+          "spans": [
+            [
+              3126,
+              3131
+            ]
+          ],
+          "osis": "Rev.1.5",
+          "queries": [
+            "66 1:5"
+          ]
+        },
+        {
+          "id": "2f0d531e2bc55891e12504be",
+          "quote": "롬 3:23-25",
+          "before": "오래 참으심으로 지나간 죄들을 사하시고 자신의 의를 나타내려 하심이라 –",
+          "after": ". 여기서 죄를 지은 사람은 누구나(우리 모두가) 그분(예수님)의 피에 ",
+          "spans": [
+            [
+              3326,
+              3335
+            ]
+          ],
+          "osis": "Rom.3.23-Rom.3.25",
+          "queries": [
+            "45 3:23-25"
+          ]
+        },
+        {
+          "id": "de25380711a8fd7e074ffe1c",
+          "quote": "요 10:15",
+          "before": "예수님께서는 …내가 양들을 위하여 내 생명을 내어놓노라 –",
+          "after": ",고 말씀하셨고, 또 …내가 내 생명을 내어놓는 것은 그것을 다시 얻으려",
+          "spans": [
+            [
+              3472,
+              3479
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "adf8c299d863ac7f0b9ab88b",
+          "quote": "요 10:17-18",
+          "before": "놓노라. 나는 그것을 내어놓을 권능도 있고 다시 얻을 권능도 있노라… –",
+          "after": ".고 말씀하셨습니다.",
+          "spans": [
+            [
+              3603,
+              3613
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "3892bec2895a42e54a44e9d2",
+          "quote": "히 2:9-10",
+          "before": "의 대장을 고난을 통하여 완전하게 하시는 것이 그분께 합당하였느니라. –",
+          "after": ". 성찬에 참여할 때 …그분께서 오실 때까지 주의 죽으심을 선포하느니라 ",
+          "spans": [
+            [
+              3867,
+              3875
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "4866b59966e1608e9cf3fc0b",
+          "quote": "고전 11:26",
+          "before": " 성찬에 참여할 때 …그분께서 오실 때까지 주의 죽으심을 선포하느니라 –",
+          "after": ".",
+          "spans": [
+            [
+              3925,
+              3933
+            ]
+          ],
+          "osis": "1Cor.11.26",
+          "queries": [
+            "46 11:26"
+          ]
+        },
+        {
+          "id": "779e24a002ade71995ffa67a",
+          "quote": "롬 6:3-4",
+          "before": "서 일으켜지신 것 같이 우리도 새 생명 가운데서 행하게 하려 함이라. –",
+          "after": "",
+          "spans": [
+            [
+              4121,
+              4128
+            ]
+          ],
+          "osis": "Rom.6.3-Rom.6.4",
+          "queries": [
+            "45 6:3-4"
+          ]
+        },
+        {
+          "id": "e26f1acbf3949f9d50a53edd",
+          "quote": "롬 6:4",
+          "before": "이, 그러므로 우리가 죽음 안으로 침례를 받아 그분과 함께 묻혔나니… –",
+          "after": ".라는 진리를 다시 주목합니다. 이 모든 측면은 전체의 일부이며, 장사는",
+          "spans": [
+            [
+              4298,
+              4303
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "d300034859ca9da5aa33a225",
+          "quote": "요 12:24",
+          "before": " 측면은 전체의 일부이며, 장사는 …밀알 하나가 땅에 떨어져 죽으면… –",
+          "after": ".라는 말씀을 나타냅니다. 먼저 생명이 끝나고(피를 쏟음), 그다음 죽음",
+          "spans": [
+            [
+              4374,
+              4381
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "9eae4ee9f813509da756148c",
+          "quote": "로마서 6:4",
+          "before": "그분의 부활로 우리는 그분과 함께 새 생명 가운데 일으켜집니다. (",
+          "after": ") …그분을 죽은 자들 가운데서 일으키신 하나님의 역사를 믿음으로 말미암",
+          "spans": [
+            [
+              4688,
+              4695
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "cc518e1b51a433328dd47f16",
+          "quote": "골 2:12",
+          "before": " 하나님의 역사를 믿음으로 말미암아 너희도 그분과 함께 일으켜졌느니라 –",
+          "after": ". 그러므로 그분의 부활로 우리는 죽음에서 그분과 함께 일으켜지고(이전에",
+          "spans": [
+            [
+              4761,
+              4767
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "825a3058b9cebfde326303b3",
+          "quote": "행 1:9",
+          "before": " 올라가시니 구름이 그분을 받아들여 그들의 시야에서 사라지게 하더라. –",
+          "after": ".는 것을 압니다. 그분께서 이 땅을 떠나셨기에 오늘날 믿는 이의 삶에 ",
+          "spans": [
+            [
+              5089,
+              5094
+            ]
+          ],
+          "osis": "Acts.1.9",
+          "queries": [
+            "44 1:9"
+          ]
+        },
+        {
+          "id": "ef9ce20d4cb886cca8a006e1",
+          "quote": "벧전 3:18",
+          "before": "논리적인 결론처럼 보일 수 있습니다. …의인이 불의한 자들을 위하여… –",
+          "after": ". 그분은 우리가 살도록 죽으셨습니다. 그 일이 우리를 위한 일이었다는 ",
+          "spans": [
+            [
+              5998,
+              6005
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "a3bc642b0318e6fe005de1ab",
+          "quote": "롬 6:1-11",
+          "before": " 죽으셨으므로 나도 그분과 함께 죽어야 한다는 점을 놓칠 수 있습니다. ",
+          "after": " 참조",
+          "spans": [
+            [
+              6384,
+              6392
+            ]
+          ],
+          "osis": "Rom.6.1-Rom.6.11",
+          "queries": [
+            "45 6:1-11"
+          ]
+        },
+        {
+          "id": "86c740d699b239250b45c324",
+          "quote": "히 9:28",
+          "before": "이 그리스도께서도 많은 사람의 죄를 담당하시려고 단번에 드려지셨으며… –",
+          "after": " 그리고 그분께서 친히 나무에 달려 자신의 몸으로 우리의 죄들을 담당하셨",
+          "spans": [
+            [
+              6535,
+              6541
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "e1883140cc1e5cbbf994451f",
+          "quote": "벧전 2:24",
+          "before": "그분께서 친히 나무에 달려 자신의 몸으로 우리의 죄들을 담당하셨으니… –",
+          "after": ".입니다. 그러면 우리의 죄를 “담당하셨다(짊어지셨다)”는 말은 어떻게 ",
+          "spans": [
+            [
+              6595,
+              6602
+            ]
+          ],
+          "osis": "1Pet.2.24",
+          "queries": [
+            "60 2:24"
+          ]
+        },
+        {
+          "id": "eaa3e7fb4390b55eef4b1d65",
+          "quote": "히 10:10-12",
+          "before": " 뒷받침하는 성경 말씀은 없습니다. 그리스도께서는 죄를 위한 희생 제물(",
+          "after": "), 우리의 죄를 위한 화목 제물(요일 2:1)이 되시고 죄를 없애며, ",
+          "spans": [
+            [
+              6756,
+              6766
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "8c58f04936f83baec3a90db9",
+          "quote": "요일 2:1",
+          "before": "를 위한 희생 제물(히 10:10-12), 우리의 죄를 위한 화목 제물(",
+          "after": ")이 되시고 죄를 없애며, 심지어 죄 사함 자체가 되시기 위해 자신을 드",
+          "spans": [
+            [
+              6802,
+              6808
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "e50a3ea03024b82d4fea7b7c",
+          "quote": "고후 5:21",
+          "before": "죄를 알지 못하신 그분[예수님]을 우리를 위하여 죄가 되게 하셨으니… –",
+          "after": ". 이 구절에서 “죄”로 번역된 그리스어 단어를 살펴보고 이 말씀을 다른",
+          "spans": [
+            [
+              7007,
+              7014
+            ]
+          ],
+          "osis": "2Cor.5.21",
+          "queries": [
+            "47 5:21"
+          ]
+        },
+        {
+          "id": "681c41ad02a7798ac1d7f01b",
+          "quote": "벧전 1:19",
+          "before": "다. 그렇지 않았다면 그분은 …흠도 없고 점도 없는 어린양과 같으신… –",
+          "after": ". 지위를 유지할 수 없었을 것입니다. 그분께서 우리의 죄를 담당하셨다는",
+          "spans": [
+            [
+              7266,
+              7273
+            ]
+          ],
+          "osis": "1Pet.1.19",
+          "queries": [
+            "60 1:19"
+          ]
+        },
+        {
+          "id": "732bb0b6d694314759030cd5",
+          "quote": "요 3:36",
+          "before": " 생명을 보지 못하고 도리어 하나님의 진노가 그 위에 머물러 있느니라 –",
+          "after": "; …하나님의 진노가 불의로 진리를 막는 사람들의 모든 경건하지 아니함과",
+          "spans": [
+            [
+              7499,
+              7505
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "a4e66c3a750b76d56e5d544e",
+          "quote": "롬 1:18",
+          "before": "사람들의 모든 경건하지 아니함과 불의함에 대하여 하늘로부터 드러나나니 –",
+          "after": "; …다른 사람들과 마찬가지로 본질상 진노의 자녀들이었느니라 –엡 2:3",
+          "spans": [
+            [
+              7568,
+              7574
+            ]
+          ],
+          "osis": "Rom.1.18",
+          "queries": [
+            "45 1:18"
+          ]
+        },
+        {
+          "id": "de14ebace371d9d044439bc0",
+          "quote": "엡 2:3",
+          "before": " 1:18; …다른 사람들과 마찬가지로 본질상 진노의 자녀들이었느니라 –",
+          "after": ".는 것을 압니다.",
+          "spans": [
+            [
+              7609,
+              7614
+            ]
+          ],
+          "osis": "Eph.2.3",
+          "queries": [
+            "49 2:3"
+          ]
+        },
+        {
+          "id": "46a5a189b12d98e08e0c138f",
+          "quote": "롬 5:9",
+          "before": " 하심을 얻었으니 더욱더 그분으로 말미암아 진노로부터 구원을 받으리라 –",
+          "after": ".고 나옵니다. 그러므로 그분의 피로 의롭다 하심을 받을 때 죄 때문에 ",
+          "spans": [
+            [
+              7729,
+              7734
+            ]
+          ],
+          "osis": "Rom.5.9",
+          "queries": [
+            "45 5:9"
+          ]
+        },
+        {
+          "id": "3d947fa6612ed5b699801138",
+          "quote": "유 1:3",
+          "before": "진심으로 바랍니다. 그 믿음은 …성도들에게 단번에 전해진 믿음입니다. –",
+          "after": "",
+          "spans": [
+            [
+              8978,
+              8983
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "73154ffd60feeb26883348fd",
+          "quote": "욥기 1",
+          "before": "아버지께서는 자신의 뜻에 따라 그렇게 하십니다(",
+          "after": "장과 2장, 또한 고전 10:13 참조). 그리스도의 피가 악한 권세를 ",
+          "spans": [
+            [
+              9830,
+              9834
+            ]
+          ],
+          "osis": "Job.1.1-Job.1.22",
+          "queries": [
+            "18 1:1-22"
+          ]
+        },
+        {
+          "id": "a7bacfc2bf3e64e036a8806e",
+          "quote": "고전 10:13",
+          "before": "아버지께서는 자신의 뜻에 따라 그렇게 하십니다(욥기 1장과 2장, 또한 ",
+          "after": " 참조). 그리스도의 피가 악한 권세를 물리치는 수단인 것처럼 “우리를 ",
+          "spans": [
+            [
+              9844,
+              9852
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "abe4192187e99ed891211638",
+          "quote": "히 10:11",
+          "before": "희생 제사 제도—죄들을 결코 없앨 수 없는 희생 제물들 –",
+          "after": "",
+          "spans": [
+            [
+              10549,
+              10556
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "ed78dc8a13ce7eb2ee054898",
+          "quote": "갈 3:24",
+          "before": "율법—우리를 그리스도께로 인도하는 훈육자가 되었으니… –",
+          "after": "",
+          "spans": [
+            [
+              10610,
+              10616
+            ]
+          ],
+          "osis": "Gal.3.24",
+          "queries": [
+            "48 3:24"
+          ]
+        },
+        {
+          "id": "a913686d8e8f5e7cc0578251",
+          "quote": "막 15:38",
+          "before": "께 나아가는 길이 제한되어 있었던 상태—성전의 휘장이 둘로 찢어지니… –",
+          "after": "",
+          "spans": [
+            [
+              10682,
+              10689
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "5115fd1c6c176aa9788c89d97fe1311da0dcbfb3b3a23c8b7e49ff8a4475fb0b"
+    },
     "ba09e248-cc12-4573-9db1-cceb885953ac:nl:4055fc9a64de6c30e4ebd5eb44b9335af47eb47f967422c94610f38ab240c760:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
       "locale": "nl",
@@ -364733,6 +365992,1470 @@
         }
       ],
       "record_hash": "31204752ba8a6fd81a4d907fbd235224f13908d6e97a86ad075cd44a9376b380"
+    },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:ru:83e44fca92d881dd37a3afeea6ac96652c5c32fbf1f702f24d2ee84314147c37:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "ru",
+      "content_hash": "83e44fca92d881dd37a3afeea6ac96652c5c32fbf1f702f24d2ee84314147c37",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4927ef1f7e58dc60bdb7df9a",
+          "quote": "Ин 19:30",
+          "before": "илось: и, преклонив главу, предал дух. –",
+          "after": "",
+          "spans": [
+            [
+              362,
+              370
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "02b606c741c66f9862af0480",
+          "quote": "Лк 24:46-47",
+          "before": "едано было покаяние и прощение грехов… –",
+          "after": ". Страдающий Раб, изображённый во всей 5",
+          "spans": [
+            [
+              1917,
+              1928
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "fafb706e4a0e0aa2e663f2c7",
+          "quote": "Ис 53:5",
+          "before": " [и] …сокрушённого за беззакония наши: –",
+          "after": ". Здесь мы также видим истину о том, что",
+          "spans": [
+            [
+              2140,
+              2147
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "21c4a23a6d255ffeedde20cb",
+          "quote": "Ис 53:5",
+          "before": "у о том, что ранами Его мы исцелились. –",
+          "after": ". Наконец, мы видим, что Он был угнетаем",
+          "spans": [
+            [
+              2224,
+              2231
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "967baab941928d0c572d0771",
+          "quote": "Ис 53:7",
+          "before": "мы видим, что Он был угнетаем и мучим… –",
+          "after": ", и что Он претерпел …муки души Своей… –",
+          "spans": [
+            [
+              2291,
+              2298
+            ]
+          ],
+          "osis": "Isa.53.7",
+          "queries": [
+            "23 53:7"
+          ]
+        },
+        {
+          "id": "6a4c8301d4806fd910757868",
+          "quote": "Ис 53:11",
+          "before": ", и что Он претерпел …муки души Своей… –",
+          "after": "",
+          "spans": [
+            [
+              2347,
+              2355
+            ]
+          ],
+          "osis": "Isa.53.11",
+          "queries": [
+            "23 53:11"
+          ]
+        },
+        {
+          "id": "474645c102837a446486f42b",
+          "quote": "1Пет 3:18",
+          "before": "ал за грехи, праведник за неправедных… –",
+          "after": "; Хотя Он и Сын, однако страданиями науч",
+          "spans": [
+            [
+              2545,
+              2554
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "0277d34cbe5f6594adc782ca",
+          "quote": "Евр 5:8",
+          "before": "однако страданиями научился послушанию –",
+          "after": "; Ибо Тому, для Которого всё и через Кот",
+          "spans": [
+            [
+              2611,
+              2618
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "de0f8fb590ae925060526b90",
+          "quote": "Евр 2:10",
+          "before": "х спасения совершенным через страдания –",
+          "after": ".",
+          "spans": [
+            [
+              2765,
+              2773
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "0cc2d224a59c5f449f07f0ce",
+          "quote": "2Кор 1:5",
+          "before": "вы, умножается Христом и утешение наше –",
+          "after": "; …если только с Ним страдаем, чтобы с Н",
+          "spans": [
+            [
+              3040,
+              3048
+            ]
+          ],
+          "osis": "2Cor.1.5",
+          "queries": [
+            "47 1:5"
+          ]
+        },
+        {
+          "id": "999e35d04bbfc923802f1f40",
+          "quote": "Рим 8:17",
+          "before": "м страдаем, чтобы с Ним и прославиться –",
+          "after": "; Чтобы познать Его, и силу воскресения ",
+          "spans": [
+            [
+              3107,
+              3115
+            ]
+          ],
+          "osis": "Rom.8.17",
+          "queries": [
+            "45 8:17"
+          ]
+        },
+        {
+          "id": "ab620ce0f49ed206fe0b067d",
+          "quote": "Флп 3:10",
+          "before": "страданиях Его, сообразуясь смерти Его –",
+          "after": ".",
+          "spans": [
+            [
+              3212,
+              3220
+            ]
+          ],
+          "osis": "Phil.3.10",
+          "queries": [
+            "50 3:10"
+          ]
+        },
+        {
+          "id": "08f38f74e6bf8a40e9906c47",
+          "quote": "Мф 26:28",
+          "before": "ногих изливаемая во оставление грехов. –",
+          "after": ".",
+          "spans": [
+            [
+              3839,
+              3847
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "3be897e14ab07500e2df8c8e",
+          "quote": "Евр 9:22",
+          "before": "без пролития крови не бывает прощения. –",
+          "after": ". Особенно важно помнить об этом, когда ",
+          "spans": [
+            [
+              4228,
+              4236
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "f0c6c3075c91ae8ebfccb0e1",
+          "quote": "Матфея 18:23-35",
+          "before": "В подтверждение они приводят историю из ",
+          "after": ". Нам следует учитывать, что эта история",
+          "spans": [
+            [
+              4445,
+              4460
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "77b1faf9d75f72aa668bbcff",
+          "quote": "Откр 1:5",
+          "before": "омыл нас от грехов наших Кровию Своею, –",
+          "after": ".",
+          "spans": [
+            [
+              4899,
+              4907
+            ]
+          ],
+          "osis": "Rev.1.5",
+          "queries": [
+            "66 1:5"
+          ]
+        },
+        {
+          "id": "4e3be6af302f91b1495b9c55",
+          "quote": "Рим 3:23-25",
+          "before": "ланных прежде, по долготерпению Божию. –",
+          "after": ". Здесь мы видим, что для каждого из нас",
+          "spans": [
+            [
+              5208,
+              5219
+            ]
+          ],
+          "osis": "Rom.3.23-Rom.3.25",
+          "queries": [
+            "45 3:23-25"
+          ]
+        },
+        {
+          "id": "ed0795762529234f2c03ea84",
+          "quote": "Ин 10:15",
+          "before": " сказал: …Я полагаю жизнь Мою за овец. –",
+          "after": ", и снова сказал: …Я отдаю жизнь Мою, чт",
+          "spans": [
+            [
+              5450,
+              5458
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "b3d1aa1a6031019b045be46b",
+          "quote": "Ин 10:17-18",
+          "before": "ать её и власть имею опять принять её… –",
+          "after": ".",
+          "spans": [
+            [
+              5632,
+              5643
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "c26f75650c9919726d27a259",
+          "quote": "Евр 2:9-10",
+          "before": " спасения совершенным через страдания. –",
+          "after": ". Совершая причастие, …вы возвещаете сме",
+          "spans": [
+            [
+              6004,
+              6014
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "930980f64bc8cb38aee5ebd0",
+          "quote": "1Кор 11:26",
+          "before": "ете смерть Господню, доколе Он придёт. –",
+          "after": ".",
+          "spans": [
+            [
+              6096,
+              6106
+            ]
+          ],
+          "osis": "1Cor.11.26",
+          "queries": [
+            "46 11:26"
+          ]
+        },
+        {
+          "id": "e38c899107722cba7a766197",
+          "quote": "Рим 6:3-4",
+          "before": " так и нам ходить в обновлённой жизни. –",
+          "after": "",
+          "spans": [
+            [
+              6348,
+              6357
+            ]
+          ],
+          "osis": "Rom.6.3-Rom.6.4",
+          "queries": [
+            "45 6:3-4"
+          ]
+        },
+        {
+          "id": "6958cc0aae0f7ed5e9b82e7d",
+          "quote": "Рим. 6:4",
+          "before": "ы погреблись с Ним крещением в смерть… –",
+          "after": ". Хотя все эти аспекты являются частью ц",
+          "spans": [
+            [
+              6616,
+              6624
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "dff53bcfbeb3429c34e8c048",
+          "quote": "Ин 12:24",
+          "before": "е зерно, падающее в землю и умирающее… –",
+          "after": ". Сначала прекращается жизнь (изливается",
+          "spans": [
+            [
+              6754,
+              6762
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "8207ef1461a575808357f694",
+          "quote": "Римлянам 6:4",
+          "before": "ем вместе с Ним для обновлённой жизни. (",
+          "after": ") …в нём вы и совоскресли с Ним через ве",
+          "spans": [
+            [
+              7311,
+              7323
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "53a08a60aaae18d39703d679",
+          "quote": "Кол 2:12",
+          "before": "Бога, Который воскресил Его из мёртвых –",
+          "after": ". Итак, благодаря Его воскресению мы вос",
+          "spans": [
+            [
+              7421,
+              7429
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "a17888688553cd24f696ba59",
+          "quote": "Деян 1:9",
+          "before": "сён, и облако скрыло Его от их взоров. –",
+          "after": ". Именно благодаря тому, что Он покинул ",
+          "spans": [
+            [
+              7871,
+              7879
+            ]
+          ],
+          "osis": "Acts.1.9",
+          "queries": [
+            "44 1:9"
+          ]
+        },
+        {
+          "id": "269ad02861bcf5c1638b203d",
+          "quote": "1Пет 3:18",
+          "before": "мер за нас, …праведник за неправедных… –",
+          "after": ". И Он умер, чтобы мы могли жить. Несомн",
+          "spans": [
+            [
+              9498,
+              9507
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "e29d8f21c61d9077d87e0ab6",
+          "quote": "Рим 6:1-11",
+          "before": " умер, то и я должен умереть с Ним. См. ",
+          "after": "",
+          "spans": [
+            [
+              10082,
+              10092
+            ]
+          ],
+          "osis": "Rom.6.1-Rom.6.11",
+          "queries": [
+            "45 6:1-11"
+          ]
+        },
+        {
+          "id": "a7157db02fcb171f5de4124e",
+          "quote": "Евр 9:28",
+          "before": " в жертву, чтобы понести грехи многих… –",
+          "after": " и Он грехи наши Сам вознёс телом Своим ",
+          "spans": [
+            [
+              10308,
+              10316
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "d23f04b9784a9a611600dfb7",
+          "quote": "1Пет 2:24",
+          "before": " наши Сам вознёс телом Своим на древо… –",
+          "after": ". Но как правильно понимать выражение «н",
+          "spans": [
+            [
+              10376,
+              10385
+            ]
+          ],
+          "osis": "1Pet.2.24",
+          "queries": [
+            "60 2:24"
+          ]
+        },
+        {
+          "id": "09713872b54979cd3539b47a",
+          "quote": "Евр 10:10-12",
+          "before": ". Христос принёс Себя в жертву за грех (",
+          "after": "), как умилостивление за наши грехи (1Ин",
+          "spans": [
+            [
+              10604,
+              10616
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "fa2d2b67a1a1977e37b1f841",
+          "quote": "1Ин 2:1",
+          "before": "-12), как умилостивление за наши грехи (",
+          "after": "), чтобы устранить грех и даже стать про",
+          "spans": [
+            [
+              10670,
+              10677
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "25c94079a011d28a4265be8a",
+          "quote": "2Кор 5:21",
+          "before": "са], не знавшего греха, грехом за нас… –",
+          "after": ". Если рассмотреть греческое слово, пере",
+          "spans": [
+            [
+              10960,
+              10969
+            ]
+          ],
+          "osis": "2Cor.5.21",
+          "queries": [
+            "47 5:21"
+          ]
+        },
+        {
+          "id": "40a1c6da01d4f948d73f89db",
+          "quote": "1Пет 1:19",
+          "before": "оложение …непорочного и чистого Агнца. –",
+          "after": ". Правильно понимать смысл того, что Он ",
+          "spans": [
+            [
+              11371,
+              11380
+            ]
+          ],
+          "osis": "1Pet.1.19",
+          "queries": [
+            "60 1:19"
+          ]
+        },
+        {
+          "id": "80ca40f3c250951fa841f5a2",
+          "quote": "Ин 3:36",
+          "before": " жизни, но гнев Божий пребывает на нём –",
+          "after": "; …гнев Божий с неба открывается на всяк",
+          "spans": [
+            [
+              11687,
+              11694
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "951ec9cf828d3d5166ecf1a5",
+          "quote": "Рим 1:18",
+          "before": "еловеков, подавляющих истину неправдою –",
+          "after": "; …и были по природе чадами гнева, как и",
+          "spans": [
+            [
+              11798,
+              11806
+            ]
+          ],
+          "osis": "Rom.1.18",
+          "queries": [
+            "45 1:18"
+          ]
+        },
+        {
+          "id": "1de1d7de1bd3a1c4fef72725",
+          "quote": "Еф 2:3",
+          "before": " по природе чадами гнева, как и прочие –",
+          "after": ".",
+          "spans": [
+            [
+              11855,
+              11861
+            ]
+          ],
+          "osis": "Eph.2.3",
+          "queries": [
+            "49 2:3"
+          ]
+        },
+        {
+          "id": "14fd01b156469448d9463167",
+          "quote": "Рим 5:9",
+          "before": "даны Кровию Его, спасёмся Им от гнева. –",
+          "after": ". Итак, ясно, что гнев Божий на нас из-з",
+          "spans": [
+            [
+              12029,
+              12036
+            ]
+          ],
+          "osis": "Rom.5.9",
+          "queries": [
+            "45 5:9"
+          ]
+        },
+        {
+          "id": "56ef2f767bdba92f7eb9d0cc",
+          "quote": "Иуд 1:3",
+          "before": "та от …веры, однажды преданной святым. –",
+          "after": "",
+          "spans": [
+            [
+              14079,
+              14086
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "f23aa67062a0cf81b24f8b15",
+          "quote": "Иов 1 и 2",
+          "before": "елает наш Отец согласно Своей воле (см. ",
+          "after": ", а также 1 Кор 10:13). Нам не нужно «вз",
+          "spans": [
+            [
+              15394,
+              15403
+            ]
+          ],
+          "osis": "Job.1.1-Job.2.13",
+          "queries": [
+            "18 1:1-22",
+            "18 2:1-13"
+          ]
+        },
+        {
+          "id": "d2b29d21830810490369d679",
+          "quote": "1 Кор 10:13",
+          "before": "асно Своей воле (см. Иов 1 и 2, а также ",
+          "after": "). Нам не нужно «взывать к крови ради на",
+          "spans": [
+            [
+              15413,
+              15424
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "a42e83179d9d66dad94e4378",
+          "quote": "Евр 10:11",
+          "before": "торые никогда не могут устранить грехи –",
+          "after": "",
+          "spans": [
+            [
+              16485,
+              16494
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "1a321c78e154c07513838cb1",
+          "quote": "Гал 3:24",
+          "before": "дителем, чтобы привести нас ко Христу… –",
+          "after": "",
+          "spans": [
+            [
+              16581,
+              16589
+            ]
+          ],
+          "osis": "Gal.3.24",
+          "queries": [
+            "48 3:24"
+          ]
+        },
+        {
+          "id": "f5c8b680e656f10afce49690",
+          "quote": "Мк 15:38",
+          "before": " — И завеса в храме раздралась надвое… –",
+          "after": "",
+          "spans": [
+            [
+              16678,
+              16686
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "a053f4fe9e8659927d09db5549d66de5a5297f0958294ed1081a48e2ceabf2d3"
+    },
+    "ba09e248-cc12-4573-9db1-cceb885953ac:sv:930c9ceca8395e2519dd0a51d9ba4eda45ae56d4cc2f14cddd5d078b0a1c9f40:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
+      "locale": "sv",
+      "content_hash": "930c9ceca8395e2519dd0a51d9ba4eda45ae56d4cc2f14cddd5d078b0a1c9f40",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "cd15b2d49b3dba9e383cc4a2",
+          "quote": "Joh 19:30",
+          "before": " böjde ner huvudet och gav upp andan. – ",
+          "after": "",
+          "spans": [
+            [
+              402,
+              411
+            ]
+          ],
+          "osis": "John.19.30",
+          "queries": [
+            "43 19:30"
+          ]
+        },
+        {
+          "id": "745eab9c80b4dd68c3ad03ae",
+          "quote": "Luk 24:46–47",
+          "before": "rlåtelse skulle predikas i hans namn… – ",
+          "after": ". Den lidande tjänaren, sådan han framst",
+          "spans": [
+            [
+              2048,
+              2060
+            ]
+          ],
+          "osis": "Luke.24.46-Luke.24.47",
+          "queries": [
+            "42 24:46-47"
+          ]
+        },
+        {
+          "id": "58ad4f8d45d108c828997de3",
+          "quote": "Jes 53:5",
+          "before": "slagen för våra missgärningars skull… – ",
+          "after": ". Här ser vi också sanningen att genom h",
+          "spans": [
+            [
+              2305,
+              2313
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "e690e6117a6b5408e9e27f04",
+          "quote": "Jes 53:5",
+          "before": "en att genom hans sår blir vi helade. – ",
+          "after": ". Slutligen ser vi att han blev förtryck",
+          "spans": [
+            [
+              2388,
+              2396
+            ]
+          ],
+          "osis": "Isa.53.5",
+          "queries": [
+            "23 53:5"
+          ]
+        },
+        {
+          "id": "9e27d7a41c7f0a70c9bf3c37",
+          "quote": "Jes 53:7",
+          "before": "vi att han blev förtryckt och plågad… – ",
+          "after": ", och att han utstod …sin själs vånda… –",
+          "spans": [
+            [
+              2461,
+              2469
+            ]
+          ],
+          "osis": "Isa.53.7",
+          "queries": [
+            "23 53:7"
+          ]
+        },
+        {
+          "id": "6147d1543d99e21caffcefce",
+          "quote": "Jes 53:11",
+          "before": " och att han utstod …sin själs vånda… – ",
+          "after": ".",
+          "spans": [
+            [
+              2519,
+              2528
+            ]
+          ],
+          "osis": "Isa.53.11",
+          "queries": [
+            "23 53:11"
+          ]
+        },
+        {
+          "id": "84766ced09ce4b10fbfc473f",
+          "quote": "1 Pet 3:18",
+          "before": "ttfärdiga, för att föra oss till Gud… – ",
+          "after": "; Fastän han var Son lärde han sig lydna",
+          "spans": [
+            [
+              2735,
+              2745
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "eec374a9352bde05ecdc523d",
+          "quote": "Heb 5:8",
+          "before": "rde han sig lydnad genom sitt lidande – ",
+          "after": "; Det var värdigt honom, för vars skull ",
+          "spans": [
+            [
+              2808,
+              2815
+            ]
+          ],
+          "osis": "Heb.5.8",
+          "queries": [
+            "58 5:8"
+          ]
+        },
+        {
+          "id": "c118f23e0e85bf96591f1a85",
+          "quote": "Heb 2:10",
+          "before": " upphovsman fullkomlig genom lidanden – ",
+          "after": ".",
+          "spans": [
+            [
+              3005,
+              3013
+            ]
+          ],
+          "osis": "Heb.2.10",
+          "queries": [
+            "58 2:10"
+          ]
+        },
+        {
+          "id": "64d587123c3d1612fa876ab0",
+          "quote": "2 Kor 1:5",
+          "before": "rflödar också vår tröst genom Kristus – ",
+          "after": "; …om vi nu lider med honom, för att ock",
+          "spans": [
+            [
+              3274,
+              3283
+            ]
+          ],
+          "osis": "2Cor.1.5",
+          "queries": [
+            "47 1:5"
+          ]
+        },
+        {
+          "id": "1c245c14d4e2de4cdbef06cf",
+          "quote": "Rom 8:17",
+          "before": "li förhärligade tillsammans med honom – ",
+          "after": "; så att jag får lära känna honom och kr",
+          "spans": [
+            [
+              3367,
+              3375
+            ]
+          ],
+          "osis": "Rom.8.17",
+          "queries": [
+            "45 8:17"
+          ]
+        },
+        {
+          "id": "01dc0bb95e31fcd2f69d1f5d",
+          "quote": "Fil 3:10",
+          "before": "n, genom att bli lik honom i hans död – ",
+          "after": ".",
+          "spans": [
+            [
+              3516,
+              3524
+            ]
+          ],
+          "osis": "Phil.3.10",
+          "queries": [
+            "50 3:10"
+          ]
+        },
+        {
+          "id": "1c236de78412002a90e5d20c",
+          "quote": "Matt 26:28",
+          "before": "s för många till syndernas förlåtelse – ",
+          "after": ".",
+          "spans": [
+            [
+              4149,
+              4159
+            ]
+          ],
+          "osis": "Matt.26.28",
+          "queries": [
+            "40 26:28"
+          ]
+        },
+        {
+          "id": "5f0606a049fbc5d2f2daa2e8",
+          "quote": "Hebreerbrevet kapitel 9 och 10 f",
+          "before": "I ",
+          "after": "år vi en mycket ingående förklaring av h",
+          "spans": [
+            [
+              4177,
+              4209
+            ]
+          ],
+          "osis": "Heb.9.1-Heb.13.25",
+          "queries": [
+            "58 9:1-28",
+            "58 10:1-39",
+            "58 11:1-40",
+            "58 12:1-29",
+            "58 13:1-25"
+          ]
+        },
+        {
+          "id": "2e172539369153bef00eb265",
+          "quote": "Heb 9:22",
+          "before": "tt blod utgjuts ges ingen förlåtelse. – ",
+          "after": ". Detta är särskilt viktigt att komma ih",
+          "spans": [
+            [
+              4567,
+              4575
+            ]
+          ],
+          "osis": "Heb.9.22",
+          "queries": [
+            "58 9:22"
+          ]
+        },
+        {
+          "id": "4fb5bcdb8a3d23426c3dea15",
+          "quote": "Matteus 18:23–35",
+          "before": "han så ville. De använder berättelsen i ",
+          "after": " som bevistext. Det är klokt att betänka",
+          "spans": [
+            [
+              4790,
+              4806
+            ]
+          ],
+          "osis": "Matt.18.23-Matt.18.35",
+          "queries": [
+            "40 18:23-35"
+          ]
+        },
+        {
+          "id": "ed24abc1a7708000ec118c52",
+          "quote": "Upp 1:5",
+          "before": " rena från våra synder med sitt blod, – ",
+          "after": ".",
+          "spans": [
+            [
+              5290,
+              5297
+            ]
+          ],
+          "osis": "Rev.1.5",
+          "queries": [
+            "66 1:5"
+          ]
+        },
+        {
+          "id": "cac695b12aa183abc2a707a9",
+          "quote": "Rom 3:23–25",
+          "before": "e begångna synder, genom Guds tålamod – ",
+          "after": ". Här ser vi att försoning har gjorts mö",
+          "spans": [
+            [
+              5634,
+              5645
+            ]
+          ],
+          "osis": "Rom.3.23-Rom.3.25",
+          "queries": [
+            "45 3:23-25"
+          ]
+        },
+        {
+          "id": "b82be0979bde104929d75a5f",
+          "quote": "Joh 10:15",
+          "before": "sus sade: …jag ger mitt liv för fåren – ",
+          "after": ", och sade igen: …jag ger mitt liv för a",
+          "spans": [
+            [
+              5849,
+              5858
+            ]
+          ],
+          "osis": "John.10.15",
+          "queries": [
+            "43 10:15"
+          ]
+        },
+        {
+          "id": "ead80373526fc558772e86d5",
+          "quote": "Joh 10:17–18",
+          "before": " ge det och makt att ta det tillbaka… – ",
+          "after": ".",
+          "spans": [
+            [
+              6045,
+              6057
+            ]
+          ],
+          "osis": "John.10.17-John.10.18",
+          "queries": [
+            "43 10:17-18"
+          ]
+        },
+        {
+          "id": "40c95b1474c37371476339cd",
+          "quote": "Heb 2:9–10",
+          "before": "upphovsman fullkomlig genom lidanden. – ",
+          "after": ". När ni firar nattvard …förkunnar ni He",
+          "spans": [
+            [
+              6451,
+              6461
+            ]
+          ],
+          "osis": "Heb.2.9-Heb.2.10",
+          "queries": [
+            "58 2:9-10"
+          ]
+        },
+        {
+          "id": "2f6115139d3db6811b3520c2",
+          "quote": "1 Kor 11:26",
+          "before": "r ni Herrens död till dess han kommer – ",
+          "after": ".",
+          "spans": [
+            [
+              6543,
+              6554
+            ]
+          ],
+          "osis": "1Cor.11.26",
+          "queries": [
+            "46 11:26"
+          ]
+        },
+        {
+          "id": "ef31a42463a59b554c278aee",
+          "quote": "Rom 6:3–4",
+          "before": "från de döda genom Faderns härlighet. – ",
+          "after": ".",
+          "spans": [
+            [
+              6833,
+              6842
+            ]
+          ],
+          "osis": "Rom.6.3-Rom.6.4",
+          "queries": [
+            "45 6:3-4"
+          ]
+        },
+        {
+          "id": "bb36cfa0a5bd7e6af741ed6b",
+          "quote": "Rom 6:4",
+          "before": "vda med honom genom dopet till döden… – ",
+          "after": ". Även om alla dessa aspekter är delar a",
+          "spans": [
+            [
+              7150,
+              7157
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "5c58a58e3e2de18af7eea4a6",
+          "quote": "Joh 12:24",
+          "before": "tekorn [som] faller i jorden och dör… – ",
+          "after": ". Först avslutas livet (blodet utgjuts),",
+          "spans": [
+            [
+              7288,
+              7297
+            ]
+          ],
+          "osis": "John.12.24",
+          "queries": [
+            "43 12:24"
+          ]
+        },
+        {
+          "id": "b5390cdc6f3881bdfeb3c138",
+          "quote": "Romarbrevet 6:4",
+          "before": "llsammans med honom till ett nytt liv. (",
+          "after": ") …i vilket ni också blev uppväckta med ",
+          "spans": [
+            [
+              7837,
+              7852
+            ]
+          ],
+          "osis": "Rom.6.4",
+          "queries": [
+            "45 6:4"
+          ]
+        },
+        {
+          "id": "77dfd97b7a2897baf9042f95",
+          "quote": "Kol 2:12",
+          "before": " han som uppväckte honom från de döda – ",
+          "after": ". Genom hans uppståndelse uppväcks vi al",
+          "spans": [
+            [
+              7966,
+              7974
+            ]
+          ],
+          "osis": "Col.2.12",
+          "queries": [
+            "51 2:12"
+          ]
+        },
+        {
+          "id": "c57b1fb08b98f34582582aea",
+          "quote": "Apg 1:9",
+          "before": "och ett moln tog honom ur deras åsyn. – ",
+          "after": ". Det är tack vare att han lämnade jorde",
+          "spans": [
+            [
+              8436,
+              8443
+            ]
+          ],
+          "osis": "Acts.1.9",
+          "queries": [
+            "44 1:9"
+          ]
+        },
+        {
+          "id": "ace8be5199f6e6a0d39dca47",
+          "quote": "1 Pet 3:18",
+          "before": "…den rättfärdige för de orättfärdiga… – ",
+          "after": ", och han dog för att vi skulle få leva.",
+          "spans": [
+            [
+              10095,
+              10105
+            ]
+          ],
+          "osis": "1Pet.3.18",
+          "queries": [
+            "60 3:18"
+          ]
+        },
+        {
+          "id": "2a429fe5d1c95b045f5e69ef",
+          "quote": "Rom 6:1–11",
+          "before": "an dog måste också jag dö med honom. Se ",
+          "after": ".",
+          "spans": [
+            [
+              10720,
+              10730
+            ]
+          ],
+          "osis": "Rom.6.1-Rom.6.11",
+          "queries": [
+            "45 6:1-11"
+          ]
+        },
+        {
+          "id": "f65e79b225c1d1d9d47a80c0",
+          "quote": "Heb 9:28",
+          "before": "d en gång för att bära mångas synder… – ",
+          "after": " och Han bar själv våra synder i sin kro",
+          "spans": [
+            [
+              10935,
+              10943
+            ]
+          ],
+          "osis": "Heb.9.28",
+          "queries": [
+            "58 9:28"
+          ]
+        },
+        {
+          "id": "4b0b17c6057aaa605a36affa",
+          "quote": "1 Pet 2:24",
+          "before": "ynder i sin kropp upp på korsets trä… – ",
+          "after": ". Men vad innebär det egentligen att ”bä",
+          "spans": [
+            [
+              11017,
+              11027
+            ]
+          ],
+          "osis": "1Pet.2.24",
+          "queries": [
+            "60 2:24"
+          ]
+        },
+        {
+          "id": "2b45d3393fac3a9cb2bcf26f",
+          "quote": "Heb 10:10–12",
+          "before": "s offrade sig själv som offer för synd (",
+          "after": "), som försoning för våra synder (1 Joh ",
+          "spans": [
+            [
+              11262,
+              11274
+            ]
+          ],
+          "osis": "Heb.10.10-Heb.10.12",
+          "queries": [
+            "58 10:10-12"
+          ]
+        },
+        {
+          "id": "8d37f11fd757006a6d2bb485",
+          "quote": "1 Joh 2:1",
+          "before": ":10–12), som försoning för våra synder (",
+          "after": "), för att ta bort synden och till och m",
+          "spans": [
+            [
+              11325,
+              11334
+            ]
+          ],
+          "osis": "1John.2.1",
+          "queries": [
+            "62 2:1"
+          ]
+        },
+        {
+          "id": "22c61d5230f345a2b83b6b65",
+          "quote": "2 Kor 5:21",
+          "before": "te visste av synd, till synd för oss… – ",
+          "after": ". När vi ser på det grekiska ord som i d",
+          "spans": [
+            [
+              11706,
+              11716
+            ]
+          ],
+          "osis": "2Cor.5.21",
+          "queries": [
+            "47 5:21"
+          ]
+        },
+        {
+          "id": "6651663926f99d3fb2b36b07",
+          "quote": "1 Pet 1:19",
+          "before": "ng …som ett felfritt lamm utan fläck… – ",
+          "after": ". En riktig förståelse av vad det innebä",
+          "spans": [
+            [
+              12132,
+              12142
+            ]
+          ],
+          "osis": "1Pet.1.19",
+          "queries": [
+            "60 1:19"
+          ]
+        },
+        {
+          "id": "4f409c20203d1af3fe6f51c3",
+          "quote": "Joh 3:36",
+          "before": " utan Guds vrede blir kvar över honom – ",
+          "after": "; …Guds vrede uppenbaras från himlen öve",
+          "spans": [
+            [
+              12432,
+              12440
+            ]
+          ],
+          "osis": "John.3.36",
+          "queries": [
+            "43 3:36"
+          ]
+        },
+        {
+          "id": "17d157ce50f6c19a6601ea16",
+          "quote": "Rom 1:18",
+          "before": "ler sanningen fången i orättfärdighet – ",
+          "after": "; …och vi var av naturen vredens barn, v",
+          "spans": [
+            [
+              12579,
+              12587
+            ]
+          ],
+          "osis": "Rom.1.18",
+          "queries": [
+            "45 1:18"
+          ]
+        },
+        {
+          "id": "ddd39ce7e7b715ccb7bb3b3e",
+          "quote": "Rom 5:9",
+          "before": ", bli frälsta från vreden genom honom – ",
+          "after": ". Det står alltså klart att Guds vrede ö",
+          "spans": [
+            [
+              12858,
+              12865
+            ]
+          ],
+          "osis": "Rom.5.9",
+          "queries": [
+            "45 5:9"
+          ]
+        },
+        {
+          "id": "3ab73293e711ec902f395526",
+          "quote": "Jud 1:3",
+          "before": "ör alla har överlämnats åt de heliga. – ",
+          "after": ".",
+          "spans": [
+            [
+              15053,
+              15060
+            ]
+          ],
+          "osis": "Jude.1.3",
+          "queries": [
+            "65 1:3"
+          ]
+        },
+        {
+          "id": "2e695c4f6a178c9c8cf712f9",
+          "quote": "Job 1 och 2",
+          "before": "Vår Fader gör det enligt sin vilja (se ",
+          "after": ", och även 1 Kor 10:13). Vi behöver inte",
+          "spans": [
+            [
+              16442,
+              16453
+            ]
+          ],
+          "osis": "Job.1.1-Job.2.13",
+          "queries": [
+            "18 1:1-22",
+            "18 2:1-13"
+          ]
+        },
+        {
+          "id": "8d39277a206ed673ac27558f",
+          "quote": "1 Kor 10:13",
+          "before": "igt sin vilja (se Job 1 och 2, och även ",
+          "after": "). Vi behöver inte ”åberopa blodet till ",
+          "spans": [
+            [
+              16464,
+              16475
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "f12f7ad84462a4131409666a",
+          "quote": "Heb 10:11",
+          "before": "– offer som aldrig kan ta bort synder – ",
+          "after": "",
+          "spans": [
+            [
+              17549,
+              17558
+            ]
+          ],
+          "osis": "Heb.10.11",
+          "queries": [
+            "58 10:11"
+          ]
+        },
+        {
+          "id": "cd05151822cd9045ef110ffa",
+          "quote": "Gal 3:24",
+          "before": "strare för att föra oss till Kristus… – ",
+          "after": "",
+          "spans": [
+            [
+              17639,
+              17647
+            ]
+          ],
+          "osis": "Gal.3.24",
+          "queries": [
+            "48 3:24"
+          ]
+        },
+        {
+          "id": "89acc33d471a33855c616157",
+          "quote": "Mark 15:38",
+          "before": " templets förhänge brast i två delar… – ",
+          "after": "",
+          "spans": [
+            [
+              17750,
+              17760
+            ]
+          ],
+          "osis": "Mark.15.38",
+          "queries": [
+            "41 15:38"
+          ]
+        }
+      ],
+      "record_hash": "23ea536a315b8de651f8ed110d7cbe4fd4977e98404c0967de2a48c811151567"
     },
     "ba09e248-cc12-4573-9db1-cceb885953ac:sw:4f0eb06e77e86306a68ad4f455ccb928c9f0e4b68a4f6ab8e7d509108bb68988:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "ba09e248-cc12-4573-9db1-cceb885953ac",
