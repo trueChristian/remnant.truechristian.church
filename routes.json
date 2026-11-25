@@ -34596,11 +34596,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "আধ্যাত্মিক-জাগরণ",
+        "alias": "স্থায়ী-পুনর্জাগরণ",
+        "history": [
+          "/bn/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -47873,11 +47874,12 @@
       },
       "fdeac3b1-1f65-4a08-be46-c3bdca309210": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "one-christian-s-response",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "die-antwort-eines-christen",
+        "history": [
+          "/de/articles/one-christian-s-response/"
+        ],
+        "fallback": false
       },
       "fdf03bc6-7f2d-403c-8254-462c961621a4": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -107001,11 +107003,12 @@
       },
       "391d4642-07e2-4003-83db-fa33dc08a8ca": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "ye-must-be-born-again",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "तुम्हें-नया-जन्म-पाना-आवश्यक-है",
+        "history": [
+          "/hi/articles/ye-must-be-born-again/"
+        ],
+        "fallback": false
       },
       "39530116-8c39-4abd-beb6-89f05771a4f8": {
         "category_id": "729ef2d2-cb45-545b-b9a8-555cc7a423df",
@@ -201126,11 +201129,12 @@
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-27",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "tahariri",
+        "alias": "kutoka-kwa-mhariri-8",
+        "history": [
+          "/sw/articles/from-the-editor-27/"
+        ],
+        "fallback": false
       },
       "dda47f1b-68c2-491b-b85d-accf7a24f4db": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -218805,11 +218809,12 @@
       },
       "971b8ffa-3721-4c08-b693-5aba9989618c": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-17",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "编者的话",
+        "alias": "编者的话-7",
+        "history": [
+          "/zh-Hans/articles/from-the-editor-17/"
+        ],
+        "fallback": false
       },
       "972d22a3-2ede-4b6b-941d-619875baf8d9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",

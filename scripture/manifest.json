@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "63f24e050999a001cf6298ab712bc80d60f39eb08cba1c0588053e14ebbcdaa7",
+  "integrity": "a6e9eb77c7b8e4a18db7b2e5743b01c776c0ea0d979cfb413ea275fd4b691d3a",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -123446,6 +123446,431 @@
         }
       ],
       "record_hash": "31a8359cb593f44c9c212dfe78e4607b0a0384505630a19d8d84516ca284cb14"
+    },
+    "391d4642-07e2-4003-83db-fa33dc08a8ca:hi:ab3592a786ce7b6e7f7cff64c6c4e2cf80c4f540058fa385d740844d5a1fffca:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "391d4642-07e2-4003-83db-fa33dc08a8ca",
+      "locale": "hi",
+      "content_hash": "ab3592a786ce7b6e7f7cff64c6c4e2cf80c4f540058fa385d740844d5a1fffca",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f480ccb9d0027732a2e52f84",
+          "quote": "मत्ती 13:44",
+          "before": " बेच देता है और उस खेत को खरीद लेता है –",
+          "after": "।",
+          "spans": [
+            [
+              1774,
+              1785
+            ]
+          ],
+          "osis": "Matt.13.44",
+          "queries": [
+            "40 13:44"
+          ]
+        },
+        {
+          "id": "a17fc67a2bef2453391159cd",
+          "quote": "गलातियों 5:22-23",
+          "before": ", कोमलता, भलाई, विश्वास, नम्रता, संयम… –",
+          "after": " प्रवाहित होते हैं, जो आत्मा का फल हैं। ",
+          "spans": [
+            [
+              3055,
+              3071
+            ]
+          ],
+          "osis": "Gal.5.22-Gal.5.23",
+          "queries": [
+            "48 5:22-23"
+          ]
+        },
+        {
+          "id": "3e12bf682ecb7affd52f6dcc",
+          "quote": "यूहन्ना 3:2",
+          "before": " कर सकता, जब तक परमेश्वर उसके साथ न हो –",
+          "after": "।",
+          "spans": [
+            [
+              5545,
+              5556
+            ]
+          ],
+          "osis": "John.3.2",
+          "queries": [
+            "43 3:2"
+          ]
+        },
+        {
+          "id": "7317a32b72708ef8c994763d",
+          "quote": "यूहन्ना 3:3",
+          "before": " तो वह परमेश्वर का राज्य नहीं देख सकता –",
+          "after": "। मानो वे कह रहे हों, [“यद्यपि तुम खोजते",
+          "spans": [
+            [
+              5765,
+              5776
+            ]
+          ],
+          "osis": "John.3.3",
+          "queries": [
+            "43 3:3"
+          ]
+        },
+        {
+          "id": "7e102c518799c0012d28c931",
+          "quote": "यूहन्ना 3:6",
+          "before": "ै; और जो आत्मा से जन्मा है वह आत्मा है –",
+          "after": "।",
+          "spans": [
+            [
+              6108,
+              6119
+            ]
+          ],
+          "osis": "John.3.6",
+          "queries": [
+            "43 3:6"
+          ]
+        },
+        {
+          "id": "da1df1b6a3a3450417569e8f",
+          "quote": "यिर्मयाह 17:9",
+          "before": "अत्यन्त दुष्ट है: उसे कौन जान सकता है? –",
+          "after": "। वे आगे समझाते हैं: मैं यहोवा हृदय को ज",
+          "spans": [
+            [
+              6775,
+              6788
+            ]
+          ],
+          "osis": "Jer.17.9",
+          "queries": [
+            "24 17:9"
+          ]
+        },
+        {
+          "id": "ffe39566fab28df42477b72b",
+          "quote": "यिर्मयाह 17:10",
+          "before": " जाँचता हूँ, मैं अंतर्मन को परखता हूँ… –",
+          "after": "।",
+          "spans": [
+            [
+              6875,
+              6889
+            ]
+          ],
+          "osis": "Jer.17.10",
+          "queries": [
+            "24 17:10"
+          ]
+        },
+        {
+          "id": "79236d5167bed1e40680fb6d",
+          "quote": "यूहन्ना 3:4",
+          "before": " गर्भ में प्रवेश करके जन्म ले सकता है? –",
+          "after": "।",
+          "spans": [
+            [
+              7378,
+              7389
+            ]
+          ],
+          "osis": "John.3.4",
+          "queries": [
+            "43 3:4"
+          ]
+        },
+        {
+          "id": "a5a33c6eb7dc0f0e0f07f86d",
+          "quote": "यूहन्ना 3:14",
+          "before": " पुत्र को भी ऊँचा उठाया जाना आवश्यक है –",
+          "after": "।",
+          "spans": [
+            [
+              7584,
+              7596
+            ]
+          ],
+          "osis": "John.3.14",
+          "queries": [
+            "43 3:14"
+          ]
+        },
+        {
+          "id": "94b1f460310887f9fc9a14b3",
+          "quote": "यूहन्ना 3:20",
+          "before": " कहीं उसके कामों का दोष प्रकट न हो जाए –",
+          "after": "। यदि नया जन्म पाने के लिए हमें पहले मरन",
+          "spans": [
+            [
+              7757,
+              7769
+            ]
+          ],
+          "osis": "John.3.20",
+          "queries": [
+            "43 3:20"
+          ]
+        },
+        {
+          "id": "2bdd125c4670c23ae246869a",
+          "quote": "गलातियों 5:24",
+          "before": " और वासनाओं सहित क्रूस पर चढ़ा दिया है –",
+          "after": "। तो सच्चे मन से खोजने वाला व्यक्ति व्या",
+          "spans": [
+            [
+              7937,
+              7950
+            ]
+          ],
+          "osis": "Gal.5.24",
+          "queries": [
+            "48 5:24"
+          ]
+        },
+        {
+          "id": "05444074515147bee373b758",
+          "quote": "रोमियों 10:9-10",
+          "before": " में से जिलाया है, तो तू उद्धार पाएगा… –",
+          "after": "।",
+          "spans": [
+            [
+              8200,
+              8215
+            ]
+          ],
+          "osis": "Rom.10.9-Rom.10.10",
+          "queries": [
+            "45 10:9-10"
+          ]
+        },
+        {
+          "id": "35684307446c8b93c30005f9",
+          "quote": "प्रेरितों के काम 2:38",
+          "before": "ा ले, और तुम पवित्र आत्मा का दान पाओगे –",
+          "after": "।",
+          "spans": [
+            [
+              8390,
+              8411
+            ]
+          ],
+          "osis": "Acts.2.38",
+          "queries": [
+            "44 2:38"
+          ]
+        },
+        {
+          "id": "a4ed674d60d65d130cf116a6",
+          "quote": "इब्रानियों 4:2",
+          "before": " वालों में वह विश्वास के साथ नहीं मिला –",
+          "after": "।",
+          "spans": [
+            [
+              8531,
+              8545
+            ]
+          ],
+          "osis": "Heb.4.2",
+          "queries": [
+            "58 4:2"
+          ]
+        },
+        {
+          "id": "8c061044ed106127c4146450",
+          "quote": "इब्रानियों 11:6",
+          "before": "वास के बिना उसे प्रसन्न करना असंभव है… –",
+          "after": "।",
+          "spans": [
+            [
+              8616,
+              8631
+            ]
+          ],
+          "osis": "Heb.11.6",
+          "queries": [
+            "58 11:6"
+          ]
+        },
+        {
+          "id": "ab8716dd4b38145ad2cde4f2",
+          "quote": "लूका 3:3",
+          "before": "चात्ताप के बपतिस्मा का प्रचार करता हुआ –",
+          "after": "।",
+          "spans": [
+            [
+              8732,
+              8740
+            ]
+          ],
+          "osis": "Luke.3.3",
+          "queries": [
+            "42 3:3"
+          ]
+        },
+        {
+          "id": "8e3f2891500c57a3f325b611",
+          "quote": "यूहन्ना 10:9",
+          "before": "ा भीतर प्रवेश करे, तो वह उद्धार पाएगा… –",
+          "after": "।",
+          "spans": [
+            [
+              8837,
+              8849
+            ]
+          ],
+          "osis": "John.10.9",
+          "queries": [
+            "43 10:9"
+          ]
+        },
+        {
+          "id": "7a2676e6139ad2e2c53e9af2",
+          "quote": "मरकुस 8:34-35",
+          "before": "करे, अपना क्रूस उठाए और मेरे पीछे चले… –",
+          "after": "।",
+          "spans": [
+            [
+              8965,
+              8978
+            ]
+          ],
+          "osis": "Mark.8.34-Mark.8.35",
+          "queries": [
+            "41 8:34-35"
+          ]
+        },
+        {
+          "id": "c69626aa6226917b3abd79d1",
+          "quote": "प्रकाशितवाक्य 3:20",
+          "before": "र उसके साथ भोजन करूँगा, और वह मेरे साथ –",
+          "after": "।",
+          "spans": [
+            [
+              9138,
+              9156
+            ]
+          ],
+          "osis": "Rev.3.20",
+          "queries": [
+            "66 3:20"
+          ]
+        },
+        {
+          "id": "ab9a4e858975a592b5c8bcae",
+          "quote": "यूहन्ना 9:35-38",
+          "before": "श्वास करता हूँ। और उसने उसकी आराधना की –",
+          "after": "।",
+          "spans": [
+            [
+              9324,
+              9339
+            ]
+          ],
+          "osis": "John.9.35-John.9.38",
+          "queries": [
+            "43 9:35-38"
+          ]
+        },
+        {
+          "id": "ea311ae1b09ff5828e5fecd9",
+          "quote": "इफिसियों 2:8-9",
+          "before": "मेश्वर का दान है: कर्मों के कारण नहीं… –",
+          "after": "।",
+          "spans": [
+            [
+              9470,
+              9484
+            ]
+          ],
+          "osis": "Eph.2.8-Eph.2.9",
+          "queries": [
+            "49 2:8-9"
+          ]
+        },
+        {
+          "id": "09c97dbed444505e53b33ae0",
+          "quote": "यहेजकेल 36:26-27",
+          "before": "रे नियमों को मानोगे और उनका पालन करोगे –",
+          "after": "।",
+          "spans": [
+            [
+              11999,
+              12015
+            ]
+          ],
+          "osis": "Ezek.36.26-Ezek.36.27",
+          "queries": [
+            "26 36:26-27"
+          ]
+        },
+        {
+          "id": "74748bbff4eff3622f0fd237",
+          "quote": "मत्ती 7:7-8",
+          "before": "े; खटखटाओ, तो तुम्हारे लिए खोला जाएगा… –",
+          "after": "।",
+          "spans": [
+            [
+              13783,
+              13794
+            ]
+          ],
+          "osis": "Matt.7.7-Matt.7.8",
+          "queries": [
+            "40 7:7-8"
+          ]
+        },
+        {
+          "id": "14a23532848a0440e87f68b2",
+          "quote": "1 कुरिन्थियों 10:13",
+          "before": "ा मार्ग भी बनाएगा, ताकि तुम उसे सह सको –",
+          "after": "।",
+          "spans": [
+            [
+              13968,
+              13987
+            ]
+          ],
+          "osis": "1Cor.10.13",
+          "queries": [
+            "46 10:13"
+          ]
+        },
+        {
+          "id": "643d7e06d0a077817921e766",
+          "quote": "मत्ती 21:21",
+          "before": " समुद्र में जा पड़; तो ऐसा ही हो जाएगा –",
+          "after": "।",
+          "spans": [
+            [
+              14132,
+              14143
+            ]
+          ],
+          "osis": "Matt.21.21",
+          "queries": [
+            "40 21:21"
+          ]
+        },
+        {
+          "id": "78c0d5d661cbf5f7d9706ff6",
+          "quote": "गलातियों 5:16",
+          "before": "ो, और तुम देह की वासना पूरी नहीं करोगे –",
+          "after": "।",
+          "spans": [
+            [
+              14239,
+              14252
+            ]
+          ],
+          "osis": "Gal.5.16",
+          "queries": [
+            "48 5:16"
+          ]
+        }
+      ],
+      "record_hash": "83def6463a9176c96689ec6a29ef6488cad01f8817e5e89d9d43a762ae6718ab"
     },
     "391d4642-07e2-4003-83db-fa33dc08a8ca:id:e4d742f01040e51aa440d1843043bee756227e89c6642964e2081352388279aa:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "391d4642-07e2-4003-83db-fa33dc08a8ca",
@@ -263246,6 +263671,14 @@
       ],
       "record_hash": "9071007cf651d0f743fb67e29e32dd8f7415c9355868fde83ab6e6461d18a71c"
     },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:bn:918605eb42c2f5315e49d3a2879025d641562eb8b3e06465ec966af94d268b3d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "bn",
+      "content_hash": "918605eb42c2f5315e49d3a2879025d641562eb8b3e06465ec966af94d268b3d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "ac907457ed67fd4764f9b95681d64702cd8d1d4b704cb84e8b70610ed4dc96a8"
+    },
     "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:en:e1555ea7b1cab68496fce679fc0ea9c0dd64c84d39c36835f99de260eb2c007b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
       "locale": "en",
@@ -301222,6 +301655,79 @@
         }
       ],
       "record_hash": "381d6262a36d5e8fc1aa89278ea12d072f6e1c5bf5703ee881cf4879297e4506"
+    },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:zh-Hans:ab7bd4f7a3b4b117ee5c76ddf8fb181acc639bf24611520377468fd65c066aab:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "zh-Hans",
+      "content_hash": "ab7bd4f7a3b4b117ee5c76ddf8fb181acc639bf24611520377468fd65c066aab",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "5f300881f1e91b8d98de99b9",
+          "quote": "路加福音 21:29-31",
+          "before": "见了，自然就知道夏天近了。照样，你们看见这些事发生，也就知道　神的国近了。”——",
+          "after": "。",
+          "spans": [
+            [
+              291,
+              304
+            ]
+          ],
+          "osis": "Luke.21.29-Luke.21.31",
+          "queries": [
+            "42 21:29-31"
+          ]
+        },
+        {
+          "id": "e1f8e702ae88e7c130ac1ab6",
+          "quote": "希伯来书 1:10-12",
+          "before": "将天地卷起来，像一件外衣，天地就都改变了。惟有你永不改变；你的年数没有穷尽。——",
+          "after": "。",
+          "spans": [
+            [
+              733,
+              745
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        },
+        {
+          "id": "165602a1dcd654133b384b03",
+          "quote": "哥林多后书 5:7",
+          "before": "），使徒保罗给了我们　神清楚的回答：因我们行事为人是凭着信心，不是凭着眼见。——",
+          "after": "。关于第二点，事实是，这些挣扎无一不是明确的考验：我们是否会顺服　神而不顺服人（",
+          "spans": [
+            [
+              1167,
+              1176
+            ]
+          ],
+          "osis": "2Cor.5.7",
+          "queries": [
+            "47 5:7"
+          ]
+        },
+        {
+          "id": "a2dc36012d9cae08472f815e",
+          "quote": "罗马书 6:13",
+          "before": "行动；要么会把自己献给　神，像从死里复活的人一样，并把肢体献给　神，作义的器具（",
+          "after": "），选择相信　神在祂话语中所说的，并让信心驱使和引导我们的思想和行动。",
+          "spans": [
+            [
+              2019,
+              2027
+            ]
+          ],
+          "osis": "Rom.6.13",
+          "queries": [
+            "45 6:13"
+          ]
+        }
+      ],
+      "record_hash": "57857999746a6de389bfc9801eacadc6a3821887b6df84d69ee92956be3dc348"
     },
     "972d22a3-2ede-4b6b-941d-619875baf8d9:en:0767ca9648aa7c0fbb74f39e6dff8a07bb228f4cdeafc159553beeda83252b12:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "972d22a3-2ede-4b6b-941d-619875baf8d9",
@@ -415869,6 +416375,159 @@
       ],
       "record_hash": "27a66c30bb9e0c9e4546b92a9993b89e30018cf7d4bb3eef3d065a562a001c76"
     },
+    "dce3d3b3-8b56-4be5-9674-e682b97d3b43:sw:8e1b67a93dfc5d0f9a85e29b65811976ba4a38624b23fc294feffc7eabb6caee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",
+      "locale": "sw",
+      "content_hash": "8e1b67a93dfc5d0f9a85e29b65811976ba4a38624b23fc294feffc7eabb6caee",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "dbc4fb9cb5962848fcd378ee",
+          "quote": "Mithali 21:1",
+          "before": "to ya maji: huuelekeza popote apendapo –",
+          "after": ". Ikiwa tunafikiri kwamba, tukiwa waumin",
+          "spans": [
+            [
+              3403,
+              3415
+            ]
+          ],
+          "osis": "Prov.21.1",
+          "queries": [
+            "20 21:1"
+          ]
+        },
+        {
+          "id": "038eacaadb928201a8822ee6",
+          "quote": "Danieli 4:31-32",
+          "before": "u, na humpa ufalme huo yeyote amtakaye –",
+          "after": ".",
+          "spans": [
+            [
+              3738,
+              3753
+            ]
+          ],
+          "osis": "Dan.4.31-Dan.4.32",
+          "queries": [
+            "27 4:31-32"
+          ]
+        },
+        {
+          "id": "1cb8c3d35a0a28656586a243",
+          "quote": "Yohana 18:36",
+          "before": " lakini sasa ufalme wangu hautoki hapa –",
+          "after": ". Tunapoelewa na kukuza mtazamo binafsi ",
+          "spans": [
+            [
+              4072,
+              4084
+            ]
+          ],
+          "osis": "John.18.36",
+          "queries": [
+            "43 18:36"
+          ]
+        },
+        {
+          "id": "a92792a4dd6f0cba589049a3",
+          "quote": "Waebrania 11:13-16",
+          "before": "etu]: kwa kuwa amewaandalia [sisi] mji –",
+          "after": ". Katika mambo yote yanayohusu kushiriki",
+          "spans": [
+            [
+              4432,
+              4450
+            ]
+          ],
+          "osis": "Heb.11.13-Heb.11.16",
+          "queries": [
+            "58 11:13-16"
+          ]
+        },
+        {
+          "id": "948bcf9beaf2cc2b77ac42fc",
+          "quote": "2 Wakorintho 6:17",
+          "before": " ya …tokeni katikati yao, na mjitenge… –",
+          "after": ".",
+          "spans": [
+            [
+              4601,
+              4618
+            ]
+          ],
+          "osis": "2Cor.6.17",
+          "queries": [
+            "47 6:17"
+          ]
+        },
+        {
+          "id": "0ef94c395135621c308ca96a",
+          "quote": "Warumi 13:1-4",
+          "before": "maana yeye ni mtumishi wa Mungu kwako… –",
+          "after": ".",
+          "spans": [
+            [
+              4978,
+              4991
+            ]
+          ],
+          "osis": "Rom.13.1-Rom.13.4",
+          "queries": [
+            "45 13:1-4"
+          ]
+        },
+        {
+          "id": "3bd26a299a9d08bfeede85d5",
+          "quote": "1 Timotheo 2:1-2",
+          "before": "atika uchaji wote wa Mungu na uadilifu. ",
+          "after": ". Nguvu ya siri ya Mkristo ya kuleta ath",
+          "spans": [
+            [
+              6363,
+              6379
+            ]
+          ],
+          "osis": "1Tim.2.1-1Tim.2.2",
+          "queries": [
+            "54 2:1-2"
+          ]
+        },
+        {
+          "id": "43ebe989649831373e9bfa7c",
+          "quote": "Mathayo 17:20",
+          "before": " hakuna jambo litakaloshindikana kwenu –",
+          "after": ". Tukumbuke daima kwamba …Maombi yenye b",
+          "spans": [
+            [
+              6754,
+              6767
+            ]
+          ],
+          "osis": "Matt.17.20",
+          "queries": [
+            "40 17:20"
+          ]
+        },
+        {
+          "id": "8c42110c048a1b09e81470a7",
+          "quote": "Yakobo 5:16",
+          "before": "enye haki yana nguvu na hutimiza mengi –",
+          "after": ".",
+          "spans": [
+            [
+              6870,
+              6881
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        }
+      ],
+      "record_hash": "5ccf481fe42465b5efc14b468d974749b85bc04ed632eb02821b68a71f0389f4"
+    },
     "dce3d3b3-8b56-4be5-9674-e682b97d3b43:ur:c068c0ed8893bb17a3a33685ddceb082803f5405bf06feaa6bb163b710de0aa2:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",
       "locale": "ur",
@@ -486941,6 +487600,31 @@
         }
       ],
       "record_hash": "3de2342183b26495e8145fa5b56854122ebd132c0fc9697227b2b5e3f3a5b4bf"
+    },
+    "fdeac3b1-1f65-4a08-be46-c3bdca309210:de:aee719c1cba0a86c9148714568614a1674d8f054fcae7eaee97d52f1ad7a921e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fdeac3b1-1f65-4a08-be46-c3bdca309210",
+      "locale": "de",
+      "content_hash": "aee719c1cba0a86c9148714568614a1674d8f054fcae7eaee97d52f1ad7a921e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b63eccdbe9435ac6a98589c5",
+          "quote": "Joh 3:16",
+          "before": "rloren geht, sondern ewiges Leben hat. –",
+          "after": "",
+          "spans": [
+            [
+              7125,
+              7133
+            ]
+          ],
+          "osis": "John.3.16",
+          "queries": [
+            "43 3:16"
+          ]
+        }
+      ],
+      "record_hash": "ce3a27fddaa76b1c80d895a0c5ec255ba6f5aa50317e27830df831dc6b5df7e7"
     },
     "fdeac3b1-1f65-4a08-be46-c3bdca309210:el:725473360789dc65f9b4f91bd143aaaf6eb9d733e95f6222d0438726d5d8e9ad:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fdeac3b1-1f65-4a08-be46-c3bdca309210",
