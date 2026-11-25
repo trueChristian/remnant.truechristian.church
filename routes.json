@@ -54407,11 +54407,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "πνευματική-αναζωπύρωση",
+        "alias": "αναζωπυρώσεισ-που-διαρκούν",
+        "history": [
+          "/el/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -80178,11 +80179,12 @@
       },
       "971b8ffa-3721-4c08-b693-5aba9989618c": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-17",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "editorial",
+        "alias": "de-la-editora",
+        "history": [
+          "/es/articles/from-the-editor-17/"
+        ],
+        "fallback": false
       },
       "972d22a3-2ede-4b6b-941d-619875baf8d9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -129230,11 +129232,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "risveglio-spirituale",
+        "alias": "risvegli-destinati-a-durare",
+        "history": [
+          "/it/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -139151,11 +139154,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "부흥",
+        "alias": "오래-지속되는-부흥",
+        "history": [
+          "/ko/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -186327,11 +186331,12 @@
       },
       "304e1120-f241-4d9e-972b-c72dec82b134": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "a-mother-s-heart-cry",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "kvinnor",
+        "alias": "en-mammas-hjärtas-rop",
+        "history": [
+          "/sv/articles/a-mother-s-heart-cry/"
+        ],
+        "fallback": false
       },
       "30637e28-4fcf-487a-a24d-49906c2810b9": {
         "category_id": "58468dbc-a7ad-56bc-aa5f-12bdbbed4e61",
@@ -198612,11 +198617,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "uamsho",
+        "alias": "miamsho-inayodumu",
+        "history": [
+          "/sw/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",

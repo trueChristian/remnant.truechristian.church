@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "a6e9eb77c7b8e4a18db7b2e5743b01c776c0ea0d979cfb413ea275fd4b691d3a",
+  "integrity": "97745212d8249e4e5b9f4e2fd01814d1a6361a516b5761b5de463c0dfa9bf340",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -95308,6 +95308,175 @@
         }
       ],
       "record_hash": "627ce62cb941bdfac74d24c5b52295477852515f0b9b7ac1e530d48c9f1d1b7d"
+    },
+    "304e1120-f241-4d9e-972b-c72dec82b134:sv:1be2b58a56a15d99a42bdee2c071155bbcdbaf5a4111dfa0fc5d20b0879939bd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
+      "locale": "sv",
+      "content_hash": "1be2b58a56a15d99a42bdee2c071155bbcdbaf5a4111dfa0fc5d20b0879939bd",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4b34aa3f1c7b374afa16acd3",
+          "quote": "Nehemja 8:10",
+          "before": "vänner: ”HERRENS glädje är min styrka” (",
+          "after": "). Utan glädje har man mindre styrka. Un",
+          "spans": [
+            [
+              3521,
+              3533
+            ]
+          ],
+          "osis": "Neh.8.10",
+          "queries": [
+            "16 8:10"
+          ]
+        },
+        {
+          "id": "da9af8d064a3f0c44544cc73",
+          "quote": "Första Korinthierbrevet 10:10",
+          "before": "te jag den här versen under min andakt: ",
+          "after": " ”Knota inte heller, såsom några av dem ",
+          "spans": [
+            [
+              5619,
+              5648
+            ]
+          ],
+          "osis": "1Cor.10.10",
+          "queries": [
+            "46 10:10"
+          ]
+        },
+        {
+          "id": "dd536311ef3fd1c03d3085a4",
+          "quote": "Psaltaren 118:24",
+          "before": "",
+          "after": " ”Detta är den dag som HERREN har gjort;",
+          "spans": [
+            [
+              6952,
+              6968
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "d61e6d999cad21436ccd71d3",
+          "quote": "Första Timotheosbrevet 6:6",
+          "before": "ar till förnöjsamhet som finns i Ordet. ",
+          "after": " ”Men gudsfruktan med förnöjsamhet är en",
+          "spans": [
+            [
+              8748,
+              8774
+            ]
+          ],
+          "osis": "1Tim.6.6",
+          "queries": [
+            "54 6:6"
+          ]
+        },
+        {
+          "id": "2f89034aefa5815cb011a33d",
+          "quote": "Filipperbrevet 4:11",
+          "before": "örnöjsamhet är en stor vinning ...” och ",
+          "after": " ”Jag säger inte detta därför att jag li",
+          "spans": [
+            [
+              8846,
+              8865
+            ]
+          ],
+          "osis": "Phil.4.11",
+          "queries": [
+            "50 4:11"
+          ]
+        },
+        {
+          "id": "f543cf5bf3cd3e86b59c4888",
+          "quote": "Psaltaren 118:24",
+          "before": "ånga andra ställen. Se på några av dem. ",
+          "after": " Detta är den dag som HERREN har gjort; ",
+          "spans": [
+            [
+              9168,
+              9184
+            ]
+          ],
+          "osis": "Ps.118.24",
+          "queries": [
+            "19 118:24"
+          ]
+        },
+        {
+          "id": "e8057b33c6d65a519bd0d5da",
+          "quote": "Psaltaren 40:16",
+          "before": "",
+          "after": " ”Må alla som söker dig jubla och vara g",
+          "spans": [
+            [
+              9285,
+              9300
+            ]
+          ],
+          "osis": "Ps.40.16",
+          "queries": [
+            "19 40:16"
+          ]
+        },
+        {
+          "id": "f54decc97c37235748cb665c",
+          "quote": "Psaltaren 90:14",
+          "before": "ning alltid säga: HERREN vare upphöjd.” ",
+          "after": " ”Mätta oss tidigt med din nåd, så att v",
+          "spans": [
+            [
+              9425,
+              9440
+            ]
+          ],
+          "osis": "Ps.90.14",
+          "queries": [
+            "19 90:14"
+          ]
+        },
+        {
+          "id": "68c145e2efb31e4c23daa58d",
+          "quote": "Jesaja 12:3",
+          "before": " jubla och vara glada alla våra dagar.” ",
+          "after": " ”Därför ska ni med glädje ösa vatten ur",
+          "spans": [
+            [
+              9532,
+              9543
+            ]
+          ],
+          "osis": "Isa.12.3",
+          "queries": [
+            "23 12:3"
+          ]
+        },
+        {
+          "id": "911bbc1ae74a7142504aa737",
+          "quote": "Psaltaren 100:4–5",
+          "before": " och lova hans namn, ty Herren är god.” ",
+          "after": "",
+          "spans": [
+            [
+              10192,
+              10209
+            ]
+          ],
+          "osis": "Ps.100.4-Ps.100.5",
+          "queries": [
+            "19 100:4-5"
+          ]
+        }
+      ],
+      "record_hash": "20a6c3c0aa1ff1c7fafc11d885cc2fc2a05c2f13f2a52d463cfdbf8fb0a6679a"
     },
     "304e1120-f241-4d9e-972b-c72dec82b134:sw:9d2c44a033f7ff3524866418f925f167682725b0402ffb3996efb525b095bc41:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "304e1120-f241-4d9e-972b-c72dec82b134",
@@ -263679,6 +263848,14 @@
       "markers": [],
       "record_hash": "ac907457ed67fd4764f9b95681d64702cd8d1d4b704cb84e8b70610ed4dc96a8"
     },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:el:02d668db6670d623e4af33412cc89ebe763b792b3822c9513448acfb7a2c545d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "el",
+      "content_hash": "02d668db6670d623e4af33412cc89ebe763b792b3822c9513448acfb7a2c545d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "6f3c10f2076b7d5d2c483695cf19800e3f02577edc2909a19e9210003793fed2"
+    },
     "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:en:e1555ea7b1cab68496fce679fc0ea9c0dd64c84d39c36835f99de260eb2c007b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
       "locale": "en",
@@ -263703,6 +263880,22 @@
       "markers": [],
       "record_hash": "0cb6a3e23fdc6369e98f627628a899ff439eca53d5beb370367554db9bbf0c22"
     },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:it:d21d7e78335d3a1e12ee32b2fdf01951d76f202545a043ef21150714d161b77d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "it",
+      "content_hash": "d21d7e78335d3a1e12ee32b2fdf01951d76f202545a043ef21150714d161b77d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "60b20f262b221ddb3e2670836e61685d2725a9629d9f98a80ead3c702b07a0fd"
+    },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:ko:9a778cd2bec8c0a05a02f4764e4a8de99a46a5938d07c6db99be02dcffa1f733:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "ko",
+      "content_hash": "9a778cd2bec8c0a05a02f4764e4a8de99a46a5938d07c6db99be02dcffa1f733",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a5eb49db56305fc38126356d0e0a1d1d493bd5ccdf69e392b2198e5a015032fd"
+    },
     "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:pt:00e65dbe36422e9f0e9a05e097f17a74ec459e6134db8a38b7f85b8e693ed5e5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
       "locale": "pt",
@@ -263718,6 +263911,14 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "7f94ab0575e9df87b188908fc2d6b33c70dfa6b557b315a5d238e2f743907ec6"
+    },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:sw:d1f3a7022dda313d673d5aaa9e894fb539529d3f0d8ce60e316a03d6dbc00dd3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "sw",
+      "content_hash": "d1f3a7022dda313d673d5aaa9e894fb539529d3f0d8ce60e316a03d6dbc00dd3",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "46a236ae1064a77e1b730b6f0f54b9f53a5c5fecb7b5453dd0072a8542200dbf"
     },
     "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120:en:4bc2d36e99211bd78e87983acae10f17fec2015faa527194e00edbc4acbfdf2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120",
@@ -301379,6 +301580,63 @@
         }
       ],
       "record_hash": "24f54b2001cd9077f29449c996d47a9ac0b7d201e1dab8e2b405963683d2d96c"
+    },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:es:51648902275b03e915bc426ce11c10b17dbed4a107831eaaf3788da661d0d88a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "es",
+      "content_hash": "51648902275b03e915bc426ce11c10b17dbed4a107831eaaf3788da661d0d88a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "60b8631199d7f0eae4a569c2",
+          "quote": "Luc 21:29-31",
+          "before": " sabed que el reino de Dios está cerca –",
+          "after": ".",
+          "spans": [
+            [
+              468,
+              480
+            ]
+          ],
+          "osis": "Luke.21.29-Luke.21.31",
+          "queries": [
+            "42 21:29-31"
+          ]
+        },
+        {
+          "id": "ca4d5dc8697aaf5e1028d208",
+          "quote": "Heb 1:10-12",
+          "before": "l mismo, y tus años nunca se acabarán. –",
+          "after": ".",
+          "spans": [
+            [
+              1825,
+              1836
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        },
+        {
+          "id": "a9ee6cd69e077b7737569023",
+          "quote": "Rom 6:13",
+          "before": "s como instrumentos de justicia a Dios (",
+          "after": "), al elegir creer lo que Dios dice en s",
+          "spans": [
+            [
+              6095,
+              6103
+            ]
+          ],
+          "osis": "Rom.6.13",
+          "queries": [
+            "45 6:13"
+          ]
+        }
+      ],
+      "record_hash": "b1ddec75d9bf1363bc1bfdcebebf2f2b49b358cc8d3d732094ddb1587b55290e"
     },
     "971b8ffa-3721-4c08-b693-5aba9989618c:hi:e19ba378fc69469682c0926909aa86773cac1969dccc7e6b170e7462778ebe10:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
