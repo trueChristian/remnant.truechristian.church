@@ -51917,11 +51917,12 @@
       },
       "30d02d2c-805c-437c-ad10-4542362ab6de": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-road-to-emmaus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "χριστιανική-ζωή",
+        "alias": "ο-δρόμοσ-προσ-την-εμμαούσ",
+        "history": [
+          "/el/articles/the-road-to-emmaus/"
+        ],
+        "fallback": false
       },
       "3103df35-fe97-490f-9388-1dca942c0348": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -89707,11 +89708,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "réveil-spirituel",
+        "alias": "des-réveils-durables",
+        "history": [
+          "/fr/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -96158,11 +96160,12 @@
       },
       "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
-        "category_slug": "articles",
-        "alias": "understanding-submission",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "נשים",
+        "alias": "להבין-את-הכניעה",
+        "history": [
+          "/he/articles/understanding-submission/"
+        ],
+        "fallback": false
       },
       "1c6bc9f7-00f7-490f-8b4e-97310b31eb9e": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -111288,11 +111291,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "घर-की-स्मृतियाँ",
+        "alias": "the-martyrs-mirror-पर-विचार",
+        "history": [
+          "/hi/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -218336,11 +218340,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "复兴",
+        "alias": "持久的奋兴会",
+        "history": [
+          "/zh-Hans/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
