@@ -36634,11 +36634,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "ঘরোয়া-ইতিহাস",
+        "alias": "শহীদদের-দর্পণ-নিয়ে-কিছু-ভাবনা",
+        "history": [
+          "/bn/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -81751,11 +81752,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "historias-del-hogar",
+        "alias": "reflexiones-sobre-el-espejo-de-los-mártires",
+        "history": [
+          "/es/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -90190,11 +90192,12 @@
       },
       "971b8ffa-3721-4c08-b693-5aba9989618c": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-17",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "éditorial",
+        "alias": "de-la-part-du-rédacteur-2",
+        "history": [
+          "/fr/articles/from-the-editor-17/"
+        ],
+        "fallback": false
       },
       "972d22a3-2ede-4b6b-941d-619875baf8d9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -99338,11 +99341,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "התעוררות-רוחנית",
+        "alias": "תחיות-שנשארות",
+        "history": [
+          "/he/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -149179,11 +149183,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "vekkelse",
+        "alias": "vekkelser-som-varer",
+        "history": [
+          "/nb/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -159195,11 +159200,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "opwekking",
+        "alias": "opwekkingen-die-blijvend-zijn",
+        "history": [
+          "/nl/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
@@ -220376,11 +220382,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "家园往事",
+        "alias": "关于-殉道者之镜-的感想",
+        "history": [
+          "/zh-Hans/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "66daeac612a96f499fd7e9d93213721b3ef7478c9d64bb12c87e1cc832a1423d",
+  "integrity": "df97a686f2fe8e5dc9df195adc29527688db828464619b82bd9903ef8ddbf984",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -264386,6 +264386,14 @@
       "markers": [],
       "record_hash": "11c304c7004bd0861f1185af7be4290ff17f8fea297e6382767dd2bc3ba96dd5"
     },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:he:da655073dcaa4c190b562b809f93be173c987780bf44431419d59a664dae77ee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "he",
+      "content_hash": "da655073dcaa4c190b562b809f93be173c987780bf44431419d59a664dae77ee",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "5e7521720ea505d73351b90b6094c574330666ffee498f101715246daed09a6e"
+    },
     "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:hi:c47a8dbf02b0cb387131794bc76efbbd058bad20fb8dab4f922cc0433e260301:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
       "locale": "hi",
@@ -264417,6 +264425,22 @@
       "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
       "markers": [],
       "record_hash": "a5eb49db56305fc38126356d0e0a1d1d493bd5ccdf69e392b2198e5a015032fd"
+    },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:nb:db17438b638bd6c50c690e789a79fb0fc31e9caf16ed4f0cb7d62d859652790f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "nb",
+      "content_hash": "db17438b638bd6c50c690e789a79fb0fc31e9caf16ed4f0cb7d62d859652790f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "a009b997c8c6c48eea445f6ce1c1d50a7783d317232aebae6416a2f730e9e1dd"
+    },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:nl:f049abd4a2710f1d01c3f543b114e5f769790b7c8d3277107f3ffcc54ab4a470:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "nl",
+      "content_hash": "f049abd4a2710f1d01c3f543b114e5f769790b7c8d3277107f3ffcc54ab4a470",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "1dbb1e6140c23ff00da179c67a73ca904db59184b804f9b71f83b614e49e9d7a"
     },
     "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:pt:00e65dbe36422e9f0e9a05e097f17a74ec459e6134db8a38b7f85b8e693ed5e5:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
@@ -302167,6 +302191,79 @@
         }
       ],
       "record_hash": "b1ddec75d9bf1363bc1bfdcebebf2f2b49b358cc8d3d732094ddb1587b55290e"
+    },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:fr:ecc48c68b09b9e1331a9f4dfdcdbd6dda0e2155dcbc39994296e8855a4bb78b1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "fr",
+      "content_hash": "ecc48c68b09b9e1331a9f4dfdcdbd6dda0e2155dcbc39994296e8855a4bb78b1",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c3effaa5846d67f60ed8d88a",
+          "quote": "Luc 21:29-31",
+          "before": "chez que le royaume de Dieu est proche –",
+          "after": ".",
+          "spans": [
+            [
+              501,
+              513
+            ]
+          ],
+          "osis": "Luke.21.29-Luke.21.31",
+          "queries": [
+            "42 21:29-31"
+          ]
+        },
+        {
+          "id": "17f2d69bb504bf2fc9b1224f",
+          "quote": "Hébreux 1:10-12",
+          "before": " le même, et tes ans ne finiront point –",
+          "after": ".",
+          "spans": [
+            [
+              2006,
+              2021
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        },
+        {
+          "id": "a9acaca8bb195764dc59c061",
+          "quote": "2 Corinthiens 5:7",
+          "before": " marchons par la foi, non par la vue : –",
+          "after": ". Sur le second point, la réalité est qu",
+          "spans": [
+            [
+              3433,
+              3450
+            ]
+          ],
+          "osis": "2Cor.5.7",
+          "queries": [
+            "47 5:7"
+          ]
+        },
+        {
+          "id": "8f34be24c364593fce08c273",
+          "quote": "Romains 6:13",
+          "before": "es à Dieu comme instruments de justice (",
+          "after": "), en choisissant de croire ce que Dieu ",
+          "spans": [
+            [
+              6382,
+              6394
+            ]
+          ],
+          "osis": "Rom.6.13",
+          "queries": [
+            "45 6:13"
+          ]
+        }
+      ],
+      "record_hash": "1ad960702ac5bddb6fc5e7e1474460855d72d4850316c9af9ace8425a20c96a8"
     },
     "971b8ffa-3721-4c08-b693-5aba9989618c:hi:e19ba378fc69469682c0926909aa86773cac1969dccc7e6b170e7462778ebe10:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
@@ -392534,6 +392631,48 @@
       "markers": [],
       "record_hash": "094b79b881dd686d0079732189d555ca1ca78028a26e107ba950ebb1bb54b47c"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:bn:14eccaaf1662c15ca5f3609a3e0804f743841cf7b515ddbfef3224fe0fbb8317:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "bn",
+      "content_hash": "14eccaaf1662c15ca5f3609a3e0804f743841cf7b515ddbfef3224fe0fbb8317",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "f1246bbda0275b4499adc6aa",
+          "quote": "১ পিতর ৫:৪",
+          "before": " করব; তোমার প্রভুর আনন্দে প্রবেশ করো’” (",
+          "after": "; মথি ২৪:৩১; ২৫:২)।",
+          "spans": [
+            [
+              5770,
+              5780
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "b3724bd2606f73c78e2b4405",
+          "quote": "মথি ২৪:৩১; ২৫:২",
+          "before": "প্রভুর আনন্দে প্রবেশ করো’” (১ পিতর ৫:৪; ",
+          "after": ")।",
+          "spans": [
+            [
+              5782,
+              5797
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "ef2dcb8ac5b7215db9e9af2cb162d7821e7faa5a8f11574c1eaf10a9f9df0c8e"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:en:395e6eddac70d145033971fe73f6bb15ea50a6d17a3a17407192158e066b627b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "en",
@@ -392576,6 +392715,48 @@
       ],
       "record_hash": "986a43a39e4f6f7b5b23047d369f4bddc288ad6d6aae73469dce368d0386edaa"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:es:33c70e08107f56219187d3694430aa71dc6c62696655311db176f94f911ebc4d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "es",
+      "content_hash": "33c70e08107f56219187d3694430aa71dc6c62696655311db176f94f911ebc4d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "b536fa7e32ec2ddf30c213aa",
+          "quote": "1 Pe. 5:4",
+          "before": " mucho; entra en el gozo de tu Señor”» (",
+          "after": "; Mt. 24:31; 25:2).",
+          "spans": [
+            [
+              6332,
+              6341
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "8870858e73270cf0ea7986cc",
+          "quote": "Mt. 24:31; 25:2",
+          "before": "ra en el gozo de tu Señor”» (1 Pe. 5:4; ",
+          "after": ").",
+          "spans": [
+            [
+              6343,
+              6358
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "10a7fca02a4b7415d61f2196282152ae2348a7e91581fa88a66e37dc07889fb7"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:hi:3c4255c20e429df5c45d05caefbd159bd3d95767f0fc80a2c1c35e5b25360c3b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "hi",
@@ -392601,6 +392782,48 @@
         }
       ],
       "record_hash": "61376ae36e57e5b8540b9777748daf6d061f26f4e36bd8c440c2c7d44bdcfe8d"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:zh-Hans:f845753249a2af30f0b03b2072bc575e5fb50334618122c25c1b7525f5cb35ee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "zh-Hans",
+      "content_hash": "f845753249a2af30f0b03b2072bc575e5fb50334618122c25c1b7525f5cb35ee",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "ab211e0cef50a25c8c4cdd09",
+          "quote": "彼前5:4",
+          "before": "心的仆人；你在不多的事上忠心，我要派你管理许多事；进来享受你主人的喜乐吧。’”（",
+          "after": "；太24:31；25:2）",
+          "spans": [
+            [
+              2090,
+              2095
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "da65086da79229d45df22133",
+          "quote": "太24:31；25:2",
+          "before": "在不多的事上忠心，我要派你管理许多事；进来享受你主人的喜乐吧。’”（彼前5:4；",
+          "after": "）",
+          "spans": [
+            [
+              2096,
+              2107
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "db54e2cb6ea87e0e65dc3667202e09d17ed132b8e45965fdfcfeba8e3d9b0a6c"
     },
     "cbfbc379-cb4c-49a9-8119-2119ce52b24f:en:199adf86f059c653e42caf933df27f158264dc929b5278159736bf9575fb0727:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbfbc379-cb4c-49a9-8119-2119ce52b24f",
