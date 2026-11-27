@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "d23da0f00ced3a0d60d46514aa81d9fdef8ab930b38ca7be60c3d584ddf4ca42",
+  "integrity": "8624c74dc655270de751915b537de8b795eb521a62146b0242033ade120d4e72",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -284635,6 +284635,207 @@
       ],
       "record_hash": "f4d98a028da2012fa072cd45478aaeac30ec4ee00321f84122f5f76144074a84"
     },
+    "9240e6d5-f395-4db7-ab6f-3b4b603d6ea0:id:0720b688a4dcd0bc91b94c7916cbea6fae188baa449e3ab0e2f5046f12ad0dfb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "9240e6d5-f395-4db7-ab6f-3b4b603d6ea0",
+      "locale": "id",
+      "content_hash": "0720b688a4dcd0bc91b94c7916cbea6fae188baa449e3ab0e2f5046f12ad0dfb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "994988b91600e5ed63410378",
+          "quote": "Kejadian 1:31",
+          "before": "at-Nya, dan lihatlah, itu sangat baik… –",
+          "after": ". Sebelum Kejatuhan, segala sesuatu semp",
+          "spans": [
+            [
+              1600,
+              1613
+            ]
+          ],
+          "osis": "Gen.1.31",
+          "queries": [
+            "1 1:31"
+          ]
+        },
+        {
+          "id": "917d9f918e75fe92f21a0265",
+          "quote": "Kejadian 3:12-13",
+          "before": "Ular itu menipu aku, dan aku pun makan –",
+          "after": ".",
+          "spans": [
+            [
+              2634,
+              2650
+            ]
+          ],
+          "osis": "Gen.3.12-Gen.3.13",
+          "queries": [
+            "1 3:12-13"
+          ]
+        },
+        {
+          "id": "b8b16c99de5a0dfc5fe30a34",
+          "quote": "Kejadian 3:16-19",
+          "before": "u dan engkau akan kembali menjadi debu –",
+          "after": ".",
+          "spans": [
+            [
+              3652,
+              3668
+            ]
+          ],
+          "osis": "Gen.3.16-Gen.3.19",
+          "queries": [
+            "1 3:16-19"
+          ]
+        },
+        {
+          "id": "3a3b84f0810a49fa2a766351",
+          "quote": "Rut 1:20-21",
+          "before": "telah menimpakan penderitaan kepadaku? –",
+          "after": ".",
+          "spans": [
+            [
+              5810,
+              5821
+            ]
+          ],
+          "osis": "Ruth.1.20-Ruth.1.21",
+          "queries": [
+            "8 1:20-21"
+          ]
+        },
+        {
+          "id": "c5bf909897f4d5326b10775e",
+          "quote": "Rut 4:14-16",
+          "before": "ngkuannya dan menjadi pengasuh baginya –",
+          "after": ".",
+          "spans": [
+            [
+              6828,
+              6839
+            ]
+          ],
+          "osis": "Ruth.4.14-Ruth.4.16",
+          "queries": [
+            "8 4:14-16"
+          ]
+        },
+        {
+          "id": "42d94b0e8b0334b0dc0a9c10",
+          "quote": "Yeremia 20:14-18",
+          "before": "gga hari-hariku habis dengan kehinaan? –",
+          "after": ".",
+          "spans": [
+            [
+              8175,
+              8191
+            ]
+          ],
+          "osis": "Jer.20.14-Jer.20.18",
+          "queries": [
+            "24 20:14-18"
+          ]
+        },
+        {
+          "id": "381af946201c764a640d9268",
+          "quote": "Mazmur pasal 32",
+          "before": "i dalam kehidupan Daud dan Saul. (Lihat ",
+          "after": ") Ini bukan berarti semua depresi merupa",
+          "spans": [
+            [
+              10849,
+              10864
+            ]
+          ],
+          "osis": "Ps.32.1-Ps.32.11",
+          "queries": [
+            "19 32:1-11"
+          ]
+        },
+        {
+          "id": "a3e9c27681d50636d5c5aa37",
+          "quote": "Galatia 6:2",
+          "before": "bih baik dalam semua bidang ini. (Lihat ",
+          "after": ")",
+          "spans": [
+            [
+              12656,
+              12667
+            ]
+          ],
+          "osis": "Gal.6.2",
+          "queries": [
+            "48 6:2"
+          ]
+        },
+        {
+          "id": "0abbf56bbeb58e44ef251011",
+          "quote": "Yakobus 5:16",
+          "before": "n penuh semangat sangat besar kuasanya –",
+          "after": ".",
+          "spans": [
+            [
+              12780,
+              12792
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        },
+        {
+          "id": "f3ded65b75c2a57708805f61",
+          "quote": "2 Korintus 10:12",
+          "before": "unya yang pernah menghadapi ini. (Lihat ",
+          "after": ")",
+          "spans": [
+            [
+              16304,
+              16320
+            ]
+          ],
+          "osis": "2Cor.10.12",
+          "queries": [
+            "47 10:12"
+          ]
+        },
+        {
+          "id": "e2fb454effe4e52ae7546af8",
+          "quote": "Amsal 27:17",
+          "before": "an waktu berlama-lama sendirian. (Lihat ",
+          "after": ")",
+          "spans": [
+            [
+              17157,
+              17168
+            ]
+          ],
+          "osis": "Prov.27.17",
+          "queries": [
+            "20 27:17"
+          ]
+        },
+        {
+          "id": "6b4570c95129cb88b96dab42",
+          "quote": "Yakobus 5:16",
+          "before": "ng mendoakan, supaya kamu disembuhkan… –",
+          "after": ".",
+          "spans": [
+            [
+              17488,
+              17500
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        }
+      ],
+      "record_hash": "1cd35d1bd0dd4318204023d253a32a9de46b948aaad6d687ebc009752eceaaf7"
+    },
     "9240e6d5-f395-4db7-ab6f-3b4b603d6ea0:it:3b6eab1edc09de9864ad0b40d3503b1a5f05f384c8150117e8351dae18f4e459:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "9240e6d5-f395-4db7-ab6f-3b4b603d6ea0",
       "locale": "it",
@@ -393261,6 +393462,14 @@
       ],
       "record_hash": "ef2dcb8ac5b7215db9e9af2cb162d7821e7faa5a8f11574c1eaf10a9f9df0c8e"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:de:c57bac50ed1b14c1abf4072d6f175aa5deb51fda996519e2146535fa49ad53ae:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "de",
+      "content_hash": "c57bac50ed1b14c1abf4072d6f175aa5deb51fda996519e2146535fa49ad53ae",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "8a6c4dd16ae103b052319d4a67b491ce2e3715fcfe207f69e72a71bbe529fb1e"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:en:395e6eddac70d145033971fe73f6bb15ea50a6d17a3a17407192158e066b627b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "en",
@@ -393490,6 +393699,48 @@
         }
       ],
       "record_hash": "ac8450eefdc2bafba9fc0b07b91e868a4762305ab2d437076f4a5f6d013c5cae"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:ur:6e7c2749daf6423af3869cc11318bddfd261ad0b26cad5992db6aea4f3342ed8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "ur",
+      "content_hash": "6e7c2749daf6423af3869cc11318bddfd261ad0b26cad5992db6aea4f3342ed8",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "aa1dfa21282e576cbc1e0918",
+          "quote": "1 پطرس 5:4",
+          "before": " گا؛ اپنے خداوند کی خوشی میں داخل ہو‘“ (",
+          "after": "؛ متی 24:31؛ 25:2)۔",
+          "spans": [
+            [
+              5722,
+              5732
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "e90e7cd866b45c3809fa1bd0",
+          "quote": "متی 24:31؛ 25:2",
+          "before": "اوند کی خوشی میں داخل ہو‘“ (1 پطرس 5:4؛ ",
+          "after": ")۔",
+          "spans": [
+            [
+              5734,
+              5749
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "83aa5cbfb2a459ac6073f10fe2aff46e0116395336e1e00c1a32029b607f5830"
     },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:zh-Hans:f845753249a2af30f0b03b2072bc575e5fb50334618122c25c1b7525f5cb35ee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
@@ -490337,6 +490588,47 @@
         }
       ],
       "record_hash": "0e8a6d0920d54b1a4259d5ac7a142b58bc6b351f9fcf36ac74ed23ad728496f0"
+    },
+    "fe13ba15-f33c-46ff-9d3c-f114f1b2f4d4:nb:e45edd2ad333fd1c954b1135792e57197a5646938e7e638e23d0bb94f81d976a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "fe13ba15-f33c-46ff-9d3c-f114f1b2f4d4",
+      "locale": "nb",
+      "content_hash": "e45edd2ad333fd1c954b1135792e57197a5646938e7e638e23d0bb94f81d976a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9318b9750336f862ca2788ab",
+          "quote": "Jakobs brev 1:2–4",
+          "before": " fullkomne og hele og ikke mangle noe – ",
+          "after": ".",
+          "spans": [
+            [
+              546,
+              563
+            ]
+          ],
+          "osis": "Jas.1.2-Jas.1.4",
+          "queries": [
+            "59 1:2-4"
+          ]
+        },
+        {
+          "id": "667139e180f96cdaf42a4569",
+          "quote": "Filipperbrevet 4:11–13",
+          "before": "eg i Kristus, han som gjør meg sterk. – ",
+          "after": ".",
+          "spans": [
+            [
+              1019,
+              1041
+            ]
+          ],
+          "osis": "Phil.4.11-Phil.4.13",
+          "queries": [
+            "50 4:11-13"
+          ]
+        }
+      ],
+      "record_hash": "4ed67988f82a1437df226559ce762d6e694c455c00dceef612e2ee6e9af4b916"
     },
     "fe13ba15-f33c-46ff-9d3c-f114f1b2f4d4:pt:160471ed65c6da48f90511d5b748a6ebfcb70b97f8de5a1318c05a86f5cb6b17:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "fe13ba15-f33c-46ff-9d3c-f114f1b2f4d4",

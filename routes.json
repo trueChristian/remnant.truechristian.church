@@ -46546,11 +46546,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "familiengeschichten",
+        "alias": "gedanken-zum-märtyrerspiegel",
+        "history": [
+          "/de/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -119603,11 +119604,12 @@
       },
       "9240e6d5-f395-4db7-ab6f-3b4b603d6ea0": {
         "category_id": "44a970cf-d23c-5e24-a196-0b08595d01ba",
-        "category_slug": "articles",
-        "alias": "depression",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "medis",
+        "alias": "depresi",
+        "history": [
+          "/id/articles/depression/"
+        ],
+        "fallback": false
       },
       "924514c7-52be-4e2b-ab75-3141e14ea9a0": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -152572,11 +152574,12 @@
       },
       "fe13ba15-f33c-46ff-9d3c-f114f1b2f4d4": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-34",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "lederartikkel",
+        "alias": "fra-redaktøren-8",
+        "history": [
+          "/nb/articles/from-the-editor-34/"
+        ],
+        "fallback": false
       },
       "fe1fac5f-5e0c-4074-a84f-c6afe94dc716": {
         "category_id": "69c79b4c-4584-59d0-8d07-a27005d6f940",
@@ -210577,11 +210580,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "گھر-کی-یادیں",
+        "alias": "شہداء-کے-آئینے-پر-خیالات",
+        "history": [
+          "/ur/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
