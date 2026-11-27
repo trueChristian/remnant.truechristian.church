@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "df97a686f2fe8e5dc9df195adc29527688db828464619b82bd9903ef8ddbf984",
+  "integrity": "a86853813b898679fbf69c7b9d322b52a8655d5eeb5f0493ef032414e1ba6c0f",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -264458,6 +264458,14 @@
       "markers": [],
       "record_hash": "7f94ab0575e9df87b188908fc2d6b33c70dfa6b557b315a5d238e2f743907ec6"
     },
+    "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:sv:f41ca3ba11da3300ea4cf6525d54457879cd5511ba35717878e75aa088345deb:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
+      "locale": "sv",
+      "content_hash": "f41ca3ba11da3300ea4cf6525d54457879cd5511ba35717878e75aa088345deb",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "c09bb738a1db154429d3a60f7a77319461bfabadb64bde3dbc46a6007b90283b"
+    },
     "8887e7f5-1047-4baf-a9d7-db2644e0fd7a:sw:d1f3a7022dda313d673d5aaa9e894fb539529d3f0d8ce60e316a03d6dbc00dd3:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "8887e7f5-1047-4baf-a9d7-db2644e0fd7a",
       "locale": "sw",
@@ -302394,6 +302402,47 @@
         }
       ],
       "record_hash": "b3c11e4c39e569a317952f117450d1230ad6c0d8fec7791115b509c4d3c3edab"
+    },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:pt:353e392d655fca66332bf8a8a79fbf49c09da96fd494a2bd4126cf88de704385:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "pt",
+      "content_hash": "353e392d655fca66332bf8a8a79fbf49c09da96fd494a2bd4126cf88de704385",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c654588e5f85308000084b6d",
+          "quote": "Lc 21:29-31",
+          "before": "bei que o reino de Deus está próximo» – ",
+          "after": ".",
+          "spans": [
+            [
+              480,
+              491
+            ]
+          ],
+          "osis": "Luke.21.29-Luke.21.31",
+          "queries": [
+            "42 21:29-31"
+          ]
+        },
+        {
+          "id": "b7a8c91e057ec7a63f6148ef",
+          "quote": "Hebreus 1:10-12",
+          "before": " mesmo, e os teus annos não acabarão. – ",
+          "after": ".",
+          "spans": [
+            [
+              1793,
+              1808
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        }
+      ],
+      "record_hash": "0f0a8fbe0713cacb8a35975987010a4d8e4ee5fd4400c9c4c1f2d6facdfba186"
     },
     "971b8ffa-3721-4c08-b693-5aba9989618c:sw:cf74d767dc1b09f15d05d31e6f76e7e3d909c1c4c2f01ebc65208407f9e9ede7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",

@@ -169658,11 +169658,12 @@
       },
       "971b8ffa-3721-4c08-b693-5aba9989618c": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-17",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "editorial",
+        "alias": "do-editor-10",
+        "history": [
+          "/pt/articles/from-the-editor-17/"
+        ],
+        "fallback": false
       },
       "972d22a3-2ede-4b6b-941d-619875baf8d9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -188881,11 +188882,12 @@
       },
       "8887e7f5-1047-4baf-a9d7-db2644e0fd7a": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
-        "category_slug": "articles",
-        "alias": "revivals-that-stay",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "väckelse",
+        "alias": "väckelser-som-består",
+        "history": [
+          "/sv/articles/revivals-that-stay/"
+        ],
+        "fallback": false
       },
       "88dd10f4-1bce-4b0f-b47c-8ab58ef8c120": {
         "category_id": "dda0cbb3-457a-5412-a60f-abb389b827e0",
