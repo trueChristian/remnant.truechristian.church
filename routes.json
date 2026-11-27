@@ -26555,11 +26555,12 @@
       },
       "c6596509-ad91-49b6-a55b-d850c3b72c14": {
         "category_id": "85b345ae-ce23-56a2-9249-2cfa79293657",
-        "category_slug": "articles",
-        "alias": "how-do-we-prepare-our-youth-girls-for-the-future-2",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "الشباب",
+        "alias": "كيف-نُعِدّ-فتياتنا-الشابات-للمستقبل",
+        "history": [
+          "/ar/articles/how-do-we-prepare-our-youth-girls-for-the-future-2/"
+        ],
+        "fallback": false
       },
       "c686be27-7ea4-4109-b955-2748af446084": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -26742,11 +26743,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "حكايات-البيوت",
+        "alias": "خواطر-حول-مرآة-الشهداء",
+        "history": [
+          "/ar/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -42035,11 +42037,12 @@
       },
       "30d02d2c-805c-437c-ad10-4542362ab6de": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-road-to-emmaus",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "christliches-leben",
+        "alias": "der-weg-nach-emmaus",
+        "history": [
+          "/de/articles/the-road-to-emmaus/"
+        ],
+        "fallback": false
       },
       "3103df35-fe97-490f-9388-1dca942c0348": {
         "category_id": "917c7782-d876-59a2-9959-e33a50d14cca",
@@ -91751,11 +91754,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "histoires-de-foyers",
+        "alias": "réflexions-sur-the-martyrs-mirror",
+        "history": [
+          "/fr/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -131269,11 +131273,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "storie-di-vita-domestica",
+        "alias": "riflessioni-su-the-martyrs-mirror",
+        "history": [
+          "/it/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -161231,11 +161236,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "gezinsgeschiedenissen",
+        "alias": "gedachten-over-het-martelaarsboek",
+        "history": [
+          "/nl/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -171219,11 +171225,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "histórias-do-lar",
+        "alias": "reflexões-sobre-o-espelho-dos-mártires",
+        "history": [
+          "/pt/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",

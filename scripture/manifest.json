@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "a86853813b898679fbf69c7b9d322b52a8655d5eeb5f0493ef032414e1ba6c0f",
+  "integrity": "d23da0f00ced3a0d60d46514aa81d9fdef8ab930b38ca7be60c3d584ddf4ca42",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -97602,6 +97602,495 @@
         }
       ],
       "record_hash": "0909249c1ee1febce945d5ac4851d5c2fd616af03fd7d23a7957d53d8d5d9aa4"
+    },
+    "30d02d2c-805c-437c-ad10-4542362ab6de:de:1dfa436a07ec02615853d1d447ee81927a5e338bf6016335ecd7c2961d132aab:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "30d02d2c-805c-437c-ad10-4542362ab6de",
+      "locale": "de",
+      "content_hash": "1dfa436a07ec02615853d1d447ee81927a5e338bf6016335ecd7c2961d132aab",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "270af872c7004dae270466a6",
+          "quote": "Lukas 24,17",
+          "before": "der führt, und warum seid ihr traurig? –",
+          "after": ".",
+          "spans": [
+            [
+              217,
+              228
+            ]
+          ],
+          "osis": "Luke.24.17",
+          "queries": [
+            "42 24:17"
+          ]
+        },
+        {
+          "id": "93ba4080c543cf811a7c6db5",
+          "quote": "Jeremia 15,18",
+          "before": "er sein und wie Wasser, die versiegen? –",
+          "after": ". Dies ist offenkundig eine übertriebene",
+          "spans": [
+            [
+              3190,
+              3203
+            ]
+          ],
+          "osis": "Jer.15.18",
+          "queries": [
+            "24 15:18"
+          ]
+        },
+        {
+          "id": "da8ce630afd06f9976387bbd",
+          "quote": "2. Korinther 1,8-9",
+          "before": "ern auf Gott, der die Toten auferweckt –",
+          "after": ". Diese dunkle Nacht der Seele macht vor",
+          "spans": [
+            [
+              3776,
+              3794
+            ]
+          ],
+          "osis": "2Cor.1.8-2Cor.1.9",
+          "queries": [
+            "47 1:8-9"
+          ]
+        },
+        {
+          "id": "2af9636bb0abc125ef8fd48d",
+          "quote": "Lukas 24,18",
+          "before": "as dort in diesen Tagen geschehen ist? –",
+          "after": ". Frage irgendeinen Fremden auf den Stra",
+          "spans": [
+            [
+              5453,
+              5464
+            ]
+          ],
+          "osis": "Luke.24.18",
+          "queries": [
+            "42 24:18"
+          ]
+        },
+        {
+          "id": "08e9e07a5dac69e949ba4e97",
+          "quote": "Apostelgeschichte 7,25",
+          "before": "en würde; sie aber verstanden es nicht –",
+          "after": ". Während er fest davon überzeugt war, d",
+          "spans": [
+            [
+              6141,
+              6163
+            ]
+          ],
+          "osis": "Acts.7.25",
+          "queries": [
+            "44 7:25"
+          ]
+        },
+        {
+          "id": "6194ebe9b9089e17aae7b2d0",
+          "quote": "4. Mose 11,14-15",
+          "before": "und lass mich mein Elend nicht ansehen –",
+          "after": ". Warum sah Mose das nicht früher im Leb",
+          "spans": [
+            [
+              6952,
+              6968
+            ]
+          ],
+          "osis": "Num.11.14-Num.11.15",
+          "queries": [
+            "4 11:14-15"
+          ]
+        },
+        {
+          "id": "cc7d7cd7396ea85ce53a9021",
+          "quote": "Lukas 24,16",
+          "before": " waren, sodass sie ihn nicht erkannten –",
+          "after": ".",
+          "spans": [
+            [
+              7145,
+              7156
+            ]
+          ],
+          "osis": "Luke.24.16",
+          "queries": [
+            "42 24:16"
+          ]
+        },
+        {
+          "id": "223b265af9264f1c97aee510",
+          "quote": "Lukas 24,19",
+          "before": " und Wort vor Gott und dem ganzen Volk –",
+          "after": ". Sie hatten ihre eigene Vorstellung dav",
+          "spans": [
+            [
+              7361,
+              7372
+            ]
+          ],
+          "osis": "Luke.24.19",
+          "queries": [
+            "42 24:19"
+          ]
+        },
+        {
+          "id": "85b56c3a1f66214ea814431e",
+          "quote": "1. Korinther 13,12",
+          "before": " …durch einen Spiegel, nur undeutlich… –",
+          "after": ". Ihr teilweises Wissen stützte sich sta",
+          "spans": [
+            [
+              7501,
+              7519
+            ]
+          ],
+          "osis": "1Cor.13.12",
+          "queries": [
+            "46 13:12"
+          ]
+        },
+        {
+          "id": "d5671bf78ecac2b8facfcec4",
+          "quote": "1. Mose 28,20-21",
+          "before": "hre, dann soll der HERR mein Gott sein –",
+          "after": ".",
+          "spans": [
+            [
+              8406,
+              8422
+            ]
+          ],
+          "osis": "Gen.28.20-Gen.28.21",
+          "queries": [
+            "1 28:20-21"
+          ]
+        },
+        {
+          "id": "b13b3e3279c339780ad49976",
+          "quote": "1. Mose 32,24-28",
+          "before": "Gott und bei Menschen und hast gesiegt –",
+          "after": ".",
+          "spans": [
+            [
+              9091,
+              9107
+            ]
+          ],
+          "osis": "Gen.32.24-Gen.32.28",
+          "queries": [
+            "1 32:24-28"
+          ]
+        },
+        {
+          "id": "ea9c45509069a08b6875a2db",
+          "quote": "Lukas 24,20",
+          "before": " ausgeliefert und ihn gekreuzigt haben –",
+          "after": ". Gott ist darauf spezialisiert, ernste ",
+          "spans": [
+            [
+              9801,
+              9812
+            ]
+          ],
+          "osis": "Luke.24.20",
+          "queries": [
+            "42 24:20"
+          ]
+        },
+        {
+          "id": "89041bcd578182a2f2ba5a50",
+          "quote": "Hiob 24,17",
+          "before": "rgen ihnen wie der Schatten des Todes… –",
+          "after": ". Dem Bösen um uns übermäßige Bedeutung ",
+          "spans": [
+            [
+              10082,
+              10092
+            ]
+          ],
+          "osis": "Job.24.17",
+          "queries": [
+            "18 24:17"
+          ]
+        },
+        {
+          "id": "7531554f73879f38f410cb0f",
+          "quote": "Hiob 3,1-6",
+          "before": "ht aber möge die Finsternis ergreifen… –",
+          "after": ". Doch irgendwann, noch bevor sich die d",
+          "spans": [
+            [
+              10871,
+              10881
+            ]
+          ],
+          "osis": "Job.3.1-Job.3.6",
+          "queries": [
+            "18 3:1-6"
+          ]
+        },
+        {
+          "id": "3f3794e4351651b991850e2e",
+          "quote": "Lukas 24,21",
+          "before": " er es sei, der Israel erlösen sollte… –",
+          "after": ". Es ist nur natürlich, jede gegebene Si",
+          "spans": [
+            [
+              11196,
+              11207
+            ]
+          ],
+          "osis": "Luke.24.21",
+          "queries": [
+            "42 24:21"
+          ]
+        },
+        {
+          "id": "104b7aeec277dbd00717df2f",
+          "quote": "2. Könige 5,11",
+          "before": "elle fahren und den Aussätzigen heilen –",
+          "after": ".",
+          "spans": [
+            [
+              11855,
+              11869
+            ]
+          ],
+          "osis": "2Kgs.5.11",
+          "queries": [
+            "12 5:11"
+          ]
+        },
+        {
+          "id": "d63ecee3d3f78470971ec2f2",
+          "quote": "1. Mose 15,12",
+          "before": "recken großer Finsternis fiel auf ihn. –",
+          "after": ".",
+          "spans": [
+            [
+              12221,
+              12234
+            ]
+          ],
+          "osis": "Gen.15.12",
+          "queries": [
+            "1 15:12"
+          ]
+        },
+        {
+          "id": "149da6b97eb24fd045a93856",
+          "quote": "2. Korinther 1,9",
+          "before": "ern auf Gott, der die Toten auferweckt –",
+          "after": ".",
+          "spans": [
+            [
+              12756,
+              12772
+            ]
+          ],
+          "osis": "2Cor.1.9",
+          "queries": [
+            "47 1:9"
+          ]
+        },
+        {
+          "id": "42fc187388d06ddaba8d4241",
+          "quote": "Lukas 24,21",
+          "before": "dritte Tag, seitdem dies geschehen ist –",
+          "after": ". Viele von uns sind diszipliniert genug",
+          "spans": [
+            [
+              12881,
+              12892
+            ]
+          ],
+          "osis": "Luke.24.21",
+          "queries": [
+            "42 24:21"
+          ]
+        },
+        {
+          "id": "d33dab3317301cab7c7b49fe",
+          "quote": "Sprüche 13,12",
+          "before": "llung unserer Hoffnung verzögert (siehe ",
+          "after": "), werden unsere Herzen krank und matt. ",
+          "spans": [
+            [
+              13034,
+              13047
+            ]
+          ],
+          "osis": "Prov.13.12",
+          "queries": [
+            "20 13:12"
+          ]
+        },
+        {
+          "id": "ba08a7b9dbe56e907257ae2a",
+          "quote": "Psalm 13,1",
+          "before": "t du dein Angesicht vor mir verbergen? –",
+          "after": ".",
+          "spans": [
+            [
+              13343,
+              13353
+            ]
+          ],
+          "osis": "Ps.13.1",
+          "queries": [
+            "19 13:1"
+          ]
+        },
+        {
+          "id": "65238fdebe2b2ece7a423a2f",
+          "quote": "1. Mose 41,1",
+          "before": "ürde. Doch es dauerte volle zwei Jahre (",
+          "after": "), bis der Pharao träumte und Josef schl",
+          "spans": [
+            [
+              13635,
+              13647
+            ]
+          ],
+          "osis": "Gen.41.1",
+          "queries": [
+            "1 41:1"
+          ]
+        },
+        {
+          "id": "c2112605b9d4c400a94901e9",
+          "quote": "Psalm 105,18-19",
+          "before": "eintraf; das Wort des HERRN prüfte ihn –",
+          "after": ". Es gibt keinen wirksameren Weg, uns Ge",
+          "spans": [
+            [
+              13932,
+              13947
+            ]
+          ],
+          "osis": "Ps.105.18-Ps.105.19",
+          "queries": [
+            "19 105:18-19"
+          ]
+        },
+        {
+          "id": "4bb19a2bf4a82b10f4f353cd",
+          "quote": "Lukas 24,22-23",
+          "before": "on Engeln gesehen, die sagten, er lebe –",
+          "after": ". Niemand genießt es, etwas zu verpassen",
+          "spans": [
+            [
+              14349,
+              14363
+            ]
+          ],
+          "osis": "Luke.24.22-Luke.24.23",
+          "queries": [
+            "42 24:22-23"
+          ]
+        },
+        {
+          "id": "a7e674af9d26ab12cff5d921",
+          "quote": "1. Könige 19,4",
+          "before": "n ich bin nicht besser als meine Väter –",
+          "after": ".",
+          "spans": [
+            [
+              15076,
+              15090
+            ]
+          ],
+          "osis": "1Kgs.19.4",
+          "queries": [
+            "11 19:4"
+          ]
+        },
+        {
+          "id": "a8147fb2bb3c8500ff5f1e45",
+          "quote": "Lukas 24,24",
+          "before": "esagt hatten; aber ihn sahen sie nicht –",
+          "after": ". Es ist leicht zu denken: „Es hat bei i",
+          "spans": [
+            [
+              15276,
+              15287
+            ]
+          ],
+          "osis": "Luke.24.24",
+          "queries": [
+            "42 24:24"
+          ]
+        },
+        {
+          "id": "e2611c2740ed0a703a739f39",
+          "quote": "Johannes 1",
+          "before": "ottes, das die Sünde der Welt wegnimmt –",
+          "after": ",29. Dieser Dienst verschaffte ihm einen",
+          "spans": [
+            [
+              15748,
+              15758
+            ]
+          ],
+          "osis": "John.1.1-John.1.51",
+          "queries": [
+            "43 1:1-51"
+          ]
+        },
+        {
+          "id": "bfcfd29a4dba23f8720ce8e6",
+          "quote": "Lukas 7,19",
+          "before": "der sollen wir einen anderen erwarten? –",
+          "after": ".",
+          "spans": [
+            [
+              16162,
+              16172
+            ]
+          ],
+          "osis": "Luke.7.19",
+          "queries": [
+            "42 7:19"
+          ]
+        },
+        {
+          "id": "32a06fa534989e060f58025c",
+          "quote": "Matthäus 27",
+          "before": "in Gott, warum hast du mich verlassen? –",
+          "after": ",46.",
+          "spans": [
+            [
+              17128,
+              17139
+            ]
+          ],
+          "osis": "Matt.27.1-Matt.27.66",
+          "queries": [
+            "40 27:1-66"
+          ]
+        },
+        {
+          "id": "d1884472cc2ea77a023a6c5a",
+          "quote": "Markus 16,13",
+          "before": "en; doch auch ihnen glaubten sie nicht –",
+          "after": ".",
+          "spans": [
+            [
+              18695,
+              18707
+            ]
+          ],
+          "osis": "Mark.16.13",
+          "queries": [
+            "41 16:13"
+          ]
+        }
+      ],
+      "record_hash": "fe6dacd02167b53514279aa5159a51a7fba140832bdb662d82fd790577866635"
     },
     "30d02d2c-805c-437c-ad10-4542362ab6de:el:227491a78b6456590908f6dbac39d40b7ad3da2ae67272af1079ec38c32b6c06:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "30d02d2c-805c-437c-ad10-4542362ab6de",
@@ -381394,6 +381883,31 @@
       ],
       "record_hash": "7c28a8854be785d11b98cd1b17f8a27152ac7463e980e9e40d152eba597966d6"
     },
+    "c6596509-ad91-49b6-a55b-d850c3b72c14:ar:29d0985ba2699c26e1dd3a053451efa465652288db4da1657a76ca2072ea3437:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "c6596509-ad91-49b6-a55b-d850c3b72c14",
+      "locale": "ar",
+      "content_hash": "29d0985ba2699c26e1dd3a053451efa465652288db4da1657a76ca2072ea3437",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3e66457a44e4016bb346bae8",
+          "quote": "الأمثال 22:6",
+          "before": "تسلكه «هي»، ومتى شاخت «هي» لا تحيد عنه. ",
+          "after": "",
+          "spans": [
+            [
+              10378,
+              10390
+            ]
+          ],
+          "osis": "Prov.22.6",
+          "queries": [
+            "20 22:6"
+          ]
+        }
+      ],
+      "record_hash": "b8df9e467a522a467dd07711fcf1781069e9c9008a03c56e65873ef40b4af621"
+    },
     "c6596509-ad91-49b6-a55b-d850c3b72c14:de:7e7ac5ac2b30ae6cb8d15e86027550229f348320f4bfee831a929e6ec7b7d541:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "c6596509-ad91-49b6-a55b-d850c3b72c14",
       "locale": "de",
@@ -392680,6 +393194,31 @@
       "markers": [],
       "record_hash": "094b79b881dd686d0079732189d555ca1ca78028a26e107ba950ebb1bb54b47c"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:ar:6ebcda8ab956212d20a73adc63ded07b58590ad5a2bba03e3b676ce4baed47d9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "ar",
+      "content_hash": "6ebcda8ab956212d20a73adc63ded07b58590ad5a2bba03e3b676ce4baed47d9",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "842390b05c615f964df85426",
+          "quote": "متى 24: 31",
+          "before": "كثير؛ ادخل إلى فرح سيدك»» (1 بطرس 5: 4؛ ",
+          "after": "؛ 25: 2).",
+          "spans": [
+            [
+              4644,
+              4654
+            ]
+          ],
+          "osis": "Matt.24.31",
+          "queries": [
+            "40 24:31"
+          ]
+        }
+      ],
+      "record_hash": "2b1272c7bfecef3a94b891075807f3f850c93aea6317349d05608fa6322848ee"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:bn:14eccaaf1662c15ca5f3609a3e0804f743841cf7b515ddbfef3224fe0fbb8317:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "bn",
@@ -392806,6 +393345,32 @@
       ],
       "record_hash": "10a7fca02a4b7415d61f2196282152ae2348a7e91581fa88a66e37dc07889fb7"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:fr:0bb46e921be3bcca4e6dd7b91f83e36c8234a449aaa0f882cdee42c45468142a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "fr",
+      "content_hash": "0bb46e921be3bcca4e6dd7b91f83e36c8234a449aaa0f882cdee42c45468142a",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "256ea4fddc1855622d244b5b",
+          "quote": "Mt 24:31 ; 25:2",
+          "before": " la joie de ton Seigneur” » (1 Pi 5:4 ; ",
+          "after": ").",
+          "spans": [
+            [
+              6565,
+              6580
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "4c4b2e6ecc3f3d774ba70dccc7c62a6672dbcbde302c91a5232bee091a6075dd"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:hi:3c4255c20e429df5c45d05caefbd159bd3d95767f0fc80a2c1c35e5b25360c3b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "hi",
@@ -392831,6 +393396,100 @@
         }
       ],
       "record_hash": "61376ae36e57e5b8540b9777748daf6d061f26f4e36bd8c440c2c7d44bdcfe8d"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:it:8b0d165c9d0ef4cee3ab30d4e58a07b394ce3a1abf672b8e8b08f0c0d5fdb84f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "it",
+      "content_hash": "8b0d165c9d0ef4cee3ab30d4e58a07b394ce3a1abf672b8e8b08f0c0d5fdb84f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7df16139832ab562064355e8",
+          "quote": "Matt. 24:31; 25:2",
+          "before": "a gioia del tuo Signore”» (1 Piet. 5:4; ",
+          "after": ").",
+          "spans": [
+            [
+              6387,
+              6404
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "3d0aa373cce0a476e2d08c29edf5a27df3c5b0167294e68bcdf63b76a1722b6d"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:nl:b3fa4a321a741bc3a3e3bbdb9c55ea3403f4caa47d38e16bb9533d0b22cba0e0:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "nl",
+      "content_hash": "b3fa4a321a741bc3a3e3bbdb9c55ea3403f4caa47d38e16bb9533d0b22cba0e0",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "4eb15376c3488ac805996356",
+          "quote": "1 Petr. 5:4",
+          "before": " ga binnen in de vreugde van je Heer’” (",
+          "after": "; Matt. 24:31; 25:2).",
+          "spans": [
+            [
+              6297,
+              6308
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "a6034e6cb87e22b665cd189b",
+          "quote": "Matt. 24:31; 25:2",
+          "before": " de vreugde van je Heer’” (1 Petr. 5:4; ",
+          "after": ").",
+          "spans": [
+            [
+              6310,
+              6327
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "d2d0b6d215f9aa61582ed7f90ddbbd5ffdf12509475fcde64443c3fd9a2b4bf3"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:pt:cc2f7b7adb3c1288d0f933e632714d0d3135b672be630a3503f3c6cd0f34e1c7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "pt",
+      "content_hash": "cc2f7b7adb3c1288d0f933e632714d0d3135b672be630a3503f3c6cd0f34e1c7",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3b564fef16145a0d3b8ff12e",
+          "quote": "Mt 24:31; 25:2",
+          "before": "ra na alegria do teu Senhor’” (1Pe 5:4; ",
+          "after": ").",
+          "spans": [
+            [
+              6075,
+              6089
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "ac8450eefdc2bafba9fc0b07b91e868a4762305ab2d437076f4a5f6d013c5cae"
     },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:zh-Hans:f845753249a2af30f0b03b2072bc575e5fb50334618122c25c1b7525f5cb35ee:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
