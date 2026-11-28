@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "828741e184a2f26efda9f042fb58257474f61fdbcc7a29d722007063876b5303",
+  "integrity": "282ec81332356cb45fb414471de4f588e8339dcd0338cfa7ac3e0e559b3aafa5",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -149591,6 +149591,31 @@
         }
       ],
       "record_hash": "2960238577881372ec3e624d32199f7f87ab094e9d99f3a6fbf8ac3962b3de90"
+    },
+    "3feab4dd-c830-4ead-ad57-24d853847088:nb:7c8bb363a6c9ac870c1eb4a544c974f0a21bc30710df69f2ed3bebac7838b9d6:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "3feab4dd-c830-4ead-ad57-24d853847088",
+      "locale": "nb",
+      "content_hash": "7c8bb363a6c9ac870c1eb4a544c974f0a21bc30710df69f2ed3bebac7838b9d6",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "1c269a270f83a2d8cd88a763",
+          "quote": "2. Timoteus 3",
+          "before": "til å komme til kunnskap om sannheten – ",
+          "after": ",7. Enda andre mener at et liv i tjenest",
+          "spans": [
+            [
+              460,
+              473
+            ]
+          ],
+          "osis": "2Tim.3.1-2Tim.3.17",
+          "queries": [
+            "55 3:1-17"
+          ]
+        }
+      ],
+      "record_hash": "e2c15b72295dcd504dade310e3e08246d37eefcbfe18e22acfad76a890eed2fb"
     },
     "3feab4dd-c830-4ead-ad57-24d853847088:nl:f4d98b978708362d88a9913d17b1b5743d7e4ad5d58af5ff7afb692cb2e015e1:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "3feab4dd-c830-4ead-ad57-24d853847088",
@@ -303679,6 +303704,63 @@
       ],
       "record_hash": "3c60c6ea429f345ab2ea997d099203d25bdbbba1ed34fd57217be97a4c839afa"
     },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:de:2aa1304407315cdb1a663e969d9e8a98dc125e43d18dbdfb1f2ffb374ccfee66:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "de",
+      "content_hash": "2aa1304407315cdb1a663e969d9e8a98dc125e43d18dbdfb1f2ffb374ccfee66",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "e01aef71a0db9949e518db1e",
+          "quote": "Hebräer 1:10-12",
+          "before": "nd deine Jahre werden kein Ende haben – ",
+          "after": ".",
+          "spans": [
+            [
+              1970,
+              1985
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        },
+        {
+          "id": "9cebc2beb1fc932dd6688e22",
+          "quote": "2 Kor 5:7",
+          "before": "deln im Glauben und nicht im Schauen. – ",
+          "after": ". Zum zweiten Punkt ist die Wirklichkeit",
+          "spans": [
+            [
+              3310,
+              3319
+            ]
+          ],
+          "osis": "2Cor.5.7",
+          "queries": [
+            "47 5:7"
+          ]
+        },
+        {
+          "id": "cc22a9bdea8984a0d0522f86",
+          "quote": "Röm 6:13",
+          "before": "r Gott als Werkzeuge der Gerechtigkeit (",
+          "after": "), indem wir uns entscheiden, dem zu gla",
+          "spans": [
+            [
+              6283,
+              6291
+            ]
+          ],
+          "osis": "Rom.6.13",
+          "queries": [
+            "45 6:13"
+          ]
+        }
+      ],
+      "record_hash": "7690faf587496402227b53adbd42551a0e0a5889ff1c877b94d41438c76f4254"
+    },
     "971b8ffa-3721-4c08-b693-5aba9989618c:en:38f9ac60043fe978358918303971819db2b5956841da362f6a55b8872593473a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
       "locale": "en",
@@ -303995,6 +304077,79 @@
         }
       ],
       "record_hash": "b3c11e4c39e569a317952f117450d1230ad6c0d8fec7791115b509c4d3c3edab"
+    },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:nl:69acfc11919f504803cf78eb363dce6fff9753ec1eee77e434742f4914e35d35:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "nl",
+      "content_hash": "69acfc11919f504803cf78eb363dce6fff9753ec1eee77e434742f4914e35d35",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "3d19cbe3ee3033ea3026f3c6",
+          "quote": "Luk 21:29-31",
+          "before": "en dat het Koninkrijk van God nabij is –",
+          "after": ".",
+          "spans": [
+            [
+              498,
+              510
+            ]
+          ],
+          "osis": "Luke.21.29-Luke.21.31",
+          "queries": [
+            "42 21:29-31"
+          ]
+        },
+        {
+          "id": "2899ece84c65633c477486c2",
+          "quote": "Hebreeën 1:10-12",
+          "before": "fde, en Uw jaren zullen niet ophouden. –",
+          "after": ".",
+          "spans": [
+            [
+              1952,
+              1968
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        },
+        {
+          "id": "0562324f748a388862efa826",
+          "quote": "2 Korinthe 5:7",
+          "before": "en door geloof, niet door aanschouwen: –",
+          "after": ". Wat het tweede punt betreft, is de wer",
+          "spans": [
+            [
+              3304,
+              3318
+            ]
+          ],
+          "osis": "2Cor.5.7",
+          "queries": [
+            "47 5:7"
+          ]
+        },
+        {
+          "id": "0ae6fa74541aa2f284d360f9",
+          "quote": "Romeinen 6:13",
+          "before": "den Gode tot wapenen der gerechtigheid (",
+          "after": "), door ervoor te kiezen te geloven wat ",
+          "spans": [
+            [
+              6013,
+              6026
+            ]
+          ],
+          "osis": "Rom.6.13",
+          "queries": [
+            "45 6:13"
+          ]
+        }
+      ],
+      "record_hash": "44f52ec69703c356e225eb6a1c7b172f43d1acbebd237c42fc9c6e39903415f1"
     },
     "971b8ffa-3721-4c08-b693-5aba9989618c:pt:353e392d655fca66332bf8a8a79fbf49c09da96fd494a2bd4126cf88de704385:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",

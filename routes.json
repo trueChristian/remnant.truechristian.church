@@ -45000,11 +45000,12 @@
       },
       "971b8ffa-3721-4c08-b693-5aba9989618c": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-17",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "leitartikel",
+        "alias": "vom-herausgeber-6",
+        "history": [
+          "/de/articles/from-the-editor-17/"
+        ],
+        "fallback": false
       },
       "972d22a3-2ede-4b6b-941d-619875baf8d9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -147179,11 +147180,12 @@
       },
       "3feab4dd-c830-4ead-ad57-24d853847088": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
+        "category_slug": "fortellinger-fra-hjemmene",
         "alias": "hans-landis",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "history": [
+          "/nb/articles/hans-landis/"
+        ],
+        "fallback": false
       },
       "3ffcb3c6-d608-4d9a-8efb-bf25a3652040": {
         "category_id": "14ce3df8-6bae-5930-b2c4-2ab582ee1ea1",
@@ -159699,11 +159701,12 @@
       },
       "971b8ffa-3721-4c08-b693-5aba9989618c": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-17",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "redactioneel",
+        "alias": "van-de-redacteur-6",
+        "history": [
+          "/nl/articles/from-the-editor-17/"
+        ],
+        "fallback": false
       },
       "972d22a3-2ede-4b6b-941d-619875baf8d9": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
