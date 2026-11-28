@@ -101391,11 +101391,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "סיפורי-הבית",
+        "alias": "מחשבות-על-מראה-הקדושים",
+        "history": [
+          "/he/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",
@@ -101860,11 +101861,12 @@
       },
       "dce3d3b3-8b56-4be5-9674-e682b97d3b43": {
         "category_id": "9e94ac9c-a808-540e-9c71-be0d8731d5a1",
-        "category_slug": "articles",
-        "alias": "from-the-editor-27",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "דבר-העורך",
+        "alias": "מאת-העורך",
+        "history": [
+          "/he/articles/from-the-editor-27/"
+        ],
+        "fallback": false
       },
       "dda47f1b-68c2-491b-b85d-accf7a24f4db": {
         "category_id": "14be14fb-c6ac-5ea1-bfb5-f899109c5ca9",
@@ -109712,11 +109714,12 @@
       },
       "964d8688-6491-4ede-9271-c923db4c4079": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
-        "category_slug": "articles",
-        "alias": "the-call-to-discipleship",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "मसीही-जीवन",
+        "alias": "शिष्यत्व-का-आह्वान",
+        "history": [
+          "/hi/articles/the-call-to-discipleship/"
+        ],
+        "fallback": false
       },
       "968835a0-60ce-4fd2-8ec7-e9373d7a56c5": {
         "category_id": "88107a5a-274e-53cd-a586-ff44f4ed67cc",
@@ -200686,11 +200689,12 @@
       },
       "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1": {
         "category_id": "9514e8ea-e431-5806-a5f3-0953a922c074",
-        "category_slug": "articles",
-        "alias": "thoughts-on-the-martyrs-mirror",
-        "history": [],
-        "fallback": false,
-        "placeholder": true
+        "category_slug": "historia-za-nyumbani",
+        "alias": "tafakari-kuhusu-kioo-cha-mashahidi",
+        "history": [
+          "/sw/articles/thoughts-on-the-martyrs-mirror/"
+        ],
+        "fallback": false
       },
       "cbfbc379-cb4c-49a9-8119-2119ce52b24f": {
         "category_id": "2929e2be-19ce-58e2-97aa-0ab40108e60a",

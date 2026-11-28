@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "8624c74dc655270de751915b537de8b795eb521a62146b0242033ade120d4e72",
+  "integrity": "6a6e64db0ee39e6359c2ba1a83c8f80c83e06a720e5f9ccf4b4f56dad9413c60",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -300938,6 +300938,79 @@
       ],
       "record_hash": "b409cfaef66059736285b6eceb62190ef0b39cc7b8123c35e55ad330d6b02dfc"
     },
+    "964d8688-6491-4ede-9271-c923db4c4079:hi:7cd23fa92d4660d6ad8d938791dd5c702ec3d8b9a8e20169e732359b04553f9f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "964d8688-6491-4ede-9271-c923db4c4079",
+      "locale": "hi",
+      "content_hash": "7cd23fa92d4660d6ad8d938791dd5c702ec3d8b9a8e20169e732359b04553f9f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "7c11cae5ec53f71022ad8a2e",
+          "quote": "मत्ती 4:18-22",
+          "before": " अपने पिता को छोड़कर उनके पीछे चल पड़े –",
+          "after": ".",
+          "spans": [
+            [
+              2261,
+              2274
+            ]
+          ],
+          "osis": "Matt.4.18-Matt.4.22",
+          "queries": [
+            "40 4:18-22"
+          ]
+        },
+        {
+          "id": "f6f57ec6a61fb305c0943317",
+          "quote": "यूहन्ना 21:3-6",
+          "before": "्या के कारण वे उसे खींच नहीं पा रहे थे –",
+          "after": ".",
+          "spans": [
+            [
+              5878,
+              5892
+            ]
+          ],
+          "osis": "John.21.3-John.21.6",
+          "queries": [
+            "43 21:3-6"
+          ]
+        },
+        {
+          "id": "44e9ed8f7352ccf72a1cf5f2",
+          "quote": "रोमियों 7:18",
+          "before": " उसे कैसे करूँ, यह मुझसे नहीं बन पड़ता –",
+          "after": ".",
+          "spans": [
+            [
+              6665,
+              6677
+            ]
+          ],
+          "osis": "Rom.7.18",
+          "queries": [
+            "45 7:18"
+          ]
+        },
+        {
+          "id": "e124ecf5e258e72ae9c2e698",
+          "quote": "लूका 9:62",
+          "before": "है, परमेश्वर के राज्य के योग्य नहीं है –",
+          "after": ". पतरस ने पीछे देखा। उसने कहा, “मैं मछली",
+          "spans": [
+            [
+              7152,
+              7161
+            ]
+          ],
+          "osis": "Luke.9.62",
+          "queries": [
+            "42 9:62"
+          ]
+        }
+      ],
+      "record_hash": "5ba379f46c26907317bdffca18c244964e8affee61bcdbc95ce95616796201a0"
+    },
     "964d8688-6491-4ede-9271-c923db4c4079:id:08a3ef282c5beb09460179be6a3a872050189f9a1cf6d1b4aee45ff53052cbb4:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "964d8688-6491-4ede-9271-c923db4c4079",
       "locale": "id",
@@ -393580,6 +393653,14 @@
       ],
       "record_hash": "4c4b2e6ecc3f3d774ba70dccc7c62a6672dbcbde302c91a5232bee091a6075dd"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:he:6e3929af4c4ed096809ed2a998ec6e15c0236b14de831418fcd3c15665c27331:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "he",
+      "content_hash": "6e3929af4c4ed096809ed2a998ec6e15c0236b14de831418fcd3c15665c27331",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [],
+      "record_hash": "22f64bcc47a3ce5ee86ad36a3444f38247a2731e3ba14116d5aa8f958dbf245f"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:hi:3c4255c20e429df5c45d05caefbd159bd3d95767f0fc80a2c1c35e5b25360c3b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "hi",
@@ -393699,6 +393780,48 @@
         }
       ],
       "record_hash": "ac8450eefdc2bafba9fc0b07b91e868a4762305ab2d437076f4a5f6d013c5cae"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:sw:eb1803bb6050b2ad014008bb7c497aae31c44d7304e9c3858368d29b677a1159:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "sw",
+      "content_hash": "eb1803bb6050b2ad014008bb7c497aae31c44d7304e9c3858368d29b677a1159",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "c4bd3bb5584685a964f9aaf7",
+          "quote": "1 Pet. 5:4",
+          "before": "i; ingia katika furaha ya Bwana wako’” (",
+          "after": "; Mt. 24:31; 25:2).",
+          "spans": [
+            [
+              6294,
+              6304
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "86021ccb80185007fc6e81d3",
+          "quote": "Mt. 24:31; 25:2",
+          "before": "ika furaha ya Bwana wako’” (1 Pet. 5:4; ",
+          "after": ").",
+          "spans": [
+            [
+              6306,
+              6321
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "31b238ebe1350bac2f3da19202532dc03dbfb769ebdb9d2ed0645655b58d9e67"
     },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:ur:6e7c2749daf6423af3869cc11318bddfd261ad0b26cad5992db6aea4f3342ed8:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
@@ -417009,6 +417132,95 @@
         }
       ],
       "record_hash": "8afe1c81a928778385806d61dd146434839740f5d096cb5470748d4a85ad3668"
+    },
+    "dce3d3b3-8b56-4be5-9674-e682b97d3b43:he:f5bf5035f35b4a720bbdebdeb40666c958eaf0b00960bcc2bcf93d446d403b1d:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",
+      "locale": "he",
+      "content_hash": "f5bf5035f35b4a720bbdebdeb40666c958eaf0b00960bcc2bcf93d446d403b1d",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "9d06321dfe112dc4d8ee2cb9",
+          "quote": "משלי 21:1",
+          "before": "׳ כפלגי מים: הוא מטה אותו לכל אשר ירצה –",
+          "after": ". אם אנו חושבים שכמאמינים יהיה לנו חלק ב",
+          "spans": [
+            [
+              2456,
+              2465
+            ]
+          ],
+          "osis": "Prov.21.1",
+          "queries": [
+            "20 21:1"
+          ]
+        },
+        {
+          "id": "d39deb55c14e363a4a4d51c5",
+          "quote": "דניאל 4:31-32",
+          "before": " בממלכת בני האדם, ונותן אותה למי שירצה –",
+          "after": ".",
+          "spans": [
+            [
+              2662,
+              2675
+            ]
+          ],
+          "osis": "Dan.4.31-Dan.4.32",
+          "queries": [
+            "27 4:31-32"
+          ]
+        },
+        {
+          "id": "5471f02712ffeb4ee4cc69a6",
+          "quote": "יוחנן 18:36",
+          "before": "י היו נלחמים … אך כעת ממלכתי אינה מכאן –",
+          "after": ". כאשר אנו מבינים ומפתחים השקפת עולם איש",
+          "spans": [
+            [
+              2902,
+              2913
+            ]
+          ],
+          "osis": "John.18.36",
+          "queries": [
+            "43 18:36"
+          ]
+        },
+        {
+          "id": "02d5b9fbc26430e07e89bf67",
+          "quote": "מתי 17:20",
+          "before": "ור; ושום דבר לא יהיה בלתי אפשרי עבורכם –",
+          "after": ". הבה נזכור תמיד כי …תפילתו היעילה והנלה",
+          "spans": [
+            [
+              4935,
+              4944
+            ]
+          ],
+          "osis": "Matt.17.20",
+          "queries": [
+            "40 17:20"
+          ]
+        },
+        {
+          "id": "2edeb58f5b27b4690fad943f",
+          "quote": "יעקב 5:16",
+          "before": "ילתו היעילה והנלהבת של צדיק פועלת רבות –",
+          "after": ".",
+          "spans": [
+            [
+              5016,
+              5025
+            ]
+          ],
+          "osis": "Jas.5.16",
+          "queries": [
+            "59 5:16"
+          ]
+        }
+      ],
+      "record_hash": "7f3e6f803e8e0712dac363e0a600815b73cf337a9322313ca22ec078660fbe6c"
     },
     "dce3d3b3-8b56-4be5-9674-e682b97d3b43:hi:0bc760e26a11977cdd98d1f38c2e118ddaffce606a7407f640f9b5b6638baf17:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "dce3d3b3-8b56-4be5-9674-e682b97d3b43",
