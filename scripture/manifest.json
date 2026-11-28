@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "integrity": "6a6e64db0ee39e6359c2ba1a83c8f80c83e06a720e5f9ccf4b4f56dad9413c60",
+  "integrity": "828741e184a2f26efda9f042fb58257474f61fdbcc7a29d722007063876b5303",
   "records": {
     "00005b81-257e-4cbb-b57c-c2a805483312:en:8431e27c40bd5bd5c0451d43184cec162297c2374dbd1cb78eac84c3d826ac2a:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "00005b81-257e-4cbb-b57c-c2a805483312",
@@ -43035,6 +43035,95 @@
       ],
       "record_hash": "bb3f401f2e83d29a3bb149c1d211b40bc3f9b3c0521b748b05a80d4ac934f019"
     },
+    "10d20eec-3e71-404f-9f8d-8068b010381e:he:b30750b2cc0ac53ee3861faa8e5e4f35bdfbb8c3cddae7aeac49a808cb3f6c89:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "10d20eec-3e71-404f-9f8d-8068b010381e",
+      "locale": "he",
+      "content_hash": "b30750b2cc0ac53ee3861faa8e5e4f35bdfbb8c3cddae7aeac49a808cb3f6c89",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "26bb8d065dc5c14c70f4779f",
+          "quote": "שיר השירים 8:6",
+          "before": "אה ובצרות עין. הקנאה אכזרית כשאול. (ראו ",
+          "after": "). ״קנאה [היא] ריקבון העצמות״ – משלי 14:",
+          "spans": [
+            [
+              2057,
+              2071
+            ]
+          ],
+          "osis": "Song.8.6",
+          "queries": [
+            "22 8:6"
+          ]
+        },
+        {
+          "id": "fcbad13df593299ed44a404a",
+          "quote": "משלי 14:30",
+          "before": "ירים 8:6). ״קנאה [היא] ריקבון העצמות״ – ",
+          "after": ". וכן, ״החֵמה אכזרית והכעס משתולל; אך מי",
+          "spans": [
+            [
+              2107,
+              2117
+            ]
+          ],
+          "osis": "Prov.14.30",
+          "queries": [
+            "20 14:30"
+          ]
+        },
+        {
+          "id": "04902e1a9a4dd95e6a54e0c1",
+          "quote": "משלי 27:4",
+          "before": "משתולל; אך מי יכול לעמוד בפני הקנאה?״ – ",
+          "after": ". הקנאה חמקמקה מאוד. היא יכולה להיות מוס",
+          "spans": [
+            [
+              2193,
+              2202
+            ]
+          ],
+          "osis": "Prov.27.4",
+          "queries": [
+            "20 27:4"
+          ]
+        },
+        {
+          "id": "1b754f164ce3188bc545c8ad",
+          "quote": "אל האפסים 2:8-10",
+          "before": ", אשר אלוהים הכין מראש למען נחיה בהם״ – ",
+          "after": ".",
+          "spans": [
+            [
+              5432,
+              5448
+            ]
+          ],
+          "osis": "Eph.2.8-Eph.2.10",
+          "queries": [
+            "49 2:8-10"
+          ]
+        },
+        {
+          "id": "9514b79a4b8817cb66767685",
+          "quote": "אל הפיליפים 4:8",
+          "before": "ה ואם יש דבר הראוי לשבח, על אלה חשבו״ – ",
+          "after": ".",
+          "spans": [
+            [
+              6374,
+              6389
+            ]
+          ],
+          "osis": "Phil.4.8",
+          "queries": [
+            "50 4:8"
+          ]
+        }
+      ],
+      "record_hash": "a18884b976c1fc69f05502aaa4523efb468ded59b1277a79bdaa7f7119936055"
+    },
     "10d20eec-3e71-404f-9f8d-8068b010381e:hi:206ec0194a8259e4fe55c54f3623bcd2eaf3af7a9fb5e4d2097608eddf595394:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "10d20eec-3e71-404f-9f8d-8068b010381e",
       "locale": "hi",
@@ -62964,6 +63053,208 @@
         }
       ],
       "record_hash": "01c38eeae2cdb61541cf8ae1b8e8f078ceb10f5b25ae1498ea57e2257db4ce10"
+    },
+    "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:sv:ca7411e0341462ea1aa59060851f9bb7f80eadf7f35b2a0946b689f258c52a84:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
+      "locale": "sv",
+      "content_hash": "ca7411e0341462ea1aa59060851f9bb7f80eadf7f35b2a0946b689f258c52a84",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "47b562d1a4113938e2e35bc7",
+          "quote": "Efesierbrevet 5:33",
+          "before": "till att hon visar aktning för sin man –",
+          "after": ".",
+          "spans": [
+            [
+              1484,
+              1502
+            ]
+          ],
+          "osis": "Eph.5.33",
+          "queries": [
+            "49 5:33"
+          ]
+        },
+        {
+          "id": "c86cb1c358dec2ca370f2788",
+          "quote": "Första Petrusbrevet 3:1",
+          "before": "i hustrur, underordna er era egna män… –",
+          "after": ".",
+          "spans": [
+            [
+              1592,
+              1615
+            ]
+          ],
+          "osis": "1Pet.3.1",
+          "queries": [
+            "60 3:1"
+          ]
+        },
+        {
+          "id": "65333ff08ad34ef27205f337",
+          "quote": "Första Petrusbrevet 3:6",
+          "before": "ade honom herre: hennes döttrar är ni… –",
+          "after": ".",
+          "spans": [
+            [
+              1746,
+              1769
+            ]
+          ],
+          "osis": "1Pet.3.6",
+          "queries": [
+            "60 3:6"
+          ]
+        },
+        {
+          "id": "485516889805359638a4dff3",
+          "quote": "Efesierbrevet 5:22",
+          "before": "derordna er era egna män, såsom Herren –",
+          "after": ".",
+          "spans": [
+            [
+              1861,
+              1879
+            ]
+          ],
+          "osis": "Eph.5.22",
+          "queries": [
+            "49 5:22"
+          ]
+        },
+        {
+          "id": "b734f2cff704b30aa08be7ab",
+          "quote": "Första Korintierbrevet 11:3",
+          "before": "vud är mannen; och Kristi huvud är Gud –",
+          "after": ".",
+          "spans": [
+            [
+              2037,
+              2064
+            ]
+          ],
+          "osis": "1Cor.11.3",
+          "queries": [
+            "46 11:3"
+          ]
+        },
+        {
+          "id": "a7c44901a2b4524942fb0bd0",
+          "quote": "Första Timoteusbrevet 2:11-14",
+          "before": " blev bedragen och föll i överträdelse –",
+          "after": ".",
+          "spans": [
+            [
+              2384,
+              2413
+            ]
+          ],
+          "osis": "1Tim.2.11-1Tim.2.14",
+          "queries": [
+            "54 2:11-14"
+          ]
+        },
+        {
+          "id": "0d81679fec95cdc9f0870633",
+          "quote": "Efesierbrevet 5:24",
+          "before": "ra [underordnade] sina egna män i allt –",
+          "after": ".",
+          "spans": [
+            [
+              2563,
+              2581
+            ]
+          ],
+          "osis": "Eph.5.24",
+          "queries": [
+            "49 5:24"
+          ]
+        },
+        {
+          "id": "5f87baa0947c71d67bb9ea3d",
+          "quote": "Första Korintierbrevet 14:34",
+          "before": "nderordna sig, såsom också lagen säger –",
+          "after": ".",
+          "spans": [
+            [
+              2764,
+              2792
+            ]
+          ],
+          "osis": "1Cor.14.34",
+          "queries": [
+            "46 14:34"
+          ]
+        },
+        {
+          "id": "e2f406d6614e228b05b3f379",
+          "quote": "Titus 2:3-5",
+          "before": " män, så att Guds ord inte blir smädat –",
+          "after": ".",
+          "spans": [
+            [
+              6068,
+              6079
+            ]
+          ],
+          "osis": "Titus.2.3-Titus.2.5",
+          "queries": [
+            "56 2:3-5"
+          ]
+        },
+        {
+          "id": "9b8f9210761cae8ae45a1ba9",
+          "quote": "Första Moseboken 2:18",
+          "before": "om [lämplig, passande, kompletterande] –",
+          "after": ".",
+          "spans": [
+            [
+              6769,
+              6790
+            ]
+          ],
+          "osis": "Gen.2.18",
+          "queries": [
+            "1 2:18"
+          ]
+        },
+        {
+          "id": "d0f9bda9a433d17439dfbe89",
+          "quote": "Titus 2:4",
+          "before": "tt älska sina män, att älska sina barn –",
+          "after": ". Ordet ”älska” i att älska sina män bet",
+          "spans": [
+            [
+              6915,
+              6924
+            ]
+          ],
+          "osis": "Titus.2.4",
+          "queries": [
+            "56 2:4"
+          ]
+        },
+        {
+          "id": "dacd232a6a0a7e20f80c694a",
+          "quote": "Första Petrusbrevet 3:1-2 & 3:6-7",
+          "before": "ets nåd; så att era böner inte hindras –",
+          "after": ".",
+          "spans": [
+            [
+              8912,
+              8949
+            ]
+          ],
+          "osis": "1Pet.3.1-1Pet.3.2,1Pet.3.6-1Pet.3.7",
+          "queries": [
+            "60 3:1-2",
+            "60 3:6-7"
+          ]
+        }
+      ],
+      "record_hash": "d23178a434f6a5571723bb1d73364a38ea01bf85240a0c5f9a9cf1f998b662fc"
     },
     "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035:ur:b66b3f8901c9e872e9c217789cbee96f827bb1ed09ecb922587b496ee698e49c:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "1c698fb4-f4e6-419b-bdcc-1b25cbe2b035",
@@ -184419,6 +184710,223 @@
       ],
       "record_hash": "26541dfedde8049055be5e93673e5ce95381098156280e4bb494dd40c61ac4a9"
     },
+    "55b18915-e213-448c-8fe1-d430e195e768:ar:09bd858faaba3aa9df211f5cb2accb3bb520092495edf56e61f8eb1726333d9f:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "55b18915-e213-448c-8fe1-d430e195e768",
+      "locale": "ar",
+      "content_hash": "09bd858faaba3aa9df211f5cb2accb3bb520092495edf56e61f8eb1726333d9f",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d58e3cd0a0553b97319dd755",
+          "quote": "متى 14:28-29",
+          "before": "ن السفينة مشى على الماء ليذهب إلى يسوع –",
+          "after": ".",
+          "spans": [
+            [
+              223,
+              235
+            ]
+          ],
+          "osis": "Matt.14.28-Matt.14.29",
+          "queries": [
+            "40 14:28-29"
+          ]
+        },
+        {
+          "id": "c94e46c072bfb020778cb454",
+          "quote": "متى 14:22",
+          "before": " الضفة المقابلة، بينما كان يصرف الجموع –",
+          "after": ".",
+          "spans": [
+            [
+              557,
+              566
+            ]
+          ],
+          "osis": "Matt.14.22",
+          "queries": [
+            "40 14:22"
+          ]
+        },
+        {
+          "id": "df76c9649a62bb932c67c614",
+          "quote": "متى 14:25-27",
+          "before": "وع قائلاً: «تشجعوا! أنا هو. لا تخافوا» –",
+          "after": ".",
+          "spans": [
+            [
+              1008,
+              1020
+            ]
+          ],
+          "osis": "Matt.14.25-Matt.14.27",
+          "queries": [
+            "40 14:25-27"
+          ]
+        },
+        {
+          "id": "eb8c45bf6e9902854b874ac9",
+          "quote": "متى 14:28",
+          "before": "إن كنت أنت فمرني أن آتي إليك على الماء –",
+          "after": ". فيمَ كان بطرس يفكر؟ لم يكن قد مشى على ",
+          "spans": [
+            [
+              1121,
+              1130
+            ]
+          ],
+          "osis": "Matt.14.28",
+          "queries": [
+            "40 14:28"
+          ]
+        },
+        {
+          "id": "4c3620ff52077078d33c679b",
+          "quote": "لوقا 9:3",
+          "before": "ولا مالًا؛ ولا يكن لكل واحد منكم ثوبان –",
+          "after": ".",
+          "spans": [
+            [
+              3176,
+              3184
+            ]
+          ],
+          "osis": "Luke.9.3",
+          "queries": [
+            "42 9:3"
+          ]
+        },
+        {
+          "id": "3646908c56ac64acf5d48933",
+          "quote": "لوقا 22:35",
+          "before": "ا أحذية أأعوزكم شيء؟» فقالوا: «لا شيء» –",
+          "after": ".",
+          "spans": [
+            [
+              3322,
+              3332
+            ]
+          ],
+          "osis": "Luke.22.35",
+          "queries": [
+            "42 22:35"
+          ]
+        },
+        {
+          "id": "4d6abe955c1e0df00381c800",
+          "quote": "متى 14:30-32",
+          "before": "ذا شككت؟» ولما دخلا السفينة هدأت الريح –",
+          "after": ".",
+          "spans": [
+            [
+              4949,
+              4961
+            ]
+          ],
+          "osis": "Matt.14.30-Matt.14.32",
+          "queries": [
+            "40 14:30-32"
+          ]
+        },
+        {
+          "id": "54365404d332e0c2c9435dd4",
+          "quote": "يوحنا 1:1",
+          "before": "ن مع الله، وكان الكلمة [لوغوس] هو الله –",
+          "after": ". ومن الكلمة اليونانية لوغوس نأخذ الكلمة",
+          "spans": [
+            [
+              5922,
+              5931
+            ]
+          ],
+          "osis": "John.1.1",
+          "queries": [
+            "43 1:1"
+          ]
+        },
+        {
+          "id": "abf44616e95f2a25c6e216f9",
+          "quote": "يوحنا 16:13",
+          "before": "هو، روح الحق، فإنه يرشدكم إلى كل الحق… –",
+          "after": ".",
+          "spans": [
+            [
+              6326,
+              6337
+            ]
+          ],
+          "osis": "John.16.13",
+          "queries": [
+            "43 16:13"
+          ]
+        },
+        {
+          "id": "e7e9cbc28b1ffdc44b12985c",
+          "quote": "متى 14:31",
+          "before": "قال لبطرس: …يا قليل الإيمان لماذا شككت؟ ",
+          "after": ". كان بطرس قد مشى للتو على الماء—إنجاز ل",
+          "spans": [
+            [
+              7153,
+              7162
+            ]
+          ],
+          "osis": "Matt.14.31",
+          "queries": [
+            "40 14:31"
+          ]
+        },
+        {
+          "id": "bbd58b0332d1900cc30843a7",
+          "quote": "متى 17:20",
+          "before": "ى هناك فينتقل، ولا يكون لكم شيء مستحيل –",
+          "after": ".",
+          "spans": [
+            [
+              7434,
+              7443
+            ]
+          ],
+          "osis": "Matt.17.20",
+          "queries": [
+            "40 17:20"
+          ]
+        },
+        {
+          "id": "31b54b295c6d372b8a3701d4",
+          "quote": "متى 14:32",
+          "before": " والأمواج—ولما دخلا السفينة هدأت الريح –",
+          "after": ". وأثبت نفسه سيد العالم الروحي—فجاء الذي",
+          "spans": [
+            [
+              8009,
+              8018
+            ]
+          ],
+          "osis": "Matt.14.32",
+          "queries": [
+            "40 14:32"
+          ]
+        },
+        {
+          "id": "67e9a247e0fcc3d81d39b664",
+          "quote": "متى 14:33",
+          "before": "نة وسجدوا له قائلين: حقًا أنت ابن الله –",
+          "after": ".",
+          "spans": [
+            [
+              8117,
+              8126
+            ]
+          ],
+          "osis": "Matt.14.33",
+          "queries": [
+            "40 14:33"
+          ]
+        }
+      ],
+      "record_hash": "a592d791976466b31c20232b0d7ed8b5cbdcbeef43532395abf0a0d0b7aab05f"
+    },
     "55b18915-e213-448c-8fe1-d430e195e768:de:80869f251c250f8e70e121b600d25dc97b8dc316a4c2d5ab427329498aad5d36:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "55b18915-e213-448c-8fe1-d430e195e768",
       "locale": "de",
@@ -209944,6 +210452,239 @@
       ],
       "record_hash": "ccb086863829a8aad568c28902b11e1d40284f0b5c4fa8cda4de21c4b44754bf"
     },
+    "6485a6ed-e76f-4142-9e27-e649823cb1a3:nl:fdac6d18a422396c5cd814e29914a868ccfc83bf38cead50068be0044b61441e:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
+      "locale": "nl",
+      "content_hash": "fdac6d18a422396c5cd814e29914a868ccfc83bf38cead50068be0044b61441e",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "13ab7c62af9d05934039c714",
+          "quote": "Mattheüs 5:8",
+          "before": "en van hart; want zij zullen God zien – ",
+          "after": ".",
+          "spans": [
+            [
+              1816,
+              1828
+            ]
+          ],
+          "osis": "Matt.5.8",
+          "queries": [
+            "40 5:8"
+          ]
+        },
+        {
+          "id": "81276a8a641e79ac09c54939",
+          "quote": "1 Petrus 3:3-6",
+          "before": "ele verschrikking bevreesd laat maken – ",
+          "after": ".",
+          "spans": [
+            [
+              2413,
+              2427
+            ]
+          ],
+          "osis": "1Pet.3.3-1Pet.3.6",
+          "queries": [
+            "60 3:3-6"
+          ]
+        },
+        {
+          "id": "9e3730eb28e0aa3c011c6eba",
+          "quote": "Psalm 19:7",
+          "before": "ERE is volmaakt, zij bekeert de ziel… – ",
+          "after": ". Onthoud: De vreze van de HEERE is het ",
+          "spans": [
+            [
+              5526,
+              5536
+            ]
+          ],
+          "osis": "Ps.19.7",
+          "queries": [
+            "19 19:7"
+          ]
+        },
+        {
+          "id": "2181e327a5792cef80584a6e",
+          "quote": "Spreuken 9:10",
+          "before": "n van wijsheid [niet van verwarring]… – ",
+          "after": ".",
+          "spans": [
+            [
+              5638,
+              5651
+            ]
+          ],
+          "osis": "Prov.9.10",
+          "queries": [
+            "20 9:10"
+          ]
+        },
+        {
+          "id": "666d8928954dc0987b7102e0",
+          "quote": "2 Timoteüs 2:4-22",
+          "before": " de Heere aanroepen uit een rein hart – ",
+          "after": ".",
+          "spans": [
+            [
+              6288,
+              6305
+            ]
+          ],
+          "osis": "2Tim.2.4-2Tim.2.22",
+          "queries": [
+            "55 2:4-22"
+          ]
+        },
+        {
+          "id": "3da3e0abde479e0de39b7dd7",
+          "quote": "Hebreeën 11:17",
+          "before": "omelingen gerekend zouden worden. – zie ",
+          "after": " en Genesis 22:13. Als God ons in Zijn W",
+          "spans": [
+            [
+              8773,
+              8787
+            ]
+          ],
+          "osis": "Heb.11.17",
+          "queries": [
+            "58 11:17"
+          ]
+        },
+        {
+          "id": "485b96e6cac0abff55d31f54",
+          "quote": "Genesis 22:13",
+          "before": " zouden worden. – zie Hebreeën 11:17 en ",
+          "after": ". Als God ons in Zijn Woord zegt de godd",
+          "spans": [
+            [
+              8791,
+              8804
+            ]
+          ],
+          "osis": "Gen.22.13",
+          "queries": [
+            "1 22:13"
+          ]
+        },
+        {
+          "id": "1791ce1db78adbc8c2cd0760",
+          "quote": "1 Timoteüs 2:9-10",
+          "before": "godsvrucht belijden) met goede werken – ",
+          "after": ".",
+          "spans": [
+            [
+              10357,
+              10374
+            ]
+          ],
+          "osis": "1Tim.2.9-1Tim.2.10",
+          "queries": [
+            "54 2:9-10"
+          ]
+        },
+        {
+          "id": "67e85d65861cdba89434efc2",
+          "quote": "Titus 2:11-12",
+          "before": "en leven in deze tegenwoordige wereld – ",
+          "after": ".",
+          "spans": [
+            [
+              11339,
+              11352
+            ]
+          ],
+          "osis": "Titus.2.11-Titus.2.12",
+          "queries": [
+            "56 2:11-12"
+          ]
+        },
+        {
+          "id": "70926b8ba6658119ca2ab931",
+          "quote": "Jesaja 61:10",
+          "before": "een bruid zich tooit met haar juwelen – ",
+          "after": ".",
+          "spans": [
+            [
+              11661,
+              11673
+            ]
+          ],
+          "osis": "Isa.61.10",
+          "queries": [
+            "23 61:10"
+          ]
+        },
+        {
+          "id": "f896a8f85d178e3f646bdc27",
+          "quote": "Openbaring 21:2-3",
+          "before": "elf zal bij hen zijn en hun God zijn. – ",
+          "after": ".",
+          "spans": [
+            [
+              12568,
+              12585
+            ]
+          ],
+          "osis": "Rev.21.2-Rev.21.3",
+          "queries": [
+            "66 21:2-3"
+          ]
+        },
+        {
+          "id": "cc74bcea3e5e398f0fbd4c8a",
+          "quote": "Galaten 6:7",
+          "before": "t een mens zaait, zal hij ook oogsten – ",
+          "after": ". Laat u niet misleiden. Die tekst is oo",
+          "spans": [
+            [
+              13113,
+              13124
+            ]
+          ],
+          "osis": "Gal.6.7",
+          "queries": [
+            "48 6:7"
+          ]
+        },
+        {
+          "id": "cffb642afeef6dd330800821",
+          "quote": "Mattheüs 10:28",
+          "before": "l als lichaam kan verderven in de hel – ",
+          "after": ". Terwijl wij in deze laatste tijden lev",
+          "spans": [
+            [
+              14506,
+              14520
+            ]
+          ],
+          "osis": "Matt.10.28",
+          "queries": [
+            "40 10:28"
+          ]
+        },
+        {
+          "id": "00b246427ead5f8a4cff28ad",
+          "quote": "Johannes 14:6-7",
+          "before": "nu aan kent u Hem en hebt u Hem gezien –",
+          "after": ". Prijs de Heere dat God ons een voorbee",
+          "spans": [
+            [
+              14959,
+              14974
+            ]
+          ],
+          "osis": "John.14.6-John.14.7",
+          "queries": [
+            "43 14:6-7"
+          ]
+        }
+      ],
+      "record_hash": "689be62b7cd538ee7e2de35a41e9dcb2ea70f87c51debb1e28deb8d1dd846348"
+    },
     "6485a6ed-e76f-4142-9e27-e649823cb1a3:pt:e66a10b38a70dd9b602f39d0e473d32a39e99e7bc7cca2b66dd2c98f115b5ab9:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "6485a6ed-e76f-4142-9e27-e649823cb1a3",
       "locale": "pt",
@@ -224291,6 +225032,95 @@
         }
       ],
       "record_hash": "47dd2d6db6c94c78881da36b90f50456a0b422e6811972f550cc700dab40ca44"
+    },
+    "71a8a627-ef21-4efb-9dd1-36d5124ac192:he:6e4a16477582feb43b805bf8ee1e589bc416c3656b8327939b0ddee1860ea799:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "71a8a627-ef21-4efb-9dd1-36d5124ac192",
+      "locale": "he",
+      "content_hash": "6e4a16477582feb43b805bf8ee1e589bc416c3656b8327939b0ddee1860ea799",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "d9262ed6f68904579689363c",
+          "quote": "מתי 24:6",
+          "before": " אלה חייבים לקרות, אך עדיין אין זה הקץ —",
+          "after": ". הבה נזכור שאין עלינו להיבהל. במקום זאת",
+          "spans": [
+            [
+              1510,
+              1518
+            ]
+          ],
+          "osis": "Matt.24.6",
+          "queries": [
+            "40 24:6"
+          ]
+        },
+        {
+          "id": "0f8277b98f6095b8b9c6cc4a",
+          "quote": "מתי 24:13",
+          "before": "ו לזכור ש…מי שיחזיק מעמד עד הקץ ייוושע —",
+          "after": ". אם אנו, כמו פטרוס, נסיר את עינינו מאדו",
+          "spans": [
+            [
+              1612,
+              1621
+            ]
+          ],
+          "osis": "Matt.24.13",
+          "queries": [
+            "40 24:13"
+          ]
+        },
+        {
+          "id": "ddfab4427274128fae41ea15",
+          "quote": "התגלות 21:8",
+          "before": "יהיה להם] חלק באגם הבוער באש ובגופרית… —",
+          "after": ". אך המנצח יירש הכול; ואני אהיה אלוהיו ו",
+          "spans": [
+            [
+              1818,
+              1829
+            ]
+          ],
+          "osis": "Rev.21.8",
+          "queries": [
+            "66 21:8"
+          ]
+        },
+        {
+          "id": "4d9652cb4d9ed7e249bfa67c",
+          "quote": "התגלות 21:7",
+          "before": "ש הכול; ואני אהיה אלוהיו והוא יהיה בני —",
+          "after": ".",
+          "spans": [
+            [
+              1892,
+              1903
+            ]
+          ],
+          "osis": "Rev.21.7",
+          "queries": [
+            "66 21:7"
+          ]
+        },
+        {
+          "id": "6836cf8e00ab8f783815c3b8",
+          "quote": "מתי 8:10",
+          "before": "ונה גדולה כל כך לא מצאתי, אף לא בישראל —",
+          "after": ". אני גם מבחין במגמות הנוכחיות של כמה מב",
+          "spans": [
+            [
+              7380,
+              7388
+            ]
+          ],
+          "osis": "Matt.8.10",
+          "queries": [
+            "40 8:10"
+          ]
+        }
+      ],
+      "record_hash": "be4b5cc475fabe7f263bc8bda1cd41f0cbec9d870c7c7012d82d4e9b0e67825a"
     },
     "71a8a627-ef21-4efb-9dd1-36d5124ac192:hi:a700f98c223a478a6be07addf55a8e3ff51f5a5f3bad01ca102efe59deda2ffd:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "71a8a627-ef21-4efb-9dd1-36d5124ac192",
@@ -303206,6 +304036,63 @@
         }
       ],
       "record_hash": "0f0a8fbe0713cacb8a35975987010a4d8e4ee5fd4400c9c4c1f2d6facdfba186"
+    },
+    "971b8ffa-3721-4c08-b693-5aba9989618c:ru:1b50d1a1078f6a9b78c7e9aa79f6b0b3b36b15e14f9564855f3f0a94bae51c38:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
+      "locale": "ru",
+      "content_hash": "1b50d1a1078f6a9b78c7e9aa79f6b0b3b36b15e14f9564855f3f0a94bae51c38",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "56773a34da033542120b9967",
+          "quote": "Евреям 1:10–12",
+          "before": "о Ты тот же, и лета Твои не кончатся. — ",
+          "after": ".",
+          "spans": [
+            [
+              1630,
+              1644
+            ]
+          ],
+          "osis": "Heb.1.10-Heb.1.12",
+          "queries": [
+            "58 1:10-12"
+          ]
+        },
+        {
+          "id": "a16e23807930cbf0a69ebe86",
+          "quote": "2 Кор. 5:7",
+          "before": "ла: ибо мы ходим верою, а не видением — ",
+          "after": ". Что касается второй темы, то каждый из",
+          "spans": [
+            [
+              2861,
+              2871
+            ]
+          ],
+          "osis": "2Cor.5.7",
+          "queries": [
+            "47 5:7"
+          ]
+        },
+        {
+          "id": "f6645c15f1195555ea4e9256",
+          "quote": "Рим. 6:13",
+          "before": "и свои члены Богу в орудия праведности (",
+          "after": "), выбирая верить тому, что Бог говорит ",
+          "spans": [
+            [
+              5349,
+              5358
+            ]
+          ],
+          "osis": "Rom.6.13",
+          "queries": [
+            "45 6:13"
+          ]
+        }
+      ],
+      "record_hash": "2a9cbe68c76062c1d800cf716bd3693095971e179e1d9a8274923f64eeb30ade"
     },
     "971b8ffa-3721-4c08-b693-5aba9989618c:sw:cf74d767dc1b09f15d05d31e6f76e7e3d909c1c4c2f01ebc65208407f9e9ede7:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "971b8ffa-3721-4c08-b693-5aba9989618c",
@@ -393543,6 +394430,47 @@
       "markers": [],
       "record_hash": "8a6c4dd16ae103b052319d4a67b491ce2e3715fcfe207f69e72a71bbe529fb1e"
     },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:el:2e3a4bb136cda6f79814359808a74ea3df8176c3e121e765cf74ef717dc58029:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "el",
+      "content_hash": "2e3a4bb136cda6f79814359808a74ea3df8176c3e121e765cf74ef717dc58029",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "8a95ac827ff45f126090b3d4",
+          "quote": "Α΄ Πέτρ. 5:4",
+          "before": "ε πολλά· έλα στη χαρά του Κυρίου σου”» (",
+          "after": "· Ματθ. 24:31· 25:2).",
+          "spans": [
+            [
+              6421,
+              6433
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "da2665c2a523abd328796d6b",
+          "quote": "Ματθ. 24:31",
+          "before": "τη χαρά του Κυρίου σου”» (Α΄ Πέτρ. 5:4· ",
+          "after": "· 25:2).",
+          "spans": [
+            [
+              6435,
+              6446
+            ]
+          ],
+          "osis": "Matt.24.31",
+          "queries": [
+            "40 24:31"
+          ]
+        }
+      ],
+      "record_hash": "f4de10b0013f69d3c97fbbe5eedd0986bed51ba268ee85eb2be77babed90a7a4"
+    },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:en:395e6eddac70d145033971fe73f6bb15ea50a6d17a3a17407192158e066b627b:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
       "locale": "en",
@@ -393780,6 +394708,48 @@
         }
       ],
       "record_hash": "ac8450eefdc2bafba9fc0b07b91e868a4762305ab2d437076f4a5f6d013c5cae"
+    },
+    "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:sv:d780d73c663ae3e18bd42695c48dc454f60ab3df4c987cf3096996ad660c0336:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
+      "locale": "sv",
+      "content_hash": "d780d73c663ae3e18bd42695c48dc454f60ab3df4c987cf3096996ad660c0336",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "02600d9bd24076a74ed860d7",
+          "quote": "1 Pet. 5:4",
+          "before": "r mycket. Gå in i din herres glädje!’” (",
+          "after": "; Matt. 24:31; 25:2).",
+          "spans": [
+            [
+              5831,
+              5841
+            ]
+          ],
+          "osis": "1Pet.5.4",
+          "queries": [
+            "60 5:4"
+          ]
+        },
+        {
+          "id": "5cf6803b9e84a439350309bd",
+          "quote": "Matt. 24:31; 25:2",
+          "before": " in i din herres glädje!’” (1 Pet. 5:4; ",
+          "after": ").",
+          "spans": [
+            [
+              5843,
+              5860
+            ]
+          ],
+          "osis": "Matt.24.31,Matt.25.2",
+          "queries": [
+            "40 24:31",
+            "40 25:2"
+          ]
+        }
+      ],
+      "record_hash": "9f201f6f87de945b58a218793215c0d99c59eb94709057f57cffcfc55db4a238"
     },
     "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1:sw:eb1803bb6050b2ad014008bb7c497aae31c44d7304e9c3858368d29b677a1159:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "cbbe9a81-d8fd-46c2-bfcd-0d31bdd59fb1",
@@ -428813,6 +429783,335 @@
         }
       ],
       "record_hash": "9be14dcd8063e615b8c1c690fe91bece726c9c73fe039cf0b8a1110c1c1353c6"
+    },
+    "e66a02d4-667c-4f50-b5e1-158ff98b82d5:ur:681ba3608f6fb02f4134ffb6f74d7cf0156adf8d55071cac26df3292440716ed:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
+      "article_id": "e66a02d4-667c-4f50-b5e1-158ff98b82d5",
+      "locale": "ur",
+      "content_hash": "681ba3608f6fb02f4134ffb6f74d7cf0156adf8d55071cac26df3292440716ed",
+      "detector": "openbible-4.0.0/remnant-1/96758d64d96a49c7",
+      "markers": [
+        {
+          "id": "33e42460cf013a54847a550e",
+          "quote": "رومیوں 11:6",
+          "before": "سبب سے نہیں؛ ورنہ فضل، فضل نہیں رہتا۔‘‘ ",
+          "after": "۔ فضل ہی کے وسیلے ہم نئی پیدائش پاتے، از",
+          "spans": [
+            [
+              6280,
+              6291
+            ]
+          ],
+          "osis": "Rom.11.6",
+          "queries": [
+            "45 11:6"
+          ]
+        },
+        {
+          "id": "8245224f910b0d0dd8100779",
+          "quote": "صفنیاہ 2:3",
+          "before": "شاید خداوند کے غضب کے دن تم پناہ پاؤ۔‘‘ ",
+          "after": " ’’اے انسان، اس نے تجھے بتا دیا ہے کہ کی",
+          "spans": [
+            [
+              9172,
+              9182
+            ]
+          ],
+          "osis": "Zeph.2.3",
+          "queries": [
+            "36 2:3"
+          ]
+        },
+        {
+          "id": "ce380655e070b40b55d143a0",
+          "quote": "میکاہ 6:8",
+          "before": "، اور اپنے خدا کے حضور فروتنی سے چلے؟‘‘ ",
+          "after": " ’’خدا کے قوی ہاتھ کے نیچے فروتنی اختیار",
+          "spans": [
+            [
+              9347,
+              9356
+            ]
+          ],
+          "osis": "Mic.6.8",
+          "queries": [
+            "33 6:8"
+          ]
+        },
+        {
+          "id": "3e167d70bfc1046aaeab08ac",
+          "quote": "1 پطرس 5:6",
+          "before": "ے قوی ہاتھ کے نیچے فروتنی اختیار کرو۔‘‘ ",
+          "after": " ’’فروتنی سے ہر ایک دوسرے کو اپنے سے بہت",
+          "spans": [
+            [
+              9404,
+              9414
+            ]
+          ],
+          "osis": "1Pet.5.6",
+          "queries": [
+            "60 5:6"
+          ]
+        },
+        {
+          "id": "f3dd59373316e6df809b2379",
+          "quote": "فلپیوں 2:3",
+          "before": "ے ہر ایک دوسرے کو اپنے سے بہتر سمجھے۔‘‘ ",
+          "after": " ’’جس بلاوے سے تم بلائے گئے ہو اس کے لائ",
+          "spans": [
+            [
+              9465,
+              9475
+            ]
+          ],
+          "osis": "Phil.2.3",
+          "queries": [
+            "50 2:3"
+          ]
+        },
+        {
+          "id": "0f82ef7cc78ade316f8f3226",
+          "quote": "افسیوں 4:1-2",
+          "before": "کرکے محبت سے ایک دوسرے کی برداشت کرو۔‘‘ ",
+          "after": " ’’فروتنی کو لباس کی طرح پہن لو۔‘‘ 1 پطر",
+          "spans": [
+            [
+              9607,
+              9619
+            ]
+          ],
+          "osis": "Eph.4.1-Eph.4.2",
+          "queries": [
+            "49 4:1-2"
+          ]
+        },
+        {
+          "id": "883cfb0bc28d3860f677df54",
+          "quote": "1 پطرس 5:5",
+          "before": "4:1-2 ’’فروتنی کو لباس کی طرح پہن لو۔‘‘ ",
+          "after": "",
+          "spans": [
+            [
+              9654,
+              9664
+            ]
+          ],
+          "osis": "1Pet.5.5",
+          "queries": [
+            "60 5:5"
+          ]
+        },
+        {
+          "id": "a84eb5066d6e2b8e94445e23",
+          "quote": "یسعیاہ 57:15",
+          "before": " کروں اور شکستہ دلوں کو تازہ دم کروں۔‘‘ ",
+          "after": " ’’وہ فروتن شخص کو بچائے گا۔‘‘ ایوب 22:2",
+          "spans": [
+            [
+              10036,
+              10048
+            ]
+          ],
+          "osis": "Isa.57.15",
+          "queries": [
+            "23 57:15"
+          ]
+        },
+        {
+          "id": "e0caabffa8c520e472bc2d7d",
+          "quote": "ایوب 22:29",
+          "before": "یاہ 57:15 ’’وہ فروتن شخص کو بچائے گا۔‘‘ ",
+          "after": " ’’فروتنوں کے ساتھ حکمت ہے۔‘‘ امثال 11:2",
+          "spans": [
+            [
+              10079,
+              10089
+            ]
+          ],
+          "osis": "Job.22.29",
+          "queries": [
+            "18 22:29"
+          ]
+        },
+        {
+          "id": "3aa6d911bee9235e3e3050fb",
+          "quote": "امثال 11:2",
+          "before": "ایوب 22:29 ’’فروتنوں کے ساتھ حکمت ہے۔‘‘ ",
+          "after": " ’’روح کے فروتن کو عزت سنبھالے رکھے گی۔‘",
+          "spans": [
+            [
+              10119,
+              10129
+            ]
+          ],
+          "osis": "Prov.11.2",
+          "queries": [
+            "20 11:2"
+          ]
+        },
+        {
+          "id": "0ba288d85c722179fe43cb5e",
+          "quote": "امثال 29:23",
+          "before": "’روح کے فروتن کو عزت سنبھالے رکھے گی۔‘‘ ",
+          "after": " ’’جو اپنے آپ کو فروتن کرے گا وہ سرفراز ",
+          "spans": [
+            [
+              10171,
+              10182
+            ]
+          ],
+          "osis": "Prov.29.23",
+          "queries": [
+            "20 29:23"
+          ]
+        },
+        {
+          "id": "5b792ead35c06b3c773549d7",
+          "quote": "لوقا 18:14",
+          "before": "و فروتن کرے گا وہ سرفراز کیا جائے گا۔‘‘ ",
+          "after": "",
+          "spans": [
+            [
+              10237,
+              10247
+            ]
+          ],
+          "osis": "Luke.18.14",
+          "queries": [
+            "42 18:14"
+          ]
+        },
+        {
+          "id": "149a8a1b55c79038016d06bb",
+          "quote": "لوقا 1:51",
+          "before": " دلوں کے خیالوں میں پراگندہ کردیا ہے۔‘‘ ",
+          "after": " ’’ہر مغرور دل خداوند کے نزدیک مکروہ ہے؛",
+          "spans": [
+            [
+              10382,
+              10391
+            ]
+          ],
+          "osis": "Luke.1.51",
+          "queries": [
+            "42 1:51"
+          ]
+        },
+        {
+          "id": "5f6b7294513e88a79d31d12a",
+          "quote": "امثال 16:5",
+          "before": "زدیک مکروہ ہے؛ وہ سزا سے نہیں بچے گا۔‘‘ ",
+          "after": " ’’آدمی کا غرور اسے پست کردے گا۔‘‘ امثال",
+          "spans": [
+            [
+              10457,
+              10467
+            ]
+          ],
+          "osis": "Prov.16.5",
+          "queries": [
+            "20 16:5"
+          ]
+        },
+        {
+          "id": "17ef7b2abce451959f2c7931",
+          "quote": "امثال 29:23",
+          "before": " 16:5 ’’آدمی کا غرور اسے پست کردے گا۔‘‘ ",
+          "after": " ’’جو کوئی اپنے آپ کو بڑا بنائے گا وہ پس",
+          "spans": [
+            [
+              10502,
+              10513
+            ]
+          ],
+          "osis": "Prov.29.23",
+          "queries": [
+            "20 29:23"
+          ]
+        },
+        {
+          "id": "cec9ceeacfaaf07e73c0f625",
+          "quote": "لوقا 18:14",
+          "before": "پ کو بڑا بنائے گا وہ پست کیا جائے گا۔‘‘ ",
+          "after": " ’’مغرور نہ بنو بلکہ ڈرو؛ کیونکہ جب خدا ",
+          "spans": [
+            [
+              10570,
+              10580
+            ]
+          ],
+          "osis": "Luke.18.14",
+          "queries": [
+            "42 18:14"
+          ]
+        },
+        {
+          "id": "40ea33f86a2da42f3625af93",
+          "quote": "رومیوں 11:20-21",
+          "before": "بردار رہو کہ کہیں تمہیں بھی نہ چھوڑے۔‘‘ ",
+          "after": "",
+          "spans": [
+            [
+              10690,
+              10705
+            ]
+          ],
+          "osis": "Rom.11.20-Rom.11.21",
+          "queries": [
+            "45 11:20-21"
+          ]
+        },
+        {
+          "id": "f91e39124a6dccd996b78fbf",
+          "quote": "فلپیوں 2:8",
+          "before": "ہا کہ موت، یعنی صلیب کی موت، قبول کی۔‘‘ ",
+          "after": " آہ، پس غور کرو۔ اگر یسوع، آسمان کے خداو",
+          "spans": [
+            [
+              12571,
+              12581
+            ]
+          ],
+          "osis": "Phil.2.8",
+          "queries": [
+            "50 2:8"
+          ]
+        },
+        {
+          "id": "2dff00cea1c6baf1d5d411bb",
+          "quote": "1 سموئیل 16:7",
+          "before": "یکھتا ہے، مگر خداوند دل کو دیکھتا ہے۔‘‘ ",
+          "after": "۔ ہاں، وہ دلوں کو جانچتا ہے، اور ہمارے س",
+          "spans": [
+            [
+              13958,
+              13971
+            ]
+          ],
+          "osis": "1Sam.16.7",
+          "queries": [
+            "9 16:7"
+          ]
+        },
+        {
+          "id": "9b97e38a875f60bb151b9c2f",
+          "quote": "عبرانیوں 12:15",
+          "before": "ہ کوئی خدا کے فضل سے محروم نہ رہ جائے۔‘ ",
+          "after": "۔ ’روح اور دلہن کہتے ہیں، آ۔ اور سننے وا",
+          "spans": [
+            [
+              17056,
+              17070
+            ]
+          ],
+          "osis": "Heb.12.15",
+          "queries": [
+            "58 12:15"
+          ]
+        }
+      ],
+      "record_hash": "1d33dce2e99c1ca338222a30adf8fe14a3dc4b63c23917379f4bb114040d61b7"
     },
     "e66e5c41-b9e5-42f4-bb96-266f6979fd95:en:387ad9ea447e77706ea704646fabdfab4b161372edded1e6a56f8ab5c3472f34:openbible-4.0.0/remnant-1/96758d64d96a49c7": {
       "article_id": "e66e5c41-b9e5-42f4-bb96-266f6979fd95",
